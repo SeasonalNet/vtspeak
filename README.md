@@ -18,8 +18,8 @@
 
 The binaries and voice data remain in the working tree for local analysis. Their redistribution terms have not been established, so the root `.gitignore` excludes those input directories from Git.
 
-[!NOTE]
-No license is asserted for the vendor engine or voice assets. Treat them as proprietary.
+> [!NOTE]
+> No license is asserted for the vendor engine or voice assets. Treat them as proprietary.
 
 ## Start the analysis toolkit
 
