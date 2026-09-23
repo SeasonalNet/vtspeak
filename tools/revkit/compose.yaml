@@ -1,0 +1,18 @@
+services:
+  revtools:
+    build:
+      context: .
+    image: voicetext-revtools:local
+    user: "${UID:-1000}:${GID:-1000}"
+    working_dir: /work
+    environment:
+      HOME: /work/home
+      JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+    volumes:
+      - ./work:/work
+      - ../../binary:/samples:ro
+      - ../../data-common:/voice-data/common:ro
+      - ../../data-paul:/voice-data/paul:ro
+      - ../../include:/voice-data/include:ro
+    stdin_open: true
+    tty: true

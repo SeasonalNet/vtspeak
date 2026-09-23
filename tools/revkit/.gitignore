@@ -1,0 +1,8 @@
+/work/*
+!/work/.gitkeep
+!/work/home/
+/work/home/*
+!/work/home/.gitkeep
+!/work/projects/
+/work/projects/*
+!/work/projects/.gitkeep

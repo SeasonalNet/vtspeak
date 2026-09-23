@@ -1,0 +1,11 @@
+# Local VoiceText samples; redistribution rights have not been established.
+/binary/
+/data-common/
+/data-paul/
+
+# Editor and operating-system noise.
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
