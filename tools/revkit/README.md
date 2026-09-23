@@ -48,6 +48,21 @@ docker compose run --rm --entrypoint objdump revtools -p /samples/vt_pau.dll
 docker compose run --rm --entrypoint strings revtools -a /samples/vt_pau.dll
 ```
 
+## Inspect the versioned unit-index layout
+
+The read-only inspector checks the `ver.2013` header, bank names, unit count,
+opaque per-unit block stride, and packed-column extents. It does not assign
+semantic names to fields whose use has not been traced yet. From the repository
+root, run:
+
+```sh
+python3 tools/revkit/scripts/inspect_unit_idx.py \
+  data-paul/M16/mc_idx_tbl/unit-gen.idx \
+  data-paul/M16/mc_idx_tbl/unit-num.idx \
+  data-paul/M16/mc_idx_tbl/unit-etc.idx \
+  data-paul/M16/mc_idx_tbl/unit-alp.idx
+```
+
 Start a shell with the tools available on `PATH`:
 
 ```sh

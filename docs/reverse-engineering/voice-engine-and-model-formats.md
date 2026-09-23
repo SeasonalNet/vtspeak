@@ -73,11 +73,18 @@ After the nodes comes a little-endian 16-bit output table of `feature_width * (n
 
 ### `mc_idx_tbl/unit-*.idx`
 
-The index reader accepts two layouts. `FUN_10019e80` reads a one-byte length followed by that many bytes. When the payload begins with `ver.` and matches the expected version marker, it records a versioned-header flag and the header extent; otherwise it selects the older layout. The Paul sample's `unit-gen.idx` and `unit-etc.idx` both begin with length `0x17` and the NUL-separated bytes `ver.2013\0VoiceText-Eng\0`, followed by a small table of bank/name strings and a 32-bit unit count. The initial values visible in `unit-gen.idx` include the name `merged-gen` and count `0x0006b73c` (440,124); `unit-etc.idx` names `merged-etc` and declares `0x0001c40b` (115,723).
+The index reader accepts two layouts. `FUN_10019e80` reads a one-byte length followed by that many bytes. When the payload begins with `ver.` and matches the expected version marker, it records a versioned-header flag and the header extent; otherwise it selects the older layout. All four Paul indexes use the versioned `ver.2013\0VoiceText-Eng\0` header. Each has one bank-name entry (`merged-gen`, `merged-num`, `merged-etc`, or `merged-alp`), a zero tag byte, a 32-bit unit count, and a 16-bit per-unit block stride of 19.
 
-The common header parser reads the bank-name table and declared unit count. The old-layout reader `FUN_100197d0` then walks fixed-stride records and scatters fields into separate arrays: a 7-byte key, one-byte attributes, another one-byte attribute, and three feature groups with a 16-bit value plus two byte-sized values per unit. The versioned reader `FUN_10019940` instead skips a declared fixed-size per-unit block and bulk-reads those same-width columns as arrays. This establishes the old-vs-versioned loading strategy and the broad storage shape, but not the semantic names of those columns or every header field. `FUN_1001a5a0` sorts/deduplicates each unit's 5-byte key and builds reverse mappings; `FUN_1001a8c0` and `FUN_1001aa90` validate the companion class-index and class-key files against the declared unit count.
+For these files, the complete header and table occupy 45 bytes. `FUN_10019940` then skips `19 * unit_count` bytes and bulk-reads 21 bytes per unit into separate arrays, in this order: one byte, a 7-byte unit signature, one byte, then three groups each containing a 16-bit column and two byte columns. The 19-byte per-unit block is skipped by this loader path; its meaning remains unknown. This predicts a total file length of `45 + 40 * unit_count` bytes. The read-only inspector at `tools/revkit/scripts/inspect_unit_idx.py` applies this layout to all four files. Each calculated length matches the actual file exactly:
 
-The `.idx` files are therefore structured binary indexes rather than text tables. The strings in their headers describe the bank identity; unit selection later uses the parsed key and feature arrays to locate and rank candidates. More work is needed to name the individual byte/word columns and map their values to the candidate-scoring features.
+| Index | Units | File size |
+| --- | ---: | ---: |
+| `unit-gen.idx` | 440,124 | 17,605,005 bytes |
+| `unit-num.idx` | 24,508 | 980,365 bytes |
+| `unit-etc.idx` | 115,723 | 4,628,965 bytes |
+| `unit-alp.idx` | 119 | 4,805 bytes |
+
+The field names above describe widths and order only. Use sites reveal more about the 7-byte unit signature: `FUN_10016ea0` maps selected bytes through lookup tables and derives a 5-byte class key; `FUN_1001a5a0` sorts/deduplicates these keys and creates unit-to-class mappings. `FUN_10016ef0` expands a 5-byte class key into one of two 10-byte feature views. `FUN_10023a70` scores key differences using weight tables. The algorithm therefore uses these fields as context-matching features, although the individual phonetic and attribute meanings are not fully identified. The older layout remains only structurally understood through `FUN_100197d0`.
 
 ### Paired `.dat` and `.upm` unit data
 
@@ -85,7 +92,7 @@ The primary `.dat` read path fetches a selected byte span from a bank, passes it
 
 The decoder's mode handlers reconstruct samples from those residuals using different predictors: one adds to an initial/reference value, another adds to the previous sample, another uses `2 * previous - previous_previous`, and another combines three preceding reconstructed values. Mode 8 initializes the predictor history to zero. This strongly suggests a proprietary predictive waveform codec with variable-length residuals. It is not enough to identify a standard codec, and the reconstruction arithmetic should be checked against real decoded payloads before writing a compatible decoder. The current evidence does not support calling it ADPCM.
 
-The `.upm` reader is more concrete: `FUN_1002bbd0` reads the unit's auxiliary byte-vector through offsets stored in the unit index, widens each byte to a 16-bit value, then shifts it left once. The consumer uses that vector as per-unit metadata in a later interpolation/calculation path. It is not the primary waveform; `.dat` supplies the waveform samples. The names “DAT” and “UPM” are extension labels only; no vendor format documentation was found in the inspected package.
+The `.upm` reader is more concrete: `FUN_1002bbd0` reads a per-unit byte vector through offsets stored in the unit index, widens each byte to a 16-bit value, then shifts it left once. `FUN_1002bc60` converts adjacent vector values into cumulative segment records containing a start position, two endpoint values, and timing/unit parameters; a one-value vector takes a special single-segment path. `FUN_1002afb0` consumes those records while rebuilding the 16-bit sample stream through interpolation tables. This establishes `.upm` as per-unit waveform-adjustment data, while its contour's physical meaning and scale remain unknown. It is not the primary waveform; `.dat` supplies the waveform samples. The names “DAT” and “UPM” are extension labels only; no vendor format documentation was found in the inspected package.
 
 These are static-reader findings. No model files were changed, the DLL was not run under a debugger, and the verification/license data was not opened or altered. Exact candidate-feature semantics and validation of the `.dat` reconstruction against sample payloads remain open.
 
@@ -93,6 +100,6 @@ These are static-reader findings. No model files were changed, the DLL was not r
 
 - Static analysis only; the DLL was not executed under tracing or emulation during this pass.
 - The large model-loading, pronunciation, prosody, and synthesis helpers remain only partly explained.
-- The `.idx` structure is only partly specified; `.upm` use is better understood than its producer-side schema, and `.dat` mode-specific decode equations remain unknown. This is not yet a clean-room parser.
+- The versioned `.idx` byte layout is confirmed, but its skipped 19-byte blocks and several column meanings are unknown; legacy `.idx` files need a separate sample. `.upm` contour semantics and validation of `.dat` reconstruction against actual payloads remain open. This is not yet a clean-room parser.
 - The exact host-to-DLL argument semantics are not fully named; recovered prototypes still have `param_N` placeholders.
 - This pass did not inspect `verify/verification.txt` contents or attempt to bypass the license check.
