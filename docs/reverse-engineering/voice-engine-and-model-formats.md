@@ -53,7 +53,13 @@ flowchart LR
     L --> M[16 kHz mono 16-bit PCM WAVE]
 ```
 
-The bundled `cepdist.tbl` is 2,099,202 bytes. The loader reads a 16-bit count of 1,024 followed by 524,800 32-bit values (a triangular table, matching the loader's size calculation), then constructs an additional derived lookup table. It is one of the scoring resources rather than audio data.
+The bundled `cepdist.tbl` is 2,099,202 bytes. `FUN_1001ad20` reads a 16-bit
+count of 1,024 followed by 524,800 32-bit values (a triangular table,
+matching the loader's size calculation), then `FUN_1001ae70` constructs a
+separate derived lookup table. The raw table is consumed by the
+adjacent-context transition scorer described in
+[Stage 7](#stage-7-candidate-selection-and-scoring); the derived 256-bin
+table is used by both unit scoring and transition scoring.
 
 ## Binary format details recovered from the readers
 
@@ -884,6 +890,252 @@ comparator using the commands in [the revkit README](../../tools/revkit/README.m
   tables themselves do not encode spoken replacements.
 - Label the remaining shared-tree features and outputs; runtime equality
   currently verifies numeric tree evaluation only.
+
+## Stage 7: candidate selection and scoring (complete)
+
+The 7-byte unit signature is reduced by `FUN_10016ea0` to a 5-byte class key.
+`FUN_1001a5a0` sorts and deduplicates those keys and builds the unit-to-class
+mapping. `FUN_10016ef0` expands a class key into either of two 10-byte feature
+views. `FUN_10019350` compares views lexicographically, and
+`FUN_10019450` binary-searches the sorted class data for matching ranges.
+These structures form the class-level index used before individual waveform
+units are considered. Their bytes are categorical model features, not direct
+distance values. Their individual phonetic meanings are not recoverable from
+the traced operations alone.
+
+The key's first three bytes are lookup-table mappings of signature bytes
+1–3; key byte 3 copies signature byte 5, and key byte 4 is signature byte 6
+masked with `0x20`. For key `k` and `f = k[3]`, the two 10-byte views are:
+
+| View byte | Mode 1 | Mode 2 |
+| ---: | --- | --- |
+| 0 | `0` | `1` |
+| 1 | `k[4]` | `k[4]` |
+| 2 | `k[1]` | `k[1]` |
+| 3 | `T97c[k[0]]` | `T97c[k[2]]` |
+| 4 | `((f & 0x80) != 0 && ((f >> 3) & 7) >= 2)` | `((f & 0x40) != 0 && (f & 7) >= 2)` |
+| 5 | `T8b4[k[0]]` | `T918[k[2]]` |
+| 6 | `10 * ((f >> 3) & 7) + mode1_byte4` | `10 * (f & 7) + mode2_byte4` |
+| 7 | `k[0]` | `k[2]` |
+| 8 | `(f >> 3) & 7` | `f & 7` |
+| 9 | `T97c[k[2]]` | `T97c[k[0]]` |
+
+`T97c`, `T8b4`, and `T918` denote the DLL lookup tables at
+`DAT_1007b97c`, `DAT_1007b8b4`, and `DAT_1007b918`. The five key positions
+are **mapped signature categories 1–3**, **signature byte 5**, and
+**signature byte 6 masked by `0x20`**. The ten projection positions are
+**view selector**, **masked category**, **shared category**, **lookup class**,
+**derived boundary bit**, **secondary lookup class**, **packed 0–70
+category**, **source category**, **three-bit category**, and **opposite-side
+lookup class**. These names describe data flow; the lookup tables' linguistic
+labels are not established.
+
+`FUN_10023a70` computes a class mismatch score by adding configured integer
+weights for each differing key byte. When a feature-view mode is enabled, it
+also adds configured weights for differing bytes in the expanded 10-byte
+view. This is a weighted mismatch count, not a byte-distance metric. The
+weight arrays are `DAT_1007bf14` (five key positions) and `DAT_1007bf28` (ten
+projection positions). `FUN_10023af0` ranks class candidates with a maximum
+output count and a cumulative class-population stopping threshold.
+`FUN_1001a8c0` loads the
+per-class unit counts from `sclass.idx` as 16-bit values at model-state offset
+`+0x8c`; `FUN_1001a860` uses them as unit group lengths. If the input fits
+both limits, the function preserves the existing order and skips mismatch
+scoring. Otherwise it scores and sorts classes, then emits whole classes up
+to the count limit and until cumulative population crosses the threshold.
+Because it emits a whole class before checking the threshold, the result can
+exceed the population budget by that last class's size. At the traced callsite
+these limits are 30 classes and 10,000 units. The 10,000 threshold limits the
+population considered by the scorer; the binary contains no evidence for why
+the author selected that value. The related feature-view path
+(`FUN_10023c70`, called through `FUN_10023e70`) searches matching class ranges
+and broadens its context window when necessary; its callsite uses limits of
+10 classes and 10,000 units.
+
+`FUN_10023350` expands each context's class candidates into actual unit
+candidates, applies neighboring-context and duration handling, then invokes
+`FUN_100182e0` to calculate per-unit costs. The scorer adds (1) symbolic
+category penalties, (2) one or three table-derived feature differences, and
+(3) a duration/prosody term multiplied by the caller's scale. The categorical
+rules compare unit-record bytes 1–3. For byte 2, differing codes receive 100
+points if either is `0x4b`, 5 points when their `DAT_1007b6c0` categories
+match, and 1,000 points otherwise. For bytes 1 and 3, the code can add 1 for
+a special boundary predicate, 5 when `DAT_1007b6c0` categories match, 10
+when `DAT_1007b97c` lookup classes match, or 500 for the fallback; byte 3
+also has `0x4b` and context-specific branches. Additional table-coded
+penalties cover the two three-bit fields in byte 5, category pairs, and
+context-specific cases. These are operation-level descriptions, not
+phonetic labels. The 256-bin symmetric float table is built by
+`FUN_1001ae70`; `FUN_1001ae20` computes `(a-b)^2 / ((a+b)/2)` and returns zero
+when the denominator is zero. Costs participate in candidate filtering and
+ordering. The returned list can retain preselected groups or slots, so the
+whole list is not guaranteed to be globally sorted by this local cost.
+
+The adjacent-context pass is `FUN_10018c80`, called after each later
+context's `FUN_10023350` by `FUN_100248b0`. For every current candidate, it
+compares candidates from the preceding context. The raw distance comes from
+the triangular `cepdist.tbl` matrix through row pointers at model-state
+offset `+0x0c`. Each side's 16-bit per-unit metric code is masked with
+`0x3fff` and used as a matrix index. It is a packed table-index code, not an
+established cepstral value. The per-context selector at byte `+4` chooses
+the metric-code arrays: value `2` selects array `1` for both sides; other
+observed values select array `0` for the current side and array `2` for the
+previous side. The transition adds a weighted raw-table distance, three
+derived 256-bin feature distances, categorical penalties, the preceding
+cumulative cost, and a current duration/prosody term. It picks
+the minimum predecessor with `FUN_10023010` and stores both the predecessor
+index and cumulative cost. The scorer also reads the separately built
+256-bin table at model-state offset `+0x18`.
+
+After transition scoring, `FUN_10024510` prunes a set only when its context
+gate is clear and it has more than 10 candidates. The Ghidra pseudocode sums
+the cumulative costs, finds their minimum, and computes
+`average + multiplier * (average - minimum) / 4`; the callsite in
+`FUN_100248b0` passes multiplier `1`. It retains each candidate at or below
+that cutoff and every candidate whose associated 16-bit node flag at `+0x0c`
+is nonzero. The denominator is the DLL float at `DAT_1006d1a8`, directly read
+as `4.0`; nearby scoring constants are `2.0`, `8.0`, and `5.0` at
+`DAT_1006d174`, `DAT_1006d180`, and `DAT_1006d184`. The divisor's exact
+runtime effect and the flag's cutoff bypass are established. The binary
+does not record a design rationale for choosing divisor 4. The final
+selector `FUN_10024900` takes the minimum-cost candidate in the last context
+and follows the saved predecessor indices backwards. `FUN_10024980` then
+passes the selected unit from each context to `FUN_1001b200`, where the next
+stage's segment/timing/audio processing begins. This explains why an early
+30-unit shortlist is neither the final path nor necessarily sorted by its
+local `FUN_100182e0` cost.
+
+### Runtime checkpoint F
+
+The trace input was the ordinary sentence “The quick brown fox jumps over
+the lazy dog.” Runtime probes ran the VoiceText backend in the isolated Wine
+container from the Stage 5 working directory. The generated output was a
+valid mono, 16 kHz, 16-bit PCM WAVE of 86,158 bytes and differed from the
+89,478-byte saved output. The probe exited normally. Full raw logs and probe
+scripts are under the ignored `tools/revkit/work/stage7-followup2/`,
+`stage7-followup3/`, `stage7-followup4/`, and `stage7-complete/` directories.
+
+The class-ranker probe captured three inputs of 1, 2, and 3 classes. Their
+population weights were 1,165; 22 and 28; and 20, 51, and 8 respectively.
+Each set fit under the 30-class and 10,000-population limits and returned the
+original order, confirming the fast path. The GDB trace script initially
+called these values `duration`; the class-index reader shows they are unit
+population counts. The first per-context expansion turned
+class `61031` into 30 unit candidates, beginning `386982, 71462, 247966,
+267166, 428309`. In the next two contexts, the first five unit costs were:
+
+| Context | Initial unit candidates | Initial costs |
+| --- | --- | --- |
+| 1 | `172995, 167803, 249971, 82696, 49573` | `0.0722816, 0.317855, 0.554387, 0.565364, 0.645056` |
+| 2 | `545811, 416379, 392544, 545691, 548136` | `34.4071, 33.4062, 44.7739, 33.7897, 32.7145` |
+
+The pairwise trace confirmed 30 candidates enter context 1, with 30 in its
+predecessor context. For contexts 2, 3, and 4, predecessor sets had already
+been reduced to 22, 27, and 19 candidates by the intervening prune step.
+Runtime observed raw `cepdist` lookups in this path, including metric index
+pairs `1015/99` -> `1.61046`, `35/435` -> `1.11384`, and `956/1004` ->
+`0.523595`. For those first pairs the context mode selected current/previous
+metric arrays `0/2`, `1/1`, and `0/2` respectively. The mode values are
+structural indices; their linguistic interpretation is unknown.
+
+Backtracking selected one unit per context across contexts 0 through 40.
+The first five were `249970, 249971, 438266, 543475, 32285`, with cumulative
+costs `0.0181818, 0.295376, 24.0372, 45.0519, 50.9654`. The selected first
+unit, `249970`, was candidate index 24 of 30 in context 0, rather than one
+of the first ten initially logged. All 41 backtracked IDs matched, in order,
+the unit IDs passed by `FUN_10024980` to `FUN_1001b200` (`all_match=True` in
+the capture comparison). This reconciles the shortlist, transition/backtrack
+path, and selected-unit handoff. `FUN_1001b200` then dispatches to
+`FUN_1001af50` or `FUN_1001b0d0` to fill the next processing record. The WAV
+was produced after the backtracking trace and the process exited normally.
+
+One earlier container attempt is a distinct failed run. The requester
+provided its terminal excerpt after the original log had been replaced. It
+reports `Program received signal SIGSEGV` in Wine's
+`RtlEnterCriticalSection@4`, with `crit=0x20`, followed by an unhandled page
+fault reading `0x34`; GDB detached and the inferior did not complete. The
+saved output and its backup were both 89,478 bytes and byte-identical; their
+reported timestamps were 02:40:28.877 and 02:40:23.096 respectively. This
+shows that the failed attempt left no byte difference in the saved output,
+but does not establish whether that file was rewritten or exactly when the
+crash occurred relative to synthesis. The crash was from the earlier
+container setup, before the corrected Stage 5 working-directory launch. It
+does not establish that an external teardown caused the fault. This failed
+container run is separate from the teardown-during-synthesis behavior the
+requester has observed in the SeasonalWeather VoiceText backend. In the later
+successful probe, `SIGSEGV No No Yes` is only GDB's configured
+stop/print/pass policy; no `Program received signal` event appears, and the
+inferior exits normally.
+
+#### Candidate-shape and pruning validation
+
+Three additional isolated Wine/GDB runs used `Hi.`, `On April 24, 2026, the
+temperature was 72.5 degrees.`, and `The quick brown fox jumps over the lazy
+dog while a small bird sings beside the river.` The container used the
+read-only vendor mounts, no network, and the existing Stage 2 Wine prefix.
+Each inferior exited normally and generated a mono, 16 kHz, 16-bit PCM WAVE.
+The Stage 5 fixture input and output were restored byte-for-byte after each
+probe.
+
+| Input | Selection span(s) | Class candidates observed | Pruning evidence |
+| --- | ---: | ---: | --- |
+| `Hi.` | 2 contexts | 1–2 classes; populations 33–355 | A 3-candidate set entered pruning and all 3 remained |
+| Date/number phrase | 45 and 44 contexts | 1–7 classes; aggregate populations 2–545 | Sets of 15 and 30 reduced to 11–30; flagged candidates above the cutoff remained |
+| Long ordinary sentence | 77 contexts | 1–7 classes; aggregate populations 13–1,165 | Candidate sets reached 30 and were pruned; context lengths and score distributions differed |
+
+Across these traces, every observed class list fit both the 30-class and
+10,000-unit thresholds, and the ranker's returned counts matched the input
+counts. The `FUN_10023af0` pseudocode establishes that this fast path
+preserves input order and skips mismatch scoring. A separate controlled GDB
+run lowered one call's budget argument from 10,000 to 1 while retaining its
+two real input classes. Both class mismatches scored 10; the ranker returned
+the first class (`2655`, population 22), demonstrating that it scores,
+then stops after including a whole class that crosses the threshold.
+This one-call override intentionally changes that probe's selection behavior;
+its WAV is not used as normal-output evidence. Runtime pruning shows both
+cutoff retention and flag bypass. For example, a
+30-candidate set with 8 flagged entries above the cutoff kept all 30, while a
+set with no flagged entries above the cutoff kept only its 28 candidates at
+or below the cutoff. The short phrase's 3-candidate set was unchanged. The
+context gate was clear in all captures; the gated bypass is established by
+the `FUN_10024510` branch condition.
+
+The class-ranking callsite passes limits of 30 classes and 10,000 aggregate
+units; the context feature-view callsite passes limits of 10 and 10,000. The
+long ordinary trace naturally exercised feature-view mismatch scoring 3,985
+times while broadening context ranges. The controlled run separately forced
+the outer ranker's score-and-truncate path. Together with the fast-path,
+divisor-4, and flag-retention traces, this closes Stage 7's selection and
+pruning behavior. The binary does not encode the historical motivation for
+these constants; their operational behavior is now mapped, and no
+authorial rationale is inferred.
+
+#### Selected-unit to segment-record handoff
+
+`FUN_10024980` calls `FUN_1001b200` once for each backtracked context. The
+destination records are 24 bytes apart. `FUN_1001b200` dispatches to
+`FUN_1001af50` when the mode byte at synthesis-state `+0x82` is zero, and to
+`FUN_1001b0d0` otherwise. Both locate the selected unit's source row through
+the model's segment-range table, compute its record index, and read it with
+`FUN_10025440`. They write these fields into the 24-byte destination row:
+
+| Destination offset | Source offset in decoded unit row | Arguments passed to `FUN_100014f0` |
+| ---: | --- | --- |
+| `+0x00` | `+0x01` | count 4, stride 1 |
+| `+0x04` | `+0x0b` | count 4, stride 1 |
+| `+0x08..+0x0a` | Normal path: `+0x12` then a per-value stride; alternate path: `+0x1c` | Normal: three count-1/stride-1 reads; alternate: count 1, stride 3 |
+| `+0x0c` | `+0x05` | count 2, stride 2 |
+| `+0x10` | `+0x09` | count 2, stride 1 |
+| `+0x12` | `+0x0f` | count 1, stride 2 |
+| `+0x14` | Selected-unit category byte | Direct byte write |
+| `+0x15..+0x17` | — | Not written by either dispatch target |
+
+The integer arguments to `FUN_100014f0` are recorded as passed; its conversion
+semantics and the meanings of these packed fields belong to Stage 8. This
+closes the handoff boundary without assigning
+unsupported names to synthesis parameters. Stage 7 now covers class lookup,
+per-unit scoring, adjacent-context dynamic programming, pruning,
+backtracking, and selected-unit record construction.
 
 ## Limits of this pass
 
