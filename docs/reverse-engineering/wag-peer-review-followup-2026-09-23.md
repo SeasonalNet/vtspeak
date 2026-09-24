@@ -64,3 +64,9 @@ profile.
 Our capture files and the standalone decoder remain in the vtspeak workspace.
 The small captured DAT/PCM fixtures and `capture-many.gdb` are tracked under
 `tools/revkit/work/stage2-copy/`; the full voice/model assets remain external.
+
+**Later local update (2026-09-24):** A normal-load Wine probe compared all
+580,474 local Paul DAT payloads against the independent decoder by PCM byte
+count and SHA-256, with zero mismatches. The historical limitations above
+describe the evidence available when this peer-review handoff was prepared;
+see the [local corpus parity report](dat-corpus-parity-and-stage9-2026-09-24.md).

@@ -13,7 +13,7 @@ documented results.
 - `scripts/` contains analysis helpers used by the research workflow.
 - `stage2-copy/` contains small DAT payload excerpts, their captured PCM
   outputs, and the GDB capture scripts/logs used for decoder comparisons.
-- `stage3/` through `stage8/` contain the controlled text inputs, trace
+- `stage3/` through `stage10/` contain the controlled text inputs, trace
   scripts/logs, PCM buffers, WAVE outputs, and comparison evidence cited in the
   stage findings. `stage5/probes/stage6/` holds the captured tree lookups used
   by the checked-in comparison helper.
@@ -73,6 +73,49 @@ format, and controlled-output frame counts:
 
 ```sh
 python3 tools/revkit/work/scripts/verify_stage8.py
+```
+
+With the full local 2013 Paul M16 assets present, inventory DAT frame controls
+and compare each stream's decoded frame count with its combined UPM-derived
+sample count:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/scripts/inventory_dat_modes.py
+```
+
+This checks stream framing and sample counts. The later full-corpus PCM value
+comparison uses the PE32 probe and independent Python comparator documented in
+the [corpus parity report](../../../docs/reverse-engineering/dat-corpus-parity-and-stage9-2026-09-24.md).
+
+The Stage 9 verifier checks the two additional number/abbreviation WAVE files
+against their captured PCM blocks and prior Stage 6 references:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/work/scripts/verify_stage9.py
+```
+
+The Stage 10 verifier checks 40 ordered abbreviation/context captures, 11
+all-key H/T batch captures (55 H keys and 42 T keys across 87 context returns),
+seven part-of-speech controls, five forced-pronunciation tree-input controls,
+three address-guard captures, seven alias-branch traces, and 227
+dictionary-metadata rows across ten observed Boolean patterns:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/work/scripts/verify_stage10.py
+```
+
+The same stage's VTML controls map the original engine's 69 ordinary internal
+phone bytes to documented `x-cmu` symbols:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/work/scripts/verify_cmu_codebook.py
+```
+
+The controlled one-phone tree captures are summarized and checked for the
+CMU alphabetical identity ordinals and five consonant onset-tree groups:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/work/scripts/analyze_stage10_tree_features.py
 ```
 
 The helper in

@@ -1,0 +1,475 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10056150
+Wine-gdb> >>>>>>> > > > >>>Wine-gdb> Breakpoint 2 at 0x100560a0
+Wine-gdb> >>>>>>> > > > >>>Wine-gdb> Continuing.
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	'.' <repeats 29 times>
+Temporary breakpoint 3 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cdcc key=0x667584:	"."
+Temporary breakpoint 4 at 0x1005cdcc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005ce2f key=0x667584:	"."
+Temporary breakpoint 5 at 0x1005ce2f
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 6 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 7 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 8 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 9 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 10 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 11 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 12 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	'.' <repeats 29 times>
+Temporary breakpoint 13 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	'.' <repeats 29 times>
+Temporary breakpoint 14 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cdcc key=0x667584:	"."
+Temporary breakpoint 15 at 0x1005cdcc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005ce2f key=0x667584:	"."
+Temporary breakpoint 16 at 0x1005ce2f
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 17 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 18 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 19 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 20 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 21 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 22 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 23 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	'.' <repeats 29 times>
+Temporary breakpoint 24 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	'.' <repeats 29 times>
+Temporary breakpoint 25 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cdcc key=0x667584:	"."
+Temporary breakpoint 26 at 0x1005cdcc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005ce2f key=0x667584:	"."
+Temporary breakpoint 27 at 0x1005ce2f
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 28 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 29 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 30 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	'.' <repeats 29 times>
+Temporary breakpoint 31 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 32 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 33 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	'.' <repeats 29 times>
+Temporary breakpoint 34 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	'.' <repeats 29 times>
+Temporary breakpoint 35 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	'.' <repeats 21 times>
+Temporary breakpoint 36 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cdcc key=0x667584:	"."
+Temporary breakpoint 37 at 0x1005cdcc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005ce2f key=0x667584:	"."
+Temporary breakpoint 38 at 0x1005ce2f
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	'.' <repeats 21 times>
+Temporary breakpoint 39 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	'.' <repeats 21 times>
+Temporary breakpoint 40 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	'.' <repeats 21 times>
+Temporary breakpoint 41 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	'.' <repeats 21 times>
+Temporary breakpoint 42 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	'.' <repeats 21 times>
+Temporary breakpoint 43 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	'.' <repeats 21 times>
+Temporary breakpoint 44 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	'.' <repeats 21 times>
+Temporary breakpoint 45 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	'.' <repeats 21 times>
+Temporary breakpoint 46 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	"Unit"
+Temporary breakpoint 47 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cd69 key=0x667584:	"Unit"
+Temporary breakpoint 48 at 0x1005cd69
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cdcc key=0x667584:	"Unit"
+Temporary breakpoint 49 at 0x1005cdcc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005ce2f key=0x667584:	"Unit"
+Temporary breakpoint 50 at 0x1005ce2f
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10034751 key=0x6675f0:	"Unit"
+Temporary breakpoint 51 at 0x10034751
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x100348e5 key=0x6675f0:	"Unit"
+Temporary breakpoint 52 at 0x100348e5
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	"Unit"
+Temporary breakpoint 53 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	"Unit"
+Temporary breakpoint 54 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	"Unit"
+Temporary breakpoint 55 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	"Unit"
+Temporary breakpoint 56 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	"Unit"
+Temporary breakpoint 57 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	"Unit"
+Temporary breakpoint 58 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	"Unit"
+Temporary breakpoint 59 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	"Unit"
+Temporary breakpoint 60 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1003e906 key=0x6675f8:	"Unit"
+Temporary breakpoint 61 at 0x1003e906
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10033c9c key=0x6675f0:	"Unit"
+Temporary breakpoint 62 at 0x10033c9c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10033cbd key=0x6675f0:	"Unit"
+Temporary breakpoint 63 at 0x10033cbd
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10043b9c key=0x6675e0:	"Unit"
+Temporary breakpoint 64 at 0x10043b9c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10043d75 key=0x6675e0:	"Unit"
+Temporary breakpoint 65 at 0x10043d75
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10043d99 key=0x6675e0:	"Unit"
+Temporary breakpoint 66 at 0x10043d99
+LOOKUP_560a0_RETURN value=12
+LOOKUP_56150 caller=0x10059810 key=0x6675f8:	"Unit"
+Temporary breakpoint 67 at 0x10059810
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10059a16 key=0x6675f8:	"Unit"
+Temporary breakpoint 68 at 0x10059a16
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10059a37 key=0x6675f8:	"Unit"
+Temporary breakpoint 69 at 0x10059a37
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x1003353e key=0x66761c:	"Unit"
+Temporary breakpoint 70 at 0x1003353e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10033661 key=0x66761c:	"Unit"
+Temporary breakpoint 71 at 0x10033661
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	"4"
+Temporary breakpoint 72 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10034751 key=0x6675f0:	"and"
+Temporary breakpoint 73 at 0x10034751
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x100348e5 key=0x6675f0:	"and"
+Temporary breakpoint 74 at 0x100348e5
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	"4"
+Temporary breakpoint 75 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	"4"
+Temporary breakpoint 76 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	"4"
+Temporary breakpoint 77 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	"4"
+Temporary breakpoint 78 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	"and"
+Temporary breakpoint 79 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	"and"
+Temporary breakpoint 80 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	"and"
+Temporary breakpoint 81 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	"and"
+Temporary breakpoint 82 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	"4"
+Temporary breakpoint 83 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	"4"
+Temporary breakpoint 84 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	"4"
+Temporary breakpoint 85 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	"and"
+Temporary breakpoint 86 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	"and"
+Temporary breakpoint 87 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	"and"
+Temporary breakpoint 88 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	"4"
+Temporary breakpoint 89 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10057eb5 key=0x666fd8:	"and"
+Temporary breakpoint 90 at 0x10057eb5
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x1003e906 key=0x6675f8:	"and"
+Temporary breakpoint 91 at 0x1003e906
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10043d75 key=0x6675e0:	"and"
+Temporary breakpoint 92 at 0x10043d75
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10043d99 key=0x6675e0:	"and"
+Temporary breakpoint 93 at 0x10043d99
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10043dba key=0x6675e0:	"and"
+Temporary breakpoint 94 at 0x10043dba
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10043ddc key=0x6675e0:	"and"
+Temporary breakpoint 95 at 0x10043ddc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	"and"
+Temporary breakpoint 96 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cd69 key=0x667584:	"and"
+Temporary breakpoint 97 at 0x1005cd69
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cdcc key=0x667584:	"and"
+Temporary breakpoint 98 at 0x1005cdcc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005ce2f key=0x667584:	"and"
+Temporary breakpoint 99 at 0x1005ce2f
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10034751 key=0x6675f0:	"and"
+Temporary breakpoint 100 at 0x10034751
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x100348e5 key=0x6675f0:	"and"
+Temporary breakpoint 101 at 0x100348e5
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	"and"
+Temporary breakpoint 102 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	"and"
+Temporary breakpoint 103 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	"and"
+Temporary breakpoint 104 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	"and"
+Temporary breakpoint 105 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	"and"
+Temporary breakpoint 106 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	"and"
+Temporary breakpoint 107 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	"and"
+Temporary breakpoint 108 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	"and"
+Temporary breakpoint 109 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1003e906 key=0x6675f8:	"and"
+Temporary breakpoint 110 at 0x1003e906
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10033c9c key=0x6675f0:	"and"
+Temporary breakpoint 111 at 0x10033c9c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10033cbd key=0x6675f0:	"and"
+Temporary breakpoint 112 at 0x10033cbd
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10043d75 key=0x6675e0:	"and"
+Temporary breakpoint 113 at 0x10043d75
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10043d99 key=0x6675e0:	"and"
+Temporary breakpoint 114 at 0x10043d99
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10043dba key=0x6675e0:	"and"
+Temporary breakpoint 115 at 0x10043dba
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10043ddc key=0x6675e0:	"and"
+Temporary breakpoint 116 at 0x10043ddc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x1003353e key=0x66761c:	"and"
+Temporary breakpoint 117 at 0x1003353e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10033661 key=0x66761c:	"and"
+Temporary breakpoint 118 at 0x10033661
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x1005d62e key=0x6676a8:	"Apt"
+Temporary breakpoint 119 at 0x1005d62e
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cd69 key=0x667584:	"Apt"
+Temporary breakpoint 120 at 0x1005cd69
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005cdcc key=0x667584:	"Apt"
+Temporary breakpoint 121 at 0x1005cdcc
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x1005ce2f key=0x667584:	"Apt"
+Temporary breakpoint 122 at 0x1005ce2f
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10034751 key=0x6675f0:	"Apt"
+Temporary breakpoint 123 at 0x10034751
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x100348e5 key=0x6675f0:	"Apt"
+Temporary breakpoint 124 at 0x100348e5
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036e38 key=0x6675f8:	"Apt"
+Temporary breakpoint 125 at 0x10036e38
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10036e5b key=0x6675f8:	"Apt"
+Temporary breakpoint 126 at 0x10036e5b
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10036e7e key=0x6675f8:	"Apt"
+Temporary breakpoint 127 at 0x10036e7e
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10036f0c key=0x6675f8:	"Apt"
+Temporary breakpoint 128 at 0x10036f0c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x100586eb key=0x6675ec:	"Apt"
+Temporary breakpoint 129 at 0x100586eb
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10058730 key=0x6675ec:	"Apt"
+Temporary breakpoint 130 at 0x10058730
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1005879c key=0x6675ec:	"Apt"
+Temporary breakpoint 131 at 0x1005879c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10057ccc key=0x6676a8:	"Apt"
+Temporary breakpoint 132 at 0x10057ccc
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x1003e906 key=0x6675f8:	"Apt"
+Temporary breakpoint 133 at 0x1003e906
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10033c9c key=0x6675f0:	"Apt"
+Temporary breakpoint 134 at 0x10033c9c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_560a0 caller=0x10033cbd key=0x6675f0:	"Apt"
+Temporary breakpoint 135 at 0x10033cbd
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_56150 caller=0x10043b9c key=0x6675e0:	"Apt"
+Temporary breakpoint 136 at 0x10043b9c
+LOOKUP_56150_RETURN value=-1
+LOOKUP_56150 caller=0x10043d75 key=0x6675e0:	"Apt"
+Temporary breakpoint 137 at 0x10043d75
+LOOKUP_56150_RETURN value=0
+LOOKUP_560a0 caller=0x10008569 key=0x16f057d:	"Unit"
+Temporary breakpoint 138 at 0x10008569
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x10008569 key=0x16f05ed:	"four"
+Temporary breakpoint 139 at 0x10008569
+LOOKUP_560a0_RETURN value=14
+LOOKUP_560a0 caller=0x10008569 key=0x16f065d:	"and"
+Temporary breakpoint 140 at 0x10008569
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x10008569 key=0x16f06cd:	"Apartment"
+Temporary breakpoint 141 at 0x10008569
+LOOKUP_560a0_RETURN value=-1
+LOOKUP_560a0 caller=0x10008569 key=0x16f073d:	"four"
+Temporary breakpoint 142 at 0x10008569
+LOOKUP_560a0_RETURN value=14
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0138:013c: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0138:013c: create thread I @004014C0
+0138:013c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0138:013c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0138:013c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0138:013c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0138:013c: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0138:013c: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0138:013c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0138:013c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0138:013c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0138:013c: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0138:013c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0138:013c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0138:013c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0138:013c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0138:013c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0138:013c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0138:013c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0138:013c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0138:013c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0138:013c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0138:013c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0138:013c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0138:013c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0138:013c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000138:0000013c: exit process (0)
