@@ -40,17 +40,17 @@ rules](../../AGENTS.md).
 | Done | Baseline static map | API/load/output path, `tree3` reader shape, four versioned Paul `.idx` layouts, `.dat` predictor outline, and `.upm` processing path. See [current findings](voice-engine-and-model-formats.md). | Complete |
 | Done | 1. Map unit records to payload spans | The read-only inspector finds contiguous DAT and UPM spans through EOF in all four banks. Runtime reads confirm DAT fields and both single-side and combined UPM lengths; see [Stage 1 findings](voice-engine-and-model-formats.md#stage-1-unit-to-payload-span-mapping). | Complete |
 | Done | 2. Recover `.dat` decoding | Standalone prototype models the four-block mean history and predictor modes. Runtime checkpoint B: 27 unique `gen` payloads match captured DLL PCM byte-for-byte across modes 0–3; 16 records across all four banks match UPM-derived sample counts. Mode 8 is statically mapped but absent from the captured run. See [Stage 2 findings](voice-engine-and-model-formats.md#stage-2-dat-decoding). | Complete; full-corpus parity remains follow-up |
-| [ ] | 3. Validate decode and synthesis observations | Establish a controlled reference run using known text and WAV output. Trace selected unit reads and sample-buffer boundaries only where they answer open questions. Compare static call flow and decoder output with runtime observations; record mismatches and resolve them. | 1–4 days |
+| Done | 3. Validate decode and synthesis observations | Controlled known-text run produced a stable 16 kHz mono 16-bit PCM WAV. Two captured sample-buffer returns concatenate byte-for-byte to its full WAVE data chunk; Stage 2 decoder matches remain consistent for this input. See [Stage 3 findings](voice-engine-and-model-formats.md#stage-3-decode-to-wave-boundary-check). | Complete; broader synthesis coverage remains follow-up |
 | [ ] | 4. Explain `.upm` and remaining index fields | Correlate per-unit `.upm` vectors and unknown index columns with the interpolation and timing paths. **Runtime checkpoint C:** inspect selected records at the reader and reconstruction boundaries to establish value ranges and effects. | 1–3 days |
 | [ ] | 5. Validate `tree3` family | Check the parser against all 17 trees and identify each tree's inputs and output meaning from its callers. **Runtime checkpoint D:** trace representative lookups and compare selected leaves/values with runtime results. | 1–2 days |
 | [ ] | 6. Map text and pronunciation resources | Inspect `data-common/dict-eng` files, including `engbi.tree3`, `atmt.tree3`, hash tables, and `txt2`; follow normalization, pronunciation lookup, and number handling. **Runtime checkpoint E:** compare a small set of controlled text inputs with the generated phone/context records and output. | 2–5 days |
 | [ ] | 7. Recover candidate selection and scoring | Connect the five-byte class keys, feature views, `cepdist.tbl`, and scorer to candidate ranking and duration/prosody choices. **Runtime checkpoint F:** observe candidate inputs/ranks for selected contexts and reconcile them with the static scoring path. | 2–4 days |
 | [ ] | 8. Trace synthesis end to end | Follow selected units through timing, pitch or other transforms, joins/blending, sample assembly, and WAV writing. Use a short reproducible corpus and cross-check the whole path against original-engine execution. | 3–6 days |
 
-The remaining static and runtime investigation is estimated at about **10–24
-focused analyst-days**. Stages can overlap where their dependencies allow.
-Stages 1 and 2 are complete for the documented 2013 Paul package scope. The
-remaining estimates cover analysis and decoder prototypes, not
+The remaining static and runtime investigation is estimated at about
+**9–20 focused analyst-days**. Stages can overlap where their dependencies
+allow. Stages 1, 2, and 3 are complete for the documented 2013 Paul package
+scope. The remaining estimates cover analysis and decoder prototypes, not
 the later clean-room engine implementation, compatibility work, or rights
 review for voice assets.
 
