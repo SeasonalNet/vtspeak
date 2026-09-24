@@ -92,7 +92,7 @@ The primary `.dat` read path fetches a selected byte span from a bank, passes it
 
 The decoder's mode handlers reconstruct samples from those residuals using different predictors: one adds to an initial/reference value, another adds to the previous sample, another uses `2 * previous - previous_previous`, and another combines three preceding reconstructed values. Mode 8 initializes the predictor history to zero. This is predictive waveform coding; the independent Shorten identification is externally corroborated by the exact runtime comparison below. The current evidence does not support calling it ADPCM.
 
-The `.upm` reader is more concrete: `FUN_1002bbd0` reads a per-unit byte vector through offsets stored in the unit index, widens each byte to a 16-bit value, then shifts it left once. `FUN_1002bc60` converts adjacent vector values into cumulative segment records containing a start position, two endpoint values, and timing/unit parameters; a one-value vector takes a special single-segment path. `FUN_1002afb0` consumes those records while rebuilding the 16-bit sample stream through interpolation tables. This establishes `.upm` as per-unit waveform-adjustment data, while its contour's physical meaning and scale remain unknown. It is not the primary waveform; `.dat` supplies the waveform samples. The names “DAT” and “UPM” are extension labels only; no vendor format documentation was found in the inspected package.
+The `.upm` reader is more concrete: `FUN_1002bbd0` reads a per-unit byte vector through offsets stored in the unit index, widens each byte to a 16-bit value, then shifts it left once. `FUN_1002bc60` converts adjacent vector values into cumulative segment records containing a start position, two endpoint values, and timing/unit parameters. Runtime evidence in [Stage 4](#stage-4-upm-and-index-field-semantics) shows that these values define adjacent waveform segments and affect reconstructed sample counts under a non-default pitch setting. The raw byte values are consistent with 8 kHz pitch-period lengths, doubled onto the 16 kHz sample grid; that physical interpretation remains an inference, not vendor documentation. `.upm` supplies adjustment data, while `.dat` supplies the waveform samples. The names “DAT” and “UPM” are extension labels only; no vendor format documentation was found in the inspected package.
 
 ## Stage 1: unit-to-payload span mapping
 
@@ -109,13 +109,13 @@ The integer fields are little-endian:
 | Record offset | Width | Field | Evidence |
 | ---: | ---: | --- | --- |
 | 0 | 4 | `.dat` offset | Used by the DAT reader and confirmed by runtime seeks. |
-| 4 | 2 | Unnamed value | Retained without semantic assignment. |
-| 6 | 2 | Unnamed value | Retained without semantic assignment. |
+| 4 | 2 | First-side sample span | Little-endian value; cross-checked as twice the sum of the first-side UPM bytes, including the shared boundary period. |
+| 6 | 2 | Second-side sample span | Little-endian value; cross-checked as twice the sum of the second-side UPM bytes, including the shared boundary period. |
 | 8 | 2 | `.dat` span length | Used by the DAT reader; offset plus length reaches the next record or EOF. |
 | 10 | 4 | `.upm` offset | Base offset for the unit's combined UPM span. |
 | 14 | 1 | First UPM count | Used alone for the first side or in the combined span. |
 | 15 | 1 | Second UPM count | Used alone for the second side or in the combined span. |
-| 16 | 3 | Unnamed bytes | Retained without semantic assignment. |
+| 16 | 3 | Cached UPM edge periods | First, shared middle, and last values of the combined UPM vector. |
 
 `FUN_1002c120` chooses one of three UPM views. For the first side, it reads
 `first_count` bytes at the base offset. For the second side, it reads
@@ -238,9 +238,10 @@ The review also extends the index interpretation: record bytes 4 and 6 are
 first- and second-half sample lengths, bytes 16–18 cache first, shared middle,
 and last UPM periods, and UPM values are 8 kHz pitch-period lengths (doubled
 for the 16 kHz waveform). Wag's review reports those cached periods are used
-for cross-fade edge overlap. These additional semantics come from the
-independent review and remain to be checked against our own targeted runtime
-captures.
+for cross-fade edge overlap. Stage 4 independently checks the byte 4/6 and
+16–18 relationships across all local versioned Paul records and traces the
+UPM vector through reconstruction. We have not independently established the
+specific cross-fade role Wag assigns to the cached edge periods.
 
 Stage 2 is complete for the observed 2013 Paul format and tested decoder
 paths: 27 unique engine-decoded payloads match exact PCM values, and 16
@@ -293,10 +294,79 @@ cover other texts or synthesis settings, prove joins for every possible unit,
 or establish parity across the full voice corpus. Those remain separate
 roadmap work.
 
+## Stage 4: UPM and index field semantics
+
+**Stage 4 checkpoint C: complete for the 2013 M16 Paul versioned indexes and
+selected runtime units.** Static decompilation, a read-only scan of all four
+local indexes and UPM banks, and controlled Wine/GDB traces were compared.
+The results independently confirm the proposed meanings of record bytes 4,
+6, and 16–18. This is a structural field check, not full-corpus DAT sample
+parity.
+
+For all 580,474 local records, a one-off read-only scan found zero mismatches
+for each of these relationships:
+
+| Record field | Checked relationship | Result |
+| --- | --- | --- |
+| Bytes 4–5 | `2 * sum(UPM[0:left_count])` | All records matched |
+| Bytes 6–7 | `2 * sum(UPM[left_count - 1:])` | All records matched |
+| Byte 16 | First byte of the combined UPM vector | All records matched |
+| Byte 17 | Shared boundary byte at `left_count - 1` | All records matched |
+| Byte 18 | Last byte of the combined UPM vector | All records matched |
+
+The scan also found every combined UPM span within its bank. Raw UPM values
+range from 15 to 247, and a side contains at most 52 periods. These are
+observed properties of the local dataset; they do not establish validity
+bounds for other VoiceText versions or packages. The scan did not decode every
+DAT stream or compare every decoded PCM payload with the DLL.
+
+Two `gen` records were then followed through runtime boundaries. For record 0
+(unit 0; index record offset `0x2d`), the combined vector is
+`[54,53,54,53,61,57,65,66,73,62,56,53,52]`, with side counts 8 and 6.
+Its byte 4 field is 926, equal to twice the first-side sum; byte 6 is 724,
+equal to twice the second-side sum. Bytes 16–18 are `[54,66,52]`, matching
+the first, shared, and last vector values. The record's DAT decoder output
+contains 1,518 samples, equal to twice the combined UPM sum.
+
+For record 1 (unit 1; index record offset `0x40`), the vector is
+`[52,52,51,50,50,51,49,49,49,50]`, with side counts 5 and 6. Its two span
+fields are 510 and 596, and its cached bytes are `[52,50,50]`. The standalone
+DAT decoder produces 1,006 samples, again equal to twice the combined UPM sum.
+
+At runtime, `FUN_1001b0d0` copied the selected record's fields into its
+24-byte unit descriptor. `FUN_1002bbd0` read each selected UPM vector and
+returned the raw byte values widened and multiplied by two. With the default
+pitch sentinel (-1), `FUN_1002bd90` took a fast path and did not build segment
+records. In a controlled run changing only pitch to 120, `FUN_1002bc60`
+returned one segment per adjacent period pair: 12 records for unit 0's
+13-value vector and 9 for unit 1's 10-value vector. Their start positions
+were cumulative sums of the doubled vector values; each segment held the
+adjacent periods as its endpoints. `FUN_1002afb0` then advanced the output
+cursor by 1,474 samples for unit 0 and 917 for unit 1. For unit 0 under the
+default pitch sentinel, it advanced by 1,414 samples. This confirms that the
+segment/reconstruction path consumes the UPM-derived timing data and changes
+per-unit output length for the selected non-default setting. It does not
+establish the complete pitch algorithm, edge-overlap semantics, or how output
+durations are coordinated across an entire utterance.
+
+The ×2 conversion places UPM values on a 16 kHz sample grid in the traced
+configuration. Interpreting each raw value as an 8 kHz pitch-period length is
+consistent with that conversion and the interpolation path, but remains an
+inference. Exact timing parameter names and the roles of fields in the
+five-word segment records are not fully recovered. Supporting GDB logs,
+selected buffers, and the generated decompilation report are retained under
+the ignored `tools/revkit/work/stage4/` and `tools/revkit/work/reports/`
+directories.
+
+This stage covers only the 2013 M16 Paul package and the selected `gen`
+runtime units. It does not explain the remaining 21-byte feature columns,
+legacy index layouts, other VoiceText versions, or all-corpus decoded-sample
+parity. Those remain open.
+
 ## Limits of this pass
 
 - Analysis combines static decompilation with controlled Wine runtime traces; the DLL was not executed in a native Windows environment or under a source-level debugger.
 - The large model-loading, pronunciation, prosody, and synthesis helpers remain only partly explained.
-- The versioned `.idx` span layout is cross-checked. Wag's review proposes meanings for bytes 4–7 and 16–18, but we have not independently verified those field semantics; several feature columns and legacy `.idx` files still need investigation. Full-corpus PCM parity and `.upm` timing effects remain follow-ups. This is not a compatible engine replacement.
+- The versioned `.idx` span layout and the sample-span/cache relationships in bytes 4–7 and 16–18 are cross-checked for all local 2013 Paul records; selected UPM timing effects are observed at runtime. Several feature columns and legacy `.idx` files still need investigation, as does full-corpus PCM parity. This is not a compatible engine replacement.
 - The exact host-to-DLL argument semantics are not fully named; recovered prototypes still have `param_N` placeholders.
 - This pass did not inspect `verify/verification.txt` contents or attempt to bypass the license check.
