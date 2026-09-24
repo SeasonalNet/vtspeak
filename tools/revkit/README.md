@@ -86,6 +86,17 @@ python3 tools/revkit/scripts/tree3.py \
 The evaluator is an analysis aid for the observed 2013 package. It does not
 assign phonetic names or physical units to feature slots or output values.
 
+## Reproduce the local DAT corpus comparison
+
+The PE32 decoder probe is built in a separate MinGW image, then run in the
+existing isolated Wine container. It uses the unchanged public load and
+synthesis path before invoking the DLL decoder on local indexed payloads.
+From the repository root, follow the commands in the
+[corpus parity report](../../docs/reverse-engineering/dat-corpus-parity-and-stage9-2026-09-24.md).
+The compact DLL result remains local under ignored `work/corpus-parity/`;
+the probe source, comparison script, input hashes, and curated result are
+tracked.
+
 ## Inspect shared English dictionary resources
 
 The read-only inspector validates the three standalone shared `tree3` files,
@@ -111,6 +122,24 @@ python3 tools/revkit/scripts/inspect_tpp_dictionary.py
 Use `--show-rows` to include all 31,550 decoded key/payload pairs in the JSON
 report. The script validates structural codes but does not assign
 pronunciation or linguistic labels to every TPP code.
+
+To scan the existing Ghidra project for direct scalar references to selected
+token-result offsets, use the tracked `FindScalarReferences.java` script from
+the repository's `tools/revkit` directory:
+
+```sh
+docker compose run --rm \
+  --entrypoint /opt/ghidra/support/analyzeHeadless revtools \
+  /work/projects VoiceText -process vt_pau.dll -noanalysis \
+  -scriptPath /work/scripts \
+  -postScript FindScalarReferences.java 0x17c 0x54b 0x554
+```
+
+For the current project, the scan reports four `0x554` stride instructions in
+`FUN_1000cf00`, one in `FUN_1000ea20`, and one `0x17c` stack-frame allocation
+in `FUN_10050b90`. It reports no `0x54b` instruction. Interpret these as
+direct scalar-reference findings, then inspect the decompiled containing
+functions to determine the actual field accesses.
 
 Compare captured GDB scalar/vector tree returns against those shared resources
 and the Paul voice trees with:

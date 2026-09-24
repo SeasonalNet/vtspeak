@@ -18,7 +18,7 @@ In short, the host's “give it text, get a WAV” behavior is a thin API call i
 
 ## What this says about a native POSIX port
 
-Stages 1–8 now map the principal text, model lookup, candidate-selection, synthesis, and WAVE-output paths for the local 2013 M16 Paul package. The evidence supports an implementation feasibility decision, but it is not a compatible replacement or a complete semantic specification: packed feature labels, selected linguistic meanings, full-corpus parity, and other package variants remain open. The PE32 DLL also depends on Windows APIs and 32-bit calling/data conventions, so it cannot simply be loaded as a native ELF shared library. A native implementation would need either a compatibility layer around those boundaries or a source reimplementation of the engine logic.
+Stages 1–8 map the principal text, model lookup, candidate-selection, synthesis, and WAVE-output paths for the local 2013 M16 Paul package. A later local comparison matched all 580,474 DAT decoder outputs by PCM byte count and SHA-256, and Stage 9 added two sample-buffer-to-WAVE checks. The evidence supports an implementation feasibility decision, but it is not a compatible replacement or a complete semantic specification: packed feature labels, selected linguistic meanings, whole-synthesis corpus parity, and other package variants remain open. The PE32 DLL also depends on Windows APIs and 32-bit calling/data conventions, so it cannot simply be loaded as a native ELF shared library. A native implementation would need either a compatibility layer around those boundaries or a source reimplementation of the engine logic.
 
 Voice/model assets are separate from the engine and were not modified. No conclusion about redistribution or reuse rights is implied by this technical analysis.
 
@@ -29,6 +29,19 @@ The binary contains path templates for `data-%s/`, `dat/`, `mc_idx_tbl/`, `ttsda
 The sample package has a four-row `dblist.idx` (`gen`, `num`, `etc`, `alp`). The corresponding `mc_idx_tbl/unit-*.idx` files describe the merged unit banks. The loader reads their headers and records to build in-memory descriptors and offset tables, then opens `dat/merged-*.dat` and `dat/merged-*.upm` for each bank. The `.dat` files are used as the primary unit payload: `FUN_1002c8b0` reads a selected record span, passes it through the engine's byte-stream decoder, produces 16-bit samples, and applies an amplitude scale. The `.upm` stream is read through a parallel handle table by the unit-processing code as auxiliary per-unit data. The 2013 versioned index spans and DAT decode path are mapped in later sections; remaining field-semantic work concerns packed model features, less-studied legacy layouts, and broader parity.
 
 The shipped API header, `include/vt_eng.h`, provides the original call-level names that Ghidra could not infer: `VT_LOADTTS_ENG(HWND, nSpeakerID, db_path, licensefile)` and `VT_TextToFile_ENG(fmt, tts_text, filename, nSpeakerID, pitch, speed, volume, pause, dictidx, texttype)`. It explicitly defines format `4` as `VT_FILE_API_FMT_S16PCM_WAVE`. Its loader error constants also align with the observed staged loader returns: prosody/tree load `8`, unit-index load `7`, table load `6`, `.dat` load `9`, and `.upm` load `10`.
+
+The same header names the full public buffer call as
+`VT_TextToBuffer_ENG(fmt, tts_text, output_buff, output_len, flag, nThreadID,
+nSpeakerID, pitch, speed, volume, pause, dictidx, texttype)`, the playback
+call, dictionary load/unload calls, and the configuration/info calls. It
+defines text formats `0`, `4`, `6`, and `8`; file formats `0`–`5` and `7`–`9`
+(IMA WAVE `6` is marked unsupported); and the four buffer formats. The
+header's synopsis gives the supported `VT_GetTTSInfo_ENG` request IDs and
+value types. Thus the public signatures and argument names do not remain
+`param_N` placeholders. Not every combination's runtime validation, buffer
+lifecycle, thread behavior, or exact error path has been exercised, so this is
+the published interface surface rather than a complete behavioral
+compatibility contract.
 
 The synthesis path uses context-dependent unit selection with concatenative waveform assembly, rather than a thin call to an operating-system TTS service. Text processing creates phone/context records; decision-tree lookups supply duration and pitch-related values; candidate search scores model units using surrounding phone features; selected unit identifiers and durations are passed to the audio path. The audio path retrieves unit payloads, transforms and joins neighboring blocks, and writes samples. Stages 5–8 map and cross-check these operations; the meanings of several categorical fields and complete coverage of every join/context case remain open.
 
@@ -225,21 +238,26 @@ modes.** In one isolated Wine/GDB run, a breakpoint at `FUN_10001b30`
 to 27 unique `gen` payloads in the controlled `Hello from the VoiceText Stage
 1 runtime check.` synthesis. All 32 captured PCM buffers match the standalone
 decoder byte-for-byte. The set exercises predictor modes 0, 1, 2, and 3,
-including repeated mode-0 frames with a four-block mean history. Mode 8 did
-not occur in this corpus. The raw captures and `capture-many.gdb` are tracked
-under `tools/revkit/work/stage2-copy/`.
+including repeated mode-0 frames with a four-block mean history. A complete
+scan of all local DAT streams found no mode-8 frames; see the [open-topics
+review](open-topics-review-2026-09-24.md) and the reproducible
+`tools/revkit/scripts/inventory_dat_modes.py` check. The raw captures and
+`capture-many.gdb` are tracked under `tools/revkit/work/stage2-copy/`.
 
 As a separate structural check, the decoder was run on the first, second,
 middle, and last unit in each of `gen`, `num`, `etc`, and `alp`. All 16 decoded
 sample counts equal twice the sum of the corresponding combined UPM period
 vector, using the shared-boundary formula `first_count + second_count - 1`.
 This checks stream termination and decoded lengths across banks, but does not
-establish sample-value parity for those 15 other units.
+establish sample-value parity for those 15 other units. The full local scan
+later parsed all 580,474 records and confirmed every decoded sample count
+against its combined UPM span; it found zero mode-8 frames.
 
 Wag's peer review independently identifies the headerless mono Shorten
 profile as block size 256, `nmean=4`, and no QLPC. Its report of exact PCM for
-all 580,474 payloads remains external corroboration; we have not rerun the
-full-corpus check in this repository.
+all 580,474 payloads was external corroboration at this stage. A later local
+DLL-to-Python comparison matched every payload by byte count and SHA-256; see
+the [corpus parity report](dat-corpus-parity-and-stage9-2026-09-24.md).
 The review also extends the index interpretation: record bytes 4 and 6 are
 first- and second-half sample lengths, bytes 16–18 cache first, shared middle,
 and last UPM periods, and UPM values are 8 kHz pitch-period lengths (doubled
@@ -250,9 +268,11 @@ UPM vector through reconstruction. We have not independently established the
 specific cross-fade role Wag assigns to the cached edge periods.
 
 Stage 2 is complete for the observed 2013 Paul format and tested decoder
-paths: 27 unique engine-decoded payloads match exact PCM values, and 16
-cross-bank records match expected output lengths. This does not establish
-full-corpus parity, runtime coverage of mode 8, support for other VoiceText
+paths: 27 unique engine-decoded payloads match exact PCM values, and the full
+local corpus parses with all decoded sample counts matching UPM-derived
+lengths. A later normal-load DLL probe matched the independent decoder's PCM
+byte count and SHA-256 for every local payload. No local record uses mode 8.
+This does not establish mode-8 runtime behavior, support for other VoiceText
 package versions, or whole-synthesis parity for other inputs and settings,
 including prosody changes.
 
@@ -511,9 +531,14 @@ have different consumers and different grammars:
   special case with unknown semantics. `F` entries are hyphenated lexical
   compounds; `G` entries are the general lexical set. Some place-name keys
   also carry a second `G` code, as in `ACCORD → A0 G95`. These category
-  associations are corroborated by decoded key contents and caller behavior;
-  the meaning of each binary component flag and the numeric `F`/`G` suffixes
-  remains unnamed (both numeric suffix families span 1–124). The corpus has
+  associations are corroborated by decoded key contents and caller behavior.
+  In the multi-token consumer, `FUN_10064645` calls `FUN_100645ba`, which
+  parses an optional sign and decimal digits; `FUN_1000e0c0` narrows that
+  result to one byte and writes it to token field `+0x25`. This identifies
+  the `F`/`G` numeric suffix operation and destination, not the linguistic
+  name or full downstream meaning of each numeric class. Both suffix families
+  span 1–124. The meaning of each binary component flag also remains unnamed.
+  The corpus has
   7,924 `A`, 3,980 `B`, 303 `C`, 19 `D`,
   and 2 `E` place-name records; its 829 `F` compounds have 1–4 hyphens
   (746, 78, 4, and 1 records respectively). The two-atom records contain
@@ -567,8 +592,10 @@ the pair table at `0x10081568` exposes readable keys: group 1 includes
 `de-facto`, and `san-francisco`; group 3 includes `a-la-mode`,
 `c'est-la-vie`, and `coup-de-theatre`; group 4 contains
 `je-ne-sais-quoi`. Values are compact pronunciation-code strings passed to
-the phone-row writer, not replacement words. Their byte schema is known,
-but the individual codes still lack phonetic labels. Nine `.txt2` files are read by
+the phone-row writer, not replacement words. Their byte schema is known;
+ordinary phone bytes `0x01`–`0x45` now have runtime-backed CMU labels in the
+[phone codebook](phone-symbol-codebook.md), while control-byte interpretation
+remains separate. Nine `.txt2` files are read by
 `FUN_100033e0` and its
 callers: `wab`, `chc_sort`, `streeta_sort`, `streetf_sort`, `citya_sort`,
 `abbrh_sort`, `abbrt_sort`, `abbrc_sort`, and `sbdw_sort`. The single-column
@@ -665,15 +692,16 @@ through the same table into that alternative's fixed-width text slot. The
 parser's local buffers bound this to five alternatives. Bits 2–7 independently
 set the result type and four Boolean metadata words listed above. This
 recovers the full byte grammar and field widths; the compact symbol codebook
-has exact numeric values but its phonetic labels remain unidentified.
+now has runtime-backed CMU labels for bytes `0x01`–`0x45`.
 
 Dictionary path bytes that act as symbol IDs are expanded through five-byte
 slots in the runtime table initialized by `FUN_1000ebc0` at `0x100fe900`.
 The parser appends each slot's NUL-terminated compact-symbol sequence to its
 65-byte alternative buffer. The complete 256-slot ID-to-byte mapping is
 listed in the [compact phone-symbol table](phone-symbol-codebook.md); 254
-slots have assigned output bytes. The compact symbols still lack phonetic
-labels.
+slots have assigned output bytes. Controlled VTML input identifies all
+ordinary phone bytes `0x01`–`0x45` with CMU labels. Special control bytes
+retain their structural roles.
 
 `FUN_1000d450` writes a token-result record at a `0x554`-byte stride. Offsets
 below are relative to its first argument:
@@ -693,11 +721,17 @@ The control-marker area before the pronunciation slots is 20 bytes wide. The
 `FUN_1000d450`. The builder has one caller, `FUN_1000d190`; the next converter
 `FUN_1000ea20` reads the count, source index, status, surface,
 first/selected-pronunciation slot, marker, and four trailing metadata words.
-The context-rule pipeline then uses the converted `0x70`-byte rows. No field
-reader or writer for this gap was found in the builder-to-context call path.
-It is therefore documented as an unreferenced stride region in this path,
-not as a field or vendor-declared padding. The gap's purpose outside this
-path is unknown.
+The context-rule pipeline then uses the converted `0x70`-byte rows. A whole-
+DLL instruction scan for scalar constants `0x17c`, `0x54b`, and `0x554` found
+no `0x54b` reference and no `0x17c` reference used as a token offset; the
+single `0x17c` occurrence is a stack-frame allocation. The `0x554` stride
+references occur in `FUN_1000cf00` and `FUN_1000ea20`, the string-search and
+record-conversion functions. `FUN_1000cf00` forms addresses at stride-relative
+offset `+0x05` and compares NUL-terminated strings; it does not inspect the
+gap. No direct static reader or writer for the gap was found anywhere in this
+DLL. This closes the direct code-reference question for the analyzed binary;
+it cannot rule out an indirect access through an opaque pointer or code in
+another DLL. The gap is not a field or vendor-declared padding.
 
 `FUN_1000d190` reads token pieces from upstream `0x94`-byte records: source
 surface at `+0x34`, context form at `+0x52`, and a character/class byte at
@@ -796,10 +830,13 @@ pattern without another boundary probe.
 
 Runtime abbreviation examples show the context rules are material: `Dr. Paul`
 and `Dr Paul` both yield `doctor`; `dr` can yield `Drive` in an address
-context. `St. Paul` yields `Saint`, while `Main St.`
-yields `Street`; `Apt. 4` yields `Apartment`, while `Apt 4` remains `Apt`;
+context. `St. Paul` yields `Saint`, while `Main St.` yields `Street`;
 `5 p.m.` and `5 pm.` yield `five PM`; `Mr.` yields `mister`, while the
-unabbreviated `Mister` stays `Mister`.
+unabbreviated `Mister` stays `Mister`. In the earlier combined sentence,
+`Apt. 4 and Apt 4` yielded `Apartment` then `Apt`. Later isolated contrasts
+show that both `Apt 4` and `Apt. 4` expand to `Apartment`; the unexpanded
+second occurrence is associated with the repeated expression, not simply the
+missing period. See the [Stage 10 contrasts](abbreviation-context-contrasts-2026-09-24.md).
 
 The exact expansion mechanism recovered from the tables and call chain is:
 
@@ -877,23 +914,44 @@ remain in the tracked
 `tools/revkit/work/stage5/probes/stage6/` directory. Run the parsers and
 comparator using the commands in [the revkit README](../../tools/revkit/README.md).
 
-### Stage 6 residual semantic questions
+### Stage 6 findings closed for the analyzed package
 
-- Identify the compact pronunciation-byte names, four dictionary metadata
-  words, and context-rule flag meanings. The full numeric phone-ID table is in
-  [phone-symbol-codebook.md](phone-symbol-codebook.md).
-- Check for readers of token-result stride bytes `0x17c`–`0x54b` outside the
-  traced builder-to-context path; none were found in that path.
-- Assign linguistic names to TPP code atoms `A`–`G` and explain the `AX`
-  marker using additional caller/data evidence; the complete observed raw
-  payload grammar and consumer paths are now documented above.
-- Extend runtime abbreviation probes beyond representative cases if a
-  per-key/context output matrix is needed. The complete H/T/C key inventory
-  and matching rules are documented in
-  [abbreviation-table-inventory.md](abbreviation-table-inventory.md); the
-  tables themselves do not encode spoken replacements.
-- Label the remaining shared-tree features and outputs; runtime equality
-  currently verifies numeric tree evaluation only.
+The remaining direct-reference check for the token-result stride is complete:
+the whole-DLL scalar scan and decompilation of the functions containing
+direct `0x554` stride references found no direct access to `0x17c`–`0x54b`.
+The region is unused by direct
+references in this DLL, with the indirect-pointer and other-module limits
+stated above.
+
+The four copied dictionary metadata values are characterized as Boolean
+payload fields from bits 6, 4, 5, and 7 of the source record. The controlled
+Stage 10 capture covers 227 output rows and ten tuples; isolated part-of-
+speech contrasts keep the tuple constant. Neither the dictionary nor DLL
+supplies semantic names for these bits. Context-rule status and phone-code
+bytes are mapped at their field and operation boundaries, but a global
+linguistic enum is not established.
+
+For TPP, `A`–`E` return place-name component counts and component bits;
+`F`/`G` parse signed decimal suffixes and narrow them into token byte `+0x25`;
+`H`/`T`/`C` select abbreviation inventories. The typed grammar, inventory
+membership, and observed effects are documented. The numeric class names,
+`AX` role, and meanings of the `A`–`E` component bits are not present in the
+local corpus or exposed by a distinct runtime effect in the captured
+contrasts, so no further linguistic names can be assigned from this evidence.
+
+The H/T/C key inventories each have a runtime result in one controlled
+context, and the targeted Stage 10 contrasts cover tested name, address,
+company, date, measurement, and repetition cases. These runs close inventory
+and selected behavior questions; they do not define every possible
+per-key/per-context pronunciation. The table resources contain key membership
+and case rules, not replacement words.
+
+The remaining tree and model values are documented as numeric selectors,
+field widths, transforms, and branch predicates, with runtime comparisons.
+Controlled CMU probes identify the base-phone ordinal and selected onset
+groups. The package contains no schema tying all remaining selectors or
+categorical values to phonetic names. Their operational behavior is
+characterized; their acoustic/linguistic names cannot be inferred safely.
 
 ## Stage 7: candidate selection and scoring (complete)
 
@@ -1308,13 +1366,23 @@ its one 12,776-byte PCM block equals its complete WAVE data chunk.
 Stage 8 maps the selected-unit synthesis path, the exact UPM-to-output frame
 conversion, the endian-aware row-copy helper, and the context gate's byte-level
 conditions. Runtime coverage remains bounded to the listed inputs, controls,
-and eligible/null context outcomes; this is not full-corpus parity or a runtime
+and eligible/null context outcomes; this is not whole-synthesis corpus parity or a runtime
 example of every flag combination. Linguistic labels for packed model
 categories are not established by these operations. The feasibility result
 rests on recovered field widths, offsets, branch predicates, transforms, and
 byte-for-byte output comparisons rather than those labels.
 The run scripts, GDB traces, PCM blocks, logs, and WAVs are tracked under
 `tools/revkit/work/stage8/`. No vendor inputs were modified.
+
+## Stage 9: extended text categories
+
+The later [Stage 9 report](dat-corpus-parity-and-stage9-2026-09-24.md#additional-synthesis-boundary-checks)
+repeats the sample-buffer-to-WAVE boundary check for the existing Stage 6
+number and abbreviation inputs. Two and three timeline calls respectively
+produced four and five PCM blocks. All returned PCM bytes concatenate exactly
+to their WAVE data chunks, and both WAVE files match the earlier Stage 6
+references byte-for-byte. Coverage remains bounded to those inputs and
+settings.
 
 ## Limits of this pass
 
@@ -1333,6 +1401,6 @@ The run scripts, GDB traces, PCM blocks, logs, and WAVs are tracked under
   output-frame counts exactly; a pitch-period label is only the usual numeric
   interpretation. Every context-gate predicate is mapped from the decompile,
   although not every packed-flag combination has a runtime example.
-- The versioned `.idx` span layout and the sample-span/cache relationships in bytes 4–7 and 16–18 are cross-checked for all local 2013 Paul records; selected UPM timing effects are observed at runtime. The 17 Paul duration/pitch trees pass structural parsing and runtime output comparisons. Several feature columns and legacy `.idx` files still need investigation, as does full-corpus PCM parity. This is not a compatible engine replacement.
-- The exact host-to-DLL argument semantics are not fully named; recovered prototypes still have `param_N` placeholders.
+- The versioned `.idx` span layout and the sample-span/cache relationships in bytes 4–7 and 16–18 are cross-checked for all local 2013 Paul records; selected UPM timing effects are observed at runtime. The 17 Paul duration/pitch trees pass structural parsing and runtime output comparisons. Several feature columns and legacy `.idx` files still need investigation. Local DAT decoder corpus values match by byte count and SHA-256; whole-synthesis corpus parity is open. This is not a compatible engine replacement.
+- Public exported call signatures and argument names are supplied by `include/vt_eng.h`; complete runtime behavior for all format selectors, buffer/thread modes, and error paths has not been validated.
 - This pass did not inspect `verify/verification.txt` contents or attempt to bypass the license check.

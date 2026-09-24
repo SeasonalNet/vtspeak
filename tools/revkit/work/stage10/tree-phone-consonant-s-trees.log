@@ -1,0 +1,77 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10001670
+Wine-gdb> >>>>>>>> > > > >>>Wine-gdb> Breakpoint 2 at 0x100016a0
+Wine-gdb> >>>>>>>>> > > > > >>>Wine-gdb> Continuing.
+TREE_SCALAR tree=0x14bf450 return=0x100134e1 features:
+0x6676ec:	29	40	3	0	1	1	1	1
+0x6676fc:	1	0	2468	686	112	686	1740	686
+Temporary breakpoint 3 at 0x100134e1
+TREE_SCALAR_VALUE value=2336
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	29	40	0	1	1	1	1
+0x6676fc:	2	0	2468	686	112	686	1742	686
+Temporary breakpoint 4 at 0x1001344e
+TREE_SCALAR_VALUE value=1551
+TREE_SCALAR tree=0x14bf4f8 return=0x10013984 features:
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	1	1	1	686	112	686	0	0
+Temporary breakpoint 5 at 0x10013984
+TREE_SCALAR_VALUE value=2
+TREE_VECTOR tree=0x14bf568 return=0x100139b6 features:
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	1	1	1	2	112	686	0	0
+Temporary breakpoint 6 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7dc0:	112	116	122	130	139	150	161	172
+0x2af7dd0:	182	191	188	181
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 02c4:02c8: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+02c4:02c8: create thread I @004014C0
+02c4:02c8: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+02c4:02c8: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+02c4:02c8: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+02c4:02c8: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+02c4:02c8: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+02c4:02c8: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+02c4:02c8: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+02c4:02c8: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+02c4:02c8: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+02c4:02c8: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+02c4:02c8: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+02c4:02c8: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+02c4:02c8: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+02c4:02c8: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+02c4:02c8: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+02c4:02c8: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+02c4:02c8: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+02c4:02c8: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+02c4:02c8: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+02c4:02c8: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+02c4:02c8: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+02c4:02c8: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+02c4:02c8: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+000002c4:000002c8: unload DLL @009C0000
+02c4:02c8: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+000002c4:000002c8: unload DLL @009C0000
+02c4:02c8: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+02c4:02c8: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+02c4:02c8: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+000002c4:000002c8: exit process (0)

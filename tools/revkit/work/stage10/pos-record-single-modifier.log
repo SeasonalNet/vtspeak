@@ -1,0 +1,82 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10007520
+Wine-gdb> >>>>>>>> > > > > > > > > > > >>> > > > >  >  >  >  >  >  >  >  >  > > >>>Wine-gdb> Continuing.
+CONTEXT_ENTRY count=2 rows=0x16f0572 upstream=0x14e14cc
+UPSTREAM row=0 source=0 type=0x41 class=0x44 status=0xe surface=
+0x14e1500:	"record"
+UPSTREAM_CONTEXT row=0 value=0x14e151e:	""
+UPSTREAM_CONTEXT_BYTES row=0 bytes:
+0x14e151e:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x14e1526:	0x00	0x00	0x00	0x00
+UPSTREAM row=1 source=0 type=0x41 class=0x44 status=0xe surface=
+0x14e1500:	"record"
+UPSTREAM_CONTEXT row=1 value=0x14e151e:	""
+UPSTREAM_CONTEXT_BYTES row=1 bytes:
+0x14e151e:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x14e1526:	0x00	0x00	0x00	0x00
+Temporary breakpoint 2 at 0x1000e365
+CONTEXT_RETURN count=2
+ROW index=0 flags=0x1 source=0 class=0 marker=0x30 surface=
+0x16f057d:	"record"
+ROW_CODE index=0 bytes:
+0x16f059b:	0x36	0x18	0x2a	0x1a	0x15	0x00	0x00	0x00
+0x16f05a3:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x16f05ab:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+ROW_META index=0 words:0x16f05de:	0	1	0	0
+ROW index=1 flags=0 source=0 class=0x45 marker=0x30 surface=0x16f05ed:	"."
+ROW_CODE index=1 bytes:
+0x16f060b:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x16f0613:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x16f061b:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+ROW_META index=1 words:0x16f064e:	0	0	0	0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0138:013c: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0138:013c: create thread I @004014C0
+0138:013c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0138:013c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0138:013c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0138:013c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0138:013c: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0138:013c: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0138:013c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0138:013c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0138:013c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0138:013c: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0138:013c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0138:013c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0138:013c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0138:013c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0138:013c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0138:013c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0138:013c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0138:013c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0138:013c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0138:013c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0138:013c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0138:013c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0138:013c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0138:013c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000138:0000013c: exit process (0)

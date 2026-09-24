@@ -1,0 +1,11 @@
+FROM ubuntu:24.04
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        gcc-mingw-w64-i686 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /src
+CMD ["/bin/bash"]

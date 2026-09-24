@@ -1,0 +1,266 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10001670
+Wine-gdb> >>>>>>>> > > > >>>Wine-gdb> Breakpoint 2 at 0x100016a0
+Wine-gdb> >>>>>>>>> > > > > >>>Wine-gdb> Continuing.
+TREE_SCALAR tree=0x1470220 return=0x10013086 features:
+0x6676bc:	7	1	8	7	1	8	1	1
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 3 at 0x10013086
+TREE_SCALAR_VALUE value=30
+TREE_SCALAR tree=0x1470220 return=0x10013086 features:
+0x6676bc:	6	2	8	6	2	8	2	2
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 4 at 0x10013086
+TREE_SCALAR_VALUE value=170
+TREE_SCALAR tree=0x1470220 return=0x10013086 features:
+0x6676bc:	5	3	8	5	3	8	3	3
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 5 at 0x10013086
+TREE_SCALAR_VALUE value=247
+TREE_SCALAR tree=0x1470220 return=0x10013086 features:
+0x6676bc:	4	4	8	4	4	8	4	4
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 6 at 0x10013086
+TREE_SCALAR_VALUE value=247
+TREE_SCALAR tree=0x1470220 return=0x10013086 features:
+0x6676bc:	3	5	8	3	5	8	5	5
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 7 at 0x10013086
+TREE_SCALAR_VALUE value=247
+TREE_SCALAR tree=0x1470220 return=0x10013086 features:
+0x6676bc:	2	6	8	2	6	8	6	6
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 8 at 0x10013086
+TREE_SCALAR_VALUE value=201
+TREE_SCALAR tree=0x1470220 return=0x10013086 features:
+0x6676bc:	1	7	8	1	7	8	7	7
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 9 at 0x10013086
+TREE_SCALAR_VALUE value=79
+TREE_SCALAR tree=0x14bf450 return=0x100134e1 features:
+0x6676ec:	16	40	3	0	1	1	1	1
+0x6676fc:	1	0	2468	686	112	686	1740	686
+Temporary breakpoint 10 at 0x100134e1
+TREE_SCALAR_VALUE value=1051
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	16	42	0	1	1	1	1
+0x6676fc:	2	0	2468	686	112	686	1742	686
+Temporary breakpoint 11 at 0x1001344e
+TREE_SCALAR_VALUE value=1470
+TREE_SCALAR tree=0x14bf488 return=0x1001350b features:
+0x6676ec:	22	42	3	0	1	1	2	1
+0x6676fc:	1	0	3428	686	112	686	2700	686
+Temporary breakpoint 12 at 0x1001350b
+TREE_SCALAR_VALUE value=1604
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	22	42	0	1	1	2	1
+0x6676fc:	2	0	3428	686	112	686	2702	686
+Temporary breakpoint 13 at 0x1001344e
+TREE_SCALAR_VALUE value=1019
+TREE_SCALAR tree=0x14bf488 return=0x1001350b features:
+0x6676ec:	23	42	3	0	1	1	2	1
+0x6676fc:	1	0	4388	686	112	686	3660	686
+Temporary breakpoint 14 at 0x1001350b
+TREE_SCALAR_VALUE value=1699
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	23	42	0	1	1	2	1
+0x6676fc:	2	0	4388	686	112	686	3662	686
+Temporary breakpoint 15 at 0x1001344e
+TREE_SCALAR_VALUE value=1470
+TREE_SCALAR tree=0x14bf488 return=0x1001350b features:
+0x6676ec:	24	42	3	0	1	1	2	1
+0x6676fc:	1	0	5348	686	112	686	4620	686
+Temporary breakpoint 16 at 0x1001350b
+TREE_SCALAR_VALUE value=1604
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	24	42	0	1	1	2	1
+0x6676fc:	2	0	5348	686	112	686	4622	686
+Temporary breakpoint 17 at 0x1001344e
+TREE_SCALAR_VALUE value=1491
+TREE_SCALAR tree=0x14bf488 return=0x1001350b features:
+0x6676ec:	21	42	3	0	1	1	2	1
+0x6676fc:	1	0	6308	686	112	686	5580	686
+Temporary breakpoint 18 at 0x1001350b
+TREE_SCALAR_VALUE value=1604
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	21	42	0	1	1	2	1
+0x6676fc:	2	0	6308	686	112	686	5582	686
+Temporary breakpoint 19 at 0x1001344e
+TREE_SCALAR_VALUE value=719
+TREE_SCALAR tree=0x14bf4a4 return=0x10013520 features:
+0x6676ec:	28	42	3	0	1	1	2	1
+0x6676fc:	1	0	7268	686	112	686	6540	686
+Temporary breakpoint 20 at 0x10013520
+TREE_SCALAR_VALUE value=1523
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	28	42	0	1	1	2	1
+0x6676fc:	2	0	7268	686	112	686	6542	686
+Temporary breakpoint 21 at 0x1001344e
+TREE_SCALAR_VALUE value=890
+TREE_SCALAR tree=0x14bf4a4 return=0x10013520 features:
+0x6676ec:	36	42	3	0	1	1	2	1
+0x6676fc:	1	0	8228	686	112	686	7500	686
+Temporary breakpoint 22 at 0x10013520
+TREE_SCALAR_VALUE value=1523
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	36	42	0	1	1	2	1
+0x6676fc:	2	0	8228	686	112	686	7502	686
+Temporary breakpoint 23 at 0x1001344e
+TREE_SCALAR_VALUE value=890
+TREE_SCALAR tree=0x14bf4a4 return=0x10013520 features:
+0x6676ec:	37	42	3	0	1	1	3	1
+0x6676fc:	1	0	9188	686	112	686	8460	686
+Temporary breakpoint 24 at 0x10013520
+TREE_SCALAR_VALUE value=1570
+TREE_SCALAR tree=0x14bf3c4 return=0x1001344e features:
+0x6676ec:	3	37	40	0	1	1	3	1
+0x6676fc:	2	0	9188	686	112	686	8462	686
+Temporary breakpoint 25 at 0x1001344e
+TREE_SCALAR_VALUE value=2073
+TREE_SCALAR tree=0x14bf4c0 return=0x10013984 features:
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	1	1	1	686	112	686	0	0
+Temporary breakpoint 26 at 0x10013984
+TREE_SCALAR_VALUE value=0
+TREE_VECTOR tree=0x14bf530 return=0x100139b6 features:
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	1	1	1	0	112	686	0	0
+Temporary breakpoint 27 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7dc0:	107	107	109	112	115	118	121	123
+0x2af7dd0:	125	128	128	129
+TREE_SCALAR tree=0x14bf4c0 return=0x10013984 features:
+0x6676f0:	4	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	1	0
+Temporary breakpoint 28 at 0x10013984
+TREE_SCALAR_VALUE value=0
+TREE_VECTOR tree=0x14bf530 return=0x100139b6 features:
+0x6676f0:	4	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	1	0
+Temporary breakpoint 29 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7dde:	131	131	131	131	131	132	133	133
+0x2af7dee:	134	136	135	135
+TREE_SCALAR tree=0x14bf4c0 return=0x10013984 features:
+0x6676f0:	4	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	2	0
+Temporary breakpoint 30 at 0x10013984
+TREE_SCALAR_VALUE value=0
+TREE_VECTOR tree=0x14bf530 return=0x100139b6 features:
+0x6676f0:	4	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	2	0
+Temporary breakpoint 31 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7dfc:	131	131	131	131	131	132	133	133
+0x2af7e0c:	134	136	135	135
+TREE_SCALAR tree=0x14bf4c0 return=0x10013984 features:
+0x6676f0:	4	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	3	0
+Temporary breakpoint 32 at 0x10013984
+TREE_SCALAR_VALUE value=0
+TREE_VECTOR tree=0x14bf530 return=0x100139b6 features:
+0x6676f0:	4	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	3	0
+Temporary breakpoint 33 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7e1a:	131	131	131	131	131	132	133	133
+0x2af7e2a:	134	136	135	135
+TREE_SCALAR tree=0x14bf4c0 return=0x10013984 features:
+0x6676f0:	5	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	4	0
+Temporary breakpoint 34 at 0x10013984
+TREE_SCALAR_VALUE value=0
+TREE_VECTOR tree=0x14bf530 return=0x100139b6 features:
+0x6676f0:	5	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	4	0
+Temporary breakpoint 35 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7e38:	128	128	128	127	127	127	128	129
+0x2af7e48:	131	133	133	133
+TREE_SCALAR tree=0x14bf4c0 return=0x10013984 features:
+0x6676f0:	6	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	5	0
+Temporary breakpoint 36 at 0x10013984
+TREE_SCALAR_VALUE value=0
+TREE_VECTOR tree=0x14bf530 return=0x100139b6 features:
+0x6676f0:	6	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	5	0
+Temporary breakpoint 37 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7e56:	131	131	131	131	131	132	133	133
+0x2af7e66:	134	136	135	135
+TREE_SCALAR tree=0x14bf4c0 return=0x10013984 features:
+0x6676f0:	6	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	6	0
+Temporary breakpoint 38 at 0x10013984
+TREE_SCALAR_VALUE value=0
+TREE_VECTOR tree=0x14bf530 return=0x100139b6 features:
+0x6676f0:	6	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	6	0
+Temporary breakpoint 39 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7e74:	131	131	131	131	131	132	133	133
+0x2af7e84:	134	136	135	135
+TREE_SCALAR tree=0x14bf4f8 return=0x10013984 features:
+0x6676f0:	6	3	0	3	3	1	0	4
+0x667700:	3	1	1	0	112	686	7	0
+Temporary breakpoint 40 at 0x10013984
+TREE_SCALAR_VALUE value=2
+TREE_VECTOR tree=0x14bf568 return=0x100139b6 features:
+0x6676f0:	6	3	0	3	3	1	0	4
+0x667700:	3	1	1	2	112	686	7	0
+Temporary breakpoint 41 at 0x100139b6
+TREE_VECTOR_VALUE values:
+0x2af7e92:	112	116	122	130	139	150	161	172
+0x2af7ea2:	182	191	188	181
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0160:0164: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0160:0164: create thread I @004014C0
+0160:0164: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0160:0164: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0160:0164: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0160:0164: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0160:0164: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0160:0164: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0160:0164: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0160:0164: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0160:0164: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0160:0164: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0160:0164: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0160:0164: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0160:0164: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0160:0164: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0160:0164: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0160:0164: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0160:0164: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0160:0164: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0160:0164: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0160:0164: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0160:0164: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0160:0164: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0160:0164: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000160:00000164: unload DLL @009C0000
+0160:0164: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000160:00000164: unload DLL @009C0000
+0160:0164: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0160:0164: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0160:0164: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000160:00000164: exit process (0)

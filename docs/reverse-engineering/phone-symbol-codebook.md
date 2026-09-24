@@ -1,6 +1,124 @@
 # Compact phone-symbol ID table
 
-`FUN_10003c50` expands dictionary phone IDs through a 256-entry table initialized by `FUN_1000ebc0` at DLL address `0x100fe900`. Each ID has a five-byte slot; the slot is a NUL-terminated sequence of up to four internal symbol bytes. These are exact byte outputs, not phonetic names or IPA labels. The table below was transcribed from the initializer; `—` means no nonzero byte was assigned to that slot.
+`FUN_10003c50` expands dictionary phone IDs through a 256-entry table initialized by `FUN_1000ebc0` at DLL address `0x100fe900`. Each ID has a five-byte slot; the slot is a NUL-terminated sequence of up to four internal symbol bytes. The table below was transcribed from the initializer; `—` means no nonzero byte was assigned to that slot. The 256 IDs can represent sequences; they are not themselves single phonemes.
+
+## Runtime-backed labels for internal symbol bytes
+
+The [VoiceText VTML guide](https://static.carahsoft.com/concrete/files/1615/2520/8261/Voice-Text_Markup_Language.pdf)
+defines an English `x-cmu` phoneme input and its symbolic phonetic table. That
+guide alone does not identify this DLL's private byte values. Stage 10 sent
+each listed consonant followed by `AH0`, and each of the 15 listed vowels at
+stress levels `0`, `1`, and `2` preceded by `T`, through the original 2013 Paul
+engine. At `FUN_10007520` entry, the upstream token record's pronunciation
+field (`0x94`-byte stride, `+0x52`) contained the two expected internal bytes
+in input order. The [probe generator](../../tools/revkit/scripts/generate_cmu_probes.py),
+[Wine captures](../../tools/revkit/work/stage10/README.md), and
+[verifier](../../tools/revkit/work/scripts/verify_cmu_codebook.py) cover all
+69 labels below. They form a one-to-one mapping onto every byte `0x01`–`0x45`,
+with no gaps or collisions. The guide's `tomato` example independently yields
+`T AH0 M EY1 T OW0` → `39 07 2c 1e 39 2f`; a three-tag control and separate
+`AH0`/`AH1`/`AH2` contrast agree with the mapping.
+
+For each vowel row, the three byte values correspond to stress `0`, `1`, and
+`2` in that order:
+
+| CMU vowel | Stress 0 | Stress 1 | Stress 2 | CMU vowel | Stress 0 | Stress 1 | Stress 2 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| AA | `01` | `02` | `03` | AE | `04` | `05` | `06` |
+| AH | `07` | `08` | `09` | AO | `0a` | `0b` | `0c` |
+| AW | `0d` | `0e` | `0f` | AY | `10` | `11` | `12` |
+| EH | `17` | `18` | `19` | ER | `1a` | `1b` | `1c` |
+| EY | `1d` | `1e` | `1f` | IH | `23` | `24` | `25` |
+| IY | `26` | `27` | `28` | OW | `2f` | `30` | `31` |
+| OY | `32` | `33` | `34` | UH | `3b` | `3c` | `3d` |
+| UW | `3e` | `3f` | `40` | | | | |
+
+| CMU consonant | Byte | CMU consonant | Byte | CMU consonant | Byte | CMU consonant | Byte |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| B | `13` | CH | `14` | D | `15` | DH | `16` |
+| F | `20` | G | `21` | HH | `22` | JH | `29` |
+| K | `2a` | L | `2b` | M | `2c` | N | `2d` |
+| NG | `2e` | P | `35` | R | `36` | S | `37` |
+| SH | `38` | T | `39` | TH | `3a` | V | `41` |
+| W | `42` | Y | `43` | Z | `44` | ZH | `45` |
+
+These are supported **CMU input labels for byte values**, not an IPA
+transcription of every dictionary entry or proof that every context produces
+the same acoustic realization. `0x00` and the special `0x63`/`0x64` bytes
+retain their separate control/record roles. The 256-entry ID table below can
+now be read as sequences of the labeled bytes.
+
+## Controlled part-of-speech field contrast
+
+The same [VTML guide](https://static.carahsoft.com/concrete/files/1615/2520/8261/Voice-Text_Markup_Language.pdf)
+documents `<vtml_partofsp>` values. Stage 10 applied each documented value to
+the same isolated word, `record`. Its upstream `0x94`-byte token field at
+`+0x30` changed as follows before `FUN_10007520`; the phone bytes below are
+from the returned `0x70`-byte row at `+0x25` and decoded with the mapping
+above:
+
+| Tag | Upstream `+0x30` | Returned phone sequence |
+| --- | --- | --- |
+| None, `unknown`, `function` | `ff` | R IH0 K AO1 R D |
+| `noun` | `13` | R EH1 K ER0 D |
+| `modifier` | `0e` | R EH1 K ER0 D |
+| `verb` | `25` | R IH0 K AO1 R D |
+| `interjection` | `24` | R IH0 K AO1 R D |
+
+This identifies `+0x30` as a **tag-responsive lexical-class constraint** in
+this path. It does not establish a global enum for every upstream status
+value: `function` and `unknown` are indistinguishable on this word. All seven
+runs had the same four trailing dictionary metadata words, `0, 1, 0, 0`.
+Noun/modifier and verb/interjection therefore provide pairs with identical
+phone sequences but different status bytes. Their captured duration/pitch
+tree input sequences also match exactly within each pair, so this status
+distinction does not appear as a changed tree feature in those runs. These
+contrasts leave the four metadata-word meanings and other packed model
+features open.
+
+The full metadata trace across the 40 linguistic/context inputs and nine
+part-of-speech controls covers 227 output rows and ten distinct four-word
+patterns. Examples include `Apartment` as `0,1,1,1`, the unexpanded second
+`Apt` as `0,0,0,1`, `Hello` as `0,1,0,0`, and the tested `January` rows as
+`1,0,1,1`. The seven isolated part-of-speech variants of `record` keep the
+same `0,1,0,0` tuple. These are copied Boolean dictionary payload fields from
+bits 6, 4, 5, and 7; the captures do not justify semantic names for the
+individual bits.
+
+## Controlled tree input labels
+
+Thirty-nine one-token Stage 10 runs forced each of the 24 CMU consonants
+followed by `AH0`, and each of the 15 CMU vowels after `T`, onto the same
+visible token `probe`. Five additional controls compared `P AH0`, `B AH0`,
+`T AH0`, `P AH1`, and `P AH2`. Each single-phone run reached the same four
+ordered duration/pitch calls, though the first selected tree varies with the
+consonant. The [probe generator](../../tools/revkit/scripts/generate_cmu_probes.py),
+[Wine captures](../../tools/revkit/work/stage10/README.md), and
+[analyzer](../../tools/revkit/work/scripts/analyze_stage10_tree_features.py)
+preserve and check the raw inputs.
+
+The [tree trace](../../tools/revkit/work/stage10/trace-pos-trees.gdb) prints
+16 signed halfwords per call; positions below are zero-based within that
+printed vector (the last two calls begin printing at the input pointer plus
+four bytes). The analyzer checks all 39 symbol vectors. It finds that the
+identity values equal the one-based alphabetical rank of each CMU base
+symbol. For example AA=`1`, CH=`8`, IH=`17`, P=`27`, and ZH=`39`. The CMU
+phone codes are separate (`P=0x35`, `B=0x13`, `T=0x39`).
+
+| Tree input | Directly observed response | First-tree groups for consonants |
+| --- | --- | --- |
+| Selected onset scalar, printed position 0 | CMU identity ordinal of the controlled consonant | `0x14bf434`: P, B, T, D, K, G |
+| Same onset scalar family | Same consonant groups select these trees | `0x14bf46c`: CH, JH; `0x14bf450`: F, V, TH, DH, S, Z, SH, ZH, HH; `0x14bf488`: M, N, NG, L; `0x14bf4a4`: R, W, Y |
+| Paired scalar (`0x14bf3c4` or `0x14bf3e0`) | Printed positions 0/1 carry the controlled second/first phone ordinals; position 3 changes with AH stress | P/B/T ordinal `27`/`7`/`31`; AH0/AH1/AH2 stress `0`/`1`/`2` |
+| `0x14bf4f8`, third scalar | Printed position 2 follows AH stress | `0`/`1`/`2` |
+| `0x14bf568`, vector | Printed position 2 follows AH stress; position 11 matches the preceding scalar result | stress `0`/`1`/`2`; position 11 `0`/`4`/`0` |
+
+These controls name the base-phone identity value and show that consonant
+tree selection tracks distinct consonant groups. The groups align with
+consonant manner categories, with L grouped with M/N/NG; that family label is
+an interpretation of the grouping, not a name recovered from the binary.
+The last vector's position 11 is not an independent stress encoding. Other
+tree inputs, family roles, and global enum semantics remain open.
 
 | ID | Bytes | ID | Bytes | ID | Bytes | ID | Bytes |
 | ---: | --- | ---: | --- | ---: | --- | ---: | --- |
