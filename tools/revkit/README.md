@@ -4,8 +4,11 @@ This isolated Docker toolset contains Ghidra headless analysis, FLOSS, capa,
 PEfile, `objdump`, `strings`, and `file`. The image does not copy the VoiceText
 binary or model data. Compose mounts `binary/` read-only at `/samples`, the
 shared and Paul model directories read-only under `/voice-data/`, and `include/`
-read-only at `/voice-data/include`. It stores Ghidra projects and raw reports
-under this directory's ignored `work/` folder.
+read-only at `/voice-data/include`. Portable runtime captures, small fixtures,
+trace scripts, and decompiler reports cited by the research notes are tracked
+under this directory's `work/` folder. Host-local Ghidra projects, caches,
+Wine prefixes, and full vendor-input copies remain ignored; see
+[`work/README.md`](work/README.md).
 
 ## Build
 

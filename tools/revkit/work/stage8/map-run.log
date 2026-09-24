@@ -1,0 +1,380 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1002c220
+Wine-gdb> >>>>>>>>> > > > >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002c530
+Wine-gdb> >>>>>>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1002c120
+Wine-gdb> >>> > > > > >  >  >  >  > > > > >>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x1002c8b0
+Wine-gdb> >>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x1002bc60
+Wine-gdb> >>>>>>> > > > >  >  >  >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 7 at 0x1002bbd0
+Wine-gdb> >>> > > >>>Wine-gdb> Wine-gdb> Breakpoint 8 at 0x1002d230
+Wine-gdb> >>>>>>>> > > >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 9 at 0x1002afb0
+Wine-gdb> >>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 10 at 0x10026870
+Wine-gdb> >>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 11 at 0x1001ea93
+SELECTED_UNIT id=0
+SELECTED_UNIT id=1
+SELECTED_UNIT id=2
+SELECTED_UNIT id=195386
+SELECTED_UNIT id=195386
+SELECTED_UNIT id=141907
+SELECTED_UNIT id=80926
+SELECTED_UNIT id=80927
+SELECTED_UNIT id=80927
+SELECTED_UNIT id=80928
+SELECTED_UNIT id=80929
+SELECTED_UNIT id=80930
+SELECTED_UNIT id=37037
+SELECTED_UNIT id=279438
+SELECTED_UNIT id=1306
+SELECTED_UNIT id=1306
+SELECTED_UNIT id=1307
+SELECTED_UNIT id=1270
+SELECTED_UNIT id=1271
+SELECTED_UNIT id=1272
+SELECTED_UNIT id=370272
+SELECTED_UNIT id=370273
+SELECTED_UNIT id=370274
+SELECTED_UNIT id=370275
+SELECTED_UNIT id=424152
+SELECTED_UNIT id=3576
+SELECTED_UNIT id=3576
+SELECTED_UNIT id=411980
+SELECTED_UNIT id=375920
+SELECTED_UNIT id=375921
+SELECTED_UNIT id=375922
+SELECTED_UNIT id=50541
+SELECTED_UNIT id=60673
+SELECTED_UNIT id=348046
+SELECTED_UNIT id=348047
+SELECTED_UNIT id=207458
+SELECTED_UNIT id=207459
+SELECTED_UNIT id=356872
+SELECTED_UNIT id=261934
+SELECTED_UNIT id=261934
+SELECTED_UNIT id=32171
+SELECTED_UNIT id=32171
+SELECTED_UNIT id=40085
+TIMELINE_ENTRY n=1 start=0 input_count=43 output=0x2bcde18 state=0x2ae0020
+Temporary breakpoint 12 at 0x1002bde9
+Temporary breakpoint 13 at 0x1002c364
+UNIT_DESC n=1 mode=0 bank=0 dat_offset=0 dat_samples=1518 upm_offset=0 upm_periods=13 edge_a=108 edge_b=104
+Temporary breakpoint 14 at 0x1002c364
+UNIT_DESC n=2 mode=0 bank=0 dat_offset=800 dat_samples=1006 upm_offset=13 upm_periods=10 edge_a=104 edge_b=100
+Temporary breakpoint 15 at 0x1002c364
+UNIT_DESC n=3 mode=0 bank=0 dat_offset=1340 dat_samples=1402 upm_offset=23 upm_periods=15 edge_a=100 edge_b=90
+Temporary breakpoint 16 at 0x1002c364
+UNIT_DESC n=4 mode=1 bank=0 dat_offset=154739412 dat_samples=1384 upm_offset=2379252 upm_periods=16 edge_a=80 edge_b=98
+Temporary breakpoint 17 at 0x1002c364
+UNIT_DESC n=5 mode=2 bank=0 dat_offset=154740698 dat_samples=1890 upm_offset=2379267 upm_periods=15 edge_a=98 edge_b=154
+Temporary breakpoint 18 at 0x1002c364
+UNIT_DESC n=6 mode=0 bank=0 dat_offset=112852680 dat_samples=2048 upm_offset=1694194 upm_periods=15 edge_a=156 edge_b=122
+TIMELINE_RETURN n=1 records=43
+RING_BUILD n=1 records=43 state=0x2ae0020 rows=0x2bcde18 ring_cursor=0
+Temporary breakpoint 19 at 0x1002becb
+JOIN_PREPARE n=1 state=0x2ae0020 model=0x14bf198 unit_index=0 result=0
+DAT_DECODE n=1 bank=0 offset=0 coded_bytes=800 samples=1518 mode=0
+Temporary breakpoint 20 at 0x1002bfbd
+RECON n=1 index=0 before=0 after=2828 samples=1414
+Temporary breakpoint 21 at 0x1002becb
+JOIN_PREPARE n=2 state=0x2ae0020 model=0x14bf198 unit_index=1 result=0
+DAT_DECODE n=2 bank=0 offset=800 coded_bytes=540 samples=1006 mode=0
+Temporary breakpoint 22 at 0x1002bfbd
+RECON n=2 index=1 before=2828 after=4640 samples=906
+Temporary breakpoint 23 at 0x1002becb
+DAT_DECODE n=3 bank=0 offset=1340 coded_bytes=704 samples=1402 mode=0
+UPM_READ n=1 bank=0 offset=23 periods=15 sample_count=1402
+SELECTED_UNIT id=195385
+DAT_DECODE n=4 bank=0 offset=154738636 coded_bytes=776 samples=1526 mode=0
+UPM_READ n=2 bank=0 offset=2379233 periods=19 sample_count=1526
+JOIN_PREPARE n=3 state=0x2ae0020 model=0x14bf198 unit_index=2 result=0x2bcde80
+0x2bcde80:	0x00000064	0x00000064	0x000000c8	0x0000056f
+0x2bcde90:	0x00000002	0x0000053c	0x02bfb29c	0x00000017
+0x2bcdea0:	0x0064000f	0x02000056	0x00000000	0x00000002
+0x2bcdeb0:	0x002b0002
+Temporary breakpoint 24 at 0x1002bfbd
+RECON n=3 index=2 before=4640 after=7250 samples=1305
+Temporary breakpoint 25 at 0x1002becb
+DAT_DECODE n=5 bank=0 offset=154739412 coded_bytes=1560 samples=1384 mode=1
+UPM_READ n=3 bank=0 offset=2379252 periods=16 sample_count=1384
+SELECTED_UNIT id=3
+DAT_DECODE n=6 bank=0 offset=2044 coded_bytes=2664 samples=2162 mode=1
+UPM_READ n=4 bank=0 offset=38 periods=24 sample_count=2162
+JOIN_PREPARE n=4 state=0x2ae0020 model=0x14bf198 unit_index=3 result=0x2bcdeb4
+0x2bcdeb4:	0x00000064	0x00000064	0x000000c8	0x00000573
+0x2bcdec4:	0x00000003	0x093922d4	0x02bfb2b4	0x00244df4
+0x2bcded4:	0x00550010	0x02010062	0x00000000	0x00000003
+0x2bcdee4:	0x00300003
+Temporary breakpoint 26 at 0x1002bfbd
+RECON n=4 index=3 before=7250 after=9844 samples=1297
+Temporary breakpoint 27 at 0x1002becb
+UPM_READ n=5 bank=0 offset=2379267 periods=15 sample_count=1890
+SELECTED_UNIT id=141906
+UPM_READ n=6 bank=0 offset=1694186 periods=8 sample_count=1136
+JOIN_PREPARE n=5 state=0x2ae0020 model=0x14bf198 unit_index=4 result=0x2bcdee8
+0x2bcdee8:	0x00000064	0x00000064	0x000000c8	0x00000769
+0x2bcdef8:	0x00000004	0x093927da	0x02bfb2cc	0x00244e03
+0x2bcdf08:	0x0062000f	0x0202009b	0x00000000	0x00000003
+0x2bcdf18:	0x00300003
+Temporary breakpoint 28 at 0x1002bfbd
+RECON n=5 index=4 before=9844 after=13328 samples=1742
+Temporary breakpoint 29 at 0x1002becb
+UPM_READ n=7 bank=0 offset=1694194 periods=15 sample_count=2048
+SELECTED_UNIT id=195387
+UPM_READ n=8 bank=0 offset=2379282 periods=14 sample_count=1672
+SELECTED_UNIT id=80925
+JOIN_PREPARE n=6 state=0x2ae0020 model=0x14bf198 unit_index=5 result=0x2bcdf1c
+0x2bcdf1c:	0x00000064	0x00000064	0x000000c8	0x000007e5
+0x2bcdf2c:	0x00000005	0x06b9fec8	0x02bfb2e4	0x0019d9f2
+0x2bcdf3c:	0x009b000f	0x0200007b	0x00000001	0x00010000
+0x2bcdf4c:	0x00200000
+Temporary breakpoint 30 at 0x1002bfbd
+RECON n=6 index=5 before=13328 after=17124 samples=1898
+Temporary breakpoint 31 at 0x1002becb
+SELECTED_UNIT id=141908
+JOIN_PREPARE n=7 state=0x2ae0020 model=0x14bf198 unit_index=6 result=0x2bcdf50
+0x2bcdf50:	0x00000064	0x00000064	0x000000c8	0x00000232
+0x2bcdf60:	0x00000006	0x03f276b4	0x02bfb2fc	0x000f2096
+0x2bcdf70:	0x007b0005	0x0200005f	0x00000001	0x00010001
+0x2bcdf80:	0x00360001
+Temporary breakpoint 32 at 0x1002bfbd
+RECON n=7 index=6 before=17124 after=18058 samples=467
+Temporary breakpoint 33 at 0x1002becb
+JOIN_PREPARE n=8 state=0x2ae0020 model=0x14bf198 unit_index=7 result=0
+Temporary breakpoint 34 at 0x1002bfbd
+RECON n=8 index=7 before=18058 after=18482 samples=212
+Temporary breakpoint 35 at 0x1002becb
+JOIN_PREPARE n=9 state=0x2ae0020 model=0x14bf198 unit_index=8 result=0
+Temporary breakpoint 36 at 0x1002bfbd
+RECON n=9 index=8 before=18482 after=18954 samples=236
+Temporary breakpoint 37 at 0x1002becb
+JOIN_PREPARE n=10 state=0x2ae0020 model=0x14bf198 unit_index=9 result=0
+Temporary breakpoint 38 at 0x1002bfbd
+RECON n=10 index=9 before=18954 after=21566 samples=1306
+Temporary breakpoint 39 at 0x1002becb
+JOIN_PREPARE n=11 state=0x2ae0020 model=0x14bf198 unit_index=10 result=0
+Temporary breakpoint 40 at 0x1002bfbd
+RECON n=11 index=10 before=21566 after=22550 samples=492
+Temporary breakpoint 41 at 0x1002becb
+SELECTED_UNIT id=37037
+JOIN_PREPARE n=12 state=0x2ae0020 model=0x14bf198 unit_index=11 result=0x2bce054
+0x2bce054:	0x00000064	0x00000064	0x000000c8	0x00000180
+0x2bce064:	0x0000000b	0x03f27d18	0x02bfb374	0x000f20b1
+0x2bce074:	0x007a0003	0x02010083	0x00000002	0x00020001
+0x2bce084:	0x00070001
+Temporary breakpoint 42 at 0x1002bfbd
+RECON n=12 index=11 before=22550 after=23056 samples=253
+Temporary breakpoint 43 at 0x1002becb
+SELECTED_UNIT id=80930
+SELECTED_UNIT id=279437
+JOIN_PREPARE n=13 state=0x2ae0020 model=0x14bf198 unit_index=12 result=0x2bce088
+Temporary breakpoint 44 at 0x1002bfbd
+RECON n=13 index=12 before=23056 after=23598 samples=271
+Temporary breakpoint 45 at 0x1002becb
+SELECTED_UNIT id=37038
+SELECTED_UNIT id=1305
+JOIN_PREPARE n=14 state=0x2ae0020 model=0x14bf198 unit_index=13 result=0x2bce0bc
+Temporary breakpoint 46 at 0x1002bfbd
+RECON n=14 index=13 before=23598 after=26972 samples=1687
+Temporary breakpoint 47 at 0x1002becb
+SELECTED_UNIT id=279439
+JOIN_PREPARE n=15 state=0x2ae0020 model=0x14bf198 unit_index=14 result=0x2bce0f0
+Temporary breakpoint 48 at 0x1002bfbd
+RECON n=15 index=14 before=26972 after=29276 samples=1152
+Temporary breakpoint 49 at 0x1002becb
+JOIN_PREPARE n=16 state=0x2ae0020 model=0x14bf198 unit_index=15 result=0
+Temporary breakpoint 50 at 0x1002bfbd
+RECON n=16 index=15 before=29276 after=31980 samples=1352
+Temporary breakpoint 51 at 0x1002becb
+SELECTED_UNIT id=1269
+JOIN_PREPARE n=17 state=0x2ae0020 model=0x14bf198 unit_index=16 result=0x2bce158
+Temporary breakpoint 52 at 0x1002bfbd
+RECON n=17 index=16 before=31980 after=35598 samples=1809
+Temporary breakpoint 53 at 0x1002becb
+SELECTED_UNIT id=1308
+JOIN_PREPARE n=18 state=0x2ae0020 model=0x14bf198 unit_index=17 result=0x2bce18c
+Temporary breakpoint 54 at 0x1002bfbd
+RECON n=18 index=17 before=35598 after=38232 samples=1317
+Temporary breakpoint 55 at 0x1002becb
+JOIN_PREPARE n=19 state=0x2ae0020 model=0x14bf198 unit_index=18 result=0
+Temporary breakpoint 56 at 0x1002bfbd
+RECON n=19 index=18 before=38232 after=41636 samples=1702
+Temporary breakpoint 57 at 0x1002becb
+SELECTED_UNIT id=370271
+JOIN_PREPARE n=20 state=0x2ae0020 model=0x14bf198 unit_index=19 result=0x2bce1f4
+Temporary breakpoint 58 at 0x1002bfbd
+RECON n=20 index=19 before=41636 after=43912 samples=1138
+Temporary breakpoint 59 at 0x1002becb
+SELECTED_UNIT id=1273
+JOIN_PREPARE n=21 state=0x2ae0020 model=0x14bf198 unit_index=20 result=0x2bce228
+Temporary breakpoint 60 at 0x1002bfbd
+RECON n=21 index=20 before=43912 after=45246 samples=667
+Temporary breakpoint 61 at 0x1002becb
+JOIN_PREPARE n=22 state=0x2ae0020 model=0x14bf198 unit_index=21 result=0
+Temporary breakpoint 62 at 0x1002bfbd
+RECON n=22 index=21 before=45246 after=46046 samples=400
+Temporary breakpoint 63 at 0x1002becb
+JOIN_PREPARE n=23 state=0x2ae0020 model=0x14bf198 unit_index=22 result=0
+Temporary breakpoint 64 at 0x1002bfbd
+RECON n=23 index=22 before=46046 after=47782 samples=868
+Temporary breakpoint 65 at 0x1002becb
+SELECTED_UNIT id=424151
+JOIN_PREPARE n=24 state=0x2ae0020 model=0x14bf198 unit_index=23 result=0x2bce2c4
+Temporary breakpoint 66 at 0x1002bfbd
+RECON n=24 index=23 before=47782 after=49810 samples=1014
+Temporary breakpoint 67 at 0x1002becb
+SELECTED_UNIT id=370276
+SELECTED_UNIT id=3575
+JOIN_PREPARE n=25 state=0x2ae0020 model=0x14bf198 unit_index=24 result=0x2bce2f8
+Temporary breakpoint 68 at 0x1002bfbd
+RECON n=25 index=24 before=49810 after=53674 samples=1932
+Temporary breakpoint 69 at 0x1002becb
+SELECTED_UNIT id=424153
+JOIN_PREPARE n=26 state=0x2ae0020 model=0x14bf198 unit_index=25 result=0x2bce32c
+Temporary breakpoint 70 at 0x1002bfbd
+RECON n=26 index=25 before=53674 after=54546 samples=436
+Temporary breakpoint 71 at 0x1002becb
+SELECTED_UNIT id=411979
+JOIN_PREPARE n=27 state=0x2ae0020 model=0x14bf198 unit_index=26 result=0x2bce360
+Temporary breakpoint 72 at 0x1002bfbd
+RECON n=27 index=26 before=54546 after=55946 samples=700
+Temporary breakpoint 73 at 0x1002becb
+SELECTED_UNIT id=3577
+SELECTED_UNIT id=375920
+JOIN_PREPARE n=28 state=0x2ae0020 model=0x14bf198 unit_index=27 result=0x2bce394
+Temporary breakpoint 74 at 0x1002bfbd
+RECON n=28 index=27 before=55946 after=57496 samples=775
+Temporary breakpoint 75 at 0x1002becb
+SELECTED_UNIT id=411980
+JOIN_PREPARE n=29 state=0x2ae0020 model=0x14bf198 unit_index=28 result=0x2bce3c8
+PCM_BLOCK n=1 bytes=57496 context_bytes=57496
+Temporary breakpoint 76 at 0x1001ea93
+Temporary breakpoint 77 at 0x1002bfbd
+RECON n=29 index=28 before=0 after=2150 samples=1075
+Temporary breakpoint 78 at 0x1002becb
+JOIN_PREPARE n=30 state=0x2ae0020 model=0x14bf198 unit_index=29 result=0
+Temporary breakpoint 79 at 0x1002bfbd
+RECON n=30 index=29 before=2150 after=3458 samples=654
+Temporary breakpoint 80 at 0x1002becb
+SELECTED_UNIT id=50540
+JOIN_PREPARE n=31 state=0x2ae0020 model=0x14bf198 unit_index=30 result=0x2bce430
+Temporary breakpoint 81 at 0x1002bfbd
+RECON n=31 index=30 before=3458 after=4554 samples=548
+Temporary breakpoint 82 at 0x1002becb
+SELECTED_UNIT id=375923
+SELECTED_UNIT id=60672
+JOIN_PREPARE n=32 state=0x2ae0020 model=0x14bf198 unit_index=31 result=0x2bce464
+Temporary breakpoint 83 at 0x1002bfbd
+RECON n=32 index=31 before=4554 after=7168 samples=1307
+Temporary breakpoint 84 at 0x1002becb
+SELECTED_UNIT id=50542
+SELECTED_UNIT id=348045
+JOIN_PREPARE n=33 state=0x2ae0020 model=0x14bf198 unit_index=32 result=0x2bce498
+Temporary breakpoint 85 at 0x1002bfbd
+RECON n=33 index=32 before=7168 after=8974 samples=903
+Temporary breakpoint 86 at 0x1002becb
+SELECTED_UNIT id=60674
+JOIN_PREPARE n=34 state=0x2ae0020 model=0x14bf198 unit_index=33 result=0x2bce4cc
+Temporary breakpoint 87 at 0x1002bfbd
+RECON n=34 index=33 before=8974 after=10408 samples=717
+Temporary breakpoint 88 at 0x1002becb
+SELECTED_UNIT id=207457
+JOIN_PREPARE n=35 state=0x2ae0020 model=0x14bf198 unit_index=34 result=0x2bce500
+Temporary breakpoint 89 at 0x1002bfbd
+RECON n=35 index=34 before=10408 after=11916 samples=754
+Temporary breakpoint 90 at 0x1002becb
+SELECTED_UNIT id=348048
+JOIN_PREPARE n=36 state=0x2ae0020 model=0x14bf198 unit_index=35 result=0x2bce534
+Temporary breakpoint 91 at 0x1002bfbd
+RECON n=36 index=35 before=11916 after=15794 samples=1939
+Temporary breakpoint 92 at 0x1002becb
+SELECTED_UNIT id=356872
+JOIN_PREPARE n=37 state=0x2ae0020 model=0x14bf198 unit_index=36 result=0x2bce568
+Temporary breakpoint 93 at 0x1002bfbd
+RECON n=37 index=36 before=15794 after=17232 samples=719
+Temporary breakpoint 94 at 0x1002becb
+SELECTED_UNIT id=207459
+SELECTED_UNIT id=261933
+JOIN_PREPARE n=38 state=0x2ae0020 model=0x14bf198 unit_index=37 result=0x2bce59c
+Temporary breakpoint 95 at 0x1002bfbd
+RECON n=38 index=37 before=17232 after=18780 samples=774
+Temporary breakpoint 96 at 0x1002becb
+SELECTED_UNIT id=356873
+JOIN_PREPARE n=39 state=0x2ae0020 model=0x14bf198 unit_index=38 result=0x2bce5d0
+Temporary breakpoint 97 at 0x1002bfbd
+RECON n=39 index=38 before=18780 after=20778 samples=999
+Temporary breakpoint 98 at 0x1002becb
+SELECTED_UNIT id=32170
+JOIN_PREPARE n=40 state=0x2ae0020 model=0x14bf198 unit_index=39 result=0x2bce604
+Temporary breakpoint 99 at 0x1002bfbd
+RECON n=40 index=39 before=20778 after=21892 samples=557
+Temporary breakpoint 100 at 0x1002becb
+SELECTED_UNIT id=261935
+JOIN_PREPARE n=41 state=0x2ae0020 model=0x14bf198 unit_index=40 result=0x2bce638
+Temporary breakpoint 101 at 0x1002bfbd
+RECON n=41 index=40 before=21892 after=24198 samples=1153
+Temporary breakpoint 102 at 0x1002becb
+SELECTED_UNIT id=40084
+JOIN_PREPARE n=42 state=0x2ae0020 model=0x14bf198 unit_index=41 result=0x2bce66c
+Temporary breakpoint 103 at 0x1002bfbd
+RECON n=42 index=41 before=24198 after=26204 samples=1003
+Temporary breakpoint 104 at 0x1002becb
+SELECTED_UNIT id=32172
+JOIN_PREPARE n=43 state=0x2ae0020 model=0x14bf198 unit_index=42 result=0x2bce6a0
+Temporary breakpoint 105 at 0x1002bfbd
+RECON n=43 index=42 before=26204 after=31938 samples=2867
+PCM_BLOCK n=2 bytes=31938 context_bytes=31938
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)

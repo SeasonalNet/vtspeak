@@ -1,0 +1,1047 @@
+ Container revkit-revtools-run-6f03f2b87ee2 Creating
+ Container revkit-revtools-run-6f03f2b87ee2 Created
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode)
+INFO  Using log config file: jar:file:/opt/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)
+INFO  Using log file: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)
+INFO  Loading user preferences: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)
+INFO  Searching for classes... (ClassSearcher)
+INFO  Class search complete (555 ms) (ClassSearcher)
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)
+INFO  Initializing Random Number Generator... (SecureRandomFactory)
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)
+INFO  Starting cache cleanup: /var/tmp/ubuntu-ghidra/fscache2 (FileCacheMaintenanceDaemon)
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)
+INFO  Headless startup complete (1414 ms) (AnalyzeHeadless)
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)
+INFO  HEADLESS Script Paths:
+    /opt/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /work/scripts (HeadlessAnalyzer)
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)
+INFO  Opening existing project: /work/projects/VoiceText (HeadlessAnalyzer)
+INFO  Opening project: /work/projects/VoiceText (HeadlessProject)
+INFO  REPORT: Processing project file: /vt_pau.dll (HeadlessAnalyzer)
+INFO  REPORT: Execute script: DecompileNamedFunctions.java '0x100032c0' '0x10011cb0' '0x1000ebc0' '0x100124a0' '0x100033e0' '0x1001d9c0'  (HeadlessAnalyzer)
+INFO  SCRIPT: /work/scripts/DecompileNamedFunctions.java (HeadlessAnalyzer)
+INFO  DecompileNamedFunctions.java> ===== 0x100032c0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_100032c0 @ 100032c0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+int __cdecl FUN_100032c0(int param_1)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  undefined2 extraout_var;
+  char local_104 [256];
+
+  iVar1 = FUN_10003660(param_1);
+  if (iVar1 == -1) {
+    return -1;
+  }
+  VT_SetDecimal0Pron_ENG();
+  DAT_100fee04 = FUN_100033e0(param_1,0x100772fc,0x4d,0x49);
+  if (DAT_100fee04 == (int *)0x0) {
+    return 0xffff;
+  }
+  DAT_100fee08 = FUN_100033e0(param_1,0x100772f0,0x4c,0x49);
+  if (DAT_100fee08 == (int *)0x0) {
+    return 0xffff;
+  }
+  VT_SetDecimal0Pron_ENG();
+  iVar1 = FUN_10003a10();
+  if ((short)iVar1 == -1) {
+    return iVar1;
+  }
+  VT_SetDecimal0Pron_ENG();
+  FUN_10063ed6(local_104,(byte *)s__s_poly_tree3_100772a0);
+  uVar2 = FUN_10001900((int *)&DAT_100ff100,local_104);
+  if ((short)uVar2 == 0) {
+    return CONCAT22((short)((uint)uVar2 >> 0x10),0xffff);
+  }
+  VT_SetDecimal0Pron_ENG();
+  return CONCAT22(extraout_var,1);
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10011cb0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10011cb0 @ 10011cb0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+undefined4 __cdecl FUN_10011cb0(undefined4 param_1,char param_2)
+
+{
+  size_t sVar1;
+  undefined *puVar2;
+  char *pcVar3;
+  int iVar4;
+  undefined1 local_204 [512];
+
+  if (param_2 == '\0') {
+    FUN_10063ed6(local_204,(byte *)s__s_hashparams_emb_10079368);
+    puVar2 = FUN_10024d20(local_204,&DAT_100771a8);
+    if (puVar2 == (undefined *)0x0) {
+      return 0xffffffff;
+    }
+    sVar1 = *(size_t *)(puVar2 + 0x10);
+    DAT_1009f9c4 = (char *)FUN_1001d9c0(sVar1);
+    FUN_10025440((int)puVar2,0,0,DAT_1009f9c4,1,sVar1);
+    iVar4 = 0;
+    if (((*DAT_1009f9c4 == 'N') && (DAT_1009f9c4[1] == 'L')) && (DAT_1009f9c4[2] == 'P')) {
+      iVar4 = 3;
+    }
+    DAT_1009f978 = DAT_1009f9c4[iVar4];
+    FUN_100014f0(&DAT_1009f988,(undefined4 *)(DAT_1009f9c4 + iVar4 + 1),4,1);
+    FUN_100014f0(&DAT_1009f9b8,(undefined4 *)(DAT_1009f9c4 + iVar4 + 5),4,1);
+    FUN_100014f0(&DAT_1009f9b4,(undefined4 *)(DAT_1009f9c4 + iVar4 + 9),4,1);
+    FUN_100014f0(&DAT_1009f964,(undefined4 *)(DAT_1009f9c4 + iVar4 + 0xd),4,1);
+    FUN_100014f0(&DAT_1009f9c8,(undefined4 *)(DAT_1009f9c4 + iVar4 + 0x11),4,1);
+    FUN_100014f0(&DAT_1009f990,(undefined4 *)(DAT_1009f9c4 + iVar4 + 0x15),4,1);
+    FUN_100014f0(&DAT_1009f9b0,(undefined4 *)(DAT_1009f9c4 + iVar4 + 0x19),4,1);
+    DAT_1009f974 = DAT_1009f9c4 + iVar4 + 0x1d;
+    FUN_100014f0((undefined4 *)DAT_1009f974,(undefined4 *)DAT_1009f974,4,DAT_1009f9b0);
+    iVar4 = iVar4 + 0x1d + DAT_1009f9b0 * 4;
+    FUN_100014f0(&DAT_1009f9a4,(undefined4 *)(DAT_1009f9c4 + iVar4),4,1);
+    pcVar3 = DAT_1009f9c4 + iVar4 + 4;
+    iVar4 = DAT_1009f9a4;
+    DAT_1009f980 = pcVar3;
+  }
+  else {
+    FUN_10063ed6(local_204,(byte *)s__s_hashparams_eng_tpp_1007937c);
+    puVar2 = FUN_10024d20(local_204,&DAT_100771a8);
+    if (puVar2 == (undefined *)0x0) {
+      return 0xffffffff;
+    }
+    sVar1 = *(size_t *)(puVar2 + 0x10);
+    DAT_1009f9ac = (char *)FUN_1001d9c0(sVar1);
+    FUN_10025440((int)puVar2,0,0,DAT_1009f9ac,1,sVar1);
+    iVar4 = 0;
+    if (((*DAT_1009f9ac == 'N') && (DAT_1009f9ac[1] == 'L')) && (DAT_1009f9ac[2] == 'P')) {
+      iVar4 = 3;
+    }
+    DAT_1009f95c = DAT_1009f9ac[iVar4];
+    FUN_100014f0(&DAT_1009f98c,(undefined4 *)(DAT_1009f9ac + iVar4 + 1),4,1);
+    FUN_100014f0(&DAT_1009f970,(undefined4 *)(DAT_1009f9ac + iVar4 + 5),4,1);
+    FUN_100014f0(&DAT_1009f9bc,(undefined4 *)(DAT_1009f9ac + iVar4 + 9),4,1);
+    FUN_100014f0(&DAT_1009f96c,(undefined4 *)(DAT_1009f9ac + iVar4 + 0xd),4,1);
+    FUN_100014f0(&DAT_1009f958,(undefined4 *)(DAT_1009f9ac + iVar4 + 0x11),4,1);
+    FUN_100014f0(&DAT_1009f994,(undefined4 *)(DAT_1009f9ac + iVar4 + 0x15),4,1);
+    FUN_100014f0(&DAT_1009f99c,(undefined4 *)(DAT_1009f9ac + iVar4 + 0x19),4,1);
+    DAT_1009f998 = DAT_1009f9ac + iVar4 + 0x1d;
+    FUN_100014f0((undefined4 *)DAT_1009f998,(undefined4 *)DAT_1009f998,4,DAT_1009f99c);
+    iVar4 = iVar4 + 0x1d + DAT_1009f99c * 4;
+    FUN_100014f0(&DAT_1009f984,(undefined4 *)(DAT_1009f9ac + iVar4),4,1);
+    pcVar3 = DAT_1009f9ac + iVar4 + 4;
+    iVar4 = DAT_1009f984;
+    DAT_1009f97c = pcVar3;
+  }
+  FUN_100014f0((undefined4 *)pcVar3,(undefined4 *)pcVar3,1,iVar4);
+  FUN_100253d0(puVar2);
+  return 1;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x1000ebc0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_1000ebc0 @ 1000ebc0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+void FUN_1000ebc0(void)
+
+{
+  DAT_100fe900 = 0;
+  DAT_100fe905 = 7;
+  DAT_100fe906 = 0x13;
+  DAT_100fe907 = 7;
+  DAT_100fe908 = 0x2b;
+  DAT_100fe909 = 0;
+  DAT_100fe90a = 0x15;
+  DAT_100fe90b = 7;
+  DAT_100fe90c = 0x2d;
+  DAT_100fe90d = 0;
+  DAT_100fe90f = 0x2d;
+  DAT_100fe910 = 0x23;
+  DAT_100fe911 = 0x37;
+  DAT_100fe912 = 0;
+  DAT_100fe914 = 2;
+  DAT_100fe915 = 0x2b;
+  DAT_100fe916 = 0;
+  DAT_100fe919 = 0x13;
+  DAT_100fe91a = 2;
+  DAT_100fe91b = 0;
+  DAT_100fe91e = 0x13;
+  DAT_100fe91f = 0x26;
+  DAT_100fe920 = 0;
+  DAT_100fe923 = 0x22;
+  DAT_100fe924 = 2;
+  DAT_100fe925 = 0x36;
+  DAT_100fe926 = 0;
+  DAT_100fe928 = 0x2a;
+  DAT_100fe929 = 0xb;
+  DAT_100fe92a = 0x36;
+  DAT_100fe92b = 0;
+  DAT_100fe92d = 0x2c;
+  DAT_100fe92e = 0x44;
+  DAT_100fe92f = 0;
+  DAT_100fe932 = 7;
+  DAT_100fe933 = 0x35;
+  DAT_100fe934 = 0;
+  DAT_100fe937 = 0x36;
+  DAT_100fe938 = 0x2f;
+  DAT_100fe939 = 0;
+  DAT_100fe93c = 0x37;
+  DAT_100fe93d = 0x11;
+  DAT_100fe93e = 0;
+  DAT_100fe941 = 0x1f;
+  DAT_100fe942 = 0x39;
+  DAT_100fe943 = 0;
+  DAT_100fe946 = 0x2a;
+  DAT_100fe947 = 0x39;
+  DAT_100fe948 = 0;
+  DAT_100fe94b = 0x2c;
+  DAT_100fe94c = 0x26;
+  DAT_100fe94d = 0;
+  DAT_100fe950 = 0x36;
+  DAT_100fe951 = 0x3f;
+  DAT_100fe952 = 0;
+  DAT_100fe955 = 0x37;
+  DAT_100fe956 = 8;
+  DAT_100fe957 = 0;
+  DAT_100fe95a = 0x2c;
+  DAT_100fe95b = 7;
+  DAT_100fe95c = 0x2a;
+  DAT_100fe95d = 0;
+  DAT_100fe95f = 2;
+  DAT_100fe960 = 0x35;
+  DAT_100fe961 = 0;
+  DAT_100fe964 = 5;
+  DAT_100fe965 = 0x2b;
+  DAT_100fe966 = 0;
+  DAT_100fe969 = 0x15;
+  DAT_100fe96a = 8;
+  DAT_100fe96b = 0;
+  DAT_100fe96e = 0x18;
+  DAT_100fe96f = 0x39;
+  DAT_100fe970 = 0;
+  DAT_100fe973 = 0x20;
+  DAT_100fe974 = 0xb;
+  DAT_100fe975 = 0x36;
+  DAT_100fe976 = 0;
+  DAT_100fe978 = 0x22;
+  DAT_100fe979 = 0x11;
+  DAT_100fe97a = 0;
+  DAT_100fe97d = 0x25;
+  DAT_100fe97e = 0x44;
+  DAT_100fe97f = 7;
+  DAT_100fe980 = 0x2c;
+  DAT_100fe981 = 0;
+  DAT_100fe982 = 0x29;
+  DAT_100fe983 = 0x26;
+  DAT_100fe984 = 0;
+  DAT_100fe987 = 0x2c;
+  DAT_100fe988 = 2;
+  DAT_100fe989 = 0x36;
+  DAT_100fe98a = 0;
+  DAT_100fe98c = 0x2c;
+  DAT_100fe98d = 8;
+  DAT_100fe98e = 0;
+  DAT_100fe991 = 0x2c;
+  DAT_100fe992 = 0x18;
+  DAT_100fe993 = 0;
+  DAT_100fe996 = 0x35;
+  DAT_100fe997 = 5;
+  DAT_100fe998 = 0;
+  DAT_100fe99b = 0x43;
+  DAT_100fe99c = 0x3b;
+  DAT_100fe99d = 0;
+  DAT_100fe9a0 = 7;
+  DAT_100fe9a1 = 0x20;
+  DAT_100fe9a2 = 0;
+  DAT_100fe9a5 = 0xb;
+  DAT_100fe9a6 = 0x2b;
+  DAT_100fe9a7 = 0;
+  DAT_100fe9aa = 0x13;
+  DAT_100fe9ab = 8;
+  DAT_100fe9ac = 0;
+  DAT_100fe9af = 0x13;
+  DAT_100fe9b0 = 0x1b;
+  DAT_100fe9b1 = 0;
+  DAT_100fe9b4 = 0x15;
+  DAT_100fe9b5 = 0x24;
+  DAT_100fe9b6 = 0;
+  DAT_100fe9b9 = 0x2b;
+  DAT_100fe9ba = 8;
+  DAT_100fe9bb = 0;
+  DAT_100fe9be = 0x2b;
+  DAT_100fe9bf = 0x30;
+  DAT_100fe9c0 = 0;
+  DAT_100fe9c3 = 0x2c;
+  DAT_100fe9c4 = 0x13;
+  DAT_100fe9c5 = 0;
+  DAT_100fe9c8 = 0x42;
+  DAT_100fe9c9 = 0x11;
+  DAT_100fe9ca = 0;
+  DAT_100fe9cd = 0x2a;
+  DAT_100fe9ce = 7;
+  DAT_100fe9cf = 0x2d;
+  DAT_100fe9d0 = 0;
+  DAT_100fe9d2 = 7;
+  DAT_100fe9d3 = 0x2d;
+  DAT_100fe9d4 = 0x39;
+  DAT_100fe9d5 = 0;
+  DAT_100fe9d7 = 0x23;
+  DAT_100fe9d8 = 0x37;
+  DAT_100fe9d9 = 0x39;
+  DAT_100fe9da = 0;
+  DAT_100fe9dc = 0x2b;
+  DAT_100fe9dd = 0x23;
+  DAT_100fe9de = 0x2e;
+  DAT_100fe9df = 0;
+  DAT_100fe9e1 = 0x37;
+  DAT_100fe9e2 = 0x39;
+  DAT_100fe9e3 = 0x1a;
+  DAT_100fe9e4 = 0;
+  DAT_100fe9e6 = 7;
+  DAT_100fe9e7 = 0x15;
+  DAT_100fe9e8 = 0;
+  DAT_100fe9eb = 9;
+  DAT_100fe9ec = 0x2d;
+  DAT_100fe9ed = 0;
+  DAT_100fe9f0 = 10;
+  DAT_100fe9f1 = 0x36;
+  DAT_100fe9f2 = 0;
+  DAT_100fe9f5 = 0x13;
+  DAT_100fe9f6 = 5;
+  DAT_100fe9f7 = 0;
+  DAT_100fe9fa = 0x15;
+  DAT_100fe9fb = 0x44;
+  DAT_100fe9fc = 0;
+  DAT_100fe9ff = 0x18;
+  DAT_100fea00 = 0x37;
+  DAT_100fea01 = 0x39;
+  DAT_100fea02 = 0;
+  DAT_100fea04 = 0x20;
+  DAT_100fea05 = 0x1a;
+  DAT_100fea06 = 0;
+  DAT_100fea09 = 0x2a;
+  DAT_100fea0a = 8;
+  DAT_100fea0b = 0;
+  DAT_100fea0e = 0x2b;
+  DAT_100fea0f = 0x11;
+  DAT_100fea10 = 0;
+  DAT_100fea13 = 0x2b;
+  DAT_100fea14 = 0x1e;
+  DAT_100fea15 = 0;
+  DAT_100fea18 = 0x2b;
+  DAT_100fea19 = 0x3f;
+  DAT_100fea1a = 0;
+  DAT_100fea1d = 0x36;
+  DAT_100fea1e = 8;
+  DAT_100fea1f = 0;
+  DAT_100fea22 = 0x36;
+  DAT_100fea23 = 0x11;
+  DAT_100fea24 = 0;
+  DAT_100fea27 = 0x36;
+  DAT_100fea28 = 0x1e;
+  DAT_100fea29 = 0;
+  DAT_100fea2c = 0x37;
+  DAT_100fea2d = 0x1a;
+  DAT_100fea2e = 0;
+  DAT_100fea31 = 0x37;
+  DAT_100fea32 = 0x2a;
+  DAT_100fea33 = 0x26;
+  DAT_100fea34 = 0;
+  DAT_100fea36 = 0x39;
+  DAT_100fea37 = 0x23;
+  DAT_100fea38 = 0x2e;
+  DAT_100fea39 = 0;
+  DAT_100fea3b = 3;
+  DAT_100fea3c = 0x36;
+  DAT_100fea3d = 0;
+  DAT_100fea40 = 0xc;
+  DAT_100fea41 = 0x36;
+  DAT_100fea42 = 0;
+  DAT_100fea45 = 0x15;
+  DAT_100fea46 = 0x1a;
+  DAT_100fea47 = 0;
+  DAT_100fea4a = 0x15;
+  DAT_100fea4b = 0x26;
+  DAT_100fea4c = 0;
+  DAT_100fea4f = 0x21;
+  DAT_100fea50 = 0x1a;
+  DAT_100fea51 = 0;
+  DAT_100fea54 = 0x22;
+  DAT_100fea55 = 5;
+  DAT_100fea56 = 0;
+  DAT_100fea59 = 0x23;
+  DAT_100fea5a = 0x44;
+  DAT_100fea5b = 0;
+  DAT_100fea5e = 0x24;
+  DAT_100fea5f = 0x36;
+  DAT_100fea60 = 0;
+  DAT_100fea63 = 0x27;
+  DAT_100fea64 = 0x2d;
+  DAT_100fea65 = 0;
+  DAT_100fea68 = 0x2a;
+  DAT_100fea69 = 0x26;
+  DAT_100fea6a = 0;
+  DAT_100fea6d = 0x2a;
+  DAT_100fea6e = 0x2f;
+  DAT_100fea6f = 0;
+  DAT_100fea72 = 0x2a;
+  DAT_100fea73 = 0x30;
+  DAT_100fea74 = 0;
+  DAT_100fea77 = 0x2b;
+  DAT_100fea78 = 2;
+  DAT_100fea79 = 0;
+  DAT_100fea7c = 0x2b;
+  DAT_100fea7d = 0x27;
+  DAT_100fea7e = 0;
+  DAT_100fea81 = 0x2b;
+  DAT_100fea82 = 0x44;
+  DAT_100fea83 = 0;
+  DAT_100fea86 = 0x2c;
+  DAT_100fea87 = 0x24;
+  DAT_100fea88 = 0;
+  DAT_100fea8b = 0x2e;
+  DAT_100fea8c = 0x21;
+  DAT_100fea8d = 0;
+  DAT_100fea90 = 0x30;
+  DAT_100fea91 = 0x2b;
+  DAT_100fea92 = 0;
+  DAT_100fea95 = 0x36;
+  DAT_100fea96 = 2;
+  DAT_100fea97 = 0;
+  DAT_100fea9a = 0x36;
+  DAT_100fea9b = 0x28;
+  DAT_100fea9c = 0;
+  DAT_100fea9f = 0x36;
+  DAT_100feaa0 = 0x30;
+  DAT_100feaa1 = 0;
+  DAT_100feaa4 = 0x37;
+  DAT_100feaa5 = 0x24;
+  DAT_100feaa6 = 0;
+  DAT_100feaa9 = 0x37;
+  DAT_100feaaa = 0x26;
+  DAT_100feaab = 0;
+  DAT_100feaae = 0x37;
+  DAT_100feaaf = 0x27;
+  DAT_100feab0 = 0;
+  DAT_100feab3 = 0x39;
+  DAT_100feab4 = 0x2f;
+  DAT_100feab5 = 0;
+  DAT_100feab8 = 0x42;
+  DAT_100feab9 = 0x24;
+  DAT_100feaba = 0;
+  DAT_100feabd = 0x44;
+  DAT_100feabe = 7;
+  DAT_100feabf = 0x2c;
+  DAT_100feac0 = 0;
+  DAT_100feac2 = 0x13;
+  DAT_100feac3 = 7;
+  DAT_100feac4 = 0x2b;
+  DAT_100feac5 = 0;
+  DAT_100feac7 = 0x37;
+  DAT_100feac8 = 7;
+  DAT_100feac9 = 0x2d;
+  DAT_100feaca = 0;
+  DAT_100feacc = 0x39;
+  DAT_100feacd = 7;
+  DAT_100feace = 0x2d;
+  DAT_100feacf = 0;
+  DAT_100fead1 = 0x39;
+  DAT_100fead2 = 0x23;
+  DAT_100fead3 = 0x15;
+  DAT_100fead4 = 0;
+  DAT_100fead6 = 1;
+  DAT_100fead7 = 0x36;
+  DAT_100fead8 = 0;
+  DAT_100feadb = 5;
+  DAT_100feadc = 0x2a;
+  DAT_100feadd = 0;
+  DAT_100feae0 = 0x12;
+  DAT_100feae1 = 0x44;
+  DAT_100feae2 = 0;
+  DAT_100feae5 = 0x18;
+  DAT_100feae6 = 0x2a;
+  DAT_100feae7 = 0;
+  DAT_100feaea = 0x1a;
+  DAT_100feaeb = 0x15;
+  DAT_100feaec = 0;
+  DAT_100feaef = 0x1e;
+  DAT_100feaf0 = 0x38;
+  DAT_100feaf1 = 7;
+  DAT_100feaf2 = 0x2d;
+  DAT_100feaf3 = 0;
+  DAT_100feaf4 = 0x20;
+  DAT_100feaf5 = 0x2b;
+  DAT_100feaf6 = 0;
+  DAT_100feaf9 = 0x2a;
+  DAT_100feafa = 5;
+  DAT_100feafb = 0;
+  DAT_100feafe = 0x2a;
+  DAT_100feaff = 0x1a;
+  DAT_100feb00 = 0;
+  DAT_100feb03 = 0x2a;
+  DAT_100feb04 = 0x42;
+  DAT_100feb05 = 0;
+  DAT_100feb08 = 0x2b;
+  DAT_100feb09 = 5;
+  DAT_100feb0a = 0;
+  DAT_100feb0d = 0x2b;
+  DAT_100feb0e = 0x18;
+  DAT_100feb0f = 0;
+  DAT_100feb12 = 0x2b;
+  DAT_100feb13 = 0x1a;
+  DAT_100feb14 = 0;
+  DAT_100feb17 = 0x2b;
+  DAT_100feb18 = 0x24;
+  DAT_100feb19 = 0;
+  DAT_100feb1c = 0x2c;
+  DAT_100feb1d = 5;
+  DAT_100feb1e = 0;
+  DAT_100feb21 = 0x2c;
+  DAT_100feb22 = 0x1a;
+  DAT_100feb23 = 0;
+  DAT_100feb26 = 0x2d;
+  DAT_100feb27 = 0x1a;
+  DAT_100feb28 = 0;
+  DAT_100feb2b = 0x2e;
+  DAT_100feb2c = 0x2a;
+  DAT_100feb2d = 0;
+  DAT_100feb30 = 0x35;
+  DAT_100feb31 = 0x1a;
+  DAT_100feb32 = 0;
+  DAT_100feb35 = 0x36;
+  DAT_100feb36 = 0x27;
+  DAT_100feb37 = 0;
+  DAT_100feb3a = 0x41;
+  DAT_100feb3b = 0x1a;
+  DAT_100feb3c = 0;
+  DAT_100feb3f = 0x43;
+  DAT_100feb40 = 0x3f;
+  DAT_100feb41 = 0;
+  DAT_100feb44 = 0x2c;
+  DAT_100feb45 = 7;
+  DAT_100feb46 = 0x2d;
+  DAT_100feb47 = 0;
+  DAT_100feb49 = 0x38;
+  DAT_100feb4a = 7;
+  DAT_100feb4b = 0x2d;
+  DAT_100feb4c = 0;
+  DAT_100feb4e = 0x13;
+  DAT_100feb4f = 0x1a;
+  DAT_100feb50 = 0;
+  DAT_100feb53 = 0x2c;
+  DAT_100feb54 = 0x35;
+  DAT_100feb55 = 0;
+  DAT_100feb58 = 2;
+  DAT_100feb59 = 0x2d;
+  DAT_100feb5a = 0;
+  DAT_100feb5d = 5;
+  DAT_100feb5e = 0x2d;
+  DAT_100feb5f = 0;
+  DAT_100feb62 = 7;
+  DAT_100feb63 = 0x13;
+  DAT_100feb64 = 0;
+  DAT_100feb67 = 7;
+  DAT_100feb68 = 0x2a;
+  DAT_100feb69 = 0;
+  DAT_100feb6c = 7;
+  DAT_100feb6d = 0x2b;
+  DAT_100feb6e = 0;
+  DAT_100feb71 = 7;
+  DAT_100feb72 = 0x2c;
+  DAT_100feb73 = 0;
+  DAT_100feb76 = 7;
+  DAT_100feb77 = 0x2d;
+  DAT_100feb78 = 0;
+  DAT_100feb7b = 7;
+  DAT_100feb7c = 0x37;
+  DAT_100feb7d = 0;
+  DAT_100feb80 = 7;
+  DAT_100feb81 = 0x39;
+  DAT_100feb82 = 0;
+  DAT_100feb85 = 0xb;
+  DAT_100feb86 = 0x36;
+  DAT_100feb87 = 0;
+  DAT_100feb8a = 0x13;
+  DAT_100feb8b = 7;
+  DAT_100feb8c = 0;
+  DAT_100feb8f = 0x13;
+  DAT_100feb90 = 0x36;
+  DAT_100feb91 = 0;
+  DAT_100feb94 = 0x15;
+  DAT_100feb95 = 7;
+  DAT_100feb96 = 0;
+  DAT_100feb99 = 0x15;
+  DAT_100feb9a = 0x23;
+  DAT_100feb9b = 0;
+  DAT_100feb9e = 0x18;
+  DAT_100feb9f = 0x2b;
+  DAT_100feba0 = 0;
+  DAT_100feba3 = 0x18;
+  DAT_100feba4 = 0x2d;
+  DAT_100feba5 = 0;
+  DAT_100feba8 = 0x18;
+  DAT_100feba9 = 0x36;
+  DAT_100febaa = 0;
+  DAT_100febad = 0x1a;
+  DAT_100febae = 0x44;
+  DAT_100febaf = 0;
+  DAT_100febb2 = 0x21;
+  DAT_100febb3 = 0x36;
+  DAT_100febb4 = 0;
+  DAT_100febb7 = 0x23;
+  DAT_100febb8 = 0x15;
+  DAT_100febb9 = 0;
+  DAT_100febbc = 0x23;
+  DAT_100febbd = 0x2a;
+  DAT_100febbe = 0;
+  DAT_100febc1 = 0x23;
+  DAT_100febc2 = 0x2d;
+  DAT_100febc3 = 0;
+  DAT_100febc6 = 0x23;
+  DAT_100febc7 = 0x2e;
+  DAT_100febc8 = 0;
+  DAT_100febcb = 0x23;
+  DAT_100febcc = 0x37;
+  DAT_100febcd = 0;
+  DAT_100febd0 = 0x23;
+  DAT_100febd1 = 0x39;
+  DAT_100febd2 = 0;
+  DAT_100febd5 = 0x24;
+  DAT_100febd6 = 0x2b;
+  DAT_100febd7 = 0;
+  DAT_100febda = 0x24;
+  DAT_100febdb = 0x2d;
+  DAT_100febdc = 0;
+  DAT_100febdf = 0x26;
+  DAT_100febe0 = 7;
+  DAT_100febe1 = 0;
+  DAT_100febe4 = 0x2a;
+  DAT_100febe5 = 2;
+  DAT_100febe6 = 0;
+  DAT_100febe9 = 0x2a;
+  DAT_100febea = 7;
+  DAT_100febeb = 0;
+  DAT_100febee = 0x2a;
+  DAT_100febef = 0x2b;
+  DAT_100febf0 = 0;
+  DAT_100febf3 = 0x2a;
+  DAT_100febf4 = 0x36;
+  DAT_100febf5 = 0;
+  DAT_100febf8 = 0x2a;
+  DAT_100febf9 = 0x37;
+  DAT_100febfa = 0;
+  DAT_100febfd = 0x2b;
+  DAT_100febfe = 7;
+  DAT_100febff = 0;
+  DAT_100fec02 = 0x2b;
+  DAT_100fec03 = 0x15;
+  DAT_100fec04 = 0;
+  DAT_100fec07 = 0x2b;
+  DAT_100fec08 = 0x23;
+  DAT_100fec09 = 0;
+  DAT_100fec0c = 0x2b;
+  DAT_100fec0d = 0x26;
+  DAT_100fec0e = 0;
+  DAT_100fec11 = 0x2c;
+  DAT_100fec12 = 7;
+  DAT_100fec13 = 0;
+  DAT_100fec16 = 0x2d;
+  DAT_100fec17 = 7;
+  DAT_100fec18 = 0;
+  DAT_100fec1b = 0x2d;
+  DAT_100fec1c = 0x15;
+  DAT_100fec1d = 0;
+  DAT_100fec20 = 0x2d;
+  DAT_100fec21 = 0x23;
+  DAT_100fec22 = 0;
+  DAT_100fec25 = 0x2d;
+  DAT_100fec26 = 0x26;
+  DAT_100fec27 = 0;
+  DAT_100fec2a = 0x2d;
+  DAT_100fec2b = 0x37;
+  DAT_100fec2c = 0;
+  DAT_100fec2f = 0x2d;
+  DAT_100fec30 = 0x39;
+  DAT_100fec31 = 0;
+  DAT_100fec34 = 0x2d;
+  DAT_100fec35 = 0x44;
+  DAT_100fec36 = 0;
+  DAT_100fec39 = 0x35;
+  DAT_100fec3a = 0x36;
+  DAT_100fec3b = 0;
+  DAT_100fec3e = 0x36;
+  DAT_100fec3f = 5;
+  DAT_100fec40 = 0;
+  DAT_100fec43 = 0x36;
+  DAT_100fec44 = 7;
+  DAT_100fec45 = 0;
+  DAT_100fec48 = 0x36;
+  DAT_100fec49 = 0x18;
+  DAT_100fec4a = 0;
+  DAT_100fec4d = 0x36;
+  DAT_100fec4e = 0x23;
+  DAT_100fec4f = 0;
+  DAT_100fec52 = 0x36;
+  DAT_100fec53 = 0x24;
+  DAT_100fec54 = 0;
+  DAT_100fec57 = 0x36;
+  DAT_100fec58 = 0x26;
+  DAT_100fec59 = 0;
+  DAT_100fec5c = 0x37;
+  DAT_100fec5d = 7;
+  DAT_100fec5e = 0;
+  DAT_100fec61 = 0x37;
+  DAT_100fec62 = 0x23;
+  DAT_100fec63 = 0;
+  DAT_100fec66 = 0x37;
+  DAT_100fec67 = 0x2a;
+  DAT_100fec68 = 0;
+  DAT_100fec6b = 0x37;
+  DAT_100fec6c = 0x35;
+  DAT_100fec6d = 0;
+  DAT_100fec70 = 0x37;
+  DAT_100fec71 = 0x39;
+  DAT_100fec72 = 0;
+  DAT_100fec75 = 0x38;
+  DAT_100fec76 = 7;
+  DAT_100fec77 = 0;
+  DAT_100fec7a = 0x39;
+  DAT_100fec7b = 7;
+  DAT_100fec7c = 0;
+  DAT_100fec7f = 0x39;
+  DAT_100fec80 = 0x1a;
+  DAT_100fec81 = 0;
+  DAT_100fec84 = 0x39;
+  DAT_100fec85 = 0x23;
+  DAT_100fec86 = 0;
+  DAT_100fec89 = 0x39;
+  DAT_100fec8a = 0x26;
+  DAT_100fec8b = 0;
+  DAT_100fec8e = 0x39;
+  DAT_100fec8f = 0x36;
+  DAT_100fec90 = 0;
+  DAT_100fec93 = 0x39;
+  DAT_100fec94 = 0x37;
+  DAT_100fec95 = 0;
+  DAT_100fec98 = 1;
+  DAT_100fec99 = 0;
+  DAT_100fec9d = 2;
+  DAT_100fec9e = 0;
+  DAT_100feca2 = 3;
+  DAT_100feca3 = 0;
+  DAT_100feca7 = 4;
+  DAT_100feca8 = 0;
+  DAT_100fecac = 5;
+  DAT_100fecad = 0;
+  DAT_100fecb1 = 6;
+  DAT_100fecb2 = 0;
+  DAT_100fecb6 = 7;
+  DAT_100fecb7 = 0;
+  DAT_100fecbb = 8;
+  DAT_100fecbc = 0;
+  DAT_100fecc0 = 9;
+  DAT_100fecc1 = 0;
+  DAT_100fecc5 = 10;
+  DAT_100fecc6 = 0;
+  DAT_100fecca = 0xb;
+  DAT_100feccb = 0;
+  DAT_100feccf = 0xc;
+  DAT_100fecd0 = 0;
+  DAT_100fecd4 = 0xd;
+  DAT_100fecd5 = 0;
+  DAT_100fecd9 = 0xe;
+  DAT_100fecda = 0;
+  DAT_100fecde = 0xf;
+  DAT_100fecdf = 0;
+  DAT_100fece3 = 0x10;
+  DAT_100fece4 = 0;
+  DAT_100fece8 = 0x11;
+  DAT_100fece9 = 0;
+  DAT_100feced = 0x12;
+  DAT_100fecee = 0;
+  DAT_100fecf2 = 0x13;
+  DAT_100fecf3 = 0;
+  DAT_100fecf7 = 0x14;
+  DAT_100fecf8 = 0;
+  DAT_100fecfc = 0x15;
+  DAT_100fecfd = 0;
+  DAT_100fed01 = 0x16;
+  DAT_100fed02 = 0;
+  DAT_100fed06 = 0x17;
+  DAT_100fed07 = 0;
+  DAT_100fed0b = 0x18;
+  DAT_100fed0c = 0;
+  DAT_100fed10 = 0x19;
+  DAT_100fed11 = 0;
+  DAT_100fed15 = 0x1a;
+  DAT_100fed16 = 0;
+  DAT_100fed1a = 0x1b;
+  DAT_100fed1b = 0;
+  DAT_100fed1f = 0x1c;
+  DAT_100fed20 = 0;
+  DAT_100fed24 = 0x1d;
+  DAT_100fed25 = 0;
+  DAT_100fed29 = 0x1e;
+  DAT_100fed2a = 0;
+  DAT_100fed2e = 0x1f;
+  DAT_100fed2f = 0;
+  DAT_100fed33 = 0x20;
+  DAT_100fed34 = 0;
+  DAT_100fed38 = 0x21;
+  DAT_100fed6a = 0x2b;
+  DAT_100fed39 = 0;
+  DAT_100fed3d = 0x22;
+  DAT_100fed3e = 0;
+  DAT_100fed42 = 0x23;
+  DAT_100fed43 = 0;
+  DAT_100fed47 = 0x24;
+  DAT_100fed48 = 0;
+  DAT_100fed4c = 0x25;
+  DAT_100fed4d = 0;
+  DAT_100fed51 = 0x26;
+  DAT_100fed52 = 0;
+  DAT_100fed56 = 0x27;
+  DAT_100fed57 = 0;
+  DAT_100fed5b = 0x28;
+  DAT_100fed5c = 0;
+  DAT_100fed60 = 0x29;
+  DAT_100fed61 = 0;
+  DAT_100fed65 = 0x2a;
+  DAT_100fed66 = 0;
+  DAT_100fed6b = 0;
+  DAT_100fed6f = 0x2c;
+  DAT_100fed70 = 0;
+  DAT_100fed74 = 0x2d;
+  DAT_100fed75 = 0;
+  DAT_100fed79 = 0x2e;
+  DAT_100fed7a = 0;
+  DAT_100fed7e = 0x2f;
+  DAT_100fed7f = 0;
+  DAT_100fed83 = 0x30;
+  DAT_100fed84 = 0;
+  DAT_100fed88 = 0x31;
+  DAT_100fed89 = 0;
+  DAT_100fed8d = 0x32;
+  DAT_100fed8e = 0;
+  DAT_100fed92 = 0x33;
+  DAT_100fed93 = 0;
+  DAT_100fed97 = 0x34;
+  DAT_100fed98 = 0;
+  DAT_100fed9c = 0x35;
+  DAT_100fed9d = 0;
+  DAT_100feda1 = 0x36;
+  DAT_100feda2 = 0;
+  DAT_100feda6 = 0x37;
+  DAT_100feda7 = 0;
+  DAT_100fedab = 0x38;
+  DAT_100fedac = 0;
+  DAT_100fedb0 = 0x39;
+  DAT_100fedb1 = 0;
+  DAT_100fedb5 = 0x3a;
+  DAT_100fedb6 = 0;
+  DAT_100fedba = 0x3b;
+  DAT_100fedbb = 0;
+  DAT_100fedbf = 0x3c;
+  DAT_100fedc0 = 0;
+  DAT_100fedc4 = 0x3d;
+  DAT_100fedc5 = 0;
+  DAT_100fedc9 = 0x3e;
+  DAT_100fedca = 0;
+  DAT_100fedce = 0x3f;
+  DAT_100fedcf = 0;
+  DAT_100fedd3 = 0x40;
+  DAT_100fedd4 = 0;
+  DAT_100fedd8 = 0x41;
+  DAT_100fedd9 = 0;
+  DAT_100feddd = 0x42;
+  DAT_100fedde = 0;
+  DAT_100fede2 = 0x43;
+  DAT_100fede3 = 0;
+  DAT_100fede7 = 0x44;
+  DAT_100fede8 = 0;
+  DAT_100fedec = 0x45;
+  DAT_100feded = 0;
+  DAT_100fedf1 = 100;
+  DAT_100fedf2 = 0;
+  DAT_100fedf6 = 99;
+  DAT_100fedf7 = 0;
+  return;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x100124a0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10012380 @ 10012380 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+undefined4 __cdecl FUN_10012380(int param_1,undefined2 *param_2,HWND param_3)
+
+{
+  undefined4 uVar1;
+  uint uVar2;
+  int *piVar3;
+  undefined2 extraout_var;
+  undefined4 extraout_ECX;
+  undefined4 extraout_EDX;
+  undefined1 local_204 [512];
+
+  FUN_10063ed6(local_204,(byte *)s__sdict_eng_100793e0);
+  VT_SetDecimal0Pron_ENG();
+  DAT_100a74b8 = 0;
+  DAT_100a749c = 0;
+  DAT_100a74bc = 0;
+  VT_SetDecimal0Pron_ENG();
+  FUN_10028430(1,param_3,0);
+  uVar1 = FUN_10012210(param_1,param_2);
+  if ((short)uVar1 < 0) {
+    return CONCAT22((short)((uint)uVar1 >> 0x10),0xffff);
+  }
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  uVar1 = FUN_10012280(param_1,param_2);
+  if ((short)uVar1 < 0) {
+    return CONCAT22((short)((uint)uVar1 >> 0x10),0xffff);
+  }
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  FUN_10028430(1,param_3,10);
+  uVar2 = FUN_10039fe0((int)local_204);
+  if ((short)uVar2 == 0) {
+    *param_2 = 5;
+    return CONCAT22((short)(uVar2 >> 0x10),0xffff);
+  }
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  FUN_10028430(1,param_3,0x14);
+  FUN_100122f0();
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  FUN_10028430(1,param_3,0x1e);
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  FUN_10028430(1,param_3,0x23);
+  FUN_1002e800(param_1);
+  FUN_1002e860(extraout_ECX,extraout_EDX,param_1);
+  FUN_1002e830(param_1);
+  piVar3 = FUN_100154d0(&PTR_DAT_1007eb88);
+  *(int **)(param_1 + 0x20428) = piVar3;
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  VT_SetDecimal0Pron_ENG();
+  FUN_10028430(1,param_3,0x28);
+  DAT_100a749c = DAT_100a74b8;
+  return CONCAT22(extraout_var,1);
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x100033e0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_100033e0 @ 100033e0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+int * __cdecl FUN_100033e0(int param_1,int param_2,short param_3,undefined1 param_4)
+
+{
+  int *piVar1;
+  char *pcVar2;
+  int iVar3;
+  char *pcVar4;
+  undefined1 local_208 [512];
+  int local_8;
+
+  FUN_10063ed6(local_208,(byte *)s__s__s_1007732c);
+  piVar1 = (int *)FUN_1001d9c0(0x14);
+  if (piVar1 == (int *)0x0) {
+    return (int *)0x0;
+  }
+  pcVar2 = FUN_10010300(local_208,&param_2,1,&local_8);
+  piVar1[2] = (int)pcVar2;
+  if (pcVar2 != (char *)0x0) {
+    pcVar2[param_2] = '\0';
+    if (local_8 == 0) {
+      return (int *)0x0;
+    }
+    param_1 = piVar1[2];
+    *piVar1 = local_8;
+    pcVar2 = (char *)(piVar1[2] + param_2);
+    iVar3 = FUN_1001d9c0(*piVar1 << 2);
+    piVar1[3] = iVar3;
+    iVar3 = FUN_1001d9c0(*piVar1 << 2);
+    piVar1[4] = iVar3;
+    iVar3 = 0;
+    if (0 < *piVar1) {
+      do {
+        pcVar4 = FUN_10003540(&param_1,pcVar2);
+        if (pcVar4 == (char *)0x0) {
+          return (int *)0x0;
+        }
+        if (param_3 == 0x4c) {
+          *(char **)(piVar1[3] + iVar3 * 4) = pcVar4;
+          *(char **)(piVar1[4] + iVar3 * 4) = pcVar4;
+        }
+        else if (param_3 == 0x4d) {
+          *(char **)(piVar1[3] + iVar3 * 4) = pcVar4;
+          pcVar4 = FUN_10003540(&param_1,pcVar2);
+          if (pcVar4 == (char *)0x0) {
+            return (int *)0x0;
+          }
+          *(char **)(piVar1[4] + iVar3 * 4) = pcVar4;
+        }
+        iVar3 = iVar3 + 1;
+      } while (iVar3 < *piVar1);
+    }
+    *(undefined1 *)(piVar1 + 1) = param_4;
+    return piVar1;
+  }
+  return (int *)0x0;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x1001d9c0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_1001d9c0 @ 1001d9c0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+void __cdecl FUN_1001d9c0(size_t param_1)
+
+{
+  void *pvVar1;
+
+  if (param_1 == 0) {
+    param_1 = 2;
+  }
+  pvVar1 = _malloc(param_1);
+  while (pvVar1 == (void *)0x0) {
+    Sleep(10);
+    pvVar1 = _malloc(param_1);
+  }
+  return;
+}
+
+ (GhidraScript)
+INFO  REPORT: Save succeeded for processed file: /vt_pau.dll (HeadlessAnalyzer)

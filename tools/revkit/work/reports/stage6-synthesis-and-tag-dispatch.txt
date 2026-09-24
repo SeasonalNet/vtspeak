@@ -1,0 +1,774 @@
+ Container revkit-revtools-run-b152b6db97ee Creating
+ Container revkit-revtools-run-b152b6db97ee Created
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode)
+INFO  Using log config file: jar:file:/opt/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)
+INFO  Using log file: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)
+INFO  Loading user preferences: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)
+INFO  Searching for classes... (ClassSearcher)
+INFO  Class search complete (808 ms) (ClassSearcher)
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)
+INFO  Initializing Random Number Generator... (SecureRandomFactory)
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)
+INFO  Starting cache cleanup: /var/tmp/ubuntu-ghidra/fscache2 (FileCacheMaintenanceDaemon)
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)
+INFO  Headless startup complete (1702 ms) (AnalyzeHeadless)
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)
+INFO  HEADLESS Script Paths:
+    /opt/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /work/scripts (HeadlessAnalyzer)
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)
+INFO  Opening existing project: /work/projects/VoiceText (HeadlessAnalyzer)
+INFO  Opening project: /work/projects/VoiceText (HeadlessProject)
+INFO  REPORT: Processing project file: /vt_pau.dll (HeadlessAnalyzer)
+INFO  REPORT: Execute script: DecompileNamedFunctions.java '0x10026ab0' '0x10026870' '0x10025fc0' '0x100286c0' '0x10027750' '0x10031d10' '0x10031ce0' '0x10030b40' '0x10030c90' '0x10030c60'  (HeadlessAnalyzer)
+INFO  SCRIPT: /work/scripts/DecompileNamedFunctions.java (HeadlessAnalyzer)
+INFO  DecompileNamedFunctions.java> ===== 0x10026ab0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10026ab0 @ 10026ab0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+undefined4 __cdecl FUN_10026ab0(int param_1,int *param_2,char *param_3)
+
+{
+  char cVar1;
+  int iVar2;
+  int iVar3;
+  uint uVar4;
+
+  uVar4 = 0xffffffff;
+  param_2[1] = 0;
+  param_2[2] = (int)param_3;
+  do {
+    if (uVar4 == 0) break;
+    uVar4 = uVar4 - 1;
+    cVar1 = *param_3;
+    param_3 = param_3 + 1;
+  } while (cVar1 != '\0');
+  *param_2 = ~uVar4 - 1;
+  param_2[0x11] = 0;
+  iVar3 = FUN_10026630(param_1,param_2);
+  iVar2 = param_2[0x11];
+  while( true ) {
+    if (iVar2 != 0) {
+      return CONCAT22((short)((uint)iVar3 >> 0x10),0xffff);
+    }
+    if ((-1 < (short)iVar3) && (*(short *)(param_2[0x13] + 2) != 0)) break;
+    iVar3 = FUN_10026630(param_1,param_2);
+    iVar2 = param_2[0x11];
+  }
+  return param_2[0x13] & 0xffff0000;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10026870 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10026870 @ 10026870 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+int __cdecl FUN_10026870(int *param_1,int *param_2,int param_3)
+
+{
+  short *psVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+
+  param_2[0xd] = param_3;
+  FUN_100267d0(param_1,param_2);
+  iVar2 = param_2[0xc];
+  if (param_1[0x133f] != 0) {
+    if (0 < param_1[0x133f]) {
+      psVar1 = (short *)param_2[0xd];
+      iVar2 = iVar2 / 2;
+      iVar4 = 0;
+      if (0 < iVar2) {
+        do {
+          if (iVar4 == 0) {
+            iVar3 = ((int)(short)param_2[0x48435] * param_1[0x133f] + 0x32) / 100 + (int)*psVar1;
+            if ((0x7ffe < iVar3) || (iVar3 < -0x7fff)) {
+              iVar3 = ((iVar3 < 0x7fff) - 1 & 0xfffd) - 0x7fff;
+            }
+            *(short *)(param_2 + 0x48a17) = (short)iVar3;
+          }
+          else {
+            iVar3 = (int)psVar1[iVar4] +
+                    ((int)*(short *)((int)param_2 + iVar4 * 2 + 0x12285a) * param_1[0x133f] + 0x32)
+                    / 100;
+            if ((0x7ffe < iVar3) || (iVar3 < -0x7fff)) {
+              iVar3 = ((iVar3 < 0x7fff) - 1 & 0xfffd) - 0x7fff;
+            }
+            *(short *)((int)param_2 + iVar4 * 2 + 0x12285c) = (short)iVar3;
+          }
+          iVar4 = iVar4 + 1;
+        } while (iVar4 < iVar2);
+      }
+      *(undefined2 *)(param_2 + 0x48435) = *(undefined2 *)((int)param_2 + iVar4 * 2 + 0x12285a);
+      FUN_10063f30((undefined4 *)psVar1,param_2 + 0x48a17,iVar2 * 2);
+      return param_2[0xc];
+    }
+    psVar1 = (short *)param_2[0xd];
+    iVar2 = iVar2 / 2;
+    iVar4 = iVar2;
+    while (iVar3 = iVar4 + -1, -1 < iVar3) {
+      if (iVar3 == 0) {
+        iVar4 = ((int)(short)param_2[0x48435] * param_1[0x133f] + 0x32) / 100 + (int)*psVar1;
+        if ((0x7ffe < iVar4) || (iVar4 < -0x7fff)) {
+          iVar4 = ((iVar4 < 0x7fff) - 1 & 0xfffd) - 0x7fff;
+        }
+        *(short *)(param_2 + 0x48a17) = (short)iVar4;
+        iVar4 = iVar3;
+      }
+      else {
+        iVar4 = (int)psVar1[iVar3] + ((int)psVar1[iVar4 + -2] * param_1[0x133f] + 0x32) / 100;
+        if ((0x7ffe < iVar4) || (iVar4 < -0x7fff)) {
+          iVar4 = ((iVar4 < 0x7fff) - 1 & 0xfffd) - 0x7fff;
+        }
+        *(short *)((int)param_2 + iVar3 * 2 + 0x12285c) = (short)iVar4;
+        iVar4 = iVar3;
+      }
+    }
+    *(short *)(param_2 + 0x48435) = psVar1[iVar2 + -1];
+    FUN_10063f30((undefined4 *)psVar1,param_2 + 0x48a17,iVar2 * 2);
+    iVar2 = param_2[0xc];
+  }
+  return iVar2;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10025fc0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10025fc0 @ 10025fc0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+int __cdecl FUN_10025fc0(undefined2 *param_1,int param_2,int param_3)
+
+{
+  int iVar1;
+  undefined4 *puVar2;
+  int *piVar3;
+  undefined4 uVar4;
+  int iVar5;
+  int iVar6;
+
+  VT_SetDecimal0Pron_ENG();
+  EnterCriticalSection((LPCRITICAL_SECTION)&DAT_100a8400);
+  iVar6 = 0;
+  if (0 < *(int *)((&DAT_100a0464)[param_3] + 0x4d14)) {
+    piVar3 = &DAT_100a047c + param_3 * 0x400;
+    do {
+      if (*piVar3 == 0) {
+        (&DAT_100a047c)[param_3 * 0x400 + iVar6] = -0xff;
+        iVar1 = FUN_1001d9c0(0x1312e0);
+        (&DAT_100a047c)[param_3 * 0x400 + iVar6] = iVar1;
+        if ((iVar1 == 0) || (iVar1 == -0xff)) {
+          *param_1 = 0;
+          LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_100a8400);
+          return 0;
+        }
+        *(int *)(iVar1 + 0x11b248) = iVar6;
+        *(undefined1 *)(iVar1 + 0x47784) = (undefined1)param_3;
+        if (iVar1 != 0) {
+          LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_100a8400);
+          VT_SetDecimal0Pron_ENG();
+          if ((param_2 < 0x400) && (-1 < param_2)) {
+            if ((&DAT_100a647c)[param_2] != 0) {
+              *(int *)(iVar1 + 0x1312c0) = (&DAT_100a647c)[param_2];
+              goto LAB_100260ec;
+            }
+            if (DAT_100a647c != 0) {
+              *(int *)(iVar1 + 0x1312c0) = DAT_100a647c;
+              goto LAB_100260ec;
+            }
+          }
+          else if (DAT_100a647c != 0) {
+            *(int *)(iVar1 + 0x1312c0) = DAT_100a647c;
+            goto LAB_100260ec;
+          }
+          *(undefined4 *)(iVar1 + 0x1312c0) = 0;
+LAB_100260ec:
+          VT_SetDecimal0Pron_ENG();
+          *(undefined4 *)(iVar1 + 8) = 0;
+          *(undefined4 *)(iVar1 + 0x34) = 0;
+          *(undefined4 *)(iVar1 + 0x30) = 0;
+          *(undefined4 *)(iVar1 + 0x44) = 0;
+          *(undefined2 *)(iVar1 + 0x1210d4) = 0;
+          *(undefined1 *)(iVar1 + 0x122850) = 1;
+          *(undefined4 *)(iVar1 + 0x1312c8) = 0xffffffff;
+          *(undefined4 *)(iVar1 + 0x47788) = 0;
+          *(undefined4 *)(iVar1 + 0x4778c) = 0;
+          *(undefined4 *)(iVar1 + 0x1312c4) = 0xffffffff;
+          *(undefined1 *)(iVar1 + 0x122851) = 0;
+          *(undefined4 *)(iVar1 + 0x1312cc) = 0xffffffff;
+          *(undefined4 *)(iVar1 + 0x1312d0) = 0;
+          *(undefined4 *)(iVar1 + 0x122444) = 0xffffffff;
+          *(undefined1 *)(iVar1 + 0x20) = 4;
+          *(undefined1 *)(iVar1 + 0x21) = 0;
+          *(undefined4 *)(iVar1 + 0x2c) = 0;
+          *(undefined4 *)(iVar1 + 0x47794) = 0;
+          *(undefined4 *)(iVar1 + 0x47798) = 0;
+          *(undefined4 *)(iVar1 + 0x47790) = 0;
+          *(undefined4 *)(iVar1 + 0x477a4) = 0xffffffff;
+          *(int *)(iVar1 + 0x4c) = iVar1 + 0x50;
+          *(undefined4 *)(iVar1 + 0x122440) = 0xffffffff;
+          *(undefined1 *)(iVar1 + 0x1312d4) = 0;
+          *(undefined1 *)(iVar1 + 0x1312d6) = 0;
+          *(undefined1 *)(iVar1 + 0x1312d7) = 0;
+          *(undefined1 *)(iVar1 + 0x1312d8) = 0;
+          *(undefined1 *)(iVar1 + 0x1312d9) = 0;
+          *(undefined1 *)(iVar1 + 0x1312da) = 0;
+          *(undefined1 *)(iVar1 + 0x1312dc) = 0;
+          *(undefined1 *)(iVar1 + 0x1312dd) = 0;
+          *(undefined1 *)(iVar1 + 0x1312db) = 0;
+          *(undefined1 *)(iVar1 + 0x1312d5) = 0;
+          iVar6 = iVar1 + 0x1223c0;
+          param_3 = 8;
+          do {
+            FUN_1001cbc0(iVar6);
+            iVar6 = iVar6 + 0x10;
+            param_3 = param_3 + -1;
+          } while (param_3 != 0);
+          FUN_1001cc70(iVar1);
+          piVar3 = (int *)(iVar1 + 0x477ac);
+          iVar6 = iVar1 + 0x513ec;
+          iVar5 = 10000;
+          do {
+            *piVar3 = iVar6;
+            iVar6 = iVar6 + 0x14;
+            piVar3 = piVar3 + 1;
+            iVar5 = iVar5 + -1;
+          } while (iVar5 != 0);
+          VT_SetDecimal0Pron_ENG();
+          puVar2 = FUN_10040df0();
+          *(undefined4 **)(iVar1 + 0x1312bc) = puVar2;
+          if ((&DAT_100a7488)[*(char *)(iVar1 + 0x47784)] == '\0') {
+            *(undefined4 *)(*(int *)(iVar1 + 0x1312bc) + 0x39e8) = 0;
+          }
+          else {
+            *(undefined4 *)(*(int *)(iVar1 + 0x1312bc) + 0x39e8) = *(undefined4 *)(iVar1 + 0x1312c0)
+            ;
+          }
+          FUN_1003e470(*(int *)(iVar1 + 0x1312bc),*(undefined4 *)(DAT_100a0460 + 0x2041c));
+          FUN_1003e480(*(int *)(iVar1 + 0x1312bc));
+          VT_SetDecimal0Pron_ENG();
+          *(undefined4 *)(iVar1 + 0x47778) = 0;
+          *(undefined4 *)(iVar1 + 0x4777c) = 0;
+          *(undefined4 *)(iVar1 + 0x47780) = 0;
+          piVar3 = VT_AllocSyncInfo_New_ENG();
+          *(int **)(iVar1 + 0x47774) = piVar3;
+          if (piVar3 != (int *)0x0) {
+            VT_InitSyncInfo_New_ENG(*(int **)(iVar1 + 0x47774));
+            VT_SetDecimal0Pron_ENG();
+            param_3 = 0;
+            piVar3 = (int *)(iVar1 + 0x38);
+            while( true ) {
+              iVar6 = FUN_1001d9c0(0xc);
+              *piVar3 = iVar6;
+              if (iVar6 == 0) {
+                *param_1 = 0;
+                return 0;
+              }
+              uVar4 = FUN_1001d9c0(60000);
+              *(undefined4 *)(*piVar3 + 4) = uVar4;
+              if (*(int *)(*piVar3 + 4) == 0) break;
+              piVar3 = piVar3 + 1;
+              param_3 = param_3 + 1;
+              if (1 < param_3) {
+                *(undefined4 *)(*(int *)(iVar1 + 0x38) + 8) = *(undefined4 *)(iVar1 + 0x3c);
+                *(undefined4 *)(*(int *)(iVar1 + 0x3c) + 8) = *(undefined4 *)(iVar1 + 0x38);
+                **(undefined1 **)(iVar1 + 0x38) = 0;
+                **(undefined1 **)(iVar1 + 0x3c) = 1;
+                VT_SetDecimal0Pron_ENG();
+                *param_1 = 1;
+                VT_SetDecimal0Pron_ENG();
+                return iVar1;
+              }
+            }
+            *param_1 = 0;
+            return 0;
+          }
+          *param_1 = 0;
+          return 0;
+        }
+        break;
+      }
+      iVar6 = iVar6 + 1;
+      piVar3 = piVar3 + 1;
+    } while (iVar6 < *(int *)((&DAT_100a0464)[param_3] + 0x4d14));
+  }
+  *param_1 = 0;
+  LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_100a8400);
+  return 0;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x100286c0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_100286c0 @ 100286c0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+void __cdecl
+FUN_100286c0(undefined4 param_1,int param_2,int param_3,int param_4,int param_5,undefined4 param_6,
+            int param_7)
+
+{
+  if (param_7 < 0) {
+    *(undefined1 *)(param_2 + 0x1210d6) = 0;
+  }
+  else {
+    *(char *)(param_2 + 0x1210d6) = (char)param_7;
+  }
+  if ((*(char *)(param_2 + 0x1210d6) == '\x04') || (*(char *)(param_2 + 0x1210d6) == '\x06')) {
+    param_6 = 0xffffffff;
+    param_5 = -1;
+    param_4 = -1;
+    param_3 = -1;
+  }
+  *(int *)(param_2 + 0x1210dc) = param_3;
+  *(int *)(param_2 + 0x1210e0) = param_4;
+  *(int *)(param_2 + 0x1210e4) = param_5;
+  if (param_3 < 0) {
+    *(undefined1 *)(param_2 + 0x1210d7) = 0;
+  }
+  else {
+    *(undefined1 *)(param_2 + 0x1210d7) = 1;
+  }
+  if (param_4 < 0) {
+    *(undefined1 *)(param_2 + 0x1210d8) = 0;
+  }
+  else {
+    *(undefined1 *)(param_2 + 0x1210d8) = 1;
+    if (param_4 == 0) {
+      *(undefined4 *)(param_2 + 0x1210e0) = 0x32;
+    }
+    else {
+      *(int *)(param_2 + 0x1210e0) = param_4;
+    }
+  }
+  if (param_5 < 0) {
+    *(undefined1 *)(param_2 + 0x1210d9) = 0;
+  }
+  else {
+    *(undefined1 *)(param_2 + 0x1210d9) = 1;
+  }
+  *(undefined4 *)(param_2 + 0x1312c8) = param_6;
+  *(int *)(*(int *)(param_2 + 0x4c) + 0x47718) = param_2 + 0x121100;
+  *(int *)(*(int *)(param_2 + 0x4c) + 0x47710) = param_2 + 0x121420;
+  *(int *)(*(int *)(param_2 + 0x4c) + 0x47714) = param_2 + 0x121740;
+  *(int *)(*(int *)(param_2 + 0x4c) + 0x4770c) = param_2 + 0x121a60;
+  *(int *)(*(int *)(param_2 + 0x4c) + 0x4771c) = param_2 + 0x1220a0;
+  return;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10027750 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10027750 @ 10027750 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+uint __cdecl FUN_10027750(undefined *param_1)
+
+{
+  char cVar1;
+  int iVar2;
+  undefined *puVar3;
+  uint in_EAX;
+  undefined2 extraout_var;
+  undefined *puVar4;
+
+  puVar3 = param_1;
+  if (param_1 == (undefined *)0x0) {
+    return in_EAX & 0xffff0000;
+  }
+  VT_SetDecimal0Pron_ENG();
+  EnterCriticalSection((LPCRITICAL_SECTION)&DAT_100a8400);
+  iVar2 = *(int *)(param_1 + 0x11b248);
+  cVar1 = param_1[0x47784];
+  FUN_10040e50(*(undefined **)(param_1 + 0x1312bc));
+  if (*(undefined **)(param_1 + 8) != (undefined *)0x0) {
+    FUN_1001da30(*(undefined **)(param_1 + 8));
+  }
+  if (*(undefined **)(param_1 + 0x47794) != (undefined *)0x0) {
+    FUN_1001da30(*(undefined **)(param_1 + 0x47794));
+  }
+  if (*(undefined **)(param_1 + 0x47798) != (undefined *)0x0) {
+    FUN_1001da30(*(undefined **)(param_1 + 0x47798));
+  }
+  if (*(undefined **)(param_1 + 0x47790) != (undefined *)0x0) {
+    FUN_1001da30(*(undefined **)(param_1 + 0x47790));
+  }
+  puVar4 = param_1 + 0x1223c0;
+  param_1 = (undefined *)0x8;
+  do {
+    FUN_1001cc30((int)puVar4);
+    puVar4 = puVar4 + 0x10;
+    param_1 = param_1 + -1;
+  } while (param_1 != (undefined *)0x0);
+  FUN_1001cd30((int)puVar3);
+  VT_FreeSyncInfo_New_ENG(*(int **)(puVar3 + 0x47774));
+  FUN_1001da30(*(undefined **)(*(int *)(puVar3 + 0x38) + 4));
+  FUN_1001da30(*(undefined **)(puVar3 + 0x38));
+  FUN_1001da30(*(undefined **)(*(int *)(puVar3 + 0x3c) + 4));
+  FUN_1001da30(*(undefined **)(puVar3 + 0x3c));
+  FUN_1001da30(puVar3);
+  (&DAT_100a047c)[cVar1 * 0x400 + iVar2] = 0;
+  LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_100a8400);
+  return CONCAT22(extraout_var,1);
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10031d10 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10031d10 @ 10031d10 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+void __cdecl
+FUN_10031d10(int param_1,int *param_2,int param_3,int *param_4,int param_5,int param_6,int param_7)
+
+{
+  FUN_10031650(param_1,param_2,param_3,param_4,param_5,param_6,param_7,0x15);
+  return;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10031ce0 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10031ce0 @ 10031ce0 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+void __cdecl
+FUN_10031ce0(int param_1,int *param_2,int param_3,int *param_4,int param_5,int param_6,int param_7)
+
+{
+  FUN_10031650(param_1,param_2,param_3,param_4,param_5,param_6,param_7,0x11);
+  return;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10030b40 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10030b40 @ 10030b40 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+void __cdecl
+FUN_10030b40(int param_1,int *param_2,int param_3,int *param_4,int param_5,int param_6,int param_7)
+
+{
+  FUN_10030500(param_1,param_2,param_3,param_4,param_5,param_6,param_7,0,0xc);
+  return;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10030c90 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10030c90 @ 10030c90 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+undefined4 __cdecl
+FUN_10030c90(int param_1,int *param_2,int param_3,int *param_4,int param_5,int param_6,int param_7)
+
+{
+  char cVar1;
+  byte bVar2;
+  int *piVar3;
+  int iVar4;
+  char *pcVar5;
+  char *pcVar6;
+  uint uVar7;
+  int iVar8;
+  int iVar9;
+  int iVar10;
+  byte *pbVar11;
+  char local_2a0c [1536];
+  char local_240c [1534];
+  char acStackY_1e0e [1538];
+  char local_180c [1536];
+  char local_120c [1536];
+  byte local_c0c [1536];
+  char local_60c [1496];
+  undefined4 uStackY_34;
+
+  piVar3 = param_4;
+  FUN_10064270();
+  iVar4 = FUN_1002eab0((undefined4 *)local_60c,param_1,param_2,param_6);
+  if (iVar4 != 0) {
+    uVar7 = 0xffffffff;
+    pcVar6 = local_60c;
+    do {
+      if (uVar7 == 0) break;
+      uVar7 = uVar7 - 1;
+      cVar1 = *pcVar6;
+      pcVar6 = pcVar6 + 1;
+    } while (cVar1 != '\0');
+    iVar10 = (~uVar7 - 1) + *(int *)(param_6 + 0xc) + *(int *)(param_6 + 4);
+    iVar4 = FUN_10016150(local_60c,*(int **)(DAT_100a0460 + 0x20428),0);
+    if (iVar4 == 0) {
+      iVar4 = FUN_10016150(local_60c,*(int **)(DAT_100a0460 + 0x20428),0xd);
+      if (iVar4 != 0) {
+        pcVar5 = _strstr((char *)(*param_2 + iVar10 + param_1),s_<_vtml_sayas_1007fcf4);
+        pcVar6 = _strstr((char *)(*param_2 + iVar10 + param_1),s_<_VTML_SAYAS_1007fee4);
+        if (pcVar5 == (char *)0x0) {
+          if (pcVar6 == (char *)0x0) {
+            return 0;
+          }
+        }
+        else if ((pcVar6 == (char *)0x0) || (pcVar5 < pcVar6)) {
+          pcVar6 = pcVar5;
+        }
+        pcVar6 = pcVar6 + ((-iVar10 - *param_2) - param_1);
+        if (((int)pcVar6 < 0) || (pcVar5 = pcVar6, 0x1ff < (int)pcVar6)) {
+          pcVar5 = (char *)0x1ff;
+        }
+        FUN_10063f30((undefined4 *)(acStackY_1e0e + 2),(undefined4 *)(*param_2 + iVar10 + param_1),
+                     (uint)pcVar5);
+        acStackY_1e0e[(int)(pcVar5 + 2)] = '\0';
+        cVar1 = acStackY_1e0e[(int)(pcVar5 + 1)];
+        while ((cVar1 == ' ' && (pcVar5 + -1 != (char *)0x0))) {
+          cVar1 = acStackY_1e0e[(int)pcVar5];
+          pcVar5 = pcVar5 + -1;
+        }
+        local_180c[0] = '\0';
+        iVar4 = FUN_1002ebf0(local_180c,local_60c,(byte *)s_interpret_as_1007fed4,
+                             *(char **)(param_6 + 0x14));
+        if ((iVar4 != 0) ||
+           (iVar4 = FUN_1002ebf0(local_180c,local_60c,(byte *)s_INTERPRET_AS_1007fec4,
+                                 *(char **)(param_6 + 0x14)), iVar4 != 0)) {
+          uVar7 = 0xffffffff;
+          pcVar5 = local_180c;
+          do {
+            if (uVar7 == 0) break;
+            uVar7 = uVar7 - 1;
+            cVar1 = *pcVar5;
+            pcVar5 = pcVar5 + 1;
+          } while (cVar1 != '\0');
+          if (0x1ff < ~uVar7 - 1) {
+            return 0;
+          }
+        }
+        local_240c[0] = '\0';
+        iVar4 = FUN_10016150(local_60c,*(int **)(DAT_100a0460 + 0x20428),0xe);
+        if ((iVar4 != 0) &&
+           ((iVar4 = FUN_1002ebf0(local_240c,local_60c,(byte *)s_format_1007febc,
+                                  *(char **)(param_6 + 0x14)), iVar4 != 0 ||
+            (iVar4 = FUN_1002ebf0(local_240c,local_60c,(byte *)s_FORMAT_1007feb4,
+                                  *(char **)(param_6 + 0x14)), iVar4 != 0)))) {
+          uVar7 = 0xffffffff;
+          pcVar5 = local_240c;
+          do {
+            if (uVar7 == 0) break;
+            uVar7 = uVar7 - 1;
+            cVar1 = *pcVar5;
+            pcVar5 = pcVar5 + 1;
+          } while (cVar1 != '\0');
+          if (0x1ff < ~uVar7 - 1) {
+            return 0;
+          }
+        }
+        local_120c[0] = '\0';
+        iVar4 = FUN_10016150(local_60c,*(int **)(DAT_100a0460 + 0x20428),0xf);
+        if ((iVar4 != 0) &&
+           ((iVar4 = FUN_1002ebf0(local_120c,local_60c,(byte *)s_detail_1007feac,
+                                  *(char **)(param_6 + 0x14)), iVar4 != 0 ||
+            (iVar4 = FUN_1002ebf0(local_120c,local_60c,(byte *)s_DETAIL_1007fea4,
+                                  *(char **)(param_6 + 0x14)), iVar4 != 0)))) {
+          uVar7 = 0xffffffff;
+          pcVar5 = local_120c;
+          do {
+            if (uVar7 == 0) break;
+            uVar7 = uVar7 - 1;
+            cVar1 = *pcVar5;
+            pcVar5 = pcVar5 + 1;
+          } while (cVar1 != '\0');
+          if (0x1ff < ~uVar7 - 1) {
+            return 0;
+          }
+        }
+        local_c0c[0] = 0;
+        iVar4 = FUN_10016150(local_60c,*(int **)(DAT_100a0460 + 0x20428),0x10);
+        if ((iVar4 != 0) &&
+           ((iVar4 = FUN_1002ebf0((char *)local_c0c,local_60c,(byte *)s_pausetime_1007fe98,
+                                  *(char **)(param_6 + 0x14)), iVar4 != 0 ||
+            (iVar4 = FUN_1002ebf0((char *)local_c0c,local_60c,(byte *)s_PAUSETIME_1007fe8c,
+                                  *(char **)(param_6 + 0x14)), iVar4 != 0)))) {
+          uVar7 = 0xffffffff;
+          pbVar11 = local_c0c;
+          do {
+            if (uVar7 == 0) break;
+            uVar7 = uVar7 - 1;
+            bVar2 = *pbVar11;
+            pbVar11 = pbVar11 + 1;
+          } while (bVar2 != 0);
+          if ((void *)0x1ff < (void *)(~uVar7 - 1)) {
+            return 0;
+          }
+          FUN_10064645((void *)(~uVar7 - 1),local_c0c);
+          FUN_10063ed6(local_c0c,&DAT_1007928c);
+        }
+        uStackY_34 = 0x10031137;
+        iVar4 = FUN_10048d60(acStackY_1e0e + 2,local_2a0c,0x600,local_180c,local_240c,local_120c,
+                             local_c0c);
+        if (iVar4 == 1) {
+          uVar7 = 0xffffffff;
+          pcVar5 = local_2a0c;
+          do {
+            if (uVar7 == 0) break;
+            uVar7 = uVar7 - 1;
+            cVar1 = *pcVar5;
+            pcVar5 = pcVar5 + 1;
+          } while (cVar1 != '\0');
+          pcVar5 = (char *)(~uVar7 - 1);
+          if (param_5 != 0) {
+            *(undefined1 *)(*param_4 + param_3) = 0xfd;
+            *(undefined1 *)(*param_4 + 1 + param_3) = 0xfe;
+            iVar4 = *param_2;
+            if (iVar4 < *(int *)(param_7 + 0x477a8)) {
+              param_4 = *(int **)(*(int *)(param_7 + 0x4779c) + iVar4 * 4);
+              param_1 = *(int *)(*(int *)(param_7 + 0x477a0) + -4 + (iVar4 + iVar10) * 4);
+              iVar4 = 0;
+            }
+            else {
+              param_1 = *(int *)(*(int *)(param_7 + 0x4779c) + -4 + *(int *)(param_7 + 0x477a8) * 4)
+                        + 1;
+              iVar4 = 0;
+              param_4 = (int *)param_1;
+            }
+            do {
+              *(int **)(*(int *)(param_7 + 0x47794) + (*piVar3 + iVar4) * 4) = param_4;
+              iVar9 = *piVar3 + iVar4;
+              iVar4 = iVar4 + 1;
+              *(int *)(*(int *)(param_7 + 0x47798) + iVar9 * 4) = param_1;
+            } while (iVar4 < 2);
+            FUN_10063f30((undefined4 *)(*piVar3 + 2 + param_3),(undefined4 *)local_2a0c,(uint)pcVar5
+                        );
+            iVar4 = *param_2 + iVar10;
+            if (iVar4 < *(int *)(param_7 + 0x477a8)) {
+              iVar4 = *(int *)(*(int *)(param_7 + 0x4779c) + iVar4 * 4);
+              param_3 = *(int *)(*(int *)(param_7 + 0x477a0) + -4 +
+                                (int)(pcVar6 + iVar10 + *param_2) * 4);
+            }
+            else {
+              iVar4 = *(int *)(*(int *)(param_7 + 0x4779c) + -4 + *(int *)(param_7 + 0x477a8) * 4) +
+                      1;
+              param_3 = iVar4;
+            }
+            iVar9 = 0;
+            if (0 < (int)pcVar5) {
+              do {
+                *(int *)(*(int *)(param_7 + 0x47794) + 8 + (*piVar3 + iVar9) * 4) = iVar4;
+                iVar8 = *piVar3 + iVar9;
+                iVar9 = iVar9 + 1;
+                *(int *)(*(int *)(param_7 + 0x47798) + 8 + iVar8 * 4) = param_3;
+              } while (iVar9 < (int)pcVar5);
+            }
+          }
+        }
+        else {
+          pcVar5 = pcVar6;
+          if (param_5 != 0) {
+            *(undefined1 *)(*param_4 + param_3) = 0xfd;
+            *(undefined1 *)(*param_4 + 1 + param_3) = 0xfe;
+            iVar4 = *param_2;
+            if (iVar4 < *(int *)(param_7 + 0x477a8)) {
+              param_6 = *(int *)(*(int *)(param_7 + 0x4779c) + iVar4 * 4);
+              param_4 = *(int **)(*(int *)(param_7 + 0x477a0) + -4 + (iVar4 + iVar10) * 4);
+              iVar4 = 0;
+            }
+            else {
+              param_4 = (int *)(*(int *)(*(int *)(param_7 + 0x4779c) + -4 +
+                                        *(int *)(param_7 + 0x477a8) * 4) + 1);
+              iVar4 = 0;
+              param_6 = (int)param_4;
+            }
+            do {
+              *(int *)(*(int *)(param_7 + 0x47794) + (*piVar3 + iVar4) * 4) = param_6;
+              iVar9 = *piVar3 + iVar4;
+              iVar4 = iVar4 + 1;
+              *(int **)(*(int *)(param_7 + 0x47798) + iVar9 * 4) = param_4;
+            } while (iVar4 < 2);
+            FUN_10063f30((undefined4 *)(*piVar3 + 2 + param_3),
+                         (undefined4 *)(*param_2 + iVar10 + param_1),(uint)pcVar6);
+            iVar4 = 0;
+            if (0 < (int)pcVar6) {
+              do {
+                iVar9 = *param_2 + iVar4 + iVar10;
+                if (iVar9 < *(int *)(param_7 + 0x477a8)) {
+                  iVar8 = *(int *)(*(int *)(param_7 + 0x4779c) + iVar9 * 4);
+                  param_6 = *(int *)(*(int *)(param_7 + 0x477a0) + iVar9 * 4);
+                }
+                else {
+                  iVar8 = *(int *)(*(int *)(param_7 + 0x4779c) + -4 +
+                                  *(int *)(param_7 + 0x477a8) * 4) + 1;
+                  param_6 = iVar8;
+                }
+                *(int *)(*(int *)(param_7 + 0x47794) + 8 + (*piVar3 + iVar4) * 4) = iVar8;
+                iVar9 = *piVar3 + iVar4;
+                iVar4 = iVar4 + 1;
+                *(int *)(*(int *)(param_7 + 0x47798) + 8 + iVar9 * 4) = param_6;
+              } while (iVar4 < (int)pcVar6);
+            }
+          }
+        }
+        *piVar3 = (int)(pcVar5 + *piVar3 + 2);
+        *param_2 = (int)(pcVar6 + *param_2 + iVar10);
+        *(undefined1 *)(param_7 + 0x1312dc) = 1;
+        return 1;
+      }
+    }
+    else {
+      iVar4 = FUN_1001c320((byte *)(*param_2 + param_1),&DAT_1007fdf0,2);
+      if ((iVar4 == 0) && (*(char *)(param_7 + 0x1312dc) != '\0')) {
+        if (param_5 != 0) {
+          *(undefined1 *)(*param_4 + param_3) = 0xa2;
+          *(undefined1 *)(*param_4 + 1 + param_3) = 0xfe;
+          iVar4 = *param_2;
+          if (iVar4 < *(int *)(param_7 + 0x477a8)) {
+            param_6 = *(int *)(*(int *)(param_7 + 0x4779c) + iVar4 * 4);
+            param_3 = *(int *)(*(int *)(param_7 + 0x477a0) + -4 + (iVar4 + iVar10) * 4);
+            iVar4 = 0;
+          }
+          else {
+            param_3 = *(int *)(*(int *)(param_7 + 0x4779c) + -4 + *(int *)(param_7 + 0x477a8) * 4) +
+                      1;
+            iVar4 = 0;
+            param_6 = param_3;
+          }
+          do {
+            *(int *)(*(int *)(param_7 + 0x47794) + (*param_4 + iVar4) * 4) = param_6;
+            iVar9 = *param_4 + iVar4;
+            iVar4 = iVar4 + 1;
+            *(int *)(*(int *)(param_7 + 0x47798) + iVar9 * 4) = param_3;
+          } while (iVar4 < 2);
+        }
+        *param_4 = *param_4 + 2;
+        *param_2 = *param_2 + iVar10;
+        *(undefined1 *)(param_7 + 0x1312dc) = 0;
+        return 1;
+      }
+    }
+  }
+  return 0;
+}
+
+ (GhidraScript)
+INFO  DecompileNamedFunctions.java> ===== 0x10030c60 ===== (GhidraScript)
+INFO  DecompileNamedFunctions.java> Function: FUN_10030c60 @ 10030c60 (GhidraScript)
+INFO  DecompileNamedFunctions.java>
+void __cdecl
+FUN_10030c60(int param_1,int *param_2,int param_3,int *param_4,int param_5,int param_6,int param_7)
+
+{
+  FUN_10030500(param_1,param_2,param_3,param_4,param_5,param_6,param_7,7,0x17);
+  return;
+}
+
+ (GhidraScript)
+INFO  REPORT: Save succeeded for processed file: /vt_pau.dll (HeadlessAnalyzer)

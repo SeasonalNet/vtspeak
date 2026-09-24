@@ -7,7 +7,8 @@ This repository is a reverse-engineering research and reimplementation workspace
 ## Preserve analysis inputs
 
 - Treat `binary/`, `data-common/`, and `data-paul/` as read-only vendor inputs. Do not patch, normalize, rename, repack, or overwrite their files.
-- Keep generated Ghidra projects, caches, and raw exports under `tools/revkit/work/`; that directory is intentionally ignored.
+- Keep Ghidra project databases, Wine prefixes, caches, and full local copies of vendor inputs under `tools/revkit/work/`; these machine-local or bulky paths stay ignored.
+- Track portable runtime evidence, small sample fixtures, reproducible trace scripts, and the decompiler reports cited by the research documents under `tools/revkit/work/`. See `tools/revkit/work/README.md` for the tracked boundary and exclusions.
 - Put curated, reviewable explanations under `docs/` and link them from the root README.
 - Do not relicense or attempt to relicense vendor work (e.g. model data, voice corpus), it should currently be assumed and treated as proprietary.
 

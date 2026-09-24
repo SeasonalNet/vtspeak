@@ -1,0 +1,423 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/stage7-complete/trace.log.
+Copying debug output to /work/stage7-complete/trace.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023af0
+Wine-gdb> >>>>>>>>>>>>> > > > >>>>> > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024510
+Wine-gdb> >>>>>>>>>>>>>> > > >  >  > > >  >  >   >   >  > > >> > > > > > >>>>>>> > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10018c80
+Wine-gdb> >>> > > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024900
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+CLASS_RANK_ENTRY call=1 input_classes=1 population=1165 max_classes=30 population_budget=10000
+Temporary breakpoint 6 at 0x10024164
+CLASS_RANK_RETURN call=1 selected_classes=1 output_ids=61031
+CLASS_RANK_ENTRY call=2 input_classes=2 population=50 max_classes=30 population_budget=10000
+Temporary breakpoint 7 at 0x10024164
+CLASS_RANK_RETURN call=2 selected_classes=2 output_ids=2655 2658
+CLASS_RANK_ENTRY call=3 input_classes=3 population=79 max_classes=30 population_budget=10000
+Temporary breakpoint 8 at 0x10024164
+CLASS_RANK_RETURN call=3 selected_classes=3 output_ids=32276 32277 56965
+CLASS_RANK_ENTRY call=4 input_classes=2 population=25 max_classes=30 population_budget=10000
+Temporary breakpoint 9 at 0x10024164
+CLASS_RANK_RETURN call=4 selected_classes=2 output_ids=27710 27711
+CLASS_RANK_ENTRY call=5 input_classes=2 population=13 max_classes=30 population_budget=10000
+Temporary breakpoint 10 at 0x10024164
+CLASS_RANK_RETURN call=5 selected_classes=2 output_ids=31051 31052
+CLASS_RANK_ENTRY call=6 input_classes=3 population=93 max_classes=30 population_budget=10000
+Temporary breakpoint 11 at 0x10024164
+CLASS_RANK_RETURN call=6 selected_classes=3 output_ids=11481 11482 11483
+CLASS_RANK_ENTRY call=7 input_classes=7 population=174 max_classes=30 population_budget=10000
+Temporary breakpoint 12 at 0x10024164
+CLASS_RANK_RETURN call=7 selected_classes=7 output_ids=17917 17918 17919 17923 17925 17926 17927
+CLASS_RANK_ENTRY call=8 input_classes=2 population=35 max_classes=30 population_budget=10000
+Temporary breakpoint 13 at 0x10024164
+CLASS_RANK_RETURN call=8 selected_classes=2 output_ids=6789 6790
+CLASS_RANK_ENTRY call=9 input_classes=3 population=83 max_classes=30 population_budget=10000
+Temporary breakpoint 14 at 0x10024164
+CLASS_RANK_RETURN call=9 selected_classes=3 output_ids=40298 40299 40300
+CLASS_RANK_ENTRY call=10 input_classes=3 population=82 max_classes=30 population_budget=10000
+Temporary breakpoint 15 at 0x10024164
+CLASS_RANK_RETURN call=10 selected_classes=3 output_ids=313 314 315
+CLASS_RANK_ENTRY call=11 input_classes=2 population=10 max_classes=30 population_budget=10000
+Temporary breakpoint 16 at 0x10024164
+CLASS_RANK_RETURN call=11 selected_classes=2 output_ids=32036 32037
+CLASS_RANK_ENTRY call=12 input_classes=2 population=22 max_classes=30 population_budget=10000
+Temporary breakpoint 17 at 0x10024164
+CLASS_RANK_RETURN call=12 selected_classes=2 output_ids=46458 46459
+CLASS_RANK_ENTRY call=13 input_classes=2 population=38 max_classes=30 population_budget=10000
+Temporary breakpoint 18 at 0x10024164
+CLASS_RANK_RETURN call=13 selected_classes=2 output_ids=2861 2862
+CLASS_RANK_ENTRY call=14 input_classes=1 population=4 max_classes=30 population_budget=10000
+Temporary breakpoint 19 at 0x10024164
+CLASS_RANK_RETURN call=14 selected_classes=1 output_ids=38443
+CLASS_RANK_ENTRY call=15 input_classes=1 population=3 max_classes=30 population_budget=10000
+Temporary breakpoint 20 at 0x10024164
+CLASS_RANK_RETURN call=15 selected_classes=1 output_ids=44087
+CLASS_RANK_ENTRY call=16 input_classes=2 population=12 max_classes=30 population_budget=10000
+Temporary breakpoint 21 at 0x10024164
+CLASS_RANK_RETURN call=16 selected_classes=2 output_ids=46800 46801
+CLASS_RANK_ENTRY call=17 input_classes=1 population=437 max_classes=30 population_budget=10000
+Temporary breakpoint 22 at 0x10024164
+CLASS_RANK_RETURN call=17 selected_classes=1 output_ids=7349
+CLASS_RANK_ENTRY call=18 input_classes=2 population=77 max_classes=30 population_budget=10000
+Temporary breakpoint 23 at 0x10024164
+CLASS_RANK_RETURN call=18 selected_classes=2 output_ids=53178 53179
+CLASS_RANK_ENTRY call=19 input_classes=3 population=338 max_classes=30 population_budget=10000
+Temporary breakpoint 24 at 0x10024164
+CLASS_RANK_RETURN call=19 selected_classes=3 output_ids=18495 18496 18497
+CLASS_RANK_ENTRY call=20 input_classes=4 population=239 max_classes=30 population_budget=10000
+Temporary breakpoint 25 at 0x10024164
+CLASS_RANK_RETURN call=20 selected_classes=4 output_ids=15249 15250 15251 15252
+CLASS_RANK_ENTRY call=21 input_classes=3 population=218 max_classes=30 population_budget=10000
+Temporary breakpoint 26 at 0x10024164
+CLASS_RANK_RETURN call=21 selected_classes=3 output_ids=2704 2707 2708
+CLASS_RANK_ENTRY call=22 input_classes=2 population=6 max_classes=30 population_budget=10000
+Temporary breakpoint 27 at 0x10024164
+CLASS_RANK_RETURN call=22 selected_classes=2 output_ids=34283 34289
+CLASS_RANK_ENTRY call=23 input_classes=1 population=102 max_classes=30 population_budget=10000
+Temporary breakpoint 28 at 0x10024164
+CLASS_RANK_RETURN call=23 selected_classes=1 output_ids=9403
+CLASS_RANK_ENTRY call=24 input_classes=3 population=4 max_classes=30 population_budget=10000
+Temporary breakpoint 29 at 0x10024164
+CLASS_RANK_RETURN call=24 selected_classes=3 output_ids=26964 26967 29118
+CLASS_RANK_ENTRY call=25 input_classes=2 population=4 max_classes=30 population_budget=10000
+Temporary breakpoint 30 at 0x10024164
+CLASS_RANK_RETURN call=25 selected_classes=2 output_ids=3887 3888
+CLASS_RANK_ENTRY call=26 input_classes=1 population=5 max_classes=30 population_budget=10000
+Temporary breakpoint 31 at 0x10024164
+CLASS_RANK_RETURN call=26 selected_classes=1 output_ids=24759
+CLASS_RANK_ENTRY call=27 input_classes=4 population=34 max_classes=30 population_budget=10000
+Temporary breakpoint 32 at 0x10024164
+CLASS_RANK_RETURN call=27 selected_classes=4 output_ids=5024 5027 5028 5029
+CLASS_RANK_ENTRY call=28 input_classes=3 population=122 max_classes=30 population_budget=10000
+Temporary breakpoint 33 at 0x10024164
+CLASS_RANK_RETURN call=28 selected_classes=3 output_ids=8625 8626 8627
+CLASS_RANK_ENTRY call=29 input_classes=5 population=56 max_classes=30 population_budget=10000
+Temporary breakpoint 34 at 0x10024164
+CLASS_RANK_RETURN call=29 selected_classes=5 output_ids=32885 32893 32894 32895 32896
+CLASS_RANK_ENTRY call=30 input_classes=2 population=33 max_classes=30 population_budget=10000
+Temporary breakpoint 35 at 0x10024164
+CLASS_RANK_RETURN call=30 selected_classes=2 output_ids=3250 3252
+CLASS_RANK_ENTRY call=31 input_classes=2 population=29 max_classes=30 population_budget=10000
+Temporary breakpoint 36 at 0x10024164
+CLASS_RANK_RETURN call=31 selected_classes=2 output_ids=3988 3989
+CLASS_RANK_ENTRY call=32 input_classes=2 population=49 max_classes=30 population_budget=10000
+Temporary breakpoint 37 at 0x10024164
+CLASS_RANK_RETURN call=32 selected_classes=2 output_ids=33628 33629
+CLASS_RANK_ENTRY call=33 input_classes=3 population=33 max_classes=30 population_budget=10000
+Temporary breakpoint 38 at 0x10024164
+CLASS_RANK_RETURN call=33 selected_classes=3 output_ids=18461 18462 18463
+CLASS_RANK_ENTRY call=34 input_classes=2 population=91 max_classes=30 population_budget=10000
+Temporary breakpoint 39 at 0x10024164
+CLASS_RANK_RETURN call=34 selected_classes=2 output_ids=14815 14816
+CLASS_RANK_ENTRY call=35 input_classes=2 population=118 max_classes=30 population_budget=10000
+Temporary breakpoint 40 at 0x10024164
+CLASS_RANK_RETURN call=35 selected_classes=2 output_ids=28192 28193
+CLASS_RANK_ENTRY call=36 input_classes=3 population=159 max_classes=30 population_budget=10000
+Temporary breakpoint 41 at 0x10024164
+CLASS_RANK_RETURN call=36 selected_classes=3 output_ids=55310 55311 55312
+CLASS_RANK_ENTRY call=37 input_classes=1 population=68 max_classes=30 population_budget=10000
+Temporary breakpoint 42 at 0x10024164
+CLASS_RANK_RETURN call=37 selected_classes=1 output_ids=28515
+CLASS_RANK_ENTRY call=38 input_classes=6 population=78 max_classes=30 population_budget=10000
+Temporary breakpoint 43 at 0x10024164
+CLASS_RANK_RETURN call=38 selected_classes=6 output_ids=45072 45073 45074 45077 45078 45079
+CLASS_RANK_ENTRY call=39 input_classes=2 population=49 max_classes=30 population_budget=10000
+Temporary breakpoint 44 at 0x10024164
+CLASS_RANK_RETURN call=39 selected_classes=2 output_ids=7971 7972
+CLASS_RANK_ENTRY call=40 input_classes=2 population=307 max_classes=30 population_budget=10000
+Temporary breakpoint 45 at 0x10024164
+CLASS_RANK_RETURN call=40 selected_classes=2 output_ids=13568 13569
+CLASS_RANK_ENTRY call=41 input_classes=2 population=157 max_classes=30 population_budget=10000
+Temporary breakpoint 46 at 0x10024164
+CLASS_RANK_RETURN call=41 selected_classes=2 output_ids=3196 3197
+CLASS_RANK_ENTRY call=42 input_classes=1 population=310 max_classes=30 population_budget=10000
+Temporary breakpoint 47 at 0x10024164
+CLASS_RANK_RETURN call=42 selected_classes=1 output_ids=28861
+CLASS_RANK_ENTRY call=43 input_classes=1 population=102 max_classes=30 population_budget=10000
+Temporary breakpoint 48 at 0x10024164
+CLASS_RANK_RETURN call=43 selected_classes=1 output_ids=53250
+TRANSITION context=1 current_count=30 previous_count=30 mode=1
+PRUNE_ENTRY context=1 count=30 multiplier=1 average=6.0572 minimum=0.295376 cutoff=7.49765 flagged=0 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 49 at 0x100248df
+PRUNE_RETURN context=1 kept=22 first_ids=167803 249971 100489 164614 196220
+TRANSITION context=2 current_count=30 previous_count=22 mode=2
+PRUNE_ENTRY context=2 count=30 multiplier=1 average=40.3547 minimum=22.7187 cutoff=44.7638 flagged=12 flagged_above_cutoff=12 gate_value=0
+Temporary breakpoint 50 at 0x100248df
+PRUNE_RETURN context=2 kept=27 first_ids=545811 416379 392544 545691 548136
+PRUNE_ENTRY context=3 count=30 multiplier=1 average=404.275 minimum=40.0169 cutoff=495.34 flagged=8 flagged_above_cutoff=8 gate_value=0
+Temporary breakpoint 51 at 0x100248df
+PRUNE_RETURN context=3 kept=19 first_ids=240382 32284 364738 545812 98971
+PRUNE_ENTRY context=4 count=30 multiplier=1 average=63.0115 minimum=49.9539 cutoff=66.2759 flagged=26 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 52 at 0x100248df
+PRUNE_RETURN context=4 kept=30 first_ids=240383 32285 364739 545813 179379
+PRUNE_ENTRY context=5 count=30 multiplier=1 average=93.2982 minimum=54.8419 cutoff=102.912 flagged=21 flagged_above_cutoff=14 gate_value=0
+Temporary breakpoint 53 at 0x100248df
+PRUNE_RETURN context=5 kept=27 first_ids=240384 364740 32286 110965 121659
+PRUNE_ENTRY context=6 count=30 multiplier=1 average=84.4305 minimum=58.746 cutoff=90.8516 flagged=6 flagged_above_cutoff=3 gate_value=0
+Temporary breakpoint 54 at 0x100248df
+PRUNE_RETURN context=6 kept=24 first_ids=240384 364740 32286 134523 110965
+PRUNE_ENTRY context=7 count=25 multiplier=1 average=82.578 minimum=65.9211 cutoff=86.7422 flagged=5 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 55 at 0x100248df
+PRUNE_RETURN context=7 kept=18 first_ids=240385 503565 259977 197489 159958
+PRUNE_ENTRY context=8 count=13 multiplier=1 average=79.8512 minimum=66.9895 cutoff=83.0667 flagged=3 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 56 at 0x100248df
+PRUNE_RETURN context=8 kept=10 first_ids=503566 240386 397296 58846 197490
+PRUNE_ENTRY context=9 count=30 multiplier=1 average=91.8666 minimum=76.4468 cutoff=95.7215 flagged=19 flagged_above_cutoff=17 gate_value=0
+Temporary breakpoint 57 at 0x100248df
+PRUNE_RETURN context=9 kept=30 first_ids=503567 397297 163787 154342 148258
+PRUNE_ENTRY context=10 count=30 multiplier=1 average=96.66 minimum=82.5682 cutoff=100.183 flagged=0 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 58 at 0x100248df
+PRUNE_RETURN context=10 kept=21 first_ids=503568 397298 148259 256401 363102
+PRUNE_ENTRY context=11 count=30 multiplier=1 average=108.203 minimum=96.8012 cutoff=111.053 flagged=1 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 59 at 0x100248df
+PRUNE_RETURN context=11 kept=24 first_ids=332386 61332 51443 218980 285672
+PRUNE_ENTRY context=12 count=30 multiplier=1 average=146.086 minimum=102.635 cutoff=156.949 flagged=10 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 60 at 0x100248df
+PRUNE_RETURN context=12 kept=30 first_ids=244056 343751 45249 151295 332387
+PRUNE_ENTRY context=13 count=30 multiplier=1 average=124.785 minimum=110.986 cutoff=128.235 flagged=4 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 61 at 0x100248df
+PRUNE_RETURN context=13 kept=27 first_ids=517197 519673 538032 43575 200594
+PRUNE_ENTRY context=14 count=30 multiplier=1 average=134.882 minimum=126.039 cutoff=137.092 flagged=19 flagged_above_cutoff=14 gate_value=0
+Temporary breakpoint 62 at 0x100248df
+PRUNE_RETURN context=14 kept=30 first_ids=517197 519673 538032 43575 236917
+PRUNE_ENTRY context=15 count=30 multiplier=1 average=138.309 minimum=126.282 cutoff=141.316 flagged=1 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 63 at 0x100248df
+PRUNE_RETURN context=15 kept=23 first_ids=519674 43576 517198 267651 182310
+PRUNE_ENTRY context=16 count=10 multiplier=1 average=136.817 minimum=133.299 cutoff=137.697 flagged=2 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 64 at 0x100248df
+PRUNE_RETURN context=16 kept=10 first_ids=220627 306795 107478 433617 433633
+PRUNE_ENTRY context=17 count=22 multiplier=1 average=147.863 minimum=135.375 cutoff=150.986 flagged=15 flagged_above_cutoff=14 gate_value=0
+Temporary breakpoint 65 at 0x100248df
+PRUNE_RETURN context=17 kept=22 first_ids=306796 220628 518701 492670 470570
+PRUNE_ENTRY context=18 count=30 multiplier=1 average=294.69 minimum=140.263 cutoff=333.297 flagged=19 flagged_above_cutoff=11 gate_value=0
+Temporary breakpoint 66 at 0x100248df
+PRUNE_RETURN context=18 kept=25 first_ids=366408 8918 207436 237512 269184
+PRUNE_ENTRY context=19 count=30 multiplier=1 average=159.062 minimum=141.53 cutoff=163.445 flagged=27 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 67 at 0x100248df
+PRUNE_RETURN context=19 kept=30 first_ids=8918 465286 422169 207436 237512
+PRUNE_ENTRY context=20 count=30 multiplier=1 average=159.919 minimum=141.54 cutoff=164.514 flagged=19 flagged_above_cutoff=9 gate_value=0
+Temporary breakpoint 68 at 0x100248df
+PRUNE_RETURN context=20 kept=29 first_ids=465287 422170 350042 325211 290873
+PRUNE_ENTRY context=21 count=30 multiplier=1 average=217.941 minimum=141.6 cutoff=237.027 flagged=13 flagged_above_cutoff=12 gate_value=0
+Temporary breakpoint 69 at 0x100248df
+PRUNE_RETURN context=21 kept=30 first_ids=15557 64921 126271 141437 217537
+PRUNE_ENTRY context=22 count=30 multiplier=1 average=268.933 minimum=156.05 cutoff=297.154 flagged=28 flagged_above_cutoff=17 gate_value=0
+Temporary breakpoint 70 at 0x100248df
+PRUNE_RETURN context=22 kept=30 first_ids=141437 48265 64921 126271 217537
+PRUNE_ENTRY context=23 count=30 multiplier=1 average=332.734 minimum=159.812 cutoff=375.964 flagged=20 flagged_above_cutoff=17 gate_value=0
+Temporary breakpoint 71 at 0x100248df
+PRUNE_RETURN context=23 kept=30 first_ids=126272 6876 48266 48782 258649
+PRUNE_ENTRY context=24 count=30 multiplier=1 average=292.699 minimum=170.975 cutoff=323.13 flagged=6 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 72 at 0x100248df
+PRUNE_RETURN context=24 kept=18 first_ids=420386 387279 253091 254988 263942
+PRUNE_ENTRY context=25 count=12 multiplier=1 average=191.059 minimum=172.907 cutoff=195.597 flagged=12 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 73 at 0x100248df
+PRUNE_RETURN context=25 kept=12 first_ids=420387 387280 7388 151382 277286
+PRUNE_ENTRY context=26 count=30 multiplier=1 average=184.425 minimum=172.921 cutoff=187.301 flagged=27 flagged_above_cutoff=2 gate_value=0
+Temporary breakpoint 74 at 0x100248df
+PRUNE_RETURN context=26 kept=30 first_ids=387281 420388 402771 383321 120610
+PRUNE_ENTRY context=27 count=30 multiplier=1 average=186.258 minimum=176.889 cutoff=188.6 flagged=30 flagged_above_cutoff=8 gate_value=0
+Temporary breakpoint 75 at 0x100248df
+PRUNE_RETURN context=27 kept=30 first_ids=420389 387282 402772 262919 186909
+PRUNE_ENTRY context=28 count=30 multiplier=1 average=203.105 minimum=176.929 cutoff=209.649 flagged=9 flagged_above_cutoff=6 gate_value=0
+Temporary breakpoint 76 at 0x100248df
+PRUNE_RETURN context=28 kept=30 first_ids=2445 13516 402773 249381 387283
+PRUNE_ENTRY context=29 count=30 multiplier=1 average=193.611 minimum=186.048 cutoff=195.502 flagged=29 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 77 at 0x100248df
+PRUNE_RETURN context=29 kept=30 first_ids=2446 474732 325410 156976 249382
+PRUNE_ENTRY context=30 count=30 multiplier=1 average=298.474 minimum=190.308 cutoff=325.515 flagged=17 flagged_above_cutoff=9 gate_value=0
+Temporary breakpoint 78 at 0x100248df
+PRUNE_RETURN context=30 kept=30 first_ids=2447 156977 325411 474733 249383
+PRUNE_ENTRY context=31 count=30 multiplier=1 average=235.106 minimum=191.566 cutoff=245.991 flagged=6 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 79 at 0x100248df
+PRUNE_RETURN context=31 kept=29 first_ids=325412 474734 156978 334017 88537
+PRUNE_ENTRY context=32 count=30 multiplier=1 average=222.352 minimum=200.412 cutoff=227.837 flagged=25 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 80 at 0x100248df
+PRUNE_RETURN context=32 kept=28 first_ids=164791 494255 334017 255675 36311
+PRUNE_ENTRY context=33 count=30 multiplier=1 average=216.647 minimum=207.579 cutoff=218.914 flagged=9 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 81 at 0x100248df
+PRUNE_RETURN context=33 kept=24 first_ids=255676 6170 494256 561330 414948
+PRUNE_ENTRY context=34 count=30 multiplier=1 average=240.833 minimum=213.417 cutoff=247.687 flagged=5 flagged_above_cutoff=4 gate_value=0
+Temporary breakpoint 82 at 0x100248df
+PRUNE_RETURN context=34 kept=30 first_ids=164793 36313 6171 494257 414949
+PRUNE_ENTRY context=35 count=30 multiplier=1 average=235.579 minimum=221.58 cutoff=239.079 flagged=29 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 83 at 0x100248df
+PRUNE_RETURN context=35 kept=30 first_ids=244751 90983 378932 339331 345777
+PRUNE_ENTRY context=36 count=30 multiplier=1 average=235.591 minimum=223.568 cutoff=238.596 flagged=1 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 84 at 0x100248df
+PRUNE_RETURN context=36 kept=25 first_ids=194833 244752 378933 90984 312209
+PRUNE_ENTRY context=37 count=30 multiplier=1 average=246.122 minimum=229.729 cutoff=250.221 flagged=30 flagged_above_cutoff=20 gate_value=0
+Temporary breakpoint 85 at 0x100248df
+PRUNE_RETURN context=37 kept=30 first_ids=234793 194833 505081 222728 129270
+PRUNE_ENTRY context=38 count=30 multiplier=1 average=333.955 minimum=235.305 cutoff=358.618 flagged=30 flagged_above_cutoff=13 gate_value=0
+Temporary breakpoint 86 at 0x100248df
+PRUNE_RETURN context=38 kept=30 first_ids=194834 234794 530123 222729 129271
+PRUNE_ENTRY context=39 count=30 multiplier=1 average=331.852 minimum=236.621 cutoff=355.659 flagged=30 flagged_above_cutoff=10 gate_value=0
+Temporary breakpoint 87 at 0x100248df
+PRUNE_RETURN context=39 kept=30 first_ids=234794 194834 77641 129271 222729
+PRUNE_ENTRY context=40 count=30 multiplier=1 average=331.916 minimum=236.626 cutoff=355.738 flagged=13 flagged_above_cutoff=10 gate_value=0
+Temporary breakpoint 88 at 0x100248df
+PRUNE_RETURN context=40 kept=30 first_ids=234795 530124 194835 222730 129272
+PRUNE_ENTRY context=41 count=30 multiplier=1 average=350.41 minimum=245.292 cutoff=376.69 flagged=20 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 89 at 0x100248df
+PRUNE_RETURN context=41 kept=20 first_ids=234795 530124 215251 42553 234968
+PRUNE_ENTRY context=42 count=30 multiplier=1 average=443.864 minimum=245.424 cutoff=493.473 flagged=15 flagged_above_cutoff=9 gate_value=0
+Temporary breakpoint 90 at 0x100248df
+PRUNE_RETURN context=42 kept=30 first_ids=234796 530125 215252 42554 91398
+PRUNE_ENTRY context=43 count=30 multiplier=1 average=274.68 minimum=252.372 cutoff=280.257 flagged=17 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 91 at 0x100248df
+PRUNE_RETURN context=43 kept=23 first_ids=42554 386864 234969 178629 91398
+PRUNE_ENTRY context=44 count=30 multiplier=1 average=275.967 minimum=263.299 cutoff=279.134 flagged=3 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 92 at 0x100248df
+PRUNE_RETURN context=44 kept=21 first_ids=257617 214591 21167 83140 7351
+PRUNE_ENTRY context=45 count=30 multiplier=1 average=295.914 minimum=269.879 cutoff=302.423 flagged=2 flagged_above_cutoff=2 gate_value=0
+Temporary breakpoint 93 at 0x100248df
+PRUNE_RETURN context=45 kept=26 first_ids=214592 257618 473715 48315 6704
+PRUNE_ENTRY context=46 count=30 multiplier=1 average=324.044 minimum=293.848 cutoff=331.594 flagged=0 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 94 at 0x100248df
+PRUNE_RETURN context=46 kept=28 first_ids=473716 78907 419918 138811 5385
+PRUNE_ENTRY context=47 count=30 multiplier=1 average=325.286 minimum=317.678 cutoff=327.188 flagged=30 flagged_above_cutoff=3 gate_value=0
+Temporary breakpoint 95 at 0x100248df
+PRUNE_RETURN context=47 kept=30 first_ids=202829 367683 339158 86905 95663
+PRUNE_ENTRY context=48 count=30 multiplier=1 average=462.187 minimum=319.066 cutoff=497.968 flagged=28 flagged_above_cutoff=18 gate_value=0
+Temporary breakpoint 96 at 0x100248df
+PRUNE_RETURN context=48 kept=28 first_ids=86906 127685 126578 104208 97356
+PRUNE_ENTRY context=49 count=30 multiplier=1 average=330.49 minimum=320.119 cutoff=333.082 flagged=30 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 97 at 0x100248df
+PRUNE_RETURN context=49 kept=30 first_ids=202830 277404 295683 203218 315920
+PRUNE_ENTRY context=50 count=30 multiplier=1 average=503.703 minimum=321.95 cutoff=549.141 flagged=27 flagged_above_cutoff=15 gate_value=0
+Temporary breakpoint 98 at 0x100248df
+PRUNE_RETURN context=50 kept=27 first_ids=58534 42798 339160 315921 367685
+PRUNE_ENTRY context=51 count=30 multiplier=1 average=340.249 minimum=323.491 cutoff=344.438 flagged=6 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 99 at 0x100248df
+PRUNE_RETURN context=51 kept=26 first_ids=42798 58534 95665 339160 327481
+PRUNE_ENTRY context=52 count=29 multiplier=1 average=370.479 minimum=336.198 cutoff=379.049 flagged=5 flagged_above_cutoff=4 gate_value=0
+Temporary breakpoint 100 at 0x100248df
+PRUNE_RETURN context=52 kept=25 first_ids=42799 58535 166665 190224 143341
+PRUNE_ENTRY context=53 count=30 multiplier=1 average=371.827 minimum=340.114 cutoff=379.756 flagged=6 flagged_above_cutoff=3 gate_value=0
+Temporary breakpoint 101 at 0x100248df
+PRUNE_RETURN context=53 kept=24 first_ids=163120 387750 336415 35412 423737
+PRUNE_ENTRY context=54 count=30 multiplier=1 average=365.876 minimum=343.339 cutoff=371.511 flagged=18 flagged_above_cutoff=4 gate_value=0
+Temporary breakpoint 102 at 0x100248df
+PRUNE_RETURN context=54 kept=27 first_ids=163121 259803 167245 264191 226027
+PRUNE_ENTRY context=55 count=30 multiplier=1 average=375.918 minimum=351.37 cutoff=382.055 flagged=3 flagged_above_cutoff=1 gate_value=0
+Temporary breakpoint 103 at 0x100248df
+PRUNE_RETURN context=55 kept=23 first_ids=107492 358165 163121 150053 328103
+PRUNE_ENTRY context=56 count=30 multiplier=1 average=385.963 minimum=360.232 cutoff=392.396 flagged=7 flagged_above_cutoff=2 gate_value=0
+Temporary breakpoint 104 at 0x100248df
+PRUNE_RETURN context=56 kept=28 first_ids=107493 358166 184901 210437 376662
+PRUNE_ENTRY context=57 count=30 multiplier=1 average=388.095 minimum=363.44 cutoff=394.258 flagged=14 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 105 at 0x100248df
+PRUNE_RETURN context=57 kept=29 first_ids=184902 107494 254277 470884 368779
+PRUNE_ENTRY context=58 count=30 multiplier=1 average=715.648 minimum=368.985 cutoff=802.314 flagged=16 flagged_above_cutoff=2 gate_value=0
+Temporary breakpoint 106 at 0x100248df
+PRUNE_RETURN context=58 kept=20 first_ids=338561 368780 470885 184903 144136
+PRUNE_ENTRY context=59 count=30 multiplier=1 average=390.704 minimum=382.315 cutoff=392.801 flagged=30 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 107 at 0x100248df
+PRUNE_RETURN context=59 kept=30 first_ids=336120 382164 338561 103121 395105
+PRUNE_ENTRY context=60 count=30 multiplier=1 average=391.702 minimum=382.613 cutoff=393.974 flagged=30 flagged_above_cutoff=11 gate_value=0
+Temporary breakpoint 108 at 0x100248df
+PRUNE_RETURN context=60 kept=30 first_ids=336121 382165 338562 103122 244498
+PRUNE_ENTRY context=61 count=30 multiplier=1 average=391.851 minimum=382.973 cutoff=394.07 flagged=4 flagged_above_cutoff=2 gate_value=0
+Temporary breakpoint 109 at 0x100248df
+PRUNE_RETURN context=61 kept=24 first_ids=336122 382166 103123 338563 276338
+PRUNE_ENTRY context=62 count=30 multiplier=1 average=402.471 minimum=391.695 cutoff=405.165 flagged=28 flagged_above_cutoff=27 gate_value=0
+Temporary breakpoint 110 at 0x100248df
+PRUNE_RETURN context=62 kept=30 first_ids=336122 382166 500217 103123 110148
+PRUNE_ENTRY context=63 count=30 multiplier=1 average=404.567 minimum=392.422 cutoff=407.604 flagged=18 flagged_above_cutoff=5 gate_value=0
+Temporary breakpoint 111 at 0x100248df
+PRUNE_RETURN context=63 kept=23 first_ids=336123 500218 110149 191057 380800
+PRUNE_ENTRY context=64 count=30 multiplier=1 average=408.2 minimum=393.582 cutoff=411.854 flagged=9 flagged_above_cutoff=5 gate_value=0
+Temporary breakpoint 112 at 0x100248df
+PRUNE_RETURN context=64 kept=28 first_ids=500219 336124 484935 418519 120900
+PRUNE_ENTRY context=65 count=30 multiplier=1 average=422.61 minimum=398.153 cutoff=428.724 flagged=25 flagged_above_cutoff=19 gate_value=0
+Temporary breakpoint 113 at 0x100248df
+PRUNE_RETURN context=65 kept=30 first_ids=500219 110150 484935 418519 120900
+PRUNE_ENTRY context=66 count=30 multiplier=1 average=414.115 minimum=403.428 cutoff=416.787 flagged=24 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 114 at 0x100248df
+PRUNE_RETURN context=66 kept=29 first_ids=500220 418520 83725 120901 484936
+PRUNE_ENTRY context=67 count=30 multiplier=1 average=426.047 minimum=404.925 cutoff=431.328 flagged=15 flagged_above_cutoff=15 gate_value=0
+Temporary breakpoint 115 at 0x100248df
+PRUNE_RETURN context=67 kept=28 first_ids=503789 483940 500221 83726 484937
+PRUNE_ENTRY context=68 count=30 multiplier=1 average=430.045 minimum=416.017 cutoff=433.552 flagged=29 flagged_above_cutoff=13 gate_value=0
+Temporary breakpoint 116 at 0x100248df
+PRUNE_RETURN context=68 kept=30 first_ids=483941 22755 76450 115709 347136
+PRUNE_ENTRY context=69 count=30 multiplier=1 average=562.949 minimum=416.203 cutoff=599.636 flagged=16 flagged_above_cutoff=7 gate_value=0
+Temporary breakpoint 117 at 0x100248df
+PRUNE_RETURN context=69 kept=30 first_ids=182371 347291 483942 206765 195372
+PRUNE_ENTRY context=70 count=30 multiplier=1 average=432.591 minimum=422.97 cutoff=434.996 flagged=25 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 118 at 0x100248df
+PRUNE_RETURN context=70 kept=30 first_ids=195373 206766 49734 347292 104503
+PRUNE_ENTRY context=71 count=30 multiplier=1 average=440.883 minimum=425.988 cutoff=444.606 flagged=22 flagged_above_cutoff=12 gate_value=0
+Temporary breakpoint 119 at 0x100248df
+PRUNE_RETURN context=71 kept=29 first_ids=206766 347292 49734 195373 104503
+PRUNE_ENTRY context=72 count=30 multiplier=1 average=442.247 minimum=431.469 cutoff=444.941 flagged=3 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 120 at 0x100248df
+PRUNE_RETURN context=72 kept=25 first_ids=104504 97507 132843 347293 195374
+PRUNE_ENTRY context=73 count=30 multiplier=1 average=611.566 minimum=432.56 cutoff=656.317 flagged=16 flagged_above_cutoff=5 gate_value=0
+Temporary breakpoint 121 at 0x100248df
+PRUNE_RETURN context=73 kept=25 first_ids=104505 97508 132844 151103 292437
+PRUNE_ENTRY context=74 count=30 multiplier=1 average=458.267 minimum=433.655 cutoff=464.419 flagged=27 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 122 at 0x100248df
+PRUNE_RETURN context=74 kept=30 first_ids=104505 97508 132844 292437 151103
+PRUNE_ENTRY context=75 count=30 multiplier=1 average=448.222 minimum=433.658 cutoff=451.863 flagged=10 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 123 at 0x100248df
+PRUNE_RETURN context=75 kept=26 first_ids=104506 292438 151104 97509 132845
+PRUNE_ENTRY context=76 count=30 multiplier=1 average=447.129 minimum=433.682 cutoff=450.491 flagged=0 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 124 at 0x100248df
+PRUNE_RETURN context=76 kept=21 first_ids=104507 292439 151105 573740 556073
+BACKTRACK_SPAN first=0 last=76 contexts=77
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

@@ -1,0 +1,19 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023af0
+Wine-gdb> >>>>>>>>>>>>> > > > >>>>> > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024510
+Wine-gdb> >>>>>>>>>>>>>> > > >  >  > > >  >  >   >   >  > > >> > > > > > >>>>>>> > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10018c80
+Wine-gdb> >>> > > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024900
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+CLASS_RANK_ENTRY call=1 input_classes=1 population=355 max_classes=30 population_budget=10000
+Temporary breakpoint 6 at 0x10024164
+CLASS_RANK_RETURN call=1 selected_classes=1 output_ids=61209
+CLASS_RANK_ENTRY call=2 input_classes=2 population=33 max_classes=30 population_budget=10000
+Temporary breakpoint 7 at 0x10024164
+CLASS_RANK_RETURN call=2 selected_classes=2 output_ids=25472 25473
+TRANSITION context=1 current_count=3 previous_count=3 mode=0
+PRUNE_ENTRY context=1 count=3 multiplier=1 average=6.49557 minimum=1.2169 cutoff=7.81524 flagged=0 flagged_above_cutoff=0 gate_value=0
+Temporary breakpoint 8 at 0x100248df
+PRUNE_RETURN context=1 kept=3 first_ids=210604 561917 561933
+BACKTRACK_SPAN first=0 last=1 contexts=2
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb>

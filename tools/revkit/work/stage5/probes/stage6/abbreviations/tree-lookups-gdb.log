@@ -1,0 +1,2220 @@
+Wine-gdb> Breakpoint 1 at 0x10001670
+Wine-gdb> >>>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x100016a0
+Wine-gdb> >>>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001c990
+Wine-gdb> >>>>>>>> > > > > > > > > >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1002e990
+Wine-gdb> >>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Continuing.
+TEXT_PREPROCESS_ENTRY input=0x667808
+0x667808:	"Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 5 at 0x1001ea37
+RULE_SCAN offset=0 text=
+0x14e14b8:	'.' <repeats 111 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 6 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=0
+RULE_SCAN offset=1 text=
+0x14e14b9:	'.' <repeats 110 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 7 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=1
+RULE_SCAN offset=2 text=
+0x14e14ba:	'.' <repeats 109 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 8 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=2
+RULE_SCAN offset=3 text=
+0x14e14bb:	'.' <repeats 108 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 9 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=3
+RULE_SCAN offset=4 text=
+0x14e14bc:	'.' <repeats 107 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 10 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=4
+RULE_SCAN offset=5 text=
+0x14e14bd:	'.' <repeats 106 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 11 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=5
+RULE_SCAN offset=6 text=
+0x14e14be:	'.' <repeats 105 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 12 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=6
+RULE_SCAN offset=7 text=
+0x14e14bf:	'.' <repeats 104 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 13 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=7
+RULE_SCAN offset=8 text=
+0x14e14c0:	'.' <repeats 103 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 14 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=8
+RULE_SCAN offset=9 text=
+0x14e14c1:	'.' <repeats 102 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 15 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=9
+RULE_SCAN offset=10 text=
+0x14e14c2:	'.' <repeats 101 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 16 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=10
+RULE_SCAN offset=11 text=
+0x14e14c3:	'.' <repeats 100 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 17 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=11
+RULE_SCAN offset=12 text=
+0x14e14c4:	'.' <repeats 99 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 18 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=12
+RULE_SCAN offset=13 text=
+0x14e14c5:	'.' <repeats 98 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 19 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=13
+RULE_SCAN offset=14 text=
+0x14e14c6:	'.' <repeats 97 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 20 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=14
+RULE_SCAN offset=15 text=
+0x14e14c7:	'.' <repeats 96 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 21 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=15
+RULE_SCAN offset=16 text=
+0x14e14c8:	'.' <repeats 95 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 22 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=16
+RULE_SCAN offset=17 text=
+0x14e14c9:	'.' <repeats 94 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 23 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=17
+RULE_SCAN offset=18 text=
+0x14e14ca:	'.' <repeats 93 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 24 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=18
+RULE_SCAN offset=19 text=
+0x14e14cb:	'.' <repeats 92 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 25 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=19
+RULE_SCAN offset=20 text=
+0x14e14cc:	'.' <repeats 91 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 26 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=20
+RULE_SCAN offset=21 text=
+0x14e14cd:	'.' <repeats 90 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 27 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=21
+RULE_SCAN offset=22 text=
+0x14e14ce:	'.' <repeats 89 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 28 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=22
+RULE_SCAN offset=23 text=
+0x14e14cf:	'.' <repeats 88 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 29 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=23
+RULE_SCAN offset=24 text=
+0x14e14d0:	'.' <repeats 87 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 30 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=24
+RULE_SCAN offset=25 text=
+0x14e14d1:	'.' <repeats 86 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 31 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=25
+RULE_SCAN offset=26 text=
+0x14e14d2:	'.' <repeats 85 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 32 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=26
+RULE_SCAN offset=27 text=
+0x14e14d3:	'.' <repeats 84 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 33 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=27
+RULE_SCAN offset=28 text=
+0x14e14d4:	'.' <repeats 83 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 34 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=28
+RULE_SCAN offset=29 text=
+0x14e14d5:	'.' <repeats 82 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 35 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=29
+RULE_SCAN offset=30 text=
+0x14e14d6:	'.' <repeats 81 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 36 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=30
+RULE_SCAN offset=31 text=
+0x14e14d7:	'.' <repeats 80 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 37 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=31
+RULE_SCAN offset=32 text=
+0x14e14d8:	'.' <repeats 79 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 38 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=32
+RULE_SCAN offset=33 text=
+0x14e14d9:	'.' <repeats 78 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 39 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=33
+RULE_SCAN offset=34 text=
+0x14e14da:	'.' <repeats 77 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 40 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=34
+RULE_SCAN offset=35 text=
+0x14e14db:	'.' <repeats 76 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 41 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=35
+RULE_SCAN offset=36 text=
+0x14e14dc:	'.' <repeats 75 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 42 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=36
+RULE_SCAN offset=37 text=
+0x14e14dd:	'.' <repeats 74 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 43 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=37
+RULE_SCAN offset=38 text=
+0x14e14de:	'.' <repeats 73 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 44 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=38
+RULE_SCAN offset=39 text=
+0x14e14df:	'.' <repeats 72 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 45 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=39
+RULE_SCAN offset=40 text=
+0x14e14e0:	'.' <repeats 71 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 46 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=40
+RULE_SCAN offset=41 text=
+0x14e14e1:	'.' <repeats 70 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 47 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=41
+RULE_SCAN offset=42 text=
+0x14e14e2:	'.' <repeats 69 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 48 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=42
+RULE_SCAN offset=43 text=
+0x14e14e3:	'.' <repeats 68 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 49 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=43
+RULE_SCAN offset=44 text=
+0x14e14e4:	'.' <repeats 67 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 50 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=44
+RULE_SCAN offset=45 text=
+0x14e14e5:	'.' <repeats 66 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 51 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=45
+RULE_SCAN offset=46 text=
+0x14e14e6:	'.' <repeats 65 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 52 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=46
+RULE_SCAN offset=47 text=
+0x14e14e7:	'.' <repeats 64 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 53 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=47
+RULE_SCAN offset=48 text=
+0x14e14e8:	'.' <repeats 63 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 54 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=48
+RULE_SCAN offset=49 text=
+0x14e14e9:	'.' <repeats 62 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 55 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=49
+RULE_SCAN offset=50 text=
+0x14e14ea:	'.' <repeats 61 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 56 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=50
+RULE_SCAN offset=51 text=
+0x14e14eb:	'.' <repeats 60 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 57 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=51
+RULE_SCAN offset=52 text=
+0x14e14ec:	'.' <repeats 59 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 58 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=52
+RULE_SCAN offset=53 text=
+0x14e14ed:	'.' <repeats 58 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 59 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=53
+RULE_SCAN offset=54 text=
+0x14e14ee:	'.' <repeats 57 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 60 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=54
+RULE_SCAN offset=55 text=
+0x14e14ef:	'.' <repeats 56 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 61 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=55
+RULE_SCAN offset=56 text=
+0x14e14f0:	'.' <repeats 55 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 62 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=56
+RULE_SCAN offset=57 text=
+0x14e14f1:	'.' <repeats 54 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 63 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=57
+RULE_SCAN offset=58 text=
+0x14e14f2:	'.' <repeats 53 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 64 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=58
+RULE_SCAN offset=59 text=
+0x14e14f3:	'.' <repeats 52 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 65 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=59
+RULE_SCAN offset=60 text=
+0x14e14f4:	'.' <repeats 51 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 66 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=60
+RULE_SCAN offset=61 text=
+0x14e14f5:	'.' <repeats 50 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 67 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=61
+RULE_SCAN offset=62 text=
+0x14e14f6:	'.' <repeats 49 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 68 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=62
+RULE_SCAN offset=63 text=
+0x14e14f7:	'.' <repeats 48 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 69 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=63
+RULE_SCAN offset=64 text=
+0x14e14f8:	'.' <repeats 47 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 70 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=64
+RULE_SCAN offset=65 text=
+0x14e14f9:	'.' <repeats 46 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 71 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=65
+RULE_SCAN offset=66 text=
+0x14e14fa:	'.' <repeats 45 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 72 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=66
+RULE_SCAN offset=67 text=
+0x14e14fb:	'.' <repeats 44 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 73 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=67
+RULE_SCAN offset=68 text=
+0x14e14fc:	'.' <repeats 43 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 74 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=68
+RULE_SCAN offset=69 text=
+0x14e14fd:	'.' <repeats 42 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 75 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=69
+RULE_SCAN offset=70 text=
+0x14e14fe:	'.' <repeats 41 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 76 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=70
+RULE_SCAN offset=71 text=
+0x14e14ff:	'.' <repeats 40 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 77 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=71
+RULE_SCAN offset=72 text=
+0x14e1500:	'.' <repeats 39 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 78 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=72
+RULE_SCAN offset=73 text=
+0x14e1501:	'.' <repeats 38 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 79 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=73
+RULE_SCAN offset=74 text=
+0x14e1502:	'.' <repeats 37 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 80 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=74
+RULE_SCAN offset=75 text=
+0x14e1503:	'.' <repeats 36 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 81 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=75
+RULE_SCAN offset=76 text=
+0x14e1504:	'.' <repeats 35 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 82 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=76
+RULE_SCAN offset=77 text=
+0x14e1505:	'.' <repeats 34 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 83 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=77
+RULE_SCAN offset=78 text=
+0x14e1506:	'.' <repeats 33 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 84 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=78
+RULE_SCAN offset=79 text=
+0x14e1507:	'.' <repeats 32 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 85 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=79
+RULE_SCAN offset=80 text=
+0x14e1508:	'.' <repeats 31 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 86 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=80
+RULE_SCAN offset=81 text=
+0x14e1509:	'.' <repeats 30 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 87 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=81
+RULE_SCAN offset=82 text=
+0x14e150a:	'.' <repeats 29 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 88 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=82
+RULE_SCAN offset=83 text=
+0x14e150b:	'.' <repeats 28 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 89 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=83
+RULE_SCAN offset=84 text=
+0x14e150c:	'.' <repeats 27 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 90 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=84
+RULE_SCAN offset=85 text=
+0x14e150d:	'.' <repeats 26 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 91 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=85
+RULE_SCAN offset=86 text=
+0x14e150e:	'.' <repeats 25 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 92 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=86
+RULE_SCAN offset=87 text=
+0x14e150f:	'.' <repeats 24 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 93 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=87
+RULE_SCAN offset=88 text=
+0x14e1510:	'.' <repeats 23 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 94 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=88
+RULE_SCAN offset=89 text=
+0x14e1511:	'.' <repeats 22 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 95 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=89
+RULE_SCAN offset=90 text=
+0x14e1512:	'.' <repeats 21 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 96 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=90
+RULE_SCAN offset=91 text=
+0x14e1513:	'.' <repeats 20 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 97 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=91
+RULE_SCAN offset=92 text=
+0x14e1514:	'.' <repeats 19 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 98 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=92
+RULE_SCAN offset=93 text=
+0x14e1515:	'.' <repeats 18 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 99 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=93
+RULE_SCAN offset=94 text=
+0x14e1516:	'.' <repeats 17 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 100 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=94
+RULE_SCAN offset=95 text=
+0x14e1517:	'.' <repeats 16 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 101 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=95
+RULE_SCAN offset=96 text=
+0x14e1518:	'.' <repeats 15 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 102 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=96
+RULE_SCAN offset=97 text=
+0x14e1519:	'.' <repeats 14 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 103 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=97
+RULE_SCAN offset=98 text=
+0x14e151a:	'.' <repeats 13 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 104 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=98
+RULE_SCAN offset=99 text=
+0x14e151b:	'.' <repeats 12 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 105 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=99
+RULE_SCAN offset=100 text=
+0x14e151c:	'.' <repeats 11 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 106 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=100
+RULE_SCAN offset=101 text=
+0x14e151d:	".......... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 107 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=101
+RULE_SCAN offset=102 text=
+0x14e151e:	"......... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 108 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=102
+RULE_SCAN offset=103 text=
+0x14e151f:	"........ Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 109 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=103
+RULE_SCAN offset=104 text=
+0x14e1520:	"....... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 110 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=104
+RULE_SCAN offset=105 text=
+0x14e1521:	"...... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 111 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=105
+RULE_SCAN offset=106 text=
+0x14e1522:	"..... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 112 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=106
+RULE_SCAN offset=107 text=
+0x14e1523:	".... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 113 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=107
+RULE_SCAN offset=108 text=
+0x14e1524:	"... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 114 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=108
+RULE_SCAN offset=109 text=
+0x14e1525:	".. Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 115 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=109
+RULE_SCAN offset=110 text=
+0x14e1526:	". Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 116 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=110
+RULE_SCAN offset=112 text=
+0x14e1528:	"Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 117 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=112
+RULE_SCAN offset=113 text=
+0x14e1529:	"r. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 118 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=113
+RULE_SCAN offset=114 text=
+0x14e152a:	". Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 119 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=114
+RULE_SCAN offset=116 text=
+0x14e152c:	"Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 120 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=116
+RULE_SCAN offset=117 text=
+0x14e152d:	"mith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 121 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=117
+RULE_SCAN offset=118 text=
+0x14e152e:	"ith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 122 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=118
+RULE_SCAN offset=119 text=
+0x14e152f:	"th lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 123 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=119
+RULE_SCAN offset=120 text=
+0x14e1530:	"h lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 124 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=120
+RULE_SCAN offset=122 text=
+0x14e1532:	"lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 125 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=122
+RULE_SCAN offset=123 text=
+0x14e1533:	"ives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 126 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=123
+RULE_SCAN offset=124 text=
+0x14e1534:	"ves at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 127 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=124
+RULE_SCAN offset=125 text=
+0x14e1535:	"es at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 128 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=125
+RULE_SCAN offset=126 text=
+0x14e1536:	"s at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 129 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=126
+RULE_SCAN offset=128 text=
+0x14e1538:	"at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 130 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=128
+RULE_SCAN offset=129 text=
+0x14e1539:	"t 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 131 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=129
+RULE_SCAN offset=131 text=
+0x14e153b:	"42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 132 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=131
+RULE_SCAN offset=132 text=
+0x14e153c:	"2 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 133 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=132
+RULE_SCAN offset=134 text=
+0x14e153e:	"Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 134 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=134
+RULE_SCAN offset=135 text=
+0x14e153f:	"ain St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 135 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=135
+RULE_SCAN offset=136 text=
+0x14e1540:	"in St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 136 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=136
+RULE_SCAN offset=137 text=
+0x14e1541:	"n St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 137 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=137
+RULE_SCAN offset=139 text=
+0x14e1543:	"St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 138 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=139
+RULE_SCAN offset=140 text=
+0x14e1544:	"t. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 139 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=140
+RULE_SCAN offset=141 text=
+0x14e1545:	". in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 140 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=141
+RULE_SCAN offset=143 text=
+0x14e1547:	"in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 141 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=143
+RULE_SCAN offset=144 text=
+0x14e1548:	"n N.Y.; please call 555-0102.\n"
+Temporary breakpoint 142 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=144
+RULE_SCAN offset=146 text=
+0x14e154a:	"N.Y.; please call 555-0102.\n"
+Temporary breakpoint 143 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=146
+RULE_SCAN offset=147 text=
+0x14e154b:	".Y.; please call 555-0102.\n"
+Temporary breakpoint 144 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=147
+RULE_SCAN offset=148 text=
+0x14e154c:	"Y.; please call 555-0102.\n"
+Temporary breakpoint 145 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=148
+RULE_SCAN offset=149 text=
+0x14e154d:	".; please call 555-0102.\n"
+Temporary breakpoint 146 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=149
+RULE_SCAN offset=150 text=
+0x14e154e:	"; please call 555-0102.\n"
+Temporary breakpoint 147 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=150
+RULE_SCAN offset=152 text=
+0x14e1550:	"please call 555-0102.\n"
+Temporary breakpoint 148 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=152
+RULE_SCAN offset=153 text=
+0x14e1551:	"lease call 555-0102.\n"
+Temporary breakpoint 149 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=153
+RULE_SCAN offset=154 text=
+0x14e1552:	"ease call 555-0102.\n"
+Temporary breakpoint 150 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=154
+RULE_SCAN offset=155 text=
+0x14e1553:	"ase call 555-0102.\n"
+Temporary breakpoint 151 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=155
+RULE_SCAN offset=156 text=
+0x14e1554:	"se call 555-0102.\n"
+Temporary breakpoint 152 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=156
+RULE_SCAN offset=157 text=
+0x14e1555:	"e call 555-0102.\n"
+Temporary breakpoint 153 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=157
+RULE_SCAN offset=159 text=
+0x14e1557:	"call 555-0102.\n"
+Temporary breakpoint 154 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=159
+RULE_SCAN offset=160 text=
+0x14e1558:	"all 555-0102.\n"
+Temporary breakpoint 155 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=160
+RULE_SCAN offset=161 text=
+0x14e1559:	"ll 555-0102.\n"
+Temporary breakpoint 156 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=161
+RULE_SCAN offset=162 text=
+0x14e155a:	"l 555-0102.\n"
+Temporary breakpoint 157 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=162
+RULE_SCAN offset=164 text=
+0x14e155c:	"555-0102.\n"
+Temporary breakpoint 158 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=164
+RULE_SCAN offset=165 text=
+0x14e155d:	"55-0102.\n"
+Temporary breakpoint 159 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=165
+RULE_SCAN offset=166 text=
+0x14e155e:	"5-0102.\n"
+Temporary breakpoint 160 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=166
+RULE_SCAN offset=167 text=
+0x14e155f:	"-0102.\n"
+Temporary breakpoint 161 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=167
+RULE_SCAN offset=168 text=
+0x14e1560:	"0102.\n"
+Temporary breakpoint 162 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=168
+RULE_SCAN offset=169 text=
+0x14e1561:	"102.\n"
+Temporary breakpoint 163 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=169
+RULE_SCAN offset=170 text=
+0x14e1562:	"02.\n"
+Temporary breakpoint 164 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=170
+RULE_SCAN offset=171 text=
+0x14e1563:	"2.\n"
+Temporary breakpoint 165 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=171
+RULE_SCAN offset=172 text=
+0x14e1564:	".\n"
+Temporary breakpoint 166 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=172
+RULE_SCAN offset=0 text=
+0x14e14b8:	'.' <repeats 111 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 167 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=0
+RULE_SCAN offset=1 text=
+0x14e14b9:	'.' <repeats 110 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 168 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=1
+RULE_SCAN offset=2 text=
+0x14e14ba:	'.' <repeats 109 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 169 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=2
+RULE_SCAN offset=3 text=
+0x14e14bb:	'.' <repeats 108 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 170 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=3
+RULE_SCAN offset=4 text=
+0x14e14bc:	'.' <repeats 107 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 171 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=4
+RULE_SCAN offset=5 text=
+0x14e14bd:	'.' <repeats 106 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 172 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=5
+RULE_SCAN offset=6 text=
+0x14e14be:	'.' <repeats 105 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 173 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=6
+RULE_SCAN offset=7 text=
+0x14e14bf:	'.' <repeats 104 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 174 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=7
+RULE_SCAN offset=8 text=
+0x14e14c0:	'.' <repeats 103 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 175 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=8
+RULE_SCAN offset=9 text=
+0x14e14c1:	'.' <repeats 102 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 176 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=9
+RULE_SCAN offset=10 text=
+0x14e14c2:	'.' <repeats 101 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 177 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=10
+RULE_SCAN offset=11 text=
+0x14e14c3:	'.' <repeats 100 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 178 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=11
+RULE_SCAN offset=12 text=
+0x14e14c4:	'.' <repeats 99 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 179 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=12
+RULE_SCAN offset=13 text=
+0x14e14c5:	'.' <repeats 98 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 180 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=13
+RULE_SCAN offset=14 text=
+0x14e14c6:	'.' <repeats 97 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 181 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=14
+RULE_SCAN offset=15 text=
+0x14e14c7:	'.' <repeats 96 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 182 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=15
+RULE_SCAN offset=16 text=
+0x14e14c8:	'.' <repeats 95 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 183 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=16
+RULE_SCAN offset=17 text=
+0x14e14c9:	'.' <repeats 94 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 184 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=17
+RULE_SCAN offset=18 text=
+0x14e14ca:	'.' <repeats 93 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 185 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=18
+RULE_SCAN offset=19 text=
+0x14e14cb:	'.' <repeats 92 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 186 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=19
+RULE_SCAN offset=20 text=
+0x14e14cc:	'.' <repeats 91 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 187 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=20
+RULE_SCAN offset=21 text=
+0x14e14cd:	'.' <repeats 90 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 188 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=21
+RULE_SCAN offset=22 text=
+0x14e14ce:	'.' <repeats 89 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 189 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=22
+RULE_SCAN offset=23 text=
+0x14e14cf:	'.' <repeats 88 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 190 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=23
+RULE_SCAN offset=24 text=
+0x14e14d0:	'.' <repeats 87 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 191 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=24
+RULE_SCAN offset=25 text=
+0x14e14d1:	'.' <repeats 86 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 192 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=25
+RULE_SCAN offset=26 text=
+0x14e14d2:	'.' <repeats 85 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 193 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=26
+RULE_SCAN offset=27 text=
+0x14e14d3:	'.' <repeats 84 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 194 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=27
+RULE_SCAN offset=28 text=
+0x14e14d4:	'.' <repeats 83 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 195 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=28
+RULE_SCAN offset=29 text=
+0x14e14d5:	'.' <repeats 82 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 196 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=29
+RULE_SCAN offset=30 text=
+0x14e14d6:	'.' <repeats 81 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 197 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=30
+RULE_SCAN offset=31 text=
+0x14e14d7:	'.' <repeats 80 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 198 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=31
+RULE_SCAN offset=32 text=
+0x14e14d8:	'.' <repeats 79 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 199 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=32
+RULE_SCAN offset=33 text=
+0x14e14d9:	'.' <repeats 78 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 200 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=33
+RULE_SCAN offset=34 text=
+0x14e14da:	'.' <repeats 77 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 201 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=34
+RULE_SCAN offset=35 text=
+0x14e14db:	'.' <repeats 76 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 202 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=35
+RULE_SCAN offset=36 text=
+0x14e14dc:	'.' <repeats 75 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 203 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=36
+RULE_SCAN offset=37 text=
+0x14e14dd:	'.' <repeats 74 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 204 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=37
+RULE_SCAN offset=38 text=
+0x14e14de:	'.' <repeats 73 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 205 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=38
+RULE_SCAN offset=39 text=
+0x14e14df:	'.' <repeats 72 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 206 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=39
+RULE_SCAN offset=40 text=
+0x14e14e0:	'.' <repeats 71 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 207 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=40
+RULE_SCAN offset=41 text=
+0x14e14e1:	'.' <repeats 70 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 208 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=41
+RULE_SCAN offset=42 text=
+0x14e14e2:	'.' <repeats 69 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 209 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=42
+RULE_SCAN offset=43 text=
+0x14e14e3:	'.' <repeats 68 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 210 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=43
+RULE_SCAN offset=44 text=
+0x14e14e4:	'.' <repeats 67 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 211 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=44
+RULE_SCAN offset=45 text=
+0x14e14e5:	'.' <repeats 66 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 212 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=45
+RULE_SCAN offset=46 text=
+0x14e14e6:	'.' <repeats 65 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 213 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=46
+RULE_SCAN offset=47 text=
+0x14e14e7:	'.' <repeats 64 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 214 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=47
+RULE_SCAN offset=48 text=
+0x14e14e8:	'.' <repeats 63 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 215 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=48
+RULE_SCAN offset=49 text=
+0x14e14e9:	'.' <repeats 62 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 216 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=49
+RULE_SCAN offset=50 text=
+0x14e14ea:	'.' <repeats 61 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 217 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=50
+RULE_SCAN offset=51 text=
+0x14e14eb:	'.' <repeats 60 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 218 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=51
+RULE_SCAN offset=52 text=
+0x14e14ec:	'.' <repeats 59 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 219 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=52
+RULE_SCAN offset=53 text=
+0x14e14ed:	'.' <repeats 58 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 220 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=53
+RULE_SCAN offset=54 text=
+0x14e14ee:	'.' <repeats 57 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 221 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=54
+RULE_SCAN offset=55 text=
+0x14e14ef:	'.' <repeats 56 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 222 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=55
+RULE_SCAN offset=56 text=
+0x14e14f0:	'.' <repeats 55 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 223 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=56
+RULE_SCAN offset=57 text=
+0x14e14f1:	'.' <repeats 54 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 224 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=57
+RULE_SCAN offset=58 text=
+0x14e14f2:	'.' <repeats 53 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 225 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=58
+RULE_SCAN offset=59 text=
+0x14e14f3:	'.' <repeats 52 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 226 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=59
+RULE_SCAN offset=60 text=
+0x14e14f4:	'.' <repeats 51 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 227 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=60
+RULE_SCAN offset=61 text=
+0x14e14f5:	'.' <repeats 50 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 228 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=61
+RULE_SCAN offset=62 text=
+0x14e14f6:	'.' <repeats 49 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 229 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=62
+RULE_SCAN offset=63 text=
+0x14e14f7:	'.' <repeats 48 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 230 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=63
+RULE_SCAN offset=64 text=
+0x14e14f8:	'.' <repeats 47 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 231 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=64
+RULE_SCAN offset=65 text=
+0x14e14f9:	'.' <repeats 46 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 232 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=65
+RULE_SCAN offset=66 text=
+0x14e14fa:	'.' <repeats 45 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 233 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=66
+RULE_SCAN offset=67 text=
+0x14e14fb:	'.' <repeats 44 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 234 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=67
+RULE_SCAN offset=68 text=
+0x14e14fc:	'.' <repeats 43 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 235 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=68
+RULE_SCAN offset=69 text=
+0x14e14fd:	'.' <repeats 42 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 236 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=69
+RULE_SCAN offset=70 text=
+0x14e14fe:	'.' <repeats 41 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 237 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=70
+RULE_SCAN offset=71 text=
+0x14e14ff:	'.' <repeats 40 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 238 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=71
+RULE_SCAN offset=72 text=
+0x14e1500:	'.' <repeats 39 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 239 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=72
+RULE_SCAN offset=73 text=
+0x14e1501:	'.' <repeats 38 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 240 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=73
+RULE_SCAN offset=74 text=
+0x14e1502:	'.' <repeats 37 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 241 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=74
+RULE_SCAN offset=75 text=
+0x14e1503:	'.' <repeats 36 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 242 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=75
+RULE_SCAN offset=76 text=
+0x14e1504:	'.' <repeats 35 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 243 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=76
+RULE_SCAN offset=77 text=
+0x14e1505:	'.' <repeats 34 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 244 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=77
+RULE_SCAN offset=78 text=
+0x14e1506:	'.' <repeats 33 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 245 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=78
+RULE_SCAN offset=79 text=
+0x14e1507:	'.' <repeats 32 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 246 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=79
+RULE_SCAN offset=80 text=
+0x14e1508:	'.' <repeats 31 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 247 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=80
+RULE_SCAN offset=81 text=
+0x14e1509:	'.' <repeats 30 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 248 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=81
+RULE_SCAN offset=82 text=
+0x14e150a:	'.' <repeats 29 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 249 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=82
+RULE_SCAN offset=83 text=
+0x14e150b:	'.' <repeats 28 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 250 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=83
+RULE_SCAN offset=84 text=
+0x14e150c:	'.' <repeats 27 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 251 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=84
+RULE_SCAN offset=85 text=
+0x14e150d:	'.' <repeats 26 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 252 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=85
+RULE_SCAN offset=86 text=
+0x14e150e:	'.' <repeats 25 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 253 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=86
+RULE_SCAN offset=87 text=
+0x14e150f:	'.' <repeats 24 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 254 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=87
+RULE_SCAN offset=88 text=
+0x14e1510:	'.' <repeats 23 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 255 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=88
+RULE_SCAN offset=89 text=
+0x14e1511:	'.' <repeats 22 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 256 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=89
+RULE_SCAN offset=90 text=
+0x14e1512:	'.' <repeats 21 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 257 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=90
+RULE_SCAN offset=91 text=
+0x14e1513:	'.' <repeats 20 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 258 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=91
+RULE_SCAN offset=92 text=
+0x14e1514:	'.' <repeats 19 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 259 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=92
+RULE_SCAN offset=93 text=
+0x14e1515:	'.' <repeats 18 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 260 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=93
+RULE_SCAN offset=94 text=
+0x14e1516:	'.' <repeats 17 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 261 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=94
+RULE_SCAN offset=95 text=
+0x14e1517:	'.' <repeats 16 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 262 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=95
+RULE_SCAN offset=96 text=
+0x14e1518:	'.' <repeats 15 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 263 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=96
+RULE_SCAN offset=97 text=
+0x14e1519:	'.' <repeats 14 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 264 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=97
+RULE_SCAN offset=98 text=
+0x14e151a:	'.' <repeats 13 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 265 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=98
+RULE_SCAN offset=99 text=
+0x14e151b:	'.' <repeats 12 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 266 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=99
+RULE_SCAN offset=100 text=
+0x14e151c:	'.' <repeats 11 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 267 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=100
+RULE_SCAN offset=101 text=
+0x14e151d:	".......... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 268 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=101
+RULE_SCAN offset=102 text=
+0x14e151e:	"......... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 269 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=102
+RULE_SCAN offset=103 text=
+0x14e151f:	"........ Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 270 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=103
+RULE_SCAN offset=104 text=
+0x14e1520:	"....... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 271 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=104
+RULE_SCAN offset=105 text=
+0x14e1521:	"...... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 272 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=105
+RULE_SCAN offset=106 text=
+0x14e1522:	"..... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 273 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=106
+RULE_SCAN offset=107 text=
+0x14e1523:	".... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 274 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=107
+RULE_SCAN offset=108 text=
+0x14e1524:	"... Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 275 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=108
+RULE_SCAN offset=109 text=
+0x14e1525:	".. Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 276 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=109
+RULE_SCAN offset=110 text=
+0x14e1526:	". Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 277 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=110
+RULE_SCAN offset=112 text=
+0x14e1528:	"Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 278 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=112
+RULE_SCAN offset=113 text=
+0x14e1529:	"r. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 279 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=113
+RULE_SCAN offset=114 text=
+0x14e152a:	". Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 280 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=114
+RULE_SCAN offset=116 text=
+0x14e152c:	"Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 281 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=116
+RULE_SCAN offset=117 text=
+0x14e152d:	"mith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 282 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=117
+RULE_SCAN offset=118 text=
+0x14e152e:	"ith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 283 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=118
+RULE_SCAN offset=119 text=
+0x14e152f:	"th lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 284 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=119
+RULE_SCAN offset=120 text=
+0x14e1530:	"h lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 285 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=120
+RULE_SCAN offset=122 text=
+0x14e1532:	"lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 286 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=122
+RULE_SCAN offset=123 text=
+0x14e1533:	"ives at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 287 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=123
+RULE_SCAN offset=124 text=
+0x14e1534:	"ves at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 288 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=124
+RULE_SCAN offset=125 text=
+0x14e1535:	"es at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 289 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=125
+RULE_SCAN offset=126 text=
+0x14e1536:	"s at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 290 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=126
+RULE_SCAN offset=128 text=
+0x14e1538:	"at 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 291 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=128
+RULE_SCAN offset=129 text=
+0x14e1539:	"t 42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 292 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=129
+RULE_SCAN offset=131 text=
+0x14e153b:	"42 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 293 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=131
+RULE_SCAN offset=132 text=
+0x14e153c:	"2 Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 294 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=132
+RULE_SCAN offset=134 text=
+0x14e153e:	"Main St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 295 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=134
+RULE_SCAN offset=135 text=
+0x14e153f:	"ain St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 296 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=135
+RULE_SCAN offset=136 text=
+0x14e1540:	"in St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 297 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=136
+RULE_SCAN offset=137 text=
+0x14e1541:	"n St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 298 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=137
+RULE_SCAN offset=139 text=
+0x14e1543:	"St. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 299 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=139
+RULE_SCAN offset=140 text=
+0x14e1544:	"t. in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 300 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=140
+RULE_SCAN offset=141 text=
+0x14e1545:	". in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 301 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=141
+RULE_SCAN offset=143 text=
+0x14e1547:	"in N.Y.; please call 555-0102.\n"
+Temporary breakpoint 302 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=143
+RULE_SCAN offset=144 text=
+0x14e1548:	"n N.Y.; please call 555-0102.\n"
+Temporary breakpoint 303 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=144
+RULE_SCAN offset=146 text=
+0x14e154a:	"N.Y.; please call 555-0102.\n"
+Temporary breakpoint 304 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=146
+RULE_SCAN offset=147 text=
+0x14e154b:	".Y.; please call 555-0102.\n"
+Temporary breakpoint 305 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=147
+RULE_SCAN offset=148 text=
+0x14e154c:	"Y.; please call 555-0102.\n"
+Temporary breakpoint 306 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=148
+RULE_SCAN offset=149 text=
+0x14e154d:	".; please call 555-0102.\n"
+Temporary breakpoint 307 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=149
+RULE_SCAN offset=150 text=
+0x14e154e:	"; please call 555-0102.\n"
+Temporary breakpoint 308 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=150
+RULE_SCAN offset=152 text=
+0x14e1550:	"please call 555-0102.\n"
+Temporary breakpoint 309 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=152
+RULE_SCAN offset=153 text=
+0x14e1551:	"lease call 555-0102.\n"
+Temporary breakpoint 310 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=153
+RULE_SCAN offset=154 text=
+0x14e1552:	"ease call 555-0102.\n"
+Temporary breakpoint 311 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=154
+RULE_SCAN offset=155 text=
+0x14e1553:	"ase call 555-0102.\n"
+Temporary breakpoint 312 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=155
+RULE_SCAN offset=156 text=
+0x14e1554:	"se call 555-0102.\n"
+Temporary breakpoint 313 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=156
+RULE_SCAN offset=157 text=
+0x14e1555:	"e call 555-0102.\n"
+Temporary breakpoint 314 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=157
+RULE_SCAN offset=159 text=
+0x14e1557:	"call 555-0102.\n"
+Temporary breakpoint 315 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=159
+RULE_SCAN offset=160 text=
+0x14e1558:	"all 555-0102.\n"
+Temporary breakpoint 316 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=160
+RULE_SCAN offset=161 text=
+0x14e1559:	"ll 555-0102.\n"
+Temporary breakpoint 317 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=161
+RULE_SCAN offset=162 text=
+0x14e155a:	"l 555-0102.\n"
+Temporary breakpoint 318 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=162
+RULE_SCAN offset=164 text=
+0x14e155c:	"555-0102.\n"
+Temporary breakpoint 319 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=164
+RULE_SCAN offset=165 text=
+0x14e155d:	"55-0102.\n"
+Temporary breakpoint 320 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=165
+RULE_SCAN offset=166 text=
+0x14e155e:	"5-0102.\n"
+Temporary breakpoint 321 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=166
+RULE_SCAN offset=167 text=
+0x14e155f:	"-0102.\n"
+Temporary breakpoint 322 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=167
+RULE_SCAN offset=168 text=
+0x14e1560:	"0102.\n"
+Temporary breakpoint 323 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=168
+RULE_SCAN offset=169 text=
+0x14e1561:	"102.\n"
+Temporary breakpoint 324 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=169
+RULE_SCAN offset=170 text=
+0x14e1562:	"02.\n"
+Temporary breakpoint 325 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=170
+RULE_SCAN offset=171 text=
+0x14e1563:	"2.\n"
+Temporary breakpoint 326 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=171
+RULE_SCAN offset=172 text=
+0x14e1564:	".\n"
+Temporary breakpoint 327 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=172
+TEXT_PREPROCESS_RETURN value=0x14c49e8
+0x14c49e8:	'.' <repeats 111 times>, " Dr. Smith lives at 42 Main St. in N.Y.; please call 555-0102.\n"
+TEXT_RECORDS count=0 base=0 stride=0x210
+SCALAR_ENTRY tree=0x100a7a68 nodes=120 output_width=1 features=0x667334 return=0x10051fda
+0x667334:	2	3	1	0	1	0	-1	2
+0x667344:	2	0	0	1	0	-1	8	1
+Temporary breakpoint 328 at 0x10051fda
+SCALAR_RETURN value=0
+SCALAR_ENTRY tree=0x100a7a68 nodes=120 output_width=1 features=0x667334 return=0x10051fda
+0x667334:	3	1	0	0	1	1	-1	1
+0x667344:	5	0	0	0	0	4	17	1
+Temporary breakpoint 329 at 0x10051fda
+SCALAR_RETURN value=0
+SCALAR_ENTRY tree=0x100fefe8 nodes=28 output_width=1 features=0x667630 return=0x10003052
+0x667630:	3	20	15	18	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 330 at 0x10003052
+SCALAR_RETURN value=64
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667630 return=0x10003052
+0x667630:	15	3	20	15	18	0	0	64
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 331 at 0x10003052
+SCALAR_RETURN value=8
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667630 return=0x10003052
+0x667630:	4	15	3	20	15	18	0	8
+0x667640:	64	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 332 at 0x10003052
+SCALAR_RETURN value=67
+SCALAR_ENTRY tree=0x100fee44 nodes=362 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	4	15	3	20	15	18	67
+0x667640:	8	64	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 333 at 0x10003052
+SCALAR_RETURN value=50
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	4	15	3	20	15	50
+0x667640:	67	8	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 334 at 0x10003052
+SCALAR_RETURN value=3
+SCALAR_ENTRY tree=0x100fee60 nodes=32 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	4	15	3	20	3
+0x667640:	50	67	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 335 at 0x10003052
+SCALAR_RETURN value=26
+SCALAR_ENTRY tree=0x100feed0 nodes=131 output_width=1 features=0x667630 return=0x10003052
+0x667630:	13	9	20	8	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 336 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667630 return=0x10003052
+0x667630:	19	13	9	20	8	0	0	1
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 337 at 0x10003052
+SCALAR_RETURN value=68
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	19	13	9	20	8	0	68
+0x667640:	1	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 338 at 0x10003052
+SCALAR_RETURN value=44
+SCALAR_ENTRY tree=0x100fef5c nodes=8 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	19	13	9	20	8	44
+0x667640:	68	1	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 339 at 0x10003052
+SCALAR_RETURN value=54
+SCALAR_ENTRY tree=0x100ff004 nodes=487 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	19	13	9	20	54
+0x667640:	44	68	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 340 at 0x10003052
+SCALAR_RETURN value=65
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	1	20	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 341 at 0x10003052
+SCALAR_RETURN value=67
+SCALAR_ENTRY tree=0x100fee0c nodes=1719 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	1	20	0	0	67
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 342 at 0x10003052
+SCALAR_RETURN value=6
+SCALAR_ENTRY tree=0x100ff0ac nodes=646 output_width=1 features=0x667630 return=0x10003052
+0x667630:	15	18	20	25	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 343 at 0x10003052
+SCALAR_RETURN value=46
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667630 return=0x10003052
+0x667630:	6	15	18	20	25	0	0	46
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 344 at 0x10003052
+SCALAR_RETURN value=67
+SCALAR_ENTRY tree=0x100fefe8 nodes=28 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	6	15	18	20	25	0	67
+0x667640:	46	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 345 at 0x10003052
+SCALAR_RETURN value=64
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	6	15	18	20	25	64
+0x667640:	67	46	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 346 at 0x10003052
+SCALAR_RETURN value=16
+SCALAR_ENTRY tree=0x100fee98 nodes=5 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	6	15	18	20	16
+0x667640:	64	67	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 347 at 0x10003052
+SCALAR_RETURN value=37
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	20	23	15	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 348 at 0x10003052
+SCALAR_RETURN value=74
+SCALAR_ENTRY tree=0x100ff074 nodes=104 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	20	23	15	0	0	74
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 349 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	20	23	15	0	1
+0x667640:	74	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 350 at 0x10003052
+SCALAR_RETURN value=67
+SCALAR_ENTRY tree=0x100fef78 nodes=89 output_width=1 features=0x667630 return=0x10003052
+0x667630:	13	1	9	14	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 351 at 0x10003052
+SCALAR_RETURN value=55
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	13	1	9	14	0	0	55
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 352 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fee0c nodes=1719 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	13	1	9	14	0	1
+0x667640:	55	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 353 at 0x10003052
+SCALAR_RETURN value=35
+SCALAR_ENTRY tree=0x100fef5c nodes=8 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	13	1	9	14	35
+0x667640:	1	55	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 354 at 0x10003052
+SCALAR_RETURN value=54
+SCALAR_ENTRY tree=0x100fef78 nodes=89 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	9	14	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 355 at 0x10003052
+SCALAR_RETURN value=55
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	9	14	0	0	55
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 356 at 0x10003052
+SCALAR_RETURN value=44
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	9	1	10	11	2	13	1	2
+0x6676cc:	0	60	0	0	0	1	0	4099
+Temporary breakpoint 357 at 0x10013086
+SCALAR_RETURN value=777
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	8	2	10	10	3	13	1	1
+0x6676cc:	42	0	60	0	0	1	0	4099
+Temporary breakpoint 358 at 0x10013086
+SCALAR_RETURN value=456
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	7	3	10	9	4	13	2	2
+0x6676cc:	0	0	0	0	0	0	0	4099
+Temporary breakpoint 359 at 0x10013086
+SCALAR_RETURN value=262
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	6	4	10	8	5	13	3	3
+0x6676cc:	0	20	0	0	0	0	1	4099
+Temporary breakpoint 360 at 0x10013086
+SCALAR_RETURN value=9
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	4	6	10	5	8	13	5	6
+0x6676cc:	0	61	20	0	0	0	0	4099
+Temporary breakpoint 361 at 0x10013086
+SCALAR_RETURN value=105
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	3	7	10	4	9	13	6	7
+0x6676cc:	16	0	61	0	0	1	0	4099
+Temporary breakpoint 362 at 0x10013086
+SCALAR_RETURN value=511
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	2	8	10	3	10	13	1	1
+0x6676cc:	0	0	0	0	0	0	0	4099
+Temporary breakpoint 363 at 0x10013086
+SCALAR_RETURN value=97
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	1	9	10	2	11	13	2	2
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 364 at 0x10013086
+SCALAR_RETURN value=79
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	9	40	1	0	3	1	1	2
+0x6676fc:	1	0	2468	686	112	686	1740	686
+Temporary breakpoint 365 at 0x100134cc
+SCALAR_RETURN value=1863
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	1	9	20	1	3	1	1	2
+0x6676fc:	2	0	2468	686	112	686	1742	686
+Temporary breakpoint 366 at 0x10013466
+SCALAR_RETURN value=2409
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	20	1	31	0	3	1	1	2
+0x6676fc:	3	0	2468	686	112	686	1744	686
+Temporary breakpoint 367 at 0x100134cc
+SCALAR_RETURN value=869
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	31	20	12	0	1	3	2	2
+0x6676fc:	1	0	2471	686	112	686	1746	686
+Temporary breakpoint 368 at 0x100134cc
+SCALAR_RETURN value=1058
+SCALAR_ENTRY tree=0x14bf2a0 nodes=101 output_width=1 features=0x6676ec return=0x10013496
+0x6676ec:	12	31	42	0	1	3	2	2
+0x6676fc:	2	0	2471	686	112	686	1748	686
+Temporary breakpoint 369 at 0x10013496
+SCALAR_RETURN value=1434
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	29	42	22	0	3	1	2	1
+0x6676fc:	1	0	3428	686	112	686	2700	686
+Temporary breakpoint 370 at 0x100134e1
+SCALAR_RETURN value=2235
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	22	29	17	0	3	1	2	1
+0x6676fc:	1	0	3428	686	112	686	2702	686
+Temporary breakpoint 371 at 0x1001350b
+SCALAR_RETURN value=1173
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	17	22	32	1	3	1	2	1
+0x6676fc:	2	0	3428	686	112	686	2704	686
+Temporary breakpoint 372 at 0x1001344e
+SCALAR_RETURN value=1302
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	32	17	42	0	3	1	2	1
+0x6676fc:	3	0	3428	686	112	686	2706	686
+Temporary breakpoint 373 at 0x100134e1
+SCALAR_RETURN value=1025
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	21	42	17	0	3	1	2	1
+0x6676fc:	1	0	4388	686	112	686	3660	686
+Temporary breakpoint 374 at 0x1001350b
+SCALAR_RETURN value=1280
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	17	21	35	1	3	1	2	1
+0x6676fc:	2	0	4388	686	112	686	3662	686
+Temporary breakpoint 375 at 0x1001344e
+SCALAR_RETURN value=1545
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	35	17	38	0	3	1	2	1
+0x6676fc:	3	0	4388	686	112	686	3664	686
+Temporary breakpoint 376 at 0x100134e1
+SCALAR_RETURN value=736
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	38	35	42	0	3	1	2	1
+0x6676fc:	3	0	4388	686	112	686	3666	686
+Temporary breakpoint 377 at 0x100134e1
+SCALAR_RETURN value=1310
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	2	42	31	1	2	1	2	1
+0x6676fc:	2	0	5348	686	112	686	4620	686
+Temporary breakpoint 378 at 0x1001344e
+SCALAR_RETURN value=1168
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	31	2	42	0	2	1	2	1
+0x6676fc:	3	0	5348	686	112	686	4622	686
+Temporary breakpoint 379 at 0x100134cc
+SCALAR_RETURN value=697
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	14	42	4	0	3	1	2	2
+0x6676fc:	1	0	6308	686	112	686	5580	686
+Temporary breakpoint 380 at 0x100134e1
+SCALAR_RETURN value=1696
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	4	14	28	1	3	1	2	2
+0x6676fc:	2	0	6308	686	112	686	5582	686
+Temporary breakpoint 381 at 0x10013466
+SCALAR_RETURN value=1139
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676ec return=0x10013520
+0x6676ec:	28	4	31	0	3	1	2	2
+0x6676fc:	3	0	6308	686	112	686	5584	686
+Temporary breakpoint 382 at 0x10013520
+SCALAR_RETURN value=971
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	31	28	18	0	1	3	2	2
+0x6676fc:	1	0	6311	686	112	686	5586	686
+Temporary breakpoint 383 at 0x100134cc
+SCALAR_RETURN value=533
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	18	31	42	0	1	3	2	2
+0x6676fc:	2	0	6311	686	112	686	5588	686
+Temporary breakpoint 384 at 0x10013466
+SCALAR_RETURN value=1631
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	31	42	34	0	1	1	2	1
+0x6676fc:	1	0	7268	686	112	686	6540	686
+Temporary breakpoint 385 at 0x100134cc
+SCALAR_RETURN value=1068
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	34	31	42	1	1	1	2	1
+0x6676fc:	2	0	7268	686	112	686	6542	686
+Temporary breakpoint 386 at 0x10013466
+SCALAR_RETURN value=1908
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	22	42	13	0	3	1	2	1
+0x6676fc:	1	0	8228	686	112	686	7500	686
+Temporary breakpoint 387 at 0x1001350b
+SCALAR_RETURN value=1281
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676ec return=0x1001347e
+0x6676ec:	13	22	23	1	3	1	2	1
+0x6676fc:	2	0	8228	686	112	686	7502	686
+Temporary breakpoint 388 at 0x1001347e
+SCALAR_RETURN value=2513
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	23	13	42	0	3	1	2	1
+0x6676fc:	3	0	8228	686	112	686	7504	686
+Temporary breakpoint 389 at 0x1001350b
+SCALAR_RETURN value=1159
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	29	42	31	0	3	1	2	1
+0x6676fc:	1	0	9188	686	112	686	8460	686
+Temporary breakpoint 390 at 0x100134e1
+SCALAR_RETURN value=1831
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	31	29	28	0	3	1	2	1
+0x6676fc:	1	0	9188	686	112	686	8462	686
+Temporary breakpoint 391 at 0x100134cc
+SCALAR_RETURN value=1042
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676ec return=0x10013520
+0x6676ec:	28	31	18	0	3	1	2	1
+0x6676fc:	1	0	9188	686	112	686	8464	686
+Temporary breakpoint 392 at 0x10013520
+SCALAR_RETURN value=643
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	18	28	31	1	3	1	2	1
+0x6676fc:	2	0	9188	686	112	686	8466	686
+Temporary breakpoint 393 at 0x10013466
+SCALAR_RETURN value=1711
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	31	18	42	0	3	1	2	1
+0x6676fc:	3	0	9188	686	112	686	8468	686
+Temporary breakpoint 394 at 0x100134cc
+SCALAR_RETURN value=645
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	17	42	23	1	2	1	2	1
+0x6676fc:	2	0	10148	686	112	686	9420	686
+Temporary breakpoint 395 at 0x1001344e
+SCALAR_RETURN value=1006
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	23	17	42	0	2	1	2	1
+0x6676fc:	3	0	10148	686	112	686	9422	686
+Temporary breakpoint 396 at 0x1001350b
+SCALAR_RETURN value=1010
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	11	42	23	1	2	1	2	2
+0x6676fc:	2	0	11108	686	112	686	10380	686
+Temporary breakpoint 397 at 0x1001344e
+SCALAR_RETURN value=1583
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	23	11	36	0	2	1	2	2
+0x6676fc:	3	0	11108	686	112	686	10382	686
+Temporary breakpoint 398 at 0x1001350b
+SCALAR_RETURN value=632
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676ec return=0x10013520
+0x6676ec:	36	23	6	0	1	1	3	2
+0x6676fc:	1	0	11110	686	112	686	10384	686
+Temporary breakpoint 399 at 0x10013520
+SCALAR_RETURN value=1512
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676ec return=0x1001347e
+0x6676ec:	6	36	40	1	1	1	3	2
+0x6676fc:	2	0	11110	686	112	686	10386	686
+Temporary breakpoint 400 at 0x1001347e
+SCALAR_RETURN value=4558
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	1	1	3	0	1	0	3
+0x667700:	1	3	2	686	112	686	0	0
+Temporary breakpoint 401 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dc0 return=0x100139b6
+0x6676f0:	1	1	1	3	0	1	0	3
+0x667700:	1	3	2	0	112	686	0	0
+Temporary breakpoint 402 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	112	115	115	114	112	109	106	103
+0x2af7dd0:	101	99	99	98
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	12	0	1	3	3	1	4
+0x667700:	2	1	2	0	112	686	0	0
+Temporary breakpoint 403 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dde return=0x100139b6
+0x6676f0:	1	12	0	1	3	3	1	4
+0x667700:	2	1	2	0	112	686	0	0
+Temporary breakpoint 404 at 0x100139b6
+VECTOR_RETURN values:0x2af7dde:	118	120	121	122	122	124	126	128
+0x2af7dee:	131	134	136	136
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	17	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	1	0
+Temporary breakpoint 405 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dfc return=0x100139b6
+0x6676f0:	2	17	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	1	0
+Temporary breakpoint 406 at 0x100139b6
+VECTOR_RETURN values:0x2af7dfc:	129	123	120	117	116	116	117	119
+0x2af7e0c:	120	121	122	122
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	5	17	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	2	0
+Temporary breakpoint 407 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e1a return=0x100139b6
+0x6676f0:	5	17	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	2	0
+Temporary breakpoint 408 at 0x100139b6
+VECTOR_RETURN values:0x2af7e1a:	133	129	125	120	116	115	115	116
+0x2af7e2a:	118	121	122	123
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	0	2	1	3	3	1	0	4
+0x667700:	2	2	1	0	112	686	3	0
+Temporary breakpoint 409 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e38 return=0x100139b6
+0x6676f0:	0	2	1	3	3	1	0	4
+0x667700:	2	2	1	0	112	686	3	0
+Temporary breakpoint 410 at 0x100139b6
+VECTOR_RETURN values:0x2af7e38:	123	124	125	127	129	130	132	134
+0x2af7e48:	135	135	133	131
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	4	1	3	0	1	0	3
+0x667700:	2	3	2	0	112	686	4	0
+Temporary breakpoint 411 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e56 return=0x100139b6
+0x6676f0:	2	4	1	3	0	1	0	3
+0x667700:	2	3	2	0	112	686	4	0
+Temporary breakpoint 412 at 0x100139b6
+VECTOR_RETURN values:0x2af7e56:	135	130	123	118	113	111	109	108
+0x2af7e66:	107	108	111	115
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	18	0	1	3	3	1	4
+0x667700:	2	1	2	0	112	686	4	0
+Temporary breakpoint 413 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e74 return=0x100139b6
+0x6676f0:	1	18	0	1	3	3	1	4
+0x667700:	2	1	2	0	112	686	4	0
+Temporary breakpoint 414 at 0x100139b6
+VECTOR_RETURN values:0x2af7e74:	112	114	116	118	120	123	125	128
+0x2af7e84:	131	135	136	137
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	34	1	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	5	0
+Temporary breakpoint 415 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e92 return=0x100139b6
+0x6676f0:	1	34	1	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	5	0
+Temporary breakpoint 416 at 0x100139b6
+VECTOR_RETURN values:0x2af7e92:	125	122	118	112	107	104	101	101
+0x2af7ea2:	101	103	106	110
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	4	13	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	6	0
+Temporary breakpoint 417 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7eb0 return=0x100139b6
+0x6676f0:	4	13	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	6	0
+Temporary breakpoint 418 at 0x100139b6
+VECTOR_RETURN values:0x2af7eb0:	127	128	127	125	123	121	119	119
+0x2af7ec0:	119	120	121	122
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	18	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	7	0
+Temporary breakpoint 419 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7ece return=0x100139b6
+0x6676f0:	2	18	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	7	0
+Temporary breakpoint 420 at 0x100139b6
+VECTOR_RETURN values:0x2af7ece:	129	121	115	110	108	107	107	109
+0x2af7ede:	111	114	117	119
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	0	17	1	3	3	1	0	4
+0x667700:	2	2	1	0	112	686	8	0
+Temporary breakpoint 421 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7eec return=0x100139b6
+0x6676f0:	0	17	1	3	3	1	0	4
+0x667700:	2	2	1	0	112	686	8	0
+Temporary breakpoint 422 at 0x100139b6
+VECTOR_RETURN values:0x2af7eec:	120	120	120	122	124	127	129	131
+0x2af7efc:	132	133	131	129
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	0	11	1	3	1	1	0	1
+0x667700:	2	2	2	0	112	686	9	0
+Temporary breakpoint 423 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7f0a return=0x100139b6
+0x6676f0:	0	11	1	3	1	1	0	1
+0x667700:	2	2	2	0	112	686	9	0
+Temporary breakpoint 424 at 0x100139b6
+VECTOR_RETURN values:0x2af7f0a:	117	117	119	120	121	123	124	125
+0x2af7f1a:	125	125	124	123
+SCALAR_ENTRY tree=0x14bf380 nodes=26 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	6	6	1	1	3	1	1	4
+0x667700:	3	1	2	0	112	686	9	0
+Temporary breakpoint 425 at 0x10013984
+SCALAR_RETURN value=3
+VECTOR_ENTRY tree=0x14bf3f0 nodes=42 output_width=12 features=0x6676f0 output=0x2af7f28 return=0x100139b6
+0x6676f0:	6	6	1	1	3	1	1	4
+0x667700:	3	1	2	3	112	686	9	0
+Temporary breakpoint 426 at 0x100139b6
+VECTOR_RETURN values:0x2af7f28:	123	120	114	110	109	110	115	128
+0x2af7f38:	148	170	176	175
+SCALAR_ENTRY tree=0x100fef40 nodes=52 output_width=1 features=0x667610 return=0x10003052
+0x667610:	3	1	12	12	0	0	0	0
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 427 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fef40 nodes=52 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	3	1	12	12	0	0	1
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 428 at 0x10003052
+SCALAR_RETURN value=53
+SCALAR_ENTRY tree=0x100fee0c nodes=1719 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	3	1	12	12	0	53
+0x667620:	1	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 429 at 0x10003052
+SCALAR_RETURN value=16
+SCALAR_ENTRY tree=0x100fee44 nodes=362 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	3	1	12	12	16
+0x667620:	53	1	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 430 at 0x10003052
+SCALAR_RETURN value=50
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	6	9	22	5	0	0	0	0
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 431 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff058 nodes=1 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	6	9	22	5	0	0	1
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 432 at 0x10003052
+SCALAR_RETURN value=76
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	6	9	22	5	0	76
+0x667620:	1	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 433 at 0x10003052
+SCALAR_RETURN value=22
+SCALAR_ENTRY tree=0x100fee98 nodes=5 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	6	9	22	5	22
+0x667620:	76	1	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 434 at 0x10003052
+SCALAR_RETURN value=37
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	6	9	22	5	0	0	0	0
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 435 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff058 nodes=1 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	6	9	22	5	0	0	1
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 436 at 0x10003052
+SCALAR_RETURN value=76
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	6	9	22	5	0	76
+0x667620:	1	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 437 at 0x10003052
+SCALAR_RETURN value=22
+SCALAR_ENTRY tree=0x100fee98 nodes=5 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	6	9	22	5	22
+0x667620:	76	1	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 438 at 0x10003052
+SCALAR_RETURN value=37
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	6	9	22	5	0	0	0	0
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 439 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff058 nodes=1 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	6	9	22	5	0	0	1
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 440 at 0x10003052
+SCALAR_RETURN value=76
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	6	9	22	5	0	76
+0x667620:	1	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 441 at 0x10003052
+SCALAR_RETURN value=22
+SCALAR_ENTRY tree=0x100fee98 nodes=5 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	6	9	22	5	22
+0x667620:	76	1	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 442 at 0x10003052
+SCALAR_RETURN value=37
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	26	5	18	15	0	0	0	0
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 443 at 0x10003052
+SCALAR_RETURN value=57
+SCALAR_ENTRY tree=0x100fefe8 nodes=28 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	26	5	18	15	0	0	57
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 444 at 0x10003052
+SCALAR_RETURN value=64
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	26	5	18	15	0	64
+0x667620:	57	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 445 at 0x10003052
+SCALAR_RETURN value=44
+SCALAR_ENTRY tree=0x100ff0c8 nodes=30 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	26	5	18	15	44
+0x667620:	64	57	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 446 at 0x10003052
+SCALAR_RETURN value=88
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	26	5	18	15	0	0	0	0
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 447 at 0x10003052
+SCALAR_RETURN value=57
+SCALAR_ENTRY tree=0x100fefe8 nodes=28 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	26	5	18	15	0	0	57
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 448 at 0x10003052
+SCALAR_RETURN value=64
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	26	5	18	15	0	64
+0x667620:	57	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 449 at 0x10003052
+SCALAR_RETURN value=44
+SCALAR_ENTRY tree=0x100ff0c8 nodes=30 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	26	5	18	15	44
+0x667620:	64	57	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 450 at 0x10003052
+SCALAR_RETURN value=88
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	20	23	15	0	0	0	0
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 451 at 0x10003052
+SCALAR_RETURN value=74
+SCALAR_ENTRY tree=0x100ff074 nodes=104 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	20	23	15	0	0	74
+0x667620:	0	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 452 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	20	23	15	0	1
+0x667620:	74	0	-30191	-103	30292	102	30561	4096
+Temporary breakpoint 453 at 0x10003052
+SCALAR_RETURN value=67
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	2	3	5	2	3	5	3	3
+0x6676ac:	0	0	20	0	0	0	0	4099
+Temporary breakpoint 454 at 0x10013086
+SCALAR_RETURN value=201
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	1	4	5	1	4	5	4	4
+0x6676ac:	0	107	0	0	0	0	0	4099
+Temporary breakpoint 455 at 0x10013086
+SCALAR_RETURN value=79
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	27	40	21	0	3	1	1	1
+0x6676dc:	1	0	2468	686	112	686	1740	686
+Temporary breakpoint 456 at 0x100134cc
+SCALAR_RETURN value=1260
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	21	27	18	0	3	1	1	1
+0x6676dc:	1	0	2468	686	112	686	1742	686
+Temporary breakpoint 457 at 0x1001350b
+SCALAR_RETURN value=610
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	18	21	38	1	3	1	1	1
+0x6676dc:	2	0	2468	686	112	686	1744	686
+Temporary breakpoint 458 at 0x10013466
+SCALAR_RETURN value=2174
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	38	18	42	0	3	1	1	1
+0x6676dc:	3	0	2468	686	112	686	1746	686
+Temporary breakpoint 459 at 0x100134e1
+SCALAR_RETURN value=1253
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	20	42	4	0	3	1	2	1
+0x6676dc:	1	0	3428	686	112	686	2700	686
+Temporary breakpoint 460 at 0x100134cc
+SCALAR_RETURN value=1857
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	4	20	21	1	3	1	2	1
+0x6676dc:	2	0	3428	686	112	686	2702	686
+Temporary breakpoint 461 at 0x10013466
+SCALAR_RETURN value=2161
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	21	4	42	0	3	1	2	1
+0x6676dc:	3	0	3428	686	112	686	2704	686
+Temporary breakpoint 462 at 0x1001350b
+SCALAR_RETURN value=1116
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	14	42	6	0	3	1	2	1
+0x6676dc:	1	0	4388	686	112	686	3660	686
+Temporary breakpoint 463 at 0x100134e1
+SCALAR_RETURN value=1972
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	6	14	35	1	3	1	2	1
+0x6676dc:	2	0	4388	686	112	686	3662	686
+Temporary breakpoint 464 at 0x1001347e
+SCALAR_RETURN value=3224
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	35	6	42	0	3	1	2	1
+0x6676dc:	3	0	4388	686	112	686	3664	686
+Temporary breakpoint 465 at 0x100134e1
+SCALAR_RETURN value=858
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	14	42	6	0	3	1	2	1
+0x6676dc:	1	0	5348	686	112	686	4620	686
+Temporary breakpoint 466 at 0x100134e1
+SCALAR_RETURN value=1972
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	6	14	35	1	3	1	2	1
+0x6676dc:	2	0	5348	686	112	686	4622	686
+Temporary breakpoint 467 at 0x1001347e
+SCALAR_RETURN value=3224
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	35	6	42	0	3	1	2	1
+0x6676dc:	3	0	5348	686	112	686	4624	686
+Temporary breakpoint 468 at 0x100134e1
+SCALAR_RETURN value=858
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	14	42	6	0	3	1	3	1
+0x6676dc:	1	0	6308	686	112	686	5580	686
+Temporary breakpoint 469 at 0x100134e1
+SCALAR_RETURN value=1972
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	6	14	35	1	3	1	3	1
+0x6676dc:	2	0	6308	686	112	686	5582	686
+Temporary breakpoint 470 at 0x1001347e
+SCALAR_RETURN value=4429
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	35	6	40	0	3	1	3	1
+0x6676dc:	3	0	6308	686	112	686	5584	686
+Temporary breakpoint 471 at 0x100134e1
+SCALAR_RETURN value=1310
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	38	40	17	0	1	1	1	2
+0x6676dc:	1	0	7268	686	112	686	6540	686
+Temporary breakpoint 472 at 0x100134e1
+SCALAR_RETURN value=1494
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	17	38	28	1	1	1	1	2
+0x6676dc:	2	0	7268	686	112	686	6542	686
+Temporary breakpoint 473 at 0x1001344e
+SCALAR_RETURN value=1262
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	28	17	25	0	1	3	2	2
+0x6676dc:	1	0	7270	686	112	686	6544	686
+Temporary breakpoint 474 at 0x10013520
+SCALAR_RETURN value=1349
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	25	28	42	0	1	3	2	2
+0x6676dc:	2	0	7270	686	112	686	6546	686
+Temporary breakpoint 475 at 0x1001347e
+SCALAR_RETURN value=1266
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	36	42	3	0	3	1	2	1
+0x6676dc:	1	0	8228	686	112	686	7500	686
+Temporary breakpoint 476 at 0x10013520
+SCALAR_RETURN value=1308
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	3	36	23	1	3	1	2	1
+0x6676dc:	2	0	8228	686	112	686	7502	686
+Temporary breakpoint 477 at 0x1001344e
+SCALAR_RETURN value=770
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	23	3	42	0	3	1	2	1
+0x6676dc:	3	0	8228	686	112	686	7504	686
+Temporary breakpoint 478 at 0x1001350b
+SCALAR_RETURN value=1081
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	38	42	17	0	1	1	2	2
+0x6676dc:	1	0	9188	686	112	686	8460	686
+Temporary breakpoint 479 at 0x100134e1
+SCALAR_RETURN value=1707
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	17	38	28	1	1	1	2	2
+0x6676dc:	2	0	9188	686	112	686	8462	686
+Temporary breakpoint 480 at 0x1001344e
+SCALAR_RETURN value=809
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	28	17	25	0	1	3	2	2
+0x6676dc:	1	0	9190	686	112	686	8464	686
+Temporary breakpoint 481 at 0x10013520
+SCALAR_RETURN value=1349
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	25	28	42	0	1	3	2	2
+0x6676dc:	2	0	9190	686	112	686	8466	686
+Temporary breakpoint 482 at 0x1001347e
+SCALAR_RETURN value=1266
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	31	42	34	0	1	1	3	1
+0x6676dc:	1	0	10148	686	112	686	9420	686
+Temporary breakpoint 483 at 0x100134cc
+SCALAR_RETURN value=1631
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	34	31	40	1	1	1	3	1
+0x6676dc:	2	0	10148	686	112	686	9422	686
+Temporary breakpoint 484 at 0x10013466
+SCALAR_RETURN value=4340
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	1	18	1	3	3	1	0	4
+0x6676e0:	1	3	1	686	112	686	0	0
+Temporary breakpoint 485 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dc0 return=0x100139b6
+0x6676d0:	1	18	1	3	3	1	0	4
+0x6676e0:	1	3	1	0	112	686	0	0
+Temporary breakpoint 486 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	86	88	87	85	83	81	80	80
+0x2af7dd0:	81	85	92	100
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	1	4	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	1	0
+Temporary breakpoint 487 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dde return=0x100139b6
+0x6676d0:	1	4	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	1	0
+Temporary breakpoint 488 at 0x100139b6
+VECTOR_RETURN values:0x2af7dde:	132	128	124	121	119	118	118	118
+0x2af7dee:	119	120	121	121
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	2	0
+Temporary breakpoint 489 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dfc return=0x100139b6
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	2	0
+Temporary breakpoint 490 at 0x100139b6
+VECTOR_RETURN values:0x2af7dfc:	140	130	122	117	115	114	114	114
+0x2af7e0c:	115	117	119	120
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	3	0
+Temporary breakpoint 491 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e1a return=0x100139b6
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	3	0
+Temporary breakpoint 492 at 0x100139b6
+VECTOR_RETURN values:0x2af7e1a:	140	130	122	117	115	114	114	114
+0x2af7e2a:	115	117	119	120
+SCALAR_ENTRY tree=0x14bf364 nodes=22 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	3	3	1	0	112	686	4	0
+Temporary breakpoint 493 at 0x10013984
+SCALAR_RETURN value=4
+VECTOR_ENTRY tree=0x14bf3d4 nodes=18 output_width=12 features=0x6676d0 output=0x2af7e38 return=0x100139b6
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	3	3	1	4	112	686	4	0
+Temporary breakpoint 494 at 0x100139b6
+VECTOR_RETURN values:0x2af7e38:	154	139	128	119	115	116	120	131
+0x2af7e48:	145	157	158	153
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	17	1	3	0	1	0	3
+0x6676e0:	1	1	2	4	112	686	5	0
+Temporary breakpoint 495 at 0x10013984
+SCALAR_RETURN value=1
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e56 return=0x100139b6
+0x6676d0:	2	17	1	3	0	1	0	3
+0x6676e0:	1	1	2	1	112	686	5	0
+Temporary breakpoint 496 at 0x100139b6
+VECTOR_RETURN values:0x2af7e56:	94	95	95	95	95	94	93	91
+0x2af7e66:	91	91	92	94
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	6	25	0	1	3	3	1	4
+0x6676e0:	2	1	2	1	112	686	5	0
+Temporary breakpoint 497 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e74 return=0x100139b6
+0x6676d0:	6	25	0	1	3	3	1	4
+0x6676e0:	2	1	2	0	112	686	5	0
+Temporary breakpoint 498 at 0x100139b6
+VECTOR_RETURN values:0x2af7e74:	112	114	116	118	120	123	125	128
+0x2af7e84:	131	135	136	137
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	6	3	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	6	0
+Temporary breakpoint 499 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e92 return=0x100139b6
+0x6676d0:	6	3	1	3	3	1	0	4
+0x6676e0:	2	3	1	0	112	686	6	0
+Temporary breakpoint 500 at 0x100139b6
+VECTOR_RETURN values:0x2af7e92:	126	127	125	124	122	121	121	121
+0x2af7ea2:	121	122	121	120
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	17	1	3	0	1	0	3
+0x6676e0:	2	1	2	0	112	686	7	0
+Temporary breakpoint 501 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7eb0 return=0x100139b6
+0x6676d0:	2	17	1	3	0	1	0	3
+0x6676e0:	2	1	2	0	112	686	7	0
+Temporary breakpoint 502 at 0x100139b6
+VECTOR_RETURN values:0x2af7eb0:	136	132	127	120	114	109	106	103
+0x2af7ec0:	102	102	103	104
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	6	25	0	1	3	3	1	4
+0x6676e0:	2	1	2	0	112	686	7	0
+Temporary breakpoint 503 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7ece return=0x100139b6
+0x6676d0:	6	25	0	1	3	3	1	4
+0x6676e0:	2	1	2	0	112	686	7	0
+Temporary breakpoint 504 at 0x100139b6
+VECTOR_RETURN values:0x2af7ece:	112	114	116	118	120	123	125	128
+0x2af7ede:	131	135	136	137
+SCALAR_ENTRY tree=0x14bf380 nodes=26 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	1	34	1	3	3	1	0	4
+0x6676e0:	3	1	1	0	112	686	8	0
+Temporary breakpoint 505 at 0x10013984
+SCALAR_RETURN value=4
+VECTOR_ENTRY tree=0x14bf3f0 nodes=42 output_width=12 features=0x6676d0 output=0x2af7eec return=0x100139b6
+0x6676d0:	1	34	1	3	3	1	0	4
+0x6676e0:	3	1	1	4	112	686	8	0
+Temporary breakpoint 506 at 0x100139b6
+VECTOR_RETURN values:0x2af7eec:	144	127	118	110	107	106	109	117
+0x2af7efc:	133	154	163	163
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb>

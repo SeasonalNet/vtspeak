@@ -1,0 +1,104 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1002c220
+Wine-gdb> >>>>>>>>> > > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002c530
+Wine-gdb> >>>>>>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1002c120
+Wine-gdb> >>> > > > > >  >  >  >  >  > > > > >>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x1002c8b0
+Wine-gdb> >>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x1002bc60
+Wine-gdb> >>>>>>> > > > >  >  >  >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 7 at 0x1002bbd0
+Wine-gdb> >>> > > >>>Wine-gdb> Wine-gdb> Breakpoint 8 at 0x1002d230
+Wine-gdb> >>>>>>>> > > >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 9 at 0x1002afb0
+Wine-gdb> >>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 10 at 0x10026870
+Wine-gdb> >>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 11 at 0x1001ea93
+SELECTED_UNIT id=210603
+SELECTED_UNIT id=210604
+TIMELINE_ENTRY n=1 start=0 input_count=2 output=0x2bcde18 state=0x2ae0020
+Temporary breakpoint 12 at 0x1002bde9
+Temporary breakpoint 13 at 0x1002c364
+UNIT_DESC n=1 mode=0 bank=0 dat_offset=167060380 dat_samples=1470 upm_offset=2575290 upm_periods=13 edge_a=112 edge_b=114
+0x2bcde18:	0x00000000	0x00000000	0x00000000	0x000005be
+0x2bcde28:	0x00000000	0x09f5239c	0x02bfb26c	0x00274bba
+0x2bcde38:	0x0070000d	0x02000072	0x00000000	0x00000000
+0x2bcde48:	0x00000000
+Temporary breakpoint 14 at 0x1002c364
+UNIT_DESC n=2 mode=0 bank=0 dat_offset=167061100 dat_samples=5032 upm_offset=2575303 upm_periods=31 edge_a=114 edge_b=214
+0x2bcde4c:	0x00000000	0x00000000	0x00000000	0x000013a8
+0x2bcde5c:	0x00000001	0x09f5266c	0x02bfb284	0x00274bc7
+0x2bcde6c:	0x0072001f	0x020000d6	0x00000000	0x00000000
+0x2bcde7c:	0x00000000
+TIMELINE_RETURN n=1 records=2
+0x2bcde18:	0x00000064	0x00000064	0x000000c8	0x000005be
+0x2bcde28:	0x00000000	0x09f5239c	0x02bfb26c	0x00274bba
+0x2bcde38:	0x0070000d	0x02000072	0x00000000	0x00000000
+0x2bcde48:	0x00220000
+RING_BUILD n=1 records=2 state=0x2ae0020 rows=0x2bcde18 ring_cursor=0
+Temporary breakpoint 15 at 0x1002becb
+JOIN_PREPARE n=1 state=0x2ae0020 model=0x14bf198 unit_index=0 result=0
+DAT_DECODE n=1 bank=0 offset=167060380 coded_bytes=720 samples=1470 mode=0
+Temporary breakpoint 16 at 0x1002bfbd
+RECON n=1 index=0 before=0 after=2712 samples=1356
+Temporary breakpoint 17 at 0x1002becb
+JOIN_PREPARE n=2 state=0x2ae0020 model=0x14bf198 unit_index=1 result=0
+DAT_DECODE n=2 bank=0 offset=167061100 coded_bytes=2524 samples=5032 mode=0
+Temporary breakpoint 18 at 0x1002bfbd
+RECON n=2 index=1 before=2712 after=12776 samples=5032
+PCM_BLOCK n=1 bytes=12776 context_bytes=12776
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

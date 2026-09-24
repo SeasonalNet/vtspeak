@@ -23,7 +23,7 @@ The binaries and voice data remain in the working tree for local analysis. Their
 
 ## Start the analysis toolkit
 
-Follow [the revkit instructions](tools/revkit/README.md). Run Docker Compose from `tools/revkit`; its bind mounts expect the repository layout shown above. Ghidra projects, decompiler exports, and other generated analysis files are stored under `tools/revkit/work/`, which is ignored by Git. Narrative findings intended for review live under `docs/reverse-engineering/`.
+Follow [the revkit instructions](tools/revkit/README.md). Run Docker Compose from `tools/revkit`; its bind mounts expect the repository layout shown above. Portable trace evidence, small fixtures, and cited decompiler reports under `tools/revkit/work/` are tracked. Ghidra project databases, caches, Wine prefixes, and full local copies of vendor inputs remain ignored. Narrative findings intended for review live under `docs/reverse-engineering/`.
 
 ## Current findings
 

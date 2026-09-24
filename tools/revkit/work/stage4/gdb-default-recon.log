@@ -1,0 +1,17 @@
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+0x7bd64525 in DbgBreakPoint@0 () from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Breakpoint 1 at 0x1002afb0
+
+Breakpoint 1, 0x1002afb0 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+DEFAULT RECON entry unit=0 cursor=0 return=0x1002bfbd
+Temporary breakpoint 2 at 0x1002bfbd
+
+Temporary breakpoint 2, 0x1002bfbd in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+DEFAULT RECON return eax=1 cursor=2828 samples_added=1414
+[Inferior 1 (Remote target) exited normally]

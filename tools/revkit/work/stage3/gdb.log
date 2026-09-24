@@ -1,0 +1,14 @@
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+0x7bd64525 in DbgBreakPoint@0 () from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Breakpoint 1 at 0x10026870
+
+Program received signal SIGSEGV, Segmentation fault.
+0x7bd69afa in RtlEnterCriticalSection@4 (crit=0x20) at dlls/ntdll/sync.c:358
+warning: 358	dlls/ntdll/sync.c: No such file or directory
+[Inferior 1 (Remote target) detached]

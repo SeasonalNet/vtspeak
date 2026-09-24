@@ -1,0 +1,1031 @@
+{
+  "tree3": [
+    {
+      "file": "data-common/dict-eng/engbi.tree3",
+      "nodes": 531,
+      "output_width": 1,
+      "list_values": 3097,
+      "output_rows": 532,
+      "operations": {
+        "C": 178,
+        "D": 353
+      },
+      "feature_selectors": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ],
+      "threshold_range": [
+        0,
+        27
+      ],
+      "output_range": [
+        0,
+        1000
+      ]
+    },
+    {
+      "file": "data-common/dict-eng/poly.tree3",
+      "nodes": 2518,
+      "output_width": 1,
+      "list_values": 6265,
+      "output_rows": 2519,
+      "operations": {
+        "D": 2518
+      },
+      "feature_selectors": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "threshold_range": [
+        0,
+        0
+      ],
+      "output_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "file": "data-common/dict-eng/sbd.tree3",
+      "nodes": 120,
+      "output_width": 1,
+      "list_values": 297,
+      "output_rows": 121,
+      "operations": {
+        "D": 120
+      },
+      "feature_selectors": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "threshold_range": [
+        0,
+        0
+      ],
+      "output_range": [
+        0,
+        1
+      ]
+    }
+  ],
+  "atmt": {
+    "file": "data-common/dict-eng/atmt.tree3",
+    "container_count": 27,
+    "container_bytes": 4,
+    "parsed_subtrees": 27,
+    "total_nodes": 13879,
+    "subtrees": [
+      {
+        "file": "data-common/dict-eng/atmt.tree3[00]",
+        "nodes": 1719,
+        "output_width": 1,
+        "list_values": 9841,
+        "output_rows": 1720,
+        "operations": {
+          "D": 1719
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          58
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[01]",
+        "nodes": 10,
+        "output_width": 1,
+        "list_values": 91,
+        "output_rows": 11,
+        "operations": {
+          "D": 10
+        },
+        "feature_selectors": [
+          0,
+          2,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          24
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[02]",
+        "nodes": 362,
+        "output_width": 1,
+        "list_values": 2085,
+        "output_rows": 363,
+        "operations": {
+          "D": 362
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          66
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[03]",
+        "nodes": 32,
+        "output_width": 1,
+        "list_values": 195,
+        "output_rows": 33,
+        "operations": {
+          "D": 32
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          67
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[04]",
+        "nodes": 3377,
+        "output_width": 1,
+        "list_values": 15216,
+        "output_rows": 3378,
+        "operations": {
+          "D": 3377
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          80
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[05]",
+        "nodes": 5,
+        "output_width": 1,
+        "list_values": 58,
+        "output_rows": 6,
+        "operations": {
+          "D": 5
+        },
+        "feature_selectors": [
+          1,
+          2
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          37
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[06]",
+        "nodes": 277,
+        "output_width": 1,
+        "list_values": 1807,
+        "output_rows": 278,
+        "operations": {
+          "D": 277
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          89
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[07]",
+        "nodes": 131,
+        "output_width": 1,
+        "list_values": 1126,
+        "output_rows": 132,
+        "operations": {
+          "D": 131
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          41
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[08]",
+        "nodes": 2625,
+        "output_width": 1,
+        "list_values": 11784,
+        "output_rows": 2626,
+        "operations": {
+          "D": 2625
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          80
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[09]",
+        "nodes": 1,
+        "output_width": 1,
+        "list_values": 16,
+        "output_rows": 2,
+        "operations": {
+          "D": 1
+        },
+        "feature_selectors": [
+          7
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          49
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[10]",
+        "nodes": 5,
+        "output_width": 1,
+        "list_values": 67,
+        "output_rows": 6,
+        "operations": {
+          "D": 5
+        },
+        "feature_selectors": [
+          0,
+          2,
+          7,
+          8
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          50
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[11]",
+        "nodes": 52,
+        "output_width": 1,
+        "list_values": 486,
+        "output_rows": 53,
+        "operations": {
+          "D": 52
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          53
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[12]",
+        "nodes": 8,
+        "output_width": 1,
+        "list_values": 90,
+        "output_rows": 9,
+        "operations": {
+          "D": 8
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          7
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          54
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[13]",
+        "nodes": 89,
+        "output_width": 1,
+        "list_values": 916,
+        "output_rows": 90,
+        "operations": {
+          "D": 89
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          56
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[14]",
+        "nodes": 2939,
+        "output_width": 1,
+        "list_values": 13199,
+        "output_rows": 2940,
+        "operations": {
+          "D": 2939
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          77
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[15]",
+        "nodes": 35,
+        "output_width": 1,
+        "list_values": 367,
+        "output_rows": 36,
+        "operations": {
+          "D": 35
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          63
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[16]",
+        "nodes": 1,
+        "output_width": 1,
+        "list_values": 1,
+        "output_rows": 2,
+        "operations": {
+          "D": 1
+        },
+        "feature_selectors": [
+          2
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          50
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[17]",
+        "nodes": 28,
+        "output_width": 1,
+        "list_values": 420,
+        "output_rows": 29,
+        "operations": {
+          "D": 28
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          64
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[18]",
+        "nodes": 487,
+        "output_width": 1,
+        "list_values": 3126,
+        "output_rows": 488,
+        "operations": {
+          "D": 487
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          89
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[19]",
+        "nodes": 103,
+        "output_width": 1,
+        "list_values": 1066,
+        "output_rows": 104,
+        "operations": {
+          "D": 103
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          68
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[20]",
+        "nodes": 785,
+        "output_width": 1,
+        "list_values": 3903,
+        "output_rows": 786,
+        "operations": {
+          "D": 785
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          87
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[21]",
+        "nodes": 1,
+        "output_width": 1,
+        "list_values": 1,
+        "output_rows": 2,
+        "operations": {
+          "D": 1
+        },
+        "feature_selectors": [
+          2
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          76
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[22]",
+        "nodes": 104,
+        "output_width": 1,
+        "list_values": 636,
+        "output_rows": 105,
+        "operations": {
+          "D": 104
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          77
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[23]",
+        "nodes": 20,
+        "output_width": 1,
+        "list_values": 186,
+        "output_rows": 21,
+        "operations": {
+          "D": 20
+        },
+        "feature_selectors": [
+          1,
+          2,
+          4,
+          7,
+          8
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          89
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[24]",
+        "nodes": 646,
+        "output_width": 1,
+        "list_values": 2774,
+        "output_rows": 647,
+        "operations": {
+          "D": 646
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          80
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[25]",
+        "nodes": 30,
+        "output_width": 1,
+        "list_values": 211,
+        "output_rows": 31,
+        "operations": {
+          "D": 30
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          89
+        ]
+      },
+      {
+        "file": "data-common/dict-eng/atmt.tree3[26]",
+        "nodes": 7,
+        "output_width": 1,
+        "list_values": 84,
+        "output_rows": 8,
+        "operations": {
+          "D": 7
+        },
+        "feature_selectors": [
+          0,
+          1,
+          2,
+          7,
+          8
+        ],
+        "threshold_range": [
+          0,
+          0
+        ],
+        "output_range": [
+          1,
+          43
+        ]
+      }
+    ]
+  },
+  "hash_families": [
+    {
+      "family": "_emb",
+      "dictionary_file": "engttsdict_emb",
+      "dictionary_bytes": 2157937,
+      "parameter_file": "hashparams_emb",
+      "parameter_bytes": 132132,
+      "marker": "NLP",
+      "version": 2,
+      "parameter_words": [
+        "0xdbd20abf",
+        "0x00008000",
+        "0x00000011",
+        "0x00020000",
+        "0x00040000",
+        "0x00037cef",
+        "0x00000100"
+      ],
+      "distribution_entries": 256,
+      "distribution_table_offset": 32,
+      "byte_table_entries": 131072,
+      "parsed_parameter_end": 132132,
+      "index_file": "hashidx_emb",
+      "index_bytes": 914368,
+      "index_header_value": 37,
+      "index_entries": 228591,
+      "index_range": [
+        0,
+        2157930
+      ],
+      "content_file": "hashcont_emb",
+      "content_bytes": 457182,
+      "content_entries_u16": 228591,
+      "content_range": [
+        9986,
+        65295
+      ]
+    },
+    {
+      "family": "_eng_tpp",
+      "dictionary_file": "tppdict_eng",
+      "dictionary_bytes": 349029,
+      "parameter_file": "hashparams_eng_tpp",
+      "parameter_bytes": 17444,
+      "marker": "NLP",
+      "version": 2,
+      "parameter_words": [
+        "0xcfc06585",
+        "0x00004000",
+        "0x00000012",
+        "0x00004000",
+        "0x00008000",
+        "0x00007b3e",
+        "0x00000100"
+      ],
+      "distribution_entries": 256,
+      "distribution_table_offset": 32,
+      "byte_table_entries": 16384,
+      "parsed_parameter_end": 17444,
+      "index_file": "hashidx_eng_tpp",
+      "index_bytes": 126204,
+      "index_header_value": 27,
+      "index_entries": 31550,
+      "index_range": [
+        0,
+        349017
+      ],
+      "content_file": "hashcont_eng_tpp",
+      "content_bytes": 63100,
+      "content_entries_u16": 31550,
+      "content_range": [
+        24833,
+        65294
+      ]
+    }
+  ],
+  "txt2_tables": [
+    {
+      "file": "data-common/dict-eng/abbrc_sort.txt2",
+      "bytes": 2225,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 2208,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3d3d3a0a0a0a0a0a0a0a",
+      "body_pipe_bytes": 28,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/abbrh_sort.txt2",
+      "bytes": 411,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 394,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3f3f0a0a0a0a0a0a0a0a",
+      "body_pipe_bytes": 16,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/abbrt_sort.txt2",
+      "bytes": 322,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 305,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3e3c0a0a0a0a0a0a0a0a",
+      "body_pipe_bytes": 13,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/chc_sort.txt2",
+      "bytes": 26641,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 26624,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3c3f423b0a0a0a0a0a0a",
+      "body_pipe_bytes": 917,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/citya_sort.txt2",
+      "bytes": 1496,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 1479,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3b3b410a0a0a0a0a0a0a",
+      "body_pipe_bytes": 70,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/sbdw_sort.txt2",
+      "bytes": 12484,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 12467,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3b3a40410a0a0a0a0a0a",
+      "body_pipe_bytes": 530,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/streeta_sort.txt2",
+      "bytes": 4544,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 4527,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3d3e410a0a0a0a0a0a0a",
+      "body_pipe_bytes": 177,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/streetf_sort.txt2",
+      "bytes": 1624,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 1607,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3c3b3b0a0a0a0a0a0a0a",
+      "body_pipe_bytes": 88,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    },
+    {
+      "file": "data-common/dict-eng/wab.txt2",
+      "bytes": 702,
+      "marker_hex": "6e6c70",
+      "body_offset": 3,
+      "body_bytes": 685,
+      "trailer_bytes": 11,
+      "trailer_hex": "0a3b3b3d0a0a0a0a0a0a0a",
+      "body_pipe_bytes": 25,
+      "body_lf_bytes": 0,
+      "body_cr_bytes": 0
+    }
+  ]
+}

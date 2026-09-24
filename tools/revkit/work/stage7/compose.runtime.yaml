@@ -1,0 +1,24 @@
+services:
+  runtime:
+    image: vtspeak-stage2-wine:latest
+    working_dir: /work/stage5
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      HOME: /work/home
+      WINEPREFIX: /work/stage2-copy/wineprefix
+      WINEDEBUG: "-all"
+    network_mode: none
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,size=256m
+    volumes:
+      - ./work:/work
+      - ../../binary:/samples:ro
+      - ../../data-common:/voice-data/common:ro
+      - ../../data-paul:/voice-data/paul:ro
+      - ../../include:/voice-data/include:ro
+    command: ["/bin/bash"]

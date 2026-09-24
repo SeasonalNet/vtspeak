@@ -1,0 +1,879 @@
+Wine-gdb> Breakpoint 1 at 0x10001670
+Wine-gdb> >>>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x100016a0
+Wine-gdb> >>>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+SCALAR_ENTRY tree=0x100a7a68 nodes=120 output_width=1 features=0x667334 return=0x10051fda
+0x667334:	5	2	0	0	0	0	-1	3
+0x667344:	3	0	0	0
+Temporary breakpoint 3 at 0x10051fda
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	19	5	5	0	0	0	0
+0x667640:	0	0	-30223	-103
+Temporary breakpoint 4 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	19	5	5	0	0	1
+0x667640:	0	0	-30223	-103
+Temporary breakpoint 5 at 0x10003052
+SCALAR_RETURN value=47
+SCALAR_ENTRY tree=0x100ff004 nodes=487 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	19	5	5	0	47
+0x667640:	1	0	-30223	-103
+Temporary breakpoint 6 at 0x10003052
+SCALAR_RETURN value=65
+SCALAR_ENTRY tree=0x100fef78 nodes=89 output_width=1 features=0x667630 return=0x10003052
+0x667630:	18	5	5	14	0	0	0	0
+0x667640:	0	0	-30223	-103
+Temporary breakpoint 7 at 0x10003052
+SCALAR_RETURN value=55
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667630 return=0x10003052
+0x667630:	7	18	5	5	14	0	0	55
+0x667640:	0	0	-30223	-103
+Temporary breakpoint 8 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	7	18	5	5	14	0	1
+0x667640:	55	0	-30223	-103
+Temporary breakpoint 9 at 0x10003052
+SCALAR_RETURN value=47
+SCALAR_ENTRY tree=0x100fefe8 nodes=28 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	7	18	5	5	14	47
+0x667640:	1	55	-30223	-103
+Temporary breakpoint 10 at 0x10003052
+SCALAR_RETURN value=64
+SCALAR_ENTRY tree=0x100feeb4 nodes=277 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	7	18	5	5	64
+0x667640:	47	1	-30223	-103
+Temporary breakpoint 11 at 0x10003052
+SCALAR_RETURN value=38
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667630 return=0x10003052
+0x667630:	9	7	8	20	0	0	0	0
+0x667640:	0	0	-30223	-103
+Temporary breakpoint 12 at 0x10003052
+SCALAR_RETURN value=67
+SCALAR_ENTRY tree=0x100feed0 nodes=131 output_width=1 features=0x667630 return=0x10003052
+0x667630:	12	9	7	8	20	0	0	67
+0x667640:	0	0	-30223	-103
+Temporary breakpoint 13 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100feeb4 nodes=277 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	12	9	7	8	20	0	1
+0x667640:	67	0	-30223	-103
+Temporary breakpoint 14 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	12	9	7	8	20	1
+0x667640:	1	67	-30223	-103
+Temporary breakpoint 15 at 0x10003052
+SCALAR_RETURN value=22
+SCALAR_ENTRY tree=0x100fef40 nodes=52 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	12	9	7	8	22
+0x667640:	1	1	-30223	-103
+Temporary breakpoint 16 at 0x10003052
+SCALAR_RETURN value=53
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	4	1	5	4	1	5	1	1
+0x6676cc:	0	0	95	0
+Temporary breakpoint 17 at 0x10013086
+SCALAR_RETURN value=65
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	3	2	5	3	2	5	2	2
+0x6676cc:	0	23	0	0
+Temporary breakpoint 18 at 0x10013086
+SCALAR_RETURN value=5
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	2	3	5	2	3	5	3	3
+0x6676cc:	77	118	23	0
+Temporary breakpoint 19 at 0x10013086
+SCALAR_RETURN value=464
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	1	4	5	1	4	5	4	4
+0x6676cc:	0	46	118	0
+Temporary breakpoint 20 at 0x10013086
+SCALAR_RETURN value=21
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676ec return=0x1001347e
+0x6676ec:	6	40	42	1	0	1	1	1
+0x6676fc:	2	0	2468	686
+Temporary breakpoint 21 at 0x1001347e
+SCALAR_RETURN value=2407
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	29	42	18	0	1	1	2	1
+0x6676fc:	1	0	3428	686
+Temporary breakpoint 22 at 0x100134e1
+SCALAR_RETURN value=2103
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	18	29	42	1	1	1	2	1
+0x6676fc:	2	0	3428	686
+Temporary breakpoint 23 at 0x10013466
+SCALAR_RETURN value=2051
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	10	42	3	0	1	1	2	1
+0x6676fc:	1	0	4388	686
+Temporary breakpoint 24 at 0x100134e1
+SCALAR_RETURN value=694
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	3	10	42	0	1	1	2	1
+0x6676fc:	2	0	4388	686
+Temporary breakpoint 25 at 0x1001344e
+SCALAR_RETURN value=719
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	15	42	28	0	3	1	2	1
+0x6676fc:	1	0	5348	686
+Temporary breakpoint 26 at 0x100134cc
+SCALAR_RETURN value=1206
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676ec return=0x10013520
+0x6676ec:	28	15	18	0	3	1	2	1
+0x6676fc:	1	0	5348	686
+Temporary breakpoint 27 at 0x10013520
+SCALAR_RETURN value=1135
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	18	28	23	1	3	1	2	1
+0x6676fc:	2	0	5348	686
+Temporary breakpoint 28 at 0x10013466
+SCALAR_RETURN value=1840
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	23	18	42	0	3	1	2	1
+0x6676fc:	3	0	5348	686
+Temporary breakpoint 29 at 0x1001350b
+SCALAR_RETURN value=1159
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	21	42	6	0	3	1	3	1
+0x6676fc:	1	0	6308	686
+Temporary breakpoint 30 at 0x1001350b
+SCALAR_RETURN value=1208
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676ec return=0x1001347e
+0x6676ec:	6	21	31	1	3	1	3	1
+0x6676fc:	2	0	6308	686
+Temporary breakpoint 31 at 0x1001347e
+SCALAR_RETURN value=2513
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	31	6	40	0	3	1	3	1
+0x6676fc:	3	0	6308	686
+Temporary breakpoint 32 at 0x100134cc
+SCALAR_RETURN value=1409
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	0	6	1	3	3	1	0	4
+0x667700:	1	0	1	686
+Temporary breakpoint 33 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dc0 return=0x100139b6
+0x6676f0:	0	6	1	3	3	1	0	4
+0x667700:	1	0	1	0
+Temporary breakpoint 34 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	139	137	134	132	130	128	127	125
+0x2af7dd0:	124	124	123	124
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	18	1	3	3	1	0	4
+0x667700:	2	1	1	0
+Temporary breakpoint 35 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dde return=0x100139b6
+0x6676f0:	2	18	1	3	3	1	0	4
+0x667700:	2	1	1	0
+Temporary breakpoint 36 at 0x100139b6
+VECTOR_RETURN values:0x2af7dde:	133	127	123	118	115	113	112	112
+0x2af7dee:	113	115	117	120
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	2	1	1	0
+Temporary breakpoint 37 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dfc return=0x100139b6
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	2	1	1	0
+Temporary breakpoint 38 at 0x100139b6
+VECTOR_RETURN values:0x2af7dfc:	128	128	128	127	127	127	128	129
+0x2af7e0c:	131	133	133	133
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	18	1	3	3	1	0	4
+0x667700:	2	3	1	0
+Temporary breakpoint 39 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e1a return=0x100139b6
+0x6676f0:	1	18	1	3	3	1	0	4
+0x667700:	2	3	1	0
+Temporary breakpoint 40 at 0x100139b6
+VECTOR_RETURN values:0x2af7e1a:	127	123	119	115	113	112	112	113
+0x2af7e2a:	114	116	118	120
+SCALAR_ENTRY tree=0x14bf380 nodes=26 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	5	6	1	3	3	1	0	4
+0x667700:	3	3	1	0
+Temporary breakpoint 41 at 0x10013984
+SCALAR_RETURN value=2
+VECTOR_ENTRY tree=0x14bf3f0 nodes=42 output_width=12 features=0x6676f0 output=0x2af7e38 return=0x100139b6
+0x6676f0:	5	6	1	3	3	1	0	4
+0x667700:	3	3	1	2
+Temporary breakpoint 42 at 0x100139b6
+VECTOR_RETURN values:0x2af7e38:	121	124	127	130	134	139	149	160
+0x2af7e48:	173	184	181	172
+SCALAR_ENTRY tree=0x100ff03c nodes=785 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	25	15	21	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 43 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	25	15	21	0	0	1
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 44 at 0x10003052
+SCALAR_RETURN value=74
+SCALAR_ENTRY tree=0x100ff0ac nodes=646 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	25	15	21	0	74
+0x667620:	1	0	-30191	-103
+Temporary breakpoint 45 at 0x10003052
+SCALAR_RETURN value=80
+SCALAR_ENTRY tree=0x100feeb4 nodes=277 output_width=1 features=0x667610 return=0x10003052
+0x667610:	15	9	14	7	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 46 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fef78 nodes=89 output_width=1 features=0x667610 return=0x10003052
+0x667610:	7	15	9	14	7	0	0	1
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 47 at 0x10003052
+SCALAR_RETURN value=56
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	7	15	9	14	7	0	56
+0x667620:	1	0	-30191	-103
+Temporary breakpoint 48 at 0x10003052
+SCALAR_RETURN value=43
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	7	15	9	14	7	43
+0x667620:	56	1	-30191	-103
+Temporary breakpoint 49 at 0x10003052
+SCALAR_RETURN value=58
+SCALAR_ENTRY tree=0x100feeb4 nodes=277 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	7	15	9	14	58
+0x667620:	43	56	-30191	-103
+Temporary breakpoint 50 at 0x10003052
+SCALAR_RETURN value=38
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	3	1	4	4	1	5	1	1
+0x6676ac:	55	120	63	0
+Temporary breakpoint 51 at 0x10013086
+SCALAR_RETURN value=31
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	2	2	4	2	3	5	2	3
+0x6676ac:	0	90	120	0
+Temporary breakpoint 52 at 0x10013086
+SCALAR_RETURN value=139
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	1	3	4	1	4	5	3	4
+0x6676ac:	113	0	90	0
+Temporary breakpoint 53 at 0x10013086
+SCALAR_RETURN value=79
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	1	40	28	0	2	1	1	1
+0x6676dc:	2	0	2468	686
+Temporary breakpoint 54 at 0x10013466
+SCALAR_RETURN value=2338
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	28	1	42	0	2	1	1	1
+0x6676dc:	3	0	2468	686
+Temporary breakpoint 55 at 0x10013520
+SCALAR_RETURN value=1007
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	37	42	34	0	1	1	2	1
+0x6676dc:	1	0	3428	686
+Temporary breakpoint 56 at 0x10013520
+SCALAR_RETURN value=940
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	34	37	42	1	1	1	2	1
+0x6676dc:	2	0	3428	686
+Temporary breakpoint 57 at 0x10013466
+SCALAR_RETURN value=1105
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	15	42	25	0	1	1	2	2
+0x6676dc:	1	0	4388	686
+Temporary breakpoint 58 at 0x100134cc
+SCALAR_RETURN value=1244
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	25	15	17	1	1	1	2	2
+0x6676dc:	2	0	4388	686
+Temporary breakpoint 59 at 0x1001347e
+SCALAR_RETURN value=1758
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	17	25	24	0	2	3	2	2
+0x6676dc:	2	0	4390	686
+Temporary breakpoint 60 at 0x1001344e
+SCALAR_RETURN value=924
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	24	17	42	0	2	3	2	2
+0x6676dc:	3	0	4390	686
+Temporary breakpoint 61 at 0x1001350b
+SCALAR_RETURN value=1328
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	23	42	5	0	1	1	3	1
+0x6676dc:	1	0	5348	686
+Temporary breakpoint 62 at 0x1001350b
+SCALAR_RETURN value=1047
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	5	23	40	1	1	1	3	1
+0x6676dc:	2	0	5348	686
+Temporary breakpoint 63 at 0x1001347e
+SCALAR_RETURN value=5291
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	0	1	0	3	3	1	0	4
+0x6676e0:	1	2	1	686
+Temporary breakpoint 64 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dc0 return=0x100139b6
+0x6676d0:	0	1	0	3	3	1	0	4
+0x6676e0:	1	2	1	0
+Temporary breakpoint 65 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	129	128	127	127	128	128	129	129
+0x2af7dd0:	130	131	131	131
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	6	34	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 66 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dde return=0x100139b6
+0x6676d0:	6	34	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 67 at 0x100139b6
+VECTOR_RETURN values:0x2af7dde:	117	118	118	118	118	119	119	120
+0x2af7dee:	120	122	123	124
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	1	25	1	3	0	1	0	3
+0x6676e0:	2	1	2	0
+Temporary breakpoint 68 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dfc return=0x100139b6
+0x6676d0:	1	25	1	3	0	1	0	3
+0x6676e0:	2	1	2	0
+Temporary breakpoint 69 at 0x100139b6
+VECTOR_RETURN values:0x2af7dfc:	136	133	129	123	119	114	111	109
+0x2af7e0c:	107	107	108	109
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	0	17	0	1	3	3	1	4
+0x6676e0:	2	2	2	0
+Temporary breakpoint 70 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e1a return=0x100139b6
+0x6676d0:	0	17	0	1	3	3	1	4
+0x6676e0:	2	2	2	0
+Temporary breakpoint 71 at 0x100139b6
+VECTOR_RETURN values:0x2af7e1a:	114	117	119	122	125	128	130	133
+0x2af7e2a:	135	137	137	136
+SCALAR_ENTRY tree=0x14bf39c nodes=7 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	4	5	1	3	3	1	0	4
+0x6676e0:	3	1	1	0
+Temporary breakpoint 72 at 0x10013984
+SCALAR_RETURN value=1
+VECTOR_ENTRY tree=0x14bf40c nodes=9 output_width=12 features=0x6676d0 output=0x2af7e38 return=0x100139b6
+0x6676d0:	4	5	1	3	3	1	0	4
+0x6676e0:	3	1	1	1
+Temporary breakpoint 73 at 0x100139b6
+VECTOR_RETURN values:0x2af7e38:	149	148	146	142	134	124	114	105
+0x2af7e48:	98	94	94	96
+SCALAR_ENTRY tree=0x100ff0ac nodes=646 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	23	8	25	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 74 at 0x10003052
+SCALAR_RETURN value=22
+SCALAR_ENTRY tree=0x100feed0 nodes=131 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	23	8	25	0	0	22
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 75 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff074 nodes=104 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	23	8	25	0	1
+0x667620:	22	0	-30191	-103
+Temporary breakpoint 76 at 0x10003052
+SCALAR_RETURN value=77
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	36	40	6	0	1	1	1	1
+0x6676dc:	1	0	2468	686
+Temporary breakpoint 77 at 0x10013520
+SCALAR_RETURN value=1474
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	6	36	40	1	1	1	1	1
+0x6676dc:	2	0	2468	686
+Temporary breakpoint 78 at 0x1001347e
+SCALAR_RETURN value=2035
+SCALAR_ENTRY tree=0x14bf380 nodes=26 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	6	6	1	3	3	1	0	4
+0x6676e0:	1	1	1	686
+Temporary breakpoint 79 at 0x10013984
+SCALAR_RETURN value=2
+VECTOR_ENTRY tree=0x14bf3f0 nodes=42 output_width=12 features=0x6676d0 output=0x2af7dc0 return=0x100139b6
+0x6676d0:	6	6	1	3	3	1	0	4
+0x6676e0:	1	1	1	2
+Temporary breakpoint 80 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	136	142	147	152	156	161	167	174
+0x2af7dd0:	180	186	179	172
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	14	15	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 81 at 0x10003052
+SCALAR_RETURN value=58
+SCALAR_ENTRY tree=0x100fef78 nodes=89 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	14	15	0	0	58
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 82 at 0x10003052
+SCALAR_RETURN value=55
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	23	40	25	0	1	1	1	1
+0x6676dc:	1	0	2468	686
+Temporary breakpoint 83 at 0x1001350b
+SCALAR_RETURN value=1315
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	25	23	40	1	1	1	1	1
+0x6676dc:	2	0	2468	686
+Temporary breakpoint 84 at 0x1001347e
+SCALAR_RETURN value=2083
+SCALAR_ENTRY tree=0x14bf380 nodes=26 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	4	25	1	3	3	1	0	4
+0x6676e0:	1	1	1	686
+Temporary breakpoint 85 at 0x10013984
+SCALAR_RETURN value=3
+VECTOR_ENTRY tree=0x14bf3f0 nodes=42 output_width=12 features=0x6676d0 output=0x2af7dc0 return=0x100139b6
+0x6676d0:	4	25	1	3	3	1	0	4
+0x6676e0:	1	1	1	3
+Temporary breakpoint 86 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	132	126	120	116	115	117	124	138
+0x2af7dd0:	156	175	179	176
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	23	5	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 87 at 0x10003052
+SCALAR_RETURN value=47
+SCALAR_ENTRY tree=0x100ff074 nodes=104 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	23	5	0	0	47
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 88 at 0x10003052
+SCALAR_RETURN value=77
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667610 return=0x10003052
+0x667610:	23	5	14	20	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 89 at 0x10003052
+SCALAR_RETURN value=67
+SCALAR_ENTRY tree=0x100fef78 nodes=89 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	23	5	14	20	0	0	67
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 90 at 0x10003052
+SCALAR_RETURN value=55
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	23	5	14	20	0	55
+0x667620:	67	0	-30191	-103
+Temporary breakpoint 91 at 0x10003052
+SCALAR_RETURN value=29
+SCALAR_ENTRY tree=0x100ff074 nodes=104 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	23	5	14	20	29
+0x667620:	55	67	-30191	-103
+Temporary breakpoint 92 at 0x10003052
+SCALAR_RETURN value=77
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	26	15	15	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 93 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	26	15	15	0	0	1
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 94 at 0x10003052
+SCALAR_RETURN value=74
+SCALAR_ENTRY tree=0x100ff0c8 nodes=30 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	26	15	15	0	74
+0x667620:	1	0	-30191	-103
+Temporary breakpoint 95 at 0x10003052
+SCALAR_RETURN value=88
+SCALAR_ENTRY tree=0x100ff0ac nodes=646 output_width=1 features=0x667610 return=0x10003052
+0x667610:	20	8	5	25	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 96 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	20	8	5	25	0	0	1
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 97 at 0x10003052
+SCALAR_RETURN value=35
+SCALAR_ENTRY tree=0x100feed0 nodes=131 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	20	8	5	25	0	35
+0x667620:	1	0	-30191	-103
+Temporary breakpoint 98 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff020 nodes=103 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	20	8	5	25	1
+0x667620:	35	1	-30191	-103
+Temporary breakpoint 99 at 0x10003052
+SCALAR_RETURN value=27
+SCALAR_ENTRY tree=0x100ff0ac nodes=646 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	19	1	25	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 100 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fee0c nodes=1719 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	19	1	25	0	0	1
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 101 at 0x10003052
+SCALAR_RETURN value=35
+SCALAR_ENTRY tree=0x100ff004 nodes=487 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	19	1	25	0	35
+0x667620:	1	0	-30191	-103
+Temporary breakpoint 102 at 0x10003052
+SCALAR_RETURN value=65
+SCALAR_ENTRY tree=0x100ff0ac nodes=646 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	19	11	25	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 103 at 0x10003052
+SCALAR_RETURN value=22
+SCALAR_ENTRY tree=0x100fef24 nodes=5 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	19	11	25	0	0	22
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 104 at 0x10003052
+SCALAR_RETURN value=50
+SCALAR_ENTRY tree=0x100ff004 nodes=487 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	19	11	25	0	50
+0x667620:	22	0	-30191	-103
+Temporary breakpoint 105 at 0x10003052
+SCALAR_RETURN value=65
+SCALAR_ENTRY tree=0x100fee7c nodes=3377 output_width=1 features=0x667610 return=0x10003052
+0x667610:	2	12	21	5	0	0	0	0
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 106 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100ff03c nodes=785 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	2	12	21	5	0	0	1
+0x667620:	0	0	-30191	-103
+Temporary breakpoint 107 at 0x10003052
+SCALAR_RETURN value=74
+SCALAR_ENTRY tree=0x100fef40 nodes=52 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	2	12	21	5	0	74
+0x667620:	1	0	-30191	-103
+Temporary breakpoint 108 at 0x10003052
+SCALAR_RETURN value=53
+SCALAR_ENTRY tree=0x100fee28 nodes=10 output_width=1 features=0x667610 return=0x10003052
+0x667610:	0	0	0	2	12	21	5	53
+0x667620:	74	1	-30191	-103
+Temporary breakpoint 109 at 0x10003052
+SCALAR_RETURN value=24
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	4	1	5	4	1	5	1	1
+0x6676ac:	0	23	0	0
+Temporary breakpoint 110 at 0x10013086
+SCALAR_RETURN value=5
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	3	2	5	3	2	5	2	2
+0x6676ac:	77	16	23	0
+Temporary breakpoint 111 at 0x10013086
+SCALAR_RETURN value=5
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	2	3	5	2	3	5	3	3
+0x6676ac:	86	0	16	0
+Temporary breakpoint 112 at 0x10013086
+SCALAR_RETURN value=83
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	1	4	5	1	4	5	4	4
+0x6676ac:	0	83	0	0
+Temporary breakpoint 113 at 0x10013086
+SCALAR_RETURN value=9
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	6	1	7	6	1	7	1	1
+0x6676ac:	0	95	0	0
+Temporary breakpoint 114 at 0x10013086
+SCALAR_RETURN value=65
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	5	2	7	5	2	7	2	2
+0x6676ac:	44	0	95	0
+Temporary breakpoint 115 at 0x10013086
+SCALAR_RETURN value=774
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	4	3	7	4	3	7	1	1
+0x6676ac:	0	23	0	0
+Temporary breakpoint 116 at 0x10013086
+SCALAR_RETURN value=5
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	3	4	7	3	4	7	2	2
+0x6676ac:	77	50	23	0
+Temporary breakpoint 117 at 0x10013086
+SCALAR_RETURN value=97
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	2	5	7	2	5	7	3	3
+0x6676ac:	0	83	50	0
+Temporary breakpoint 118 at 0x10013086
+SCALAR_RETURN value=9
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x66769c return=0x10013086
+0x66769c:	1	6	7	1	6	7	4	4
+0x6676ac:	81	18	83	0
+Temporary breakpoint 119 at 0x10013086
+SCALAR_RETURN value=34
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	36	40	18	0	1	1	1	1
+0x6676dc:	1	0	2468	686
+Temporary breakpoint 120 at 0x10013520
+SCALAR_RETURN value=1323
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	18	36	42	1	1	1	1	1
+0x6676dc:	2	0	2468	686
+Temporary breakpoint 121 at 0x10013466
+SCALAR_RETURN value=1311
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676cc return=0x10013520
+0x6676cc:	36	42	11	0	3	1	2	1
+0x6676dc:	1	0	3428	686
+Temporary breakpoint 122 at 0x10013520
+SCALAR_RETURN value=1426
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	11	36	23	1	3	1	2	1
+0x6676dc:	2	0	3428	686
+Temporary breakpoint 123 at 0x1001344e
+SCALAR_RETURN value=725
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	23	11	31	0	3	1	2	1
+0x6676dc:	3	0	3428	686
+Temporary breakpoint 124 at 0x1001350b
+SCALAR_RETURN value=632
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	31	23	42	0	3	1	2	1
+0x6676dc:	3	0	3428	686
+Temporary breakpoint 125 at 0x100134cc
+SCALAR_RETURN value=553
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	31	42	34	0	1	1	2	1
+0x6676dc:	1	0	4388	686
+Temporary breakpoint 126 at 0x100134cc
+SCALAR_RETURN value=1068
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	34	31	42	0	1	1	2	1
+0x6676dc:	2	0	4388	686
+Temporary breakpoint 127 at 0x10013466
+SCALAR_RETURN value=832
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	10	42	3	0	1	1	2	1
+0x6676dc:	1	0	5348	686
+Temporary breakpoint 128 at 0x100134e1
+SCALAR_RETURN value=694
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	3	10	42	0	1	1	2	1
+0x6676dc:	2	0	5348	686
+Temporary breakpoint 129 at 0x1001344e
+SCALAR_RETURN value=719
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	38	42	34	0	1	1	3	1
+0x6676dc:	1	0	6308	686
+Temporary breakpoint 130 at 0x100134e1
+SCALAR_RETURN value=1972
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	34	38	40	1	1	1	3	1
+0x6676dc:	2	0	6308	686
+Temporary breakpoint 131 at 0x10013466
+SCALAR_RETURN value=4340
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	2	40	23	0	2	1	1	1
+0x6676dc:	2	0	7268	686
+Temporary breakpoint 132 at 0x1001344e
+SCALAR_RETURN value=1462
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	23	2	9	0	2	1	1	1
+0x6676dc:	3	0	7268	686
+Temporary breakpoint 133 at 0x1001350b
+SCALAR_RETURN value=634
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	9	23	42	0	2	1	1	1
+0x6676dc:	3	0	7268	686
+Temporary breakpoint 134 at 0x100134cc
+SCALAR_RETURN value=518
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	10	42	13	0	1	1	2	1
+0x6676dc:	1	0	8228	686
+Temporary breakpoint 135 at 0x100134e1
+SCALAR_RETURN value=696
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	13	10	42	1	1	1	2	1
+0x6676dc:	2	0	8228	686
+Temporary breakpoint 136 at 0x1001347e
+SCALAR_RETURN value=1490
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	29	42	13	0	1	1	2	1
+0x6676dc:	1	0	9188	686
+Temporary breakpoint 137 at 0x100134e1
+SCALAR_RETURN value=2235
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	13	29	42	1	1	1	2	1
+0x6676dc:	2	0	9188	686
+Temporary breakpoint 138 at 0x1001347e
+SCALAR_RETURN value=2324
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	10	42	3	0	1	1	2	1
+0x6676dc:	1	0	10148	686
+Temporary breakpoint 139 at 0x100134e1
+SCALAR_RETURN value=694
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	3	10	42	0	1	1	2	1
+0x6676dc:	2	0	10148	686
+Temporary breakpoint 140 at 0x1001344e
+SCALAR_RETURN value=719
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	29	42	20	0	1	1	2	1
+0x6676dc:	1	0	11108	686
+Temporary breakpoint 141 at 0x100134e1
+SCALAR_RETURN value=2028
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	20	29	6	0	1	1	2	1
+0x6676dc:	1	0	11108	686
+Temporary breakpoint 142 at 0x100134cc
+SCALAR_RETURN value=1045
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676cc return=0x1001347e
+0x6676cc:	6	20	42	1	1	1	2	1
+0x6676dc:	2	0	11108	686
+Temporary breakpoint 143 at 0x1001347e
+SCALAR_RETURN value=3599
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676cc return=0x1001344e
+0x6676cc:	17	42	38	1	2	1	2	1
+0x6676dc:	2	0	12068	686
+Temporary breakpoint 144 at 0x1001344e
+SCALAR_RETURN value=1199
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676cc return=0x100134e1
+0x6676cc:	38	17	42	0	2	1	2	1
+0x6676dc:	3	0	12068	686
+Temporary breakpoint 145 at 0x100134e1
+SCALAR_RETURN value=1310
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676cc return=0x100134cc
+0x6676cc:	7	42	21	0	1	1	3	1
+0x6676dc:	1	0	13028	686
+Temporary breakpoint 146 at 0x100134cc
+SCALAR_RETURN value=1107
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676cc return=0x1001350b
+0x6676cc:	21	7	34	0	1	1	3	1
+0x6676dc:	1	0	13028	686
+Temporary breakpoint 147 at 0x1001350b
+SCALAR_RETURN value=934
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676cc return=0x10013466
+0x6676cc:	34	21	40	1	1	1	3	1
+0x6676dc:	2	0	13028	686
+Temporary breakpoint 148 at 0x10013466
+SCALAR_RETURN value=4340
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	6	18	1	3	3	1	0	4
+0x6676e0:	1	1	1	686
+Temporary breakpoint 149 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dc0 return=0x100139b6
+0x6676d0:	6	18	1	3	3	1	0	4
+0x6676e0:	1	1	1	0
+Temporary breakpoint 150 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	96	98	103	107	111	113	113	114
+0x2af7dd0:	114	115	116	118
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	6	11	1	3	3	1	0	4
+0x6676e0:	2	3	1	0
+Temporary breakpoint 151 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dde return=0x100139b6
+0x6676d0:	6	11	1	3	3	1	0	4
+0x6676e0:	2	3	1	0
+Temporary breakpoint 152 at 0x100139b6
+VECTOR_RETURN values:0x2af7dde:	135	134	131	128	125	123	122	122
+0x2af7dee:	123	124	123	123
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	1	34	0	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 153 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7dfc return=0x100139b6
+0x6676d0:	1	34	0	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 154 at 0x100139b6
+VECTOR_RETURN values:0x2af7dfc:	131	127	125	124	122	122	122	123
+0x2af7e0c:	125	128	129	130
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	3	0	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 155 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e1a return=0x100139b6
+0x6676d0:	2	3	0	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 156 at 0x100139b6
+VECTOR_RETURN values:0x2af7e1a:	128	128	128	127	127	127	128	129
+0x2af7e2a:	131	133	133	133
+SCALAR_ENTRY tree=0x14bf364 nodes=22 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	34	1	3	3	1	0	4
+0x6676e0:	3	1	1	0
+Temporary breakpoint 157 at 0x10013984
+SCALAR_RETURN value=4
+VECTOR_ENTRY tree=0x14bf3d4 nodes=18 output_width=12 features=0x6676d0 output=0x2af7e38 return=0x100139b6
+0x6676d0:	2	34	1	3	3	1	0	4
+0x6676e0:	3	1	1	4
+Temporary breakpoint 158 at 0x100139b6
+VECTOR_RETURN values:0x2af7e38:	147	130	118	109	106	106	111	122
+0x2af7e48:	136	149	153	150
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	0	2	0	3	3	1	0	4
+0x6676e0:	1	2	1	4
+Temporary breakpoint 159 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e56 return=0x100139b6
+0x6676d0:	0	2	0	3	3	1	0	4
+0x6676e0:	1	2	1	0
+Temporary breakpoint 160 at 0x100139b6
+VECTOR_RETURN values:0x2af7e56:	129	128	127	127	128	128	129	129
+0x2af7e66:	130	131	131	131
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	13	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 161 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e74 return=0x100139b6
+0x6676d0:	2	13	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 162 at 0x100139b6
+VECTOR_RETURN values:0x2af7e74:	128	125	123	122	122	123	124	126
+0x2af7e84:	127	129	130	130
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	13	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 163 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7e92 return=0x100139b6
+0x6676d0:	2	13	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 164 at 0x100139b6
+VECTOR_RETURN values:0x2af7e92:	128	125	123	122	122	123	124	126
+0x2af7ea2:	127	129	130	130
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	3	0	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 165 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7eb0 return=0x100139b6
+0x6676d0:	2	3	0	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 166 at 0x100139b6
+VECTOR_RETURN values:0x2af7eb0:	128	128	128	127	127	127	128	129
+0x2af7ec0:	131	133	133	133
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 167 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7ece return=0x100139b6
+0x6676d0:	2	6	1	3	3	1	0	4
+0x6676e0:	2	1	1	0
+Temporary breakpoint 168 at 0x100139b6
+VECTOR_RETURN values:0x2af7ece:	144	138	130	123	119	117	116	115
+0x2af7ede:	114	115	117	121
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	0	17	1	3	3	1	0	4
+0x6676e0:	2	2	1	0
+Temporary breakpoint 169 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676d0 output=0x2af7eec return=0x100139b6
+0x6676d0:	0	17	1	3	3	1	0	4
+0x6676e0:	2	2	1	0
+Temporary breakpoint 170 at 0x100139b6
+VECTOR_RETURN values:0x2af7eec:	120	120	120	122	124	127	129	131
+0x2af7efc:	132	133	131	129
+SCALAR_ENTRY tree=0x14bf380 nodes=26 output_width=1 features=0x6676d0 return=0x10013984
+0x6676d0:	1	34	1	3	3	1	0	4
+0x6676e0:	3	1	1	0
+Temporary breakpoint 171 at 0x10013984
+SCALAR_RETURN value=4
+VECTOR_ENTRY tree=0x14bf3f0 nodes=42 output_width=12 features=0x6676d0 output=0x2af7f0a return=0x100139b6
+0x6676d0:	1	34	1	3	3	1	0	4
+0x6676e0:	3	1	1	4
+Temporary breakpoint 172 at 0x100139b6
+VECTOR_RETURN values:0x2af7f0a:	144	127	118	110	107	106	109	117
+0x2af7f1a:	133	154	163	163
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb>

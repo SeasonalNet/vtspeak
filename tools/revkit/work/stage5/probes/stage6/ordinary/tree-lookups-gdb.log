@@ -1,0 +1,1862 @@
+Wine-gdb> Breakpoint 1 at 0x10001670
+Wine-gdb> >>>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x100016a0
+Wine-gdb> >>>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001c990
+Wine-gdb> >>>>>>>> > > > > > > > > >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1002e990
+Wine-gdb> >>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Continuing.
+TEXT_PREPROCESS_ENTRY input=0x667808
+0x667808:	"The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 5 at 0x1001ea37
+RULE_SCAN offset=0 text=
+0x14db410:	'.' <repeats 140 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 6 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=0
+RULE_SCAN offset=1 text=
+0x14db411:	'.' <repeats 139 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 7 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=1
+RULE_SCAN offset=2 text=
+0x14db412:	'.' <repeats 138 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 8 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=2
+RULE_SCAN offset=3 text=
+0x14db413:	'.' <repeats 137 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 9 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=3
+RULE_SCAN offset=4 text=
+0x14db414:	'.' <repeats 136 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 10 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=4
+RULE_SCAN offset=5 text=
+0x14db415:	'.' <repeats 135 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 11 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=5
+RULE_SCAN offset=6 text=
+0x14db416:	'.' <repeats 134 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 12 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=6
+RULE_SCAN offset=7 text=
+0x14db417:	'.' <repeats 133 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 13 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=7
+RULE_SCAN offset=8 text=
+0x14db418:	'.' <repeats 132 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 14 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=8
+RULE_SCAN offset=9 text=
+0x14db419:	'.' <repeats 131 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 15 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=9
+RULE_SCAN offset=10 text=
+0x14db41a:	'.' <repeats 130 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 16 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=10
+RULE_SCAN offset=11 text=
+0x14db41b:	'.' <repeats 129 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 17 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=11
+RULE_SCAN offset=12 text=
+0x14db41c:	'.' <repeats 128 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 18 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=12
+RULE_SCAN offset=13 text=
+0x14db41d:	'.' <repeats 127 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 19 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=13
+RULE_SCAN offset=14 text=
+0x14db41e:	'.' <repeats 126 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 20 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=14
+RULE_SCAN offset=15 text=
+0x14db41f:	'.' <repeats 125 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 21 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=15
+RULE_SCAN offset=16 text=
+0x14db420:	'.' <repeats 124 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 22 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=16
+RULE_SCAN offset=17 text=
+0x14db421:	'.' <repeats 123 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 23 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=17
+RULE_SCAN offset=18 text=
+0x14db422:	'.' <repeats 122 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 24 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=18
+RULE_SCAN offset=19 text=
+0x14db423:	'.' <repeats 121 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 25 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=19
+RULE_SCAN offset=20 text=
+0x14db424:	'.' <repeats 120 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 26 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=20
+RULE_SCAN offset=21 text=
+0x14db425:	'.' <repeats 119 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 27 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=21
+RULE_SCAN offset=22 text=
+0x14db426:	'.' <repeats 118 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 28 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=22
+RULE_SCAN offset=23 text=
+0x14db427:	'.' <repeats 117 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 29 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=23
+RULE_SCAN offset=24 text=
+0x14db428:	'.' <repeats 116 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 30 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=24
+RULE_SCAN offset=25 text=
+0x14db429:	'.' <repeats 115 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 31 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=25
+RULE_SCAN offset=26 text=
+0x14db42a:	'.' <repeats 114 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 32 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=26
+RULE_SCAN offset=27 text=
+0x14db42b:	'.' <repeats 113 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 33 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=27
+RULE_SCAN offset=28 text=
+0x14db42c:	'.' <repeats 112 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 34 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=28
+RULE_SCAN offset=29 text=
+0x14db42d:	'.' <repeats 111 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 35 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=29
+RULE_SCAN offset=30 text=
+0x14db42e:	'.' <repeats 110 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 36 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=30
+RULE_SCAN offset=31 text=
+0x14db42f:	'.' <repeats 109 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 37 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=31
+RULE_SCAN offset=32 text=
+0x14db430:	'.' <repeats 108 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 38 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=32
+RULE_SCAN offset=33 text=
+0x14db431:	'.' <repeats 107 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 39 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=33
+RULE_SCAN offset=34 text=
+0x14db432:	'.' <repeats 106 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 40 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=34
+RULE_SCAN offset=35 text=
+0x14db433:	'.' <repeats 105 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 41 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=35
+RULE_SCAN offset=36 text=
+0x14db434:	'.' <repeats 104 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 42 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=36
+RULE_SCAN offset=37 text=
+0x14db435:	'.' <repeats 103 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 43 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=37
+RULE_SCAN offset=38 text=
+0x14db436:	'.' <repeats 102 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 44 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=38
+RULE_SCAN offset=39 text=
+0x14db437:	'.' <repeats 101 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 45 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=39
+RULE_SCAN offset=40 text=
+0x14db438:	'.' <repeats 100 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 46 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=40
+RULE_SCAN offset=41 text=
+0x14db439:	'.' <repeats 99 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 47 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=41
+RULE_SCAN offset=42 text=
+0x14db43a:	'.' <repeats 98 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 48 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=42
+RULE_SCAN offset=43 text=
+0x14db43b:	'.' <repeats 97 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 49 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=43
+RULE_SCAN offset=44 text=
+0x14db43c:	'.' <repeats 96 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 50 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=44
+RULE_SCAN offset=45 text=
+0x14db43d:	'.' <repeats 95 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 51 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=45
+RULE_SCAN offset=46 text=
+0x14db43e:	'.' <repeats 94 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 52 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=46
+RULE_SCAN offset=47 text=
+0x14db43f:	'.' <repeats 93 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 53 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=47
+RULE_SCAN offset=48 text=
+0x14db440:	'.' <repeats 92 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 54 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=48
+RULE_SCAN offset=49 text=
+0x14db441:	'.' <repeats 91 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 55 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=49
+RULE_SCAN offset=50 text=
+0x14db442:	'.' <repeats 90 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 56 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=50
+RULE_SCAN offset=51 text=
+0x14db443:	'.' <repeats 89 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 57 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=51
+RULE_SCAN offset=52 text=
+0x14db444:	'.' <repeats 88 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 58 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=52
+RULE_SCAN offset=53 text=
+0x14db445:	'.' <repeats 87 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 59 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=53
+RULE_SCAN offset=54 text=
+0x14db446:	'.' <repeats 86 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 60 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=54
+RULE_SCAN offset=55 text=
+0x14db447:	'.' <repeats 85 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 61 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=55
+RULE_SCAN offset=56 text=
+0x14db448:	'.' <repeats 84 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 62 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=56
+RULE_SCAN offset=57 text=
+0x14db449:	'.' <repeats 83 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 63 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=57
+RULE_SCAN offset=58 text=
+0x14db44a:	'.' <repeats 82 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 64 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=58
+RULE_SCAN offset=59 text=
+0x14db44b:	'.' <repeats 81 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 65 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=59
+RULE_SCAN offset=60 text=
+0x14db44c:	'.' <repeats 80 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 66 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=60
+RULE_SCAN offset=61 text=
+0x14db44d:	'.' <repeats 79 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 67 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=61
+RULE_SCAN offset=62 text=
+0x14db44e:	'.' <repeats 78 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 68 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=62
+RULE_SCAN offset=63 text=
+0x14db44f:	'.' <repeats 77 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 69 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=63
+RULE_SCAN offset=64 text=
+0x14db450:	'.' <repeats 76 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 70 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=64
+RULE_SCAN offset=65 text=
+0x14db451:	'.' <repeats 75 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 71 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=65
+RULE_SCAN offset=66 text=
+0x14db452:	'.' <repeats 74 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 72 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=66
+RULE_SCAN offset=67 text=
+0x14db453:	'.' <repeats 73 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 73 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=67
+RULE_SCAN offset=68 text=
+0x14db454:	'.' <repeats 72 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 74 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=68
+RULE_SCAN offset=69 text=
+0x14db455:	'.' <repeats 71 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 75 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=69
+RULE_SCAN offset=70 text=
+0x14db456:	'.' <repeats 70 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 76 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=70
+RULE_SCAN offset=71 text=
+0x14db457:	'.' <repeats 69 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 77 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=71
+RULE_SCAN offset=72 text=
+0x14db458:	'.' <repeats 68 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 78 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=72
+RULE_SCAN offset=73 text=
+0x14db459:	'.' <repeats 67 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 79 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=73
+RULE_SCAN offset=74 text=
+0x14db45a:	'.' <repeats 66 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 80 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=74
+RULE_SCAN offset=75 text=
+0x14db45b:	'.' <repeats 65 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 81 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=75
+RULE_SCAN offset=76 text=
+0x14db45c:	'.' <repeats 64 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 82 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=76
+RULE_SCAN offset=77 text=
+0x14db45d:	'.' <repeats 63 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 83 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=77
+RULE_SCAN offset=78 text=
+0x14db45e:	'.' <repeats 62 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 84 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=78
+RULE_SCAN offset=79 text=
+0x14db45f:	'.' <repeats 61 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 85 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=79
+RULE_SCAN offset=80 text=
+0x14db460:	'.' <repeats 60 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 86 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=80
+RULE_SCAN offset=81 text=
+0x14db461:	'.' <repeats 59 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 87 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=81
+RULE_SCAN offset=82 text=
+0x14db462:	'.' <repeats 58 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 88 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=82
+RULE_SCAN offset=83 text=
+0x14db463:	'.' <repeats 57 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 89 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=83
+RULE_SCAN offset=84 text=
+0x14db464:	'.' <repeats 56 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 90 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=84
+RULE_SCAN offset=85 text=
+0x14db465:	'.' <repeats 55 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 91 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=85
+RULE_SCAN offset=86 text=
+0x14db466:	'.' <repeats 54 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 92 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=86
+RULE_SCAN offset=87 text=
+0x14db467:	'.' <repeats 53 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 93 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=87
+RULE_SCAN offset=88 text=
+0x14db468:	'.' <repeats 52 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 94 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=88
+RULE_SCAN offset=89 text=
+0x14db469:	'.' <repeats 51 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 95 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=89
+RULE_SCAN offset=90 text=
+0x14db46a:	'.' <repeats 50 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 96 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=90
+RULE_SCAN offset=91 text=
+0x14db46b:	'.' <repeats 49 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 97 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=91
+RULE_SCAN offset=92 text=
+0x14db46c:	'.' <repeats 48 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 98 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=92
+RULE_SCAN offset=93 text=
+0x14db46d:	'.' <repeats 47 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 99 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=93
+RULE_SCAN offset=94 text=
+0x14db46e:	'.' <repeats 46 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 100 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=94
+RULE_SCAN offset=95 text=
+0x14db46f:	'.' <repeats 45 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 101 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=95
+RULE_SCAN offset=96 text=
+0x14db470:	'.' <repeats 44 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 102 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=96
+RULE_SCAN offset=97 text=
+0x14db471:	'.' <repeats 43 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 103 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=97
+RULE_SCAN offset=98 text=
+0x14db472:	'.' <repeats 42 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 104 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=98
+RULE_SCAN offset=99 text=
+0x14db473:	'.' <repeats 41 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 105 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=99
+RULE_SCAN offset=100 text=
+0x14db474:	'.' <repeats 40 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 106 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=100
+RULE_SCAN offset=101 text=
+0x14db475:	'.' <repeats 39 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 107 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=101
+RULE_SCAN offset=102 text=
+0x14db476:	'.' <repeats 38 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 108 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=102
+RULE_SCAN offset=103 text=
+0x14db477:	'.' <repeats 37 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 109 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=103
+RULE_SCAN offset=104 text=
+0x14db478:	'.' <repeats 36 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 110 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=104
+RULE_SCAN offset=105 text=
+0x14db479:	'.' <repeats 35 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 111 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=105
+RULE_SCAN offset=106 text=
+0x14db47a:	'.' <repeats 34 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 112 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=106
+RULE_SCAN offset=107 text=
+0x14db47b:	'.' <repeats 33 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 113 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=107
+RULE_SCAN offset=108 text=
+0x14db47c:	'.' <repeats 32 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 114 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=108
+RULE_SCAN offset=109 text=
+0x14db47d:	'.' <repeats 31 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 115 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=109
+RULE_SCAN offset=110 text=
+0x14db47e:	'.' <repeats 30 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 116 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=110
+RULE_SCAN offset=111 text=
+0x14db47f:	'.' <repeats 29 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 117 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=111
+RULE_SCAN offset=112 text=
+0x14db480:	'.' <repeats 28 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 118 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=112
+RULE_SCAN offset=113 text=
+0x14db481:	'.' <repeats 27 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 119 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=113
+RULE_SCAN offset=114 text=
+0x14db482:	'.' <repeats 26 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 120 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=114
+RULE_SCAN offset=115 text=
+0x14db483:	'.' <repeats 25 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 121 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=115
+RULE_SCAN offset=116 text=
+0x14db484:	'.' <repeats 24 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 122 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=116
+RULE_SCAN offset=117 text=
+0x14db485:	'.' <repeats 23 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 123 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=117
+RULE_SCAN offset=118 text=
+0x14db486:	'.' <repeats 22 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 124 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=118
+RULE_SCAN offset=119 text=
+0x14db487:	'.' <repeats 21 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 125 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=119
+RULE_SCAN offset=120 text=
+0x14db488:	'.' <repeats 20 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 126 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=120
+RULE_SCAN offset=121 text=
+0x14db489:	'.' <repeats 19 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 127 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=121
+RULE_SCAN offset=122 text=
+0x14db48a:	'.' <repeats 18 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 128 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=122
+RULE_SCAN offset=123 text=
+0x14db48b:	'.' <repeats 17 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 129 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=123
+RULE_SCAN offset=124 text=
+0x14db48c:	'.' <repeats 16 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 130 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=124
+RULE_SCAN offset=125 text=
+0x14db48d:	'.' <repeats 15 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 131 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=125
+RULE_SCAN offset=126 text=
+0x14db48e:	'.' <repeats 14 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 132 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=126
+RULE_SCAN offset=127 text=
+0x14db48f:	'.' <repeats 13 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 133 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=127
+RULE_SCAN offset=128 text=
+0x14db490:	'.' <repeats 12 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 134 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=128
+RULE_SCAN offset=129 text=
+0x14db491:	'.' <repeats 11 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 135 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=129
+RULE_SCAN offset=130 text=
+0x14db492:	".......... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 136 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=130
+RULE_SCAN offset=131 text=
+0x14db493:	"......... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 137 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=131
+RULE_SCAN offset=132 text=
+0x14db494:	"........ The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 138 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=132
+RULE_SCAN offset=133 text=
+0x14db495:	"....... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 139 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=133
+RULE_SCAN offset=134 text=
+0x14db496:	"...... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 140 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=134
+RULE_SCAN offset=135 text=
+0x14db497:	"..... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 141 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=135
+RULE_SCAN offset=136 text=
+0x14db498:	".... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 142 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=136
+RULE_SCAN offset=137 text=
+0x14db499:	"... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 143 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=137
+RULE_SCAN offset=138 text=
+0x14db49a:	".. The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 144 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=138
+RULE_SCAN offset=139 text=
+0x14db49b:	". The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 145 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=139
+RULE_SCAN offset=141 text=
+0x14db49d:	"The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 146 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=141
+RULE_SCAN offset=142 text=
+0x14db49e:	"he quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 147 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=142
+RULE_SCAN offset=143 text=
+0x14db49f:	"e quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 148 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=143
+RULE_SCAN offset=145 text=
+0x14db4a1:	"quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 149 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=145
+RULE_SCAN offset=146 text=
+0x14db4a2:	"uick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 150 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=146
+RULE_SCAN offset=147 text=
+0x14db4a3:	"ick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 151 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=147
+RULE_SCAN offset=148 text=
+0x14db4a4:	"ck brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 152 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=148
+RULE_SCAN offset=149 text=
+0x14db4a5:	"k brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 153 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=149
+RULE_SCAN offset=151 text=
+0x14db4a7:	"brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 154 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=151
+RULE_SCAN offset=152 text=
+0x14db4a8:	"rown fox jumps over the lazy dog.\n"
+Temporary breakpoint 155 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=152
+RULE_SCAN offset=153 text=
+0x14db4a9:	"own fox jumps over the lazy dog.\n"
+Temporary breakpoint 156 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=153
+RULE_SCAN offset=154 text=
+0x14db4aa:	"wn fox jumps over the lazy dog.\n"
+Temporary breakpoint 157 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=154
+RULE_SCAN offset=155 text=
+0x14db4ab:	"n fox jumps over the lazy dog.\n"
+Temporary breakpoint 158 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=155
+RULE_SCAN offset=157 text=
+0x14db4ad:	"fox jumps over the lazy dog.\n"
+Temporary breakpoint 159 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=157
+RULE_SCAN offset=158 text=
+0x14db4ae:	"ox jumps over the lazy dog.\n"
+Temporary breakpoint 160 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=158
+RULE_SCAN offset=159 text=
+0x14db4af:	"x jumps over the lazy dog.\n"
+Temporary breakpoint 161 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=159
+RULE_SCAN offset=161 text=
+0x14db4b1:	"jumps over the lazy dog.\n"
+Temporary breakpoint 162 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=161
+RULE_SCAN offset=162 text=
+0x14db4b2:	"umps over the lazy dog.\n"
+Temporary breakpoint 163 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=162
+RULE_SCAN offset=163 text=
+0x14db4b3:	"mps over the lazy dog.\n"
+Temporary breakpoint 164 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=163
+RULE_SCAN offset=164 text=
+0x14db4b4:	"ps over the lazy dog.\n"
+Temporary breakpoint 165 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=164
+RULE_SCAN offset=165 text=
+0x14db4b5:	"s over the lazy dog.\n"
+Temporary breakpoint 166 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=165
+RULE_SCAN offset=167 text=
+0x14db4b7:	"over the lazy dog.\n"
+Temporary breakpoint 167 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=167
+RULE_SCAN offset=168 text=
+0x14db4b8:	"ver the lazy dog.\n"
+Temporary breakpoint 168 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=168
+RULE_SCAN offset=169 text=
+0x14db4b9:	"er the lazy dog.\n"
+Temporary breakpoint 169 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=169
+RULE_SCAN offset=170 text=
+0x14db4ba:	"r the lazy dog.\n"
+Temporary breakpoint 170 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=170
+RULE_SCAN offset=172 text=
+0x14db4bc:	"the lazy dog.\n"
+Temporary breakpoint 171 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=172
+RULE_SCAN offset=173 text=
+0x14db4bd:	"he lazy dog.\n"
+Temporary breakpoint 172 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=173
+RULE_SCAN offset=174 text=
+0x14db4be:	"e lazy dog.\n"
+Temporary breakpoint 173 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=174
+RULE_SCAN offset=176 text=
+0x14db4c0:	"lazy dog.\n"
+Temporary breakpoint 174 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=176
+RULE_SCAN offset=177 text=
+0x14db4c1:	"azy dog.\n"
+Temporary breakpoint 175 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=177
+RULE_SCAN offset=178 text=
+0x14db4c2:	"zy dog.\n"
+Temporary breakpoint 176 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=178
+RULE_SCAN offset=179 text=
+0x14db4c3:	"y dog.\n"
+Temporary breakpoint 177 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=179
+RULE_SCAN offset=181 text=
+0x14db4c5:	"dog.\n"
+Temporary breakpoint 178 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=181
+RULE_SCAN offset=182 text=
+0x14db4c6:	"og.\n"
+Temporary breakpoint 179 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=182
+RULE_SCAN offset=183 text=
+0x14db4c7:	"g.\n"
+Temporary breakpoint 180 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=183
+RULE_SCAN offset=184 text=
+0x14db4c8:	".\n"
+Temporary breakpoint 181 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=184
+RULE_SCAN offset=0 text=
+0x14db410:	'.' <repeats 140 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 182 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=0
+RULE_SCAN offset=1 text=
+0x14db411:	'.' <repeats 139 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 183 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=1
+RULE_SCAN offset=2 text=
+0x14db412:	'.' <repeats 138 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 184 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=2
+RULE_SCAN offset=3 text=
+0x14db413:	'.' <repeats 137 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 185 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=3
+RULE_SCAN offset=4 text=
+0x14db414:	'.' <repeats 136 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 186 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=4
+RULE_SCAN offset=5 text=
+0x14db415:	'.' <repeats 135 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 187 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=5
+RULE_SCAN offset=6 text=
+0x14db416:	'.' <repeats 134 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 188 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=6
+RULE_SCAN offset=7 text=
+0x14db417:	'.' <repeats 133 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 189 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=7
+RULE_SCAN offset=8 text=
+0x14db418:	'.' <repeats 132 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 190 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=8
+RULE_SCAN offset=9 text=
+0x14db419:	'.' <repeats 131 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 191 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=9
+RULE_SCAN offset=10 text=
+0x14db41a:	'.' <repeats 130 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 192 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=10
+RULE_SCAN offset=11 text=
+0x14db41b:	'.' <repeats 129 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 193 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=11
+RULE_SCAN offset=12 text=
+0x14db41c:	'.' <repeats 128 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 194 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=12
+RULE_SCAN offset=13 text=
+0x14db41d:	'.' <repeats 127 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 195 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=13
+RULE_SCAN offset=14 text=
+0x14db41e:	'.' <repeats 126 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 196 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=14
+RULE_SCAN offset=15 text=
+0x14db41f:	'.' <repeats 125 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 197 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=15
+RULE_SCAN offset=16 text=
+0x14db420:	'.' <repeats 124 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 198 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=16
+RULE_SCAN offset=17 text=
+0x14db421:	'.' <repeats 123 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 199 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=17
+RULE_SCAN offset=18 text=
+0x14db422:	'.' <repeats 122 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 200 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=18
+RULE_SCAN offset=19 text=
+0x14db423:	'.' <repeats 121 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 201 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=19
+RULE_SCAN offset=20 text=
+0x14db424:	'.' <repeats 120 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 202 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=20
+RULE_SCAN offset=21 text=
+0x14db425:	'.' <repeats 119 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 203 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=21
+RULE_SCAN offset=22 text=
+0x14db426:	'.' <repeats 118 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 204 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=22
+RULE_SCAN offset=23 text=
+0x14db427:	'.' <repeats 117 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 205 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=23
+RULE_SCAN offset=24 text=
+0x14db428:	'.' <repeats 116 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 206 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=24
+RULE_SCAN offset=25 text=
+0x14db429:	'.' <repeats 115 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 207 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=25
+RULE_SCAN offset=26 text=
+0x14db42a:	'.' <repeats 114 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 208 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=26
+RULE_SCAN offset=27 text=
+0x14db42b:	'.' <repeats 113 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 209 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=27
+RULE_SCAN offset=28 text=
+0x14db42c:	'.' <repeats 112 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 210 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=28
+RULE_SCAN offset=29 text=
+0x14db42d:	'.' <repeats 111 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 211 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=29
+RULE_SCAN offset=30 text=
+0x14db42e:	'.' <repeats 110 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 212 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=30
+RULE_SCAN offset=31 text=
+0x14db42f:	'.' <repeats 109 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 213 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=31
+RULE_SCAN offset=32 text=
+0x14db430:	'.' <repeats 108 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 214 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=32
+RULE_SCAN offset=33 text=
+0x14db431:	'.' <repeats 107 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 215 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=33
+RULE_SCAN offset=34 text=
+0x14db432:	'.' <repeats 106 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 216 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=34
+RULE_SCAN offset=35 text=
+0x14db433:	'.' <repeats 105 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 217 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=35
+RULE_SCAN offset=36 text=
+0x14db434:	'.' <repeats 104 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 218 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=36
+RULE_SCAN offset=37 text=
+0x14db435:	'.' <repeats 103 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 219 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=37
+RULE_SCAN offset=38 text=
+0x14db436:	'.' <repeats 102 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 220 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=38
+RULE_SCAN offset=39 text=
+0x14db437:	'.' <repeats 101 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 221 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=39
+RULE_SCAN offset=40 text=
+0x14db438:	'.' <repeats 100 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 222 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=40
+RULE_SCAN offset=41 text=
+0x14db439:	'.' <repeats 99 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 223 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=41
+RULE_SCAN offset=42 text=
+0x14db43a:	'.' <repeats 98 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 224 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=42
+RULE_SCAN offset=43 text=
+0x14db43b:	'.' <repeats 97 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 225 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=43
+RULE_SCAN offset=44 text=
+0x14db43c:	'.' <repeats 96 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 226 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=44
+RULE_SCAN offset=45 text=
+0x14db43d:	'.' <repeats 95 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 227 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=45
+RULE_SCAN offset=46 text=
+0x14db43e:	'.' <repeats 94 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 228 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=46
+RULE_SCAN offset=47 text=
+0x14db43f:	'.' <repeats 93 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 229 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=47
+RULE_SCAN offset=48 text=
+0x14db440:	'.' <repeats 92 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 230 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=48
+RULE_SCAN offset=49 text=
+0x14db441:	'.' <repeats 91 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 231 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=49
+RULE_SCAN offset=50 text=
+0x14db442:	'.' <repeats 90 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 232 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=50
+RULE_SCAN offset=51 text=
+0x14db443:	'.' <repeats 89 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 233 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=51
+RULE_SCAN offset=52 text=
+0x14db444:	'.' <repeats 88 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 234 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=52
+RULE_SCAN offset=53 text=
+0x14db445:	'.' <repeats 87 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 235 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=53
+RULE_SCAN offset=54 text=
+0x14db446:	'.' <repeats 86 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 236 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=54
+RULE_SCAN offset=55 text=
+0x14db447:	'.' <repeats 85 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 237 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=55
+RULE_SCAN offset=56 text=
+0x14db448:	'.' <repeats 84 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 238 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=56
+RULE_SCAN offset=57 text=
+0x14db449:	'.' <repeats 83 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 239 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=57
+RULE_SCAN offset=58 text=
+0x14db44a:	'.' <repeats 82 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 240 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=58
+RULE_SCAN offset=59 text=
+0x14db44b:	'.' <repeats 81 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 241 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=59
+RULE_SCAN offset=60 text=
+0x14db44c:	'.' <repeats 80 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 242 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=60
+RULE_SCAN offset=61 text=
+0x14db44d:	'.' <repeats 79 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 243 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=61
+RULE_SCAN offset=62 text=
+0x14db44e:	'.' <repeats 78 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 244 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=62
+RULE_SCAN offset=63 text=
+0x14db44f:	'.' <repeats 77 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 245 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=63
+RULE_SCAN offset=64 text=
+0x14db450:	'.' <repeats 76 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 246 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=64
+RULE_SCAN offset=65 text=
+0x14db451:	'.' <repeats 75 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 247 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=65
+RULE_SCAN offset=66 text=
+0x14db452:	'.' <repeats 74 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 248 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=66
+RULE_SCAN offset=67 text=
+0x14db453:	'.' <repeats 73 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 249 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=67
+RULE_SCAN offset=68 text=
+0x14db454:	'.' <repeats 72 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 250 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=68
+RULE_SCAN offset=69 text=
+0x14db455:	'.' <repeats 71 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 251 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=69
+RULE_SCAN offset=70 text=
+0x14db456:	'.' <repeats 70 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 252 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=70
+RULE_SCAN offset=71 text=
+0x14db457:	'.' <repeats 69 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 253 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=71
+RULE_SCAN offset=72 text=
+0x14db458:	'.' <repeats 68 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 254 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=72
+RULE_SCAN offset=73 text=
+0x14db459:	'.' <repeats 67 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 255 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=73
+RULE_SCAN offset=74 text=
+0x14db45a:	'.' <repeats 66 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 256 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=74
+RULE_SCAN offset=75 text=
+0x14db45b:	'.' <repeats 65 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 257 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=75
+RULE_SCAN offset=76 text=
+0x14db45c:	'.' <repeats 64 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 258 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=76
+RULE_SCAN offset=77 text=
+0x14db45d:	'.' <repeats 63 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 259 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=77
+RULE_SCAN offset=78 text=
+0x14db45e:	'.' <repeats 62 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 260 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=78
+RULE_SCAN offset=79 text=
+0x14db45f:	'.' <repeats 61 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 261 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=79
+RULE_SCAN offset=80 text=
+0x14db460:	'.' <repeats 60 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 262 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=80
+RULE_SCAN offset=81 text=
+0x14db461:	'.' <repeats 59 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 263 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=81
+RULE_SCAN offset=82 text=
+0x14db462:	'.' <repeats 58 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 264 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=82
+RULE_SCAN offset=83 text=
+0x14db463:	'.' <repeats 57 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 265 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=83
+RULE_SCAN offset=84 text=
+0x14db464:	'.' <repeats 56 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 266 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=84
+RULE_SCAN offset=85 text=
+0x14db465:	'.' <repeats 55 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 267 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=85
+RULE_SCAN offset=86 text=
+0x14db466:	'.' <repeats 54 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 268 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=86
+RULE_SCAN offset=87 text=
+0x14db467:	'.' <repeats 53 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 269 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=87
+RULE_SCAN offset=88 text=
+0x14db468:	'.' <repeats 52 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 270 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=88
+RULE_SCAN offset=89 text=
+0x14db469:	'.' <repeats 51 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 271 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=89
+RULE_SCAN offset=90 text=
+0x14db46a:	'.' <repeats 50 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 272 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=90
+RULE_SCAN offset=91 text=
+0x14db46b:	'.' <repeats 49 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 273 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=91
+RULE_SCAN offset=92 text=
+0x14db46c:	'.' <repeats 48 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 274 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=92
+RULE_SCAN offset=93 text=
+0x14db46d:	'.' <repeats 47 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 275 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=93
+RULE_SCAN offset=94 text=
+0x14db46e:	'.' <repeats 46 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 276 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=94
+RULE_SCAN offset=95 text=
+0x14db46f:	'.' <repeats 45 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 277 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=95
+RULE_SCAN offset=96 text=
+0x14db470:	'.' <repeats 44 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 278 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=96
+RULE_SCAN offset=97 text=
+0x14db471:	'.' <repeats 43 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 279 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=97
+RULE_SCAN offset=98 text=
+0x14db472:	'.' <repeats 42 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 280 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=98
+RULE_SCAN offset=99 text=
+0x14db473:	'.' <repeats 41 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 281 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=99
+RULE_SCAN offset=100 text=
+0x14db474:	'.' <repeats 40 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 282 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=100
+RULE_SCAN offset=101 text=
+0x14db475:	'.' <repeats 39 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 283 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=101
+RULE_SCAN offset=102 text=
+0x14db476:	'.' <repeats 38 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 284 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=102
+RULE_SCAN offset=103 text=
+0x14db477:	'.' <repeats 37 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 285 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=103
+RULE_SCAN offset=104 text=
+0x14db478:	'.' <repeats 36 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 286 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=104
+RULE_SCAN offset=105 text=
+0x14db479:	'.' <repeats 35 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 287 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=105
+RULE_SCAN offset=106 text=
+0x14db47a:	'.' <repeats 34 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 288 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=106
+RULE_SCAN offset=107 text=
+0x14db47b:	'.' <repeats 33 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 289 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=107
+RULE_SCAN offset=108 text=
+0x14db47c:	'.' <repeats 32 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 290 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=108
+RULE_SCAN offset=109 text=
+0x14db47d:	'.' <repeats 31 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 291 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=109
+RULE_SCAN offset=110 text=
+0x14db47e:	'.' <repeats 30 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 292 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=110
+RULE_SCAN offset=111 text=
+0x14db47f:	'.' <repeats 29 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 293 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=111
+RULE_SCAN offset=112 text=
+0x14db480:	'.' <repeats 28 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 294 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=112
+RULE_SCAN offset=113 text=
+0x14db481:	'.' <repeats 27 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 295 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=113
+RULE_SCAN offset=114 text=
+0x14db482:	'.' <repeats 26 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 296 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=114
+RULE_SCAN offset=115 text=
+0x14db483:	'.' <repeats 25 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 297 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=115
+RULE_SCAN offset=116 text=
+0x14db484:	'.' <repeats 24 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 298 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=116
+RULE_SCAN offset=117 text=
+0x14db485:	'.' <repeats 23 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 299 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=117
+RULE_SCAN offset=118 text=
+0x14db486:	'.' <repeats 22 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 300 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=118
+RULE_SCAN offset=119 text=
+0x14db487:	'.' <repeats 21 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 301 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=119
+RULE_SCAN offset=120 text=
+0x14db488:	'.' <repeats 20 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 302 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=120
+RULE_SCAN offset=121 text=
+0x14db489:	'.' <repeats 19 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 303 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=121
+RULE_SCAN offset=122 text=
+0x14db48a:	'.' <repeats 18 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 304 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=122
+RULE_SCAN offset=123 text=
+0x14db48b:	'.' <repeats 17 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 305 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=123
+RULE_SCAN offset=124 text=
+0x14db48c:	'.' <repeats 16 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 306 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=124
+RULE_SCAN offset=125 text=
+0x14db48d:	'.' <repeats 15 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 307 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=125
+RULE_SCAN offset=126 text=
+0x14db48e:	'.' <repeats 14 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 308 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=126
+RULE_SCAN offset=127 text=
+0x14db48f:	'.' <repeats 13 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 309 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=127
+RULE_SCAN offset=128 text=
+0x14db490:	'.' <repeats 12 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 310 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=128
+RULE_SCAN offset=129 text=
+0x14db491:	'.' <repeats 11 times>, " The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 311 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=129
+RULE_SCAN offset=130 text=
+0x14db492:	".......... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 312 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=130
+RULE_SCAN offset=131 text=
+0x14db493:	"......... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 313 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=131
+RULE_SCAN offset=132 text=
+0x14db494:	"........ The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 314 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=132
+RULE_SCAN offset=133 text=
+0x14db495:	"....... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 315 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=133
+RULE_SCAN offset=134 text=
+0x14db496:	"...... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 316 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=134
+RULE_SCAN offset=135 text=
+0x14db497:	"..... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 317 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=135
+RULE_SCAN offset=136 text=
+0x14db498:	".... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 318 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=136
+RULE_SCAN offset=137 text=
+0x14db499:	"... The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 319 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=137
+RULE_SCAN offset=138 text=
+0x14db49a:	".. The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 320 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=138
+RULE_SCAN offset=139 text=
+0x14db49b:	". The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 321 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=139
+RULE_SCAN offset=141 text=
+0x14db49d:	"The quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 322 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=141
+RULE_SCAN offset=142 text=
+0x14db49e:	"he quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 323 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=142
+RULE_SCAN offset=143 text=
+0x14db49f:	"e quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 324 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=143
+RULE_SCAN offset=145 text=
+0x14db4a1:	"quick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 325 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=145
+RULE_SCAN offset=146 text=
+0x14db4a2:	"uick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 326 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=146
+RULE_SCAN offset=147 text=
+0x14db4a3:	"ick brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 327 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=147
+RULE_SCAN offset=148 text=
+0x14db4a4:	"ck brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 328 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=148
+RULE_SCAN offset=149 text=
+0x14db4a5:	"k brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 329 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=149
+RULE_SCAN offset=151 text=
+0x14db4a7:	"brown fox jumps over the lazy dog.\n"
+Temporary breakpoint 330 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=151
+RULE_SCAN offset=152 text=
+0x14db4a8:	"rown fox jumps over the lazy dog.\n"
+Temporary breakpoint 331 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=152
+RULE_SCAN offset=153 text=
+0x14db4a9:	"own fox jumps over the lazy dog.\n"
+Temporary breakpoint 332 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=153
+RULE_SCAN offset=154 text=
+0x14db4aa:	"wn fox jumps over the lazy dog.\n"
+Temporary breakpoint 333 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=154
+RULE_SCAN offset=155 text=
+0x14db4ab:	"n fox jumps over the lazy dog.\n"
+Temporary breakpoint 334 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=155
+RULE_SCAN offset=157 text=
+0x14db4ad:	"fox jumps over the lazy dog.\n"
+Temporary breakpoint 335 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=157
+RULE_SCAN offset=158 text=
+0x14db4ae:	"ox jumps over the lazy dog.\n"
+Temporary breakpoint 336 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=158
+RULE_SCAN offset=159 text=
+0x14db4af:	"x jumps over the lazy dog.\n"
+Temporary breakpoint 337 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=159
+RULE_SCAN offset=161 text=
+0x14db4b1:	"jumps over the lazy dog.\n"
+Temporary breakpoint 338 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=161
+RULE_SCAN offset=162 text=
+0x14db4b2:	"umps over the lazy dog.\n"
+Temporary breakpoint 339 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=162
+RULE_SCAN offset=163 text=
+0x14db4b3:	"mps over the lazy dog.\n"
+Temporary breakpoint 340 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=163
+RULE_SCAN offset=164 text=
+0x14db4b4:	"ps over the lazy dog.\n"
+Temporary breakpoint 341 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=164
+RULE_SCAN offset=165 text=
+0x14db4b5:	"s over the lazy dog.\n"
+Temporary breakpoint 342 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=165
+RULE_SCAN offset=167 text=
+0x14db4b7:	"over the lazy dog.\n"
+Temporary breakpoint 343 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=167
+RULE_SCAN offset=168 text=
+0x14db4b8:	"ver the lazy dog.\n"
+Temporary breakpoint 344 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=168
+RULE_SCAN offset=169 text=
+0x14db4b9:	"er the lazy dog.\n"
+Temporary breakpoint 345 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=169
+RULE_SCAN offset=170 text=
+0x14db4ba:	"r the lazy dog.\n"
+Temporary breakpoint 346 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=170
+RULE_SCAN offset=172 text=
+0x14db4bc:	"the lazy dog.\n"
+Temporary breakpoint 347 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=172
+RULE_SCAN offset=173 text=
+0x14db4bd:	"he lazy dog.\n"
+Temporary breakpoint 348 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=173
+RULE_SCAN offset=174 text=
+0x14db4be:	"e lazy dog.\n"
+Temporary breakpoint 349 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=174
+RULE_SCAN offset=176 text=
+0x14db4c0:	"lazy dog.\n"
+Temporary breakpoint 350 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=176
+RULE_SCAN offset=177 text=
+0x14db4c1:	"azy dog.\n"
+Temporary breakpoint 351 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=177
+RULE_SCAN offset=178 text=
+0x14db4c2:	"zy dog.\n"
+Temporary breakpoint 352 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=178
+RULE_SCAN offset=179 text=
+0x14db4c3:	"y dog.\n"
+Temporary breakpoint 353 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=179
+RULE_SCAN offset=181 text=
+0x14db4c5:	"dog.\n"
+Temporary breakpoint 354 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=181
+RULE_SCAN offset=182 text=
+0x14db4c6:	"og.\n"
+Temporary breakpoint 355 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=182
+RULE_SCAN offset=183 text=
+0x14db4c7:	"g.\n"
+Temporary breakpoint 356 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=183
+RULE_SCAN offset=184 text=
+0x14db4c8:	".\n"
+Temporary breakpoint 357 at 0x1001d705
+RULE_SCAN_RETURN handled=0 next_offset=184
+TEXT_PREPROCESS_RETURN value=0x14e10c0
+0x14e10c0:	'.' <repeats 140 times>, " The quick brown fox jumps over the lazy dog.\n"
+TEXT_RECORDS count=0 base=0 stride=0x210
+SCALAR_ENTRY tree=0x100fef24 nodes=5 output_width=1 features=0x667630 return=0x10003052
+0x667630:	21	9	3	11	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 358 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fee44 nodes=362 output_width=1 features=0x667630 return=0x10003052
+0x667630:	17	21	9	3	11	0	0	1
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 359 at 0x10003052
+SCALAR_RETURN value=50
+SCALAR_ENTRY tree=0x100feeec nodes=2625 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	17	21	9	3	11	0	50
+0x667640:	1	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 360 at 0x10003052
+SCALAR_RETURN value=44
+SCALAR_ENTRY tree=0x100ff03c nodes=785 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	17	21	9	3	11	44
+0x667640:	50	1	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 361 at 0x10003052
+SCALAR_RETURN value=77
+SCALAR_ENTRY tree=0x100fefcc nodes=1 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	17	21	9	3	77
+0x667640:	44	50	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 362 at 0x10003052
+SCALAR_RETURN value=50
+SCALAR_ENTRY tree=0x100fef78 nodes=89 output_width=1 features=0x667630 return=0x10003052
+0x667630:	18	15	23	14	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 363 at 0x10003052
+SCALAR_RETURN value=55
+SCALAR_ENTRY tree=0x100ff074 nodes=104 output_width=1 features=0x667630 return=0x10003052
+0x667630:	2	18	15	23	14	0	0	55
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 364 at 0x10003052
+SCALAR_RETURN value=1
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	2	18	15	23	14	0	1
+0x667640:	55	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 365 at 0x10003052
+SCALAR_RETURN value=19
+SCALAR_ENTRY tree=0x100fefe8 nodes=28 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	2	18	15	23	14	19
+0x667640:	1	55	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 366 at 0x10003052
+SCALAR_RETURN value=64
+SCALAR_ENTRY tree=0x100fee28 nodes=10 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	2	18	15	23	64
+0x667640:	19	1	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 367 at 0x10003052
+SCALAR_RETURN value=24
+SCALAR_ENTRY tree=0x100ff090 nodes=20 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	6	15	24	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 368 at 0x10003052
+SCALAR_RETURN value=51
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	6	15	24	0	0	51
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 369 at 0x10003052
+SCALAR_RETURN value=3
+SCALAR_ENTRY tree=0x100fee98 nodes=5 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	6	15	24	0	3
+0x667640:	51	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 370 at 0x10003052
+SCALAR_RETURN value=37
+SCALAR_ENTRY tree=0x100ff004 nodes=487 output_width=1 features=0x667630 return=0x10003052
+0x667630:	21	13	16	19	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 371 at 0x10003052
+SCALAR_RETURN value=65
+SCALAR_ENTRY tree=0x100fefb0 nodes=35 output_width=1 features=0x667630 return=0x10003052
+0x667630:	10	21	13	16	19	0	0	65
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 372 at 0x10003052
+SCALAR_RETURN value=63
+SCALAR_ENTRY tree=0x100fef5c nodes=8 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	10	21	13	16	19	0	63
+0x667640:	65	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 373 at 0x10003052
+SCALAR_RETURN value=54
+SCALAR_ENTRY tree=0x100ff03c nodes=785 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	10	21	13	16	19	54
+0x667640:	63	65	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 374 at 0x10003052
+SCALAR_RETURN value=13
+SCALAR_ENTRY tree=0x100fef08 nodes=1 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	10	21	13	16	13
+0x667640:	54	63	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 375 at 0x10003052
+SCALAR_RETURN value=49
+SCALAR_ENTRY tree=0x100ff0ac nodes=646 output_width=1 features=0x667630 return=0x10003052
+0x667630:	12	1	26	25	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 376 at 0x10003052
+SCALAR_RETURN value=46
+SCALAR_ENTRY tree=0x100ff0c8 nodes=30 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	12	1	26	25	0	0	46
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 377 at 0x10003052
+SCALAR_RETURN value=88
+SCALAR_ENTRY tree=0x100fee0c nodes=1719 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	12	1	26	25	0	88
+0x667640:	46	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 378 at 0x10003052
+SCALAR_RETURN value=35
+SCALAR_ENTRY tree=0x100fef40 nodes=52 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	12	1	26	25	35
+0x667640:	88	46	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 379 at 0x10003052
+SCALAR_RETURN value=53
+SCALAR_ENTRY tree=0x100feeb4 nodes=277 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	4	15	7	0	0	0	0
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 380 at 0x10003052
+SCALAR_RETURN value=38
+SCALAR_ENTRY tree=0x100fef94 nodes=2939 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	4	15	7	0	0	38
+0x667640:	0	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 381 at 0x10003052
+SCALAR_RETURN value=16
+SCALAR_ENTRY tree=0x100fee60 nodes=32 output_width=1 features=0x667630 return=0x10003052
+0x667630:	0	0	0	4	15	7	0	16
+0x667640:	38	0	-30223	-103	30324	102	30561	4096
+Temporary breakpoint 382 at 0x10003052
+SCALAR_RETURN value=26
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	8	1	9	10	1	11	1	1
+0x6676cc:	0	0	0	0	0	0	1	4099
+Temporary breakpoint 383 at 0x10013086
+SCALAR_RETURN value=30
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	7	2	9	8	3	11	2	3
+0x6676cc:	0	23	0	0	0	0	1	4099
+Temporary breakpoint 384 at 0x10013086
+SCALAR_RETURN value=5
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	6	3	9	7	4	11	3	4
+0x6676cc:	77	15	23	0	0	0	1	4099
+Temporary breakpoint 385 at 0x10013086
+SCALAR_RETURN value=21
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	5	4	9	5	6	11	4	6
+0x6676cc:	64	0	15	0	0	1	0	4099
+Temporary breakpoint 386 at 0x10013086
+SCALAR_RETURN value=843
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	4	5	9	4	7	11	1	1
+0x6676cc:	0	0	0	0	0	0	0	4099
+Temporary breakpoint 387 at 0x10013086
+SCALAR_RETURN value=122
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	3	6	9	3	8	11	2	2
+0x6676cc:	0	0	0	0	0	0	0	4099
+Temporary breakpoint 388 at 0x10013086
+SCALAR_RETURN value=262
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	2	7	9	2	9	11	3	3
+0x6676cc:	0	95	0	0	0	0	0	4099
+Temporary breakpoint 389 at 0x10013086
+SCALAR_RETURN value=168
+SCALAR_ENTRY tree=0x1470220 nodes=531 output_width=1 features=0x6676bc return=0x10013086
+0x6676bc:	1	8	9	1	10	11	4	4
+0x6676cc:	0	23	95	0	0	0	1	4099
+Temporary breakpoint 390 at 0x10013086
+SCALAR_RETURN value=5
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	10	40	3	0	1	1	1	1
+0x6676fc:	1	0	2468	686	112	686	1740	686
+Temporary breakpoint 391 at 0x100134e1
+SCALAR_RETURN value=1051
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	3	10	42	0	1	1	1	1
+0x6676fc:	2	0	2468	686	112	686	1742	686
+Temporary breakpoint 392 at 0x1001344e
+SCALAR_RETURN value=755
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	20	42	36	0	3	1	2	1
+0x6676fc:	1	0	3428	686	112	686	2700	686
+Temporary breakpoint 393 at 0x100134cc
+SCALAR_RETURN value=1417
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676ec return=0x10013520
+0x6676ec:	36	20	17	0	3	1	2	1
+0x6676fc:	1	0	3428	686	112	686	2702	686
+Temporary breakpoint 394 at 0x10013520
+SCALAR_RETURN value=593
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	17	36	20	1	3	1	2	1
+0x6676fc:	2	0	3428	686	112	686	2704	686
+Temporary breakpoint 395 at 0x1001344e
+SCALAR_RETURN value=1115
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	20	17	42	0	3	1	2	1
+0x6676fc:	3	0	3428	686	112	686	2706	686
+Temporary breakpoint 396 at 0x100134cc
+SCALAR_RETURN value=1161
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	7	42	28	0	3	1	2	1
+0x6676fc:	1	0	4388	686	112	686	3660	686
+Temporary breakpoint 397 at 0x100134cc
+SCALAR_RETURN value=1385
+SCALAR_ENTRY tree=0x14bf32c nodes=315 output_width=1 features=0x6676ec return=0x10013520
+0x6676ec:	28	7	5	0	3	1	2	1
+0x6676fc:	1	0	4388	686	112	686	3662	686
+Temporary breakpoint 398 at 0x10013520
+SCALAR_RETURN value=1351
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676ec return=0x1001347e
+0x6676ec:	5	28	23	1	3	1	2	1
+0x6676fc:	2	0	4388	686	112	686	3664	686
+Temporary breakpoint 399 at 0x1001347e
+SCALAR_RETURN value=2497
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	23	5	42	0	3	1	2	1
+0x6676fc:	3	0	4388	686	112	686	3666	686
+Temporary breakpoint 400 at 0x1001350b
+SCALAR_RETURN value=994
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	14	42	1	0	3	1	2	1
+0x6676fc:	1	0	5348	686	112	686	4620	686
+Temporary breakpoint 401 at 0x100134e1
+SCALAR_RETURN value=1972
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	1	14	20	1	3	1	2	1
+0x6676fc:	2	0	5348	686	112	686	4622	686
+Temporary breakpoint 402 at 0x10013466
+SCALAR_RETURN value=2976
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	20	1	29	0	3	1	2	1
+0x6676fc:	3	0	5348	686	112	686	4624	686
+Temporary breakpoint 403 at 0x100134cc
+SCALAR_RETURN value=1071
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	29	20	42	0	3	1	2	1
+0x6676fc:	3	0	5348	686	112	686	4626	686
+Temporary breakpoint 404 at 0x100134e1
+SCALAR_RETURN value=1347
+SCALAR_ENTRY tree=0x14bf2f4 nodes=48 output_width=1 features=0x6676ec return=0x100134f6
+0x6676ec:	19	42	3	0	3	1	2	1
+0x6676fc:	1	0	6308	686	112	686	5580	686
+Temporary breakpoint 405 at 0x100134f6
+SCALAR_RETURN value=1513
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	3	19	22	1	3	1	2	1
+0x6676fc:	2	0	6308	686	112	686	5582	686
+Temporary breakpoint 406 at 0x1001344e
+SCALAR_RETURN value=1629
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	22	3	27	0	3	1	2	1
+0x6676fc:	3	0	6308	686	112	686	5584	686
+Temporary breakpoint 407 at 0x1001350b
+SCALAR_RETURN value=786
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	27	22	29	0	3	1	2	1
+0x6676fc:	3	0	6308	686	112	686	5586	686
+Temporary breakpoint 408 at 0x100134cc
+SCALAR_RETURN value=553
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	29	27	42	0	3	1	2	1
+0x6676fc:	3	0	6308	686	112	686	5588	686
+Temporary breakpoint 409 at 0x100134e1
+SCALAR_RETURN value=1579
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676ec return=0x1001347e
+0x6676ec:	25	42	35	1	0	1	2	2
+0x6676fc:	2	0	7268	686	112	686	6540	686
+Temporary breakpoint 410 at 0x1001347e
+SCALAR_RETURN value=1984
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	35	25	12	0	1	3	2	2
+0x6676fc:	1	0	7269	686	112	686	6542	686
+Temporary breakpoint 411 at 0x100134e1
+SCALAR_RETURN value=978
+SCALAR_ENTRY tree=0x14bf2a0 nodes=101 output_width=1 features=0x6676ec return=0x10013496
+0x6676ec:	12	35	42	0	1	3	2	2
+0x6676fc:	2	0	7269	686	112	686	6544	686
+Temporary breakpoint 412 at 0x10013496
+SCALAR_RETURN value=1366
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	10	42	3	0	1	1	2	1
+0x6676fc:	1	0	8228	686	112	686	7500	686
+Temporary breakpoint 413 at 0x100134e1
+SCALAR_RETURN value=694
+SCALAR_ENTRY tree=0x14bf24c nodes=812 output_width=1 features=0x6676ec return=0x1001344e
+0x6676ec:	3	10	42	0	1	1	2	1
+0x6676fc:	2	0	8228	686	112	686	7502	686
+Temporary breakpoint 414 at 0x1001344e
+SCALAR_RETURN value=719
+SCALAR_ENTRY tree=0x14bf310 nodes=352 output_width=1 features=0x6676ec return=0x1001350b
+0x6676ec:	21	42	13	0	1	1	2	2
+0x6676fc:	1	0	9188	686	112	686	8460	686
+Temporary breakpoint 415 at 0x1001350b
+SCALAR_RETURN value=1400
+SCALAR_ENTRY tree=0x14bf284 nodes=433 output_width=1 features=0x6676ec return=0x1001347e
+0x6676ec:	13	21	38	1	1	1	2	2
+0x6676fc:	2	0	9188	686	112	686	8462	686
+Temporary breakpoint 416 at 0x1001347e
+SCALAR_RETURN value=2023
+SCALAR_ENTRY tree=0x14bf2d8 nodes=248 output_width=1 features=0x6676ec return=0x100134e1
+0x6676ec:	38	13	18	0	1	3	2	2
+0x6676fc:	1	0	9190	686	112	686	8464	686
+Temporary breakpoint 417 at 0x100134e1
+SCALAR_RETURN value=1323
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	18	38	42	0	1	3	2	2
+0x6676fc:	2	0	9190	686	112	686	8466	686
+Temporary breakpoint 418 at 0x10013466
+SCALAR_RETURN value=1546
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	9	42	4	0	3	1	3	1
+0x6676fc:	1	0	10148	686	112	686	9420	686
+Temporary breakpoint 419 at 0x100134cc
+SCALAR_RETURN value=1157
+SCALAR_ENTRY tree=0x14bf268 nodes=369 output_width=1 features=0x6676ec return=0x10013466
+0x6676ec:	4	9	15	1	3	1	3	1
+0x6676fc:	2	0	10148	686	112	686	9422	686
+Temporary breakpoint 420 at 0x10013466
+SCALAR_RETURN value=4051
+SCALAR_ENTRY tree=0x14bf2bc nodes=717 output_width=1 features=0x6676ec return=0x100134cc
+0x6676ec:	15	4	40	0	3	1	3	1
+0x6676fc:	3	0	10148	686	112	686	9424	686
+Temporary breakpoint 421 at 0x100134cc
+SCALAR_RETURN value=1278
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	1	1	1	686	112	686	0	0
+Temporary breakpoint 422 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dc0 return=0x100139b6
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	1	1	1	0	112	686	0	0
+Temporary breakpoint 423 at 0x100139b6
+VECTOR_RETURN values:0x2af7dc0:	107	107	109	112	115	118	121	123
+0x2af7dd0:	125	128	128	129
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	17	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	1	0
+Temporary breakpoint 424 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dde return=0x100139b6
+0x6676f0:	1	17	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	1	0
+Temporary breakpoint 425 at 0x100139b6
+VECTOR_RETURN values:0x2af7dde:	133	129	125	120	116	115	115	116
+0x2af7dee:	118	121	122	123
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	5	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	2	0
+Temporary breakpoint 426 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7dfc return=0x100139b6
+0x6676f0:	1	5	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	2	0
+Temporary breakpoint 427 at 0x100139b6
+VECTOR_RETURN values:0x2af7dfc:	132	128	124	121	119	118	118	118
+0x2af7e0c:	119	120	121	121
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	1	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	3	0
+Temporary breakpoint 428 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e1a return=0x100139b6
+0x6676f0:	2	1	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	3	0
+Temporary breakpoint 429 at 0x100139b6
+VECTOR_RETURN values:0x2af7e1a:	136	128	122	117	114	113	112	113
+0x2af7e2a:	114	115	117	120
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	3	3	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	4	0
+Temporary breakpoint 430 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e38 return=0x100139b6
+0x6676f0:	3	3	1	3	3	1	0	4
+0x667700:	2	3	1	0	112	686	4	0
+Temporary breakpoint 431 at 0x100139b6
+VECTOR_RETURN values:0x2af7e38:	133	128	123	118	114	112	112	112
+0x2af7e48:	114	116	118	120
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	0	25	1	3	0	1	0	3
+0x667700:	2	0	2	0	112	686	5	0
+Temporary breakpoint 432 at 0x10013984
+SCALAR_RETURN value=1
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e56 return=0x100139b6
+0x6676f0:	0	25	1	3	0	1	0	3
+0x667700:	2	0	2	1	112	686	5	0
+Temporary breakpoint 433 at 0x100139b6
+VECTOR_RETURN values:0x2af7e56:	113	113	114	114	116	117	117	118
+0x2af7e66:	118	118	120	122
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	12	0	1	3	3	1	4
+0x667700:	2	1	2	1	112	686	5	0
+Temporary breakpoint 434 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e74 return=0x100139b6
+0x6676f0:	2	12	0	1	3	3	1	4
+0x667700:	2	1	2	0	112	686	5	0
+Temporary breakpoint 435 at 0x100139b6
+VECTOR_RETURN values:0x2af7e74:	118	120	121	122	122	124	126	128
+0x2af7e84:	131	134	136	136
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	6	0
+Temporary breakpoint 436 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7e92 return=0x100139b6
+0x6676f0:	2	3	0	3	3	1	0	4
+0x667700:	2	1	1	0	112	686	6	0
+Temporary breakpoint 437 at 0x100139b6
+VECTOR_RETURN values:0x2af7e92:	128	128	128	127	127	127	128	129
+0x2af7ea2:	131	133	133	133
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	5	13	1	3	0	1	0	3
+0x667700:	2	1	2	0	112	686	7	0
+Temporary breakpoint 438 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7eb0 return=0x100139b6
+0x6676f0:	5	13	1	3	0	1	0	3
+0x667700:	2	1	2	0	112	686	7	0
+Temporary breakpoint 439 at 0x100139b6
+VECTOR_RETURN values:0x2af7eb0:	139	139	138	136	134	130	126	123
+0x2af7ec0:	120	118	118	118
+SCALAR_ENTRY tree=0x14bf348 nodes=167 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	2	18	0	1	3	3	1	4
+0x667700:	2	1	2	0	112	686	7	0
+Temporary breakpoint 440 at 0x10013984
+SCALAR_RETURN value=0
+VECTOR_ENTRY tree=0x14bf3b8 nodes=263 output_width=12 features=0x6676f0 output=0x2af7ece return=0x100139b6
+0x6676f0:	2	18	0	1	3	3	1	4
+0x667700:	2	1	2	0	112	686	7	0
+Temporary breakpoint 441 at 0x100139b6
+VECTOR_RETURN values:0x2af7ece:	107	110	112	113	114	116	118	120
+0x2af7ede:	123	127	130	132
+SCALAR_ENTRY tree=0x14bf380 nodes=26 output_width=1 features=0x6676f0 return=0x10013984
+0x6676f0:	1	4	1	3	3	1	0	4
+0x667700:	3	3	1	0	112	686	8	0
+Temporary breakpoint 442 at 0x10013984
+SCALAR_RETURN value=4
+VECTOR_ENTRY tree=0x14bf3f0 nodes=42 output_width=12 features=0x6676f0 output=0x2af7eec return=0x100139b6
+0x6676f0:	1	4	1	3	3	1	0	4
+0x667700:	3	3	1	4	112	686	8	0
+Temporary breakpoint 443 at 0x100139b6
+VECTOR_RETURN values:0x2af7eec:	144	127	118	110	107	106	109	117
+0x2af7efc:	133	154	163	163
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb>

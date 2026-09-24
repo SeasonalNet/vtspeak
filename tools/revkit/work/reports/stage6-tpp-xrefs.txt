@@ -1,0 +1,57 @@
+INFO  Using log config file: jar:file:/opt/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)
+INFO  Using log file: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)
+INFO  Loading user preferences: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)
+INFO  Searching for classes... (ClassSearcher)
+INFO  Class search complete (771 ms) (ClassSearcher)
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)
+INFO  Initializing Random Number Generator... (SecureRandomFactory)
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)
+INFO  Starting cache cleanup: /var/tmp/ubuntu-ghidra/fscache2 (FileCacheMaintenanceDaemon)
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)
+INFO  Headless startup complete (1672 ms) (AnalyzeHeadless)
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)
+INFO  HEADLESS Script Paths:
+    /opt/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /work/scripts (HeadlessAnalyzer)
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)
+INFO  Opening existing project: /work/projects/VoiceText (HeadlessAnalyzer)
+INFO  Opening project: /work/projects/VoiceText (HeadlessProject)
+INFO  REPORT: Processing project file: /vt_pau.dll (HeadlessAnalyzer)
+INFO  REPORT: Execute script: FindReferenceFunctions.java '0x1003a7b0' '0x1003a880' '0x1003aa50' '0x1003a610' '0x1003a570' '0x10009f00'  (HeadlessAnalyzer)
+INFO  SCRIPT: /work/scripts/FindReferenceFunctions.java (HeadlessAnalyzer)
+INFO  FindReferenceFunctions.java> ===== references to 1003a7b0 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1003422f FUN_10034180 @ 10034180 (GhidraScript)
+INFO  FindReferenceFunctions.java> 1000e046 FUN_1000dfc0 @ 1000dfc0 (GhidraScript)
+INFO  FindReferenceFunctions.java> 1000e278 FUN_1000e160 @ 1000e160 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 1003a880 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1003dd50 FUN_1003d3d0 @ 1003d3d0 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 1003aa50 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1003a8d1 FUN_1003a880 @ 1003a880 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 1003a610 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1003a58e FUN_1003a570 @ 1003a570 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 1003a570 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1003a7ef FUN_1003a7b0 @ 1003a7b0 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 10009f00 ===== (GhidraScript)
+INFO  REPORT: Save succeeded for processed file: /vt_pau.dll (HeadlessAnalyzer)

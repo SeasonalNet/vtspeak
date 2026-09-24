@@ -1,0 +1,75 @@
+===== 0x10024510 =====
+Function: FUN_10024510 @ 10024510
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __cdecl FUN_10024510(int param_1,float param_2,int param_3)
+
+{
+  int iVar1;
+  float fVar2;
+  float fVar3;
+  int iVar4;
+  float *pfVar5;
+  float *pfVar6;
+  int iVar7;
+  int iVar8;
+  int iVar9;
+  undefined2 *puVar10;
+  undefined4 *puVar11;
+  undefined2 *puVar12;
+  undefined2 *puVar13;
+  float local_8;
+
+  iVar4 = (int)param_2 + 0x477ac;
+  pfVar6 = (float *)((int)param_2 + 0x8212c + param_1 * 0x78);
+  puVar10 = (undefined2 *)((int)param_2 + 0x9f664 + param_1 * 0x3c);
+  iVar8 = (int)*(short *)((int)param_2 + 0xae988 + param_1 * 0xfc);
+  iVar1 = (int)param_2 + 0xae894 + param_1 * 0xfc;
+  puVar11 = (undefined4 *)(iVar1 + 0x7c);
+  if ((*(char *)((uint)*(byte *)((int)param_2 + (param_1 * 3 + 0x76314) * 2) * 0x3c0 + 0x92b +
+                *(int *)((int)param_2 + 0x4c)) == '\0') && (10 < iVar8)) {
+    param_2 = *pfVar6;
+    local_8 = param_2;
+    if (1 < iVar8) {
+      iVar9 = iVar8 + -1;
+      pfVar5 = pfVar6;
+      do {
+        pfVar5 = pfVar5 + 1;
+        param_2 = param_2 + *pfVar5;
+        if (*pfVar5 < local_8) {
+          local_8 = *pfVar5;
+        }
+        iVar9 = iVar9 + -1;
+      } while (iVar9 != 0);
+    }
+    fVar2 = param_2 / (float)iVar8;
+    fVar3 = (fVar2 - local_8) / _DAT_1006d1a8;
+    param_2 = 0.0;
+    param_2._0_2_ = 0;
+    if (0 < iVar8) {
+      iVar4 = iVar4 - (int)pfVar6;
+      iVar9 = (int)puVar11 - (int)pfVar6;
+      iVar7 = (int)pfVar6 - (int)puVar11;
+      puVar12 = puVar10;
+      param_1 = iVar8;
+      do {
+        if ((*pfVar6 <= (float)param_3 * fVar3 + fVar2) ||
+           (puVar13 = puVar12, *(short *)(*(int *)(iVar4 + (int)pfVar6) + 0xc) != 0)) {
+          puVar13 = puVar12 + 1;
+          *(float *)(iVar7 + (int)puVar11) = *pfVar6;
+          *puVar12 = *puVar10;
+          *puVar11 = *(undefined4 *)(iVar9 + (int)pfVar6);
+          param_2 = (float)((int)param_2 + 1);
+          puVar11 = puVar11 + 1;
+        }
+        puVar10 = puVar10 + 1;
+        pfVar6 = pfVar6 + 1;
+        param_1 = param_1 + -1;
+        puVar12 = puVar13;
+      } while (param_1 != 0);
+    }
+    *(undefined2 *)(iVar1 + 0xf4) = param_2._0_2_;
+  }
+  return;
+}

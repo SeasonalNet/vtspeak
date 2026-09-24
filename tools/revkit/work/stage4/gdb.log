@@ -1,0 +1,22 @@
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+0x7bd64525 in DbgBreakPoint@0 () from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Breakpoint 1 at 0x1002bbd0
+
+Breakpoint 1, 0x1002bbd0 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+UPM entry descriptor=0x667640 destination=0x2beaa48 bank=0 offset=23 count=15 half_a=100 half_b=90 return=0x1002d4ad\nTemporary breakpoint 2 at 0x1002d4ad
+
+Temporary breakpoint 2, 0x1002d4ad in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+UPM scaled vector:0x2beaa48:	100	106	94	98	96	94	94	92
+0x2beaa58:	92	92	92	88	86	88	90	0
+0x2beaa68:	0	0	0	0	0	0	0	0
+0x2beaa78:	0	0	0	0	0	0	0	0
+Breakpoint 3 at 0x1002bc60
+[Inferior 1 (Remote target) exited normally]
+/work/stage4/trace-upm.gdb:26: Error in sourced command file:
+No registers.
