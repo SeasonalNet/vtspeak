@@ -1,0 +1,62 @@
+ Container revkit-revtools-run-59b0fd0d4898 Creating
+ Container revkit-revtools-run-59b0fd0d4898 Created
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=/work/home
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode)
+INFO  Using log config file: jar:file:/opt/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)
+INFO  Using log file: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)
+INFO  Loading user preferences: /work/home/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)
+INFO  Searching for classes... (ClassSearcher)
+INFO  Class search complete (557 ms) (ClassSearcher)
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)
+INFO  Initializing Random Number Generator... (SecureRandomFactory)
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)
+INFO  Starting cache cleanup: /var/tmp/ubuntu-ghidra/fscache2 (FileCacheMaintenanceDaemon)
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)
+INFO  Headless startup complete (1414 ms) (AnalyzeHeadless)
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)
+INFO  HEADLESS Script Paths:
+    /opt/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /work/scripts (HeadlessAnalyzer)
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)
+INFO  Opening existing project: /work/projects/VoiceText (HeadlessAnalyzer)
+INFO  Opening project: /work/projects/VoiceText (HeadlessProject)
+INFO  REPORT: Processing project file: /vt_pau.dll (HeadlessAnalyzer)
+INFO  REPORT: Execute script: FindReferenceFunctions.java '0x1000d190' '0x1000d450' '0x1000ea20' '0x100528b0'  (HeadlessAnalyzer)
+INFO  SCRIPT: /work/scripts/FindReferenceFunctions.java (HeadlessAnalyzer)
+INFO  FindReferenceFunctions.java> ===== references to 1000d190 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1000e32e FUN_1000e2f0 @ 1000e2f0 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 1000d450 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1000d3b0 FUN_1000d190 @ 1000d190 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 1000ea20 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1000e34e FUN_1000e2f0 @ 1000e2f0 (GhidraScript)
+INFO  FindReferenceFunctions.java> ===== references to 100528b0 ===== (GhidraScript)
+INFO  FindReferenceFunctions.java> 1005266e FUN_10052520 @ 10052520 (GhidraScript)
+INFO  FindReferenceFunctions.java> 10052c5d FUN_100528b0 @ 100528b0 (GhidraScript)
+INFO  REPORT: Save succeeded for processed file: /vt_pau.dll (HeadlessAnalyzer)

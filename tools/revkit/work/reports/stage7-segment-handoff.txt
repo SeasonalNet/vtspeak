@@ -1,0 +1,13 @@
+===== 0x1001b200 =====
+Function: FUN_1001b200 @ 1001b200
+
+void __cdecl FUN_1001b200(undefined4 *param_1,int param_2,undefined4 *param_3,int param_4)
+
+{
+  if (*(char *)(param_4 + 0x82) == '\0') {
+    FUN_1001af50(param_1,param_2,param_3,param_4);
+    return;
+  }
+  FUN_1001b0d0(param_1,param_2,(int)param_3,param_4);
+  return;
+}

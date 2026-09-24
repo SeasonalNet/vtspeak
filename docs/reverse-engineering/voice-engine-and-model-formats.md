@@ -226,8 +226,8 @@ to 27 unique `gen` payloads in the controlled `Hello from the VoiceText Stage
 1 runtime check.` synthesis. All 32 captured PCM buffers match the standalone
 decoder byte-for-byte. The set exercises predictor modes 0, 1, 2, and 3,
 including repeated mode-0 frames with a four-block mean history. Mode 8 did
-not occur in this corpus. The raw captures and `capture-many.gdb` are retained
-under the ignored `tools/revkit/work/stage2-copy/` directory.
+not occur in this corpus. The raw captures and `capture-many.gdb` are tracked
+under `tools/revkit/work/stage2-copy/`.
 
 As a separate structural check, the decoder was run on the first, second,
 middle, and last unit in each of `gen`, `num`, `etc`, and `alp`. All 16 decoded
@@ -276,9 +276,9 @@ pointer and returned to `0x1001ea93`. The returned byte counts were 57,496 and
 field at offset `0x30`. Capturing the pointed-to bytes at each return and
 concatenating them produced 89,434 bytes, exactly equal to the WAV `data`
 chunk. The concatenated bytes match byte-for-byte, not just by length. The
-individual captures are retained as
+individual captures are tracked as
 `tools/revkit/work/stage3/blocks/block-000.pcm` and `block-001.pcm` under the
-ignored work directory.
+work directory.
 
 This cross-check ties the static call sequence to the runtime output: the
 worker prepares text and a WAVE header, repeatedly calls `FUN_10026870` to
@@ -360,9 +360,8 @@ configuration. Interpreting each raw value as an 8 kHz pitch-period length is
 consistent with that conversion and the interpolation path, but remains an
 inference. Exact timing parameter names and the roles of fields in the
 five-word segment records are not fully recovered. Supporting GDB logs,
-selected buffers, and the generated decompilation report are retained under
-the ignored `tools/revkit/work/stage4/` and `tools/revkit/work/reports/`
-directories.
+selected buffers, and the generated decompilation report are tracked under
+`tools/revkit/work/stage4/` and `tools/revkit/work/reports/`.
 
 This stage covers only the 2013 M16 Paul package and the selected `gen`
 runtime units. It does not explain the remaining 21-byte feature columns,
@@ -441,8 +440,8 @@ at noon?`, selected the previously unseen `vlong` and `vsch` trees. A second
 phrase, `I see the green light. Are you going now? Why? No! We went to the zoo,
 and they say the sky is blue.`, selected the remaining `bf`, `bt`, `qbf`, and
 `qbt` trees. No mismatch was observed. The individual captures, generated
-WAVs, and comparison helper are in the ignored `tools/revkit/work/stage5/`
-and `tools/revkit/work/scripts/` directories.
+WAVs, and comparison helper are tracked in `tools/revkit/work/stage5/` and
+`tools/revkit/work/scripts/`.
 
 Stage 5 did not analyze the shared `data-common/dict-eng` resources, expand
 phone/class abbreviations, assign physical units to outputs, or trace
@@ -869,7 +868,7 @@ All runs exited normally and produced mono 16 kHz, 16-bit PCM WAVE files:
 
 The Stage 5 runtime input and output files were restored from in-run copies
 after each probe. Debugger traces, probe inputs, and generated WAVE files
-remain in the ignored
+remain in the tracked
 `tools/revkit/work/stage5/probes/stage6/` directory. Run the parsers and
 comparator using the commands in [the revkit README](../../tools/revkit/README.md).
 
@@ -1012,7 +1011,7 @@ the lazy dog.” Runtime probes ran the VoiceText backend in the isolated Wine
 container from the Stage 5 working directory. The generated output was a
 valid mono, 16 kHz, 16-bit PCM WAVE of 86,158 bytes and differed from the
 89,478-byte saved output. The probe exited normally. Full raw logs and probe
-scripts are under the ignored `tools/revkit/work/stage7-followup2/`,
+scripts are tracked under `tools/revkit/work/stage7-followup2/`,
 `stage7-followup3/`, `stage7-followup4/`, and `stage7-complete/` directories.
 
 The class-ranker probe captured three inputs of 1, 2, and 3 classes. Their
@@ -1119,23 +1118,198 @@ destination records are 24 bytes apart. `FUN_1001b200` dispatches to
 the model's segment-range table, compute its record index, and read it with
 `FUN_10025440`. They write these fields into the 24-byte destination row:
 
-| Destination offset | Source offset in decoded unit row | Arguments passed to `FUN_100014f0` |
+| Destination offset | Source offset in decoded unit row | `FUN_100014f0` byte width × element count |
 | ---: | --- | --- |
-| `+0x00` | `+0x01` | count 4, stride 1 |
-| `+0x04` | `+0x0b` | count 4, stride 1 |
-| `+0x08..+0x0a` | Normal path: `+0x12` then a per-value stride; alternate path: `+0x1c` | Normal: three count-1/stride-1 reads; alternate: count 1, stride 3 |
-| `+0x0c` | `+0x05` | count 2, stride 2 |
-| `+0x10` | `+0x09` | count 2, stride 1 |
-| `+0x12` | `+0x0f` | count 1, stride 2 |
+| `+0x00` | `+0x01` | width 4 × 1 element |
+| `+0x04` | `+0x0b` | width 4 × 1 element |
+| `+0x08..+0x0a` | Normal path: `+0x12` in three reads; alternate path: `+0x1c` | Normal: width 1 × 1 element per read; alternate: width 1 × 3 elements |
+| `+0x0c` | `+0x05` | width 2 × 2 elements |
+| `+0x10` | `+0x09` | width 2 × 1 element |
+| `+0x12` | `+0x0f` | width 1 × 2 elements |
 | `+0x14` | Selected-unit category byte | Direct byte write |
 | `+0x15..+0x17` | — | Not written by either dispatch target |
 
-The integer arguments to `FUN_100014f0` are recorded as passed; its conversion
-semantics and the meanings of these packed fields belong to Stage 8. This
-closes the handoff boundary without assigning
-unsupported names to synthesis parameters. Stage 7 now covers class lookup,
+`FUN_100014f0(destination, source, width, element_count)` copies `width` bytes
+for each element. Its disassembly at `0x100014f0` shows a contiguous
+`width * element_count` copy when `DAT_1007d6dc` is zero. When that selector is
+nonzero, widths 2 through 8 are byte-reversed per element while element order
+is preserved; width 1 and widths above 8 take the contiguous-copy path.
+`FUN_10025e60` at `0x10025e60` returns zero in this DLL, so the observed Paul
+path uses the contiguous-copy branch. The direct disassembly is tracked at
+`tools/revkit/work/reports/stage8-copy-helper-disassembly.txt`. This establishes
+the conversion behavior as well as the values passed by the two descriptor
+builders. The remaining packed source fields are still identified by their
+offsets and copy behavior; Stage 8 records their downstream tests without
+assigning unsupported linguistic labels. Stage 7 now covers class lookup,
 per-unit scoring, adjacent-context dynamic programming, pruning,
 backtracking, and selected-unit record construction.
+
+## Stage 8: synthesis end to end (complete for feasibility scope)
+
+**Stage 8 checkpoint: the selected-unit path through timing, waveform
+transforms, context joins, PCM assembly, and WAVE output is mapped and
+cross-checked for the 2013 M16 Paul package.** Ghidra names below are
+pseudocode labels and addresses, not vendor source names.
+
+The primary controlled input was copied from `tools/revkit/work/stage3/input.txt`:
+`Hello from the VoiceText Stage 1 runtime check.` The original 32-bit
+`voicetext_paul.exe` and `vt_pau.dll` ran in the isolated Wine container, with
+model and binary mounts read-only and networking disabled. A second short
+input, `Hi.`, exercises the two-unit/no-neighbor boundary case. For the long
+input, the default API sentinels were varied one at a time: pitch `120`, speed
+`120`, and volume `120`.
+
+### Selected records and timing
+
+`FUN_1002c220` at `0x1002c220` consumes the selected phone/context sequence
+and emits 52-byte timeline rows. It writes three 32-bit control words and may
+add a synthetic row at a sentence boundary. On that row kind, it computes the
+`+0x0c` duration as `((((v >> 1) + 10000) / v) * q + 50) / 100`, using a
+lookup value `v` and synthesis-state integer `q`. For a normal
+selected-unit row, `FUN_1002c120` fills `+0x0c` from the selected unit's sample
+span and attaches the descriptor fields. `FUN_1002c530` at `0x1002c530` links
+row transitions into a circular 600-entry history of 36-byte records;
+repeated compatible contexts reuse the prior history slot. Observed row fields
+used downstream are:
+
+| Timeline row offset | Observed use |
+| ---: | --- |
+| `+0x00` | Carried control word; value `100` in the default trace |
+| `+0x04` | Speed-related control; changes from `100` to `120` when API speed is set to `120` |
+| `+0x08` | Sample gain; `FUN_1002c8b0` multiplies decoded samples by this value divided by 100 |
+| `+0x0c` | Sample count (normal); normalized duration (synthetic) |
+| `+0x10` | Primary row index |
+| `+0x14` | DAT byte offset |
+| `+0x18` | Pointer to the selected unit's source descriptor row |
+| `+0x1c` | UPM byte offset |
+| `+0x20` | UPM period count byte |
+| `+0x22`, `+0x24` | Cached UPM edge-period values, doubled for the synthesis grid |
+| `+0x26`, `+0x27` | Mode and row-kind bytes |
+
+For `Hi.`, the first returned row has 1470 samples, DAT offset 167060380,
+UPM offset 2575290, 13 UPM periods, and cached edges 112/114; its mode and
+row-kind bytes are 0 and 2. `FUN_1001b200` at `0x1001b200` supplies the selected
+unit records. These examples map the fields used by Stage 8 without assigning
+unsupported names to the remaining packed words.
+
+On the long input, `FUN_1001b200` ran 83 times: 43 selections precede timeline
+construction and correspond in order to the 43 primary timeline rows; 40
+additional selections occur during context-neighbor preparation. This
+resolves the earlier apparent mismatch between 83 handoffs and 43 audio
+reconstructions. The `Hi.` trace produced two primary rows, two unit decodes,
+two reconstructions, and one PCM block.
+
+The `VT_TextToFile_ENG` controls are observed at the API entry and through
+their downstream effects:
+
+| Controlled input | Carried row value observed | Output frames | Result |
+| --- | --- | ---: | --- |
+| Defaults (`pitch/speed/volume = -1`) | first three control words `100, 100, 200` | 44,717 | Baseline WAV |
+| Pitch `120` only | segment inputs `120` and `100`; builder called for each primary row | 47,156 | UPM-period reconstruction path |
+| Speed `120` only | second control word changes `100 → 120` | 38,326 | Shorter synthesized output |
+| Volume `120` only | third control word changes `200 → 120` | 44,717 | Lower PCM amplitude |
+
+These are observed effects for this input, not a claim that output frame count
+is a simple reciprocal of the API rate for all text. In `FUN_1002c8b0`, decoded
+16-bit samples are multiplied by the carried gain value divided by 100 and
+saturated before joining. The default and volume-120 WAV peaks are 30,720 and
+18,432 respectively, matching the gain change from 200 to 120. Small
+per-sample deviations from a direct 0.6 ratio arise from integer rounding in
+decoding, interpolation, and overlap.
+
+### Pitch periods and joins
+
+`FUN_1002bbd0` reads the unit's selected UPM byte span and widens each byte to
+16 bits times two. Since the writer emits 16 kHz samples, each raw UPM byte is
+consumed as twice its numeric value in output frames: one raw unit maps to two
+16 kHz frames (0.125 ms). This is the observed timing unit; calling the raw
+values “8 kHz pitch periods” is a useful numeric equivalence, not a separately
+documented model label. With non-default pitch, `FUN_1002bc60` builds one 20-byte,
+five-word segment record per adjacent period pair (a 13-period vector yields
+12 records). Its inputs include the pitch control from timeline row `+0x00`
+and the speed control from `+0x04`; the pitch-120 trace observed `120` and
+`100`. The word layout is cumulative
+scaled-UPM position, previous scaled period, next scaled period, the integer
+ratio `((input[1] >> 1) + 10000) / input[1]`, and `input[0]`. This maps the
+arithmetic and data sources without assigning a physical name to the second
+control value. `FUN_1002bd20` searches the five-word records for
+the segment whose reconstructed coordinate has the smallest residual.
+`FUN_1002afb0` calculates `source_period * 100 / segment[4]`, clamps the
+result between `floor(source_period / 16)` and
+`floor(source_period * 31 / 16)`, and shortens it again if the remaining
+context sample budget is smaller. It then resamples neighboring sample
+windows. `FUN_1002d010` and `FUN_1002cdf0`
+interpolate between sample windows and zero-extend where a requested window
+runs past its source. Their results are accumulated with integer edge weights
+and saturated into the output buffer.
+At the default pitch sentinel, the segment builder is bypassed and
+`FUN_1002aac0` takes its ratio-100 path, carrying pending samples between
+timeline rows and draining the final tail when the last row is reached.
+
+`FUN_1002d230` checks left and right context eligibility independently. In
+the predicates below, `C` is the current 7-byte model row, `L` and `R` are the
+left/right row indices selected by the phone-index tables, and `M` is the
+mode byte indexed by the selected phone. Each side starts with multiplier 2;
+the decompiled suppression and reduction predicates are:
+
+| Side | Suppress the side when | Otherwise reduce multiplier to 1 when |
+| --- | --- | --- |
+| Left | Timeline record `+4` is zero; or `(C[5] & 0x80) != 0` and `(C[5] & 0x38) > 0x17`; or `M == 2` and `L == C`; or `L` is the final phone index; or `M != 2` and `((L + 1 == C and (L[6] & 0x80) != 0) or (L[6] & 0x80) == 0)`. | `M != 2` and `((L[6] & 0x80) != 0)` and `((C[-1] & 0x80) == 0)`. |
+| Right | Current phone is final; or `(C[5] & 0x40) != 0` and `(C[5] & 0x07) > 2`; or `M == 1` and `R == C`; or `R == 0`; or `M != 1` and `((C + 1 == R and (C[6] & 0x80) != 0) or (R[-1] & 0x80) == 0)`. | `M != 1` and `((C[6] & 0x80) == 0)`. |
+
+Here `C[-1]` and `R[-1]` mean the byte immediately before the indexed row,
+which is byte `+6` of the preceding 7-byte row. These predicates recover all
+conditions visible in the decompile, including the exact `+5` masks and the
+`+6` marker tests. They describe branch behavior, not linguistic names for
+the packed categories.
+
+If neither side is eligible the function returns null; otherwise it loads the
+current unit and uses `FUN_1002d1e0` to gather side-context candidates, capped
+at five per side.
+The routine builds integer ramp weights across the available edge spans,
+interpolates the selected neighbor windows, blends them with the current unit,
+prepares edge-weight arrays, and returns the current row to the reconstructor.
+In both default and pitch-120 long-input
+traces, 32 of 43 primary rows returned a context row and 11 returned null;
+40 additional unit selections were made while gathering neighbors. For `Hi.`,
+both rows returned null. The byte-level predicates map the context gate, while
+linguistic labels for the encoded model categories are not established. The
+traces exercise eligible and null results, but not every combination of bits.
+The relevant helper disassembly is tracked in
+`tools/revkit/work/reports/stage8-copy-helper-disassembly.txt`.
+
+### PCM assembly and WAVE output
+
+`FUN_10026870` returns assembled PCM blocks and advances the byte count held in
+the synthesis context. For default pitch, the two blocks contain 57,496 and
+31,938 bytes; for pitch `120`, they contain 57,272 and 37,040 bytes. Their
+concatenations match the respective WAVE `data` chunks byte-for-byte. The
+writer updates RIFF/data accounting through `FUN_1001f600`, writes the 44-byte
+PCM format-1, mono, 16 kHz, 16-bit header fields through `FUN_10025500`, then
+writes two-byte audio samples. The two audio writes account for 28,748 +
+15,969 frames at default pitch and 28,636 + 18,520 at pitch `120`; the writer's
+byte counter equals the WAVE data size after each run.
+
+The default output is byte-identical to the Stage 3 reference WAV
+(`SHA-256 3bd8bbfde92f1d645715de40a03a6a68e3acedf0a3361158b869b8a07d803187`).
+The pitch-120 output is byte-identical to the Stage 4 pitch reference WAV
+(`SHA-256 3e7dec025338b047b957c6466fba07d42b83ff734a7b1a67b0cead40962e2079`).
+All four controlled long-input outputs parsed as valid PCM WAVE files and the
+Wine/GDB inferiors exited normally. The short-input output was 6,388 frames;
+its one 12,776-byte PCM block equals its complete WAVE data chunk.
+
+### Bounded limits
+
+Stage 8 maps the selected-unit synthesis path, the exact UPM-to-output frame
+conversion, the endian-aware row-copy helper, and the context gate's byte-level
+conditions. Runtime coverage remains bounded to the listed inputs, controls,
+and eligible/null context outcomes; this is not full-corpus parity or a runtime
+example of every flag combination. Linguistic labels for packed model
+categories are not established by these operations. The feasibility result
+rests on recovered field widths, offsets, branch predicates, transforms, and
+byte-for-byte output comparisons rather than those labels.
+The run scripts, GDB traces, PCM blocks, logs, and WAVs are tracked under
+`tools/revkit/work/stage8/`. No vendor inputs were modified.
 
 ## Limits of this pass
 
@@ -1150,8 +1324,10 @@ backtracking, and selected-unit record construction.
   decimal, ordinal, and four-digit year branches are mapped and boundary
   probed; other sign/currency/percent/time/telephone recognizers have
   representative outputs but not a complete punctuation/context matrix.
-  Longer integer strings select digitwise spelling. Prosody and synthesis
-  helpers are still only partly explained.
+  Longer integer strings select digitwise spelling. Stage 8 maps UPM values to
+  output-frame counts exactly; a pitch-period label is only the usual numeric
+  interpretation. Every context-gate predicate is mapped from the decompile,
+  although not every packed-flag combination has a runtime example.
 - The versioned `.idx` span layout and the sample-span/cache relationships in bytes 4–7 and 16–18 are cross-checked for all local 2013 Paul records; selected UPM timing effects are observed at runtime. The 17 Paul duration/pitch trees pass structural parsing and runtime output comparisons. Several feature columns and legacy `.idx` files still need investigation, as does full-corpus PCM parity. This is not a compatible engine replacement.
 - The exact host-to-DLL argument semantics are not fully named; recovered prototypes still have `param_N` placeholders.
 - This pass did not inspect `verify/verification.txt` contents or attempt to bypass the license check.

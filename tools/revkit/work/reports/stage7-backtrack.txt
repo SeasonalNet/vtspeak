@@ -1,0 +1,144 @@
+===== 0x10024900 =====
+Function: FUN_10024900 @ 10024900
+
+undefined4 __cdecl FUN_10024900(int param_1,int param_2,int param_3)
+
+{
+  int iVar1;
+  short *psVar2;
+  int iVar3;
+  int iVar4;
+
+  psVar2 = (short *)(param_3 + 0xae0c4 + param_2 * 2);
+  iVar1 = FUN_10023010(0,*(short *)(param_3 + 0xae988 + param_2 * 0xfc) + -1,
+                       param_3 + 0x8212c + param_2 * 0x78);
+  *psVar2 = (short)iVar1;
+  if (param_1 < param_2) {
+    iVar1 = param_2 * 0x1e;
+    iVar4 = param_2 - param_1;
+    do {
+      iVar3 = *psVar2 + iVar1;
+      iVar1 = iVar1 + -0x1e;
+      psVar2 = psVar2 + -1;
+      iVar4 = iVar4 + -1;
+      *psVar2 = *(short *)(param_3 + 0x9f664 + iVar3 * 2);
+    } while (iVar4 != 0);
+  }
+  return 1;
+}
+
+
+===== 0x10023010 =====
+Function: FUN_10023010 @ 10023010
+
+int __cdecl FUN_10023010(int param_1,int param_2,int param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+
+  if (param_1 < param_2) {
+    iVar2 = param_1 * 4;
+    iVar1 = param_1 * 4;
+    iVar3 = param_1;
+    do {
+      iVar1 = iVar1 + 4;
+      if (*(float *)(iVar1 + param_3) < *(float *)(iVar2 + param_3)) {
+        iVar3 = param_1 + 1;
+        iVar2 = iVar1;
+      }
+      param_1 = param_1 + 1;
+    } while (param_1 < param_2);
+    return iVar3;
+  }
+  return param_1;
+}
+
+
+===== 0x10024680 =====
+Function: FUN_10024680 @ 10024680
+
+uint __cdecl FUN_10024680(short param_1,undefined4 *param_2,int param_3)
+
+{
+  int iVar1;
+  byte *pbVar2;
+  short *psVar3;
+  short sVar4;
+  int iVar5;
+  bool bVar6;
+  short sVar7;
+  short sVar8;
+  int iVar9;
+  undefined3 extraout_var;
+  undefined4 uVar10;
+  byte *pbVar11;
+  uint uVar12;
+  byte bStack00000007;
+  int local_20;
+  uint local_18;
+  int local_14;
+  uint local_10;
+
+  iVar5 = param_2[0x13];
+  uVar12 = 0;
+  iVar9 = param_1 * 0x10 + iVar5;
+  local_18 = 0;
+  local_14 = 0;
+  sVar4 = *(short *)(iVar9 + 0xc);
+  iVar9 = (int)*(short *)(iVar9 + 0xe);
+  if (0 < iVar9) {
+    local_20 = sVar4 * 0x1e0;
+    pbVar11 = (byte *)(sVar4 * 0x3c0 + 0x6e1 + iVar5);
+    do {
+      pbVar11[-0xffffffff00000003] = 0;
+      pbVar11[-0xffffffff00000002] = 0;
+      *(uint *)(pbVar11 + -0x89) = (int)param_2 + uVar12 * 6 + 0xec628;
+      local_10 = 0;
+      if (*pbVar11 != 0) {
+        bStack00000007 = (char)local_14 + (char)sVar4;
+        do {
+          pbVar2 = (byte *)((int)param_2 + uVar12 * 6 + 0xec628);
+          *pbVar2 = bStack00000007;
+          pbVar2[2] = (byte)local_10;
+          bVar6 = FUN_10017010((local_10 & 0xff) * 7 + 0x6e2 + iVar5 + (uint)*pbVar2 * 0x3c0);
+          pbVar2[5] = bVar6;
+          sVar7 = 0;
+          sVar8 = 0;
+          iVar1 = (uint)*pbVar2 * 0x3c0 + iVar5;
+          if (*(char *)((uint)*pbVar2 * 0x3c0 + 0x6e0 + iVar5) != '\0') {
+            do {
+              if ((sVar8 <= (short)(ushort)pbVar2[2]) &&
+                 (uVar12 = local_18,
+                 (int)(uint)pbVar2[2] <
+                 (int)((uint)*(byte *)(*(int *)(iVar1 + 0x654) + 0x1d + sVar7 * 0x1e) + (int)sVar8))
+                 ) break;
+              sVar8 = sVar8 + (ushort)*(byte *)(*(int *)(iVar1 + 0x654) + 0x1d + sVar7 * 0x1e);
+              sVar7 = sVar7 + 1;
+            } while (sVar7 < (short)(ushort)*(byte *)(iVar1 + 0x6e0));
+          }
+          pbVar2[1] = (byte)sVar7;
+          if (0 < *(short *)(iVar5 + 0x65c + (local_20 + local_10) * 2)) {
+            bVar6 = FUN_10024060(uVar12,param_2,param_3);
+            sVar8 = (short)CONCAT31(extraout_var,bVar6);
+            if (sVar8 < 1) {
+              uVar10 = FUN_100242a0(uVar12,(int)param_2,param_3);
+              sVar8 = (short)uVar10;
+            }
+            psVar3 = (short *)((uint)*pbVar2 * 0x3c0 + 0x6de + iVar5);
+            *psVar3 = *psVar3 + sVar8;
+            uVar12 = uVar12 + (int)sVar8;
+            local_18 = uVar12;
+          }
+          local_10 = local_10 + 1;
+        } while ((int)local_10 < (int)(uint)*pbVar11);
+      }
+      pbVar11 = pbVar11 + 0x3c0;
+      local_14 = local_14 + 1;
+      local_20 = local_20 + 0x1e0;
+    } while (local_14 < iVar9);
+  }
+  param_2[0x3b189] = uVar12;
+  return uVar12;
+}

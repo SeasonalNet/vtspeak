@@ -1,0 +1,234 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/stage7-followup2/postselection-gdb.log.
+Copying debug output to /work/stage7-followup2/postselection-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023af0
+Wine-gdb> >>> > > > > > > > > > > > > > > >  >  >  >  >  > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023350
+Wine-gdb> >>> > > > > > > > >  >  >  > > > >  >  >  >  >  >   >   >   >  >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10018c80
+Wine-gdb> >>> > > > > > > > > > > >  >  >  > > >  >  >  > > > > >  >  >  > > > > > > > > > >  >  >  > > > > > >  >  >  >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+KEY_RANK_ENTRY call=1 limit=30 budget=10000 count=1 signature=0x2ae0752:	0x5a	0x5a	0x16	0x07	0x2a	0xa0	0x00
+KEY_CANDIDATE call=1 index=0 class_id=61031 duration=1165 key=0x1634d3b:	0x5a	0x16	0x07	0xa0	0x00
+Temporary breakpoint 5 at 0x10024164
+KEY_RANK_RETURN call=1 selected=1 class_ids=61031
+KEY_RANK_ENTRY call=2 limit=30 budget=10000 count=2 signature=0x2ae0b12:	0x16	0x07	0x2a	0x42	0x24	0x88	0x00
+KEY_CANDIDATE call=2 index=0 class_id=2655 duration=22 key=0x15ed913:	0x07	0x2a	0x42	0x00	0x00
+KEY_CANDIDATE call=2 index=1 class_id=2658 duration=28 key=0x15ed922:	0x07	0x2a	0x42	0x90	0x00
+Temporary breakpoint 6 at 0x10024164
+KEY_RANK_RETURN call=2 selected=2 class_ids=2655 2658
+KEY_RANK_ENTRY call=3 limit=30 budget=10000 count=3 signature=0x2ae0b19:	0x07	0x2a	0x42	0x24	0x2a	0x08	0x00
+KEY_CANDIDATE call=3 index=0 class_id=32276 duration=20 key=0x1611b9c:	0x2a	0x42	0x23	0x00	0x00
+KEY_CANDIDATE call=3 index=1 class_id=32277 duration=51 key=0x1611ba1:	0x2a	0x42	0x23	0x10	0x00
+KEY_CANDIDATE call=3 index=2 class_id=56965 duration=8 key=0x162fdd1:	0x46	0x42	0x23	0x00	0x00
+Temporary breakpoint 7 at 0x10024164
+KEY_RANK_RETURN call=3 selected=3 class_ids=32276 32277 56965
+FINAL_RANK_ENTRY call=1 context=0 input_count=1 input_ids=61031
+Temporary breakpoint 8 at 0x100249d5
+CEP_PROSODY_ENTRY call=1 unit=181111 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 9 at 0x1002389a
+CEP_PROSODY_RETURN call=1 cost=1.57895
+CEP_PROSODY_ENTRY call=2 unit=267677 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 10 at 0x1002389a
+CEP_PROSODY_RETURN call=2 cost=0.4
+CEP_PROSODY_ENTRY call=3 unit=164613 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 11 at 0x1002389a
+CEP_PROSODY_RETURN call=3 cost=0.4
+CEP_PROSODY_ENTRY call=4 unit=267166 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 12 at 0x1002389a
+CEP_PROSODY_RETURN call=4 cost=0
+CEP_PROSODY_ENTRY call=5 unit=428309 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 13 at 0x1002389a
+CEP_PROSODY_RETURN call=5 cost=0
+CEP_PROSODY_ENTRY call=6 unit=107489 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 14 at 0x1002389a
+CEP_PROSODY_RETURN call=6 cost=0.4
+CEP_PROSODY_ENTRY call=7 unit=377116 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 15 at 0x1002389a
+CEP_PROSODY_RETURN call=7 cost=0.0923077
+CEP_PROSODY_ENTRY call=8 unit=408608 scale=1 target=0x2bcc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x15	0x6b	0x6b	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 16 at 0x1002389a
+CEP_PROSODY_RETURN call=8 cost=0.13913
+FINAL_RANK_RETURN call=1 selected=30 unit_ids=386982 71462 247966 267166 428309 366696 118723 142471 211986 374991
+FINAL_RANK_COSTS call=1
+FINAL_COST position=0 unit=386982 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=71462 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=2 unit=247966 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=267166 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=4 unit=428309 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=5 unit=366696 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=118723 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=7 unit=142471 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=8 unit=211986 score=0 duration_penalty=2 context_penalty=0
+FINAL_COST position=9 unit=374991 score=0.00930233 duration_penalty=2 context_penalty=0
+FINAL_RANK_ENTRY call=2 context=1 input_count=30 input_ids=15253 15263 15270 15281 15303 15310 15245 15248
+Temporary breakpoint 17 at 0x100248ce
+FINAL_RANK_RETURN call=2 selected=30 unit_ids=172995 167803 249971 82696 49573 100489 164614 196220 141779 320263
+FINAL_RANK_COSTS call=2
+FINAL_COST position=0 unit=172995 score=0.0722816 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=167803 score=0.317855 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=249971 score=0.554387 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=82696 score=0.565364 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=49573 score=0.645056 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=100489 score=0.716765 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=164614 score=0.80264 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=196220 score=0.879699 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=141779 score=1.26684 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=320263 score=1.56301 duration_penalty=1 context_penalty=0
+PAIR_SCORE_ENTRY call=1 context=1 current_count=30 previous_count=30 raw_count=1024 derived_count=256 raw_rows=0x14d9e48 derived_rows=0x14d5e48
+PAIR_CURRENT call=1 index=0 unit=172995
+PAIR_CURRENT call=1 index=1 unit=167803
+PAIR_CURRENT call=1 index=2 unit=249971
+PAIR_CURRENT call=1 index=3 unit=82696
+PAIR_CURRENT call=1 index=4 unit=49573
+PAIR_PREVIOUS call=1 index=0 unit=386982
+PAIR_PREVIOUS call=1 index=1 unit=71462
+PAIR_PREVIOUS call=1 index=2 unit=247966
+PAIR_PREVIOUS call=1 index=3 unit=267166
+PAIR_PREVIOUS call=1 index=4 unit=428309
+CEP_TABLE_PAIR call=1 phone_mode=1 current_mode=0 previous_mode=2 current_metric=1015 previous_metric=99 raw_distance=1.61046
+Temporary breakpoint 18 at 0x100248d6
+PAIR_SCORE_RETURN call=1 current_count=30
+PAIR_RESULT call=1 index=0 unit=172995 previous_index=16 cumulative_cost=11.4331
+PAIR_RESULT call=1 index=1 unit=167803 previous_index=5 cumulative_cost=5.2872
+PAIR_RESULT call=1 index=2 unit=249971 previous_index=24 cumulative_cost=0.295376
+PAIR_RESULT call=1 index=3 unit=82696 previous_index=28 cumulative_cost=8.96675
+PAIR_RESULT call=1 index=4 unit=49573 previous_index=18 cumulative_cost=7.86534
+FINAL_RANK_ENTRY call=3 context=2 input_count=30 input_ids=12986 15245 32832 36584 36590 36593 44648 48686
+Temporary breakpoint 19 at 0x100248ce
+FINAL_RANK_RETURN call=3 selected=30 unit_ids=545811 416379 392544 545691 548136 548142 548151 543474 543032 542438
+FINAL_RANK_COSTS call=3
+FINAL_COST position=0 unit=545811 score=34.4071 duration_penalty=4 context_penalty=0
+FINAL_COST position=1 unit=416379 score=33.4062 duration_penalty=2 context_penalty=0
+FINAL_COST position=2 unit=392544 score=44.7739 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=545691 score=33.7897 duration_penalty=2 context_penalty=0
+FINAL_COST position=4 unit=548136 score=32.7145 duration_penalty=2 context_penalty=0
+FINAL_COST position=5 unit=548142 score=34.3286 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=548151 score=36.1889 duration_penalty=2 context_penalty=0
+FINAL_COST position=7 unit=543474 score=34.1189 duration_penalty=2 context_penalty=0
+FINAL_COST position=8 unit=543032 score=33.9931 duration_penalty=2 context_penalty=0
+FINAL_COST position=9 unit=542438 score=33.8597 duration_penalty=2 context_penalty=0
+PAIR_SCORE_ENTRY call=2 context=2 current_count=30 previous_count=22 raw_count=1024 derived_count=256 raw_rows=0x14d9e48 derived_rows=0x14d5e48
+PAIR_CURRENT call=2 index=0 unit=545811
+PAIR_CURRENT call=2 index=1 unit=416379
+PAIR_CURRENT call=2 index=2 unit=392544
+PAIR_CURRENT call=2 index=3 unit=545691
+PAIR_CURRENT call=2 index=4 unit=548136
+PAIR_PREVIOUS call=2 index=0 unit=167803
+PAIR_PREVIOUS call=2 index=1 unit=249971
+PAIR_PREVIOUS call=2 index=2 unit=100489
+PAIR_PREVIOUS call=2 index=3 unit=164614
+PAIR_PREVIOUS call=2 index=4 unit=196220
+CEP_TABLE_PAIR call=2 phone_mode=2 current_mode=1 previous_mode=1 current_metric=35 previous_metric=435 raw_distance=1.11384
+Temporary breakpoint 20 at 0x100248d6
+PAIR_SCORE_RETURN call=2 current_count=30
+PAIR_RESULT call=2 index=0 unit=545811 previous_index=3 cumulative_cost=83.3275
+PAIR_RESULT call=2 index=1 unit=416379 previous_index=5 cumulative_cost=35.9886
+PAIR_RESULT call=2 index=2 unit=392544 previous_index=21 cumulative_cost=40.0544
+PAIR_RESULT call=2 index=3 unit=545691 previous_index=21 cumulative_cost=48.9311
+PAIR_RESULT call=2 index=4 unit=548136 previous_index=21 cumulative_cost=36.8687
+PAIR_SCORE_ENTRY call=3 context=3 current_count=30 previous_count=27 raw_count=1024 derived_count=256 raw_rows=0x14d9e48 derived_rows=0x14d5e48
+PAIR_CURRENT call=3 index=0 unit=240382
+PAIR_CURRENT call=3 index=1 unit=32284
+PAIR_CURRENT call=3 index=2 unit=364738
+PAIR_CURRENT call=3 index=3 unit=545812
+PAIR_CURRENT call=3 index=4 unit=98971
+PAIR_PREVIOUS call=3 index=0 unit=545811
+PAIR_PREVIOUS call=3 index=1 unit=416379
+PAIR_PREVIOUS call=3 index=2 unit=392544
+PAIR_PREVIOUS call=3 index=3 unit=545691
+PAIR_PREVIOUS call=3 index=4 unit=548136
+CEP_TABLE_PAIR call=3 phone_mode=0 current_mode=0 previous_mode=2 current_metric=956 previous_metric=1004 raw_distance=0.523595
+Temporary breakpoint 21 at 0x100248d6
+PAIR_SCORE_RETURN call=3 current_count=30
+PAIR_RESULT call=3 index=0 unit=240382 previous_index=19 cumulative_cost=659.652
+PAIR_RESULT call=3 index=1 unit=32284 previous_index=19 cumulative_cost=638.613
+PAIR_RESULT call=3 index=2 unit=364738 previous_index=19 cumulative_cost=678.619
+PAIR_RESULT call=3 index=3 unit=545812 previous_index=11 cumulative_cost=54.2518
+PAIR_RESULT call=3 index=4 unit=98971 previous_index=19 cumulative_cost=636.688
+PAIR_SCORE_ENTRY call=4 context=4 current_count=30 previous_count=19 raw_count=1024 derived_count=256 raw_rows=0x14d9e48 derived_rows=0x14d5e48
+PAIR_CURRENT call=4 index=0 unit=240383
+PAIR_CURRENT call=4 index=1 unit=32285
+PAIR_CURRENT call=4 index=2 unit=364739
+PAIR_CURRENT call=4 index=3 unit=545813
+PAIR_CURRENT call=4 index=4 unit=179379
+PAIR_PREVIOUS call=4 index=0 unit=240382
+PAIR_PREVIOUS call=4 index=1 unit=32284
+PAIR_PREVIOUS call=4 index=2 unit=364738
+PAIR_PREVIOUS call=4 index=3 unit=545812
+PAIR_PREVIOUS call=4 index=4 unit=98971
+CEP_TABLE_PAIR call=4 phone_mode=0 current_mode=0 previous_mode=2 current_metric=253 previous_metric=253 raw_distance=0
+Temporary breakpoint 22 at 0x100248d6
+PAIR_SCORE_RETURN call=4 current_count=30
+PAIR_RESULT call=4 index=0 unit=240383 previous_index=10 cumulative_cost=57.362
+PAIR_RESULT call=4 index=1 unit=32285 previous_index=13 cumulative_cost=50.9654
+PAIR_RESULT call=4 index=2 unit=364739 previous_index=12 cumulative_cost=65.3644
+PAIR_RESULT call=4 index=3 unit=545813 previous_index=3 cumulative_cost=70.9418
+PAIR_RESULT call=4 index=4 unit=179379 previous_index=10 cumulative_cost=62.9708
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)

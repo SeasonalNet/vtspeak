@@ -59,6 +59,6 @@ independently validates all predictor-state cases or replaces the separate
 resolved against VoiceText evidence and checked on a payload that exercises
 the relevant mode sequence.
 
-Our capture files and the standalone decoder remain in the vtspeak workspace;
-the captured buffers are under ignored `tools/revkit/work/stage2-copy/` and
-are not included with this note.
+Our capture files and the standalone decoder remain in the vtspeak workspace.
+The small captured DAT/PCM fixtures and `capture-many.gdb` are tracked under
+`tools/revkit/work/stage2-copy/`; the full voice/model assets remain external.

@@ -1,8 +1,18 @@
-/work/*
-!/work/.gitkeep
-!/work/home/
+# Host-local Ghidra projects, preferences, and caches.
 /work/home/*
 !/work/home/.gitkeep
-!/work/projects/
 /work/projects/*
 !/work/projects/.gitkeep
+
+# Container bind-mount links and local copies of proprietary inputs.
+/work/data-common
+/work/data-paul
+/work/stage1-copy/
+/work/stage1-run/
+
+# Host-specific Wine state and caches. Small captured DAT/PCM fixtures and
+# their trace scripts/logs in stage2-copy remain versioned.
+/work/stage2-copy/wineprefix/
+/work/stage2-copy/.cache/
+/work/stage2-copy/.config/
+/work/stage2-copy/.local/
