@@ -28,6 +28,8 @@ Follow [the revkit instructions](tools/revkit/README.md). Run Docker Compose fro
 ## Current findings
 
 Please see [docs/INDEX.md](./docs/INDEX.md) for a list of research documentation files.
+The [follow-up investigation leads](./docs/reverse-engineering/follow-up-investigation-leads-2026-09-24.md)
+summarize proposed next probes and their evidence boundaries.
 
 ## Working principles
 
