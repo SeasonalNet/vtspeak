@@ -858,6 +858,11 @@ record-level captures show the text and phone/context records before tree
 calls. They do not identify the model-coded pronunciation symbols or every
 tree feature's phonetic meaning.
 
+The optional [tree feature exploration notebook](notebooks/tree-feature-observations.ipynb)
+plots the raw selector values observed across these three Stage 6 captures. It
+uses the existing parser/comparator and does not assign semantic labels; the
+evidence and interpretation limits in this Markdown section remain authoritative.
+
 All runs exited normally and produced mono 16 kHz, 16-bit PCM WAVE files:
 
 | Input | WAVE bytes | Frames | Duration |
