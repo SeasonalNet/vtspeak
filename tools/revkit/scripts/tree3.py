@@ -58,17 +58,22 @@ class Tree:
         return leaf, self.outputs[leaf]
 
 
-def parse_tree(path: Path) -> Tree:
-    raw = path.read_bytes()
-    if len(raw) < 7:
-        raise ValueError(f"{path}: file is shorter than the 7-byte header")
+def parse_tree_data(
+    path: Path,
+    raw: bytes,
+    offset: int = 0,
+    *,
+    require_eof: bool = True,
+) -> tuple[Tree, int]:
+    if len(raw) - offset < 7:
+        raise ValueError(f"{path}: fewer than 7 bytes remain for a tree header at byte {offset}")
 
-    node_count, output_width, declared_list_values = struct.unpack_from("<hBI", raw, 0)
+    node_count, output_width, declared_list_values = struct.unpack_from("<hBI", raw, offset)
     if node_count < 0:
         raise ValueError(f"{path}: negative node count {node_count}")
     if output_width == 0:
         raise ValueError(f"{path}: output width must be positive")
-    offset = 7
+    offset += 7
     nodes: list[Node] = []
     list_value_count = 0
 
@@ -111,7 +116,8 @@ def parse_tree(path: Path) -> Tree:
 
     output_count = (node_count + 1) * output_width
     output_bytes = output_count * 2
-    if offset + output_bytes != len(raw):
+    tree_end = offset + output_bytes
+    if tree_end > len(raw) or (require_eof and tree_end != len(raw)):
         raise ValueError(
             f"{path}: expected {output_bytes} output bytes at offset {offset}, "
             f"file has {len(raw) - offset} remaining"
@@ -121,7 +127,15 @@ def parse_tree(path: Path) -> Tree:
         tuple(flat_outputs[index * output_width : (index + 1) * output_width])
         for index in range(node_count + 1)
     )
-    return Tree(path, output_width, tuple(nodes), outputs, declared_list_values)
+    return Tree(path, output_width, tuple(nodes), outputs, declared_list_values), tree_end
+
+
+def parse_tree(path: Path) -> Tree:
+    raw = path.read_bytes()
+    tree, tree_end = parse_tree_data(path, raw)
+    if tree_end != len(raw):
+        raise ValueError(f"{path}: parsed tree ends at {tree_end}, file ends at {len(raw)}")
+    return tree
 
 
 def describe(tree: Tree) -> dict[str, object]:

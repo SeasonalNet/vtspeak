@@ -83,6 +83,46 @@ python3 tools/revkit/scripts/tree3.py \
 The evaluator is an analysis aid for the observed 2013 package. It does not
 assign phonetic names or physical units to feature slots or output values.
 
+## Inspect shared English dictionary resources
+
+The read-only inspector validates the three standalone shared `tree3` files,
+the 27-tree `atmt.tree3` container, both hash-indexed dictionary record
+partitions, the structured `exceptdict`, and the shared `.txt2` files. It
+subtracts each `.txt2` shift byte modulo 256, validates the padded decimal row
+count and loader-selected column mode, and prints decoded sample rows. From
+the repository root, run:
+
+```sh
+python3 tools/revkit/scripts/dict_resources.py
+```
+
+To print every decoded `.txt2` row in the JSON output, add `--show-rows`.
+
+Decode the TPP dictionary's compressed keys and validate every decoded-key
+round trip and typed payload shape with the matching Paul DLL:
+
+```sh
+python3 tools/revkit/scripts/inspect_tpp_dictionary.py
+```
+
+Use `--show-rows` to include all 31,550 decoded key/payload pairs in the JSON
+report. The script validates structural codes but does not assign
+pronunciation or linguistic labels to every TPP code.
+
+Compare captured GDB scalar/vector tree returns against those shared resources
+and the Paul voice trees with:
+
+```sh
+python3 tools/revkit/scripts/compare_tree3_runtime.py \
+  tools/revkit/work/stage5/probes/stage6/ordinary/tree-lookups-gdb.log \
+  tools/revkit/work/stage5/probes/stage6/numbers/tree-lookups-gdb.log \
+  tools/revkit/work/stage5/probes/stage6/abbreviations/tree-lookups-gdb.log
+```
+
+The comparison reports only a unique tree whose evaluation matches the
+captured return values for the observed input feature vector. It does not
+assign phonetic labels to those features.
+
 Start a shell with the tools available on `PATH`:
 
 ```sh

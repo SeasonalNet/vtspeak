@@ -43,16 +43,16 @@ rules](../../AGENTS.md).
 | Done | 3. Validate decode and synthesis observations | Controlled known-text run produced a stable 16 kHz mono 16-bit PCM WAV. Two captured sample-buffer returns concatenate byte-for-byte to its full WAVE data chunk; Stage 2 decoder matches remain consistent for this input. See [Stage 3 findings](voice-engine-and-model-formats.md#stage-3-decode-to-wave-boundary-check). | Complete; broader synthesis coverage remains follow-up |
 | Done | 4. Explain `.upm` and remaining index fields | All 580,474 local records cross-check bytes 4/6 as doubled side-period sums and bytes 16–18 as first/shared/last UPM values. Runtime checkpoint C traces two selected vectors through segment generation and reconstruction under default and non-default pitch. See [Stage 4 findings](voice-engine-and-model-formats.md#stage-4-upm-and-index-field-semantics). Feature columns and full-corpus PCM parity remain open. | Complete |
 | Done | 5. Validate `tree3` family | Parser validates node/list/output extents and references for all 17 Paul duration/pitch trees. Caller mapping identifies nine scalar duration trees and four scalar/12-value pitch pairs. Runtime checkpoint D compares 307 lookups across all 17 trees from three controlled phrases with no mismatches. See [Stage 5 findings](voice-engine-and-model-formats.md#stage-5-tree3-parser-and-caller-behavior). | Complete |
-| [ ] | 6. Map text and pronunciation resources | Inspect `data-common/dict-eng` files, including `engbi.tree3`, `atmt.tree3`, hash tables, and `txt2`; follow normalization, pronunciation lookup, and number handling. **Runtime checkpoint E:** compare a small set of controlled text inputs with the generated phone/context records and output. | 2–5 days |
+| Done | 6. Map text and pronunciation resources | All nine `.txt2` row schemas/callsites and all 427 H/T/C abbreviation keys/tags are mapped. `exceptdict` is grouped by one through four hyphen-separated components. Both hash families now have exact record framing; all 31,550 TPP keys decode and round-trip, with typed payload shapes and their single/multi-token callers documented. The embedded phone payload and the complete `0x554` token-result / `0x70` phone-context layouts are mapped. Cardinal, decimal, ordinal, four-digit year, case-match, address-alias, and ordered abbreviation/context paths are documented with runtime examples. **Runtime checkpoint E:** controlled Wine/GDB captures cover ordinary text, numbers, dates/times, addresses, and abbreviations, including token surfaces and phone/context rows. TPP code meanings and the full per-key/context output matrix remain interpretation work, not blockers to the resource-format map. See [Stage 6 findings](voice-engine-and-model-formats.md#stage-6-text-and-pronunciation-resources), [abbreviation inventory](abbreviation-table-inventory.md), [phone-symbol codebook](phone-symbol-codebook.md), and the [TPP key decoder](../../tools/revkit/scripts/inspect_tpp_dictionary.py). | Complete |
 | [ ] | 7. Recover candidate selection and scoring | Connect the five-byte class keys, feature views, `cepdist.tbl`, and scorer to candidate ranking and duration/prosody choices. **Runtime checkpoint F:** observe candidate inputs/ranks for selected contexts and reconcile them with the static scoring path. | 2–4 days |
 | [ ] | 8. Trace synthesis end to end | Follow selected units through timing, pitch or other transforms, joins/blending, sample assembly, and WAV writing. Use a short reproducible corpus and cross-check the whole path against original-engine execution. | 3–6 days |
 
 The remaining static and runtime investigation is estimated at about
-**7–15 focused analyst-days**. Stages can overlap where their dependencies
-allow. Stages 1 through 5 are complete for the documented 2013 Paul package
-scope. The remaining estimates cover analysis and decoder prototypes, not
-the later clean-room engine implementation, compatibility work, or rights
-review for voice assets.
+**5–10 focused analyst-days**. Stages can overlap where their dependencies
+allow. Stages 1 through 6 are complete for the documented 2013 Paul package
+scope. The remaining estimates cover analysis and decoder prototypes, not the
+later clean-room engine implementation, compatibility work, or rights review
+for voice assets.
 
 ## Runtime analysis entry criteria
 
