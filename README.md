@@ -43,4 +43,4 @@ Please see [docs/INDEX.md](./docs/INDEX.md) for a list of research documentation
 
 ## License
 
-All reimplementation work (excluding vendor data) in this repository is licensed under the GNU AGPLv3 license.
+All reimplementation work (excluding vendor data) in this repository is licensed under the GNU AGPLv3 license. See [LICENSE](./LICENSE).
