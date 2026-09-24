@@ -438,14 +438,468 @@ and they say the sky is blue.`, selected the remaining `bf`, `bt`, `qbf`, and
 WAVs, and comparison helper are in the ignored `tools/revkit/work/stage5/`
 and `tools/revkit/work/scripts/` directories.
 
-This stage does not analyze the four shared `data-common/dict-eng/*.tree3`
-files, expand phone/class abbreviations, assign physical units to outputs, or
-trace downstream timing and prosody decisions. Those remain outside Stage 5.
+Stage 5 did not analyze the shared `data-common/dict-eng` resources, expand
+phone/class abbreviations, assign physical units to outputs, or trace
+downstream timing and prosody decisions. Stage 6 documents the shared tree
+containers and text-resource path below; voice-tree feature labels and
+downstream timing/prosody questions remain open.
+
+## Stage 6: text and pronunciation resources
+
+### Shared resource loading and structure
+
+`FUN_10012210` selects the shared `dict-eng` directory. Its loader maps
+`engttsdict_emb`, `hashidx_emb`, and `hashcont_emb` as one family, and
+`tppdict_eng`, `hashidx_eng_tpp`, and `hashcont_eng_tpp` as another. The
+corresponding `hashparams` files supply the `NLP` marker, seven 32-bit
+parameters, a 32-bit distribution-table length and its 32-bit entries, then a
+byte-table length and that byte table. `FUN_10012030` uses those parameters in
+the hash calculation; `FUN_10011820` selects a family, checks a candidate
+record, and returns its associated record data. The paired index and content
+files have equal entry counts, consistent with their use as parallel lookup
+tables.
+
+| Family | Parameter bytes | Distribution entries | Byte table | Index entries | Content entries |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Embedded | 132,132 | 256 | 131,072 bytes | 228,591 | 228,591 × 16-bit |
+| TPP | 17,444 | 256 | 16,384 bytes | 31,550 | 31,550 × 16-bit |
+
+These are file extents and entry widths, not undocumented semantics for each
+parameter or record field. The resource inspector reports each dictionary
+file's byte size in its JSON output.
+
+The indexed offsets partition each lexicon file exactly. Every offset points
+to a NUL-terminated key followed by a separate NUL-terminated byte payload;
+the next indexed offset begins immediately after that payload. All offsets are
+unique, the first is zero, and the final record ends at EOF in both families.
+The embedded family has 228,591 records (key lengths 1–19 bytes; payload
+lengths 2–25 bytes including the final NUL). TPP has 31,550 records (key
+lengths 1–20; payload lengths 3–12). `FUN_10011820` selects the family,
+computes a hash, checks the two-byte length/first-byte signature, and compares
+the candidate key byte-for-byte before returning it. The two payload families
+have different consumers and different grammars:
+
+- Embedded records pass through `FUN_10003c50`, whose complete byte grammar
+  is described below. Corpus inspection confirms the parser's direct-ID and
+  alternative-path forms across all 228,591 records; records with none of the
+  parser's low two flag bits are metadata/marker records and do not supply a
+  pronunciation through this parser.
+- TPP records are looked up through `FUN_1003a570` and consumed by
+  `FUN_1003a7b0`. A TPP result begins with a discriminator byte and a
+  NUL-terminated text/code body. Its compressed keys are transformed through
+  the 256-entry u16 character map at `0x1007e388`, then greedily compressed
+  with the sorted two-byte pair table at `0x10081568`. The inverse recovers
+  ASCII uppercase words, place names, and hyphenated phrases. The new
+  `inspect_tpp_dictionary.py` analysis script decodes and re-encodes every
+  key; all 31,550 keys round-trip exactly. Across all 31,550 payloads, the
+  body is one or two space-separated code atoms. The complete observed
+  grammar is one
+  atom of `A`–`G` followed by decimal digits, except for `AX`; the observed
+  two-atom sequences are `A G`, `A A`, `B B`, and `C C`. Corpus counts by
+  sequence are: `G` 18,493; `A` 7,853; `B` 3,979; `F` 829; `C` 296; `D` 19;
+  `E` 2; `A G` 66; `C C` 7; `A A` 5; and `B B` 1. The `A` keys are
+  single-component place names; `B`, `C`, `D`, and `E` keys are place names
+  with two, three, four, and five hyphen-separated components respectively.
+  Their payloads encode that component count followed by one binary digit per
+  component (for example, `B201`, `C3010`, `D40000`, `E500010`). `A0` is the
+  default single-component place-name form; the 25 `AX` records remain a
+  special case with unknown semantics. `F` entries are hyphenated lexical
+  compounds; `G` entries are the general lexical set. Some place-name keys
+  also carry a second `G` code, as in `ACCORD → A0 G95`. These category
+  associations are corroborated by decoded key contents and caller behavior;
+  the meaning of each binary component flag and the numeric `F`/`G` suffixes
+  remains unnamed (both numeric suffix families span 1–124). The corpus has
+  7,924 `A`, 3,980 `B`, 303 `C`, 19 `D`,
+  and 2 `E` place-name records; its 829 `F` compounds have 1–4 hyphens
+  (746, 78, 4, and 1 records respectively). The two-atom records contain
+  typed codes, not an extension of the embedded phone-ID schema.
+  When the discriminator matches the caller's requested type, the body is
+  passed to `FUN_10024b50`; that helper extracts a token up to a delimiter in
+  the supplied delimiter string and advances the caller's cursor. On a type
+  mismatch, `FUN_1003a7b0` uses the static discriminator mapping/search path,
+  skips the two-byte mapped prefix, and submits the remaining text to the same
+  extractor. Callers use the extracted result to rewrite or classify tokens.
+  TPP callers include the multi-token path `FUN_1000dfc0`/`FUN_1000e160`,
+  which checks up to five adjacent tokens, and the proper-name path
+  `FUN_10034180`. This is a typed-text transformation family, not the
+  embedded phone-ID payload format.
+
+The lookup and consumer control flow, compressed-key transform, and raw TPP
+body grammar are recovered. `inspect_tpp_dictionary.py` is a bounded analysis
+tool for this package's matching DLL and TPP data. The one-byte code atoms,
+component-flag meanings, and numeric `F`/`G` suffix names remain unknown, so
+the recovered schema does not identify every output as a linguistic or
+phonetic feature. `dict_resources.py` validates indexed record boundaries
+and NUL framing; the TPP inspector additionally validates decoded keys and
+payload shapes.
+
+`FUN_10012280` loads `engbi.tree3` with the standard tree reader. It contains
+531 nodes, width 1, and 3,097 list entries. The same reader accepts `poly.tree3`
+(2,518 nodes) and `sbd.tree3` (120 nodes). `atmt.tree3` is a container rather
+than a standalone tree: `FUN_100019d0` reads a 32-bit count of 27 and then
+consumes 27 concatenated standard tree records to EOF. Those records contain
+13,879 nodes in total. The tree parser now supports parsing one tree from a
+larger byte buffer while retaining strict EOF checks for standalone inputs.
+
+`FUN_10003660` also loads and parses `exceptdict`. The file has two
+little-endian u32 range fields (`1`, `4`), then four category groups. Each
+group stores a u32 category id, a u32 row count, then rows of u32 key length,
+u32 value length, key bytes, and value bytes. The 2,891-byte file parses
+exactly to EOF and contains 123 rows: 11, 89, 22, and 1 in groups 1–4.
+`FUN_10003b70` binary-searches the selected group by key and returns the
+paired value; `FUN_10008dc0` applies this lookup to concatenated phone/context
+text and submits a match to `FUN_1000ca50`. The grouping and lookup behavior
+are recovered. `FUN_1000c9c0` normalizes each surface while preserving
+apostrophes and hyphens, counts one component plus one for each hyphen, and
+rejects unsupported characters. `FUN_10008dc0` accumulates that component
+count across adjacent rows; it is the selected category id (1–4). It joins
+the corresponding normalized components with hyphens and tries an exact
+compressed-key lookup. For a token marked `X`, a failed full-sequence lookup
+retries after dropping its final component. The four groups therefore encode
+one-, two-, three-, and four-component pronunciation exceptions. Reversing
+the pair table at `0x10081568` exposes readable keys: group 1 includes
+`h'expose`, `pinata`, and `toysrus`; group 2 includes `a-cappella`,
+`de-facto`, and `san-francisco`; group 3 includes `a-la-mode`,
+`c'est-la-vie`, and `coup-de-theatre`; group 4 contains
+`je-ne-sais-quoi`. Values are compact pronunciation-code strings passed to
+the phone-row writer, not replacement words. Their byte schema is known,
+but the individual codes still lack phonetic labels. Nine `.txt2` files are read by
+`FUN_100033e0` and its
+callers: `wab`, `chc_sort`, `streeta_sort`, `streetf_sort`, `citya_sort`,
+`abbrh_sort`, `abbrt_sort`, `abbrc_sort`, and `sbdw_sort`. The single-column
+or paired-column mode is selected at each callsite. `FUN_10003540` splits
+their body on pipe, CR, and LF delimiters and trims trailing spaces/tabs.
+Each file has a 3-byte start marker, encoded body, one shift byte, ten encoded
+count bytes, and the matching 3-byte end marker. `FUN_10010300` subtracts the
+shift byte modulo 256 from every body and count byte. The count decodes as an
+ASCII decimal number followed by NUL padding. All nine files use shift `0x0a`,
+and decoded line counts match their declared counts. `dict_resources.py` now
+validates the transform, row count, and callsite-selected column shape.
+
+| Resource | Rows | Mode | Observed columns and use |
+| --- | ---: | :---: | --- |
+| `wab.txt2` | 113 | L | One-column word list; `FUN_1000dfc0` stores matching row index plus one in token-record byte `+0x26`. |
+| `chc_sort.txt2` | 2,581 | M | Key and four-character `0`/`1` mask; `FUN_10002680` maps characters to bits `8,4,2,1` and checks that all requested bits are present. |
+| `streeta_sort.txt2` | 347 | M | Uppercase street alias to canonical street name; used with `streetf_sort`. |
+| `streetf_sort.txt2` | 211 | L | One-column canonical street-name list, used by address processing. |
+| `citya_sort.txt2` | 117 | M | Locality alias to canonical locality string. |
+| `abbrh_sort.txt2` | 55 | M | Abbreviation key and numeric tag; membership contributes bit 0 in `FUN_100526b0`. |
+| `abbrt_sort.txt2` | 42 | M | Abbreviation key and numeric tag; membership contributes bit 1 in `FUN_100526b0`. |
+| `abbrc_sort.txt2` | 330 | M | Abbreviation key and numeric tag; membership contributes bit 2 in `FUN_100526b0`. |
+| `sbdw_sort.txt2` | 1,067 | M | Word and numeric class index; `FUN_100528b0` maps the index through a fixed code table, with character and suffix fallbacks. |
+
+`abbrh_sort`, `abbrt_sort`, and `abbrc_sort` store ASCII tags `1` and `2`.
+`FUN_10052d00` reads them: tag `1` requires an exact-case key match, while
+tag `2` accepts the case-folded match. If multiple case variants compare
+equal under the table's case-insensitive ordering, the helper scans adjacent
+rows to select the exact-case row or the tag-`2` fallback. `FUN_100526b0`
+turns membership in `abbrh_sort`, `abbrt_sort`, and `abbrc_sort` into bits
+0–2 respectively. Their contents identify title/honorific forms (for
+example `dr`, `mr`, `st`), organization suffixes (for example `inc`, `llc`,
+`ltd`), and common abbreviations, units, month/day names, and place codes.
+These resources classify tokens for later rules; they are not
+abbreviation-to-word replacement lists. The full 427-row H/T/C inventory,
+including original case and matching tag, is in
+[abbreviation-table-inventory.md](abbreviation-table-inventory.md). Street
+and locality tables contain literal replacement strings. In `sbdw_sort`, the numeric column is an index
+into the u16 table at `0x10081358`, and `FUN_100528b0` returns that table value. The
+complete observed mapping for indices present in the file is `8→7, 9→9,
+10→6, 11→2, 13→8, 14→5, 15→5, 16→5, 18→4, 19→1, 22→1, 26→2, 27→2,
+28→5, 29→5, 35→8, 36→0, 37→4, 38→4, 39→4, 40→4, 41→4, 42→4, 43→10,
+44→10, 46→10`. These returned class codes are exact; their linguistic names
+are not identified. `FUN_100528b0` also has character, punctuation, and suffix
+fallbacks when a word is absent from the table. All decoded rows are ASCII
+and can be inspected with `dict_resources.py --show-rows`.
+
+### Static text path
+
+`FUN_1001c990` prepares text state and invokes `FUN_1001ce10`, followed by
+`FUN_1001d370` and `FUN_1001d5d0`. The latter scans text against the VTML/SSML
+handler table at `0x1007e888` through `FUN_1002e990`; the table contains 31
+literal tag prefixes and dispatches handlers for break, emotion, mark,
+part-of-speech, phoneme, pitch, say-as, skip, speed, substitution, and volume
+forms. The three controlled plain-text inputs produced zero handled tag
+matches. This table is markup dispatch, not the ordinary-word pronunciation
+dictionary.
+
+Two string-lookup wrappers feed `FUN_10011820`: `FUN_10003a70` selects the
+embedded family and `FUN_1003a570` selects the TPP family. `FUN_10003a70`
+provides phone/code alternatives for `FUN_10003c50`; `FUN_1003a570` prepares
+plain keys or, for selector `E`, converts supported digraphs through the
+pair table at `0x10081568` before TPP lookup. Embedded lookup is used in the
+pronunciation and token-rule helpers, including `FUN_1000c040` and
+`FUN_1000c3a0`. TPP lookup is used by multi-token/name transformation
+callers. Neither family is a literal `.txt2` abbreviation replacement list.
+`FUN_1001d370` separately maps two-byte input sequences. The generic lookup
+and consumer paths are mapped; the complete linguistic interpretation of all
+lexical records is still data-dependent and is not inferred from the table
+membership sets alone.
+
+### Recovered dictionary and phone/context record layouts
+
+`FUN_10003c50` parses a dictionary payload into a bounded working record:
+
+| Offset | Width | Recovered content |
+| --- | ---: | --- |
+| `0x00` | 1 byte | Result type: `E` for payload flag bit 2; `A` for bit 3 (takes precedence if both are set). |
+| `0x01` | 1 byte | Not assigned by the parser. |
+| `0x02`, `0x04`, `0x06`, `0x08` | 4 × u16 | Boolean fields set to 1 from payload bits 6, 4, 5, and 7; higher-level names unknown. |
+| `0x0c` | u32 | Parsed pronunciation alternative/path count. |
+| `0x10` | 5 × 65 bytes | Five fixed-width NUL-terminated pronunciation text slots. |
+| `0x155` | 103 bytes | Alternative path/control records, using 20-byte strides and `0xff` terminators. |
+
+Payload bit 0 selects the direct-ID form: bytes after the flag are
+phone-symbol IDs terminated by NUL; each ID expands through the shared
+five-byte table, and the parser records one alternative. This branch takes
+precedence if bits 0 and 1 are both set. Otherwise, bit 1 selects a repeated
+alternative form. Each alternative has a path/control byte sequence, ASCII
+`|`, then a phone-symbol ID sequence. The path/control bytes are stored after
+subtracting one and end with `0xff`; the phone sequence ends at `0xff` (or the
+record's final NUL). `0xff` separates alternatives. Each phone ID expands
+through the same table into that alternative's fixed-width text slot. The
+parser's local buffers bound this to five alternatives. Bits 2–7 independently
+set the result type and four Boolean metadata words listed above. This
+recovers the full byte grammar and field widths; the compact symbol codebook
+has exact numeric values but its phonetic labels remain unidentified.
+
+Dictionary path bytes that act as symbol IDs are expanded through five-byte
+slots in the runtime table initialized by `FUN_1000ebc0` at `0x100fe900`.
+The parser appends each slot's NUL-terminated compact-symbol sequence to its
+65-byte alternative buffer. The complete 256-slot ID-to-byte mapping is
+listed in the [compact phone-symbol table](phone-symbol-codebook.md); 254
+slots have assigned output bytes. The compact symbols still lack phonetic
+labels.
+
+`FUN_1000d450` writes a token-result record at a `0x554`-byte stride. Offsets
+below are relative to its first argument:
+
+| Offset | Width | Recovered content |
+| --- | ---: | --- |
+| `0x00` | u16 | Number of pronunciation alternatives copied to this record. |
+| `0x02` | u16 | Source token index. |
+| `0x04` | 1 byte | Dictionary result type (`E`, `A`, or zero). |
+| `0x05` | variable | NUL-terminated source or normalized token surface. |
+| `0x23` | 1 byte per path chunk | Alternative-boundary/control markers; `0xff` terminates and `0x64` separates chunks. |
+| `0x37` | Up to 5 × 65 bytes | NUL-terminated model-coded pronunciation slots at `0x41`-byte strides. |
+| `0x54c`–`0x552` | 4 × u16 | Dictionary metadata copied from `FUN_10003c50` offsets `0x02`–`0x08`. |
+
+The control-marker area before the pronunciation slots is 20 bytes wide. The
+`0x17c`–`0x54b` portion of the `0x554`-byte stride is not written by
+`FUN_1000d450`. The builder has one caller, `FUN_1000d190`; the next converter
+`FUN_1000ea20` reads the count, source index, status, surface,
+first/selected-pronunciation slot, marker, and four trailing metadata words.
+The context-rule pipeline then uses the converted `0x70`-byte rows. No field
+reader or writer for this gap was found in the builder-to-context call path.
+It is therefore documented as an unreferenced stride region in this path,
+not as a field or vendor-declared padding. The gap's purpose outside this
+path is unknown.
+
+`FUN_1000d190` reads token pieces from upstream `0x94`-byte records: source
+surface at `+0x34`, context form at `+0x52`, and a character/class byte at
+`+0x24`.
+
+`FUN_1000ea20` converts token-result records into a counted array of
+`0x70`-byte phone/context rows. The array has a u16 count at offset `0x00`,
+two alignment bytes, then rows beginning at offset `0x04`:
+
+| Row offset | Width | Recovered content |
+| --- | ---: | --- |
+| `0x00` | u16 | Rule/processing flags; later rules set bits `0x01`, `0x08`, and `0x40`. |
+| `0x02` | u16 | Source token index. |
+| `0x04`–`0x05` | 2 bytes | Not written by `FUN_1000ea20`; no read was identified in the traced text/context path. |
+| `0x06` | 1 byte | Copied token class/status byte. |
+| `0x07` | Up to 30 bytes | NUL-terminated surface consumed by the text-rule pipeline. |
+| `0x25` | Up to 65 bytes | Pronunciation/context-code buffer; initially copied from the first alternative or selected through context scoring. |
+| `0x66` | 1 byte | Source marker: `X` when the upstream record has class `X`, otherwise ASCII `0`. |
+| `0x67` | 1 byte | Not written by `FUN_1000ea20`; no read was identified in the traced text/context path. |
+| `0x68`–`0x6e` | 4 × u16 | Dictionary metadata copied from token-result offsets `0x54c`–`0x552`. |
+
+For one alternative the converter copies it directly. For several,
+`FUN_100068b0` builds surrounding-phone features, evaluates a shared tree,
+scores candidates, and copies the selected one. `FUN_10007520` then updates
+the surface/code and flags through its normalization rule cascade. These
+layouts and copy paths are recovered; names for all rule flags, code values,
+and metadata words are not.
+
+### Runtime cross-check
+
+Isolated Wine/GDB runs exercised ordinary words, numeric boundaries, dates,
+times, signs, currency, percentages, address abbreviations, and a phone-like
+digit group. Captured token surfaces establish these cases:
+
+| Input form | Captured token surfaces |
+| --- | --- |
+| `0`, `7`, `12`, `42`, `99` | `zero`; `seven`; `twelve`; `forty two`; `ninety nine` |
+| `100`, `105`, `1000`, `999999` | `one hundred`; `one hundred five`; `one thousand`; `nine hundred ninety nine thousand nine hundred ninety nine` |
+| `1234`, `2024` | `twelve thirty four`; `twenty twenty four` |
+| `1000`, `1001`, `1010`, `1100`, `1900`, `1999` | `one thousand`; `one thousand one`; `ten ten`; `eleven hundred`; `nineteen hundred`; `nineteen ninety nine` |
+| `2000`, `2001`, `2005`, `2010`, `2099`, `2100`, `9999` | `two thousand`; `two thousand one`; `two thousand five`; `twenty ten`; `twenty ninety nine`; `twenty one hundred`; `ninety nine ninety nine` |
+| `1009`, `1099`, `1899`, `2009`, `2011`, `2101` | `one thousand nine`; `ten ninety nine`; `eighteen ninety nine`; `two thousand nine`; `twenty eleven`; `twenty one oh one` |
+| `999999999999`, `1000000000000`, `999999999999999`, `1000000000000000` | Correct groups through `nine hundred ninety nine trillion nine hundred ninety nine billion nine hundred ninety nine million nine hundred ninety nine thousand nine hundred ninety nine`; `one trillion`; full groups through `999 trillion`; digitwise `one` plus fifteen `oh` tokens |
+| `007` | `oh oh seven` |
+| `3.14`, `12.05`, `.5`, `1,000.00` | `three point one four`; `twelve point zero five`; `point five`; `one thousand point zero zero` |
+| `01/02/2024` | `January second twenty twenty four` |
+| `3:45 PM` | `three forty five PM` |
+| `555-1234` | `five five five one two three four` |
+| `-12.5`, `+7`, `$5.00`, `25%` | `minus twelve point five`; `plus seven`; `five dollars`; `twenty five percent` |
+
+The helpers divide the cases by syntax. In ordinary (`L`) mode,
+`FUN_1005fa60` and its recursion spell ones/teens, tens plus units, hundreds,
+and recursive thousand, million, billion, and trillion groups; they do not
+insert “and”. `FUN_10061450` removes grouping punctuation before converting
+the integer part. Integer strings of up to 15 digits use magnitude grouping
+through trillions; at 16 or more digits it switches to digit-by-digit
+spelling. Runtime confirmed this fallback for `1,000,000,000,000,000`: the
+leading one is followed by fifteen `oh` tokens. The
+direct helper returns an empty buffer for zero, and the surrounding
+normalizer supplies “zero” for standalone zero. Its ordinary `L` helper
+accepts values through 999,999,999. Larger groups use mode `H` for the leading
+group and `L` for the remaining three-digit groups. Runtime captured correct
+grouping through 999,999,999,999,999, including billion and trillion forms.
+
+`FUN_10060fc0` spells digits individually when the grammar selects a digit
+string. Leading-zero groups use “oh” (`007` → “oh oh seven”).
+`FUN_10060e50` splits on a decimal point and inserts “point”; it selects
+digitwise spelling for a component beginning with zero (`12.05` → “twelve
+point zero five”, `.5` → “point five”). `FUN_10060fc0` calls the year helper
+only for a four-digit all-numeric string whose first digit is nonzero, so a
+three-digit value such as `999` stays in the ordinary numeric path and `0999`
+is digitwise. For the year helper's four-digit range, a zero hundreds digit
+and a final two-digit value below 10 select ordinary cardinal form. If the
+last two digits are `00` and the hundreds digit is nonzero, the helper says
+`(year / 100)` as a cardinal plus “hundred”. All other cases say `(year / 100)`
+as a cardinal, followed by the last two digits; a one-digit remainder is
+spoken as “oh” plus that digit. Runtime confirms `1010` → “ten ten”,
+`1099` → “ten ninety nine”, `1900` → “nineteen hundred”, `2009` → “two
+thousand nine”, `2101` → “twenty one oh one”, and `9999` → “ninety nine
+ninety nine”. Slash dates use month/day/year in the captured cases and
+ordinal day words (`01/02/2024` → “January second twenty twenty four”).
+`FUN_10061450` and its callers add the observed sign, currency, percent, time,
+telephone, and punctuation behavior.
+
+`FUN_10061450` also has a dedicated ordinal path. It recognizes a terminal
+`st`, `nd`, `rd`, or `th`, removes that suffix, converts the remaining digits,
+then selects an ordinal form through `FUN_10060380`; captured date processing
+uses the same ordinal path for the day component. The implementation keeps
+special `zeroth` handling and suffix-sensitive lookup tables, so a generic
+“append `th`” rule would be inaccurate. For dates, the observed slash form is
+month/day/year, with the month named and the day ordinalized. Dates with
+other separators or field order have not been validated. Signs, currency,
+percent, time, and telephone forms each have separate callers/branches; their
+observed examples above should not be generalized to every punctuation
+pattern without another boundary probe.
+
+Runtime abbreviation examples show the context rules are material: `Dr. Paul`
+and `Dr Paul` both yield `doctor`; `dr` can yield `Drive` in an address
+context. `St. Paul` yields `Saint`, while `Main St.`
+yields `Street`; `Apt. 4` yields `Apartment`, while `Apt 4` remains `Apt`;
+`5 p.m.` and `5 pm.` yield `five PM`; `Mr.` yields `mister`, while the
+unabbreviated `Mister` stays `Mister`.
+
+The exact expansion mechanism recovered from the tables and call chain is:
+
+1. `abbrh_sort`, `abbrt_sort`, and `abbrc_sort` perform case-sensitive or
+   case-folded membership lookup according to each row's `1`/`2` tag. Their
+   match results set H/T/C bits on the token. The 427 keys, original cases,
+   and tags are listed in [abbreviation-table-inventory.md](abbreviation-table-inventory.md).
+   They do not contain spoken replacements.
+2. Street and locality alias rows are literal substitutions: the matched
+   alias maps to the canonical string in `streeta_sort` or `citya_sort`;
+   canonical street names are checked against `streetf_sort`. `chc_sort`
+   tests requested character-class bits. `wab` assigns a one-based class
+   index. `sbdw_sort` maps words to the recovered numeric class described
+   above. These are classification/address operations, not general
+   abbreviation expansion.
+3. For phone/context construction, `FUN_10007520` processes each token in a
+   fixed cascade. Under its entry conditions it first tries the
+   one-to-four-component `exceptdict` match (`FUN_10008dc0`); then applies
+   token/class and embedded-dictionary checks; if no rule succeeds, its
+   ordered fallback helpers are `FUN_10009dc0`, `FUN_1000a140`,
+   `FUN_1000b4d0`, `FUN_1000c040`, `FUN_1000b800`, `FUN_1000c3a0`, and
+   `FUN_1000c710`, followed by a final embedded lookup (`FUN_10002f10`).
+   Successful rules may replace the surface-derived pronunciation code,
+   change the rule/status byte, or set processing bits; they do not all
+   rewrite the visible token text.
+4. Before phone construction, TPP lookups apply typed codes to single-token
+   or adjacent-token/name contexts. `FUN_1000e160` searches up to five
+   neighboring tokens for a multi-token match, while `FUN_10034180` handles
+   short name sequences. The TPP record supplies a typed code sequence; the
+   caller and formatter decide which piece is applied. The code letters are
+   not named yet, so the complete decision flow and raw record schema are
+   known, but we cannot safely rename the code values as linguistic rules.
+5. Embedded pronunciation records provide up to five alternatives in the
+   phone-symbol alphabet. Multiple alternatives are selected by contextual
+   feature scoring (`FUN_100068b0`); the actual phone-symbol labels and some
+   context-feature names remain unresolved.
+
+This is the recovered rule order and data flow; it explains why no single
+`abbreviation → spoken words` mapping exists for the H/T/C tables. Runtime
+examples validate key context choices. The code-level cascade is mapped, but
+an output matrix for every table key in every context has not been captured,
+and the TPP code letters still lack names. Those limits concern the corpus's
+linguistic interpretation, not the `.txt2` table shapes or phone-record byte
+grammar.
+
+Three earlier isolated Wine/GDB runs captured 86, 219, and 179 scalar/vector
+decision-tree lookups respectively. The
+feature vectors supplied to the runtime tree evaluators and the returned
+scalar values or complete vectors were compared against all local shared
+dictionary trees, all 27 `atmt` subtrees, and all 17 Paul voice trees. The
+comparator found a unique exact resource match for all 484 lookups: 33 to
+`engbi`, 2 to `poly`, 2 to `sbd`, 145 to 26 distinct `atmt` subtrees, and 302
+to Paul voice trees. There were no unmatched or ambiguous results. This
+cross-check verifies tree traversal and the captured outputs. The new
+record-level captures show the text and phone/context records before tree
+calls. They do not identify the model-coded pronunciation symbols or every
+tree feature's phonetic meaning.
+
+All runs exited normally and produced mono 16 kHz, 16-bit PCM WAVE files:
+
+| Input | WAVE bytes | Frames | Duration |
+| --- | ---: | ---: | ---: |
+| Ordinary sentence | 86,158 | 43,057 | 2.691 s |
+| Time, decimal, and units | 217,246 | 108,601 | 6.788 s |
+| Abbreviations and number-like strings | 233,422 | 116,689 | 7.293 s |
+
+The Stage 5 runtime input and output files were restored from in-run copies
+after each probe. Debugger traces, probe inputs, and generated WAVE files
+remain in the ignored
+`tools/revkit/work/stage5/probes/stage6/` directory. Run the parsers and
+comparator using the commands in [the revkit README](../../tools/revkit/README.md).
+
+### Stage 6 residual semantic questions
+
+- Identify the compact pronunciation-byte names, four dictionary metadata
+  words, and context-rule flag meanings. The full numeric phone-ID table is in
+  [phone-symbol-codebook.md](phone-symbol-codebook.md).
+- Check for readers of token-result stride bytes `0x17c`–`0x54b` outside the
+  traced builder-to-context path; none were found in that path.
+- Assign linguistic names to TPP code atoms `A`–`G` and explain the `AX`
+  marker using additional caller/data evidence; the complete observed raw
+  payload grammar and consumer paths are now documented above.
+- Extend runtime abbreviation probes beyond representative cases if a
+  per-key/context output matrix is needed. The complete H/T/C key inventory
+  and matching rules are documented in
+  [abbreviation-table-inventory.md](abbreviation-table-inventory.md); the
+  tables themselves do not encode spoken replacements.
+- Label the remaining shared-tree features and outputs; runtime equality
+  currently verifies numeric tree evaluation only.
 
 ## Limits of this pass
 
 - Analysis combines static decompilation with controlled Wine runtime traces; the DLL was not executed in a native Windows environment or under a source-level debugger.
-- The large model-loading, pronunciation, prosody, and synthesis helpers remain only partly explained.
+- The `.txt2` transform, all nine row shapes and callsite uses, `exceptdict`
+  framing, indexed hash-record framing, embedded phone-payload grammar, TPP
+  typed-code grammar, live token-result fields, and phone/context row layout
+  are mapped at the byte-offset and callsite level. The token-result stride
+  gap is unreferenced in the traced producer/consumer path. Compact
+  pronunciation labels, TPP code meanings, some internal field meanings, and
+  per-key abbreviation context outputs remain unresolved. Cardinal number,
+  decimal, ordinal, and four-digit year branches are mapped and boundary
+  probed; other sign/currency/percent/time/telephone recognizers have
+  representative outputs but not a complete punctuation/context matrix.
+  Longer integer strings select digitwise spelling. Prosody and synthesis
+  helpers are still only partly explained.
 - The versioned `.idx` span layout and the sample-span/cache relationships in bytes 4–7 and 16–18 are cross-checked for all local 2013 Paul records; selected UPM timing effects are observed at runtime. The 17 Paul duration/pitch trees pass structural parsing and runtime output comparisons. Several feature columns and legacy `.idx` files still need investigation, as does full-corpus PCM parity. This is not a compatible engine replacement.
 - The exact host-to-DLL argument semantics are not fully named; recovered prototypes still have `param_N` placeholders.
 - This pass did not inspect `verify/verification.txt` contents or attempt to bypass the license check.
