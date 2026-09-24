@@ -64,12 +64,12 @@ The decision-tree reader `FUN_100016e0` consumes a 7-byte header:
 | Offset | Width | Meaning established by the reader |
 | --- | ---: | --- |
 | 0 | 2 | Node count, read as a signed 16-bit value |
-| 2 | 1 | Feature-vector width |
+| 2 | 1 | Output-vector width |
 | 3 | 4 | Declared total number of 16-bit entries across all node lists |
 
-Each node is a compact variable-length record. The reader expands it into a 16-byte in-memory node. On disk the fixed fields are a feature selector byte, an operation byte, a 16-bit threshold, a one-byte list length, that many 16-bit list entries, and two 16-bit child/leaf references. This makes the record size `9 + 2 * list_length` bytes. In memory, the list becomes a pointer; the two references occupy offsets 6 and 8, the feature and operation are at offsets 10 and 11, and the threshold is at offset 4. Operation `D` means membership in the node's 16-bit list; the other observed path compares the feature value against the threshold. Negative references terminate the walk and encode a leaf ordinal as `-reference - 1`.
+Each node is a compact variable-length record. The reader expands it into a 16-byte in-memory node. On disk the fixed fields are a feature selector byte, an operation byte, a signed 16-bit threshold, a one-byte list length, that many signed 16-bit list entries, and two signed 16-bit child/leaf references. This makes the record size `9 + 2 * list_length` bytes. In memory, the list becomes a pointer; the two references occupy offsets 6 and 8, the feature and operation are at offsets 10 and 11, and the threshold is at offset 4. Operation `D` means membership in the node's list. Operation `C` compares the selected signed feature value with the threshold. Negative references terminate the walk and encode a leaf ordinal as `-reference - 1`.
 
-After the nodes comes a little-endian 16-bit output table of `feature_width * (node_count + 1)` entries. The loader checks that the sum of node-list lengths matches the 32-bit aggregate count. For example, `duration/caff.tree3` starts `30 00 01 b2 00 00 00`: 48 nodes, width 1, and 178 total list entries. Its first node starts at offset 7 with feature 2, operation `D`, list length 14; the first two list entries are 1 and 2. These conclusions are directly supported by both the parser's reads and the sample bytes. The decision-tree outputs are numeric feature vectors; their higher-level labels (duration, pitch, etc.) come from the calling code and filenames.
+After the nodes comes a little-endian 16-bit output table of `output_width * (node_count + 1)` entries. `FUN_10001670` selects the first value in the reached row; `FUN_100016a0` copies the full row. The loader checks that the sum of node-list lengths matches the 32-bit aggregate count. For example, `duration/caff.tree3` starts `30 00 01 b2 00 00 00`: 48 nodes, output width 1, and 178 total list entries. Its first node starts at offset 7 with feature 2, operation `D`, list length 14; the first two list entries are 1 and 2. These conclusions are directly supported by both the reader and sample bytes. Caller paths establish duration and pitch-related roles; the exact meaning and unit of every numeric output remain unresolved.
 
 ### `mc_idx_tbl/unit-*.idx`
 
@@ -363,10 +363,89 @@ runtime units. It does not explain the remaining 21-byte feature columns,
 legacy index layouts, other VoiceText versions, or all-corpus decoded-sample
 parity. Those remain open.
 
+## Stage 5: `tree3` parser and caller behavior
+
+**Stage 5 checkpoint D: complete for the 17 Paul duration and pitch trees.**
+The standalone read-only parser at `tools/revkit/scripts/tree3.py` validates
+all 17 files. It checks header counts, variable-length node extents, list
+totals, output-table extents, and every child/leaf reference. The tree shape
+is now distinguished from its input record: header byte 2 is the number of
+16-bit values in each output row, while each node's feature byte selects an
+entry in a caller-built input vector.
+
+Across the 17 files, operations are `D` (membership in the node's signed
+16-bit list) and `C` (compare a signed input feature with the signed
+threshold). The evaluator `FUN_100015f0` chooses the first child for a `D`
+match or for a `C` feature value less than or equal to the threshold; it
+chooses the second child otherwise. A nonnegative reference is a node index;
+a negative reference encodes leaf `-reference - 1`. The parser's table has one
+output row for each node plus the final leaf, with one or twelve values per
+row as shown here:
+
+| Group | Tree | Nodes | Output width | Feature selectors | Runtime lookups |
+| --- | --- | ---: | ---: | --- | ---: |
+| Duration | `caff` | 48 | 1 | 0, 1, 2, 4–7 | 4 |
+| Duration | `capp` | 315 | 1 | 0–2, 4–8 | 16 |
+| Duration | `cfri` | 248 | 1 | 0–2, 4–8 | 31 |
+| Duration | `cnas` | 352 | 1 | 0–2, 4–8 | 23 |
+| Duration | `cstop` | 717 | 1 | 0–2, 4–8 | 29 |
+| Duration | `vdi` | 433 | 1 | 0–7 | 20 |
+| Duration | `vlong` | 369 | 1 | 0–7 | 19 |
+| Duration | `vsch` | 101 | 1 | 1–7 | 2 |
+| Duration | `vshort` | 812 | 1 | 0–7 | 27 |
+| Pitch | `bf` | 18 | 12 | 1–3, 6, 9, 11 | 1 |
+| Pitch | `bt` | 22 | 1 | 0–3, 9, 10 | 1 |
+| Pitch | `nbf` | 263 | 12 | 0–11 | 58 |
+| Pitch | `nbt` | 167 | 1 | 0–4, 6–10 | 58 |
+| Pitch | `qbf` | 9 | 12 | 0–3, 9, 11 | 1 |
+| Pitch | `qbt` | 7 | 1 | 0, 1, 9, 10 | 1 |
+| Pitch | `sbf` | 42 | 12 | 0–3, 9–11 | 8 |
+| Pitch | `sbt` | 26 | 1 | 0–3, 9, 10 | 8 |
+
+The loader `FUN_10001050` maps all nine duration files into the synthesis
+state and loads four pitch pairs (`bt/bf`, `nbt/nbf`, `qbt/qbf`, `sbt/sbf`).
+The names and split roles are observed in the loader. The family abbreviations
+do not yet have established phonetic expansions.
+
+`FUN_10013380` performs duration lookups. For each selected phone/context
+record it calls `FUN_100135d0`, which constructs nine short input values from
+the current and neighboring phone classes, attributes, and boundary/position
+state. A category mapping selects one of the nine duration trees, and its
+single 16-bit result is written to per-phone duration metadata. This supports
+the “duration” role from both the path and the consumer. The result's time
+unit and how it is converted into utterance timing remain unknown.
+
+`FUN_100138c0` performs pitch-related lookups. `FUN_10013a20` constructs the
+pitch context values; a family selector chooses one scalar tree and its paired
+12-value tree. The scalar result is stored as one byte in the phone record;
+the 12-value row is copied as 16-bit values. `FUN_100137c0` then consumes the
+12 values as two six-value groups through `FUN_10013790`. The values are used
+in the pitch path, but their physical units and complete acoustic meaning are
+not recovered. The input slots' exact phonetic names also remain partly
+unknown; runtime captures show 12 readable short values at the lookup
+boundary, and tree selectors range as high as 11.
+
+**Runtime cross-check:** across three controlled inputs, GDB captured 307
+calls to `FUN_10001670` and `FUN_100016a0`. The parser reproduced the DLL's
+returned scalar values or full 12-value rows for all calls across all 17 tree
+files. The original phrase was `Hello from the VoiceText Stage 1 runtime
+check.` A varied phrase, `See the blue moon above the quiet house. A quick
+brown fox jumps over a lazy dog. Why should a brave teacher use the new room
+at noon?`, selected the previously unseen `vlong` and `vsch` trees. A second
+phrase, `I see the green light. Are you going now? Why? No! We went to the zoo,
+and they say the sky is blue.`, selected the remaining `bf`, `bt`, `qbf`, and
+`qbt` trees. No mismatch was observed. The individual captures, generated
+WAVs, and comparison helper are in the ignored `tools/revkit/work/stage5/`
+and `tools/revkit/work/scripts/` directories.
+
+This stage does not analyze the four shared `data-common/dict-eng/*.tree3`
+files, expand phone/class abbreviations, assign physical units to outputs, or
+trace downstream timing and prosody decisions. Those remain outside Stage 5.
+
 ## Limits of this pass
 
 - Analysis combines static decompilation with controlled Wine runtime traces; the DLL was not executed in a native Windows environment or under a source-level debugger.
 - The large model-loading, pronunciation, prosody, and synthesis helpers remain only partly explained.
-- The versioned `.idx` span layout and the sample-span/cache relationships in bytes 4–7 and 16–18 are cross-checked for all local 2013 Paul records; selected UPM timing effects are observed at runtime. Several feature columns and legacy `.idx` files still need investigation, as does full-corpus PCM parity. This is not a compatible engine replacement.
+- The versioned `.idx` span layout and the sample-span/cache relationships in bytes 4–7 and 16–18 are cross-checked for all local 2013 Paul records; selected UPM timing effects are observed at runtime. The 17 Paul duration/pitch trees pass structural parsing and runtime output comparisons. Several feature columns and legacy `.idx` files still need investigation, as does full-corpus PCM parity. This is not a compatible engine replacement.
 - The exact host-to-DLL argument semantics are not fully named; recovered prototypes still have `param_N` placeholders.
 - This pass did not inspect `verify/verification.txt` contents or attempt to bypass the license check.
