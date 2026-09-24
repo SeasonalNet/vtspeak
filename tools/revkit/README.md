@@ -66,6 +66,23 @@ python3 tools/revkit/scripts/inspect_unit_idx.py \
   data-paul/M16/mc_idx_tbl/unit-alp.idx
 ```
 
+## Inspect Paul `tree3` files
+
+The read-only parser checks the observed header, node/list records, output
+rows, and child/leaf references. It can also evaluate a caller-supplied signed
+feature vector; use a vector whose entries correspond to the selected tree's
+feature selectors. For example, list the shape of every Paul duration and
+pitch tree from the repository root:
+
+```sh
+python3 tools/revkit/scripts/tree3.py \
+  data-paul/M16/ttsdata/tree3/duration/*.tree3 \
+  data-paul/M16/ttsdata/tree3/pitch/*.tree3
+```
+
+The evaluator is an analysis aid for the observed 2013 package. It does not
+assign phonetic names or physical units to feature slots or output values.
+
 Start a shell with the tools available on `PATH`:
 
 ```sh
