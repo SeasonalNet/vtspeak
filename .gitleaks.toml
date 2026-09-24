@@ -1,0 +1,11 @@
+title = "vtspeak Gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Generated CAPA reports list imported API names that trigger generic-api-key false positives."
+paths = [
+  '''(?:^|/)tools/revkit/work/reports/vt_(?:jam|jul|kat|pau)\.capa\.json$''',
+]
+targetRules = ["generic-api-key"]
