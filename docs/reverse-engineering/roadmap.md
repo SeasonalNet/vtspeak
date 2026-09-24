@@ -51,7 +51,11 @@ Stages 1 through 8 are complete for the documented 2013 M16 Paul package
 scope and support an implementation feasibility decision. Full-corpus parity,
 other voices or package versions, and the upstream meanings of packed
 conversion fields remain separate follow-up work; see the Stage 8 findings for
-their consequences and evidence boundaries.
+their consequences and evidence boundaries, plus the [open-topics review](open-topics-review-2026-09-24.md)
+for dispositions and the next bounded investigations. The DAT `nmean=4`
+question raised in the peer-review follow-up is resolved by the Stage 2
+decompiler and runtime evidence; full-corpus PCM parity remains unverified
+locally.
 
 ## Runtime analysis entry criteria
 

@@ -19,13 +19,17 @@ interpretation. We have not independently verified the meanings of index
 record bytes 4–7 or 16–18, or the reported cross-fade use of the cached UPM
 periods.
 
-## Open `nmean` question
+## Resolution: `nmean=4`
 
-Our current Python prototype in `tools/revkit/scripts/decode_dat.py` uses only
-the immediately previous rounded frame mean for control mode 0. Wag's review
-identifies the profile as `nmean=4`. The exact match on `gen` unit 0 does not
-show whether that record exercises mode 0 after multiple distinct frame means
-have accumulated, so the two observations are not yet reconciled.
+The Stage 2 pass subsequently reconciled this against the decoder pseudocode
+and the broader captured set. The pseudocode at `0x10001c19` sums four
+32-bit history slots, applies signed rounding and output-shift compensation,
+and the shared frame tail shifts in the current rounded, shifted mean. The
+decoder invocation initializes the four slots to zero. The captured checkpoint
+contains 32 DLL calls for 27 unique payloads; every captured PCM output matches
+the prototype byte-for-byte, and the set includes repeated mode-0 frames with
+four-block history. This resolves the profile and the captured behavior for
+the tested cases.
 
 The Shorten reference decoder maintains a history of block means for its
 mode-0 offset ([FFmpeg `shorten.c`](https://ffmpeg.org/doxygen/8.0/shorten_8c_source.html)).
@@ -33,31 +37,29 @@ This is a comparison reference, not proof that VoiceText initializes and
 updates its state identically. The VoiceText implementation should remain the
 authority for this profile.
 
-Could the vtpaul agents clarify the following from their implementation and
-runtime/decompile evidence?
+The following questions motivated the original review. The Stage 2 evidence
+now answers them as follows:
 
-1. What establishes `nmean=4` for these headerless VoiceText payloads: a
-   constant in the decoder, an initialization path, or a corpus inference?
-2. Does mode 0 average the last four block means? How are those four values
-   initialized, rounded, shifted, and updated at each frame boundary? Does the
-   history reset at each unit?
-3. Does the `gen` unit 0 payload used for our exact comparison execute mode 0
-   after the mean history contains distinct, nonzero entries? If so, the exact
-   match may already cover the issue; if not, a capture from a unit that does
-   would distinguish the models.
-4. Is the reported 580,474-unit byte parity against the output buffer of the
-   DAT decoder (`FUN_10001b30`) before UPM/prosody processing? A brief note on
-   the compared boundary would make the result easier for us to line up with
-   our capture.
+1. The four-slot profile is established by the decoder's reads and updates,
+   not inferred from the corpus.
+2. Mode 0 uses the rounded average of the four stored means, with current
+   output-shift compensation; slots initialize to zero and shift at frame
+   boundaries. Decoder state is per invocation/payload.
+3. The 27-payload capture exercises repeated mode-0 frames and matches exact
+   outputs. The checked-in evidence does not separately identify a frame whose
+   prior four means are all distinct and nonzero, so that narrow adversarial
+   state-coverage question remains unproven.
+4. The external 580,474-payload report's exact comparison boundary is not
+   established by this repository's evidence. It remains external corroboration
+   and is not counted as local full-corpus parity.
 
 ## Current interpretation
 
-The exact unit-0 PCM match validates the prototype for that captured payload.
-The cross-bank checks validate output lengths on 16 records. Neither result
-independently validates all predictor-state cases or replaces the separate
-580,474-unit result. We are keeping Stage 2 open until the `nmean` behavior is
-resolved against VoiceText evidence and checked on a payload that exercises
-the relevant mode sequence.
+The four-block mean behavior is resolved to the level supported by the local
+decompiler and 27-payload runtime capture. Full-corpus local PCM parity, mode 8
+runtime coverage, and proof of a distinct-nonzero four-mean state remain
+separate validation questions; they do not reopen the recovered `nmean=4`
+profile.
 
 Our capture files and the standalone decoder remain in the vtspeak workspace.
 The small captured DAT/PCM fixtures and `capture-many.gdb` are tracked under
