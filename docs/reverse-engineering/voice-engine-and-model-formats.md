@@ -246,7 +246,52 @@ Stage 2 is complete for the observed 2013 Paul format and tested decoder
 paths: 27 unique engine-decoded payloads match exact PCM values, and 16
 cross-bank records match expected output lengths. This does not establish
 full-corpus parity, runtime coverage of mode 8, support for other VoiceText
-package versions, or whole-synthesis parity, including prosody changes.
+package versions, or whole-synthesis parity for other inputs and settings,
+including prosody changes.
+
+## Stage 3: decode-to-WAVE boundary check
+
+**Stage 3 runtime checkpoint: complete for the controlled reference input.**
+The 32-bit VoiceText executable and Paul data were run in the existing
+isolated Wine container with the model mounts read-only and networking
+disabled. The 48-byte input was
+`Hello from the VoiceText Stage 1 runtime check.`. The resulting
+`tools/revkit/work/stage3/reference.wav` is an 89,478-byte RIFF/WAVE
+file with PCM format 1, mono, 16,000 samples/second, 16-bit samples, and 44,717
+frames (2.7948125 seconds). Its SHA-256 is
+`3bd8bbfde92f1d645715de40a03a6a68e3acedf0a3361158b869b8a07d803187`.
+
+At `vt_pau.dll` address `0x10026870` (Ghidra pseudocode name
+`FUN_10026870`), the runtime trace captured both calls made from the text-to-
+file worker's synthesis loop. Each call received the same sample-buffer
+pointer and returned to `0x1001ea93`. The returned byte counts were 57,496 and
+31,938; in each call, the returned count matched the context's byte-count
+field at offset `0x30`. Capturing the pointed-to bytes at each return and
+concatenating them produced 89,434 bytes, exactly equal to the WAV `data`
+chunk. The concatenated bytes match byte-for-byte, not just by length. The
+individual captures are retained as
+`tools/revkit/work/stage3/blocks/block-000.pcm` and `block-001.pcm` under the
+ignored work directory.
+
+This cross-check ties the static call sequence to the runtime output: the
+worker prepares text and a WAVE header, repeatedly calls `FUN_10026870` to
+produce sample buffers, and sends the returned sample extents to its file
+writer. The earlier Stage 2 trace used the same input and matched 32 decoded
+`.dat` outputs against the standalone decoder; this Stage 3 trace carries that
+agreement through the post-decode sample boundary to the final WAVE data.
+The complete WAV is also byte-identical to the prior reference run. No decoder
+or synthesis mismatch was observed for this input.
+
+The first attempt to trace this boundary with GDB's `finish` command stopped
+in Wine's `RtlEnterCriticalSection` path before producing a WAV. The retained
+trace instead sets a temporary breakpoint at the observed return address for
+each of the two calls; that run exited normally. This was a debugger-method
+issue, not a VoiceText output mismatch.
+
+This checkpoint does not explain the semantic role of every `.upm` value,
+cover other texts or synthesis settings, prove joins for every possible unit,
+or establish parity across the full voice corpus. Those remain separate
+roadmap work.
 
 ## Limits of this pass
 
