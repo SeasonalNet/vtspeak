@@ -1,4 +1,4 @@
-# VoiceText `vt_pau.dll` static analysis
+# VoiceText `vt_pau.dll` static and runtime analysis
 
 ## What was generated
 
@@ -75,7 +75,7 @@ After the nodes comes a little-endian 16-bit output table of `feature_width * (n
 
 The index reader accepts two layouts. `FUN_10019e80` reads a one-byte length followed by that many bytes. When the payload begins with `ver.` and matches the expected version marker, it records a versioned-header flag and the header extent; otherwise it selects the older layout. All four Paul indexes use the versioned `ver.2013\0VoiceText-Eng\0` header. Each has one bank-name entry (`merged-gen`, `merged-num`, `merged-etc`, or `merged-alp`), a zero tag byte, a 32-bit unit count, and a 16-bit per-unit block stride of 19.
 
-For these files, the complete header and table occupy 45 bytes. `FUN_10019940` then skips `19 * unit_count` bytes and bulk-reads 21 bytes per unit into separate arrays, in this order: one byte, a 7-byte unit signature, one byte, then three groups each containing a 16-bit column and two byte columns. The 19-byte per-unit block is skipped by this loader path; its meaning remains unknown. This predicts a total file length of `45 + 40 * unit_count` bytes. The read-only inspector at `tools/revkit/scripts/inspect_unit_idx.py` applies this layout to all four files. Each calculated length matches the actual file exactly:
+For these files, the complete header and table occupy 45 bytes. `FUN_10019940` then skips `19 * unit_count` bytes and bulk-reads 21 bytes per unit into separate arrays, in this order: one byte, a 7-byte unit signature, one byte, then three groups each containing a 16-bit column and two byte columns. The 19-byte per-unit block is skipped by this loader path; its payload span fields are traced below. This predicts a total file length of `45 + 40 * unit_count` bytes. The read-only inspector at `tools/revkit/scripts/inspect_unit_idx.py` applies this layout to all four files. Each calculated length matches the actual file exactly:
 
 | Index | Units | File size |
 | --- | ---: | ---: |
@@ -88,18 +88,170 @@ The field names above describe widths and order only. Use sites reveal more abou
 
 ### Paired `.dat` and `.upm` unit data
 
-The primary `.dat` read path fetches a selected byte span from a bank, passes it to `FUN_10001b30`, and copies the decoded 16-bit samples into the synthesis buffer. The reader refills a 32-bit bit window from the record, scans a unary zero prefix, then reads a suffix whose width is supplied by the decoder state. `FUN_100020a0` maps the resulting integer to signed residuals by folding even values to nonnegative numbers and odd values to negative numbers. That is a variable-length signed-residual code; the static evidence does not establish that it is a standard named code.
+The primary `.dat` read path fetches a selected byte span from a bank, passes it to `FUN_10001b30`, and copies the decoded 16-bit samples into the synthesis buffer. The reader refills a 32-bit bit window from the record, scans a unary zero prefix, then reads a suffix whose width is supplied by the decoder state. `FUN_100020a0` maps the resulting integer to signed residuals by folding even values to nonnegative numbers and odd values to negative numbers. An independent peer review identifies the complete headerless stream as Shorten with 256-sample blocks, `nmean=4`, and no QLPC. That identification and the reported corpus-wide PCM parity belong to Wag's separate analysis; our direct comparison is documented below.
 
-The decoder's mode handlers reconstruct samples from those residuals using different predictors: one adds to an initial/reference value, another adds to the previous sample, another uses `2 * previous - previous_previous`, and another combines three preceding reconstructed values. Mode 8 initializes the predictor history to zero. This strongly suggests a proprietary predictive waveform codec with variable-length residuals. It is not enough to identify a standard codec, and the reconstruction arithmetic should be checked against real decoded payloads before writing a compatible decoder. The current evidence does not support calling it ADPCM.
+The decoder's mode handlers reconstruct samples from those residuals using different predictors: one adds to an initial/reference value, another adds to the previous sample, another uses `2 * previous - previous_previous`, and another combines three preceding reconstructed values. Mode 8 initializes the predictor history to zero. This is predictive waveform coding; the independent Shorten identification is externally corroborated by the exact runtime comparison below. The current evidence does not support calling it ADPCM.
 
 The `.upm` reader is more concrete: `FUN_1002bbd0` reads a per-unit byte vector through offsets stored in the unit index, widens each byte to a 16-bit value, then shifts it left once. `FUN_1002bc60` converts adjacent vector values into cumulative segment records containing a start position, two endpoint values, and timing/unit parameters; a one-value vector takes a special single-segment path. `FUN_1002afb0` consumes those records while rebuilding the 16-bit sample stream through interpolation tables. This establishes `.upm` as per-unit waveform-adjustment data, while its contour's physical meaning and scale remain unknown. It is not the primary waveform; `.dat` supplies the waveform samples. The names “DAT” and “UPM” are extension labels only; no vendor format documentation was found in the inspected package.
 
-These are static-reader findings. No model files were changed, the DLL was not run under a debugger, and the verification/license data was not opened or altered. Exact candidate-feature semantics and validation of the `.dat` reconstruction against sample payloads remain open.
+## Stage 1: unit-to-payload span mapping
+
+The versioned unit-index file contains a 19-byte-per-unit block immediately
+after its header and before the 21-byte feature-column arrays. `FUN_10019940`
+at `0x10019940` skips the block while loading feature columns. The per-unit
+path `FUN_1001b0d0` at `0x1001b0d0` instead reads a 19-byte record and copies
+its fields into a 24-byte descriptor. `FUN_1002c120` at `0x1002c120` then
+derives the selected unit's DAT and UPM read parameters from that descriptor.
+
+The 19-byte records have this payload span layout in all four Paul indexes.
+The integer fields are little-endian:
+
+| Record offset | Width | Field | Evidence |
+| ---: | ---: | --- | --- |
+| 0 | 4 | `.dat` offset | Used by the DAT reader and confirmed by runtime seeks. |
+| 4 | 2 | Unnamed value | Retained without semantic assignment. |
+| 6 | 2 | Unnamed value | Retained without semantic assignment. |
+| 8 | 2 | `.dat` span length | Used by the DAT reader; offset plus length reaches the next record or EOF. |
+| 10 | 4 | `.upm` offset | Base offset for the unit's combined UPM span. |
+| 14 | 1 | First UPM count | Used alone for the first side or in the combined span. |
+| 15 | 1 | Second UPM count | Used alone for the second side or in the combined span. |
+| 16 | 3 | Unnamed bytes | Retained without semantic assignment. |
+
+`FUN_1002c120` chooses one of three UPM views. For the first side, it reads
+`first_count` bytes at the base offset. For the second side, it reads
+`second_count` bytes at `base + first_count - 1`. For the combined view, it
+reads `first_count + second_count - 1` bytes at the base offset. The two sides
+share one byte. `FUN_1002bbd0` passes the selected count to `FUN_10025440`
+with element size 1; `FUN_100254a0` at `0x100254a0` multiplies element size by
+count for the underlying read. This explains why a record containing counts 9
+and 10 causes an 18-byte read.
+
+The read-only inspector `tools/revkit/scripts/inspect_unit_idx.py` accepts
+`--data-dir data-paul/M16/dat` and checks these spans across all banks. On the
+current local assets, both DAT and combined UPM spans begin at zero, meet the
+next record exactly, stay in bounds, and end at their matching file's EOF.
+
+| Bank | Units | `.dat` bytes | `.upm` bytes | DAT joins / expected | UPM joins / expected | Both end at EOF |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| `gen` | 440,124 | 346,591,252 | 5,233,535 | 440,123 / 440,123 | 440,123 / 440,123 | Yes |
+| `num` | 24,508 | 21,377,616 | 326,283 | 24,507 / 24,507 | 24,507 / 24,507 | Yes |
+| `etc` | 115,723 | 102,844,328 | 1,579,302 | 115,722 / 115,722 | 115,722 / 115,722 | Yes |
+| `alp` | 119 | 160,620 | 2,261 | 118 / 118 | 118 / 118 | Yes |
+
+**Runtime checkpoint A: complete for representative units.** In a disposable 32-bit Wine 9.0 container,
+the console harness synthesized `Hello from the VoiceText Stage 1 runtime
+check.` to an 88 KB WAV. The model files were mounted read-only. A combined
+Wine API relay and `strace -yy` trace tied file handles to the paths and
+captured on-demand 19-byte reads from `unit-gen.idx`, then seeks and reads from
+`merged-gen.dat` and `merged-gen.upm`.
+
+For example, the 19-byte record at index-file offset `0x006776c5` contains
+DAT offset `0x10ddf37c`, DAT length `0x0310`, UPM base `0x0041a461`, and UPM
+counts 7 and 7. Runtime calls read `0x0310` DAT bytes, then read 7 UPM bytes
+at `0x0041a461` and another 7 at `0x0041a467`, sharing one byte. The combined
+UPM span is 13 bytes, ending exactly at the next record's offset
+`0x0041a46e`. The record at index offset `0x0064e7dd` has counts 9 and 10;
+the DLL reads the expected combined 18-byte UPM span at `0x00402bda`. Its DAT
+offset and length, `0x10757750` and `0x0434`, also match the runtime seek/read.
+These runs cross-check both split and combined UPM views against raw records.
+
+The separately supplied VoiceText working notes agree on the DAT offset and
+coded-size fields, but treat only record byte 14 as the UPM length and therefore
+report gaps in the UPM banks. The runtime reader also uses byte 15. Including
+both counts yields exact UPM coverage in all four banks, so those reported gaps
+come from an incomplete span formula. Other proposed labels in those notes,
+including pitch-mark and prosody meanings, still need their own checks.
+
+A separate `A. B. C.` runtime attempt loaded the `alp` index and payload paths
+but did not cause a unit-level `merged-alp.dat` or `.upm` read. The alphabet
+bank's complete span partition is therefore established structurally; this
+runtime corpus only selected `gen` units.
+
+The DLL was run under Wine for this behavior check, not under a native Windows
+debugger. No model files were changed, and verification/license data was not
+opened or altered. Exact candidate-feature semantics and DAT sample-value
+validation remained open at the end of Stage 1; see Stage 2 below.
+
+## Stage 2: `.dat` decoding
+
+The standalone experimental decoder in `tools/revkit/scripts/decode_dat.py`
+implements the statically recovered MSB-first unary-plus-remainder reader,
+signed residual fold, control values, predictors, frame mean/history updates,
+output shift, and final 16-bit sample conversion. It is a clean-room analysis
+tool and does not include or modify vendor code or voice assets.
+
+The key state and control behavior recovered from `FUN_10001b30` and its
+handlers is:
+
+| Code | Behavior |
+| ---: | --- |
+| 0 | Decode residuals with the mean-history offset as the predictor seed. Four frame means are kept and averaged. |
+| 1 | Predict from the previous reconstructed sample. |
+| 2 | Predict `2 * previous - previous_previous`. |
+| 3 | Predict `3 * (previous - previous_previous) + previous_previous_previous`. |
+| 4 | End this unit's coded stream. |
+| 5 | Read a Rice-coded width, then read the next frame's sample count using that width. |
+| 6 | Read and set the output left shift. |
+| 8 | Emit a frame of zero samples. |
+
+The initial frame length is 256 samples; residual width and output shift start
+at zero, and predictor history starts at zero. Codes 0–3 each read a residual
+width and then Rice-coded residual values; the even/odd fold maps `v` to `v/2`
+when even and `-(v+1)/2` when odd. The control reader is MSB-first, with a
+unary zero quotient terminated by one and a fixed-width remainder. At each
+frame boundary the engine updates mean and three-sample history state. Output
+samples are left-shifted, positive-clamped to 32767, and stored as 16-bit
+values. Record extent bounds the bitstream; control code 4 ends the decoded
+samples before any trailing byte padding.
+
+The `nmean=4` profile is also visible in the DLL's mode handlers. At
+`0x10001c19`, the decoder sums four 32-bit mean-history slots, applies signed
+rounding, and adjusts for the active output shift before dispatching the
+frame. The mode handlers shift the four-entry history and store the current
+rounded, shifted frame mean. The decoder initializes this history to zero.
+Predictor modes 1–3 read up to three prior samples, drawing from the current
+frame and a three-sample tail saved from the prior frame. `decode_dat.py`
+models both histories.
+
+**Runtime checkpoint B: selected-sample parity observed across predictor
+modes.** In one isolated Wine/GDB run, a breakpoint at `FUN_10001b30`
+(`vt_pau.dll` address `0x10001b30`) captured 32 decoder calls. They correspond
+to 27 unique `gen` payloads in the controlled `Hello from the VoiceText Stage
+1 runtime check.` synthesis. All 32 captured PCM buffers match the standalone
+decoder byte-for-byte. The set exercises predictor modes 0, 1, 2, and 3,
+including repeated mode-0 frames with a four-block mean history. Mode 8 did
+not occur in this corpus. The raw captures and `capture-many.gdb` are retained
+under the ignored `tools/revkit/work/stage2-copy/` directory.
+
+As a separate structural check, the decoder was run on the first, second,
+middle, and last unit in each of `gen`, `num`, `etc`, and `alp`. All 16 decoded
+sample counts equal twice the sum of the corresponding combined UPM period
+vector, using the shared-boundary formula `first_count + second_count - 1`.
+This checks stream termination and decoded lengths across banks, but does not
+establish sample-value parity for those 15 other units.
+
+Wag's peer review independently identifies the headerless mono Shorten
+profile as block size 256, `nmean=4`, and no QLPC. Its report of exact PCM for
+all 580,474 payloads remains external corroboration; we have not rerun the
+full-corpus check in this repository.
+The review also extends the index interpretation: record bytes 4 and 6 are
+first- and second-half sample lengths, bytes 16–18 cache first, shared middle,
+and last UPM periods, and UPM values are 8 kHz pitch-period lengths (doubled
+for the 16 kHz waveform). Wag's review reports those cached periods are used
+for cross-fade edge overlap. These additional semantics come from the
+independent review and remain to be checked against our own targeted runtime
+captures.
+
+Stage 2 is complete for the observed 2013 Paul format and tested decoder
+paths: 27 unique engine-decoded payloads match exact PCM values, and 16
+cross-bank records match expected output lengths. This does not establish
+full-corpus parity, runtime coverage of mode 8, support for other VoiceText
+package versions, or whole-synthesis parity, including prosody changes.
 
 ## Limits of this pass
 
-- Static analysis only; the DLL was not executed under tracing or emulation during this pass.
+- Analysis combines static decompilation with controlled Wine runtime traces; the DLL was not executed in a native Windows environment or under a source-level debugger.
 - The large model-loading, pronunciation, prosody, and synthesis helpers remain only partly explained.
-- The versioned `.idx` byte layout is confirmed, but its skipped 19-byte blocks and several column meanings are unknown; legacy `.idx` files need a separate sample. `.upm` contour semantics and validation of `.dat` reconstruction against actual payloads remain open. This is not yet a clean-room parser.
+- The versioned `.idx` span layout is cross-checked. Wag's review proposes meanings for bytes 4–7 and 16–18, but we have not independently verified those field semantics; several feature columns and legacy `.idx` files still need investigation. Full-corpus PCM parity and `.upm` timing effects remain follow-ups. This is not a compatible engine replacement.
 - The exact host-to-DLL argument semantics are not fully named; recovered prototypes still have `param_N` placeholders.
 - This pass did not inspect `verify/verification.txt` contents or attempt to bypass the license check.

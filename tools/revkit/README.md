@@ -51,12 +51,15 @@ docker compose run --rm --entrypoint strings revtools -a /samples/vt_pau.dll
 ## Inspect the versioned unit-index layout
 
 The read-only inspector checks the `ver.2013` header, bank names, unit count,
-opaque per-unit block stride, and packed-column extents. It does not assign
-semantic names to fields whose use has not been traced yet. From the repository
-root, run:
+19-byte record stride, and packed-column extents. With `--data-dir`, it also
+checks that DAT and UPM record spans partition their matching files through
+EOF. The UPM span length is the sum of the two stored counts minus one; the
+two runtime views share a byte. Fields whose use has not been traced remain
+unnamed. From the repository root, run:
 
 ```sh
 python3 tools/revkit/scripts/inspect_unit_idx.py \
+  --data-dir data-paul/M16/dat \
   data-paul/M16/mc_idx_tbl/unit-gen.idx \
   data-paul/M16/mc_idx_tbl/unit-num.idx \
   data-paul/M16/mc_idx_tbl/unit-etc.idx \

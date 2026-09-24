@@ -2,7 +2,7 @@
 
 `vtspeak` is a research and reimplementation workspace for understanding the legacy VoiceText text-to-speech engine and its voice data.
 
-- The current work focuses on static analysis of the Windows executable and DLLs, the model file readers, and the synthesis path.
+- The current work combines static analysis of the Windows executable and DLLs with controlled runtime traces of the model readers and synthesis path.
 - A native POSIX reimplementation is the ultimate goal; this repository does not provide one yet.
 
 ## Repository map
