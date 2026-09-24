@@ -5,6 +5,7 @@
 - [VoiceText reverse-engineering roadmap](reverse-engineering/roadmap.md)
 - [Follow-up peer review for the vtpaul agents](reverse-engineering/wag-peer-review-followup-2026-09-23.md)
 - [Open reverse-engineering topics review (2026-09-24)](reverse-engineering/open-topics-review-2026-09-24.md)
+- [Follow-up investigation leads (2026-09-24)](reverse-engineering/follow-up-investigation-leads-2026-09-24.md)
 - [Local DAT corpus parity and additional synthesis boundaries (2026-09-24)](reverse-engineering/dat-corpus-parity-and-stage9-2026-09-24.md)
 - [Abbreviation context contrasts (2026-09-24)](reverse-engineering/abbreviation-context-contrasts-2026-09-24.md)
 - [Compact phone ID and CMU byte codebook](reverse-engineering/phone-symbol-codebook.md)
