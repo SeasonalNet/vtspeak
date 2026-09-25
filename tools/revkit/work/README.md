@@ -13,7 +13,7 @@ documented results.
 - `scripts/` contains analysis helpers used by the research workflow.
 - `stage2-copy/` contains small DAT payload excerpts, their captured PCM
   outputs, and the GDB capture scripts/logs used for decoder comparisons.
-- `stage3/` through `stage12/` contain the controlled text inputs, trace
+- `stage3/` through `stage16/` contain the controlled text inputs, trace
   scripts/logs, PCM buffers, WAVE outputs, and comparison evidence cited in the
   stage findings. `stage5/probes/stage6/` holds the captured tree lookups used
   by the checked-in comparison helper.
@@ -36,8 +36,8 @@ state, or complete local copies of proprietary inputs:
   syscall traces.
 - `stage2-copy/wineprefix/` and its cache/config directories: Wine runtime
   state.
-- The repository's `binary/`, `data-common/`, and `data-paul/` source inputs
-  remain outside Git as before.
+- The repository's `binary/`, `data-common/`, and per-voice `data-*` source
+  inputs remain outside Git as before.
 
 ## Offline checks
 
@@ -177,6 +177,22 @@ CMU alphabetical identity ordinals and five consonant onset-tree groups:
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/work/scripts/analyze_stage10_tree_features.py
 ```
+
+Stage 13 adds a host-side Intel PT collector for a single existing Stage 12
+Wine probe. See [`stage13/README.md`](stage13/README.md) for prerequisites,
+the gated attach sequence, and trace decoding. It leaves the runtime container's
+non-root and capability-dropped settings unchanged.
+
+Stage 14 contains the selected-key Lead 4 pilot; Stage 15 captures context,
+punctuation, and case contrasts for all 427 H/T/C abbreviation keys. See
+[`stage15/README.md`](stage15/README.md) and the curated
+[Lead 4 results](../../../docs/reverse-engineering/lead4-abbreviation-context-results-2026-09-25.md).
+
+Stage 16 probes file and buffer synthesis modes, selected errors,
+`VT_GetTTSInfo_ENG`, configuration setters/getters, selected playback calls,
+and the synchronous buffer length contract. See [`stage16/README.md`](stage16/README.md)
+for the runners and [Lead 6 results](../../../docs/reverse-engineering/lead6-file-api-behavior-2026-09-25.md)
+for the captured behavior and limits.
 
 The helper in
 `tools/revkit/scripts/compare_tree3_runtime.py` rechecks Stage 5 lookup logs

@@ -1,9 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-work=/work/stage5
+work=${VTSPEAK_WORK_DIR:-/work/stage5}
 probe=/work/stage12
-scratch=/work/corpus-parity
+capture_dir=${VTSPEAK_CAPTURE_DIR:-$probe}
+scratch=${VTSPEAK_SCRATCH_DIR:-/work/corpus-parity}
 xpid=
 mode=${1:?usage: run-effects.sh control|effects-control|numeric-zero|numeric-83-zero|numeric-74-zero|numeric-swap|numeric-83-to95|numeric-consumers|numeric-consumers83|candidate-path-control|candidate-path-83-zero|acoustic-control|acoustic-83-zero|category-override|place-calls|place-calls-ax-zero|place-calls-ax-miss|place-gate-first-d|place-gate-second-d|place-gate-first-d-bit1|marker-producer|ax-one|ax-all-zero|ax-all-one|ax-all-miss fixture...}
 shift
@@ -37,7 +38,8 @@ case "$mode" in
   *) printf 'unknown mode: %s\n' "$mode" >&2; exit 2 ;;
 esac
 
-mkdir -p "$scratch"
+mkdir -p "$scratch" "$capture_dir"
+cd "$work"
 cp "$work/input1.txt" "$scratch/stage12-effects-original-input1.txt"
 cp "$work/output.wav" "$scratch/stage12-effects-original-output.wav"
 restore() {
@@ -49,7 +51,7 @@ restore() {
 }
 trap restore EXIT
 
-Xvfb :99 -screen 0 1280x1024x24 -nolisten tcp > "$probe/effects-xvfb.log" 2>&1 &
+Xvfb :99 -screen 0 1280x1024x24 -nolisten tcp > "$capture_dir/effects-xvfb.log" 2>&1 &
 xpid=$!
 export DISPLAY=:99
 sleep 1
@@ -58,6 +60,6 @@ for input in "$@"; do
   cp "$probe/inputs/$input.txt" "$work/input1.txt"
   WINEPREFIX=/work/stage2-copy/wineprefix WINEDEBUG=-all timeout 180s \
     winedbg --gdb /samples/voicetext_paul.exe \
-    < "$trace" > "$probe/$input-effect-$mode.log" 2>&1
-  cp "$work/output.wav" "$probe/$input-effect-$mode.wav"
+    < "$trace" > "$capture_dir/$input-effect-$mode.log" 2>&1
+  cp "$work/output.wav" "$capture_dir/$input-effect-$mode.wav"
 done

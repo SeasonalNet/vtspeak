@@ -1,0 +1,30 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  set $speaker = *(int *)($esp + 16)
+  set $pitch = *(int *)($esp + 20)
+  set $speed = *(int *)($esp + 24)
+  set $volume = *(int *)($esp + 28)
+  set $pause = *(int *)($esp + 32)
+  set $dict = *(int *)($esp + 36)
+  set $texttype = *(int *)($esp + 40)
+  disable 1
+  set $buffer = (char *)malloc(1048576)
+  set $length = (int *)malloc(4)
+  set *$length = 1048576
+  printf "BUFFER_ALLOC output=%#x length_ptr=%#x\n", $buffer, $length
+  set $result = ((int (*)(int, char *, char *, int *, int, int, int, int, int, int, int, int, int))0x1001dc40)(@FORMAT@, (char *)$text, $buffer, $length, @FLAG@, @THREAD@, $speaker, $pitch, $speed, $volume, $pause, $dict, $texttype)
+  printf "BUFFER_RETURN fmt=@FORMAT@ flag=@FLAG@ thread=@THREAD@ result=%d output_len=%d\n", $result, *$length
+  if ($result == 1) && (*$length > 0) && (*$length <= 1048576)
+    dump binary memory /work/stage16/buffer-@FORMAT@-@FLAG@-@THREAD@.bin $buffer $buffer+*$length
+  end
+  continue
+end
+
+continue

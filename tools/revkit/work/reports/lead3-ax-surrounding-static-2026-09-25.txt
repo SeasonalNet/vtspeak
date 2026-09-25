@@ -1,0 +1,130 @@
+# Lead 3 AX surrounding static analysis (2026-09-25)
+
+These are Ghidra decompiler pseudocode observations from the existing
+`VoiceText` project for the local `vt_pau.dll`, plus a raw `objdump` check of
+the same PE32 code. The pseudocode is approximate and is not original source.
+
+## Follow-on routine
+
+`FUN_10033b60` is already decompiled in `stage6-phone-record-consumers.txt`.
+It compares candidate token sequences with static pattern strings and invokes
+`FUN_10034180`. On a nonzero low-word result it calls `FUN_10034110` before
+returning a match or passing the candidate onward to `FUN_10053920`.
+
+Ghidra's pseudocode for the newly inspected follow-on:
+
+```c
+undefined4 __cdecl FUN_10034110(short *param_1)
+{
+  int *piVar1;
+  int *in_EAX;
+  uint uVar2;
+  int iVar3;
+  int *piVar4;
+
+  iVar3 = 0;
+  piVar1 = *(int **)(param_1 + 0x1cf2);
+  if (0 < *piVar1) {
+    piVar4 = piVar1 + 3;
+    do {
+      uVar2 = FUN_100451e0(param_1, (char *)((int)piVar4 + 0x3a), *piVar4,
+                           piVar4[1], 0x41, 0x44, 0x12);
+      if ((short)uVar2 == 0) {
+        return uVar2 & 0xffff0000;
+      }
+      iVar3 = iVar3 + 1;
+      piVar4 = piVar4 + 0x50;
+      param_1[*param_1 * 0x4a + -0x31] = 0x1f;
+      in_EAX = piVar1;
+    } while (iVar3 < *piVar1);
+  }
+  return CONCAT22((short)((uint)in_EAX >> 0x10), 1);
+}
+```
+
+`FUN_100451e0` sends a string without spaces or tabs directly to
+`FUN_10044fd0`; otherwise it splits the string at spaces, tabs, and NUL, and
+calls `FUN_10044fd0` on each part with the same remaining arguments. The
+meaning of the `0x41`, `0x44`, and `0x12` arguments is not established here.
+
+## Payload-use boundary
+
+The call chain gives `FUN_10034110` the context pointer only. It does not pass
+the return buffer or the `A0`/`A1`/`AX` byte from `FUN_10034180`. In
+`FUN_10034180`, the one-component branch tests the low-word lookup status and
+then reads only the token marker at component offset `+0x1a`; it does not read
+the local lookup-result buffer. The raw instructions at `0x10034237`–
+`0x1003424c` show `test ax,ax`, the component-count branch, and the marker
+comparisons against `0x64` (`d`) and `0x41` (`A`). The multi-component branch
+at `0x10034267` does read the returned component bytes and compares them with
+literal `0` before checking the token marker.
+
+Thus the added caller context strengthens the existing inference that, on
+this single-component path, the lookup hit selects the downstream path while
+the payload value itself is not consumed. It provides no explanation for why
+the corpus stores `AX` instead of `A0` or `A1`.
+
+## Direct code references
+
+The existing Ghidra reference scan reports:
+
+```text
+1003422f FUN_10034180 called by FUN_10033b60 @ 10033b60
+1003404d FUN_10034110 called by FUN_10033b60 @ 10033b60
+100337a8 FUN_10033b60 called by FUN_10033760 @ 10033760
+100444b9 FUN_10033b60 called by FUN_10043810 @ 10043810
+```
+
+These are direct static references in the analyzed DLL, not a guarantee
+against runtime-generated calls or callers outside the image.
+
+## Reproduction
+
+From `tools/revkit/` with the existing local `work/projects/VoiceText` project
+and vendor inputs:
+
+```sh
+docker compose run --rm --entrypoint /opt/ghidra/support/analyzeHeadless revtools \
+  /work/projects VoiceText -process vt_pau.dll -noanalysis \
+  -scriptPath /work/scripts \
+  -postScript DecompileNamedFunctions.java 0x10034110 0x100451e0 \
+  -postScript FindReferenceFunctions.java \
+  0x10034180 0x10034110 0x10033b60
+```
+
+The raw instruction window is reproducible from the repository root with:
+
+```sh
+objdump -d -Mintel --start-address=0x10034110 --stop-address=0x10034180 \
+  binary/vt_pau.dll
+objdump -d -Mintel --start-address=0x10034180 --stop-address=0x10034300 \
+  binary/vt_pau.dll
+```
+
+## Candidate-pattern context
+
+The immediate caller `FUN_10033b60` constructs a short pattern string while it
+collects candidate token surfaces. The byte sequence at `.data` VMA
+`0x10080054` is a five-entry pointer table (`objdump -s`); its targets decode
+as `N`, `NN`, `NNN`, `NNNN`, and `NNNNN`. At `0x10033f9d` onward, the routine
+compares a candidate pattern against those strings before calling
+`FUN_10034180` with the candidate start index. The literal `N` is preserved
+without assigning a linguistic or part-of-speech label.
+
+`FUN_10034180` joins the selected token surfaces with hyphens, selects the
+corresponding A-through-D lookup for one through four components, and accepts
+a lookup hit subject to subsequent token and context checks. (Its count guard
+skips the five-component selector.) In the single-component case, the payload
+byte is not read. This places `AX` in a short-sequence candidate lookup used by
+the engine's proper-name path; it supports a presence/list-membership role for
+the key, not a pronunciation role for `X`. The code and corpus do not establish
+why these 25 locality keys were chosen for that list or why the unused payload
+was encoded as `X`.
+
+Raw instructions and referenced string data can be rechecked with:
+
+```sh
+objdump -s --start-address=0x10080054 --stop-address=0x10080090 binary/vt_pau.dll
+objdump -d -Mintel --start-address=0x10033b60 --stop-address=0x10034040 binary/vt_pau.dll
+```
+```
