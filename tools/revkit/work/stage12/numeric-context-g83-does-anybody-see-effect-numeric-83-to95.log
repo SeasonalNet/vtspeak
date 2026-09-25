@@ -1,0 +1,108 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1000e0c0
+Wine-gdb> >>>>>>> > > > >  >  >  >   >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10007520
+Wine-gdb> >>>>>>> > > > > > > >>> > > >  >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+EFFECT_UPSTREAM row=0 source=0 code25=0 class26=0 surface=0x14e1500:	"Does"
+EFFECT_UPSTREAM row=1 source=1 code25=0 class26=0 surface=
+0x14e1594:	"anybody"
+EFFECT_UPSTREAM row=2 source=2 code25=0 class26=0 surface=0x14e1628:	"see"
+EFFECT_UPSTREAM row=3 source=2 code25=0 class26=0 surface=0x14e1628:	"see"
+Temporary breakpoint 4 at 0x1000e365
+EFFECT_ROW index=0 source=0 flags=0x1 surface=0x16f057d:	"Does"
+EFFECT_ROW_CODE index=0 bytes:
+0x16f059b:	0x15	0x08	0x44	0x00	0x00	0x00	0x00	0x00
+0x16f05a3:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+EFFECT_ROW index=1 source=1 flags=0x1 surface=0x16f05ed:	"anybody"
+EFFECT_ROW_CODE index=1 bytes:
+0x16f060b:	0x18	0x2d	0x26	0x63	0x13	0x09	0x15	0x26
+0x16f0613:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+EFFECT_ROW index=2 source=2 flags=0x50 surface=0x16f065d:	"see"
+EFFECT_ROW_CODE index=2 bytes:
+0x16f067b:	0x37	0x27	0x00	0x00	0x00	0x00	0x00	0x00
+0x16f0683:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+EFFECT_ROW index=3 source=2 flags=0 surface=0x16f06cd:	"?"
+EFFECT_ROW_CODE index=3 bytes:
+0x16f06eb:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x16f06f3:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+TPP_NUMERIC_SWAP original=83 replacement=95 code=83 first=1 last=0
+Temporary breakpoint 5 at 0x1000e06c
+EFFECT_SELECTED_UNIT id=399212
+EFFECT_SELECTED_UNIT id=399213
+EFFECT_SELECTED_UNIT id=117060
+EFFECT_SELECTED_UNIT id=42414
+EFFECT_SELECTED_UNIT id=42415
+EFFECT_SELECTED_UNIT id=42416
+EFFECT_SELECTED_UNIT id=42417
+EFFECT_SELECTED_UNIT id=42418
+EFFECT_SELECTED_UNIT id=42419
+EFFECT_SELECTED_UNIT id=265057
+EFFECT_SELECTED_UNIT id=265057
+EFFECT_SELECTED_UNIT id=448309
+EFFECT_SELECTED_UNIT id=539193
+EFFECT_SELECTED_UNIT id=539193
+EFFECT_SELECTED_UNIT id=117059
+EFFECT_SELECTED_UNIT id=399214
+EFFECT_SELECTED_UNIT id=42413
+EFFECT_SELECTED_UNIT id=117061
+EFFECT_SELECTED_UNIT id=265056
+EFFECT_SELECTED_UNIT id=42420
+EFFECT_SELECTED_UNIT id=448308
+EFFECT_SELECTED_UNIT id=265058
+EFFECT_SELECTED_UNIT id=539192
+EFFECT_SELECTED_UNIT id=448310
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0180:0184: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0180:0184: create thread I @004014C0
+0180:0184: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0180:0184: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0180:0184: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0180:0184: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0180:0184: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0180:0184: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0180:0184: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0180:0184: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0180:0184: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0180:0184: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0180:0184: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0180:0184: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0180:0184: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0180:0184: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0180:0184: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0180:0184: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0180:0184: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0180:0184: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0180:0184: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0180:0184: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0180:0184: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0180:0184: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0180:0184: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000180:00000184: unload DLL @009C0000
+0180:0184: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000180:00000184: unload DLL @009C0000
+0180:0184: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0180:0184: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0180:0184: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000180:00000184: exit process (0)

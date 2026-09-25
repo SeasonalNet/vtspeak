@@ -1,0 +1,126 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10019570
+Wine-gdb> >>>>>> > >> > >> > >> > >> > >> > >> > >> > > > > > > > > >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002df50
+Wine-gdb> >> > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023c70
+Wine-gdb> >>>>>>> > >> > >> > >> > > > > > > >  >  >  >  >  >  >  >  >   >   >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	57	7	65	7	97	0
+Temporary breakpoint 4 at 0x10023ea4
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	4	0	57	40	57
+0x667554:	1	3
+HALF_QUERY_RETURN half=1 range_words=0x667584:	21754776	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	57	7	65	7	97	0
+Temporary breakpoint 5 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	4	0	57	40	57
+0x667554:	1	3
+HALF_QUERY_RETURN half=1 range_words=0x667584:	21754776	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	57	7	65	7	97	0
+Temporary breakpoint 6 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	4	0	57	40	57
+0x667554:	1	3
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23322304	8
+Temporary breakpoint 7 at 0x10023efd
+HALF_CANDIDATES half=1 label=
+0x6675e4:	90	57	7	65	7	97	0
+ count=8 ids=48716(3) 48705(12) 48694(1) 48664(13) 48656(4) 48675(2) 48728(3) 
+48686(2) total_units=40
+Temporary breakpoint 8 at 0x1002441f
+HALF_CANDIDATES half=1 label=
+0x2ae0759:	90	57	7	65	7	97	0
+ count=30 ids=48656(4) 48675(2) 48664(13) 48705(12) 48694(1) 48716(3) 48686(2) 
+48728(3) 48741(8) 48740(3) 48742(22) 48690(1) 48710(22) 48663(120) 48673(12) 
+48660(3) 48658(1) 48654(12) 48655(10) 48657(3) 48674(32) 48754(12) 48753(1) 
+48707(1) 48748(1) 48736(2) 48722(1) 48669(1) 48671(2) 48721(1) total_units=311
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	57	7	65	7	97	0
+Temporary breakpoint 9 at 0x10023ea4
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	3	0	65	10	65
+0x667554:	4	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23318244	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	57	7	65	7	97	0
+Temporary breakpoint 10 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	3	0	65	10	65
+0x667554:	4	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23318244	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	57	7	65	7	97	0
+Temporary breakpoint 11 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	3	0	65	10	65
+0x667554:	4	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23563428	28
+Temporary breakpoint 12 at 0x10023efd
+HALF_CANDIDATES half=2 label=
+0x6675e4:	90	57	7	65	7	97	0
+ count=10 ids=48741(8) 21977(1) 11922(7) 29326(8) 50037(6) 44736(17) 23716(1) 
+56461(12) 52755(2) 57110(5) total_units=67
+Temporary breakpoint 13 at 0x1002441f
+HALF_CANDIDATES half=2 label=
+0x2ae0759:	90	57	7	65	7	97	0
+ count=30 ids=48741(8) 29326(8) 50037(6) 21977(1) 44736(17) 11922(7) 57803(19) 
+9862(3) 56461(12) 52755(2) 59671(70) 57110(5) 55092(1) 60192(1) 60194(25) 
+13062(27) 55086(49) 13060(1) 23716(1) 44733(6) 42914(1) 30724(1) 48740(3) 
+39209(2) 25118(1) 32918(3) 17528(10) 55085(1) 13059(1) 29325(1) total_units=293
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0184:0188: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0184:0188: create thread I @004014C0
+0184:0188: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0184:0188: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0184:0188: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0184:0188: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0184:0188: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0184:0188: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0184:0188: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0184:0188: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0184:0188: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0184:0188: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0184:0188: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0184:0188: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0184:0188: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0184:0188: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0184:0188: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0184:0188: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0184:0188: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0184:0188: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0184:0188: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0184:0188: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0184:0188: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0184:0188: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0184:0188: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000184:00000188: unload DLL @009C0000
+0184:0188: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000184:00000188: unload DLL @009C0000
+0184:0188: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0184:0188: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0184:0188: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000184:00000188: exit process (0)

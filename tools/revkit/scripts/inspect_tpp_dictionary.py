@@ -97,6 +97,7 @@ def inspect(dictionary_path: Path, dll_path: Path, show_rows: bool) -> dict[str,
     atom_counts: Counter[str] = Counter()
     component_counts: Counter[str] = Counter()
     compound_hyphen_counts: Counter[int] = Counter()
+    ax_records = 0
     tag_values: dict[str, set[str]] = {}
     decoded_rows: list[dict[str, str]] = []
     max_atoms = 0
@@ -111,9 +112,13 @@ def inspect(dictionary_path: Path, dll_path: Path, show_rows: bool) -> dict[str,
         primary = atoms[0]
         primary_tag = primary[:1].decode("ascii")
         hyphen_count = key_text.count("-")
-        if primary_tag == "A":
+        if primary == b"AX":
+            ax_records += 1
+        elif primary_tag == "A":
             if hyphen_count != 0:
                 raise ValueError(f"single-component A key contains a hyphen: {key_text!r}")
+            if primary not in (b"A0", b"A1"):
+                raise ValueError(f"unexpected A component code: {key_text!r} -> {value!r}")
             component_counts[primary_tag] += 1
         if primary_tag in "BCDE":
             encoded_count = int(primary[1:2])
@@ -132,11 +137,13 @@ def inspect(dictionary_path: Path, dll_path: Path, show_rows: bool) -> dict[str,
             compound_hyphen_counts[hyphen_count] += 1
         if primary_tag == "G" and hyphen_count != 0:
             raise ValueError(f"G general lexical key unexpectedly contains a hyphen: {key_text!r}")
-        atom_tags = " ".join(atom[:1].decode("ascii") for atom in atoms)
+        atom_tags = " ".join(
+            "AX" if atom == b"AX" else atom[:1].decode("ascii") for atom in atoms
+        )
         sequence_counts[atom_tags] += 1
         max_atoms = max(max_atoms, len(atoms))
         for atom in atoms:
-            tag = atom[:1].decode("ascii")
+            tag = "AX" if atom == b"AX" else atom[:1].decode("ascii")
             atom_counts[tag] += 1
             tag_values.setdefault(tag, set()).add(atom[1:].decode("ascii"))
         decoded_rows.append(
@@ -158,6 +165,7 @@ def inspect(dictionary_path: Path, dll_path: Path, show_rows: bool) -> dict[str,
         "payload_sequence_counts": dict(sorted(sequence_counts.items())),
         "payload_atom_counts": dict(sorted(atom_counts.items())),
         "place_name_records_by_component_count": dict(sorted(component_counts.items())),
+        "AX_records": ax_records,
         "F_compound_records_by_hyphen_count": {
             str(count): records for count, records in sorted(compound_hyphen_counts.items())
         },

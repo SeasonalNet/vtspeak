@@ -30,6 +30,20 @@ Follow [the revkit instructions](tools/revkit/README.md). Run Docker Compose fro
 Please see [docs/INDEX.md](./docs/INDEX.md) for a list of research documentation files.
 The [follow-up investigation leads](./docs/reverse-engineering/follow-up-investigation-leads-2026-09-24.md)
 summarize proposed next probes and their evidence boundaries.
+The current [controlled neighbor-context results](./docs/reverse-engineering/tree-context-neighbor-contrasts-2026-09-24.md)
+record the Stage 10 runtime traces and candidate-scoring findings.
+The [lead 1 closure](./docs/reverse-engineering/lead1-tree-input-closure-2026-09-24.md)
+summarizes the verified tree inputs, downstream effects, and limits for the local
+Paul package. Its [peer checkpoint](./docs/reverse-engineering/wag-lead1-checkpoint-2026-09-24.md)
+lists the numeric results for Wag's independent vtpaul agents to compare.
+The [lead 2 WAV parity matrix](./docs/reverse-engineering/lead2-wav-parity-2026-09-24.md)
+records the local text-category captures, peer-manifest mismatches, and API
+control evidence.
+The [lead 3 TPP findings](./docs/reverse-engineering/lead3-tpp-typed-code-findings-2026-09-24.md)
+record the corpus associations, verified runtime writes, and remaining label
+limits for typed pronunciation codes.
+The [reply to Wag's latest peer response](./docs/reverse-engineering/wag-peer-response-new-2-2026-09-24.md)
+records the Lead 1 cross-check, Lead 2 parity scope, and new E-record result.
 
 ## Working principles
 

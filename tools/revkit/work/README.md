@@ -13,7 +13,7 @@ documented results.
 - `scripts/` contains analysis helpers used by the research workflow.
 - `stage2-copy/` contains small DAT payload excerpts, their captured PCM
   outputs, and the GDB capture scripts/logs used for decoder comparisons.
-- `stage3/` through `stage10/` contain the controlled text inputs, trace
+- `stage3/` through `stage12/` contain the controlled text inputs, trace
   scripts/logs, PCM buffers, WAVE outputs, and comparison evidence cited in the
   stage findings. `stage5/probes/stage6/` holds the captured tree lookups used
   by the checked-in comparison helper.
@@ -92,6 +92,66 @@ against their captured PCM blocks and prior Stage 6 references:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/work/scripts/verify_stage9.py
+```
+
+Stage 11 captures eight text-category WAVs with selected-unit IDs, timeline
+row counts, and all PCM blocks. Its verifier checks each local WAV format,
+compares the captured blocks with the WAV data chunk, and records whole-file
+hash comparisons against the selected Wag peer manifest rows:
+
+```sh
+python3 tools/revkit/work/scripts/verify_stage11.py
+```
+
+Stage 12 contains controlled TPP family and suffix inputs, GDB captures for
+typed lookup returns and numeric token-byte writes, and the resulting local
+WAVs. Reproduce the runtime traces from the repository root with local vendor
+inputs and the existing isolated Wine image:
+
+```sh
+docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
+  /bin/bash /work/stage12/run.sh \
+  place-flags ax-special g-suffix f-suffix place-components
+```
+
+To capture the natural replacement-table path, use the `marker-producer`
+mode with `marker-direction-address` and `marker-street-address-control`.
+The trace logs lookup results, the `d` marker write, and the copied
+replacement value; the `N` key hits and `Main` misses. The
+`marker-apartment-address-span` and `marker-apartment-neutral` fixtures also
+capture uppercase `A` and lowercase `a` writes in the separate apartment path.
+
+```sh
+docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
+  /bin/bash /work/stage12/run-effects.sh marker-producer \
+  marker-direction-address marker-street-address-control
+```
+
+To retrieve the two E records through the shared lookup helper, run the
+scoped in-memory selector trace. It prints both returned strings, converts
+each forced hit to a miss before resuming normal processing, and restores the
+Stage 5 input/output files on exit:
+
+```sh
+docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
+  /bin/bash /work/stage12/run-e-direct.sh \
+  e-casa-hyphens e-saint-hyphens
+```
+
+### Lead 3 candidate-list trace
+
+For the controlled `Can anybody help?` contrast, capture the class lists
+returned by `FUN_10024680` and the unit-index lists returned by
+`FUN_10023350`. The second run changes only the `G83` argument to zero at
+`FUN_1000e0c0`. The runner restores the Stage 5 input and output on exit.
+
+```sh
+docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
+  /bin/bash /work/stage12/run-candidate-lists.sh control \
+  numeric-context-g83-can-anybody-help
+docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
+  /bin/bash /work/stage12/run-candidate-lists.sh g83-zero \
+  numeric-context-g83-can-anybody-help
 ```
 
 The Stage 10 verifier checks 40 ordered abbreviation/context captures, 11
