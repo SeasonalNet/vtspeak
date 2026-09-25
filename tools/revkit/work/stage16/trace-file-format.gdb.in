@@ -1,0 +1,21 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $return_address = *(unsigned int *)$esp
+  printf "API_ENTRY original_fmt=%d text=%#x path=%#x\n", *(int *)($esp + 4), *(unsigned int *)($esp + 8), *(unsigned int *)($esp + 12)
+  set *(int *)($esp + 4) = @FORMAT@
+  tbreak *$return_address
+  commands
+    silent
+    printf "API_RETURN fmt=@FORMAT@ result=%d\n", (short)$eax
+    continue
+  end
+  continue
+end
+
+continue

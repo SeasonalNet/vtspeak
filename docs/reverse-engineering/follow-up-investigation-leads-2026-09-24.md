@@ -268,14 +268,27 @@ repetition cases. The C sweep found 93 outputs different from its neutral
 template, but a literal result in that template does not establish that a key
 is inactive. See the [Stage 10 context report](abbreviation-context-contrasts-2026-09-24.md).
 
-**Bounded probe.** Use the recorded one-context outputs to prioritize keys
-with plausible alternate readings. For each selected key, compare a small
-set of meaningful contexts (for example address versus ordinary prose, date
-versus month name, or company suffix versus isolated token), plus case and
-punctuation controls. Capture ordered token surfaces and phone/context rows.
+**Bounded probe.** Cover every inventory key with a baseline and controlled
+context, punctuation, and case variants. Use family-specific contexts for H/T
+and likely-reading contexts for C; keep the context-selection heuristic
+visible where the inventory does not identify a more specific use. Capture
+ordered token surfaces and phone/context rows.
 
 **Useful result.** A per-key set of verified context contrasts, not a blanket
 expansion table. Preserve unresolved keys and contexts explicitly.
+
+**Bounded result (2026-09-25).** Original-engine captures now cover all 427
+inventory keys: 55 H, 42 T, and 330 C. The 1,750 observations include each
+key's baseline, a likely context, punctuation, and case contrasts, with full
+returned rows and 24 phone/context bytes per row. Examples include `in.` →
+`inches`, `mi.` → `miles`, `Ct.` → `Court`, title and ordinary `dr` readings
+(`Doctor`/`Drive`), and the state/company contrast for `CO`. The C context
+selector is an explicit heuristic; 21 C and 5 T alternate-case probes also
+match a different key in their set. These controls are flagged in the
+manifest. This closes the full inventory pass for the tested contexts; it
+does not enumerate every possible neighbor or punctuation combination. The
+[Lead 4 results](lead4-abbreviation-context-results-2026-09-25.md) link to the
+per-key matrix, raw captures, and reproducible runner in Stage 15.
 
 ## 5. Compare other voices and package versions
 
@@ -315,6 +328,26 @@ Avoid probing unrelated modes without an implementation or research need.
 
 **Useful result.** A tested API contract for the chosen scope, including
 explicitly unsupported or untested cases.
+
+**Bounded result (2026-09-25).** The selected scope is the local Paul M16
+`VT_TextToFile_ENG` path. Runtime captures cover declared selectors 0–5 and
+7–9, unsupported selector 6, out-of-range selector 10, and null-text,
+empty-text, and null-path returns. Two identical selector 4 calls in one
+loaded process both return success and produce byte-identical WAVE files. The
+four buffer formats also return success at flag 0/thread ID 0 and match their
+raw file-selector outputs; tested nonzero flag/thread combinations return the
+header's create-thread error in Wine. Buffer null/empty/error cases and all
+declared `VT_GetTTSInfo_ENG` requests were also probed. The output formats,
+return codes, and limits are recorded in the [Lead 6 API report](lead6-file-api-behavior-2026-09-25.md),
+with portable traces and outputs in Stage 16. Follow-up probes confirm that a
+short synchronous buffer call treats `output_len` as the returned byte count,
+not as a write limit; the configuration setters clamp upper values and alter
+file output when synthesis arguments are `-1`; and valid playback returns the
+initialization error in the local Wine runtime. This does not close the full
+lead: successful threaded processing, polling, mixed-call state,
+format-specific markup behavior, successful playback, per-field configuration
+output effects, and other error paths remain untested. The declared text-format
+values were tested only with a plain ASCII sample.
 
 ## Lower-priority leads and scope limits
 

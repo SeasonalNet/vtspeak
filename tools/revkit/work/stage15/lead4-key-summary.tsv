@@ -1,0 +1,1751 @@
+family	key	match_tag	case_variant	case_variant_key_collision	context	input	target_surfaces	ordered_returned_surfaces
+C	AA	1	aa	False	baseline-neutral	We noted AA today.	AA	We / noted / AA / today / . / Next / .
+C	AA	1	aa	False	numeric-or-ordinary	It is 5 AA. long.	five / AA	It / is / five / AA / long / . / Next / .
+C	AA	1	aa	False	comma-neighbor	We noted, AA, today.	AA	We / noted / , / AA / , / today / . / Next / .
+C	AA	1	aa	False	case-variant-neutral	We noted aa today.	aa	We / noted / aa / today / . / Next / .
+C	AB	1	ab	False	baseline-neutral	We noted AB today.	AB	We / noted / AB / today / . / Next / .
+C	AB	1	ab	False	numeric-or-ordinary	It is 5 AB. long.	five / AB	It / is / five / AB / long / . / Next / .
+C	AB	1	ab	False	comma-neighbor	We noted, AB, today.	AB	We / noted / , / AB / , / today / . / Next / .
+C	AB	1	ab	False	case-variant-neutral	We noted ab today.	ab	We / noted / ab / today / . / Next / .
+C	AD	1	ad	False	baseline-neutral	We noted AD today.	AD	We / noted / AD / today / . / Next / .
+C	AD	1	ad	False	numeric-or-ordinary	It is 5 AD. long.	five / AD	It / is / five / AD / long / . / Next / .
+C	AD	1	ad	False	comma-neighbor	We noted, AD, today.	AD	We / noted / , / AD / , / today / . / Next / .
+C	AD	1	ad	False	case-variant-neutral	We noted ad today.	ad	We / noted / ad / today / . / Next / .
+C	AE	1	ae	False	baseline-neutral	We noted AE today.	AE	We / noted / AE / today / . / Next / .
+C	AE	1	ae	False	numeric-or-ordinary	It is 5 AE. long.	five / AE	It / is / five / AE / long / . / Next / .
+C	AE	1	ae	False	comma-neighbor	We noted, AE, today.	AE	We / noted / , / AE / , / today / . / Next / .
+C	AE	1	ae	False	case-variant-neutral	We noted ae today.	ae	We / noted / ae / today / . / Next / .
+C	AK	1	ak	False	baseline-neutral	We noted AK today.	AK	We / noted / AK / today / . / Next / .
+C	AK	1	ak	False	state-code	We live in AK.	AK	We / live / in / AK / . / Next / .
+C	AK	1	ak	False	comma-neighbor	We noted, AK, today.	AK	We / noted / , / AK / , / today / . / Next / .
+C	AK	1	ak	False	case-variant-neutral	We noted ak today.	ak	We / noted / ak / today / . / Next / .
+C	AL	1	al	False	baseline-neutral	We noted AL today.	AL	We / noted / AL / today / . / Next / .
+C	AL	1	al	False	state-code	We live in AL.	AL	We / live / in / AL / . / Next / .
+C	AL	1	al	False	comma-neighbor	We noted, AL, today.	AL	We / noted / , / AL / , / today / . / Next / .
+C	AL	1	al	False	case-variant-neutral	We noted al today.	al	We / noted / al / today / . / Next / .
+C	AP	1	ap	False	baseline-neutral	We noted AP today.	AP	We / noted / AP / today / . / Next / .
+C	AP	1	ap	False	numeric-or-ordinary	It is 5 AP. long.	April / fifth	It / is / April / fifth / long / . / Next / .
+C	AP	1	ap	False	comma-neighbor	We noted, AP, today.	AP	We / noted / , / AP / , / today / . / Next / .
+C	AP	1	ap	False	case-variant-neutral	We noted ap today.	ap	We / noted / ap / today / . / Next / .
+C	APR	1	apr	False	baseline-neutral	We noted APR today.	April	We / noted / April / today / . / Next / .
+C	APR	1	apr	False	calendar-date	We met on APR. 5.	April	We / met / on / April / fifth / . / Next / .
+C	APR	1	apr	False	comma-neighbor	We noted, APR, today.	April	We / noted / , / April / , / today / . / Next / .
+C	APR	1	apr	False	case-variant-neutral	We noted apr today.	April	We / noted / April / today / . / Next / .
+C	AR	1	ar	False	baseline-neutral	We noted AR today.	AR	We / noted / AR / today / . / Next / .
+C	AR	1	ar	False	state-code	We live in AR.	AR	We / live / in / AR / . / Next / .
+C	AR	1	ar	False	comma-neighbor	We noted, AR, today.	AR	We / noted / , / AR / , / today / . / Next / .
+C	AR	1	ar	False	case-variant-neutral	We noted ar today.	ar	We / noted / ar / today / . / Next / .
+C	AS	1	as	False	baseline-neutral	We noted AS today.	AS	We / noted / AS / today / . / Next / .
+C	AS	1	as	False	numeric-or-ordinary	It is 5 AS. long.	five / AS	It / is / five / AS / long / . / Next / .
+C	AS	1	as	False	comma-neighbor	We noted, AS, today.	AS	We / noted / , / AS / , / today / . / Next / .
+C	AS	1	as	False	case-variant-neutral	We noted as today.	as	We / noted / as / today / . / Next / .
+C	AUG	1	aug	False	baseline-neutral	We noted AUG today.	August	We / noted / August / today / . / Next / .
+C	AUG	1	aug	False	calendar-date	We met on AUG. 5.	August	We / met / on / August / fifth / . / Next / .
+C	AUG	1	aug	False	comma-neighbor	We noted, AUG, today.	August	We / noted / , / August / , / today / . / Next / .
+C	AUG	1	aug	False	case-variant-neutral	We noted aug today.	August	We / noted / August / today / . / Next / .
+C	AZ	1	az	False	baseline-neutral	We noted AZ today.	AZ	We / noted / AZ / today / . / Next / .
+C	AZ	1	az	False	state-code	We live in AZ.	AZ	We / live / in / AZ / . / Next / .
+C	AZ	1	az	False	comma-neighbor	We noted, AZ, today.	AZ	We / noted / , / AZ / , / today / . / Next / .
+C	AZ	1	az	False	case-variant-neutral	We noted az today.	az	We / noted / az / today / . / Next / .
+C	Ap	1	ap	False	baseline-neutral	We noted Ap today.	Ap	We / noted / Ap / today / . / Next / .
+C	Ap	1	ap	False	numeric-or-ordinary	It is 5 Ap. long.	April / fifth	It / is / April / fifth / long / . / Next / .
+C	Ap	1	ap	False	comma-neighbor	We noted, Ap, today.	Ap	We / noted / , / Ap / , / today / . / Next / .
+C	Ap	1	ap	False	case-variant-neutral	We noted ap today.	ap	We / noted / ap / today / . / Next / .
+C	Apr	1	apr	False	baseline-neutral	We noted Apr today.	April	We / noted / April / today / . / Next / .
+C	Apr	1	apr	False	calendar-date	We met on Apr. 5.	April	We / met / on / April / fifth / . / Next / .
+C	Apr	1	apr	False	comma-neighbor	We noted, Apr, today.	April	We / noted / , / April / , / today / . / Next / .
+C	Apr	1	apr	False	case-variant-neutral	We noted apr today.	April	We / noted / April / today / . / Next / .
+C	Aug	1	aug	False	baseline-neutral	We noted Aug today.	August	We / noted / August / today / . / Next / .
+C	Aug	1	aug	False	calendar-date	We met on Aug. 5.	August	We / met / on / August / fifth / . / Next / .
+C	Aug	1	aug	False	comma-neighbor	We noted, Aug, today.	August	We / noted / , / August / , / today / . / Next / .
+C	Aug	1	aug	False	case-variant-neutral	We noted aug today.	August	We / noted / August / today / . / Next / .
+C	BC	1	bc	False	baseline-neutral	We noted BC today.	BC	We / noted / BC / today / . / Next / .
+C	BC	1	bc	False	numeric-or-ordinary	It is 5 BC. long.	five / BC	It / is / five / BC / long / . / Next / .
+C	BC	1	bc	False	comma-neighbor	We noted, BC, today.	BC	We / noted / , / BC / , / today / . / Next / .
+C	BC	1	bc	False	case-variant-neutral	We noted bc today.	bc	We / noted / bc / today / . / Next / .
+C	Bq	1	bq	False	baseline-neutral	We noted Bq today.	becquerel	We / noted / becquerel / today / . / Next / .
+C	Bq	1	bq	False	numeric-or-ordinary	It is 5 Bq. long.	five / becquerels	It / is / five / becquerels / long / . / Next / .
+C	Bq	1	bq	False	comma-neighbor	We noted, Bq, today.	becquerel	We / noted / , / becquerel / , / today / . / Next / .
+C	Bq	1	bq	False	case-variant-neutral	We noted bq today.	bq	We / noted / bq / today / . / Next / .
+C	CA	1	ca	False	baseline-neutral	We noted CA today.	CA	We / noted / CA / today / . / Next / .
+C	CA	1	ca	False	state-code	We live in CA.	CA	We / live / in / CA / . / Next / .
+C	CA	1	ca	False	comma-neighbor	We noted, CA, today.	CA	We / noted / , / CA / , / today / . / Next / .
+C	CA	1	ca	False	case-variant-neutral	We noted ca today.	ca	We / noted / ca / today / . / Next / .
+C	CHAS	1	chas	False	baseline-neutral	We noted CHAS today.	CHAS	We / noted / CHAS / today / . / Next / .
+C	CHAS	1	chas	False	numeric-or-ordinary	It is 5 CHAS. long.	five / CHAS	It / is / five / CHAS / long / . / Next / .
+C	CHAS	1	chas	False	comma-neighbor	We noted, CHAS, today.	CHAS	We / noted / , / CHAS / , / today / . / Next / .
+C	CHAS	1	chas	False	case-variant-neutral	We noted chas today.	chas	We / noted / chas / today / . / Next / .
+C	CO	1	co	False	baseline-neutral	We noted CO today.	Company	We / noted / Company / today / . / Next / .
+C	CO	1	co	False	state-code	We live in CO.	CO	We / live / in / CO / . / Next / .
+C	CO	1	co	False	comma-neighbor	We noted, CO, today.	CO	We / noted / , / CO / , / today / . / Next / .
+C	CO	1	co	False	case-variant-neutral	We noted co today.	co	We / noted / co / today / . / Next / .
+C	Chas	1	chas	False	baseline-neutral	We noted Chas today.	Chas	We / noted / Chas / today / . / Next / .
+C	Chas	1	chas	False	numeric-or-ordinary	It is 5 Chas. long.	five / Chas	It / is / five / Chas / long / . / Next / .
+C	Chas	1	chas	False	comma-neighbor	We noted, Chas, today.	Chas	We / noted / , / Chas / , / today / . / Next / .
+C	Chas	1	chas	False	case-variant-neutral	We noted chas today.	chas	We / noted / chas / today / . / Next / .
+C	Co	1	co	False	baseline-neutral	We noted Co today.	Company	We / noted / Company / today / . / Next / .
+C	Co	1	co	False	numeric-or-ordinary	It is 5 Co. long.	five / Co	It / is / five / Co / long / . / Next / .
+C	Co	1	co	False	comma-neighbor	We noted, Co, today.	Co	We / noted / , / Co / , / today / . / Next / .
+C	Co	1	co	False	case-variant-neutral	We noted co today.	co	We / noted / co / today / . / Next / .
+C	DC	1	dc	False	baseline-neutral	We noted DC today.	DC	We / noted / DC / today / . / Next / .
+C	DC	1	dc	False	state-code	We live in DC.	DC	We / live / in / DC / . / Next / .
+C	DC	1	dc	False	comma-neighbor	We noted, DC, today.	DC	We / noted / , / DC / , / today / . / Next / .
+C	DC	1	dc	False	case-variant-neutral	We noted dc today.	dc	We / noted / dc / today / . / Next / .
+C	DE	1	de	False	baseline-neutral	We noted DE today.	DE	We / noted / DE / today / . / Next / .
+C	DE	1	de	False	state-code	We live in DE.	DE	We / live / in / DE / . / Next / .
+C	DE	1	de	False	comma-neighbor	We noted, DE, today.	DE	We / noted / , / DE / , / today / . / Next / .
+C	DE	1	de	False	case-variant-neutral	We noted de today.	de	We / noted / de / today / . / Next / .
+C	DEC	1	dec	False	baseline-neutral	We noted DEC today.	December	We / noted / December / today / . / Next / .
+C	DEC	1	dec	False	calendar-date	We met on DEC. 5.	December	We / met / on / December / fifth / . / Next / .
+C	DEC	1	dec	False	comma-neighbor	We noted, DEC, today.	December	We / noted / , / December / , / today / . / Next / .
+C	DEC	1	dec	False	case-variant-neutral	We noted dec today.	December	We / noted / December / today / . / Next / .
+C	Dec	1	dec	False	baseline-neutral	We noted Dec today.	December	We / noted / December / today / . / Next / .
+C	Dec	1	dec	False	calendar-date	We met on Dec. 5.	December	We / met / on / December / fifth / . / Next / .
+C	Dec	1	dec	False	comma-neighbor	We noted, Dec, today.	December	We / noted / , / December / , / today / . / Next / .
+C	Dec	1	dec	False	case-variant-neutral	We noted dec today.	December	We / noted / December / today / . / Next / .
+C	EDW	1	edw	False	baseline-neutral	We noted EDW today.	EDW	We / noted / EDW / today / . / Next / .
+C	EDW	1	edw	False	numeric-or-ordinary	It is 5 EDW. long.	five / EDW	It / is / five / EDW / long / . / Next / .
+C	EDW	1	edw	False	comma-neighbor	We noted, EDW, today.	EDW	We / noted / , / EDW / , / today / . / Next / .
+C	EDW	1	edw	False	case-variant-neutral	We noted edw today.	edw	We / noted / edw / today / . / Next / .
+C	Edw	1	edw	False	baseline-neutral	We noted Edw today.	Edw	We / noted / Edw / today / . / Next / .
+C	Edw	1	edw	False	numeric-or-ordinary	It is 5 Edw. long.	five / Edw	It / is / five / Edw / long / . / Next / .
+C	Edw	1	edw	False	comma-neighbor	We noted, Edw, today.	Edw	We / noted / , / Edw / , / today / . / Next / .
+C	Edw	1	edw	False	case-variant-neutral	We noted edw today.	edw	We / noted / edw / today / . / Next / .
+C	FEB	1	feb	False	baseline-neutral	We noted FEB today.	February	We / noted / February / today / . / Next / .
+C	FEB	1	feb	False	calendar-date	We met on FEB. 5.	February	We / met / on / February / fifth / . / Next / .
+C	FEB	1	feb	False	comma-neighbor	We noted, FEB, today.	February	We / noted / , / February / , / today / . / Next / .
+C	FEB	1	feb	False	case-variant-neutral	We noted feb today.	February	We / noted / February / today / . / Next / .
+C	FL	1	fl	True	baseline-neutral	We noted FL today.	FL	We / noted / FL / today / . / Next / .
+C	FL	1	fl	True	state-code	We live in FL.	FL	We / live / in / FL / . / Next / .
+C	FL	1	fl	True	comma-neighbor	We noted, FL, today.	FL	We / noted / , / FL / , / today / . / Next / .
+C	FL	1	fl	True	case-variant-neutral	We noted fl today.	fl	We / noted / fl / today / . / Next / .
+C	FM	1	fm	True	baseline-neutral	We noted FM today.	FM	We / noted / FM / today / . / Next / .
+C	FM	1	fm	True	numeric-or-ordinary	It is 5 FM. long.	five / fathoms	It / is / five / fathoms / long / . / Next / .
+C	FM	1	fm	True	comma-neighbor	We noted, FM, today.	FM	We / noted / , / FM / , / today / . / Next / .
+C	FM	1	fm	True	case-variant-neutral	We noted fm today.	fm	We / noted / fm / today / . / Next / .
+C	FRI	1	fri	False	baseline-neutral	We noted FRI today.	FRI	We / noted / FRI / today / . / Next / .
+C	FRI	1	fri	False	calendar-weekday	We met on FRI.	Friday	We / met / on / Friday / . / Next / .
+C	FRI	1	fri	False	comma-neighbor	We noted, FRI, today.	FRI	We / noted / , / FRI / , / today / . / Next / .
+C	FRI	1	fri	False	case-variant-neutral	We noted fri today.	fri	We / noted / fri / today / . / Next / .
+C	Feb	1	feb	False	baseline-neutral	We noted Feb today.	February	We / noted / February / today / . / Next / .
+C	Feb	1	feb	False	calendar-date	We met on Feb. 5.	February	We / met / on / February / fifth / . / Next / .
+C	Feb	1	feb	False	comma-neighbor	We noted, Feb, today.	February	We / noted / , / February / , / today / . / Next / .
+C	Feb	1	feb	False	case-variant-neutral	We noted feb today.	February	We / noted / February / today / . / Next / .
+C	Fri	1	fri	False	baseline-neutral	We noted Fri today.	Fri	We / noted / Fri / today / . / Next / .
+C	Fri	1	fri	False	calendar-weekday	We met on Fri.	Friday	We / met / on / Friday / . / Next / .
+C	Fri	1	fri	False	comma-neighbor	We noted, Fri, today.	Fri	We / noted / , / Fri / , / today / . / Next / .
+C	Fri	1	fri	False	case-variant-neutral	We noted fri today.	fri	We / noted / fri / today / . / Next / .
+C	GA	1	ga	False	baseline-neutral	We noted GA today.	GA	We / noted / GA / today / . / Next / .
+C	GA	1	ga	False	state-code	We live in GA.	GA	We / live / in / GA / . / Next / .
+C	GA	1	ga	False	comma-neighbor	We noted, GA, today.	GA	We / noted / , / GA / , / today / . / Next / .
+C	GA	1	ga	False	case-variant-neutral	We noted ga today.	ga	We / noted / ga / today / . / Next / .
+C	GEO	1	geo	False	baseline-neutral	We noted GEO today.	GEO	We / noted / GEO / today / . / Next / .
+C	GEO	1	geo	False	numeric-or-ordinary	It is 5 GEO. long.	five / GEO	It / is / five / GEO / long / . / Next / .
+C	GEO	1	geo	False	comma-neighbor	We noted, GEO, today.	GEO	We / noted / , / GEO / , / today / . / Next / .
+C	GEO	1	geo	False	case-variant-neutral	We noted geo today.	geo	We / noted / geo / today / . / Next / .
+C	GIL	1	gil	False	baseline-neutral	We noted GIL today.	GIL	We / noted / GIL / today / . / Next / .
+C	GIL	1	gil	False	numeric-or-ordinary	It is 5 GIL. long.	five / GIL	It / is / five / GIL / long / . / Next / .
+C	GIL	1	gil	False	comma-neighbor	We noted, GIL, today.	GIL	We / noted / , / GIL / , / today / . / Next / .
+C	GIL	1	gil	False	case-variant-neutral	We noted gil today.	gil	We / noted / gil / today / . / Next / .
+C	GU	1	gu	False	baseline-neutral	We noted GU today.	GU	We / noted / GU / today / . / Next / .
+C	GU	1	gu	False	numeric-or-ordinary	It is 5 GU. long.	five / GU	It / is / five / GU / long / . / Next / .
+C	GU	1	gu	False	comma-neighbor	We noted, GU, today.	GU	We / noted / , / GU / , / today / . / Next / .
+C	GU	1	gu	False	case-variant-neutral	We noted gu today.	gu	We / noted / gu / today / . / Next / .
+C	Geo	1	geo	False	baseline-neutral	We noted Geo today.	Geo	We / noted / Geo / today / . / Next / .
+C	Geo	1	geo	False	numeric-or-ordinary	It is 5 Geo. long.	five / Geo	It / is / five / Geo / long / . / Next / .
+C	Geo	1	geo	False	comma-neighbor	We noted, Geo, today.	Geo	We / noted / , / Geo / , / today / . / Next / .
+C	Geo	1	geo	False	case-variant-neutral	We noted geo today.	geo	We / noted / geo / today / . / Next / .
+C	Gil	1	gil	False	baseline-neutral	We noted Gil today.	Gil	We / noted / Gil / today / . / Next / .
+C	Gil	1	gil	False	numeric-or-ordinary	It is 5 Gil. long.	five / Gil	It / is / five / Gil / long / . / Next / .
+C	Gil	1	gil	False	comma-neighbor	We noted, Gil, today.	Gil	We / noted / , / Gil / , / today / . / Next / .
+C	Gil	1	gil	False	case-variant-neutral	We noted gil today.	gil	We / noted / gil / today / . / Next / .
+C	Gy	1	gy	False	baseline-neutral	We noted Gy today.	gray	We / noted / gray / today / . / Next / .
+C	Gy	1	gy	False	numeric-or-ordinary	It is 5 Gy. long.	five / grays	It / is / five / grays / long / . / Next / .
+C	Gy	1	gy	False	comma-neighbor	We noted, Gy, today.	gray	We / noted / , / gray / , / today / . / Next / .
+C	Gy	1	gy	False	case-variant-neutral	We noted gy today.	gy	We / noted / gy / today / . / Next / .
+C	HI	1	hi	False	baseline-neutral	We noted HI today.	HI	We / noted / HI / today / . / Next / .
+C	HI	1	hi	False	state-code	We live in HI.	HI	We / live / in / HI / . / Next / .
+C	HI	1	hi	False	comma-neighbor	We noted, HI, today.	HI	We / noted / , / HI / , / today / . / Next / .
+C	HI	1	hi	False	case-variant-neutral	We noted hi today.	hi	We / noted / hi / today / . / Next / .
+C	Hz	1	hz	True	baseline-neutral	We noted Hz today.	hertz	We / noted / hertz / today / . / Next / .
+C	Hz	1	hz	True	numeric-or-ordinary	It is 5 Hz. long.	five / hertz	It / is / five / hertz / long / . / Next / .
+C	Hz	1	hz	True	comma-neighbor	We noted, Hz, today.	hertz	We / noted / , / hertz / , / today / . / Next / .
+C	Hz	1	hz	True	case-variant-neutral	We noted hz today.	hz	We / noted / hz / today / . / Next / .
+C	IA	1	ia	False	baseline-neutral	We noted IA today.	IA	We / noted / IA / today / . / Next / .
+C	IA	1	ia	False	state-code	We live in IA.	IA	We / live / in / IA / . / Next / .
+C	IA	1	ia	False	comma-neighbor	We noted, IA, today.	IA	We / noted / , / IA / , / today / . / Next / .
+C	IA	1	ia	False	case-variant-neutral	We noted ia today.	ia	We / noted / ia / today / . / Next / .
+C	ID	1	id	False	baseline-neutral	We noted ID today.	ID	We / noted / ID / today / . / Next / .
+C	ID	1	id	False	state-code	We live in ID.	ID	We / live / in / ID / . / Next / .
+C	ID	1	id	False	comma-neighbor	We noted, ID, today.	ID	We / noted / , / ID / , / today / . / Next / .
+C	ID	1	id	False	case-variant-neutral	We noted id today.	id	We / noted / id / today / . / Next / .
+C	IL	1	il	False	baseline-neutral	We noted IL today.	IL	We / noted / IL / today / . / Next / .
+C	IL	1	il	False	state-code	We live in IL.	IL	We / live / in / IL / . / Next / .
+C	IL	1	il	False	comma-neighbor	We noted, IL, today.	IL	We / noted / , / IL / , / today / . / Next / .
+C	IL	1	il	False	case-variant-neutral	We noted il today.	il	We / noted / il / today / . / Next / .
+C	IN	1	in	True	baseline-neutral	We noted IN today.	IN	We / noted / IN / today / . / Next / .
+C	IN	1	in	True	state-code	We live in IN.	IN	We / live / in / IN / . / Next / .
+C	IN	1	in	True	comma-neighbor	We noted, IN, today.	IN	We / noted / , / IN / , / today / . / Next / .
+C	IN	1	in	True	case-variant-neutral	We noted in today.	in	We / noted / in / today / . / Next / .
+C	JA	1	ja	False	baseline-neutral	We noted JA today.	JA	We / noted / JA / today / . / Next / .
+C	JA	1	ja	False	numeric-or-ordinary	It is 5 JA. long.	January / fifth	It / is / January / fifth / long / . / Next / .
+C	JA	1	ja	False	comma-neighbor	We noted, JA, today.	JA	We / noted / , / JA / , / today / . / Next / .
+C	JA	1	ja	False	case-variant-neutral	We noted ja today.	ja	We / noted / ja / today / . / Next / .
+C	JAN	1	jan	False	baseline-neutral	We noted JAN today.	January	We / noted / January / today / . / Next / .
+C	JAN	1	jan	False	calendar-date	We met on JAN. 5.	January	We / met / on / January / fifth / . / Next / .
+C	JAN	1	jan	False	comma-neighbor	We noted, JAN, today.	January	We / noted / , / January / , / today / . / Next / .
+C	JAN	1	jan	False	case-variant-neutral	We noted jan today.	January	We / noted / January / today / . / Next / .
+C	JAS	1	jas	False	baseline-neutral	We noted JAS today.	JAS	We / noted / JAS / today / . / Next / .
+C	JAS	1	jas	False	numeric-or-ordinary	It is 5 JAS. long.	five / JAS	It / is / five / JAS / long / . / Next / .
+C	JAS	1	jas	False	comma-neighbor	We noted, JAS, today.	JAS	We / noted / , / JAS / , / today / . / Next / .
+C	JAS	1	jas	False	case-variant-neutral	We noted jas today.	jas	We / noted / jas / today / . / Next / .
+C	JE	1	je	False	baseline-neutral	We noted JE today.	JE	We / noted / JE / today / . / Next / .
+C	JE	1	je	False	numeric-or-ordinary	It is 5 JE. long.	June / fifth	It / is / June / fifth / long / . / Next / .
+C	JE	1	je	False	comma-neighbor	We noted, JE, today.	JE	We / noted / , / JE / , / today / . / Next / .
+C	JE	1	je	False	case-variant-neutral	We noted je today.	je	We / noted / je / today / . / Next / .
+C	JL	1	jl	False	baseline-neutral	We noted JL today.	JL	We / noted / JL / today / . / Next / .
+C	JL	1	jl	False	numeric-or-ordinary	It is 5 JL. long.	July / fifth	It / is / July / fifth / long / . / Next / .
+C	JL	1	jl	False	comma-neighbor	We noted, JL, today.	JL	We / noted / , / JL / , / today / . / Next / .
+C	JL	1	jl	False	case-variant-neutral	We noted jl today.	jl	We / noted / jl / today / . / Next / .
+C	JOS	1	jos	False	baseline-neutral	We noted JOS today.	JOS	We / noted / JOS / today / . / Next / .
+C	JOS	1	jos	False	numeric-or-ordinary	It is 5 JOS. long.	five / JOS	It / is / five / JOS / long / . / Next / .
+C	JOS	1	jos	False	comma-neighbor	We noted, JOS, today.	JOS	We / noted / , / JOS / , / today / . / Next / .
+C	JOS	1	jos	False	case-variant-neutral	We noted jos today.	jos	We / noted / jos / today / . / Next / .
+C	JUL	1	jul	False	baseline-neutral	We noted JUL today.	July	We / noted / July / today / . / Next / .
+C	JUL	1	jul	False	calendar-date	We met on JUL. 5.	July	We / met / on / July / fifth / . / Next / .
+C	JUL	1	jul	False	comma-neighbor	We noted, JUL, today.	July	We / noted / , / July / , / today / . / Next / .
+C	JUL	1	jul	False	case-variant-neutral	We noted jul today.	July	We / noted / July / today / . / Next / .
+C	JUN	1	jun	False	baseline-neutral	We noted JUN today.	June	We / noted / June / today / . / Next / .
+C	JUN	1	jun	False	calendar-date	We met on JUN. 5.	June	We / met / on / June / fifth / . / Next / .
+C	JUN	1	jun	False	comma-neighbor	We noted, JUN, today.	June	We / noted / , / June / , / today / . / Next / .
+C	JUN	1	jun	False	case-variant-neutral	We noted jun today.	June	We / noted / June / today / . / Next / .
+C	JY	1	jy	False	baseline-neutral	We noted JY today.	JY	We / noted / JY / today / . / Next / .
+C	JY	1	jy	False	numeric-or-ordinary	It is 5 JY. long.	July / fifth	It / is / July / fifth / long / . / Next / .
+C	JY	1	jy	False	comma-neighbor	We noted, JY, today.	JY	We / noted / , / JY / , / today / . / Next / .
+C	JY	1	jy	False	case-variant-neutral	We noted jy today.	jy	We / noted / jy / today / . / Next / .
+C	Ja	1	ja	False	baseline-neutral	We noted Ja today.	Ja	We / noted / Ja / today / . / Next / .
+C	Ja	1	ja	False	numeric-or-ordinary	It is 5 Ja. long.	January / fifth	It / is / January / fifth / long / . / Next / .
+C	Ja	1	ja	False	comma-neighbor	We noted, Ja, today.	Ja	We / noted / , / Ja / , / today / . / Next / .
+C	Ja	1	ja	False	case-variant-neutral	We noted ja today.	ja	We / noted / ja / today / . / Next / .
+C	Jan	1	jan	False	baseline-neutral	We noted Jan today.	January	We / noted / January / today / . / Next / .
+C	Jan	1	jan	False	calendar-date	We met on Jan. 5.	January	We / met / on / January / fifth / . / Next / .
+C	Jan	1	jan	False	comma-neighbor	We noted, Jan, today.	January	We / noted / , / January / , / today / . / Next / .
+C	Jan	1	jan	False	case-variant-neutral	We noted jan today.	January	We / noted / January / today / . / Next / .
+C	Jas	1	jas	False	baseline-neutral	We noted Jas today.	Jas	We / noted / Jas / today / . / Next / .
+C	Jas	1	jas	False	numeric-or-ordinary	It is 5 Jas. long.	five / Jas	It / is / five / Jas / long / . / Next / .
+C	Jas	1	jas	False	comma-neighbor	We noted, Jas, today.	Jas	We / noted / , / Jas / , / today / . / Next / .
+C	Jas	1	jas	False	case-variant-neutral	We noted jas today.	jas	We / noted / jas / today / . / Next / .
+C	Je	1	je	False	baseline-neutral	We noted Je today.	Je	We / noted / Je / today / . / Next / .
+C	Je	1	je	False	numeric-or-ordinary	It is 5 Je. long.	June / fifth	It / is / June / fifth / long / . / Next / .
+C	Je	1	je	False	comma-neighbor	We noted, Je, today.	Je	We / noted / , / Je / , / today / . / Next / .
+C	Je	1	je	False	case-variant-neutral	We noted je today.	je	We / noted / je / today / . / Next / .
+C	Jl	1	jl	False	baseline-neutral	We noted Jl today.	Jl	We / noted / Jl / today / . / Next / .
+C	Jl	1	jl	False	numeric-or-ordinary	It is 5 Jl. long.	July / fifth	It / is / July / fifth / long / . / Next / .
+C	Jl	1	jl	False	comma-neighbor	We noted, Jl, today.	Jl	We / noted / , / Jl / , / today / . / Next / .
+C	Jl	1	jl	False	case-variant-neutral	We noted jl today.	jl	We / noted / jl / today / . / Next / .
+C	Jos	1	jos	False	baseline-neutral	We noted Jos today.	Jos	We / noted / Jos / today / . / Next / .
+C	Jos	1	jos	False	numeric-or-ordinary	It is 5 Jos. long.	five / Jos	It / is / five / Jos / long / . / Next / .
+C	Jos	1	jos	False	comma-neighbor	We noted, Jos, today.	Jos	We / noted / , / Jos / , / today / . / Next / .
+C	Jos	1	jos	False	case-variant-neutral	We noted jos today.	jos	We / noted / jos / today / . / Next / .
+C	Jul	1	jul	False	baseline-neutral	We noted Jul today.	July	We / noted / July / today / . / Next / .
+C	Jul	1	jul	False	calendar-date	We met on Jul. 5.	July	We / met / on / July / fifth / . / Next / .
+C	Jul	1	jul	False	comma-neighbor	We noted, Jul, today.	July	We / noted / , / July / , / today / . / Next / .
+C	Jul	1	jul	False	case-variant-neutral	We noted jul today.	July	We / noted / July / today / . / Next / .
+C	Jun	1	jun	False	baseline-neutral	We noted Jun today.	June	We / noted / June / today / . / Next / .
+C	Jun	1	jun	False	calendar-date	We met on Jun. 5.	June	We / met / on / June / fifth / . / Next / .
+C	Jun	1	jun	False	comma-neighbor	We noted, Jun, today.	June	We / noted / , / June / , / today / . / Next / .
+C	Jun	1	jun	False	case-variant-neutral	We noted jun today.	June	We / noted / June / today / . / Next / .
+C	Jy	1	jy	False	baseline-neutral	We noted Jy today.	Jy	We / noted / Jy / today / . / Next / .
+C	Jy	1	jy	False	numeric-or-ordinary	It is 5 Jy. long.	July / fifth	It / is / July / fifth / long / . / Next / .
+C	Jy	1	jy	False	comma-neighbor	We noted, Jy, today.	Jy	We / noted / , / Jy / , / today / . / Next / .
+C	Jy	1	jy	False	case-variant-neutral	We noted jy today.	jy	We / noted / jy / today / . / Next / .
+C	KS	1	ks	False	baseline-neutral	We noted KS today.	KS	We / noted / KS / today / . / Next / .
+C	KS	1	ks	False	state-code	We live in KS.	KS	We / live / in / KS / . / Next / .
+C	KS	1	ks	False	comma-neighbor	We noted, KS, today.	KS	We / noted / , / KS / , / today / . / Next / .
+C	KS	1	ks	False	case-variant-neutral	We noted ks today.	ks	We / noted / ks / today / . / Next / .
+C	KY	1	ky	False	baseline-neutral	We noted KY today.	KY	We / noted / KY / today / . / Next / .
+C	KY	1	ky	False	state-code	We live in KY.	KY	We / live / in / KY / . / Next / .
+C	KY	1	ky	False	comma-neighbor	We noted, KY, today.	KY	We / noted / , / KY / , / today / . / Next / .
+C	KY	1	ky	False	case-variant-neutral	We noted ky today.	ky	We / noted / ky / today / . / Next / .
+C	LA	1	la	False	baseline-neutral	We noted LA today.	LA	We / noted / LA / today / . / Next / .
+C	LA	1	la	False	state-code	We live in LA.	LA	We / live / in / LA / . / Next / .
+C	LA	1	la	False	comma-neighbor	We noted, LA, today.	LA	We / noted / , / LA / , / today / . / Next / .
+C	LA	1	la	False	case-variant-neutral	We noted la today.	la	We / noted / la / today / . / Next / .
+C	MA	1	ma	False	baseline-neutral	We noted MA today.	MA	We / noted / MA / today / . / Next / .
+C	MA	1	ma	False	state-code	We live in MA.	MA	We / live / in / MA / . / Next / .
+C	MA	1	ma	False	comma-neighbor	We noted, MA, today.	MA	We / noted / , / MA / , / today / . / Next / .
+C	MA	1	ma	False	case-variant-neutral	We noted ma today.	ma	We / noted / ma / today / . / Next / .
+C	MAR	1	mar	False	baseline-neutral	We noted MAR today.	March	We / noted / March / today / . / Next / .
+C	MAR	1	mar	False	calendar-date	We met on MAR. 5.	March	We / met / on / March / fifth / . / Next / .
+C	MAR	1	mar	False	comma-neighbor	We noted, MAR, today.	March	We / noted / , / March / , / today / . / Next / .
+C	MAR	1	mar	False	case-variant-neutral	We noted mar today.	March	We / noted / March / today / . / Next / .
+C	MB	1	mb	True	baseline-neutral	We noted MB today.	MB	We / noted / MB / today / . / Next / .
+C	MB	1	mb	True	numeric-or-ordinary	It is 5 MB. long.	five / megabytes	It / is / five / megabytes / long / . / Next / .
+C	MB	1	mb	True	comma-neighbor	We noted, MB, today.	MB	We / noted / , / MB / , / today / . / Next / .
+C	MB	1	mb	True	case-variant-neutral	We noted mb today.	mb	We / noted / mb / today / . / Next / .
+C	MD	1	md	False	baseline-neutral	We noted MD today.	MD	We / noted / MD / today / . / Next / .
+C	MD	1	md	False	state-code	We live in MD.	MD	We / live / in / MD / . / Next / .
+C	MD	1	md	False	comma-neighbor	We noted, MD, today.	MD	We / noted / , / MD / , / today / . / Next / .
+C	MD	1	md	False	case-variant-neutral	We noted md today.	md	We / noted / md / today / . / Next / .
+C	ME	1	me	False	baseline-neutral	We noted ME today.	ME	We / noted / ME / today / . / Next / .
+C	ME	1	me	False	state-code	We live in ME.	ME	We / live / in / ME / . / Next / .
+C	ME	1	me	False	comma-neighbor	We noted, ME, today.	ME	We / noted / , / ME / , / today / . / Next / .
+C	ME	1	me	False	case-variant-neutral	We noted me today.	me	We / noted / me / today / . / Next / .
+C	MH	1	mh	False	baseline-neutral	We noted MH today.	MH	We / noted / MH / today / . / Next / .
+C	MH	1	mh	False	numeric-or-ordinary	It is 5 MH. long.	five / MH	It / is / five / MH / long / . / Next / .
+C	MH	1	mh	False	comma-neighbor	We noted, MH, today.	MH	We / noted / , / MH / , / today / . / Next / .
+C	MH	1	mh	False	case-variant-neutral	We noted mh today.	mh	We / noted / mh / today / . / Next / .
+C	MI	1	mi	True	baseline-neutral	We noted MI today.	MI	We / noted / MI / today / . / Next / .
+C	MI	1	mi	True	state-code	We live in MI.	MI	We / live / in / MI / . / Next / .
+C	MI	1	mi	True	comma-neighbor	We noted, MI, today.	MI	We / noted / , / MI / , / today / . / Next / .
+C	MI	1	mi	True	case-variant-neutral	We noted mi today.	mi	We / noted / mi / today / . / Next / .
+C	MN	1	mn	False	baseline-neutral	We noted MN today.	MN	We / noted / MN / today / . / Next / .
+C	MN	1	mn	False	state-code	We live in MN.	MN	We / live / in / MN / . / Next / .
+C	MN	1	mn	False	comma-neighbor	We noted, MN, today.	MN	We / noted / , / MN / , / today / . / Next / .
+C	MN	1	mn	False	case-variant-neutral	We noted mn today.	mn	We / noted / mn / today / . / Next / .
+C	MO	1	mo	False	baseline-neutral	We noted MO today.	MO	We / noted / MO / today / . / Next / .
+C	MO	1	mo	False	state-code	We live in MO.	MO	We / live / in / MO / . / Next / .
+C	MO	1	mo	False	comma-neighbor	We noted, MO, today.	MO	We / noted / , / MO / , / today / . / Next / .
+C	MO	1	mo	False	case-variant-neutral	We noted mo today.	mo	We / noted / mo / today / . / Next / .
+C	MON	1	mon	False	baseline-neutral	We noted MON today.	MON	We / noted / MON / today / . / Next / .
+C	MON	1	mon	False	calendar-weekday	We met on MON.	Monday	We / met / on / Monday / . / Next / .
+C	MON	1	mon	False	comma-neighbor	We noted, MON, today.	MON	We / noted / , / MON / , / today / . / Next / .
+C	MON	1	mon	False	case-variant-neutral	We noted mon today.	mon	We / noted / mon / today / . / Next / .
+C	MP	1	mp	False	baseline-neutral	We noted MP today.	MP	We / noted / MP / today / . / Next / .
+C	MP	1	mp	False	numeric-or-ordinary	It is 5 MP. long.	five / MP	It / is / five / MP / long / . / Next / .
+C	MP	1	mp	False	comma-neighbor	We noted, MP, today.	MP	We / noted / , / MP / , / today / . / Next / .
+C	MP	1	mp	False	case-variant-neutral	We noted mp today.	mp	We / noted / mp / today / . / Next / .
+C	MS	1	ms	True	baseline-neutral	We noted MS today.	MS	We / noted / MS / today / . / Next / .
+C	MS	1	ms	True	state-code	We live in MS.	Miz	We / live / in / Miz / Next / .
+C	MS	1	ms	True	comma-neighbor	We noted, MS, today.	MS	We / noted / , / MS / , / today / . / Next / .
+C	MS	1	ms	True	case-variant-neutral	We noted ms today.	ms	We / noted / ms / today / . / Next / .
+C	MT	1	mt	False	baseline-neutral	We noted MT today.	MT	We / noted / MT / today / . / Next / .
+C	MT	1	mt	False	state-code	We live in MT.	Mount	We / live / in / Mount / Next / .
+C	MT	1	mt	False	comma-neighbor	We noted, MT, today.	MT	We / noted / , / MT / , / today / . / Next / .
+C	MT	1	mt	False	case-variant-neutral	We noted mt today.	mt	We / noted / mt / today / . / Next / .
+C	Mar	1	mar	False	baseline-neutral	We noted Mar today.	March	We / noted / March / today / . / Next / .
+C	Mar	1	mar	False	calendar-date	We met on Mar. 5.	March	We / met / on / March / fifth / . / Next / .
+C	Mar	1	mar	False	comma-neighbor	We noted, Mar, today.	March	We / noted / , / March / , / today / . / Next / .
+C	Mar	1	mar	False	case-variant-neutral	We noted mar today.	March	We / noted / March / today / . / Next / .
+C	Mon	1	mon	False	baseline-neutral	We noted Mon today.	Mon	We / noted / Mon / today / . / Next / .
+C	Mon	1	mon	False	calendar-weekday	We met on Mon.	Monday	We / met / on / Monday / . / Next / .
+C	Mon	1	mon	False	comma-neighbor	We noted, Mon, today.	Mon	We / noted / , / Mon / , / today / . / Next / .
+C	Mon	1	mon	False	case-variant-neutral	We noted mon today.	mon	We / noted / mon / today / . / Next / .
+C	N.E	1	n.e	False	baseline-neutral	We noted N.E today.	N.E	We / noted / N.E / today / . / Next / .
+C	N.E	1	n.e	False	numeric-or-ordinary	It is 5 N.E. long.	five / N.E	It / is / five / N.E / long / . / Next / .
+C	N.E	1	n.e	False	comma-neighbor	We noted, N.E, today.	N.E	We / noted / , / N.E / , / today / . / Next / .
+C	N.E	1	n.e	False	case-variant-neutral	We noted n.e today.	n.e	We / noted / n.e / today / . / Next / .
+C	N.W	1	n.w	False	baseline-neutral	We noted N.W today.	N.W	We / noted / N.W / today / . / Next / .
+C	N.W	1	n.w	False	numeric-or-ordinary	It is 5 N.W. long.	five / N.W	It / is / five / N.W / long / . / Next / .
+C	N.W	1	n.w	False	comma-neighbor	We noted, N.W, today.	N.W	We / noted / , / N.W / , / today / . / Next / .
+C	N.W	1	n.w	False	case-variant-neutral	We noted n.w today.	n.w	We / noted / n.w / today / . / Next / .
+C	N.Y	1	n.y	False	baseline-neutral	We noted N.Y today.	N.Y	We / noted / N.Y / today / . / Next / .
+C	N.Y	1	n.y	False	numeric-or-ordinary	It is 5 N.Y. long.	five / N.Y	It / is / five / N.Y / long / . / Next / .
+C	N.Y	1	n.y	False	comma-neighbor	We noted, N.Y, today.	N.Y	We / noted / , / N.Y / , / today / . / Next / .
+C	N.Y	1	n.y	False	case-variant-neutral	We noted n.y today.	n.y	We / noted / n.y / today / . / Next / .
+C	NB	1	nb	False	baseline-neutral	We noted NB today.	NB	We / noted / NB / today / . / Next / .
+C	NB	1	nb	False	numeric-or-ordinary	It is 5 NB. long.	five / NB	It / is / five / NB / long / . / Next / .
+C	NB	1	nb	False	comma-neighbor	We noted, NB, today.	NB	We / noted / , / NB / , / today / . / Next / .
+C	NB	1	nb	False	case-variant-neutral	We noted nb today.	nb	We / noted / nb / today / . / Next / .
+C	NC	1	nc	False	baseline-neutral	We noted NC today.	NC	We / noted / NC / today / . / Next / .
+C	NC	1	nc	False	state-code	We live in NC.	NC	We / live / in / NC / . / Next / .
+C	NC	1	nc	False	comma-neighbor	We noted, NC, today.	NC	We / noted / , / NC / , / today / . / Next / .
+C	NC	1	nc	False	case-variant-neutral	We noted nc today.	nc	We / noted / nc / today / . / Next / .
+C	ND	1	nd	False	baseline-neutral	We noted ND today.	ND	We / noted / ND / today / . / Next / .
+C	ND	1	nd	False	state-code	We live in ND.	ND	We / live / in / ND / . / Next / .
+C	ND	1	nd	False	comma-neighbor	We noted, ND, today.	ND	We / noted / , / ND / , / today / . / Next / .
+C	ND	1	nd	False	case-variant-neutral	We noted nd today.	nd	We / noted / nd / today / . / Next / .
+C	NE	1	ne	False	baseline-neutral	We noted NE today.	NE	We / noted / NE / today / . / Next / .
+C	NE	1	ne	False	state-code	We live in NE.	NE	We / live / in / NE / . / Next / .
+C	NE	1	ne	False	comma-neighbor	We noted, NE, today.	NE	We / noted / , / NE / , / today / . / Next / .
+C	NE	1	ne	False	case-variant-neutral	We noted ne today.	ne	We / noted / ne / today / . / Next / .
+C	NF	1	nf	True	baseline-neutral	We noted NF today.	NF	We / noted / NF / today / . / Next / .
+C	NF	1	nf	True	numeric-or-ordinary	It is 5 NF. long.	five / nanofarads	It / is / five / nanofarads / long / . / Next / .
+C	NF	1	nf	True	comma-neighbor	We noted, NF, today.	NF	We / noted / , / NF / , / today / . / Next / .
+C	NF	1	nf	True	case-variant-neutral	We noted nf today.	nf	We / noted / nf / today / . / Next / .
+C	NH	1	nh	False	baseline-neutral	We noted NH today.	NH	We / noted / NH / today / . / Next / .
+C	NH	1	nh	False	state-code	We live in NH.	NH	We / live / in / NH / . / Next / .
+C	NH	1	nh	False	comma-neighbor	We noted, NH, today.	NH	We / noted / , / NH / , / today / . / Next / .
+C	NH	1	nh	False	case-variant-neutral	We noted nh today.	nh	We / noted / nh / today / . / Next / .
+C	NJ	1	nj	False	baseline-neutral	We noted NJ today.	NJ	We / noted / NJ / today / . / Next / .
+C	NJ	1	nj	False	state-code	We live in NJ.	NJ	We / live / in / NJ / . / Next / .
+C	NJ	1	nj	False	comma-neighbor	We noted, NJ, today.	NJ	We / noted / , / NJ / , / today / . / Next / .
+C	NJ	1	nj	False	case-variant-neutral	We noted nj today.	nj	We / noted / nj / today / . / Next / .
+C	NM	1	nm	True	baseline-neutral	We noted NM today.	NM	We / noted / NM / today / . / Next / .
+C	NM	1	nm	True	state-code	We live in NM.	NM	We / live / in / NM / . / Next / .
+C	NM	1	nm	True	comma-neighbor	We noted, NM, today.	NM	We / noted / , / NM / , / today / . / Next / .
+C	NM	1	nm	True	case-variant-neutral	We noted nm today.	nm	We / noted / nm / today / . / Next / .
+C	NOV	1	nov	False	baseline-neutral	We noted NOV today.	November	We / noted / November / today / . / Next / .
+C	NOV	1	nov	False	calendar-date	We met on NOV. 5.	November	We / met / on / November / fifth / . / Next / .
+C	NOV	1	nov	False	comma-neighbor	We noted, NOV, today.	November	We / noted / , / November / , / today / . / Next / .
+C	NOV	1	nov	False	case-variant-neutral	We noted nov today.	November	We / noted / November / today / . / Next / .
+C	NS	1	ns	True	baseline-neutral	We noted NS today.	NS	We / noted / NS / today / . / Next / .
+C	NS	1	ns	True	numeric-or-ordinary	It is 5 NS. long.	five / nanoseconds	It / is / five / nanoseconds / long / . / Next / .
+C	NS	1	ns	True	comma-neighbor	We noted, NS, today.	NS	We / noted / , / NS / , / today / . / Next / .
+C	NS	1	ns	True	case-variant-neutral	We noted ns today.	ns	We / noted / ns / today / . / Next / .
+C	NT	1	nt	False	baseline-neutral	We noted NT today.	NT	We / noted / NT / today / . / Next / .
+C	NT	1	nt	False	numeric-or-ordinary	It is 5 NT. long.	five / NT	It / is / five / NT / long / . / Next / .
+C	NT	1	nt	False	comma-neighbor	We noted, NT, today.	NT	We / noted / , / NT / , / today / . / Next / .
+C	NT	1	nt	False	case-variant-neutral	We noted nt today.	nt	We / noted / nt / today / . / Next / .
+C	NV	1	nv	False	baseline-neutral	We noted NV today.	NV	We / noted / NV / today / . / Next / .
+C	NV	1	nv	False	state-code	We live in NV.	NV	We / live / in / NV / . / Next / .
+C	NV	1	nv	False	comma-neighbor	We noted, NV, today.	NV	We / noted / , / NV / , / today / . / Next / .
+C	NV	1	nv	False	case-variant-neutral	We noted nv today.	nv	We / noted / nv / today / . / Next / .
+C	NW	1	nw	False	baseline-neutral	We noted NW today.	NW	We / noted / NW / today / . / Next / .
+C	NW	1	nw	False	numeric-or-ordinary	It is 5 NW. long.	five / NW	It / is / five / NW / long / . / Next / .
+C	NW	1	nw	False	comma-neighbor	We noted, NW, today.	NW	We / noted / , / NW / , / today / . / Next / .
+C	NW	1	nw	False	case-variant-neutral	We noted nw today.	nw	We / noted / nw / today / . / Next / .
+C	NY	1	ny	False	baseline-neutral	We noted NY today.	NY	We / noted / NY / today / . / Next / .
+C	NY	1	ny	False	state-code	We live in NY.	NY	We / live / in / NY / . / Next / .
+C	NY	1	ny	False	comma-neighbor	We noted, NY, today.	NY	We / noted / , / NY / , / today / . / Next / .
+C	NY	1	ny	False	case-variant-neutral	We noted ny today.	ny	We / noted / ny / today / . / Next / .
+C	Nm	1	nm	True	baseline-neutral	We noted Nm today.	newton / meter	We / noted / newton / meter / today / . / Next / .
+C	Nm	1	nm	True	numeric-or-ordinary	It is 5 Nm. long.	five / newton / meters	It / is / five / newton / meters / long / . / Next / .
+C	Nm	1	nm	True	comma-neighbor	We noted, Nm, today.	newton / meter	We / noted / , / newton / meter / , / today / . / Next / .
+C	Nm	1	nm	True	case-variant-neutral	We noted nm today.	nm	We / noted / nm / today / . / Next / .
+C	Nov	1	nov	False	baseline-neutral	We noted Nov today.	November	We / noted / November / today / . / Next / .
+C	Nov	1	nov	False	calendar-date	We met on Nov. 5.	November	We / met / on / November / fifth / . / Next / .
+C	Nov	1	nov	False	comma-neighbor	We noted, Nov, today.	November	We / noted / , / November / , / today / . / Next / .
+C	Nov	1	nov	False	case-variant-neutral	We noted nov today.	November	We / noted / November / today / . / Next / .
+C	OCT	1	oct	False	baseline-neutral	We noted OCT today.	October	We / noted / October / today / . / Next / .
+C	OCT	1	oct	False	calendar-date	We met on OCT. 5.	October	We / met / on / October / fifth / . / Next / .
+C	OCT	1	oct	False	comma-neighbor	We noted, OCT, today.	October	We / noted / , / October / , / today / . / Next / .
+C	OCT	1	oct	False	case-variant-neutral	We noted oct today.	October	We / noted / October / today / . / Next / .
+C	OH	1	oh	False	baseline-neutral	We noted OH today.	OH	We / noted / OH / today / . / Next / .
+C	OH	1	oh	False	state-code	We live in OH.	OH	We / live / in / OH / . / Next / .
+C	OH	1	oh	False	comma-neighbor	We noted, OH, today.	OH	We / noted / , / OH / , / today / . / Next / .
+C	OH	1	oh	False	case-variant-neutral	We noted oh today.	oh	We / noted / oh / today / . / Next / .
+C	OK	1	ok	False	baseline-neutral	We noted OK today.	OK	We / noted / OK / today / . / Next / .
+C	OK	1	ok	False	state-code	We live in OK.	OK	We / live / in / OK / . / Next / .
+C	OK	1	ok	False	comma-neighbor	We noted, OK, today.	OK	We / noted / , / OK / , / today / . / Next / .
+C	OK	1	ok	False	case-variant-neutral	We noted ok today.	ok	We / noted / ok / today / . / Next / .
+C	ON	1	on	False	baseline-neutral	We noted ON today.	ON	We / noted / ON / today / . / Next / .
+C	ON	1	on	False	numeric-or-ordinary	It is 5 ON. long.	five / ON	It / is / five / ON / long / . / Next / .
+C	ON	1	on	False	comma-neighbor	We noted, ON, today.	ON	We / noted / , / ON / , / today / . / Next / .
+C	ON	1	on	False	case-variant-neutral	We noted on today.	on	We / noted / on / today / . / Next / .
+C	OR	1	or	False	baseline-neutral	We noted OR today.	OR	We / noted / OR / today / . / Next / .
+C	OR	1	or	False	state-code	We live in OR.	OR	We / live / in / OR / . / Next / .
+C	OR	1	or	False	comma-neighbor	We noted, OR, today.	OR	We / noted / , / OR / , / today / . / Next / .
+C	OR	1	or	False	case-variant-neutral	We noted or today.	or	We / noted / or / today / . / Next / .
+C	Oct	1	oct	False	baseline-neutral	We noted Oct today.	October	We / noted / October / today / . / Next / .
+C	Oct	1	oct	False	calendar-date	We met on Oct. 5.	October	We / met / on / October / fifth / . / Next / .
+C	Oct	1	oct	False	comma-neighbor	We noted, Oct, today.	October	We / noted / , / October / , / today / . / Next / .
+C	Oct	1	oct	False	case-variant-neutral	We noted oct today.	October	We / noted / October / today / . / Next / .
+C	PA	1	pa	False	baseline-neutral	We noted PA today.	PA	We / noted / PA / today / . / Next / .
+C	PA	1	pa	False	state-code	We live in PA.	PA	We / live / in / PA / . / Next / .
+C	PA	1	pa	False	comma-neighbor	We noted, PA, today.	PA	We / noted / , / PA / , / today / . / Next / .
+C	PA	1	pa	False	case-variant-neutral	We noted pa today.	pa	We / noted / pa / today / . / Next / .
+C	PE	1	pe	False	baseline-neutral	We noted PE today.	PE	We / noted / PE / today / . / Next / .
+C	PE	1	pe	False	numeric-or-ordinary	It is 5 PE. long.	five / PE	It / is / five / PE / long / . / Next / .
+C	PE	1	pe	False	comma-neighbor	We noted, PE, today.	PE	We / noted / , / PE / , / today / . / Next / .
+C	PE	1	pe	False	case-variant-neutral	We noted pe today.	pe	We / noted / pe / today / . / Next / .
+C	PQ	1	pq	False	baseline-neutral	We noted PQ today.	PQ	We / noted / PQ / today / . / Next / .
+C	PQ	1	pq	False	numeric-or-ordinary	It is 5 PQ. long.	five / PQ	It / is / five / PQ / long / . / Next / .
+C	PQ	1	pq	False	comma-neighbor	We noted, PQ, today.	PQ	We / noted / , / PQ / , / today / . / Next / .
+C	PQ	1	pq	False	case-variant-neutral	We noted pq today.	pq	We / noted / pq / today / . / Next / .
+C	PR	1	pr	False	baseline-neutral	We noted PR today.	PR	We / noted / PR / today / . / Next / .
+C	PR	1	pr	False	numeric-or-ordinary	It is 5 PR. long.	five / PR	It / is / five / PR / long / . / Next / .
+C	PR	1	pr	False	comma-neighbor	We noted, PR, today.	PR	We / noted / , / PR / , / today / . / Next / .
+C	PR	1	pr	False	case-variant-neutral	We noted pr today.	pr	We / noted / pr / today / . / Next / .
+C	Pa	1	pa	False	baseline-neutral	We noted Pa today.	Pa	We / noted / Pa / today / . / Next / .
+C	Pa	1	pa	False	numeric-or-ordinary	It is 5 Pa. long.	five / pascals	It / is / five / pascals / long / . / Next / .
+C	Pa	1	pa	False	comma-neighbor	We noted, Pa, today.	Pa	We / noted / , / Pa / , / today / . / Next / .
+C	Pa	1	pa	False	case-variant-neutral	We noted pa today.	pa	We / noted / pa / today / . / Next / .
+C	QC	1	qc	False	baseline-neutral	We noted QC today.	QC	We / noted / QC / today / . / Next / .
+C	QC	1	qc	False	numeric-or-ordinary	It is 5 QC. long.	five / QC	It / is / five / QC / long / . / Next / .
+C	QC	1	qc	False	comma-neighbor	We noted, QC, today.	QC	We / noted / , / QC / , / today / . / Next / .
+C	QC	1	qc	False	case-variant-neutral	We noted qc today.	qc	We / noted / qc / today / . / Next / .
+C	RI	1	ri	False	baseline-neutral	We noted RI today.	RI	We / noted / RI / today / . / Next / .
+C	RI	1	ri	False	state-code	We live in RI.	RI	We / live / in / RI / . / Next / .
+C	RI	1	ri	False	comma-neighbor	We noted, RI, today.	RI	We / noted / , / RI / , / today / . / Next / .
+C	RI	1	ri	False	case-variant-neutral	We noted ri today.	ri	We / noted / ri / today / . / Next / .
+C	RK	1	rk	False	baseline-neutral	We noted RK today.	RK	We / noted / RK / today / . / Next / .
+C	RK	1	rk	False	numeric-or-ordinary	It is 5 RK. long.	five / rankines	It / is / five / rankines / long / . / Next / .
+C	RK	1	rk	False	comma-neighbor	We noted, RK, today.	RK	We / noted / , / RK / , / today / . / Next / .
+C	RK	1	rk	False	case-variant-neutral	We noted rk today.	rk	We / noted / rk / today / . / Next / .
+C	ROBT	1	robt	False	baseline-neutral	We noted ROBT today.	ROBT	We / noted / ROBT / today / . / Next / .
+C	ROBT	1	robt	False	numeric-or-ordinary	It is 5 ROBT. long.	five / ROBT	It / is / five / ROBT / long / . / Next / .
+C	ROBT	1	robt	False	comma-neighbor	We noted, ROBT, today.	ROBT	We / noted / , / ROBT / , / today / . / Next / .
+C	ROBT	1	robt	False	case-variant-neutral	We noted robt today.	robt	We / noted / robt / today / . / Next / .
+C	Robt	1	robt	False	baseline-neutral	We noted Robt today.	Robt	We / noted / Robt / today / . / Next / .
+C	Robt	1	robt	False	numeric-or-ordinary	It is 5 Robt. long.	five / Robt	It / is / five / Robt / long / . / Next / .
+C	Robt	1	robt	False	comma-neighbor	We noted, Robt, today.	Robt	We / noted / , / Robt / , / today / . / Next / .
+C	Robt	1	robt	False	case-variant-neutral	We noted robt today.	robt	We / noted / robt / today / . / Next / .
+C	S.E	1	s.e	False	baseline-neutral	We noted S.E today.	S.E	We / noted / S.E / today / . / Next / .
+C	S.E	1	s.e	False	numeric-or-ordinary	It is 5 S.E. long.	five / S.E	It / is / five / S.E / long / . / Next / .
+C	S.E	1	s.e	False	comma-neighbor	We noted, S.E, today.	S.E	We / noted / , / S.E / , / today / . / Next / .
+C	S.E	1	s.e	False	case-variant-neutral	We noted s.e today.	s.e	We / noted / s.e / today / . / Next / .
+C	S.W	1	s.w	False	baseline-neutral	We noted S.W today.	S.W	We / noted / S.W / today / . / Next / .
+C	S.W	1	s.w	False	numeric-or-ordinary	It is 5 S.W. long.	five / S.W	It / is / five / S.W / long / . / Next / .
+C	S.W	1	s.w	False	comma-neighbor	We noted, S.W, today.	S.W	We / noted / , / S.W / , / today / . / Next / .
+C	S.W	1	s.w	False	case-variant-neutral	We noted s.w today.	s.w	We / noted / s.w / today / . / Next / .
+C	SAT	1	sat	False	baseline-neutral	We noted SAT today.	SAT	We / noted / SAT / today / . / Next / .
+C	SAT	1	sat	False	calendar-weekday	We met on SAT.	Saturday	We / met / on / Saturday / . / Next / .
+C	SAT	1	sat	False	comma-neighbor	We noted, SAT, today.	SAT	We / noted / , / SAT / , / today / . / Next / .
+C	SAT	1	sat	False	case-variant-neutral	We noted sat today.	sat	We / noted / sat / today / . / Next / .
+C	SC	1	sc	False	baseline-neutral	We noted SC today.	SC	We / noted / SC / today / . / Next / .
+C	SC	1	sc	False	state-code	We live in SC.	SC	We / live / in / SC / . / Next / .
+C	SC	1	sc	False	comma-neighbor	We noted, SC, today.	SC	We / noted / , / SC / , / today / . / Next / .
+C	SC	1	sc	False	case-variant-neutral	We noted sc today.	sc	We / noted / sc / today / . / Next / .
+C	SD	1	sd	False	baseline-neutral	We noted SD today.	SD	We / noted / SD / today / . / Next / .
+C	SD	1	sd	False	state-code	We live in SD.	SD	We / live / in / SD / . / Next / .
+C	SD	1	sd	False	comma-neighbor	We noted, SD, today.	SD	We / noted / , / SD / , / today / . / Next / .
+C	SD	1	sd	False	case-variant-neutral	We noted sd today.	sd	We / noted / sd / today / . / Next / .
+C	SE	1	se	False	baseline-neutral	We noted SE today.	SE	We / noted / SE / today / . / Next / .
+C	SE	1	se	False	numeric-or-ordinary	It is 5 SE. long.	five / SE	It / is / five / SE / long / . / Next / .
+C	SE	1	se	False	comma-neighbor	We noted, SE, today.	SE	We / noted / , / SE / , / today / . / Next / .
+C	SE	1	se	False	case-variant-neutral	We noted se today.	se	We / noted / se / today / . / Next / .
+C	SEP	1	sep	False	baseline-neutral	We noted SEP today.	September	We / noted / September / today / . / Next / .
+C	SEP	1	sep	False	calendar-date	We met on SEP. 5.	September	We / met / on / September / fifth / . / Next / .
+C	SEP	1	sep	False	comma-neighbor	We noted, SEP, today.	September	We / noted / , / September / , / today / . / Next / .
+C	SEP	1	sep	False	case-variant-neutral	We noted sep today.	September	We / noted / September / today / . / Next / .
+C	SEPT	1	sept	False	baseline-neutral	We noted SEPT today.	September	We / noted / September / today / . / Next / .
+C	SEPT	1	sept	False	calendar-date	We met on SEPT. 5.	September	We / met / on / September / fifth / . / Next / .
+C	SEPT	1	sept	False	comma-neighbor	We noted, SEPT, today.	September	We / noted / , / September / , / today / . / Next / .
+C	SEPT	1	sept	False	case-variant-neutral	We noted sept today.	September	We / noted / September / today / . / Next / .
+C	SK	1	sk	False	baseline-neutral	We noted SK today.	SK	We / noted / SK / today / . / Next / .
+C	SK	1	sk	False	numeric-or-ordinary	It is 5 SK. long.	five / SK	It / is / five / SK / long / . / Next / .
+C	SK	1	sk	False	comma-neighbor	We noted, SK, today.	SK	We / noted / , / SK / , / today / . / Next / .
+C	SK	1	sk	False	case-variant-neutral	We noted sk today.	sk	We / noted / sk / today / . / Next / .
+C	SUN	1	sun	False	baseline-neutral	We noted SUN today.	SUN	We / noted / SUN / today / . / Next / .
+C	SUN	1	sun	False	calendar-weekday	We met on SUN.	Sunday	We / met / on / Sunday / . / Next / .
+C	SUN	1	sun	False	comma-neighbor	We noted, SUN, today.	SUN	We / noted / , / SUN / , / today / . / Next / .
+C	SUN	1	sun	False	case-variant-neutral	We noted sun today.	sun	We / noted / sun / today / . / Next / .
+C	SW	1	sw	False	baseline-neutral	We noted SW today.	SW	We / noted / SW / today / . / Next / .
+C	SW	1	sw	False	numeric-or-ordinary	It is 5 SW. long.	five / SW	It / is / five / SW / long / . / Next / .
+C	SW	1	sw	False	comma-neighbor	We noted, SW, today.	SW	We / noted / , / SW / , / today / . / Next / .
+C	SW	1	sw	False	case-variant-neutral	We noted sw today.	sw	We / noted / sw / today / . / Next / .
+C	Sat	1	sat	False	baseline-neutral	We noted Sat today.	Sat	We / noted / Sat / today / . / Next / .
+C	Sat	1	sat	False	calendar-weekday	We met on Sat.	Saturday	We / met / on / Saturday / . / Next / .
+C	Sat	1	sat	False	comma-neighbor	We noted, Sat, today.	Sat	We / noted / , / Sat / , / today / . / Next / .
+C	Sat	1	sat	False	case-variant-neutral	We noted sat today.	sat	We / noted / sat / today / . / Next / .
+C	Sep	1	sep	False	baseline-neutral	We noted Sep today.	September	We / noted / September / today / . / Next / .
+C	Sep	1	sep	False	calendar-date	We met on Sep. 5.	September	We / met / on / September / fifth / . / Next / .
+C	Sep	1	sep	False	comma-neighbor	We noted, Sep, today.	September	We / noted / , / September / , / today / . / Next / .
+C	Sep	1	sep	False	case-variant-neutral	We noted sep today.	September	We / noted / September / today / . / Next / .
+C	Sept	1	sept	False	baseline-neutral	We noted Sept today.	September	We / noted / September / today / . / Next / .
+C	Sept	1	sept	False	calendar-date	We met on Sept. 5.	September	We / met / on / September / fifth / . / Next / .
+C	Sept	1	sept	False	comma-neighbor	We noted, Sept, today.	September	We / noted / , / September / , / today / . / Next / .
+C	Sept	1	sept	False	case-variant-neutral	We noted sept today.	September	We / noted / September / today / . / Next / .
+C	Sun	1	sun	False	baseline-neutral	We noted Sun today.	Sun	We / noted / Sun / today / . / Next / .
+C	Sun	1	sun	False	calendar-weekday	We met on Sun.	Sunday	We / met / on / Sunday / . / Next / .
+C	Sun	1	sun	False	comma-neighbor	We noted, Sun, today.	Sun	We / noted / , / Sun / , / today / . / Next / .
+C	Sun	1	sun	False	case-variant-neutral	We noted sun today.	sun	We / noted / sun / today / . / Next / .
+C	Sv	1	sv	False	baseline-neutral	We noted Sv today.	sievert	We / noted / sievert / today / . / Next / .
+C	Sv	1	sv	False	numeric-or-ordinary	It is 5 Sv. long.	five / sieverts	It / is / five / sieverts / long / . / Next / .
+C	Sv	1	sv	False	comma-neighbor	We noted, Sv, today.	sievert	We / noted / , / sievert / , / today / . / Next / .
+C	Sv	1	sv	False	case-variant-neutral	We noted sv today.	sv	We / noted / sv / today / . / Next / .
+C	THOS	1	thos	False	baseline-neutral	We noted THOS today.	THOS	We / noted / THOS / today / . / Next / .
+C	THOS	1	thos	False	numeric-or-ordinary	It is 5 THOS. long.	five / THOS	It / is / five / THOS / long / . / Next / .
+C	THOS	1	thos	False	comma-neighbor	We noted, THOS, today.	THOS	We / noted / , / THOS / , / today / . / Next / .
+C	THOS	1	thos	False	case-variant-neutral	We noted thos today.	thos	We / noted / thos / today / . / Next / .
+C	THU	1	thu	False	baseline-neutral	We noted THU today.	THU	We / noted / THU / today / . / Next / .
+C	THU	1	thu	False	calendar-weekday	We met on THU.	Thursday	We / met / on / Thursday / . / Next / .
+C	THU	1	thu	False	comma-neighbor	We noted, THU, today.	THU	We / noted / , / THU / , / today / . / Next / .
+C	THU	1	thu	False	case-variant-neutral	We noted thu today.	thu	We / noted / thu / today / . / Next / .
+C	THUR	1	thur	False	baseline-neutral	We noted THUR today.	THUR	We / noted / THUR / today / . / Next / .
+C	THUR	1	thur	False	calendar-weekday	We met on THUR.	Thursday	We / met / on / Thursday / . / Next / .
+C	THUR	1	thur	False	comma-neighbor	We noted, THUR, today.	THUR	We / noted / , / THUR / , / today / . / Next / .
+C	THUR	1	thur	False	case-variant-neutral	We noted thur today.	thur	We / noted / thur / today / . / Next / .
+C	THURS	1	thurs	False	baseline-neutral	We noted THURS today.	THURS	We / noted / THURS / today / . / Next / .
+C	THURS	1	thurs	False	calendar-weekday	We met on THURS.	Thursday	We / met / on / Thursday / . / Next / .
+C	THURS	1	thurs	False	comma-neighbor	We noted, THURS, today.	THURS	We / noted / , / THURS / , / today / . / Next / .
+C	THURS	1	thurs	False	case-variant-neutral	We noted thurs today.	thurs	We / noted / thurs / today / . / Next / .
+C	TN	1	tn	False	baseline-neutral	We noted TN today.	TN	We / noted / TN / today / . / Next / .
+C	TN	1	tn	False	state-code	We live in TN.	TN	We / live / in / TN / . / Next / .
+C	TN	1	tn	False	comma-neighbor	We noted, TN, today.	TN	We / noted / , / TN / , / today / . / Next / .
+C	TN	1	tn	False	case-variant-neutral	We noted tn today.	tn	We / noted / tn / today / . / Next / .
+C	TUE	1	tue	False	baseline-neutral	We noted TUE today.	TUE	We / noted / TUE / today / . / Next / .
+C	TUE	1	tue	False	calendar-weekday	We met on TUE.	Tuesday	We / met / on / Tuesday / . / Next / .
+C	TUE	1	tue	False	comma-neighbor	We noted, TUE, today.	TUE	We / noted / , / TUE / , / today / . / Next / .
+C	TUE	1	tue	False	case-variant-neutral	We noted tue today.	tue	We / noted / tue / today / . / Next / .
+C	TUES	1	tues	False	baseline-neutral	We noted TUES today.	TUES	We / noted / TUES / today / . / Next / .
+C	TUES	1	tues	False	calendar-weekday	We met on TUES.	Tuesday	We / met / on / Tuesday / . / Next / .
+C	TUES	1	tues	False	comma-neighbor	We noted, TUES, today.	TUES	We / noted / , / TUES / , / today / . / Next / .
+C	TUES	1	tues	False	case-variant-neutral	We noted tues today.	tues	We / noted / tues / today / . / Next / .
+C	TX	1	tx	False	baseline-neutral	We noted TX today.	TX	We / noted / TX / today / . / Next / .
+C	TX	1	tx	False	state-code	We live in TX.	TX	We / live / in / TX / . / Next / .
+C	TX	1	tx	False	comma-neighbor	We noted, TX, today.	TX	We / noted / , / TX / , / today / . / Next / .
+C	TX	1	tx	False	case-variant-neutral	We noted tx today.	tx	We / noted / tx / today / . / Next / .
+C	Thos	1	thos	False	baseline-neutral	We noted Thos today.	Thos	We / noted / Thos / today / . / Next / .
+C	Thos	1	thos	False	numeric-or-ordinary	It is 5 Thos. long.	five / Thos	It / is / five / Thos / long / . / Next / .
+C	Thos	1	thos	False	comma-neighbor	We noted, Thos, today.	Thos	We / noted / , / Thos / , / today / . / Next / .
+C	Thos	1	thos	False	case-variant-neutral	We noted thos today.	thos	We / noted / thos / today / . / Next / .
+C	Thu	1	thu	False	baseline-neutral	We noted Thu today.	Thu	We / noted / Thu / today / . / Next / .
+C	Thu	1	thu	False	calendar-weekday	We met on Thu.	Thursday	We / met / on / Thursday / . / Next / .
+C	Thu	1	thu	False	comma-neighbor	We noted, Thu, today.	Thu	We / noted / , / Thu / , / today / . / Next / .
+C	Thu	1	thu	False	case-variant-neutral	We noted thu today.	thu	We / noted / thu / today / . / Next / .
+C	Thur	1	thur	False	baseline-neutral	We noted Thur today.	Thur	We / noted / Thur / today / . / Next / .
+C	Thur	1	thur	False	calendar-weekday	We met on Thur.	Thursday	We / met / on / Thursday / . / Next / .
+C	Thur	1	thur	False	comma-neighbor	We noted, Thur, today.	Thur	We / noted / , / Thur / , / today / . / Next / .
+C	Thur	1	thur	False	case-variant-neutral	We noted thur today.	thur	We / noted / thur / today / . / Next / .
+C	Thurs	1	thurs	False	baseline-neutral	We noted Thurs today.	Thurs	We / noted / Thurs / today / . / Next / .
+C	Thurs	1	thurs	False	calendar-weekday	We met on Thurs.	Thursday	We / met / on / Thursday / . / Next / .
+C	Thurs	1	thurs	False	comma-neighbor	We noted, Thurs, today.	Thurs	We / noted / , / Thurs / , / today / . / Next / .
+C	Thurs	1	thurs	False	case-variant-neutral	We noted thurs today.	thurs	We / noted / thurs / today / . / Next / .
+C	Tue	1	tue	False	baseline-neutral	We noted Tue today.	Tue	We / noted / Tue / today / . / Next / .
+C	Tue	1	tue	False	calendar-weekday	We met on Tue.	Tuesday	We / met / on / Tuesday / . / Next / .
+C	Tue	1	tue	False	comma-neighbor	We noted, Tue, today.	Tue	We / noted / , / Tue / , / today / . / Next / .
+C	Tue	1	tue	False	case-variant-neutral	We noted tue today.	tue	We / noted / tue / today / . / Next / .
+C	Tues	1	tues	False	baseline-neutral	We noted Tues today.	Tues	We / noted / Tues / today / . / Next / .
+C	Tues	1	tues	False	calendar-weekday	We met on Tues.	Tuesday	We / met / on / Tuesday / . / Next / .
+C	Tues	1	tues	False	comma-neighbor	We noted, Tues, today.	Tues	We / noted / , / Tues / , / today / . / Next / .
+C	Tues	1	tues	False	case-variant-neutral	We noted tues today.	tues	We / noted / tues / today / . / Next / .
+C	US	1	us	False	baseline-neutral	We noted US today.	US	We / noted / US / today / . / Next / .
+C	US	1	us	False	numeric-or-ordinary	It is 5 US. long.	five / US	It / is / five / US / long / . / Next / .
+C	US	1	us	False	comma-neighbor	We noted, US, today.	US	We / noted / , / US / , / today / . / Next / .
+C	US	1	us	False	case-variant-neutral	We noted us today.	us	We / noted / us / today / . / Next / .
+C	USA	1	usa	False	baseline-neutral	We noted USA today.	USA	We / noted / USA / today / . / Next / .
+C	USA	1	usa	False	numeric-or-ordinary	It is 5 USA. long.	five / USA	It / is / five / USA / long / . / Next / .
+C	USA	1	usa	False	comma-neighbor	We noted, USA, today.	USA	We / noted / , / USA / , / today / . / Next / .
+C	USA	1	usa	False	case-variant-neutral	We noted usa today.	usa	We / noted / usa / today / . / Next / .
+C	UT	1	ut	False	baseline-neutral	We noted UT today.	UT	We / noted / UT / today / . / Next / .
+C	UT	1	ut	False	state-code	We live in UT.	UT	We / live / in / UT / . / Next / .
+C	UT	1	ut	False	comma-neighbor	We noted, UT, today.	UT	We / noted / , / UT / , / today / . / Next / .
+C	UT	1	ut	False	case-variant-neutral	We noted ut today.	ut	We / noted / ut / today / . / Next / .
+C	VA	1	va	False	baseline-neutral	We noted VA today.	VA	We / noted / VA / today / . / Next / .
+C	VA	1	va	False	state-code	We live in VA.	VA	We / live / in / VA / . / Next / .
+C	VA	1	va	False	comma-neighbor	We noted, VA, today.	VA	We / noted / , / VA / , / today / . / Next / .
+C	VA	1	va	False	case-variant-neutral	We noted va today.	va	We / noted / va / today / . / Next / .
+C	VI	1	vi	False	baseline-neutral	We noted VI today.	six	We / noted / six / today / . / Next / .
+C	VI	1	vi	False	numeric-or-ordinary	It is 5 VI. long.	five / six	It / is / five / six / long / . / Next / .
+C	VI	1	vi	False	comma-neighbor	We noted, VI, today.	six	We / noted / , / six / , / today / . / Next / .
+C	VI	1	vi	False	case-variant-neutral	We noted vi today.	vi	We / noted / vi / today / . / Next / .
+C	VT	1	vt	False	baseline-neutral	We noted VT today.	VT	We / noted / VT / today / . / Next / .
+C	VT	1	vt	False	state-code	We live in VT.	VT	We / live / in / VT / . / Next / .
+C	VT	1	vt	False	comma-neighbor	We noted, VT, today.	VT	We / noted / , / VT / , / today / . / Next / .
+C	VT	1	vt	False	case-variant-neutral	We noted vt today.	vt	We / noted / vt / today / . / Next / .
+C	WA	1	wa	False	baseline-neutral	We noted WA today.	WA	We / noted / WA / today / . / Next / .
+C	WA	1	wa	False	state-code	We live in WA.	WA	We / live / in / WA / . / Next / .
+C	WA	1	wa	False	comma-neighbor	We noted, WA, today.	WA	We / noted / , / WA / , / today / . / Next / .
+C	WA	1	wa	False	case-variant-neutral	We noted wa today.	wa	We / noted / wa / today / . / Next / .
+C	WED	1	wed	False	baseline-neutral	We noted WED today.	WED	We / noted / WED / today / . / Next / .
+C	WED	1	wed	False	calendar-weekday	We met on WED.	Wednesday	We / met / on / Wednesday / . / Next / .
+C	WED	1	wed	False	comma-neighbor	We noted, WED, today.	WED	We / noted / , / WED / , / today / . / Next / .
+C	WED	1	wed	False	case-variant-neutral	We noted wed today.	wed	We / noted / wed / today / . / Next / .
+C	WI	1	wi	False	baseline-neutral	We noted WI today.	WI	We / noted / WI / today / . / Next / .
+C	WI	1	wi	False	state-code	We live in WI.	WI	We / live / in / WI / . / Next / .
+C	WI	1	wi	False	comma-neighbor	We noted, WI, today.	WI	We / noted / , / WI / , / today / . / Next / .
+C	WI	1	wi	False	case-variant-neutral	We noted wi today.	wi	We / noted / wi / today / . / Next / .
+C	WM	1	wm	False	baseline-neutral	We noted WM today.	WM	We / noted / WM / today / . / Next / .
+C	WM	1	wm	False	numeric-or-ordinary	It is 5 WM. long.	five / WM	It / is / five / WM / long / . / Next / .
+C	WM	1	wm	False	comma-neighbor	We noted, WM, today.	WM	We / noted / , / WM / , / today / . / Next / .
+C	WM	1	wm	False	case-variant-neutral	We noted wm today.	wm	We / noted / wm / today / . / Next / .
+C	WV	1	wv	False	baseline-neutral	We noted WV today.	WV	We / noted / WV / today / . / Next / .
+C	WV	1	wv	False	state-code	We live in WV.	WV	We / live / in / WV / . / Next / .
+C	WV	1	wv	False	comma-neighbor	We noted, WV, today.	WV	We / noted / , / WV / , / today / . / Next / .
+C	WV	1	wv	False	case-variant-neutral	We noted wv today.	wv	We / noted / wv / today / . / Next / .
+C	WY	1	wy	False	baseline-neutral	We noted WY today.	WY	We / noted / WY / today / . / Next / .
+C	WY	1	wy	False	state-code	We live in WY.	WY	We / live / in / WY / . / Next / .
+C	WY	1	wy	False	comma-neighbor	We noted, WY, today.	WY	We / noted / , / WY / , / today / . / Next / .
+C	WY	1	wy	False	case-variant-neutral	We noted wy today.	wy	We / noted / wy / today / . / Next / .
+C	Wb	1	wb	False	baseline-neutral	We noted Wb today.	Wb	We / noted / Wb / today / . / Next / .
+C	Wb	1	wb	False	numeric-or-ordinary	It is 5 Wb. long.	five / Wb	It / is / five / Wb / long / . / Next / .
+C	Wb	1	wb	False	comma-neighbor	We noted, Wb, today.	Wb	We / noted / , / Wb / , / today / . / Next / .
+C	Wb	1	wb	False	case-variant-neutral	We noted wb today.	wb	We / noted / wb / today / . / Next / .
+C	Wed	1	wed	False	baseline-neutral	We noted Wed today.	Wed	We / noted / Wed / today / . / Next / .
+C	Wed	1	wed	False	calendar-weekday	We met on Wed.	Wednesday	We / met / on / Wednesday / . / Next / .
+C	Wed	1	wed	False	comma-neighbor	We noted, Wed, today.	Wed	We / noted / , / Wed / , / today / . / Next / .
+C	Wed	1	wed	False	case-variant-neutral	We noted wed today.	wed	We / noted / wed / today / . / Next / .
+C	Wh	1	wh	False	baseline-neutral	We noted Wh today.	Wh	We / noted / Wh / today / . / Next / .
+C	Wh	1	wh	False	numeric-or-ordinary	It is 5 Wh. long.	five / Wh	It / is / five / Wh / long / . / Next / .
+C	Wh	1	wh	False	comma-neighbor	We noted, Wh, today.	Wh	We / noted / , / Wh / , / today / . / Next / .
+C	Wh	1	wh	False	case-variant-neutral	We noted wh today.	wh	We / noted / wh / today / . / Next / .
+C	Wm	1	wm	False	baseline-neutral	We noted Wm today.	Wm	We / noted / Wm / today / . / Next / .
+C	Wm	1	wm	False	numeric-or-ordinary	It is 5 Wm. long.	five / Wm	It / is / five / Wm / long / . / Next / .
+C	Wm	1	wm	False	comma-neighbor	We noted, Wm, today.	Wm	We / noted / , / Wm / , / today / . / Next / .
+C	Wm	1	wm	False	case-variant-neutral	We noted wm today.	wm	We / noted / wm / today / . / Next / .
+C	Ws	1	ws	False	baseline-neutral	We noted Ws today.	Ws	We / noted / Ws / today / . / Next / .
+C	Ws	1	ws	False	numeric-or-ordinary	It is 5 Ws. long.	five / Ws	It / is / five / Ws / long / . / Next / .
+C	Ws	1	ws	False	comma-neighbor	We noted, Ws, today.	Ws	We / noted / , / Ws / , / today / . / Next / .
+C	Ws	1	ws	False	case-variant-neutral	We noted ws today.	ws	We / noted / ws / today / . / Next / .
+C	YT	1	yt	False	baseline-neutral	We noted YT today.	YT	We / noted / YT / today / . / Next / .
+C	YT	1	yt	False	numeric-or-ordinary	It is 5 YT. long.	five / YT	It / is / five / YT / long / . / Next / .
+C	YT	1	yt	False	comma-neighbor	We noted, YT, today.	YT	We / noted / , / YT / , / today / . / Next / .
+C	YT	1	yt	False	case-variant-neutral	We noted yt today.	yt	We / noted / yt / today / . / Next / .
+C	a.d	2	A.D	False	baseline-neutral	We noted a.d today.	a.d	We / noted / a.d / today / . / Next / .
+C	a.d	2	A.D	False	numeric-or-ordinary	It is 5 a.d. long.	five / a.d	It / is / five / a.d / long / . / Next / .
+C	a.d	2	A.D	False	comma-neighbor	We noted, a.d, today.	a.d	We / noted / , / a.d / , / today / . / Next / .
+C	a.d	2	A.D	False	case-variant-neutral	We noted A.D today.	A.D	We / noted / A.D / today / . / Next / .
+C	a.m	2	A.M	False	baseline-neutral	We noted a.m today.	a.m	We / noted / a.m / today / . / Next / .
+C	a.m	2	A.M	False	clock-or-zone	The meeting is at 5 a.m.	AM.	The / meeting / is / at / five / AM. / Next / .
+C	a.m	2	A.M	False	comma-neighbor	We noted, a.m, today.	a.m	We / noted / , / a.m / , / today / . / Next / .
+C	a.m	2	A.M	False	case-variant-neutral	We noted A.M today.	A.M	We / noted / A.M / today / . / Next / .
+C	a.t.m	2	A.T.M	False	baseline-neutral	We noted a.t.m today.	a.t.m	We / noted / a.t.m / today / . / Next / .
+C	a.t.m	2	A.T.M	False	numeric-or-ordinary	It is 5 a.t.m. long.	five / a.t.m	It / is / five / a.t.m / long / . / Next / .
+C	a.t.m	2	A.T.M	False	comma-neighbor	We noted, a.t.m, today.	a.t.m	We / noted / , / a.t.m / , / today / . / Next / .
+C	a.t.m	2	A.T.M	False	case-variant-neutral	We noted A.T.M today.	A.T.M	We / noted / A.T.M / today / . / Next / .
+C	acctg	2	ACCTG	False	baseline-neutral	We noted acctg today.	accounting	We / noted / accounting / today / . / Next / .
+C	acctg	2	ACCTG	False	numeric-or-ordinary	It is 5 acctg. long.	five / accounting	It / is / five / accounting / long / . / Next / .
+C	acctg	2	ACCTG	False	comma-neighbor	We noted, acctg, today.	accounting	We / noted / , / accounting / , / today / . / Next / .
+C	acctg	2	ACCTG	False	case-variant-neutral	We noted ACCTG today.	accounting	We / noted / accounting / today / . / Next / .
+C	am	2	AM	False	baseline-neutral	We noted am today.	am	We / noted / am / today / . / Next / .
+C	am	2	AM	False	clock-or-zone	The meeting is at 5 am.	AM.	The / meeting / is / at / five / AM. / Next / .
+C	am	2	AM	False	comma-neighbor	We noted, am, today.	am	We / noted / , / am / , / today / . / Next / .
+C	am	2	AM	False	case-variant-neutral	We noted AM today.	AM	We / noted / AM / today / . / Next / .
+C	approx	2	APPROX	False	baseline-neutral	We noted approx today.	approximately	We / noted / approximately / today / . / Next / .
+C	approx	2	APPROX	False	numeric-or-ordinary	It is 5 approx. long.	five / approximately	It / is / five / approximately / long / . / Next / .
+C	approx	2	APPROX	False	comma-neighbor	We noted, approx, today.	approximately	We / noted / , / approximately / , / today / . / Next / .
+C	approx	2	APPROX	False	case-variant-neutral	We noted APPROX today.	approximately	We / noted / approximately / today / . / Next / .
+C	appt	2	APPT	False	baseline-neutral	We noted appt today.	appointment	We / noted / appointment / today / . / Next / .
+C	appt	2	APPT	False	numeric-or-ordinary	It is 5 appt. long.	five / appointment	It / is / five / appointment / long / . / Next / .
+C	appt	2	APPT	False	comma-neighbor	We noted, appt, today.	appointment	We / noted / , / appointment / , / today / . / Next / .
+C	appt	2	APPT	False	case-variant-neutral	We noted APPT today.	appointment	We / noted / appointment / today / . / Next / .
+C	apt	2	APT	False	baseline-neutral	We noted apt today.	apt	We / noted / apt / today / . / Next
+C	apt	2	APT	False	address-or-building	42 Main apt.	Apartment	forty / two / Main / Apartment / . / Next / .
+C	apt	2	APT	False	comma-neighbor	We noted, apt, today.	apt	We / noted / , / apt / , / today / . / Next / .
+C	apt	2	APT	False	case-variant-neutral	We noted APT today.	APT	We / noted / APT / today / . / Next / .
+C	atm	2	ATM	False	baseline-neutral	We noted atm today.	atm	We / noted / atm / today / . / Next / .
+C	atm	2	ATM	False	numeric-or-ordinary	It is 5 atm. long.	five / atmospheres	It / is / five / atmospheres / long / . / Next / .
+C	atm	2	ATM	False	comma-neighbor	We noted, atm, today.	atm	We / noted / , / atm / , / today / . / Next / .
+C	atm	2	ATM	False	case-variant-neutral	We noted ATM today.	ATM	We / noted / ATM / today / . / Next / .
+C	avg	2	AVG	False	baseline-neutral	We noted avg today.	average	We / noted / average / today / . / Next / .
+C	avg	2	AVG	False	numeric-or-ordinary	It is 5 avg. long.	five / average	It / is / five / average / long / . / Next / .
+C	avg	2	AVG	False	comma-neighbor	We noted, avg, today.	average	We / noted / , / average / , / today / . / Next / .
+C	avg	2	AVG	False	case-variant-neutral	We noted AVG today.	average	We / noted / average / today / . / Next / .
+C	b.c	2	B.C	False	baseline-neutral	We noted b.c today.	b.c	We / noted / b.c / today / . / Next / .
+C	b.c	2	B.C	False	numeric-or-ordinary	It is 5 b.c. long.	five / b.c	It / is / five / b.c / long / . / Next / .
+C	b.c	2	B.C	False	comma-neighbor	We noted, b.c, today.	b.c	We / noted / , / b.c / , / today / . / Next / .
+C	b.c	2	B.C	False	case-variant-neutral	We noted B.C today.	B.C	We / noted / B.C / today / . / Next / .
+C	b.t.u	2	B.T.U	False	baseline-neutral	We noted b.t.u today.	b.t.u	We / noted / b.t.u / today / . / Next / .
+C	b.t.u	2	B.T.U	False	numeric-or-ordinary	It is 5 b.t.u. long.	five / b.t.u	It / is / five / b.t.u / long / . / Next / .
+C	b.t.u	2	B.T.U	False	comma-neighbor	We noted, b.t.u, today.	b.t.u	We / noted / , / b.t.u / , / today / . / Next / .
+C	b.t.u	2	B.T.U	False	case-variant-neutral	We noted B.T.U today.	B.T.U	We / noted / B.T.U / today / . / Next / .
+C	bdrm	2	BDRM	False	baseline-neutral	We noted bdrm today.	bedroom	We / noted / bedroom / today / . / Next
+C	bdrm	2	BDRM	False	address-or-building	42 Main bdrm.	bedroom	forty / two / Main / bedroom / . / Next / .
+C	bdrm	2	BDRM	False	comma-neighbor	We noted, bdrm, today.	bedroom	We / noted / , / bedroom / , / today / . / Next / .
+C	bdrm	2	BDRM	False	case-variant-neutral	We noted BDRM today.	bedroom	We / noted / bedroom / today / . / Next / .
+C	bldg	2	BLDG	False	baseline-neutral	We noted bldg today.	building	We / noted / building / today / . / Next
+C	bldg	2	BLDG	False	address-or-building	42 Main bldg.	Building	forty / two / Main / Building / . / Next / .
+C	bldg	2	BLDG	False	comma-neighbor	We noted, bldg, today.	building	We / noted / , / building / , / today / . / Next / .
+C	bldg	2	BLDG	False	case-variant-neutral	We noted BLDG today.	building	We / noted / building / today / . / Next / .
+C	bros	2	BROS	False	baseline-neutral	We noted bros today.	brothers	We / noted / brothers / today / . / Next / .
+C	bros	2	BROS	False	numeric-or-ordinary	It is 5 bros. long.	five / brothers	It / is / five / brothers / long / . / Next / .
+C	bros	2	BROS	False	comma-neighbor	We noted, bros, today.	brothers	We / noted / , / brothers / , / today / . / Next / .
+C	bros	2	BROS	False	case-variant-neutral	We noted BROS today.	brothers	We / noted / brothers / today / . / Next / .
+C	bsmt	2	BSMT	False	baseline-neutral	We noted bsmt today.	bsmt	We / noted / bsmt / today / . / Next
+C	bsmt	2	BSMT	False	address-or-building	42 Main bsmt.	Basement	forty / two / Main / Basement / . / Next / .
+C	bsmt	2	BSMT	False	comma-neighbor	We noted, bsmt, today.	bsmt	We / noted / , / bsmt / , / today / . / Next / .
+C	bsmt	2	BSMT	False	case-variant-neutral	We noted BSMT today.	BSMT	We / noted / BSMT / today / . / Next / .
+C	btu	2	BTU	False	baseline-neutral	We noted btu today.	British-Thermal-Unit	We / noted / British-Thermal-Unit / today / . / Next / .
+C	btu	2	BTU	False	numeric-or-ordinary	It is 5 btu. long.	five / British-Thermal-Units	It / is / five / British-Thermal-Units / long / . / Next / .
+C	btu	2	BTU	False	comma-neighbor	We noted, btu, today.	British-Thermal-Unit	We / noted / , / British-Thermal-Unit / , / today / . / Next / .
+C	btu	2	BTU	False	case-variant-neutral	We noted BTU today.	British-Thermal-Unit	We / noted / British-Thermal-Unit / today / . / Next / .
+C	c.s.t	2	C.S.T	False	baseline-neutral	We noted c.s.t today.	c.s.t	We / noted / c.s.t / today / . / Next / .
+C	c.s.t	2	C.S.T	False	clock-or-zone	The meeting is at 5 c.s.t.	c.s.t	The / meeting / is / at / five / c.s.t / . / Next / .
+C	c.s.t	2	C.S.T	False	comma-neighbor	We noted, c.s.t, today.	c.s.t	We / noted / , / c.s.t / , / today / . / Next / .
+C	c.s.t	2	C.S.T	False	case-variant-neutral	We noted C.S.T today.	C.S.T	We / noted / C.S.T / today / . / Next / .
+C	cal	2	CAL	False	baseline-neutral	We noted cal today.	cal	We / noted / cal / today / . / Next / .
+C	cal	2	CAL	False	numeric-or-ordinary	It is 5 cal. long.	five / calories	It / is / five / calories / long / . / Next / .
+C	cal	2	CAL	False	comma-neighbor	We noted, cal, today.	cal	We / noted / , / cal / , / today / . / Next / .
+C	cal	2	CAL	False	case-variant-neutral	We noted CAL today.	CAL	We / noted / CAL / today / . / Next / .
+C	cc	2	CC	False	baseline-neutral	We noted cc today.	CC	We / noted / CC / today / . / Next / .
+C	cc	2	CC	False	numeric-or-ordinary	It is 5 cc. long.	five / CC / 's	It / is / five / CC / 's / long / . / Next / .
+C	cc	2	CC	False	comma-neighbor	We noted, cc, today.	CC	We / noted / , / CC / , / today / . / Next / .
+C	cc	2	CC	False	case-variant-neutral	We noted CC today.	CC	We / noted / CC / today / . / Next / .
+C	cgs	2	CGS	False	baseline-neutral	We noted cgs today.	CGS	We / noted / CGS / today / . / Next / .
+C	cgs	2	CGS	False	numeric-or-ordinary	It is 5 cgs. long.	five / CGS / 's	It / is / five / CGS / 's / long / . / Next / .
+C	cgs	2	CGS	False	comma-neighbor	We noted, cgs, today.	CGS	We / noted / , / CGS / , / today / . / Next / .
+C	cgs	2	CGS	False	case-variant-neutral	We noted CGS today.	CGS	We / noted / CGS / today / . / Next / .
+C	cl	2	CL	False	baseline-neutral	We noted cl today.	cl	We / noted / cl / today / . / Next / .
+C	cl	2	CL	False	numeric-or-ordinary	It is 5 cl. long.	five / centiliters	It / is / five / centiliters / long / . / Next / .
+C	cl	2	CL	False	comma-neighbor	We noted, cl, today.	cl	We / noted / , / cl / , / today / . / Next / .
+C	cl	2	CL	False	case-variant-neutral	We noted CL today.	CL	We / noted / CL / today / . / Next / .
+C	cm	2	CM	False	baseline-neutral	We noted cm today.	cm	We / noted / cm / today / . / Next / .
+C	cm	2	CM	False	numeric-or-ordinary	It is 5 cm. long.	five / centimeters	It / is / five / centimeters / long / . / Next / .
+C	cm	2	CM	False	comma-neighbor	We noted, cm, today.	cm	We / noted / , / cm / , / today / . / Next / .
+C	cm	2	CM	False	case-variant-neutral	We noted CM today.	CM	We / noted / CM / today / . / Next / .
+C	cst	2	CST	False	baseline-neutral	We noted cst today.	cst	We / noted / cst / today / . / Next / .
+C	cst	2	CST	False	clock-or-zone	The meeting is at 5 cst.	cst	The / meeting / is / at / five / cst / . / Next / .
+C	cst	2	CST	False	comma-neighbor	We noted, cst, today.	cst	We / noted / , / cst / , / today / . / Next / .
+C	cst	2	CST	False	case-variant-neutral	We noted CST today.	CST	We / noted / CST / today / . / Next / .
+C	ct	2	CT	False	baseline-neutral	We noted ct today.	ct	We / noted / ct / today / . / Next
+C	ct	2	CT	False	address-or-building	42 Main ct.	ct	forty / two / Main / ct / . / Next / .
+C	ct	2	CT	False	comma-neighbor	We noted, ct, today.	ct	We / noted / , / ct / , / today / . / Next / .
+C	ct	2	CT	False	case-variant-neutral	We noted CT today.	CT	We / noted / CT / today / . / Next / .
+C	cwt	2	CWT	False	baseline-neutral	We noted cwt today.	hundredweight	We / noted / hundredweight / today / . / Next / .
+C	cwt	2	CWT	False	numeric-or-ordinary	It is 5 cwt. long.	five / hundredweights	It / is / five / hundredweights / long / . / Next / .
+C	cwt	2	CWT	False	comma-neighbor	We noted, cwt, today.	hundredweight	We / noted / , / hundredweight / , / today / . / Next / .
+C	cwt	2	CWT	False	case-variant-neutral	We noted CWT today.	hundredweight	We / noted / hundredweight / today / . / Next / .
+C	cyl	2	CYL	False	baseline-neutral	We noted cyl today.	cylinder	We / noted / cylinder / today / . / Next / .
+C	cyl	2	CYL	False	numeric-or-ordinary	It is 5 cyl. long.	five / cylinder	It / is / five / cylinder / long / . / Next / .
+C	cyl	2	CYL	False	comma-neighbor	We noted, cyl, today.	cylinder	We / noted / , / cylinder / , / today / . / Next / .
+C	cyl	2	CYL	False	case-variant-neutral	We noted CYL today.	cylinder	We / noted / cylinder / today / . / Next / .
+C	dB	1	Db	False	baseline-neutral	We noted dB today.	decibel	We / noted / decibel / today / . / Next / .
+C	dB	1	Db	False	numeric-or-ordinary	It is 5 dB. long.	five / decibels	It / is / five / decibels / long / . / Next / .
+C	dB	1	Db	False	comma-neighbor	We noted, dB, today.	decibel	We / noted / , / decibel / , / today / . / Next / .
+C	dB	1	Db	False	case-variant-neutral	We noted Db today.	Db	We / noted / Db / today / . / Next / .
+C	dam	2	DAM	False	baseline-neutral	We noted dam today.	dam	We / noted / dam / today / . / Next / .
+C	dam	2	DAM	False	numeric-or-ordinary	It is 5 dam. long.	five / decameters	It / is / five / decameters / long / . / Next / .
+C	dam	2	DAM	False	comma-neighbor	We noted, dam, today.	dam	We / noted / , / dam / , / today / . / Next / .
+C	dam	2	DAM	False	case-variant-neutral	We noted DAM today.	DAM	We / noted / DAM / today / . / Next / .
+C	dept	2	DEPT	False	baseline-neutral	We noted dept today.	department	We / noted / department / today / . / Next / .
+C	dept	2	DEPT	False	numeric-or-ordinary	It is 5 dept. long.	five / department	It / is / five / department / long / . / Next / .
+C	dept	2	DEPT	False	comma-neighbor	We noted, dept, today.	department	We / noted / , / department / , / today / . / Next / .
+C	dept	2	DEPT	False	case-variant-neutral	We noted DEPT today.	department	We / noted / department / today / . / Next / .
+C	dl	2	DL	False	baseline-neutral	We noted dl today.	dl	We / noted / dl / today / . / Next / .
+C	dl	2	DL	False	numeric-or-ordinary	It is 5 dl. long.	five / deciliters	It / is / five / deciliters / long / . / Next / .
+C	dl	2	DL	False	comma-neighbor	We noted, dl, today.	dl	We / noted / , / dl / , / today / . / Next / .
+C	dl	2	DL	False	case-variant-neutral	We noted DL today.	DL	We / noted / DL / today / . / Next / .
+C	dm	2	DM	False	baseline-neutral	We noted dm today.	dm	We / noted / dm / today / . / Next / .
+C	dm	2	DM	False	numeric-or-ordinary	It is 5 dm. long.	five / decimeters	It / is / five / decimeters / long / . / Next / .
+C	dm	2	DM	False	comma-neighbor	We noted, dm, today.	dm	We / noted / , / dm / , / today / . / Next / .
+C	dm	2	DM	False	case-variant-neutral	We noted DM today.	DM	We / noted / DM / today / . / Next / .
+C	dyn	2	DYN	False	baseline-neutral	We noted dyn today.	dyne	We / noted / dyne / today / . / Next / .
+C	dyn	2	DYN	False	numeric-or-ordinary	It is 5 dyn. long.	five / dynes	It / is / five / dynes / long / . / Next / .
+C	dyn	2	DYN	False	comma-neighbor	We noted, dyn, today.	dyne	We / noted / , / dyne / , / today / . / Next / .
+C	dyn	2	DYN	False	case-variant-neutral	We noted DYN today.	dyne	We / noted / dyne / today / . / Next / .
+C	e.s.t	2	E.S.T	False	baseline-neutral	We noted e.s.t today.	e.s.t	We / noted / e.s.t / today / . / Next / .
+C	e.s.t	2	E.S.T	False	clock-or-zone	The meeting is at 5 e.s.t.	e.s.t	The / meeting / is / at / five / e.s.t / . / Next / .
+C	e.s.t	2	E.S.T	False	comma-neighbor	We noted, e.s.t, today.	e.s.t	We / noted / , / e.s.t / , / today / . / Next / .
+C	e.s.t	2	E.S.T	False	case-variant-neutral	We noted E.S.T today.	E.S.T	We / noted / E.S.T / today / . / Next / .
+C	est	2	EST	False	baseline-neutral	We noted est today.	est	We / noted / est / today / . / Next / .
+C	est	2	EST	False	clock-or-zone	The meeting is at 5 est.	est	The / meeting / is / at / five / est / . / Next / .
+C	est	2	EST	False	comma-neighbor	We noted, est, today.	est	We / noted / , / est / , / today / . / Next / .
+C	est	2	EST	False	case-variant-neutral	We noted EST today.	EST	We / noted / EST / today / . / Next / .
+C	fah	2	FAH	False	baseline-neutral	We noted fah today.	fah	We / noted / fah / today / . / Next / .
+C	fah	2	FAH	False	numeric-or-ordinary	It is 5 fah. long.	five / fahrenheits	It / is / five / fahrenheits / long / . / Next / .
+C	fah	2	FAH	False	comma-neighbor	We noted, fah, today.	fah	We / noted / , / fah / , / today / . / Next / .
+C	fah	2	FAH	False	case-variant-neutral	We noted FAH today.	FAH	We / noted / FAH / today / . / Next / .
+C	fahr	2	FAHR	False	baseline-neutral	We noted fahr today.	fahrenheit	We / noted / fahrenheit / today / . / Next / .
+C	fahr	2	FAHR	False	numeric-or-ordinary	It is 5 fahr. long.	five / fahrenheits	It / is / five / fahrenheits / long / . / Next / .
+C	fahr	2	FAHR	False	comma-neighbor	We noted, fahr, today.	fahrenheit	We / noted / , / fahrenheit / , / today / . / Next / .
+C	fahr	2	FAHR	False	case-variant-neutral	We noted FAHR today.	fahrenheit	We / noted / fahrenheit / today / . / Next / .
+C	fl	2	FL	True	baseline-neutral	We noted fl today.	fl	We / noted / fl / today / . / Next / .
+C	fl	2	FL	True	numeric-or-ordinary	It is 5 fl. long.	five / fl	It / is / five / fl / long / . / Next / .
+C	fl	2	FL	True	comma-neighbor	We noted, fl, today.	fl	We / noted / , / fl / , / today / . / Next / .
+C	fl	2	FL	True	case-variant-neutral	We noted FL today.	FL	We / noted / FL / today / . / Next / .
+C	flr	2	FLR	False	baseline-neutral	We noted flr today.	flr	We / noted / flr / today / . / Next
+C	flr	2	FLR	False	address-or-building	42 Main flr.	Floor	forty / two / Main / Floor / . / Next / .
+C	flr	2	FLR	False	comma-neighbor	We noted, flr, today.	flr	We / noted / , / flr / , / today / . / Next / .
+C	flr	2	FLR	False	case-variant-neutral	We noted FLR today.	FLR	We / noted / FLR / today / . / Next / .
+C	fm	2	FM	True	baseline-neutral	We noted fm today.	fm	We / noted / fm / today / . / Next / .
+C	fm	2	FM	True	numeric-or-ordinary	It is 5 fm. long.	five / fathoms	It / is / five / fathoms / long / . / Next / .
+C	fm	2	FM	True	comma-neighbor	We noted, fm, today.	fm	We / noted / , / fm / , / today / . / Next / .
+C	fm	2	FM	True	case-variant-neutral	We noted FM today.	FM	We / noted / FM / today / . / Next / .
+C	frnt	2	FRNT	False	baseline-neutral	We noted frnt today.	frnt	We / noted / frnt / today / . / Next
+C	frnt	2	FRNT	False	address-or-building	42 Main frnt.	Front	forty / two / Main / Front / . / Next / .
+C	frnt	2	FRNT	False	comma-neighbor	We noted, frnt, today.	frnt	We / noted / , / frnt / , / today / . / Next / .
+C	frnt	2	FRNT	False	case-variant-neutral	We noted FRNT today.	FRNT	We / noted / FRNT / today / . / Next / .
+C	ft	2	FT	False	baseline-neutral	We noted ft today.	ft	We / noted / ft / today / . / Next / .
+C	ft	2	FT	False	numeric-or-ordinary	It is 5 ft. long.	five / feet	It / is / five / feet / long / . / Next / .
+C	ft	2	FT	False	comma-neighbor	We noted, ft, today.	ft	We / noted / , / ft / , / today / . / Next / .
+C	ft	2	FT	False	case-variant-neutral	We noted FT today.	FT	We / noted / FT / today / . / Next / .
+C	fur	2	FUR	False	baseline-neutral	We noted fur today.	fur	We / noted / fur / today / . / Next / .
+C	fur	2	FUR	False	numeric-or-ordinary	It is 5 fur. long.	five / furlongs	It / is / five / furlongs / long / . / Next / .
+C	fur	2	FUR	False	comma-neighbor	We noted, fur, today.	fur	We / noted / , / fur / , / today / . / Next / .
+C	fur	2	FUR	False	case-variant-neutral	We noted FUR today.	FUR	We / noted / FUR / today / . / Next / .
+C	g.m.t	2	G.M.T	False	baseline-neutral	We noted g.m.t today.	g.m.t	We / noted / g.m.t / today / . / Next / .
+C	g.m.t	2	G.M.T	False	clock-or-zone	The meeting is at 5 g.m.t.	g.m.t	The / meeting / is / at / five / g.m.t / . / Next / .
+C	g.m.t	2	G.M.T	False	comma-neighbor	We noted, g.m.t, today.	g.m.t	We / noted / , / g.m.t / , / today / . / Next / .
+C	g.m.t	2	G.M.T	False	case-variant-neutral	We noted G.M.T today.	G.M.T	We / noted / G.M.T / today / . / Next / .
+C	gA	1	Ga	False	baseline-neutral	We noted gA today.	gigaampere	We / noted / gigaampere / today / . / Next / .
+C	gA	1	Ga	False	numeric-or-ordinary	It is 5 gA. long.	five / gigaamperes	It / is / five / gigaamperes / long / . / Next / .
+C	gA	1	Ga	False	comma-neighbor	We noted, gA, today.	gigaampere	We / noted / , / gigaampere / , / today / . / Next / .
+C	gA	1	Ga	False	case-variant-neutral	We noted Ga today.	Ga	We / noted / Ga / today / . / Next / .
+C	gHz	1	GhZ	False	baseline-neutral	We noted gHz today.	gigahertz	We / noted / gigahertz / today / . / Next / .
+C	gHz	1	GhZ	False	numeric-or-ordinary	It is 5 gHz. long.	five / gigahertz	It / is / five / gigahertz / long / . / Next / .
+C	gHz	1	GhZ	False	comma-neighbor	We noted, gHz, today.	gigahertz	We / noted / , / gigahertz / , / today / . / Next / .
+C	gHz	1	GhZ	False	case-variant-neutral	We noted GhZ today.	GhZ	We / noted / GhZ / today / . / Next / .
+C	gPa	1	GpA	False	baseline-neutral	We noted gPa today.	gigapascal	We / noted / gigapascal / today / . / Next / .
+C	gPa	1	GpA	False	numeric-or-ordinary	It is 5 gPa. long.	five / gigapascals	It / is / five / gigapascals / long / . / Next / .
+C	gPa	1	GpA	False	comma-neighbor	We noted, gPa, today.	gigapascal	We / noted / , / gigapascal / , / today / . / Next / .
+C	gPa	1	GpA	False	case-variant-neutral	We noted GpA today.	GpA	We / noted / GpA / today / . / Next / .
+C	gV	1	Gv	False	baseline-neutral	We noted gV today.	gigavolt	We / noted / gigavolt / today / . / Next / .
+C	gV	1	Gv	False	numeric-or-ordinary	It is 5 gV. long.	five / gigavolts	It / is / five / gigavolts / long / . / Next / .
+C	gV	1	Gv	False	comma-neighbor	We noted, gV, today.	gigavolt	We / noted / , / gigavolt / , / today / . / Next / .
+C	gV	1	Gv	False	case-variant-neutral	We noted Gv today.	Gv	We / noted / Gv / today / . / Next / .
+C	gW	1	Gw	False	baseline-neutral	We noted gW today.	gigawatt	We / noted / gigawatt / today / . / Next / .
+C	gW	1	Gw	False	numeric-or-ordinary	It is 5 gW. long.	five / gigawatts	It / is / five / gigawatts / long / . / Next / .
+C	gW	1	Gw	False	comma-neighbor	We noted, gW, today.	gigawatt	We / noted / , / gigawatt / , / today / . / Next / .
+C	gW	1	Gw	False	case-variant-neutral	We noted Gw today.	Gw	We / noted / Gw / today / . / Next / .
+C	gal	2	GAL	False	baseline-neutral	We noted gal today.	gal	We / noted / gal / today / . / Next / .
+C	gal	2	GAL	False	numeric-or-ordinary	It is 5 gal. long.	five / gallons	It / is / five / gallons / long / . / Next / .
+C	gal	2	GAL	False	comma-neighbor	We noted, gal, today.	gal	We / noted / , / gal / , / today / . / Next / .
+C	gal	2	GAL	False	case-variant-neutral	We noted GAL today.	GAL	We / noted / GAL / today / . / Next / .
+C	gb	2	GB	False	baseline-neutral	We noted gb today.	gb	We / noted / gb / today / . / Next / .
+C	gb	2	GB	False	numeric-or-ordinary	It is 5 gb. long.	five / gigabytes	It / is / five / gigabytes / long / . / Next / .
+C	gb	2	GB	False	comma-neighbor	We noted, gb, today.	gb	We / noted / , / gb / , / today / . / Next / .
+C	gb	2	GB	False	case-variant-neutral	We noted GB today.	GB	We / noted / GB / today / . / Next / .
+C	gj	2	GJ	False	baseline-neutral	We noted gj today.	gj	We / noted / gj / today / . / Next / .
+C	gj	2	GJ	False	numeric-or-ordinary	It is 5 gj. long.	five / gigajoules	It / is / five / gigajoules / long / . / Next / .
+C	gj	2	GJ	False	comma-neighbor	We noted, gj, today.	gj	We / noted / , / gj / , / today / . / Next / .
+C	gj	2	GJ	False	case-variant-neutral	We noted GJ today.	GJ	We / noted / GJ / today / . / Next / .
+C	gm	2	GM	False	baseline-neutral	We noted gm today.	gm	We / noted / gm / today / . / Next / .
+C	gm	2	GM	False	numeric-or-ordinary	It is 5 gm. long.	five / grams	It / is / five / grams / long / . / Next / .
+C	gm	2	GM	False	comma-neighbor	We noted, gm, today.	gm	We / noted / , / gm / , / today / . / Next / .
+C	gm	2	GM	False	case-variant-neutral	We noted GM today.	GM	We / noted / GM / today / . / Next / .
+C	gmt	2	GMT	False	baseline-neutral	We noted gmt today.	gmt	We / noted / gmt / today / . / Next / .
+C	gmt	2	GMT	False	clock-or-zone	The meeting is at 5 gmt.	gmt	The / meeting / is / at / five / gmt / . / Next / .
+C	gmt	2	GMT	False	comma-neighbor	We noted, gmt, today.	gmt	We / noted / , / gmt / , / today / . / Next / .
+C	gmt	2	GMT	False	case-variant-neutral	We noted GMT today.	GMT	We / noted / GMT / today / . / Next / .
+C	gr	2	GR	False	baseline-neutral	We noted gr today.	gr	We / noted / gr / today / . / Next / .
+C	gr	2	GR	False	numeric-or-ordinary	It is 5 gr. long.	five / grains	It / is / five / grains / long / . / Next / .
+C	gr	2	GR	False	comma-neighbor	We noted, gr, today.	gr	We / noted / , / gr / , / today / . / Next / .
+C	gr	2	GR	False	case-variant-neutral	We noted GR today.	GR	We / noted / GR / today / . / Next / .
+C	guar	2	GUAR	False	baseline-neutral	We noted guar today.	guarantee	We / noted / guarantee / today / . / Next / .
+C	guar	2	GUAR	False	numeric-or-ordinary	It is 5 guar. long.	five / guarantee	It / is / five / guarantee / long / . / Next / .
+C	guar	2	GUAR	False	comma-neighbor	We noted, guar, today.	guarantee	We / noted / , / guarantee / , / today / . / Next / .
+C	guar	2	GUAR	False	case-variant-neutral	We noted GUAR today.	guarantee	We / noted / guarantee / today / . / Next / .
+C	h.p	2	H.P	False	baseline-neutral	We noted h.p today.	h.p	We / noted / h.p / today / . / Next / .
+C	h.p	2	H.P	False	numeric-or-ordinary	It is 5 h.p. long.	five / horse / power	It / is / five / horse / power / long / . / Next / .
+C	h.p	2	H.P	False	comma-neighbor	We noted, h.p, today.	h.p	We / noted / , / h.p / , / today / . / Next / .
+C	h.p	2	H.P	False	case-variant-neutral	We noted H.P today.	H.P	We / noted / H.P / today / . / Next / .
+C	hPa	1	HpA	False	baseline-neutral	We noted hPa today.	hectopascal	We / noted / hectopascal / today / . / Next / .
+C	hPa	1	HpA	False	numeric-or-ordinary	It is 5 hPa. long.	five / hectopascals	It / is / five / hectopascals / long / . / Next / .
+C	hPa	1	HpA	False	comma-neighbor	We noted, hPa, today.	hectopascal	We / noted / , / hectopascal / , / today / . / Next / .
+C	hPa	1	HpA	False	case-variant-neutral	We noted HpA today.	HpA	We / noted / HpA / today / . / Next / .
+C	ha	2	HA	False	baseline-neutral	We noted ha today.	ha	We / noted / ha / today / . / Next / .
+C	ha	2	HA	False	numeric-or-ordinary	It is 5 ha. long.	five / hectares	It / is / five / hectares / long / . / Next / .
+C	ha	2	HA	False	comma-neighbor	We noted, ha, today.	ha	We / noted / , / ha / , / today / . / Next / .
+C	ha	2	HA	False	case-variant-neutral	We noted HA today.	HA	We / noted / HA / today / . / Next / .
+C	hg	2	HG	False	baseline-neutral	We noted hg today.	hg	We / noted / hg / today / . / Next / .
+C	hg	2	HG	False	numeric-or-ordinary	It is 5 hg. long.	five / hectograms	It / is / five / hectograms / long / . / Next / .
+C	hg	2	HG	False	comma-neighbor	We noted, hg, today.	hg	We / noted / , / hg / , / today / . / Next / .
+C	hg	2	HG	False	case-variant-neutral	We noted HG today.	HG	We / noted / HG / today / . / Next / .
+C	hngr	2	HNGR	False	baseline-neutral	We noted hngr today.	hngr	We / noted / hngr / today / . / Next
+C	hngr	2	HNGR	False	address-or-building	42 Main hngr.	Hangar	forty / two / Main / Hangar / . / Next / .
+C	hngr	2	HNGR	False	comma-neighbor	We noted, hngr, today.	hngr	We / noted / , / hngr / , / today / . / Next / .
+C	hngr	2	HNGR	False	case-variant-neutral	We noted HNGR today.	HNGR	We / noted / HNGR / today / . / Next / .
+C	hp	2	HP	False	baseline-neutral	We noted hp today.	hp	We / noted / hp / today / . / Next / .
+C	hp	2	HP	False	numeric-or-ordinary	It is 5 hp. long.	five / horse / power	It / is / five / horse / power / long / . / Next / .
+C	hp	2	HP	False	comma-neighbor	We noted, hp, today.	hp	We / noted / , / hp / , / today / . / Next / .
+C	hp	2	HP	False	case-variant-neutral	We noted HP today.	HP	We / noted / HP / today / . / Next / .
+C	hr	2	HR	False	baseline-neutral	We noted hr today.	hr	We / noted / hr / today / . / Next / .
+C	hr	2	HR	False	numeric-or-ordinary	It is 5 hr. long.	five / hours	It / is / five / hours / long / . / Next / .
+C	hr	2	HR	False	comma-neighbor	We noted, hr, today.	hr	We / noted / , / hr / , / today / . / Next / .
+C	hr	2	HR	False	case-variant-neutral	We noted HR today.	HR	We / noted / HR / today / . / Next / .
+C	hrs	2	HRS	False	baseline-neutral	We noted hrs today.	hrs	We / noted / hrs / today / . / Next / .
+C	hrs	2	HRS	False	numeric-or-ordinary	It is 5 hrs. long.	five / hours	It / is / five / hours / long / . / Next / .
+C	hrs	2	HRS	False	comma-neighbor	We noted, hrs, today.	hrs	We / noted / , / hrs / , / today / . / Next / .
+C	hrs	2	HRS	False	case-variant-neutral	We noted HRS today.	HRS	We / noted / HRS / today / . / Next / .
+C	hz	2	HZ	False	baseline-neutral	We noted hz today.	hz	We / noted / hz / today / . / Next / .
+C	hz	2	HZ	False	numeric-or-ordinary	It is 5 hz. long.	five / hertz	It / is / five / hertz / long / . / Next / .
+C	hz	2	HZ	False	comma-neighbor	We noted, hz, today.	hz	We / noted / , / hz / , / today / . / Next / .
+C	hz	2	HZ	False	case-variant-neutral	We noted HZ today.	HZ	We / noted / HZ / today / . / Next / .
+C	in	2	IN	True	baseline-neutral	We noted in today.	in	We / noted / in / today / . / Next / .
+C	in	2	IN	True	numeric-or-ordinary	It is 5 in. long.	five / inches	It / is / five / inches / long / . / Next / .
+C	in	2	IN	True	comma-neighbor	We noted, in, today.	in	We / noted / , / in / , / today / . / Next / .
+C	in	2	IN	True	case-variant-neutral	We noted IN today.	IN	We / noted / IN / today / . / Next / .
+C	k.s.t	2	K.S.T	False	baseline-neutral	We noted k.s.t today.	k.s.t	We / noted / k.s.t / today / . / Next / .
+C	k.s.t	2	K.S.T	False	clock-or-zone	The meeting is at 5 k.s.t.	k.s.t	The / meeting / is / at / five / k.s.t / . / Next / .
+C	k.s.t	2	K.S.T	False	comma-neighbor	We noted, k.s.t, today.	k.s.t	We / noted / , / k.s.t / , / today / . / Next / .
+C	k.s.t	2	K.S.T	False	case-variant-neutral	We noted K.S.T today.	K.S.T	We / noted / K.S.T / today / . / Next / .
+C	kA	1	Ka	False	baseline-neutral	We noted kA today.	kiloampere	We / noted / kiloampere / today / . / Next / .
+C	kA	1	Ka	False	numeric-or-ordinary	It is 5 kA. long.	five / kiloamperes	It / is / five / kiloamperes / long / . / Next / .
+C	kA	1	Ka	False	comma-neighbor	We noted, kA, today.	kiloampere	We / noted / , / kiloampere / , / today / . / Next / .
+C	kA	1	Ka	False	case-variant-neutral	We noted Ka today.	Ka	We / noted / Ka / today / . / Next / .
+C	kHz	1	KhZ	False	baseline-neutral	We noted kHz today.	kilohertz	We / noted / kilohertz / today / . / Next / .
+C	kHz	1	KhZ	False	numeric-or-ordinary	It is 5 kHz. long.	five / kilohertz	It / is / five / kilohertz / long / . / Next / .
+C	kHz	1	KhZ	False	comma-neighbor	We noted, kHz, today.	kilohertz	We / noted / , / kilohertz / , / today / . / Next / .
+C	kHz	1	KhZ	False	case-variant-neutral	We noted KhZ today.	KhZ	We / noted / KhZ / today / . / Next / .
+C	kN	1	Kn	False	baseline-neutral	We noted kN today.	kilonewton	We / noted / kilonewton / today / . / Next / .
+C	kN	1	Kn	False	numeric-or-ordinary	It is 5 kN. long.	five / kilonewtons	It / is / five / kilonewtons / long / . / Next / .
+C	kN	1	Kn	False	comma-neighbor	We noted, kN, today.	kilonewton	We / noted / , / kilonewton / , / today / . / Next / .
+C	kN	1	Kn	False	case-variant-neutral	We noted Kn today.	Kn	We / noted / Kn / today / . / Next / .
+C	kPa	1	KpA	False	baseline-neutral	We noted kPa today.	kilopascal	We / noted / kilopascal / today / . / Next / .
+C	kPa	1	KpA	False	numeric-or-ordinary	It is 5 kPa. long.	five / kilopascals	It / is / five / kilopascals / long / . / Next / .
+C	kPa	1	KpA	False	comma-neighbor	We noted, kPa, today.	kilopascal	We / noted / , / kilopascal / , / today / . / Next / .
+C	kPa	1	KpA	False	case-variant-neutral	We noted KpA today.	KpA	We / noted / KpA / today / . / Next / .
+C	kV	1	Kv	False	baseline-neutral	We noted kV today.	kilovolt	We / noted / kilovolt / today / . / Next / .
+C	kV	1	Kv	False	numeric-or-ordinary	It is 5 kV. long.	five / kilovolts	It / is / five / kilovolts / long / . / Next / .
+C	kV	1	Kv	False	comma-neighbor	We noted, kV, today.	kilovolt	We / noted / , / kilovolt / , / today / . / Next / .
+C	kV	1	Kv	False	case-variant-neutral	We noted Kv today.	Kv	We / noted / Kv / today / . / Next / .
+C	kW	1	Kw	False	baseline-neutral	We noted kW today.	kilowatt	We / noted / kilowatt / today / . / Next / .
+C	kW	1	Kw	False	numeric-or-ordinary	It is 5 kW. long.	five / kilowatts	It / is / five / kilowatts / long / . / Next / .
+C	kW	1	Kw	False	comma-neighbor	We noted, kW, today.	kilowatt	We / noted / , / kilowatt / , / today / . / Next / .
+C	kW	1	Kw	False	case-variant-neutral	We noted Kw today.	Kw	We / noted / Kw / today / . / Next / .
+C	kWh	1	KwH	False	baseline-neutral	We noted kWh today.	kilowatt / hour	We / noted / kilowatt / hour / today / . / Next / .
+C	kWh	1	KwH	False	numeric-or-ordinary	It is 5 kWh. long.	five / kilowatt / hours	It / is / five / kilowatt / hours / long / . / Next / .
+C	kWh	1	KwH	False	comma-neighbor	We noted, kWh, today.	kilowatt / hour	We / noted / , / kilowatt / hour / , / today / . / Next / .
+C	kWh	1	KwH	False	case-variant-neutral	We noted KwH today.	KwH	We / noted / KwH / today / . / Next / .
+C	kb	2	KB	False	baseline-neutral	We noted kb today.	kb	We / noted / kb / today / . / Next / .
+C	kb	2	KB	False	numeric-or-ordinary	It is 5 kb. long.	five / kilobytes	It / is / five / kilobytes / long / . / Next / .
+C	kb	2	KB	False	comma-neighbor	We noted, kb, today.	kb	We / noted / , / kb / , / today / . / Next / .
+C	kb	2	KB	False	case-variant-neutral	We noted KB today.	KB	We / noted / KB / today / . / Next / .
+C	kcal	2	KCAL	False	baseline-neutral	We noted kcal today.	kilocalorie	We / noted / kilocalorie / today / . / Next / .
+C	kcal	2	KCAL	False	numeric-or-ordinary	It is 5 kcal. long.	five / kilocalories	It / is / five / kilocalories / long / . / Next / .
+C	kcal	2	KCAL	False	comma-neighbor	We noted, kcal, today.	kilocalorie	We / noted / , / kilocalorie / , / today / . / Next / .
+C	kcal	2	KCAL	False	case-variant-neutral	We noted KCAL today.	kilocalorie	We / noted / kilocalorie / today / . / Next / .
+C	kg	2	KG	False	baseline-neutral	We noted kg today.	kg	We / noted / kg / today / . / Next / .
+C	kg	2	KG	False	numeric-or-ordinary	It is 5 kg. long.	five / kilograms	It / is / five / kilograms / long / . / Next / .
+C	kg	2	KG	False	comma-neighbor	We noted, kg, today.	kg	We / noted / , / kg / , / today / . / Next / .
+C	kg	2	KG	False	case-variant-neutral	We noted KG today.	KG	We / noted / KG / today / . / Next / .
+C	kgf	2	KGF	False	baseline-neutral	We noted kgf today.	kilogram-force	We / noted / kilogram-force / today / . / Next / .
+C	kgf	2	KGF	False	numeric-or-ordinary	It is 5 kgf. long.	five / kilogram-forces	It / is / five / kilogram-forces / long / . / Next / .
+C	kgf	2	KGF	False	comma-neighbor	We noted, kgf, today.	kilogram-force	We / noted / , / kilogram-force / , / today / . / Next / .
+C	kgf	2	KGF	False	case-variant-neutral	We noted KGF today.	kilogram-force	We / noted / kilogram-force / today / . / Next / .
+C	kj	2	KJ	False	baseline-neutral	We noted kj today.	kj	We / noted / kj / today / . / Next / .
+C	kj	2	KJ	False	numeric-or-ordinary	It is 5 kj. long.	five / kilojoules	It / is / five / kilojoules / long / . / Next / .
+C	kj	2	KJ	False	comma-neighbor	We noted, kj, today.	kj	We / noted / , / kj / , / today / . / Next / .
+C	kj	2	KJ	False	case-variant-neutral	We noted KJ today.	KJ	We / noted / KJ / today / . / Next / .
+C	kl	2	KL	False	baseline-neutral	We noted kl today.	kl	We / noted / kl / today / . / Next / .
+C	kl	2	KL	False	numeric-or-ordinary	It is 5 kl. long.	five / kiloliters	It / is / five / kiloliters / long / . / Next / .
+C	kl	2	KL	False	comma-neighbor	We noted, kl, today.	kl	We / noted / , / kl / , / today / . / Next / .
+C	kl	2	KL	False	case-variant-neutral	We noted KL today.	KL	We / noted / KL / today / . / Next / .
+C	km	2	KM	False	baseline-neutral	We noted km today.	km	We / noted / km / today / . / Next / .
+C	km	2	KM	False	numeric-or-ordinary	It is 5 km. long.	five / kilometers	It / is / five / kilometers / long / . / Next / .
+C	km	2	KM	False	comma-neighbor	We noted, km, today.	km	We / noted / , / km / , / today / . / Next / .
+C	km	2	KM	False	case-variant-neutral	We noted KM today.	KM	We / noted / KM / today / . / Next / .
+C	kst	2	KST	False	baseline-neutral	We noted kst today.	kst	We / noted / kst / today / . / Next / .
+C	kst	2	KST	False	clock-or-zone	The meeting is at 5 kst.	kst	The / meeting / is / at / five / kst / . / Next / .
+C	kst	2	KST	False	comma-neighbor	We noted, kst, today.	kst	We / noted / , / kst / , / today / . / Next / .
+C	kst	2	KST	False	case-variant-neutral	We noted KST today.	KST	We / noted / KST / today / . / Next / .
+C	kt	2	KT	False	baseline-neutral	We noted kt today.	kt	We / noted / kt / today / . / Next / .
+C	kt	2	KT	False	numeric-or-ordinary	It is 5 kt. long.	five / karats	It / is / five / karats / long / . / Next / .
+C	kt	2	KT	False	comma-neighbor	We noted, kt, today.	kt	We / noted / , / kt / , / today / . / Next / .
+C	kt	2	KT	False	case-variant-neutral	We noted KT today.	KT	We / noted / KT / today / . / Next / .
+C	lb	2	LB	False	baseline-neutral	We noted lb today.	lb	We / noted / lb / today / . / Next / .
+C	lb	2	LB	False	numeric-or-ordinary	It is 5 lb. long.	five / pounds	It / is / five / pounds / long / . / Next / .
+C	lb	2	LB	False	comma-neighbor	We noted, lb, today.	lb	We / noted / , / lb / , / today / . / Next / .
+C	lb	2	LB	False	case-variant-neutral	We noted LB today.	LB	We / noted / LB / today / . / Next / .
+C	lbby	2	LBBY	False	baseline-neutral	We noted lbby today.	lbby	We / noted / lbby / today / . / Next / .
+C	lbby	2	LBBY	False	numeric-or-ordinary	It is 5 lbby. long.	five / lbby	It / is / five / lbby / long / . / Next / .
+C	lbby	2	LBBY	False	comma-neighbor	We noted, lbby, today.	lbby	We / noted / , / lbby / , / today / . / Next / .
+C	lbby	2	LBBY	False	case-variant-neutral	We noted LBBY today.	LBBY	We / noted / LBBY / today / . / Next / .
+C	lbf	2	LBF	False	baseline-neutral	We noted lbf today.	pound / force	We / noted / pound / force / today / . / Next / .
+C	lbf	2	LBF	False	numeric-or-ordinary	It is 5 lbf. long.	five / pound / forces	It / is / five / pound / forces / long / . / Next / .
+C	lbf	2	LBF	False	comma-neighbor	We noted, lbf, today.	pound / force	We / noted / , / pound / force / , / today / . / Next / .
+C	lbf	2	LBF	False	case-variant-neutral	We noted LBF today.	pound / force	We / noted / pound / force / today / . / Next / .
+C	lbs	2	LBS	False	baseline-neutral	We noted lbs today.	lbs	We / noted / lbs / today / . / Next / .
+C	lbs	2	LBS	False	numeric-or-ordinary	It is 5 lbs. long.	five / pounds	It / is / five / pounds / long / . / Next / .
+C	lbs	2	LBS	False	comma-neighbor	We noted, lbs, today.	lbs	We / noted / , / lbs / , / today / . / Next / .
+C	lbs	2	LBS	False	case-variant-neutral	We noted LBS today.	LBS	We / noted / LBS / today / . / Next / .
+C	lit	2	LIT	False	baseline-neutral	We noted lit today.	lit	We / noted / lit / today / . / Next / .
+C	lit	2	LIT	False	numeric-or-ordinary	It is 5 lit. long.	five / liters	It / is / five / liters / long / . / Next / .
+C	lit	2	LIT	False	comma-neighbor	We noted, lit, today.	lit	We / noted / , / lit / , / today / . / Next / .
+C	lit	2	LIT	False	case-variant-neutral	We noted LIT today.	LIT	We / noted / LIT / today / . / Next / .
+C	lm	2	LM	False	baseline-neutral	We noted lm today.	lm	We / noted / lm / today / . / Next / .
+C	lm	2	LM	False	numeric-or-ordinary	It is 5 lm. long.	five / lumina	It / is / five / lumina / long / . / Next / .
+C	lm	2	LM	False	comma-neighbor	We noted, lm, today.	lm	We / noted / , / lm / , / today / . / Next / .
+C	lm	2	LM	False	case-variant-neutral	We noted LM today.	LM	We / noted / LM / today / . / Next / .
+C	lowr	2	LOWR	False	baseline-neutral	We noted lowr today.	lowr	We / noted / lowr / today / . / Next
+C	lowr	2	LOWR	False	address-or-building	42 Main lowr.	Lower	forty / two / Main / Lower / . / Next / .
+C	lowr	2	LOWR	False	comma-neighbor	We noted, lowr, today.	lowr	We / noted / , / lowr / , / today / . / Next / .
+C	lowr	2	LOWR	False	case-variant-neutral	We noted LOWR today.	LOWR	We / noted / LOWR / today / . / Next / .
+C	lx	2	LX	False	baseline-neutral	We noted lx today.	lx	We / noted / lx / today / . / Next / .
+C	lx	2	LX	False	numeric-or-ordinary	It is 5 lx. long.	five / luces	It / is / five / luces / long / . / Next / .
+C	lx	2	LX	False	comma-neighbor	We noted, lx, today.	lx	We / noted / , / lx / , / today / . / Next / .
+C	lx	2	LX	False	case-variant-neutral	We noted LX today.	LX	We / noted / LX / today / . / Next / .
+C	mA	1	Ma	False	baseline-neutral	We noted mA today.	megaampere	We / noted / megaampere / today / . / Next / .
+C	mA	1	Ma	False	numeric-or-ordinary	It is 5 mA. long.	five / megaamperes	It / is / five / megaamperes / long / . / Next / .
+C	mA	1	Ma	False	comma-neighbor	We noted, mA, today.	megaampere	We / noted / , / megaampere / , / today / . / Next / .
+C	mA	1	Ma	False	case-variant-neutral	We noted Ma today.	Ma	We / noted / Ma / today / . / Next / .
+C	mHz	1	MhZ	False	baseline-neutral	We noted mHz today.	megahertz	We / noted / megahertz / today / . / Next / .
+C	mHz	1	MhZ	False	numeric-or-ordinary	It is 5 mHz. long.	five / megahertz	It / is / five / megahertz / long / . / Next / .
+C	mHz	1	MhZ	False	comma-neighbor	We noted, mHz, today.	megahertz	We / noted / , / megahertz / , / today / . / Next / .
+C	mHz	1	MhZ	False	case-variant-neutral	We noted MhZ today.	megahertz	We / noted / megahertz / today / . / Next / .
+C	mN	1	Mn	False	baseline-neutral	We noted mN today.	meganewton	We / noted / meganewton / today / . / Next / .
+C	mN	1	Mn	False	numeric-or-ordinary	It is 5 mN. long.	five / meganewtons	It / is / five / meganewtons / long / . / Next / .
+C	mN	1	Mn	False	comma-neighbor	We noted, mN, today.	meganewton	We / noted / , / meganewton / , / today / . / Next / .
+C	mN	1	Mn	False	case-variant-neutral	We noted Mn today.	Mn	We / noted / Mn / today / . / Next / .
+C	mPa	1	MpA	False	baseline-neutral	We noted mPa today.	megapascal	We / noted / megapascal / today / . / Next / .
+C	mPa	1	MpA	False	numeric-or-ordinary	It is 5 mPa. long.	five / megapascals	It / is / five / megapascals / long / . / Next / .
+C	mPa	1	MpA	False	comma-neighbor	We noted, mPa, today.	megapascal	We / noted / , / megapascal / , / today / . / Next / .
+C	mPa	1	MpA	False	case-variant-neutral	We noted MpA today.	MpA	We / noted / MpA / today / . / Next / .
+C	mV	1	Mv	False	baseline-neutral	We noted mV today.	megavolt	We / noted / megavolt / today / . / Next / .
+C	mV	1	Mv	False	numeric-or-ordinary	It is 5 mV. long.	five / megavolts	It / is / five / megavolts / long / . / Next / .
+C	mV	1	Mv	False	comma-neighbor	We noted, mV, today.	megavolt	We / noted / , / megavolt / , / today / . / Next / .
+C	mV	1	Mv	False	case-variant-neutral	We noted Mv today.	Mv	We / noted / Mv / today / . / Next / .
+C	mW	1	Mw	False	baseline-neutral	We noted mW today.	megawatt	We / noted / megawatt / today / . / Next / .
+C	mW	1	Mw	False	numeric-or-ordinary	It is 5 mW. long.	five / megawatts	It / is / five / megawatts / long / . / Next / .
+C	mW	1	Mw	False	comma-neighbor	We noted, mW, today.	megawatt	We / noted / , / megawatt / , / today / . / Next / .
+C	mW	1	Mw	False	case-variant-neutral	We noted Mw today.	Mw	We / noted / Mw / today / . / Next / .
+C	mWh	1	MwH	False	baseline-neutral	We noted mWh today.	megawatt / hour	We / noted / megawatt / hour / today / . / Next / .
+C	mWh	1	MwH	False	numeric-or-ordinary	It is 5 mWh. long.	five / megawatt / hours	It / is / five / megawatt / hours / long / . / Next / .
+C	mWh	1	MwH	False	comma-neighbor	We noted, mWh, today.	megawatt / hour	We / noted / , / megawatt / hour / , / today / . / Next / .
+C	mWh	1	MwH	False	case-variant-neutral	We noted MwH today.	MwH	We / noted / MwH / today / . / Next / .
+C	maint	2	MAINT	False	baseline-neutral	We noted maint today.	maintenance	We / noted / maintenance / today / . / Next / .
+C	maint	2	MAINT	False	numeric-or-ordinary	It is 5 maint. long.	five / maintenance	It / is / five / maintenance / long / . / Next / .
+C	maint	2	MAINT	False	comma-neighbor	We noted, maint, today.	maintenance	We / noted / , / maintenance / , / today / . / Next / .
+C	maint	2	MAINT	False	case-variant-neutral	We noted MAINT today.	maintenance	We / noted / maintenance / today / . / Next / .
+C	mb	2	MB	True	baseline-neutral	We noted mb today.	mb	We / noted / mb / today / . / Next / .
+C	mb	2	MB	True	numeric-or-ordinary	It is 5 mb. long.	five / megabytes	It / is / five / megabytes / long / . / Next / .
+C	mb	2	MB	True	comma-neighbor	We noted, mb, today.	mb	We / noted / , / mb / , / today / . / Next / .
+C	mb	2	MB	True	case-variant-neutral	We noted MB today.	MB	We / noted / MB / today / . / Next / .
+C	mbar	2	MBAR	False	baseline-neutral	We noted mbar today.	millibar	We / noted / millibar / today / . / Next / .
+C	mbar	2	MBAR	False	numeric-or-ordinary	It is 5 mbar. long.	five / millibars	It / is / five / millibars / long / . / Next / .
+C	mbar	2	MBAR	False	comma-neighbor	We noted, mbar, today.	millibar	We / noted / , / millibar / , / today / . / Next / .
+C	mbar	2	MBAR	False	case-variant-neutral	We noted MBAR today.	millibar	We / noted / millibar / today / . / Next / .
+C	mg	2	MG	False	baseline-neutral	We noted mg today.	mg	We / noted / mg / today / . / Next / .
+C	mg	2	MG	False	numeric-or-ordinary	It is 5 mg. long.	five / milligrams	It / is / five / milligrams / long / . / Next / .
+C	mg	2	MG	False	comma-neighbor	We noted, mg, today.	mg	We / noted / , / mg / , / today / . / Next / .
+C	mg	2	MG	False	case-variant-neutral	We noted MG today.	MG	We / noted / MG / today / . / Next / .
+C	mgmt	2	MGMT	False	baseline-neutral	We noted mgmt today.	management	We / noted / management / today / . / Next / .
+C	mgmt	2	MGMT	False	numeric-or-ordinary	It is 5 mgmt. long.	five / management	It / is / five / management / long / . / Next / .
+C	mgmt	2	MGMT	False	comma-neighbor	We noted, mgmt, today.	management	We / noted / , / management / , / today / . / Next / .
+C	mgmt	2	MGMT	False	case-variant-neutral	We noted MGMT today.	management	We / noted / management / today / . / Next / .
+C	mi	2	MI	True	baseline-neutral	We noted mi today.	mi	We / noted / mi / today / . / Next / .
+C	mi	2	MI	True	numeric-or-ordinary	It is 5 mi. long.	five / miles	It / is / five / miles / long / . / Next / .
+C	mi	2	MI	True	comma-neighbor	We noted, mi, today.	mi	We / noted / , / mi / , / today / . / Next / .
+C	mi	2	MI	True	case-variant-neutral	We noted MI today.	MI	We / noted / MI / today / . / Next / .
+C	min	2	MIN	False	baseline-neutral	We noted min today.	min	We / noted / min / today / . / Next / .
+C	min	2	MIN	False	numeric-or-ordinary	It is 5 min. long.	five / minutes	It / is / five / minutes / long / . / Next / .
+C	min	2	MIN	False	comma-neighbor	We noted, min, today.	min	We / noted / , / min / , / today / . / Next / .
+C	min	2	MIN	False	case-variant-neutral	We noted MIN today.	MIN	We / noted / MIN / today / . / Next / .
+C	mins	2	MINS	False	baseline-neutral	We noted mins today.	mins	We / noted / mins / today / . / Next / .
+C	mins	2	MINS	False	numeric-or-ordinary	It is 5 mins. long.	five / minutes	It / is / five / minutes / long / . / Next / .
+C	mins	2	MINS	False	comma-neighbor	We noted, mins, today.	mins	We / noted / , / mins / , / today / . / Next / .
+C	mins	2	MINS	False	case-variant-neutral	We noted MINS today.	MINS	We / noted / MINS / today / . / Next / .
+C	mj	2	MJ	False	baseline-neutral	We noted mj today.	mj	We / noted / mj / today / . / Next / .
+C	mj	2	MJ	False	numeric-or-ordinary	It is 5 mj. long.	five / megajoules	It / is / five / megajoules / long / . / Next / .
+C	mj	2	MJ	False	comma-neighbor	We noted, mj, today.	mj	We / noted / , / mj / , / today / . / Next / .
+C	mj	2	MJ	False	case-variant-neutral	We noted MJ today.	MJ	We / noted / MJ / today / . / Next / .
+C	mktg	2	MKTG	False	baseline-neutral	We noted mktg today.	marketing	We / noted / marketing / today / . / Next / .
+C	mktg	2	MKTG	False	numeric-or-ordinary	It is 5 mktg. long.	five / marketing	It / is / five / marketing / long / . / Next / .
+C	mktg	2	MKTG	False	comma-neighbor	We noted, mktg, today.	marketing	We / noted / , / marketing / , / today / . / Next / .
+C	mktg	2	MKTG	False	case-variant-neutral	We noted MKTG today.	marketing	We / noted / marketing / today / . / Next / .
+C	ml	2	ML	False	baseline-neutral	We noted ml today.	ml	We / noted / ml / today / . / Next / .
+C	ml	2	ML	False	numeric-or-ordinary	It is 5 ml. long.	five / milliliters	It / is / five / milliliters / long / . / Next / .
+C	ml	2	ML	False	comma-neighbor	We noted, ml, today.	ml	We / noted / , / ml / , / today / . / Next / .
+C	ml	2	ML	False	case-variant-neutral	We noted ML today.	ML	We / noted / ML / today / . / Next / .
+C	mm	2	MM	False	baseline-neutral	We noted mm today.	mm	We / noted / mm / today / . / Next / .
+C	mm	2	MM	False	numeric-or-ordinary	It is 5 mm. long.	five / millimeters	It / is / five / millimeters / long / . / Next / .
+C	mm	2	MM	False	comma-neighbor	We noted, mm, today.	mm	We / noted / , / mm / , / today / . / Next / .
+C	mm	2	MM	False	case-variant-neutral	We noted MM today.	MM	We / noted / MM / today / . / Next / .
+C	mol	2	MOL	False	baseline-neutral	We noted mol today.	mol	We / noted / mol / today / . / Next / .
+C	mol	2	MOL	False	numeric-or-ordinary	It is 5 mol. long.	five / moles	It / is / five / moles / long / . / Next / .
+C	mol	2	MOL	False	comma-neighbor	We noted, mol, today.	mol	We / noted / , / mol / , / today / . / Next / .
+C	mol	2	MOL	False	case-variant-neutral	We noted MOL today.	MOL	We / noted / MOL / today / . / Next / .
+C	ms	2	MS	True	baseline-neutral	We noted ms today.	ms	We / noted / ms / today / . / Next / .
+C	ms	2	MS	True	numeric-or-ordinary	It is 5 ms. long.	five / milliseconds	It / is / five / milliseconds / long / . / Next / .
+C	ms	2	MS	True	comma-neighbor	We noted, ms, today.	ms	We / noted / , / ms / , / today / . / Next / .
+C	ms	2	MS	True	case-variant-neutral	We noted MS today.	MS	We / noted / MS / today / . / Next / .
+C	msec	2	MSEC	False	baseline-neutral	We noted msec today.	millisecond	We / noted / millisecond / today / . / Next / .
+C	msec	2	MSEC	False	numeric-or-ordinary	It is 5 msec. long.	five / milliseconds	It / is / five / milliseconds / long / . / Next / .
+C	msec	2	MSEC	False	comma-neighbor	We noted, msec, today.	millisecond	We / noted / , / millisecond / , / today / . / Next / .
+C	msec	2	MSEC	False	case-variant-neutral	We noted MSEC today.	millisecond	We / noted / millisecond / today / . / Next / .
+C	msecs	2	MSECS	False	baseline-neutral	We noted msecs today.	milliseconds	We / noted / milliseconds / today / . / Next / .
+C	msecs	2	MSECS	False	numeric-or-ordinary	It is 5 msecs. long.	five / milliseconds	It / is / five / milliseconds / long / . / Next / .
+C	msecs	2	MSECS	False	comma-neighbor	We noted, msecs, today.	milliseconds	We / noted / , / milliseconds / , / today / . / Next / .
+C	msecs	2	MSECS	False	case-variant-neutral	We noted MSECS today.	milliseconds	We / noted / milliseconds / today / . / Next / .
+C	msg	2	MSG	False	baseline-neutral	We noted msg today.	msg	We / noted / msg / today / . / Next / .
+C	msg	2	MSG	False	numeric-or-ordinary	It is 5 msg. long.	five / msg	It / is / five / msg / long / . / Next / .
+C	msg	2	MSG	False	comma-neighbor	We noted, msg, today.	msg	We / noted / , / msg / , / today / . / Next / .
+C	msg	2	MSG	False	case-variant-neutral	We noted MSG today.	MSG	We / noted / MSG / today / . / Next / .
+C	mu	2	MU	False	baseline-neutral	We noted mu today.	mu	We / noted / mu / today / . / Next / .
+C	mu	2	MU	False	numeric-or-ordinary	It is 5 mu. long.	five / microns	It / is / five / microns / long / . / Next / .
+C	mu	2	MU	False	comma-neighbor	We noted, mu, today.	mu	We / noted / , / mu / , / today / . / Next / .
+C	mu	2	MU	False	case-variant-neutral	We noted MU today.	MU	We / noted / MU / today / . / Next / .
+C	nA	1	Na	False	baseline-neutral	We noted nA today.	nanoampere	We / noted / nanoampere / today / . / Next / .
+C	nA	1	Na	False	numeric-or-ordinary	It is 5 nA. long.	five / nanoamperes	It / is / five / nanoamperes / long / . / Next / .
+C	nA	1	Na	False	comma-neighbor	We noted, nA, today.	nanoampere	We / noted / , / nanoampere / , / today / . / Next / .
+C	nA	1	Na	False	case-variant-neutral	We noted Na today.	Na	We / noted / Na / today / . / Next / .
+C	nV	1	Nv	False	baseline-neutral	We noted nV today.	nanovolt	We / noted / nanovolt / today / . / Next / .
+C	nV	1	Nv	False	numeric-or-ordinary	It is 5 nV. long.	five / nanovolts	It / is / five / nanovolts / long / . / Next / .
+C	nV	1	Nv	False	comma-neighbor	We noted, nV, today.	nanovolt	We / noted / , / nanovolt / , / today / . / Next / .
+C	nV	1	Nv	False	case-variant-neutral	We noted Nv today.	Nv	We / noted / Nv / today / . / Next / .
+C	nW	1	Nw	False	baseline-neutral	We noted nW today.	nanowatt	We / noted / nanowatt / today / . / Next / .
+C	nW	1	Nw	False	numeric-or-ordinary	It is 5 nW. long.	five / nanowatts	It / is / five / nanowatts / long / . / Next / .
+C	nW	1	Nw	False	comma-neighbor	We noted, nW, today.	nanowatt	We / noted / , / nanowatt / , / today / . / Next / .
+C	nW	1	Nw	False	case-variant-neutral	We noted Nw today.	Nw	We / noted / Nw / today / . / Next / .
+C	nf	2	NF	True	baseline-neutral	We noted nf today.	nf	We / noted / nf / today / . / Next / .
+C	nf	2	NF	True	numeric-or-ordinary	It is 5 nf. long.	five / nanofarads	It / is / five / nanofarads / long / . / Next / .
+C	nf	2	NF	True	comma-neighbor	We noted, nf, today.	nf	We / noted / , / nf / , / today / . / Next / .
+C	nf	2	NF	True	case-variant-neutral	We noted NF today.	NF	We / noted / NF / today / . / Next / .
+C	nm	2	NM	True	baseline-neutral	We noted nm today.	nm	We / noted / nm / today / . / Next / .
+C	nm	2	NM	True	numeric-or-ordinary	It is 5 nm. long.	five / nanometers	It / is / five / nanometers / long / . / Next / .
+C	nm	2	NM	True	comma-neighbor	We noted, nm, today.	nm	We / noted / , / nm / , / today / . / Next / .
+C	nm	2	NM	True	case-variant-neutral	We noted NM today.	NM	We / noted / NM / today / . / Next / .
+C	ns	2	NS	True	baseline-neutral	We noted ns today.	ns	We / noted / ns / today / . / Next / .
+C	ns	2	NS	True	numeric-or-ordinary	It is 5 ns. long.	five / nanoseconds	It / is / five / nanoseconds / long / . / Next / .
+C	ns	2	NS	True	comma-neighbor	We noted, ns, today.	ns	We / noted / , / ns / , / today / . / Next / .
+C	ns	2	NS	True	case-variant-neutral	We noted NS today.	NS	We / noted / NS / today / . / Next / .
+C	nsec	2	NSEC	False	baseline-neutral	We noted nsec today.	nanosecond	We / noted / nanosecond / today / . / Next / .
+C	nsec	2	NSEC	False	numeric-or-ordinary	It is 5 nsec. long.	five / nanoseconds	It / is / five / nanoseconds / long / . / Next / .
+C	nsec	2	NSEC	False	comma-neighbor	We noted, nsec, today.	nanosecond	We / noted / , / nanosecond / , / today / . / Next / .
+C	nsec	2	NSEC	False	case-variant-neutral	We noted NSEC today.	nanosecond	We / noted / nanosecond / today / . / Next / .
+C	ofc	2	OFC	False	baseline-neutral	We noted ofc today.	ofc	We / noted / ofc / today / . / Next / .
+C	ofc	2	OFC	False	numeric-or-ordinary	It is 5 ofc. long.	five / ofc	It / is / five / ofc / long / . / Next / .
+C	ofc	2	OFC	False	comma-neighbor	We noted, ofc, today.	ofc	We / noted / , / ofc / , / today / . / Next / .
+C	ofc	2	OFC	False	case-variant-neutral	We noted OFC today.	OFC	We / noted / OFC / today / . / Next / .
+C	oz	2	OZ	False	baseline-neutral	We noted oz today.	oz	We / noted / oz / today / . / Next / .
+C	oz	2	OZ	False	numeric-or-ordinary	It is 5 oz. long.	five / ounces	It / is / five / ounces / long / . / Next / .
+C	oz	2	OZ	False	comma-neighbor	We noted, oz, today.	oz	We / noted / , / oz / , / today / . / Next / .
+C	oz	2	OZ	False	case-variant-neutral	We noted OZ today.	OZ	We / noted / OZ / today / . / Next / .
+C	ozs	2	OZS	False	baseline-neutral	We noted ozs today.	ozs	We / noted / ozs / today / . / Next / .
+C	ozs	2	OZS	False	numeric-or-ordinary	It is 5 ozs. long.	five / ounces	It / is / five / ounces / long / . / Next / .
+C	ozs	2	OZS	False	comma-neighbor	We noted, ozs, today.	ozs	We / noted / , / ozs / , / today / . / Next / .
+C	ozs	2	OZS	False	case-variant-neutral	We noted OZS today.	OZS	We / noted / OZS / today / . / Next / .
+C	p.m	2	P.M	False	baseline-neutral	We noted p.m today.	p.m	We / noted / p.m / today / . / Next / .
+C	p.m	2	P.M	False	clock-or-zone	The meeting is at 5 p.m.	PM.	The / meeting / is / at / five / PM. / Next / .
+C	p.m	2	P.M	False	comma-neighbor	We noted, p.m, today.	p.m	We / noted / , / p.m / , / today / . / Next / .
+C	p.m	2	P.M	False	case-variant-neutral	We noted P.M today.	P.M	We / noted / P.M / today / . / Next / .
+C	p.s.t	2	P.S.T	False	baseline-neutral	We noted p.s.t today.	p.s.t	We / noted / p.s.t / today / . / Next / .
+C	p.s.t	2	P.S.T	False	clock-or-zone	The meeting is at 5 p.s.t.	p.s.t	The / meeting / is / at / five / p.s.t / . / Next / .
+C	p.s.t	2	P.S.T	False	comma-neighbor	We noted, p.s.t, today.	p.s.t	We / noted / , / p.s.t / , / today / . / Next / .
+C	p.s.t	2	P.S.T	False	case-variant-neutral	We noted P.S.T today.	P.S.T	We / noted / P.S.T / today / . / Next / .
+C	pA	1	Pa	True	baseline-neutral	We noted pA today.	picoampere	We / noted / picoampere / today / . / Next / .
+C	pA	1	Pa	True	numeric-or-ordinary	It is 5 pA. long.	five / picoamperes	It / is / five / picoamperes / long / . / Next / .
+C	pA	1	Pa	True	comma-neighbor	We noted, pA, today.	picoampere	We / noted / , / picoampere / , / today / . / Next / .
+C	pA	1	Pa	True	case-variant-neutral	We noted Pa today.	Pa	We / noted / Pa / today / . / Next / .
+C	pV	1	Pv	False	baseline-neutral	We noted pV today.	picovolt	We / noted / picovolt / today / . / Next / .
+C	pV	1	Pv	False	numeric-or-ordinary	It is 5 pV. long.	five / picovolts	It / is / five / picovolts / long / . / Next / .
+C	pV	1	Pv	False	comma-neighbor	We noted, pV, today.	picovolt	We / noted / , / picovolt / , / today / . / Next / .
+C	pV	1	Pv	False	case-variant-neutral	We noted Pv today.	Pv	We / noted / Pv / today / . / Next / .
+C	pW	1	Pw	False	baseline-neutral	We noted pW today.	picowatt	We / noted / picowatt / today / . / Next / .
+C	pW	1	Pw	False	numeric-or-ordinary	It is 5 pW. long.	five / picowatts	It / is / five / picowatts / long / . / Next / .
+C	pW	1	Pw	False	comma-neighbor	We noted, pW, today.	picowatt	We / noted / , / picowatt / , / today / . / Next / .
+C	pW	1	Pw	False	case-variant-neutral	We noted Pw today.	Pw	We / noted / Pw / today / . / Next / .
+C	pas	2	PAS	False	baseline-neutral	We noted pas today.	pas	We / noted / pas / today / . / Next / .
+C	pas	2	PAS	False	numeric-or-ordinary	It is 5 pas. long.	five / pascals	It / is / five / pascals / long / . / Next / .
+C	pas	2	PAS	False	comma-neighbor	We noted, pas, today.	pas	We / noted / , / pas / , / today / . / Next / .
+C	pas	2	PAS	False	case-variant-neutral	We noted PAS today.	PAS	We / noted / PAS / today / . / Next / .
+C	pdl	2	PDL	False	baseline-neutral	We noted pdl today.	poundal	We / noted / poundal / today / . / Next / .
+C	pdl	2	PDL	False	numeric-or-ordinary	It is 5 pdl. long.	five / poundals	It / is / five / poundals / long / . / Next / .
+C	pdl	2	PDL	False	comma-neighbor	We noted, pdl, today.	poundal	We / noted / , / poundal / , / today / . / Next / .
+C	pdl	2	PDL	False	case-variant-neutral	We noted PDL today.	poundal	We / noted / poundal / today / . / Next / .
+C	pdls	2	PDLS	False	baseline-neutral	We noted pdls today.	poundals	We / noted / poundals / today / . / Next / .
+C	pdls	2	PDLS	False	numeric-or-ordinary	It is 5 pdls. long.	five / poundals	It / is / five / poundals / long / . / Next / .
+C	pdls	2	PDLS	False	comma-neighbor	We noted, pdls, today.	poundals	We / noted / , / poundals / , / today / . / Next / .
+C	pdls	2	PDLS	False	case-variant-neutral	We noted PDLS today.	poundals	We / noted / poundals / today / . / Next / .
+C	pf	2	PF	False	baseline-neutral	We noted pf today.	pf	We / noted / pf / today / . / Next / .
+C	pf	2	PF	False	numeric-or-ordinary	It is 5 pf. long.	five / picofarads	It / is / five / picofarads / long / . / Next / .
+C	pf	2	PF	False	comma-neighbor	We noted, pf, today.	pf	We / noted / , / pf / , / today / . / Next / .
+C	pf	2	PF	False	case-variant-neutral	We noted PF today.	PF	We / noted / PF / today / . / Next / .
+C	ph	2	PH	False	baseline-neutral	We noted ph today.	ph	We / noted / ph / today / . / Next / .
+C	ph	2	PH	False	numeric-or-ordinary	It is 5 ph. long.	five / telephone	It / is / five / telephone / long / . / Next / .
+C	ph	2	PH	False	comma-neighbor	We noted, ph, today.	ph	We / noted / , / ph / , / today / . / Next / .
+C	ph	2	PH	False	case-variant-neutral	We noted PH today.	PH	We / noted / PH / today / . / Next / .
+C	pkg	2	PKG	False	baseline-neutral	We noted pkg today.	package	We / noted / package / today / . / Next / .
+C	pkg	2	PKG	False	numeric-or-ordinary	It is 5 pkg. long.	five / package	It / is / five / package / long / . / Next / .
+C	pkg	2	PKG	False	comma-neighbor	We noted, pkg, today.	package	We / noted / , / package / , / today / . / Next / .
+C	pkg	2	PKG	False	case-variant-neutral	We noted PKG today.	package	We / noted / package / today / . / Next / .
+C	pm	2	PM	False	baseline-neutral	We noted pm today.	pm	We / noted / pm / today / . / Next / .
+C	pm	2	PM	False	clock-or-zone	The meeting is at 5 pm.	PM.	The / meeting / is / at / five / PM. / Next / .
+C	pm	2	PM	False	comma-neighbor	We noted, pm, today.	pm	We / noted / , / pm / , / today / . / Next / .
+C	pm	2	PM	False	case-variant-neutral	We noted PM today.	PM	We / noted / PM / today / . / Next / .
+C	ppd	2	PPD	False	baseline-neutral	We noted ppd today.	ppd	We / noted / ppd / today / . / Next / .
+C	ppd	2	PPD	False	numeric-or-ordinary	It is 5 ppd. long.	five / ppd	It / is / five / ppd / long / . / Next / .
+C	ppd	2	PPD	False	comma-neighbor	We noted, ppd, today.	ppd	We / noted / , / ppd / , / today / . / Next / .
+C	ppd	2	PPD	False	case-variant-neutral	We noted PPD today.	PPD	We / noted / PPD / today / . / Next / .
+C	ps	2	PS	False	baseline-neutral	We noted ps today.	ps	We / noted / ps / today / . / Next / .
+C	ps	2	PS	False	numeric-or-ordinary	It is 5 ps. long.	five / picoseconds	It / is / five / picoseconds / long / . / Next / .
+C	ps	2	PS	False	comma-neighbor	We noted, ps, today.	ps	We / noted / , / ps / , / today / . / Next / .
+C	ps	2	PS	False	case-variant-neutral	We noted PS today.	PS	We / noted / PS / today / . / Next / .
+C	psec	2	PSEC	False	baseline-neutral	We noted psec today.	psec	We / noted / psec / today / . / Next / .
+C	psec	2	PSEC	False	numeric-or-ordinary	It is 5 psec. long.	five / picoseconds	It / is / five / picoseconds / long / . / Next / .
+C	psec	2	PSEC	False	comma-neighbor	We noted, psec, today.	psec	We / noted / , / psec / , / today / . / Next / .
+C	psec	2	PSEC	False	case-variant-neutral	We noted PSEC today.	PSEC	We / noted / PSEC / today / . / Next / .
+C	psecs	2	PSECS	False	baseline-neutral	We noted psecs today.	psecs	We / noted / psecs / today / . / Next / .
+C	psecs	2	PSECS	False	numeric-or-ordinary	It is 5 psecs. long.	five / picoseconds	It / is / five / picoseconds / long / . / Next / .
+C	psecs	2	PSECS	False	comma-neighbor	We noted, psecs, today.	psecs	We / noted / , / psecs / , / today / . / Next / .
+C	psecs	2	PSECS	False	case-variant-neutral	We noted PSECS today.	PSECS	We / noted / PSECS / today / . / Next / .
+C	pst	2	PST	False	baseline-neutral	We noted pst today.	pst	We / noted / pst / today / . / Next / .
+C	pst	2	PST	False	clock-or-zone	The meeting is at 5 pst.	pst	The / meeting / is / at / five / pst / . / Next / .
+C	pst	2	PST	False	comma-neighbor	We noted, pst, today.	pst	We / noted / , / pst / , / today / . / Next / .
+C	pst	2	PST	False	case-variant-neutral	We noted PST today.	PST	We / noted / PST / today / . / Next / .
+C	pt	2	PT	False	baseline-neutral	We noted pt today.	pt	We / noted / pt / today / . / Next / .
+C	pt	2	PT	False	numeric-or-ordinary	It is 5 pt. long.	five / pints	It / is / five / pints / long / . / Next / .
+C	pt	2	PT	False	comma-neighbor	We noted, pt, today.	pt	We / noted / , / pt / , / today / . / Next / .
+C	pt	2	PT	False	case-variant-neutral	We noted PT today.	PT	We / noted / PT / today / . / Next / .
+C	qty	2	QTY	False	baseline-neutral	We noted qty today.	quantity	We / noted / quantity / today / . / Next / .
+C	qty	2	QTY	False	numeric-or-ordinary	It is 5 qty. long.	five / quantity	It / is / five / quantity / long / . / Next / .
+C	qty	2	QTY	False	comma-neighbor	We noted, qty, today.	quantity	We / noted / , / quantity / , / today / . / Next / .
+C	qty	2	QTY	False	case-variant-neutral	We noted QTY today.	quantity	We / noted / quantity / today / . / Next / .
+C	rad	2	RAD	False	baseline-neutral	We noted rad today.	rad	We / noted / rad / today / . / Next / .
+C	rad	2	RAD	False	numeric-or-ordinary	It is 5 rad. long.	five / radians	It / is / five / radians / long / . / Next / .
+C	rad	2	RAD	False	comma-neighbor	We noted, rad, today.	rad	We / noted / , / rad / , / today / . / Next / .
+C	rad	2	RAD	False	case-variant-neutral	We noted RAD today.	RAD	We / noted / RAD / today / . / Next / .
+C	rm	2	RM	False	baseline-neutral	We noted rm today.	rm	We / noted / rm / today / . / Next
+C	rm	2	RM	False	address-or-building	42 Main rm.	Room	forty / two / Main / Room / . / Next / .
+C	rm	2	RM	False	comma-neighbor	We noted, rm, today.	rm	We / noted / , / rm / , / today / . / Next / .
+C	rm	2	RM	False	case-variant-neutral	We noted RM today.	RM	We / noted / RM / today / . / Next / .
+C	rpm	2	RPM	False	baseline-neutral	We noted rpm today.	RPM	We / noted / RPM / today / . / Next / .
+C	rpm	2	RPM	False	numeric-or-ordinary	It is 5 rpm. long.	five / RPM / 's	It / is / five / RPM / 's / long / . / Next / .
+C	rpm	2	RPM	False	comma-neighbor	We noted, rpm, today.	RPM	We / noted / , / RPM / , / today / . / Next / .
+C	rpm	2	RPM	False	case-variant-neutral	We noted RPM today.	RPM	We / noted / RPM / today / . / Next / .
+C	sec	2	SEC	False	baseline-neutral	We noted sec today.	sec	We / noted / sec / today / . / Next / .
+C	sec	2	SEC	False	numeric-or-ordinary	It is 5 sec. long.	five / seconds	It / is / five / seconds / long / . / Next / .
+C	sec	2	SEC	False	comma-neighbor	We noted, sec, today.	sec	We / noted / , / sec / , / today / . / Next / .
+C	sec	2	SEC	False	case-variant-neutral	We noted SEC today.	SEC	We / noted / SEC / today / . / Next / .
+C	secs	2	SECS	False	baseline-neutral	We noted secs today.	secs	We / noted / secs / today / . / Next / .
+C	secs	2	SECS	False	numeric-or-ordinary	It is 5 secs. long.	five / seconds	It / is / five / seconds / long / . / Next / .
+C	secs	2	SECS	False	comma-neighbor	We noted, secs, today.	secs	We / noted / , / secs / , / today / . / Next / .
+C	secs	2	SECS	False	case-variant-neutral	We noted SECS today.	SECS	We / noted / SECS / today / . / Next / .
+C	spc	2	SPC	False	baseline-neutral	We noted spc today.	spc	We / noted / spc / today / . / Next / .
+C	spc	2	SPC	False	numeric-or-ordinary	It is 5 spc. long.	five / spc	It / is / five / spc / long / . / Next / .
+C	spc	2	SPC	False	comma-neighbor	We noted, spc, today.	spc	We / noted / , / spc / , / today / . / Next / .
+C	spc	2	SPC	False	case-variant-neutral	We noted SPC today.	SPC	We / noted / SPC / today / . / Next / .
+C	sr	2	SR	False	baseline-neutral	We noted sr today.	sr	We / noted / sr / today / . / Next / .
+C	sr	2	SR	False	numeric-or-ordinary	It is 5 sr. long.	five / steradians	It / is / five / steradians / long / . / Next / .
+C	sr	2	SR	False	comma-neighbor	We noted, sr, today.	sr	We / noted / , / sr / , / today / . / Next / .
+C	sr	2	SR	False	case-variant-neutral	We noted SR today.	SR	We / noted / SR / today / . / Next / .
+C	ste	2	STE	False	baseline-neutral	We noted ste today.	ste	We / noted / ste / today / . / Next
+C	ste	2	STE	False	address-or-building	42 Main ste.	Suite	forty / two / Main / Suite / . / Next / .
+C	ste	2	STE	False	comma-neighbor	We noted, ste, today.	ste	We / noted / , / ste / , / today / . / Next / .
+C	ste	2	STE	False	case-variant-neutral	We noted STE today.	STE	We / noted / STE / today / . / Next / .
+C	tHz	1	ThZ	False	baseline-neutral	We noted tHz today.	terahertz	We / noted / terahertz / today / . / Next / .
+C	tHz	1	ThZ	False	numeric-or-ordinary	It is 5 tHz. long.	five / terahertz	It / is / five / terahertz / long / . / Next / .
+C	tHz	1	ThZ	False	comma-neighbor	We noted, tHz, today.	terahertz	We / noted / , / terahertz / , / today / . / Next / .
+C	tHz	1	ThZ	False	case-variant-neutral	We noted ThZ today.	ThZ	We / noted / ThZ / today / . / Next / .
+C	tb	2	TB	False	baseline-neutral	We noted tb today.	tb	We / noted / tb / today / . / Next / .
+C	tb	2	TB	False	numeric-or-ordinary	It is 5 tb. long.	five / terabytes	It / is / five / terabytes / long / . / Next / .
+C	tb	2	TB	False	comma-neighbor	We noted, tb, today.	tb	We / noted / , / tb / , / today / . / Next / .
+C	tb	2	TB	False	case-variant-neutral	We noted TB today.	TB	We / noted / TB / today / . / Next / .
+C	trlr	2	TRLR	False	baseline-neutral	We noted trlr today.	trlr	We / noted / trlr / today / . / Next
+C	trlr	2	TRLR	False	address-or-building	42 Main trlr.	Trailer	forty / two / Main / Trailer / . / Next / .
+C	trlr	2	TRLR	False	comma-neighbor	We noted, trlr, today.	trlr	We / noted / , / trlr / , / today / . / Next / .
+C	trlr	2	TRLR	False	case-variant-neutral	We noted TRLR today.	TRLR	We / noted / TRLR / today / . / Next / .
+C	tsp	2	TSP	False	baseline-neutral	We noted tsp today.	teaspoon	We / noted / teaspoon / today / . / Next / .
+C	tsp	2	TSP	False	numeric-or-ordinary	It is 5 tsp. long.	five / teaspoon	It / is / five / teaspoon / long / . / Next / .
+C	tsp	2	TSP	False	comma-neighbor	We noted, tsp, today.	teaspoon	We / noted / , / teaspoon / , / today / . / Next / .
+C	tsp	2	TSP	False	case-variant-neutral	We noted TSP today.	teaspoon	We / noted / teaspoon / today / . / Next / .
+C	u.s	2	U.S	False	baseline-neutral	We noted u.s today.	u.s	We / noted / u.s / today / . / Next / .
+C	u.s	2	U.S	False	numeric-or-ordinary	It is 5 u.s. long.	five / u.s	It / is / five / u.s / long / . / Next / .
+C	u.s	2	U.S	False	comma-neighbor	We noted, u.s, today.	u.s	We / noted / , / u.s / , / today / . / Next / .
+C	u.s	2	U.S	False	case-variant-neutral	We noted U.S today.	U.S	We / noted / U.S / today / . / Next / .
+C	u.s.a	2	U.S.A	False	baseline-neutral	We noted u.s.a today.	u.s.a	We / noted / u.s.a / today / . / Next / .
+C	u.s.a	2	U.S.A	False	numeric-or-ordinary	It is 5 u.s.a. long.	five / u.s.a	It / is / five / u.s.a / long / . / Next / .
+C	u.s.a	2	U.S.A	False	comma-neighbor	We noted, u.s.a, today.	u.s.a	We / noted / , / u.s.a / , / today / . / Next / .
+C	u.s.a	2	U.S.A	False	case-variant-neutral	We noted U.S.A today.	U.S.A	We / noted / U.S.A / today / . / Next / .
+C	uppr	2	UPPR	False	baseline-neutral	We noted uppr today.	uppr	We / noted / uppr / today / . / Next
+C	uppr	2	UPPR	False	address-or-building	42 Main uppr.	Upper	forty / two / Main / Upper / . / Next / .
+C	uppr	2	UPPR	False	comma-neighbor	We noted, uppr, today.	uppr	We / noted / , / uppr / , / today / . / Next / .
+C	uppr	2	UPPR	False	case-variant-neutral	We noted UPPR today.	UPPR	We / noted / UPPR / today / . / Next / .
+C	yd	2	YD	False	baseline-neutral	We noted yd today.	yd	We / noted / yd / today / . / Next / .
+C	yd	2	YD	False	numeric-or-ordinary	It is 5 yd. long.	five / yards	It / is / five / yards / long / . / Next / .
+C	yd	2	YD	False	comma-neighbor	We noted, yd, today.	yd	We / noted / , / yd / , / today / . / Next / .
+C	yd	2	YD	False	case-variant-neutral	We noted YD today.	YD	We / noted / YD / today / . / Next / .
+C	yld	2	YLD	False	baseline-neutral	We noted yld today.	yield	We / noted / yield / today / . / Next / .
+C	yld	2	YLD	False	numeric-or-ordinary	It is 5 yld. long.	five / yield	It / is / five / yield / long / . / Next / .
+C	yld	2	YLD	False	comma-neighbor	We noted, yld, today.	yield	We / noted / , / yield / , / today / . / Next / .
+C	yld	2	YLD	False	case-variant-neutral	We noted YLD today.	yield	We / noted / yield / today / . / Next / .
+C	yr	2	YR	False	baseline-neutral	We noted yr today.	yr	We / noted / yr / today / . / Next / .
+C	yr	2	YR	False	numeric-or-ordinary	It is 5 yr. long.	five / years	It / is / five / years / long / . / Next / .
+C	yr	2	YR	False	comma-neighbor	We noted, yr, today.	yr	We / noted / , / yr / , / today / . / Next / .
+C	yr	2	YR	False	case-variant-neutral	We noted YR today.	YR	We / noted / YR / today / . / Next / .
+C	yrs	2	YRS	False	baseline-neutral	We noted yrs today.	yrs	We / noted / yrs / today / . / Next / .
+C	yrs	2	YRS	False	numeric-or-ordinary	It is 5 yrs. long.	five / years	It / is / five / years / long / . / Next / .
+C	yrs	2	YRS	False	comma-neighbor	We noted, yrs, today.	yrs	We / noted / , / yrs / , / today / . / Next / .
+C	yrs	2	YRS	False	case-variant-neutral	We noted YRS today.	YRS	We / noted / YRS / today / . / Next / .
+H	adm	2	ADM	False	baseline-title	adm. Smith spoke.	adm	adm / Smith / spoke / . / Next / .
+H	adm	2	ADM	False	title-without-period	adm Smith spoke.	adm	adm / Smith / spoke / . / Next / .
+H	adm	2	ADM	False	ordinary-sentence	We noted adm today.	adm	We / noted / adm / today / . / Next / .
+H	adm	2	ADM	False	case-variant-title	ADM. Smith spoke.	admiral	admiral / Smith / spoke / . / Next / .
+H	ald	2	ALD	False	baseline-title	ald. Smith spoke.	ald	ald / Smith / spoke / . / Next / .
+H	ald	2	ALD	False	title-without-period	ald Smith spoke.	ald	ald / Smith / spoke / . / Next / .
+H	ald	2	ALD	False	ordinary-sentence	We noted ald today.	ald	We / noted / ald / today / . / Next / .
+H	ald	2	ALD	False	case-variant-title	ALD. Smith spoke.	alderman	alderman / Smith / spoke / . / Next / .
+H	amb	2	AMB	False	baseline-title	amb. Smith spoke.	amb	amb / Smith / spoke / . / Next / .
+H	amb	2	AMB	False	title-without-period	amb Smith spoke.	amb	amb / Smith / spoke / . / Next / .
+H	amb	2	AMB	False	ordinary-sentence	We noted amb today.	amb	We / noted / amb / today / . / Next / .
+H	amb	2	AMB	False	case-variant-title	AMB. Smith spoke.	ambassador	ambassador / Smith / spoke / . / Next / .
+H	atty	2	ATTY	False	baseline-title	atty. Smith spoke.	atty	atty / Smith / spoke / . / Next / .
+H	atty	2	ATTY	False	title-without-period	atty Smith spoke.	atty	atty / Smith / spoke / . / Next / .
+H	atty	2	ATTY	False	ordinary-sentence	We noted atty today.	atty	We / noted / atty / today / . / Next / .
+H	atty	2	ATTY	False	case-variant-title	ATTY. Smith spoke.	attorney	attorney / Smith / spoke / . / Next / .
+H	brig	2	BRIG	False	baseline-title	brig. Smith spoke.	brig	brig / Smith / spoke / . / Next / .
+H	brig	2	BRIG	False	title-without-period	brig Smith spoke.	brig	brig / Smith / spoke / . / Next / .
+H	brig	2	BRIG	False	ordinary-sentence	We noted brig today.	brig	We / noted / brig / today / . / Next / .
+H	brig	2	BRIG	False	case-variant-title	BRIG. Smith spoke.	brigadier	brigadier / Smith / spoke / . / Next / .
+H	c.f	2	C.F	False	baseline-title	c.f. Smith spoke.	compare	compare / Smith / spoke / . / Next / .
+H	c.f	2	C.F	False	title-without-period	c.f Smith spoke.	compare	compare / Smith / spoke / . / Next / .
+H	c.f	2	C.F	False	ordinary-sentence	We noted c.f today.	compare	We / noted / compare / today / . / Next / .
+H	c.f	2	C.F	False	case-variant-title	C.F. Smith spoke.	compare	compare / Smith / spoke / . / Next / .
+H	capt	2	CAPT	False	baseline-title	capt. Smith spoke.	capt	capt / Smith / spoke / . / Next / .
+H	capt	2	CAPT	False	title-without-period	capt Smith spoke.	capt	capt / Smith / spoke / . / Next / .
+H	capt	2	CAPT	False	ordinary-sentence	We noted capt today.	capt	We / noted / capt / today / . / Next / .
+H	capt	2	CAPT	False	case-variant-title	CAPT. Smith spoke.	captain	captain / Smith / spoke / . / Next
+H	cf	2	CF	False	baseline-title	cf. Smith spoke.	cf	cf / Smith / spoke / . / Next
+H	cf	2	CF	False	title-without-period	cf Smith spoke.	cf	cf / Smith / spoke / . / Next / .
+H	cf	2	CF	False	ordinary-sentence	We noted cf today.	cf	We / noted / cf / today / . / Next / .
+H	cf	2	CF	False	case-variant-title	CF. Smith spoke.	CF	CF / . / Smith / spoke / . / Next / .
+H	cmd	2	CMD	False	baseline-title	cmd. Smith spoke.	cmd	cmd / Smith / spoke / . / Next / .
+H	cmd	2	CMD	False	title-without-period	cmd Smith spoke.	cmd	cmd / Smith / spoke / . / Next / .
+H	cmd	2	CMD	False	ordinary-sentence	We noted cmd today.	cmd	We / noted / cmd / today / . / Next / .
+H	cmd	2	CMD	False	case-variant-title	CMD. Smith spoke.	commander	commander / Smith / spoke / . / Next / .
+H	col	2	COL	False	baseline-title	col. Smith spoke.	col	col / Smith / spoke / . / Next / .
+H	col	2	COL	False	title-without-period	col Smith spoke.	col	col / Smith / spoke / . / Next / .
+H	col	2	COL	False	ordinary-sentence	We noted col today.	col	We / noted / col / today / . / Next / .
+H	col	2	COL	False	case-variant-title	COL. Smith spoke.	colonel	colonel / Smith / spoke / . / Next / .
+H	cond	2	COND	False	baseline-title	cond. Smith spoke.	condition	condition / Smith / spoke / . / Next / .
+H	cond	2	COND	False	title-without-period	cond Smith spoke.	condition	condition / Smith / spoke / . / Next / .
+H	cond	2	COND	False	ordinary-sentence	We noted cond today.	condition	We / noted / condition / today / . / Next / .
+H	cond	2	COND	False	case-variant-title	COND. Smith spoke.	condition	condition / . / Smith / spoke / . / Next / .
+H	cpl	2	CPL	False	baseline-title	cpl. Smith spoke.	cpl	cpl / Smith / spoke / . / Next / .
+H	cpl	2	CPL	False	title-without-period	cpl Smith spoke.	cpl	cpl / Smith / spoke / . / Next / .
+H	cpl	2	CPL	False	ordinary-sentence	We noted cpl today.	cpl	We / noted / cpl / today / . / Next / .
+H	cpl	2	CPL	False	case-variant-title	CPL. Smith spoke.	corporal	corporal / Smith / spoke / . / Next
+H	dr	2	DR	False	baseline-title	dr. Smith spoke.	Doctor	Doctor / Smith / spoke / . / Next
+H	dr	2	DR	False	title-without-period	dr Smith spoke.	Doctor	Doctor / Smith / spoke / . / Next / .
+H	dr	2	DR	False	ordinary-sentence	We noted dr today.	Drive	We / noted / Drive / today / . / Next / .
+H	dr	2	DR	False	case-variant-title	DR. Smith spoke.	doctor	doctor / Smith / spoke / . / Next / .
+H	e.a	2	E.A	False	baseline-title	e.a. Smith spoke.	each	each / Smith / spoke / . / Next / .
+H	e.a	2	E.A	False	title-without-period	e.a Smith spoke.	each	each / Smith / spoke / . / Next / .
+H	e.a	2	E.A	False	ordinary-sentence	We noted e.a today.	each	We / noted / each / today / . / Next / .
+H	e.a	2	E.A	False	case-variant-title	E.A. Smith spoke.	each	each / Smith / spoke / . / Next / .
+H	e.g	2	E.G	False	baseline-title	e.g. Smith spoke.	for / example	for / example / Smith / spoke / . / Next / .
+H	e.g	2	E.G	False	title-without-period	e.g Smith spoke.	for / example	for / example / Smith / spoke / . / Next / .
+H	e.g	2	E.G	False	ordinary-sentence	We noted e.g today.	for / example	We / noted / for / example / today / . / Next / .
+H	e.g	2	E.G	False	case-variant-title	E.G. Smith spoke.	for / example	for / example / Smith / spoke / . / Next
+H	ea	2	EA	False	baseline-title	ea. Smith spoke.	ea	ea / Smith / spoke / . / Next
+H	ea	2	EA	False	title-without-period	ea Smith spoke.	ea	ea / Smith / spoke / . / Next / .
+H	ea	2	EA	False	ordinary-sentence	We noted ea today.	ea	We / noted / ea / today / . / Next / .
+H	ea	2	EA	False	case-variant-title	EA. Smith spoke.	EA	EA / . / Smith / spoke / . / Next / .
+H	eg	2	EG	False	baseline-title	eg. Smith spoke.	eg	eg / Smith / spoke / . / Next
+H	eg	2	EG	False	title-without-period	eg Smith spoke.	eg	eg / Smith / spoke / . / Next / .
+H	eg	2	EG	False	ordinary-sentence	We noted eg today.	eg	We / noted / eg / today / . / Next / .
+H	eg	2	EG	False	case-variant-title	EG. Smith spoke.	EG	EG / . / Smith / spoke / . / Next / .
+H	ens	2	ENS	False	baseline-title	ens. Smith spoke.	ens	ens / Smith / spoke / . / Next / .
+H	ens	2	ENS	False	title-without-period	ens Smith spoke.	ens	ens / Smith / spoke / . / Next / .
+H	ens	2	ENS	False	ordinary-sentence	We noted ens today.	ens	We / noted / ens / today / . / Next / .
+H	ens	2	ENS	False	case-variant-title	ENS. Smith spoke.	ensign	ensign / Smith / spoke / . / Next / .
+H	fig	2	FIG	False	baseline-title	fig. Smith spoke.	fig	fig / Smith / spoke / . / Next / .
+H	fig	2	FIG	False	title-without-period	fig Smith spoke.	fig	fig / Smith / spoke / . / Next / .
+H	fig	2	FIG	False	ordinary-sentence	We noted fig today.	fig	We / noted / fig / today / . / Next / .
+H	fig	2	FIG	False	case-variant-title	FIG. Smith spoke.	FIG	FIG / . / Smith / spoke / . / Next / .
+H	gen	2	GEN	False	baseline-title	gen. Smith spoke.	gen	gen / Smith / spoke / . / Next / .
+H	gen	2	GEN	False	title-without-period	gen Smith spoke.	gen	gen / Smith / spoke / . / Next / .
+H	gen	2	GEN	False	ordinary-sentence	We noted gen today.	gen	We / noted / gen / today / . / Next / .
+H	gen	2	GEN	False	case-variant-title	GEN. Smith spoke.	general	general / Smith / spoke / . / Next / .
+H	gov	2	GOV	False	baseline-title	gov. Smith spoke.	gov	gov / Smith / spoke / . / Next / .
+H	gov	2	GOV	False	title-without-period	gov Smith spoke.	gov	gov / Smith / spoke / . / Next / .
+H	gov	2	GOV	False	ordinary-sentence	We noted gov today.	gov	We / noted / gov / today / . / Next / .
+H	gov	2	GOV	False	case-variant-title	GOV. Smith spoke.	governor	governor / Smith / spoke / . / Next / .
+H	hon	2	HON	False	baseline-title	hon. Smith spoke.	hon	hon / Smith / spoke / . / Next / .
+H	hon	2	HON	False	title-without-period	hon Smith spoke.	hon	hon / Smith / spoke / . / Next / .
+H	hon	2	HON	False	ordinary-sentence	We noted hon today.	hon	We / noted / hon / today / . / Next / .
+H	hon	2	HON	False	case-variant-title	HON. Smith spoke.	honorable	honorable / Smith / spoke / . / Next / .
+H	i.e	2	I.E	False	baseline-title	i.e. Smith spoke.	that / is	that / is / Smith / spoke / . / Next / .
+H	i.e	2	I.E	False	title-without-period	i.e Smith spoke.	that / is	that / is / Smith / spoke / . / Next / .
+H	i.e	2	I.E	False	ordinary-sentence	We noted i.e today.	that / is	We / noted / that / is / today / . / Next / .
+H	i.e	2	I.E	False	case-variant-title	I.E. Smith spoke.	that / is	that / is / Smith / spoke / . / Next
+H	ie	2	IE	False	baseline-title	ie. Smith spoke.	ie	ie / Smith / spoke / . / Next
+H	ie	2	IE	False	title-without-period	ie Smith spoke.	ie	ie / Smith / spoke / . / Next / .
+H	ie	2	IE	False	ordinary-sentence	We noted ie today.	ie	We / noted / ie / today / . / Next / .
+H	ie	2	IE	False	case-variant-title	IE. Smith spoke.	IE	IE / . / Smith / spoke / . / Next / .
+H	jr	2	JR	False	baseline-title	jr. Smith spoke.	junior	junior / . / Smith / spoke / . / Next
+H	jr	2	JR	False	title-without-period	jr Smith spoke.	junior	junior / Smith / spoke / . / Next / .
+H	jr	2	JR	False	ordinary-sentence	We noted jr today.	junior	We / noted / junior / today / . / Next / .
+H	jr	2	JR	False	case-variant-title	JR. Smith spoke.	junior	junior / Smith / spoke / . / Next / .
+H	jun	2	JUN	False	baseline-title	jun. Smith spoke.	jun	jun / Smith / spoke / . / Next / .
+H	jun	2	JUN	False	title-without-period	jun Smith spoke.	jun	jun / Smith / spoke / . / Next / .
+H	jun	2	JUN	False	ordinary-sentence	We noted jun today.	June	We / noted / June / today / . / Next / .
+H	jun	2	JUN	False	case-variant-title	JUN. Smith spoke.	JUN	JUN / . / Smith / spoke / . / Next / .
+H	lieut	2	LIEUT	False	baseline-title	lieut. Smith spoke.	lieut	lieut / Smith / spoke / . / Next / .
+H	lieut	2	LIEUT	False	title-without-period	lieut Smith spoke.	lieut	lieut / Smith / spoke / . / Next / .
+H	lieut	2	LIEUT	False	ordinary-sentence	We noted lieut today.	lieut	We / noted / lieut / today / . / Next / .
+H	lieut	2	LIEUT	False	case-variant-title	LIEUT. Smith spoke.	lieutenant	lieutenant / Smith / spoke / . / Next
+H	lt	2	LT	False	baseline-title	lt. Smith spoke.	lt	lt / Smith / spoke / . / Next
+H	lt	2	LT	False	title-without-period	lt Smith spoke.	lt	lt / Smith / spoke / . / Next / .
+H	lt	2	LT	False	ordinary-sentence	We noted lt today.	lt	We / noted / lt / today / . / Next / .
+H	lt	2	LT	False	case-variant-title	LT. Smith spoke.	lieutenant	lieutenant / Smith / spoke / . / Next / .
+H	maj	2	MAJ	False	baseline-title	maj. Smith spoke.	maj	maj / Smith / spoke / . / Next / .
+H	maj	2	MAJ	False	title-without-period	maj Smith spoke.	maj	maj / Smith / spoke / . / Next / .
+H	maj	2	MAJ	False	ordinary-sentence	We noted maj today.	maj	We / noted / maj / today / . / Next / .
+H	maj	2	MAJ	False	case-variant-title	MAJ. Smith spoke.	major	major / Smith / spoke / . / Next / .
+H	messrs	2	MESSRS	False	baseline-title	messrs. Smith spoke.	messrs	messrs / Smith / spoke / . / Next / .
+H	messrs	2	MESSRS	False	title-without-period	messrs Smith spoke.	messrs	messrs / Smith / spoke / . / Next / .
+H	messrs	2	MESSRS	False	ordinary-sentence	We noted messrs today.	messrs	We / noted / messrs / today / . / Next / .
+H	messrs	2	MESSRS	False	case-variant-title	MESSRS. Smith spoke.	MESSRS	MESSRS / . / Smith / spoke / . / Next / .
+H	mgmt	2	MGMT	False	baseline-title	mgmt. Smith spoke.	management	management / Smith / spoke / . / Next / .
+H	mgmt	2	MGMT	False	title-without-period	mgmt Smith spoke.	management	management / Smith / spoke / . / Next / .
+H	mgmt	2	MGMT	False	ordinary-sentence	We noted mgmt today.	management	We / noted / management / today / . / Next / .
+H	mgmt	2	MGMT	False	case-variant-title	MGMT. Smith spoke.	management	management / Smith / spoke / . / Next / .
+H	mgr	2	MGR	False	baseline-title	mgr. Smith spoke.	mgr	mgr / Smith / spoke / . / Next / .
+H	mgr	2	MGR	False	title-without-period	mgr Smith spoke.	mgr	mgr / Smith / spoke / . / Next / .
+H	mgr	2	MGR	False	ordinary-sentence	We noted mgr today.	mgr	We / noted / mgr / today / . / Next / .
+H	mgr	2	MGR	False	case-variant-title	MGR. Smith spoke.	manager	manager / Smith / spoke / . / Next / .
+H	mngr	2	MNGR	False	baseline-title	mngr. Smith spoke.	mngr	mngr / Smith / spoke / . / Next / .
+H	mngr	2	MNGR	False	title-without-period	mngr Smith spoke.	mngr	mngr / Smith / spoke / . / Next / .
+H	mngr	2	MNGR	False	ordinary-sentence	We noted mngr today.	mngr	We / noted / mngr / today / . / Next / .
+H	mngr	2	MNGR	False	case-variant-title	MNGR. Smith spoke.	monsignor	monsignor / Smith / spoke / . / Next / .
+H	monsig	2	MONSIG	False	baseline-title	monsig. Smith spoke.	monsig	monsig / Smith / spoke / . / Next / .
+H	monsig	2	MONSIG	False	title-without-period	monsig Smith spoke.	monsig	monsig / Smith / spoke / . / Next / .
+H	monsig	2	MONSIG	False	ordinary-sentence	We noted monsig today.	monsig	We / noted / monsig / today / . / Next / .
+H	monsig	2	MONSIG	False	case-variant-title	MONSIG. Smith spoke.	monsignor	monsignor / Smith / spoke / . / Next
+H	mr	2	MR	False	baseline-title	mr. Smith spoke.	Mister	Mister / Smith / spoke / . / Next
+H	mr	2	MR	False	title-without-period	mr Smith spoke.	mr	mr / Smith / spoke / . / Next / .
+H	mr	2	MR	False	ordinary-sentence	We noted mr today.	mr	We / noted / mr / today / . / Next / .
+H	mr	2	MR	False	case-variant-title	MR. Smith spoke.	mister	mister / Smith / spoke / . / Next / .
+H	mrs	2	MRS	False	baseline-title	mrs. Smith spoke.	Misses	Misses / Smith / spoke / . / Next / .
+H	mrs	2	MRS	False	title-without-period	mrs Smith spoke.	mrs	mrs / Smith / spoke / . / Next / .
+H	mrs	2	MRS	False	ordinary-sentence	We noted mrs today.	mrs	We / noted / mrs / today / . / Next / .
+H	mrs	2	MRS	False	case-variant-title	MRS. Smith spoke.	misses	misses / Smith / spoke / . / Next
+H	ms	2	MS	False	baseline-title	ms. Smith spoke.	Miz	Miz / Smith / spoke / . / Next
+H	ms	2	MS	False	title-without-period	ms Smith spoke.	ms	ms / Smith / spoke / . / Next / .
+H	ms	2	MS	False	ordinary-sentence	We noted ms today.	ms	We / noted / ms / today / . / Next / .
+H	ms	2	MS	False	case-variant-title	MS. Smith spoke.	Miz	Miz / Smith / spoke / . / Next / .
+H	msgr	2	MSGR	False	baseline-title	msgr. Smith spoke.	msgr	msgr / Smith / spoke / . / Next / .
+H	msgr	2	MSGR	False	title-without-period	msgr Smith spoke.	msgr	msgr / Smith / spoke / . / Next / .
+H	msgr	2	MSGR	False	ordinary-sentence	We noted msgr today.	msgr	We / noted / msgr / today / . / Next / .
+H	msgr	2	MSGR	False	case-variant-title	MSGR. Smith spoke.	monsignor	monsignor / Smith / spoke / . / Next / .
+H	p.p	2	P.P	False	baseline-title	p.p. Smith spoke.	p.p	p.p / Smith / spoke / . / Next / .
+H	p.p	2	P.P	False	title-without-period	p.p Smith spoke.	p.p	p.p / Smith / spoke / . / Next / .
+H	p.p	2	P.P	False	ordinary-sentence	We noted p.p today.	p.p	We / noted / p.p / today / . / Next / .
+H	p.p	2	P.P	False	case-variant-title	P.P. Smith spoke.	P.P	P.P / Smith / spoke / . / Next / .
+H	pfc	2	PFC	False	baseline-title	pfc. Smith spoke.	pfc	pfc / Smith / spoke / . / Next / .
+H	pfc	2	PFC	False	title-without-period	pfc Smith spoke.	pfc	pfc / Smith / spoke / . / Next / .
+H	pfc	2	PFC	False	ordinary-sentence	We noted pfc today.	pfc	We / noted / pfc / today / . / Next / .
+H	pfc	2	PFC	False	case-variant-title	PFC. Smith spoke.	PFC	PFC / Smith / spoke / . / Next / .
+H	pp	2	PP	False	baseline-title	pp. Smith spoke.	pp	pp / Smith / spoke / . / Next
+H	pp	2	PP	False	title-without-period	pp Smith spoke.	pp	pp / Smith / spoke / . / Next / .
+H	pp	2	PP	False	ordinary-sentence	We noted pp today.	pp	We / noted / pp / today / . / Next / .
+H	pp	2	PP	False	case-variant-title	PP. Smith spoke.	PP	PP / . / Smith / spoke / . / Next / .
+H	pres	2	PRES	False	baseline-title	pres. Smith spoke.	pres	pres / Smith / spoke / . / Next / .
+H	pres	2	PRES	False	title-without-period	pres Smith spoke.	pres	pres / Smith / spoke / . / Next / .
+H	pres	2	PRES	False	ordinary-sentence	We noted pres today.	pres	We / noted / pres / today / . / Next / .
+H	pres	2	PRES	False	case-variant-title	PRES. Smith spoke.	president	president / Smith / spoke / . / Next / .
+H	prof	2	PROF	False	baseline-title	prof. Smith spoke.	prof	prof / Smith / spoke / . / Next / .
+H	prof	2	PROF	False	title-without-period	prof Smith spoke.	prof	prof / Smith / spoke / . / Next / .
+H	prof	2	PROF	False	ordinary-sentence	We noted prof today.	prof	We / noted / prof / today / . / Next / .
+H	prof	2	PROF	False	case-variant-title	PROF. Smith spoke.	professor	professor / Smith / spoke / . / Next / .
+H	pvt	2	PVT	False	baseline-title	pvt. Smith spoke.	pvt	pvt / Smith / spoke / . / Next / .
+H	pvt	2	PVT	False	title-without-period	pvt Smith spoke.	pvt	pvt / Smith / spoke / . / Next / .
+H	pvt	2	PVT	False	ordinary-sentence	We noted pvt today.	pvt	We / noted / pvt / today / . / Next / .
+H	pvt	2	PVT	False	case-variant-title	PVT. Smith spoke.	private	private / Smith / spoke / . / Next / .
+H	rep	2	REP	False	baseline-title	rep. Smith spoke.	rep	rep / Smith / spoke / . / Next / .
+H	rep	2	REP	False	title-without-period	rep Smith spoke.	rep	rep / Smith / spoke / . / Next / .
+H	rep	2	REP	False	ordinary-sentence	We noted rep today.	rep	We / noted / rep / today / . / Next / .
+H	rep	2	REP	False	case-variant-title	REP. Smith spoke.	representative	representative / Smith / spoke / . / Next / .
+H	repub	2	REPUB	False	baseline-title	repub. Smith spoke.	repub	repub / Smith / spoke / . / Next / .
+H	repub	2	REPUB	False	title-without-period	repub Smith spoke.	repub	repub / Smith / spoke / . / Next / .
+H	repub	2	REPUB	False	ordinary-sentence	We noted repub today.	repub	We / noted / repub / today / . / Next / .
+H	repub	2	REPUB	False	case-variant-title	REPUB. Smith spoke.	republican	republican / Smith / spoke / . / Next / .
+H	rev	2	REV	False	baseline-title	rev. Smith spoke.	rev	rev / Smith / spoke / . / Next / .
+H	rev	2	REV	False	title-without-period	rev Smith spoke.	rev	rev / Smith / spoke / . / Next / .
+H	rev	2	REV	False	ordinary-sentence	We noted rev today.	rev	We / noted / rev / today / . / Next / .
+H	rev	2	REV	False	case-variant-title	REV. Smith spoke.	reverend	reverend / Smith / spoke / . / Next / .
+H	secy	2	SECY	False	baseline-title	secy. Smith spoke.	secy	secy / Smith / spoke / . / Next / .
+H	secy	2	SECY	False	title-without-period	secy Smith spoke.	secy	secy / Smith / spoke / . / Next / .
+H	secy	2	SECY	False	ordinary-sentence	We noted secy today.	secy	We / noted / secy / today / . / Next / .
+H	secy	2	SECY	False	case-variant-title	SECY. Smith spoke.	secretary	secretary / Smith / spoke / . / Next / .
+H	sen	2	SEN	False	baseline-title	sen. Smith spoke.	sen	sen / Smith / spoke / . / Next / .
+H	sen	2	SEN	False	title-without-period	sen Smith spoke.	sen	sen / Smith / spoke / . / Next / .
+H	sen	2	SEN	False	ordinary-sentence	We noted sen today.	sen	We / noted / sen / today / . / Next / .
+H	sen	2	SEN	False	case-variant-title	SEN. Smith spoke.	senator	senator / Smith / spoke / . / Next / .
+H	sergt	2	SERGT	False	baseline-title	sergt. Smith spoke.	sergt	sergt / Smith / spoke / . / Next / .
+H	sergt	2	SERGT	False	title-without-period	sergt Smith spoke.	sergt	sergt / Smith / spoke / . / Next / .
+H	sergt	2	SERGT	False	ordinary-sentence	We noted sergt today.	sergt	We / noted / sergt / today / . / Next / .
+H	sergt	2	SERGT	False	case-variant-title	SERGT. Smith spoke.	sergeant	sergeant / Smith / spoke / . / Next / .
+H	sgt	2	SGT	False	baseline-title	sgt. Smith spoke.	sgt	sgt / Smith / spoke / . / Next / .
+H	sgt	2	SGT	False	title-without-period	sgt Smith spoke.	sgt	sgt / Smith / spoke / . / Next / .
+H	sgt	2	SGT	False	ordinary-sentence	We noted sgt today.	sgt	We / noted / sgt / today / . / Next / .
+H	sgt	2	SGT	False	case-variant-title	SGT. Smith spoke.	sergeant	sergeant / Smith / spoke / . / Next
+H	sr	2	SR	False	baseline-title	sr. Smith spoke.	sr	sr / . / Smith / spoke / . / Next
+H	sr	2	SR	False	title-without-period	sr Smith spoke.	sr	sr / Smith / spoke / . / Next / .
+H	sr	2	SR	False	ordinary-sentence	We noted sr today.	sr	We / noted / sr / today / . / Next / .
+H	sr	2	SR	False	case-variant-title	SR. Smith spoke.	senior	senior / Smith / spoke / . / Next
+H	st	2	ST	False	baseline-title	st. Smith spoke.	Street	Street / Smith / spoke / . / Next
+H	st	2	ST	False	title-without-period	st Smith spoke.	st	st / Smith / spoke / . / Next / .
+H	st	2	ST	False	ordinary-sentence	We noted st today.	st	We / noted / st / today / . / Next / .
+H	st	2	ST	False	case-variant-title	ST. Smith spoke.	Saint	Saint / Smith / spoke / . / Next / .
+H	v.s	2	V.S	False	baseline-title	v.s. Smith spoke.	versus	versus / Smith / spoke / . / Next / .
+H	v.s	2	V.S	False	title-without-period	v.s Smith spoke.	versus	versus / Smith / spoke / . / Next / .
+H	v.s	2	V.S	False	ordinary-sentence	We noted v.s today.	versus	We / noted / versus / today / . / Next / .
+H	v.s	2	V.S	False	case-variant-title	V.S. Smith spoke.	versus	versus / Smith / spoke / . / Next
+H	vs	2	VS	False	baseline-title	vs. Smith spoke.	versus	versus / Smith / spoke / . / Next
+H	vs	2	VS	False	title-without-period	vs Smith spoke.	versus	versus / Smith / spoke / . / Next / .
+H	vs	2	VS	False	ordinary-sentence	We noted vs today.	versus	We / noted / versus / today / . / Next / .
+H	vs	2	VS	False	case-variant-title	VS. Smith spoke.	versus	versus / . / Smith / spoke / . / Next / .
+T	AG	1	ag	False	baseline-company	Acme AG. hired Lee.	AG	Acme / AG / hired / Lee / . / Next / .
+T	AG	1	ag	False	comma-company	Acme, AG hired Lee.	AG	Acme / , / AG / hired / Lee / . / Next / .
+T	AG	1	ag	False	company-without-period	Acme AG hired Lee.	AG	Acme / AG / hired / Lee / . / Next / .
+T	AG	1	ag	False	ordinary-sentence	We noted AG today.	AG	We / noted / AG / today / . / Next / .
+T	AG	1	ag	False	case-variant-company	Acme ag. hired Lee.	ag	Acme / ag / . / hired / Lee / . / Next / .
+T	BV	1	bv	False	baseline-company	Acme BV. hired Lee.	BV	Acme / BV / hired / Lee / . / Next / .
+T	BV	1	bv	False	comma-company	Acme, BV hired Lee.	BV	Acme / , / BV / hired / Lee / . / Next / .
+T	BV	1	bv	False	company-without-period	Acme BV hired Lee.	BV	Acme / BV / hired / Lee / . / Next / .
+T	BV	1	bv	False	ordinary-sentence	We noted BV today.	BV	We / noted / BV / today / . / Next / .
+T	BV	1	bv	False	case-variant-company	Acme bv. hired Lee.	bv	Acme / bv / . / hired / Lee / . / Next / .
+T	Cos	1	cos	False	baseline-company	Acme Cos. hired Lee.	Cos	Acme / Cos / hired / Lee / . / Next / .
+T	Cos	1	cos	False	comma-company	Acme, Cos hired Lee.	Cos	Acme / , / Cos / hired / Lee / . / Next / .
+T	Cos	1	cos	False	company-without-period	Acme Cos hired Lee.	Cos	Acme / Cos / hired / Lee / . / Next / .
+T	Cos	1	cos	False	ordinary-sentence	We noted Cos today.	Cos	We / noted / Cos / today / . / Next / .
+T	Cos	1	cos	False	case-variant-company	Acme cos. hired Lee.	cos	Acme / cos / . / hired / Lee / . / Next / .
+T	LLC	1	llc	False	baseline-company	Acme LLC. hired Lee.	LLC	Acme / LLC / hired / Lee / . / Next / .
+T	LLC	1	llc	False	comma-company	Acme, LLC hired Lee.	LLC	Acme / , / LLC / hired / Lee / . / Next / .
+T	LLC	1	llc	False	company-without-period	Acme LLC hired Lee.	LLC	Acme / LLC / hired / Lee / . / Next / .
+T	LLC	1	llc	False	ordinary-sentence	We noted LLC today.	LLC	We / noted / LLC / today / . / Next / .
+T	LLC	1	llc	False	case-variant-company	Acme llc. hired Lee.	llc	Acme / llc / . / hired / Lee / . / Next / .
+T	LP	1	lp	False	baseline-company	Acme LP. hired Lee.	LP	Acme / LP / hired / Lee / . / Next / .
+T	LP	1	lp	False	comma-company	Acme, LP hired Lee.	LP	Acme / , / LP / hired / Lee / . / Next / .
+T	LP	1	lp	False	company-without-period	Acme LP hired Lee.	LP	Acme / LP / hired / Lee / . / Next / .
+T	LP	1	lp	False	ordinary-sentence	We noted LP today.	LP	We / noted / LP / today / . / Next / .
+T	LP	1	lp	False	case-variant-company	Acme lp. hired Lee.	lp	Acme / lp / . / hired / Lee / . / Next / .
+T	NV	1	nv	False	baseline-company	Acme NV. hired Lee.	NV	Acme / NV / hired / Lee / . / Next / .
+T	NV	1	nv	False	comma-company	Acme, NV hired Lee.	Nevada	Acme / Nevada / hired / Lee / . / Next / .
+T	NV	1	nv	False	company-without-period	Acme NV hired Lee.	NV	Acme / NV / hired / Lee / . / Next / .
+T	NV	1	nv	False	ordinary-sentence	We noted NV today.	NV	We / noted / NV / today / . / Next / .
+T	NV	1	nv	False	case-variant-company	Acme nv. hired Lee.	nv	Acme / nv / . / hired / Lee / . / Next / .
+T	SARL	1	sarl	True	baseline-company	Acme SARL. hired Lee.	SARL	Acme / SARL / hired / Lee / . / Next / .
+T	SARL	1	sarl	True	comma-company	Acme, SARL hired Lee.	SARL	Acme / , / SARL / hired / Lee / . / Next / .
+T	SARL	1	sarl	True	company-without-period	Acme SARL hired Lee.	SARL	Acme / SARL / hired / Lee / . / Next / .
+T	SARL	1	sarl	True	ordinary-sentence	We noted SARL today.	SARL	We / noted / SARL / today / . / Next / .
+T	SARL	1	sarl	True	case-variant-company	Acme sarl. hired Lee.	sarl	Acme / sarl / hired / Lee / . / Next / .
+T	SPA	1	spa	False	baseline-company	Acme SPA. hired Lee.	SPA	Acme / SPA / hired / Lee / . / Next / .
+T	SPA	1	spa	False	comma-company	Acme, SPA hired Lee.	SPA	Acme / , / SPA / hired / Lee / . / Next / .
+T	SPA	1	spa	False	company-without-period	Acme SPA hired Lee.	SPA	Acme / SPA / hired / Lee / . / Next / .
+T	SPA	1	spa	False	ordinary-sentence	We noted SPA today.	SPA	We / noted / SPA / today / . / Next / .
+T	SPA	1	spa	False	case-variant-company	Acme spa. hired Lee.	spa	Acme / spa / . / hired / Lee / . / Next / .
+T	SRL	1	srl	True	baseline-company	Acme SRL. hired Lee.	SRL	Acme / SRL / hired / Lee / . / Next / .
+T	SRL	1	srl	True	comma-company	Acme, SRL hired Lee.	SRL	Acme / , / SRL / hired / Lee / . / Next / .
+T	SRL	1	srl	True	company-without-period	Acme SRL hired Lee.	SRL	Acme / SRL / hired / Lee / . / Next / .
+T	SRL	1	srl	True	ordinary-sentence	We noted SRL today.	SRL	We / noted / SRL / today / . / Next / .
+T	SRL	1	srl	True	case-variant-company	Acme srl. hired Lee.	srl	Acme / srl / hired / Lee / . / Next / .
+T	Sarl	1	sarl	True	baseline-company	Acme Sarl. hired Lee.	Sarl	Acme / Sarl / hired / Lee / . / Next / .
+T	Sarl	1	sarl	True	comma-company	Acme, Sarl hired Lee.	Sarl	Acme / , / Sarl / hired / Lee / . / Next / .
+T	Sarl	1	sarl	True	company-without-period	Acme Sarl hired Lee.	Sarl	Acme / Sarl / hired / Lee / . / Next / .
+T	Sarl	1	sarl	True	ordinary-sentence	We noted Sarl today.	Sarl	We / noted / Sarl / today / . / Next / .
+T	Sarl	1	sarl	True	case-variant-company	Acme sarl. hired Lee.	sarl	Acme / sarl / hired / Lee / . / Next / .
+T	SpA	1	sPa	False	baseline-company	Acme SpA. hired Lee.	SpA	Acme / SpA / hired / Lee / . / Next / .
+T	SpA	1	sPa	False	comma-company	Acme, SpA hired Lee.	SpA	Acme / , / SpA / hired / Lee / . / Next / .
+T	SpA	1	sPa	False	company-without-period	Acme SpA hired Lee.	SpA	Acme / SpA / hired / Lee / . / Next / .
+T	SpA	1	sPa	False	ordinary-sentence	We noted SpA today.	SpA	We / noted / SpA / today / . / Next / .
+T	SpA	1	sPa	False	case-variant-company	Acme sPa. hired Lee.	sPa	Acme / sPa / . / hired / Lee / . / Next / .
+T	a.g	2	A.G	False	baseline-company	Acme a.g. hired Lee.	a.g	Acme / a.g / hired / Lee / . / Next / .
+T	a.g	2	A.G	False	comma-company	Acme, a.g hired Lee.	a.g	Acme / , / a.g / hired / Lee / . / Next / .
+T	a.g	2	A.G	False	company-without-period	Acme a.g hired Lee.	a.g	Acme / a.g / hired / Lee / . / Next / .
+T	a.g	2	A.G	False	ordinary-sentence	We noted a.g today.	a.g	We / noted / a.g / today / . / Next / .
+T	a.g	2	A.G	False	case-variant-company	Acme A.G. hired Lee.	A.G	Acme / A.G / hired / Lee / . / Next / .
+T	b.v	2	B.V	False	baseline-company	Acme b.v. hired Lee.	b.v	Acme / b.v / hired / Lee / . / Next / .
+T	b.v	2	B.V	False	comma-company	Acme, b.v hired Lee.	b.v	Acme / , / b.v / hired / Lee / . / Next / .
+T	b.v	2	B.V	False	company-without-period	Acme b.v hired Lee.	b.v	Acme / b.v / hired / Lee / . / Next / .
+T	b.v	2	B.V	False	ordinary-sentence	We noted b.v today.	b.v	We / noted / b.v / today / . / Next / .
+T	b.v	2	B.V	False	case-variant-company	Acme B.V. hired Lee.	B.V	Acme / B.V / hired / Lee / . / Next / .
+T	bros	2	BROS	False	baseline-company	Acme bros. hired Lee.	brothers	Acme / brothers / hired / Lee / . / Next / .
+T	bros	2	BROS	False	comma-company	Acme, bros hired Lee.	brothers	Acme / , / brothers / hired / Lee / . / Next / .
+T	bros	2	BROS	False	company-without-period	Acme bros hired Lee.	brothers	Acme / brothers / hired / Lee / . / Next / .
+T	bros	2	BROS	False	ordinary-sentence	We noted bros today.	brothers	We / noted / brothers / today / . / Next / .
+T	bros	2	BROS	False	case-variant-company	Acme BROS. hired Lee.	brothers	Acme / brothers / hired / Lee / . / Next / .
+T	co	2	CO	False	baseline-company	Acme co. hired Lee.	co	Acme / co / hired / Lee / . / Next / .
+T	co	2	CO	False	comma-company	Acme, co hired Lee.	co	Acme / , / co / hired / Lee / . / Next / .
+T	co	2	CO	False	company-without-period	Acme co hired Lee.	co	Acme / co / hired / Lee / . / Next / .
+T	co	2	CO	False	ordinary-sentence	We noted co today.	co	We / noted / co / today / . / Next / .
+T	co	2	CO	False	case-variant-company	Acme CO. hired Lee.	Company	Acme / Company / hired / Lee / . / Next / .
+T	corp	2	CORP	False	baseline-company	Acme corp. hired Lee.	corporation	Acme / corporation / hired / Lee / . / Next / .
+T	corp	2	CORP	False	comma-company	Acme, corp hired Lee.	corporation	Acme / , / corporation / hired / Lee / . / Next / .
+T	corp	2	CORP	False	company-without-period	Acme corp hired Lee.	corporation	Acme / corporation / hired / Lee / . / Next / .
+T	corp	2	CORP	False	ordinary-sentence	We noted corp today.	corporation	We / noted / corporation / today / . / Next / .
+T	corp	2	CORP	False	case-variant-company	Acme CORP. hired Lee.	corporation	Acme / corporation / hired / Lee / . / Next / .
+T	esq	2	ESQ	False	baseline-company	Acme esq. hired Lee.	esq	Acme / esq / hired / Lee / . / Next / .
+T	esq	2	ESQ	False	comma-company	Acme, esq hired Lee.	esq	Acme / , / esq / hired / Lee / . / Next / .
+T	esq	2	ESQ	False	company-without-period	Acme esq hired Lee.	esq	Acme / esq / hired / Lee / . / Next / .
+T	esq	2	ESQ	False	ordinary-sentence	We noted esq today.	esq	We / noted / esq / today / . / Next / .
+T	esq	2	ESQ	False	case-variant-company	Acme ESQ. hired Lee.	ESQ	Acme / ESQ / hired / Lee / . / Next / .
+T	esqr	2	ESQR	False	baseline-company	Acme esqr. hired Lee.	esqr	Acme / esqr / hired / Lee / . / Next / .
+T	esqr	2	ESQR	False	comma-company	Acme, esqr hired Lee.	esqr	Acme / , / esqr / hired / Lee / . / Next / .
+T	esqr	2	ESQR	False	company-without-period	Acme esqr hired Lee.	esqr	Acme / esqr / hired / Lee / . / Next / .
+T	esqr	2	ESQR	False	ordinary-sentence	We noted esqr today.	esqr	We / noted / esqr / today / . / Next / .
+T	esqr	2	ESQR	False	case-variant-company	Acme ESQR. hired Lee.	ESQR	Acme / ESQR / hired / Lee / . / Next / .
+T	etc	2	ETC	False	baseline-company	Acme etc. hired Lee.	etcetera	Acme / etcetera / hired / Lee / . / Next / .
+T	etc	2	ETC	False	comma-company	Acme, etc hired Lee.	etcetera	Acme / , / etcetera / hired / Lee / . / Next / .
+T	etc	2	ETC	False	company-without-period	Acme etc hired Lee.	etcetera	Acme / etcetera / hired / Lee / . / Next / .
+T	etc	2	ETC	False	ordinary-sentence	We noted etc today.	etcetera	We / noted / etcetera / today / . / Next / .
+T	etc	2	ETC	False	case-variant-company	Acme ETC. hired Lee.	etcetera	Acme / etcetera / hired / Lee / . / Next / .
+T	gmbh	2	GMBH	False	baseline-company	Acme gmbh. hired Lee.	gmbh	Acme / gmbh / hired / Lee / . / Next / .
+T	gmbh	2	GMBH	False	comma-company	Acme, gmbh hired Lee.	gmbh	Acme / , / gmbh / hired / Lee / . / Next / .
+T	gmbh	2	GMBH	False	company-without-period	Acme gmbh hired Lee.	gmbh	Acme / gmbh / hired / Lee / . / Next / .
+T	gmbh	2	GMBH	False	ordinary-sentence	We noted gmbh today.	gmbh	We / noted / gmbh / today / . / Next / .
+T	gmbh	2	GMBH	False	case-variant-company	Acme GMBH. hired Lee.	GMBH	Acme / GMBH / hired / Lee / . / Next / .
+T	h.q	2	H.Q	False	baseline-company	Acme h.q. hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	h.q	2	H.Q	False	comma-company	Acme, h.q hired Lee.	headquarters	Acme / , / headquarters / hired / Lee / . / Next / .
+T	h.q	2	H.Q	False	company-without-period	Acme h.q hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	h.q	2	H.Q	False	ordinary-sentence	We noted h.q today.	headquarters	We / noted / headquarters / today / . / Next / .
+T	h.q	2	H.Q	False	case-variant-company	Acme H.Q. hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	hdqrs	2	HDQRS	False	baseline-company	Acme hdqrs. hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	hdqrs	2	HDQRS	False	comma-company	Acme, hdqrs hired Lee.	headquarters	Acme / , / headquarters / hired / Lee / . / Next / .
+T	hdqrs	2	HDQRS	False	company-without-period	Acme hdqrs hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	hdqrs	2	HDQRS	False	ordinary-sentence	We noted hdqrs today.	headquarters	We / noted / headquarters / today / . / Next / .
+T	hdqrs	2	HDQRS	False	case-variant-company	Acme HDQRS. hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	hq	2	HQ	False	baseline-company	Acme hq. hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	hq	2	HQ	False	comma-company	Acme, hq hired Lee.	headquarters	Acme / , / headquarters / hired / Lee / . / Next / .
+T	hq	2	HQ	False	company-without-period	Acme hq hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	hq	2	HQ	False	ordinary-sentence	We noted hq today.	headquarters	We / noted / headquarters / today / . / Next / .
+T	hq	2	HQ	False	case-variant-company	Acme HQ. hired Lee.	headquarters	Acme / headquarters / hired / Lee / . / Next / .
+T	inc	2	INC	False	baseline-company	Acme inc. hired Lee.	incorporated	Acme / incorporated / hired / Lee / . / Next / .
+T	inc	2	INC	False	comma-company	Acme, inc hired Lee.	incorporated	Acme / , / incorporated / hired / Lee / . / Next / .
+T	inc	2	INC	False	company-without-period	Acme inc hired Lee.	incorporated	Acme / incorporated / hired / Lee / . / Next / .
+T	inc	2	INC	False	ordinary-sentence	We noted inc today.	incorporated	We / noted / incorporated / today / . / Next / .
+T	inc	2	INC	False	case-variant-company	Acme INC. hired Lee.	incorporated	Acme / incorporated / hired / Lee / . / Next / .
+T	jnr	2	JNR	False	baseline-company	Acme jnr. hired Lee.	jnr	Acme / jnr / hired / Lee / . / Next / .
+T	jnr	2	JNR	False	comma-company	Acme, jnr hired Lee.	jnr	Acme / , / jnr / hired / Lee / . / Next / .
+T	jnr	2	JNR	False	company-without-period	Acme jnr hired Lee.	jnr	Acme / jnr / hired / Lee / . / Next / .
+T	jnr	2	JNR	False	ordinary-sentence	We noted jnr today.	jnr	We / noted / jnr / today / . / Next / .
+T	jnr	2	JNR	False	case-variant-company	Acme JNR. hired Lee.	JNR	Acme / JNR / hired / Lee / . / Next / .
+T	jr	2	JR	False	baseline-company	Acme jr. hired Lee.	junior	Acme / junior / hired / Lee / . / Next / .
+T	jr	2	JR	False	comma-company	Acme, jr hired Lee.	junior	Acme / , / junior / hired / Lee / . / Next / .
+T	jr	2	JR	False	company-without-period	Acme jr hired Lee.	junior	Acme / junior / hired / Lee / . / Next / .
+T	jr	2	JR	False	ordinary-sentence	We noted jr today.	junior	We / noted / junior / today / . / Next / .
+T	jr	2	JR	False	case-variant-company	Acme JR. hired Lee.	junior	Acme / junior / hired / Lee / . / Next / .
+T	l.l.c	2	L.L.C	False	baseline-company	Acme l.l.c. hired Lee.	l.l.c	Acme / l.l.c / hired / Lee / . / Next / .
+T	l.l.c	2	L.L.C	False	comma-company	Acme, l.l.c hired Lee.	l.l.c	Acme / , / l.l.c / hired / Lee / . / Next / .
+T	l.l.c	2	L.L.C	False	company-without-period	Acme l.l.c hired Lee.	l.l.c	Acme / l.l.c / hired / Lee / . / Next / .
+T	l.l.c	2	L.L.C	False	ordinary-sentence	We noted l.l.c today.	l.l.c	We / noted / l.l.c / today / . / Next / .
+T	l.l.c	2	L.L.C	False	case-variant-company	Acme L.L.C. hired Lee.	L.L.C	Acme / L.L.C / hired / Lee / . / Next / .
+T	l.p	2	L.P	False	baseline-company	Acme l.p. hired Lee.	l.p	Acme / l.p / hired / Lee / . / Next / .
+T	l.p	2	L.P	False	comma-company	Acme, l.p hired Lee.	l.p	Acme / , / l.p / hired / Lee / . / Next / .
+T	l.p	2	L.P	False	company-without-period	Acme l.p hired Lee.	l.p	Acme / l.p / hired / Lee / . / Next / .
+T	l.p	2	L.P	False	ordinary-sentence	We noted l.p today.	l.p	We / noted / l.p / today / . / Next / .
+T	l.p	2	L.P	False	case-variant-company	Acme L.P. hired Lee.	L.P	Acme / L.P / hired / Lee / . / Next / .
+T	ltd	2	LTD	False	baseline-company	Acme ltd. hired Lee.	limited	Acme / limited / hired / Lee / . / Next / .
+T	ltd	2	LTD	False	comma-company	Acme, ltd hired Lee.	limited	Acme / , / limited / hired / Lee / . / Next / .
+T	ltd	2	LTD	False	company-without-period	Acme ltd hired Lee.	limited	Acme / limited / hired / Lee / . / Next / .
+T	ltd	2	LTD	False	ordinary-sentence	We noted ltd today.	limited	We / noted / limited / today / . / Next / .
+T	ltd	2	LTD	False	case-variant-company	Acme LTD. hired Lee.	limited	Acme / limited / hired / Lee / . / Next / .
+T	n.v	2	N.V	False	baseline-company	Acme n.v. hired Lee.	n.v	Acme / n.v / hired / Lee / . / Next / .
+T	n.v	2	N.V	False	comma-company	Acme, n.v hired Lee.	n.v	Acme / , / n.v / hired / Lee / . / Next / .
+T	n.v	2	N.V	False	company-without-period	Acme n.v hired Lee.	n.v	Acme / n.v / hired / Lee / . / Next / .
+T	n.v	2	N.V	False	ordinary-sentence	We noted n.v today.	n.v	We / noted / n.v / today / . / Next / .
+T	n.v	2	N.V	False	case-variant-company	Acme N.V. hired Lee.	N.V	Acme / N.V / hired / Lee / . / Next / .
+T	plc	2	PLC	False	baseline-company	Acme plc. hired Lee.	plc	Acme / plc / hired / Lee / . / Next / .
+T	plc	2	PLC	False	comma-company	Acme, plc hired Lee.	plc	Acme / , / plc / hired / Lee / . / Next / .
+T	plc	2	PLC	False	company-without-period	Acme plc hired Lee.	plc	Acme / plc / hired / Lee / . / Next / .
+T	plc	2	PLC	False	ordinary-sentence	We noted plc today.	plc	We / noted / plc / today / . / Next / .
+T	plc	2	PLC	False	case-variant-company	Acme PLC. hired Lee.	PLC	Acme / PLC / hired / Lee / . / Next / .
+T	pty	2	PTY	False	baseline-company	Acme pty. hired Lee.	pty	Acme / pty / hired / Lee / . / Next / .
+T	pty	2	PTY	False	comma-company	Acme, pty hired Lee.	pty	Acme / , / pty / hired / Lee / . / Next / .
+T	pty	2	PTY	False	company-without-period	Acme pty hired Lee.	pty	Acme / pty / hired / Lee / . / Next / .
+T	pty	2	PTY	False	ordinary-sentence	We noted pty today.	pty	We / noted / pty / today / . / Next / .
+T	pty	2	PTY	False	case-variant-company	Acme PTY. hired Lee.	Proprietary	Acme / Proprietary / hired / Lee / . / Next / .
+T	s.a	2	S.A	False	baseline-company	Acme s.a. hired Lee.	s.a	Acme / s.a / hired / Lee / . / Next / .
+T	s.a	2	S.A	False	comma-company	Acme, s.a hired Lee.	s.a	Acme / , / s.a / hired / Lee / . / Next / .
+T	s.a	2	S.A	False	company-without-period	Acme s.a hired Lee.	s.a	Acme / s.a / hired / Lee / . / Next / .
+T	s.a	2	S.A	False	ordinary-sentence	We noted s.a today.	s.a	We / noted / s.a / today / . / Next / .
+T	s.a	2	S.A	False	case-variant-company	Acme S.A. hired Lee.	S.A	Acme / S.A / hired / Lee / . / Next / .
+T	s.a.r.l	2	S.A.R.L	False	baseline-company	Acme s.a.r.l. hired Lee.	s.a.r.l	Acme / s.a.r.l / hired / Lee / . / Next / .
+T	s.a.r.l	2	S.A.R.L	False	comma-company	Acme, s.a.r.l hired Lee.	s.a.r.l	Acme / , / s.a.r.l / hired / Lee / . / Next / .
+T	s.a.r.l	2	S.A.R.L	False	company-without-period	Acme s.a.r.l hired Lee.	s.a.r.l	Acme / s.a.r.l / hired / Lee / . / Next / .
+T	s.a.r.l	2	S.A.R.L	False	ordinary-sentence	We noted s.a.r.l today.	s.a.r.l	We / noted / s.a.r.l / today / . / Next / .
+T	s.a.r.l	2	S.A.R.L	False	case-variant-company	Acme S.A.R.L. hired Lee.	S.A.R.L	Acme / S.A.R.L / hired / Lee / . / Next / .
+T	s.p.a	2	S.P.A	False	baseline-company	Acme s.p.a. hired Lee.	s.p.a	Acme / s.p.a / hired / Lee / . / Next / .
+T	s.p.a	2	S.P.A	False	comma-company	Acme, s.p.a hired Lee.	s.p.a	Acme / , / s.p.a / hired / Lee / . / Next / .
+T	s.p.a	2	S.P.A	False	company-without-period	Acme s.p.a hired Lee.	s.p.a	Acme / s.p.a / hired / Lee / . / Next / .
+T	s.p.a	2	S.P.A	False	ordinary-sentence	We noted s.p.a today.	s.p.a	We / noted / s.p.a / today / . / Next / .
+T	s.p.a	2	S.P.A	False	case-variant-company	Acme S.P.A. hired Lee.	S.P.A	Acme / S.P.A / hired / Lee / . / Next / .
+T	s.r.l	2	S.R.L	False	baseline-company	Acme s.r.l. hired Lee.	s.r.l	Acme / s.r.l / hired / Lee / . / Next / .
+T	s.r.l	2	S.R.L	False	comma-company	Acme, s.r.l hired Lee.	s.r.l	Acme / , / s.r.l / hired / Lee / . / Next / .
+T	s.r.l	2	S.R.L	False	company-without-period	Acme s.r.l hired Lee.	s.r.l	Acme / s.r.l / hired / Lee / . / Next / .
+T	s.r.l	2	S.R.L	False	ordinary-sentence	We noted s.r.l today.	s.r.l	We / noted / s.r.l / today / . / Next / .
+T	s.r.l	2	S.R.L	False	case-variant-company	Acme S.R.L. hired Lee.	S.R.L	Acme / S.R.L / hired / Lee / . / Next / .
+T	sa	2	SA	False	baseline-company	Acme sa. hired Lee.	sa	Acme / sa / hired / Lee / . / Next / .
+T	sa	2	SA	False	comma-company	Acme, sa hired Lee.	sa	Acme / , / sa / hired / Lee / . / Next / .
+T	sa	2	SA	False	company-without-period	Acme sa hired Lee.	sa	Acme / sa / hired / Lee / . / Next / .
+T	sa	2	SA	False	ordinary-sentence	We noted sa today.	sa	We / noted / sa / today / . / Next / .
+T	sa	2	SA	False	case-variant-company	Acme SA. hired Lee.	SA	Acme / SA / hired / Lee / . / Next / .
+T	sarl	2	SARL	True	baseline-company	Acme sarl. hired Lee.	sarl	Acme / sarl / hired / Lee / . / Next / .
+T	sarl	2	SARL	True	comma-company	Acme, sarl hired Lee.	sarl	Acme / , / sarl / hired / Lee / . / Next / .
+T	sarl	2	SARL	True	company-without-period	Acme sarl hired Lee.	sarl	Acme / sarl / hired / Lee / . / Next / .
+T	sarl	2	SARL	True	ordinary-sentence	We noted sarl today.	sarl	We / noted / sarl / today / . / Next / .
+T	sarl	2	SARL	True	case-variant-company	Acme SARL. hired Lee.	SARL	Acme / SARL / hired / Lee / . / Next / .
+T	snr	2	SNR	False	baseline-company	Acme snr. hired Lee.	snr	Acme / snr / hired / Lee / . / Next / .
+T	snr	2	SNR	False	comma-company	Acme, snr hired Lee.	snr	Acme / , / snr / hired / Lee / . / Next / .
+T	snr	2	SNR	False	company-without-period	Acme snr hired Lee.	snr	Acme / snr / hired / Lee / . / Next / .
+T	snr	2	SNR	False	ordinary-sentence	We noted snr today.	snr	We / noted / snr / today / . / Next / .
+T	snr	2	SNR	False	case-variant-company	Acme SNR. hired Lee.	SNR	Acme / SNR / hired / Lee / . / Next / .
+T	sr	2	SR	False	baseline-company	Acme sr. hired Lee.	sr	Acme / sr / hired / Lee / . / Next / .
+T	sr	2	SR	False	comma-company	Acme, sr hired Lee.	sr	Acme / , / sr / hired / Lee / . / Next / .
+T	sr	2	SR	False	company-without-period	Acme sr hired Lee.	sr	Acme / sr / hired / Lee / . / Next / .
+T	sr	2	SR	False	ordinary-sentence	We noted sr today.	sr	We / noted / sr / today / . / Next / .
+T	sr	2	SR	False	case-variant-company	Acme SR. hired Lee.	SR	Acme / SR / hired / Lee / . / Next / .
+T	srl	2	SRL	True	baseline-company	Acme srl. hired Lee.	srl	Acme / srl / hired / Lee / . / Next / .
+T	srl	2	SRL	True	comma-company	Acme, srl hired Lee.	srl	Acme / , / srl / hired / Lee / . / Next / .
+T	srl	2	SRL	True	company-without-period	Acme srl hired Lee.	srl	Acme / srl / hired / Lee / . / Next / .
+T	srl	2	SRL	True	ordinary-sentence	We noted srl today.	srl	We / noted / srl / today / . / Next / .
+T	srl	2	SRL	True	case-variant-company	Acme SRL. hired Lee.	SRL	Acme / SRL / hired / Lee / . / Next / .
+T	univ	2	UNIV	False	baseline-company	Acme univ. hired Lee.	university	Acme / university / hired / Lee / . / Next / .
+T	univ	2	UNIV	False	comma-company	Acme, univ hired Lee.	university	Acme / , / university / hired / Lee / . / Next / .
+T	univ	2	UNIV	False	company-without-period	Acme univ hired Lee.	university	Acme / university / hired / Lee / . / Next / .
+T	univ	2	UNIV	False	ordinary-sentence	We noted univ today.	university	We / noted / university / today / . / Next / .
+T	univ	2	UNIV	False	case-variant-company	Acme UNIV. hired Lee.	university	Acme / university / hired / Lee / . / Next / .

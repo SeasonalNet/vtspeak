@@ -1,0 +1,242 @@
+{
+  "lead4-01-h-jr-01": {
+    "probe": "H-jr",
+    "context": "name-suffix",
+    "input": "John Smith Jr. spoke."
+  },
+  "lead4-01-h-jr-02": {
+    "probe": "H-jr",
+    "context": "title-before-name",
+    "input": "Jr. Smith spoke."
+  },
+  "lead4-01-h-jr-03": {
+    "probe": "H-jr",
+    "context": "unpunctuated-suffix",
+    "input": "John Smith Jr spoke."
+  },
+  "lead4-02-h-sr-01": {
+    "probe": "H-sr",
+    "context": "name-suffix",
+    "input": "John Smith Sr. spoke."
+  },
+  "lead4-02-h-sr-02": {
+    "probe": "H-sr",
+    "context": "title-before-name",
+    "input": "Sr. Smith spoke."
+  },
+  "lead4-02-h-sr-03": {
+    "probe": "H-sr",
+    "context": "unpunctuated-suffix",
+    "input": "John Smith Sr spoke."
+  },
+  "lead4-03-h-gen-01": {
+    "probe": "H-gen",
+    "context": "rank-title",
+    "input": "Gen. Lee spoke."
+  },
+  "lead4-03-h-gen-02": {
+    "probe": "H-gen",
+    "context": "lowercase-title",
+    "input": "gen. Lee spoke."
+  },
+  "lead4-03-h-gen-03": {
+    "probe": "H-gen",
+    "context": "ordinary-word",
+    "input": "The general spoke."
+  },
+  "lead4-04-h-rep-01": {
+    "probe": "H-rep",
+    "context": "title-before-name",
+    "input": "Rep. Jones spoke."
+  },
+  "lead4-04-h-rep-02": {
+    "probe": "H-rep",
+    "context": "lowercase-title",
+    "input": "rep. Jones spoke."
+  },
+  "lead4-04-h-rep-03": {
+    "probe": "H-rep",
+    "context": "ordinary-noun",
+    "input": "The representative spoke."
+  },
+  "lead4-05-t-co-01": {
+    "probe": "T-co",
+    "context": "company-suffix",
+    "input": "Acme Co. hired Lee."
+  },
+  "lead4-05-t-co-02": {
+    "probe": "T-co",
+    "context": "lowercase-suffix",
+    "input": "Acme co hired Lee."
+  },
+  "lead4-05-t-co-03": {
+    "probe": "T-co",
+    "context": "standalone",
+    "input": "The co. was listed."
+  },
+  "lead4-06-t-inc-01": {
+    "probe": "T-inc",
+    "context": "company-suffix",
+    "input": "Acme Inc. hired Lee."
+  },
+  "lead4-06-t-inc-02": {
+    "probe": "T-inc",
+    "context": "comma-company-suffix",
+    "input": "Acme, Inc. hired Lee."
+  },
+  "lead4-06-t-inc-03": {
+    "probe": "T-inc",
+    "context": "standalone",
+    "input": "The inc. was listed."
+  },
+  "lead4-07-t-llc-01": {
+    "probe": "T-LLC",
+    "context": "inventory-case",
+    "input": "Acme LLC hired Lee."
+  },
+  "lead4-07-t-llc-02": {
+    "probe": "T-LLC",
+    "context": "lowercase",
+    "input": "Acme llc hired Lee."
+  },
+  "lead4-07-t-llc-03": {
+    "probe": "T-LLC",
+    "context": "title-case",
+    "input": "Acme Llc hired Lee."
+  },
+  "lead4-08-t-ag-01": {
+    "probe": "T-AG",
+    "context": "inventory-case",
+    "input": "Miller AG hired Lee."
+  },
+  "lead4-08-t-ag-02": {
+    "probe": "T-AG",
+    "context": "punctuated",
+    "input": "Miller A.G. hired Lee."
+  },
+  "lead4-08-t-ag-03": {
+    "probe": "T-AG",
+    "context": "standalone",
+    "input": "AG spoke today."
+  },
+  "lead4-09-c-am-01": {
+    "probe": "C-am",
+    "context": "clock-lowercase",
+    "input": "It is 5 am."
+  },
+  "lead4-09-c-am-02": {
+    "probe": "C-am",
+    "context": "ordinary-verb",
+    "input": "I am ready."
+  },
+  "lead4-09-c-am-03": {
+    "probe": "C-am",
+    "context": "clock-uppercase",
+    "input": "It is 5 AM."
+  },
+  "lead4-10-c-in-01": {
+    "probe": "C-in",
+    "context": "measurement",
+    "input": "It is 5 in. long."
+  },
+  "lead4-10-c-in-02": {
+    "probe": "C-in",
+    "context": "preposition",
+    "input": "We are in town."
+  },
+  "lead4-10-c-in-03": {
+    "probe": "C-in",
+    "context": "sentence-initial",
+    "input": "In May, we left."
+  },
+  "lead4-11-c-mi-01": {
+    "probe": "C-mi",
+    "context": "measurement",
+    "input": "It is 5 mi. away."
+  },
+  "lead4-11-c-mi-02": {
+    "probe": "C-mi",
+    "context": "state-code",
+    "input": "We crossed MI today."
+  },
+  "lead4-11-c-mi-03": {
+    "probe": "C-mi",
+    "context": "lowercase-state-spelling",
+    "input": "We crossed mi today."
+  },
+  "lead4-12-c-ct-01": {
+    "probe": "C-ct",
+    "context": "address-suffix",
+    "input": "42 Main Ct."
+  },
+  "lead4-12-c-ct-02": {
+    "probe": "C-ct",
+    "context": "state-code",
+    "input": "We live in CT."
+  },
+  "lead4-12-c-ct-03": {
+    "probe": "C-ct",
+    "context": "standalone",
+    "input": "The ct. was noted."
+  },
+  "lead4-13-c-ca-01": {
+    "probe": "C-CA",
+    "context": "state-code",
+    "input": "We live in CA."
+  },
+  "lead4-13-c-ca-02": {
+    "probe": "C-CA",
+    "context": "mixed-case",
+    "input": "We live in Ca."
+  },
+  "lead4-13-c-ca-03": {
+    "probe": "C-CA",
+    "context": "lowercase",
+    "input": "We live in ca."
+  },
+  "lead4-14-c-in-01": {
+    "probe": "C-IN",
+    "context": "state-code",
+    "input": "We drove through IN."
+  },
+  "lead4-14-c-in-02": {
+    "probe": "C-IN",
+    "context": "preposition",
+    "input": "We are in town."
+  },
+  "lead4-14-c-in-03": {
+    "probe": "C-IN",
+    "context": "sentence-initial",
+    "input": "In May, we left."
+  },
+  "lead4-15-c-co-01": {
+    "probe": "C-CO",
+    "context": "state-code",
+    "input": "We live in CO."
+  },
+  "lead4-15-c-co-02": {
+    "probe": "C-CO",
+    "context": "company-suffix",
+    "input": "Acme Co. hired Lee."
+  },
+  "lead4-15-c-co-03": {
+    "probe": "C-CO",
+    "context": "sentence-initial",
+    "input": "Co. was written on the page."
+  },
+  "lead4-16-c-jan-01": {
+    "probe": "C-Jan",
+    "context": "date",
+    "input": "We met on Jan. 5."
+  },
+  "lead4-16-c-jan-02": {
+    "probe": "C-Jan",
+    "context": "month-name",
+    "input": "It happened in Jan."
+  },
+  "lead4-16-c-jan-03": {
+    "probe": "C-Jan",
+    "context": "person-name",
+    "input": "Jan spoke today."
+  }
+}

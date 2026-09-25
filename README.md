@@ -10,7 +10,11 @@
 | Path | Contents |
 | --- | --- |
 | `binary/` | Local VoiceText executables, DLLs, runtime dependencies, and a WAV sample |
+| `data-bridget/` | Bridget voice model, unit indexes, waveform banks, and prosody trees |
 | `data-common/` | Shared pronunciation and dictionary resources |
+| `data-james/` | James voice model, unit indexes, waveform banks, and prosody trees |
+| `data-kate/` | Kate voice model, unit indexes, waveform banks, and prosody trees |
+| `data-julie/` | Julie voice model, unit indexes, waveform banks, and prosody trees |
 | `data-paul/` | Paul voice model, unit indexes, waveform banks, and prosody trees |
 | `include/` | Headers recovered with the VoiceText package |
 | `tools/revkit/` | Docker-based Ghidra, FLOSS, capa, and PE inspection toolkit |
@@ -42,6 +46,17 @@ control evidence.
 The [lead 3 TPP findings](./docs/reverse-engineering/lead3-tpp-typed-code-findings-2026-09-24.md)
 record the corpus associations, verified runtime writes, and remaining label
 limits for typed pronunciation codes.
+The [lead 4 abbreviation context results](./docs/reverse-engineering/lead4-abbreviation-context-results-2026-09-25.md)
+record the selected per-key context contrasts and their coverage limits.
+The [Stage 13 Intel PT capture note](./docs/reverse-engineering/intel-pt-wine-capture-2026-09-25.md)
+records the corrected control and G83 intervention captures, harness checks,
+and remaining branch-comparison limits.
+The [Lead 6 API probe](./docs/reverse-engineering/lead6-file-api-behavior-2026-09-25.md)
+records file/buffer results, information queries, configuration and playback
+behavior, selected errors, and the tested synchronous buffer length boundary.
+The [reverse-engineering coverage analysis](./docs/reverse-engineering/coverage-analysis-2026-09-25.md)
+maps the methods, current evidence boundaries, and the shared DLL's assembly
+reference listing.
 The [reply to Wag's latest peer response](./docs/reverse-engineering/wag-peer-response-new-2-2026-09-24.md)
 records the Lead 1 cross-check, Lead 2 parity scope, and new E-record result.
 

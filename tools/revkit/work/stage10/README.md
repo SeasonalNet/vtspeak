@@ -408,3 +408,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/revkit/work/scripts/summarize_abbrc_prob
 This gives one baseline observation per key. It is not a per-key context
 matrix, and the neutral sentence is not suitable for resolving date, time,
 measurement, location, or case-sensitive distinctions.
+
+Lead 4's initial selected-key pilot is in [`stage14/README.md`](../stage14/README.md).
+The complete 427-key context matrix and its reproduction instructions are in
+[`stage15/README.md`](../stage15/README.md).

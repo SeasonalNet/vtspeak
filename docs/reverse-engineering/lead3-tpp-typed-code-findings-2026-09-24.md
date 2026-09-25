@@ -32,10 +32,62 @@ Each payload is one or two atoms. The observed two-atom sequences are `A G`
 | `E` | 2 | Five components; then five binary values |
 | `F` | 829 | Hyphenated lexical keys with one to four hyphens and a decimal suffix |
 | `G` | 18,493 | Non-hyphenated lexical keys and a decimal suffix |
-| `AX` | 25 | Special payload; key contents do not identify a stable semantic class |
+| `AX` | 25 | Single-component geographic place-name keys; the `X` payload's role is unresolved |
 
 There are 7,924 records with an `A`-prefixed primary atom when the 25 `AX`
 records are included; the standard place-name `A0`/`A1` count is 7,899.
+
+### What the 25 `AX` keys name
+
+The 25 keys are recognizable geographic locality names, so their broad
+lexical category is already established. They do not form one narrower
+governmental class. As spot checks against current U.S. Census Bureau TIGERweb
+place files, `OPELIKA` is listed as an incorporated city, while `OILDALE`,
+`OATFIELD`, `ROSSMOOR`, `OJUS`, and `TAMIAMI` are listed as Census-designated
+places. Puerto Rico entries also demonstrate why “place” needs to stay broad:
+`PONCE` and `FAJARDO` appear as municipios, and Ponce also has a separately
+listed urban place. These present-day Census classifications are external
+cross-checks of the names, not evidence that the 2013 TPP was built from the
+Census taxonomy or that a bare key always identifies one unique feature.
+
+This resolves the first question at the lexical level: `AX` entries are place
+names. The exact referent of every bare name and, separately, why this subset
+uses `AX` remain open.
+
+Sources: [Alabama incorporated places](https://tigerweb.geo.census.gov/tigerwebmain/Files/acs26/tigerweb_acs26_incplace_2020_tab20_al.html),
+[California Census-designated places](https://tigerweb.geo.census.gov/tigerwebmain/Files/acs26/tigerweb_acs26_cdp_ca.html),
+[Oregon Census-designated places](https://tigerweb.geo.census.gov/tigerwebmain/Files/acs26/tigerweb_acs26_cdp_or.html),
+[Florida Census-designated places](https://tigerweb.geo.census.gov/tigerwebmain/Files/acs25/tigerweb_acs25_cdp_fl.html),
+and [Puerto Rico place/county files](https://tigerweb.geo.census.gov/tigerwebmain/Files/acs26/tigerweb_acs26_county_pr.html).
+
+### Comparison with the other place-name forms
+
+The remaining single-component place-name keys use `A0` (7,843 keys) or
+`A1` (56 keys); `AX` accounts for 25. The `A1` list is concentrated in
+geographic feature terms such as `CENTER`, `VALLEY`, `PARK`, and `COVE`, while
+`A0` is the default form. The corpus does not provide authoritative names for
+the two binary states. In compound `B`–`E` records, however, the stored bits
+closely track the standalone forms: all 2,114 occurrences of components with
+an `A0` record carry bit `0`, and 1,133 of 1,135 occurrences with an `A1`
+record carry bit `1`.
+
+`AX` does not behave like another component bit in the corpus. Its 25 records
+are all single-component keys, and none has a second `G` atom. Three `AX`
+spellings also occur as compound components, where the compound carries its
+own binary values: `ORCHARDS` in `OTIS-ORCHARDS` (`B200`), `PONCE` in
+`PONCE-DE-LEON` (`C3000`), and `SMITHS` in `PAUL-SMITHS` (`B200`) and
+`SMITHS-GROVE` (`B201`). These are context-specific compound entries; they do
+not provide a one-to-one translation of standalone `AX` to a `0` or `1`.
+
+This comparison narrows the plausible role of `X`: it is not observed as a
+third component bit propagated into compounds, and it does not group the keys
+by Census place type. The tested one-component caller ignores the `A0`, `A1`,
+or `AX` payload and checks only whether the key lookup succeeds (plus a
+separate token-marker condition). Replacing `X` with `0` or `1` left the
+tested phrase output unchanged. The evidence therefore fits `AX` acting as a
+special or unclassified payload on recognized single-component names, but it
+does not establish why these 25 entries were selected or why the literal `X`
+was chosen.
 
 `F` and `G` suffixes range from 1 through 124 in this corpus. The raw
 decimal values are preserved in the decoded manifest; no numeric class name is
@@ -303,8 +355,162 @@ support the limited inference that an `AX` entry acts as a recognized-key
 marker in this one-component classifier path, while its literal `X` is not
 used there. In the multi-component guard, `X` would also differ from literal
 `0` and therefore avoid that specific rejection; however, the corpus has no
-multi-component `AX` record to test this case. Why these 25 entries use `AX`,
-and whether another consumer interprets `X`, remain unresolved.
+multi-component `AX` record to test this case. Why these 25 entries use `AX`
+remains unresolved; possible consumers outside the analyzed DLL or runtime-
+generated call targets remain beyond the current static audit.
+
+The adjacent follow-on path adds no payload use: after this classifier reports
+a hit, its enclosing candidate routine calls `FUN_10034110`, which processes
+context records without receiving the A-selector result buffer. The decompile,
+raw instruction window, and direct-reference results are preserved in the
+[Lead 3 surrounding static analysis](../../tools/revkit/work/reports/lead3-ax-surrounding-static-2026-09-25.txt).
+
+The helper's full direct-reference audit finds three call sites in the
+analyzed `vt_pau.dll`: `FUN_10034180` requests the place-name selector, while
+`FUN_1000dfc0` requests `G` and `FUN_1000e160` requests `F`. The latter two
+paths consume their result buffers as numeric text: the `G` path passes its
+result to `FUN_10064645` before the token-code write, and the `F` path copies
+the returned text into its numeric-code result. Neither call requests selector
+`A`; the lookup helper also has no additional code or data references in the
+Ghidra reference scan. This closes the statically visible neighboring
+consumers as readers of the `AX` payload. It does not rule out code outside
+this DLL or a runtime-generated call target.
+
+Because every `AX` record in this corpus is single-component, none reaches the
+only branch in the visible `A` consumer that reads returned component bytes.
+Within this DLL and corpus pairing, the observed behavior therefore depends
+on the `AX` key being present, but not on its `X` payload. This matches the
+runtime `X`→`0`/`1` ablations. The most precise current purpose statement is
+that `AX` is an accepted key form whose payload has no demonstrated effect;
+whether `X` was intended as an unused sentinel, a future/legacy marker, or
+something used by code outside this image remains unresolved.
+
+The surrounding `FUN_10033b60` path narrows the key's operational role. It
+builds short candidate sequences, checks them against a static table containing
+`N`, `NN`, `NNN`, `NNNN`, and `NNNNN`, then calls `FUN_10034180` to query the
+corresponding TPP key. The `N` label itself is not named by the binary. This
+supports the inference that the `AX` entries are members of a lexical
+candidate list for the proper-name sequence path: a known one-word locality
+can pass the lookup gate. It does not establish why these 25 localities were
+selected, the source of that list, or why `X` was stored instead of a binary
+payload. The added table and caller evidence is recorded in the
+[surrounding static analysis](../../tools/revkit/work/reports/lead3-ax-surrounding-static-2026-09-25.txt).
+
+### Candidate selection and the `X` placeholder hypothesis
+
+The 25 records occur among ordinary keys throughout the decoded TPP
+dictionary; the inspected neighboring records are ordinary keys, not a
+separate appended `AX` block. They are all recognizable locality names, but
+span incorporated places, Census-designated places, and Puerto Rico
+municipios in the external spot checks above. A cross-reference against the
+117 decoded rows of
+`citya_sort.txt2` found no `AX` key. That table therefore does not supply a
+matching locality-alias list or explain this subset.
+
+The embedded-dictionary overlap is also not a unique explanation: all 25 `AX`
+and all 56 `A1` keys occur there, while `A0` has broad but incomplete overlap.
+Their embedded forms do not share a single pronunciation mode (11 `AX`
+records use direct phone IDs; 14 are marker-only). The overlap is consistent
+with these lists drawing on related lexical resources, but it does not show
+that the embedded dictionary was the source or explain the selection rule.
+
+There is a limited clue in compound use. Three `AX` spellings recur in four
+separate `B`/`C` records: `ORCHARDS` has compound bit `0`, `PONCE` has bit
+`0`, and `SMITHS` occurs once with bit `0` and once with bit `1`. The compound
+records store their own bits; they do not propagate `X`. Runtime samples also
+show direct-ID and marker-only embedded forms in all three TPP groups (`A0`,
+`A1`, and `AX`). In the tested `ORCHARDS` case, changing embedded metadata
+changed a normalization row flag but preserved the output WAVE. This confirms
+that the embedded metadata participates in normalization, while providing no
+`AX`-specific selection criterion and no demonstrated speech effect for that
+intervention. By comparison, all 2,114 compound occurrences of words with a
+standalone `A0` record use bit
+`0`, and 1,133 of 1,135 occurrences with standalone `A1` use bit `1`. This
+supports, but does not prove, reading `AX` as a recognized place-name entry
+without a canonical standalone binary component value. In that sense `X`
+could be an “unspecified/other” placeholder rather than a third component
+class. The engine never tests that interpretation, so “unknown,” “not
+applicable,” or an internal data-authoring code cannot be distinguished.
+
+The strongest current account is therefore: the **keys** are locality members
+of the short-sequence candidate lexicon; the literal **`X`** is an opaque,
+nonbinary payload in these records, and it is inert in the analyzed
+single-component runtime path. Its possible “unspecified/other” role is a
+corpus-based hypothesis, not a recovered label. The observed records and
+analyzed engine path do not expose the original inclusion rule, list source,
+or an authoritative expansion of `X`.
+
+### Embedded-dictionary cross-reference (2026-09-25)
+
+All 25 `AX` keys also occur as exact decoded keys in `engttsdict_emb`. That
+overlap is unusual relative to the default `A0` set: 25/25 `AX` and 56/56
+`A1` keys occur there, compared with 4,876/7,843 `A0` keys. The embedded
+records have a separate payload grammar. Applying the documented
+`FUN_10003c50` parser flags, 11 `AX` records use the direct phone-ID form and
+14 have neither the direct-ID nor alternative-path bit, so they produce no
+pronunciation through this parser. `A1` has 7 direct-ID records and 49
+marker-only records; among the `A0` hits, 1,676 are direct-ID, 5 have the
+alternative-path form, and 3,195 are marker-only.
+
+This gives a concrete follow-up: compare the embedded marker fields and the
+normalizer's handling of these exact `AX`/`A1` records against matched `A0`
+controls. The complete overlap and the marker-only majority could mean `AX`
+records are selected alongside auxiliary or classification records, but the
+counts alone do not identify that role. In particular, not every `AX` record
+is marker-only, and the high-bit fields in the embedded payload still have no
+authoritative semantic labels. The cross-reference is a corpus observation;
+it does not show that the TPP `X` byte is read by the embedded-dictionary
+parser.
+
+#### Runtime propagation and one-field intervention
+
+Seven isolated words were traced at entry to and return from `FUN_10007520`.
+The four embedded metadata values appear unchanged in the `0x70` phone/context
+row. Direct-ID examples (`OPELIKA`, `GATEWAY`, `ABBEVILLE`) already had a
+phone-code string at entry and returned with row byte `0x00` equal to `0x01`.
+Marker-only examples (`ORCHARDS`, `CENTER`, `ABINGTON`) entered with an empty
+phone-code string; the normalizer supplied one, and their returned row byte
+was `0x50`. This direct/marker distinction appeared in all three TPP groups,
+so it is not specific to `AX`.
+
+| TPP form / word | Embedded flag | Metadata tuple | Embedded phone string at entry | Row byte after normalization |
+| --- | ---: | --- | --- | ---: |
+| `AX` `OPELIKA` | `0x61` | `1,0,1,0` | Present | `0x01` |
+| `AX` `ORCHARDS` | `0x90` | `0,1,0,1` | Empty | `0x50` |
+| `A1` `GATEWAY` | `0x31` | `0,1,1,0` | Present | `0x01` |
+| `A1` `CENTER` | `0xb0` | `0,1,1,1` | Empty | `0x50` |
+| `A0` `ABBEVILLE` | `0x01` | `0,0,0,0` | Present | `0x01` |
+| `A0` `ABINGTON` | `0x80` | `0,0,0,1` | Empty | `0x50` |
+| `A0` `ACUSHNET` | `0x60` | `1,0,1,0` | Empty | `0x10` |
+
+All four marker-only samples gained a phone-code string. `ACUSHNET` is a
+counterexample to a simple fourth-word rule: its fourth word is zero, but its
+row byte becomes `0x10`, not `0x08` or `0x50`. The metadata is one input into
+normalization, not a complete classifier by itself.
+
+For `ORCHARDS`, changing only the second metadata word from 1 to 0 left the
+returned row byte at `0x50`. Changing only the fourth word from 1 to 0 changed
+that byte to `0x08`; clearing all four words produced the same result. The
+second-word clear, fourth-word clear, and all-words clear each preserved the
+phone-code bytes and the 21,090-byte output WAVE exactly (SHA-256
+`4153738c8990ed172003aa82c77b067c90ecb2d031fb58c2ae3433991012f460`). A
+write watchpoint shows the unmodified run setting `0x10` in `FUN_10002f10`
+and then `0x40` in `FUN_10007520`; with word four cleared, the alternate
+`FUN_1000a140` path sets `0x08`. Ghidra pseudocode for `FUN_10009030` and
+`FUN_100086c0` also shows reads of the row's `+0x6e` field. This establishes
+that embedded metadata can steer normalization control flow and row flags.
+It does not give those fields authoritative names, show that TPP `X` selects
+this behavior, or establish a speech effect beyond the tested `ORCHARDS`
+input.
+
+The seven baseline inputs, GDB trace, runner, captures, and results are in
+[`tools/revkit/work/stage12`](../../tools/revkit/work/stage12/). The in-memory
+intervention traces are `trace-embedded-zero-metadata.gdb`,
+`trace-embedded-clear-m2.gdb`, and `trace-embedded-clear-m4.gdb`; the decompiler
+output for the adjacent normalizer helper path is in
+[`lead3-ax-metadata-helper-static-2026-09-25.txt`](../../tools/revkit/work/reports/lead3-ax-metadata-helper-static-2026-09-25.txt)
+and the row-classification helpers are in
+[`lead3-ax-rowflag-static-2026-09-25.txt`](../../tools/revkit/work/reports/lead3-ax-rowflag-static-2026-09-25.txt).
 
 ## E selector caller audit
 
