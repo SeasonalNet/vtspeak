@@ -120,6 +120,9 @@ an interpretation of the grouping, not a name recovered from the binary.
 The last vector's position 11 is not an independent stress encoding. Other
 tree inputs, family roles, and global enum semantics remain open.
 
+Further two-phone tree, selection, and boundary contrasts are documented in
+the [Stage 10 neighbor-context report](tree-context-neighbor-contrasts-2026-09-24.md).
+
 | ID | Bytes | ID | Bytes | ID | Bytes | ID | Bytes |
 | ---: | --- | ---: | --- | ---: | --- | ---: | --- |
 | `0x00` | `—` | `0x01` | `07 13 07 2b` | `0x02` | `15 07 2d` | `0x03` | `2d 23 37` |

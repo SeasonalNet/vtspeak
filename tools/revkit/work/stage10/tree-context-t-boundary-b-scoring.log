@@ -1,0 +1,549 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023350
+Wine-gdb> >>>>>>>>>> > > >>>> > > > > >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10018c80
+Wine-gdb> >>>>>>>>>>>> > > > >>> > > > > >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10024510
+Wine-gdb> >>>>>>>>>> > > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024900
+Wine-gdb> >>>>>>>>> > > >  >  >  >  >  >  >   >   >   >   >  >  >  > > >>>Wine-gdb> Wine-gdb> Continuing.
+CANDIDATES_ENTRY context=0 input_count=1 ids=61497 
+Temporary breakpoint 5 at 0x100249d5
+CANDIDATES_RETURN context=0 count=30
+LOCAL_COST context=0 index=0 unit=59526 cost=0 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=1 unit=277150 cost=0 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=2 unit=153465 cost=0.00677966 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=3 unit=146645 cost=0.00701754 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=4 unit=107992 cost=0.00701754 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=5 unit=404303 cost=0.0285714 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=6 unit=424603 cost=0.0285714 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=7 unit=439813 cost=0.0590164 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=8 unit=90614 cost=0.0654545 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=9 unit=416614 cost=0.0654545 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=10 unit=239445 cost=0.0654545 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=11 unit=208024 cost=0.103226 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=12 unit=413217 cost=0.188679 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=13 unit=172274 cost=0.188679 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=14 unit=152011 cost=0.188679 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=15 unit=268988 cost=0.188679 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=16 unit=230209 cost=0.276923 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=17 unit=340696 cost=0.276923 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=18 unit=26815 cost=0.384314 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=19 unit=79376 cost=0.384314 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=20 unit=86163 cost=0.384314 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=21 unit=226156 cost=0.384314 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=22 unit=414880 cost=0.384314 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=23 unit=310451 cost=0.384314 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=24 unit=256828 cost=0.588235 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=25 unit=160452 cost=0.833333 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=26 unit=21950 cost=0.833333 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=27 unit=3837 cost=0.833333 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=28 unit=12294 cost=10.2769 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=29 unit=285756 cost=11.0068 duration_penalty=1 context_penalty=0 flag=0
+CANDIDATES_ENTRY context=1 input_count=30 ids=48693 48697 48702 48707 48713 
+48718 48741 48742 48755 48756 48671 48660 15318 15292 15222 15232 15244 15248 
+15277 15295 15285 15289 15317 59687 59686 59688 59673 59683 59629 59638 
+Temporary breakpoint 6 at 0x100248ce
+CANDIDATES_RETURN context=1 count=30
+LOCAL_COST context=1 index=0 unit=157573 cost=16.9153 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=1 unit=420862 cost=26.4257 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=2 unit=429337 cost=25.8181 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=3 unit=432079 cost=25.1521 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=4 unit=432368 cost=24.0816 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=5 unit=433352 cost=23.6271 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=6 unit=434625 cost=25.8115 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=7 unit=434679 cost=22.0876 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=8 unit=437157 cost=23.4315 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=9 unit=437945 cost=24.3013 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=10 unit=438270 cost=25.0486 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=11 unit=439049 cost=23.7622 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=12 unit=439731 cost=22.2096 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=13 unit=516092 cost=36.6327 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=14 unit=517868 cost=35.7948 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=15 unit=524402 cost=37.5714 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=16 unit=526680 cost=36.5818 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=17 unit=529488 cost=38.6102 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=18 unit=530377 cost=37.7016 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=19 unit=555723 cost=38.1357 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=20 unit=270760 cost=25.7799 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=21 unit=262810 cost=525.225 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=22 unit=433915 cost=22.7207 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=23 unit=520440 cost=528.862 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=24 unit=576823 cost=527.346 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=25 unit=8504 cost=526.132 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=26 unit=234343 cost=522.408 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=27 unit=261576 cost=522.05 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=28 unit=248840 cost=523.659 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=29 unit=250656 cost=523.683 duration_penalty=2 context_penalty=0 flag=1
+TRANSITION_ENTRY context=1 current_count=30 previous_count=30
+TRANSITION_INPUT context=1 index=0 unit=157573 local_cost=16.9153
+TRANSITION_INPUT context=1 index=1 unit=420862 local_cost=26.4257
+TRANSITION_INPUT context=1 index=2 unit=429337 local_cost=25.8181
+TRANSITION_INPUT context=1 index=3 unit=432079 local_cost=25.1521
+TRANSITION_INPUT context=1 index=4 unit=432368 local_cost=24.0816
+TRANSITION_INPUT context=1 index=5 unit=433352 local_cost=23.6271
+TRANSITION_INPUT context=1 index=6 unit=434625 local_cost=25.8115
+TRANSITION_INPUT context=1 index=7 unit=434679 local_cost=22.0876
+TRANSITION_INPUT context=1 index=8 unit=437157 local_cost=23.4315
+TRANSITION_INPUT context=1 index=9 unit=437945 local_cost=24.3013
+TRANSITION_INPUT context=1 index=10 unit=438270 local_cost=25.0486
+TRANSITION_INPUT context=1 index=11 unit=439049 local_cost=23.7622
+TRANSITION_INPUT context=1 index=12 unit=439731 local_cost=22.2096
+TRANSITION_INPUT context=1 index=13 unit=516092 local_cost=36.6327
+TRANSITION_INPUT context=1 index=14 unit=517868 local_cost=35.7948
+TRANSITION_INPUT context=1 index=15 unit=524402 local_cost=37.5714
+TRANSITION_INPUT context=1 index=16 unit=526680 local_cost=36.5818
+TRANSITION_INPUT context=1 index=17 unit=529488 local_cost=38.6102
+TRANSITION_INPUT context=1 index=18 unit=530377 local_cost=37.7016
+TRANSITION_INPUT context=1 index=19 unit=555723 local_cost=38.1357
+TRANSITION_INPUT context=1 index=20 unit=270760 local_cost=25.7799
+TRANSITION_INPUT context=1 index=21 unit=262810 local_cost=525.225
+TRANSITION_INPUT context=1 index=22 unit=433915 local_cost=22.7207
+TRANSITION_INPUT context=1 index=23 unit=520440 local_cost=528.862
+TRANSITION_INPUT context=1 index=24 unit=576823 local_cost=527.346
+TRANSITION_INPUT context=1 index=25 unit=8504 local_cost=526.132
+TRANSITION_INPUT context=1 index=26 unit=234343 local_cost=522.408
+TRANSITION_INPUT context=1 index=27 unit=261576 local_cost=522.05
+TRANSITION_INPUT context=1 index=28 unit=248840 local_cost=523.659
+TRANSITION_INPUT context=1 index=29 unit=250656 local_cost=523.683
+Temporary breakpoint 7 at 0x100248d6
+TRANSITION_RETURN context=1 count=30
+TRANSITION_COST context=1 index=0 unit=157573 predecessor_index=27 cumulative_cost=19.4629
+TRANSITION_COST context=1 index=1 unit=420862 predecessor_index=22 cumulative_cost=132.667
+TRANSITION_COST context=1 index=2 unit=429337 predecessor_index=27 cumulative_cost=121.925
+TRANSITION_COST context=1 index=3 unit=432079 predecessor_index=16 cumulative_cost=122.775
+TRANSITION_COST context=1 index=4 unit=432368 predecessor_index=16 cumulative_cost=123.934
+TRANSITION_COST context=1 index=5 unit=433352 predecessor_index=27 cumulative_cost=125.42
+TRANSITION_COST context=1 index=6 unit=434625 predecessor_index=16 cumulative_cost=123.574
+TRANSITION_COST context=1 index=7 unit=434679 predecessor_index=16 cumulative_cost=121.524
+TRANSITION_COST context=1 index=8 unit=437157 predecessor_index=16 cumulative_cost=124.144
+TRANSITION_COST context=1 index=9 unit=437945 predecessor_index=27 cumulative_cost=123.129
+TRANSITION_COST context=1 index=10 unit=438270 predecessor_index=16 cumulative_cost=119.906
+TRANSITION_COST context=1 index=11 unit=439049 predecessor_index=22 cumulative_cost=128.132
+TRANSITION_COST context=1 index=12 unit=439731 predecessor_index=16 cumulative_cost=122.179
+TRANSITION_COST context=1 index=13 unit=516092 predecessor_index=22 cumulative_cost=129.156
+TRANSITION_COST context=1 index=14 unit=517868 predecessor_index=22 cumulative_cost=133.141
+TRANSITION_COST context=1 index=15 unit=524402 predecessor_index=22 cumulative_cost=133.289
+TRANSITION_COST context=1 index=16 unit=526680 predecessor_index=16 cumulative_cost=130.237
+TRANSITION_COST context=1 index=17 unit=529488 predecessor_index=22 cumulative_cost=130.399
+TRANSITION_COST context=1 index=18 unit=530377 predecessor_index=22 cumulative_cost=134.077
+TRANSITION_COST context=1 index=19 unit=555723 predecessor_index=27 cumulative_cost=129.198
+TRANSITION_COST context=1 index=20 unit=270760 predecessor_index=22 cumulative_cost=138.1
+TRANSITION_COST context=1 index=21 unit=262810 predecessor_index=22 cumulative_cost=449.608
+TRANSITION_COST context=1 index=22 unit=433915 predecessor_index=12 cumulative_cost=36.0587
+TRANSITION_COST context=1 index=23 unit=520440 predecessor_index=16 cumulative_cost=371.691
+TRANSITION_COST context=1 index=24 unit=576823 predecessor_index=3 cumulative_cost=373.523
+TRANSITION_COST context=1 index=25 unit=8504 predecessor_index=22 cumulative_cost=379.435
+TRANSITION_COST context=1 index=26 unit=234343 predecessor_index=22 cumulative_cost=403.564
+TRANSITION_COST context=1 index=27 unit=261576 predecessor_index=22 cumulative_cost=382.643
+TRANSITION_COST context=1 index=28 unit=248840 predecessor_index=22 cumulative_cost=412.437
+TRANSITION_COST context=1 index=29 unit=250656 predecessor_index=22 cumulative_cost=399.189
+PRUNE_ENTRY context=1 count=30
+Temporary breakpoint 8 at 0x100248df
+PRUNE_RETURN context=1 count=30 ids=157573 420862 429337 432079 432368 433352 
+434625 434679 437157 437945 438270 439049 439731 516092 517868 524402 526680 
+529488 530377 555723 270760 262810 433915 520440 576823 8504 234343 261576 
+248840 250656 
+CANDIDATES_ENTRY context=2 input_count=21 ids=11932 15318 21988 26686 29335 
+30729 44755 47566 48756 50051 9874 13075 15316 15317 17563 39235 52771 55109 
+56214 57123 59687 
+Temporary breakpoint 9 at 0x100248ce
+CANDIDATES_RETURN context=2 count=30
+LOCAL_COST context=2 index=0 unit=555723 cost=33.8554 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=1 unit=157573 cost=16.6856 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=2 unit=433915 cost=22.3357 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=3 unit=262810 cost=20.8629 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=4 unit=261576 cost=20.8029 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=5 unit=250656 cost=22.3707 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=6 unit=248840 cost=20.7453 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=7 unit=234343 cost=20.0086 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=8 unit=8504 cost=25.4478 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=9 unit=270760 cost=20.7267 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=10 unit=420862 cost=20.3774 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=11 unit=429337 cost=20.789 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=12 unit=432079 cost=20.7442 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=13 unit=432368 cost=19.0096 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=14 unit=433352 cost=19.187 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=15 unit=434625 cost=21.1781 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=16 unit=434679 cost=16.9915 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=17 unit=520440 cost=30.2534 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=18 unit=576823 cost=28.669 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=19 unit=530377 cost=32.0075 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=20 unit=529488 cost=32.5726 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=21 unit=526680 cost=32.7659 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=22 unit=524402 cost=31.8084 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=23 unit=517868 cost=30.7488 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=24 unit=516092 cost=31.5793 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=25 unit=439731 cost=17.9438 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=26 unit=439049 cost=18.2668 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=27 unit=438270 cost=20.3295 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=28 unit=437945 cost=19.289 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=29 unit=437157 cost=19.0056 duration_penalty=2 context_penalty=0 flag=0
+TRANSITION_ENTRY context=2 current_count=30 previous_count=30
+TRANSITION_INPUT context=2 index=0 unit=555723 local_cost=33.8554
+TRANSITION_INPUT context=2 index=1 unit=157573 local_cost=16.6856
+TRANSITION_INPUT context=2 index=2 unit=433915 local_cost=22.3357
+TRANSITION_INPUT context=2 index=3 unit=262810 local_cost=20.8629
+TRANSITION_INPUT context=2 index=4 unit=261576 local_cost=20.8029
+TRANSITION_INPUT context=2 index=5 unit=250656 local_cost=22.3707
+TRANSITION_INPUT context=2 index=6 unit=248840 local_cost=20.7453
+TRANSITION_INPUT context=2 index=7 unit=234343 local_cost=20.0086
+TRANSITION_INPUT context=2 index=8 unit=8504 local_cost=25.4478
+TRANSITION_INPUT context=2 index=9 unit=270760 local_cost=20.7267
+TRANSITION_INPUT context=2 index=10 unit=420862 local_cost=20.3774
+TRANSITION_INPUT context=2 index=11 unit=429337 local_cost=20.789
+TRANSITION_INPUT context=2 index=12 unit=432079 local_cost=20.7442
+TRANSITION_INPUT context=2 index=13 unit=432368 local_cost=19.0096
+TRANSITION_INPUT context=2 index=14 unit=433352 local_cost=19.187
+TRANSITION_INPUT context=2 index=15 unit=434625 local_cost=21.1781
+TRANSITION_INPUT context=2 index=16 unit=434679 local_cost=16.9915
+TRANSITION_INPUT context=2 index=17 unit=520440 local_cost=30.2534
+TRANSITION_INPUT context=2 index=18 unit=576823 local_cost=28.669
+TRANSITION_INPUT context=2 index=19 unit=530377 local_cost=32.0075
+TRANSITION_INPUT context=2 index=20 unit=529488 local_cost=32.5726
+TRANSITION_INPUT context=2 index=21 unit=526680 local_cost=32.7659
+TRANSITION_INPUT context=2 index=22 unit=524402 local_cost=31.8084
+TRANSITION_INPUT context=2 index=23 unit=517868 local_cost=30.7488
+TRANSITION_INPUT context=2 index=24 unit=516092 local_cost=31.5793
+TRANSITION_INPUT context=2 index=25 unit=439731 local_cost=17.9438
+TRANSITION_INPUT context=2 index=26 unit=439049 local_cost=18.2668
+TRANSITION_INPUT context=2 index=27 unit=438270 local_cost=20.3295
+TRANSITION_INPUT context=2 index=28 unit=437945 local_cost=19.289
+TRANSITION_INPUT context=2 index=29 unit=437157 local_cost=19.0056
+Temporary breakpoint 10 at 0x100248d6
+TRANSITION_RETURN context=2 count=30
+TRANSITION_COST context=2 index=0 unit=555723 predecessor_index=0 cumulative_cost=85.0606
+TRANSITION_COST context=2 index=1 unit=157573 predecessor_index=0 cumulative_cost=27.8057
+TRANSITION_COST context=2 index=2 unit=433915 predecessor_index=22 cumulative_cost=47.2265
+TRANSITION_COST context=2 index=3 unit=262810 predecessor_index=0 cumulative_cost=47.8491
+TRANSITION_COST context=2 index=4 unit=261576 predecessor_index=0 cumulative_cost=52.615
+TRANSITION_COST context=2 index=5 unit=250656 predecessor_index=0 cumulative_cost=53.8491
+TRANSITION_COST context=2 index=6 unit=248840 predecessor_index=0 cumulative_cost=46.242
+TRANSITION_COST context=2 index=7 unit=234343 predecessor_index=0 cumulative_cost=52.4851
+TRANSITION_COST context=2 index=8 unit=8504 predecessor_index=0 cumulative_cost=50.928
+TRANSITION_COST context=2 index=9 unit=270760 predecessor_index=0 cumulative_cost=62.7257
+TRANSITION_COST context=2 index=10 unit=420862 predecessor_index=22 cumulative_cost=63.0778
+TRANSITION_COST context=2 index=11 unit=429337 predecessor_index=0 cumulative_cost=58.8246
+TRANSITION_COST context=2 index=12 unit=432079 predecessor_index=0 cumulative_cost=54.1902
+TRANSITION_COST context=2 index=13 unit=432368 predecessor_index=0 cumulative_cost=46.6774
+TRANSITION_COST context=2 index=14 unit=433352 predecessor_index=0 cumulative_cost=51.4853
+TRANSITION_COST context=2 index=15 unit=434625 predecessor_index=0 cumulative_cost=48.9087
+TRANSITION_COST context=2 index=16 unit=434679 predecessor_index=0 cumulative_cost=49.0607
+TRANSITION_COST context=2 index=17 unit=520440 predecessor_index=0 cumulative_cost=258.895
+TRANSITION_COST context=2 index=18 unit=576823 predecessor_index=8 cumulative_cost=354.613
+TRANSITION_COST context=2 index=19 unit=530377 predecessor_index=0 cumulative_cost=55.7506
+TRANSITION_COST context=2 index=20 unit=529488 predecessor_index=0 cumulative_cost=73.3245
+TRANSITION_COST context=2 index=21 unit=526680 predecessor_index=0 cumulative_cost=54.1615
+TRANSITION_COST context=2 index=22 unit=524402 predecessor_index=0 cumulative_cost=57.5635
+TRANSITION_COST context=2 index=23 unit=517868 predecessor_index=22 cumulative_cost=91.5502
+TRANSITION_COST context=2 index=24 unit=516092 predecessor_index=0 cumulative_cost=56.6235
+TRANSITION_COST context=2 index=25 unit=439731 predecessor_index=0 cumulative_cost=52.2567
+TRANSITION_COST context=2 index=26 unit=439049 predecessor_index=0 cumulative_cost=49.1591
+TRANSITION_COST context=2 index=27 unit=438270 predecessor_index=0 cumulative_cost=52.4336
+TRANSITION_COST context=2 index=28 unit=437945 predecessor_index=0 cumulative_cost=49.2762
+TRANSITION_COST context=2 index=29 unit=437157 predecessor_index=0 cumulative_cost=61.5402
+PRUNE_ENTRY context=2 count=30
+Temporary breakpoint 11 at 0x100248df
+PRUNE_RETURN context=2 count=26 ids=157573 433915 262810 261576 250656 248840 
+234343 8504 270760 420862 429337 432079 432368 433352 434625 434679 530377 
+529488 526680 524402 516092 439731 439049 438270 437945 437157 
+BACKTRACK_ENTRY first=0 last=2
+Temporary breakpoint 12 at 0x10024a30
+BACKTRACK_RESULT context=0 index=27 count=30 unit=3837 cumulative_cost=0.416667
+BACKTRACK_RESULT context=1 index=0 count=30 unit=157573 cumulative_cost=19.4629
+BACKTRACK_RESULT context=2 index=0 count=26 unit=157573 cumulative_cost=27.8057
+CANDIDATES_ENTRY context=0 input_count=1 ids=61001 
+Temporary breakpoint 13 at 0x100249d5
+CANDIDATES_RETURN context=0 count=30
+LOCAL_COST context=0 index=0 unit=234256 cost=0.13913 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=1 unit=196795 cost=10.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=2 unit=36675 cost=11.2703 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=3 unit=224489 cost=11.2703 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=4 unit=171498 cost=11.56 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=5 unit=196725 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=6 unit=17102 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=7 unit=126535 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=8 unit=99656 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=9 unit=111150 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=10 unit=359571 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=11 unit=270938 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=12 unit=417631 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=13 unit=19262 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=14 unit=250657 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=15 unit=55133 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=16 unit=236105 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=17 unit=303310 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=18 unit=15721 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=19 unit=22698 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=20 unit=312495 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=21 unit=114638 cost=15 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=22 unit=237999 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=23 unit=338015 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=24 unit=183147 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=25 unit=334549 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=26 unit=188278 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=27 unit=242696 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=28 unit=292360 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=0 index=29 unit=52234 cost=15.0093 duration_penalty=1 context_penalty=0 flag=0
+CANDIDATES_ENTRY context=1 input_count=20 ids=9825 9833 9839 9848 9853 9859 
+9864 9870 9873 9874 9803 9807 9813 9834 9856 52742 52753 52771 57082 57116 
+Temporary breakpoint 14 at 0x100248ce
+CANDIDATES_RETURN context=1 count=30
+LOCAL_COST context=1 index=0 unit=415069 cost=28.0496 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=1 unit=71171 cost=15.7818 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=2 unit=235953 cost=17.4197 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=3 unit=517209 cost=27.8965 duration_penalty=2 context_penalty=0 flag=1
+LOCAL_COST context=1 index=4 unit=18938 cost=10.3097 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=5 unit=67850 cost=10.3743 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=6 unit=396603 cost=10.3845 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=7 unit=14991 cost=10.5534 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=8 unit=175446 cost=10.5546 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=9 unit=269455 cost=10.6357 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=10 unit=433175 cost=10.784 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=11 unit=197284 cost=10.8003 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=12 unit=142641 cost=10.8036 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=13 unit=434848 cost=10.9566 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=14 unit=109010 cost=10.977 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=15 unit=94117 cost=11.1511 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=16 unit=75884 cost=11.1609 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=17 unit=437384 cost=11.1721 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=18 unit=157959 cost=11.1962 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=19 unit=121410 cost=11.3057 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=20 unit=21824 cost=11.3095 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=21 unit=168993 cost=11.3472 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=22 unit=439345 cost=11.3599 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=23 unit=118107 cost=11.423 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=24 unit=69060 cost=11.515 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=25 unit=414587 cost=11.6573 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=26 unit=432909 cost=11.8111 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=27 unit=179422 cost=11.8194 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=28 unit=190935 cost=11.8797 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=1 index=29 unit=350704 cost=12.2386 duration_penalty=1 context_penalty=0 flag=0
+TRANSITION_ENTRY context=1 current_count=30 previous_count=30
+TRANSITION_INPUT context=1 index=0 unit=415069 local_cost=28.0496
+TRANSITION_INPUT context=1 index=1 unit=71171 local_cost=15.7818
+TRANSITION_INPUT context=1 index=2 unit=235953 local_cost=17.4197
+TRANSITION_INPUT context=1 index=3 unit=517209 local_cost=27.8965
+TRANSITION_INPUT context=1 index=4 unit=18938 local_cost=10.3097
+TRANSITION_INPUT context=1 index=5 unit=67850 local_cost=10.3743
+TRANSITION_INPUT context=1 index=6 unit=396603 local_cost=10.3845
+TRANSITION_INPUT context=1 index=7 unit=14991 local_cost=10.5534
+TRANSITION_INPUT context=1 index=8 unit=175446 local_cost=10.5546
+TRANSITION_INPUT context=1 index=9 unit=269455 local_cost=10.6357
+TRANSITION_INPUT context=1 index=10 unit=433175 local_cost=10.784
+TRANSITION_INPUT context=1 index=11 unit=197284 local_cost=10.8003
+TRANSITION_INPUT context=1 index=12 unit=142641 local_cost=10.8036
+TRANSITION_INPUT context=1 index=13 unit=434848 local_cost=10.9566
+TRANSITION_INPUT context=1 index=14 unit=109010 local_cost=10.977
+TRANSITION_INPUT context=1 index=15 unit=94117 local_cost=11.1511
+TRANSITION_INPUT context=1 index=16 unit=75884 local_cost=11.1609
+TRANSITION_INPUT context=1 index=17 unit=437384 local_cost=11.1721
+TRANSITION_INPUT context=1 index=18 unit=157959 local_cost=11.1962
+TRANSITION_INPUT context=1 index=19 unit=121410 local_cost=11.3057
+TRANSITION_INPUT context=1 index=20 unit=21824 local_cost=11.3095
+TRANSITION_INPUT context=1 index=21 unit=168993 local_cost=11.3472
+TRANSITION_INPUT context=1 index=22 unit=439345 local_cost=11.3599
+TRANSITION_INPUT context=1 index=23 unit=118107 local_cost=11.423
+TRANSITION_INPUT context=1 index=24 unit=69060 local_cost=11.515
+TRANSITION_INPUT context=1 index=25 unit=414587 local_cost=11.6573
+TRANSITION_INPUT context=1 index=26 unit=432909 local_cost=11.8111
+TRANSITION_INPUT context=1 index=27 unit=179422 local_cost=11.8194
+TRANSITION_INPUT context=1 index=28 unit=190935 local_cost=11.8797
+TRANSITION_INPUT context=1 index=29 unit=350704 local_cost=12.2386
+Temporary breakpoint 15 at 0x100248d6
+TRANSITION_RETURN context=1 count=30
+TRANSITION_COST context=1 index=0 unit=415069 predecessor_index=16 cumulative_cost=1073.13
+TRANSITION_COST context=1 index=1 unit=71171 predecessor_index=16 cumulative_cost=28.0582
+TRANSITION_COST context=1 index=2 unit=235953 predecessor_index=16 cumulative_cost=55.2572
+TRANSITION_COST context=1 index=3 unit=517209 predecessor_index=16 cumulative_cost=52.4203
+TRANSITION_COST context=1 index=4 unit=18938 predecessor_index=23 cumulative_cost=20.9482
+TRANSITION_COST context=1 index=5 unit=67850 predecessor_index=1 cumulative_cost=20.063
+TRANSITION_COST context=1 index=6 unit=396603 predecessor_index=4 cumulative_cost=26.3152
+TRANSITION_COST context=1 index=7 unit=14991 predecessor_index=16 cumulative_cost=21.4261
+TRANSITION_COST context=1 index=8 unit=175446 predecessor_index=0 cumulative_cost=15.7536
+TRANSITION_COST context=1 index=9 unit=269455 predecessor_index=16 cumulative_cost=25.577
+TRANSITION_COST context=1 index=10 unit=433175 predecessor_index=16 cumulative_cost=24.9168
+TRANSITION_COST context=1 index=11 unit=197284 predecessor_index=23 cumulative_cost=23.2725
+TRANSITION_COST context=1 index=12 unit=142641 predecessor_index=16 cumulative_cost=21.4577
+TRANSITION_COST context=1 index=13 unit=434848 predecessor_index=16 cumulative_cost=25.6199
+TRANSITION_COST context=1 index=14 unit=109010 predecessor_index=16 cumulative_cost=25.9211
+TRANSITION_COST context=1 index=15 unit=94117 predecessor_index=16 cumulative_cost=28.2291
+TRANSITION_COST context=1 index=16 unit=75884 predecessor_index=16 cumulative_cost=26.2632
+TRANSITION_COST context=1 index=17 unit=437384 predecessor_index=16 cumulative_cost=33.9836
+TRANSITION_COST context=1 index=18 unit=157959 predecessor_index=16 cumulative_cost=27.0469
+TRANSITION_COST context=1 index=19 unit=121410 predecessor_index=16 cumulative_cost=27.3165
+TRANSITION_COST context=1 index=20 unit=21824 predecessor_index=16 cumulative_cost=29.7457
+TRANSITION_COST context=1 index=21 unit=168993 predecessor_index=0 cumulative_cost=20.4389
+TRANSITION_COST context=1 index=22 unit=439345 predecessor_index=16 cumulative_cost=30.0183
+TRANSITION_COST context=1 index=23 unit=118107 predecessor_index=16 cumulative_cost=31.2766
+TRANSITION_COST context=1 index=24 unit=69060 predecessor_index=16 cumulative_cost=41.7112
+TRANSITION_COST context=1 index=25 unit=414587 predecessor_index=16 cumulative_cost=35.3011
+TRANSITION_COST context=1 index=26 unit=432909 predecessor_index=16 cumulative_cost=42.1497
+TRANSITION_COST context=1 index=27 unit=179422 predecessor_index=16 cumulative_cost=42.2412
+TRANSITION_COST context=1 index=28 unit=190935 predecessor_index=16 cumulative_cost=42.1617
+TRANSITION_COST context=1 index=29 unit=350704 predecessor_index=16 cumulative_cost=49.5142
+PRUNE_ENTRY context=1 count=30
+Temporary breakpoint 16 at 0x100248df
+PRUNE_RETURN context=1 count=30 ids=415069 71171 235953 517209 18938 67850 
+396603 14991 175446 269455 433175 197284 142641 434848 109010 94117 75884 
+437384 157959 121410 21824 168993 439345 118107 69060 414587 432909 179422 
+190935 350704 
+CANDIDATES_ENTRY context=2 input_count=14 ids=9874 13075 15316 15317 15318 
+52771 55109 56214 57123 57810 11932 17563 26686 39235 
+Temporary breakpoint 17 at 0x100248ce
+CANDIDATES_RETURN context=2 count=30
+LOCAL_COST context=2 index=0 unit=71171 cost=14.9265 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=1 unit=235953 cost=15.6997 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=2 unit=517209 cost=26.6022 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=3 unit=415069 cost=15.6578 duration_penalty=2 context_penalty=0 flag=0
+LOCAL_COST context=2 index=4 unit=280218 cost=13.01 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=5 unit=232169 cost=14.1872 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=6 unit=437701 cost=14.3832 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=7 unit=310354 cost=14.488 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=8 unit=307350 cost=14.5116 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=9 unit=433888 cost=14.6608 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=10 unit=432716 cost=14.7164 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=11 unit=281431 cost=14.7249 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=12 unit=304366 cost=14.8484 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=13 unit=437821 cost=15.1133 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=14 unit=261610 cost=15.1777 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=15 unit=246459 cost=15.3221 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=16 unit=282461 cost=15.4047 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=17 unit=353098 cost=15.4614 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=18 unit=65184 cost=15.7326 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=19 unit=227776 cost=15.7787 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=20 unit=234343 cost=16.0361 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=21 unit=171821 cost=16.1635 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=22 unit=25399 cost=16.2326 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=23 unit=434506 cost=16.2885 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=24 unit=32298 cost=16.4453 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=25 unit=14848 cost=16.4607 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=26 unit=248840 cost=16.5488 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=27 unit=434004 cost=16.5509 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=28 unit=261576 cost=16.6413 duration_penalty=1 context_penalty=0 flag=0
+LOCAL_COST context=2 index=29 unit=262810 cost=16.6664 duration_penalty=1 context_penalty=0 flag=0
+TRANSITION_ENTRY context=2 current_count=30 previous_count=30
+TRANSITION_INPUT context=2 index=0 unit=71171 local_cost=14.9265
+TRANSITION_INPUT context=2 index=1 unit=235953 local_cost=15.6997
+TRANSITION_INPUT context=2 index=2 unit=517209 local_cost=26.6022
+TRANSITION_INPUT context=2 index=3 unit=415069 local_cost=15.6578
+TRANSITION_INPUT context=2 index=4 unit=280218 local_cost=13.01
+TRANSITION_INPUT context=2 index=5 unit=232169 local_cost=14.1872
+TRANSITION_INPUT context=2 index=6 unit=437701 local_cost=14.3832
+TRANSITION_INPUT context=2 index=7 unit=310354 local_cost=14.488
+TRANSITION_INPUT context=2 index=8 unit=307350 local_cost=14.5116
+TRANSITION_INPUT context=2 index=9 unit=433888 local_cost=14.6608
+TRANSITION_INPUT context=2 index=10 unit=432716 local_cost=14.7164
+TRANSITION_INPUT context=2 index=11 unit=281431 local_cost=14.7249
+TRANSITION_INPUT context=2 index=12 unit=304366 local_cost=14.8484
+TRANSITION_INPUT context=2 index=13 unit=437821 local_cost=15.1133
+TRANSITION_INPUT context=2 index=14 unit=261610 local_cost=15.1777
+TRANSITION_INPUT context=2 index=15 unit=246459 local_cost=15.3221
+TRANSITION_INPUT context=2 index=16 unit=282461 local_cost=15.4047
+TRANSITION_INPUT context=2 index=17 unit=353098 local_cost=15.4614
+TRANSITION_INPUT context=2 index=18 unit=65184 local_cost=15.7326
+TRANSITION_INPUT context=2 index=19 unit=227776 local_cost=15.7787
+TRANSITION_INPUT context=2 index=20 unit=234343 local_cost=16.0361
+TRANSITION_INPUT context=2 index=21 unit=171821 local_cost=16.1635
+TRANSITION_INPUT context=2 index=22 unit=25399 local_cost=16.2326
+TRANSITION_INPUT context=2 index=23 unit=434506 local_cost=16.2885
+TRANSITION_INPUT context=2 index=24 unit=32298 local_cost=16.4453
+TRANSITION_INPUT context=2 index=25 unit=14848 local_cost=16.4607
+TRANSITION_INPUT context=2 index=26 unit=248840 local_cost=16.5488
+TRANSITION_INPUT context=2 index=27 unit=434004 local_cost=16.5509
+TRANSITION_INPUT context=2 index=28 unit=261576 local_cost=16.6413
+TRANSITION_INPUT context=2 index=29 unit=262810 local_cost=16.6664
+Temporary breakpoint 18 at 0x100248d6
+TRANSITION_RETURN context=2 count=30
+TRANSITION_COST context=2 index=0 unit=71171 predecessor_index=1 cumulative_cost=35.5214
+TRANSITION_COST context=2 index=1 unit=235953 predecessor_index=2 cumulative_cost=63.107
+TRANSITION_COST context=2 index=2 unit=517209 predecessor_index=3 cumulative_cost=65.7214
+TRANSITION_COST context=2 index=3 unit=415069 predecessor_index=3 cumulative_cost=68.7244
+TRANSITION_COST context=2 index=4 unit=280218 predecessor_index=1 cumulative_cost=60.0143
+TRANSITION_COST context=2 index=5 unit=232169 predecessor_index=1 cumulative_cost=52.1264
+TRANSITION_COST context=2 index=6 unit=437701 predecessor_index=1 cumulative_cost=56.2581
+TRANSITION_COST context=2 index=7 unit=310354 predecessor_index=1 cumulative_cost=63.352
+TRANSITION_COST context=2 index=8 unit=307350 predecessor_index=3 cumulative_cost=72.149
+TRANSITION_COST context=2 index=9 unit=433888 predecessor_index=1 cumulative_cost=55.155
+TRANSITION_COST context=2 index=10 unit=432716 predecessor_index=3 cumulative_cost=72.8845
+TRANSITION_COST context=2 index=11 unit=281431 predecessor_index=8 cumulative_cost=47.9049
+TRANSITION_COST context=2 index=12 unit=304366 predecessor_index=1 cumulative_cost=58.5033
+TRANSITION_COST context=2 index=13 unit=437821 predecessor_index=1 cumulative_cost=50.1482
+TRANSITION_COST context=2 index=14 unit=261610 predecessor_index=3 cumulative_cost=74.2974
+TRANSITION_COST context=2 index=15 unit=246459 predecessor_index=1 cumulative_cost=70.8544
+TRANSITION_COST context=2 index=16 unit=282461 predecessor_index=1 cumulative_cost=49.9982
+TRANSITION_COST context=2 index=17 unit=353098 predecessor_index=3 cumulative_cost=86.0926
+TRANSITION_COST context=2 index=18 unit=65184 predecessor_index=10 cumulative_cost=52.8071
+TRANSITION_COST context=2 index=19 unit=227776 predecessor_index=1 cumulative_cost=52.3469
+TRANSITION_COST context=2 index=20 unit=234343 predecessor_index=1 cumulative_cost=59.3854
+TRANSITION_COST context=2 index=21 unit=171821 predecessor_index=1 cumulative_cost=53.2029
+TRANSITION_COST context=2 index=22 unit=25399 predecessor_index=1 cumulative_cost=52.5698
+TRANSITION_COST context=2 index=23 unit=434506 predecessor_index=1 cumulative_cost=57.9838
+TRANSITION_COST context=2 index=24 unit=32298 predecessor_index=1 cumulative_cost=55.2311
+TRANSITION_COST context=2 index=25 unit=14848 predecessor_index=1 cumulative_cost=53.3365
+TRANSITION_COST context=2 index=26 unit=248840 predecessor_index=1 cumulative_cost=51.578
+TRANSITION_COST context=2 index=27 unit=434004 predecessor_index=1 cumulative_cost=57.2271
+TRANSITION_COST context=2 index=28 unit=261576 predecessor_index=1 cumulative_cost=59.4885
+TRANSITION_COST context=2 index=29 unit=262810 predecessor_index=1 cumulative_cost=55.0342
+PRUNE_ENTRY context=2 count=30
+Temporary breakpoint 19 at 0x100248df
+PRUNE_RETURN context=2 count=23 ids=71171 235953 280218 232169 437701 310354 
+433888 281431 304366 437821 282461 65184 227776 234343 171821 25399 434506 
+32298 14848 248840 434004 261576 262810 
+BACKTRACK_ENTRY first=0 last=2
+Temporary breakpoint 20 at 0x10024a30
+BACKTRACK_RESULT context=0 index=16 count=30 unit=236105 cumulative_cost=7.5
+BACKTRACK_RESULT context=1 index=1 count=30 unit=71171 cumulative_cost=28.0582
+BACKTRACK_RESULT context=2 index=0 count=23 unit=71171 cumulative_cost=35.5214
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0180:0184: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0180:0184: create thread I @004014C0
+0180:0184: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0180:0184: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0180:0184: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0180:0184: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0180:0184: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0180:0184: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0180:0184: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0180:0184: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0180:0184: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0180:0184: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0180:0184: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0180:0184: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0180:0184: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0180:0184: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0180:0184: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0180:0184: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0180:0184: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0180:0184: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0180:0184: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0180:0184: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0180:0184: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0180:0184: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0180:0184: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000180:00000184: unload DLL @009C0000
+0180:0184: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000180:00000184: unload DLL @009C0000
+0180:0184: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0180:0184: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0180:0184: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000180:00000184: exit process (0)

@@ -1,0 +1,338 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1000e0c0
+Wine-gdb> >>>>>> > > >  >  >  >   >   >   >   >   >   >    >    >    >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Continuing.
+TPP_NUMERIC_WATCH_SETUP code=95 first=0 token=0x14e14cc
+Temporary breakpoint 2 at 0x1000e06c
+Hardware read watchpoint 3: *(unsigned char *)($tokens + $first * 0x94 + 0x25)
+TPP_NUMERIC_FIELD_READ hit=1 eip=0x1003e238 value=0
+   0x1003e230 <vt_eng!VT_SpeakersInfo_ENG+79824>:	push   %cs
+   0x1003e231 <vt_eng!VT_SpeakersInfo_ENG+79825>:	add    %al,(%eax)
+   0x1003e233 <vt_eng!VT_SpeakersInfo_ENG+79827>:	xor    %eax,%eax
+   0x1003e235 <vt_eng!VT_SpeakersInfo_ENG+79829>:	lea    0x14(%edx),%edi
+=> 0x1003e238 <vt_eng!VT_SpeakersInfo_ENG+79832>:	
+    rep stos %eax,%es:(%edi)
+   0x1003e23a <vt_eng!VT_SpeakersInfo_ENG+79834>:	pop    %edi
+   0x1003e23b <vt_eng!VT_SpeakersInfo_ENG+79835>:	pop    %ebp
+   0x1003e23c <vt_eng!VT_SpeakersInfo_ENG+79836>:	ret
+#0  0x1003e238 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d35d in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=2 eip=0x1003d536 value=0
+   0x1003d52e <vt_eng!VT_SpeakersInfo_ENG+76494>:	mov    $0x25,%ecx
+   0x1003d533 <vt_eng!VT_SpeakersInfo_ENG+76499>:	lea    0x14(%edx),%edi
+=> 0x1003d536 <vt_eng!VT_SpeakersInfo_ENG+76502>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d538 <vt_eng!VT_SpeakersInfo_ENG+76504>:	mov    0x8(%ebp),%edi
+   0x1003d53b <vt_eng!VT_SpeakersInfo_ENG+76507>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d542 <vt_eng!VT_SpeakersInfo_ENG+76514>:	mov    -0x4(%ebp),%edx
+   0x1003d545 <vt_eng!VT_SpeakersInfo_ENG+76517>:	push   %edi
+   0x1003d546 <vt_eng!VT_SpeakersInfo_ENG+76518>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d536 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=3 eip=0x1003d5e2 value=0
+   0x1003d5da <vt_eng!VT_SpeakersInfo_ENG+76666>:	mov    $0x25,%ecx
+   0x1003d5df <vt_eng!VT_SpeakersInfo_ENG+76671>:	lea    0x14(%edx),%edi
+=> 0x1003d5e2 <vt_eng!VT_SpeakersInfo_ENG+76674>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d5e4 <vt_eng!VT_SpeakersInfo_ENG+76676>:	mov    0x8(%ebp),%edi
+   0x1003d5e7 <vt_eng!VT_SpeakersInfo_ENG+76679>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d5ee <vt_eng!VT_SpeakersInfo_ENG+76686>:	mov    -0x4(%ebp),%edx
+   0x1003d5f1 <vt_eng!VT_SpeakersInfo_ENG+76689>:	push   %edi
+   0x1003d5f2 <vt_eng!VT_SpeakersInfo_ENG+76690>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d5e2 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=4 eip=0x1003d658 value=0
+   0x1003d650 <vt_eng!VT_SpeakersInfo_ENG+76784>:	mov    $0x25,%ecx
+   0x1003d655 <vt_eng!VT_SpeakersInfo_ENG+76789>:	lea    0x14(%edx),%edi
+=> 0x1003d658 <vt_eng!VT_SpeakersInfo_ENG+76792>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d65a <vt_eng!VT_SpeakersInfo_ENG+76794>:	mov    0x8(%ebp),%edi
+   0x1003d65d <vt_eng!VT_SpeakersInfo_ENG+76797>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d664 <vt_eng!VT_SpeakersInfo_ENG+76804>:	mov    -0x4(%ebp),%edx
+   0x1003d667 <vt_eng!VT_SpeakersInfo_ENG+76807>:	push   %edi
+   0x1003d668 <vt_eng!VT_SpeakersInfo_ENG+76808>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d658 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=5 eip=0x1003d6b6 value=0
+   0x1003d6ae <vt_eng!VT_SpeakersInfo_ENG+76878>:	mov    $0x25,%ecx
+   0x1003d6b3 <vt_eng!VT_SpeakersInfo_ENG+76883>:	lea    0x14(%edx),%edi
+=> 0x1003d6b6 <vt_eng!VT_SpeakersInfo_ENG+76886>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d6b8 <vt_eng!VT_SpeakersInfo_ENG+76888>:	mov    0x8(%ebp),%edi
+   0x1003d6bb <vt_eng!VT_SpeakersInfo_ENG+76891>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d6c2 <vt_eng!VT_SpeakersInfo_ENG+76898>:	mov    -0x4(%ebp),%edx
+   0x1003d6c5 <vt_eng!VT_SpeakersInfo_ENG+76901>:	push   %edi
+   0x1003d6c6 <vt_eng!VT_SpeakersInfo_ENG+76902>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d6b6 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=6 eip=0x1003d750 value=0
+   0x1003d748 <vt_eng!VT_SpeakersInfo_ENG+77032>:	mov    $0x25,%ecx
+   0x1003d74d <vt_eng!VT_SpeakersInfo_ENG+77037>:	lea    0x14(%edx),%edi
+=> 0x1003d750 <vt_eng!VT_SpeakersInfo_ENG+77040>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d752 <vt_eng!VT_SpeakersInfo_ENG+77042>:	mov    0x8(%ebp),%edi
+   0x1003d755 <vt_eng!VT_SpeakersInfo_ENG+77045>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d75c <vt_eng!VT_SpeakersInfo_ENG+77052>:	mov    -0x4(%ebp),%edx
+   0x1003d75f <vt_eng!VT_SpeakersInfo_ENG+77055>:	push   %edi
+   0x1003d760 <vt_eng!VT_SpeakersInfo_ENG+77056>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d750 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=7 eip=0x1003d7ae value=0
+   0x1003d7a6 <vt_eng!VT_SpeakersInfo_ENG+77126>:	mov    $0x25,%ecx
+   0x1003d7ab <vt_eng!VT_SpeakersInfo_ENG+77131>:	lea    0x14(%edx),%edi
+=> 0x1003d7ae <vt_eng!VT_SpeakersInfo_ENG+77134>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d7b0 <vt_eng!VT_SpeakersInfo_ENG+77136>:	mov    0x8(%ebp),%edi
+   0x1003d7b3 <vt_eng!VT_SpeakersInfo_ENG+77139>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d7ba <vt_eng!VT_SpeakersInfo_ENG+77146>:	mov    -0x4(%ebp),%edx
+   0x1003d7bd <vt_eng!VT_SpeakersInfo_ENG+77149>:	push   %edi
+   0x1003d7be <vt_eng!VT_SpeakersInfo_ENG+77150>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d7ae in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=8 eip=0x1003d80c value=0
+   0x1003d804 <vt_eng!VT_SpeakersInfo_ENG+77220>:	mov    $0x25,%ecx
+   0x1003d809 <vt_eng!VT_SpeakersInfo_ENG+77225>:	lea    0x14(%edx),%edi
+=> 0x1003d80c <vt_eng!VT_SpeakersInfo_ENG+77228>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d80e <vt_eng!VT_SpeakersInfo_ENG+77230>:	mov    0x8(%ebp),%edi
+   0x1003d811 <vt_eng!VT_SpeakersInfo_ENG+77233>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d818 <vt_eng!VT_SpeakersInfo_ENG+77240>:	mov    -0x4(%ebp),%edx
+   0x1003d81b <vt_eng!VT_SpeakersInfo_ENG+77243>:	push   %edi
+   0x1003d81c <vt_eng!VT_SpeakersInfo_ENG+77244>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d80c in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=9 eip=0x1003d86a value=0
+   0x1003d862 <vt_eng!VT_SpeakersInfo_ENG+77314>:	mov    $0x25,%ecx
+   0x1003d867 <vt_eng!VT_SpeakersInfo_ENG+77319>:	lea    0x14(%edx),%edi
+=> 0x1003d86a <vt_eng!VT_SpeakersInfo_ENG+77322>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d86c <vt_eng!VT_SpeakersInfo_ENG+77324>:	mov    0x8(%ebp),%edi
+   0x1003d86f <vt_eng!VT_SpeakersInfo_ENG+77327>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d876 <vt_eng!VT_SpeakersInfo_ENG+77334>:	mov    -0x4(%ebp),%edx
+   0x1003d879 <vt_eng!VT_SpeakersInfo_ENG+77337>:	push   %edi
+   0x1003d87a <vt_eng!VT_SpeakersInfo_ENG+77338>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d86a in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=10 eip=0x1003d8c8 value=0
+   0x1003d8c0 <vt_eng!VT_SpeakersInfo_ENG+77408>:	mov    $0x25,%ecx
+   0x1003d8c5 <vt_eng!VT_SpeakersInfo_ENG+77413>:	lea    0x14(%edx),%edi
+=> 0x1003d8c8 <vt_eng!VT_SpeakersInfo_ENG+77416>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d8ca <vt_eng!VT_SpeakersInfo_ENG+77418>:	mov    0x8(%ebp),%edi
+   0x1003d8cd <vt_eng!VT_SpeakersInfo_ENG+77421>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d8d4 <vt_eng!VT_SpeakersInfo_ENG+77428>:	mov    -0x4(%ebp),%edx
+   0x1003d8d7 <vt_eng!VT_SpeakersInfo_ENG+77431>:	push   %edi
+   0x1003d8d8 <vt_eng!VT_SpeakersInfo_ENG+77432>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d8c8 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=11 eip=0x1003d926 value=0
+   0x1003d91e <vt_eng!VT_SpeakersInfo_ENG+77502>:	mov    $0x25,%ecx
+   0x1003d923 <vt_eng!VT_SpeakersInfo_ENG+77507>:	lea    0x14(%edx),%edi
+=> 0x1003d926 <vt_eng!VT_SpeakersInfo_ENG+77510>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d928 <vt_eng!VT_SpeakersInfo_ENG+77512>:	mov    0x8(%ebp),%edi
+   0x1003d92b <vt_eng!VT_SpeakersInfo_ENG+77515>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d932 <vt_eng!VT_SpeakersInfo_ENG+77522>:	mov    -0x4(%ebp),%edx
+   0x1003d935 <vt_eng!VT_SpeakersInfo_ENG+77525>:	push   %edi
+   0x1003d936 <vt_eng!VT_SpeakersInfo_ENG+77526>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d926 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=12 eip=0x1003d984 value=0
+   0x1003d97c <vt_eng!VT_SpeakersInfo_ENG+77596>:	mov    $0x25,%ecx
+   0x1003d981 <vt_eng!VT_SpeakersInfo_ENG+77601>:	lea    0x14(%edx),%edi
+=> 0x1003d984 <vt_eng!VT_SpeakersInfo_ENG+77604>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d986 <vt_eng!VT_SpeakersInfo_ENG+77606>:	mov    0x8(%ebp),%edi
+   0x1003d989 <vt_eng!VT_SpeakersInfo_ENG+77609>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d990 <vt_eng!VT_SpeakersInfo_ENG+77616>:	mov    -0x4(%ebp),%edx
+   0x1003d993 <vt_eng!VT_SpeakersInfo_ENG+77619>:	push   %edi
+   0x1003d994 <vt_eng!VT_SpeakersInfo_ENG+77620>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d984 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=13 eip=0x1003d9e2 value=0
+   0x1003d9da <vt_eng!VT_SpeakersInfo_ENG+77690>:	mov    $0x25,%ecx
+   0x1003d9df <vt_eng!VT_SpeakersInfo_ENG+77695>:	lea    0x14(%edx),%edi
+=> 0x1003d9e2 <vt_eng!VT_SpeakersInfo_ENG+77698>:	
+    rep stos %eax,%es:(%edi)
+   0x1003d9e4 <vt_eng!VT_SpeakersInfo_ENG+77700>:	mov    0x8(%ebp),%edi
+   0x1003d9e7 <vt_eng!VT_SpeakersInfo_ENG+77703>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003d9ee <vt_eng!VT_SpeakersInfo_ENG+77710>:	mov    -0x4(%ebp),%edx
+   0x1003d9f1 <vt_eng!VT_SpeakersInfo_ENG+77713>:	push   %edi
+   0x1003d9f2 <vt_eng!VT_SpeakersInfo_ENG+77714>:	lea    -0x4c(%ebp),%eax
+#0  0x1003d9e2 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=14 eip=0x1003dabe value=0
+   0x1003dab6 <vt_eng!VT_SpeakersInfo_ENG+77910>:	add    %al,(%eax)
+   0x1003dab8 <vt_eng!VT_SpeakersInfo_ENG+77912>:	
+    lea    (%ebx,%edx,4),%edx
+   0x1003dabb <vt_eng!VT_SpeakersInfo_ENG+77915>:	lea    0x14(%edx),%edi
+=> 0x1003dabe <vt_eng!VT_SpeakersInfo_ENG+77918>:	
+    rep stos %eax,%es:(%edi)
+   0x1003dac0 <vt_eng!VT_SpeakersInfo_ENG+77920>:	mov    0x8(%ebp),%edi
+   0x1003dac3 <vt_eng!VT_SpeakersInfo_ENG+77923>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003daca <vt_eng!VT_SpeakersInfo_ENG+77930>:	mov    -0x4(%ebp),%eax
+   0x1003dacd <vt_eng!VT_SpeakersInfo_ENG+77933>:	push   %edi
+#0  0x1003dabe in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=15 eip=0x1003db15 value=0
+   0x1003db0d <vt_eng!VT_SpeakersInfo_ENG+77997>:	add    %al,(%eax)
+   0x1003db0f <vt_eng!VT_SpeakersInfo_ENG+77999>:	
+    lea    (%ebx,%edx,4),%edx
+   0x1003db12 <vt_eng!VT_SpeakersInfo_ENG+78002>:	lea    0x14(%edx),%edi
+=> 0x1003db15 <vt_eng!VT_SpeakersInfo_ENG+78005>:	
+    rep stos %eax,%es:(%edi)
+   0x1003db17 <vt_eng!VT_SpeakersInfo_ENG+78007>:	mov    0x8(%ebp),%edi
+   0x1003db1a <vt_eng!VT_SpeakersInfo_ENG+78010>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003db21 <vt_eng!VT_SpeakersInfo_ENG+78017>:	mov    -0x4(%ebp),%eax
+   0x1003db24 <vt_eng!VT_SpeakersInfo_ENG+78020>:	push   %edi
+#0  0x1003db15 in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_FIELD_READ hit=16 eip=0x1003db6c value=0
+   0x1003db64 <vt_eng!VT_SpeakersInfo_ENG+78084>:	add    %al,(%eax)
+   0x1003db66 <vt_eng!VT_SpeakersInfo_ENG+78086>:	
+    lea    (%ebx,%edx,4),%edx
+   0x1003db69 <vt_eng!VT_SpeakersInfo_ENG+78089>:	lea    0x14(%edx),%edi
+=> 0x1003db6c <vt_eng!VT_SpeakersInfo_ENG+78092>:	
+    rep stos %eax,%es:(%edi)
+   0x1003db6e <vt_eng!VT_SpeakersInfo_ENG+78094>:	mov    0x8(%ebp),%edi
+   0x1003db71 <vt_eng!VT_SpeakersInfo_ENG+78097>:	
+    movl   $0xffffffff,0x20(%edx)
+   0x1003db78 <vt_eng!VT_SpeakersInfo_ENG+78104>:	mov    -0x4(%ebp),%eax
+   0x1003db7b <vt_eng!VT_SpeakersInfo_ENG+78107>:	push   %edi
+#0  0x1003db6c in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#1  0x1003d3aa in vt_eng!VT_SpeakersInfo_ENG () from /samples/vt_pau.dll
+#2  0x10022e01 in vt_eng!VT_GetDefUserDictRelativeName_ENG ()
+   from /samples/vt_pau.dll
+#3  0x014db50b in ?? ()
+#4  0x10026663 in vt_eng!VT_CopySyncInfo_New_ENG () from /samples/vt_pau.dll
+TPP_NUMERIC_WATCH_DISABLED
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

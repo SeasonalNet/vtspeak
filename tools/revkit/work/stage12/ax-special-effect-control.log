@@ -1,0 +1,114 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x10034180
+Wine-gdb> >>>>>>>>> > > > >>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1000e0c0
+Wine-gdb> >>>>>>>>> > > >  >  > >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1003a7b0
+Wine-gdb> >>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10007520
+Wine-gdb> >>>>>>>> > > > > > > >>> > > > >  >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Continuing.
+PROPER_NAME_ENTRY count=1 second_arg=0
+PROPER_NAME_PART index=0 text=0x14e62a6:	"Opelika"
+Temporary breakpoint 5 at 0x10034022
+TPP_LOOKUP selector=0x41 key=0x667344:	"Opelika"
+Temporary breakpoint 6 at 0x10034234
+TPP_RESULT eax=0x660001 output=0x667444:	"X"
+PROPER_NAME_RETURN eax=0x1
+PROPER_NAME_ENTRY count=1 second_arg=0
+PROPER_NAME_PART index=0 text=0x14e62a6:	"Talladega"
+Temporary breakpoint 7 at 0x10034022
+TPP_LOOKUP selector=0x41 key=0x667344:	"Talladega"
+Temporary breakpoint 8 at 0x10034234
+TPP_RESULT eax=0x660001 output=0x667444:	"X"
+PROPER_NAME_RETURN eax=0x1
+CONTEXT_ENTRY count=2
+UPSTREAM row=0 source=0 type=0x41 class=0x44 code_byte_25=0 class_byte_26=0 status=0xff surface=0x14e1500:	"Opelika"
+UPSTREAM row=1 source=0 type=0x41 class=0x44 code_byte_25=0 class_byte_26=0 status=0xff surface=0x14e1500:	"Opelika"
+Temporary breakpoint 9 at 0x1000e365
+CONTEXT_RETURN count=2
+ROW index=0 flags=0x1 source=0 class=0 surface=0x16f057d:	"Opelika"
+ROW_CODE index=0 bytes:
+0x16f059b:	0x31	0x35	0x07	0x2b	0x11	0x2a	0x07	0x00
+0x16f05a3:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+ROW index=1 flags=0 source=0 class=0x45 surface=0x16f05ed:	"."
+ROW_CODE index=1 bytes:
+0x16f060b:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x16f0613:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+TPP_LOOKUP selector=0x47 key=0x14e1500:	"Opelika"
+Temporary breakpoint 10 at 0x1000e04b
+TPP_RESULT eax=0 output=0x667668:	""
+PROPER_NAME_ENTRY count=1 second_arg=0
+PROPER_NAME_PART index=0 text=0x14e62a6:	"Talladega"
+Temporary breakpoint 11 at 0x10034022
+TPP_LOOKUP selector=0x41 key=0x667324:	"Talladega"
+Temporary breakpoint 12 at 0x10034234
+TPP_RESULT eax=0x660001 output=0x667424:	"X"
+PROPER_NAME_RETURN eax=0x1
+CONTEXT_ENTRY count=2
+UPSTREAM row=0 source=0 type=0x41 class=0x44 code_byte_25=0 class_byte_26=0 status=0xff surface=0x14e1500:	"Talladega"
+UPSTREAM row=1 source=0 type=0x41 class=0x44 code_byte_25=0 class_byte_26=0 status=0xff surface=0x14e1500:	"Talladega"
+Temporary breakpoint 13 at 0x1000e365
+CONTEXT_RETURN count=2
+ROW index=0 flags=0x1 source=0 class=0 surface=0x16f057d:	"Talladega"
+ROW_CODE index=0 bytes:
+0x16f059b:	0x39	0x06	0x2b	0x07	0x15	0x1e	0x21	0x07
+0x16f05a3:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+ROW index=1 flags=0 source=0 class=0x45 surface=0x16f05ed:	"."
+ROW_CODE index=1 bytes:
+0x16f060b:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x16f0613:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+TPP_LOOKUP selector=0x47 key=0x14e1500:	"Talladega"
+Temporary breakpoint 14 at 0x1000e04b
+TPP_RESULT eax=0 output=0x667648:	""
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 01a4:01a8: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+01a4:01a8: create thread I @004014C0
+01a4:01a8: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+01a4:01a8: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+01a4:01a8: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+01a4:01a8: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+01a4:01a8: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+01a4:01a8: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+01a4:01a8: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+01a4:01a8: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+01a4:01a8: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+01a4:01a8: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+01a4:01a8: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+01a4:01a8: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+01a4:01a8: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+01a4:01a8: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+01a4:01a8: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+01a4:01a8: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+01a4:01a8: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+01a4:01a8: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+01a4:01a8: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+01a4:01a8: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+01a4:01a8: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+01a4:01a8: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+01a4:01a8: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+000001a4:000001a8: unload DLL @009C0000
+01a4:01a8: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+000001a4:000001a8: unload DLL @009C0000
+01a4:01a8: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+01a4:01a8: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+01a4:01a8: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+000001a4:000001a8: exit process (0)

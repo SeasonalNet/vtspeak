@@ -1,0 +1,196 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002c220
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10026870
+Wine-gdb> >>>>> > > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 4 at 0x1001ea93
+SELECTED_UNIT n=1 id=237591
+SELECTED_UNIT n=2 id=237592
+SELECTED_UNIT n=3 id=237593
+SELECTED_UNIT n=4 id=237594
+SELECTED_UNIT n=5 id=237595
+SELECTED_UNIT n=6 id=254213
+SELECTED_UNIT n=7 id=254214
+SELECTED_UNIT n=8 id=331579
+SELECTED_UNIT n=9 id=194833
+SELECTED_UNIT n=10 id=194833
+SELECTED_UNIT n=11 id=47227
+SELECTED_UNIT n=12 id=47227
+SELECTED_UNIT n=13 id=47228
+SELECTED_UNIT n=14 id=47229
+Temporary breakpoint 5 at 0x1002bde9
+TIMELINE n=1 rows=14
+SELECTED_UNIT n=15 id=254212
+SELECTED_UNIT n=16 id=237596
+SELECTED_UNIT n=17 id=331578
+SELECTED_UNIT n=18 id=254215
+SELECTED_UNIT n=19 id=194832
+SELECTED_UNIT n=20 id=331580
+SELECTED_UNIT n=21 id=47226
+SELECTED_UNIT n=22 id=194834
+SELECTED_UNIT n=23 id=448915
+SELECTED_UNIT n=24 id=448916
+SELECTED_UNIT n=25 id=448917
+SELECTED_UNIT n=26 id=448918
+SELECTED_UNIT n=27 id=448919
+SELECTED_UNIT n=28 id=448919
+SELECTED_UNIT n=29 id=321547
+SELECTED_UNIT n=30 id=276279
+SELECTED_UNIT n=31 id=276279
+SELECTED_UNIT n=32 id=280628
+SELECTED_UNIT n=33 id=155886
+SELECTED_UNIT n=34 id=186177
+SELECTED_UNIT n=35 id=186178
+SELECTED_UNIT n=36 id=186179
+Temporary breakpoint 6 at 0x1002bde9
+TIMELINE n=2 rows=15
+SELECTED_UNIT n=37 id=321546
+SELECTED_UNIT n=38 id=448920
+SELECTED_UNIT n=39 id=276278
+PCM_BLOCK n=1 bytes=55096
+Temporary breakpoint 7 at 0x1001ea93
+SELECTED_UNIT n=40 id=321548
+SELECTED_UNIT n=41 id=280627
+SELECTED_UNIT n=42 id=276280
+SELECTED_UNIT n=43 id=155885
+SELECTED_UNIT n=44 id=280629
+SELECTED_UNIT n=45 id=186177
+SELECTED_UNIT n=46 id=155886
+SELECTED_UNIT n=47 id=283921
+SELECTED_UNIT n=48 id=283922
+SELECTED_UNIT n=49 id=283923
+SELECTED_UNIT n=50 id=283924
+SELECTED_UNIT n=51 id=283925
+SELECTED_UNIT n=52 id=283926
+SELECTED_UNIT n=53 id=448679
+SELECTED_UNIT n=54 id=448679
+SELECTED_UNIT n=55 id=448680
+SELECTED_UNIT n=56 id=448680
+SELECTED_UNIT n=57 id=448681
+SELECTED_UNIT n=58 id=448682
+SELECTED_UNIT n=59 id=448683
+SELECTED_UNIT n=60 id=448684
+SELECTED_UNIT n=61 id=370803
+SELECTED_UNIT n=62 id=446508
+SELECTED_UNIT n=63 id=446508
+SELECTED_UNIT n=64 id=446509
+SELECTED_UNIT n=65 id=446510
+SELECTED_UNIT n=66 id=446511
+SELECTED_UNIT n=67 id=447469
+SELECTED_UNIT n=68 id=447470
+SELECTED_UNIT n=69 id=447471
+SELECTED_UNIT n=70 id=447472
+SELECTED_UNIT n=71 id=447473
+SELECTED_UNIT n=72 id=447474
+SELECTED_UNIT n=73 id=447475
+SELECTED_UNIT n=74 id=447476
+SELECTED_UNIT n=75 id=201462
+SELECTED_UNIT n=76 id=209054
+SELECTED_UNIT n=77 id=11678
+SELECTED_UNIT n=78 id=11678
+SELECTED_UNIT n=79 id=173694
+SELECTED_UNIT n=80 id=231473
+SELECTED_UNIT n=81 id=231474
+SELECTED_UNIT n=82 id=379620
+SELECTED_UNIT n=83 id=383509
+SELECTED_UNIT n=84 id=383510
+SELECTED_UNIT n=85 id=383510
+SELECTED_UNIT n=86 id=383511
+SELECTED_UNIT n=87 id=383512
+SELECTED_UNIT n=88 id=454440
+SELECTED_UNIT n=89 id=369881
+SELECTED_UNIT n=90 id=369882
+SELECTED_UNIT n=91 id=369883
+SELECTED_UNIT n=92 id=369884
+SELECTED_UNIT n=93 id=214846
+SELECTED_UNIT n=94 id=214847
+Temporary breakpoint 8 at 0x1002bde9
+TIMELINE n=3 rows=49
+SELECTED_UNIT n=95 id=448678
+SELECTED_UNIT n=96 id=283927
+PCM_BLOCK n=2 bytes=55818
+Temporary breakpoint 9 at 0x1001ea93
+SELECTED_UNIT n=97 id=370802
+SELECTED_UNIT n=98 id=448685
+SELECTED_UNIT n=99 id=446507
+SELECTED_UNIT n=100 id=370804
+SELECTED_UNIT n=101 id=447468
+SELECTED_UNIT n=102 id=446512
+SELECTED_UNIT n=103 id=201461
+SELECTED_UNIT n=104 id=447477
+SELECTED_UNIT n=105 id=209053
+SELECTED_UNIT n=106 id=201463
+SELECTED_UNIT n=107 id=11677
+SELECTED_UNIT n=108 id=209055
+SELECTED_UNIT n=109 id=173693
+SELECTED_UNIT n=110 id=11679
+SELECTED_UNIT n=111 id=231472
+SELECTED_UNIT n=112 id=173695
+SELECTED_UNIT n=113 id=379619
+SELECTED_UNIT n=114 id=231475
+SELECTED_UNIT n=115 id=383508
+SELECTED_UNIT n=116 id=379621
+PCM_BLOCK n=3 bytes=57322
+Temporary breakpoint 10 at 0x1001ea93
+SELECTED_UNIT n=117 id=454439
+SELECTED_UNIT n=118 id=383513
+SELECTED_UNIT n=119 id=369880
+SELECTED_UNIT n=120 id=454441
+SELECTED_UNIT n=121 id=214845
+SELECTED_UNIT n=122 id=369885
+PCM_BLOCK n=4 bytes=29202
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0138:013c: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0138:013c: create thread I @004014C0
+0138:013c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0138:013c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0138:013c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0138:013c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0138:013c: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0138:013c: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0138:013c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0138:013c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0138:013c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0138:013c: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0138:013c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0138:013c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0138:013c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0138:013c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0138:013c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0138:013c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0138:013c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0138:013c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0138:013c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0138:013c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0138:013c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0138:013c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0138:013c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0138:013c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000138:0000013c: exit process (0)

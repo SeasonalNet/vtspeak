@@ -1,0 +1,780 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x10023350
+Wine-gdb> >>>>>> > > > > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024680
+Wine-gdb> >>>>> > > > > >  >  >  >  >  >   >   >   >  >  > > >>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 3 at 0x100249bb
+FUN24680_CONTEXTS count=18
+CLASS_CANDIDATES context=0 count=1
+CLASS_ID context=0 index=0 value=61331
+CLASS_CANDIDATES context=1 count=6
+CLASS_ID context=1 index=0 value=30504
+CLASS_ID context=1 index=1 value=30497
+CLASS_ID context=1 index=2 value=30498
+CLASS_ID context=1 index=3 value=30500
+CLASS_ID context=1 index=4 value=30501
+CLASS_ID context=1 index=5 value=30503
+CLASS_CANDIDATES context=2 count=2
+CLASS_ID context=2 index=0 value=1514
+CLASS_ID context=2 index=1 value=1513
+CLASS_CANDIDATES context=3 count=2
+CLASS_ID context=3 index=0 value=39967
+CLASS_ID context=3 index=1 value=39962
+CLASS_CANDIDATES context=4 count=1
+CLASS_ID context=4 index=0 value=16370
+CLASS_CANDIDATES context=5 count=2
+CLASS_ID context=5 index=0 value=40578
+CLASS_ID context=5 index=1 value=40577
+CLASS_CANDIDATES context=6 count=2
+CLASS_ID context=6 index=0 value=26854
+CLASS_ID context=6 index=1 value=26853
+CLASS_CANDIDATES context=7 count=1
+CLASS_ID context=7 index=0 value=9966
+CLASS_CANDIDATES context=8 count=2
+CLASS_ID context=8 index=0 value=3671
+CLASS_ID context=8 index=1 value=2288
+CLASS_CANDIDATES context=9 count=30
+CLASS_ID context=9 index=0 value=60400
+CLASS_ID context=9 index=1 value=60405
+CLASS_ID context=9 index=2 value=60410
+CLASS_ID context=9 index=3 value=60417
+CLASS_ID context=9 index=4 value=60421
+CLASS_ID context=9 index=5 value=60434
+CLASS_ID context=9 index=6 value=60441
+CLASS_ID context=9 index=7 value=60427
+CLASS_ID context=9 index=8 value=60414
+CLASS_ID context=9 index=9 value=60420
+CLASS_ID context=9 index=10 value=60404
+CLASS_ID context=9 index=11 value=60402
+CLASS_ID context=9 index=12 value=60429
+CLASS_ID context=9 index=13 value=60399
+CLASS_ID context=9 index=14 value=14366
+CLASS_ID context=9 index=15 value=14353
+CLASS_ID context=9 index=16 value=14362
+CLASS_ID context=9 index=17 value=14338
+CLASS_ID context=9 index=18 value=14367
+CLASS_ID context=9 index=19 value=14355
+CLASS_ID context=9 index=20 value=14352
+CLASS_ID context=9 index=21 value=14351
+CLASS_ID context=9 index=22 value=14342
+CLASS_ID context=9 index=23 value=14341
+CLASS_ID context=9 index=24 value=60419
+CLASS_ID context=9 index=25 value=60432
+CLASS_ID context=9 index=26 value=60428
+CLASS_ID context=9 index=27 value=60439
+CLASS_ID context=9 index=28 value=60426
+CLASS_ID context=9 index=29 value=60425
+CLASS_CANDIDATES context=10 count=18
+CLASS_ID context=10 index=0 value=34771
+CLASS_ID context=10 index=1 value=40591
+CLASS_ID context=10 index=2 value=46184
+CLASS_ID context=10 index=3 value=59967
+CLASS_ID context=10 index=4 value=6310
+CLASS_ID context=10 index=5 value=10971
+CLASS_ID context=10 index=6 value=15689
+CLASS_ID context=10 index=7 value=22888
+CLASS_ID context=10 index=8 value=24353
+CLASS_ID context=10 index=9 value=34770
+CLASS_ID context=10 index=10 value=34772
+CLASS_ID context=10 index=11 value=53607
+CLASS_ID context=10 index=12 value=55758
+CLASS_ID context=10 index=13 value=56831
+CLASS_ID context=10 index=14 value=56832
+CLASS_ID context=10 index=15 value=58282
+CLASS_ID context=10 index=16 value=59968
+CLASS_ID context=10 index=17 value=60419
+CLASS_CANDIDATES context=11 count=2
+CLASS_ID context=11 index=0 value=27493
+CLASS_ID context=11 index=1 value=27494
+CLASS_CANDIDATES context=12 count=27
+CLASS_ID context=12 index=0 value=25502
+CLASS_ID context=12 index=1 value=25503
+CLASS_ID context=12 index=2 value=25504
+CLASS_ID context=12 index=3 value=25528
+CLASS_ID context=12 index=4 value=25529
+CLASS_ID context=12 index=5 value=25530
+CLASS_ID context=12 index=6 value=25531
+CLASS_ID context=12 index=7 value=25497
+CLASS_ID context=12 index=8 value=25498
+CLASS_ID context=12 index=9 value=25499
+CLASS_ID context=12 index=10 value=25501
+CLASS_ID context=12 index=11 value=25510
+CLASS_ID context=12 index=12 value=25532
+CLASS_ID context=12 index=13 value=25533
+CLASS_ID context=12 index=14 value=25534
+CLASS_ID context=12 index=15 value=25535
+CLASS_ID context=12 index=16 value=25536
+CLASS_ID context=12 index=17 value=25537
+CLASS_ID context=12 index=18 value=25547
+CLASS_ID context=12 index=19 value=25548
+CLASS_ID context=12 index=20 value=25549
+CLASS_ID context=12 index=21 value=25550
+CLASS_ID context=12 index=22 value=25552
+CLASS_ID context=12 index=23 value=25553
+CLASS_ID context=12 index=24 value=25562
+CLASS_ID context=12 index=25 value=25567
+CLASS_ID context=12 index=26 value=25572
+CLASS_CANDIDATES context=13 count=7
+CLASS_ID context=13 index=0 value=5365
+CLASS_ID context=13 index=1 value=10383
+CLASS_ID context=13 index=2 value=25537
+CLASS_ID context=13 index=3 value=33834
+CLASS_ID context=13 index=4 value=43205
+CLASS_ID context=13 index=5 value=45360
+CLASS_ID context=13 index=6 value=58891
+CLASS_CANDIDATES context=14 count=13
+CLASS_ID context=14 index=0 value=16162
+CLASS_ID context=14 index=1 value=16174
+CLASS_ID context=14 index=2 value=16212
+CLASS_ID context=14 index=3 value=16232
+CLASS_ID context=14 index=4 value=16239
+CLASS_ID context=14 index=5 value=16246
+CLASS_ID context=14 index=6 value=16259
+CLASS_ID context=14 index=7 value=16207
+CLASS_ID context=14 index=8 value=16208
+CLASS_ID context=14 index=9 value=16209
+CLASS_ID context=14 index=10 value=16210
+CLASS_ID context=14 index=11 value=16211
+CLASS_ID context=14 index=12 value=16213
+CLASS_CANDIDATES context=15 count=10
+CLASS_ID context=15 index=0 value=1383
+CLASS_ID context=15 index=1 value=2749
+CLASS_ID context=15 index=2 value=4029
+CLASS_ID context=15 index=3 value=6654
+CLASS_ID context=15 index=4 value=16207
+CLASS_ID context=15 index=5 value=16208
+CLASS_ID context=15 index=6 value=16209
+CLASS_ID context=15 index=7 value=16210
+CLASS_ID context=15 index=8 value=16211
+CLASS_ID context=15 index=9 value=16212
+CLASS_CANDIDATES context=16 count=24
+CLASS_ID context=16 index=0 value=35550
+CLASS_ID context=16 index=1 value=35557
+CLASS_ID context=16 index=2 value=35566
+CLASS_ID context=16 index=3 value=35573
+CLASS_ID context=16 index=4 value=35574
+CLASS_ID context=16 index=5 value=35581
+CLASS_ID context=16 index=6 value=35582
+CLASS_ID context=16 index=7 value=35589
+CLASS_ID context=16 index=8 value=35590
+CLASS_ID context=16 index=9 value=35591
+CLASS_ID context=16 index=10 value=35553
+CLASS_ID context=16 index=11 value=35559
+CLASS_ID context=16 index=12 value=35562
+CLASS_ID context=16 index=13 value=35563
+CLASS_ID context=16 index=14 value=35564
+CLASS_ID context=16 index=15 value=35567
+CLASS_ID context=16 index=16 value=35580
+CLASS_ID context=16 index=17 value=36123
+CLASS_ID context=16 index=18 value=36124
+CLASS_ID context=16 index=19 value=36125
+CLASS_ID context=16 index=20 value=36126
+CLASS_ID context=16 index=21 value=36127
+CLASS_ID context=16 index=22 value=36128
+CLASS_ID context=16 index=23 value=36129
+CLASS_CANDIDATES context=17 count=10
+CLASS_ID context=17 index=0 value=607
+CLASS_ID context=17 index=1 value=1684
+CLASS_ID context=17 index=2 value=3186
+CLASS_ID context=17 index=3 value=6982
+CLASS_ID context=17 index=4 value=9036
+CLASS_ID context=17 index=5 value=20973
+CLASS_ID context=17 index=6 value=28422
+CLASS_ID context=17 index=7 value=35591
+CLASS_ID context=17 index=8 value=38465
+CLASS_ID context=17 index=9 value=51974
+Temporary breakpoint 4 at 0x100249d5
+FUN23350_CANDIDATES context=0 count=30
+FUN23350_UNIT context=0 index=0 unit_index=349300
+FUN23350_UNIT context=0 index=1 unit_index=400084
+FUN23350_UNIT context=0 index=2 unit_index=206813
+FUN23350_UNIT context=0 index=3 unit_index=385744
+FUN23350_UNIT context=0 index=4 unit_index=240587
+FUN23350_UNIT context=0 index=5 unit_index=343259
+FUN23350_UNIT context=0 index=6 unit_index=395024
+FUN23350_UNIT context=0 index=7 unit_index=380551
+FUN23350_UNIT context=0 index=8 unit_index=92714
+FUN23350_UNIT context=0 index=9 unit_index=276292
+FUN23350_UNIT context=0 index=10 unit_index=223183
+FUN23350_UNIT context=0 index=11 unit_index=289528
+FUN23350_UNIT context=0 index=12 unit_index=343283
+FUN23350_UNIT context=0 index=13 unit_index=333969
+FUN23350_UNIT context=0 index=14 unit_index=163214
+FUN23350_UNIT context=0 index=15 unit_index=349665
+FUN23350_UNIT context=0 index=16 unit_index=199369
+FUN23350_UNIT context=0 index=17 unit_index=327873
+FUN23350_UNIT context=0 index=18 unit_index=401564
+FUN23350_UNIT context=0 index=19 unit_index=130018
+FUN23350_UNIT context=0 index=20 unit_index=182528
+FUN23350_UNIT context=0 index=21 unit_index=317605
+FUN23350_UNIT context=0 index=22 unit_index=255930
+FUN23350_UNIT context=0 index=23 unit_index=381295
+FUN23350_UNIT context=0 index=24 unit_index=355030
+FUN23350_UNIT context=0 index=25 unit_index=399433
+FUN23350_UNIT context=0 index=26 unit_index=114081
+FUN23350_UNIT context=0 index=27 unit_index=277309
+FUN23350_UNIT context=0 index=28 unit_index=191469
+FUN23350_UNIT context=0 index=29 unit_index=280322
+Temporary breakpoint 5 at 0x100248ce
+FUN23350_CANDIDATES context=1 count=30
+FUN23350_UNIT context=1 index=0 unit_index=206814
+FUN23350_UNIT context=1 index=1 unit_index=300807
+FUN23350_UNIT context=1 index=2 unit_index=137445
+FUN23350_UNIT context=1 index=3 unit_index=107669
+FUN23350_UNIT context=1 index=4 unit_index=276293
+FUN23350_UNIT context=1 index=5 unit_index=191470
+FUN23350_UNIT context=1 index=6 unit_index=264906
+FUN23350_UNIT context=1 index=7 unit_index=125713
+FUN23350_UNIT context=1 index=8 unit_index=271896
+FUN23350_UNIT context=1 index=9 unit_index=180920
+FUN23350_UNIT context=1 index=10 unit_index=130019
+FUN23350_UNIT context=1 index=11 unit_index=89591
+FUN23350_UNIT context=1 index=12 unit_index=223184
+FUN23350_UNIT context=1 index=13 unit_index=215964
+FUN23350_UNIT context=1 index=14 unit_index=199370
+FUN23350_UNIT context=1 index=15 unit_index=343260
+FUN23350_UNIT context=1 index=16 unit_index=240303
+FUN23350_UNIT context=1 index=17 unit_index=333970
+FUN23350_UNIT context=1 index=18 unit_index=206685
+FUN23350_UNIT context=1 index=19 unit_index=355031
+FUN23350_UNIT context=1 index=20 unit_index=12070
+FUN23350_UNIT context=1 index=21 unit_index=240588
+FUN23350_UNIT context=1 index=22 unit_index=327874
+FUN23350_UNIT context=1 index=23 unit_index=280323
+FUN23350_UNIT context=1 index=24 unit_index=289529
+FUN23350_UNIT context=1 index=25 unit_index=401565
+FUN23350_UNIT context=1 index=26 unit_index=277310
+FUN23350_UNIT context=1 index=27 unit_index=395025
+FUN23350_UNIT context=1 index=28 unit_index=163215
+FUN23350_UNIT context=1 index=29 unit_index=114082
+Temporary breakpoint 6 at 0x100248ce
+FUN23350_CANDIDATES context=2 count=30
+FUN23350_UNIT context=2 index=0 unit_index=130760
+FUN23350_UNIT context=2 index=1 unit_index=131726
+FUN23350_UNIT context=2 index=2 unit_index=94213
+FUN23350_UNIT context=2 index=3 unit_index=502680
+FUN23350_UNIT context=2 index=4 unit_index=296163
+FUN23350_UNIT context=2 index=5 unit_index=66080
+FUN23350_UNIT context=2 index=6 unit_index=192874
+FUN23350_UNIT context=2 index=7 unit_index=27323
+FUN23350_UNIT context=2 index=8 unit_index=45254
+FUN23350_UNIT context=2 index=9 unit_index=24506
+FUN23350_UNIT context=2 index=10 unit_index=338159
+FUN23350_UNIT context=2 index=11 unit_index=187946
+FUN23350_UNIT context=2 index=12 unit_index=51733
+FUN23350_UNIT context=2 index=13 unit_index=195605
+FUN23350_UNIT context=2 index=14 unit_index=154087
+FUN23350_UNIT context=2 index=15 unit_index=103295
+FUN23350_UNIT context=2 index=16 unit_index=184036
+FUN23350_UNIT context=2 index=17 unit_index=121167
+FUN23350_UNIT context=2 index=18 unit_index=239534
+FUN23350_UNIT context=2 index=19 unit_index=389706
+FUN23350_UNIT context=2 index=20 unit_index=347091
+FUN23350_UNIT context=2 index=21 unit_index=161993
+FUN23350_UNIT context=2 index=22 unit_index=38550
+FUN23350_UNIT context=2 index=23 unit_index=336825
+FUN23350_UNIT context=2 index=24 unit_index=397082
+FUN23350_UNIT context=2 index=25 unit_index=415376
+FUN23350_UNIT context=2 index=26 unit_index=137211
+FUN23350_UNIT context=2 index=27 unit_index=93161
+FUN23350_UNIT context=2 index=28 unit_index=104610
+FUN23350_UNIT context=2 index=29 unit_index=96100
+Temporary breakpoint 7 at 0x100248ce
+FUN23350_CANDIDATES context=3 count=25
+FUN23350_UNIT context=3 index=0 unit_index=94214
+FUN23350_UNIT context=3 index=1 unit_index=130761
+FUN23350_UNIT context=3 index=2 unit_index=131727
+FUN23350_UNIT context=3 index=3 unit_index=502681
+FUN23350_UNIT context=3 index=4 unit_index=73049
+FUN23350_UNIT context=3 index=5 unit_index=370892
+FUN23350_UNIT context=3 index=6 unit_index=255787
+FUN23350_UNIT context=3 index=7 unit_index=168998
+FUN23350_UNIT context=3 index=8 unit_index=97981
+FUN23350_UNIT context=3 index=9 unit_index=471931
+FUN23350_UNIT context=3 index=10 unit_index=336164
+FUN23350_UNIT context=3 index=11 unit_index=326726
+FUN23350_UNIT context=3 index=12 unit_index=296164
+FUN23350_UNIT context=3 index=13 unit_index=243129
+FUN23350_UNIT context=3 index=14 unit_index=214828
+FUN23350_UNIT context=3 index=15 unit_index=197757
+FUN23350_UNIT context=3 index=16 unit_index=190577
+FUN23350_UNIT context=3 index=17 unit_index=184435
+FUN23350_UNIT context=3 index=18 unit_index=143628
+FUN23350_UNIT context=3 index=19 unit_index=125729
+FUN23350_UNIT context=3 index=20 unit_index=468249
+FUN23350_UNIT context=3 index=21 unit_index=232473
+FUN23350_UNIT context=3 index=22 unit_index=199482
+FUN23350_UNIT context=3 index=23 unit_index=171709
+FUN23350_UNIT context=3 index=24 unit_index=126734
+Temporary breakpoint 8 at 0x100248ce
+FUN23350_CANDIDATES context=4 count=30
+FUN23350_UNIT context=4 index=0 unit_index=393744
+FUN23350_UNIT context=4 index=1 unit_index=504244
+FUN23350_UNIT context=4 index=2 unit_index=387445
+FUN23350_UNIT context=4 index=3 unit_index=82888
+FUN23350_UNIT context=4 index=4 unit_index=262346
+FUN23350_UNIT context=4 index=5 unit_index=262655
+FUN23350_UNIT context=4 index=6 unit_index=549321
+FUN23350_UNIT context=4 index=7 unit_index=341171
+FUN23350_UNIT context=4 index=8 unit_index=42415
+FUN23350_UNIT context=4 index=9 unit_index=246101
+FUN23350_UNIT context=4 index=10 unit_index=130762
+FUN23350_UNIT context=4 index=11 unit_index=131728
+FUN23350_UNIT context=4 index=12 unit_index=502682
+FUN23350_UNIT context=4 index=13 unit_index=94215
+FUN23350_UNIT context=4 index=14 unit_index=243130
+FUN23350_UNIT context=4 index=15 unit_index=214829
+FUN23350_UNIT context=4 index=16 unit_index=326727
+FUN23350_UNIT context=4 index=17 unit_index=73050
+FUN23350_UNIT context=4 index=18 unit_index=255788
+FUN23350_UNIT context=4 index=19 unit_index=468250
+FUN23350_UNIT context=4 index=20 unit_index=168999
+FUN23350_UNIT context=4 index=21 unit_index=125730
+FUN23350_UNIT context=4 index=22 unit_index=197758
+FUN23350_UNIT context=4 index=23 unit_index=370893
+FUN23350_UNIT context=4 index=24 unit_index=143629
+FUN23350_UNIT context=4 index=25 unit_index=471932
+FUN23350_UNIT context=4 index=26 unit_index=184436
+FUN23350_UNIT context=4 index=27 unit_index=190578
+FUN23350_UNIT context=4 index=28 unit_index=97982
+FUN23350_UNIT context=4 index=29 unit_index=336165
+Temporary breakpoint 9 at 0x100248ce
+FUN23350_CANDIDATES context=5 count=13
+FUN23350_UNIT context=5 index=0 unit_index=393745
+FUN23350_UNIT context=5 index=1 unit_index=42416
+FUN23350_UNIT context=5 index=2 unit_index=82889
+FUN23350_UNIT context=5 index=3 unit_index=262347
+FUN23350_UNIT context=5 index=4 unit_index=262656
+FUN23350_UNIT context=5 index=5 unit_index=341172
+FUN23350_UNIT context=5 index=6 unit_index=387446
+FUN23350_UNIT context=5 index=7 unit_index=504245
+FUN23350_UNIT context=5 index=8 unit_index=549322
+FUN23350_UNIT context=5 index=9 unit_index=246102
+FUN23350_UNIT context=5 index=10 unit_index=543783
+FUN23350_UNIT context=5 index=11 unit_index=543131
+FUN23350_UNIT context=5 index=12 unit_index=544041
+Temporary breakpoint 10 at 0x100248ce
+FUN23350_CANDIDATES context=6 count=30
+FUN23350_UNIT context=6 index=0 unit_index=393746
+FUN23350_UNIT context=6 index=1 unit_index=42417
+FUN23350_UNIT context=6 index=2 unit_index=82890
+FUN23350_UNIT context=6 index=3 unit_index=549323
+FUN23350_UNIT context=6 index=4 unit_index=262348
+FUN23350_UNIT context=6 index=5 unit_index=262657
+FUN23350_UNIT context=6 index=6 unit_index=504246
+FUN23350_UNIT context=6 index=7 unit_index=341173
+FUN23350_UNIT context=6 index=8 unit_index=387447
+FUN23350_UNIT context=6 index=9 unit_index=169325
+FUN23350_UNIT context=6 index=10 unit_index=496120
+FUN23350_UNIT context=6 index=11 unit_index=411414
+FUN23350_UNIT context=6 index=12 unit_index=379307
+FUN23350_UNIT context=6 index=13 unit_index=356470
+FUN23350_UNIT context=6 index=14 unit_index=276435
+FUN23350_UNIT context=6 index=15 unit_index=261351
+FUN23350_UNIT context=6 index=16 unit_index=359492
+FUN23350_UNIT context=6 index=17 unit_index=340462
+FUN23350_UNIT context=6 index=18 unit_index=246103
+FUN23350_UNIT context=6 index=19 unit_index=558517
+FUN23350_UNIT context=6 index=20 unit_index=543784
+FUN23350_UNIT context=6 index=21 unit_index=315295
+FUN23350_UNIT context=6 index=22 unit_index=241275
+FUN23350_UNIT context=6 index=23 unit_index=266124
+FUN23350_UNIT context=6 index=24 unit_index=231683
+FUN23350_UNIT context=6 index=25 unit_index=2317
+FUN23350_UNIT context=6 index=26 unit_index=207675
+FUN23350_UNIT context=6 index=27 unit_index=394469
+FUN23350_UNIT context=6 index=28 unit_index=327490
+FUN23350_UNIT context=6 index=29 unit_index=236949
+Temporary breakpoint 11 at 0x100248ce
+FUN23350_CANDIDATES context=7 count=30
+FUN23350_UNIT context=7 index=0 unit_index=393747
+FUN23350_UNIT context=7 index=1 unit_index=42418
+FUN23350_UNIT context=7 index=2 unit_index=82891
+FUN23350_UNIT context=7 index=3 unit_index=549324
+FUN23350_UNIT context=7 index=4 unit_index=169326
+FUN23350_UNIT context=7 index=5 unit_index=387448
+FUN23350_UNIT context=7 index=6 unit_index=341174
+FUN23350_UNIT context=7 index=7 unit_index=504247
+FUN23350_UNIT context=7 index=8 unit_index=262349
+FUN23350_UNIT context=7 index=9 unit_index=262658
+FUN23350_UNIT context=7 index=10 unit_index=356471
+FUN23350_UNIT context=7 index=11 unit_index=496121
+FUN23350_UNIT context=7 index=12 unit_index=411415
+FUN23350_UNIT context=7 index=13 unit_index=379308
+FUN23350_UNIT context=7 index=14 unit_index=276436
+FUN23350_UNIT context=7 index=15 unit_index=261352
+FUN23350_UNIT context=7 index=16 unit_index=340463
+FUN23350_UNIT context=7 index=17 unit_index=359493
+FUN23350_UNIT context=7 index=18 unit_index=558518
+FUN23350_UNIT context=7 index=19 unit_index=501611
+FUN23350_UNIT context=7 index=20 unit_index=493586
+FUN23350_UNIT context=7 index=21 unit_index=255737
+FUN23350_UNIT context=7 index=22 unit_index=500617
+FUN23350_UNIT context=7 index=23 unit_index=182713
+FUN23350_UNIT context=7 index=24 unit_index=414783
+FUN23350_UNIT context=7 index=25 unit_index=498940
+FUN23350_UNIT context=7 index=26 unit_index=278643
+FUN23350_UNIT context=7 index=27 unit_index=95364
+FUN23350_UNIT context=7 index=28 unit_index=29972
+FUN23350_UNIT context=7 index=29 unit_index=69475
+Temporary breakpoint 12 at 0x100248ce
+FUN23350_CANDIDATES context=8 count=30
+FUN23350_UNIT context=8 index=0 unit_index=169327
+FUN23350_UNIT context=8 index=1 unit_index=501612
+FUN23350_UNIT context=8 index=2 unit_index=493587
+FUN23350_UNIT context=8 index=3 unit_index=393748
+FUN23350_UNIT context=8 index=4 unit_index=387449
+FUN23350_UNIT context=8 index=5 unit_index=262350
+FUN23350_UNIT context=8 index=6 unit_index=262659
+FUN23350_UNIT context=8 index=7 unit_index=82892
+FUN23350_UNIT context=8 index=8 unit_index=42419
+FUN23350_UNIT context=8 index=9 unit_index=504248
+FUN23350_UNIT context=8 index=10 unit_index=549325
+FUN23350_UNIT context=8 index=11 unit_index=341175
+FUN23350_UNIT context=8 index=12 unit_index=496122
+FUN23350_UNIT context=8 index=13 unit_index=276437
+FUN23350_UNIT context=8 index=14 unit_index=356472
+FUN23350_UNIT context=8 index=15 unit_index=379309
+FUN23350_UNIT context=8 index=16 unit_index=411416
+FUN23350_UNIT context=8 index=17 unit_index=261353
+FUN23350_UNIT context=8 index=18 unit_index=359494
+FUN23350_UNIT context=8 index=19 unit_index=335645
+FUN23350_UNIT context=8 index=20 unit_index=255738
+FUN23350_UNIT context=8 index=21 unit_index=182714
+FUN23350_UNIT context=8 index=22 unit_index=414784
+FUN23350_UNIT context=8 index=23 unit_index=340464
+FUN23350_UNIT context=8 index=24 unit_index=498941
+FUN23350_UNIT context=8 index=25 unit_index=500618
+FUN23350_UNIT context=8 index=26 unit_index=558519
+FUN23350_UNIT context=8 index=27 unit_index=95365
+FUN23350_UNIT context=8 index=28 unit_index=69476
+FUN23350_UNIT context=8 index=29 unit_index=37186
+Temporary breakpoint 13 at 0x100248ce
+FUN23350_CANDIDATES context=9 count=30
+FUN23350_UNIT context=9 index=0 unit_index=393749
+FUN23350_UNIT context=9 index=1 unit_index=169328
+FUN23350_UNIT context=9 index=2 unit_index=261354
+FUN23350_UNIT context=9 index=3 unit_index=356473
+FUN23350_UNIT context=9 index=4 unit_index=252086
+FUN23350_UNIT context=9 index=5 unit_index=493588
+FUN23350_UNIT context=9 index=6 unit_index=501613
+FUN23350_UNIT context=9 index=7 unit_index=496123
+FUN23350_UNIT context=9 index=8 unit_index=276438
+FUN23350_UNIT context=9 index=9 unit_index=411417
+FUN23350_UNIT context=9 index=10 unit_index=379310
+FUN23350_UNIT context=9 index=11 unit_index=335646
+FUN23350_UNIT context=9 index=12 unit_index=182715
+FUN23350_UNIT context=9 index=13 unit_index=255739
+FUN23350_UNIT context=9 index=14 unit_index=414785
+FUN23350_UNIT context=9 index=15 unit_index=498942
+FUN23350_UNIT context=9 index=16 unit_index=500619
+FUN23350_UNIT context=9 index=17 unit_index=39511
+FUN23350_UNIT context=9 index=18 unit_index=92031
+FUN23350_UNIT context=9 index=19 unit_index=112607
+FUN23350_UNIT context=9 index=20 unit_index=128053
+FUN23350_UNIT context=9 index=21 unit_index=37187
+FUN23350_UNIT context=9 index=22 unit_index=178908
+FUN23350_UNIT context=9 index=23 unit_index=301975
+FUN23350_UNIT context=9 index=24 unit_index=366440
+FUN23350_UNIT context=9 index=25 unit_index=357837
+FUN23350_UNIT context=9 index=26 unit_index=123139
+FUN23350_UNIT context=9 index=27 unit_index=212693
+FUN23350_UNIT context=9 index=28 unit_index=33690
+FUN23350_UNIT context=9 index=29 unit_index=105495
+Temporary breakpoint 14 at 0x100248ce
+FUN23350_CANDIDATES context=10 count=30
+FUN23350_UNIT context=10 index=0 unit_index=169328
+FUN23350_UNIT context=10 index=1 unit_index=501613
+FUN23350_UNIT context=10 index=2 unit_index=493588
+FUN23350_UNIT context=10 index=3 unit_index=252086
+FUN23350_UNIT context=10 index=4 unit_index=378742
+FUN23350_UNIT context=10 index=5 unit_index=260623
+FUN23350_UNIT context=10 index=6 unit_index=169451
+FUN23350_UNIT context=10 index=7 unit_index=153349
+FUN23350_UNIT context=10 index=8 unit_index=120112
+FUN23350_UNIT context=10 index=9 unit_index=102439
+FUN23350_UNIT context=10 index=10 unit_index=335646
+FUN23350_UNIT context=10 index=11 unit_index=39511
+FUN23350_UNIT context=10 index=12 unit_index=112607
+FUN23350_UNIT context=10 index=13 unit_index=128053
+FUN23350_UNIT context=10 index=14 unit_index=210702
+FUN23350_UNIT context=10 index=15 unit_index=503327
+FUN23350_UNIT context=10 index=16 unit_index=92031
+FUN23350_UNIT context=10 index=17 unit_index=178908
+FUN23350_UNIT context=10 index=18 unit_index=301975
+FUN23350_UNIT context=10 index=19 unit_index=432601
+FUN23350_UNIT context=10 index=20 unit_index=438517
+FUN23350_UNIT context=10 index=21 unit_index=387941
+FUN23350_UNIT context=10 index=22 unit_index=184213
+FUN23350_UNIT context=10 index=23 unit_index=159241
+FUN23350_UNIT context=10 index=24 unit_index=85803
+FUN23350_UNIT context=10 index=25 unit_index=387732
+FUN23350_UNIT context=10 index=26 unit_index=71711
+FUN23350_UNIT context=10 index=27 unit_index=252064
+FUN23350_UNIT context=10 index=28 unit_index=76986
+FUN23350_UNIT context=10 index=29 unit_index=306237
+Temporary breakpoint 15 at 0x100248ce
+FUN23350_CANDIDATES context=11 count=30
+FUN23350_UNIT context=11 index=0 unit_index=471016
+FUN23350_UNIT context=11 index=1 unit_index=252087
+FUN23350_UNIT context=11 index=2 unit_index=169452
+FUN23350_UNIT context=11 index=3 unit_index=153350
+FUN23350_UNIT context=11 index=4 unit_index=120113
+FUN23350_UNIT context=11 index=5 unit_index=102440
+FUN23350_UNIT context=11 index=6 unit_index=260624
+FUN23350_UNIT context=11 index=7 unit_index=378743
+FUN23350_UNIT context=11 index=8 unit_index=72977
+FUN23350_UNIT context=11 index=9 unit_index=432602
+FUN23350_UNIT context=11 index=10 unit_index=396713
+FUN23350_UNIT context=11 index=11 unit_index=100378
+FUN23350_UNIT context=11 index=12 unit_index=344198
+FUN23350_UNIT context=11 index=13 unit_index=163901
+FUN23350_UNIT context=11 index=14 unit_index=281988
+FUN23350_UNIT context=11 index=15 unit_index=287040
+FUN23350_UNIT context=11 index=16 unit_index=70148
+FUN23350_UNIT context=11 index=17 unit_index=323466
+FUN23350_UNIT context=11 index=18 unit_index=257578
+FUN23350_UNIT context=11 index=19 unit_index=438518
+FUN23350_UNIT context=11 index=20 unit_index=381245
+FUN23350_UNIT context=11 index=21 unit_index=373499
+FUN23350_UNIT context=11 index=22 unit_index=210703
+FUN23350_UNIT context=11 index=23 unit_index=79093
+FUN23350_UNIT context=11 index=24 unit_index=416368
+FUN23350_UNIT context=11 index=25 unit_index=255366
+FUN23350_UNIT context=11 index=26 unit_index=327597
+FUN23350_UNIT context=11 index=27 unit_index=214248
+FUN23350_UNIT context=11 index=28 unit_index=234325
+FUN23350_UNIT context=11 index=29 unit_index=177548
+Temporary breakpoint 16 at 0x100248ce
+FUN23350_CANDIDATES context=12 count=30
+FUN23350_UNIT context=12 index=0 unit_index=471017
+FUN23350_UNIT context=12 index=1 unit_index=542000
+FUN23350_UNIT context=12 index=2 unit_index=320181
+FUN23350_UNIT context=12 index=3 unit_index=252088
+FUN23350_UNIT context=12 index=4 unit_index=378744
+FUN23350_UNIT context=12 index=5 unit_index=153351
+FUN23350_UNIT context=12 index=6 unit_index=260625
+FUN23350_UNIT context=12 index=7 unit_index=120114
+FUN23350_UNIT context=12 index=8 unit_index=169453
+FUN23350_UNIT context=12 index=9 unit_index=102441
+FUN23350_UNIT context=12 index=10 unit_index=323467
+FUN23350_UNIT context=12 index=11 unit_index=177549
+FUN23350_UNIT context=12 index=12 unit_index=79094
+FUN23350_UNIT context=12 index=13 unit_index=373500
+FUN23350_UNIT context=12 index=14 unit_index=344199
+FUN23350_UNIT context=12 index=15 unit_index=163902
+FUN23350_UNIT context=12 index=16 unit_index=287041
+FUN23350_UNIT context=12 index=17 unit_index=257579
+FUN23350_UNIT context=12 index=18 unit_index=396714
+FUN23350_UNIT context=12 index=19 unit_index=100379
+FUN23350_UNIT context=12 index=20 unit_index=70149
+FUN23350_UNIT context=12 index=21 unit_index=281989
+FUN23350_UNIT context=12 index=22 unit_index=381246
+FUN23350_UNIT context=12 index=23 unit_index=214249
+FUN23350_UNIT context=12 index=24 unit_index=416369
+FUN23350_UNIT context=12 index=25 unit_index=55205
+FUN23350_UNIT context=12 index=26 unit_index=248203
+FUN23350_UNIT context=12 index=27 unit_index=416004
+FUN23350_UNIT context=12 index=28 unit_index=136124
+FUN23350_UNIT context=12 index=29 unit_index=105221
+Temporary breakpoint 17 at 0x100248ce
+FUN23350_CANDIDATES context=13 count=15
+FUN23350_UNIT context=13 index=0 unit_index=471017
+FUN23350_UNIT context=13 index=1 unit_index=542000
+FUN23350_UNIT context=13 index=2 unit_index=320181
+FUN23350_UNIT context=13 index=3 unit_index=542766
+FUN23350_UNIT context=13 index=4 unit_index=540563
+FUN23350_UNIT context=13 index=5 unit_index=542921
+FUN23350_UNIT context=13 index=6 unit_index=322153
+FUN23350_UNIT context=13 index=7 unit_index=370467
+FUN23350_UNIT context=13 index=8 unit_index=392383
+FUN23350_UNIT context=13 index=9 unit_index=466107
+FUN23350_UNIT context=13 index=10 unit_index=505808
+FUN23350_UNIT context=13 index=11 unit_index=515495
+FUN23350_UNIT context=13 index=12 unit_index=505307
+FUN23350_UNIT context=13 index=13 unit_index=537169
+FUN23350_UNIT context=13 index=14 unit_index=514124
+Temporary breakpoint 18 at 0x100248ce
+FUN23350_CANDIDATES context=14 count=30
+FUN23350_UNIT context=14 index=0 unit_index=471018
+FUN23350_UNIT context=14 index=1 unit_index=542001
+FUN23350_UNIT context=14 index=2 unit_index=320182
+FUN23350_UNIT context=14 index=3 unit_index=542922
+FUN23350_UNIT context=14 index=4 unit_index=542767
+FUN23350_UNIT context=14 index=5 unit_index=540564
+FUN23350_UNIT context=14 index=6 unit_index=47315
+FUN23350_UNIT context=14 index=7 unit_index=45168
+FUN23350_UNIT context=14 index=8 unit_index=37102
+FUN23350_UNIT context=14 index=9 unit_index=249874
+FUN23350_UNIT context=14 index=10 unit_index=414550
+FUN23350_UNIT context=14 index=11 unit_index=378745
+FUN23350_UNIT context=14 index=12 unit_index=223067
+FUN23350_UNIT context=14 index=13 unit_index=181400
+FUN23350_UNIT context=14 index=14 unit_index=56180
+FUN23350_UNIT context=14 index=15 unit_index=337245
+FUN23350_UNIT context=14 index=16 unit_index=213535
+FUN23350_UNIT context=14 index=17 unit_index=59197
+FUN23350_UNIT context=14 index=18 unit_index=106454
+FUN23350_UNIT context=14 index=19 unit_index=266532
+FUN23350_UNIT context=14 index=20 unit_index=55206
+FUN23350_UNIT context=14 index=21 unit_index=167787
+FUN23350_UNIT context=14 index=22 unit_index=357218
+FUN23350_UNIT context=14 index=23 unit_index=70995
+FUN23350_UNIT context=14 index=24 unit_index=83937
+FUN23350_UNIT context=14 index=25 unit_index=258555
+FUN23350_UNIT context=14 index=26 unit_index=197765
+FUN23350_UNIT context=14 index=27 unit_index=271340
+FUN23350_UNIT context=14 index=28 unit_index=263420
+FUN23350_UNIT context=14 index=29 unit_index=189775
+Temporary breakpoint 19 at 0x100248ce
+FUN23350_CANDIDATES context=15 count=30
+FUN23350_UNIT context=15 index=0 unit_index=471018
+FUN23350_UNIT context=15 index=1 unit_index=542001
+FUN23350_UNIT context=15 index=2 unit_index=320182
+FUN23350_UNIT context=15 index=3 unit_index=378745
+FUN23350_UNIT context=15 index=4 unit_index=213535
+FUN23350_UNIT context=15 index=5 unit_index=357218
+FUN23350_UNIT context=15 index=6 unit_index=337245
+FUN23350_UNIT context=15 index=7 unit_index=37102
+FUN23350_UNIT context=15 index=8 unit_index=45168
+FUN23350_UNIT context=15 index=9 unit_index=47315
+FUN23350_UNIT context=15 index=10 unit_index=55206
+FUN23350_UNIT context=15 index=11 unit_index=56180
+FUN23350_UNIT context=15 index=12 unit_index=59197
+FUN23350_UNIT context=15 index=13 unit_index=70995
+FUN23350_UNIT context=15 index=14 unit_index=83937
+FUN23350_UNIT context=15 index=15 unit_index=271340
+FUN23350_UNIT context=15 index=16 unit_index=266532
+FUN23350_UNIT context=15 index=17 unit_index=263420
+FUN23350_UNIT context=15 index=18 unit_index=106454
+FUN23350_UNIT context=15 index=19 unit_index=249874
+FUN23350_UNIT context=15 index=20 unit_index=167787
+FUN23350_UNIT context=15 index=21 unit_index=181400
+FUN23350_UNIT context=15 index=22 unit_index=189775
+FUN23350_UNIT context=15 index=23 unit_index=223067
+FUN23350_UNIT context=15 index=24 unit_index=197765
+FUN23350_UNIT context=15 index=25 unit_index=414550
+FUN23350_UNIT context=15 index=26 unit_index=258555
+FUN23350_UNIT context=15 index=27 unit_index=113183
+FUN23350_UNIT context=15 index=28 unit_index=396566
+FUN23350_UNIT context=15 index=29 unit_index=278783
+Temporary breakpoint 20 at 0x100248ce
+FUN23350_CANDIDATES context=16 count=30
+FUN23350_UNIT context=16 index=0 unit_index=471019
+FUN23350_UNIT context=16 index=1 unit_index=542002
+FUN23350_UNIT context=16 index=2 unit_index=320183
+FUN23350_UNIT context=16 index=3 unit_index=83938
+FUN23350_UNIT context=16 index=4 unit_index=37103
+FUN23350_UNIT context=16 index=5 unit_index=213536
+FUN23350_UNIT context=16 index=6 unit_index=266533
+FUN23350_UNIT context=16 index=7 unit_index=357219
+FUN23350_UNIT context=16 index=8 unit_index=47316
+FUN23350_UNIT context=16 index=9 unit_index=45169
+FUN23350_UNIT context=16 index=10 unit_index=378746
+FUN23350_UNIT context=16 index=11 unit_index=271341
+FUN23350_UNIT context=16 index=12 unit_index=181401
+FUN23350_UNIT context=16 index=13 unit_index=258556
+FUN23350_UNIT context=16 index=14 unit_index=189776
+FUN23350_UNIT context=16 index=15 unit_index=167788
+FUN23350_UNIT context=16 index=16 unit_index=59198
+FUN23350_UNIT context=16 index=17 unit_index=263421
+FUN23350_UNIT context=16 index=18 unit_index=197766
+FUN23350_UNIT context=16 index=19 unit_index=55207
+FUN23350_UNIT context=16 index=20 unit_index=223068
+FUN23350_UNIT context=16 index=21 unit_index=56181
+FUN23350_UNIT context=16 index=22 unit_index=337246
+FUN23350_UNIT context=16 index=23 unit_index=106455
+FUN23350_UNIT context=16 index=24 unit_index=414551
+FUN23350_UNIT context=16 index=25 unit_index=70996
+FUN23350_UNIT context=16 index=26 unit_index=249875
+FUN23350_UNIT context=16 index=27 unit_index=113184
+FUN23350_UNIT context=16 index=28 unit_index=396567
+FUN23350_UNIT context=16 index=29 unit_index=278784
+Temporary breakpoint 21 at 0x100248ce
+FUN23350_CANDIDATES context=17 count=30
+FUN23350_UNIT context=17 index=0 unit_index=471019
+FUN23350_UNIT context=17 index=1 unit_index=542002
+FUN23350_UNIT context=17 index=2 unit_index=334219
+FUN23350_UNIT context=17 index=3 unit_index=302552
+FUN23350_UNIT context=17 index=4 unit_index=244575
+FUN23350_UNIT context=17 index=5 unit_index=401062
+FUN23350_UNIT context=17 index=6 unit_index=269188
+FUN23350_UNIT context=17 index=7 unit_index=500193
+FUN23350_UNIT context=17 index=8 unit_index=542356
+FUN23350_UNIT context=17 index=9 unit_index=541123
+FUN23350_UNIT context=17 index=10 unit_index=538054
+FUN23350_UNIT context=17 index=11 unit_index=483003
+FUN23350_UNIT context=17 index=12 unit_index=543043
+FUN23350_UNIT context=17 index=13 unit_index=544591
+FUN23350_UNIT context=17 index=14 unit_index=538596
+FUN23350_UNIT context=17 index=15 unit_index=542792
+FUN23350_UNIT context=17 index=16 unit_index=541688
+FUN23350_UNIT context=17 index=17 unit_index=540094
+FUN23350_UNIT context=17 index=18 unit_index=537049
+FUN23350_UNIT context=17 index=19 unit_index=545873
+FUN23350_UNIT context=17 index=20 unit_index=546934
+FUN23350_UNIT context=17 index=21 unit_index=543870
+FUN23350_UNIT context=17 index=22 unit_index=546104
+FUN23350_UNIT context=17 index=23 unit_index=547393
+FUN23350_UNIT context=17 index=24 unit_index=544087
+FUN23350_UNIT context=17 index=25 unit_index=545625
+FUN23350_UNIT context=17 index=26 unit_index=537471
+FUN23350_UNIT context=17 index=27 unit_index=470345
+FUN23350_UNIT context=17 index=28 unit_index=547233
+FUN23350_UNIT context=17 index=29 unit_index=547478
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

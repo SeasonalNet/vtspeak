@@ -1,11 +1,10 @@
 # Follow-up investigation leads (2026-09-24)
 
-This note records proposed research directions after the feasibility pass for
-the local 2013 M16 Paul package. These are leads, not claims that the work has
-started or that the current roadmap stages have changed status. The priority
-order favors questions that can extend existing runtime evidence. Keep all
-VoiceText binaries and model data read-only, and distinguish observed behavior
-from semantic interpretation.
+This note records research directions and dated progress after the feasibility
+pass for the local 2013 M16 Paul package. These leads do not change the status
+of completed roadmap stages. The priority order favors questions that can
+extend existing runtime evidence. Keep all VoiceText binaries and model data
+read-only, and distinguish observed behavior from semantic interpretation.
 
 ## 1. Label more decision-tree inputs with controlled contrasts
 
@@ -32,6 +31,123 @@ property and a measured downstream effect, with counterexamples or limits
 recorded. The binary may expose operational roles without revealing the
 vendor's original field names.
 
+**Status: complete for the bounded local Paul result.** The
+[lead 1 closure](lead1-tree-input-closure-2026-09-24.md) gathers the verified
+input mappings, downstream selection path, counterexamples, and remaining
+generalization limits. The detailed notes below preserve the investigation
+sequence and raw-value references.
+
+**Progress (2026-09-24).** The existing Stage 10 two-phone captures hold the
+`probe` phone at `P AH0` and vary a forced adjacent phone. On the left-side
+controls, the first two tree calls change and the next two remain identical;
+on the right-side controls, the first two calls remain identical, the third
+changes its input and return, and the fourth changes its input but keeps the
+same return. The recorded values and limits are
+in the [neighbor-context report](tree-context-neighbor-contrasts-2026-09-24.md).
+Follow-up traces reach selection and timeline construction. With a fixed
+`P AH0` span followed by P versus B, the two tree calls for the fixed span
+retain identical vectors and results, but its first three primary selected
+IDs and timeline sample counts change. With P versus B before the fixed span,
+the changed first three primary rows track the changed left phone, while the
+last three remain the same. The downstream matrix and raw captures are in the
+neighbor-context report and `tools/revkit/work/stage10/`. This establishes a
+selection effect beyond the unchanged fixed-span tree results for the tested
+right-side contrast. Repeating the right-side P/B contrast with fixed `T AH0` produced
+the same pattern: the fixed span's first two tree results remain equal, while
+the first timeline call's first three selected IDs differ. For both T
+boundary controls, a period leaves the preceding span's first timeline call
+identical across the right-side P/B change; divergence appears in the
+following timeline call. These results bound the tested behavior but do not
+identify the underlying input field or establish a general linguistic rule.
+Candidate traces now show that the right P/B pair changes fixed-span local
+candidate costs and that the following context's transition chooses a
+different predecessor. For the common candidate `3837`, its traced `+0x10`
+field changes from 0 to 1 while the raw scorer target and feature view stay
+identical; the scorer scale changes from 1 to 0.5 and the local cost follows
+from `0.833333` to `0.416667`. Stage 7 pseudocode connects that scale to the
+candidate's `+0x10` field and a normalized duration term, but the upstream
+source of the field remains unknown. A trace at `FUN_100230a0` shows the
+field changing during candidate metadata construction: the P/B runs enter
+with candidate `3837`'s `+0x10` at 0, then leave it at 0 for P and 1 for B.
+Its disassembly walks earlier and later context records. A focused trace
+shows that for context-0 candidate `3837`, one lookup reaches following
+context 1 in all four right-phone runs. Context-row byte `+0x04` at
+`state + 0xec628 + context_index * 6` indexes a local 16-bit table: P/F/V
+read byte 1 and contribute 1; B reads byte 0 and contributes 2. The forward
+accumulator is halved before it is stored at `+0x10`, producing 0 versus 1.
+The row byte is also used by the Stage 7 transition routine, but its semantic
+meaning and the table's purpose remain unnamed. Its writer is now located
+in the `FUN_10024680` fallback chain: `FUN_10024060` clears byte `+0x04` and
+returns a status; when it returns false, `FUN_100242a0` builds the fallback
+row and writes `+0x04 = 1` (or `2` on its copied second row). A hardware
+watchpoint captured context 1's `0 → 1` write in right P at `0x10024305`;
+right B made no context-1 change. The fallback-entry trace records indices
+1 and 4 for right P/F/V, and index 3 for right B. The context-1 byte values
+align with whether that context uses the fallback. A return-site trace at
+`0x10024808` confirms context 1 returns `0` from `FUN_10024060` for P/F/V
+and `1` for B; context 3 returns `1` for P/F/V and `0` for B. The caller
+tests the result at `0x1002480b`, taking the fallback when it is zero. This
+locates the immediate branch responsible for the row difference. The
+candidate-count trace shows that all four fixtures use model flag `0`, so
+the first pass accepts when the `FUN_10023060` sum is at least 10. At context
+1, P has one candidate (`48721`, table value 1), B has two (`48655`/10 and
+`48656`/4), and F/V generate no candidates. Their sums are respectively 1,
+14, and none, matching false/true/false returns. At context 3, the sums are
+113 for P, 3 for B, 141 for F, and 188 for V; only B takes the fallback.
+`FUN_10023060` sums 16-bit table values addressed through the model pointer
+at `+0x8c`. This explains the tested branch results, but not why candidate
+generation yields these IDs and weights. A `FUN_10018770` entry trace shows
+the context-1 input as `[90,57,7,X,7,97,0]`, with only `X` changing. Its
+translation checks map `+2 = 7` to `0` and `+1 = 57` to `77` for P/B/F/V;
+the changed `+3` maps P's `53` to `71`, while B/F/V values `19/32/65` map to
+`0`. The P nonzero branch's three additional lookups return zero, as does
+the B/F/V zero-route lookup using mapped `77`. Successful combined-signature
+queries separately emit P ID `48721` and B IDs `48656`, `48655`; F/V emit no
+candidate. Static disassembly places the zero-row-byte query through
+`FUN_10023f90` → `FUN_10023dc0` → `FUN_10016ea0` and `FUN_10019450`, with a
+table rooted at model pointer `+0x88`. `FUN_10016ea0` makes a five-byte key:
+three lookup-table outputs from signature bytes `+1..+3`, a direct copy of
+byte `+5`, and byte `+6` masked with `0x20`. `FUN_10019450` binary-searches
+sorted five-byte records with a bytewise comparator and expands an equal key
+to its contiguous record range. The class table has 61,566 records. Runtime
+traces show P key `[57,7,53,16,0]` at class index `48721`, and B keys
+`[57,7,19,32,0]` and `[57,7,19,16,0]` at `48656` and `48655`. Each
+successful query returns one class, whose index matches the first-pass list
+entry; F/V produce no exact class matches for either tested suffix variant.
+The [phone-symbol codebook](phone-symbol-codebook.md) identifies the varied
+byte values as P/B/F/V. Wag's separate `vt_eng.dll` 3.11.7.1 notes call this
+signature position `R1`; that field name is a cross-build corroboration,
+since our captures use `vt_pau.dll`. The suffix bytes `16` and `32` and
+their full field semantics remain unresolved. A follow-up trace through
+`FUN_10023350` reads class populations at model offset `+0x8c` and unit-list
+pointers at `+0x94`: B classes `48655` and `48656` expand to 10 and 4 concrete
+unit IDs respectively, matching the values previously summed by
+`FUN_10023060`. In the broader P context-1 pool, class `48721` expands to its
+single member, unit `246151`. This verifies class-to-unit expansion for the
+captured classes; it does not label their acoustic or phonetic content. The
+trace script and complete B expansion are in `trace-context-unit-expansion.gdb`
+and `tree-context-t-right-b-unit-expansion.log` under
+`tools/revkit/work/stage10/`. In the second right-side F/V
+pair, context 0's 30 local candidate costs and `3837`'s
+`+0x10` stay identical, while backtracking returns a different first two
+units. Across the period, the preceding `0..2` context span has identical
+candidate arrays, transition results, and backtracked units; the later span
+diverges. The direct half-key lookup trace now captures numeric 10-byte keys,
+query range lengths, and class populations for the split P/F/V cases; B remains
+whole because it passes the whole-phone population threshold. This confirms
+that the left-side first-pass pool is shared for P/F/V in this fixture while
+right-side pools differ, but does not assign semantic names to the key fields.
+The K/G pair adds a second threshold contrast: K falls back at context 1 and
+uses half keys, while G passes the whole-phone first pass. A full scan of the
+Paul M16 five-byte class table found no repeated keys among 61,566 records.
+The left-neighbor P/B control reverses the context-1 whole-phone return seen
+in the right-neighbor control; left B's half keys and candidate pools are now
+captured. Three-phone B-left/T-probe controls with right P/B/F/V add a
+context-4 split with identical six-byte rows: P/F/V return zero and use half
+keys, while B returns one on the whole-phone path. Additional phone pairs
+and context positions remain open, while class-to-unit mapping stays numeric
+until the unit-record fields are independently identified.
+
 ## 2. Broaden full-synthesis parity coverage
 
 **Question.** How far do the recovered text, selection, timing, and audio
@@ -42,7 +158,24 @@ controls?
 units by byte count and SHA-256. A smaller set of controlled synthesis runs
 matches captured sample buffers to WAV data, including default and pitch
 controls plus number and abbreviation fixtures. This is not whole-synthesis
-corpus parity. See the [corpus parity and Stage 9 report](dat-corpus-parity-and-stage9-2026-09-24.md).
+corpus parity. Wag's latest status reports a separate 2,026-text byte-exact
+engine-to-Rust WAV corpus, plus pitch/speed/volume waveform controls, and
+independently describes the 580,474-unit decoder comparison as engine-decoder
+output versus the C export. The new bundle adds a SHA-256/size manifest for
+2,017 corpus texts and makes the test capture root configurable with
+`VTPAUL_HARNESS`; the nine additional speak captures are older synthetic lines
+that are not in that manifest. These remain peer results rather than local
+reproductions: the bundle omits the DLLs, voice data, engine WAVs, and roughly
+900 MB of ling/speak/stage captures. The manifest makes the expected whole-WAV
+hashes reviewable but does not supply the missing inputs and captures needed
+to rerun the complete parity suite here. The user also relays Wag's statement
+that their comparison DLL has its license-check path patched to report a
+licensed state, which avoids the engine's injected demo/license text. This is
+peer-reported and cannot be independently checked from the bundle. It means
+those WAV hashes do not establish original-license or demo-watermark behavior;
+our local runtime evidence still uses the supplied `vt_pau.dll`. See the
+[corpus parity and Stage 9 report](dat-corpus-parity-and-stage9-2026-09-24.md)
+for our independent decoder-boundary result.
 
 **Bounded probe.** Define a small, versioned golden input set covering ordinary
 prose, names, numbers, dates/times, addresses, abbreviations, and short edge
@@ -55,15 +188,31 @@ timeline, PCM blocks, or WAVE accounting.
 and divergence localization. Do not extrapolate a small golden set to every
 utterance or every engine/package version.
 
+**Bounded result (2026-09-24).** The eight selected local Paul-package cases
+all produced valid WAVs whose sample-buffer blocks exactly equal the local
+WAV data chunks. Each local WAV has the peer manifest's byte length, but all
+eight whole-file SHA-256 values differ. A prose case repeated identically
+across two local runs. Stage 8's one-at-a-time pitch, speed, and volume runs
+show the local frame-count and amplitude effects. The peer WAVs and runtime
+inputs are absent, so the mismatch cannot be localized across engines; the
+peer DLL's reported license patch also remains unverified. The bounded probe
+is closed with negative whole-WAV parity; full-corpus and peer-boundary
+parity remain open. See the [lead 2 WAV parity matrix](lead2-wav-parity-2026-09-24.md)
+and its portable traces/manifests under `tools/revkit/work/stage11/`.
+
 ## 3. Investigate the unknown TPP code meanings
 
 **Question.** What observable token or pronunciation behavior is associated
 with TPP code families `A`–`G`, `AX`, and the numeric suffixes?
 
 **Starting evidence.** All 31,550 TPP keys decode and re-encode; the typed
-payload grammar, caller paths, and `F`/`G` suffix parsing are known. The code
-families have corpus associations, but several suffix and component-bit
-semantics remain unnamed. See the TPP discussion in the
+payload grammar, caller paths, and `F`/`G` suffix parsing are known. Static
+analysis now confirms the B–E zero-bit rejection gate when the tokenizer's
+component marker is `d` or `A`; a controlled marker/bit intervention confirms
+the rule. A natural `N` → `North` replacement-table hit writes marker `d` in
+the tokenizer; a `Main` control misses. The `A` producer appears in separate
+address-form branches. Numeric suffix and component-bit linguistic meanings, `AX`'s
+purpose, and the full context/acoustic roles remain unresolved. See the TPP discussion in the
 [engine and model findings](voice-engine-and-model-formats.md#stage-6-text-and-pronunciation-resources)
 and the [open-topics review](open-topics-review-2026-09-24.md).
 
@@ -77,6 +226,36 @@ it.
 **Useful result.** A tested mapping from a code value to a particular
 transformation or branch. If the available corpus has no discriminating
 examples, record that limitation instead of guessing from key spelling.
+
+**Bounded result (2026-09-24).** Runtime traces confirmed the `A`–`D`
+component-count/bit returns, the `AX` return string, and the `F`/`G` numeric
+suffix writes to token byte `+0x25`. An `F120` compound applies 120 to both
+component tokens; `G95` and `G120` apply to individual tokens. A scoped
+in-memory selector override retrieved both corpus `E` records and captured
+their exact payloads (`Casa-de-Oro-Mount-Helix` → `500010`;
+`Saint-Mary-of-the-Woods` → `500000`). Ordinary inputs still did not reach
+selector E. Disassembly shows that `FUN_10034180` skips its selector switch
+for proper-name counts above four, so its E case cannot execute; the other
+two direct lookup callers use F/G. Natural E dispatch therefore appears dead
+within the discovered direct caller graph. The corpus and caller-path
+operations are now exhaustively inventoried for this local package, but
+semantic closure is not supported. The full numeric suffix table leaves
+linguistic meanings unnamed. Component-bit serialization and the runtime
+zero-bit rejection gate are now verified, but the corpus shows that bit
+assignment is not a function of component spelling alone. The reason for
+`AX` remains unknown after all 25 keys were tested in one batch and its
+classifier path was traced.
+
+New controlled phrase contrasts show that zeroing `G83` changes selected
+units and WAVs in `Does anybody know?`, `Does everybody know?`, and
+`Can anybody help?`, while several matched pronoun and sentence controls are
+byte-identical. In `Can anybody help?`, zeroing `G74` alone produces the same
+change, while zeroing both codes restores the control exactly. Replacing
+`G83` with `G95` changes `Does anybody see?` as well. Thus numeric codes can
+affect audio in selected lexical/context combinations and can interact, though
+the affected acoustic feature and predictive rule remain unknown. See the
+[lead 3 TPP findings](lead3-tpp-typed-code-findings-2026-09-24.md) and
+Stage 12 captures for the complete measured set and its limits.
 
 ## 4. Expand abbreviation probes by likely context
 

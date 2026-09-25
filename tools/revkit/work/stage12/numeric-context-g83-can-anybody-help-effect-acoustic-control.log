@@ -1,0 +1,129 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1002d1e0
+Wine-gdb> >>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002c120
+Wine-gdb> >> > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+ACOUSTIC_UNIT_BEGIN id=121166
+Temporary breakpoint 3 at 0x1002d587
+Temporary breakpoint 4 at 0x1002d20b
+ACOUSTIC_DESC id=121166 n=1 mode=0 bank=0 dat_offset=97083528 dat_samples=840 upm_offset=1451690 upm_periods=6 edges=130/152
+ACOUSTIC_UNIT_END id=121166
+ACOUSTIC_UNIT_BEGIN id=130020
+Temporary breakpoint 5 at 0x1002d4f9
+Temporary breakpoint 6 at 0x1002d20b
+ACOUSTIC_DESC id=130020 n=2 mode=0 bank=0 dat_offset=103945228 dat_samples=1402 upm_offset=1557628 upm_periods=10 edges=146/142
+ACOUSTIC_UNIT_END id=130020
+ACOUSTIC_UNIT_BEGIN id=130760
+Temporary breakpoint 7 at 0x1002d587
+Temporary breakpoint 8 at 0x1002d20b
+ACOUSTIC_DESC id=130760 n=3 mode=0 bank=0 dat_offset=104517080 dat_samples=1800 upm_offset=1566515 upm_periods=10 edges=188/170
+ACOUSTIC_UNIT_END id=130760
+ACOUSTIC_UNIT_BEGIN id=121168
+Temporary breakpoint 9 at 0x1002d4f9
+Temporary breakpoint 10 at 0x1002d20b
+ACOUSTIC_DESC id=121168 n=4 mode=0 bank=0 dat_offset=97084636 dat_samples=2428 upm_offset=1451705 upm_periods=19 edges=138/130
+ACOUSTIC_UNIT_END id=121168
+ACOUSTIC_UNIT_BEGIN id=393743
+Temporary breakpoint 11 at 0x1002d587
+Temporary breakpoint 12 at 0x1002d20b
+ACOUSTIC_DESC id=393743 n=5 mode=0 bank=0 dat_offset=310913224 dat_samples=1566 upm_offset=4705064 upm_periods=13 edges=158/126
+ACOUSTIC_UNIT_END id=393743
+ACOUSTIC_UNIT_BEGIN id=130762
+Temporary breakpoint 13 at 0x1002d4f9
+Temporary breakpoint 14 at 0x1002d20b
+ACOUSTIC_DESC id=130762 n=6 mode=0 bank=0 dat_offset=104518808 dat_samples=602 upm_offset=1566537 upm_periods=5 edges=124/116
+ACOUSTIC_UNIT_END id=130762
+ACOUSTIC_UNIT_BEGIN id=39510
+Temporary breakpoint 15 at 0x1002d587
+Temporary breakpoint 16 at 0x1002d20b
+ACOUSTIC_DESC id=39510 n=7 mode=0 bank=0 dat_offset=34580572 dat_samples=812 upm_offset=512187 upm_periods=7 edges=124/108
+ACOUSTIC_UNIT_END id=39510
+ACOUSTIC_UNIT_BEGIN id=393749
+Temporary breakpoint 17 at 0x1002d4f9
+Temporary breakpoint 18 at 0x1002d20b
+ACOUSTIC_DESC id=393749 n=8 mode=1 bank=0 dat_offset=310916748 dat_samples=814 upm_offset=4705123 upm_periods=7 edges=112/122
+ACOUSTIC_UNIT_END id=393749
+ACOUSTIC_UNIT_BEGIN id=381244
+Temporary breakpoint 19 at 0x1002d587
+Temporary breakpoint 20 at 0x1002d20b
+ACOUSTIC_DESC id=381244 n=9 mode=2 bank=0 dat_offset=301726958 dat_samples=956 upm_offset=4571558 upm_periods=6 edges=146/172
+ACOUSTIC_UNIT_END id=381244
+ACOUSTIC_UNIT_BEGIN id=39512
+Temporary breakpoint 21 at 0x1002d4f9
+Temporary breakpoint 22 at 0x1002d20b
+ACOUSTIC_DESC id=39512 n=10 mode=0 bank=0 dat_offset=34582192 dat_samples=1506 upm_offset=512213 upm_periods=11 edges=146/124
+ACOUSTIC_UNIT_END id=39512
+ACOUSTIC_UNIT_BEGIN id=320180
+Temporary breakpoint 23 at 0x1002d587
+Temporary breakpoint 24 at 0x1002d20b
+ACOUSTIC_DESC id=320180 n=11 mode=0 bank=0 dat_offset=254919596 dat_samples=718 upm_offset=3892784 upm_periods=4 edges=178/180
+ACOUSTIC_UNIT_END id=320180
+ACOUSTIC_UNIT_BEGIN id=381246
+Temporary breakpoint 25 at 0x1002d4f9
+Temporary breakpoint 26 at 0x1002d20b
+ACOUSTIC_DESC id=381246 n=12 mode=1 bank=0 dat_offset=301727476 dat_samples=546 upm_offset=4571567 upm_periods=3 edges=192/166
+ACOUSTIC_UNIT_END id=381246
+ACOUSTIC_UNIT_BEGIN id=471019
+Temporary breakpoint 27 at 0x1002d587
+Temporary breakpoint 28 at 0x1002d20b
+ACOUSTIC_DESC id=471019 n=13 mode=1 bank=2 dat_offset=4802108 dat_samples=858 upm_offset=75585 upm_periods=9 edges=96/94
+ACOUSTIC_UNIT_END id=471019
+ACOUSTIC_UNIT_BEGIN id=320183
+Temporary breakpoint 29 at 0x1002d4f9
+Temporary breakpoint 30 at 0x1002d20b
+ACOUSTIC_DESC id=320183 n=14 mode=2 bank=0 dat_offset=254922308 dat_samples=300 upm_offset=3892817 upm_periods=3 edges=100/100
+ACOUSTIC_UNIT_END id=320183
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @77F70000 (671744<3646>)
+00000114:00000118: exit process (0)

@@ -1,0 +1,288 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10019570
+Wine-gdb> >>>>>> > >> > >> > >> > >> > >> > >> > >> > > > > > > > > >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002df50
+Wine-gdb> >> > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023c70
+Wine-gdb> >>>>>>> > >> > >> > >> > > > > > > >  >  >  >  >  >  >  >  >   >   >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 4 at 0x10023ea4
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	3	0	19	40	19
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23315832	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 5 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	3	0	19	40	19
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23315832	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 6 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	3	0	19	40	19
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23316760	6
+Temporary breakpoint 7 at 0x10023efd
+HALF_CANDIDATES half=1 label=
+0x6675e4:	90	19	7	57	7	97	0
+ count=6 ids=9815(1) 9828(4) 9842(1) 9801(2) 9872(2) 9809(3) total_units=13
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 8 at 0x10023ea4
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	3	0	19	20	19
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23315832	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 9 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	3	0	19	20	19
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23315832	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 10 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	3	0	19	20	19
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23316708	8
+Temporary breakpoint 11 at 0x10023efd
+HALF_CANDIDATES half=1 label=
+0x6675e4:	90	19	7	57	7	81	0
+ count=8 ids=9827(2) 9845(1) 9841(2) 9871(3) 9861(2) 9819(1) 9808(1) 9855(1) 
+total_units=13
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 12 at 0x10023ea4
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	4	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23564236	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 13 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	4	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23564236	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 14 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	4	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23567316	4
+Temporary breakpoint 15 at 0x10023efd
+HALF_CANDIDATES half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+ count=4 ids=32901(2) 23710(1) 56450(1) 44721(1) total_units=5
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 16 at 0x10023f3c
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	4	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23567316	5
+Temporary breakpoint 17 at 0x10023f5c
+HALF_CANDIDATES half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+ count=5 ids=32901(2) 23710(1) 56450(1) 44721(1) 36669(1) total_units=6
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+Temporary breakpoint 18 at 0x10023f3c
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	4	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23566908	168
+Temporary breakpoint 19 at 0x10023f5c
+HALF_CANDIDATES half=2 label=
+0x6675e4:	90	19	7	57	7	97	0
+ count=10 ids=56450(1) 23710(1) 44721(1) 32901(2) 36669(1) 57798(1) 9854(1) 
+9852(19) 9855(1) 9853(1) total_units=29
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 20 at 0x10023ea4
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	2	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23564236	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 21 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	2	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23564236	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 22 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	2	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23567316	4
+Temporary breakpoint 23 at 0x10023efd
+HALF_CANDIDATES half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+ count=4 ids=32901(2) 23710(1) 56450(1) 44721(1) total_units=5
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 24 at 0x10023f3c
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	2	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23567316	5
+Temporary breakpoint 25 at 0x10023f5c
+HALF_CANDIDATES half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+ count=5 ids=32901(2) 23710(1) 56450(1) 44721(1) 36669(1) total_units=6
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+Temporary breakpoint 26 at 0x10023f3c
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	57	10	57
+0x667554:	2	3
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23566908	168
+Temporary breakpoint 27 at 0x10023f5c
+HALF_CANDIDATES half=2 label=
+0x6675e4:	90	19	7	57	7	81	0
+ count=10 ids=56450(1) 23710(1) 44721(1) 32901(2) 36669(1) 9855(1) 57797(1) 
+9854(1) 9853(1) 9852(19) total_units=29
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 28 at 0x10023ea4
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	4	0	57	20	57
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	21754448	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 29 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	4	0	57	20	57
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	21754448	0
+HALF_QUERY_ENTRY half=1 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 30 at 0x10023ed5
+HALF_KEY_SEARCH half=1 key=
+0x66754c:	0	0	7	4	0	57	20	57
+0x667554:	1	4
+HALF_QUERY_RETURN half=1 range_words=0x667584:	23322272	8
+Temporary breakpoint 31 at 0x10023efd
+HALF_CANDIDATES half=1 label=
+0x6675e4:	7	57	7	32	7	81	0
+ count=8 ids=48704(30) 48678(1) 48715(33) 48674(32) 48663(120) 48655(10) 
+48721(1) 48685(4) total_units=231
+Temporary breakpoint 32 at 0x1002441f
+HALF_CANDIDATES half=1 label=
+0x2ae0b19:	7	57	7	32	7	81	0
+ count=30 ids=48685(4) 48721(1) 48655(10) 48674(32) 48678(1) 48715(33) 
+48663(120) 48704(30) 48667(12) 48668(6) 48669(1) 48671(2) 48690(1) 48741(8) 
+48710(22) 48720(7) 48722(1) 48728(3) 48681(1) 48731(1) 48735(2) 48736(2) 
+48686(2) 48687(3) 48680(1) 48718(1) 48697(1) 48714(1) 48695(1) 48660(3) 
+total_units=313
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 33 at 0x10023ea4
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	19	10	32
+0x667554:	2	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23316800	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 34 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	19	10	32
+0x667554:	2	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23316800	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 35 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	19	10	32
+0x667554:	2	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23316800	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 36 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	19	10	32
+0x667554:	2	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23316800	0
+HALF_QUERY_ENTRY half=2 label=
+0x6675e4:	7	57	7	32	7	81	0
+Temporary breakpoint 37 at 0x10023ed5
+HALF_KEY_SEARCH half=2 key=
+0x66754c:	1	0	7	4	0	19	10	32
+0x667554:	2	4
+HALF_QUERY_RETURN half=2 range_words=0x667584:	23564848	65
+Temporary breakpoint 38 at 0x10023efd
+HALF_CANDIDATES half=2 label=
+0x6675e4:	7	57	7	32	7	81	0
+ count=10 ids=48670(6) 21916(1) 44627(3) 47511(1) 44623(6) 48669(1) 48667(12) 
+17391(15) 32799(6) 23666(2) total_units=53
+Temporary breakpoint 39 at 0x1002441f
+HALF_CANDIDATES half=2 label=
+0x2ae0b19:	7	57	7	32	7	81	0
+ count=30 ids=48670(6) 47511(1) 44627(3) 21916(1) 44623(6) 48669(1) 48667(12) 
+4671(2) 32805(1) 23669(1) 36561(1) 23666(2) 17391(15) 32799(6) 55003(1) 
+55005(2) 9808(1) 44624(7) 44622(1) 49989(3) 44621(24) 44626(3) 21915(1) 
+11873(1) 56388(1) 60129(3) 26571(12) 59604(8) 23668(1) 23667(4) total_units=131
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0160:0164: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0160:0164: create thread I @004014C0
+0160:0164: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0160:0164: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0160:0164: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0160:0164: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0160:0164: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0160:0164: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0160:0164: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0160:0164: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0160:0164: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0160:0164: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0160:0164: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0160:0164: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0160:0164: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0160:0164: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0160:0164: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0160:0164: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0160:0164: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0160:0164: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0160:0164: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0160:0164: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0160:0164: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0160:0164: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0160:0164: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000160:00000164: unload DLL @009C0000
+0160:0164: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000160:00000164: unload DLL @009C0000
+0160:0164: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0160:0164: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0160:0164: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000160:00000164: exit process (0)

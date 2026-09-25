@@ -1,0 +1,126 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x10018ae4
+Wine-gdb> >> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10018af1
+Wine-gdb> >> > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10018b03
+Wine-gdb> >> > > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10018b05
+Wine-gdb> >> > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x10018b19
+Wine-gdb> >> > > >>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x10018b3d
+Wine-gdb> >> > > >>>Wine-gdb> Wine-gdb> Breakpoint 7 at 0x10018b70
+Wine-gdb> >> > > >>>Wine-gdb> Wine-gdb> Breakpoint 8 at 0x10018b77
+Wine-gdb> >> > > >>>Wine-gdb> Wine-gdb> Breakpoint 9 at 0x10018b8f
+Wine-gdb> >> > > >>>Wine-gdb> Wine-gdb> Continuing.
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+BYTE_BRANCH_PLUS2_ZERO input2=7 mapped=0
+BYTE_BRANCH_PLUS1_TEST input1=57 mapped=77
+BYTE_BRANCH_PLUS3_TEST input3=32 mapped=0 candidate_count=0
+BYTE_BRANCH_PLUS3_ZERO_PATH input3=32 plus1_mapped=77
+BYTE_BRANCH_PLUS1_CALL_RETURN value=0 candidate_count=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 015c:0160: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+015c:0160: create thread I @004014C0
+015c:0160: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+015c:0160: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+015c:0160: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+015c:0160: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+015c:0160: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+015c:0160: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+015c:0160: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+015c:0160: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+015c:0160: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+015c:0160: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+015c:0160: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+015c:0160: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+015c:0160: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+015c:0160: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+015c:0160: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+015c:0160: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+015c:0160: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+015c:0160: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+015c:0160: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+015c:0160: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+015c:0160: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+015c:0160: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+015c:0160: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+0000015c:00000160: unload DLL @009C0000
+015c:0160: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+0000015c:00000160: unload DLL @009C0000
+015c:0160: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+015c:0160: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+015c:0160: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+0000015c:00000160: exit process (0)

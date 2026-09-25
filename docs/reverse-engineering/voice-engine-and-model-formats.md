@@ -539,7 +539,8 @@ have different consumers and different grammars:
   name or full downstream meaning of each numeric class. Both suffix families
   span 1–124. The meaning of each binary component flag also remains unnamed.
   The corpus has
-  7,924 `A`, 3,980 `B`, 303 `C`, 19 `D`,
+  7,899 standard `A0`/`A1` place-name atoms and 25 `AX` records, 3,980 `B`,
+  303 `C`, 19 `D`,
   and 2 `E` place-name records; its 829 `F` compounds have 1–4 hyphens
   (746, 78, 4, and 1 records respectively). The two-atom records contain
   typed codes, not an extension of the embedded phone-ID schema.
@@ -553,6 +554,18 @@ have different consumers and different grammars:
   which checks up to five adjacent tokens, and the proper-name path
   `FUN_10034180`. This is a typed-text transformation family, not the
   embedded phone-ID payload format.
+
+  Stage 12 runtime traces confirm the representative operations. `ACCORD`
+  (`A0 G95`) returns `0` from the A selector and writes 95 to token byte
+  `+0x25`; `CENTER` (`A1 G95`) returns `1` and writes the same suffix.
+  `ABBOT-VILLAGE` and `AGUA-DULCE` return B payloads `201` and `200`, while
+  `AMELIA-COURT-HOUSE` and `CAPE-MAY-COURT-HOUSE` return C/D payloads `3010`
+  and `41010`. `ABOUT-SHIPPING` returns F suffix 120, which is written to the
+  byte on both component tokens. Tested `OPELIKA` and `TALLADEGA` AX records
+  return `X` through the A selector; their purpose remains unknown. The two E
+  records were not reached by the tested ordinary-input path. See the
+  [lead 3 runtime and corpus report](lead3-tpp-typed-code-findings-2026-09-24.md)
+  for capture boundaries and unresolved semantics.
 
 The lookup and consumer control flow, compressed-key transform, and raw TPP
 body grammar are recovered. `inspect_tpp_dictionary.py` is a bounded analysis
