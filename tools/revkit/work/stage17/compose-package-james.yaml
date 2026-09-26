@@ -1,0 +1,5 @@
+services:
+  runtime:
+    volumes:
+      - "${JAMES_PACKAGE_DLL:?Set JAMES_PACKAGE_DLL to the local package DLL}:/samples/vt_jam.dll:ro"
+      - ../../../../data-james:/work/data-james:ro

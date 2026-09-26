@@ -1,0 +1,5 @@
+services:
+  runtime:
+    volumes:
+      - ../stage19/index-adapter:/work/data-kate/M16/mc_idx_tbl:ro
+      - ../stage19/vt_kat-tree2-versioned.dll:/samples/vt_kat.dll:ro

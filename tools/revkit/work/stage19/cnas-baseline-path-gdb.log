@@ -1,0 +1,149 @@
+Wine-gdb> Already logging to /probe/cnas-path-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10001670
+Wine-gdb> >>>>>> > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1000160b
+Wine-gdb> >> > > > > > >  >  >  >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	22	40	18	0	3	1	1	1
+0x6676fc:	1	0	2468	590
+Temporary breakpoint 3 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=58 op=D feature=0 left=59 right=137
+CNAS_NODE caller=0x1001350b node=137 op=D feature=1 left=138 right=263
+CNAS_NODE caller=0x1001350b node=138 op=D feature=2 left=139 right=185
+CNAS_NODE caller=0x1001350b node=185 op=D feature=1 left=186 right=241
+CNAS_NODE caller=0x1001350b node=241 op=D feature=0 left=242 right=255
+CNAS_NODE caller=0x1001350b node=255 op=D feature=1 left=256 right=260
+CNAS_NODE caller=0x1001350b node=256 op=C feature=7 value=1 threshold=2 true=257 false=258
+CNAS_NODE caller=0x1001350b node=257 op=D feature=2 left=-255 right=-256
+CNAS_RETURN value=1518
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	22	42	18	0	1	1	2	1
+0x6676fc:	1	0	3428	590
+Temporary breakpoint 4 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=58 op=D feature=0 left=59 right=137
+CNAS_NODE caller=0x1001350b node=137 op=D feature=1 left=138 right=263
+CNAS_NODE caller=0x1001350b node=138 op=D feature=2 left=139 right=185
+CNAS_NODE caller=0x1001350b node=185 op=D feature=1 left=186 right=241
+CNAS_NODE caller=0x1001350b node=186 op=D feature=2 left=187 right=216
+CNAS_NODE caller=0x1001350b node=216 op=D feature=2 left=217 right=240
+CNAS_NODE caller=0x1001350b node=217 op=D feature=1 left=218 right=237
+CNAS_NODE caller=0x1001350b node=218 op=D feature=2 left=219 right=227
+CNAS_NODE caller=0x1001350b node=219 op=D feature=4 left=220 right=226
+CNAS_NODE caller=0x1001350b node=220 op=D feature=1 left=-215 right=221
+CNAS_NODE caller=0x1001350b node=221 op=C feature=7 value=1 threshold=1 true=222 false=223
+CNAS_NODE caller=0x1001350b node=222 op=D feature=0 left=-216 right=-217
+CNAS_RETURN value=885
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	23	3	42	0	3	1	2	1
+0x6676fc:	3	0	5348	590
+Temporary breakpoint 5 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=1 op=D feature=6 left=2 right=12
+CNAS_NODE caller=0x1001350b node=12 op=D feature=0 left=13 right=38
+CNAS_NODE caller=0x1001350b node=38 op=D feature=1 left=39 right=45
+CNAS_NODE caller=0x1001350b node=45 op=D feature=1 left=46 right=51
+CNAS_NODE caller=0x1001350b node=51 op=C feature=7 value=1 threshold=3 true=52 false=-58
+CNAS_NODE caller=0x1001350b node=52 op=D feature=2 left=53 right=-57
+CNAS_NODE caller=0x1001350b node=53 op=D feature=2 left=54 right=57
+CNAS_NODE caller=0x1001350b node=54 op=D feature=1 left=-51 right=55
+CNAS_NODE caller=0x1001350b node=55 op=D feature=4 left=-52 right=56
+CNAS_NODE caller=0x1001350b node=56 op=D feature=1 left=-53 right=-54
+CNAS_RETURN value=1460
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	23	11	31	0	3	1	2	2
+0x6676fc:	3	0	6308	590
+Temporary breakpoint 6 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=58 op=D feature=0 left=59 right=137
+CNAS_NODE caller=0x1001350b node=59 op=D feature=1 left=60 right=116
+CNAS_NODE caller=0x1001350b node=60 op=D feature=2 left=61 right=78
+CNAS_NODE caller=0x1001350b node=78 op=D feature=1 left=79 right=97
+CNAS_NODE caller=0x1001350b node=97 op=D feature=6 left=98 right=105
+CNAS_NODE caller=0x1001350b node=105 op=D feature=4 left=106 right=108
+CNAS_NODE caller=0x1001350b node=108 op=D feature=2 left=-107 right=109
+CNAS_NODE caller=0x1001350b node=109 op=D feature=4 left=110 right=114
+CNAS_NODE caller=0x1001350b node=110 op=D feature=1 left=111 right=-112
+CNAS_NODE caller=0x1001350b node=111 op=C feature=7 value=2 threshold=2 true=112 false=113
+CNAS_NODE caller=0x1001350b node=112 op=D feature=2 left=-108 right=-109
+CNAS_RETURN value=1068
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	22	42	13	0	3	1	2	1
+0x6676fc:	1	0	8228	590
+Temporary breakpoint 7 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=58 op=D feature=0 left=59 right=137
+CNAS_NODE caller=0x1001350b node=137 op=D feature=1 left=138 right=263
+CNAS_NODE caller=0x1001350b node=138 op=D feature=2 left=139 right=185
+CNAS_NODE caller=0x1001350b node=139 op=D feature=0 left=140 right=171
+CNAS_NODE caller=0x1001350b node=171 op=D feature=2 left=172 right=179
+CNAS_NODE caller=0x1001350b node=179 op=D feature=1 left=180 right=-184
+CNAS_RETURN value=1461
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	23	13	42	0	3	1	2	1
+0x6676fc:	3	0	8228	590
+Temporary breakpoint 8 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=1 op=D feature=6 left=2 right=12
+CNAS_NODE caller=0x1001350b node=12 op=D feature=0 left=13 right=38
+CNAS_NODE caller=0x1001350b node=38 op=D feature=1 left=39 right=45
+CNAS_NODE caller=0x1001350b node=45 op=D feature=1 left=46 right=51
+CNAS_NODE caller=0x1001350b node=46 op=D feature=5 left=47 right=49
+CNAS_NODE caller=0x1001350b node=47 op=D feature=1 left=48 right=-47
+CNAS_RETURN value=1315
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	23	17	42	0	2	1	2	1
+0x6676fc:	3	0	10148	590
+Temporary breakpoint 9 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=1 op=D feature=6 left=2 right=12
+CNAS_NODE caller=0x1001350b node=12 op=D feature=0 left=13 right=38
+CNAS_NODE caller=0x1001350b node=38 op=D feature=1 left=39 right=45
+CNAS_NODE caller=0x1001350b node=39 op=C feature=7 value=1 threshold=1 true=40 false=42
+CNAS_NODE caller=0x1001350b node=40 op=D feature=2 left=-38 right=41
+CNAS_RETURN value=1551
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	21	4	7	0	2	1	2	3
+0x6676fc:	3	0	11108	590
+Temporary breakpoint 10 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=58 op=D feature=0 left=59 right=137
+CNAS_NODE caller=0x1001350b node=137 op=D feature=1 left=138 right=263
+CNAS_NODE caller=0x1001350b node=138 op=D feature=2 left=139 right=185
+CNAS_NODE caller=0x1001350b node=139 op=D feature=0 left=140 right=171
+CNAS_NODE caller=0x1001350b node=140 op=D feature=1 left=141 right=155
+CNAS_NODE caller=0x1001350b node=155 op=D feature=2 left=156 right=167
+CNAS_NODE caller=0x1001350b node=156 op=D feature=4 left=157 right=158
+CNAS_NODE caller=0x1001350b node=158 op=D feature=2 left=159 right=166
+CNAS_NODE caller=0x1001350b node=159 op=D feature=1 left=160 right=-162
+CNAS_NODE caller=0x1001350b node=160 op=C feature=7 value=3 threshold=1 true=161 false=164
+CNAS_NODE caller=0x1001350b node=164 op=D feature=2 left=-159 right=165
+CNAS_NODE caller=0x1001350b node=165 op=D feature=1 left=-160 right=-161
+CNAS_RETURN value=1482
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	23	3	18	0	1	3	2	3
+0x6676fc:	1	0	11112	590
+Temporary breakpoint 11 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=58 op=D feature=0 left=59 right=137
+CNAS_NODE caller=0x1001350b node=59 op=D feature=1 left=60 right=116
+CNAS_NODE caller=0x1001350b node=60 op=D feature=2 left=61 right=78
+CNAS_NODE caller=0x1001350b node=78 op=D feature=1 left=79 right=97
+CNAS_NODE caller=0x1001350b node=79 op=D feature=6 left=80 right=81
+CNAS_NODE caller=0x1001350b node=81 op=D feature=4 left=82 right=93
+CNAS_NODE caller=0x1001350b node=93 op=D feature=2 left=94 right=-95
+CNAS_RETURN value=876
+CNAS_CALL return=0x1001350b tree=0x14bf310 features=0x6676ec
+0x6676ec:	23	42	34	0	1	1	2	1
+0x6676fc:	1	0	12068	590
+Temporary breakpoint 12 at 0x1001350b
+CNAS_NODE caller=0x1001350b node=0 op=D feature=2 left=1 right=58
+CNAS_NODE caller=0x1001350b node=1 op=D feature=6 left=2 right=12
+CNAS_NODE caller=0x1001350b node=12 op=D feature=0 left=13 right=38
+CNAS_NODE caller=0x1001350b node=38 op=D feature=1 left=39 right=45
+CNAS_NODE caller=0x1001350b node=39 op=C feature=7 value=1 threshold=1 true=40 false=42
+CNAS_NODE caller=0x1001350b node=40 op=D feature=2 left=-38 right=41
+CNAS_NODE caller=0x1001350b node=41 op=D feature=4 left=-39 right=-40
+CNAS_RETURN value=1761
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

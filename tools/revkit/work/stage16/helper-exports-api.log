@@ -1,0 +1,103 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>>>>>> > > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> > >  >  >  >  > > >>>>>>>>>>>>>>>>>>>>>>>>> > > > > > > > > >> > >> > >>>>>>>>>>> > > > > > > > >>>> > > > > > > > > > > > > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Continuing.
+EXPORTED_DATA heap_start_address=0x00000000 version=(3,11,7,1)
+CSV_INIT pointer=0xbb1a18
+CSV_PARSE result=1 field_count=3
+CSV_FIELD index=0 value=alpha
+CSV_FIELD index=1 value=beta,gamma
+CSV_FIELD index=2 value=delta
+CSV_FIELD out_of_range=(nil)
+CSV_EXIT completed
+CSV_EDGE unclosed_quote result=1 field_count=2 fields="a","unterminated"
+CSV_EDGE empty_middle_field result=1 field_count=3 middle=""
+CSV_EDGE embedded_newline result=1 field_count=2 field0="a" field1_first=0x62 field1_second=0x00
+PATH_KEY slot=0 value=SOFTWARE\VW\VT\Kate\M16
+PATH_KEY slot=1 value=SOFTWARE\VW\VT\Paul\M16
+PATH_KEY slot=2 value=SOFTWARE\VW\VT\em001\M16
+PATH_KEY slot=3 value=SOFTWARE\VW\VT\Julie\M16
+PATH_KEY slot=4 value=SOFTWARE\VW\VT\James\M16
+PATH_KEY slot=5 value=SOFTWARE\VW\VT\Ashley\M16
+USERDICT_DEFAULT_ABSOLUTE value=../data-common/userdict/userdict_eng.csv
+USERDICT_DEFAULT_RELATIVE value=data-common/userdict/userdict_eng.csv
+CSV_MAKE result=1 value="A","b,c"
+CSV_IS expected_fields_3=1 expected_fields_4=0
+SYNC_ALLOC first=0x14cc278 second=0x14d6250
+SYNC_INIT defaults fields_1_2_4_6_13=600,65,-1,-1,-1
+SYNC_COPY source_fields_4_6=0x13579bdf,0x2468ace0 target_fields_4_6=0x13579bdf,0x2468ace0
+SYNC_FREE completed
+SOUND_CARD_SET prior=0xffffffff changed=0x12345678
+SOUND_CARD_RESTORED value=0xffffffff
+EMPHASIS input=200 stored=95
+EMPHASIS input=-200 stored=-95
+EMPHASIS restored=0
+HIGHLIGHT input=7 stored=1
+PARENTHESIS input=-1 stored=0
+READING_RULE input=-1 stored=0
+RUNTIME_CONFIG restored highlight=0 paren=1 reading=0
+UNIT_HISTORY input=1 stored=0 load_flag=1
+UNIT_HISTORY input=0 stored=0 load_flag=1
+USERDICT_SOURCE_NORM text=example completed=1
+USERDICT_TARGET_NORM text=example result=1
+USERDICT_TARGET_PHON text=example result=-9
+TEXT_BUFFER_EX selector_low=-1 return=-1 selector_high=3 return=-1
+LICENSE_INFO null_path selector_0_length=4 selector_12_length=4 capacity_0=-5 capacity_3=-5 capacity_4_null_output=-4
+LICENSE_COMMENT null_path result=322 output_redacted=1
+LICENSE_CHECK null_path result=0
+INIT result=-1
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

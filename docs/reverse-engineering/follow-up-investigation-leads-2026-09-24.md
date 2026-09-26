@@ -311,6 +311,35 @@ proof that all voice behavior or data formats match.
 **Useful result.** A compatibility matrix stating which layouts and behaviors
 were checked for each package, and which findings remain Paul-specific.
 
+**Bounded result (runtime comparison completed; intelligible Kate output open,
+2026-09-25).** Structural checks cover all five
+model packages. The four supplied host/DLL pairs yield three-input synthesis
+for Paul and James; Julie and Kate stop at a missing `tree3` pitch file while
+their packages contain `tree2`. The Stage 19 patched standard DLL plus
+converted Kate tree/index overlays complete three shared fixture runs, but the
+requester reports the output is gibberish. An alternate index-column mapping,
+inferred from legacy-reader copy widths, produces different WAVs and durations;
+the requester finds the original mapping somewhat more speech-like, while the
+reordered mapping struggles to form syllables. Both remain gibberish, and
+their exact feature semantics remain unverified. A post-load trace over all
+five indexes shows the reordered mapping shifts key bytes between reader
+buffers; a focused runtime trace shows it changes class signatures and
+candidate pools. Source-to-engine equivalence remains open.
+An additional tree-branch matrix found that reversing only `C` comparison
+edges leaves prose and number/time output unchanged, reversing `D` membership
+edges changes all three fixtures, and reversing both changes number/time
+beyond the `D`-only result. This does not establish the old evaluator's edge
+convention or which sample sounds better.
+Appending the four opaque pitch-tree suffixes changes none of the tested WAVs.
+A second DLL supplied with the James package also produces the same three
+frame counts as the supplied DLL, but its PCM differs. External
+Julie/Bridget DLL candidates have unresolved integrity/license provenance and
+do not establish compatibility. See the [Lead 5 report]
+(lead5-voice-package-runtime-2026-09-25.md), [Stage 17 evidence]
+(../../tools/revkit/work/stage17/README.md), and [Stage 19 evidence]
+(../../tools/revkit/work/stage19/README.md). Broader legacy compatibility and
+whole-synthesis parity remain unestablished.
+
 ## 6. Probe API behavior beyond the main text-to-WAV path
 
 **Question.** What behavior does a native replacement need to preserve for
@@ -329,26 +358,29 @@ Avoid probing unrelated modes without an implementation or research need.
 **Useful result.** A tested API contract for the chosen scope, including
 explicitly unsupported or untested cases.
 
-**Bounded result (2026-09-25).** The selected scope is the local Paul M16
-`VT_TextToFile_ENG` path. Runtime captures cover declared selectors 0–5 and
-7–9, unsupported selector 6, out-of-range selector 10, and null-text,
-empty-text, and null-path returns. Two identical selector 4 calls in one
-loaded process both return success and produce byte-identical WAVE files. The
-four buffer formats also return success at flag 0/thread ID 0 and match their
-raw file-selector outputs; tested nonzero flag/thread combinations return the
-header's create-thread error in Wine. Buffer null/empty/error cases and all
-declared `VT_GetTTSInfo_ENG` requests were also probed. The output formats,
-return codes, and limits are recorded in the [Lead 6 API report](lead6-file-api-behavior-2026-09-25.md),
-with portable traces and outputs in Stage 16. Follow-up probes confirm that a
-short synchronous buffer call treats `output_len` as the returned byte count,
-not as a write limit; the configuration setters clamp upper values and alter
-file output when synthesis arguments are `-1`; and valid playback returns the
-initialization error in the local Wine runtime. This does not close the full
-lead: successful threaded processing, polling, mixed-call state,
-format-specific markup behavior, successful playback, per-field configuration
-output effects, and other error paths remain untested. The declared text-format
-values were tested only with a plain ASCII sample.
-
+**Bounded result (complete for the local Paul M16 API cases, 2026-09-25).**
+The selected scope remains the local Paul M16 APIs. Runtime captures cover
+declared `VT_TextToFile_ENG` selectors 0–5 and 7–9, unsupported selector 6,
+out-of-range selector 10, selected errors, all declared information requests,
+configuration boundaries, and the four synchronous buffer formats. A
+289,636-byte long-text probe recovers flag-0 start, flag-1 chunk drain, flag-2
+cancellation, done, busy, and no-active-state returns. Its five chunks
+byte-match selector-0 file output; file → buffer → file calls in one loaded
+process return identical raw bytes before and after the stream. This recovers
+the stateful chunk API on thread ID 0, but does not demonstrate a background
+worker or nonzero-thread support. A guide-defined `<vtml_sub>` alias case
+produces its expected expansion for text-format values 0, 4, 6, and 8, with a
+distinct child-only control. Playback returns success and pause/restart calls
+return with a WinMM handle when routed through an ALSA null sink; no audible
+output is established. Configuration setters clamp to pitch 50–200, speed
+50–400, volume 0–500, and sentence/comma pause 0–65,535. Pitch, speed, and
+volume boundaries change WAVE bytes for the fixed sample; tested pause
+boundaries do not. After database unload, file, buffer, and playback calls
+return their declared database-not-loaded errors. See the [Lead 6 API
+report](lead6-file-api-behavior-2026-09-25.md) and Stage 16 evidence. Other
+markup tags, malformed markup, nonzero thread IDs, actual audible playback,
+unprobed errors and call orders, and broader package behavior remain open;
+the bounded local cases do not establish general compatibility.
 ## Lower-priority leads and scope limits
 
 - **DAT mode 8:** no mode-8 frame occurs in the local Paul corpus. Runtime

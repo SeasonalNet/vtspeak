@@ -1,0 +1,9 @@
+voice	fixture	exit	output_bytes	result
+paul	prose	0	89478	wav
+paul	numbers	0	89716	wav
+paul	address	0	108358	wav
+james	prose	0	97196	wav
+james	numbers	0	110548	wav
+james	address	0	107638	wav
+julie	prose	1	0	failed
+kate	prose	1	0	failed

@@ -1,0 +1,7 @@
+candidate=zero new leading column; preserve legacy 7-byte key then 1-byte attribute
+mapping=[key7][attribute1][groups12] -> [zero1][key7][attribute1][groups12]
+unit-alp.idx: units=905 current_reader_structure=valid
+unit-etc.idx: units=3666 current_reader_structure=valid
+unit-gen.idx: units=179995 current_reader_structure=valid
+unit-gen2.idx: units=98133 current_reader_structure=valid
+unit-num.idx: units=997 current_reader_structure=valid

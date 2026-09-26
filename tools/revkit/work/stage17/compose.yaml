@@ -1,0 +1,11 @@
+services:
+  runtime:
+    volumes:
+      - ../../../../data-common:/work/data-common:ro
+      - ../../../../data-paul:/work/data-paul:ro
+      - ../../../../data-james:/work/data-jame:ro
+      - ../../../../data-julie:/work/data-julie:ro
+      - ../../../../data-julie:/work/data-juli:ro
+      - ../../../../data-kate:/work/data-kate:ro
+      - ../../../../data-bridget:/work/data-bridget:ro
+      - ../stage17:/probe

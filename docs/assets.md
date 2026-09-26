@@ -13,6 +13,12 @@ The asset directories contain local samples supplied for analysis. Their source 
 | `voicetext_james.exe` | `vt_jam.dll` |
 | `voicetext_kate.exe` | `vt_kat.dll` |
 
+The extracted James package under Downloads also contains
+`vt_eng_james16.dll`. Lead 5 uses it as a package-specific engine cross-check;
+it is mounted read-only and is not copied into this repository. See the
+[package comparison](reverse-engineering/lead5-voice-package-runtime-2026-09-25.md)
+for the result and the separate legacy-candidate limits.
+
 The directory also contains Cygwin runtime DLLs, command-line utilities, SoX, and `nsh2.wav`. The role and provenance of every auxiliary file have not yet been established. Static comparison so far found matching `.text` bytes across the four voice DLLs; their voice data and small data-section differences still need separate analysis.
 
 ## Voice and shared data

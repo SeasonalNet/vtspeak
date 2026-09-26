@@ -1,0 +1,18 @@
+variant=append opaque source bytes after converted tree payload
+duration/caff.tree2: parsed=1125 suffix=0
+duration/capp.tree2: parsed=5237 suffix=0
+duration/cfri.tree2: parsed=4941 suffix=0
+duration/cnas.tree2: parsed=7573 suffix=0
+duration/cstop.tree2: parsed=8275 suffix=0
+duration/vdi.tree2: parsed=3965 suffix=0
+duration/vlong.tree2: parsed=7233 suffix=0
+duration/vsch.tree2: parsed=2601 suffix=0
+duration/vshort.tree2: parsed=13627 suffix=0
+pitch/bf.tree2: parsed=9 suffix=803
+pitch/bt.tree2: parsed=1461 suffix=0
+pitch/nbf.tree2: parsed=9 suffix=19931
+pitch/nbt.tree2: parsed=3659 suffix=0
+pitch/qbf.tree2: parsed=9 suffix=245
+pitch/qbt.tree2: parsed=281 suffix=0
+pitch/sbf.tree2: parsed=9 suffix=3691
+pitch/sbt.tree2: parsed=153 suffix=0

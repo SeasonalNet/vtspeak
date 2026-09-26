@@ -1,0 +1,7 @@
+services:
+  runtime:
+    volumes:
+      - ../../../../data-common:/work/data-common:ro
+      - ../../../../data-kate:/work/data-kate:ro
+      - ../stage18/vt_kat-tree2-probe.dll:/samples/vt_kat.dll:ro
+      - ../stage18:/probe

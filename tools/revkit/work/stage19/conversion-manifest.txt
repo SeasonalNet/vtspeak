@@ -1,0 +1,19 @@
+format=tree2 recursive to tree3 indexed bridge
+source_files=17
+duration/caff.tree2 source=1125 converted=714 parsed=1125 trailing=0 nodes=75
+duration/capp.tree2 source=5237 converted=3395 parsed=5237 trailing=0 nodes=409
+duration/cfri.tree2 source=4941 converted=3239 parsed=4941 trailing=0 nodes=301
+duration/cnas.tree2 source=7573 converted=4914 parsed=7573 trailing=0 nodes=563
+duration/cstop.tree2 source=8275 converted=5227 parsed=8275 trailing=0 nodes=617
+duration/vdi.tree2 source=3965 converted=2510 parsed=3965 trailing=0 nodes=259
+duration/vlong.tree2 source=7233 converted=4574 parsed=7233 trailing=0 nodes=531
+duration/vsch.tree2 source=2601 converted=1689 parsed=2601 trailing=0 nodes=173
+duration/vshort.tree2 source=13627 converted=8774 parsed=13627 trailing=0 nodes=999
+pitch/bf.tree2 source=812 converted=9 parsed=9 trailing=803 nodes=1
+pitch/bt.tree2 source=1461 converted=903 parsed=1461 trailing=0 nodes=117
+pitch/nbf.tree2 source=19940 converted=9 parsed=9 trailing=19931 nodes=1
+pitch/nbt.tree2 source=3659 converted=2207 parsed=3659 trailing=0 nodes=285
+pitch/qbf.tree2 source=254 converted=9 parsed=9 trailing=245 nodes=1
+pitch/qbt.tree2 source=281 converted=182 parsed=281 trailing=0 nodes=23
+pitch/sbf.tree2 source=3700 converted=9 parsed=9 trailing=3691 nodes=1
+pitch/sbt.tree2 source=153 converted=82 parsed=153 trailing=0 nodes=11

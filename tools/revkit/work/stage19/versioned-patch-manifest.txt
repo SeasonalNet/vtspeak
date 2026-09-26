@@ -1,0 +1,6 @@
+source_sha256=f93c60a7ab0baa3f4ec2271cdc46997f48982143f49088349c32ff1755388461
+patched_copy=vt_kat-tree2-versioned.dll
+patched_sha256=9f006d1474cc912535699bd94c04d5d7649a4489431059fa8b816ebcd10421b5
+index_guard=unchanged; selects versioned reader for converted ver.2013 indexes
+file_offset=0x191f 33->32 generated tree suffix 3 to 2
+file_offset=0x7c8f0 33->32 voice tree directory tree3 to tree2

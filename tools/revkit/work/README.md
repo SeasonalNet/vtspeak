@@ -13,7 +13,7 @@ documented results.
 - `scripts/` contains analysis helpers used by the research workflow.
 - `stage2-copy/` contains small DAT payload excerpts, their captured PCM
   outputs, and the GDB capture scripts/logs used for decoder comparisons.
-- `stage3/` through `stage16/` contain the controlled text inputs, trace
+- `stage3/` through `stage19/` contain the controlled text inputs, trace
   scripts/logs, PCM buffers, WAVE outputs, and comparison evidence cited in the
   stage findings. `stage5/probes/stage6/` holds the captured tree lookups used
   by the checked-in comparison helper.
@@ -193,6 +193,23 @@ Stage 16 probes file and buffer synthesis modes, selected errors,
 and the synchronous buffer length contract. See [`stage16/README.md`](stage16/README.md)
 for the runners and [Lead 6 results](../../../docs/reverse-engineering/lead6-file-api-behavior-2026-09-25.md)
 for the captured behavior and limits.
+
+Stage 17 compares the supplied Paul, James, Julie, and Kate host/DLL pairs
+against their local model packages, with read-only mounts and restored Stage 5
+fixtures. See [`stage17/README.md`](stage17/README.md) and the
+[Lead 5 compatibility report](../../../docs/reverse-engineering/lead5-voice-package-runtime-2026-09-25.md).
+It also records the three-fixture James package-DLL cross-check and its PCM
+comparison against the supplied James DLL.
+
+Stage 18 records an ignored, two-byte patch copy of the Kate DLL. Its isolated
+runtime probe shows that changing the shared tree suffix also redirects common
+dictionary trees; it does not load the old Kate voice trees. See
+[`stage18/README.md`](stage18/README.md) for the patch offsets and result.
+
+Stage 19 records disposable Kate tree and index adapters. The runtime advanced
+through all five unit indexes and DAT/UPM banks but timed out before producing
+validated Kate PCM. See [`stage19/README.md`](stage19/README.md) for the
+conversion checks, guarded DLL copies, and unresolved adapter boundary.
 
 The helper in
 `tools/revkit/scripts/compare_tree3_runtime.py` rechecks Stage 5 lookup logs
