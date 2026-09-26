@@ -90,6 +90,31 @@ Each node is a compact variable-length record. The reader expands it into a 16-b
 
 After the nodes comes a little-endian 16-bit output table of `output_width * (node_count + 1)` entries. `FUN_10001670` selects the first value in the reached row; `FUN_100016a0` copies the full row. The loader checks that the sum of node-list lengths matches the 32-bit aggregate count. For example, `duration/caff.tree3` starts `30 00 01 b2 00 00 00`: 48 nodes, output width 1, and 178 total list entries. Its first node starts at offset 7 with feature 2, operation `D`, list length 14; the first two list entries are 1 and 2. These conclusions are directly supported by both the reader and sample bytes. Caller paths establish duration and pitch-related roles; the exact meaning and unit of every numeric output remain unresolved.
 
+### Legacy `tree2` decision trees
+
+The 2006 `vt_eng.dll` extracted from Kate's MSI has a separate recursive reader:
+code at `0x100015d0` reads a node and `0x10001740` recursively loads two
+children when the second trailer byte is nonzero. The evaluator path at
+`0x100019b0` uses the feature at node offset `+0x10`, operation at `+0x11`,
+threshold at `+0x0e`, list pointer at `+0x08`, list count at `+0x12`, and leaf
+output at `+0x0c` in its in-memory node. Compared with the serialized sample,
+this supports a variable-length record with a one-byte feature selector, one
+ASCII operation (`C` or `D`), signed 16-bit little-endian threshold and output,
+one-byte list count, that many signed 16-bit little-endian values, and two
+trailer bytes. The observed recursive nodes end in `01 01`; leaves end in
+`00 00`. The first trailer byte is retained as opaque data.
+
+For example, Julie's `ttsdata/tree/duration/caff.tree2` begins at offset 0 with
+`02 44 00 00 40 06 09`: feature 2, operation `D`, zero threshold, output
+`0x0640`, and nine list values. Its values occupy bytes 7–24 and the trailer is
+at bytes 25–26. `tools/revkit/scripts/tree2.py` parses these recursive records,
+reports any unconsumed file suffix, and optionally evaluates a supplied signed
+feature vector. The Julie and Kate checks parsed all 34 files: 26 consume the
+file exactly; the `bf`, `nbf`, `qbf`, and `sbf` pitch files in each voice have a
+9-byte parsed root leaf followed by an opaque suffix. The suffix contents and
+their role are unresolved, so these eight files are not claimed as fully
+recovered formats.
+
 ### `mc_idx_tbl/unit-*.idx`
 
 The index reader accepts two layouts. `FUN_10019e80` reads a one-byte length followed by that many bytes. When the payload begins with `ver.` and matches the expected version marker, it records a versioned-header flag and the header extent; otherwise it selects the older layout. All four Paul indexes use the versioned `ver.2013\0VoiceText-Eng\0` header. Each has one bank-name entry (`merged-gen`, `merged-num`, `merged-etc`, or `merged-alp`), a zero tag byte, a 32-bit unit count, and a 16-bit per-unit block stride of 19.
@@ -103,7 +128,19 @@ For these files, the complete header and table occupy 45 bytes. `FUN_10019940` t
 | `unit-etc.idx` | 115,723 | 4,628,965 bytes |
 | `unit-alp.idx` | 119 | 4,805 bytes |
 
-The field names above describe widths and order only. Use sites reveal more about the 7-byte unit signature: `FUN_10016ea0` maps selected bytes through lookup tables and derives a 5-byte class key; `FUN_1001a5a0` sorts/deduplicates these keys and creates unit-to-class mappings. `FUN_10016ef0` expands a 5-byte class key into one of two 10-byte feature views. `FUN_10023a70` scores key differences using weight tables. The algorithm therefore uses these fields as context-matching features, although the individual phonetic and attribute meanings are not fully identified. The older layout remains only structurally understood through `FUN_100197d0`.
+The field names above describe widths and order only. Use sites reveal more about the 7-byte unit signature: `FUN_10016ea0` maps selected bytes through lookup tables and derives a 5-byte class key; `FUN_1001a5a0` sorts/deduplicates these keys and creates unit-to-class mappings. `FUN_10016ef0` expands a 5-byte class key into one of two 10-byte feature views. `FUN_10023a70` scores key differences using weight tables. The algorithm therefore uses these fields as context-matching features, although the individual phonetic and attribute meanings are not fully identified.
+
+The older `ver.2005` and `ver.2009` indexes have the same one-byte-length,
+NUL-separated version/producer header shape and one bank entry, but their
+per-unit records are 19 bytes followed by 20 feature-column bytes per unit.
+This was checked against all four Julie (`ver.2009`, `VoiceText-Eng`), four
+Bridget (`ver.2005`, `VoiceText-Bre`), and five Kate (`ver.2005`,
+`VoiceText-Eng`) indexes. The old package DLL's index path at `0x10012960`
+handles this legacy header. `tools/revkit/scripts/inspect_legacy_unit_idx.py`
+checks the complete index extents, every DAT/UPM span's bounds and ordering,
+and decoded sample counts for the first, middle, and last unit in each bank.
+Those checks validate structural fit and sampled payload consistency; they do
+not establish whole-voice synthesis compatibility.
 
 ### Paired `.dat` and `.upm` unit data
 
