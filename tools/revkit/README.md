@@ -86,6 +86,23 @@ python3 tools/revkit/scripts/tree3.py \
 The evaluator is an analysis aid for the observed 2013 package. It does not
 assign phonetic names or physical units to feature slots or output values.
 
+## Inspect legacy Julie, Bridget, and Kate data
+
+The legacy index inspector checks `ver.2005` and `ver.2009` indexes, matching
+DAT/UPM span extents, and first/middle/last decoded sample counts for each
+bank. The `tree2` parser reports the recursively parsed prefix and any opaque
+suffix; use `--strict-eof` when a complete file parse is required. For example:
+
+```sh
+python3 tools/revkit/scripts/inspect_legacy_unit_idx.py --root data-julie/M16
+python3 tools/revkit/scripts/tree2.py \
+  data-julie/M16/ttsdata/tree/duration/*.tree2 \
+  data-julie/M16/ttsdata/tree/pitch/*.tree2
+```
+
+The legacy format evidence and current coverage limits are documented in
+[`voice-engine-and-model-formats.md`](../../docs/reverse-engineering/voice-engine-and-model-formats.md#legacy-tree2-decision-trees).
+
 ## Reproduce the local DAT corpus comparison
 
 The PE32 decoder probe is built in a separate MinGW image, then run in the

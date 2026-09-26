@@ -38,11 +38,11 @@ unit records are 19 bytes with 20 feature-column bytes, and their index headers
 identify the 2009 English and 2005 `VoiceText-Bre` formats, respectively. A
 read-only inventory checked all 1,509,574 index records and DAT/UPM spans; first,
 middle, and last units in each bank reached a DAT terminator and matched their
-UPM sample counts. Bridget's CAB labels its resources `Bre` (`dict-bre` and
-`vt_bre_bridget16.dll`); the CAB did not establish an `en-CA` locale. Julie's
-and Kate's `tree2` files are not accepted by the repository's `tree3` parser
-and need a dedicated `tree2` format check. These checks do not establish
-whole-voice synthesis compatibility.
+UPM sample counts. The `tree2` parser now reads the recursive tree prefix in
+Julie and Kate's older trees; eight pitch files have additional opaque suffixes
+whose format remains unresolved. Bridget's CAB labels its resources `Bre`
+(`dict-bre` and `vt_bre_bridget16.dll`); the CAB did not establish an `en-CA`
+locale. These checks do not establish whole-voice synthesis compatibility.
 
 - `include/` contains `vt_eng.h` and `slicense_eng.h`, headers distributed with the sample package.
 
