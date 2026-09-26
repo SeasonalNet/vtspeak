@@ -1,0 +1,7 @@
+services:
+  runtime:
+    volumes:
+      - ../stage19/data-kate-copy:/work/data-kate:ro
+      - ../stage19/data-common/dict-eng:/work/data-common/dict-eng:ro
+      - ../stage19/vt_kat-tree2-compat.dll:/samples/vt_kat.dll:ro
+      - ../stage19:/probe

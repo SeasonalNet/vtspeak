@@ -1,0 +1,7 @@
+variant=invert-cnas-equality-address
+source=duration/cnas.tree2
+target_nodes=39,111,221
+selection_basis=address-fixture runtime trace showed feature value equal to threshold
+node_count=281
+source_sha256=71dc5ad2d395db6c46bc003821673f88ddf43a5609bf2d09d6a968d2b6253e4f
+variant_sha256=1f4fa42a15215852f01a15514e2a1604a83912eb845ad882b9f15ba0d9c1125c

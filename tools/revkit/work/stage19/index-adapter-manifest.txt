@@ -1,0 +1,9 @@
+source=tools/revkit/work/stage19/data-kate-copy/M16/mc_idx_tbl
+adapter=ver.2005 header to ver.2013; insert one zero-filled column
+insertion=after the legacy 1-byte and 7-byte column groups
+layout=column-major; check all three 10-bit cepdist row codes per unit
+unit-alp.idx: units=905 bytes=35340->36245 current_reader_structure=valid all_metric_codes_in_0_1023
+unit-etc.idx: units=3666 bytes=143019->146685 current_reader_structure=valid all_metric_codes_in_0_1023
+unit-gen.idx: units=179995 bytes=7019850->7199845 current_reader_structure=valid all_metric_codes_in_0_1023
+unit-gen2.idx: units=98133 bytes=3827233->3925366 current_reader_structure=valid all_metric_codes_in_0_1023
+unit-num.idx: units=997 bytes=38928->39925 current_reader_structure=valid all_metric_codes_in_0_1023

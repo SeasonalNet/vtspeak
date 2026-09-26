@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage19/index-adapter-signature-last-transfer:/work/data-kate/M16/mc_idx_tbl:ro

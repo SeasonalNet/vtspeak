@@ -1,0 +1,8 @@
+variant=attr-a-copy
+hypothesis=copy the preserved one-byte source column into the inserted column
+all source bytes, including the 7-byte signature and three feature groups, otherwise preserved
+unit-alp.idx: units=905 attr_b_sha256=a0d5e768f703c332e9c7e52584d6e262f490615e66623bf3910acd8ab17771dc
+unit-etc.idx: units=3666 attr_b_sha256=52318c8fb7be3090a8f161252bf7c48fa4e4bcd17e5f201a3ca8d13081e079d5
+unit-gen.idx: units=179995 attr_b_sha256=bade9d8693a8fb3f544657d4f213aefeb59479a53643c9b9e44a80af949c5548
+unit-gen2.idx: units=98133 attr_b_sha256=9675e314463d2d222de4ec32b7fe100958941a1ff8b4f5f1a04ca20ad262081f
+unit-num.idx: units=997 attr_b_sha256=6418268f98c5af1b1546abbaf804ead2e50773df179d9551fcc01321d4de43a3

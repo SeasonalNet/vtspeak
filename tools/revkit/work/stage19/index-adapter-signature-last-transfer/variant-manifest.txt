@@ -1,0 +1,8 @@
+variant=signature-last-transfer
+hypothesis=move the last preserved signature byte into the inserted column and zero-pad its signature slot
+all source bytes, including the 7-byte signature and three feature groups, otherwise preserved
+unit-alp.idx: units=905 attr_b_sha256=07919c9a0df2ae84918a214f50715a4b286dadafedb9c823539a4a342719e000
+unit-etc.idx: units=3666 attr_b_sha256=e2d86dca24ccd35d8bfb5e34fbf07786c5fcfbb5650ebec48d5da8e33b1e684b
+unit-gen.idx: units=179995 attr_b_sha256=ddb4d2bcf2a1cce7b343487c2631bfc4b6e8eab3acd240448e445c4a79e78e0f
+unit-gen2.idx: units=98133 attr_b_sha256=29dade344284c13670f957c3ccde3043ab05cf58cd90fe613a6550c8c7c2fdbc
+unit-num.idx: units=997 attr_b_sha256=7df0f26e8111102f4849dae6223d5feee7ed8231e14f3d9475d2c678bf4f5604

@@ -1,0 +1,31 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x10027af0
+commands
+  silent
+  disable 1
+  printf "UNIT_HISTORY before_load prior=%u load_flag=%u requested=@MODE@\n", *(unsigned char *)0x100a045d, *(unsigned char *)0x100a747c
+  call ((void (*)(unsigned char))0x100283f0)(@MODE@)
+  printf "UNIT_HISTORY before_load stored=%u load_flag=%u\n", *(unsigned char *)0x100a045d, *(unsigned char *)0x100a747c
+  continue
+end
+
+break *0x1001da50
+commands
+  silent
+  set $return_address = *(unsigned int *)$esp
+  printf "TEXT_TO_FILE_ENTRY format=%d speaker=%d text=%#x path=%#x\n", *(int *)($esp + 4), *(int *)($esp + 16), *(unsigned int *)($esp + 8), *(unsigned int *)($esp + 12)
+  disable 2
+  tbreak *$return_address
+  commands
+    silent
+    printf "TEXT_TO_FILE_RETURN=%d\n", (short)$eax
+    continue
+  end
+  continue
+end
+
+continue

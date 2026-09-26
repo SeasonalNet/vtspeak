@@ -1,0 +1,44 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+INDEX_ATTR unit=237516 attr_a=1 category_a=0 attr_b=29 target_b=8 pair_cost=23.8378
+INDEX_ATTR unit=200101 attr_a=1 category_a=0 attr_b=39 target_b=8 pair_cost=40.8936
+INDEX_ATTR unit=195611 attr_a=1 category_a=0 attr_b=21 target_b=8 pair_cost=11.6552
+INDEX_ATTR unit=194846 attr_a=1 category_a=0 attr_b=51 target_b=8 pair_cost=62.678
+INDEX_ATTR unit=146922 attr_a=0 category_a=0 attr_b=10 target_b=8 pair_cost=0.444444
+INDEX_ATTR unit=145562 attr_a=0 category_a=0 attr_b=9 target_b=8 pair_cost=0.117647
+INDEX_ATTR unit=139147 attr_a=0 category_a=0 attr_b=39 target_b=8 pair_cost=40.8936
+INDEX_ATTR unit=138542 attr_a=0 category_a=0 attr_b=36 target_b=8 pair_cost=35.6364
+INDEX_ATTR unit=136967 attr_a=0 category_a=0 attr_b=26 target_b=8 pair_cost=19.0588
+INDEX_ATTR unit=136487 attr_a=0 category_a=0 attr_b=16 target_b=8 pair_cost=5.33333
+INDEX_ATTR unit=132152 attr_a=0 category_a=0 attr_b=39 target_b=8 pair_cost=40.8936
+INDEX_ATTR unit=125017 attr_a=0 category_a=0 attr_b=17 target_b=8 pair_cost=6.48
+INDEX_ATTR unit=119087 attr_a=0 category_a=0 attr_b=12 target_b=8 pair_cost=1.6
+INDEX_ATTR unit=117182 attr_a=0 category_a=0 attr_b=22 target_b=8 pair_cost=13.0667
+INDEX_ATTR unit=113397 attr_a=0 category_a=0 attr_b=20 target_b=8 pair_cost=10.2857
+INDEX_ATTR unit=107337 attr_a=0 category_a=0 attr_b=15 target_b=8 pair_cost=4.26087
+INDEX_ATTR unit=103627 attr_a=0 category_a=0 attr_b=42 target_b=8 pair_cost=46.24
+INDEX_ATTR unit=103192 attr_a=0 category_a=0 attr_b=50 target_b=8 pair_cost=60.8276
+INDEX_ATTR unit=102817 attr_a=0 category_a=0 attr_b=35 target_b=8 pair_cost=33.907
+INDEX_ATTR unit=204691 attr_a=1 category_a=0 attr_b=13 target_b=8 pair_cost=2.38095
+INDEX_ATTR unit=205941 attr_a=1 category_a=0 attr_b=12 target_b=8 pair_cost=1.6
+INDEX_ATTR unit=280310 attr_a=3 category_a=100 attr_b=132 target_b=8 pair_cost=219.657
+INDEX_ATTR unit=261591 attr_a=1 category_a=0 attr_b=23 target_b=8 pair_cost=14.5161
+INDEX_ATTR unit=261581 attr_a=1 category_a=0 attr_b=30 target_b=8 pair_cost=25.4737
+INDEX_ATTR unit=258736 attr_a=1 category_a=0 attr_b=42 target_b=8 pair_cost=46.24
+INDEX_ATTR unit=251566 attr_a=1 category_a=0 attr_b=11 target_b=8 pair_cost=0.947368
+INDEX_ATTR unit=246736 attr_a=1 category_a=0 attr_b=16 target_b=8 pair_cost=5.33333
+INDEX_ATTR unit=244636 attr_a=1 category_a=0 attr_b=35 target_b=8 pair_cost=33.907
+INDEX_ATTR unit=241106 attr_a=1 category_a=0 attr_b=13 target_b=8 pair_cost=2.38095
+INDEX_ATTR unit=234111 attr_a=1 category_a=0 attr_b=13 target_b=8 pair_cost=2.38095
+INDEX_ATTR unit=233681 attr_a=1 category_a=0 attr_b=26 target_b=8 pair_cost=19.0588
+INDEX_ATTR unit=228806 attr_a=1 category_a=0 attr_b=20 target_b=8 pair_cost=10.2857
+INDEX_ATTR unit=225101 attr_a=1 category_a=0 attr_b=36 target_b=8 pair_cost=35.6364
+INDEX_ATTR unit=219551 attr_a=1 category_a=0 attr_b=20 target_b=8 pair_cost=10.2857
+INDEX_ATTR unit=216086 attr_a=1 category_a=0 attr_b=23 target_b=8 pair_cost=14.5161
+INDEX_ATTR unit=209201 attr_a=1 category_a=0 attr_b=29 target_b=8 pair_cost=23.8378
+INDEX_ATTR unit=208701 attr_a=1 category_a=0 attr_b=10 target_b=8 pair_cost=0.444444
+INDEX_ATTR unit=207396 attr_a=1 category_a=0 attr_b=17 target_b=8 pair_cost=6.48
+INDEX_ATTR unit=102762 attr_a=0 category_a=0 attr_b=10 target_b=8 pair_cost=0.444444
+INDEX_ATTR unit=100772 attr_a=0 category_a=0 attr_b=24 target_b=8 pair_cost=16
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

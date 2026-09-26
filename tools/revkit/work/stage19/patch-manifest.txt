@@ -1,0 +1,9 @@
+source=binary/vt_kat.dll
+source_sha256=f93c60a7ab0baa3f4ec2271cdc46997f48982143f49088349c32ff1755388461
+patched_copy=vt_kat-tree2-compat.dll
+patched_sha256=67cbadf373c0364051f7ee1589a7c22332ef2e4ee85fcf7919508c70d163e92d
+patches=
+  file_offset=0x191f 33->32 FUN_10001900 generated suffix 3 to 2
+  file_offset=0x7c8f0 33->32 voice tree directory tree3 to tree2
+  file_offset=0x7c59c 76->78 version prefix guard selects legacy unit-index reader
+common_tree3_as_tree2_aliases=atmt.tree2,engbi.tree2,poly.tree2,sbd.tree2

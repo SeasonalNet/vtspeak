@@ -1,0 +1,8 @@
+variant=constant-8
+hypothesis=fill the inserted column with 8, the observed target value in the trace
+all source bytes, including the 7-byte signature and three feature groups, otherwise preserved
+unit-alp.idx: units=905 attr_b_sha256=8ee6bcf5527241300565ad646b021acfe52fb73731fa1fe0dfdf81002b0089c5
+unit-etc.idx: units=3666 attr_b_sha256=725a8e976a59fec179bea1f1f1a9b5bd3d78454dbcf96e09144428568cfe7f2d
+unit-gen.idx: units=179995 attr_b_sha256=8655c00d05eddded120ca63b2846edbd9f0c0f4511ddcf989a83271b8a75a0a8
+unit-gen2.idx: units=98133 attr_b_sha256=62b57d474f286af93d0f1af4aca348c41b6935dda3ac046619f62e8fbd3790ff
+unit-num.idx: units=997 attr_b_sha256=f5ee04538cd5ca87fcfdce98f5c5bf3087d5586353bf8425738709d559cc9ce3

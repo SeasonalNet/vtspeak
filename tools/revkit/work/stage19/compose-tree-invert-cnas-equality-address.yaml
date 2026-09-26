@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage19/tree-branch-variants/invert-cnas-equality-address:/work/data-kate/M16/ttsdata/tree2:ro
