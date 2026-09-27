@@ -138,7 +138,7 @@ original-engine control, as documented below.
 
 ## Controlled Stage 19 resource swaps
 
-I reran the same Stage 17 `prose`, `numbers`, and `address` fixtures with the
+We reran the same Stage 17 `prose`, `numbers`, and `address` fixtures with the
 same supplied standard DLL, patched tree2 adapter, Kate M16 data, TPP/text
 tables, and converted common-tree aliases. A current-data control reproduced
 the original Stage 19 WAVE hashes exactly. The isolated MSI-embedded variant
@@ -162,7 +162,7 @@ before drawing that conclusion. Outputs are retained locally under
 `tools/revkit/work/corpus-parity/runtime-current-control-*.wav` and
 `runtime-old-embedded-*.wav`.
 
-I then replaced only `exceptdict` with the MSI copy, retaining the current
+We then replaced only `exceptdict` with the MSI copy, retaining the current
 embedded family. Its three WAVE hashes matched the current control byte for
 byte. This exception-table swap has no audible or measurable effect on these
 fixtures; it does not rule out an effect for input that reaches one of its
@@ -372,7 +372,7 @@ label. These counts account for every indexed record in both corpora and all
 
 ### Standard-engine phone-ID remap experiment
 
-I made a disposable copy of the MSI embedded family and changed only payload
+We made a disposable copy of the MSI embedded family and changed only payload
 phone IDs with a unique same-symbol mapping. The dictionary file length and
 all resource offsets were preserved; hash parameters, index files, key bytes,
 other common resources, Kate voice files, and the patched standard engine were
@@ -411,7 +411,7 @@ a useful future runtime control, rather than evidence that Stage 19 used it.
 
 ## Controlled explicit-phone selection trace
 
-To remove dictionary lookup from the experiment, I sent single visible words
+To remove dictionary lookup from the experiment, We sent single visible words
 through the standard engine with `<vtml_phoneme alphabet="x-cmu">` overrides
 and traced the final unit ranking. The disposable inputs and GDB captures are
 under `tools/revkit/work/corpus-parity/phone-boundary-probe/`.
@@ -425,9 +425,9 @@ zero fields), returned the same ranked units, and wrote the same WAVE
 this word, the dictionary-family difference is already normalized before unit
 selection and does not explain the bad sound.
 
-I then forced `P AH0`, `T AH0`, `B AH0`, and `F AH0` on the same visible word. The
+We then forced `P AH0`, `T AH0`, `B AH0`, and `F AH0` on the same visible word. The
 forced-phone path did not enter the common-dictionary key-ranking breakpoint;
-it proceeded into final unit ranking. I mapped the returned flattened unit IDs
+it proceeded into final unit ranking. We mapped the returned flattened unit IDs
 back to the original Kate index banks in `dblist.idx` order and read their
 seven-byte signatures. The phone byte in signature position 2 is consistent
 with the requested consonant for every one of the first ten returned units for
@@ -472,7 +472,7 @@ comparison below narrows which waveform spans need to be assessed. Whether the
 selected spans themselves are poor examples or later timing and
 coarticulation alter their percept remains unresolved.
 
-I decoded representative selected vowel units through the already
+We decoded representative selected vowel units through the already
 parity-checked DAT decoder and saved standalone WAVs. T AH0 unit 53417 decodes
 to 1,218 samples; P AH0 unit 248899 to 2,274; T IH0 unit 210306 to 2,356; and
 P IH0 unit 271868 to 516. These files are complete DAT records, but the
@@ -502,7 +502,7 @@ second span. This directly verifies the legacy index-to-DAT mapping for these
 selected units; it does not prove that the selector chose linguistically or
 acoustically appropriate records.
 
-I also saved unadjusted concatenations of the exact mode-1 and mode-2 sample
+We also saved unadjusted concatenations of the exact mode-1 and mode-2 sample
 spans for each control as `timeline-selected-sides-{pah0,tah0,pih0,tih0}.wav`
 under the ignored `tools/revkit/work/corpus-parity/phone-boundary-probe/`
 directory. `timeline-selected-sides.tsv` records the selected global ID,
@@ -519,7 +519,7 @@ hashes. The IH0 rows above use the earlier valid captures
 `trace-selection-valid-pih0.log` and `trace-selection-valid-tih0.log`, whose
 WAVEs are 6,366 and 7,690 bytes. A separate rerun of both IH0 inputs with the
 new generalized runner produced the same 22,084-byte output for both and
-selected unrelated IDs; I excluded those two reruns from the table. Every
+selected unrelated IDs; We excluded those two reruns from the table. Every
 fresh run's Stage 5 input and output fixture hashes matched its saved
 pre-run hashes after cleanup.
 
@@ -553,7 +553,7 @@ exact phone-symbol mapping is therefore not the main failure in this control;
 the candidate's context/category code is being treated as incompatible by the
 current scorer.
 
-I also scanned all 283,696 adapted Kate signatures. Of 2,089 rows whose third
+We also scanned all 283,696 adapted Kate signatures. Of 2,089 rows whose third
 byte is P (`35`), only 25 have byte offset 1 equal to the target's `5a`; 32
 have byte offset 3 equal to AH0 (`07`), and just three have both. None of
 those three rows is among the ten units returned for this forced P control.
@@ -607,7 +607,7 @@ matched MSI's 315-byte record does not.
 
 The 2006 MSI DLL does not export the peer team's 2013
 `VT_CheckLicense_ENG`; its `VT_GetTTSInfo_ENG` selector 1 and load path call
-internal `FUN_10022430` instead. I made a hash-guarded copy of the MSI DLL and
+internal `FUN_10022430` instead. We made a hash-guarded copy of the MSI DLL and
 left the extracted DLL and Kate resources byte-identical. The copy changes
 one branch:
 
