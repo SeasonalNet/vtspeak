@@ -62,8 +62,11 @@ layout: five banks totaling 283,696 units, 19-byte records, and 20 feature
 bytes per unit. All indexed DAT/UPM spans are in bounds; first, middle, and last
 units in each bank reached a DAT terminator and matched their UPM sample counts.
 This is a structural sample check, not a full-corpus decode or proof that the
-Kate DLL can synthesize from this model. The MSI also carried common dictionary
-and tree resources; those were not copied into this voice-specific directory.
+Kate DLL can synthesize from this model. The MSI also carried 2006 common
+dictionary and tree resources. Its full file tree is extracted under the
+ignored `tools/revkit/work/corpus-parity/kate-msi/` directory; the comparison
+and compatibility implications are documented in the [Lead 5 Kate MSI
+addendum](reverse-engineering/lead5-kate-common-resource-comparison-2026-09-26.md).
 
 ## Git handling
 

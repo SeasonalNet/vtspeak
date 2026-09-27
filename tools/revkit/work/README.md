@@ -206,10 +206,11 @@ runtime probe shows that changing the shared tree suffix also redirects common
 dictionary trees; it does not load the old Kate voice trees. See
 [`stage18/README.md`](stage18/README.md) for the patch offsets and result.
 
-Stage 19 records disposable Kate tree and index adapters. The runtime advanced
-through all five unit indexes and DAT/UPM banks but timed out before producing
-validated Kate PCM. See [`stage19/README.md`](stage19/README.md) for the
-conversion checks, guarded DLL copies, and unresolved adapter boundary.
+Stage 19 records disposable Kate tree and index adapters, three validated but
+unintelligible synthesis runs, branch and index-feature experiments, and
+exhaustive decoder-output parity for all 283,696 Kate DAT units. See
+[`stage19/README.md`](stage19/README.md) for the captures, reproduction
+commands, and unresolved tree/index semantic boundary.
 
 The helper in
 `tools/revkit/scripts/compare_tree3_runtime.py` rechecks Stage 5 lookup logs

@@ -1,0 +1,12 @@
+Matched unpatched control:
+  ../data-common/verify/verification.txt
+  resolves to /work/data-common/verify/verification.txt
+  read result: SUCCESS (315 bytes)
+
+Matched one-byte patched control:
+  ../data-common/verify/verification.txt
+  resolves to /work/data-common/verify/verification.txt
+  read result: SUCCESS (315 bytes)
+
+Earlier banner-bearing control:
+  same relative path resolved to the newer 468-byte workspace record.

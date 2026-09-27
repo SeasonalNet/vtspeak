@@ -15,6 +15,7 @@
 - [Abbreviation context contrasts (2026-09-24)](reverse-engineering/abbreviation-context-contrasts-2026-09-24.md)
 - [Lead 4 abbreviation context results (2026-09-25)](reverse-engineering/lead4-abbreviation-context-results-2026-09-25.md)
 - [Lead 5 voice and package compatibility (2026-09-25)](reverse-engineering/lead5-voice-package-runtime-2026-09-25.md)
+- [Lead 5 Kate MSI common-resource comparison (2026-09-26)](reverse-engineering/lead5-kate-common-resource-comparison-2026-09-26.md)
 - [Lead 6 API behavior: file, buffer, configuration, playback, and information calls (2026-09-25)](reverse-engineering/lead6-file-api-behavior-2026-09-25.md)
 - [Lead 6 API coverage map: all named exports and evidence status (2026-09-25)](reverse-engineering/lead6-api-coverage-map-2026-09-25.md)
 - [Compact phone ID and CMU byte codebook](reverse-engineering/phone-symbol-codebook.md)
