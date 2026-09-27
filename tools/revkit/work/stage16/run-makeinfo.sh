@@ -16,8 +16,9 @@ if [ -e "$probe/lead6-makeinfo-plead6.bin.dtt" ] || [ -e "$probe/lead6-makeinfo-
   echo "refusing to overwrite existing MakeInfo output" >&2
   exit 1
 fi
-cp "$work/input1.txt" "$probe/makeinfo-original-input1.txt"
-cp "$work/output.wav" "$probe/makeinfo-original-output.wav"
+# These checked-in files are the fixed restore baseline. Do not snapshot the
+# mounted Stage 5 paths here: the runtime container may have initialized them
+# with a probe fixture before this script starts.
 trap restore EXIT
 cp "$probe/input.txt" "$work/input1.txt"
 Xvfb :99 -screen 0 1280x1024x24 -nolisten tcp > "$probe/xvfb-makeinfo.log" 2>&1 &

@@ -1,0 +1,55 @@
+┌──────────┬───────────────────────────────────────────────────────────────────┐
+│ md5      │ 2a8f7bd4c5e0fd7e417d0d139e7aa206                                  │
+│ sha1     │ 93da9978a1bf2d67b5704ba2f9405c5e7dd7ee52                          │
+│ sha256   │ 00fc9375d08bd8cec303845c992481d79c8f616d1bfb6390a5322cd06f69273d  │
+│ analysis │ static                                                            │
+│ os       │ windows                                                           │
+│ format   │ pe                                                                │
+│ arch     │ i386                                                              │
+│ path     │ /work/corpus-parity/kate-msi/Program                              │
+│          │ Files/NeoSpeech/Kate16/lib/vt_eng.dll                             │
+└──────────┴───────────────────────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ATT&CK Tactic             ┃ ATT&CK Technique                                 ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ DEFENSE EVASION           │ Obfuscated Files or Information [T1027]          │
+│ DISCOVERY                 │ Query Registry [T1012]                           │
+│                           │ System Information Discovery [T1082]             │
+│                           │ System Location Discovery [T1614]                │
+└───────────────────────────┴──────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ MBC Objective            ┃ MBC Behavior                                      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ANTI-BEHAVIORAL ANALYSIS │ Debugger Detection::Software Breakpoints          │
+│                          │ [B0001.025]                                       │
+│ CRYPTOGRAPHY             │ Cryptographic Hash::MD5 [C0029.001]               │
+│ DATA                     │ Check String [C0019]                              │
+│                          │ Encode Data::XOR [C0026.002]                      │
+│ DEFENSE EVASION          │ Obfuscated Files or                               │
+│                          │ Information::Encoding-Standard Algorithm          │
+│                          │ [E1027.m02]                                       │
+│ DISCOVERY                │ Analysis Tool Discovery::Process detection        │
+│                          │ [B0013.001]                                       │
+│                          │ System Information Discovery [E1082]              │
+│ FILE SYSTEM              │ Writes File [C0052]                               │
+│ OPERATING SYSTEM         │ Registry::Query Registry Key [C0036.005]          │
+│                          │ Registry::Query Registry Value [C0036.006]        │
+└──────────────────────────┴───────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Capability                            ┃ Namespace                            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ reference analysis tools strings      │ anti-analysis                        │
+│ check for software breakpoints        │ anti-analysis/anti-debugging/debugg… │
+│ get geographical location             │ collection                           │
+│ parse credit card information (3      │ collection/credit-card               │
+│ matches)                              │                                      │
+│ encode data using XOR (2 matches)     │ data-manipulation/encoding/xor       │
+│ hash data with MD5                    │ data-manipulation/hashing/md5        │
+│ write file on Windows                 │ host-interaction/file-system/write   │
+│ get disk information                  │ host-interaction/hardware/storage    │
+│ query or enumerate registry key       │ host-interaction/registry            │
+│ query or enumerate registry value     │ host-interaction/registry            │
+│ resolve function by parsing PE        │ load-code/pe                         │
+│ exports (6 matches)                   │                                      │
+└───────────────────────────────────────┴──────────────────────────────────────┘
+

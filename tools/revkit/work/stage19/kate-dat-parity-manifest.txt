@@ -1,0 +1,13 @@
+Kate DAT decoder parity capture
+Package: local VoiceText 2005 Kate M16 tree2 data, read-only
+Decoder: vt_kat-tree2-versioned.dll, FUN_10001b30 at module offset 0x1b30
+Record counts: gen=179995 gen2=98133 num=997 etc=3666 alp=905 total=283696
+Result: all DLL PCM byte counts matched 4 * sum(indexed UPM periods)
+Result: all independent Python PCM lengths and SHA-256 digests matched DLL
+Mismatches: 0
+
+SHA-256 9f006d1474cc912535699bd94c04d5d7649a4489431059fa8b816ebcd10421b5  tools/revkit/work/stage19/vt_kat-tree2-versioned.dll
+SHA-256 15f80e7e9c8db4ec16b9bbd1bdf94f6eab0dbb7170db0864a72641987c145dde  tools/revkit/work/stage19/probe-kate-dat.c
+SHA-256 dde4d7f125e6f8ebdf759f9d3a9feeceeaa5fbd43ffbda43fd27768abba0fb7e  tools/revkit/work/stage19/compare-kate-dat-probe.py
+SHA-256 efd5e820d6e3fae02c4435716d4e384d25400035754913da41deab32662ee416  tools/revkit/work/corpus-parity/kate/probe-kate-dat.exe
+SHA-256 3f4fc9bec0cac0e1ae973f821a07b87c984802c7a3b3ab65f9dbb239b413e65c  tools/revkit/work/corpus-parity/kate/kate-dat-dll-parity.tsv

@@ -1,0 +1,191 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>> > >  >  >  > > > > > >  >  >  > > > >>>>>> > > >>>>>> > > >>>>> > > >>>>>> > > >>>>Wine-gdb> Wine-gdb> Continuing.
+CSV_MAKE_CAP capacity=0 low_ax=1 bytes=2241222c22622c632200a5a5
+ prefix_guard=00 guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=1 low_ax=-1 bytes=00a5a5a5a5a5a5a5a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=2 low_ax=-1 bytes=2200a5a5a5a5a5a5a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=3 low_ax=-1 bytes=224100a5a5a5a5a5a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=4 low_ax=-1 bytes=22412200a5a5a5a5a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=5 low_ax=-1 bytes=2241222c00a5a5a5a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=6 low_ax=-1 bytes=2241222c2200a5a5a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=7 low_ax=-1 bytes=2241222c226200a5a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=8 low_ax=-1 bytes=2241222c22622c00a5a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=9 low_ax=-1 bytes=2241222c22622c6300a5a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=10 low_ax=1 bytes=2241222c22622c632200a5a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=11 low_ax=1 bytes=2241222c22622c63220000a5
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=12 low_ax=1 bytes=2241222c22622c6322003100
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=13 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=14 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=15 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=16 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=a5 guard63=a5
+CSV_MAKE_CAP capacity=17 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=00 guard63=a5
+CSV_MAKE_CAP capacity=18 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=19 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=20 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=21 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=22 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=23 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=24 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=25 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=26 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=27 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=28 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=29 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=30 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=31 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=32 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=33 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=34 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=35 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=36 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=37 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=38 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=39 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=40 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=41 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=42 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=43 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=44 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=45 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=46 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=47 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=48 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=49 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=50 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=51 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=52 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=53 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=54 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=55 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=56 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=57 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=58 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=59 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=60 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=61 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=62 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=63 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=a5
+CSV_MAKE_CAP capacity=64 low_ax=1 bytes=2241222c22622c6322003131
+ prefix_guard=5a guard16=31 guard63=00
+CSV_MAKE_QUOTE low_ax=1 bytes=2261222262222c22706c61696e2200313131
+ prefix_guard=5a guard64=00
+CSV_MAKE_EMPTY low_ax=1 bytes=0031313131313100 prefix_guard=5a
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)

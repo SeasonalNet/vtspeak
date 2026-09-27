@@ -1,0 +1,84 @@
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x408187
+Wine-gdb> >>>> > > > > > >  >  >  >  >  >   >   >   >   >   >   >    >    >    >    >    >   >   >  > > >>>Wine-gdb> Continuing.
+DLL_LOADED_BEFORE_FIRST_API_CALL
+Breakpoint 2 at 0x100546d0
+LEGACY_TEXT_PARSE_ENTRY n=1 source=0xbe8040:	"Hello from the VoiceText Stage 1 runtime check.\n"
+state=0xbb0ac0 result_buffer=0x19014f8
+Temporary breakpoint 3 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=1 status=1 consumed=47 records=8
+LEGACY_RECORD n=1 i=0 span=0..5
+LEGACY_RECORD n=1 i=1 span=6..10
+LEGACY_RECORD n=1 i=2 span=11..14
+LEGACY_RECORD n=1 i=3 span=15..24
+LEGACY_RECORD n=1 i=4 span=25..30
+LEGACY_RECORD n=1 i=5 span=31..32
+LEGACY_RECORD n=1 i=6 span=33..40
+LEGACY_RECORD n=1 i=7 span=41..46
+LEGACY_TEXT_PARSE_ENTRY n=2 source=0xbe806f:	"\n"
+state=0xbb0ac0 result_buffer=0x19014f8
+Temporary breakpoint 4 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=2 status=0 consumed=1 records=0
+LEGACY_TEXT_PARSE_ENTRY n=3 source=0xbe8070:	""
+state=0xbb0ac0 result_buffer=0x19014f8
+Temporary breakpoint 5 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=3 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=4 source=0xbe8070:	""
+state=0xbb0ac0 result_buffer=0x19014f8
+Temporary breakpoint 6 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=4 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=5 source=0xbe0070:	"The temperature is 72 degrees at 5 PM.\n"
+state=0xbe8fc0 result_buffer=0x19010d0
+Temporary breakpoint 7 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=5 status=1 consumed=38 records=9
+LEGACY_RECORD n=5 i=0 span=0..3
+LEGACY_RECORD n=5 i=1 span=4..15
+LEGACY_RECORD n=5 i=2 span=16..18
+LEGACY_RECORD n=5 i=3 span=19..21
+LEGACY_RECORD n=5 i=4 span=19..21
+LEGACY_RECORD n=5 i=5 span=22..29
+LEGACY_RECORD n=5 i=6 span=30..32
+LEGACY_RECORD n=5 i=7 span=33..34
+LEGACY_RECORD n=5 i=8 span=35..37
+LEGACY_TEXT_PARSE_ENTRY n=6 source=0xbe0096:	"\n"
+state=0xbe8fc0 result_buffer=0x19010d0
+Temporary breakpoint 8 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=6 status=0 consumed=1 records=0
+LEGACY_TEXT_PARSE_ENTRY n=7 source=0xbe0097:	""
+state=0xbe8fc0 result_buffer=0x19010d0
+Temporary breakpoint 9 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=7 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=8 source=0xbe0097:	""
+state=0xbe8fc0 result_buffer=0x19010d0
+Temporary breakpoint 10 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=8 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=9 source=0xbe8070:	"Meet me at 123 Main St. in Albany, NY.\n"
+state=0xbe0fc0 result_buffer=0x19010d0
+Temporary breakpoint 11 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=9 status=1 consumed=38 records=12
+LEGACY_RECORD n=9 i=0 span=0..4
+LEGACY_RECORD n=9 i=1 span=5..7
+LEGACY_RECORD n=9 i=2 span=8..10
+LEGACY_RECORD n=9 i=3 span=11..14
+LEGACY_RECORD n=9 i=4 span=11..14
+LEGACY_RECORD n=9 i=5 span=11..14
+LEGACY_RECORD n=9 i=6 span=15..19
+LEGACY_RECORD n=9 i=7 span=20..22
+LEGACY_RECORD n=9 i=8 span=24..26
+LEGACY_RECORD n=9 i=9 span=27..33
+LEGACY_RECORD n=9 i=10 span=35..37
+LEGACY_RECORD n=9 i=11 span=35..37
+LEGACY_TEXT_PARSE_ENTRY n=10 source=0xbe8096:	"\n"
+state=0xbe0fc0 result_buffer=0x19010d0
+Temporary breakpoint 12 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=10 status=0 consumed=1 records=0
+LEGACY_TEXT_PARSE_ENTRY n=11 source=0xbe8097:	""
+state=0xbe0fc0 result_buffer=0x19010d0
+Temporary breakpoint 13 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=11 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=12 source=0xbe8097:	""
+state=0xbe0fc0 result_buffer=0x19010d0
+Temporary breakpoint 14 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=12 status=0 consumed=0 records=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -400,3 +400,58 @@ The candidate-cost and candidate-selection traces are
 `selection-attributes-signature-last.log`,
 `selection-attributes-constant-8.log`, and
 `selection-selection-signature-last-transfer.log`.
+
+### Exhaustive Kate DAT decoder parity
+
+The legacy package had previously been checked for indexed DAT/UPM bounds and
+sampled decoded lengths, but its decoded waveform bytes had not been compared
+with the standard engine. `probe-kate-dat.c` calls the patched standard DLL's
+`FUN_10001b30` at module offset `0x1b30` for every indexed Kate record in the
+`gen`, `gen2`, `num`, `etc`, and `alp` banks. The probe checks each return
+length against four times the sum of that record's UPM periods and captures a
+SHA-256 for each DLL PCM buffer. `compare-kate-dat-probe.py` decodes the same
+DAT spans with the independent Python implementation and compares every PCM
+length and digest with the DLL capture.
+
+All 283,696 records passed both checks: 179,995 `gen`, 98,133 `gen2`, 997
+`num`, 3,666 `etc`, and 905 `alp`. There were zero length, UPM, or PCM hash
+mismatches. This establishes local decoder-output parity across Kate's
+observed DAT corpus with the patched standard DLL. It does not validate the
+legacy index feature semantics, converted-tree decisions, candidate-to-unit
+selection, prosody, or whole-synthesis intelligibility.
+
+The full 23 MB per-unit text capture is retained locally under
+`tools/revkit/work/corpus-parity/kate/kate-dat-dll-parity.tsv`; its SHA-256 is
+recorded in `kate-dat-parity-manifest.txt`. The PE32 source and Python
+comparison helper are portable and tracked here. Run from the repository root
+with the local vendor inputs and Docker images present:
+
+```sh
+docker run --rm --network none --user "$(id -u):$(id -g)" \
+  -v "$PWD:/src:ro" \
+  -v "$PWD/tools/revkit/work/stage19:/out" \
+  vtspeak-pe32-builder:local \
+  i686-w64-mingw32-gcc -O2 -Wall -Wextra -Werror -std=c11 \
+  -Wl,--no-insert-timestamp /src/tools/revkit/work/stage19/probe-kate-dat.c \
+  -o /out/probe-kate-dat.exe -ladvapi32
+mkdir -p tools/revkit/work/corpus-parity/kate
+docker compose -f tools/revkit/work/stage8/compose.yaml \
+  -f tools/revkit/work/stage19/compose.yaml \
+  -f tools/revkit/work/stage19/compose-versioned.yaml \
+  -f tools/revkit/work/stage19/compose-index-signature-last-copy.yaml \
+  run --rm runtime /bin/bash -lc \
+  'Xvfb :99 -screen 0 1280x1024x24 -nolisten tcp >/tmp/kate-dat-xvfb.log 2>&1 & xpid=$!; trap "kill $xpid 2>/dev/null || true" EXIT; export DISPLAY=:99; sleep 1; WINEPREFIX=/work/stage2-copy/wineprefix WINEDEBUG=-all wine /probe/probe-kate-dat.exe --all > /work/corpus-parity/kate/kate-dat-dll-parity.tsv 2> /work/corpus-parity/kate/kate-dat-dll-parity.log'
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools/revkit/scripts \
+  python3 tools/revkit/work/stage19/compare-kate-dat-probe.py
+```
+
+These results narrow the gibberish away from compressed waveform decoding:
+the indexed audio payloads and their UPM timing counts agree with the standard
+decoder over the complete Kate corpus. The strongest remaining direct clue is
+the index adapter's inserted one-byte `attr_b`: the zero-fill baseline
+produces constant pair costs for the traced target value, while copying legacy
+column 07 changes those costs and the output WAVs. Tree2-to-indexed conversion
+also remains an unproven semantic translation even though converted trees
+parse and selected traversal experiments change output. The available traces
+do not yet identify which adapted unit sequence corresponds to the intended
+phonetic stream.

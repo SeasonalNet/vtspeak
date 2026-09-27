@@ -44,7 +44,7 @@ input and output fixtures were backed up and restored by the runner.
 | James, `ver.2013` English, 284,349 units, `tree3` | All index records and DAT/UPM extents passed the inventory checks; sampled decoded counts matched UPM counts. | All three inputs returned 0 and produced valid 16 kHz mono 16-bit PCM WAVE files. | Demonstrates a short successful synthesis path for James, not full decoder or corpus parity. |
 | Julie, `ver.2009` English, 728,692 units, `tree2` | All index records and ordered DAT/UPM spans were checked; first, middle, and last records per bank matched sampled UPM counts. | Prose returned 1 and produced no WAVE. Wine records a missing `../data-juli/M16/ttsdata/tree3/pitch/nbt.tree3` (`0xc000003a`). | The supplied DLL requests a `tree3` resource absent from Julie's `tree`/`tree2` package. This does not test Julie under a matching older engine. |
 | Bridget, `ver.2005` `VoiceText-Bre`, 780,882 units, `tree3` | All index records and ordered DAT/UPM spans were checked; sampled payload counts matched UPM counts; all 17 trees parse as `tree3`. | Not run: no Bridget host or DLL is present in the local binary set. | Structural compatibility only; the `Bre` resource label does not independently establish locale or runtime support. |
-| Kate, `ver.2005` English, 283,696 units, `tree2` | All index records and ordered DAT/UPM spans were checked; sampled payload counts matched UPM counts. | The supplied pair requests absent `tree3/pitch/nbt.tree3` and returns 1. A disposable patched standard DLL plus converted tree/index overlays completed three runs and wrote non-silent WAVs (Stage 19). The requester listened and reports gibberish, with only slight sentence-like fragments in prose. | Resource loading and audio generation work; intelligible voice compatibility is not demonstrated. The adapter converts recursive trees to the current indexed format and adapts legacy index columns; it does not restore the native recursive parser. |
+| Kate, `ver.2005` English, 283,696 units, `tree2` | Every index/DAT/UPM extent passed checks. All 283,696 DAT records across five banks now match the patched standard DLL decoder byte-for-byte against the independent Python decoder, with PCM lengths also matching UPM. | The supplied pair requests absent `tree3/pitch/nbt.tree3` and returns 1. A disposable patched standard DLL plus converted tree/index overlays completed three runs and wrote non-silent WAVs (Stage 19). The requester listened and reports gibberish, with only slight sentence-like fragments in prose. | DAT waveform decoding is ruled out as the corpus-level mismatch. The inserted index `attr_b` meaning, tree2 conversion semantics, selected units, prosody, and engine/voice pairing remain unresolved; intelligible voice compatibility is not demonstrated. |
 
 The structural counts, index generations, and tree-family notes are detailed
 in the [voice package generation comparison](voice-package-generation-comparison.md).
@@ -223,3 +223,18 @@ Paul's `attr_b` distribution, which is a lead for audition rather than proof
 that the columns share semantics. These candidate WAVs have not been judged
 for intelligibility. The Stage 19 report records full hashes, traces,
 distribution comparisons, and reproduction steps.
+
+The DAT layer has now been checked exhaustively: the patched standard DLL's
+decoder returned the UPM-implied length for all 283,696 Kate units, and the
+independent Python decoder produced matching PCM SHA-256 values for every
+unit. This makes an incomplete DAT bitstream map an unlikely explanation for
+the gibberish. The clearest remaining index clue is still the inserted
+`attr_b`, which is zero-filled in the baseline despite target value 8 in
+traced scoring calls; plausible byte fills change costs and selected audio,
+but their semantics are not recovered. Tree2 conversion passed structural
+parsing and selected path probes, not whole-tree semantic equivalence. The
+current evidence therefore points to selection/prosody adaptation as the
+remaining area, without distinguishing an index mapping error from a tree
+semantic or front-end/model pairing mismatch. Full capture and reproduction
+commands are in the [Stage 19 decoder-parity evidence]
+(../../tools/revkit/work/stage19/README.md#exhaustive-kate-dat-decoder-parity).

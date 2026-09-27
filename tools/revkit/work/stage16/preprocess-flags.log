@@ -1,0 +1,33 @@
+PREPROCESS flag=1 raw_eax=0x1 low_ax=1
+generated_argument_file flag=1 absent
+generated_test_pcm flag=1 absent
+PREPROCESS flag=2 raw_eax=0x1 low_ax=1
+generated_argument_file flag=2 absent
+generated_test_pcm flag=2 absent
+PREPROCESS flag=3 raw_eax=0x1 low_ax=1
+generated_argument_file flag=3 absent
+generated_test_pcm flag=3 absent
+PREPROCESS flag=4 raw_eax=0x1 low_ax=1
+generated_argument_file flag=4 absent
+generated_test_pcm flag=4 absent
+PREPROCESS flag=5 raw_eax=0x1 low_ax=1
+generated_argument_file flag=5 absent
+generated_test_pcm flag=5 absent
+PREPROCESS flag=6 raw_eax=0x1 low_ax=1
+generated_argument_file flag=6 absent
+generated_test_pcm flag=6 bytes=23606 sha256=e232e2454fc12176c7cc21b6573bb83b436d96dbf2ec2f33de2164fee0f61582 first64= 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 01 00 00 00 01 00 01 00 00 00 00 00 01 00 02 00 02 00 00 00 fe ff fd ff fe ff fd ff fd ff 00 00 00 00 ff ff f5 ff f0 ff f2 ff fb ff ff ff
+PREPROCESS flag=7 raw_eax=0x1 low_ax=1
+generated_argument_file flag=7 absent
+generated_test_pcm flag=7 absent
+PREPROCESS flag=8 raw_eax=0x1 low_ax=1
+generated_argument_file flag=8 absent
+generated_test_pcm flag=8 absent
+PREPROCESS flag=9 raw_eax=0x1 low_ax=1
+generated_argument_file flag=9 absent
+generated_test_pcm flag=9 absent
+PREPROCESS flag=10 raw_eax=0x1 low_ax=1
+generated_argument_file flag=10 absent
+generated_test_pcm flag=10 absent
+PREPROCESS flag=255 raw_eax=0x1 low_ax=1
+generated_argument_file flag=255 absent
+generated_test_pcm flag=255 absent

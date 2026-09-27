@@ -1,0 +1,170 @@
+HARNESS source_bytes=468
+CHECK file_default return=0 invalid_filename return=-1 supplied_file return=0
+TTSINFO request=1 source=default result=0 value=0
+TTSINFO request=2 source=default result=0 value=6
+TTSINFO request=1 source=supplied_file result=0 value=0
+TTSINFO request=2 source=supplied_file result=0 value=6
+TTSINFO request=1 source=invalid_path result=0 value=-1
+TTSINFO request=2 source=invalid_path result=0 value=1
+COMMENT supplied_file result=322 output_bytes=321 matches_source_field=1
+POSITION_SAMPLE hostid_channel_expdate_user_os_crossmatch=1
+ATTR_HELPER key=os baseline=1 altered=0 missing=-1
+ATTR_HELPER key=lang baseline=1 altered=-1 missing=-1
+ATTR_HELPER key=speaker baseline=1 altered=1 missing=-1
+ATTR_HELPER key=version baseline=1 altered=0 missing=-1
+ATTR_HELPER key=dbaccess baseline=1 altered=0 missing=-1
+ATTR_HELPER key=sampling baseline=1 altered=0 missing=-1
+ATTR_HELPER key=dbsize baseline=1 altered=1 missing=-1
+ATTR_HELPER key=speaker known_value=1 unknown_value=1
+ATTR_CONTEXT slot=0 speaker=1 speaker_list_match=1 dbsize=1 dbsize_zero=1 dbsize_large=1
+ATTR_CONTEXT slot=1 speaker=1 speaker_list_match=1 dbsize=1 dbsize_zero=1 dbsize_large=1
+ATTR_CONTEXT slot=2 speaker=0 speaker_list_match=0 dbsize=1 dbsize_zero=1 dbsize_large=1
+ATTR_CONTEXT slot=3 speaker=1 speaker_list_match=1 dbsize=1 dbsize_zero=1 dbsize_large=1
+ATTR_CONTEXT slot=4 speaker=1 speaker_list_match=1 dbsize=1 dbsize_zero=1 dbsize_large=1
+ATTR_CONTEXT slot=5 speaker=0 speaker_list_match=0 dbsize=1 dbsize_zero=1 dbsize_large=1
+CHECK case=supplied_record return=0 length=468
+INFO selector=0 name=channel_number return=0 output_bytes=4 source_match=1
+INFO_FILE selector=0 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=0 source=memory output_bytes=4 first_success=4 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=0 source=memory size_query=4 null_output=-4
+INFO_CAP_MATRIX selector=0 source=file output_bytes=4 first_success=4 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=0 source=file size_query=4 null_output=-4
+INFO selector=1 name=expiry_token return=0 output_bytes=2 source_match=1
+INFO_FILE selector=1 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=1 source=memory output_bytes=2 first_success=2 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=1 source=memory size_query=1 null_output=-4
+INFO_CAP_MATRIX selector=1 source=file output_bytes=2 first_success=2 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=1 source=file size_query=1 null_output=-4
+INFO selector=2 name=host_id return=0 output_bytes=13 source_match=1
+INFO_FILE selector=2 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=2 source=memory output_bytes=13 first_success=13 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=2 source=memory size_query=12 null_output=-4
+INFO_CAP_MATRIX selector=2 source=file output_bytes=13 first_success=13 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=2 source=file size_query=12 null_output=-4
+INFO_TAG full_match=0 body_with_close_match=0 attribute_text_match=1
+INFO selector=3 name=tag_attributes return=0 output_bytes=290 source_match=1
+INFO_FILE selector=3 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=3 source=memory output_bytes=290 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=3 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=3 source=file output_bytes=290 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=3 source=file size_query=321 null_output=-4
+INFO selector=4 name=os return=0 output_bytes=6 source_match=1
+INFO_FILE selector=4 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=4 source=memory output_bytes=6 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=4 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=4 source=file output_bytes=6 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=4 source=file size_query=321 null_output=-4
+INFO selector=5 name=lang return=0 output_bytes=1 source_match=1
+INFO_FILE selector=5 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=5 source=memory output_bytes=1 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=5 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=5 source=file output_bytes=1 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=5 source=file size_query=321 null_output=-4
+INFO selector=6 name=speaker return=0 output_bytes=38 source_match=1
+INFO_FILE selector=6 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=6 source=memory output_bytes=38 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=6 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=6 source=file output_bytes=38 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=6 source=file size_query=321 null_output=-4
+INFO selector=7 name=version return=0 output_bytes=9 source_match=1
+INFO_FILE selector=7 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=7 source=memory output_bytes=9 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=7 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=7 source=file output_bytes=9 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=7 source=file size_query=321 null_output=-4
+INFO selector=8 name=dbaccess return=0 output_bytes=7 source_match=1
+INFO_FILE selector=8 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=8 source=memory output_bytes=7 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=8 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=8 source=file output_bytes=7 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=8 source=file size_query=321 null_output=-4
+INFO selector=9 name=sampling return=0 output_bytes=3 source_match=1
+INFO_FILE selector=9 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=9 source=memory output_bytes=3 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=9 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=9 source=file output_bytes=3 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=9 source=file size_query=321 null_output=-4
+INFO selector=10 name=app return=0 output_bytes=12 source_match=1
+INFO_FILE selector=10 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=10 source=memory output_bytes=12 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=10 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=10 source=file output_bytes=12 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=10 source=file size_query=321 null_output=-4
+INFO selector=11 name=wavsave return=0 output_bytes=3 source_match=1
+INFO_FILE selector=11 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=11 source=memory output_bytes=3 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=11 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=11 source=file output_bytes=3 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=11 source=file size_query=321 null_output=-4
+INFO selector=12 name=savetime return=0 output_bytes=4 source_match=1
+INFO_FILE selector=12 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=12 source=memory output_bytes=4 first_success=4 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=12 source=memory size_query=4 null_output=-4
+INFO_CAP_MATRIX selector=12 source=file output_bytes=4 first_success=4 undersized=-5 at_321=0 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=12 source=file size_query=4 null_output=-4
+INFO selector=13 name=bgaudio return=0 output_bytes=4 source_match=1
+INFO_FILE selector=13 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=13 source=memory output_bytes=4 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=13 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=13 source=file output_bytes=4 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=13 source=file size_query=321 null_output=-4
+INFO selector=14 name=dbsize return=0 output_bytes=4 source_match=1
+INFO_FILE selector=14 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=14 source=memory output_bytes=4 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=14 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=14 source=file output_bytes=4 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=14 source=file size_query=321 null_output=-4
+INFO selector=15 name=realtime return=0 output_bytes=3 source_match=1
+INFO_FILE selector=15 return=0 matches_memory=1
+INFO_CAP_MATRIX selector=15 source=memory output_bytes=3 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=15 source=memory size_query=321 null_output=-4
+INFO_CAP_MATRIX selector=15 source=file output_bytes=3 first_success=322 undersized=-5 at_321=-5 final=0 guards_ok=1
+INFO_EDGE_MATRIX selector=15 source=file size_query=321 null_output=-4
+INFO_CAP selector=0 capacity=3 return=-5
+INFO_CAP selector=0 capacity=4 return=0
+INFO_CAP selector=1 capacity=0 return=-5
+INFO_CAP selector=1 capacity=1 return=-5
+INFO_CAP selector=1 capacity=2 return=0
+INFO_CAP selector=99 capacity=16 return=-1
+INFO_EDGE null_output=-4 invalid_selector=-1
+COMMENT_CAP_MATRIX source=default first_success=322 below_full=-4 guards_ok=1
+COMMENT_CAP_MATRIX source=file first_success=322 below_full=-4 guards_ok=1
+CHECK case=digest_changed return=-2 length=468
+CHECK case=host_id_changed return=-2 length=468
+CHECK case=product_changed return=-2 length=468
+CHECK case=field_4_changed return=-2 length=468
+CHECK case=field_5_changed return=-2 length=468
+CHECK case=user_changed return=-2 length=468
+CHECK case=platform_changed return=-2 length=468
+CHECK case=attr_app_changed return=-2 length=468
+CHECK case=attr_speaker_changed return=-2 length=468
+CHECK case=attr_version_changed return=-2 length=468
+CHECK case=attr_sampling_changed return=-2 length=468
+CHECK case=attr_dbsize_changed return=-2 length=468
+CHECK case=attr_os_missing return=-2 length=456
+CHECK case=attr_speaker_missing return=-2 length=419
+CHECK case=attr_version_missing return=-2 length=448
+CHECK case=attr_dbaccess_missing return=-2 length=449
+CHECK case=attr_sampling_missing return=-2 length=453
+CHECK case=attr_dbsize_missing return=-2 length=454
+CHECK case=tag_open_changed return=-2 length=468
+CHECK case=tag_close_changed return=-2 length=468
+CHECK case=short_input return=-2 length=5
+CHECK case=framed_valid return=0 length=475
+CHECK framed_file return=0 info_selector_2=0 host_match=1 comment_match=1
+CHECK case=framed_wrong_seed return=-2 length=475
+CHECK case=framed_bad_suffix return=-2 length=475
+LOAD default_slot result=0
+ATTR_LOADED slot=0 speaker=1 dbsize=1
+ATTR_LOADED slot=1 speaker=1 dbsize=0
+CHECK loaded_paul_file return=-11
+ATTR_DB_LIMIT value=300 accepted=0
+ATTR_DB_LIMIT value=450 accepted=0
+ATTR_DB_LIMIT value=451 accepted=0
+ATTR_DB_LIMIT value=452 accepted=1
+ATTR_DB_LIMIT value=500 accepted=1
+ATTR_LOADED slot=2 speaker=0 dbsize=1
+ATTR_LOADED slot=3 speaker=1 dbsize=1
+ATTR_LOADED slot=4 speaker=1 dbsize=1
+ATTR_LOADED slot=5 speaker=0 dbsize=1
+UNLOAD default_slot completed=1

@@ -22,7 +22,7 @@ SIGSEGV       No	No	Yes		Segmentation fault
 Wine-gdb> Signal        Stop	Print	Pass to program	Description
 SIGSEGV       No	No	Yes		Segmentation fault
 Wine-gdb> Breakpoint 1 at 0x1001da50
-Wine-gdb> >>>>>>>>>>>>>>>>>>> > > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> > >  >  >  >  > > >>>>>>>>>>>>>>>>>>>>>>>>> > > > > > > > > >> > >> > >>>>>>>>>>> > > > > > > > >>>> > > > > > > > > > > > > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Continuing.
+Wine-gdb> >>>>>>>>>>>>>>>>>>> > > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> > >  >  >  >  > > >>>>>>>>>>>>>>>>>>>>>>>>> > > > > > > > > >> > >> > >>>>>>>>>>> > > > > > > > >>>> > > > > > > > > > > > > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Continuing.
 EXPORTED_DATA heap_start_address=0x00000000 version=(3,11,7,1)
 CSV_INIT pointer=0xbb1a18
 CSV_PARSE result=1 field_count=3
@@ -63,7 +63,7 @@ USERDICT_SOURCE_NORM text=example completed=1
 USERDICT_TARGET_NORM text=example result=1
 USERDICT_TARGET_PHON text=example result=-9
 TEXT_BUFFER_EX selector_low=-1 return=-1 selector_high=3 return=-1
-LICENSE_INFO null_path selector_0_length=4 selector_12_length=4 capacity_0=-5 capacity_3=-5 capacity_4_null_output=-4
+LICENSE_INFO null_path selector_0_length=4 selector_1_length=1 selector_2_length=12 selector_12_length=4 capacity_0=-5 capacity_3=-5 capacity_4_null_output=-4
 LICENSE_COMMENT null_path result=322 output_redacted=1
 LICENSE_CHECK null_path result=0
 INIT result=-1
@@ -75,11 +75,11 @@ Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @00
 0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
 0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
 0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
-0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
 0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
 0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
 0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
-0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
 0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
 0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
 0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)

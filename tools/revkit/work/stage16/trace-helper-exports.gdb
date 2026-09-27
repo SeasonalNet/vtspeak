@@ -168,11 +168,13 @@ commands
   printf "TEXT_BUFFER_EX selector_low=-1 return=%d selector_high=3 return=%d\n", $text_buffer_ex_low, $text_buffer_ex_high
 
   set $license_info_0 = ((int (*)(int, char *, char *, unsigned int, unsigned char *, int))0x1002a110)(0, (char *)0, (char *)0, 0xffffffff, (unsigned char *)0, -1)
+  set $license_info_1 = ((int (*)(int, char *, char *, unsigned int, unsigned char *, int))0x1002a110)(1, (char *)0, (char *)0, 0xffffffff, (unsigned char *)0, -1)
+  set $license_info_2 = ((int (*)(int, char *, char *, unsigned int, unsigned char *, int))0x1002a110)(2, (char *)0, (char *)0, 0xffffffff, (unsigned char *)0, -1)
   set $license_info_12 = ((int (*)(int, char *, char *, unsigned int, unsigned char *, int))0x1002a110)(12, (char *)0, (char *)0, 0xffffffff, (unsigned char *)0, -1)
   set $license_info_cap_0 = ((int (*)(int, char *, char *, unsigned int, unsigned char *, int))0x1002a110)(0, (char *)0, (char *)0, 0xffffffff, (unsigned char *)0, 0)
   set $license_info_cap_3 = ((int (*)(int, char *, char *, unsigned int, unsigned char *, int))0x1002a110)(0, (char *)0, (char *)0, 0xffffffff, (unsigned char *)0, 3)
   set $license_info_cap_4 = ((int (*)(int, char *, char *, unsigned int, unsigned char *, int))0x1002a110)(0, (char *)0, (char *)0, 0xffffffff, (unsigned char *)0, 4)
-  printf "LICENSE_INFO null_path selector_0_length=%d selector_12_length=%d capacity_0=%d capacity_3=%d capacity_4_null_output=%d\n", $license_info_0, $license_info_12, $license_info_cap_0, $license_info_cap_3, $license_info_cap_4
+  printf "LICENSE_INFO null_path selector_0_length=%d selector_1_length=%d selector_2_length=%d selector_12_length=%d capacity_0=%d capacity_3=%d capacity_4_null_output=%d\n", $license_info_0, $license_info_1, $license_info_2, $license_info_12, $license_info_cap_0, $license_info_cap_3, $license_info_cap_4
 
   set $license_buf = (char *)malloc(512)
   set *(char *)$license_buf = 0
