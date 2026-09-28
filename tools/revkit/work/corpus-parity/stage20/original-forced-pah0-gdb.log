@@ -1,0 +1,11 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x100123a0
+Wine-gdb> >>>>>>>> > >  >  >  >  >  >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>> > > > > >>> > > > > > > > > >  >  >  >  >  >  >   >   >   >   >   >  >  > > >>> > > >  >  >  >  >  >  >  >  >  >   >   >   >   >  > > >>> > > > > > > >  >  >  >  >  >  >  >  >   >   >   >   >   >  > > >>>Wine-gdb> Continuing.
+OLD_ENGINE_HOST_READY_BEFORE_SYNTHESIS
+Breakpoint 3 at 0x1000fd30
+Breakpoint 4 at 0x100546d0
+Breakpoint 5 at 0x10001570
+Breakpoint 6 at 0x100019b0
+LEGACY_INDEX_LOAD call=1 units=179995 stride=19 bank=0xbb0df0
+[Inferior 1 (Remote target) exited with code 030000000005]
+Wine-gdb> 

@@ -1,0 +1,7 @@
+MULTI_PATH initial_paul_ax=0 initial_james_ax=0 occupancy=12
+MULTI_PATH paul_different_base_ax=1 occupancy=12
+MULTI_PATH after_paul_different_base slot0=4294967295/0 slot1=1/508121688 slot2=4294967295/0 slot3=4294967295/0 slot4=1/253797273 slot5=4294967295/0
+MULTI_PATH james_different_base_ax=1 occupancy=12
+MULTI_PATH after_james_different_base slot0=4294967295/0 slot1=1/508121688 slot2=4294967295/0 slot3=4294967295/0 slot4=1/253797273 slot5=4294967295/0
+MULTI_PATH original_paul_ax=0 original_james_ax=0 occupancy=12
+MULTI_PATH after_original_bases slot0=4294967295/0 slot1=1/508121688 slot2=4294967295/0 slot3=4294967295/0 slot4=1/253797273 slot5=4294967295/0

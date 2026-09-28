@@ -1,0 +1,21 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>>>>>>>>>>>>> > > > >  >  >  >  >  > >>> > > > > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > >  >  > > > > >  >  >   >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+BOUNDARY_KEY_PATCH_ENTER n=1 slot=0 bank=0 leaf=0 before:0x24e0752:	90	90	53	7	90	160	0
+Temporary breakpoint 5 at 0x10024808
+BOUNDARY_METRIC_ENTRY caller=0x10024271 count=1 first_id=32928
+Temporary breakpoint 6 at 0x10024271
+BOUNDARY_METRIC_RESULT count=1 sum=30
+BOUNDARY_KEY_PATCH_RESTORED n=1 slot=0 accepted=1
+BOUNDARY_KEY_PATCH_ENTER n=2 slot=1 bank=0 leaf=1 before:0x24e0759:	90	53	7	90	90	101	0
+Temporary breakpoint 7 at 0x10024808
+BOUNDARY_METRIC_ENTRY caller=0x10024271 count=1 first_id=13478
+Temporary breakpoint 8 at 0x10024271
+BOUNDARY_METRIC_OVERRIDE id=13478 measured=9 forced=10
+BOUNDARY_KEY_PATCH_RESTORED n=2 slot=1 accepted=1
+SELECTED_UNIT n=1 id=272822
+SELECTED_UNIT n=2 id=272823
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

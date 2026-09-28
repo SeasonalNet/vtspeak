@@ -1,0 +1,9 @@
+Wine-gdb> Already logging to /probe/stage20/legacy-unit-scores-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1001d3f4
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_UNIT_SCORE_TRACE_READY
+LEGACY_UNIT_COST_RETURN score=0.00141844 eax=0 ecx=0x3d2e4c01 edx=0 esi=0x274291c edi=0x27ab174 ebx=0x18e1b30 ebp=0x26f0020
+0x63fa68:	0x000429b6	0x00000000	0x00000000	0x0063fa94
+[Inferior 1 (Remote target) exited with code 030000000005]
+Wine-gdb> 

@@ -1,0 +1,55 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cd60
+Wine-gdb> >>>>>>> > >  >  >  >  >  >  >  >   >   >   >   >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_CONTINUITY_TRACE_READY
+Hardware assisted breakpoint 3 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=0 candidates=10 total_positions=2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=0 unit=272820 coverage=2 left=0 right=1 preliminary_cost=-4
+LEGACY_CONTINUITY_CANDIDATE position=0 index=1 unit=22336 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=2 unit=65331 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=3 unit=75811 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=4 unit=135441 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=5 unit=164116 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=6 unit=205125 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=7 unit=219724 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=8 unit=255985 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=9 unit=277527 coverage=1 left=0 right=0 preliminary_cost=-2
+Hardware assisted breakpoint 4 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=1 candidates=9 total_positions=2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=0 unit=272821 coverage=2 left=1 right=0 preliminary_cost=-4
+LEGACY_CONTINUITY_CANDIDATE position=1 index=1 unit=4087 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=2 unit=4102 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=3 unit=84094 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=4 unit=177718 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=5 unit=243540 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=6 unit=279498 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=7 unit=279499 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=8 unit=280449 coverage=1 left=0 right=0 preliminary_cost=-2
+Hardware assisted breakpoint 5 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=0 candidates=10 total_positions=2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=0 unit=272820 coverage=2 left=0 right=1 preliminary_cost=-4
+LEGACY_CONTINUITY_CANDIDATE position=0 index=1 unit=22336 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=2 unit=65331 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=3 unit=75811 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=4 unit=135441 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=5 unit=164116 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=6 unit=205125 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=7 unit=219724 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=8 unit=255985 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=9 unit=277527 coverage=1 left=0 right=0 preliminary_cost=-2
+Hardware assisted breakpoint 6 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=1 candidates=9 total_positions=2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=0 unit=272821 coverage=2 left=1 right=0 preliminary_cost=-4
+LEGACY_CONTINUITY_CANDIDATE position=1 index=1 unit=4087 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=2 unit=4102 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=3 unit=84094 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=4 unit=177718 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=5 unit=243540 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=6 unit=279498 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=7 unit=279499 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=8 unit=280449 coverage=1 left=0 right=0 preliminary_cost=-2
+Hardware assisted breakpoint 7 at 0x1001d289
+Hardware assisted breakpoint 8 at 0x1001d289
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

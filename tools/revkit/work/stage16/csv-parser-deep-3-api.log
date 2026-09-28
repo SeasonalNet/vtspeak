@@ -1,0 +1,98 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>>>>>>>>>>>>>>> > > > >  >  >  > > >>>>>Wine-gdb> Wine-gdb> Continuing.
+CSV_DEEP case=quoted_empty low_ax=1 count=1 field0=
+CSV_DEEP case=quoted_empty_middle low_ax=1 count=3 field0=61 field1= field2=63
+CSV_DEEP case=text_after_close low_ax=1 count=3 field0=61 field1= field2=62
+CSV_DEEP case=quote_before_open low_ax=1 count=2 field0=612262 field1=63
+CSV_DEEP case=unclosed_quoted_after_comma low_ax=1 count=2 field0=61 field1=62
+2c63
+CSV_DEEP case=quote_only low_ax=1 count=1 field0=
+CSV_DEEP case=leading_lf low_ax=1 count=2 field0=61 field1=62
+CSV_DEEP case=trailing_lf low_ax=1 count=2 field0=61 field1=620a
+CSV_DEEP case=newline_in_quoted low_ax=1 count=2 field0=610a62 field1=63
+CSV_DEEP case=cr_only_between low_ax=1 count=3 field0=61 field1=620d63 field2=
+64
+CSV_DEEP case=crlf_between low_ax=1 count=3 field0=61 field1=620d0a63 field2=64
+CSV_DEEP case=crlf_leading low_ax=1 count=2 field0=61 field1=62
+CSV_DEEP case=lf_after_delimiter low_ax=1 count=2 field0=61 field1=62
+CSV_DEEP case=double_lf_between low_ax=1 count=1 field0=610a0a62
+CSV_DEEP case=quoted_eof low_ax=1 count=1 field0=61
+CSV_DEEP case=quoted_comma_trailing low_ax=1 count=1 field0=61
+CSV_DEEP case=quoted_postspace low_ax=1 count=2 field0=61 field1=62
+CSV_DEEP case=space_before_quote low_ax=1 count=1 field0=612c62
+CSV_DEEP case=quote_after_text low_ax=1 count=2 field0=61622263 field1=64
+CSV_DEEP case=quote_at_unquoted_eof low_ax=1 count=1 field0=61226222
+CSV_DEEP case=bare_cr_eof low_ax=1 count=2 field0=61 field1=620d
+CSV_DEEP case=bare_cr_start low_ax=1 count=2 field0=61 field1=62
+CSV_DEEP case=bare_cr_after_comma low_ax=1 count=2 field0=61 field1=62
+CSV_DEEP case=bare_cr_in_quoted low_ax=1 count=2 field0=610d62 field1=63
+CSV_DEEP case=crlf_after_comma low_ax=1 count=3 field0=61 field1=62 field2=63
+CSV_DEEP case=crlf_after_text low_ax=1 count=2 field0=610d0a62 field1=63
+CSV_DEEP case=cr_before_comma low_ax=1 count=2 field0=610d field1=62
+CSV_DEEP case=crlf_trailing low_ax=1 count=2 field0=61 field1=620d0a
+CSV_DEEP case=empty_input low_ax=1 count=1 field0=
+CSV_DEEP case=delimiter_only low_ax=1 count=1 field0=
+CSV_DEEP case=leading_delimiter low_ax=1 count=2 field0= field1=61
+CSV_DEEP case=two_trailing_delimiters low_ax=1 count=2 field0=61 field1=
+CSV_DEEP case=only_delimiters low_ax=1 count=2 field0= field1=
+CSV_DEEP case=whitespace_only low_ax=1 count=1 field0=
+CSV_DEEP case=whitespace_before_delimiter low_ax=1 count=2 field0= field1=61
+CSV_DEEP case=tabs_around_quoted low_ax=1 count=1 field0=612c62
+CSV_DEEP case=space_then_quoted low_ax=1 count=2 field0=61 field1=612c62
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

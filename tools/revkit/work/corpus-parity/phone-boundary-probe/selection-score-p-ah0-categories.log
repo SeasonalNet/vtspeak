@@ -1,0 +1,88 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023af0
+Wine-gdb> >>> > > > > > > > > > > > > > > >  >  >  >  >  > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023350
+Wine-gdb> >>> > > > > > > > >  >  >  > > > >  >  >  >  >  >   >   >   >  >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+FINAL_RANK_ENTRY call=1 context=0 input_count=10 input_ids=17401 29970 30014 30086 30128 38598 49792 49818 
+Temporary breakpoint 4 at 0x100249d5
+CEP_PROSODY_ENTRY call=1 unit=265383 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 5 at 0x1002389a
+CEP_PROSODY_RETURN call=1 cost=509
+CEP_PROSODY_ENTRY call=2 unit=173873 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 6 at 0x1002389a
+CEP_PROSODY_RETURN call=2 cost=504
+CEP_PROSODY_ENTRY call=3 unit=270184 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 7 at 0x1002389a
+CEP_PROSODY_RETURN call=3 cost=514
+CEP_PROSODY_ENTRY call=4 unit=156568 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 8 at 0x1002389a
+CEP_PROSODY_RETURN call=4 cost=504
+CEP_PROSODY_ENTRY call=5 unit=168397 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 9 at 0x1002389a
+CEP_PROSODY_RETURN call=5 cost=504
+CEP_PROSODY_ENTRY call=6 unit=267919 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 10 at 0x1002389a
+CEP_PROSODY_RETURN call=6 cost=504
+CEP_PROSODY_ENTRY call=7 unit=275154 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 11 at 0x1002389a
+CEP_PROSODY_RETURN call=7 cost=504
+CEP_PROSODY_ENTRY call=8 unit=168215 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0a	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 12 at 0x1002389a
+CEP_PROSODY_RETURN call=8 cost=509
+FINAL_RANK_RETURN call=1 selected=13 unit_ids=265383 173873 270184 156568 168397 267919 275154 168215 114095 168345 
+FINAL_RANK_COSTS call=1
+FINAL_COST position=0 unit=265383 score=509 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=173873 score=504 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=270184 score=514 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=156568 score=504 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=168397 score=504 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=267919 score=504 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=275154 score=504 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=168215 score=509 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=114095 score=514 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=168345 score=504 duration_penalty=1 context_penalty=0
+FINAL_RANK_ENTRY call=2 context=1 input_count=20 input_ids=7168 7169 17401 17402 22387 30016 30018 45538 
+Temporary breakpoint 13 at 0x100248ce
+FINAL_RANK_RETURN call=2 selected=27 unit_ids=265383 61596 168467 170602 267728 167803 177242 269759 159493 264400 
+FINAL_RANK_COSTS call=2
+FINAL_COST position=0 unit=265383 score=19 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=61596 score=54 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=168467 score=31 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=170602 score=116 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=267728 score=111 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=167803 score=116 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=177242 score=116 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=269759 score=516 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=159493 score=511 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=264400 score=116 duration_penalty=1 context_penalty=0
+FINAL_RANK_ENTRY call=3 context=2 input_count=10 input_ids=52153 52156 52158 52159 52164 52167 52170 52171 
+Temporary breakpoint 14 at 0x100248ce
+FINAL_RANK_RETURN call=3 selected=30 unit_ids=251906 147789 149254 213863 74019 47109 215923 75024 222008 71334 
+FINAL_RANK_COSTS call=3
+FINAL_COST position=0 unit=251906 score=61.2349 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=147789 score=58.42 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=149254 score=59.0278 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=213863 score=60.6744 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=74019 score=60.6941 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=47109 score=61.368 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=215923 score=62.118 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=75024 score=62.1744 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=222008 score=65.3864 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=71334 score=65.5652 duration_penalty=1 context_penalty=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

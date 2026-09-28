@@ -1,0 +1,614 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /probe/probe-original-kate-2006.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /probe/stage20/hello-legacy-records-gdb.log.
+Copying debug output to /probe/stage20/hello-legacy-records-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x408187
+Wine-gdb> >>>> > > > > >>> > > > > > > > > >  >  >  >  >  >  >   >   >   >   >   >  >  > > >>> > > >  >  >  >  >  >  >  >  >  >   >   >   >   >  > > >>> > > > > > > >  >  >  >  >  >  >  >  >   >   >   >   >   >  > > >>>>>>> > > >  >  >  >  >  >  >  >  >  >  >   >   >  >  >  >   >   >   >   >  > > >>> > > >  >  >  >  >  >  >  >  >  >   >   >   >   >   >   >  > > >>> > > >  >  >  >  >  >  >  >   >   >   >   >   >    >    >    >    >    >   >  >  >   >   >   >   >   >  > > >>> > > >  >  >  >  >  >  >  >  >  >  >  >  >  >  >   >   >   >   >  > > >>>Wine-gdb> Continuing.
+OLD_ENGINE_HOST_READY_BEFORE_SYNTHESIS
+Breakpoint 2 at 0x1000fd30
+Breakpoint 3 at 0x100546d0
+Breakpoint 4 at 0x10001570
+Breakpoint 5 at 0x100019b0
+Breakpoint 6 at 0x10023b40
+Breakpoint 7 at 0x10023a10
+Breakpoint 8 at 0x10013cf0
+Breakpoint 9 at 0x100232d0
+OLD_TEXT_PARSE_ENTRY n=1 source=0xbe8110:	"Hello.\n"
+Temporary breakpoint 10 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=1 status=1 consumed=6 records=1
+OLD_TEXT_RECORD n=1 i=0 span=0..5
+TREE2_EVAL_ENTRY n=1 root=0x1902a50 features=0x63fb68 root_node=0x1902a50:	0x01902a64	0x01903608	0x018ea450	0x000005cb
+0x1902a60:	0x02044400
+TREE2_FEATURE_VECTOR n=1 values:
+0x63fb68:	16	40	11	0	1	1	1	2
+0x63fb78:	1	0	1050	4098	0	0	0	0
+0x63fb88:	6960	398	32	623	4304	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 11 at 0x1000f702
+TREE2_EVAL_RETURN n=1 output=1207
+TREE2_EVAL_ENTRY n=2 root=0x18f6c88 features=0x63fb68 root_node=0x18f6c88:	0x018f6c9c	0x018f8948	0x018e9228	0x00000473
+0x18f6c98:	0x00024400
+TREE2_FEATURE_VECTOR n=2 values:
+0x63fb68:	11	16	21	0	1	1	1	2
+0x63fb78:	2	0	1050	4098	0	0	1	0
+0x63fb88:	6960	398	32	623	4304	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 12 at 0x1000f66a
+TREE2_EVAL_RETURN n=2 output=555
+TREE2_EVAL_ENTRY n=3 root=0x19041e8 features=0x63fb68 root_node=0x19041e8:	0x019041fc	0x01904af8	0x01906df0	0x000004f6
+0x19041f8:	0x50094402
+TREE2_FEATURE_VECTOR n=3 values:
+0x63fb68:	21	11	25	0	1	3	3	2
+0x63fb78:	1	0	1050	4098	1	0	2	0
+0x63fb88:	6960	398	32	623	4304	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 13 at 0x1000f72e
+TREE2_EVAL_RETURN n=3 output=1740
+TREE2_EVAL_ENTRY n=4 root=0x18fbaa0 features=0x63fb68 root_node=0x18fbaa0:	0x018fbab4	0x018fbca8	0x018e7838	0x000009d5
+0x18fbab0:	0x00014406
+TREE2_FEATURE_VECTOR n=4 values:
+0x63fb68:	25	21	40	1	1	3	3	2
+0x63fb78:	2	0	1050	4098	1	0	3	0
+0x63fb88:	6960	398	32	623	4304	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 14 at 0x1000f69c
+TREE2_EVAL_RETURN n=4 output=4832
+OLD_PHONE_TREE_DISPATCH engine=0x18e1b30
+TREE2_EVAL_ENTRY n=5 root=0x18e61e0 features=0x63fb64 root_node=0x18e61e0:	0x018e61f4	0x018e6208	0x00440801	0x00010000
+0x18e61f0:	0x0000430a
+TREE2_FEATURE_VECTOR n=5 values:
+0x63fb64:	2	11	0	3	1	1	0	3
+0x63fb74:	1	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	4304	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 15 at 0x1000fdf7
+TREE2_EVAL_RETURN n=5 output=0
+TREE2_VECTOR_ENTRY n=1 tree=0x18ec630 tree_offset=0xab00 features=0x63fb64 output=0x2703138 root_node=TREE2_VECTOR_HEADER width=12
+TREE2_TREE_SLOTS nbf=0x18ec630 bf=0xbaf570 sbf=0x188f970 qbf=0xbaf050
+0x18ec630:	0x018ec648	0x018eea60	0x018efaf0	0x018efad8
+0x18ec640:	0x440b0000	0x0002040c	0x018ec660	0x018ed158
+0x18ec650:	0x018efb10	0x018efaf8	0x44020000	0x4a00020c
+TREE2_VECTOR_FEATURES n=1 values:
+0x63fb64:	2	11	0	3	1	1	0	3
+0x63fb74:	1	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	4304	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 16 at 0x1000fe28
+TREE2_VECTOR_RETURN n=1 values:
+0x2703138:	85	84	83	83	84	84	85	85
+0x2703148:	86	86	86	86
+TREE2_EVAL_ENTRY n=6 root=0xbaf9c0 features=0x63fb64 root_node=0xbaf9c0:	0x00baf9d4	0x00baf9e8	0x00baf010	0x00000000
+0xbaf9d0:	0x00024402
+TREE2_FEATURE_VECTOR n=6 values:
+0x63fb64:	5	25	1	0	3	3	1	4
+0x63fb74:	3	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	4304	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 17 at 0x1000fdf7
+TREE2_EVAL_RETURN n=6 output=0
+TREE2_VECTOR_ENTRY n=2 tree=0x188f970 tree_offset=0xfffade40 features=0x63fb64 output=0x2703160 root_node=TREE2_VECTOR_HEADER width=12
+TREE2_TREE_SLOTS nbf=0x18ec630 bf=0xbaf570 sbf=0x188f970 qbf=0xbaf050
+0x188f970:	0x0188f988	0x0188fca0	0x018e86d8	0x018e86c0
+0x188f980:	0x44020000	0x0002020c	0x0188f9a0	0x0188fa78
+0x188f990:	0x018e86f4	0x018e86dc	0x44030000	0x0044020c
+TREE2_VECTOR_FEATURES n=2 values:
+0x63fb64:	5	25	1	0	3	3	1	4
+0x63fb74:	3	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	4304	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 18 at 0x1000fe28
+TREE2_VECTOR_RETURN n=2 values:
+0x2703160:	96	98	100	104	108	112	116	120
+0x2703170:	122	124	119	113
+LEGACY_UNIT_RECORD_ENTRY call=1 unit_id=272822 context=0x26f0020 mode=26090288 out=0x2807db8
+LEGACY_UNIT_BANK_RANGES manager=0xbb0df0 ranges=4 first_count=179995
+LEGACY_UNIT_BANK_RANGE index=0 start=179995 end=278128
+LEGACY_UNIT_BANK_RANGE index=1 start=278128 end=279125
+LEGACY_UNIT_BANK_RANGE index=2 start=279125 end=282791
+LEGACY_UNIT_BANK_RANGE index=3 start=282791 end=0
+Temporary breakpoint 19 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=1 bytes:
+0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+LEGACY_UNIT_RECORD_ENTRY call=2 unit_id=272823 context=0x26f0020 mode=26090288 out=0x2807dcc
+Temporary breakpoint 20 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=2 bytes:
+0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+LEGACY_UNIT_RECORD_ENTRY call=3 unit_id=272824 context=0x26f0020 mode=26090288 out=0x2807de0
+Temporary breakpoint 21 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=3 bytes:
+0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+LEGACY_UNIT_RECORD_ENTRY call=4 unit_id=272825 context=0x26f0020 mode=26090288 out=0x2807df4
+Temporary breakpoint 22 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=4 bytes:
+0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+LEGACY_ASSEMBLY_ENTRY call=1 out=0x27e8eec state=0x26f0020 start=0 count=1 text_state=0x26f0078
+LEGACY_PHONE_RECORD_TABLE words=0x26f07a8:	0x02807db8	0x027a9a04	0x04b70004	0x06cc022b
+0x26f07b8:	0x000012e0	0x00000000	0x00000000	0x00000000
+LEGACY_PHONE_RECORDS pointer=0x2807db8 count=4
+LEGACY_PHONE_RECORD i=0 bytes:0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+LEGACY_PHONE_RECORD i=1 bytes:0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+LEGACY_PHONE_RECORD i=2 bytes:0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+LEGACY_PHONE_RECORD i=3 bytes:0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+LEGACY_AUDIO_SEGMENT_ENTRY call=1 index=0 samples=1210 record=0x2807db8
+0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+Temporary breakpoint 23 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=1 data=0x27f8b82 samples=1210 first_samples=0x27f8b82:	16	12	20	20	40	44	32	44
+0x27f8b92:	44	12	12	12
+LEGACY_APPEND_ENTRY call=1 index=0 count=4 raw_samples=1210 flag=2 overlap=72 appended_samples=1138 cursor_before=0
+Temporary breakpoint 24 at 0x10023dcd
+LEGACY_APPEND_RETURN call=1 cursor_after=2276
+LEGACY_AUDIO_SEGMENT_ENTRY call=2 index=1 samples=578 record=0x2807dcc
+0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+Temporary breakpoint 25 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=2 data=0x27f8b82 samples=578 first_samples=0x27f8b82:	-7296	-8064	-8320	-8576	-9088	-8960	-6400	-3584
+0x27f8b92:	-2176	512	3072	4352
+LEGACY_APPEND_ENTRY call=2 index=1 count=4 raw_samples=578 flag=2 overlap=72 appended_samples=506 cursor_before=2276
+Temporary breakpoint 26 at 0x10023dcd
+LEGACY_APPEND_RETURN call=2 cursor_after=3288
+LEGACY_AUDIO_SEGMENT_ENTRY call=3 index=2 samples=1180 record=0x2807de0
+0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+Temporary breakpoint 27 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=3 data=0x27f8b82 samples=1180 first_samples=0x27f8b82:	-8704	-8704	-9088	-9472	-10112	-9728	-8192	-7680
+0x27f8b92:	-5504	-3200	-1664	0
+LEGACY_APPEND_ENTRY call=3 index=2 count=4 raw_samples=1180 flag=2 overlap=68 appended_samples=1112 cursor_before=3288
+Temporary breakpoint 28 at 0x10023dcd
+LEGACY_APPEND_RETURN call=3 cursor_after=5512
+LEGACY_AUDIO_SEGMENT_ENTRY call=4 index=3 samples=4854 record=0x2807df4
+0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+Temporary breakpoint 29 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=4 data=0x27f8b82 samples=4854 first_samples=0x27f8b82:	-12032	-12288	-12800	-13312	-12032	-8704	-4864	-1792
+0x27f8b92:	2560	6400	8704	9728
+LEGACY_APPEND_ENTRY call=4 index=3 count=4 raw_samples=4854 flag=0 overlap=126 appended_samples=4854 cursor_before=5512
+Temporary breakpoint 30 at 0x10023dcd
+LEGACY_APPEND_RETURN call=4 cursor_after=15220
+OLD_TEXT_PARSE_ENTRY n=2 source=0xbe8116:	"\n"
+Temporary breakpoint 31 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=2 status=0 consumed=1 records=0
+OLD_TEXT_PARSE_ENTRY n=3 source=0xbe8117:	""
+Temporary breakpoint 32 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=3 status=0 consumed=0 records=0
+OLD_TEXT_PARSE_ENTRY n=4 source=0xbe8117:	""
+Temporary breakpoint 33 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=4 status=0 consumed=0 records=0
+OLD_TEXT_PARSE_ENTRY n=5 source=0xbe0110:	"Hello.\n"
+Temporary breakpoint 34 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=5 status=1 consumed=6 records=1
+OLD_TEXT_RECORD n=5 i=0 span=0..5
+TREE2_EVAL_ENTRY n=7 root=0x1902a50 features=0x63fb68 root_node=0x1902a50:	0x01902a64	0x01903608	0x018ea450	0x000005cb
+0x1902a60:	0x02044400
+TREE2_FEATURE_VECTOR n=7 values:
+0x63fb68:	16	40	11	0	1	1	1	2
+0x63fb78:	1	0	1050	4098	0	0	0	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 35 at 0x1000f702
+TREE2_EVAL_RETURN n=7 output=1207
+TREE2_EVAL_ENTRY n=8 root=0x18f6c88 features=0x63fb68 root_node=0x18f6c88:	0x018f6c9c	0x018f8948	0x018e9228	0x00000473
+0x18f6c98:	0x00024400
+TREE2_FEATURE_VECTOR n=8 values:
+0x63fb68:	11	16	21	0	1	1	1	2
+0x63fb78:	2	0	1050	4098	0	0	1	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 36 at 0x1000f66a
+TREE2_EVAL_RETURN n=8 output=555
+TREE2_EVAL_ENTRY n=9 root=0x19041e8 features=0x63fb68 root_node=0x19041e8:	0x019041fc	0x01904af8	0x01906df0	0x000004f6
+0x19041f8:	0x50094402
+TREE2_FEATURE_VECTOR n=9 values:
+0x63fb68:	21	11	25	0	1	3	3	2
+0x63fb78:	1	0	1050	4098	1	0	2	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 37 at 0x1000f72e
+TREE2_EVAL_RETURN n=9 output=1740
+TREE2_EVAL_ENTRY n=10 root=0x18fbaa0 features=0x63fb68 root_node=0x18fbaa0:	0x018fbab4	0x018fbca8	0x018e7838	0x000009d5
+0x18fbab0:	0x00014406
+TREE2_FEATURE_VECTOR n=10 values:
+0x63fb68:	25	21	40	1	1	3	3	2
+0x63fb78:	2	0	1050	4098	1	0	3	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 38 at 0x1000f69c
+TREE2_EVAL_RETURN n=10 output=4832
+OLD_PHONE_TREE_DISPATCH engine=0x18e1b30
+TREE2_EVAL_ENTRY n=11 root=0x18e61e0 features=0x63fb64 root_node=0x18e61e0:	0x018e61f4	0x018e6208	0x00440801	0x00010000
+0x18e61f0:	0x0000430a
+TREE2_FEATURE_VECTOR n=11 values:
+0x63fb64:	2	11	0	3	1	1	0	3
+0x63fb74:	1	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 39 at 0x1000fdf7
+TREE2_EVAL_RETURN n=11 output=0
+TREE2_VECTOR_ENTRY n=3 tree=0x18ec630 tree_offset=0xab00 features=0x63fb64 output=0x2703138 root_node=TREE2_VECTOR_HEADER width=12
+TREE2_TREE_SLOTS nbf=0x18ec630 bf=0xbaf570 sbf=0x188f970 qbf=0xbaf050
+0x18ec630:	0x018ec648	0x018eea60	0x018efaf0	0x018efad8
+0x18ec640:	0x440b0000	0x0002040c	0x018ec660	0x018ed158
+0x18ec650:	0x018efb10	0x018efaf8	0x44020000	0x4a00020c
+TREE2_VECTOR_FEATURES n=3 values:
+0x63fb64:	2	11	0	3	1	1	0	3
+0x63fb74:	1	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 40 at 0x1000fe28
+TREE2_VECTOR_RETURN n=3 values:
+0x2703138:	85	84	83	83	84	84	85	85
+0x2703148:	86	86	86	86
+TREE2_EVAL_ENTRY n=12 root=0xbaf9c0 features=0x63fb64 root_node=0xbaf9c0:	0x00baf9d4	0x00baf9e8	0x00baf010	0x00000000
+0xbaf9d0:	0x00024402
+TREE2_FEATURE_VECTOR n=12 values:
+0x63fb64:	5	25	1	0	3	3	1	4
+0x63fb74:	3	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 41 at 0x1000fdf7
+TREE2_EVAL_RETURN n=12 output=0
+TREE2_VECTOR_ENTRY n=4 tree=0x188f970 tree_offset=0xfffade40 features=0x63fb64 output=0x2703160 root_node=TREE2_VECTOR_HEADER width=12
+TREE2_TREE_SLOTS nbf=0x18ec630 bf=0xbaf570 sbf=0x188f970 qbf=0xbaf050
+0x188f970:	0x0188f988	0x0188fca0	0x018e86d8	0x018e86c0
+0x188f980:	0x44020000	0x0002020c	0x0188f9a0	0x0188fa78
+0x188f990:	0x018e86f4	0x018e86dc	0x44030000	0x0044020c
+TREE2_VECTOR_FEATURES n=4 values:
+0x63fb64:	5	25	1	0	3	3	1	4
+0x63fb74:	3	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 42 at 0x1000fe28
+TREE2_VECTOR_RETURN n=4 values:
+0x2703160:	96	98	100	104	108	112	116	120
+0x2703170:	122	124	119	113
+LEGACY_UNIT_RECORD_ENTRY call=5 unit_id=272822 context=0x26f0020 mode=26090288 out=0x2807db8
+Temporary breakpoint 43 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=5 bytes:
+0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+LEGACY_UNIT_RECORD_ENTRY call=6 unit_id=272823 context=0x26f0020 mode=26090288 out=0x2807dcc
+Temporary breakpoint 44 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=6 bytes:
+0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+LEGACY_UNIT_RECORD_ENTRY call=7 unit_id=272824 context=0x26f0020 mode=26090288 out=0x2807de0
+Temporary breakpoint 45 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=7 bytes:
+0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+LEGACY_UNIT_RECORD_ENTRY call=8 unit_id=272825 context=0x26f0020 mode=26090288 out=0x2807df4
+Temporary breakpoint 46 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=8 bytes:
+0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+LEGACY_ASSEMBLY_ENTRY call=2 out=0x27e8eec state=0x26f0020 start=0 count=1 text_state=0x26f0078
+LEGACY_PHONE_RECORD_TABLE words=0x26f07a8:	0x02807db8	0x027a9a04	0x04b70004	0x06cc022b
+0x26f07b8:	0x000012e0	0x00000000	0x00000000	0x00000000
+LEGACY_PHONE_RECORDS pointer=0x2807db8 count=4
+LEGACY_PHONE_RECORD i=0 bytes:0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+LEGACY_PHONE_RECORD i=1 bytes:0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+LEGACY_PHONE_RECORD i=2 bytes:0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+LEGACY_PHONE_RECORD i=3 bytes:0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+LEGACY_AUDIO_SEGMENT_ENTRY call=5 index=0 samples=1210 record=0x2807db8
+0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+Temporary breakpoint 47 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=5 data=0x27f8b82 samples=1210 first_samples=0x27f8b82:	16	12	20	20	40	44	32	44
+0x27f8b92:	44	12	12	12
+LEGACY_APPEND_ENTRY call=5 index=0 count=4 raw_samples=1210 flag=2 overlap=72 appended_samples=1138 cursor_before=0
+Temporary breakpoint 48 at 0x10023dcd
+LEGACY_APPEND_RETURN call=5 cursor_after=2276
+LEGACY_AUDIO_SEGMENT_ENTRY call=6 index=1 samples=578 record=0x2807dcc
+0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+Temporary breakpoint 49 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=6 data=0x27f8b82 samples=578 first_samples=0x27f8b82:	-7296	-8064	-8320	-8576	-9088	-8960	-6400	-3584
+0x27f8b92:	-2176	512	3072	4352
+LEGACY_APPEND_ENTRY call=6 index=1 count=4 raw_samples=578 flag=2 overlap=72 appended_samples=506 cursor_before=2276
+Temporary breakpoint 50 at 0x10023dcd
+LEGACY_APPEND_RETURN call=6 cursor_after=3288
+LEGACY_AUDIO_SEGMENT_ENTRY call=7 index=2 samples=1180 record=0x2807de0
+0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+Temporary breakpoint 51 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=7 data=0x27f8b82 samples=1180 first_samples=0x27f8b82:	-8704	-8704	-9088	-9472	-10112	-9728	-8192	-7680
+0x27f8b92:	-5504	-3200	-1664	0
+LEGACY_APPEND_ENTRY call=7 index=2 count=4 raw_samples=1180 flag=2 overlap=68 appended_samples=1112 cursor_before=3288
+Temporary breakpoint 52 at 0x10023dcd
+LEGACY_APPEND_RETURN call=7 cursor_after=5512
+LEGACY_AUDIO_SEGMENT_ENTRY call=8 index=3 samples=4854 record=0x2807df4
+0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+Temporary breakpoint 53 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=8 data=0x27f8b82 samples=4854 first_samples=0x27f8b82:	-12032	-12288	-12800	-13312	-12032	-8704	-4864	-1792
+0x27f8b92:	2560	6400	8704	9728
+LEGACY_APPEND_ENTRY call=8 index=3 count=4 raw_samples=4854 flag=0 overlap=126 appended_samples=4854 cursor_before=5512
+Temporary breakpoint 54 at 0x10023dcd
+LEGACY_APPEND_RETURN call=8 cursor_after=15220
+OLD_TEXT_PARSE_ENTRY n=6 source=0xbe0116:	"\n"
+Temporary breakpoint 55 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=6 status=0 consumed=1 records=0
+OLD_TEXT_PARSE_ENTRY n=7 source=0xbe0117:	""
+Temporary breakpoint 56 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=7 status=0 consumed=0 records=0
+OLD_TEXT_PARSE_ENTRY n=8 source=0xbe0117:	""
+Temporary breakpoint 57 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=8 status=0 consumed=0 records=0
+OLD_TEXT_PARSE_ENTRY n=9 source=0xbe8110:	"Hello.\n"
+Temporary breakpoint 58 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=9 status=1 consumed=6 records=1
+OLD_TEXT_RECORD n=9 i=0 span=0..5
+TREE2_EVAL_ENTRY n=13 root=0x1902a50 features=0x63fb68 root_node=0x1902a50:	0x01902a64	0x01903608	0x018ea450	0x000005cb
+0x1902a60:	0x02044400
+TREE2_FEATURE_VECTOR n=13 values:
+0x63fb68:	16	40	11	0	1	1	1	2
+0x63fb78:	1	0	1050	4098	0	0	0	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 59 at 0x1000f702
+TREE2_EVAL_RETURN n=13 output=1207
+TREE2_EVAL_ENTRY n=14 root=0x18f6c88 features=0x63fb68 root_node=0x18f6c88:	0x018f6c9c	0x018f8948	0x018e9228	0x00000473
+0x18f6c98:	0x00024400
+TREE2_FEATURE_VECTOR n=14 values:
+0x63fb68:	11	16	21	0	1	1	1	2
+0x63fb78:	2	0	1050	4098	0	0	1	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 60 at 0x1000f66a
+TREE2_EVAL_RETURN n=14 output=555
+TREE2_EVAL_ENTRY n=15 root=0x19041e8 features=0x63fb68 root_node=0x19041e8:	0x019041fc	0x01904af8	0x01906df0	0x000004f6
+0x19041f8:	0x50094402
+TREE2_FEATURE_VECTOR n=15 values:
+0x63fb68:	21	11	25	0	1	3	3	2
+0x63fb78:	1	0	1050	4098	1	0	2	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 61 at 0x1000f72e
+TREE2_EVAL_RETURN n=15 output=1740
+TREE2_EVAL_ENTRY n=16 root=0x18fbaa0 features=0x63fb68 root_node=0x18fbaa0:	0x018fbab4	0x018fbca8	0x018e7838	0x000009d5
+0x18fbab0:	0x00014406
+TREE2_FEATURE_VECTOR n=16 values:
+0x63fb68:	25	21	40	1	1	3	3	2
+0x63fb78:	2	0	1050	4098	1	0	3	0
+0x63fb88:	6960	398	32	623	-3568	416	1918	4098
+0x63fb98:	6960	398	32	623	1	0	32	623
+Temporary breakpoint 62 at 0x1000f69c
+TREE2_EVAL_RETURN n=16 output=4832
+OLD_PHONE_TREE_DISPATCH engine=0x18e1b30
+TREE2_EVAL_ENTRY n=17 root=0x18e61e0 features=0x63fb64 root_node=0x18e61e0:	0x018e61f4	0x018e6208	0x00440801	0x00010000
+0x18e61f0:	0x0000430a
+TREE2_FEATURE_VECTOR n=17 values:
+0x63fb64:	2	11	0	3	1	1	0	3
+0x63fb74:	1	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 63 at 0x1000fdf7
+TREE2_EVAL_RETURN n=17 output=0
+TREE2_VECTOR_ENTRY n=5 tree=0x18ec630 tree_offset=0xab00 features=0x63fb64 output=0x2703138 root_node=TREE2_VECTOR_HEADER width=12
+TREE2_TREE_SLOTS nbf=0x18ec630 bf=0xbaf570 sbf=0x188f970 qbf=0xbaf050
+0x18ec630:	0x018ec648	0x018eea60	0x018efaf0	0x018efad8
+0x18ec640:	0x440b0000	0x0002040c	0x018ec660	0x018ed158
+0x18ec650:	0x018efb10	0x018efaf8	0x44020000	0x4a00020c
+TREE2_VECTOR_FEATURES n=5 values:
+0x63fb64:	2	11	0	3	1	1	0	3
+0x63fb74:	1	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 64 at 0x1000fe28
+TREE2_VECTOR_RETURN n=5 values:
+0x2703138:	85	84	83	83	84	84	85	85
+0x2703148:	86	86	86	86
+TREE2_EVAL_ENTRY n=18 root=0xbaf9c0 features=0x63fb64 root_node=0xbaf9c0:	0x00baf9d4	0x00baf9e8	0x00baf010	0x00000000
+0xbaf9d0:	0x00024402
+TREE2_FEATURE_VECTOR n=18 values:
+0x63fb64:	5	25	1	0	3	3	1	4
+0x63fb74:	3	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 65 at 0x1000fdf7
+TREE2_EVAL_RETURN n=18 output=0
+TREE2_VECTOR_ENTRY n=6 tree=0x188f970 tree_offset=0xfffade40 features=0x63fb64 output=0x2703160 root_node=TREE2_VECTOR_HEADER width=12
+TREE2_TREE_SLOTS nbf=0x18ec630 bf=0xbaf570 sbf=0x188f970 qbf=0xbaf050
+0x188f970:	0x0188f988	0x0188fca0	0x018e86d8	0x018e86c0
+0x188f980:	0x44020000	0x0002020c	0x0188f9a0	0x0188fa78
+0x188f990:	0x018e86f4	0x018e86dc	0x44030000	0x0044020c
+TREE2_VECTOR_FEATURES n=6 values:
+0x63fb64:	5	25	1	0	3	3	1	4
+0x63fb74:	3	1	2	0	1073	4098	6960	398
+0x63fb84:	32	623	6960	398	32	623	-3568	416
+0x63fb94:	1918	4098	6960	398	32	623	1	0
+Temporary breakpoint 66 at 0x1000fe28
+TREE2_VECTOR_RETURN n=6 values:
+0x2703160:	96	98	100	104	108	112	116	120
+0x2703170:	122	124	119	113
+LEGACY_UNIT_RECORD_ENTRY call=9 unit_id=272822 context=0x26f0020 mode=26090288 out=0x2807db8
+Temporary breakpoint 67 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=9 bytes:
+0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+LEGACY_UNIT_RECORD_ENTRY call=10 unit_id=272823 context=0x26f0020 mode=26090288 out=0x2807dcc
+Temporary breakpoint 68 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=10 bytes:
+0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+LEGACY_UNIT_RECORD_ENTRY call=11 unit_id=272824 context=0x26f0020 mode=26090288 out=0x2807de0
+Temporary breakpoint 69 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=11 bytes:
+0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+LEGACY_UNIT_RECORD_ENTRY call=12 unit_id=272825 context=0x26f0020 mode=26090288 out=0x2807df4
+Temporary breakpoint 70 at 0x1001ed85
+LEGACY_UNIT_RECORD_RETURN call=12 bytes:
+0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+LEGACY_ASSEMBLY_ENTRY call=3 out=0x27e8eec state=0x26f0020 start=0 count=1 text_state=0x26f0078
+LEGACY_PHONE_RECORD_TABLE words=0x26f07a8:	0x02807db8	0x027a9a04	0x04b70004	0x06cc022b
+0x26f07b8:	0x000012e0	0x00000000	0x00000000	0x00000000
+LEGACY_PHONE_RECORDS pointer=0x2807db8 count=4
+LEGACY_PHONE_RECORD i=0 bytes:0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+LEGACY_PHONE_RECORD i=1 bytes:0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+LEGACY_PHONE_RECORD i=2 bytes:0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+LEGACY_PHONE_RECORD i=3 bytes:0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+LEGACY_AUDIO_SEGMENT_ENTRY call=9 index=0 samples=1210 record=0x2807db8
+0x2807db8:	0x18	0x21	0x26	0x04	0x64	0x48	0x19	0x00
+0x2807dc0:	0x98	0x02	0x62	0x02	0x6c	0x02	0x0a	0x08
+0x2807dc8:	0x27	0x20	0x24	0x01
+Temporary breakpoint 71 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=9 data=0x27f8b82 samples=1210 first_samples=0x27f8b82:	16	12	20	20	40	44	32	44
+0x27f8b92:	44	12	12	12
+LEGACY_APPEND_ENTRY call=9 index=0 count=4 raw_samples=1210 flag=2 overlap=72 appended_samples=1138 cursor_before=0
+Temporary breakpoint 72 at 0x10023dcd
+LEGACY_APPEND_RETURN call=9 cursor_after=2276
+LEGACY_AUDIO_SEGMENT_ENTRY call=10 index=1 samples=578 record=0x2807dcc
+0x2807dcc:	0x84	0x23	0x26	0x04	0x75	0x48	0x19	0x00
+0x2807dd4:	0x22	0x01	0x68	0x01	0x3c	0x01	0x04	0x05
+0x2807ddc:	0x24	0x24	0x24	0x01
+Temporary breakpoint 73 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=10 data=0x27f8b82 samples=578 first_samples=0x27f8b82:	-7296	-8064	-8320	-8576	-9088	-8960	-6400	-3584
+0x27f8b92:	-2176	512	3072	4352
+LEGACY_APPEND_ENTRY call=10 index=1 count=4 raw_samples=578 flag=2 overlap=72 appended_samples=506 cursor_before=2276
+Temporary breakpoint 74 at 0x10023dcd
+LEGACY_APPEND_RETURN call=10 cursor_after=3288
+LEGACY_AUDIO_SEGMENT_ENTRY call=11 index=2 samples=1180 record=0x2807de0
+0x2807de0:	0xc0	0x24	0x26	0x04	0x7d	0x48	0x19	0x00
+0x2807de8:	0xf2	0x01	0xf0	0x02	0x64	0x02	0x07	0x0b
+0x2807df0:	0x24	0x23	0x22	0x01
+Temporary breakpoint 75 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=11 data=0x27f8b82 samples=1180 first_samples=0x27f8b82:	-8704	-8704	-9088	-9472	-10112	-9728	-8192	-7680
+0x27f8b92:	-5504	-3200	-1664	0
+LEGACY_APPEND_ENTRY call=11 index=2 count=4 raw_samples=1180 flag=2 overlap=68 appended_samples=1112 cursor_before=3288
+Temporary breakpoint 76 at 0x10023dcd
+LEGACY_APPEND_RETURN call=11 cursor_after=5512
+LEGACY_AUDIO_SEGMENT_ENTRY call=12 index=3 samples=4854 record=0x2807df4
+0x2807df4:	0x24	0x27	0x26	0x04	0x8e	0x48	0x19	0x00
+0x2807dfc:	0x40	0x08	0x1c	0x0b	0xb0	0x09	0x1c	0x18
+0x2807e04:	0x22	0x33	0x3f	0x01
+Temporary breakpoint 77 at 0x10023105
+LEGACY_AUDIO_SEGMENT_RETURN call=12 data=0x27f8b82 samples=4854 first_samples=0x27f8b82:	-12032	-12288	-12800	-13312	-12032	-8704	-4864	-1792
+0x27f8b92:	2560	6400	8704	9728
+LEGACY_APPEND_ENTRY call=12 index=3 count=4 raw_samples=4854 flag=0 overlap=126 appended_samples=4854 cursor_before=5512
+Temporary breakpoint 78 at 0x10023dcd
+LEGACY_APPEND_RETURN call=12 cursor_after=15220
+OLD_TEXT_PARSE_ENTRY n=10 source=0xbe8116:	"\n"
+Temporary breakpoint 79 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=10 status=0 consumed=1 records=0
+OLD_TEXT_PARSE_ENTRY n=11 source=0xbe8117:	""
+Temporary breakpoint 80 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=11 status=0 consumed=0 records=0
+OLD_TEXT_PARSE_ENTRY n=12 source=0xbe8117:	""
+Temporary breakpoint 81 at 0x1001c1b4
+OLD_TEXT_PARSE_RETURN n=12 status=0 consumed=0 records=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\probe\probe-original-kate-2006.exe'/00000000 @004013E0 (204288<1830>)
+0114:0118: create thread I @004013E0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78E90000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E10000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL C:\windows\system32\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: unload DLL @10000000
+00000114:00000118: unload DLL @779C0000
+00000114:00000118: unload DLL @7AE40000
+00000114:00000118: unload DLL @77940000
+00000114:00000118: unload DLL @77970000
+00000114:00000118: unload DLL @78E90000
+00000114:00000118: unload DLL @7A9F0000
+00000114:00000118: unload DLL @79E40000
+00000114:00000118: unload DLL @7A890000
+00000114:00000118: unload DLL @79EA0000
+00000114:00000118: unload DLL @78E10000
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

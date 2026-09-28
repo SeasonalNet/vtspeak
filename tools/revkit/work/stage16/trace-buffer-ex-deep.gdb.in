@@ -1,0 +1,95 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $long_text = (char *)malloc(79)
+  set $i = 0
+  while $i < 78
+    if ($i % 13) == 12
+      set {char}($long_text + $i) = 32
+    else
+      set {char}($long_text + $i) = *(char *)($text + ($i % 13))
+    end
+    set $i = $i + 1
+  end
+  set {char}($long_text + 78) = 0
+  set $allocation = (char *)malloc(60032)
+  set $buffer = $allocation + 16
+  set $i = 0
+  while $i < 16
+    set {unsigned char}($allocation + $i) = 0xa5
+    set {unsigned char}($buffer + 60000 + $i) = 0xa5
+    set $i = $i + 1
+  end
+  set $length = (int *)malloc(4)
+  set $extra_a_alloc = (char *)malloc(32)
+  set $extra_b_alloc = (char *)malloc(32)
+  set $extra_a = (int *)($extra_a_alloc + 8)
+  set $extra_b = (int *)($extra_b_alloc + 8)
+  set $extra_a_bytes = (char *)$extra_a
+  set $extra_b_bytes = (char *)$extra_b
+  set $i = 0
+  while $i < 8
+    set {unsigned char}($extra_a_alloc + $i) = 0xa5
+    set {unsigned char}($extra_a_bytes + 4 + $i) = 0xa5
+    set {unsigned char}($extra_b_alloc + $i) = 0xa5
+    set {unsigned char}($extra_b_bytes + 4 + $i) = 0xa5
+    set $i = $i + 1
+  end
+  set *$extra_a = 0x55555555
+  set *$extra_b = 0x66666666
+  set *$length = 60000
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int *, int *))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+  printf "BUFFER_EX_DEEP_START selector=@SELECTOR@ result=%d length=%d extras=%d,%d\n", $result, *$length, *$extra_a, *$extra_b
+  set $poll = 0
+  while ($result == 0) && ($poll < 16)
+    set *$length = 60000
+    set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int *, int *))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 1, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+    printf "BUFFER_EX_DEEP_POLL selector=@SELECTOR@ n=%d result=%d length=%d extras=%d,%d\n", $poll, $result, *$length, *$extra_a, *$extra_b
+    set $poll = $poll + 1
+  end
+  printf "BUFFER_EX_DEEP_TOTAL selector=@SELECTOR@ result=%d last_length=%d polls=%d guards=%02x,%02x,%02x,%02x,%02x,%02x,%02x,%02x extras=%d,%d\n", $result, *$length, $poll, *(unsigned char *)($buffer - 4), *(unsigned char *)($buffer - 3), *(unsigned char *)($buffer - 2), *(unsigned char *)($buffer - 1), *(unsigned char *)($buffer + 60000), *(unsigned char *)($buffer + 60001), *(unsigned char *)($buffer + 60002), *(unsigned char *)($buffer + 60003), *$extra_a, *$extra_b
+  printf "BUFFER_EX_DEEP_POINTER_GUARDS selector=@SELECTOR@ before=%02x,%02x,%02x,%02x after=%02x,%02x,%02x,%02x\n", *(unsigned char *)($extra_a_bytes - 4), *(unsigned char *)($extra_a_bytes - 3), *(unsigned char *)($extra_a_bytes - 2), *(unsigned char *)($extra_a_bytes - 1), *(unsigned char *)($extra_a_bytes + 4), *(unsigned char *)($extra_a_bytes + 5), *(unsigned char *)($extra_a_bytes + 6), *(unsigned char *)($extra_a_bytes + 7)
+  printf "BUFFER_EX_DEEP_POINTER_B_GUARDS selector=@SELECTOR@ before=%02x,%02x,%02x,%02x after=%02x,%02x,%02x,%02x\n", *(unsigned char *)($extra_b_bytes - 4), *(unsigned char *)($extra_b_bytes - 3), *(unsigned char *)($extra_b_bytes - 2), *(unsigned char *)($extra_b_bytes - 1), *(unsigned char *)($extra_b_bytes + 4), *(unsigned char *)($extra_b_bytes + 5), *(unsigned char *)($extra_b_bytes + 6), *(unsigned char *)($extra_b_bytes + 7)
+
+  set *$length = 60000
+  set $start2 = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_STATE_START selector=@SELECTOR@ result=%d length=%d\n", $start2, *$length
+  set *$length = 0x12345678
+  set $busy = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_STATE_BUSY selector=@SELECTOR@ result=%d length=%#x\n", $busy, *$length
+  set *$length = 0x12345678
+  set $cancel = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 2, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_STATE_CANCEL selector=@SELECTOR@ result=%d length=%#x\n", $cancel, *$length
+  set *$length = 0x12345678
+  set $after_cancel = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 1, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_STATE_AFTER_CANCEL selector=@SELECTOR@ result=%d length=%#x guards=%02x,%02x,%02x,%02x,%02x,%02x,%02x,%02x\n", $after_cancel, *$length, *(unsigned char *)($buffer - 4), *(unsigned char *)($buffer - 3), *(unsigned char *)($buffer - 2), *(unsigned char *)($buffer - 1), *(unsigned char *)($buffer + 60000), *(unsigned char *)($buffer + 60001), *(unsigned char *)($buffer + 60002), *(unsigned char *)($buffer + 60003)
+
+  set $empty_text = (char *)malloc(1)
+  set {char}($empty_text) = 0
+  set *$length = 60000
+  set $bad = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, (char *)0, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_ERROR_NULL_TEXT result=%d length=%d\n", $bad, *$length
+  set *$length = 60000
+  set $bad = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $empty_text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_ERROR_EMPTY_TEXT result=%d length=%d\n", $bad, *$length
+  set *$length = 60000
+  set $bad = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, (char *)0, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_ERROR_NULL_BUFFER result=%d length=%d\n", $bad, *$length
+  set *$length = 0x12345678
+  set $bad = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 0, 1, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_ERROR_NONZERO_THREAD result=%d length=%#x guards=%02x,%02x,%02x,%02x,%02x,%02x,%02x,%02x\n", $bad, *$length, *(unsigned char *)($buffer - 4), *(unsigned char *)($buffer - 3), *(unsigned char *)($buffer - 2), *(unsigned char *)($buffer - 1), *(unsigned char *)($buffer + 60000), *(unsigned char *)($buffer + 60001), *(unsigned char *)($buffer + 60002), *(unsigned char *)($buffer + 60003)
+  call ((void (*)(int))0x10027f80)(1)
+  set *$length = 0x12345678
+  set $bad = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_DEEP_ERROR_DB_UNLOADED result=%d length=%#x guards=%02x,%02x,%02x,%02x,%02x,%02x,%02x,%02x\n", $bad, *$length, *(unsigned char *)($buffer - 4), *(unsigned char *)($buffer - 3), *(unsigned char *)($buffer - 2), *(unsigned char *)($buffer - 1), *(unsigned char *)($buffer + 60000), *(unsigned char *)($buffer + 60001), *(unsigned char *)($buffer + 60002), *(unsigned char *)($buffer + 60003)
+  continue
+end
+
+continue

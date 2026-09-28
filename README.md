@@ -3,7 +3,10 @@
 `vtspeak` is a research and reimplementation workspace for understanding the legacy VoiceText text-to-speech engine and its voice data.
 
 - The current work combines static analysis of the Windows executable and DLLs with controlled runtime traces of the model readers and synthesis path.
-- A native POSIX reimplementation is the ultimate goal; this repository does not provide one yet.
+- A native POSIX reimplementation is in progress under `engine/`; it decodes
+  2013 Paul DAT units, resolves supported dictionary pronunciations, and now
+  evaluates their ordinary-path duration trees, but does not yet select units
+  or synthesize ordinary text.
 
 ## Repository map
 
@@ -18,6 +21,7 @@
 | `data-paul/` | Paul voice model, unit indexes, waveform banks, and prosody trees |
 | `include/` | Headers recovered with the VoiceText package |
 | `tools/revkit/` | Docker-based Ghidra, FLOSS, capa, and PE inspection toolkit |
+| `engine/` | Go native engine packages for Paul unit resources, pronunciation records, DAT decoding, and pipeline contracts |
 | `docs/` | Project notes, asset map, and reverse-engineering findings |
 
 The binaries and voice data remain in the working tree for local analysis. Their redistribution terms have not been established, so the root `.gitignore` excludes those input directories from Git.

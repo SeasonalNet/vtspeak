@@ -1,0 +1,36 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024680
+Wine-gdb> >>>>>>>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024060
+Wine-gdb> >>>>>>>>>>> > > > > > > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10018770
+Wine-gdb> >>>> > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+PAH0_PHONE_TREE_ENTRY pos=0 state=0x24e0020 arg=0x14bf310 tree_base=0x24e0070
+PAH0_QUERY_ROW n=1 slot=0 return=0x10024808 state=0x24e0020 voice=0x24e0070 row=0x25cc648 fields:0x25cc648:	0	0	0	0	0	1
+PAH0_QUERY_SIGNATURE n=1 bank=0 leaf=0 signature:0x24e0752:	90	90	53	7	90	160	0
+PAH0_BANK_HEADER n=1 base=0x24e0070 signature_count=0 context_count=1 node_table=0x25cc648 feature_table=0x24f7dbc
+PAH0_BANK_SIGNATURES n=1 first_leaf_through_leaf:
+0x24e0752:	90	90	53	7	90	160	0	90
+0x24e075a:	53	7	90	90	101	0
+PAH0_BANK_CONTEXT_RECORDS n=1 records:
+0x25cc649:	0	0	0	0	1	0	0	0
+0x25cc651:	0	0	0	0	0	0	0	0
+0x25cc659:	0	0	0	0	0	0	0	0
+0x25cc661:	0	0	0	0	0	0	0	0
+0x25cc669:	0	0	0	0	0	0	0	0
+0x25cc671:	0	0	0	0	0	0	0	0
+PAH0_SIGNATURE_CALL n=1 caller=0x10024119 slot=0 raw:0x24e0752:	90	90	53	7	90	160	0
+PAH0_QUERY_ROW n=2 slot=2 return=0x10024808 state=0x24e0020 voice=0x24e0070 row=0x25cc654 fields:0x25cc654:	0	0	1	0	0	0
+PAH0_QUERY_SIGNATURE n=2 bank=0 leaf=1 signature:0x24e0759:	90	53	7	90	90	101	0
+PAH0_BANK_HEADER n=2 base=0x24e0070 signature_count=2 context_count=1 node_table=0x25cc648 feature_table=0x24f7dbc
+PAH0_BANK_SIGNATURES n=2 first_leaf_through_leaf:
+0x24e0752:	90	90	53	7	90	160	0	90
+0x24e075a:	53	7	90	90	101	0
+PAH0_BANK_CONTEXT_RECORDS n=2 records:
+0x25cc649:	0	0	0	1	1	0	0	0
+0x25cc651:	1	2	1	0	0	1	0	0
+0x25cc659:	0	0	0	0	0	0	0	0
+0x25cc661:	0	0	0	0	0	0	0	0
+0x25cc669:	0	0	0	0	0	0	0	0
+0x25cc671:	0	0	0	0	0	0	0	0
+PAH0_SIGNATURE_CALL n=4 caller=0x10024119 slot=2 raw:0x24e0759:	90	53	7	90	90	101	0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

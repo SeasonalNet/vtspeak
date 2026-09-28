@@ -1,0 +1,8 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10019f40
+Wine-gdb> >>>>>>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10019940
+Wine-gdb> >>>>> > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023350
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Continuing.
+MODEL_LOADER call=1 object=0x14bf198 signature_table=0x5000400
+Cannot execute this command while the target is running.
+Use the "interrupt" command to stop the target
+and then try again.

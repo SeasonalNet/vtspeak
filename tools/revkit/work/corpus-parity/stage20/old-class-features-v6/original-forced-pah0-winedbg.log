@@ -1,0 +1,161 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /probe/probe-original-kate-2006.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/old-class-features-v6-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/old-class-features-v6-gdb.log.
+Wine-gdb> Already logging to /work/corpus-parity/stage20/old-class-features-v6-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x408187
+Wine-gdb> >>>>> > > >  >  >  >  >  >  >  >  >  >  >   >   >   >   >   >   >    >    >    >    >    >    >   >   >   >  > > >>>> > > >  >  >  >  >  > > >>>> > > >  >  >  >  >  >  >  > > >>>>Wine-gdb> Wine-gdb> Continuing.
+OLD_FEATURE_TRACE_V2_READY
+Breakpoint 2 at 0x1001da80
+Breakpoint 3 at 0x10011fa0
+Breakpoint 4 at 0x10011fb2
+OLD_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Temporary breakpoint 5 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=0 mode=1 appended=75 total=4 ids: 52164
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52164 bytes:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52165 bytes:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52166 bytes:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52167 bytes:0x2225d71:	90	34	4	30	30	30	0
+
+OLD_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Temporary breakpoint 6 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=1 mode=1 appended=9 total=2 ids: 32401
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32401 bytes:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32400 bytes:0x22040f0:	34	23	43	0	0	43	34
+
+OLD_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Temporary breakpoint 7 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=2 mode=1 appended=5 total=1 ids: 25383
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=25383 bytes:0x21f8111:	23	43	47	0	0	48	23
+
+OLD_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x26f0843:	43	48	90	4	4
+Temporary breakpoint 8 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=3 mode=1 appended=6 total=1 ids: 37302
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=37302 bytes:0x220c6fa:	43	48	90	4	4	0	43
+
+OLD_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Temporary breakpoint 9 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=0 mode=1 appended=75 total=4 ids: 52164
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52164 bytes:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52165 bytes:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52166 bytes:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52167 bytes:0x2225d71:	90	34	4	30	30	30	0
+
+OLD_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Temporary breakpoint 10 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=1 mode=1 appended=9 total=2 ids: 32401
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32401 bytes:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32400 bytes:0x22040f0:	34	23	43	0	0	43	34
+
+OLD_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Temporary breakpoint 11 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=2 mode=1 appended=5 total=1 ids: 25383
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=25383 bytes:0x21f8111:	23	43	47	0	0	48	23
+
+OLD_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x26f0843:	43	48	90	4	4
+Temporary breakpoint 12 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=3 mode=1 appended=6 total=1 ids: 37302
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=37302 bytes:0x220c6fa:	43	48	90	4	4	0	43
+
+OLD_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Temporary breakpoint 13 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=0 mode=1 appended=75 total=4 ids: 52164
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52164 bytes:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52165 bytes:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52166 bytes:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52167 bytes:0x2225d71:	90	34	4	30	30	30	0
+
+OLD_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Temporary breakpoint 14 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=1 mode=1 appended=9 total=2 ids: 32401
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32401 bytes:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32400 bytes:0x22040f0:	34	23	43	0	0	43	34
+
+OLD_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Temporary breakpoint 15 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=2 mode=1 appended=5 total=1 ids: 25383
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=25383 bytes:0x21f8111:	23	43	47	0	0	48	23
+
+OLD_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x26f0843:	43	48	90	4	4
+Temporary breakpoint 16 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=3 mode=1 appended=6 total=1 ids: 37302
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=37302 bytes:0x220c6fa:	43	48	90	4	4	0	43
+
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\probe\probe-original-kate-2006.exe'/00000000 @004013E0 (204288<1830>)
+0114:0118: create thread I @004013E0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78E90000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E10000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL C:\windows\system32\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: unload DLL @10000000
+00000114:00000118: unload DLL @779C0000
+00000114:00000118: unload DLL @7AE40000
+00000114:00000118: unload DLL @77940000
+00000114:00000118: unload DLL @77970000
+00000114:00000118: unload DLL @78E90000
+00000114:00000118: unload DLL @7A9F0000
+00000114:00000118: unload DLL @79E40000
+00000114:00000118: unload DLL @7A890000
+00000114:00000118: unload DLL @79EA0000
+00000114:00000118: unload DLL @78E10000
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

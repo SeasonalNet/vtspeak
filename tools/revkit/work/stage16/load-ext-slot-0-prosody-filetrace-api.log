@@ -1,0 +1,332 @@
+WINE_PROCESS_STATUS=0
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\wininit.ini" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\wininit.ini" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\dllcache\\*" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\dllcache\\" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\winemenubuilder.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\winemenubuilder.exe.manifest" not found (c0000034)
+003c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\services.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+003c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\services.exe.manifest" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0034:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"work" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.config" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.config" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.config\\menus" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.config\\menus" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.config\\menus\\applications-merged" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.config\\menus\\applications-merged" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share\\desktop-directories" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share\\desktop-directories" not found (c0000035)
+0048:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\winedevice.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0048:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\winedevice.exe.manifest" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0050:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0050:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0050:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0050:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\winemac.drv" not found (c0000034)
+0050:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\winemac.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0050:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\winemac.drv" not found (c0000034)
+0078:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\winedevice.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0078:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\winedevice.exe.manifest" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\user32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\user32.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\zlib1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\zlib1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\gdi32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\gdi32.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\win32u.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\win32u.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0088:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0088:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0088:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0088:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\plugplay.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\plugplay.exe.manifest" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00b8:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+00b8:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+00b8:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+00b8:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found (c0000034)
+00d0:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\svchost.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00d0:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\svchost.exe.manifest" not found (c0000034)
+005c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\iphlpapi.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+005c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\iphlpapi.dll" not found (c0000034)
+005c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\dnsapi.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+005c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\dnsapi.dll" not found (c0000034)
+005c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\nsi.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+005c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\nsi.dll" not found (c0000034)
+005c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\drivers\\ws2_32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+005c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\drivers\\ws2_32.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+002c:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+002c:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\i386-windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+002c:trace:file:nt_to_unix_file_name_no_root L"usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+002c:warn:file:NtCreateFile L"\\??\\Z:\\usr\\lib\\i386-linux-gnu\\wine\\libgcc_s_dw2-1.dll" not found (c0000034)
+00f0:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\rpcss.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+00f0:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\rpcss.exe.manifest" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\kernel32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\kernel32.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\kernelbase.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\kernelbase.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\probe-load-ext-state.exe.manifest" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\probe-load-ext-state.exe.manifest" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\msvcrt.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\msvcrt.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage5\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage5\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\WINMM.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\WINMM.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\advapi32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\advapi32.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\sechost.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\sechost.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\ucrtbase.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\ucrtbase.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\msacm32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\msacm32.dll" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"work" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share\\mime" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share\\mime" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share\\mime\\packages" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share\\mime\\packages" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share\\applications" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share\\applications" not found (c0000035)
+0034:trace:file:nt_to_unix_file_name_no_root L"work\\home\\.local\\share\\mime\\globs" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0034:warn:file:NtCreateFile L"\\??\\Z:\\work\\home\\.local\\share\\mime\\globs" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"usr\\local\\share\\mime\\globs" not found in ""
+0034:warn:file:NtCreateFile L"\\??\\unix\\usr\\local\\share\\mime\\globs" not found (c0000034)
+0034:trace:file:nt_to_unix_file_name_no_root L"usr\\share\\mime\\globs" not found in ""
+0034:warn:file:NtCreateFile L"\\??\\unix\\usr\\share\\mime\\globs" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\user32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\user32.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\zlib1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\zlib1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\gdi32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\gdi32.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\win32u.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\win32u.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\ole32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\ole32.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\combase.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\combase.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\rpcrt4.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\rpcrt4.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\coml2.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\coml2.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\iphlpapi.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\iphlpapi.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\dnsapi.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\dnsapi.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\nsi.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\nsi.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\ws2_32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\ws2_32.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage5\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage5\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\wbem\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/c:"
+0024:warn:file:NtCreateFile L"\\??\\C:\\windows\\system32\\WindowsPowershell\\v1.0\\libgcc_s_dw2-1.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\imm32.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\imm32.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\winex11.drv" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\winex11.drv" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\uxtheme.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\uxtheme.dll" not found (c0000034)
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\db_build.date" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\db_build.date" not found (c0000034)
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/atmt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/atmt.tree3",0063F368,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/atmt.tree3" 520 0063F0E4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f364 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f370 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/atmt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/poly.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/poly.tree3",0063F57C,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/poly.tree3" 520 0063F2F8 00000000)
+0024:trace:file:NtCreateFile handle=0x63f578 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f584 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/poly.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/engbi.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/engbi.tree3",0063F6BC,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/engbi.tree3" 520 0063F438 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6b8 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6c4 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/engbi.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/sbd.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/sbd.tree3",0063F6C4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/sbd.tree3" 520 0063F440 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6c0 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6cc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/sbd.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-kate/M16/ttsdata/tree3/pitch/nbt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-kate/M16/ttsdata/tree3/pitch/nbt.tree3",0063F8A4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-kate/M16/ttsdata/tree3/pitch/nbt.tree3" 520 0063F620 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8a0 access=80100080 name=L"\\??\\Z:\\work\\data-kate\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ac alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\data-kate\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\data-kate\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" not found (c000003a)
+0024:warn:file:CreateFileW Unable to create file L"Z:/work/data-kate/M16/ttsdata/tree3/pitch/nbt.tree3" (status c000003a)
+SLOT input=0 load_ax=8 occupancy=00
+SLOT sizes slot0=4294967295/0 slot1=4294967295/0 slot2=4294967295/0 slot3=4294967295/0 slot4=4294967295/0 slot5=4294967295/0
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\stage16\\mscoree.dll" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\stage16\\mscoree.dll" not found (c0000034)

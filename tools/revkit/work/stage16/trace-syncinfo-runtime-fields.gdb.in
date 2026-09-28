@@ -1,0 +1,76 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+define snapshot_sync
+  set $sync = (char *)*$extra_a
+  if $sync != 0
+    set $sync_rows = *(unsigned int *)$sync
+    set $sync_count = *(int *)($sync + 12)
+    printf "SYNC_RUNTIME_HEADER poll=%d words=", $tag
+    set $i = 0
+    while $i < 14
+      printf "%08x,", *(unsigned int *)($sync + $i * 4)
+      set $i = $i + 1
+    end
+    printf "\n"
+    set $j = 0
+    while ($j < $sync_count) && ($j < 64)
+      set $row = $sync_rows + $j * 0x24
+      printf "SYNC_RUNTIME_ROW poll=%d i=%d count=%u ptr=%#x fields8_32=", $tag, $j, *(unsigned short *)$row, *(unsigned int *)($row + 4)
+      set $i = 8
+      while $i < 36
+        printf "%08x,", *(unsigned int *)($row + $i)
+        set $i = $i + 4
+      end
+      printf " nested="
+      set $nested = *(unsigned int *)($row + 4)
+      set $k = 0
+      while ($k < *(unsigned short *)$row) && ($k < 65)
+        printf "%08x:%04x,", *(unsigned int *)($nested + $k * 8), *(unsigned short *)($nested + $k * 8 + 4)
+        set $k = $k + 1
+      end
+      printf "\n"
+      set $j = $j + 1
+    end
+  end
+end
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $buffer = (char *)malloc(60016) + 8
+  set $length = (int *)malloc(4)
+  set $extra_a = (unsigned int *)malloc(4)
+  set $extra_b = (unsigned int *)malloc(4)
+  set *$length = 60000
+  set *$extra_a = 0
+  set *$extra_b = 0
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, (char *)$text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+  set $tag = -1
+  if $result == 0
+    snapshot_sync
+  else
+    printf "SYNC_RUNTIME_INITIAL_TERMINAL result=%d\n", $result
+  end
+  set $poll = 0
+  while ($result == 0) && ($poll < 16)
+    set *$length = 60000
+    set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, (char *)$text, $buffer, $length, 1, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+    set $tag = $poll
+    if $result == 0
+      snapshot_sync
+    else
+      printf "SYNC_RUNTIME_TERMINAL result=%d poll=%d length=%d (borrowed pointers not read after terminal cleanup)\n", $result, $poll, *$length
+    end
+    set $poll = $poll + 1
+  end
+  printf "SYNC_RUNTIME_DONE result=%d polls=%d\n", $result, $poll
+  kill
+  quit
+end
+
+continue

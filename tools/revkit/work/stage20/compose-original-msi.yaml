@@ -1,0 +1,8 @@
+services:
+  runtime:
+    volumes:
+      - ../../../../tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate:/work/data-kate:ro
+      - ../../../../tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-common/dict-eng:/work/data-common/dict-eng:ro
+      - ../../../../tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-common/verify/verification.txt:/work/data-common/verify/verification.txt:ro
+      - ../../../../tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/lib/vt_eng.dll:/samples/vt_kat.dll:ro
+      - ../../../../tools/revkit/work/corpus-parity:/probe

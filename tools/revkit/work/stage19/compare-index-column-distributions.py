@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Compare Kate legacy byte-column distributions with Paul's attr-B column."""
+"""Compare Kate's legacy attr_40 field with Paul's attr-B distribution.
+
+This is only a byte-distribution comparison. It does not establish semantic
+equivalence between the window and the 2013 field.
+"""
 
 from __future__ import annotations
 
@@ -13,7 +17,7 @@ KATE = ROOT / "data-kate" / "M16" / "mc_idx_tbl"
 OUTPUT = Path(__file__).resolve().parent / "index-attribute-distribution.tsv"
 
 
-def columns(path: Path, expected_width: int) -> tuple[int, list[bytes]]:
+def index_tail(path: Path, expected_width: int) -> tuple[int, bytes]:
     raw = path.read_bytes()
     position = 1 + raw[0]
     bank_count = struct.unpack_from("<H", raw, position)[0]
@@ -31,11 +35,7 @@ def columns(path: Path, expected_width: int) -> tuple[int, list[bytes]]:
             f"{path}: expected {expected_width} column bytes per unit, "
             f"found {column_bytes} bytes for {unit_count} units"
         )
-    result = [
-        raw[position + index * unit_count : position + (index + 1) * unit_count]
-        for index in range(expected_width)
-    ]
-    return unit_count, result
+    return unit_count, raw[position:]
 
 
 def byte_emd(left: bytes, right: bytes) -> float:
@@ -50,21 +50,25 @@ def byte_emd(left: bytes, right: bytes) -> float:
 
 
 def main() -> None:
-    rows = ["kate_index\tunits\tlegacy_column\tmin\tmax\tdistinct\tpaul_attr_b_emd"]
+    rows = [
+        "kate_index\tunits\tkate_field\tmin\tmax\tdistinct\t"
+        "paul_attr_b_emd\tsemantic_mapping_established"
+    ]
     for kate_path in sorted(KATE.glob("unit-*.idx")):
         bank = kate_path.stem.removeprefix("unit-")
         paul_bank = "gen" if bank == "gen2" else bank
         paul_path = PAUL / f"unit-{paul_bank}.idx"
-        kate_units, kate_columns = columns(kate_path, 20)
-        paul_units, paul_columns = columns(paul_path, 21)
-        if len(paul_columns[8]) == 0:
+        kate_units, kate_tail = index_tail(kate_path, 20)
+        paul_units, paul_tail = index_tail(paul_path, 21)
+        kate_attr_40 = kate_tail[7 * kate_units : 8 * kate_units]
+        paul_attr_b = paul_tail[8 * paul_units : 9 * paul_units]
+        if not paul_attr_b:
             raise ValueError(f"{paul_path}: empty attr-B column")
-        paul_attr_b = paul_columns[8]
-        for index, values in enumerate(kate_columns):
-            rows.append(
-                f"{kate_path.name}\t{kate_units}\t{index:02d}\t{min(values)}\t"
-                f"{max(values)}\t{len(set(values))}\t{byte_emd(values, paul_attr_b):.6f}"
-            )
+        rows.append(
+            f"{kate_path.name}\t{kate_units}\tlegacy_attr_40\t{min(kate_attr_40)}\t"
+            f"{max(kate_attr_40)}\t{len(set(kate_attr_40))}\t"
+            f"{byte_emd(kate_attr_40, paul_attr_b):.6f}\tno"
+        )
         if paul_units == 0:
             raise ValueError(f"{paul_path}: empty index")
     OUTPUT.write_text("\n".join(rows) + "\n")

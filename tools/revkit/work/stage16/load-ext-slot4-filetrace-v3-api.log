@@ -1,0 +1,212 @@
+WINE_PROCESS_STATUS=0
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/atmt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/atmt.tree3",0063F378,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/atmt.tree3" 520 0063F0F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f374 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f380 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/atmt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/poly.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/poly.tree3",0063F58C,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/poly.tree3" 520 0063F308 00000000)
+0024:trace:file:NtCreateFile handle=0x63f588 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f594 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/poly.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/engbi.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/engbi.tree3",0063F6CC,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/engbi.tree3" 520 0063F448 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6c8 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6d4 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/engbi.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/sbd.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/sbd.tree3",0063F6D4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/sbd.tree3" 520 0063F450 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6d0 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6dc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/sbd.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbf.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbf.tree3",0063F8A4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbf.tree3" 520 0063F620 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8a0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\nbf.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ac alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\nbf.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/nbf.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/bt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/bt.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/bt.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\bt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\bt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/bt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/bf.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/bf.tree3",0063F8A4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/bf.tree3" 520 0063F620 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8a0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\bf.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ac alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\bf.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/bf.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/qbt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/qbt.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/qbt.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\qbt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\qbt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/qbt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/qbf.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/qbf.tree3",0063F8A4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/qbf.tree3" 520 0063F620 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8a0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\qbf.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ac alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\qbf.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/qbf.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/sbt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/sbt.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/sbt.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\sbt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\sbt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/sbt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/sbf.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/sbf.tree3",0063F8A4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/sbf.tree3" 520 0063F620 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8a0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\sbf.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ac alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\sbf.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/pitch/sbf.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/vshort.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vshort.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vshort.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vshort.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vshort.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/vshort.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/vlong.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vlong.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vlong.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vlong.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vlong.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/vlong.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/vdi.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vdi.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vdi.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vdi.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vdi.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/vdi.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/vsch.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vsch.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/vsch.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vsch.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\vsch.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/vsch.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/cstop.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/cstop.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/cstop.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\cstop.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\cstop.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/cstop.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/cfri.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/cfri.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/cfri.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\cfri.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\cfri.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/cfri.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/caff.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/caff.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/caff.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\caff.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\caff.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/caff.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/cnas.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/cnas.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/cnas.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\cnas.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\cnas.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/cnas.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/duration/capp.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/duration/capp.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/duration/capp.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\capp.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\duration\\capp.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/tree3/duration/capp.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/dist_tbl/cepdist.tbl" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/dist_tbl/cepdist.tbl",0063F8C8,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/dist_tbl/cepdist.tbl" 520 0063F644 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8c4 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\dist_tbl\\cepdist.tbl" objattr=00000042 root=(nil) sec=(nil) io=0x63f8d0 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\dist_tbl\\cepdist.tbl" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/ttsdata/dist_tbl/cepdist.tbl"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dblist.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dblist.idx",0063F688,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dblist.idx" 520 0063F404 00000000)
+0024:trace:file:NtCreateFile handle=0x63f684 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dblist.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f690 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dblist.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dblist.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-gen.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-gen.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-num.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-num.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-num.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-num.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-num.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-num.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-etc.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-etc.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-abc.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-abc.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-gen.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-gen.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-gen.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-num.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-num.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-num.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-num.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-num.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-num.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-etc.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-etc.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-etc.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx",0063F678,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx" 520 0063F3F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f674 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-abc.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f680 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\mc_idx_tbl\\unit-abc.idx" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/mc_idx_tbl/unit-abc.idx"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/class.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/class.idx",0063F888,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/class.idx" 520 0063F604 00000000)
+0024:trace:file:NtCreateFile handle=0x63f884 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\class.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f890 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\data-james\\M16\\class.idx" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\data-james\\M16\\class.idx" not found (c0000034)
+0024:warn:file:CreateFileW Unable to create file L"Z:/work/data-james/M16/class.idx" (status c0000034)
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/classhp.idx" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/classhp.idx",0063F868,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/classhp.idx" 520 0063F5E4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f864 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\classhp.idx" objattr=00000042 root=(nil) sec=(nil) io=0x63f870 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\data-james\\M16\\classhp.idx" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\data-james\\M16\\classhp.idx" not found (c0000034)
+0024:warn:file:CreateFileW Unable to create file L"Z:/work/data-james/M16/classhp.idx" (status c0000034)
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-gen.dat" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-gen.dat",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-gen.dat" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-gen.dat" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-gen.dat" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-gen.dat"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-num.dat" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-num.dat",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-num.dat" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-num.dat" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-num.dat" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-num.dat"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-etc.dat" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-etc.dat",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-etc.dat" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-etc.dat" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-etc.dat" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-etc.dat"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-abc.dat" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-abc.dat",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-abc.dat" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-abc.dat" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-abc.dat" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-abc.dat"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-gen.upm" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-gen.upm",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-gen.upm" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-gen.upm" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-gen.upm" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-gen.upm"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-num.upm" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-num.upm",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-num.upm" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-num.upm" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-num.upm" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-num.upm"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-etc.upm" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-etc.upm",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-etc.upm" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-etc.upm" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-etc.upm" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-etc.upm"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/dat/merged-abc.upm" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/dat/merged-abc.upm",0063F8E4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/dat/merged-abc.upm" 520 0063F660 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8e0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-abc.upm" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ec alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-james\\M16\\dat\\merged-abc.upm" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-james/M16/dat/merged-abc.upm"
+SLOT input=4 load_ax=0 occupancy=10
+SLOT sizes slot0=4294967295/0 slot1=4294967295/0 slot2=4294967295/0 slot3=4294967295/0 slot4=1/253797273 slot5=4294967295/0

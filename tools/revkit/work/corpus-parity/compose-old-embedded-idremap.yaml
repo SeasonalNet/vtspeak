@@ -1,0 +1,5 @@
+services:
+  runtime:
+    volumes:
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity/variant-old-embedded-idremap-v4:/work/data-common/dict-eng:ro
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity:/probe

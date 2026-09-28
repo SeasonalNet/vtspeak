@@ -1,0 +1,9 @@
+Wine-gdb> Hardware assisted breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>>>>>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_TARGET_SIGNATURE slot=0 bank=0 leaf=0:0x24e0752:	90	90	5	71	7	160	0
+APPLE_TARGET_SIGNATURE slot=2 bank=0 leaf=1:0x24e0759:	90	5	71	7	43	0	0
+APPLE_TARGET_SIGNATURE slot=3 bank=0 leaf=2:0x24e0760:	5	71	7	43	90	5	0
+APPLE_TARGET_SIGNATURE slot=5 bank=0 leaf=3:0x24e0767:	71	7	43	90	90	69	0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

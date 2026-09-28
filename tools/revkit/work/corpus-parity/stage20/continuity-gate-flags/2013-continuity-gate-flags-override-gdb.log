@@ -1,0 +1,362 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023350
+Wine-gdb> >>>>>>>>>>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x100182e0
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 6 at 0x10023814
+Wine-gdb> >>>>>>>>>>> > > >>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 7 at 0x10024808
+Temporary breakpoint 8 at 0x10024808
+CONTROLLED_FLAG_OVERRIDE context=0 unit_flags=0x80 for 272822-272824
+POST_COVERAGE_GATE call=1 context=0 total_positions=4 candidate_count=211 input_ids=33088 33089 33090 33091 33092 33093 33094 33095 33096 33097 
+MODEL_TABLE_30_LOOKUP context=0 272822->32928 272823->13478 272824->9147 272825->18857
+MODEL_SIGNATURE_BYTE6 context=0 272822=0x80 272823=0x80 272824=0x80 272825=0
+POST_COVERAGE_CANDIDATE context=0 index=0 unit=159228 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=1 unit=133273 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=2 unit=131797 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=3 unit=121653 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=4 unit=117207 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=5 unit=113279 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=6 unit=112656 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=7 unit=96535 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=8 unit=93083 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=9 unit=77949 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=10 unit=41362 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=11 unit=39043 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=12 unit=33749 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=13 unit=31435 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=14 unit=28088 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=15 unit=16240 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=16 unit=7270 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=17 unit=1560 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=18 unit=145636 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=19 unit=148463 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=20 unit=277711 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=21 unit=277694 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=22 unit=272883 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=23 unit=269687 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=24 unit=232559 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=25 unit=224746 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=26 unit=222903 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=27 unit=213306 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=28 unit=188348 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=29 unit=173430 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=30 unit=161485 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=31 unit=161231 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=32 unit=150119 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=0 index=33 unit=49675 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=34 unit=50594 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=35 unit=52740 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=36 unit=57164 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=37 unit=42089 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=38 unit=38253 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=39 unit=36024 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=40 unit=179302 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=41 unit=177855 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=42 unit=145419 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=43 unit=83703 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=44 unit=58486 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=45 unit=57072 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=46 unit=3859 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=47 unit=3065 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=48 unit=283495 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=49 unit=283425 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=50 unit=283400 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=51 unit=283238 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=52 unit=279757 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=53 unit=278417 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=54 unit=261971 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=55 unit=256573 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=56 unit=241896 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=57 unit=201756 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=58 unit=218695 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=59 unit=32842 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=60 unit=15433 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=61 unit=12690 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=62 unit=10126 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=0 index=63 unit=6771 left=0 right=0 span=1
+OVERRIDE_LOCAL_SCORE call=1 context=0 unit=159228
+OVERRIDE_LOCAL_SCORE call=2 context=0 unit=133273
+OVERRIDE_LOCAL_SCORE call=3 context=0 unit=131797
+OVERRIDE_LOCAL_SCORE call=4 context=0 unit=121653
+OVERRIDE_LOCAL_SCORE call=5 context=0 unit=117207
+OVERRIDE_LOCAL_SCORE call=6 context=0 unit=113279
+OVERRIDE_LOCAL_SCORE call=7 context=0 unit=112656
+OVERRIDE_LOCAL_SCORE call=8 context=0 unit=96535
+OVERRIDE_LOCAL_SCORE call=9 context=0 unit=93083
+OVERRIDE_LOCAL_SCORE call=10 context=0 unit=77949
+OVERRIDE_LOCAL_SCORE call=11 context=0 unit=41362
+OVERRIDE_LOCAL_SCORE call=12 context=0 unit=39043
+OVERRIDE_LOCAL_SCORE call=13 context=0 unit=33749
+OVERRIDE_LOCAL_SCORE call=14 context=0 unit=31435
+OVERRIDE_LOCAL_SCORE call=15 context=0 unit=28088
+OVERRIDE_LOCAL_SCORE call=16 context=0 unit=16240
+OVERRIDE_LOCAL_SCORE call=17 context=0 unit=7270
+OVERRIDE_LOCAL_SCORE call=18 context=0 unit=1560
+OVERRIDE_LOCAL_SCORE call=19 context=0 unit=145636
+OVERRIDE_LOCAL_SCORE call=20 context=0 unit=148463
+OVERRIDE_LOCAL_SCORE call=21 context=0 unit=277711
+OVERRIDE_LOCAL_SCORE call=22 context=0 unit=277694
+OVERRIDE_LOCAL_SCORE call=23 context=0 unit=272883
+OVERRIDE_LOCAL_SCORE call=24 context=0 unit=269687
+OVERRIDE_LOCAL_SCORE call=25 context=0 unit=232559
+OVERRIDE_LOCAL_SCORE call=26 context=0 unit=224746
+OVERRIDE_LOCAL_SCORE call=27 context=0 unit=222903
+OVERRIDE_LOCAL_SCORE call=28 context=0 unit=213306
+OVERRIDE_LOCAL_SCORE call=29 context=0 unit=188348
+OVERRIDE_LOCAL_SCORE call=30 context=0 unit=173430
+OVERRIDE_LOCAL_SCORE call=31 context=0 unit=161485
+OVERRIDE_LOCAL_SCORE call=32 context=0 unit=161231
+OVERRIDE_LOCAL_SCORE call=33 context=0 unit=150119
+CONTROLLED_FLAG_OVERRIDE context=1 unit_flags=0x80 for 272822-272824
+POST_COVERAGE_GATE call=2 context=1 total_positions=4 candidate_count=406 input_ids=2049 8359 13062 18915 20293 21850 22696 29138 30398 33090 595 2453 
+MODEL_TABLE_30_LOOKUP context=1 272822->32928 272823->13478 272824->9147 272825->18857
+MODEL_SIGNATURE_BYTE6 context=1 272822=0x80 272823=0x80 272824=0x80 272825=0
+POST_COVERAGE_CANDIDATE context=1 index=0 unit=161485 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=1 unit=277711 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=2 unit=277694 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=3 unit=272883 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=4 unit=269687 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=5 unit=232559 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=6 unit=222903 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=7 unit=188348 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=8 unit=1560 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=9 unit=7270 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=10 unit=16240 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=11 unit=28088 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=12 unit=31435 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=13 unit=33749 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=14 unit=39043 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=15 unit=41362 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=16 unit=77949 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=17 unit=161231 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=18 unit=159228 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=19 unit=150119 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=20 unit=148463 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=21 unit=145636 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=22 unit=133273 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=23 unit=131797 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=24 unit=121653 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=25 unit=117207 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=26 unit=113279 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=27 unit=173430 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=28 unit=96535 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=29 unit=93083 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=1 index=30 unit=41551 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=31 unit=41056 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=32 unit=40213 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=33 unit=39316 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=34 unit=32586 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=35 unit=32215 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=36 unit=31971 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=37 unit=28630 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=38 unit=27965 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=39 unit=27793 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=40 unit=27439 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=41 unit=27058 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=42 unit=23536 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=43 unit=21877 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=44 unit=19512 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=45 unit=14150 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=46 unit=12141 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=47 unit=11134 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=48 unit=49383 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=49 unit=50357 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=50 unit=72177 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=51 unit=70609 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=52 unit=67926 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=53 unit=67796 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=54 unit=63754 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=55 unit=62808 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=56 unit=62493 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=57 unit=60661 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=58 unit=60379 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=59 unit=59230 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=60 unit=59002 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=61 unit=58795 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=62 unit=55491 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=1 index=63 unit=54604 left=0 right=0 span=1
+OVERRIDE_LOCAL_SCORE call=34 context=1 unit=161485
+OVERRIDE_LOCAL_SCORE call=35 context=1 unit=277711
+OVERRIDE_LOCAL_SCORE call=36 context=1 unit=277694
+OVERRIDE_LOCAL_SCORE call=37 context=1 unit=272883
+OVERRIDE_LOCAL_SCORE call=38 context=1 unit=269687
+OVERRIDE_LOCAL_SCORE call=39 context=1 unit=232559
+OVERRIDE_LOCAL_SCORE call=40 context=1 unit=222903
+OVERRIDE_LOCAL_SCORE call=41 context=1 unit=188348
+OVERRIDE_LOCAL_SCORE call=42 context=1 unit=1560
+OVERRIDE_LOCAL_SCORE call=43 context=1 unit=7270
+OVERRIDE_LOCAL_SCORE call=44 context=1 unit=16240
+OVERRIDE_LOCAL_SCORE call=45 context=1 unit=28088
+OVERRIDE_LOCAL_SCORE call=46 context=1 unit=31435
+OVERRIDE_LOCAL_SCORE call=47 context=1 unit=33749
+OVERRIDE_LOCAL_SCORE call=48 context=1 unit=39043
+OVERRIDE_LOCAL_SCORE call=49 context=1 unit=41362
+OVERRIDE_LOCAL_SCORE call=50 context=1 unit=77949
+OVERRIDE_LOCAL_SCORE call=51 context=1 unit=161231
+OVERRIDE_LOCAL_SCORE call=52 context=1 unit=159228
+OVERRIDE_LOCAL_SCORE call=53 context=1 unit=150119
+OVERRIDE_LOCAL_SCORE call=54 context=1 unit=148463
+OVERRIDE_LOCAL_SCORE call=55 context=1 unit=145636
+OVERRIDE_LOCAL_SCORE call=56 context=1 unit=133273
+OVERRIDE_LOCAL_SCORE call=57 context=1 unit=131797
+OVERRIDE_LOCAL_SCORE call=58 context=1 unit=121653
+OVERRIDE_LOCAL_SCORE call=59 context=1 unit=117207
+OVERRIDE_LOCAL_SCORE call=60 context=1 unit=113279
+OVERRIDE_LOCAL_SCORE call=61 context=1 unit=173430
+OVERRIDE_LOCAL_SCORE call=62 context=1 unit=96535
+OVERRIDE_LOCAL_SCORE call=63 context=1 unit=93083
+CONTROLLED_FLAG_OVERRIDE context=2 unit_flags=0x80 for 272822-272824
+POST_COVERAGE_GATE call=3 context=2 total_positions=4 candidate_count=78 input_ids=22930 22934 22935 22936 22939 22940 22941 22942 22944 22945 31039 31041 
+MODEL_TABLE_30_LOOKUP context=2 272822->32928 272823->13478 272824->9147 272825->18857
+MODEL_SIGNATURE_BYTE6 context=2 272822=0x80 272823=0x80 272824=0x80 272825=0
+POST_COVERAGE_CANDIDATE context=2 index=0 unit=158213 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=2 index=1 unit=282532 left=1 right=0 span=2
+POST_COVERAGE_CANDIDATE context=2 index=2 unit=190000 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=3 unit=166460 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=4 unit=133404 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=5 unit=273418 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=6 unit=260317 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=7 unit=258964 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=8 unit=252752 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=9 unit=210383 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=10 unit=190057 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=11 unit=136799 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=12 unit=90173 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=13 unit=73009 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=14 unit=71526 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=15 unit=11522 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=16 unit=189024 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=17 unit=146645 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=18 unit=66239 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=19 unit=190155 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=20 unit=786 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=21 unit=279724 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=22 unit=259535 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=23 unit=124074 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=24 unit=164066 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=25 unit=3034 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=26 unit=350 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=27 unit=279272 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=28 unit=236039 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=29 unit=208873 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=30 unit=196011 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=31 unit=188624 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=32 unit=183429 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=33 unit=170737 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=34 unit=163929 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=35 unit=102063 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=36 unit=59762 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=37 unit=20127 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=38 unit=20012 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=39 unit=33992 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=40 unit=238802 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=41 unit=230301 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=42 unit=228343 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=43 unit=166600 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=44 unit=137250 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=45 unit=116038 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=46 unit=113280 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=47 unit=106646 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=48 unit=89565 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=49 unit=75726 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=50 unit=66051 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=51 unit=48505 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=52 unit=36174 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=53 unit=6001 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=54 unit=1561 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=55 unit=58807 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=56 unit=253503 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=57 unit=123730 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=58 unit=232560 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=59 unit=245846 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=60 unit=231274 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=61 unit=103217 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=62 unit=91953 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=2 index=63 unit=77959 left=0 right=0 span=1
+OVERRIDE_LOCAL_SCORE call=64 context=2 unit=158213
+OVERRIDE_LOCAL_SCORE call=65 context=2 unit=282532
+OVERRIDE_LOCAL_SCORE call=66 context=2 unit=190000
+OVERRIDE_LOCAL_SCORE call=67 context=2 unit=166460
+OVERRIDE_LOCAL_SCORE call=68 context=2 unit=133404
+OVERRIDE_LOCAL_SCORE call=69 context=2 unit=273418
+OVERRIDE_LOCAL_SCORE call=70 context=2 unit=260317
+OVERRIDE_LOCAL_SCORE call=71 context=2 unit=258964
+OVERRIDE_LOCAL_SCORE call=72 context=2 unit=252752
+OVERRIDE_LOCAL_SCORE call=73 context=2 unit=210383
+OVERRIDE_LOCAL_SCORE call=74 context=2 unit=190057
+OVERRIDE_LOCAL_SCORE call=75 context=2 unit=136799
+OVERRIDE_LOCAL_SCORE call=76 context=2 unit=90173
+OVERRIDE_LOCAL_SCORE call=77 context=2 unit=73009
+OVERRIDE_LOCAL_SCORE call=78 context=2 unit=71526
+OVERRIDE_LOCAL_SCORE call=79 context=2 unit=11522
+OVERRIDE_LOCAL_SCORE call=80 context=2 unit=189024
+OVERRIDE_LOCAL_SCORE call=81 context=2 unit=146645
+OVERRIDE_LOCAL_SCORE call=82 context=2 unit=66239
+OVERRIDE_LOCAL_SCORE call=83 context=2 unit=190155
+OVERRIDE_LOCAL_SCORE call=84 context=2 unit=786
+OVERRIDE_LOCAL_SCORE call=85 context=2 unit=279724
+OVERRIDE_LOCAL_SCORE call=86 context=2 unit=259535
+OVERRIDE_LOCAL_SCORE call=87 context=2 unit=124074
+OVERRIDE_LOCAL_SCORE call=88 context=2 unit=164066
+OVERRIDE_LOCAL_SCORE call=89 context=2 unit=3034
+OVERRIDE_LOCAL_SCORE call=90 context=2 unit=350
+OVERRIDE_LOCAL_SCORE call=91 context=2 unit=279272
+OVERRIDE_LOCAL_SCORE call=92 context=2 unit=236039
+OVERRIDE_LOCAL_SCORE call=93 context=2 unit=208873
+OVERRIDE_LOCAL_SCORE call=94 context=2 unit=196011
+OVERRIDE_LOCAL_SCORE call=95 context=2 unit=188624
+OVERRIDE_LOCAL_SCORE call=96 context=2 unit=183429
+OVERRIDE_LOCAL_SCORE call=97 context=2 unit=170737
+OVERRIDE_LOCAL_SCORE call=98 context=2 unit=163929
+OVERRIDE_LOCAL_SCORE call=99 context=2 unit=102063
+OVERRIDE_LOCAL_SCORE call=100 context=2 unit=59762
+OVERRIDE_LOCAL_SCORE call=101 context=2 unit=20127
+OVERRIDE_LOCAL_SCORE call=102 context=2 unit=20012
+OVERRIDE_LOCAL_SCORE call=103 context=2 unit=33992
+OVERRIDE_LOCAL_SCORE call=104 context=2 unit=238802
+OVERRIDE_LOCAL_SCORE call=105 context=2 unit=230301
+OVERRIDE_LOCAL_SCORE call=106 context=2 unit=228343
+OVERRIDE_LOCAL_SCORE call=107 context=2 unit=166600
+OVERRIDE_LOCAL_SCORE call=108 context=2 unit=137250
+OVERRIDE_LOCAL_SCORE call=109 context=2 unit=116038
+OVERRIDE_LOCAL_SCORE call=110 context=2 unit=113280
+OVERRIDE_LOCAL_SCORE call=111 context=2 unit=106646
+OVERRIDE_LOCAL_SCORE call=112 context=2 unit=89565
+OVERRIDE_LOCAL_SCORE call=113 context=2 unit=75726
+OVERRIDE_LOCAL_SCORE call=114 context=2 unit=66051
+OVERRIDE_LOCAL_SCORE call=115 context=2 unit=48505
+OVERRIDE_LOCAL_SCORE call=116 context=2 unit=36174
+OVERRIDE_LOCAL_SCORE call=117 context=2 unit=6001
+OVERRIDE_LOCAL_SCORE call=118 context=2 unit=1561
+OVERRIDE_LOCAL_SCORE call=119 context=2 unit=58807
+OVERRIDE_LOCAL_SCORE call=120 context=2 unit=253503
+OVERRIDE_LOCAL_SCORE call=121 context=2 unit=123730
+OVERRIDE_LOCAL_SCORE call=122 context=2 unit=232560
+OVERRIDE_LOCAL_SCORE call=123 context=2 unit=245846
+OVERRIDE_LOCAL_SCORE call=124 context=2 unit=231274
+OVERRIDE_LOCAL_SCORE call=125 context=2 unit=103217
+OVERRIDE_LOCAL_SCORE call=126 context=2 unit=91953
+OVERRIDE_LOCAL_SCORE call=127 context=2 unit=77959
+OVERRIDE_LOCAL_SCORE call=128 context=2 unit=56724
+CONTROLLED_FLAG_OVERRIDE context=3 unit_flags=0x80 for 272822-272824
+POST_COVERAGE_GATE call=4 context=3 total_positions=4 candidate_count=11 input_ids=6887 7505 11885 15995 22366 22945 26718 28463 29803 31071 
+MODEL_TABLE_30_LOOKUP context=3 272822->32928 272823->13478 272824->9147 272825->18857
+MODEL_SIGNATURE_BYTE6 context=3 272822=0x80 272823=0x80 272824=0x80 272825=0
+POST_COVERAGE_CANDIDATE context=3 index=0 unit=282532 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=3 index=1 unit=158213 left=0 right=0 span=2
+POST_COVERAGE_CANDIDATE context=3 index=2 unit=281315 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=3 unit=61270 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=4 unit=282490 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=5 unit=282379 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=6 unit=40480 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=7 unit=41128 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=8 unit=1574 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=9 unit=62496 left=0 right=0 span=1
+POST_COVERAGE_CANDIDATE context=3 index=10 unit=27729 left=0 right=0 span=1
+OVERRIDE_SELECTED_UNIT call=1 unit=277694
+OVERRIDE_SELECTED_UNIT call=2 unit=277694
+OVERRIDE_SELECTED_UNIT call=3 unit=282532
+OVERRIDE_SELECTED_UNIT call=4 unit=282532
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

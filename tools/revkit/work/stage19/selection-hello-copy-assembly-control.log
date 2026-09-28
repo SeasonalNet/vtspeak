@@ -1,0 +1,153 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10001670
+Wine-gdb> >>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x100016a0
+Wine-gdb> >>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1002c220
+Wine-gdb> >>>>>>>>> > > > > >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 5 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+TREE3_SCALAR_ENTRY n=1 tree=0x14bf450 features:0x6676ec:	16	40	11	0	1	1	1	2
+0x6676fc:	1	0	2468	590	112	590	1740	590
+Temporary breakpoint 6 at 0x100134e1
+TREE3_SCALAR_RETURN n=1 value=1207
+TREE3_SCALAR_ENTRY n=2 tree=0x14bf3c4 features:0x6676ec:	11	16	21	0	1	1	1	2
+0x6676fc:	2	0	2468	590	112	590	1742	590
+Temporary breakpoint 7 at 0x1001344e
+TREE3_SCALAR_RETURN n=2 value=555
+TREE3_SCALAR_ENTRY n=3 tree=0x14bf488 features:0x6676ec:	21	11	25	0	1	3	3	2
+0x6676fc:	1	0	2470	590	112	590	1744	590
+Temporary breakpoint 8 at 0x1001350b
+TREE3_SCALAR_RETURN n=3 value=1740
+TREE3_SCALAR_ENTRY n=4 tree=0x14bf3fc features:0x6676ec:	25	21	40	1	1	3	3	2
+0x6676fc:	2	0	2470	590	112	590	1746	590
+Temporary breakpoint 9 at 0x1001347e
+TREE3_SCALAR_RETURN n=4 value=4832
+TREE3_SCALAR_ENTRY n=5 tree=0x14bf4c0 features:0x6676f0:	2	11	0	3	1	1	0	3
+0x667700:	1	1	2	590	112	590	0	0
+Temporary breakpoint 10 at 0x10013984
+TREE3_SCALAR_RETURN n=5 value=0
+TREE3_VECTOR_ENTRY n=6 tree=0x14bf530 features:0x6676f0:	2	11	0	3	1	1	0	3
+0x667700:	1	1	2	0	112	590	0	0
+Temporary breakpoint 11 at 0x100139b6
+TREE3_VECTOR_RETURN n=6 values:
+0x24f7dc0:	85	84	83	83	84	84	85	85
+0x24f7dd0:	86	86	86	86
+TREE3_SCALAR_ENTRY n=7 tree=0x14bf4f8 features:0x6676f0:	5	25	1	0	3	3	1	4
+0x667700:	3	1	2	0	112	590	0	0
+Temporary breakpoint 12 at 0x10013984
+TREE3_SCALAR_RETURN n=7 value=0
+TREE3_VECTOR_ENTRY n=8 tree=0x14bf568 features:0x6676f0:	5	25	1	0	3	3	1	4
+0x667700:	3	1	2	0	112	590	0	0
+Temporary breakpoint 13 at 0x100139b6
+TREE3_VECTOR_RETURN n=8 values:
+0x24f7dde:	96	98	100	104	108	112	116	120
+0x24f7dee:	122	124	119	113
+INDEX_ATTR unit=274190 attr_a=1 category_a=0 attr_b=22 target_b=12 pair_cost=5.88235
+INDEX_ATTR unit=159313 attr_a=0 category_a=0 attr_b=13 target_b=12 pair_cost=0.08
+INDEX_ATTR unit=172790 attr_a=0 category_a=0 attr_b=11 target_b=12 pair_cost=24
+INDEX_ATTR unit=157716 attr_a=0 category_a=0 attr_b=13 target_b=12 pair_cost=0.08
+INDEX_ATTR unit=283592 attr_a=4 category_a=100 attr_b=59 target_b=12 pair_cost=62.2254
+INDEX_ATTR unit=279671 attr_a=3 category_a=100 attr_b=23 target_b=12 pair_cost=6.91429
+INDEX_ATTR unit=279931 attr_a=3 category_a=100 attr_b=68 target_b=12 pair_cost=78.4
+INDEX_ATTR unit=283559 attr_a=4 category_a=100 attr_b=123 target_b=12 pair_cost=182.533
+INDEX_ATTR unit=280411 attr_a=3 category_a=100 attr_b=21 target_b=12 pair_cost=4.90909
+INDEX_ATTR unit=279826 attr_a=3 category_a=100 attr_b=120 target_b=12 pair_cost=176.727
+INDEX_ATTR unit=164355 attr_a=0 category_a=0 attr_b=40 target_b=12 pair_cost=30.1538
+INDEX_ATTR unit=274190 attr_a=1 category_a=0 attr_b=22 target_b=12 pair_cost=5.88235
+INDEX_ATTR unit=280494 attr_a=3 category_a=100 attr_b=16 target_b=12 pair_cost=1.14286
+INDEX_ATTR unit=162247 attr_a=0 category_a=0 attr_b=29 target_b=12 pair_cost=14.0976
+INDEX_ATTR unit=179092 attr_a=0 category_a=0 attr_b=11 target_b=12 pair_cost=24
+INDEX_ATTR unit=173106 attr_a=0 category_a=0 attr_b=15 target_b=12 pair_cost=0.666667
+INDEX_ATTR unit=266326 attr_a=1 category_a=0 attr_b=62 target_b=12 pair_cost=67.5676
+INDEX_ATTR unit=167768 attr_a=0 category_a=0 attr_b=10 target_b=12 pair_cost=16.6667
+INDEX_ATTR unit=276732 attr_a=1 category_a=0 attr_b=36 target_b=12 pair_cost=24
+INDEX_ATTR unit=268779 attr_a=1 category_a=0 attr_b=27 target_b=12 pair_cost=11.5385
+INDEX_ATTR unit=171602 attr_a=0 category_a=0 attr_b=27 target_b=12 pair_cost=11.5385
+INDEX_ATTR unit=276698 attr_a=1 category_a=0 attr_b=34 target_b=12 pair_cost=21.0435
+INDEX_ATTR unit=157928 attr_a=0 category_a=0 attr_b=54 target_b=12 pair_cost=53.4545
+INDEX_ATTR unit=163577 attr_a=0 category_a=0 attr_b=16 target_b=12 pair_cost=1.14286
+INDEX_ATTR unit=157858 attr_a=0 category_a=0 attr_b=18 target_b=12 pair_cost=2.4
+INDEX_ATTR unit=174592 attr_a=0 category_a=0 attr_b=16 target_b=12 pair_cost=1.14286
+INDEX_ATTR unit=267747 attr_a=1 category_a=0 attr_b=16 target_b=12 pair_cost=1.14286
+INDEX_ATTR unit=276348 attr_a=1 category_a=0 attr_b=16 target_b=12 pair_cost=1.14286
+INDEX_ATTR unit=172786 attr_a=0 category_a=0 attr_b=25 target_b=12 pair_cost=9.13513
+INDEX_ATTR unit=267775 attr_a=1 category_a=0 attr_b=13 target_b=12 pair_cost=0.08
+INDEX_ATTR unit=35672 attr_a=0 category_a=0 attr_b=45 target_b=6 pair_cost=59.6471
+INDEX_ATTR unit=168830 attr_a=0 category_a=0 attr_b=19 target_b=6 pair_cost=13.52
+INDEX_ATTR unit=173569 attr_a=0 category_a=0 attr_b=12 target_b=6 pair_cost=4
+INDEX_ATTR unit=168598 attr_a=0 category_a=0 attr_b=13 target_b=6 pair_cost=5.15789
+INDEX_ATTR unit=163180 attr_a=0 category_a=0 attr_b=28 target_b=6 pair_cost=28.4706
+INDEX_ATTR unit=179163 attr_a=0 category_a=0 attr_b=9 target_b=6 pair_cost=1.2
+INDEX_ATTR unit=264212 attr_a=1 category_a=0 attr_b=25 target_b=6 pair_cost=23.2903
+INDEX_ATTR unit=178081 attr_a=0 category_a=0 attr_b=20 target_b=6 pair_cost=15.0769
+INDEX_ATTR unit=269315 attr_a=1 category_a=0 attr_b=49 target_b=6 pair_cost=67.2364
+INDEX_ATTR unit=174208 attr_a=0 category_a=0 attr_b=19 target_b=6 pair_cost=13.52
+INDEX_ATTR unit=275816 attr_a=1 category_a=0 attr_b=39 target_b=6 pair_cost=48.4
+INDEX_ATTR unit=129357 attr_a=0 category_a=0 attr_b=22 target_b=6 pair_cost=18.2857
+INDEX_ATTR unit=265071 attr_a=1 category_a=0 attr_b=44 target_b=6 pair_cost=57.76
+INDEX_ATTR unit=272075 attr_a=1 category_a=0 attr_b=22 target_b=6 pair_cost=18.2857
+INDEX_ATTR unit=266475 attr_a=1 category_a=0 attr_b=13 target_b=6 pair_cost=5.15789
+INDEX_ATTR unit=265302 attr_a=1 category_a=0 attr_b=31 target_b=6 pair_cost=33.7838
+INDEX_ATTR unit=156809 attr_a=0 category_a=0 attr_b=23 target_b=6 pair_cost=19.931
+INDEX_ATTR unit=260319 attr_a=1 category_a=0 attr_b=44 target_b=6 pair_cost=57.76
+INDEX_ATTR unit=156981 attr_a=0 category_a=0 attr_b=9 target_b=6 pair_cost=1.2
+INDEX_ATTR unit=270092 attr_a=1 category_a=0 attr_b=13 target_b=6 pair_cost=5.15789
+INDEX_ATTR unit=274303 attr_a=1 category_a=0 attr_b=46 target_b=6 pair_cost=61.5385
+INDEX_ATTR unit=35672 attr_a=0 category_a=0 attr_b=45 target_b=6 pair_cost=59.6471
+INDEX_ATTR unit=233383 attr_a=1 category_a=0 attr_b=38 target_b=6 pair_cost=46.5455
+INDEX_ATTR unit=167772 attr_a=0 category_a=0 attr_b=10 target_b=6 pair_cost=2
+INDEX_ATTR unit=80917 attr_a=0 category_a=0 attr_b=19 target_b=6 pair_cost=13.52
+INDEX_ATTR unit=120502 attr_a=0 category_a=0 attr_b=31 target_b=6 pair_cost=33.7838
+INDEX_ATTR unit=158938 attr_a=0 category_a=0 attr_b=41 target_b=6 pair_cost=52.1277
+INDEX_ATTR unit=163278 attr_a=0 category_a=0 attr_b=33 target_b=6 pair_cost=37.3846
+INDEX_ATTR unit=264596 attr_a=1 category_a=0 attr_b=41 target_b=6 pair_cost=52.1277
+INDEX_ATTR unit=179247 attr_a=0 category_a=0 attr_b=25 target_b=6 pair_cost=23.2903
+SELECTED_UNIT n=1 id=280411
+SELECTED_UNIT n=2 id=172786
+SELECTED_UNIT n=3 id=270092
+SELECTED_UNIT n=4 id=80917
+SELECTED_UNIT n=5 id=224948
+SELECTED_UNIT n=6 id=40384
+SELECTED_UNIT n=7 id=56352
+SELECTED_UNIT n=8 id=56352
+TIMELINE_ENTRY n=1 start=0 input_count=8
+Temporary breakpoint 14 at 0x1002bde9
+TIMELINE_RETURN n=1 records=8
+TIMELINE_ROW i=0 words:0x25cde18:	0x00000064	0x00000064	0x000000c8	0x000001b6
+0x25cde28:	0x00030000	0x001f7b0c	0x025fb26c	0x0000a252
+0x25cde38:	0x004e0005	0x02010058	0x00000000	0x00000000
+0x25cde48:	0x00220000
+TIMELINE_ROW i=1 words:0x25cde4c:	0x00000064	0x00000064	0x000000c8	0x000002f8
+0x25cde5c:	0x00000001	0x07cafdbc	0x025fb284	0x002ec89f
+0x25cde6c:	0x005e0008	0x02020062	0x00000000	0x00000000
+0x25cde7c:	0x00220000
+TIMELINE_ROW i=2 words:0x25cde80:	0x00000064	0x00000064	0x000000c8	0x000001e4
+0x25cde90:	0x00010002	0x0407d43c	0x025fb29c	0x00189566
+0x25cdea0:	0x00640005	0x02010062	0x00000000	0x00000001
+0x25cdeb0:	0x00170000
+TIMELINE_ROW i=3 words:0x25cdeb4:	0x00000064	0x00000064	0x000000c8	0x0000031e
+0x25cdec4:	0x00000003	0x03e4ead8	0x025fb2b4	0x0017418e
+0x25cded4:	0x005e0008	0x02020068	0x00000000	0x00000001
+0x25cdee4:	0x00170000
+TIMELINE_ROW i=4 words:0x25cdee8:	0x00000064	0x00000064	0x000000c8	0x0000028e
+0x25cdef8:	0x00010004	0x01dd5658	0x025fb2cc	0x000b8fdf
+0x25cdf08:	0x006e0007	0x0201005c	0x00000000	0x00000002
+0x25cdf18:	0x002b0000
+TIMELINE_ROW i=5 words:0x25cdf1c:	0x00000064	0x00000064	0x000000c8	0x000002cc
+0x25cdf2c:	0x00000005	0x02015f52	0x025fb2e4	0x000bf1f9
+0x25cdf3c:	0x00560008	0x0202005c	0x00000000	0x00000002
+0x25cdf4c:	0x002b0000
+TIMELINE_ROW i=6 words:0x25cdf50:	0x00000064	0x00000064	0x000000c8	0x0000048e
+0x25cdf60:	0x00000006	0x02c26574	0x025fb2fc	0x0010707c
+0x25cdf70:	0x005c000d	0x0201005a	0x00000000	0x00000003
+0x25cdf80:	0x00300000
+TIMELINE_ROW i=7 words:0x25cdf84:	0x00000064	0x00000064	0x000000c8	0x000003bc
+0x25cdf94:	0x00000007	0x02c269a8	0x025fb314	0x00107088
+0x25cdfa4:	0x005a000b	0x02020052	0x00000000	0x00000003
+0x25cdfb4:	0x00300000
+SELECTED_UNIT n=9 id=172786
+SELECTED_UNIT n=10 id=280411
+SELECTED_UNIT n=11 id=80917
+SELECTED_UNIT n=12 id=270092
+SELECTED_UNIT n=13 id=40384
+SELECTED_UNIT n=14 id=224948
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,221 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> >>>> > > > > >  >  >  >  > >> > > > > >  >  >  >  > >>Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>> > > > > > >>>>Wine-gdb> Wine-gdb> Continuing.
+CHUNK_SYNC poll=-1 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=-1 rows=0x14e7b00 count=8 bases=0,0 other=0,0,0,0x752f,0x3
+CHUNK_SYNC_ROW poll=-1 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=-1 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=-1 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=-1 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=-1 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=-1 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=-1 i=6 samples=0xe2d text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=-1 i=7 samples=0 text=0x20..0x24
+CHUNK_RECORDS poll=-1 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=-1 i=0 f0=0 f4=0 f8=0x33 kind=1
+CHUNK_SYNC poll=0 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=0 rows=0x14e7b00 count=11 bases=0x7530,0xd45 other=0x3,0x2,0x435,0xea5f,0x7
+CHUNK_SYNC_ROW poll=0 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=0 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=0 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=0 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=0 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=0 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=0 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=0 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=0 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=0 i=9 samples=0x11d6 text=0x27..0x2b
+CHUNK_SYNC_ROW poll=0 i=10 samples=0 text=0x2d..0x31
+CHUNK_RECORDS poll=0 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=0 i=0 f0=0 f4=0 f8=0x33 kind=1
+CHUNK_SYNC poll=1 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=1 rows=0x14e7b00 count=14 bases=0xea60,0x320 other=0x7,0,0x320,0x15f8f,0xa
+CHUNK_SYNC_ROW poll=1 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=1 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=1 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=1 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=1 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=1 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=1 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=1 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=1 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=1 i=9 samples=0x176a text=0x27..0x2b
+CHUNK_SYNC_ROW poll=1 i=10 samples=0x16b1 text=0x2d..0x31
+CHUNK_SYNC_ROW poll=1 i=11 samples=0x39d0 text=0x2d..0x31
+CHUNK_RECORDS poll=1 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=1 i=0 f0=0 f4=0 f8=0x33 kind=1
+CHUNK_SYNC poll=2 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=2 rows=0x14e7b00 count=17 bases=0x15f90,0x1065 other=0xa,0x2,0x406,0x1d4bf,0xe
+CHUNK_SYNC_ROW poll=2 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=2 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=2 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=2 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=2 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=2 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=2 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=2 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=2 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=2 i=9 samples=0x176a text=0x27..0x2b
+CHUNK_SYNC_ROW poll=2 i=10 samples=0x16b1 text=0x2d..0x31
+CHUNK_SYNC_ROW poll=2 i=11 samples=0x39d0 text=0x2d..0x31
+CHUNK_RECORDS poll=2 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=2 i=0 f0=0x19fac f4=0x401c f8=0x33 kind=1
+CHUNK_SYNC poll=3 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=3 rows=0x14e7b00 count=20 bases=0x1d4c0,0x6f9 other=0xe,0,0x6f9,0x249ef,0x11
+CHUNK_SYNC_ROW poll=3 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=3 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=3 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=3 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=3 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=3 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=3 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=3 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=3 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=3 i=9 samples=0x176a text=0x27..0x2b
+CHUNK_SYNC_ROW poll=3 i=10 samples=0x16b1 text=0x2d..0x31
+CHUNK_SYNC_ROW poll=3 i=11 samples=0x39d0 text=0x2d..0x31
+CHUNK_RECORDS poll=3 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=3 i=0 f0=0x19fac f4=0x401c f8=0x33 kind=1
+CHUNK_SYNC poll=4 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=4 rows=0x14e7b00 count=23 bases=0x249f0,0x143e other=0x11,0,0x143e,0x2bf1f,0x14
+CHUNK_SYNC_ROW poll=4 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=4 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=4 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=4 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=4 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=4 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=4 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=4 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=4 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=4 i=9 samples=0x176a text=0x27..0x2b
+CHUNK_SYNC_ROW poll=4 i=10 samples=0x16b1 text=0x2d..0x31
+CHUNK_SYNC_ROW poll=4 i=11 samples=0x39d0 text=0x2d..0x31
+CHUNK_RECORDS poll=4 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=4 i=0 f0=0x19fac f4=0x401c f8=0x33 kind=1
+CHUNK_SYNC poll=5 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=5 rows=0x14e7b00 count=29 bases=0x2bf20,0x2183 other=0x14,0,0x2183,0x3344f,0x17
+CHUNK_SYNC_ROW poll=5 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=5 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=5 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=5 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=5 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=5 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=5 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=5 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=5 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=5 i=9 samples=0x176a text=0x27..0x2b
+CHUNK_SYNC_ROW poll=5 i=10 samples=0x16b1 text=0x2d..0x31
+CHUNK_SYNC_ROW poll=5 i=11 samples=0x39d0 text=0x2d..0x31
+CHUNK_RECORDS poll=5 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=5 i=0 f0=0x19fac f4=0x401c f8=0x33 kind=1
+CHUNK_SYNC poll=6 result=0 length=60000 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=6 rows=0x14e7b00 count=29 bases=0x33450,0x2ec8 other=0x17,0,0x2ec8,0x3a97f,0x1b
+CHUNK_SYNC_ROW poll=6 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=6 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=6 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=6 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=6 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=6 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=6 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=6 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=6 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=6 i=9 samples=0x176a text=0x27..0x2b
+CHUNK_SYNC_ROW poll=6 i=10 samples=0x16b1 text=0x2d..0x31
+CHUNK_SYNC_ROW poll=6 i=11 samples=0x39d0 text=0x2d..0x31
+CHUNK_RECORDS poll=6 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=6 i=0 f0=0x19fac f4=0x401c f8=0x33 kind=1
+CHUNK_SYNC poll=7 result=0 length=22460 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=7 rows=0x14e7b00 count=29 bases=0x3a980,0x23d other=0x1b,0,0x23d,0x3d55d,0x1c
+CHUNK_SYNC_ROW poll=7 i=0 samples=0x176a text=0..0x4
+CHUNK_SYNC_ROW poll=7 i=1 samples=0x16b1 text=0x6..0xa
+CHUNK_SYNC_ROW poll=7 i=2 samples=0x39d0 text=0x6..0xa
+CHUNK_SYNC_ROW poll=7 i=3 samples=0x176a text=0xd..0x11
+CHUNK_SYNC_ROW poll=7 i=4 samples=0x16b1 text=0x13..0x17
+CHUNK_SYNC_ROW poll=7 i=5 samples=0x39d0 text=0x13..0x17
+CHUNK_SYNC_ROW poll=7 i=6 samples=0x176a text=0x1a..0x1e
+CHUNK_SYNC_ROW poll=7 i=7 samples=0x16b1 text=0x20..0x24
+CHUNK_SYNC_ROW poll=7 i=8 samples=0x39d0 text=0x20..0x24
+CHUNK_SYNC_ROW poll=7 i=9 samples=0x176a text=0x27..0x2b
+CHUNK_SYNC_ROW poll=7 i=10 samples=0x16b1 text=0x2d..0x31
+CHUNK_SYNC_ROW poll=7 i=11 samples=0x39d0 text=0x2d..0x31
+CHUNK_RECORDS poll=7 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=7 i=0 f0=0x19fac f4=0x401c f8=0x33 kind=1
+CHUNK_SYNC poll=8 result=1 length=0 sync=0x14c4940 desc=0x14defe0
+CHUNK_SYNC_HEADER poll=8 rows=0xbb0168 count=29 bases=0x3a980,0x23d other=0x1b,0,0x23d,0x3d55d,0x1c
+CHUNK_SYNC_ROW poll=8 i=0 samples=0 text=0x3460000..0xbb0188
+CHUNK_SYNC_ROW poll=8 i=1 samples=0x3460000 text=0x14d5a40..0x14c7d70
+CHUNK_SYNC_ROW poll=8 i=2 samples=0xbb01c8 text=0xbb01a8..0
+CHUNK_SYNC_ROW poll=8 i=3 samples=0xbb01c8 text=0..0x3460000
+CHUNK_SYNC_ROW poll=8 i=4 samples=0 text=0x3460000..0xbb0218
+CHUNK_SYNC_ROW poll=8 i=5 samples=0x3460000 text=0xbb0238..0xbb0218
+CHUNK_SYNC_ROW poll=8 i=6 samples=0xbb0258 text=0xbb0238..0
+CHUNK_SYNC_ROW poll=8 i=7 samples=0xbb0258 text=0..0x3460000
+CHUNK_SYNC_ROW poll=8 i=8 samples=0 text=0x3460000..0xbb02a8
+CHUNK_SYNC_ROW poll=8 i=9 samples=0x3460000 text=0xbb02c8..0xbb02a8
+CHUNK_SYNC_ROW poll=8 i=10 samples=0xbb02e8 text=0xbb02c8..0
+CHUNK_SYNC_ROW poll=8 i=11 samples=0xbb02e8 text=0..0x3460000
+CHUNK_RECORDS poll=8 count=1 rows=0x173c9b0
+CHUNK_RECORD_ROW poll=8 i=0 f0=0x19fac f4=0x401c f8=0x33 kind=1
+CHUNK_SYNC_DONE result=1 polls=9
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

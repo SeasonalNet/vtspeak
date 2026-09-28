@@ -1,0 +1,158 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>> > > > > > >>> > > > > > >>>>Wine-gdb> Continuing.
+TARGETPHON single_byte=0x09 result=-1
+TARGETPHON single_byte=0x0a result=-1
+TARGETPHON single_byte=0x0b result=-9
+TARGETPHON single_byte=0x0c result=-9
+TARGETPHON single_byte=0x0d result=-1
+TARGETPHON single_byte=0x20 result=-1
+TARGETPHON single_byte=0x21 result=-9
+TARGETPHON single_byte=0x22 result=-9
+TARGETPHON single_byte=0x23 result=1
+TARGETPHON single_byte=0x24 result=-9
+TARGETPHON single_byte=0x25 result=-9
+TARGETPHON single_byte=0x26 result=-9
+TARGETPHON single_byte=0x27 result=-9
+TARGETPHON single_byte=0x28 result=-9
+TARGETPHON single_byte=0x29 result=-9
+TARGETPHON single_byte=0x2a result=-9
+TARGETPHON single_byte=0x2b result=-9
+TARGETPHON single_byte=0x2c result=-9
+TARGETPHON single_byte=0x2d result=-9
+TARGETPHON single_byte=0x2e result=-9
+TARGETPHON single_byte=0x2f result=-9
+TARGETPHON single_byte=0x30 result=-9
+TARGETPHON single_byte=0x31 result=-9
+TARGETPHON single_byte=0x32 result=-9
+TARGETPHON single_byte=0x33 result=-9
+TARGETPHON single_byte=0x34 result=-9
+TARGETPHON single_byte=0x35 result=-9
+TARGETPHON single_byte=0x36 result=-9
+TARGETPHON single_byte=0x37 result=-9
+TARGETPHON single_byte=0x38 result=-9
+TARGETPHON single_byte=0x39 result=-9
+TARGETPHON single_byte=0x3a result=-9
+TARGETPHON single_byte=0x3b result=-9
+TARGETPHON single_byte=0x3c result=-9
+TARGETPHON single_byte=0x3d result=-9
+TARGETPHON single_byte=0x3e result=-9
+TARGETPHON single_byte=0x3f result=-9
+TARGETPHON single_byte=0x40 result=-9
+TARGETPHON single_byte=0x41 result=-9
+TARGETPHON single_byte=0x42 result=1
+TARGETPHON single_byte=0x43 result=-9
+TARGETPHON single_byte=0x44 result=1
+TARGETPHON single_byte=0x45 result=-9
+TARGETPHON single_byte=0x46 result=1
+TARGETPHON single_byte=0x47 result=1
+TARGETPHON single_byte=0x48 result=-9
+TARGETPHON single_byte=0x49 result=-9
+TARGETPHON single_byte=0x4a result=-9
+TARGETPHON single_byte=0x4b result=1
+TARGETPHON single_byte=0x4c result=1
+TARGETPHON single_byte=0x4d result=1
+TARGETPHON single_byte=0x4e result=1
+TARGETPHON single_byte=0x4f result=-9
+TARGETPHON single_byte=0x50 result=1
+TARGETPHON single_byte=0x51 result=-9
+TARGETPHON single_byte=0x52 result=1
+TARGETPHON single_byte=0x53 result=1
+TARGETPHON single_byte=0x54 result=1
+TARGETPHON single_byte=0x55 result=-9
+TARGETPHON single_byte=0x56 result=1
+TARGETPHON single_byte=0x57 result=1
+TARGETPHON single_byte=0x58 result=-9
+TARGETPHON single_byte=0x59 result=1
+TARGETPHON single_byte=0x5a result=1
+TARGETPHON single_byte=0x5b result=-2
+TARGETPHON single_byte=0x5c result=-9
+TARGETPHON single_byte=0x5d result=-9
+TARGETPHON single_byte=0x5e result=-9
+TARGETPHON single_byte=0x5f result=-9
+TARGETPHON single_byte=0x60 result=-9
+TARGETPHON single_byte=0x61 result=-9
+TARGETPHON single_byte=0x62 result=-9
+TARGETPHON single_byte=0x63 result=-9
+TARGETPHON single_byte=0x64 result=-9
+TARGETPHON single_byte=0x65 result=-9
+TARGETPHON single_byte=0x66 result=-9
+TARGETPHON single_byte=0x67 result=-9
+TARGETPHON single_byte=0x68 result=-9
+TARGETPHON single_byte=0x69 result=-9
+TARGETPHON single_byte=0x6a result=-9
+TARGETPHON single_byte=0x6b result=-9
+TARGETPHON single_byte=0x6c result=-9
+TARGETPHON single_byte=0x6d result=-9
+TARGETPHON single_byte=0x6e result=-9
+TARGETPHON single_byte=0x6f result=-9
+TARGETPHON single_byte=0x70 result=-9
+TARGETPHON single_byte=0x71 result=-9
+TARGETPHON single_byte=0x72 result=-9
+TARGETPHON single_byte=0x73 result=-9
+TARGETPHON single_byte=0x74 result=-9
+TARGETPHON single_byte=0x75 result=-9
+TARGETPHON single_byte=0x76 result=-9
+TARGETPHON single_byte=0x77 result=-9
+TARGETPHON single_byte=0x78 result=-9
+TARGETPHON single_byte=0x79 result=-9
+TARGETPHON single_byte=0x7a result=-9
+TARGETPHON single_byte=0x7b result=-9
+TARGETPHON single_byte=0x7c result=-9
+TARGETPHON single_byte=0x7d result=-9
+TARGETPHON single_byte=0x7e result=-9
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @77FF0000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

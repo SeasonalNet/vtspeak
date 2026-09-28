@@ -1,0 +1,182 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/split-threshold-new-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/split-threshold-new-gdb.log.
+Wine-gdb> Already logging to /work/corpus-parity/stage20/split-threshold-new-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10018770
+Wine-gdb> >>> > > > > > > > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x100242a0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 7 at 0x100249bb
+NEW_SPLIT_ENTER slot=0 bank=0 class_byte=0
+Temporary breakpoint 8 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x24e0752:	90	90	34	23	43	160	0
+Temporary breakpoint 9 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=0 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=0 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=0
+Temporary breakpoint 10 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x24e0752:	90	90	34	23	43	160	0
+Temporary breakpoint 11 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=0 mode=1 return=1 total=10 ids: 32928 32927 32925 32924 32926 32934 32929 32932 32933 32936
+NEW_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x24e0752:	90	90	34	23	43	160	0
+Temporary breakpoint 12 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=1 mode=1 return=1 total=20 ids: 32928 16234 30155 28859 6394 12873 8029 18450 19982 21359 32928 16234 30155 28859 6394 12873 8029 18450 19982 21359
+NEW_SPLIT_FALLBACK_RETURN slot=0 positions=2
+NEW_SPLIT_ENTER slot=2 bank=0 class_byte=0
+Temporary breakpoint 13 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x24e0759:	90	34	23	43	48	32	0
+Temporary breakpoint 14 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=2 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=2 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=2
+Temporary breakpoint 15 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x24e0759:	90	34	23	43	48	32	0
+Temporary breakpoint 16 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=2 mode=1 return=1 total=8 ids: 13478 13479 13478 13479 13478 13479 13478 13479
+NEW_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x24e0759:	90	34	23	43	48	32	0
+Temporary breakpoint 17 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=3 mode=1 return=1 total=36 ids: 3454 13478 28626 12760 31393 7748 30797 6972 12048 3454 13478 28626 12760 31393 7748 30797 6972 12048 3454 13478 28626 12760 31393 7748 30797 6972 12048 3454 13478 28626 12760 31393
+NEW_SPLIT_FALLBACK_RETURN slot=2 positions=2
+NEW_SPLIT_ENTER slot=4 bank=0 class_byte=0
+Temporary breakpoint 18 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=4 mode=1 key:0x24e0760:	34	23	43	48	66	0	0
+Temporary breakpoint 19 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=4 mode=1 return=1 total=1 ids: 9147
+NEW_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 9147:25
+Temporary breakpoint 20 at 0x10024271
+NEW_SPLIT_METRIC_RETURN sum=25
+NEW_SPLIT_RETURN slot=4 accepted=1
+NEW_SPLIT_ENTER slot=5 bank=0 class_byte=0
+Temporary breakpoint 21 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=5 mode=1 key:0x24e0767:	23	43	48	66	27	65	0
+Temporary breakpoint 22 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=5 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=5 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=5
+Temporary breakpoint 23 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=5 mode=1 key:0x24e0767:	23	43	48	66	27	65	0
+Temporary breakpoint 24 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=5 mode=1 return=1 total=53 ids: 18824 18815 18805 18803 18849 18813 18843 18836 18839 18833 18831 18828 18821 18840 18832 18822 18829 18809 18816 18848 18819 18837 18842 18850 18848 18849 18836 18843 18813 18803 18805 18815
+NEW_CLASS_LOOKUP_ENTER slot=6 mode=1 key:0x24e0767:	23	43	48	66	27	65	0
+Temporary breakpoint 25 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=6 mode=1 return=1 total=24 ids: 21789 21788 21789 21790 13032 24728 11225 13033 8898 8330 24729 21789 13032 24728 21788 21792 11226 5500 26318 24731 21789 21790 13032 24728
+NEW_SPLIT_FALLBACK_RETURN slot=5 positions=2
+NEW_SPLIT_ENTER slot=7 bank=1 class_byte=0
+Temporary breakpoint 26 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=7 mode=1 key:0x24e0b12:	43	48	66	27	43	136	0
+Temporary breakpoint 27 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=7 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=7 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=7
+Temporary breakpoint 28 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=7 mode=1 key:0x24e0b12:	43	48	66	27	43	136	0
+Temporary breakpoint 29 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=7 mode=1 return=1 total=13 ids: 4481 4479 4475 4478 4473 28186 4476 4475 4474 4477 4480 4482 4483
+NEW_CLASS_LOOKUP_ENTER slot=8 mode=1 key:0x24e0b12:	43	48	66	27	43	136	0
+Temporary breakpoint 30 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=8 mode=1 return=1 total=24 ids: 15739 11660 2366 548 17505 23568 24981 25644 26586 27136 15739 11660 2366 548 4476 15741 28183 3001 11662 549 2368 9549 5769 4475
+NEW_SPLIT_FALLBACK_RETURN slot=7 positions=2
+NEW_SPLIT_ENTER slot=9 bank=1 class_byte=0
+Temporary breakpoint 31 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=9 mode=1 key:0x24e0b19:	48	66	27	43	21	13	0
+Temporary breakpoint 32 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=9 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=9 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=9
+Temporary breakpoint 33 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=9 mode=1 key:0x24e0b19:	48	66	27	43	21	13	0
+Temporary breakpoint 34 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=9 mode=1 return=1 total=30 ids: 3577 27483 3570 3568 3571 3573 3576 3561 3595 3593 3568 3570 3582 3576 3574 3572 3573 3561 3595 3593 3571 3590 27482 27481 27480 3568 3570 3577 3593 3595
+NEW_CLASS_LOOKUP_ENTER slot=10 mode=1 key:0x24e0b19:	48	66	27	43	21	13	0
+Temporary breakpoint 35 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=10 mode=1 return=1 total=30 ids: 14424 3568 3571 3570 24146 7870 30074 28756 18276 32491 3568 3570 3571 31472 12820 23113 12133 16895 6322 13536 3571 2563 14425 1511 4974 10383 3568 3570 22489 19868
+NEW_SPLIT_FALLBACK_RETURN slot=9 positions=2
+NEW_SPLIT_ENTER slot=11 bank=1 class_byte=0
+Temporary breakpoint 36 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=11 mode=1 key:0x24e0b20:	66	27	43	21	90	5	0
+Temporary breakpoint 37 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=11 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=11 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=11
+Temporary breakpoint 38 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=11 mode=1 key:0x24e0b20:	66	27	43	21	90	5	0
+Temporary breakpoint 39 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=11 mode=1 return=1 total=40 ids: 10996 10976 10975 10993 10995 10994 10987 10989 10981 10963 10996 10976 10975 10993 10995 10994 10987 10989 10981 10963 10985 10978 10973 10964 10976 10975 10996 10993 10986 10992 10985 10978
+NEW_CLASS_LOOKUP_ENTER slot=12 mode=1 key:0x24e0b20:	66	27	43	21	90	5	0
+Temporary breakpoint 40 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=12 mode=1 return=1 total=40 ids: 10976 10975 3988 2688 819 27716 1759 14863 9119 3989 10976 10975 3988 2688 819 27716 1759 14863 9119 3989 10976 10975 3988 2688 819 27716 1759 14863 9119 3989 10976 10975
+NEW_SPLIT_FALLBACK_RETURN slot=11 positions=2
+NEW_SPLIT_ENTER slot=13 bank=1 class_byte=0
+Temporary breakpoint 41 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=13 mode=1 key:0x24e0b27:	27	43	21	90	90	69	0
+Temporary breakpoint 42 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=13 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=13 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=13
+Temporary breakpoint 43 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=13 mode=1 key:0x24e0b27:	27	43	21	90	90	69	0
+Temporary breakpoint 44 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=13 mode=1 return=1 total=20 ids: 18142 18141 18109 18092 18138 18121 18127 18120 18117 18108 18142 18141 18109 18092 18138 18121 18127 18120 18117 18108
+NEW_CLASS_LOOKUP_ENTER slot=14 mode=1 key:0x24e0b27:	27	43	21	90	90	69	0
+Temporary breakpoint 45 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=14 mode=1 return=1 total=10 ids: 21093 16089 8718 29990 8995 698 14307 18142 18141 21091
+NEW_SPLIT_FALLBACK_RETURN slot=13 positions=2
+NEW_POSITION_BUILDER_RETURN positions=15
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

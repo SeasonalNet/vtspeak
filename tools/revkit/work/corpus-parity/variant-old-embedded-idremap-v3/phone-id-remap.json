@@ -1,0 +1,17 @@
+{
+  "ambiguous_old_ids": 2,
+  "dictionary_bytes_preserved": 2055146,
+  "different_numeric_id_symbol_vectors": 71,
+  "hash_index_and_parameters_unchanged": true,
+  "indexed_msi_records": 227310,
+  "note": "Only direct bit-0 phone-ID payloads without 0xff alternatives were remapped.",
+  "old_ids_without_current_equivalent": 1,
+  "old_to_current_id_mappings": 253,
+  "same_numeric_id_symbol_vectors": 185,
+  "skipped_non_phone_payloads": 187601,
+  "skipped_unmapped_payloads": 671,
+  "skipped_variant_payloads": 0,
+  "transformed_direct_payloads": 39038,
+  "transformed_payloads_different_from_current": 37669,
+  "transformed_payloads_matching_current": 32028
+}

@@ -1,0 +1,11 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1001dfb0
+Wine-gdb> >>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1001da80
+Wine-gdb> >>> > > > > > > > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001d5c0
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1001e110
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+OLD_PAH0_QUERY_CLASS_TRACE_READY
+OLD_PAH0_SPLIT_ENTER n=1 slot=0 state=0x26f0020 context=0x18e1b30
+Temporary breakpoint 6 at 0x1001e621
+[Inferior 1 (Remote target) exited with code 030000000005]
+Wine-gdb> 

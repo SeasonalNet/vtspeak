@@ -1,0 +1,5 @@
+services:
+  runtime:
+    volumes:
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity/vt_eng-banner-free-2006.dll:/samples/vt_kat.dll:ro
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity:/probe

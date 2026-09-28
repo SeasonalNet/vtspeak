@@ -472,10 +472,41 @@ do not yet have established phonetic expansions.
 `FUN_10013380` performs duration lookups. For each selected phone/context
 record it calls `FUN_100135d0`, which constructs nine short input values from
 the current and neighboring phone classes, attributes, and boundary/position
-state. A category mapping selects one of the nine duration trees, and its
-single 16-bit result is written to per-phone duration metadata. This supports
-the “duration” role from both the path and the consumer. The result's time
-unit and how it is converted into utterance timing remain unknown.
+state. The phone-class arrays at `DAT_1007987b`, `DAT_1007987c`, and
+`DAT_10079880` select one of the nine duration trees. For the 39 observed
+phone ordinals, the selector at offset 0 separates vowel and consonant paths;
+the vowel selector is at offset 1 and the consonant selector at offset 5. The
+switches in `FUN_10013380` map these to `vshort`, `vlong`,
+`vdi`, `vsch`, `cstop`, `cfri`, `caff`, `cnas`, or `capp`. The Go engine now
+ports this dispatch and evaluates the selected tree. Its single 16-bit result
+is retained as a raw value; the time unit and conversion into utterance timing
+remain unknown. This supports
+the “duration” role from both the path and the consumer.
+
+The row producer is partly mapped from Ghidra pseudocode and the
+`vt_pau.dll` disassembly. `FUN_10012c70` maps each internal phone byte through
+`DAT_1007b6c0` (phone identity) and `DAT_1007baa8` (vowel stress), then groups
+phone spans before calling `FUN_10013c00`. `FUN_10013f30` finds vowel anchors,
+applies the onset-cluster table at `PTR_DAT_10079a4c`, and records the onset
+start and group end; it forces the first onset start to phone zero. For each
+group, `FUN_10013c00` emits a `0x1e`-byte row: byte 0 is the nucleus stress,
+byte 1 encodes onset/coda presence (bits 0 and 1, with value 4 in the no-vowel
+fallback), byte 2 is the group position (1 for the first, 2 for interior,
+3 for final; fallback 1), byte `0x1c` is the phone offset within its token,
+and byte `0x1d` is the row's phone count. Its parallel per-phone array marks
+onset, nucleus, and coda positions as 1, 2, and 3; the no-vowel fallback marks
+all phones 1.
+
+`FUN_100135d0` consumes those fields to build nine signed-short inputs:
+current identity, previous identity or boundary sentinel, next identity or
+boundary sentinel, current vowel stress, row bytes 1 and 2, token-position
+state, row count for that token block, and the per-phone 1/2/3 label. The
+ordinary initial boundary maps to 40; ordinary terminal marker `Z` maps to 40
+and final position state 3. Other sentinels and position transitions depend
+on marker bytes produced upstream. The Go text path ports the row fields and
+ordinary single-utterance path; special markers and all outer token-splitting
+rules are still unresolved. These statements describe recovered mechanics,
+not recovered phonetic names for the row fields.
 
 `FUN_100138c0` performs pitch-related lookups. `FUN_10013a20` constructs the
 pitch context values; a family selector chooses one scalar tree and its paired

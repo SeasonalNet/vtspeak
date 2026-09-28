@@ -1,0 +1,6 @@
+services:
+  runtime:
+    volumes:
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity/vt_eng-license-status-only-2006.dll:/samples/vt_kat.dll:ro
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-common/verify/verification.txt:/work/data-common/verify/verification.txt:ro
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity:/probe

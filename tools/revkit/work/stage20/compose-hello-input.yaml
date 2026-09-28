@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage20/hello-plain.txt:/probe/input.txt:ro

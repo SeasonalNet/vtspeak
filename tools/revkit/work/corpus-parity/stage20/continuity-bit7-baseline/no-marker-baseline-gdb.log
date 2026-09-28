@@ -1,0 +1,21 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023350
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10023814
+Wine-gdb> >>>>>>>>>>> > > >>>>>>>>>>> > > > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > > >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 5 at 0x10024808
+Temporary breakpoint 6 at 0x10024808
+POST_COVERAGE_GATE call=1 context=0 total_positions=4 candidate_count=211 input_ids=33088 33089 33090 33091 33092 33093 33094 33095 33096 33097 
+MODEL_SIGNATURE_BYTE6 context=0 272822=0 272823=0 272824=0 272825=0
+POST_SPAN_DISTRIBUTION context=0 scanned=211 span1=178 span2=33 span3=0 span4=0 target_mask=0
+POST_COVERAGE_GATE call=2 context=1 total_positions=4 candidate_count=406 input_ids=2049 8359 13062 18915 20293 21850 22696 29138 30398 33090 595 2453 
+MODEL_SIGNATURE_BYTE6 context=1 272822=0 272823=0 272824=0 272825=0
+POST_SPAN_DISTRIBUTION context=1 scanned=406 span1=376 span2=30 span3=0 span4=0 target_mask=0
+POST_COVERAGE_GATE call=3 context=2 total_positions=4 candidate_count=78 input_ids=22930 22934 22935 22936 22939 22940 22941 22942 22944 22945 31039 31041 
+MODEL_SIGNATURE_BYTE6 context=2 272822=0 272823=0 272824=0 272825=0
+POST_SPAN_DISTRIBUTION context=2 scanned=78 span1=76 span2=2 span3=0 span4=0 target_mask=0
+POST_COVERAGE_GATE call=4 context=3 total_positions=4 candidate_count=11 input_ids=6887 7505 11885 15995 22366 22945 26718 28463 29803 31071 
+MODEL_SIGNATURE_BYTE6 context=3 272822=0 272823=0 272824=0 272825=0
+POST_SPAN_DISTRIBUTION context=3 scanned=11 span1=9 span2=2 span3=0 span4=0 target_mask=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

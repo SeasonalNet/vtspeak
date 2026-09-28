@@ -1,0 +1,8 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/old-class-features-v2-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x408187
+Wine-gdb> >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1001da80
+Wine-gdb> >>> > > > > > > > > > >  >  >  >  >  >  >   >   >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+OLD_FEATURE_TRACE_V2_READY
+Wine-gdb> Detaching from program: /probe/probe-original-kate-2006.exe, Remote target
+Ending remote debugging.
+[Inferior 1 (Remote target) detached]
