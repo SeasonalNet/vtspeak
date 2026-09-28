@@ -1,0 +1,126 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/split-threshold-new-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10018770
+Wine-gdb> >>> > > > > > > > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x100242a0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 7 at 0x100249bb
+NEW_SPLIT_ENTER slot=0 bank=0 class_byte=0
+Temporary breakpoint 8 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x24e0752:	90	90	34	23	43	160	0
+Temporary breakpoint 9 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=0 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=0 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=0
+Temporary breakpoint 10 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x24e0752:	90	90	34	23	43	160	0
+Temporary breakpoint 11 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=0 mode=1 return=1 total=10 ids: 32928 32927 32925 32924 32926 32934 32929 32932 32933 32936
+NEW_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x24e0752:	90	90	34	23	43	160	0
+Temporary breakpoint 12 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=1 mode=1 return=1 total=20 ids: 32928 16234 30155 28859 6394 12873 8029 18450 19982 21359 32928 16234 30155 28859 6394 12873 8029 18450 19982 21359
+NEW_SPLIT_FALLBACK_RETURN slot=0 positions=2
+NEW_SPLIT_ENTER slot=2 bank=0 class_byte=0
+Temporary breakpoint 13 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x24e0759:	90	34	23	43	48	32	0
+Temporary breakpoint 14 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=2 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=2 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=2
+Temporary breakpoint 15 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x24e0759:	90	34	23	43	48	32	0
+Temporary breakpoint 16 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=2 mode=1 return=1 total=8 ids: 13478 13479 13478 13479 13478 13479 13478 13479
+NEW_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x24e0759:	90	34	23	43	48	32	0
+Temporary breakpoint 17 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=3 mode=1 return=1 total=36 ids: 3454 13478 28626 12760 31393 7748 30797 6972 12048 3454 13478 28626 12760 31393 7748 30797 6972 12048 3454 13478 28626 12760 31393 7748 30797 6972 12048 3454 13478 28626 12760 31393
+NEW_SPLIT_FALLBACK_RETURN slot=2 positions=2
+NEW_SPLIT_ENTER slot=4 bank=0 class_byte=0
+Temporary breakpoint 18 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=4 mode=1 key:0x24e0760:	34	23	43	48	66	0	0
+Temporary breakpoint 19 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=4 mode=1 return=1 total=1 ids: 9147
+NEW_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 9147:25
+Temporary breakpoint 20 at 0x10024271
+NEW_SPLIT_METRIC_RETURN sum=25
+NEW_SPLIT_RETURN slot=4 accepted=1
+NEW_SPLIT_ENTER slot=5 bank=0 class_byte=0
+Temporary breakpoint 21 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=5 mode=1 key:0x24e0767:	23	43	48	66	27	65	0
+Temporary breakpoint 22 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=5 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=5 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=5
+Temporary breakpoint 23 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=5 mode=1 key:0x24e0767:	23	43	48	66	27	65	0
+Temporary breakpoint 24 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=5 mode=1 return=1 total=53 ids: 18824 18815 18805 18803 18849 18813 18843 18836 18839 18833 18831 18828 18821 18840 18832 18822 18829 18809 18816 18848 18819 18837 18842 18850 18848 18849 18836 18843 18813 18803 18805 18815
+NEW_CLASS_LOOKUP_ENTER slot=6 mode=1 key:0x24e0767:	23	43	48	66	27	65	0
+Temporary breakpoint 25 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=6 mode=1 return=1 total=24 ids: 21789 21788 21789 21790 13032 24728 11225 13033 8898 8330 24729 21789 13032 24728 21788 21792 11226 5500 26318 24731 21789 21790 13032 24728
+NEW_SPLIT_FALLBACK_RETURN slot=5 positions=2
+NEW_SPLIT_ENTER slot=7 bank=1 class_byte=0
+Temporary breakpoint 26 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=7 mode=1 key:0x24e0b12:	43	48	66	27	43	136	0
+Temporary breakpoint 27 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=7 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=7 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=7
+Temporary breakpoint 28 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=7 mode=1 key:0x24e0b12:	43	48	66	27	43	136	0
+Temporary breakpoint 29 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=7 mode=1 return=1 total=13 ids: 4481 4479 4475 4478 4473 28186 4476 4475 4474 4477 4480 4482 4483
+NEW_CLASS_LOOKUP_ENTER slot=8 mode=1 key:0x24e0b12:	43	48	66	27	43	136	0
+Temporary breakpoint 30 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=8 mode=1 return=1 total=24 ids: 15739 11660 2366 548 17505 23568 24981 25644 26586 27136 15739 11660 2366 548 4476 15741 28183 3001 11662 549 2368 9549 5769 4475
+NEW_SPLIT_FALLBACK_RETURN slot=7 positions=2
+NEW_SPLIT_ENTER slot=9 bank=1 class_byte=0
+Temporary breakpoint 31 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=9 mode=1 key:0x24e0b19:	48	66	27	43	21	13	0
+Temporary breakpoint 32 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=9 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=9 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=9
+Temporary breakpoint 33 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=9 mode=1 key:0x24e0b19:	48	66	27	43	21	13	0
+Temporary breakpoint 34 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=9 mode=1 return=1 total=30 ids: 3577 27483 3570 3568 3571 3573 3576 3561 3595 3593 3568 3570 3582 3576 3574 3572 3573 3561 3595 3593 3571 3590 27482 27481 27480 3568 3570 3577 3593 3595
+NEW_CLASS_LOOKUP_ENTER slot=10 mode=1 key:0x24e0b19:	48	66	27	43	21	13	0
+Temporary breakpoint 35 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=10 mode=1 return=1 total=30 ids: 14424 3568 3571 3570 24146 7870 30074 28756 18276 32491 3568 3570 3571 31472 12820 23113 12133 16895 6322 13536 3571 2563 14425 1511 4974 10383 3568 3570 22489 19868
+NEW_SPLIT_FALLBACK_RETURN slot=9 positions=2
+NEW_SPLIT_ENTER slot=11 bank=1 class_byte=0
+Temporary breakpoint 36 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=11 mode=1 key:0x24e0b20:	66	27	43	21	90	5	0
+Temporary breakpoint 37 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=11 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=11 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=11
+Temporary breakpoint 38 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=11 mode=1 key:0x24e0b20:	66	27	43	21	90	5	0
+Temporary breakpoint 39 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=11 mode=1 return=1 total=40 ids: 10996 10976 10975 10993 10995 10994 10987 10989 10981 10963 10996 10976 10975 10993 10995 10994 10987 10989 10981 10963 10985 10978 10973 10964 10976 10975 10996 10993 10986 10992 10985 10978
+NEW_CLASS_LOOKUP_ENTER slot=12 mode=1 key:0x24e0b20:	66	27	43	21	90	5	0
+Temporary breakpoint 40 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=12 mode=1 return=1 total=40 ids: 10976 10975 3988 2688 819 27716 1759 14863 9119 3989 10976 10975 3988 2688 819 27716 1759 14863 9119 3989 10976 10975 3988 2688 819 27716 1759 14863 9119 3989 10976 10975
+NEW_SPLIT_FALLBACK_RETURN slot=11 positions=2
+NEW_SPLIT_ENTER slot=13 bank=1 class_byte=0
+Temporary breakpoint 41 at 0x10024808
+NEW_CLASS_LOOKUP_ENTER slot=13 mode=1 key:0x24e0b27:	27	43	21	90	90	69	0
+Temporary breakpoint 42 at 0x10024119
+NEW_CLASS_LOOKUP_RETURN slot=13 mode=1 return=0 total=0 ids:
+NEW_SPLIT_RETURN slot=13 accepted=0
+NEW_SPLIT_FALLBACK_ENTER slot=13
+Temporary breakpoint 43 at 0x1002481e
+NEW_CLASS_LOOKUP_ENTER slot=13 mode=1 key:0x24e0b27:	27	43	21	90	90	69	0
+Temporary breakpoint 44 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=13 mode=1 return=1 total=20 ids: 18142 18141 18109 18092 18138 18121 18127 18120 18117 18108 18142 18141 18109 18092 18138 18121 18127 18120 18117 18108
+NEW_CLASS_LOOKUP_ENTER slot=14 mode=1 key:0x24e0b27:	27	43	21	90	90	69	0
+Temporary breakpoint 45 at 0x100243d5
+NEW_CLASS_LOOKUP_RETURN slot=14 mode=1 return=1 total=10 ids: 21093 16089 8718 29990 8995 698 14307 18142 18141 21091
+NEW_SPLIT_FALLBACK_RETURN slot=13 positions=2
+NEW_POSITION_BUILDER_RETURN positions=15
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

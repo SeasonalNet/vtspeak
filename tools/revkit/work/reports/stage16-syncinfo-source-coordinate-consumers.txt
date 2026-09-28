@@ -1,0 +1,203 @@
+Lead 6 SyncInfo source-coordinate consumer trace
+===============================================
+
+Target: binary/vt_pau.dll (PE32/i386, Paul M16 build)
+Method: existing Ghidra 12.1.4 project, `-process vt_pau.dll -noanalysis`,
+`FindScalarReferences.java 0x290 0x64c 0x650 0x3c0`, then
+`DecompileNamedFunctions.java 0x100180b0 0x10022dc0`.
+
+This is Ghidra pseudocode and uses its recovered function/variable names. It is
+not original source code. The focused pseudocode below retains the instructions
+that establish the coordinate relation; see
+`stage16-syncinfo-row-producers.txt` for the complete `FUN_10022dc0`,
+`FUN_10022970`, and `FUN_1002c530` decompilations.
+
+Scalar-reference results
+------------------------
+
+The scan found direct `+0x64c`/`+0x650`/`+0x3c0` references in
+`FUN_10012c70`, `FUN_10012df0`, `FUN_100135d0`, `FUN_10017e80`,
+`FUN_100180b0`, `FUN_10022970`, `FUN_10022dc0`, and `FUN_1002c530`.
+`FUN_100180b0` reads `+0x64c` and `+0x290 + 0x3c0 * count` together. The
+SyncInfo producer `FUN_1002c530` copies those same values to row `+20` and
+row `+24`, respectively. The scan's `+0x290` references also include
+unrelated structures, so the base/stride context is required when interpreting
+each reference.
+
+`FUN_10022dc0`: parser-output intervals
+---------------------------------------
+
+For each parsed record it sets the record's `+0x64c` value to
+`base + start`; it sets `+0x650` to `base + end - 1` when `start < end`, or
+`base + start` for an empty/single-position case. Both are 32-bit dwords in
+per-record slots spaced `0x3c0` bytes apart. It also stores the parsed record
+count at state `+2`. This supports inclusive parser-output intervals for
+`+0x64c/+0x650`.
+
+`FUN_100180b0`: use as source-buffer byte offsets
+------------------------------------------------
+
+The relevant Ghidra pseudocode is:
+
+```c
+state = *(uint *)(param_2 + 0x4c);
+count = (int)*(short *)(state + 2);
+boundary = *(int *)(state + 0x64c);
+cursor = *(uint *)(state + count * 0x3c0 + 0x290) + 1;
+i = 0;
+while ((int)cursor < boundary) {
+    local_13a0[i] = *(byte *)(*(int *)(param_2 + 8) - 1 + boundary);
+    boundary++;
+    i++;
+}
+```
+
+The same function later walks each active record at stride `0x3c0`, reads
+per-record symbol records, and emits their formatted representation. The
+pointer expression `param_2 + 8 - 1 + iVar2` reads a byte from the original
+input buffer at the state-derived offset. The `+1` after the `+0x290` value
+means the function treats that value as an inclusive endpoint when checking
+for an intervening source-text gap.
+
+This proves a source-buffer byte-coordinate interpretation for the values
+used by this consumer. The byte read uses the stored input pointer with a
+minus-one bias; the static pseudocode alone does not show where that pointer
+originates. Runtime spans align with zero-based offsets in the plain ASCII
+fixture. The arithmetic shown compares an endpoint-plus-one with the
+`+0x64c` boundary; it does not identify the semantic purpose of every mapped
+record group.
+
+Runtime cross-check already captured
+------------------------------------
+
+The safe capture `stage16/syncinfo-runtime-fields-safe2-1-api.log` used
+`input-ex-records-vtml-long-mark.txt`, whose plain phrase repetitions begin at
+byte offsets 0, 13, 26, and 39. SyncInfo row groups report `+20/+24` pairs
+`(0,10)`, `(13,23)`, `(26,36)`, and `(39,49)`; each pair spans the eleven
+ASCII bytes of `Hello world` inclusively. The corresponding word rows carry
+the smaller source intervals `[0,4]` and `[6,10]`, or their shifted forms.
+The byte/character equivalence is established only for this ASCII fixture.
+
+The later marker and markup positions are not used to claim Unicode byte
+offset behavior. Earlier unsafe captures that read SyncInfo after terminal
+cleanup are not used here.
+
+Raw selector inputs observed in the normal application path
+----------------------------------------------------------
+
+`stage16/run-syncinfo-index-classes.sh` runs the normal Paul application on
+`stage16/input-syncinfo-index-classes.txt` and stops at the first entry to
+`FUN_1002c530`, before the function writes its rows. The capture logs each
+synthesis-record ordinal, the `+0x28` array index, the `+0x32` raw class byte,
+and `DAT_1007daa8[class]`. It records 41 kind-2 synthesis records. The original
+count measurement used the wrong base (`engine+2`). A corrected call-sequence
+trace reads the state pointer from `engine+0x4c`, then reads its `+2`: the
+41-record batch has active count 9 and the following 25-record batch has
+active count 6. This raw-class capture still validates lookup results on
+actual producer inputs, but stops at producer entry and is not a post-call
+SyncInfo row snapshot.
+
+The first three index groups have `+0x28` indices 0, 1, and 2 and distinct
+sets of raw class bytes; later groups likewise reuse one index across multiple
+records. This is direct evidence that `+0x28` is a grouped synthesis-state
+array index rather than the per-record ordinal. Examples from the captured
+records include raw class `0x16 -> selector 0x09`, `0x37 -> 0x1c`, and
+`0x42 -> 0x23`. The observed classes range from `0x02` to `0x44`, all within
+the 0x60-byte lookup table. The source phrase in the fixture is not used to
+assign linguistic names to these classes.
+
+The trace, controlled input, and runtime capture are
+`stage16/trace-syncinfo-index-classes.gdb`,
+`stage16/input-syncinfo-index-classes.txt`, and
+`stage16/syncinfo-index-classes-records-api.log`; the replay runner is
+`stage16/run-syncinfo-index-classes.sh`.
+
+Consumer format and selector labels
+-----------------------------------
+
+`FUN_1001e0c0` is a formatter over pending SyncInfo rows. Its disassembly
+passes the ordinary nested selector as `%2d`, a label pointer computed as
+`0x1007bbd4 + selector * 5` as `%3s`, and the nested first dword as `%d` to
+the format string at VA `0x1007d5e4`:
+
+```text
+%2d (%3s) : %d
+```
+
+When selector is `0x28`, it instead passes literal `0x28` and the nested
+duration to VA `0x1007d5f8`:
+
+```text
+%2d (sil) : %d
+```
+
+The five-byte-stride table at VA `0x1007bbd4` contains exactly these 39
+nonempty entries (the following slot is empty):
+
+```text
+00 AA  01 AE  02 AH  03 AO  04 AW  05 AY  06 B   07 CH
+08 D   09 DH  0a EH  0b ER  0c EY  0d F   0e G   0f HH
+10 IH  11 IY  12 JH  13 K   14 L   15 M   16 N   17 NG
+18 OW  19 OY  1a P   1b R   1c S   1d SH  1e T   1f TH
+20 UH  21 UW  22 V   23 W   24 Y   25 Z   26 ZH
+```
+
+These are direct labels emitted by the report. They identify ordinary
+selector values as phone mnemonics (consistent with the binary's phone
+inventory); raw class bytes are mapped to these values by `DAT_1007daa8`.
+No more detailed phonetic definitions for the raw classes are inferred here.
+
+After each row's nested entries, the consumer copies `row[+12..+16]` from the
+original text buffer with an inclusive length, emits separators, then calls
+the format string at VA `0x1007d5ac` with row `+12`, row `+16`, the copied
+source substring, and row `+8`:
+
+```text
+%d - %d %s : %d
+```
+
+Thus the formatter emits per-phone/silence durations and a per-row source
+interval/text plus aggregate frame count. This establishes the report's
+content. The exported `VT_TextToLipSyncLog_ENG` wrapper at `0x1001de50`
+forwards to `FUN_10022200`; its successful synthesis loop calls
+`FUN_1001e0c0` at `0x10022323`. Runtime path probes confirm this export writes
+the report to the supplied path. This identifies the public report producer;
+no separate downstream parser or consumer was found.
+
+Row-start comparison recovered from `FUN_1002c530`
+-------------------------------------------------
+
+Let `p` be the producer's current short pointer at synthesis-record `+0x2e`.
+The first pass starts a new SyncInfo row when this is the first record, when
+`*(int16_t *)(p - 0x3a)` differs from `*(int16_t *)(p - 6)`, or when byte
+`p - 0x3b` differs from byte `p - 7`. The record stride is `0x34` bytes, so
+the former pair is previous/current synthesis-record `+0x28`, and the latter
+pair is previous/current `+0x27`. The runtime trace independently shows
+`+0x27 == 2` on all 41 captured records, matching their kind-2 designation.
+The class byte at `+0x32` is not compared by this row-start condition.
+Same-kind records sharing `+0x28` reuse the preceding row. Within that path,
+the producer separately compares the previous and current records' `+0x2e`
+words: `psVar3[-0x1a]` is previous-record `+0x2e`, and `*psVar3` is
+current-record `+0x2e`. It rewrites row `+12/+16` from the current record/state
+only when those adjacent words differ. The record constructor
+`FUN_1002c220` does not assign `+0x2e`, but this is not an uninitialized input:
+`FUN_1002c530` itself writes it as part of row building. In the reuse path it
+stores the most recently allocated row slot, `row_cursor - 1`; if the cursor
+is zero it stores 599, the previous slot after wrap in the 600-row ring. In a
+row-start path it stores the current cursor before writing the row there. The
+cursor advances after row creation and wraps at 600. The refresh comparison
+therefore tests whether the current record points at a different circular row
+slot than the preceding record. A changed slot refreshes the row's source
+start/end fields; a repeated slot avoids that write. This maps `+0x2e` as an
+internal row-slot tag/cache and explains its role in the refresh guard.
+
+The follow-up `trace-syncinfo-record-neighbor-fields.gdb` capture adds `+0x2e`,
+`+0x2a`, and record-leading dwords at entry to the first producer call. All 41
+kind-2 records had entry-time `+0x2e == 0` and `+0x2a == 0`; `+0x28` ranged
+over groups 0–8. The producer mutates `+0x2e` during this call, so these
+entry-time values do not measure its row-slot assignment or refresh decisions.
+The three leading dwords were consistently `100, 100, 200`. The corrected
+sequence capture logs active counts 9 and 6 at producer entry for its two
+batches. Captures: `stage16/syncinfo-record-neighbor-fields-api.log` and
+`stage16/syncinfo-synthesis-state-sequence-api.log`; the latter is replayed by
+`stage16/run-syncinfo-synthesis-state-sequence.sh`.

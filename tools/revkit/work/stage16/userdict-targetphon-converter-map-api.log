@@ -1,0 +1,128 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Continuing.
+TARGETPHON converter token=B result=1 code=13 next=00
+TARGETPHON converter token=D result=1 code=15 next=00
+TARGETPHON converter token=F result=1 code=20 next=00
+TARGETPHON converter token=G result=1 code=21 next=00
+TARGETPHON converter token=K result=1 code=2a next=00
+TARGETPHON converter token=L result=1 code=2b next=00
+TARGETPHON converter token=M result=1 code=2c next=00
+TARGETPHON converter token=N result=1 code=2d next=00
+TARGETPHON converter token=P result=1 code=35 next=00
+TARGETPHON converter token=R result=1 code=36 next=00
+TARGETPHON converter token=S result=1 code=37 next=00
+TARGETPHON converter token=T result=1 code=39 next=00
+TARGETPHON converter token=V result=1 code=41 next=00
+TARGETPHON converter token=W result=1 code=42 next=00
+TARGETPHON converter token=Y result=1 code=43 next=00
+TARGETPHON converter token=Z result=1 code=44 next=00
+TARGETPHON converter token=CH result=1 code=14 next=00
+TARGETPHON converter token=DH result=1 code=16 next=00
+TARGETPHON converter token=HH result=1 code=22 next=00
+TARGETPHON converter token=JH result=1 code=29 next=00
+TARGETPHON converter token=NG result=1 code=2e next=00
+TARGETPHON converter token=SH result=1 code=38 next=00
+TARGETPHON converter token=TH result=1 code=3a next=00
+TARGETPHON converter token=ZH result=1 code=45 next=00
+TARGETPHON converter token=AA0 result=1 code=01 next=00
+TARGETPHON converter token=AA1 result=1 code=02 next=00
+TARGETPHON converter token=AA2 result=1 code=03 next=00
+TARGETPHON converter token=AE0 result=1 code=04 next=00
+TARGETPHON converter token=AE1 result=1 code=05 next=00
+TARGETPHON converter token=AE2 result=1 code=06 next=00
+TARGETPHON converter token=AH0 result=1 code=07 next=00
+TARGETPHON converter token=AH1 result=1 code=08 next=00
+TARGETPHON converter token=AH2 result=1 code=09 next=00
+TARGETPHON converter token=AO0 result=1 code=0a next=00
+TARGETPHON converter token=AO1 result=1 code=0b next=00
+TARGETPHON converter token=AO2 result=1 code=0c next=00
+TARGETPHON converter token=AW0 result=1 code=0d next=00
+TARGETPHON converter token=AW1 result=1 code=0e next=00
+TARGETPHON converter token=AW2 result=1 code=0f next=00
+TARGETPHON converter token=AY0 result=1 code=10 next=00
+TARGETPHON converter token=AY1 result=1 code=11 next=00
+TARGETPHON converter token=AY2 result=1 code=12 next=00
+TARGETPHON converter token=EH0 result=1 code=17 next=00
+TARGETPHON converter token=EH1 result=1 code=18 next=00
+TARGETPHON converter token=EH2 result=1 code=19 next=00
+TARGETPHON converter token=ER0 result=1 code=1a next=00
+TARGETPHON converter token=ER1 result=1 code=1b next=00
+TARGETPHON converter token=ER2 result=1 code=1c next=00
+TARGETPHON converter token=EY0 result=1 code=1d next=00
+TARGETPHON converter token=EY1 result=1 code=1e next=00
+TARGETPHON converter token=EY2 result=1 code=1f next=00
+TARGETPHON converter token=IH0 result=1 code=23 next=00
+TARGETPHON converter token=IH1 result=1 code=24 next=00
+TARGETPHON converter token=IH2 result=1 code=25 next=00
+TARGETPHON converter token=IY0 result=1 code=26 next=00
+TARGETPHON converter token=IY1 result=1 code=27 next=00
+TARGETPHON converter token=IY2 result=1 code=28 next=00
+TARGETPHON converter token=OW0 result=1 code=2f next=00
+TARGETPHON converter token=OW1 result=1 code=30 next=00
+TARGETPHON converter token=OW2 result=1 code=31 next=00
+TARGETPHON converter token=OY0 result=1 code=32 next=00
+TARGETPHON converter token=OY1 result=1 code=33 next=00
+TARGETPHON converter token=OY2 result=1 code=34 next=00
+TARGETPHON converter token=UH0 result=1 code=3b next=00
+TARGETPHON converter token=UH1 result=1 code=3c next=00
+TARGETPHON converter token=UH2 result=1 code=3d next=00
+TARGETPHON converter token=UW0 result=1 code=3e next=00
+TARGETPHON converter token=UW1 result=1 code=3f next=00
+TARGETPHON converter token=UW2 result=1 code=40 next=00
+TARGETPHON converter token=# result=1 code=64 next=00
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0118:011c: create thread I @004014C0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

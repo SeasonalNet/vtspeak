@@ -2,6 +2,9 @@
 
 - [Asset map and handling notes](assets.md)
 - [VoiceText engine and model format findings](reverse-engineering/voice-engine-and-model-formats.md)
+- [Reimplementation language decision](reimplementation-language-decision.md)
+- [Native engine implementation plan](reimplementation-plan.md)
+- [Deferred follow-up: normalized voice-data export](deferred-voice-data-export.md)
 - [Voice package generation comparison (2026-09-25)](reverse-engineering/voice-package-generation-comparison.md)
 - [VoiceText reverse-engineering roadmap](reverse-engineering/roadmap.md)
 - [Follow-up peer review for the vtpaul agents](reverse-engineering/wag-peer-review-followup-2026-09-23.md)

@@ -1,0 +1,61 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+set $mark_watch_set = 0
+
+break *0x1002efd0
+commands
+  silent
+  if $mark_watch_set == 0
+    set $ctx = *(unsigned int *)($esp + 28)
+    set $desc = *(unsigned int *)($ctx + 0x122448)
+    set $row_index = *(int *)$desc
+    if $row_index == 1
+      set $rows = *(unsigned int *)($desc + 4)
+      set $row = $rows + $row_index * 0x210
+      set $mark_watch_set = 1
+      printf "MARK_WATCH_ARM row=%d address=%#x f0=%#x f4=%#x\n", $row_index, $row, *(unsigned int *)$row, *(unsigned int *)($row + 4)
+      watch *(unsigned int *)$row
+      commands 3
+        silent
+        printf "MARK_WATCH_WRITE field=+0 eip=%#x value=%#x\n", $eip, *(unsigned int *)$row
+        disable 3
+        continue
+      end
+      watch *(unsigned int *)($row + 4)
+      commands 4
+        silent
+        printf "MARK_WATCH_WRITE field=+4 eip=%#x value=%#x\n", $eip, *(unsigned int *)($row + 4)
+        disable 4
+        continue
+      end
+    end
+  end
+  continue
+end
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 2
+  set $buffer_alloc = (char *)malloc(60032)
+  set $buffer = $buffer_alloc + 16
+  set $length = (int *)malloc(4)
+  set $extra_a = (unsigned int *)malloc(4)
+  set $extra_b = (unsigned int *)malloc(4)
+  set *$length = 60000
+  set *$extra_a = 0
+  set *$extra_b = 0
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(0, (char *)$text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+  set $desc = (char *)*$extra_b
+  set $records = *(unsigned int *)($desc + 4)
+  set $row = $records + 0x210
+  printf "MARK_WATCH_FINAL result=%d length=%d count=%d row1=%#x f0=%#x f4=%#x f8=%#x kind=%u\n", $result, *$length, *(int *)$desc, $row, *(unsigned int *)$row, *(unsigned int *)($row + 4), *(unsigned int *)($row + 8), *(unsigned char *)($row + 0x20c)
+  set *$length = 60000
+  set $cancel = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(0, (char *)$text, $buffer, $length, 2, 0, 1, (unsigned int *)0, (unsigned int *)0, -1, -1, -1, -1, 0, 0)
+  continue
+end
+
+continue

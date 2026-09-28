@@ -1,0 +1,39 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+define drain_long_token
+  set $size = $arg0
+  set $text = (char *)malloc($size + 1)
+  set $i = 0
+  while $i < $size
+    set {char}($text + $i) = 97
+    set $i = $i + 1
+  end
+  set {char}($text + $size) = 0
+  set *$length = 60000
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $text, $buffer, $length, 0, 0, 1, 0, 0, -1, -1, -1, -1, 0, 0)
+  printf "LONG_TOKEN_START selector=@SELECTOR@ bytes=%d result=%d length=%d\n", $size, $result, *$length
+  set $poll = 1
+  while ($result == 0) && ($poll < 128)
+    set *$length = 60000
+    set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $text, $buffer, $length, 1, 0, 1, 0, 0, -1, -1, -1, -1, 0, 0)
+    printf "LONG_TOKEN_POLL selector=@SELECTOR@ bytes=%d poll=%d result=%d length=%d\n", $size, $poll, $result, *$length
+    set $poll = $poll + 1
+  end
+  printf "LONG_TOKEN_DONE selector=@SELECTOR@ bytes=%d result=%d polls=%d\n", $size, $result, $poll
+end
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $buffer = (char *)malloc(60000)
+  set $length = (int *)malloc(4)
+  drain_long_token 1024
+  drain_long_token 4096
+  continue
+end
+
+continue

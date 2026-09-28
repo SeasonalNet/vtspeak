@@ -1,0 +1,10 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10019f40
+Wine-gdb> >>>>>>> > > > >  >  >  >  >  > > >  >  >  >  >  > > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+MODEL_LOAD_ENTRY call=1 model=0x14bf198 signature_table=0x5000400 unit_count=419436032
+MARKER_PRELOAD 272822=0 272823=0 272824=0 272825=0
+Hardware watchpoint 2: *(unsigned char *)($signature_table + 272822 * 7 + 6)
+Hardware watchpoint 3: *(unsigned char *)($signature_table + 272823 * 7 + 6)
+Hardware watchpoint 4: *(unsigned char *)($signature_table + 272824 * 7 + 6)
+Cannot execute this command while the target is running.
+Use the "interrupt" command to stop the target
+and then try again.

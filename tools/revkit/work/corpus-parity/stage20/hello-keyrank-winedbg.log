@@ -1,0 +1,147 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/hello-keyrank-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/hello-keyrank-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023af0
+Wine-gdb> >>> > > > > > > > > > > > > > > >  >  >  >  >  > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023350
+Wine-gdb> >>> > > > > > > > >  >  >  > > > >  >  >  >  >  >   >   >   >  >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+KEY_RANK_ENTRY call=1 limit=30 budget=10000 count=1 signature=0x24e0760:	0x22	0x17	0x2b	0x30	0x5a	0x00	0x00
+KEY_CANDIDATE call=1 index=0 class_id=9147 duration=25 key=0x2030de7:	0x17	0x2b	0x2f	0x00	0x00
+Temporary breakpoint 4 at 0x10024164
+KEY_RANK_RETURN call=1 selected=1 class_ids=9147 
+FINAL_RANK_ENTRY call=1 context=0 input_count=10 input_ids=32924 32925 32926 32927 32928 32929 32932 32933 
+Temporary breakpoint 5 at 0x100249d5
+CEP_PROSODY_ENTRY call=1 unit=200614 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 6 at 0x1002389a
+CEP_PROSODY_RETURN call=1 cost=1006.8
+CEP_PROSODY_ENTRY call=2 unit=116320 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 7 at 0x1002389a
+CEP_PROSODY_RETURN call=2 cost=1006.8
+CEP_PROSODY_ENTRY call=3 unit=129641 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 8 at 0x1002389a
+CEP_PROSODY_RETURN call=3 cost=1011.8
+CEP_PROSODY_ENTRY call=4 unit=165351 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 9 at 0x1002389a
+CEP_PROSODY_RETURN call=4 cost=1011.8
+CEP_PROSODY_ENTRY call=5 unit=178453 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 10 at 0x1002389a
+CEP_PROSODY_RETURN call=5 cost=1006.8
+CEP_PROSODY_ENTRY call=6 unit=179388 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 11 at 0x1002389a
+CEP_PROSODY_RETURN call=6 cost=1006.8
+CEP_PROSODY_ENTRY call=7 unit=182880 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 12 at 0x1002389a
+CEP_PROSODY_RETURN call=7 cost=1006.8
+CEP_PROSODY_ENTRY call=8 unit=189906 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x0c	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 13 at 0x1002389a
+CEP_PROSODY_RETURN call=8 cost=1006.8
+FINAL_RANK_RETURN call=1 selected=30 unit_ids=200614 116320 129641 165351 178453 179388 182880 189906 195687 200525 
+FINAL_RANK_COSTS call=1
+FINAL_COST position=0 unit=200614 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=116320 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=2 unit=129641 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=165351 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=4 unit=178453 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=5 unit=179388 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=182880 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=7 unit=189906 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=8 unit=195687 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=9 unit=200525 score=1006.8 duration_penalty=2 context_penalty=0
+FINAL_RANK_ENTRY call=2 context=1 input_count=10 input_ids=6394 8029 12873 16234 18450 19982 21359 28859 
+Temporary breakpoint 14 at 0x100248ce
+FINAL_RANK_RETURN call=2 selected=30 unit_ids=279484 1200 2525 20499 22451 28430 31347 31795 51310 52542 
+FINAL_RANK_COSTS call=2
+FINAL_COST position=0 unit=279484 score=1021.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=1200 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=2 unit=2525 score=1016.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=20499 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=4 unit=22451 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=5 unit=28430 score=1016.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=31347 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=7 unit=31795 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=8 unit=51310 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_COST position=9 unit=52542 score=1011.8 duration_penalty=2 context_penalty=0
+FINAL_RANK_ENTRY call=3 context=2 input_count=2 input_ids=13478 13479 
+Temporary breakpoint 15 at 0x100248ce
+FINAL_RANK_RETURN call=3 selected=10 unit_ids=13942 36540 53487 96599 264072 268760 272152 272823 273370 145101 
+FINAL_RANK_COSTS call=3
+FINAL_COST position=0 unit=13942 score=23.4853 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=36540 score=22.6622 duration_penalty=2 context_penalty=0
+FINAL_COST position=2 unit=53487 score=22 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=96599 score=22.5791 duration_penalty=2 context_penalty=0
+FINAL_COST position=4 unit=264072 score=22.3004 duration_penalty=2 context_penalty=0
+FINAL_COST position=5 unit=268760 score=22.4559 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=272152 score=22.1155 duration_penalty=2 context_penalty=0
+FINAL_COST position=7 unit=272823 score=23.5481 duration_penalty=2 context_penalty=0
+FINAL_COST position=8 unit=273370 score=22.0233 duration_penalty=2 context_penalty=0
+FINAL_COST position=9 unit=145101 score=22.03 duration_penalty=1 context_penalty=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

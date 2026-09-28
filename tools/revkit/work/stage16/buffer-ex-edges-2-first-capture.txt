@@ -1,0 +1,15 @@
+# VT_TextToBufferEX_ENG selector-2 first edge capture excerpt
+# The initial full log was replaced by subsequent reruns. These exact lines
+# were read from it before replacement; this file preserves only the relevant
+# excerpt, not the complete GDB/Wine transcript.
+
+BUFFER_EX_EDGE_SIZE_QUERY selector=2 result=30000 length=30000
+BUFFER_EX_EDGE_SHORT_LENGTH selector=2 result=0 length=8984 bytes=ff,ff,c5,b6,a5,a5,a5,a5 extras=0x14cc278,0x14dec30
+BUFFER_EX_EDGE_RECORDS selector=2 descriptor=0x14dec30 count=0 array=0
+BUFFER_EX_EDGE_WRITES selector=2 samples=ff,c5,b6,a5,a5,a5 guards=a5,a5,a5,a5
+BUFFER_EX_EDGE_CANCEL selector=2 result=1 length=0
+
+# Two subsequent runs with the same input and output_len=1 returned length
+# 30000. Their complete traces are buffer-ex-edges-2-30000.log and
+# buffer-ex-edges-2.log. No causal explanation for the short first capture is
+# established; treat 30000 as the observed maximum, not a deterministic size.

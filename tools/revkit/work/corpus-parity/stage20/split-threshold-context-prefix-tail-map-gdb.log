@@ -1,0 +1,41 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/split-threshold-context-prefix-tail-map-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100242a0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x100249bb
+PREFIX_MAP_SPLIT_ENTER slot=0
+Temporary breakpoint 7 at 0x10024808
+PREFIX_MAP_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 34597:30
+Temporary breakpoint 8 at 0x10024271
+PREFIX_MAP_METRIC_RETURN sum=30
+PREFIX_MAP_SPLIT_RETURN slot=0 accepted=1
+PREFIX_MAP_SPLIT_ENTER slot=1
+Temporary breakpoint 9 at 0x10024808
+PREFIX_MAP_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 14109:9
+Temporary breakpoint 10 at 0x10024271
+PREFIX_MAP_METRIC_RETURN sum=9
+PREFIX_MAP_SPLIT_RETURN slot=1 accepted=0
+PREFIX_MAP_FALLBACK_ENTER slot=1
+Temporary breakpoint 11 at 0x1002481e
+PREFIX_MAP_FALLBACK_RETURN slot=1 positions=2
+PREFIX_MAP_SPLIT_ENTER slot=3
+Temporary breakpoint 12 at 0x10024808
+PREFIX_MAP_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 9433:25
+Temporary breakpoint 13 at 0x10024271
+PREFIX_MAP_METRIC_RETURN sum=25
+PREFIX_MAP_SPLIT_RETURN slot=3 accepted=1
+PREFIX_MAP_SPLIT_ENTER slot=4
+Temporary breakpoint 14 at 0x10024808
+PREFIX_MAP_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 19785:6
+Temporary breakpoint 15 at 0x10024271
+PREFIX_MAP_METRIC_RETURN sum=6
+PREFIX_MAP_SPLIT_RETURN slot=4 accepted=0
+PREFIX_MAP_FALLBACK_ENTER slot=4
+Temporary breakpoint 16 at 0x1002481e
+PREFIX_MAP_FALLBACK_RETURN slot=4 positions=2
+PREFIX_MAP_POSITION_BUILDER_RETURN positions=6
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage20/vector-pitch-overlay/pitch:/work/data-kate/M16/ttsdata/tree2/pitch:ro

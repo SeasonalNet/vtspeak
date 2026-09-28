@@ -1,0 +1,13 @@
+public load result=0
+public synthesis result=1 valid_wave=1
+decoder result=1 bytes=3036
+gen: decoded 100000/440124 units
+gen: decoded 200000/440124 units
+gen: decoded 300000/440124 units
+gen: decoded 400000/440124 units
+gen: complete 440124 units
+num: complete 24508 units
+etc: decoded 100000/115723 units
+etc: complete 115723 units
+alp: complete 119 units
+X connection to :99 broken (explicit kill or server shutdown).

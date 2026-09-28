@@ -18,9 +18,9 @@ from inspect_legacy_unit_idx import parse_index_data  # noqa: E402
 from inspect_unit_idx import inspect as inspect_versioned  # noqa: E402
 
 VARIANTS = {
-    "attr-a-copy": "copy the preserved one-byte source column into the inserted column",
-    "signature-last-copy": "copy the last preserved signature byte into the inserted column",
-    "signature-last-transfer": "move the last preserved signature byte into the inserted column and zero-pad its signature slot",
+    "attr-a-copy": "copy the first legacy tail byte window into the inserted column",
+    "signature-last-copy": "copy legacy attr_40 into attr_b and preserve its signature source bytes",
+    "signature-last-transfer": "copy legacy attr_40 into attr_b and zero its source bytes",
     "constant-8": "fill the inserted column with 8, the observed target value in the trace",
 }
 
@@ -42,14 +42,16 @@ def main() -> None:
             block_end = parsed.block_start + units * parsed.record_stride
             inserted_column = block_end + units * 8
             source_attr_a = block_end
-            source_signature_last = block_end + units * 7
+            source_attr_40 = block_end + units * 7
             if variant == "attr-a-copy":
                 values = bytes(raw[source_attr_a : source_attr_a + units])
             elif variant == "signature-last-copy":
-                values = bytes(raw[source_signature_last : source_signature_last + units])
+                values = bytes(raw[source_attr_40 : source_attr_40 + units])
             elif variant == "signature-last-transfer":
-                values = bytes(raw[source_signature_last : source_signature_last + units])
-                raw[source_signature_last : source_signature_last + units] = bytes(units)
+                values = bytes(
+                    raw[source_attr_40 : source_attr_40 + units]
+                )
+                raw[source_attr_40 : source_attr_40 + units] = bytes(units)
             else:
                 values = bytes([8]) * units
             if len(values) != units:

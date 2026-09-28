@@ -110,9 +110,10 @@ existing isolated Wine container. It uses the unchanged public load and
 synthesis path before invoking the DLL decoder on local indexed payloads.
 From the repository root, follow the commands in the
 [corpus parity report](../../docs/reverse-engineering/dat-corpus-parity-and-stage9-2026-09-24.md).
-The compact DLL result remains local under ignored `work/corpus-parity/`;
-the probe source, comparison script, input hashes, and curated result are
-tracked.
+The extracted original Kate MSI package and Ghidra project databases remain
+local under ignored `work/corpus-parity/` paths. Probe sources, comparison
+scripts, generated patched DLL copies, captures, and curated results are
+trackable there.
 
 ## Inspect shared English dictionary resources
 

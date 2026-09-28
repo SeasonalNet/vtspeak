@@ -9,6 +9,7 @@
 /work/data-paul
 /work/stage1-copy/
 /work/stage1-run/
+/work/corpus-parity/kate-msi/
 
 # Host-specific Wine state and caches. Small captured DAT/PCM fixtures and
 # their trace scripts/logs in stage2-copy remain versioned.
@@ -16,7 +17,8 @@
 /work/stage2-copy/.cache/
 /work/stage2-copy/.config/
 /work/stage2-copy/.local/
-/work/corpus-parity/
+/work/corpus-parity/ghidra/
+/work/corpus-parity/full-analysis-2006/ghidra/
 /work/stage18/vt_kat-tree2-probe.dll
 /work/stage19/vt_kat-tree2-compat.dll
 /work/stage19/data-common/

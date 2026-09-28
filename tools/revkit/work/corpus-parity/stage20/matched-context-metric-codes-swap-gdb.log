@@ -1,0 +1,198 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023af0
+Wine-gdb> >>> > > > > > > > > > > > > > > >  >  >  >  >  > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023350
+Wine-gdb> >>> > > > > > > > >  >  >  > > > >  >  >  >  >  >   >   >   >  >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024060
+Wine-gdb> >>>>>>> > > >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x100242a0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 7 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 8 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Breakpoint 9 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 10 at 0x10018c80
+Wine-gdb> >>>>>>>> > > > > >  >  >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 11 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 12 at 0x100249bb
+OLD_CUTOFF_SPLIT_ENTER slot=0
+Temporary breakpoint 13 at 0x10024808
+KEY_RANK_ENTRY call=1 limit=30 budget=10000 count=1 signature=0x24e0752:	0x5a	0x5a	0x22	0x17	0x2b	0xa0	0x00
+KEY_CANDIDATE call=1 index=0 class_id=32928 duration=30 key=0x204de60:	0x5a	0x22	0x17	0xa0	0x00
+Temporary breakpoint 14 at 0x10024164
+KEY_RANK_RETURN call=1 selected=1 class_ids=32928 
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 32928:30
+Temporary breakpoint 15 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=30
+OLD_CUTOFF_SPLIT_RETURN slot=0 sum=30 accepted=1
+OLD_CUTOFF_SPLIT_ENTER slot=1
+Temporary breakpoint 16 at 0x10024808
+KEY_RANK_ENTRY call=2 limit=30 budget=10000 count=1 signature=0x24e0759:	0x5a	0x22	0x17	0x2b	0x30	0x20	0x00
+KEY_CANDIDATE call=2 index=0 class_id=13478 duration=9 key=0x203627e:	0x22	0x17	0x2b	0x20	0x00
+Temporary breakpoint 17 at 0x10024164
+KEY_RANK_RETURN call=2 selected=1 class_ids=13478 
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 13478:9
+Temporary breakpoint 18 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=9
+OLD_CUTOFF_OVERRIDE slot=1 sum=9 native=0 overridden=1
+OLD_CUTOFF_SPLIT_ENTER slot=2
+Temporary breakpoint 19 at 0x10024808
+KEY_RANK_ENTRY call=3 limit=30 budget=10000 count=1 signature=0x24e0760:	0x22	0x17	0x2b	0x30	0x5a	0x00	0x00
+KEY_CANDIDATE call=3 index=0 class_id=9147 duration=25 key=0x2030de7:	0x17	0x2b	0x2f	0x00	0x00
+Temporary breakpoint 20 at 0x10024164
+KEY_RANK_RETURN call=3 selected=1 class_ids=9147 
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 9147:25
+Temporary breakpoint 21 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=25
+OLD_CUTOFF_SPLIT_RETURN slot=2 sum=25 accepted=1
+OLD_CUTOFF_SPLIT_ENTER slot=3
+Temporary breakpoint 22 at 0x10024808
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 18857:6
+Temporary breakpoint 23 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=6
+OLD_CUTOFF_OVERRIDE slot=3 sum=6 native=0 overridden=1
+OLD_CUTOFF_POSITION_BUILDER_RETURN positions=4
+FINAL_RANK_ENTRY call=1 context=0 input_count=1 input_ids=32928 
+Temporary breakpoint 24 at 0x100249d5
+CEP_PROSODY_ENTRY call=1 unit=1200 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 25 at 0x1002389a
+CEP_PROSODY_RETURN call=1 cost=16.032
+CEP_PROSODY_ENTRY call=2 unit=279479 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 26 at 0x1002389a
+CEP_PROSODY_RETURN call=2 cost=30.032
+CEP_PROSODY_ENTRY call=3 unit=273369 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 27 at 0x1002389a
+CEP_PROSODY_RETURN call=3 cost=0.0705882
+CEP_PROSODY_ENTRY call=4 unit=272822 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 28 at 0x1002389a
+CEP_PROSODY_RETURN call=4 cost=0.00851064
+CEP_PROSODY_ENTRY call=5 unit=262454 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 29 at 0x1002389a
+CEP_PROSODY_RETURN call=5 cost=15.0082
+CEP_PROSODY_ENTRY call=6 unit=245736 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 30 at 0x1002389a
+CEP_PROSODY_RETURN call=6 cost=16.0348
+CEP_PROSODY_ENTRY call=7 unit=233533 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 31 at 0x1002389a
+CEP_PROSODY_RETURN call=7 cost=16.96
+CEP_PROSODY_ENTRY call=8 unit=214148 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 32 at 0x1002389a
+CEP_PROSODY_RETURN call=8 cost=15.1455
+FINAL_RANK_RETURN call=1 selected=30 unit_ids=1200 279479 273369 272822 262454 245736 233533 214148 206118 204612 
+FINAL_RANK_COSTS call=1
+FINAL_COST position=0 unit=1200 score=16.032 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=279479 score=30.032 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=273369 score=0.0705882 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=272822 score=0.00851064 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=262454 score=15.0082 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=245736 score=16.0348 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=233533 score=16.96 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=214148 score=15.1455 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=206118 score=20.1231 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=204612 score=15.0085 duration_penalty=1 context_penalty=0
+FINAL_RANK_ENTRY call=2 context=1 input_count=1 input_ids=13478 
+Temporary breakpoint 33 at 0x100248ce
+FINAL_RANK_RETURN call=2 selected=9 unit_ids=13942 36540 53487 96599 264072 268760 272152 272823 273370 
+FINAL_RANK_COSTS call=2
+FINAL_COST position=0 unit=13942 score=0.294046 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=36540 score=0.113299 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=53487 score=0.0630411 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=96599 score=0.298291 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=264072 score=0.425948 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=268760 score=0.379545 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=272152 score=0.164943 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=272823 score=0.721836 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=273370 score=0.65904 duration_penalty=1 context_penalty=0
+TRANSITION_ENTER context=1 current_count=9 previous_count=30
+Temporary breakpoint 34 at 0x100248d6
+TRANSITION_COMPONENTS context=1 current=272823 previous=273369 feature=21.9468 divisor=1 categorical=0 previous_cost=0.0352941 local_cost=0.360918 sum=22.343
+TRANSITION_COMPONENTS context=1 current=272823 previous=272822 feature=2 divisor=1 categorical=0 previous_cost=0.00425532 local_cost=0.360918 sum=2.36517
+TRANSITION_COMPONENTS context=1 current=273370 previous=273369 feature=2 divisor=1 categorical=0 previous_cost=0.0352941 local_cost=0.32952 sum=2.36481
+TRANSITION_COMPONENTS context=1 current=273370 previous=272822 feature=21.9468 divisor=1 categorical=0 previous_cost=0.00425532 local_cost=0.32952 sum=22.2806
+TRANSITION_RETURN context=1 candidates=9 cumulative_costs_and_predecessors:
+TRANSITION_CANDIDATE context=1 unit=13942 cost=16.2998 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=36540 cost=13.2121 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=53487 cost=6.55951 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=96599 cost=12.6292 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=264072 cost=8.86508 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=268760 cost=9.21725 predecessor=272822 predecessor_index=3
+TRANSITION_CANDIDATE context=1 unit=272152 cost=10.7632 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=272823 cost=2.36517 predecessor=272822 predecessor_index=3
+TRANSITION_CANDIDATE context=1 unit=273370 cost=2.36481 predecessor=273369 predecessor_index=2
+FINAL_RANK_ENTRY call=3 context=2 input_count=1 input_ids=9147 
+Temporary breakpoint 35 at 0x100248ce
+FINAL_RANK_RETURN call=3 selected=25 unit_ids=2529 272824 272153 265815 264073 252236 238356 233274 206047 173825 
+FINAL_RANK_COSTS call=3
+FINAL_COST position=0 unit=2529 score=216.67 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=272824 score=15.2893 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=272153 score=3.37078 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=265815 score=217.572 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=264073 score=8.55876 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=252236 score=218.295 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=238356 score=217.749 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=233274 score=215.621 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=206047 score=210.595 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=173825 score=216.407 duration_penalty=1 context_penalty=0
+TRANSITION_ENTER context=2 current_count=25 previous_count=9
+Temporary breakpoint 36 at 0x100248d6
+TRANSITION_COMPONENTS context=2 current=272824 previous=272823 feature=12.6564 divisor=1 categorical=0 previous_cost=2.36517 local_cost=7.64464 sum=22.6662
+TRANSITION_COMPONENTS context=2 current=272824 previous=273370 feature=46.2945 divisor=1 categorical=10 previous_cost=2.36481 local_cost=7.64464 sum=66.3039
+TRANSITION_COMPONENTS context=2 current=273371 previous=272823 feature=46.2945 divisor=1 categorical=10 previous_cost=2.36517 local_cost=0.530238 sum=59.1899
+TRANSITION_COMPONENTS context=2 current=273371 previous=273370 feature=12.6564 divisor=1 categorical=0 previous_cost=2.36481 local_cost=0.530238 sum=15.5514
+TRANSITION_RETURN context=2 candidates=25 cumulative_costs_and_predecessors:
+TRANSITION_CANDIDATE context=2 unit=2529 cost=133.106 predecessor=53487 predecessor_index=2
+TRANSITION_CANDIDATE context=2 unit=272824 cost=22.6662 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=272153 cost=14.4486 predecessor=272152 predecessor_index=6
+TRANSITION_CANDIDATE context=2 unit=265815 cost=134.07 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=264073 cost=15.1445 predecessor=264072 predecessor_index=4
+TRANSITION_CANDIDATE context=2 unit=252236 cost=135.715 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=238356 cost=128.279 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=233274 cost=130.567 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=206047 cost=129.297 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=173825 cost=129.577 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=160529 cost=138.416 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=153132 cost=111.287 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=146098 cost=135.842 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=105185 cost=133.573 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=87003 cost=125.186 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=83568 cost=133.555 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=75575 cost=138.209 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=49761 cost=128.174 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=31841 cost=134.444 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=29459 cost=140.137 predecessor=53487 predecessor_index=2
+TRANSITION_CANDIDATE context=2 unit=28296 cost=138.326 predecessor=53487 predecessor_index=2
+TRANSITION_CANDIDATE context=2 unit=13943 cost=18.9906 predecessor=13942 predecessor_index=0
+TRANSITION_CANDIDATE context=2 unit=6519 cost=133.567 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=4632 cost=129.013 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=273371 cost=15.5514 predecessor=273370 predecessor_index=8
+TRANSITION_ENTER context=3 current_count=6 previous_count=13
+Temporary breakpoint 37 at 0x100248d6
+TRANSITION_COMPONENTS context=3 current=255282 previous=272824 feature=68.2285 divisor=1 categorical=0 previous_cost=22.6662 local_cost=0.151001 sum=91.0457
+TRANSITION_COMPONENTS context=3 current=255282 previous=273371 feature=8.87953 divisor=1 categorical=0 previous_cost=15.5514 local_cost=0.151001 sum=24.582
+TRANSITION_COMPONENTS context=3 current=272825 previous=272824 feature=7.1838 divisor=1 categorical=0 previous_cost=22.6662 local_cost=0.970752 sum=30.8207
+TRANSITION_COMPONENTS context=3 current=272825 previous=273371 feature=54.0067 divisor=1 categorical=0 previous_cost=15.5514 local_cost=0.970752 sum=70.5289
+TRANSITION_RETURN context=3 candidates=6 cumulative_costs_and_predecessors:
+TRANSITION_CANDIDATE context=3 unit=1869 cost=35.5393 predecessor=273371 predecessor_index=12
+TRANSITION_CANDIDATE context=3 unit=5170 cost=24.1297 predecessor=264073 predecessor_index=2
+TRANSITION_CANDIDATE context=3 unit=246677 cost=21.4196 predecessor=272153 predecessor_index=1
+TRANSITION_CANDIDATE context=3 unit=255282 cost=22.9961 predecessor=264073 predecessor_index=2
+TRANSITION_CANDIDATE context=3 unit=264074 cost=17.6585 predecessor=264073 predecessor_index=2
+TRANSITION_CANDIDATE context=3 unit=272825 cost=30.8207 predecessor=272824 predecessor_index=0
+OLD_CUTOFF_SELECTED_UNIT n=1 id=273369
+OLD_CUTOFF_SELECTED_UNIT n=2 id=264072
+OLD_CUTOFF_SELECTED_UNIT n=3 id=264073
+OLD_CUTOFF_SELECTED_UNIT n=4 id=264074
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,94 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/old-class-features-v6-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x408187
+Wine-gdb> >>>>> > > >  >  >  >  >  >  >  >  >  >  >   >   >   >   >   >   >    >    >    >    >    >    >   >   >   >  > > >>>> > > >  >  >  >  >  > > >>>> > > >  >  >  >  >  >  >  > > >>>>Wine-gdb> Wine-gdb> Continuing.
+OLD_FEATURE_TRACE_V2_READY
+Breakpoint 2 at 0x1001da80
+Breakpoint 3 at 0x10011fa0
+Breakpoint 4 at 0x10011fb2
+OLD_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Temporary breakpoint 5 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=0 mode=1 appended=75 total=4 ids: 52164
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52164 bytes:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52165 bytes:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52166 bytes:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52167 bytes:0x2225d71:	90	34	4	30	30	30	0
+
+OLD_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Temporary breakpoint 6 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=1 mode=1 appended=9 total=2 ids: 32401
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32401 bytes:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32400 bytes:0x22040f0:	34	23	43	0	0	43	34
+
+OLD_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Temporary breakpoint 7 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=2 mode=1 appended=5 total=1 ids: 25383
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=25383 bytes:0x21f8111:	23	43	47	0	0	48	23
+
+OLD_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x26f0843:	43	48	90	4	4
+Temporary breakpoint 8 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=3 mode=1 appended=6 total=1 ids: 37302
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=37302 bytes:0x220c6fa:	43	48	90	4	4	0	43
+
+OLD_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Temporary breakpoint 9 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=0 mode=1 appended=75 total=4 ids: 52164
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52164 bytes:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52165 bytes:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52166 bytes:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52167 bytes:0x2225d71:	90	34	4	30	30	30	0
+
+OLD_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Temporary breakpoint 10 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=1 mode=1 appended=9 total=2 ids: 32401
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32401 bytes:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32400 bytes:0x22040f0:	34	23	43	0	0	43	34
+
+OLD_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Temporary breakpoint 11 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=2 mode=1 appended=5 total=1 ids: 25383
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=25383 bytes:0x21f8111:	23	43	47	0	0	48	23
+
+OLD_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x26f0843:	43	48	90	4	4
+Temporary breakpoint 12 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=3 mode=1 appended=6 total=1 ids: 37302
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=37302 bytes:0x220c6fa:	43	48	90	4	4	0	43
+
+OLD_CLASS_LOOKUP_ENTER slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Temporary breakpoint 13 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=0 mode=1 appended=75 total=4 ids: 52164
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52164 bytes:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52165 bytes:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52166 bytes:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=52167 bytes:0x2225d71:	90	34	4	30	30	30	0
+
+OLD_CLASS_LOOKUP_ENTER slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Temporary breakpoint 14 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=1 mode=1 appended=9 total=2 ids: 32401
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32401 bytes:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=32400 bytes:0x22040f0:	34	23	43	0	0	43	34
+
+OLD_CLASS_LOOKUP_ENTER slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Temporary breakpoint 15 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=2 mode=1 appended=5 total=1 ids: 25383
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=25383 bytes:0x21f8111:	23	43	47	0	0	48	23
+
+OLD_CLASS_LOOKUP_ENTER slot=3 mode=1 key:0x26f0843:	43	48	90	4	4
+Temporary breakpoint 16 at 0x1001e012
+OLD_CLASS_LOOKUP_RETURN slot=3 mode=1 appended=6 total=1 ids: 37302
+OLD_CLASS_FEATURE_BASE model=0x18e1b30 base=0x21ccb00 id=37302 bytes:0x220c6fa:	43	48	90	4	4	0	43
+
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

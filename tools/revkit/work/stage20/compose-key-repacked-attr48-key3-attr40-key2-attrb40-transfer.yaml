@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage20/index-adapter-key-repacked-attr48-key3-attr40-key2-attrb40-transfer:/work/data-kate/M16/mc_idx_tbl:ro

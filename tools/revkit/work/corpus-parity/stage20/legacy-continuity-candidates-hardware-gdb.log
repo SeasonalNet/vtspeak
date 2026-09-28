@@ -1,0 +1,118 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cd60
+Wine-gdb> >>>>>>> > >  >  >  >  >  >  >  >   >   >   >   >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_CONTINUITY_TRACE_READY
+Hardware assisted breakpoint 3 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=0 candidates=75 total_positions=4
+LEGACY_CONTINUITY_CANDIDATE position=0 index=0 unit=272822 coverage=4 left=0 right=3 preliminary_cost=-8
+LEGACY_CONTINUITY_CANDIDATE position=0 index=1 unit=273369 coverage=3 left=0 right=2 preliminary_cost=-6
+LEGACY_CONTINUITY_CANDIDATE position=0 index=2 unit=92183 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=3 unit=52542 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=4 unit=51310 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=5 unit=31795 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=6 unit=31347 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=7 unit=22451 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=8 unit=20499 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=9 unit=1200 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=10 unit=63 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=11 unit=271915 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=12 unit=271878 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=13 unit=270371 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=14 unit=268190 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=15 unit=267478 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=16 unit=264663 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=17 unit=264405 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=18 unit=116320 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=19 unit=129641 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=20 unit=206118 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=21 unit=28430 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=22 unit=2525 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=23 unit=279484 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=24 unit=262454 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=25 unit=245736 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=26 unit=233533 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=27 unit=214148 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=28 unit=204612 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=29 unit=200614 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=30 unit=200525 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=31 unit=195687 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=32 unit=189906 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=33 unit=182880 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=34 unit=179388 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=35 unit=178453 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=36 unit=165351 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=37 unit=258594 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=38 unit=255501 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=39 unit=146049 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=40 unit=113167 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=41 unit=111587 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=42 unit=100640 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=43 unit=100016 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=44 unit=99833 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=45 unit=97386 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=46 unit=88195 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=47 unit=50118 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=48 unit=32995 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=49 unit=25895 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=50 unit=19888 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=51 unit=18378 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=52 unit=13531 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=53 unit=6208 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=54 unit=5218 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=55 unit=3756 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=56 unit=149799 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=57 unit=158787 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=58 unit=252497 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=59 unit=248753 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=60 unit=234795 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=61 unit=233955 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=62 unit=233824 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=63 unit=222240 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=64 unit=220903 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=65 unit=211497 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=66 unit=208625 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=67 unit=208165 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=68 unit=207948 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=69 unit=205939 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=70 unit=198921 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=71 unit=197867 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=72 unit=169343 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=73 unit=167546 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=0 index=74 unit=279479 coverage=1 left=0 right=0 preliminary_cost=-2
+Hardware assisted breakpoint 4 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=1 candidates=9 total_positions=4
+LEGACY_CONTINUITY_CANDIDATE position=1 index=0 unit=272823 coverage=4 left=1 right=2 preliminary_cost=-9
+LEGACY_CONTINUITY_CANDIDATE position=1 index=1 unit=273370 coverage=3 left=1 right=1 preliminary_cost=-7
+LEGACY_CONTINUITY_CANDIDATE position=1 index=2 unit=264072 coverage=3 left=0 right=2 preliminary_cost=-6
+LEGACY_CONTINUITY_CANDIDATE position=1 index=3 unit=13942 coverage=2 left=0 right=1 preliminary_cost=-4
+LEGACY_CONTINUITY_CANDIDATE position=1 index=4 unit=272152 coverage=2 left=0 right=1 preliminary_cost=-4
+LEGACY_CONTINUITY_CANDIDATE position=1 index=5 unit=36540 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=6 unit=53487 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=7 unit=96599 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=1 index=8 unit=268760 coverage=1 left=0 right=0 preliminary_cost=-2
+Hardware assisted breakpoint 5 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=2 candidates=5 total_positions=4
+LEGACY_CONTINUITY_CANDIDATE position=2 index=0 unit=272824 coverage=4 left=2 right=1 preliminary_cost=-9
+LEGACY_CONTINUITY_CANDIDATE position=2 index=1 unit=264073 coverage=3 left=1 right=1 preliminary_cost=-7
+LEGACY_CONTINUITY_CANDIDATE position=2 index=2 unit=273371 coverage=3 left=2 right=0 preliminary_cost=-6
+LEGACY_CONTINUITY_CANDIDATE position=2 index=3 unit=13943 coverage=2 left=1 right=0 preliminary_cost=-4
+LEGACY_CONTINUITY_CANDIDATE position=2 index=4 unit=272153 coverage=2 left=1 right=0 preliminary_cost=-4
+Hardware assisted breakpoint 6 at 0x1001d289
+LEGACY_CONTINUITY_RETURN position=3 candidates=6 total_positions=4
+LEGACY_CONTINUITY_CANDIDATE position=3 index=0 unit=272825 coverage=4 left=3 right=0 preliminary_cost=-8
+LEGACY_CONTINUITY_CANDIDATE position=3 index=1 unit=264074 coverage=3 left=2 right=0 preliminary_cost=-6
+LEGACY_CONTINUITY_CANDIDATE position=3 index=2 unit=1869 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=3 index=3 unit=5170 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=3 index=4 unit=246677 coverage=1 left=0 right=0 preliminary_cost=-2
+LEGACY_CONTINUITY_CANDIDATE position=3 index=5 unit=255282 coverage=1 left=0 right=0 preliminary_cost=-2
+Hardware assisted breakpoint 7 at 0x1001d289
+Hardware assisted breakpoint 8 at 0x1001d289
+Hardware assisted breakpoint 9 at 0x1001d289
+Hardware assisted breakpoint 10 at 0x1001d289
+Hardware assisted breakpoint 11 at 0x1001d289
+Hardware assisted breakpoint 12 at 0x1001d289
+Hardware assisted breakpoint 13 at 0x1001d289
+Hardware assisted breakpoint 14 at 0x1001d289
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

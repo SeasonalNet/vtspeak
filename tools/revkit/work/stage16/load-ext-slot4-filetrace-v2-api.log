@@ -1,0 +1,28 @@
+WINE_PROCESS_STATUS=0
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/atmt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/atmt.tree3",0063F378,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/atmt.tree3" 520 0063F0F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f374 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f380 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/atmt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/poly.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/poly.tree3",0063F58C,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/poly.tree3" 520 0063F308 00000000)
+0024:trace:file:NtCreateFile handle=0x63f588 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f594 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/poly.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/engbi.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/engbi.tree3",0063F6CC,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/engbi.tree3" 520 0063F448 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6c8 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6d4 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/engbi.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/sbd.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/sbd.tree3",0063F6D4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/sbd.tree3" 520 0063F450 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6d0 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6dc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/sbd.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3",0063F8B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3" 520 0063F630 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8b0 access=80100080 name=L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\data-james\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\data-james\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" not found (c000003a)
+0024:warn:file:CreateFileW Unable to create file L"Z:/work/data-james/M16/ttsdata/tree3/pitch/nbt.tree3" (status c000003a)

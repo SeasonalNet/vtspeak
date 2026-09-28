@@ -215,11 +215,181 @@ zero bytes. Static extended-loader pseudocode bounds indexes to 0–1023,
 checks initialization and occupancy, reserves an index during parsing, and
 distinguishes invalid index, uninitialized subsystem, occupied index, parse
 failure, and success. The extended unloader refuses an in-use dictionary,
-frees an idle loaded dictionary, and reports an empty slot. The loaded-idle
-unload path is runtime-confirmed; in-use and uninitialized errors remain
-static-only. Runtime logs, WAV hashes, GDB traces, and reproducible runners are
+frees an idle loaded dictionary, and reports an empty slot. Idle unload,
+forced-uninitialized `-3`, and the injected in-use-reference `-3` are runtime
+confirmed; the latter two exercise controlled state rather than natural engine
+conditions. Runtime logs, WAV hashes, GDB traces, and reproducible runners are
 in Stage 16, including `userdict-heap-lifecycle-api.log`,
 `userdict-hello-world-state-api.log`, and `userdict-hello-world-api.log`.
+
+### CSV row validation matrix
+
+The earlier candidate-file failures used literal strings as GDB call
+arguments and are not valid parser evidence. The replacement matrix passes
+engine-heap-allocated paths and invokes the simple exported loader at
+`0x10027960`. In the Paul M16 runtime, `hello,HH,P` loads (`AX=1`) and unloads
+(`AX=1`). The following row shapes also load and unload successfully:
+
+| CSV contents | Load AX | What this establishes |
+| --- | ---: | --- |
+| `hello,HH,P,extra` | 1 | A nonempty 4th field is accepted. |
+| `hello,world,A,extra` | 1 | The same 4-field acceptance for type `A`. |
+| `"hello","HH","P"` | 1 | This quoted sample loads and produces the same tested synthesis WAV as the unquoted row. |
+| `,HH,P` | 1 | An empty source field is accepted for this row. |
+| `hello,HH,P,` | 1 | An empty 4th field is accepted. |
+| `hello,HH,P` with CRLF terminator | 1 | A CRLF row terminator is accepted. |
+| `hello,HH,"P` | 1 | An unmatched opening quote in the final type field is accepted. |
+| `he"llo,HH,P` | 1 | A quote embedded in an otherwise unquoted source field is accepted. |
+| `"he""llo",HH,P` | 1 | A doubled quote inside a quoted source field is accepted. |
+
+Two fields, five fields, an empty file, an empty `P` or `A` target, type `X`,
+and a two-character type `PP` each return `AX=-3`. For every such rejection,
+unload at that index returns `-1`, showing that the failed parse leaves the
+slot empty; loading the valid control row at the same index then returns `1`
+and can be unloaded. This demonstrates cleanup and reuse for these parse
+failures, not all parser errors. Static `FUN_1005e330` pseudocode reads fields
+0–2 after recognizing counts 3 or 4. A separate controlled synthesis
+comparison showed identical output for three fields, a nonempty fourth field,
+an empty fourth field, and fully quoted three-field ASCII input. Combined with
+the parser's independently observed quote-removal behavior, this establishes
+that the fourth value is ignored by this loader path for the tested rows and
+that ordinary enclosing quotes are removed for these fields; it does not
+characterize all malformed quote cases.
+
+Three quote cases were isolated through the heap-backed loader runner:
+`hello,HH,"P`, `he"llo,HH,P`, and `"he""llo",HH,P` each returned load `1`
+and unload `1`. The standalone CSV parser's captured behavior removes an
+unmatched opening quote in a quoted field, preserves a quote in an unquoted
+field, and decodes doubled quotes inside a quoted field. Under the forced
+dictionary gate, the unmatched-type row's `hello` WAV equals the ordinary
+`hello,HH,P` row (SHA-256
+`491b29d0c3deb1d95770f8bdfe6fbcdfce5ace03f8c15dbfb9c57cf95b601cf1`). The
+embedded-source row leaves `hello` equal to control (`613ff17f...`) but changes
+`he"llo` from its control hash (`902d035a...`) to that same dictionary-row
+hash. The well-formed escaped-source row `"he""llo",HH,P` produces the same
+`he"llo` hash as the embedded-quote row. These observations show that the
+final type quote behaves like the plain `P` field here, while both source
+forms match the quote-containing text in this fixture. They do not establish
+the output's spoken content or behavior for other placements and strings.
+Replay load/unload acceptance with
+`run-userdict-validation-matrix.sh unmatched-type-quote`,
+`embedded-source-quote`, and `escaped-source-quote`; the synthesis comparison
+is `run-userdict-malformed-quote-effect.sh`. Captures are
+`userdict-malformed-quote-v2-effect-api.log` and
+`userdict-malformed-quote-v2-hashes.txt`.
+
+The accepted empty-source row `,HH,P` was then tested with the per-speaker
+dictionary gate forced to 1. For `hello`, control and dictionary WAVs both
+hash to
+`613ff17ff3d7b8c9a411ef771ea1d02a051f38fcb918874e95dde30db39c0f36`; for
+`.`, both hash to
+`ba584a378b11d9e9c98736fd8c256fe1453a84ee4139416d24b07acff424f0fb`.
+Each load, synthesis, and unload returned `1`, and the gate was restored to
+zero. This shows no measurable effect for those two tested strings; it does
+not establish whether an empty source can match another token boundary, and
+empty utterances cannot be tested through this file-synthesis path because
+they are rejected before dictionary matching. Reproduce with
+[`run-userdict-empty-source-effect.sh`](../../tools/revkit/work/stage16/run-userdict-empty-source-effect.sh);
+the API trace and hash manifest are
+[`userdict-empty-source-effect-api.log`](../../tools/revkit/work/stage16/userdict-empty-source-effect-api.log)
+and
+[`userdict-empty-source-effect-hashes.txt`](../../tools/revkit/work/stage16/userdict-empty-source-effect-hashes.txt).
+
+An unsupported phoneme target behaves differently. The exported
+`VT_CheckUserDict_TargetPhon_ENG("example")` probe returns `-9`; passing the
+same `example` target in `hello,example,P` terminates the Wine process with
+access-violation status `0xc0000005` during `VT_LOAD_UserDict_ENG`. A second
+unsupported target, `NOTAPHONE`, reproduces the same failure. Neither call
+returns a loader status, and the crashed runs cannot establish whether the
+reserved slot is cleared. This is a confirmed fault boundary for the tested
+build and inputs; the exact internal faulting instruction is not captured.
+See [`userdict-validation-matrix-v3-api.log`](../../tools/revkit/work/stage16/userdict-validation-matrix-v3-api.log),
+the full capture ending in the `NOTAPHONE` crash
+[`userdict-validation-matrix-v2-api.log`](../../tools/revkit/work/stage16/userdict-validation-matrix-v2-api.log),
+and the isolated `example` reproduction
+[`userdict-validation-case-invalid-target-example-api.log`](../../tools/revkit/work/stage16/userdict-validation-case-invalid-target-example-api.log).
+The reproducible entry point is
+[`run-userdict-validation-matrix.sh`](../../tools/revkit/work/stage16/run-userdict-validation-matrix.sh).
+
+### Extended loader input selection and state returns
+
+Direct calls to `VT_LOAD_UserDict_EXT_ENG` at `0x10027880` establish its tested
+call shape as `(index, filename, buffer, length)`. Static disassembly of
+`FUN_1005e330` selects the memory reader when `buffer != NULL && length > 0`;
+otherwise it passes `filename` to the file reader. A 24-call runtime matrix
+varied filename null/present, buffer null/present, and lengths `0`, `1`, `9`,
+`10`, `11`, and `-1`. It used the valid disk row
+`vtspeakprobe,HH,P` and a 10-byte heap buffer `hello,HH,P`.
+
+| Filename | Buffer | Lengths | Result |
+| --- | --- | --- | --- |
+| null | null | all six | `-3`; subsequent unload `-1` |
+| null | data | 0, 1, 9, -1 | `-3`; subsequent unload `-1` |
+| null | data | 10, 11 | `1`; unload `1` |
+| valid file | null | all six | `1`; unload `1` |
+| valid file | data | 0, -1 | `1`; unload `1` |
+| valid file | data | 1, 9 | `-3`; subsequent unload `-1` |
+| valid file | data | 10, 11 | `1`; unload `1` |
+
+The partial-buffer failures despite a valid filename show the positive-length
+buffer path takes precedence over the filename. Lengths 10 and 11 both accept
+the ten payload bytes, with 11 including the buffer's terminating NUL. For
+null buffers or lengths at most zero, the file path is used; a null filename
+then fails with `-3`. This establishes the branch and these tested lengths,
+not general buffer safety for arbitrary sizes. All 24 cases use distinct
+indexes, and every failed parse was confirmed to leave an empty slot.
+Reproduce with
+[`run-userdict-extended-argument-matrix.sh`](../../tools/revkit/work/stage16/run-userdict-extended-argument-matrix.sh)
+and inspect
+[`userdict-extended-argument-matrix-v2-api.log`](../../tools/revkit/work/stage16/userdict-extended-argument-matrix-v2-api.log).
+
+A separate direct-memory call loaded index 200 with null filename, the
+10-byte buffer, and length 10 (`AX=1`). Calling the loader again at index 200
+returned `-2` (`VT_LOAD_USERDICT_ERROR_INDEX_BUSY`); idle unload returned `1`.
+This confirms the occupied-slot guard, but does not simulate concurrent
+threads racing the reservation sentinel. In the same disposable process, the
+probe saved the initialized subsystem flag at `0x100a0458` (`1`), temporarily
+set it to zero, and observed loader `-4` and unloader `-3`; it then restored
+the flag to `1`. These forced-state calls confirm both uninitialized branches
+at runtime without showing a natural application state in which they occur.
+See [`userdict-extended-buffer-v2-api.log`](../../tools/revkit/work/stage16/userdict-extended-buffer-v2-api.log)
+and [`run-userdict-extended-buffer.sh`](../../tools/revkit/work/stage16/run-userdict-extended-buffer.sh).
+
+### Fourth CSV field and unload in-use comparison
+
+The loader accepts a four-field row, but the fourth value has no consumed
+meaning in the recovered parser path. `FUN_1005e330` first accepts a row count
+of 3 or 4 at `0x1005e4a4`, then calls `VT_CsvParser_GetField_ENG` only for
+indexes 0, 1, and 2 (`0x1005e4b4`, `0x1005e4bf`, `0x1005e4ca`). There is no
+field-3 retrieval in that function. Runtime comparison used `hello,HH,P`,
+`hello,HH,P,extra`, `hello,HH,P,`, and `"hello","HH","P"`; each loaded,
+synthesized, and unloaded at index 200 while the per-speaker dictionary gate
+was debugger-forced to 1. All four WAVs have identical SHA-256
+`491b29d0c3deb1d95770f8bdfe6fbcdfce5ace03f8c15dbfb9c57cf95b601cf1`, and the
+gate was restored to 0 before normal execution resumed. The quoted row's
+identical output, combined with the standalone CSV parser's quoted-field
+behavior, establishes ordinary enclosing-quote removal for these ASCII fields.
+The fourth column is therefore an accepted but ignored field in this build's
+loader path, for the tested rows and consumer. Reproduce with
+[`run-userdict-fourth-field-effect.sh`](../../tools/revkit/work/stage16/run-userdict-fourth-field-effect.sh);
+the latest capture and hash manifest are
+[`userdict-fourth-field-effect-v2-api.log`](../../tools/revkit/work/stage16/userdict-fourth-field-effect-v2-api.log)
+and [`userdict-fourth-field-hashes-v2.txt`](../../tools/revkit/work/stage16/userdict-fourth-field-hashes-v2.txt).
+
+The unloader's in-use guard checks each nonnull synthesis-context pointer in
+the per-speaker reference array, then compares that context's `+0x1312c0`
+dictionary pointer with the global dictionary slot. To exercise this return
+branch without claiming a naturally concurrent use, the runtime probe loads
+dictionary 200, allocates a context-sized scratch record (`0x1312e0` bytes),
+sets its `+0x1312c0` word to the actual dictionary pointer, and inserts that
+context pointer into speaker 1's first reference slot at `0x100a147c` (the
+loaded slot's capacity is 1). `VT_UNLOAD_UserDict_EXT_ENG(200)` then returns
+`-3`. The probe restores the original null slot, frees the scratch record, and
+the same unload returns `1`. This confirms the pointer-match guard and normal
+idle cleanup after restoration; a naturally active synthesis context remains
+unobserved. The repeatable runner and capture are
+[`run-userdict-inuse-unload.sh`](../../tools/revkit/work/stage16/run-userdict-inuse-unload.sh)
+and [`userdict-inuse-unload-v5-api.log`](../../tools/revkit/work/stage16/userdict-inuse-unload-v5-api.log).
 
 ## Information queries
 
@@ -361,8 +531,10 @@ this sample's WAVE bytes. The per-case WAVE hashes are:
 | Comma pause maximum | 65,535 | `a9bb244d9d0cdb664a7a64d14eeb2acd0c45b22d19383d88ff157ba337dd1a69` |
 
 This only shows per-field byte changes for `Hello world.` and the listed
-limits. It does not establish pause effects for text with internal pauses,
-their audible duration, or output differences at intermediate values. The
+limits. It does not establish the effects of scalar sentence/comma-pause
+settings on the ordinary buffer path, their audible duration, or output
+differences at intermediate scalar values. The EX path separately confirms
+that inline VTML pause `time` is milliseconds at 16 kHz. The
 trace, log, and WAVE captures are under Stage 16.
 
 ## Text-format and VTML substitution behavior
@@ -420,6 +592,18 @@ fixtures when the container exits. The debugger inferior exited with code 1
 after the forced unload and probes, so this validates the reported API
 returns only and is not a full post-unload process-lifecycle result.
 
+A separate probe now calls `VT_UNLOADTTS_EXT_ENG(1)` after the Paul model is
+loaded. `VT_GetDBSize_ENG(1)` returns `1` with 508,121,688 before unload and
+`-1` afterward; the output word is left at zero. The speaker-name helper still
+returns `Paul`, showing that this static slot name remains queryable when its
+engine state is gone. Valid-text calls after the direct unload return `-5`
+from the file API and `-6` from the synchronous buffer API, with buffer length
+0. This documents the single-slot loaded-state effects directly. The later
+two-slot Paul/James probe also confirms that unloading one loaded voice
+preserves the other; invalid slot normalization remains static-only. Capture:
+`unload-ext-loaded-api.log`, replayed by `run-unload-ext-loaded.sh`; see also
+`load-ext-multi-api.log` for the multi-slot sequence.
+
 ## Additional export queries
 
 The Stage 16 follow-up calls four export-only query helpers after the Paul M16
@@ -454,14 +638,51 @@ completed. Further ASCII edge inputs also returned `1`: `a,"unterminated`
 produced fields `a` and `unterminated` (the opening quote was removed);
 `a,,c` preserved an empty middle field; and `a,<LF>b` returned fields `a` and
 `b`, with the LF absent from the second field. These samples do not establish
-general malformed-quote or multiline-record handling. Non-ASCII encoding
-behavior remains open. A separate edge probe observed that doubled quotes in
+general malformed-quote or multiline-record handling. Byte probes using
+CP1252 `é/ï` (`e9`/`ef`) and UTF-8 `é/ï` (`c3 a9`/`c3 af`) split on the ASCII
+comma and preserved every high byte in the returned fields. This establishes
+byte preservation for those samples, not codepage detection or general
+Unicode semantics. A separate edge probe observed that doubled quotes in
 `"a""b",c` and a quote in unquoted `a"b,c` both returned `a"b` and `c`;
 `a,` omitted its empty final field; and `a,\r\nb` removed the CRLF at the
 beginning of the second field. In `a,b<LF>c,d`, the LF remained inside the
 second field (`b<LF>c`) and the parser returned three fields. The exact row
-`a,"b,c",d` returned the same three fields with parse flags 0, 1, and 2.
-These samples do not establish other quote, line-position, or flag behavior.
+`a,"b,c",d` returned the same three fields with parse flags 0, 1, and 2. A
+new flag matrix covered `INT_MIN`, -1, 0, 1, 2, 3, 255, and `INT_MAX`; every
+call returned 1 and produced the same three fields. Only flag 1 changed the
+caller's buffer, which became `a` after the parser overwrote the first comma
+with NUL. The machine code at `0x1001676a` branches on the exact comparison
+`flag == 1`; flag 1 selects the caller buffer, while every other integer
+selects the parser-owned copy. This closes the flag's control behavior across
+the 32-bit integer extremes without claiming all CSV grammar behavior. A
+41-case byte matrix then expanded quote and line-position coverage; every call
+returned low AX 1. For details, see
+[`csv-parser-deep-4-api.log`](../../tools/revkit/work/stage16/csv-parser-deep-4-api.log)
+and the case-to-input hex mapping in
+[`run-csv-parser-deep.sh`](../../tools/revkit/work/stage16/run-csv-parser-deep.sh).
+
+Runtime and static observations from that matrix establish these bounded
+rules. The parser skips ASCII tab, LF, CR, and space before a field. If the
+first remaining byte is `"`, the helper at `0x10016810` removes the opening
+quote, treats doubled quotes as one literal quote, and ends at the first
+non-doubled closing quote; if no closing quote exists, it returns the bytes to
+NUL without the opening quote. A quote after ordinary unquoted bytes is kept
+literally, and does not protect a comma. After a quoted field, the parser skips
+the same whitespace and consumes the next non-whitespace byte as the field
+separator; the malformed input `"a"x,b` therefore yielded `a`, empty, and `b`.
+That separator behavior is consistent with the pseudocode's one-byte advance,
+not a claim that arbitrary separators are supported CSV.
+
+Empty input and a lone comma each yield one empty field. `,a` yields an empty
+field then `a`; `,,` yields two empty fields; `a,` omits a final empty field,
+while `a,,` retains the empty field before the last delimiter. LF is not a
+record separator in the tested inputs: leading LF/CRLF and LF/CRLF immediately
+after a comma are skipped as field-leading whitespace, while embedded and
+trailing LF/CRLF bytes remain inside the returned field. Bare CR is likewise
+skipped at field start, but is preserved when embedded, quoted, or immediately
+before a comma. The result is a permissive single-record field splitter, not
+evidence of conventional multiline CSV handling. Other byte classes, broader
+malformed quote cases, and alternate delimiter configuration remain open.
 For `VT_CsvParser_MakeCsv_ENG`, a separate
 call serialized `A` and `b,c` through every advertised capacity from 0 through
 64 into a 64-byte output region. Capacity 10 is the first to produce the
@@ -480,14 +701,59 @@ the runtime output was `"a""b","plain"`, confirming embedded quote doubling.
 The underwrite stayed inside the probe allocation. The wrapper is decompiled
 as `void`, so captured AX values are raw register state, not declared C
 returns. A null field-array pointer with field count zero returned raw AX 1
-and produced an empty string. Null pointers in other argument combinations
-and capacities above 64 remain open. The exact trace is
+and produced an empty string. With counts -1 and `INT_MIN` plus a null
+field-array, the export likewise returned raw AX 1 and produced an empty
+string; the output retained its `0x31` fill bytes except for the leading and
+final NUL terminators. This matches the decompiled `if (0 < count)` traversal
+guard. It does not establish behavior for every negative count or invalid
+pointer combination. Null output, null field-array with positive count, and
+null field elements remain unprobed. The bounded cases are recorded in
+[`csv-negative-count-api.log`](../../tools/revkit/work/stage16/csv-negative-count-api.log)
+and reproducible with
+[`run-csv-negative-count.sh`](../../tools/revkit/work/stage16/run-csv-negative-count.sh).
+Three more calls each ran in a fresh Wine process: a null output buffer with
+capacity 8/count 0, a null field-array with count 1, and a one-entry array
+whose field pointer was null. Each process exited with Windows status
+`0xc0000005` (3221225477) while the export call was active, and none returned
+to its post-call GDB print. Static pseudocode places the first invalid write
+in the output fill, the second at `*param_4`, and the third in the field
+string scan. This establishes an access violation for these exact inputs, not
+a recoverable API error code. Captures and replay files are
+[`csv-pointer-edges-0-api.log`](../../tools/revkit/work/stage16/csv-pointer-edges-0-api.log),
+[`csv-pointer-edges-1-api.log`](../../tools/revkit/work/stage16/csv-pointer-edges-1-api.log),
+[`csv-pointer-edges-2-api.log`](../../tools/revkit/work/stage16/csv-pointer-edges-2-api.log),
+and [`run-csv-pointer-edges.sh`](../../tools/revkit/work/stage16/run-csv-pointer-edges.sh).
+A new large-capacity probe extended the
+guarded buffer to 65,537 bytes;
+capacities 65, 128, 1,024, 4,096, and 65,536 all returned low AX 1, emitted
+the same CSV bytes, placed the final capacity NUL at the advertised last byte,
+preserved a prefix guard, and left the byte after the advertised region
+unchanged. This confirms ordinary large capacities at those sample points;
+overflow and allocation-failure behavior remain open. The exact trace is
 [`csv-capacity-api.log`](../../tools/revkit/work/stage16/csv-capacity-api.log)
 and runner is
 [`run-csv-capacity.sh`](../../tools/revkit/work/stage16/run-csv-capacity.sh).
+The extended capacity capture and trace are
+[`csv-capacity-large-api.log`](../../tools/revkit/work/stage16/csv-capacity-large-api.log)
+and [`trace-csv-capacity-large.gdb`](../../tools/revkit/work/stage16/trace-csv-capacity-large.gdb).
+The matched-allocation sweep was extended to 131,072, 1,048,576, 4,194,304,
+16,777,216, and 67,108,864 bytes. Each call returned raw low AX 1, retained the prefix and
+post-buffer guards, wrote the same short serialization, and placed NUL at the
+last advertised byte. This verifies these larger positive capacities only;
+it does not establish behavior beyond 64 MiB, near 32-bit arithmetic limits,
+or when allocation fails. The capture and runner are
+[`csv-capacity-xlarge-api.log`](../../tools/revkit/work/stage16/csv-capacity-xlarge-api.log)
+and [`run-csv-capacity-xlarge.sh`](../../tools/revkit/work/stage16/run-csv-capacity-xlarge.sh).
 The parser-edge trace and runner are
 [`csv-parser-edges-api.log`](../../tools/revkit/work/stage16/csv-parser-edges-api.log)
 and [`run-csv-parser-edges.sh`](../../tools/revkit/work/stage16/run-csv-parser-edges.sh).
+The expanded flag trace and capture are
+[`trace-csv-flag-matrix.gdb`](../../tools/revkit/work/stage16/trace-csv-flag-matrix.gdb)
+and [`csv-flag-matrix-api.log`](../../tools/revkit/work/stage16/csv-flag-matrix-api.log).
+The CP1252/UTF-8 raw-byte probe is captured in
+[`csv-encoding-edges-api.log`](../../tools/revkit/work/stage16/csv-encoding-edges-api.log)
+with its replay trace at
+[`trace-csv-encoding-edges.gdb`](../../tools/revkit/work/stage16/trace-csv-encoding-edges.gdb).
 
 The sync-info helpers allocate and operate on a concrete nested structure.
 Ghidra pseudocode shows a 56-byte header (14 dwords), a 600-row array with
@@ -505,31 +771,289 @@ nested entry. It preserves the header row-array pointer and row nested
 pointers. Runtime observations matched this on sampled rows 0, 1, and 599,
 including unchanged nested pointers and cleared values.
 
-Cross-references in internal pseudocode narrow several structural roles. The
-producer `FUN_1002c530` uses header field 3 as a row write cursor, advances it,
-and wraps it at 600. The consumer `FUN_1001e0c0` walks pending rows relative to
-that cursor; row offset 0 controls its nested-entry loop. For each nested
-entry, it adds the first dword to an accumulator, while the following 16-bit
-value selects a different formatting branch when it equals `0x28`. Row offset
-8 contributes to another accumulator, and offsets 12/16 bound a text slice
-copied by the consumer. These observations identify control/data roles, not
-the semantic units of the accumulated values or meanings of the remaining row
-fields. Evidence is in the Ghidra pseudocode reports
+Cross-references in internal pseudocode and a live `VT_TextToBufferEX_ENG`
+capture establish more of the record contract. The producer `FUN_1002c530`
+uses header field 3 as a row write cursor, advances it, and wraps it at 600.
+The consumer `FUN_1001e0c0` walks pending rows relative to that cursor. Row
+offset 0 is the nested-entry count; offset 4 is its separately allocated
+pointer. For each nested entry, the consumer adds the first dword to a frame
+accumulator. Its live values sum exactly to the row's offset-8 value for the
+captured rows (for example, `0x586 + 0x38a + 0x51d + 0x93d = 0x176a`). The
+row offset-8 total is an audio-frame count: the EX marker mapper uses it in
+frame-coordinate sums, and earlier PCM16/A-law/μ-law output-length checks
+confirmed the unit. The nested entry's following 16-bit word selects the
+consumer's formatting branch; `0x28` selects the silence format, while the
+other observed values select the ordinary entry format. No broader names for
+those selector values have been recovered.
+
+The producer fills row offsets 12/16 with a source-text interval. On the live
+`Hello world.` repetitions, the pairs `[0,4]` and `[6,10]` cover the inclusive
+source character positions of `Hello` and `world`; the consumer uses these
+bounds when mapping a marker's source position to timeline rows. The other
+four row dwords now have a traced source chain:
+
+- Row `+20` copies synthesis-state `+0x64c`. `FUN_10022dc0` initially fills
+  the per-record `+0x64c/+0x650` pair with parser-output byte coordinates;
+  when a record spans multiple input bytes, the end is stored inclusively.
+  The report formatter `FUN_100180b0` resolves the coordinate through an
+  input-pointer-minus-one expression, while `FUN_10022970` uses it during
+  per-record position remapping. In the safe runtime capture, row `+20`
+  begins spans at values 0, 13, 26, and 39, matching the zero-based file
+  offsets for this plain ASCII fixture.
+- Row `+24` copies `state + 0x290 + 0x3c0 * state[+2]`, the `+0x290` word at
+  the active-record-count index. `FUN_100180b0` adds one to this value before
+  comparing it with `+0x64c` and reading intervening bytes from the original
+  text buffer, establishing the same byte-coordinate domain and an inclusive
+  endpoint for that consumer. Runtime row pairs `(0,10)`,
+  `(13,23)`, `(26,36)`, and `(39,49)` match the inclusive spans of successive
+  ASCII `Hello world` phrases. The producer's grouping rule and whether every
+  output row must be interpreted as an entire source phrase remain open.
+- Row `+28` is the sign-extended 16-bit `state+2` value. `FUN_10022dc0` sets
+  it from the parser-output record count; `FUN_10012c70` and the remapping
+  code also use it as the active record count. It is a count/index, not a
+  phonetic label.
+- Row `+32` is copied from synthesis-record `+0x28` (`psVar3[-3]` in the
+  producer). This is not the loop ordinal: `FUN_1002c220` stores the ordinal
+  separately at synthesis-record `+0x10`. For ordinary kind-2 records,
+  `+0x28` is populated from the first byte of each 3-word record in the
+  producer's interleaved array; the value is also used to index parallel
+  synthesis-state arrays at `+0x47718`, `+0x47710`, and `+0x47714`. For
+  inserted kind-1 records it is populated from caller `param_3`, which is
+  used as an index into the `+0x47710` array. This establishes an array-index
+  role in the producer, but not the upstream name or domain of that index. A
+  separate normal-application capture observes indices 0–8, with each index
+  reused by multiple kind-2 records; it also captures raw class bytes and the
+  lookup results. A corrected call-sequence trace reads active record count
+  from `*(short *)(*(int *)(engine+0x4c)+2)`: the 41-record batch has count 9
+  and the following 25-record batch has count 6. An earlier trace mistakenly
+  read `engine+2`; its reported zero count was a measurement error and is
+  superseded.
+  In the safe EX snapshot, row `+32` values 0 and 1 accompany source intervals
+  `[0,4]` (`Hello`) and `[6,10]` (`world`); the following silence row retains
+  value 1. `FUN_1002c530` also tests changes in the synthesis-record `+0x28`
+  value as one condition for starting a new row. The full first-pass condition
+  is now recovered from pointer offsets: start a row for the first record, a
+  changed adjacent `+0x28` group/index value, or a changed adjacent `+0x27`
+  record-kind byte. `psVar3[-0x1d]` and `psVar3[-3]` address previous/current
+  `+0x28`; `psVar3-0x3b` and `psVar3-7` address previous/current `+0x27`.
+  The condition does not compare the raw class byte at `+0x32`. Same-kind
+  records with the same group/index reuse the current row. The row-field update
+  within that reuse path computes and stores the most recently allocated row
+  slot in record `+0x2e`: it uses `row_cursor - 1`, or `599` when the cursor is
+  zero, matching the 600-slot circular row array. On a row-start path it stores
+  the current row cursor before filling that slot and advancing/wrapping the
+  cursor. These assignments are visible in `FUN_1002c530` at
+  `0x1002c591–0x1002c59e` and `0x1002c645–0x1002c64f`; row creation advances the
+  cursor at `0x1002c7b9–0x1002c7ce`. The same-kind reuse path compares the newly
+  assigned row slot with the previous record's `+0x2e`, refreshing row `+12/+16`
+  only when the slot changes. Thus `+0x2e` is a producer-maintained row-slot tag
+  used to suppress redundant source-span refreshes, not an upstream synthesis
+  field whose meaning must be inferred. The entry-time sequence capture shows
+  the previous contents of this field before the producer rewrites it; its
+  `0–4` progression is consistent with row-slot reuse but is not itself the
+  post-call result. The active-record counts in that capture are 9 and 6 as
+  corrected above. The remaining schema questions are the upstream
+  names/domains for the `+0x28` group index, kind byte, and raw class byte, and
+  finer phonetic meanings beyond the emitted phone mnemonics.
+
+The nested selector is now traced through its complete static mapping.
+`FUN_1002c220` writes a per-record class byte at synthesis-record `+0x32`
+(kind-1 records use `0x5a`; kind-2 records read it from the per-state record
+table). `FUN_1002c530` indexes `DAT_1007daa8` with that byte and stores the
+mapped byte as the nested entry's 16-bit selector. The 0x60-byte table covers
+indices `0x00..0x5f`; indices `0x5a..0x5e` all map to `0x28`, the silence
+format already identified by the consumer. The full raw-index to output
+mapping, expressed as inclusive ranges, is:
+
+| Raw index | Nested selector | Raw index | Nested selector |
+| --- | ---: | --- | ---: |
+| `00–03` | `00` | `20` | `0d` |
+| `04–06` | `01` | `21` | `0e` |
+| `07–09` | `02` | `22` | `0f` |
+| `0a–0c` | `03` | `23–25` | `10` |
+| `0d–0f` | `04` | `26–28` | `11` |
+| `10–12` | `05` | `29` | `12` |
+| `13` | `06` | `2a` | `13` |
+| `14` | `07` | `2b` | `14` |
+| `15` | `08` | `2c` | `15` |
+| `16` | `09` | `2d` | `16` |
+| `17–19` | `0a` | `2e` | `17` |
+| `1a–1c` | `0b` | `2f–31` | `18` |
+| `1d–1f` | `0c` | `32–34` | `19` |
+| `35` | `1a` | `36` | `1b` |
+| `37` | `1c` | `38` | `1d` |
+| `39` | `1e` | `3a` | `1f` |
+| `3b–3d` | `20` | `3e–40` | `21` |
+| `41` | `22` | `42` | `23` |
+| `43` | `24` | `44` | `25` |
+| `45` | `26` | `46` | `13` |
+| `47` | `1a` | `48` | `1e` |
+| `49` | `08` | `4a–4d` | `1e` |
+| `4e–4f` | `08` | `50` | `1e` |
+| `51–53` | `03` | `54–59` | `00` |
+| `5a–5e` | `28` | `5f` | `00` |
+
+The ordinary formatting branch also indexes a five-byte-stride NUL-terminated
+label table at VA `0x1007bbd4` (file offset `0x7bbd4`). Its 39 entries are:
+
+| Selector | Label | Selector | Label | Selector | Label |
+| ---: | :--- | ---: | :--- | ---: | :--- |
+| `00` | `AA` | `0d` | `F` | `1a` | `P` |
+| `01` | `AE` | `0e` | `G` | `1b` | `R` |
+| `02` | `AH` | `0f` | `HH` | `1c` | `S` |
+| `03` | `AO` | `10` | `IH` | `1d` | `SH` |
+| `04` | `AW` | `11` | `IY` | `1e` | `T` |
+| `05` | `AY` | `12` | `JH` | `1f` | `TH` |
+| `06` | `B` | `13` | `K` | `20` | `UH` |
+| `07` | `CH` | `14` | `L` | `21` | `UW` |
+| `08` | `D` | `15` | `M` | `22` | `V` |
+| `09` | `DH` | `16` | `N` | `23` | `W` |
+| `0a` | `EH` | `17` | `NG` | `24` | `Y` |
+| `0b` | `ER` | `18` | `OW` | `25` | `Z` |
+| `0c` | `EY` | `19` | `OY` | `26` | `ZH` |
+
+Assembly passes the ordinary selector, label pointer (`0x1007bbd4 +
+selector*5`), and nested duration to the literal format `%2d (%3s) : %d `.
+These labels are the binary's phone mnemonics; that identifies the report
+symbols, not a detailed phonetic interpretation of each upstream raw class.
+Selector `0x28` bypasses the table and is passed with duration to the separate
+literal format `%2d (sil) : %d `, establishing a silence entry. The producer
+still has no visible bounds check on its raw class-table index; the nominal
+0x00..0x5f input span follows from table size, not a producer guard.
+
+After nested entries, `FUN_1001e0c0` copies the source substring using row
+`+12/+16`, emits separator lines, and formats `%d - %d %s : %d ` with those
+two offsets, the copied text, and row `+8` (total frames). The resulting
+readable report line therefore carries source interval/text and total frame
+count, preceded by phone/silence duration entries. Format strings and
+argument order are direct static evidence. The public
+`VT_TextToLipSyncLog_ENG` wrapper at `0x1001de50` calls `FUN_10022200`, whose
+successful synthesis loop calls this formatter at `0x10022323`; runtime probes
+confirm that API creates the report at the supplied path. This establishes
+the public report producer and its output format, although no separate
+downstream report reader was found. The offset interpretation and consumer
+trace are in [`stage16-syncinfo-source-coordinate-consumers.txt`](../../tools/revkit/work/reports/stage16-syncinfo-source-coordinate-consumers.txt)
+and by the row-source pseudocode in
+[`stage16-syncinfo-row-producers.txt`](../../tools/revkit/work/reports/stage16-syncinfo-row-producers.txt);
+the lookup bytes are at `vt_pau.dll` VA `0x1007daa8` (file offset `0x7daa8`).
+
+The live capture snapshots all 14 header dwords and every populated row,
+including nested values, on data polls 0–7. Header offsets `+0/+4/+8/+0xc`
+are the row-array pointer, row capacity, per-row nested capacity, and row write
+cursor. The remaining words form a pair of synchronized positions in the
+audio timeline:
+
+- `+0x10` is the global frame index at the beginning of the current output
+  slice. It advances by `0x7530` (30,000 frames) per full poll in this capture.
+- `+0x14/+0x18/+0x1c/+0x20` identify that slice's start within the SyncInfo
+  rows: row index, frame offset in the row, nested-entry index, and frame
+  offset in that nested entry.
+- `+0x24/+0x28/+0x2c/+0x30/+0x34` identify the last frame in the slice: its
+  inclusive global frame index, row index, frame offset in that row,
+  nested-entry index, and frame offset in that nested entry.
+
+This is a control-flow mapping, not a guess from field values. `FUN_100216d0`
+converts the requested output byte count to frames (halving it for selector 0),
+then walks each row's nested frame lengths and writes the endpoint fields.
+`FUN_10021640` advances the start cursor to endpoint plus one; when it reaches
+the nested entry's frame length it advances to the next entry, and then to the
+next row. `FUN_100217e0` consumes the row range to associate EX marker
+positions with source-text intervals. The live poll-0 values cross-check the
+arithmetic: global end `59999` equals start `30000` plus 30,000 frames minus
+one; row 7 / frame offset 799 / nested entry 0 / nested offset 799 also
+identifies that same endpoint in the captured records. The initial snapshot
+independently maps global frame 29,999 to row 3 / offset 3,396 / nested entry
+2 / nested offset 1,076. Static decompilation and these captures are
+[`stage16-syncinfo-cursor-functions.txt`](../../tools/revkit/work/reports/stage16-syncinfo-cursor-functions.txt)
+and [`syncinfo-runtime-fields-safe2-1-api.log`](../../tools/revkit/work/stage16/syncinfo-runtime-fields-safe2-1-api.log).
+
+Terminal result `1` frees the borrowed SyncInfo object; the safe trace skips
+all pointer reads after that return. The runtime trace and replay are
+[`syncinfo-runtime-fields-safe2-1-api.log`](../../tools/revkit/work/stage16/syncinfo-runtime-fields-safe2-1-api.log)
+and [`run-syncinfo-runtime-fields.sh`](../../tools/revkit/work/stage16/run-syncinfo-runtime-fields.sh).
+Evidence for the producer/consumer data sources is in the Ghidra pseudocode reports
 [`vt_pau-core-pseudocode.c`](../../tools/revkit/work/reports/vt_pau-core-pseudocode.c)
 and [`stage8-synthesis-functions.txt`](../../tools/revkit/work/reports/stage8-synthesis-functions.txt).
 
-`VT_CopySyncInfo_New_ENG` copies header fields 3–13, the row 16-bit value and
-seven dwords, and both nested-entry values, while retaining the destination's
-row-array and per-row nested pointers. The runtime call used the native 600-row,
-65-entry dimensions. The probe compared all 11 header fields, 4,800 row values
-(one 16-bit value and seven dwords per row), and 78,000 nested values (one
-dword and one 16-bit value per entry); every comparison matched. All 600
-destination nested pointers and the row-array pointer remained distinct.
+`VT_CopySyncInfo_New_ENG` copies all 13 scalar header dwords at offsets `+4`
+through `+34`: the row and nested capacities, write cursor, and fields 4–13
+(zero-based dword indexes). It does not replace the destination row-array
+pointer at `+0`; the row copy also retains each destination nested pointer.
+The runtime call used the native 600-row, 65-entry dimensions. The probe
+compared all 11 header dwords at `+0xc..+34`, 4,800 row values (one 16-bit
+value and seven dwords per row), and 78,000 nested values (one dword and one
+16-bit value per entry); every comparison matched. The 600 destination nested
+pointers and row-array pointer remained distinct. The 600/65 dimensions were
+also observed being replaced by source dimensions in the separate shape probe.
 The probe restored both objects' allocator dimensions before freeing them.
-Null/self-copy behavior, mismatched dimensions, and semantic names for these
-values remain open. Full trace and repeatable runner are
-[`syncinfo-fields-api.log`](../../tools/revkit/work/stage16/syncinfo-fields-api.log)
-and [`run-syncinfo-fields.sh`](../../tools/revkit/work/stage16/run-syncinfo-fields.sh).
+A separate edge trace called `(NULL,NULL)`, `(src,NULL)`, and `(NULL,src)`;
+each returned to the caller without a fault. Self-copy retained distinctive
+header, row, and nested-entry sentinels. For dimension mismatch, both objects
+were allocated at native capacity, then source dimensions were set to 2 rows
+and 3 nested entries. Copy set destination dimensions to 2×3, copied the
+declared rows and nested entries, and left destination row 2 and nested entry
+3 at their pre-copy sentinels. The source and destination nested pointers
+remained distinct. This directly confirms that the source header controls the
+copy loops and that smaller source dimensions leave destination tail storage
+untouched. With source dimensions 0×3, the destination header changed to 0×3
+while row 0 remained untouched. With dimensions 2×0, the destination header
+changed to 2×0, its two fixed row records copied, and nested entry 0 remained
+untouched. Thus row-copy iteration is controlled by the first source
+dimension, nested-entry iteration by the second, and fixed row copying is
+independent of nested width. Self-copy is an identity operation for a valid
+object: the wrapper copies each header/data location back to itself, including
+the pointed-to row and nested values; runtime sentinels agree. A follow-up set
+destination metadata to 1×1 while retaining
+native physical allocations, then copied a 2×3 source. The helper replaced
+the destination dimensions with 2×3 and copied both rows and all three nested
+entries, confirming it does not cap work to the destination's incoming
+dimension words. With source dimensions -1×3, it copied those header values
+and left row storage untouched. With 2×-1, it copied both fixed row records
+but left nested storage untouched. Thus both loops use a signed-positive
+condition; negative dimensions are not rejected or normalized. These
+observations do not make undersized physical allocations safe. Static control
+flow never compares source dimensions with destination physical capacity: it
+copies source dimensions into the destination and loops using those source
+values. Guard-page runtime probes now establish two exact fault boundaries.
+With a source of 2 rows × 3 nested entries and a destination row array ending
+immediately after one writable 36-byte row, the copy updates destination
+dimensions to 2×3 and fully copies row 0, then faults writing row 1 at guard
+address `0x1771000`, instruction `0x10026546`. With a 1×2 source and an
+8-byte destination nested area ending at the guard page, the copy completes
+entry 0, then faults writing entry 1 at `0x1771004`, instruction
+`0x100265b9`. The Wine logs identify both as unhandled page faults on write;
+the API does not return in either case. Thus the failure is a process-level
+access violation at the first out-of-allocation write, after earlier header
+and payload writes have already occurred. These probes ran in separate
+disposable Wine processes. The shape and guard captures are
+[`syncinfo-copy-shapes-api.log`](../../tools/revkit/work/stage16/syncinfo-copy-shapes-api.log),
+[`syncinfo-copy-row-guard-api.log`](../../tools/revkit/work/stage16/syncinfo-copy-row-guard-api.log),
+and [`syncinfo-copy-nested-guard-api.log`](../../tools/revkit/work/stage16/syncinfo-copy-nested-guard-api.log);
+replay them with
+[`run-syncinfo-copy-shapes.sh`](../../tools/revkit/work/stage16/run-syncinfo-copy-shapes.sh)
+and [`run-syncinfo-copy-undersized.sh`](../../tools/revkit/work/stage16/run-syncinfo-copy-undersized.sh).
+
+This copy contract is build-specific. The available 2006 `vt_eng.dll`
+pseudocode in [`vt_eng-2006-all-functions-pseudocode.c`](../../tools/revkit/work/reports/vt_eng-2006-all-functions-pseudocode.c)
+allocates 200 rows rather than 600. Its initializer also sets scalar header
+index 4 (`+0x10`) to `-1`, but its copy helper does not copy that word; the
+current Paul M16 `vt_pau.dll` helper does. This static difference means the
+M16 copy contract should not be projected onto the 2006 build, or vice versa.
+It does not by itself identify the omitted word's semantic meaning.
+
+The header cursor fields `+0x1c..+0x34` are structurally mapped; any external
+consumer use is absent from the supplied binaries. The remaining semantic
+gaps are the grouping rule for row `+20/+24`, upstream raw-class/group-index
+names for row `+32`, and the individual non-silence nested-selector meanings.
+The physically undersized copy outcome is directly shown to fault at the first
+write beyond row or nested storage; the copy is not capacity-safe. Full traces and
+repeatable runners are [`syncinfo-fields-api.log`](../../tools/revkit/work/stage16/syncinfo-fields-api.log),
+[`run-syncinfo-fields.sh`](../../tools/revkit/work/stage16/run-syncinfo-fields.sh),
+[`syncinfo-copy-edges-api.log`](../../tools/revkit/work/stage16/syncinfo-copy-edges-api.log),
+[`run-syncinfo-copy-edges.sh`](../../tools/revkit/work/stage16/run-syncinfo-copy-edges.sh),
+[`run-syncinfo-copy-shapes.sh`](../../tools/revkit/work/stage16/run-syncinfo-copy-shapes.sh),
+[`run-syncinfo-copy-undersized.sh`](../../tools/revkit/work/stage16/run-syncinfo-copy-undersized.sh),
+and the live capture above.
 
 On the literal input `example`, `VT_CheckUserDict_SourceNorm_ENG` completed
 and left the input unchanged; its wrapper writes the normalized value to local
@@ -546,34 +1070,483 @@ execution continued. `VT_SetUnitSelectHistoryMode_ENG` calls with `1` and `0`
 left its global state at `0` while the loaded flag was `1`, matching the
 decompiled guard that ignores calls after model loading.
 
-`VT_TextToBufferEX_ENG` returned `-1` for selectors `-1` and `3` when all
-remaining arguments were null or zero. For selectors 0–2, the Stage 16 probe
-passed the same sample text used by the ordinary buffer calls, a 60,000-byte
-capacity within a 60,000-byte guarded allocation, flag 0, thread 0, speaker 1,
-null optional pointer arguments, and `-1` for the four intervening scalar
-arguments. The first call returned `0` and wrote 23,606 bytes for selector 0;
-selectors 1 and 2 returned `0` and wrote 11,803 bytes each. A follow-up call
-with flag 1 returned `1` and length 0 for each selector. All four leading and
-trailing guard bytes retained their `0xa5` sentinel values. The process exited
-normally.
+### Target-phoneme validator inventory
 
-Each captured byte stream has the same SHA-256 as the matching ordinary
-`VT_TextToBuffer_ENG` format call: selector 0 matches format 0
-(`e232e245…f61582`), selector 1 matches format 1 (`9880164f…d5dfc`), and
-selector 2 matches format 2 (`424afda0…e53ab`). This establishes output
-equivalence for that input and argument tuple. It does not identify the
-meanings of the extra pointer/scalar arguments or establish other input,
-capacity, error, repeated-poll, chunking, or cancellation behavior. Static
-wrapper pseudocode rejects selectors outside 0–2 before dispatching valid
-selectors to the three format handlers at `0x100200c0`, `0x10020460`, and
-`0x10020930`.
+The direct export at `0x1002a590` was called with engine-heap strings. The
+single-byte sweep covered TAB, LF, VT, FF, CR, space, and printable ASCII
+`0x21..0x7e` (100 values total): 16 uppercase letters and `#` returned `1`;
+TAB/LF/CR/space returned `-1`; `[` returned `-2`; and the remaining 78
+values returned `-9`. The accepted uppercase single-character strings were
+`B D F G K L M N P R S T V W Y Z`. The `#` result follows a separate static
+branch in `FUN_1005f5c0` and is recorded as a special accepted token, not
+classified as a phone.
+
+The complete uppercase two-letter cross-product (676 calls) accepted exactly
+`CH DH HH JH NG SH TH ZH`; the other 668 returned `-9`. The uppercase
+two-letter cross-product with suffixes `0`, `1`, and `2` (2,028 calls)
+accepted 45 strings: each of `AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW`
+with each suffix. A second 150-call sweep tested those 15 stems with digit
+suffixes `0..9`; only suffixes `0..2` returned `1`, and suffixes `3..9`
+returned `-9`. This maps the validator's tested spelling inventory; it does
+not assign acoustic meanings to the codes.
+
+Sequence probes returned `-1` for null, empty, and whitespace-only strings;
+`1` for `HH B AA1 CH`, repeated spaces, and TAB-separated
+`HH`/`B`; `-9` for `HH EXAMPLE`; and `-2` for isolated `[`. A dedicated
+repeated-`B` sweep accepted 120–130 tokens (130 tokens, 259 input bytes,
+returned `1`) and returned `-5` for 131–140 tokens (131 tokens, 261 input
+bytes, returned `-5`). A fresh-buffer probe also checked 130 tokens plus a
+trailing space (260 original bytes): trimming reduced it to 259 bytes and it
+returned `1`; a fresh 261-byte/131-token string returned `-5`. Static code
+increments a consumed-byte counter and returns `-5` when it reaches `0x104`
+(260). The earlier mixed-call probe's nominal 261-byte case was not fresh:
+its prior call trimmed a trailing space in the same writable buffer, and the
+runner failed to restore the NUL-terminated byte before writing the last
+token. It therefore retested the 130-token prefix and returned `1`. The
+apparent inconsistency is a probe-construction artifact; the ASCII boundary is
+cross-checked at 259 accepted versus 261 rejected bytes after trimming.
+
+The bracket path is now bounded separately. `FUN_1001c2c0` at `0x1001c2c0`
+is a case-folded string comparison (it indexes a 16-bit character-fold table);
+it does not search for a substring. Before validation,
+`FUN_10063230` calls trim helpers that remove leading and trailing space, TAB,
+CR, and LF in place. The validator treats `[` as a token boundary, then
+compares the remaining text to the literal `[CI]`. Runtime calls accepted
+`HH[CI]`, `HH [CI]`, `HH [ci]`, `HH [Ci]`, repeated-space and TAB-separated
+forms with return `2`; `[CI]` without a preceding valid phone returned `-2`.
+Trailing spaces/TAB are trimmed before this comparison. A following phone or
+second marker (`HH [CI] HH`, `HH [CI][CI]`) returned `-12`; `[SKIP]` after a
+phone also returned `-12`, while isolated `[SKIP]` returned `-2`.
+
+The export mutates the supplied writable string. Runtime inspection after the
+call showed leading/trailing whitespace removed (`\t HH \r` became `HH`), and
+the accepted marker's opening `[` replaced by NUL (`HH[CI]` became `HH`, while
+`HH [CI] ` became `HH `). Invalid marker strings remained present after the
+call, apart from the common trimming. This is a buffer-mutation contract, so a
+read-only string literal is not a safe argument. The marker's intended semantic
+meaning is not established by these control-flow and return-value probes.
+
+Reproduce with `run-userdict-targetphon-char-sweep.sh`,
+`run-userdict-targetphon-pair-sweep.sh`,
+`run-userdict-targetphon-stress-sweep.sh`,
+`run-userdict-targetphon-stress-digit-sweep.sh`,
+`run-userdict-targetphon-marker-sweep.sh`,
+`run-userdict-targetphon-marker-boundaries.sh`,
+`run-userdict-targetphon-marker-inplace.sh`,
+`run-userdict-targetphon-sequence-errors.sh`,
+`run-userdict-targetphon-token-count-boundary.sh`,
+`run-userdict-targetphon-length-fresh.sh`, and
+`run-userdict-targetphon-order-check.sh`. Converter mapping and bounds are
+reproduced by `run-userdict-targetphon-converter-map.sh`,
+`run-userdict-targetphon-converter-sequence-check.sh`, and
+`run-userdict-targetphon-converter-limit.sh`. Captures in Stage 16 use the
+corresponding `userdict-targetphon-*-api.log` names. The code path uses `-12`
+for a nonmatching bracket suffix after a valid phone; it is not a substring
+search or general markup parser.
+
+The adjacent private converter `FUN_1005f710` takes an output byte buffer and
+a target-phone string. Runtime calls for each of the 69 accepted spellings
+above and `#` returned `1`, wrote one byte, then NUL. Multi-token input emitted
+the same bytes in token order. This recovers the converter's spelling-to-byte
+mapping without assigning meaning to the byte IDs:
+
+| Input | Emitted byte (hex) |
+| --- | --- |
+| `B D F G K L M N P R S T V W Y Z` | `13 15 20 21 2a 2b 2c 2d 35 36 37 39 41 42 43 44` |
+| `CH DH HH JH NG SH TH ZH` | `14 16 22 29 2e 38 3a 45` |
+| `AA` (`0`, `1`, `2`) | `01 02 03` |
+| `AE` (`0`, `1`, `2`) | `04 05 06` |
+| `AH` (`0`, `1`, `2`) | `07 08 09` |
+| `AO` (`0`, `1`, `2`) | `0a 0b 0c` |
+| `AW` (`0`, `1`, `2`) | `0d 0e 0f` |
+| `AY` (`0`, `1`, `2`) | `10 11 12` |
+| `EH` (`0`, `1`, `2`) | `17 18 19` |
+| `ER` (`0`, `1`, `2`) | `1a 1b 1c` |
+| `EY` (`0`, `1`, `2`) | `1d 1e 1f` |
+| `IH` (`0`, `1`, `2`) | `23 24 25` |
+| `IY` (`0`, `1`, `2`) | `26 27 28` |
+| `OW` (`0`, `1`, `2`) | `2f 30 31` |
+| `OY` (`0`, `1`, `2`) | `32 33 34` |
+| `UH` (`0`, `1`, `2`) | `3b 3c 3d` |
+| `UW` (`0`, `1`, `2`) | `3e 3f 40` |
+| `#` | `64` |
+
+The numeric values are emitted bytes, not labels inferred from table order.
+The special `#` mapping and the semantic meaning of the `[CI]` marker remain
+unknown. The per-token calls used a 66-byte output allocation; ordered
+multi-token output is captured in
+`userdict-targetphon-converter-sequence-check-api.log`.
+
+The converter accepts at most 65 output tokens. Direct calls with 64 and 65
+space-separated `B` tokens returned `1`; the latter wrote code `0x13` at output
+offset 64 and NUL at offset 65. A 66-token call returned `0` and cleared
+output byte 0, while the already written byte at offset 64 remained. This
+matches the static `ebx >= 0x41` rejection branch. Callers need room for 66
+bytes when requesting the maximum successful output.
+
+`VT_TextToBufferEX_ENG` is absent from the public `vt_eng.h` declaration. Its
+exported wrapper pseudocode at `0x1001ddf0` accepts selectors 0–2 and dispatches
+them to format handlers at `0x100200c0`, `0x10020460`, and `0x10020930`; other
+selectors return `-1`. The 15-argument call shape is recovered from the x86
+wrapper and handler call flow. Ghidra's pointer-looking types for the final two
+arguments are not reliable: the handler uses both as integer options.
+
+| Argument positions | Recovered role | Evidence and limit |
+| --- | --- | --- |
+| 1–7 | selector, text, output buffer, output-length pointer, flag, thread ID, speaker ID | Handler branches on selector/flag, bounds-checks the thread ID, normalizes speaker IDs outside 0–5 to speaker 1, and uses speaker-indexed stream state. |
+| 8–9 | Optional output pointers | The handler initializes them to zero, then writes borrowed pointers from context offsets `+0x47774` and `+0x122448`. The first is the active SyncInfo object. The second is a 16-byte per-text descriptor with count, row pointer, and selected row-index bounds. Its `0x210`-byte rows record mark source position, chunk-local/global audio-frame coordinates, inline name bytes, and kind: 1 named, 2 unnamed, 3 overlength named. Both pointers expire at terminal cleanup; copy needed data before the `DONE` return. |
+| 10–13 | pitch, speed, volume, pause | Passed into synthesis-option setup in the same order as the ordinary buffer API. Negative pitch/speed/volume select engine defaults; speed 0 becomes 50; a later normalizer clamps effective pitch/speed/volume to 50–200, 50–400, and 0–500. Pause is stored directly and later consumed by the per-unit pause path. A text type of 4 or 6 resets all four to defaults. |
+| 14 | dictionary index | Integer slot 0–1023 selects a loaded dictionary for the speaker when present; an empty slot, negative index, index >=1024, or unavailable slot falls back to the default dictionary. |
+| 15 | text type | Negative values become 0; nonnegative values are truncated to a byte. Values 4 and 6 reset the four preceding options. Other byte values are stored without a range check in this setup helper. |
+
+The compact probe calls passed speaker 1, thread 0, `-1` for positions 10–13,
+dictionary index 0, text type 0, and non-null guarded output pointers at
+positions 8–9. Those pointers received the two internal addresses above. The
+initial short-text run still matches ordinary buffer formats byte-for-byte:
+selector 0 matches format 0 (`e232e245…f61582`), selector 1 matches format 1
+(`9880164f…d5dfc`), and selector 2 matches format 2
+(`424afda0…e53ab`). That comparison establishes output equivalence only for
+the tested input/options.
+
+For a 78-byte repeated `Hello world. ` utterance and 60,000-byte guarded
+storage, all three selectors enter the same polling contract. The result field
+is `0` (`PROCESSING`) for every data-bearing call; a separate final flag-1 poll
+returns `1` (`DONE`) with length zero:
+
+| Selector | Data chunks in call order | Total bytes | Terminal call |
+| ---: | --- | ---: | --- |
+| 0 | 60,000; 60,000; 60,000; 60,000; 49,636 | 289,636 | fifth poll: return 1, length 0 |
+| 1 | 30,000; 30,000; 30,000; 30,000; 24,818 | 144,818 | fifth poll: return 1, length 0 |
+| 2 | 30,000; 30,000; 30,000; 30,000; 24,818 | 144,818 | fifth poll: return 1, length 0 |
+
+The direct state probes also establish for each selector: a second flag-0
+start while active returns `-7` and leaves the caller's length sentinel
+unchanged; flag 2 cancels with return `1` and length 0; flag 1 after cancel
+returns `-2` and leaves its length sentinel unchanged. Null text, empty text,
+and null output buffer return `-3`, `-4`, and `-5`, respectively. After
+unloading speaker 1, a valid call returns `-6` and writes length 0. Thread ID 1
+returns `-2` in this Wine runtime without changing length or either guard
+region. Earlier invalid-selector probes returned `-1`. For every long run,
+the four leading and four trailing `0xa5` sentinels around the 60,000-byte
+physical buffer remained intact, as did the guard bytes around both optional
+pointer-output slots. A flag-1 call with no active state also returns `-2` in
+the earlier short probe.
+
+The runtime record does not establish nonzero-thread support on another host.
+The negative-flag size query is directly observed for all three selectors: it
+returns `60,000` for selector 0 and `30,000` for selectors 1 and 2, and writes
+that value through `output_len` even with null text/buffer, thread 77, and
+otherwise invalid scalar arguments. At `0x10021c2b–0x10021c3d`, disassembly
+places this early return before database, thread, text, buffer, and
+optional-output-pointer checks.
+On normal calls, the handler never reads `*output_len` as a capacity. With
+`*output_len` initialized to 1 and a physically writable 60,000-byte region,
+selector 0 returned 60,000 bytes and selector 1 returned 30,000. Selector 2
+returned 8,984 in its first capture, then 30,000 in two repeat runs with the
+same setup; both exceed the incoming value. The 30,000-byte figure is its
+observed maximum, while the cause of the shorter first result is unresolved.
+The guard after 60,000 bytes stayed intact, and selector 1 left the region
+after byte 30,000 intact. A separate guard-page probe passed selector 0 a
+buffer with exactly one writable byte followed by a `PAGE_NOACCESS` page and
+`*output_len = 1`. Selectors 0, 1, and 2 each faulted on a write to the first
+protected address (`0x1771000`) at DLL instruction `0x10064000`, a `rep movs
+DWORD PTR es:[edi],DWORD PTR ds:[esi]`. Wine reported an unhandled page fault
+on write; the API could not return. This is direct runtime confirmation that
+the output length does not bound writes even when the actual accessible
+region is one byte, across all supported encodings. A parameterized follow-up
+repeats the guard-page test with 16 writable bytes (selector 0) and 4,096
+writable bytes (selectors 0–2); each run faults on a write to the immediately
+following protected page, with `*output_len` still initialized to 1. The 16-byte
+case uses `Hello world.`; the 4,096-byte cases use the 511-byte-mark fixture.
+Thus tested undersized spans of 1, 16, and 4,096 bytes all fail before return,
+and the API does not use the input length value as a capacity. Because the
+interface accepts no capacity, the conservative call contract is to allocate
+the fixed per-call limit: 60,000 bytes for selector 0 or 30,000 for selectors
+1/2. The protected write occurs in `FUN_10063f30`'s `rep movs` copy path
+(instruction `0x10063f63` or `0x10064000`, depending on copy alignment).
+Reproduce the size sweep with
+[`run-buffer-ex-guard-size.sh`](../../tools/revkit/work/stage16/run-buffer-ex-guard-size.sh)
+and its [`trace template`](../../tools/revkit/work/stage16/trace-buffer-ex-guard-size.gdb.in);
+logs are `buffer-ex-guard-size-0-16.log` and
+`buffer-ex-guard-size-{0,1,2}-4096.log`. The one-byte runs remain in
+[`buffer-ex-guard-page.log`](../../tools/revkit/work/stage16/buffer-ex-guard-page.log),
+[`buffer-ex-guard-page-1.log`](../../tools/revkit/work/stage16/buffer-ex-guard-page-1.log),
+and [`buffer-ex-guard-page-2.log`](../../tools/revkit/work/stage16/buffer-ex-guard-page-2.log).
+Callers need writable storage for the selector maximum per call (60,000 or
+30,000 bytes); the returned length is available only after the write. Reproduce
+the one-byte test with
+[`run-buffer-ex-guard-page.sh`](../../tools/revkit/work/stage16/run-buffer-ex-guard-page.sh).
+
+The optional outputs at positions 8 and 9 are null-checked before their
+initial zero stores, so null is accepted. Any non-null value is written
+through directly; there is no pointer-validity check. Runtime calls with
+position 8 equal to address `1` and position 9 equal to address `1` each
+terminated the Wine process with Windows status `0xc0000005`
+(`STATUS_ACCESS_VIOLATION`) before the injected API call returned. The logs
+record GDB's octal exit code `030000000005` and the exact pointer arguments:
+[`buffer-ex-invalid-extra-a.log`](../../tools/revkit/work/stage16/buffer-ex-invalid-extra-a.log)
+and [`buffer-ex-invalid-extra-b.log`](../../tools/revkit/work/stage16/buffer-ex-invalid-extra-b.log).
+Static disassembly identifies the initial stores at `0x10021c45` and
+`0x10021c52`, immediately after each null test; synthesis starts later. Thus
+invalid non-null addresses fault before synthesis and no API error is returned.
+After context creation, output values are copied from context offsets
+`+0x47774` and `+0x122448` at `0x10021e27–0x10021e44`.
+These are borrowed pointers into the active synthesis context, not caller-owned
+allocations. Terminal cleanup calls `VT_FreeSyncInfo_New_ENG` on the object at
+context `+0x47774`, then destroys the context at `0x10027750`. The poll trace
+keeps the pointer values but shows the nested SyncInfo row pointer changing
+to invalid/reused data on the `DONE` return. Callers must copy data they need
+while a data-bearing call is active; the outputs are not valid past terminal
+cleanup. The second descriptor is also context-owned and is subject to that
+same lifetime boundary.
+
+The second output is a pointer to a 16-byte descriptor: `+0` is record count,
+`+4` is the record-array pointer, and `+8`/`+0x0c` initialize to `-1`. The
+timeline mapper uses the last two words as inclusive 0-based first/last row
+indices selected for its active SyncInfo/text range; it restores both to
+`-1` when no row matches. Runtime examples are count 0 with `(-1,-1)` for
+plain text, `(0,0)` for the one-record position fixture, `(0,1)` for the
+three-record marker-boundary fixture, and `(0,5)` for the six-record name
+length sweep. The two-marker `start`/`end` fixture returns `(0,0)`, showing
+these indices describe the subset selected by the mapper, not a blanket
+`0..count-1` range. Each allocated row has a `0x210` stride and consists of
+three 32-bit words at `+0/+4/+8`, a 512-byte inline field at `+0x0c..+0x20b`,
+a kind byte at `+0x20c`, then three trailing bytes through the row end. The
+allocator initializes row `+0` and `+4` to zero and row `+8` to `-1`. Runtime
+snapshots for all three selectors show count 0 and a null array for the
+repeated plain-ASCII input. Static writers establish additional row roles for
+particular rewrite paths:
+
+| Row offset | Directly established use | Limit |
+| ---: | --- | --- |
+| `+0`, `+4` | Initialized to zero per allocated row. `FUN_100217e0` scans SyncInfo rows selected by the marker source position, sums row `+8` counts from header start index `+0x14` through the matched row, and subtracts header `+0x18` from the first row; this is descriptor `+4`. It then adds header base `+0x10` for descriptor `+0` (`0x10021a9c–0x10021ac1`). | Both fields are mono audio-frame coordinates. `+4` is relative to the current synthesis chunk; `+0` is the utterance timeline coordinate. At poll 2 in the long fixture, marker position is `0x33`, header start index is 10, partial first-row offset is `0x1065`, and selected SyncInfo rows 10–11 have `+8 = 0x16b1` and `0x39d0`. Thus `+4 = 0x16b1 + 0x39d0 - 0x1065 = 0x401c`; adding header base `+0x10 = 0x15f90` gives `+0 = 0x19fac`. This directly resolves the nonzero `+0x18` contribution and the local/global distinction. The base advances 30,000 frames per full poll under every selector, independent of encoded byte length. Short captures have zero bases, so `+0 == +4`. At source positions 1/2/5, `+0/+4` are `0xefa`/`0x23a4`/`0x5d54`, matching SyncInfo row 0 `+8`; output byte checks across PCM16, A-law, and μ-law confirm the common frame unit. The external consumer's use of the pair is not present in the supplied caller binaries. |
+| `+8` | Position `output_index + 1` while emitting an `A2 FE` two-byte marker into transformed text | Strongly indicates a marker-relative position; the downstream consumer’s coordinate convention is not recovered. |
+| `+0x0c` | Inline replacement/tag bytes. `FUN_1002efd0` searches keys `name` then `NAME` for named marks. Nonempty values shorter than 512 bytes are copied and NUL-terminated; values at least 512 bytes are truncated to 511 bytes. An omitted `name` selects the kind-2 branch, which stores `DAT_1009f948`; that byte is zero in this DLL, so the payload is an empty string. An explicitly empty `name=""` emits no descriptor row in the runtime edge sweep. | This describes the DLL's record production. No consumer of the row payload was found in the supplied caller set. |
+| `+0x20c` | Byte values 1, 2, or 3 are assigned by distinct rewrite branches in `FUN_1002efd0`: kind 1 is a nonempty named mark, kind 2 is a mark with no `name` attribute, and kind 3 is the overlength named-mark branch. Runtime confirms all three under the tested selector set. | The kind values distinguish observed DLL record forms. The external caller's handling of these forms is not present in the supplied binaries. |
+
+The row `+8` position is subsequently used as an index into the context's
+per-output-character position arrays, and the mapped value is written back to
+`+8` during the synthesis pipeline (`FUN_1001d5d0` and its caller
+`FUN_1001c990`). One mode also adds a context-owned base before storing it.
+This confirms that `+8` is a transformed-stream position used for an internal
+position mapping; whether the final value denotes a unit, phone, or another
+synthesis coordinate is not established. The descriptor allocator and
+row-array helpers initialize, resize, and free the storage; the synthesis
+path reads and remaps `+8`, but no in-engine reader of the inline bytes or
+kind byte was found. The API returns the descriptor address to its caller.
+Thus it is an internal rewrite/marker record list, not the
+`VTDTTS_MakeInfo` selected-unit manifest. The supplied `voicetext_paul.exe`
+import table lists six `vt_pau.dll` exports and omits
+`VT_TextToBufferEX_ENG`; its ASCII strings also contain no EX export name.
+This gives no local caller-side consumer to inspect (and does not rule out
+computed dynamic lookup in that executable or callers not supplied here).
+Accordingly, the public consumer contract remains unknown, but the DLL-side
+meanings of kinds 1/2/3 and the inline-byte production rules are established
+for the tested mark forms.
+The `<vtml_sub>` EX probe still returned count 0, so it did not dynamically
+exercise these records. A tag-family sweep placed documented `<vtml_break>`,
+`<vtml_pause>`, `<vtml_partofsp>`, `<vtml_phoneme>`, and `<vtml_sayas>` forms
+before a named-mark control. Only the control emitted a row; the sweep returned
+one kind-1 row for every selector. Repeating with the DLL's legacy internal
+spellings (`<vt_break>`, `<vt_pause>`, `<partofsp>`, `<phoneme>`, and
+`<say-as>`) emitted no rows, so those spellings are not treated as mark
+records by this EX call path. The decisive contrast is
+`<vtml_mark/>` followed by `<vtml_mark name="named-control"/>`: every selector
+returns two rows, first kind 2 with an empty inline string, then kind 1 with
+`named-control`. Both rows have equal `+0/+4` values; they are respectively
+`0x90c` and `0x15e7`, matching the first SyncInfo row `+8` and the sum of the
+first two row `+8` values. Their `+8` marker positions are 1 and 14. Thus kind
+2 is directly identified as the unnamed VTML mark form. The descriptor header
+reports count 2 and selected indices `(0,1)` in this fixture. An edge sweep
+further found that an explicitly empty `name=""` produced no row, a one-space
+name produced a kind-1 row carrying a space, and uppercase `NAME="Upper"`
+produced a kind-1 row carrying `Upper`. Captures are
+`buffer-ex-tag-family-sweep-mark-forms-{0,1,2}.log` and
+`buffer-ex-tag-family-sweep-mark-name-edges-0.log`, reproduced by
+`run-buffer-ex-tag-family-sweep.sh`. The positive `<vtml_mark name=.../>` probe returns
+two kind-1 rows for names `start` and `end` under selectors 0, 1, and 2;
+their final `+8` values were 0 and `0x25` for all three selectors. A boundary
+sweep with name lengths 1, 255, 256, 510, 511, and 512 returns six rows. The
+first five are kind 1; length 512 is kind 3 and confirms the static
+`>= 0x200` branch at runtime. Names below 512 are stored inline, while the
+512-byte value is truncated to 511 bytes by the handler. In that sweep, the
+first row's `+0/+4` were zero and each later row had matching nonzero values;
+the values did not equal the descriptor `+8` positions. A follow-up holds the
+511-byte payload constant and moves its mark after 0, 1, 2, and 5 ASCII `x`
+bytes. Descriptor fields follow the mark (`0`, `0xefa`, `0x23a4`, `0x5d54`)
+while descriptor `+8` records marker-relative positions 0, 1, 2, and 5. The
+enhanced GDB capture also snapshots the API's returned SyncInfo object. For
+the 1-, 2-, and 5-byte prefixes, descriptor `+0/+4` exactly match SyncInfo
+row 0 `+8` (`0xefa`, `0x23a4`, `0x5d54`), and that row's source-text end is
+0, 1, and 4, respectively. The zero-byte case gives coordinate zero. This
+rules out marker-name length as the cause and directly ties the returned
+coordinate to a SyncInfo timeline entry selected at the mark's source
+position. The second SyncInfo row completes the independent unit check: at
+positions 1, 2, and 5, the two row `+8` values sum to 9,191, 14,281, and
+29,132. Those totals equal selector-0 output lengths divided by two
+(18,382/2, 28,562/2, and 58,264/2). At position 2, selector-1 and selector-2
+each return 14,281 bytes, the same frame count in one-byte A-law and μ-law
+output. This establishes SyncInfo row `+8` as an audio frame/sample count and
+descriptor coordinates as cumulative sample boundaries independent of output
+encoding. Static `FUN_100217e0` gives the exact rebasing: it adds selected row
+`+8` values into descriptor `+4`, subtracting SyncInfo header `+0x18` from
+the first selected row, then sets `+0` to `+4` plus header `+0x10`. Both
+header bases are zero in the short captures, explaining `+0 == +4`. A later
+chunk trace resolves both rebasing fields dynamically. At poll 2, the marker
+position `0x33` maps through SyncInfo rows 10–11 (`+8 = 0x16b1, 0x39d0`);
+header `+0x18 = 0x1065` is subtracted to produce `+4 = 0x401c`. Header
+`+0x10 = 0x15f90` is then added to produce `+0 = 0x19fac`. This identifies
+`+4` as the chunk-local frame coordinate and `+0` as the utterance-global
+frame coordinate in the later poll. The supplied caller binaries do not show
+how the external consumer uses the pair. A
+ten-byte prefix fills the 60,000-byte requested output region; its zero fields
+are treated as inconclusive. The option
+comparison used the same
+short/511/512-byte marker fixture and produced the values above for selectors
+0–2; captures are in `buffer-ex-mark-0.log`,
+`buffer-ex-mark-mark-1.log`, `buffer-ex-mark-mark-2.log`,
+`buffer-ex-mark-boundary-0.log`, and `buffer-ex-mark-boundary-sweep-0.log`.
+The option snapshots are `buffer-ex-mark-options-0.log`,
+`buffer-ex-mark-options-1.log`, and `buffer-ex-mark-options-2.log`.
+
+The controlled-position captures are `buffer-ex-mark-position-0-0.log`,
+`buffer-ex-mark-position-1-0.log`, `buffer-ex-mark-position-2-0.log`,
+`buffer-ex-mark-position-5-0.log`, and `buffer-ex-mark-position-10-0.log`.
+The 1-, 2-, and 5-byte captures include both descriptor and SyncInfo rows.
+The position-2 captures for selectors 0, 1, and 2 confirm identical
+coordinates and a stable frame-count timeline across PCM16, A-law, and μ-law.
+The long-mark poll captures are `buffer-ex-chunk-sync-0.log`,
+`buffer-ex-chunk-sync-1.log`, and `buffer-ex-chunk-sync-2.log`; the full
+selector-0 row dump is `buffer-ex-chunk-sync-full-0.log`. They are reproduced
+by `run-buffer-ex-chunk-sync.sh` and show the frame base advancing across
+polls before the marker row becomes populated.
+
+The shared handler returns `-7` at `0x10021d44` when the active-object table
+entry indexed by normalized speaker and thread is nonzero
+(`[0x100f86e0 + speaker*0x1000 + thread_id*4]`). This is the occupied-slot
+case and matches the captured duplicate-start result. The `-8` return at
+`0x10022045` occurs only if the handler enters its copy loop with the
+per-call copied-position cursor (`[ebp-4]`) already at or past the fixed
+output limit (`[ebp-8]`). That limit is 60,000 bytes for selector 0 and 30,000
+for selectors 1/2; a resume call can restore the cursor from a per-thread
+carry-over slot. The normal path for a unit that crosses the limit is separate
+(`0x100220ca–0x100221d1`): it writes the current chunk and saves the remainder
+for a later poll. The loop's back-edge is taken only while the cursor is
+below the limit, so `-8` is not the normal full-buffer result. A 78-byte VTML
+control completed all nine data/terminal polls under each selector without
+`-8`. Larger single-token inputs made of 1,024, 4,096, and 16,384 `a` bytes
+also drained normally under selector 1 in 4, 13, and 47 calls, producing
+84,789, 343,768, and 1,377,407 bytes; none returned `-8`. A separate
+debugger-only probe replaced the conditional jump at
+`0x10021f1a` with an unconditional jump to the `-8` epilogue, restored all six
+original code bytes after the call, and repeated this for selectors 0–2. All
+three calls returned `-8` without changing the incoming length value (60,000);
+flag-2 cancellation then returned `1`, and a subsequent flag-1 poll returned
+`-2`, confirming the active slot had been cleared. This proves the error
+return and recovery path, not that ordinary input or corrupted carry-over
+naturally satisfies the cursor comparison. No valid caller input has
+triggered it, and a static upper bound on an individual carry-over unit has
+not been proved. Reproduce with
+`tools/revkit/work/stage16/run-buffer-ex-force-minus8-v3.sh SELECTOR`; the
+trace forces the branch and restores the code bytes in the isolated process.
+The `-9` value (`0xfffffff7`) has not been found among the returns on this
+handler path or observed through `VT_TextToBufferEX_ENG`. The same signed
+constant does occur in a separate export: `VT_CheckLicense_ENG` assigns `-9`
+when its `dbaccess` field check fails (`FUN_10029cbe`–`FUN_10029cd6`). That
+license-parser result is unrelated to the EX handler and does not establish an
+EX `-9` condition. The static path shows flags other than 0 and 1 take the
+active-state cancellation branch; flag 2 is the runtime-verified cancellation
+value.
+
+`FUN_100286c0` stores the text type as a byte, maps negative values to 0,
+and resets the four preceding synthesis options to defaults when the stored
+type is 4 or 6. Thus 260 also stores as 4 and triggers that reset. For
+pitch/speed/volume it records whether each input is nonnegative; negative
+values select engine defaults and speed zero first becomes 50. The later
+normalizer at `0x10022850` selects explicit or engine-default values and
+clamps the effective pitch to 50–200, speed to 50–400, and volume to 0–500.
+Argument 13 (the scalar pause option) is stored at context `+0x1312c8`; the
+downstream pause helper uses it only when its existing per-unit pause value is unset, consults
+context flag `+0x122850`, and caps the resulting unsigned value at 65,535.
+The exact meanings of that flag and the pause timing units remain unresolved.
+The dictionary selector uses a per-speaker table for indexes 0–1023 and falls
+back to the default dictionary. The EX runtime matrix used selector 0 and
+plain `Hello world.`: pitch values 49/50 produced identical bytes, as did
+200/201; speed 49/50 and 400/401 also paired identically. This confirms the
+static clamp boundaries affect generated output as expected for this fixture.
+Volume 0 and 500 produced different bytes from the default and from each
+other. Pause 0, 250, and 65,535 produced the same bytes as default on both
+`Hello world.` and `Hello, world.`. Text types 0–7 produced identical bytes
+on both fixtures; values 4, 6, and 260 also matched when explicit
+pitch/speed/volume/pause values were supplied, consistent with (but not by
+themselves proving) the static reset behavior. Dictionary index 1023 matched
+default on this fixture, which does not show whether a populated alternate
+dictionary changes output. Record-bearing VTML captures add interaction
+coverage for all selectors: explicit pitch 50 and speed 50 change the marker
+coordinate and output length; volume 0, pause 250, dictionary index 1023,
+and a combined extreme pitch/speed/volume/pause tuple with text type 4 leave
+the observed rows unchanged. The combined type-4 case is consistent with the
+static reset of those four options. This fixture includes a 512-byte marker
+name, which takes the truncation path. These are controlled observations,
+not a full cross-product: a populated alternate dictionary and combinations
+that move the record writer through distinct branches remain open. Captures are under
+`tools/revkit/work/stage16/options/` and the repeatable matrix runner is
+`tools/revkit/work/stage16/run-buffer-ex-options.sh`. The punctuation run is
+captured under `tools/revkit/work/stage16/options-punctuation/` and reproduced
+by `tools/revkit/work/stage16/run-buffer-ex-options-punctuation.sh`.
+
+The inline `<vtml_pause time="N"/>` command was tested by fully draining the
+same `Hello<vtml_pause time="N"/>world.` text for `N=0`, `200`, and `1000`.
+Selectors 1 and 2 returned 17,762, 20,962, and 33,762 bytes; selector 0
+returned exactly twice those lengths as PCM16. Relative to the zero-time tag,
+the 200 ms value adds 3,200 frames and the 1,000 ms value adds 16,000 frames:
+both are exactly 16,000 mono frames per second times the declared milliseconds.
+Each run completed on the next flag-1 poll with result 1. The untagged
+`Hello world.` control is 11,803 frames, so the zero-time tag itself also
+changes segmentation; comparisons of pause duration therefore use the same
+tagged text. This establishes the VTML `time` unit and duration effect across
+all output selectors. Scalar argument 13 is a separate setting. With
+`Hello. World.`, values 0, 120, and 250 produced 17,762, 19,682, and 21,762
+frames under selectors 1/2; selector-0 byte lengths are exactly twice those
+values. The increments are 1,920 and 4,000 frames, or exactly 16,000 frames
+per second times 120 and 250 ms. The maximum 65,535 value completed a full
+selector-1 drain at 1,066,322 bytes, exactly 17,762 plus `65,535 * 16` frames.
+The unchanged comma fixture (`Hello, world.`) and the unchanged VTML-pause
+fixture at all four scalar values show that this setting does not add duration
+in those tested contexts. These results establish argument 13's millisecond
+unit and its effect on the tested sentence-boundary case; exact placement and
+behavior on other punctuation/text types remain open. Reproduce with
+`run-buffer-ex-scalar-pause-context.sh SELECTOR sentence` or `comma`; the
+extended maximum drain is `run-buffer-ex-scalar-pause-max.sh 1`. The traces and
+logs are `buffer-ex-scalar-pause-{0,1,2}.log`,
+`buffer-ex-scalar-pause-{sentence,comma}-{0,1,2}.log`, and
+`buffer-ex-scalar-pause-max-1.log`. Captures for the VTML attribute remain
+`buffer-ex-pause-{control,pause0,pause,pause1000}-{0,1,2}.log`; reproduce them
+with `run-buffer-ex-pause-compare.sh SELECTOR CASE`.
 
 The three run logs and captured streams are in [Stage 16](../../tools/revkit/work/stage16/README.md):
 [`buffer-ex-0.log`](../../tools/revkit/work/stage16/buffer-ex-0.log),
 [`buffer-ex-1.log`](../../tools/revkit/work/stage16/buffer-ex-1.log), and
 [`buffer-ex-2.log`](../../tools/revkit/work/stage16/buffer-ex-2.log). The
 probe is reproduced by
-[`run-buffer-ex.sh`](../../tools/revkit/work/stage16/run-buffer-ex.sh).
+[`run-buffer-ex.sh`](../../tools/revkit/work/stage16/run-buffer-ex.sh). The
+expanded traces are [`buffer-ex-deep-0.log`](../../tools/revkit/work/stage16/buffer-ex-deep-0.log),
+[`buffer-ex-deep-1.log`](../../tools/revkit/work/stage16/buffer-ex-deep-1.log),
+and [`buffer-ex-deep-2.log`](../../tools/revkit/work/stage16/buffer-ex-deep-2.log),
+reproduced with [`run-buffer-ex-deep.sh`](../../tools/revkit/work/stage16/run-buffer-ex-deep.sh).
+Negative-flag size queries, `output_len = 1`, boundary bytes, and the live
+second-object descriptor snapshot for each selector are captured in
+[`buffer-ex-edges-0.log`](../../tools/revkit/work/stage16/buffer-ex-edges-0.log),
+[`buffer-ex-edges-1.log`](../../tools/revkit/work/stage16/buffer-ex-edges-1.log),
+and [`buffer-ex-edges-2.log`](../../tools/revkit/work/stage16/buffer-ex-edges-2.log),
+reproduced by [`run-buffer-ex-edges.sh`](../../tools/revkit/work/stage16/run-buffer-ex-edges.sh).
+The first selector-2 8,984-byte observation and its later 30,000-byte repeats
+are preserved as excerpts in
+[`buffer-ex-edges-2-first-capture.txt`](../../tools/revkit/work/stage16/buffer-ex-edges-2-first-capture.txt)
+and [`buffer-ex-edges-2-30000.log`](../../tools/revkit/work/stage16/buffer-ex-edges-2-30000.log).
+The `<vtml_sub>` descriptor snapshot and the unsuccessful writer/pass trace
+are in [`buffer-ex-records-0.log`](../../tools/revkit/work/stage16/buffer-ex-records-0.log),
+reproduced with [`run-buffer-ex-records.sh`](../../tools/revkit/work/stage16/run-buffer-ex-records.sh).
 
 `VT_GetLicenseInfo_ENG` was called for every selector, 0–15, using both the
 mounted `verification.txt` path and its bytes as an in-memory record. Every
@@ -751,6 +1724,209 @@ then 11/10, and compares that threshold in KiB with the loaded database size:
 Thus `dbsize` is a per-voice loaded-database size allowance in 1,100-KiB
 steps. The unload call completed after the probes.
 
+The same 468-byte record was then passed through `VT_LOADTTS_EXT_ENG` for
+James slot 4, using both argument-6 file path and argument-7 memory forms.
+Both calls returned AX `0`; the follow-up checker returned `0`, the license
+gate became `1`, and dictionary capacity became `6`. The loaded James database
+is 253,797,273 bytes (247,848 KiB by integer division), below the record's
+330,000-KiB allowance (`dbsize=300`). This contrasts with Paul's 496,212-KiB
+database, which exceeds that allowance and fails with `-11`. The per-voice
+database-size check therefore explains the different loader license states
+for this record.
+
+On a successful check, the loader calls `FUN_10028c50` for the capacity value;
+its disassembly returns the parsed record's dword at structure offset `+0x10`
+(or 1 when the parser status is nonzero). The loader stores it at per-speaker
+state offset `+0x4d14`. Six text-synthesis entrypoints compare a selected
+dictionary index with this limit; `VT_UNLOAD_UserDict_EXT_ENG` also scans only
+that many per-speaker dictionary references when checking whether a global
+dictionary can be unloaded. Capacity 6 therefore permits per-speaker indexes
+0 through 5 in the James state. It matches this record's `channel=6`, which
+supports but does not prove that `channel` supplies the capacity; only one
+successful record is available. Captures: `load-ext-james-license-api.log`
+and `userdict-license-state3-api.log`.
+
+The loader call was traced into `VT_LOADTTS_EXT_ENG` at `0x10027af0`. The
+sample's legacy wrapper passes slot `-1`, a null database path, and extended
+arguments `(0, 0xffffffff, NULL, 0, 0xffffffff)`. The extended export returned
+low AX `0`; immediately afterward the database-size query returned `1` with
+508,121,688 bytes. At `0x10025e70`, after default-path selection and before
+shared initialization, the path buffer contains `../`. A separate entry
+substitution of `Z:\work\` reaches the same checkpoint as `Z:/work/` and
+also returns low AX `0` with the same database size. In this container,
+`Z:\work\` is the absolute equivalent of the sample's relative parent
+directory. The path parameter therefore supplies the base used for the
+package's relative resources; it is not the `M16` model directory itself.
+Substituting `Z:\voice-data\paul\M16` or its parent
+`Z:\voice-data\paul` instead returns low AX `3` before the
+`0x10025e70` checkpoint, matching the header's tagger-error constant. These
+failures characterize only those path candidates, not every malformed-path
+case.
+
+Static pseudocode normalizes slot values outside 0–5 to 1; null and empty
+database paths use the default-path helper. A nonempty path is copied into a
+514-byte local buffer using the measured input length, passed through the path
+normalizer, compared with the shared current path when initialized, then
+copied into that shared path before initialization continues. The decompiled
+copy has no visible bound check against the 514-byte destination; overlong-path
+behavior has not been probed. Extended arguments 4 and 5 are not read in the
+decompiled body. Arguments 6–8 flow into `VT_CheckLicense_ENG` and the
+license-derived database-size helper. Their roles are file path, in-memory
+license text, and text length, consistent with the shared license parser's
+call sites. The original wrapper call uses the null-file/null-text/-1-length
+tuple. A separate run passed the 468-byte
+`data-common/verify/verification.txt` file as argument 6 while arguments 7
+and 8 remained null and `-1`. The checker returned `-11`, but the loader returned
+low AX `0` and the database-size query still returned
+`1 / 508,121,688`. The slot state afterward directly reads license gate 0 and
+dictionary capacity 1. This confirms that this nonzero license status does
+not prevent model loading, while the license-dependent features remain gated.
+A PE32 harness then read the same record into a heap buffer and passed it as
+argument 7 with argument 6 null and argument 8 set to the 468-byte length.
+That call also returned low AX `0` and loaded the same database. Calling the
+checker against the loaded speaker and memory buffer returned `-11`; direct
+slot reads again showed gate 0 and capacity 1. For this record, file-path and
+memory-buffer loader forms therefore converge on the same status and state.
+The same argument forms were then tested against loaded James slot 4, whose
+model root required the explicit `/work/data-james` alias. Both returned AX
+`0`; their direct checker calls returned `0`, and the loaded slot had license
+gate 1 and dictionary capacity 6. Its 247,848-KiB size is below this record's
+330,000-KiB `dbsize` allowance, unlike Paul's 496,212-KiB model. This
+cross-slot result confirms the size check is per loaded voice and that a
+passing license enables the loader's per-speaker gate. The capacity value's
+match with `channel=6` remains an inference as described above.
+Additional direct PE32 calls characterize repeated calls and slot selection.
+With slot 1 loaded from `Z:\work\`, a second call using a separate buffer
+containing the identical path returned AX `0`; the state occupancy mask stayed
+`0x02`, and the size query stayed `1 / 508,121,688`. After unloading slot 1,
+the mask became zero and a fresh call with the same base returned AX `0` and
+restored the same size. Thus same-slot, same-base calls are accepted both as
+an already-loaded no-op and as a reload after teardown.
+
+While slot 1 remained loaded, a call with the deliberately nonexistent base
+`Z:\work\not-a-real-directory\` returned AX `1`, with the occupancy mask and
+database size unchanged. Calling again with `Z:\work\` returned AX `0`. The
+static branch explains this as a shared-base mismatch combined with an already
+loaded selected slot: it returns before copying the new base or entering
+resource initialization. AX `1` in this case does not mean the supplied path
+was loaded. This result is observed for a single different-base call against
+loaded slot 1. A separate two-slot call loaded Paul and James together, then
+tried the same different base against each loaded slot. Both calls returned
+AX `1`, occupancy stayed `0x12`, and both database-size queries stayed at
+their original values. Repeating each call with the original base returned
+AX `0` and preserved both voices. Thus the changed-base short-circuit was
+confirmed for both selected slots in this loaded pair. See
+`load-ext-multi-path-switch-api.log` and
+`run-load-ext-multi-path-switch-container.sh`.
+
+Separate fresh-process first calls with speaker slots `-2`, `-1`, and `6`
+each returned AX `0` and allocated only slot 1 (`occupancy=0x02`). This
+directly confirms normalization on the first call. A further isolated sequence
+repeated each of `-2`, `-1`, `6`, and `1000` with a different base path after
+slot 1 had loaded. Every call returned AX `0`; slot 1 remained queryable at
+508,121,688 bytes. A subsequent valid slot-4 call using the original base
+loaded James successfully, yielding occupancy `0x12` and both original
+database sizes. No process exception occurred in those four cases. This closes
+the observed outcomes for those inputs, not the invalid-index boundary
+generally: pseudocode reads the per-slot flag at
+`(&DAT_100a7480)[param_2]` using the original argument before the normalized
+slot is used for the state lookup. For these invalid values, that is an
+out-of-range read from the six-entry array, so behavior for other integers or
+memory layouts remains unspecified. See
+`load-ext-invalid-switch-recovery-*-api.log` and
+`run-load-ext-invalid-switch-container.sh`.
+
+A six-slot first-call matrix used `vt_pau.dll`, the Paul M16 engine build, and
+the local Kate, Paul, Julie, and James model roots mounted read-only at the
+paths requested by the DLL. Slot 1 returned AX `0` and allocated slot 1 with
+database size 508,121,688 bytes. Slot 4 returned AX `0` and allocated slot 4
+with database size 253,797,273 bytes. Slots 0, 2, 3, and 5 returned AX `8`
+without allocating state; header constant 8 is `VT_LOADTTS_ERROR_PROSODY_DB`.
+File traces show these failures occur on each slot's first tree open:
+`data-kate/M16/ttsdata/tree3/pitch/nbt.tree3` for slot 0,
+`data-em001/M16/ttsdata/tree3/pitch/nbt.tree3` for slot 2,
+`data-julie/M16/ttsdata/tree3/pitch/nbt.tree3` for slot 3, and
+`data-ashley/M16/ttsdata/tree3/pitch/nbt.tree3` for slot 5; each open reports
+not found (`0xc000003a`). Kate and Julie provide older `tree2` layouts, so the
+requested `tree3` file is absent. The local tree inventory has no model roots
+for `em001` or `Ashley`. These results describe this DLL and local assets, not
+all possible builds for those speaker IDs.
+
+The file trace for slot 4 identifies why the intermediate matrix still failed:
+`vt_pau.dll` requested `Z:\work\data-james\M16\ttsdata\tree3\pitch\nbt.tree3`.
+The Stage 8 runtime alone had no `/work/data-james` mount; Stage 17 maps the
+James package to `/work/data-jame` for the supplied James host/DLL. Adding a
+separate read-only `/work/data-james` alias allowed slot 4 to load, along with
+its `data-james` DAT and UPM resources. The earlier
+`load-ext-slot-matrix-api.log` and `load-ext-slot-matrix-corrected-api.log`
+are retained as mount-setup attempts; `load-ext-slot-matrix-alias-api.log` is
+the six-slot capture with the additional alias. `load-ext-slot4-filetrace-v3-api.log`
+records the James opens, and the per-slot file traces record the four missing
+tree requests.
+
+A further two-slot probe loaded Paul/slot 1 and James/slot 4 into the same DLL
+process in both orders. Both calls returned AX `0`; occupancy was `0x12`, and
+each size query continued to report its own value (508,121,688 and
+253,797,273 bytes). Unloading either voice left the other slot loaded and
+queryable; unloading the remaining voice cleared both slots. This directly
+confirms simultaneous state for these two package paths and last-slot teardown
+in both load orders. It does not extend to concurrent calls from multiple
+threads. See `load-ext-multi-api.log`.
+
+Read-only missing-resource overlays now map several loader failures in a fresh
+Paul process. Omitting `data-common/dict-eng/atmt.tree3` returns 3;
+`engbi.tree3` returns 4; `sbd.tree3`, `tppdict_eng`, or `hashidx_eng_tpp`
+returns 5; `data-paul/M16/ttsdata/dist_tbl/cepdist.tbl` returns 6;
+`data-paul/M16/mc_idx_tbl/unit-gen.idx` and `data-paul/M16/dblist.idx`
+return 7; a missing Paul prosody tree returns 8; missing
+`data-paul/M16/dat/merged-gen.dat` returns 9; and missing
+`data-paul/M16/dat/merged-gen.upm` returns 10. Each failure leaves occupancy
+zero. These associate the exercised missing resources with the public header
+codes for break index, TPP dictionary, table, unit index, prosody, PCM, and PM
+database errors. `load-ext-resource-error-*-api.log` captures the results.
+The matching overlay generator creates symlink-only views; all vendor files
+remain untouched. The initial attempt to omit `dblist.idx` also masked the
+whole M16 tree and is not evidence for that file; the corrected
+`omit-dblist-idx-preserve-tree` overlay preserved the other directories.
+
+An empty `dblist.idx` returns 7 as well. An empty `merged-gen.dat` is accepted:
+the load returns 0, and database size drops from 508,121,688 to 161,530,436
+bytes. That 346,591,252-byte reduction exactly equals the original file's
+length. For this resource, the loader accepts a zero-length payload and its
+reported size tracks the file's physical length. This does not establish
+validation behavior for arbitrary nonempty corruption.
+
+Static pseudocode sets error 2 when either shared initialization's 0x2042c-byte
+allocation (`FUN_10025e70`) or per-speaker state's 0x4d18-byte allocation
+(`FUN_10025f10`) fails. A GDB probe replaced the shared allocation's valid
+return pointer (`0x01430020`) with NULL; the extended-loader export then
+returned low AX 2, while an unmodified control returned 0. This confirms the
+shared-allocation error branch by forcing its post-allocation condition. A
+second probe replaced the per-speaker allocation's valid return pointer
+(`0x0147f198`) with NULL at `0x10025f2a`; this independently returned low AX 2.
+Both probes force the null condition after a successful allocator return; they
+do not reproduce natural allocator failure. Error 11 is declared in the header
+but no assignment was found in the recovered extended-loader error-propagation
+chain: the reviewed helpers map allocation failure to 2 and resource failures
+to 3–10. This finding is scoped to this DLL's recovered loader path. It is
+distinct from the license checker returning `-11` for Paul's insufficient
+`dbsize`: the extended loader still returns AX 0, with license gate 0 and
+capacity 1. Concurrent calls from multiple threads, malformed/overlong paths,
+and natural allocation failures remain open. The successful-license
+behavior is established only for this one record and the Paul/James slot pair. The valid
+license captures retain only lengths, statuses, and internal gate/capacity
+values, never record contents.
+The valid capture logs
+only the path, pointer, length, and status, not record contents. The first
+string-injection attempt produced a corrupted path and is invalid evidence;
+`load-ext-license-file-api.log` is retained for that failed setup. Traces:
+`load-ext-wrapper-api.log`, `load-ext-default-path-api.log`,
+`load-ext-explicit-runtime-root-api.log`, `load-ext-explicit-db-path-api.log`,
+`load-ext-explicit-parent-path-api.log`,
+`load-ext-license-file-bytewise-api.log`,
+`load-ext-license-file-state-api.log`, and
+`load-ext-memory-license-state-api.log`.
+
 The export's attribute sequence queries `os`, `lang`, `speaker`, `version`,
 `dbaccess`, `sampling`, and `dbsize`; it does not query `app` or `expdate`
 there. After loading Paul, the direct helper rejected the sample's
@@ -793,12 +1969,72 @@ runtime contracts:
 
 | Export | Internal path observations | Still open |
 | --- | --- | --- |
-| `VT_TextToBufferEX_ENG` | Runtime selectors 0–2 match the corresponding ordinary buffer formats on the Stage 16 text and argument tuple; each finishes with one flag-1 poll. Static wrapper rejects selectors outside 0–2 with `-1` and dispatches to handlers at `0x100200c0`, `0x10020460`, and `0x10020930`. | Other pointer/scalar arguments, invalid inputs, multi-poll/chunk/cancel behavior, and extra-argument meanings. |
-| `VT_TextToPreprocessInfoFile_ENG` | The wrapper at `0x1001dd60` delegates to `FUN_1001ef20` (`0x1001ef20`) and is decompiled `void`. Flag 0 returns before pointer checks. A fresh-process matrix used speaker 1, pitch/speed/volume/pause `-1`, dictionary 0, and text type 0; byte flags 1–10, 11, 254, and 255 completed with raw low AX 1 (not a declared return). Correct heap-backed calls establish that flags 1–5, 7–11, 254, and 255 use `param2` literally; flag 4 appends `.0`–`.3`, while flag 6 ignores `param2` and writes fixed `test.pcm`. The earlier malformed names resulted from GDB setup corrupting the path before API entry. Flag 3 emits one dot per source byte, a count, and decimal engine phone/control bytes that match the recovered phone codebook; flag 5 renders the same stream as phone labels. Flag 7 writes source text and per-word surfaces, structural boundary codes, phone labels, metadata-bit letters, and inclusive ASCII spans. Its leading period string is selected among eight fixed lengths by a `GetTickCount`-seeded generator; identical-input runs vary, and the reason for including the filler is unknown. Flag 10 spaces tested terminal punctuation; flag 6 wrote 23,606 bytes of PCM. The boundary-class names, bit-label meanings, broader text/punctuation behavior, malformed nonempty input, invalid scalar combinations, and individual runtime calls for flags 12–253 remain open. See the isolated observations and output-record interpretation below, the heap-backed captures and runners in Stage 16, and the coverage-map entry. |
+| `VT_TextToBufferEX_ENG` | Selectors 0–2 match ordinary buffer formats on the short fixture; chunking, polling, cancel/busy/errors, size query, length-not-capacity, optional outputs, and row descriptor are documented above. `<vtml_mark/>` returns kind 2 with an empty payload, nonempty named marks return kind 1, and a 512-byte name returns kind 3 truncated to 511 bytes; all three kinds are runtime-confirmed across selectors 0–2. `FUN_100217e0` maps descriptor `+0/+4` through SyncInfo row `+8`; their unit is one audio frame, confirmed by exact sums across both timeline rows and output byte lengths for PCM16, A-law, and μ-law captures. Static code maps `+4` through header `+0x18` and `+0` through header `+0x10`; the long poll trace confirms nonzero `+0x10` and the `+0` equation directly. The supplied caller binaries do not reveal how an external consumer uses the decoded chunk-local/global frame pair. Inline `<vtml_pause time="N"/>` was fully drained at N=0/200/1000; relative to N=0, 200 and 1,000 ms add 3,200 and 16,000 frames under all selectors, confirming milliseconds at 16 kHz. Scalar argument 13 also uses milliseconds in the tested sentence-boundary case: values 120/250 add 1,920/4,000 frames across selectors, and selector 1 fully drained value 65,535 at 1,066,322 bytes. Values 0/120/250/65,535 leave the tested comma and inline-VTML-pause fixtures unchanged; exact placement and other text categories remain open. Pause 0/250/65535, dictionary 1023, and text types 0–7 are byte-identical to default on the single-sentence plain and comma-punctuation fixtures; pitch, speed, and volume change output. Static wrapper rejects selectors outside 0–2 with `-1` and dispatches to `0x100200c0`, `0x10020460`, and `0x10020930`. A debugger-forced branch probe on all selectors returned `-8`; flag-2 cancellation returned `1` and the next poll returned `-2`. | Whether the cursor comparison can be reached naturally from valid or corrupted carry-over state; external handling of descriptor rows; populated alternate-dictionary effects; scalar pause-argument placement on other text categories; and the full option cross-product. |
+| `VT_TextToPreprocessInfoFile_ENG` | The wrapper at `0x1001dd60` delegates to `FUN_1001ef20` (`0x1001ef20`) and is decompiled `void`. Flag 0 returns before pointer checks. A fresh-process matrix used speaker 1, pitch/speed/volume/pause `-1`, dictionary 0, and text type 0; byte flags 1–10, 11, 254, and 255 completed with raw low AX 1 (not a declared return). Correct heap-backed calls establish that flags 1–5, 7–11, 254, and 255 use `param2` literally; flag 4 appends `.0`–`.3`, while flag 6 ignores `param2` and writes fixed `test.pcm`. The earlier malformed names resulted from GDB setup corrupting the path before API entry. Flag 3 emits one dot per source byte, a count, and decimal engine phone/control bytes that match the recovered phone codebook; flag 5 renders the same stream as phone labels. Flag 7 writes source text and per-word surfaces, structural boundary codes, phone labels, metadata-bit letters, and inclusive ASCII spans. Its leading period string is selected among eight fixed lengths by a `GetTickCount`-seeded generator; identical-input runs vary, and the reason for including the filler is unknown. Flag 10 spaces tested terminal punctuation; flag 6 wrote 23,606 bytes of PCM. The boundary-class names, bit-label meanings, broader text/punctuation behavior, malformed nonempty input, and invalid scalar combinations remain open. Flags 12–253 were swept in one process on the fixed fixture; cross-text and fresh-process behavior remain open. See the isolated observations and output-record interpretation below, the heap-backed captures and runners in Stage 16, and the coverage-map entry. |
 | `VT_TextToPcmBuffer_ProgressBar_ENG` | Runtime after model load with the Stage 16 text, thread 0, speaker 1, option values -1, and null window/message: 23,606 bytes were written, matching ordinary buffer format 0; guard bytes remained intact. Raw EAX after the decompiled `void` wrapper was 1, which is not treated as a declared return value. Static path uses speaker-indexed state and calls `PostMessageW` in the chunk-progress path. See [`buffer-progress.log`](../../tools/revkit/work/stage16/buffer-progress.log) and [`buffer-progress-start.bin`](../../tools/revkit/work/stage16/buffer-progress-start.bin), reproduced by [`run-buffer-progress.sh`](../../tools/revkit/work/stage16/run-buffer-progress.sh). | Long-text progress notifications, callback delivery, error cases, and other arguments. |
-| `VT_TextToLipSyncLog_ENG` | Runtime after model load with Stage 16 text and second string `vtspeak-lead6`: raw EAX was 1 and an ASCII report was produced. The captured report lists phone IDs/labels and integer length values, source word-index/text spans, and total word/phone lengths of 11,803 for this sample. Empty second string also returns raw EAX 1; speaker -1 falls back and returns 1; null text produced AX -3; empty text produced AX -4 with raw EAX `0x003efffc`. Static code routes the second string through `FUN_1001df10`; static data at `0x1007d538` contains `length-sync-%s-%s.txt`, and the runtime produced a matching `length-sync-*` file. This supports, but does not prove, using the string as a naming/tag input. A path-like second string caused an access violation. The decompiled wrapper is `void`; register values are not declared C returns. | Accepted second-string grammar, exact filename components, units for numeric lengths, path-like failure, and option/text variation. Evidence: [`lipsync-prefix.log`](../../tools/revkit/work/stage16/lipsync-prefix.log), [`lipsync-prefix-output.txt`](../../tools/revkit/work/stage16/lipsync-prefix-output.txt), and prior [`lipsync-output.log`](../../tools/revkit/work/stage16/lipsync-output.log). Reproduce with [`run-lipsync-prefix.sh`](../../tools/revkit/work/stage16/run-lipsync-prefix.sh). |
+| `VT_TextToLipSyncLog_ENG` | Runtime after model load on `Hello world.`: bytewise heap-backed calls return raw EAX 1 and create reports at exact tested paths: `vtspeak-lipname.txt`, `./vtspeak-lipdot`, `lipsync-probe/rel.txt`, `lipsync-probe/report.txt`, `lipsync-probe/vtspeak-liprelative.txt`, and `Z:/work/stage16/lipsync-filename-bytewise-absolute-z-output.txt`. The supplied path is used as the output path for these extension, relative, subdirectory, and absolute Z-drive cases. At speed 100, eight phone lengths and two word totals sum to 11,803 frames; `VT_TextToBufferEX_ENG` format 0 returns 23,606 PCM bytes = 11,803 16-bit frames. At speed 200, report totals are 5,682 frames and the paired PCM16 call returns 11,364 bytes. Thus units are audio frames and values vary with speed in these matched cases. Null and empty second strings each returned raw EAX 1 and produced no report in the Stage 5 working directory. Static `FUN_1001df10` builds a candidate using `length-sync-%s-%s.txt`; its path argument exactly matching the empty global at `0x1009f948` returns a null context, confirmed by the sentinel runtime call. The later formatted-candidate branch also requires that equality, so it is unreachable for a stable argument through the ordinary public call path; a nonempty path selects the caller-supplied path. The intended use of that candidate branch remains unknown. An earlier absolute-path fault came from the invalid GDB string setup and is not API evidence. The older `vtspeak-lead6` capture retained report content but not its original pathname. Speaker -1 falls back and returns raw EAX 1; null text produced AX -3; empty text produced AX -4 with raw EAX `0x003efffc`. The decompiled wrapper is `void`; register values are not declared C returns. | UNC paths and other pathname forms; why the report writer receives an invalid first argument on a missing-parent path; graceful write-error handling; intended use of the formatted-candidate branch; and report/audio effects on other text, speakers, and options beyond the measured matrix. Evidence: [`lipsync-filename-bytewise-extension.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-extension.log), [`lipsync-filename-bytewise-dot-relative.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-dot-relative.log), [`lipsync-filename-bytewise-subdir-relative-verified.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-subdir-relative-verified.log), [`lipsync-filename-bytewise-absolute-z.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-absolute-z.log), [`lipsync-speed-100.log`](../../tools/revkit/work/stage16/lipsync-speed-100.log), [`lipsync-speed-200.log`](../../tools/revkit/work/stage16/lipsync-speed-200.log), [`lipsync-null-path.log`](../../tools/revkit/work/stage16/lipsync-null-path.log), [`lipsync-sentinel.log`](../../tools/revkit/work/stage16/lipsync-sentinel.log), [`lipsync-filename-bytewise-missing-parent-stop.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-missing-parent-stop.log), and [`buffer-ex-0.log`](../../tools/revkit/work/stage16/buffer-ex-0.log). |
 | `VTDTTS_MakeInfo_ENG` | Runtime with Stage 16 text, speaker 1, remaining scalar args -1, and a heap-backed second argument completed with raw EAX `1`. It emitted the literal prefix plus `.bin.dtt` and `.asc.dtt`; the heap-path pair byte-matches the original captures. The binary magic is `VTDTTS BINARY\0`; bytes `03 04` and four NUL-terminated bank names (`merged-gen`, `merged-num`, `merged-etc`, `merged-alp`) follow. The ASCII header spells these as `3`, `4`, and the same names; `4` matches the named-bank count, while `3` remains unlabeled. Captured records decode identically in ASCII and binary. Phone rows cross-check to `unit-*.idx` plus their `.dat`/`.upm` spans. Mode 0 selects a whole decoded unit and combined UPM span; mode 1 selects first-side spans; mode 2 selects second-side spans and adds `Shift Size`. The writer computes that field as the 16-bit value at the selected-unit descriptor's `+0x0c` minus the timeline row's `-0x05` word. The subtraction is directly visible in disassembly; calling its result a splice/crop location would go beyond the evidence. `TypeFlag=2` is the detailed phone/unit record. `TypeFlag=1` is observed between OW1 and W for `Hello, world.` (`Size=3200`) and `Hello. World.` / `Hello... World.` (`Size=14800`), but absent for `Hello world.`. The synthesis loop zero-fills `Size*2` bytes, so Size is a count of PCM16 samples and type 1 is an inserted silence interval in these cases. Repeating the comma case with pause 120 retained the same size. Controlled text captures establish `File Index` values 0=`merged-gen`, 1=`merged-num`, and 2=`merged-etc`; index 3 has not been observed. Rate captures establish `Pitch_rate` = supplied pitch, `Volume_rate` = supplied volume, and `Duration_rate` = `((speed >> 1)+10000)/speed` with integer division (speed 120 yields 83); pause 120 left the fields unchanged. The format is therefore a selected synthesis-timeline manifest of model unit spans, timing/pitch spans, rate metadata, and punctuation-related silent intervals. The four checked-in host executables have no import for this export, and the local binary/report search found no DTT consumer; its intended external client remains unidentified. The record layout is: `u8` type flag; NUL-terminated phone string; `u8` file index; little-endian `u32` PCM position; `u16` PCM size and coded size; `u8` mode; two `u16` pitch endpoints; `u32` PM position; `u16` PM size; then three `u16` rates, with an extra `u16` shift field for mode 2. Static code also checks loaded/nonempty text, applies an invalid-speaker fallback to slot 1, writes both files, and frees the context. The export wrapper is decompiled `void`, so EAX is a raw register observation. See the Stage 16 rate/text/punctuation captures and disassembly around `0x1002ca10`. | Header byte 3; physical meaning of mode-2 shift arithmetic; punctuation-to-silence duration rules beyond the three cases; `merged-alp` row selection; broader option/text/error behavior; identity of any external DTT consumer. |
 | `VT_VerifyTTS_ENG` | The internal validator applies the speaker-slot fallback and loaded/text checks before calling internal parsing and verification helpers. | Other argument combinations and result meanings. |
+
+### `VT_TextToLipSyncLog_ENG` option and path probes
+
+The option matrix uses the same loaded Paul engine, speaker 1, `Hello world.`
+text, speed 100, and a bytewise-initialized heap filename. Every call that
+completed returned raw EAX 1 after the decompiled `void` wrapper. With all
+remaining numeric options at `-1`, the two word totals and eight phone lengths
+sum to 11,803 frames. Setting pitch to 50 changes the report total to 12,850;
+pitch 200 gives 11,998. The phone IDs, labels, and word spans remain the same;
+individual phone durations and both word durations change. This is consistent
+with the independently paired PCM16 count for the baseline. The pitch-variant
+captures measure report output only; no buffer call was paired to those runs.
+The report therefore records selected utterance timing, not a static
+dictionary of phone durations.
+
+On that fixture, reports for text types 0–7 are byte-identical to the all-`-1`
+baseline. Setting volume 0, pause 250, or dictionary 0 individually also leaves
+the report unchanged. Pitch 50 combined with volume 0, pause 250, and dictionary
+0 produces the same report as pitch 50 alone. Repeating that combination with
+text type 4 or 6 returns the report to the baseline bytes, consistent with the
+separately observed static behavior that those types reset earlier option
+fields. This does not establish that volume, pause, dictionary, or text type
+are globally ignored: the report captures timing/labels for one plain-text
+fixture, and the output samples were not compared acoustically in this matrix.
+The raw return was 1 in every completed case. Captures are
+`lipsync-option-*.log` and `lipsync-option-*-report.txt` in Stage 16; compare
+the [baseline](../../tools/revkit/work/stage16/lipsync-option-baseline-report.txt),
+[pitch 50](../../tools/revkit/work/stage16/lipsync-option-pitch-low-report.txt),
+[pitch 200](../../tools/revkit/work/stage16/lipsync-option-pitch-high-report.txt),
+and [type-4 extreme control](../../tools/revkit/work/stage16/lipsync-option-type4-extremes-report.txt).
+
+The bytewise absolute path
+`C:\windows\temp\vtspeak-lipsync-c-drive-output-verified.txt` returned raw
+EAX 1 and created a report under the Wine prefix's `drive_c/windows/temp`.
+Together with the prior `Z:/work/...` result, this confirms the tested paths on
+both the mapped C: prefix drive and Z: host drive. See
+[`lipsync-filename-bytewise-absolute-c-verified.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-absolute-c-verified.log)
+and [`lipsync-filename-bytewise-absolute-c-verified-output.txt`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-absolute-c-verified-output.txt).
+
+The explicit relative path `no-such-lipsync-dir/report.txt` with a nonexistent
+parent did not create a report. The target process exited during the injected
+API call with exception status `0xc0000005`; GDB abandoned the call, so no raw
+EAX value was captured. The heap string itself was printed intact before the
+call, and working relative subdirectory paths succeed in the matched filename
+probes. This is direct evidence of a failure on this invalid-path case under
+Wine. A follow-up stopped at EIP `0x10025e4d` in the report writer wrapper;
+the instruction is `mov eax, DWORD PTR [edx]`, before a call to `0x10064d92`.
+The capture did not retain EDX, so it locates the invalid dereference without
+establishing whether the pointer was null or why it was invalid. See
+[`lipsync-filename-bytewise-missing-parent.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-missing-parent.log).
+The follow-up trace is
+[`lipsync-filename-bytewise-missing-parent-stop.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-missing-parent-stop.log).
+
+A bytewise path containing the Windows separator, `lipsync-probe\backslash.txt`,
+returned raw EAX 1 and created the report in the `lipsync-probe` directory as
+`backslash.txt`; no POSIX filename containing a literal backslash was left
+behind. Thus backslash is treated as a separator for this relative-path case
+under Wine. See
+[`lipsync-filename-bytewise-backslash-relative.log`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-backslash-relative.log)
+and [`lipsync-filename-bytewise-backslash-relative-output.txt`](../../tools/revkit/work/stage16/lipsync-filename-bytewise-backslash-relative-output.txt).
 
 ### `VT_TextToPreprocessInfoFile_ENG` isolated flag observations
 
@@ -825,16 +2061,24 @@ are in [`preprocess-input-errors-api.log`](../../tools/revkit/work/stage16/prepr
 | 9 | 3 | One empty file. |
 | 10 | 4 | CRLF text re-emission with punctuation separated: `Hello world .`; `Hi.` becomes `Hi .`, and `Hello, world!` becomes `Hello, world !`. |
 | 11 | 4 | One empty file. |
-| 12–253 | 4 (static default branch; not individually runtime-probed) | Not individually probed. |
+| 12–253 | 4 (static default branch) | One in-process sweep called each byte value with the fixed `Hello world.` fixture and a unique output pathname. All 242 calls reached common completion with raw EAX 1; all created empty files (SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`). The wrapper is `void`, so raw EAX is not a declared return. This is one call sequence and fixture, not fresh-process or cross-text validation. |
 | 254 | 4 | One empty file. |
 | 255 | 4 | One empty file. |
+
+The sweep's per-call register observations and output hashes are in
+[`preprocess-default-flags-sweep-api.log`](../../tools/revkit/work/stage16/preprocess-default-flags-sweep-api.log);
+the generated output inventory is
+[`preprocess-default-flags-sweep-files.txt`](../../tools/revkit/work/stage16/preprocess-default-flags-sweep-files.txt),
+and the runner is documented in the [Stage 16 README](../../tools/revkit/work/stage16/README.md).
 
 The mode mapping is from the dispatch at `0x1001eff2`–`0x1001f024`: the
 original byte is stored at context `+0x21`; flags 1–9 index the table at
 `0x1001f1cc`, while the default sets mode 4. The bounds check routes byte
-values 10 and above to that default; 11, 254, and 255 were checked at runtime.
-Thus the internal dispatch is mapped, while public names for these modes are
-not established.
+values 10 and above to that default; 10, 11, every value 12–253, 254, and 255
+were checked at runtime. The fixed-text sweep results for 12–253 match the
+empty-file effect previously observed for 11, 254, and 255. Thus the internal
+dispatch and the tested runtime result are mapped, while public names for
+these modes and behavior on other texts remain open.
 
 #### Output record interpretation
 
@@ -860,7 +2104,7 @@ Static writers and controlled text changes establish these output roles:
   example, the ranges `(0 4)` and `(6 10)` select the five letters of each
   word; for `Hello, world!`, the second range shifts to `(7 11)` and excludes
   punctuation. The integer in `word(code)` is generated from the marker byte
-  at record offset `+0xa09`: `[` prints as `0`, `\` as `1`, `]` as `2`, and
+  at record offset `+0xa09`: `[` prints as `0`, `` as `1`, `]` as `2`, and
   `^` as `4`; other markers, including the observed `Z`, print as `3`. The
   upstream writer at `0x100130e0` assigns these marker characters across the
   parsed word sequence before `FUN_10017e80` serializes them. This is a
@@ -1042,13 +2286,20 @@ The two extended unload routines also have useful static contracts. For
 `VT_UNLOADTTS_EXT_ENG`, an out-of-range speaker slot is replaced with slot 1;
 it stops TTS and unloads that slot when loaded. If no speaker slots remain
 loaded, it additionally attempts to unload all 1,024 user-dictionary slots
-and tears down shared window and critical-section state. For
+and tears down shared window and critical-section state. Runtime calls with
+Paul slot 1 and James slot 4 loaded together confirm that unloading either
+one preserves the other slot and its database-size query; unloading the last
+slot clears both states. This was observed in both load orders. Invalid-slot
+normalization and other voice-pair combinations remain static-only. For
 `VT_UNLOAD_UserDict_EXT_ENG`, indexes outside 0–1,023 return `-2`; an
 uninitialized subsystem or a dictionary referenced by a loaded speaker returns
 `-3`; an idle dictionary is freed and cleared with result `1`; an empty slot
 returns `-1`. The header declares a short return for the two-argument wrapper,
 and the runtime probe captured low AX `1` for two successful loaded-idle
-unloads. In-use and uninitialized errors remain static-only.
+unloads. A forced-uninitialized call and a controlled reference-table match
+both returned `-3`; these confirm the error branches without demonstrating
+naturally uninitialized or active-synthesis states. See the Stage 16 in-use
+comparison above.
 
 The history-mode setter also has a clearer static boundary than the original
 post-load runtime probe suggested. It writes its byte only while the global
@@ -1077,17 +2328,47 @@ output difference for this one text/settings case only; it does not show
 whether the extra history accounting changes selection on other input or
 affects repeatability across longer runs.
 
-The same runtime setup sampled `VT_VerifyTTS_ENG` at the first file-synthesis
-entry, after speaker 1 was loaded. With the current synthesis text and
-trailing arguments `0, 0`, slot 1 returned raw `EAX=1`; slot `-1` also
-returned `EAX=1`, matching the static fallback to slot 1; unloaded slot 0
-returned `AX=-4` (unsigned `65532`). A null text pointer on slot 1 returned
-`AX=-2` (unsigned `65534`). The exported wrapper's decompiler signature is
-`void`, but its machine code calls the internal validator and returns without
-changing EAX, so these are observed register results rather than a documented
-C return contract. Empty text and other argument values remain unprobed. See
-[`verify-tts-api.log`](../../tools/revkit/work/stage16/verify-tts-api.log)
-and [`run-verify-tts.sh`](../../tools/revkit/work/stage16/run-verify-tts.sh).
+`VT_VerifyTTS_ENG` was called after slot 1 loaded, at the first file-synthesis
+entry. Its wrapper is decompiled as `void`, but it returns immediately after
+the internal validator, preserving that routine's status in EAX. These are
+machine-register observations rather than a declared C result. Valid text
+returns 1 on slot 1; negative slots and slots >=6 normalize to 1 before the
+loaded-state check, while unloaded in-range slot 0 returns -4. Null text
+returned low `AX=-2`; non-null empty text returned low `AX=-3`. The empty
+case's upper EAX bits retained an unrelated prior value, so error results are
+normalized from low AX rather than treated as full signed EAX values.
+
+The third argument is a user-dictionary index. The helper at `0x10025fc0`
+looks up the speaker's selected dictionary slot; values outside 0–1,023 use
+the default slot, and a missing in-range pointer falls back to slot 0. Runtime
+indexes -2, -1, 0, 1, 1,023, and 1,024 all returned 1 on the Stage 16 text.
+This does not test an active nonempty dictionary: the supplied runtime's
+ordinary user-dictionary gate is closed, and the tested slots were empty.
+
+The fourth argument is the text-type byte stored by the same setup helper
+(`0x100286c0`) used by `VT_TextToBufferEX_ENG`. Its low byte is stored for
+nonnegative values, negative values become zero, and types 4 or 6 reset the
+four accompanying pitch/speed/volume/pause fields to -1. A complete runtime
+sweep of types 0–255 with dictionary index -1 returned 1 for all 256 calls on
+the Stage 16 text; a separate boundary matrix crossed dictionary indexes
+-2/-1/0/1/1,023/1,024 with types -1/0/1/4/6/7/255 and all 42 calls returned 1.
+Thus the arguments select dictionary/text-type processing state, but this
+successful plain-text fixture does not show that they are semantically
+equivalent or expose the resulting internal representation.
+
+The one-character malformed input `<` returned low `AX=-5`, confirming runtime
+reachability of the final-helper error branch; its upper EAX was `65531` in
+this call. This demonstrates one failure trigger, not general malformed-tag
+semantics. Still open are broader malformed-markup behavior, whether an active
+nonempty dictionary changes validation or its result, and other voice slots.
+Captures and reproduction scripts are [`verify-tts-api.log`](../../tools/revkit/work/stage16/verify-tts-api.log),
+[`verify-tts-matrix-api.log`](../../tools/revkit/work/stage16/verify-tts-matrix-api.log),
+[`verify-tts-types-api.log`](../../tools/revkit/work/stage16/verify-tts-types-api.log),
+[`verify-tts-text-edges-api.log`](../../tools/revkit/work/stage16/verify-tts-text-edges-api.log),
+[`run-verify-tts.sh`](../../tools/revkit/work/stage16/run-verify-tts.sh),
+[`run-verify-tts-matrix.sh`](../../tools/revkit/work/stage16/run-verify-tts-matrix.sh),
+[`run-verify-tts-types.sh`](../../tools/revkit/work/stage16/run-verify-tts-types.sh),
+and [`run-verify-tts-text-edges.sh`](../../tools/revkit/work/stage16/run-verify-tts-text-edges.sh).
 
 ## Compatibility boundary
 

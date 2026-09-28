@@ -1,0 +1,35 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/old-cutoff-experiment-v3-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>>> > > >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100242a0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x100249bb
+OLD_CUTOFF_SPLIT_ENTER slot=0
+Temporary breakpoint 7 at 0x10024808
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 32928:30
+Temporary breakpoint 8 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=30
+OLD_CUTOFF_SPLIT_RETURN slot=0 sum=30 accepted=1
+OLD_CUTOFF_SPLIT_ENTER slot=1
+Temporary breakpoint 9 at 0x10024808
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 13478:9
+Temporary breakpoint 10 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=9
+OLD_CUTOFF_OVERRIDE slot=1 sum=9 native=0 overridden=1
+OLD_CUTOFF_SPLIT_ENTER slot=2
+Temporary breakpoint 11 at 0x10024808
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 9147:25
+Temporary breakpoint 12 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=25
+OLD_CUTOFF_SPLIT_RETURN slot=2 sum=25 accepted=1
+OLD_CUTOFF_SPLIT_ENTER slot=3
+Temporary breakpoint 13 at 0x10024808
+OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 18857:6
+Temporary breakpoint 14 at 0x10024271
+OLD_CUTOFF_METRIC_RETURN sum=6
+OLD_CUTOFF_OVERRIDE slot=3 sum=6 native=0 overridden=1
+OLD_CUTOFF_POSITION_BUILDER_RETURN positions=4
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

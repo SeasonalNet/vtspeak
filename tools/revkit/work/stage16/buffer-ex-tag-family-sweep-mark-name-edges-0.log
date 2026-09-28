@@ -1,0 +1,92 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>> > > >>> > > > >>>>>>>>>>>>>> > > > > >  >  >  >  >  > > > >>>> > > > > >  >  >  >  > >>>>>>>Wine-gdb> Wine-gdb> Continuing.
+BUFFER_EX_RECORD_INPUT=A<vtml_mark/>B<vtml_mark name=""/>C<vtml_mark name=" "/>D<vtml_mark NAME="Upper"/>E
+
+BUFFER_EX_RECORD_START selector=0 result=0 length=60000 extra_a=0x14cc278 extra_b=0x14dec30 guards=a5,a5
+BUFFER_EX_RECORD_DESCRIPTOR selector=0 pointer=0x14dec30 count=3 array=0x14f8020 header=0x3,0x14f8020,0,0
+BUFFER_EX_RECORD_ROW selector=0 i=0 f0=0x59d f4=0x59d f8=0x1 kind=2 tail=00,00,00,02 payload_first32=
+0x14f802c:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x14f8034:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x14f803c:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x14f8044:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+BUFFER_EX_RECORD_ROW selector=0 i=1 f0=0 f4=0 f8=0x23 kind=1 tail=44,00,00,01 payload_first32=
+0x14f823c:	0x20	0x00	0x00	0x00	0x35	0x00	0x00	0x00
+0x14f8244:	0x36	0x00	0x00	0x00	0x37	0x00	0x00	0x00
+0x14f824c:	0x38	0x00	0x00	0x00	0x39	0x00	0x00	0x00
+0x14f8254:	0x3a	0x00	0x00	0x00	0x3b	0x00	0x00	0x00
+BUFFER_EX_RECORD_ROW selector=0 i=2 f0=0 f4=0 f8=0x39 kind=1 tail=01,d5,fe,01 payload_first32=
+0x14f844c:	0x55	0x70	0x70	0x65	0x72	0x00	0xfd	0xfe
+0x14f8454:	0xfc	0xfe	0x09	0x44	0x00	0x00	0x01	0x00
+0x14f845c:	0x00	0x0c	0x01	0xf7	0xfe	0x07	0x44	0x00
+0x14f8464:	0x00	0x02	0x0c	0x00	0x18	0x00	0xfb	0xfe
+BUFFER_EX_SYNCINFO selector=0 pointer=0x14cc278 rows=0x14e7750 count=11 header_fields_4_10=0,0,0,0,0,0x752f,0x5
+BUFFER_EX_SYNCROW selector=0 i=0 nested_count=1 nested=0x14ecbb8 field8=0x59d text_start=0 text_end=0 field14=0 field18=0x52 field1c=0xa field20=0
+BUFFER_EX_SYNCROW selector=0 i=1 nested_count=2 nested=0x14ecdd0 field8=0x1854 text_start=0xd text_end=0xd field14=0 field18=0x52 field1c=0xa field20=0x1
+BUFFER_EX_SYNCROW selector=0 i=2 nested_count=1 nested=0x14ecfe8 field8=0xc80 text_start=0xd text_end=0xd field14=0 field18=0x52 field1c=0xa field20=0x1
+BUFFER_EX_SYNCROW selector=0 i=3 nested_count=8 nested=0x14ed200 field8=0x2b19 text_start=0xf text_end=0x12 field14=0 field18=0x52 field1c=0xa field20=0x2
+BUFFER_EX_SYNCROW selector=0 i=4 nested_count=4 nested=0x14ed418 field8=0x153b text_start=0x14 text_end=0x17 field14=0 field18=0x52 field1c=0xa field20=0x3
+BUFFER_EX_SYNCROW selector=0 i=5 nested_count=3 nested=0x14ed630 field8=0x14d0 text_start=0x19 text_end=0x1c field14=0 field18=0x52 field1c=0xa field20=0x4
+BUFFER_EX_SYNCROW selector=0 i=6 nested_count=6 nested=0x14ed848 field8=0x18a8 text_start=0x1d text_end=0x1d field14=0 field18=0x52 field1c=0xa field20=0x5
+BUFFER_EX_SYNCROW selector=0 i=7 nested_count=4 nested=0x14eda60 field8=0x1528 text_start=0x20 text_end=0x20 field14=0 field18=0x52 field1c=0xa field20=0x6
+BUFFER_EX_SYNCROW selector=0 i=8 nested_count=2 nested=0x14edc78 field8=0x1101 text_start=0x22 text_end=0x22 field14=0 field18=0x52 field1c=0xa field20=0x7
+BUFFER_EX_SYNCROW selector=0 i=9 nested_count=2 nested=0x14ede90 field8=0xc15 text_start=0x38 text_end=0x38 field14=0 field18=0x52 field1c=0xa field20=0x8
+BUFFER_EX_SYNCROW selector=0 i=10 nested_count=1 nested=0x14ee0a8 field8=0xa4c text_start=0x52 text_end=0x52 field14=0 field18=0x52 field1c=0xa field20=0x9
+BUFFER_EX_RECORD_CANCEL selector=0 result=1 length=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

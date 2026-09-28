@@ -1,0 +1,61 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+define snapshot_sync
+  set $sync = (char *)*$extra_a
+  set $desc = (char *)*$extra_b
+  printf "CHUNK_SYNC poll=%d result=%d length=%d sync=%#x desc=%#x\n", $tag, $result, *$length, $sync, $desc
+  if $sync != 0
+    set $sync_rows = *(unsigned int *)$sync
+    set $sync_count = *(int *)($sync + 12)
+    printf "CHUNK_SYNC_HEADER poll=%d rows=%#x count=%d bases=%#x,%#x other=%#x,%#x,%#x,%#x,%#x\n", $tag, $sync_rows, $sync_count, *(unsigned int *)($sync + 16), *(unsigned int *)($sync + 24), *(unsigned int *)($sync + 20), *(unsigned int *)($sync + 28), *(unsigned int *)($sync + 32), *(unsigned int *)($sync + 36), *(unsigned int *)($sync + 40)
+    set $j = 0
+    while ($j < $sync_count) && ($j < 64)
+      set $row = $sync_rows + $j * 0x24
+      printf "CHUNK_SYNC_ROW poll=%d i=%d samples=%#x text=%#x..%#x\n", $tag, $j, *(unsigned int *)($row + 8), *(unsigned int *)($row + 12), *(unsigned int *)($row + 16)
+      set $j = $j + 1
+    end
+  end
+  if $desc != 0
+    set $count = *(int *)$desc
+    set $rows = *(unsigned int *)($desc + 4)
+    printf "CHUNK_RECORDS poll=%d count=%d rows=%#x\n", $tag, $count, $rows
+    set $j = 0
+    while ($j < $count) && ($j < 8)
+      set $row = $rows + $j * 0x210
+      printf "CHUNK_RECORD_ROW poll=%d i=%d f0=%#x f4=%#x f8=%#x kind=%u\n", $tag, $j, *(unsigned int *)$row, *(unsigned int *)($row + 4), *(unsigned int *)($row + 8), *(unsigned char *)($row + 0x20c)
+      set $j = $j + 1
+    end
+  end
+end
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $buffer = (char *)malloc(60016) + 8
+  set $length = (int *)malloc(4)
+  set $extra_a = (unsigned int *)malloc(4)
+  set $extra_b = (unsigned int *)malloc(4)
+  set *$length = 60000
+  set *$extra_a = 0
+  set *$extra_b = 0
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, (char *)$text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+  set $tag = -1
+  snapshot_sync
+  set $poll = 0
+  while ($result == 0) && ($poll < 16)
+    set *$length = 60000
+    set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, (char *)$text, $buffer, $length, 1, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+    set $tag = $poll
+    snapshot_sync
+    set $poll = $poll + 1
+  end
+  printf "CHUNK_SYNC_DONE result=%d polls=%d\n", $result, $poll
+  continue
+end
+
+continue

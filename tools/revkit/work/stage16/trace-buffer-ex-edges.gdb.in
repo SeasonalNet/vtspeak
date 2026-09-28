@@ -1,0 +1,73 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $long_text = (char *)malloc(79)
+  set $i = 0
+  while $i < 78
+    if ($i % 13) == 12
+      set {char}($long_text + $i) = 32
+    else
+      set {char}($long_text + $i) = *(char *)($text + ($i % 13))
+    end
+    set $i = $i + 1
+  end
+  set {char}($long_text + 78) = 0
+  set $allocation = (char *)malloc(60032)
+  set $buffer = $allocation + 16
+  set $i = 0
+  while $i < 60000
+    set {unsigned char}($buffer + $i) = 0xa5
+    set $i = $i + 1
+  end
+  set $i = 0
+  while $i < 16
+    set {unsigned char}($allocation + $i) = 0xa5
+    set {unsigned char}($buffer + 60000 + $i) = 0xa5
+    set $i = $i + 1
+  end
+  set $length = (int *)malloc(4)
+  set $extra_a = (unsigned int *)malloc(4)
+  set $extra_b = (unsigned int *)malloc(4)
+
+  set *$length = 0x12345678
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int *, int *))0x1001ddf0)(@SELECTOR@, (char *)0, (char *)0, $length, -1, 77, 1, (unsigned int *)0, (unsigned int *)0, 999, 999, 999, 999, (int *)999, (int *)999)
+  printf "BUFFER_EX_EDGE_SIZE_QUERY selector=@SELECTOR@ result=%d length=%d\n", $result, *$length
+
+  set *$extra_a = 0x55555555
+  set *$extra_b = 0x66666666
+  set *$length = 1
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 0, 0, 1, $extra_a, $extra_b, -1, -1, -1, -1, 0, 0)
+  printf "BUFFER_EX_EDGE_SHORT_LENGTH selector=@SELECTOR@ result=%d length=%d bytes=%02x,%02x,%02x,%02x,%02x,%02x,%02x,%02x extras=%#x,%#x\n", $result, *$length, *(unsigned char *)$buffer, *(unsigned char *)($buffer + 1), *(unsigned char *)($buffer + 1023), *(unsigned char *)($buffer + 1024), *(unsigned char *)($buffer + 29999), *(unsigned char *)($buffer + 30000), *(unsigned char *)($buffer + 59999), *(unsigned char *)($buffer + 60000), *$extra_a, *$extra_b
+
+  set $desc = (char *)*$extra_b
+  if $desc != 0
+    set $record_count = *(int *)$desc
+    set $records = *(unsigned int *)($desc + 4)
+    printf "BUFFER_EX_EDGE_RECORDS selector=@SELECTOR@ descriptor=%#x count=%d array=%#x\n", $desc, $record_count, $records
+    set $i = 0
+    while ($i < $record_count) && ($i < 64)
+      set $row = $records + $i * 0x210
+      printf "BUFFER_EX_EDGE_RECORD selector=@SELECTOR@ i=%d f0=%#x f4=%#x f8=%#x f0c=%#x f20c=%#x\n", $i, *(unsigned int *)$row, *(unsigned int *)($row + 4), *(unsigned int *)($row + 8), *(unsigned char *)($row + 0xc), *(unsigned char *)($row + 0x20c)
+      set $i = $i + 1
+    end
+  else
+    printf "BUFFER_EX_EDGE_RECORDS selector=@SELECTOR@ descriptor=null\n"
+  end
+
+  printf "BUFFER_EX_EDGE_WRITES selector=@SELECTOR@ fixed_samples=%02x,%02x,%02x,%02x,%02x,%02x dynamic_end=%02x,%02x,%02x guards=%02x,%02x,%02x,%02x\n", *(unsigned char *)($buffer + 1), *(unsigned char *)($buffer + 1023), *(unsigned char *)($buffer + 1024), *(unsigned char *)($buffer + 29999), *(unsigned char *)($buffer + 30000), *(unsigned char *)($buffer + 59999), *(unsigned char *)($buffer + *$length - 1), *(unsigned char *)($buffer + *$length), *(unsigned char *)($buffer + *$length + 1), *(unsigned char *)($buffer + 60000), *(unsigned char *)($buffer + 60001), *(unsigned char *)($buffer + 60002), *(unsigned char *)($buffer + 60003)
+
+  set *$length = 60000
+  set $cancel = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(@SELECTOR@, $long_text, $buffer, $length, 2, 0, 1, (unsigned int *)0, (unsigned int *)0, -1, -1, -1, -1, 0, -1)
+  printf "BUFFER_EX_EDGE_CANCEL selector=@SELECTOR@ result=%d length=%d\n", $cancel, *$length
+
+  continue
+end
+
+continue

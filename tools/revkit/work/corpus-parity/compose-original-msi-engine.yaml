@@ -1,0 +1,7 @@
+services:
+  runtime:
+    volumes:
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate:/work/data-kate:ro
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-common/dict-eng:/work/data-common/dict-eng:ro
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/lib/vt_eng.dll:/samples/vt_kat.dll:ro
+      - /home/seasonal/Workspaces/sn-workspaces/vtspeak/tools/revkit/work/corpus-parity:/probe

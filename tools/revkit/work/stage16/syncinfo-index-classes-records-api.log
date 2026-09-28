@@ -1,0 +1,101 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1002c530
+Wine-gdb> >>>>>>>> > > >  >  >  >  > > >>>>Wine-gdb> Wine-gdb> Continuing.
+SYNC_CLASS_SET count=41 state_count=0 state_start=0
+SYNC_CLASS_RECORD i=0 kind=2 ordinal=0 index=0 side=0 class=22 selector=9
+SYNC_CLASS_RECORD i=1 kind=2 ordinal=1 index=0 side=0 class=7 selector=2
+SYNC_CLASS_RECORD i=2 kind=2 ordinal=2 index=0 side=0 class=7 selector=2
+SYNC_CLASS_RECORD i=3 kind=2 ordinal=3 index=1 side=0 class=42 selector=19
+SYNC_CLASS_RECORD i=4 kind=2 ordinal=4 index=1 side=0 class=66 selector=35
+SYNC_CLASS_RECORD i=5 kind=2 ordinal=5 index=1 side=0 class=36 selector=16
+SYNC_CLASS_RECORD i=6 kind=2 ordinal=6 index=1 side=0 class=36 selector=16
+SYNC_CLASS_RECORD i=7 kind=2 ordinal=7 index=1 side=0 class=42 selector=19
+SYNC_CLASS_RECORD i=8 kind=2 ordinal=8 index=2 side=0 class=19 selector=6
+SYNC_CLASS_RECORD i=9 kind=2 ordinal=9 index=2 side=0 class=54 selector=27
+SYNC_CLASS_RECORD i=10 kind=2 ordinal=10 index=2 side=0 class=14 selector=4
+SYNC_CLASS_RECORD i=11 kind=2 ordinal=11 index=2 side=0 class=45 selector=22
+SYNC_CLASS_RECORD i=12 kind=2 ordinal=12 index=3 side=0 class=32 selector=13
+SYNC_CLASS_RECORD i=13 kind=2 ordinal=13 index=3 side=0 class=2 selector=0
+SYNC_CLASS_RECORD i=14 kind=2 ordinal=14 index=3 side=0 class=2 selector=0
+SYNC_CLASS_RECORD i=15 kind=2 ordinal=15 index=3 side=0 class=42 selector=19
+SYNC_CLASS_RECORD i=16 kind=2 ordinal=16 index=3 side=0 class=55 selector=28
+SYNC_CLASS_RECORD i=17 kind=2 ordinal=17 index=4 side=0 class=41 selector=18
+SYNC_CLASS_RECORD i=18 kind=2 ordinal=18 index=4 side=0 class=8 selector=2
+SYNC_CLASS_RECORD i=19 kind=2 ordinal=19 index=4 side=0 class=8 selector=2
+SYNC_CLASS_RECORD i=20 kind=2 ordinal=20 index=4 side=0 class=44 selector=21
+SYNC_CLASS_RECORD i=21 kind=2 ordinal=21 index=4 side=0 class=53 selector=26
+SYNC_CLASS_RECORD i=22 kind=2 ordinal=22 index=4 side=0 class=53 selector=26
+SYNC_CLASS_RECORD i=23 kind=2 ordinal=23 index=4 side=0 class=55 selector=28
+SYNC_CLASS_RECORD i=24 kind=2 ordinal=24 index=4 side=0 class=55 selector=28
+SYNC_CLASS_RECORD i=25 kind=2 ordinal=25 index=5 side=0 class=48 selector=24
+SYNC_CLASS_RECORD i=26 kind=2 ordinal=26 index=5 side=0 class=65 selector=34
+SYNC_CLASS_RECORD i=27 kind=2 ordinal=27 index=5 side=0 class=26 selector=11
+SYNC_CLASS_RECORD i=28 kind=2 ordinal=28 index=6 side=0 class=22 selector=9
+SYNC_CLASS_RECORD i=29 kind=2 ordinal=29 index=6 side=0 class=7 selector=2
+SYNC_CLASS_RECORD i=30 kind=2 ordinal=30 index=7 side=0 class=43 selector=20
+SYNC_CLASS_RECORD i=31 kind=2 ordinal=31 index=7 side=0 class=30 selector=12
+SYNC_CLASS_RECORD i=32 kind=2 ordinal=32 index=7 side=0 class=30 selector=12
+SYNC_CLASS_RECORD i=33 kind=2 ordinal=33 index=7 side=0 class=68 selector=37
+SYNC_CLASS_RECORD i=34 kind=2 ordinal=34 index=7 side=0 class=38 selector=17
+SYNC_CLASS_RECORD i=35 kind=2 ordinal=35 index=7 side=0 class=38 selector=17
+SYNC_CLASS_RECORD i=36 kind=2 ordinal=36 index=8 side=0 class=21 selector=8
+SYNC_CLASS_RECORD i=37 kind=2 ordinal=37 index=8 side=0 class=21 selector=8
+SYNC_CLASS_RECORD i=38 kind=2 ordinal=38 index=8 side=0 class=11 selector=3
+SYNC_CLASS_RECORD i=39 kind=2 ordinal=39 index=8 side=0 class=11 selector=3
+SYNC_CLASS_RECORD i=40 kind=2 ordinal=40 index=8 side=0 class=33 selector=14
+[Inferior 1 (Remote target) killed]
+0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

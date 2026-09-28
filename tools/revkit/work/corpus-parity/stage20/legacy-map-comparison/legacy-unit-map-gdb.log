@@ -1,0 +1,20 @@
+Wine-gdb> Already logging to /probe/stage20/legacy-map-comparison/legacy-unit-map-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cd60
+Wine-gdb> >>>>>> > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_UNIT_MAP_TRACE_READY
+LEGACY_MODEL_TABLE_30 position=0 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=1 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=2 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=3 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=0 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=1 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=2 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=3 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=0 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=1 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=2 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+LEGACY_MODEL_TABLE_30 position=3 unit272822=52165 unit272823=32401 unit272824=25383 unit272825=37302
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

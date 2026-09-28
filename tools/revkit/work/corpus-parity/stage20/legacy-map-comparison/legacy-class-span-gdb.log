@@ -1,0 +1,59 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cd60
+Wine-gdb> >>> > > > > > > > > > >  >  >  > > > > > >  >  >  >  >  >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_CLASS_SPAN_TRACE_READY
+LEGACY_TARGET_CLASS_POOL position=0 count=4 classes=52164 52165 52166 52167 
+LEGACY_MODEL_TABLE_30 position=0 272822->52165 272823->32401 272824->25383 272825->37302
+LEGACY_MODEL_UNIT_FLAGS position=0 272822=0x1 272823=0x1 272824=0x1 272825=0
+Hardware assisted breakpoint 3 at 0x1001d289
+LEGACY_SPAN_RESULT position=0 candidates=75
+LEGACY_SPAN_CANDIDATE index=0 unit=272822 span=4 left=0 right=3
+LEGACY_SPAN_CANDIDATE index=1 unit=273369 span=3 left=0 right=2
+LEGACY_SPAN_CANDIDATE index=2 unit=92183 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=3 unit=52542 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=4 unit=51310 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=5 unit=31795 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=6 unit=31347 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=7 unit=22451 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=8 unit=20499 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=9 unit=1200 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=10 unit=63 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=11 unit=271915 span=1 left=0 right=0
+LEGACY_TARGET_CLASS_POOL position=1 count=2 classes=32400 32401 
+LEGACY_MODEL_TABLE_30 position=1 272822->52165 272823->32401 272824->25383 272825->37302
+LEGACY_MODEL_UNIT_FLAGS position=1 272822=0x1 272823=0x1 272824=0x1 272825=0
+Hardware assisted breakpoint 4 at 0x1001d289
+LEGACY_SPAN_RESULT position=1 candidates=9
+LEGACY_SPAN_CANDIDATE index=0 unit=272823 span=4 left=1 right=2
+LEGACY_SPAN_CANDIDATE index=1 unit=273370 span=3 left=1 right=1
+LEGACY_SPAN_CANDIDATE index=2 unit=264072 span=3 left=0 right=2
+LEGACY_SPAN_CANDIDATE index=3 unit=13942 span=2 left=0 right=1
+LEGACY_SPAN_CANDIDATE index=4 unit=272152 span=2 left=0 right=1
+LEGACY_SPAN_CANDIDATE index=5 unit=36540 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=6 unit=53487 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=7 unit=96599 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=8 unit=268760 span=1 left=0 right=0
+LEGACY_TARGET_CLASS_POOL position=2 count=1 classes=25383 
+LEGACY_MODEL_TABLE_30 position=2 272822->52165 272823->32401 272824->25383 272825->37302
+LEGACY_MODEL_UNIT_FLAGS position=2 272822=0x1 272823=0x1 272824=0x1 272825=0
+Hardware assisted breakpoint 5 at 0x1001d289
+LEGACY_SPAN_RESULT position=2 candidates=5
+LEGACY_SPAN_CANDIDATE index=0 unit=272824 span=4 left=2 right=1
+LEGACY_SPAN_CANDIDATE index=1 unit=264073 span=3 left=1 right=1
+LEGACY_SPAN_CANDIDATE index=2 unit=273371 span=3 left=2 right=0
+LEGACY_SPAN_CANDIDATE index=3 unit=13943 span=2 left=1 right=0
+LEGACY_SPAN_CANDIDATE index=4 unit=272153 span=2 left=1 right=0
+LEGACY_TARGET_CLASS_POOL position=3 count=1 classes=37302 
+LEGACY_MODEL_TABLE_30 position=3 272822->52165 272823->32401 272824->25383 272825->37302
+LEGACY_MODEL_UNIT_FLAGS position=3 272822=0x1 272823=0x1 272824=0x1 272825=0
+Hardware assisted breakpoint 6 at 0x1001d289
+LEGACY_SPAN_RESULT position=3 candidates=6
+LEGACY_SPAN_CANDIDATE index=0 unit=272825 span=4 left=3 right=0
+LEGACY_SPAN_CANDIDATE index=1 unit=264074 span=3 left=2 right=0
+LEGACY_SPAN_CANDIDATE index=2 unit=1869 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=3 unit=5170 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=4 unit=246677 span=1 left=0 right=0
+LEGACY_SPAN_CANDIDATE index=5 unit=255282 span=1 left=0 right=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

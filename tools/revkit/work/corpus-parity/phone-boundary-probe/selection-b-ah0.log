@@ -1,0 +1,88 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023af0
+Wine-gdb> >>> > > > > > > > > > > > > > > >  >  >  >  >  > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023350
+Wine-gdb> >>> > > > > > > > >  >  >  > > > >  >  >  >  >  >   >   >   >  >  >  >   >   >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Continuing.
+FINAL_RANK_ENTRY call=1 context=0 input_count=10 input_ids=80511 80512 80513 80515 80516 80517 80518 80520 
+Temporary breakpoint 4 at 0x100249d5
+CEP_PROSODY_ENTRY call=1 unit=241221 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 5 at 0x1002389a
+CEP_PROSODY_RETURN call=1 cost=1005.2
+CEP_PROSODY_ENTRY call=2 unit=249116 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 6 at 0x1002389a
+CEP_PROSODY_RETURN call=2 cost=1005.2
+CEP_PROSODY_ENTRY call=3 unit=239636 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 7 at 0x1002389a
+CEP_PROSODY_RETURN call=3 cost=1010.2
+CEP_PROSODY_ENTRY call=4 unit=224441 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 8 at 0x1002389a
+CEP_PROSODY_RETURN call=4 cost=1005.2
+CEP_PROSODY_ENTRY call=5 unit=220856 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 9 at 0x1002389a
+CEP_PROSODY_RETURN call=5 cost=1005.2
+CEP_PROSODY_ENTRY call=6 unit=214921 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 10 at 0x1002389a
+CEP_PROSODY_RETURN call=6 cost=1005.2
+CEP_PROSODY_ENTRY call=7 unit=208656 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 11 at 0x1002389a
+CEP_PROSODY_RETURN call=7 cost=1005.2
+CEP_PROSODY_ENTRY call=8 unit=202216 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x01	0x01	0x00
+CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x08	0x0c	0x0c	0x00	0xf4	0x76	0x66	0x00
+0x6676d4:	0xd5	0x49
+Temporary breakpoint 12 at 0x1002389a
+CEP_PROSODY_RETURN call=8 cost=1005.2
+FINAL_RANK_RETURN call=1 selected=30 unit_ids=241221 249116 239636 224441 220856 214921 208656 202216 199711 152647 
+FINAL_RANK_COSTS call=1
+FINAL_COST position=0 unit=241221 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=249116 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=2 unit=239636 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=224441 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=4 unit=220856 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=5 unit=214921 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=208656 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=7 unit=202216 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=8 unit=199711 score=1005.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=9 unit=152647 score=504.2 duration_penalty=2 context_penalty=0
+FINAL_RANK_ENTRY call=2 context=1 input_count=19 input_ids=20578 20579 26963 26965 42116 48475 57695 57696 
+Temporary breakpoint 13 at 0x100248ce
+FINAL_RANK_RETURN call=2 selected=30 unit_ids=150397 241221 239636 224441 220856 214921 208656 202216 199711 152647 
+FINAL_RANK_COSTS call=2
+FINAL_COST position=0 unit=150397 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=1 unit=241221 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=2 unit=239636 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=3 unit=224441 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=4 unit=220856 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=5 unit=214921 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=6 unit=208656 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=7 unit=202216 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=8 unit=199711 score=1010.2 duration_penalty=2 context_penalty=0
+FINAL_COST position=9 unit=152647 score=504.2 duration_penalty=2 context_penalty=0
+FINAL_RANK_ENTRY call=3 context=2 input_count=11 input_ids=33863 33864 33866 33867 33870 33871 33872 33873 
+Temporary breakpoint 14 at 0x100248ce
+FINAL_RANK_RETURN call=3 selected=30 unit_ids=243646 66232 265814 262461 216771 79197 244136 255236 209321 232914 
+FINAL_RANK_COSTS call=3
+FINAL_COST position=0 unit=243646 score=59.5728 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=66232 score=61.3462 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=265814 score=62.1364 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=262461 score=63.7194 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=216771 score=64.1 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=79197 score=64.5652 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=244136 score=68.6618 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=255236 score=70.5158 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=209321 score=71.4257 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=232914 score=85.8701 duration_penalty=1 context_penalty=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

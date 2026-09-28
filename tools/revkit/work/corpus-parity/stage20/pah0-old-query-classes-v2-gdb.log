@@ -1,0 +1,1804 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001dfb0
+Wine-gdb> >>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001da80
+Wine-gdb> >>> > > > > > > > > >  >  >  >  >  >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001d5c0
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1001e110
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+OLD_PAH0_QUERY_CLASS_TRACE_READY
+OLD_PAH0_SPLIT_ENTER n=1 slot=0 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 6 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	65	39	30	30
+Hardware assisted breakpoint 7 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=0 mode=1 appended=6 total=1 ids: 52559
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 52559:6
+Hardware assisted breakpoint 8 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=2 slot=1 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 9 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	65	39	76	1	31
+Hardware assisted breakpoint 10 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=1 mode=1 appended=6 total=2 ids: 47110 47110
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47110:3
+Hardware assisted breakpoint 11 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=3 slot=2 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 12 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=2 mode=1 key:0x26f083e:	39	76	39	10	10
+Hardware assisted breakpoint 13 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=2 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 14 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=4 slot=3 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 15 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=3 mode=1 key:0x26f0843:	76	39	24	1	1
+Hardware assisted breakpoint 16 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=3 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 17 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=5 slot=4 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 18 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=4 mode=1 key:0x26f0848:	39	24	44	10	10
+Hardware assisted breakpoint 19 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=4 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 20 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=6 slot=5 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 21 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=5 mode=1 key:0x26f084d:	24	44	24	1	1
+Hardware assisted breakpoint 22 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=5 mode=1 appended=20 total=4 ids: 25475 25447 25448 25449
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 25447:2 25448:2 25449:3 25475:13
+Hardware assisted breakpoint 23 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=7 slot=6 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 24 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=6 mode=1 key:0x26f0852:	44	24	43	10	10
+Hardware assisted breakpoint 25 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=6 mode=1 appended=7 total=4 ids: 39426 39427 39428 39429
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 39426:3 39427:1 39428:2 39429:1
+Hardware assisted breakpoint 26 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=8 slot=7 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 27 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=7 mode=1 key:0x26f0857:	24	43	53	2	2
+Hardware assisted breakpoint 28 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=7 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 29 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=9 slot=8 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 30 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=8 mode=1 key:0x26f0b30:	43	53	39	20	20
+Hardware assisted breakpoint 31 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=8 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 32 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=10 slot=9 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 33 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=9 mode=1 key:0x26f0b35:	53	39	30	1	1
+Hardware assisted breakpoint 34 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=9 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 35 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=11 slot=10 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 36 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=10 mode=1 key:0x26f0b3a:	39	30	20	10	10
+Hardware assisted breakpoint 37 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=10 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 38 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=12 slot=11 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 39 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=11 mode=1 key:0x26f0b3f:	30	20	48	1	1
+Hardware assisted breakpoint 40 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=11 mode=1 appended=7 total=2 ids: 875 878
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 875:4 878:3
+Hardware assisted breakpoint 41 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=13 slot=12 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 42 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=12 mode=1 key:0x26f0b44:	20	48	24	11	11
+Hardware assisted breakpoint 43 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=12 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=14 slot=14 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 44 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=14 mode=1 key:0x26f0b49:	48	24	45	10	10
+Hardware assisted breakpoint 45 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=14 mode=1 appended=7 total=2 ids: 14190 14197
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 14190:4 14197:3
+Hardware assisted breakpoint 46 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=15 slot=15 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 47 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=15 mode=1 key:0x26f0b4e:	24	45	39	1	1
+Hardware assisted breakpoint 48 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=15 mode=1 appended=23 total=5 ids: 25581 25582 25583 25584 25585
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 25581:1 25582:16 25583:2 25584:3 25585:1
+Hardware assisted breakpoint 49 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=23
+OLD_PAH0_SPLIT_ENTER n=16 slot=16 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 50 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=16 mode=1 key:0x26f0b53:	45	39	24	11	11
+Hardware assisted breakpoint 51 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=16 mode=1 appended=3 total=3 ids: 41408 39922 39923
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 39922:1 39923:1 41408:1
+Hardware assisted breakpoint 52 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=17 slot=17 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 53 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=17 mode=1 key:0x26f0b58:	39	24	44	10	10
+Hardware assisted breakpoint 54 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=17 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 55 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=18 slot=18 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 56 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=18 mode=1 key:0x26f0b5d:	24	44	39	1	1
+Hardware assisted breakpoint 57 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=18 mode=1 appended=6 total=3 ids: 25482 25483 25484
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 25482:4 25483:1 25484:1
+Hardware assisted breakpoint 58 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=19 slot=19 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 59 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=19 mode=1 key:0x26f0b62:	44	39	30	12	12
+Hardware assisted breakpoint 60 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=19 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=20 slot=21 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 61 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=21 mode=1 key:0x26f0e2c:	39	30	24	21	21
+Hardware assisted breakpoint 62 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=21 mode=1 appended=9 total=6 ids: 17145 17109 17110 17111 17146 17112
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17109:1 17110:1 17111:1 17112:2 17145:3 17146:1
+Hardware assisted breakpoint 63 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=9
+OLD_PAH0_SPLIT_ENTER n=21 slot=22 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 64 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=22 mode=1 key:0x26f0e31:	30	24	43	10	10
+Hardware assisted breakpoint 65 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=22 mode=1 appended=25 total=6 ids: 16853 16854 16855 16856 16860 16861
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 16853:2 16854:2 16855:4 16856:10 16860:5 16861:2
+Hardware assisted breakpoint 66 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=25
+OLD_PAH0_SPLIT_ENTER n=22 slot=23 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 67 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=23 mode=1 key:0x26f0e36:	24	43	53	1	1
+Hardware assisted breakpoint 68 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=23 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 69 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=23 slot=24 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 70 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=24 mode=1 key:0x26f0e3b:	43	53	39	10	10
+Hardware assisted breakpoint 71 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=24 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 72 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=24 slot=25 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 73 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=25 mode=1 key:0x26f0e40:	53	39	30	1	1
+Hardware assisted breakpoint 74 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=25 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 75 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=25 slot=26 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 76 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=26 mode=1 key:0x26f0e45:	39	30	20	10	10
+Hardware assisted breakpoint 77 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=26 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 78 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=26 slot=27 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 79 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=27 mode=1 key:0x26f0e4a:	30	20	30	1	1
+Hardware assisted breakpoint 80 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=27 mode=1 appended=7 total=2 ids: 623 633
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 623:4 633:3
+Hardware assisted breakpoint 81 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=27 slot=28 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 82 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=28 mode=1 key:0x26f0e4f:	20	30	19	11	11
+Hardware assisted breakpoint 83 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=28 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=28 slot=30 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 84 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=30 mode=1 key:0x26f0e54:	30	19	39	10	10
+Hardware assisted breakpoint 85 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=30 mode=1 appended=19 total=2 ids: 370 407
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 370:15 407:4
+Hardware assisted breakpoint 86 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=19
+OLD_PAH0_SPLIT_ENTER n=29 slot=31 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 87 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=31 mode=1 key:0x26f0e59:	19	39	39	1	1
+Hardware assisted breakpoint 88 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=31 mode=1 appended=20 total=3 ids: 20809 20810 20814
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 20809:6 20810:9 20814:5
+Hardware assisted breakpoint 89 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=30 slot=32 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 90 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=32 mode=1 key:0x26f0e5e:	39	39	76	11	11
+Hardware assisted breakpoint 91 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=32 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=31 slot=34 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 92 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=34 mode=1 key:0x26f0e63:	39	76	39	10	10
+Hardware assisted breakpoint 93 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=34 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 94 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=32 slot=35 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 95 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=35 mode=1 key:0x26f0e68:	76	39	24	2	2
+Hardware assisted breakpoint 96 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=35 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 97 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=33 slot=36 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 98 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=36 mode=1 key:0x26f1128:	39	24	42	20	20
+Hardware assisted breakpoint 99 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=36 mode=1 appended=43 total=14 ids: 16845 16842 16843 16844 16845 16846 16848 16849 16850 16851 16848 16849 16850 16851
+OLD_PAH0_METRIC_ENTRY count=9 ids_weights: 16842:1 16843:2 16844:1 16845:5 16846:1 16848:1 16849:2 16850:9 16851:2
+Hardware assisted breakpoint 100 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=24
+OLD_PAH0_SPLIT_ENTER n=34 slot=37 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 101 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=37 mode=1 key:0x26f112d:	24	42	55	0	0
+Hardware assisted breakpoint 102 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=37 mode=1 appended=179 total=1 ids: 4385
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 4385:179
+Hardware assisted breakpoint 103 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=179
+OLD_PAH0_SPLIT_ENTER n=35 slot=38 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 104 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=38 mode=1 key:0x26f1132:	42	55	55	1	1
+Hardware assisted breakpoint 105 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=38 mode=1 appended=121 total=8 ids: 30577 30577 30578 30585 30584 30585 30586 30587
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 30577:6 30578:1 30584:1 30585:21 30586:4 30587:61
+Hardware assisted breakpoint 106 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=94
+OLD_PAH0_SPLIT_ENTER n=36 slot=39 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 107 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=39 mode=1 key:0x26f1137:	55	55	39	10	10
+Hardware assisted breakpoint 108 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=39 mode=1 appended=17 total=2 ids: 23015 23025
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 23015:9 23025:8
+Hardware assisted breakpoint 109 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=37 slot=40 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 110 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=40 mode=1 key:0x26f113c:	55	39	24	1	1
+Hardware assisted breakpoint 111 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=40 mode=1 appended=22 total=4 ids: 43956 43926 43927 43928
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 43926:2 43927:1 43928:1 43956:18
+Hardware assisted breakpoint 112 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=38 slot=41 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 113 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=41 mode=1 key:0x26f1141:	39	24	44	10	10
+Hardware assisted breakpoint 114 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=41 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 115 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=39 slot=42 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 116 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=42 mode=1 key:0x26f1146:	24	44	67	1	1
+Hardware assisted breakpoint 117 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=42 mode=1 appended=1 total=1 ids: 25518
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25518:1
+Hardware assisted breakpoint 118 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=1
+OLD_PAH0_SPLIT_ENTER n=40 slot=44 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 119 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=44 mode=1 key:0x26f114b:	44	67	63	10	10
+Hardware assisted breakpoint 120 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=44 mode=1 appended=7 total=2 ids: 40496 40505
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 40496:3 40505:4
+Hardware assisted breakpoint 121 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=41 slot=45 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 122 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=45 mode=1 key:0x26f1150:	67	63	53	2	2
+Hardware assisted breakpoint 123 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=45 mode=1 appended=24 total=2 ids: 47659 47659
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47659:12
+Hardware assisted breakpoint 124 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=12
+OLD_PAH0_SPLIT_ENTER n=42 slot=46 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 125 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=46 mode=1 key:0x26f1424:	63	53	39	20	20
+Hardware assisted breakpoint 126 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=46 mode=1 appended=38 total=5 ids: 5588 5589 5590 5591 5618
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 5588:3 5589:4 5590:12 5591:10 5618:9
+Hardware assisted breakpoint 127 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=38
+OLD_PAH0_SPLIT_ENTER n=43 slot=47 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 128 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=47 mode=1 key:0x26f1429:	53	39	30	1	1
+Hardware assisted breakpoint 129 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=47 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 130 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=44 slot=48 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 131 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=48 mode=1 key:0x26f142e:	39	30	20	10	10
+Hardware assisted breakpoint 132 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=48 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 133 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=45 slot=49 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 134 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=49 mode=1 key:0x26f1433:	30	20	53	2	2
+Hardware assisted breakpoint 135 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=49 mode=1 appended=44 total=20 ids: 707 708 709 707 708 709 889 890 891 892 893 894 895 889 890 891 892 893 894 895
+OLD_PAH0_METRIC_ENTRY count=10 ids_weights: 707:1 708:1 709:1 889:4 890:1 891:3 892:6 893:3 894:1 895:1
+Hardware assisted breakpoint 136 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=46 slot=50 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 137 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=50 mode=1 key:0x26f1720:	20	53	39	20	20
+Hardware assisted breakpoint 138 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=50 mode=1 appended=17 total=6 ids: 22919 22920 23397 22923 22924 22925
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 22919:1 22920:4 22923:2 22924:1 22925:7 23397:2
+Hardware assisted breakpoint 139 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=47 slot=51 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 140 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=51 mode=1 key:0x26f1725:	53	39	30	2	2
+Hardware assisted breakpoint 141 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=51 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 142 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=48 slot=52 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 143 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=52 mode=1 key:0x26f1a1c:	39	30	30	21	21
+Hardware assisted breakpoint 144 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=52 mode=1 appended=7 total=6 ids: 17107 17108 17109 17110 17111 17112
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17107:1 17108:1 17109:1 17110:1 17111:1 17112:2
+Hardware assisted breakpoint 145 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=49 slot=53 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 146 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=53 mode=1 key:0x26f1a21:	30	30	20	10	10
+Hardware assisted breakpoint 147 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=53 mode=1 appended=18 total=6 ids: 17121 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17121:4 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 148 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=50 slot=54 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 149 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=54 mode=1 key:0x26f1a26:	30	20	53	2	2
+Hardware assisted breakpoint 150 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=54 mode=1 appended=44 total=20 ids: 707 708 709 707 708 709 889 890 891 892 893 894 895 889 890 891 892 893 894 895
+OLD_PAH0_METRIC_ENTRY count=10 ids_weights: 707:1 708:1 709:1 889:4 890:1 891:3 892:6 893:3 894:1 895:1
+Hardware assisted breakpoint 151 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=51 slot=55 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 152 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=55 mode=1 key:0x26f2014:	20	53	39	20	20
+Hardware assisted breakpoint 153 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=55 mode=1 appended=17 total=6 ids: 22919 22920 23397 22923 22924 22925
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 22919:1 22920:4 22923:2 22924:1 22925:7 23397:2
+Hardware assisted breakpoint 154 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=52 slot=56 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 155 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=56 mode=1 key:0x26f2019:	53	39	2	1	1
+Hardware assisted breakpoint 156 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=56 mode=1 appended=5 total=2 ids: 42490 42493
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 42490:4 42493:1
+Hardware assisted breakpoint 157 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=5
+OLD_PAH0_SPLIT_ENTER n=53 slot=57 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 158 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=57 mode=1 key:0x26f201e:	39	2	54	10	10
+Hardware assisted breakpoint 159 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=57 mode=1 appended=37 total=2 ids: 16143 16153
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 16143:33 16153:4
+Hardware assisted breakpoint 160 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=37
+OLD_PAH0_SPLIT_ENTER n=54 slot=58 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 161 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=58 mode=1 key:0x26f2023:	2	54	48	1	1
+Hardware assisted breakpoint 162 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=58 mode=1 appended=8 total=3 ids: 5973 5974 5975
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 5973:5 5974:2 5975:1
+Hardware assisted breakpoint 163 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=8
+OLD_PAH0_SPLIT_ENTER n=55 slot=59 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 164 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=59 mode=1 key:0x26f2028:	54	48	19	11	11
+Hardware assisted breakpoint 165 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=59 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=56 slot=61 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 166 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=61 mode=1 key:0x26f202d:	48	19	39	10	10
+Hardware assisted breakpoint 167 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=61 mode=1 appended=201 total=19 ids: 368 369 370 371 372 373 374 403 404 405 406 407 408 409 410 411 412 413 414
+OLD_PAH0_METRIC_ENTRY count=19 ids_weights: 368:2 369:5 370:15 371:12 372:1 373:2 374:72 403:13 404:3 405:6 406:2 407:4 408:1 409:8 410:5 411:4 412:8 413:33 414:5
+Hardware assisted breakpoint 168 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=201
+OLD_PAH0_SPLIT_ENTER n=57 slot=62 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 169 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=62 mode=1 key:0x26f2032:	19	39	39	1	1
+Hardware assisted breakpoint 170 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=62 mode=1 appended=20 total=3 ids: 20809 20810 20814
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 20809:6 20810:9 20814:5
+Hardware assisted breakpoint 171 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=58 slot=63 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 172 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=63 mode=1 key:0x26f2037:	39	39	65	12	12
+Hardware assisted breakpoint 173 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=63 mode=1 appended=1 total=1 ids: 17441
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 17441:1
+Hardware assisted breakpoint 174 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=1
+OLD_PAH0_SPLIT_ENTER n=59 slot=65 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 175 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=65 mode=1 key:0x26f2310:	39	65	39	20	20
+Hardware assisted breakpoint 176 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=65 mode=1 appended=33 total=2 ids: 9370 9394
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 9370:28 9394:5
+Hardware assisted breakpoint 177 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=33
+OLD_PAH0_SPLIT_ENTER n=60 slot=66 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 178 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=66 mode=1 key:0x26f2315:	65	39	76	1	1
+Hardware assisted breakpoint 179 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=66 mode=1 appended=6 total=2 ids: 47110 47110
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47110:3
+Hardware assisted breakpoint 180 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=61 slot=67 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 181 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=67 mode=1 key:0x26f231a:	39	76	39	10	10
+Hardware assisted breakpoint 182 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=67 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 183 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=62 slot=68 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 184 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=68 mode=1 key:0x26f231f:	76	39	24	1	1
+Hardware assisted breakpoint 185 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=68 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 186 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=63 slot=69 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 187 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=69 mode=1 key:0x26f2324:	39	24	44	10	10
+Hardware assisted breakpoint 188 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=69 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 189 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=64 slot=70 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 190 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=70 mode=1 key:0x26f2329:	24	44	24	1	1
+Hardware assisted breakpoint 191 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=70 mode=1 appended=20 total=4 ids: 25475 25447 25448 25449
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 25447:2 25448:2 25449:3 25475:13
+Hardware assisted breakpoint 192 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=65 slot=71 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 193 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=71 mode=1 key:0x26f232e:	44	24	43	10	10
+Hardware assisted breakpoint 194 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=71 mode=1 appended=7 total=4 ids: 39426 39427 39428 39429
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 39426:3 39427:1 39428:2 39429:1
+Hardware assisted breakpoint 195 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=66 slot=72 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 196 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=72 mode=1 key:0x26f2333:	24	43	53	2	2
+Hardware assisted breakpoint 197 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=72 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 198 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=67 slot=73 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 199 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=73 mode=1 key:0x26f260c:	43	53	39	20	20
+Hardware assisted breakpoint 200 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=73 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 201 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=68 slot=74 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 202 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=74 mode=1 key:0x26f2611:	53	39	30	1	1
+Hardware assisted breakpoint 203 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=74 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 204 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=69 slot=75 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 205 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=75 mode=1 key:0x26f2616:	39	30	20	10	10
+Hardware assisted breakpoint 206 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=75 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 207 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=70 slot=76 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 208 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=76 mode=1 key:0x26f261b:	30	20	48	1	1
+Hardware assisted breakpoint 209 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=76 mode=1 appended=7 total=2 ids: 875 878
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 875:4 878:3
+Hardware assisted breakpoint 210 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=71 slot=77 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 211 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=77 mode=1 key:0x26f2620:	20	48	24	11	11
+Hardware assisted breakpoint 212 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=77 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=72 slot=79 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 213 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=79 mode=1 key:0x26f2625:	48	24	45	10	10
+Hardware assisted breakpoint 214 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=79 mode=1 appended=7 total=2 ids: 14190 14197
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 14190:4 14197:3
+Hardware assisted breakpoint 215 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=73 slot=80 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 216 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=80 mode=1 key:0x26f262a:	24	45	39	1	1
+Hardware assisted breakpoint 217 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=80 mode=1 appended=23 total=5 ids: 25581 25582 25583 25584 25585
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 25581:1 25582:16 25583:2 25584:3 25585:1
+Hardware assisted breakpoint 218 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=23
+OLD_PAH0_SPLIT_ENTER n=74 slot=81 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 219 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=81 mode=1 key:0x26f262f:	45	39	24	11	11
+Hardware assisted breakpoint 220 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=81 mode=1 appended=3 total=3 ids: 41408 39922 39923
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 39922:1 39923:1 41408:1
+Hardware assisted breakpoint 221 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=75 slot=82 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 222 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=82 mode=1 key:0x26f2634:	39	24	44	10	10
+Hardware assisted breakpoint 223 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=82 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 224 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=76 slot=83 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 225 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=83 mode=1 key:0x26f2639:	24	44	39	1	1
+Hardware assisted breakpoint 226 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=83 mode=1 appended=6 total=3 ids: 25482 25483 25484
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 25482:4 25483:1 25484:1
+Hardware assisted breakpoint 227 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=77 slot=84 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 228 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=84 mode=1 key:0x26f263e:	44	39	90	14	14
+Hardware assisted breakpoint 229 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=84 mode=1 appended=3 total=2 ids: 39985 39986
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 39985:2 39986:1
+Hardware assisted breakpoint 230 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=78 slot=0 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 231 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	65	39	30	30
+Hardware assisted breakpoint 232 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=0 mode=1 appended=6 total=1 ids: 52559
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 52559:6
+Hardware assisted breakpoint 233 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=79 slot=1 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 234 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	65	39	76	1	31
+Hardware assisted breakpoint 235 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=1 mode=1 appended=6 total=2 ids: 47110 47110
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47110:3
+Hardware assisted breakpoint 236 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=80 slot=2 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 237 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=2 mode=1 key:0x26f083e:	39	76	39	10	10
+Hardware assisted breakpoint 238 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=2 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 239 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=81 slot=3 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 240 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=3 mode=1 key:0x26f0843:	76	39	24	1	1
+Hardware assisted breakpoint 241 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=3 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 242 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=82 slot=4 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 243 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=4 mode=1 key:0x26f0848:	39	24	44	10	10
+Hardware assisted breakpoint 244 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=4 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 245 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=83 slot=5 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 246 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=5 mode=1 key:0x26f084d:	24	44	24	1	1
+Hardware assisted breakpoint 247 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=5 mode=1 appended=20 total=4 ids: 25475 25447 25448 25449
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 25447:2 25448:2 25449:3 25475:13
+Hardware assisted breakpoint 248 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=84 slot=6 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 249 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=6 mode=1 key:0x26f0852:	44	24	43	10	10
+Hardware assisted breakpoint 250 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=6 mode=1 appended=7 total=4 ids: 39426 39427 39428 39429
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 39426:3 39427:1 39428:2 39429:1
+Hardware assisted breakpoint 251 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=85 slot=7 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 252 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=7 mode=1 key:0x26f0857:	24	43	53	2	2
+Hardware assisted breakpoint 253 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=7 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 254 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=86 slot=8 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 255 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=8 mode=1 key:0x26f0b30:	43	53	39	20	20
+Hardware assisted breakpoint 256 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=8 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 257 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=87 slot=9 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 258 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=9 mode=1 key:0x26f0b35:	53	39	30	1	1
+Hardware assisted breakpoint 259 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=9 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 260 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=88 slot=10 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 261 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=10 mode=1 key:0x26f0b3a:	39	30	20	10	10
+Hardware assisted breakpoint 262 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=10 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 263 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=89 slot=11 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 264 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=11 mode=1 key:0x26f0b3f:	30	20	48	1	1
+Hardware assisted breakpoint 265 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=11 mode=1 appended=7 total=2 ids: 875 878
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 875:4 878:3
+Hardware assisted breakpoint 266 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=90 slot=12 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 267 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=12 mode=1 key:0x26f0b44:	20	48	24	11	11
+Hardware assisted breakpoint 268 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=12 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=91 slot=14 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 269 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=14 mode=1 key:0x26f0b49:	48	24	45	10	10
+Hardware assisted breakpoint 270 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=14 mode=1 appended=7 total=2 ids: 14190 14197
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 14190:4 14197:3
+Hardware assisted breakpoint 271 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=92 slot=15 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 272 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=15 mode=1 key:0x26f0b4e:	24	45	39	1	1
+Hardware assisted breakpoint 273 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=15 mode=1 appended=23 total=5 ids: 25581 25582 25583 25584 25585
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 25581:1 25582:16 25583:2 25584:3 25585:1
+Hardware assisted breakpoint 274 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=23
+OLD_PAH0_SPLIT_ENTER n=93 slot=16 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 275 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=16 mode=1 key:0x26f0b53:	45	39	24	11	11
+Hardware assisted breakpoint 276 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=16 mode=1 appended=3 total=3 ids: 41408 39922 39923
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 39922:1 39923:1 41408:1
+Hardware assisted breakpoint 277 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=94 slot=17 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 278 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=17 mode=1 key:0x26f0b58:	39	24	44	10	10
+Hardware assisted breakpoint 279 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=17 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 280 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=95 slot=18 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 281 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=18 mode=1 key:0x26f0b5d:	24	44	39	1	1
+Hardware assisted breakpoint 282 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=18 mode=1 appended=6 total=3 ids: 25482 25483 25484
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 25482:4 25483:1 25484:1
+Hardware assisted breakpoint 283 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=96 slot=19 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 284 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=19 mode=1 key:0x26f0b62:	44	39	30	12	12
+Hardware assisted breakpoint 285 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=19 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=97 slot=21 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 286 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=21 mode=1 key:0x26f0e2c:	39	30	24	21	21
+Hardware assisted breakpoint 287 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=21 mode=1 appended=9 total=6 ids: 17145 17109 17110 17111 17146 17112
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17109:1 17110:1 17111:1 17112:2 17145:3 17146:1
+Hardware assisted breakpoint 288 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=9
+OLD_PAH0_SPLIT_ENTER n=98 slot=22 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 289 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=22 mode=1 key:0x26f0e31:	30	24	43	10	10
+Hardware assisted breakpoint 290 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=22 mode=1 appended=25 total=6 ids: 16853 16854 16855 16856 16860 16861
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 16853:2 16854:2 16855:4 16856:10 16860:5 16861:2
+Hardware assisted breakpoint 291 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=25
+OLD_PAH0_SPLIT_ENTER n=99 slot=23 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 292 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=23 mode=1 key:0x26f0e36:	24	43	53	1	1
+Hardware assisted breakpoint 293 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=23 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 294 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=100 slot=24 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 295 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=24 mode=1 key:0x26f0e3b:	43	53	39	10	10
+Hardware assisted breakpoint 296 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=24 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 297 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=101 slot=25 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 298 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=25 mode=1 key:0x26f0e40:	53	39	30	1	1
+Hardware assisted breakpoint 299 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=25 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 300 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=102 slot=26 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 301 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=26 mode=1 key:0x26f0e45:	39	30	20	10	10
+Hardware assisted breakpoint 302 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=26 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 303 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=103 slot=27 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 304 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=27 mode=1 key:0x26f0e4a:	30	20	30	1	1
+Hardware assisted breakpoint 305 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=27 mode=1 appended=7 total=2 ids: 623 633
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 623:4 633:3
+Hardware assisted breakpoint 306 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=104 slot=28 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 307 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=28 mode=1 key:0x26f0e4f:	20	30	19	11	11
+Hardware assisted breakpoint 308 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=28 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=105 slot=30 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 309 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=30 mode=1 key:0x26f0e54:	30	19	39	10	10
+Hardware assisted breakpoint 310 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=30 mode=1 appended=19 total=2 ids: 370 407
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 370:15 407:4
+Hardware assisted breakpoint 311 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=19
+OLD_PAH0_SPLIT_ENTER n=106 slot=31 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 312 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=31 mode=1 key:0x26f0e59:	19	39	39	1	1
+Hardware assisted breakpoint 313 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=31 mode=1 appended=20 total=3 ids: 20809 20810 20814
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 20809:6 20810:9 20814:5
+Hardware assisted breakpoint 314 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=107 slot=32 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 315 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=32 mode=1 key:0x26f0e5e:	39	39	76	11	11
+Hardware assisted breakpoint 316 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=32 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=108 slot=34 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 317 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=34 mode=1 key:0x26f0e63:	39	76	39	10	10
+Hardware assisted breakpoint 318 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=34 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 319 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=109 slot=35 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 320 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=35 mode=1 key:0x26f0e68:	76	39	24	2	2
+Hardware assisted breakpoint 321 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=35 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 322 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=110 slot=36 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 323 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=36 mode=1 key:0x26f1128:	39	24	42	20	20
+Hardware assisted breakpoint 324 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=36 mode=1 appended=43 total=14 ids: 16845 16842 16843 16844 16845 16846 16848 16849 16850 16851 16848 16849 16850 16851
+OLD_PAH0_METRIC_ENTRY count=9 ids_weights: 16842:1 16843:2 16844:1 16845:5 16846:1 16848:1 16849:2 16850:9 16851:2
+Hardware assisted breakpoint 325 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=24
+OLD_PAH0_SPLIT_ENTER n=111 slot=37 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 326 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=37 mode=1 key:0x26f112d:	24	42	55	0	0
+Hardware assisted breakpoint 327 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=37 mode=1 appended=179 total=1 ids: 4385
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 4385:179
+Hardware assisted breakpoint 328 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=179
+OLD_PAH0_SPLIT_ENTER n=112 slot=38 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 329 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=38 mode=1 key:0x26f1132:	42	55	55	1	1
+Hardware assisted breakpoint 330 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=38 mode=1 appended=121 total=8 ids: 30577 30577 30578 30585 30584 30585 30586 30587
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 30577:6 30578:1 30584:1 30585:21 30586:4 30587:61
+Hardware assisted breakpoint 331 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=94
+OLD_PAH0_SPLIT_ENTER n=113 slot=39 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 332 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=39 mode=1 key:0x26f1137:	55	55	39	10	10
+Hardware assisted breakpoint 333 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=39 mode=1 appended=17 total=2 ids: 23015 23025
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 23015:9 23025:8
+Hardware assisted breakpoint 334 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=114 slot=40 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 335 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=40 mode=1 key:0x26f113c:	55	39	24	1	1
+Hardware assisted breakpoint 336 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=40 mode=1 appended=22 total=4 ids: 43956 43926 43927 43928
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 43926:2 43927:1 43928:1 43956:18
+Hardware assisted breakpoint 337 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=115 slot=41 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 338 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=41 mode=1 key:0x26f1141:	39	24	44	10	10
+Hardware assisted breakpoint 339 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=41 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 340 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=116 slot=42 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 341 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=42 mode=1 key:0x26f1146:	24	44	67	1	1
+Hardware assisted breakpoint 342 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=42 mode=1 appended=1 total=1 ids: 25518
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25518:1
+Hardware assisted breakpoint 343 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=1
+OLD_PAH0_SPLIT_ENTER n=117 slot=44 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 344 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=44 mode=1 key:0x26f114b:	44	67	63	10	10
+Hardware assisted breakpoint 345 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=44 mode=1 appended=7 total=2 ids: 40496 40505
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 40496:3 40505:4
+Hardware assisted breakpoint 346 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=118 slot=45 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 347 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=45 mode=1 key:0x26f1150:	67	63	53	2	2
+Hardware assisted breakpoint 348 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=45 mode=1 appended=24 total=2 ids: 47659 47659
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47659:12
+Hardware assisted breakpoint 349 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=12
+OLD_PAH0_SPLIT_ENTER n=119 slot=46 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 350 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=46 mode=1 key:0x26f1424:	63	53	39	20	20
+Hardware assisted breakpoint 351 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=46 mode=1 appended=38 total=5 ids: 5588 5589 5590 5591 5618
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 5588:3 5589:4 5590:12 5591:10 5618:9
+Hardware assisted breakpoint 352 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=38
+OLD_PAH0_SPLIT_ENTER n=120 slot=47 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 353 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=47 mode=1 key:0x26f1429:	53	39	30	1	1
+Hardware assisted breakpoint 354 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=47 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 355 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=121 slot=48 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 356 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=48 mode=1 key:0x26f142e:	39	30	20	10	10
+Hardware assisted breakpoint 357 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=48 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 358 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=122 slot=49 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 359 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=49 mode=1 key:0x26f1433:	30	20	53	2	2
+Hardware assisted breakpoint 360 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=49 mode=1 appended=44 total=20 ids: 707 708 709 707 708 709 889 890 891 892 893 894 895 889 890 891 892 893 894 895
+OLD_PAH0_METRIC_ENTRY count=10 ids_weights: 707:1 708:1 709:1 889:4 890:1 891:3 892:6 893:3 894:1 895:1
+Hardware assisted breakpoint 361 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=123 slot=50 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 362 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=50 mode=1 key:0x26f1720:	20	53	39	20	20
+Hardware assisted breakpoint 363 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=50 mode=1 appended=17 total=6 ids: 22919 22920 23397 22923 22924 22925
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 22919:1 22920:4 22923:2 22924:1 22925:7 23397:2
+Hardware assisted breakpoint 364 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=124 slot=51 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 365 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=51 mode=1 key:0x26f1725:	53	39	30	2	2
+Hardware assisted breakpoint 366 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=51 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 367 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=125 slot=52 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 368 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=52 mode=1 key:0x26f1a1c:	39	30	30	21	21
+Hardware assisted breakpoint 369 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=52 mode=1 appended=7 total=6 ids: 17107 17108 17109 17110 17111 17112
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17107:1 17108:1 17109:1 17110:1 17111:1 17112:2
+Hardware assisted breakpoint 370 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=126 slot=53 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 371 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=53 mode=1 key:0x26f1a21:	30	30	20	10	10
+Hardware assisted breakpoint 372 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=53 mode=1 appended=18 total=6 ids: 17121 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17121:4 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 373 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=127 slot=54 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 374 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=54 mode=1 key:0x26f1a26:	30	20	53	2	2
+Hardware assisted breakpoint 375 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=54 mode=1 appended=44 total=20 ids: 707 708 709 707 708 709 889 890 891 892 893 894 895 889 890 891 892 893 894 895
+OLD_PAH0_METRIC_ENTRY count=10 ids_weights: 707:1 708:1 709:1 889:4 890:1 891:3 892:6 893:3 894:1 895:1
+Hardware assisted breakpoint 376 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=128 slot=55 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 377 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=55 mode=1 key:0x26f2014:	20	53	39	20	20
+Hardware assisted breakpoint 378 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=55 mode=1 appended=17 total=6 ids: 22919 22920 23397 22923 22924 22925
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 22919:1 22920:4 22923:2 22924:1 22925:7 23397:2
+Hardware assisted breakpoint 379 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=129 slot=56 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 380 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=56 mode=1 key:0x26f2019:	53	39	2	1	1
+Hardware assisted breakpoint 381 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=56 mode=1 appended=5 total=2 ids: 42490 42493
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 42490:4 42493:1
+Hardware assisted breakpoint 382 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=5
+OLD_PAH0_SPLIT_ENTER n=130 slot=57 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 383 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=57 mode=1 key:0x26f201e:	39	2	54	10	10
+Hardware assisted breakpoint 384 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=57 mode=1 appended=37 total=2 ids: 16143 16153
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 16143:33 16153:4
+Hardware assisted breakpoint 385 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=37
+OLD_PAH0_SPLIT_ENTER n=131 slot=58 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 386 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=58 mode=1 key:0x26f2023:	2	54	48	1	1
+Hardware assisted breakpoint 387 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=58 mode=1 appended=8 total=3 ids: 5973 5974 5975
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 5973:5 5974:2 5975:1
+Hardware assisted breakpoint 388 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=8
+OLD_PAH0_SPLIT_ENTER n=132 slot=59 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 389 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=59 mode=1 key:0x26f2028:	54	48	19	11	11
+Hardware assisted breakpoint 390 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=59 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=133 slot=61 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 391 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=61 mode=1 key:0x26f202d:	48	19	39	10	10
+Hardware assisted breakpoint 392 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=61 mode=1 appended=201 total=19 ids: 368 369 370 371 372 373 374 403 404 405 406 407 408 409 410 411 412 413 414
+OLD_PAH0_METRIC_ENTRY count=19 ids_weights: 368:2 369:5 370:15 371:12 372:1 373:2 374:72 403:13 404:3 405:6 406:2 407:4 408:1 409:8 410:5 411:4 412:8 413:33 414:5
+Hardware assisted breakpoint 393 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=201
+OLD_PAH0_SPLIT_ENTER n=134 slot=62 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 394 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=62 mode=1 key:0x26f2032:	19	39	39	1	1
+Hardware assisted breakpoint 395 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=62 mode=1 appended=20 total=3 ids: 20809 20810 20814
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 20809:6 20810:9 20814:5
+Hardware assisted breakpoint 396 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=135 slot=63 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 397 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=63 mode=1 key:0x26f2037:	39	39	65	12	12
+Hardware assisted breakpoint 398 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=63 mode=1 appended=1 total=1 ids: 17441
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 17441:1
+Hardware assisted breakpoint 399 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=1
+OLD_PAH0_SPLIT_ENTER n=136 slot=65 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 400 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=65 mode=1 key:0x26f2310:	39	65	39	20	20
+Hardware assisted breakpoint 401 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=65 mode=1 appended=33 total=2 ids: 9370 9394
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 9370:28 9394:5
+Hardware assisted breakpoint 402 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=33
+OLD_PAH0_SPLIT_ENTER n=137 slot=66 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 403 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=66 mode=1 key:0x26f2315:	65	39	76	1	1
+Hardware assisted breakpoint 404 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=66 mode=1 appended=6 total=2 ids: 47110 47110
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47110:3
+Hardware assisted breakpoint 405 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=138 slot=67 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 406 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=67 mode=1 key:0x26f231a:	39	76	39	10	10
+Hardware assisted breakpoint 407 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=67 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 408 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=139 slot=68 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 409 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=68 mode=1 key:0x26f231f:	76	39	24	1	1
+Hardware assisted breakpoint 410 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=68 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 411 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=140 slot=69 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 412 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=69 mode=1 key:0x26f2324:	39	24	44	10	10
+Hardware assisted breakpoint 413 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=69 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 414 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=141 slot=70 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 415 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=70 mode=1 key:0x26f2329:	24	44	24	1	1
+Hardware assisted breakpoint 416 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=70 mode=1 appended=20 total=4 ids: 25475 25447 25448 25449
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 25447:2 25448:2 25449:3 25475:13
+Hardware assisted breakpoint 417 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=142 slot=71 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 418 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=71 mode=1 key:0x26f232e:	44	24	43	10	10
+Hardware assisted breakpoint 419 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=71 mode=1 appended=7 total=4 ids: 39426 39427 39428 39429
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 39426:3 39427:1 39428:2 39429:1
+Hardware assisted breakpoint 420 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=143 slot=72 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 421 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=72 mode=1 key:0x26f2333:	24	43	53	2	2
+Hardware assisted breakpoint 422 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=72 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 423 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=144 slot=73 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 424 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=73 mode=1 key:0x26f260c:	43	53	39	20	20
+Hardware assisted breakpoint 425 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=73 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 426 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=145 slot=74 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 427 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=74 mode=1 key:0x26f2611:	53	39	30	1	1
+Hardware assisted breakpoint 428 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=74 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 429 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=146 slot=75 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 430 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=75 mode=1 key:0x26f2616:	39	30	20	10	10
+Hardware assisted breakpoint 431 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=75 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 432 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=147 slot=76 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 433 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=76 mode=1 key:0x26f261b:	30	20	48	1	1
+Hardware assisted breakpoint 434 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=76 mode=1 appended=7 total=2 ids: 875 878
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 875:4 878:3
+Hardware assisted breakpoint 435 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=148 slot=77 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 436 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=77 mode=1 key:0x26f2620:	20	48	24	11	11
+Hardware assisted breakpoint 437 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=77 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=149 slot=79 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 438 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=79 mode=1 key:0x26f2625:	48	24	45	10	10
+Hardware assisted breakpoint 439 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=79 mode=1 appended=7 total=2 ids: 14190 14197
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 14190:4 14197:3
+Hardware assisted breakpoint 440 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=150 slot=80 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 441 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=80 mode=1 key:0x26f262a:	24	45	39	1	1
+Hardware assisted breakpoint 442 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=80 mode=1 appended=23 total=5 ids: 25581 25582 25583 25584 25585
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 25581:1 25582:16 25583:2 25584:3 25585:1
+Hardware assisted breakpoint 443 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=23
+OLD_PAH0_SPLIT_ENTER n=151 slot=81 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 444 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=81 mode=1 key:0x26f262f:	45	39	24	11	11
+Hardware assisted breakpoint 445 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=81 mode=1 appended=3 total=3 ids: 41408 39922 39923
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 39922:1 39923:1 41408:1
+Hardware assisted breakpoint 446 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=152 slot=82 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 447 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=82 mode=1 key:0x26f2634:	39	24	44	10	10
+Hardware assisted breakpoint 448 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=82 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 449 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=153 slot=83 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 450 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=83 mode=1 key:0x26f2639:	24	44	39	1	1
+Hardware assisted breakpoint 451 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=83 mode=1 appended=6 total=3 ids: 25482 25483 25484
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 25482:4 25483:1 25484:1
+Hardware assisted breakpoint 452 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=154 slot=84 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 453 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=84 mode=1 key:0x26f263e:	44	39	90	14	14
+Hardware assisted breakpoint 454 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=84 mode=1 appended=3 total=2 ids: 39985 39986
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 39985:2 39986:1
+Hardware assisted breakpoint 455 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=155 slot=0 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 456 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	65	39	30	30
+Hardware assisted breakpoint 457 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=0 mode=1 appended=6 total=1 ids: 52559
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 52559:6
+Hardware assisted breakpoint 458 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=156 slot=1 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 459 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	65	39	76	1	31
+Hardware assisted breakpoint 460 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=1 mode=1 appended=6 total=2 ids: 47110 47110
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47110:3
+Hardware assisted breakpoint 461 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=157 slot=2 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 462 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=2 mode=1 key:0x26f083e:	39	76	39	10	10
+Hardware assisted breakpoint 463 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=2 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 464 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=158 slot=3 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 465 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=3 mode=1 key:0x26f0843:	76	39	24	1	1
+Hardware assisted breakpoint 466 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=3 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 467 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=159 slot=4 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 468 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=4 mode=1 key:0x26f0848:	39	24	44	10	10
+Hardware assisted breakpoint 469 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=4 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 470 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=160 slot=5 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 471 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=5 mode=1 key:0x26f084d:	24	44	24	1	1
+Hardware assisted breakpoint 472 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=5 mode=1 appended=20 total=4 ids: 25475 25447 25448 25449
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 25447:2 25448:2 25449:3 25475:13
+Hardware assisted breakpoint 473 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=161 slot=6 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 474 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=6 mode=1 key:0x26f0852:	44	24	43	10	10
+Hardware assisted breakpoint 475 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=6 mode=1 appended=7 total=4 ids: 39426 39427 39428 39429
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 39426:3 39427:1 39428:2 39429:1
+Hardware assisted breakpoint 476 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=162 slot=7 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 477 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=7 mode=1 key:0x26f0857:	24	43	53	2	2
+Hardware assisted breakpoint 478 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=7 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 479 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=163 slot=8 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 480 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=8 mode=1 key:0x26f0b30:	43	53	39	20	20
+Hardware assisted breakpoint 481 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=8 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 482 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=164 slot=9 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 483 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=9 mode=1 key:0x26f0b35:	53	39	30	1	1
+Hardware assisted breakpoint 484 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=9 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 485 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=165 slot=10 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 486 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=10 mode=1 key:0x26f0b3a:	39	30	20	10	10
+Hardware assisted breakpoint 487 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=10 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 488 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=166 slot=11 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 489 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=11 mode=1 key:0x26f0b3f:	30	20	48	1	1
+Hardware assisted breakpoint 490 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=11 mode=1 appended=7 total=2 ids: 875 878
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 875:4 878:3
+Hardware assisted breakpoint 491 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=167 slot=12 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 492 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=12 mode=1 key:0x26f0b44:	20	48	24	11	11
+Hardware assisted breakpoint 493 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=12 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=168 slot=14 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 494 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=14 mode=1 key:0x26f0b49:	48	24	45	10	10
+Hardware assisted breakpoint 495 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=14 mode=1 appended=7 total=2 ids: 14190 14197
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 14190:4 14197:3
+Hardware assisted breakpoint 496 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=169 slot=15 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 497 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=15 mode=1 key:0x26f0b4e:	24	45	39	1	1
+Hardware assisted breakpoint 498 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=15 mode=1 appended=23 total=5 ids: 25581 25582 25583 25584 25585
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 25581:1 25582:16 25583:2 25584:3 25585:1
+Hardware assisted breakpoint 499 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=23
+OLD_PAH0_SPLIT_ENTER n=170 slot=16 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 500 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=16 mode=1 key:0x26f0b53:	45	39	24	11	11
+Hardware assisted breakpoint 501 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=16 mode=1 appended=3 total=3 ids: 41408 39922 39923
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 39922:1 39923:1 41408:1
+Hardware assisted breakpoint 502 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=171 slot=17 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 503 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=17 mode=1 key:0x26f0b58:	39	24	44	10	10
+Hardware assisted breakpoint 504 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=17 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 505 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=172 slot=18 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 506 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=18 mode=1 key:0x26f0b5d:	24	44	39	1	1
+Hardware assisted breakpoint 507 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=18 mode=1 appended=6 total=3 ids: 25482 25483 25484
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 25482:4 25483:1 25484:1
+Hardware assisted breakpoint 508 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=173 slot=19 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 509 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=19 mode=1 key:0x26f0b62:	44	39	30	12	12
+Hardware assisted breakpoint 510 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=19 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=174 slot=21 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 511 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=21 mode=1 key:0x26f0e2c:	39	30	24	21	21
+Hardware assisted breakpoint 512 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=21 mode=1 appended=9 total=6 ids: 17145 17109 17110 17111 17146 17112
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17109:1 17110:1 17111:1 17112:2 17145:3 17146:1
+Hardware assisted breakpoint 513 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=9
+OLD_PAH0_SPLIT_ENTER n=175 slot=22 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 514 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=22 mode=1 key:0x26f0e31:	30	24	43	10	10
+Hardware assisted breakpoint 515 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=22 mode=1 appended=25 total=6 ids: 16853 16854 16855 16856 16860 16861
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 16853:2 16854:2 16855:4 16856:10 16860:5 16861:2
+Hardware assisted breakpoint 516 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=25
+OLD_PAH0_SPLIT_ENTER n=176 slot=23 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 517 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=23 mode=1 key:0x26f0e36:	24	43	53	1	1
+Hardware assisted breakpoint 518 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=23 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 519 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=177 slot=24 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 520 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=24 mode=1 key:0x26f0e3b:	43	53	39	10	10
+Hardware assisted breakpoint 521 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=24 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 522 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=178 slot=25 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 523 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=25 mode=1 key:0x26f0e40:	53	39	30	1	1
+Hardware assisted breakpoint 524 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=25 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 525 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=179 slot=26 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 526 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=26 mode=1 key:0x26f0e45:	39	30	20	10	10
+Hardware assisted breakpoint 527 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=26 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 528 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=180 slot=27 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 529 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=27 mode=1 key:0x26f0e4a:	30	20	30	1	1
+Hardware assisted breakpoint 530 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=27 mode=1 appended=7 total=2 ids: 623 633
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 623:4 633:3
+Hardware assisted breakpoint 531 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=181 slot=28 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 532 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=28 mode=1 key:0x26f0e4f:	20	30	19	11	11
+Hardware assisted breakpoint 533 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=28 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=182 slot=30 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 534 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=30 mode=1 key:0x26f0e54:	30	19	39	10	10
+Hardware assisted breakpoint 535 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=30 mode=1 appended=19 total=2 ids: 370 407
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 370:15 407:4
+Hardware assisted breakpoint 536 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=19
+OLD_PAH0_SPLIT_ENTER n=183 slot=31 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 537 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=31 mode=1 key:0x26f0e59:	19	39	39	1	1
+Hardware assisted breakpoint 538 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=31 mode=1 appended=20 total=3 ids: 20809 20810 20814
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 20809:6 20810:9 20814:5
+Hardware assisted breakpoint 539 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=184 slot=32 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 540 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=32 mode=1 key:0x26f0e5e:	39	39	76	11	11
+Hardware assisted breakpoint 541 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=32 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=185 slot=34 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 542 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=34 mode=1 key:0x26f0e63:	39	76	39	10	10
+Hardware assisted breakpoint 543 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=34 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 544 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=186 slot=35 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 545 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=35 mode=1 key:0x26f0e68:	76	39	24	2	2
+Hardware assisted breakpoint 546 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=35 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 547 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=187 slot=36 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 548 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=36 mode=1 key:0x26f1128:	39	24	42	20	20
+Hardware assisted breakpoint 549 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=36 mode=1 appended=43 total=14 ids: 16845 16842 16843 16844 16845 16846 16848 16849 16850 16851 16848 16849 16850 16851
+OLD_PAH0_METRIC_ENTRY count=9 ids_weights: 16842:1 16843:2 16844:1 16845:5 16846:1 16848:1 16849:2 16850:9 16851:2
+Hardware assisted breakpoint 550 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=24
+OLD_PAH0_SPLIT_ENTER n=188 slot=37 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 551 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=37 mode=1 key:0x26f112d:	24	42	55	0	0
+Hardware assisted breakpoint 552 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=37 mode=1 appended=179 total=1 ids: 4385
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 4385:179
+Hardware assisted breakpoint 553 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=179
+OLD_PAH0_SPLIT_ENTER n=189 slot=38 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 554 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=38 mode=1 key:0x26f1132:	42	55	55	1	1
+Hardware assisted breakpoint 555 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=38 mode=1 appended=121 total=8 ids: 30577 30577 30578 30585 30584 30585 30586 30587
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 30577:6 30578:1 30584:1 30585:21 30586:4 30587:61
+Hardware assisted breakpoint 556 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=94
+OLD_PAH0_SPLIT_ENTER n=190 slot=39 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 557 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=39 mode=1 key:0x26f1137:	55	55	39	10	10
+Hardware assisted breakpoint 558 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=39 mode=1 appended=17 total=2 ids: 23015 23025
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 23015:9 23025:8
+Hardware assisted breakpoint 559 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=191 slot=40 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 560 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=40 mode=1 key:0x26f113c:	55	39	24	1	1
+Hardware assisted breakpoint 561 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=40 mode=1 appended=22 total=4 ids: 43956 43926 43927 43928
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 43926:2 43927:1 43928:1 43956:18
+Hardware assisted breakpoint 562 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=192 slot=41 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 563 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=41 mode=1 key:0x26f1141:	39	24	44	10	10
+Hardware assisted breakpoint 564 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=41 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 565 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=193 slot=42 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 566 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=42 mode=1 key:0x26f1146:	24	44	67	1	1
+Hardware assisted breakpoint 567 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=42 mode=1 appended=1 total=1 ids: 25518
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25518:1
+Hardware assisted breakpoint 568 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=1
+OLD_PAH0_SPLIT_ENTER n=194 slot=44 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 569 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=44 mode=1 key:0x26f114b:	44	67	63	10	10
+Hardware assisted breakpoint 570 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=44 mode=1 appended=7 total=2 ids: 40496 40505
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 40496:3 40505:4
+Hardware assisted breakpoint 571 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=195 slot=45 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 572 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=45 mode=1 key:0x26f1150:	67	63	53	2	2
+Hardware assisted breakpoint 573 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=45 mode=1 appended=24 total=2 ids: 47659 47659
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47659:12
+Hardware assisted breakpoint 574 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=12
+OLD_PAH0_SPLIT_ENTER n=196 slot=46 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 575 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=46 mode=1 key:0x26f1424:	63	53	39	20	20
+Hardware assisted breakpoint 576 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=46 mode=1 appended=38 total=5 ids: 5588 5589 5590 5591 5618
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 5588:3 5589:4 5590:12 5591:10 5618:9
+Hardware assisted breakpoint 577 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=38
+OLD_PAH0_SPLIT_ENTER n=197 slot=47 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 578 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=47 mode=1 key:0x26f1429:	53	39	30	1	1
+Hardware assisted breakpoint 579 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=47 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 580 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=198 slot=48 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 581 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=48 mode=1 key:0x26f142e:	39	30	20	10	10
+Hardware assisted breakpoint 582 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=48 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 583 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=199 slot=49 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 584 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=49 mode=1 key:0x26f1433:	30	20	53	2	2
+Hardware assisted breakpoint 585 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=49 mode=1 appended=44 total=20 ids: 707 708 709 707 708 709 889 890 891 892 893 894 895 889 890 891 892 893 894 895
+OLD_PAH0_METRIC_ENTRY count=10 ids_weights: 707:1 708:1 709:1 889:4 890:1 891:3 892:6 893:3 894:1 895:1
+Hardware assisted breakpoint 586 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=200 slot=50 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 587 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=50 mode=1 key:0x26f1720:	20	53	39	20	20
+Hardware assisted breakpoint 588 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=50 mode=1 appended=17 total=6 ids: 22919 22920 23397 22923 22924 22925
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 22919:1 22920:4 22923:2 22924:1 22925:7 23397:2
+Hardware assisted breakpoint 589 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=201 slot=51 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 590 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=51 mode=1 key:0x26f1725:	53	39	30	2	2
+Hardware assisted breakpoint 591 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=51 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 592 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=202 slot=52 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 593 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=52 mode=1 key:0x26f1a1c:	39	30	30	21	21
+Hardware assisted breakpoint 594 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=52 mode=1 appended=7 total=6 ids: 17107 17108 17109 17110 17111 17112
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17107:1 17108:1 17109:1 17110:1 17111:1 17112:2
+Hardware assisted breakpoint 595 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=203 slot=53 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 596 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=53 mode=1 key:0x26f1a21:	30	30	20	10	10
+Hardware assisted breakpoint 597 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=53 mode=1 appended=18 total=6 ids: 17121 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 17121:4 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 598 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=204 slot=54 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 599 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=54 mode=1 key:0x26f1a26:	30	20	53	2	2
+Hardware assisted breakpoint 600 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=54 mode=1 appended=44 total=20 ids: 707 708 709 707 708 709 889 890 891 892 893 894 895 889 890 891 892 893 894 895
+OLD_PAH0_METRIC_ENTRY count=10 ids_weights: 707:1 708:1 709:1 889:4 890:1 891:3 892:6 893:3 894:1 895:1
+Hardware assisted breakpoint 601 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=22
+OLD_PAH0_SPLIT_ENTER n=205 slot=55 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 602 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=55 mode=1 key:0x26f2014:	20	53	39	20	20
+Hardware assisted breakpoint 603 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=55 mode=1 appended=17 total=6 ids: 22919 22920 23397 22923 22924 22925
+OLD_PAH0_METRIC_ENTRY count=6 ids_weights: 22919:1 22920:4 22923:2 22924:1 22925:7 23397:2
+Hardware assisted breakpoint 604 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=17
+OLD_PAH0_SPLIT_ENTER n=206 slot=56 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 605 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=56 mode=1 key:0x26f2019:	53	39	2	1	1
+Hardware assisted breakpoint 606 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=56 mode=1 appended=5 total=2 ids: 42490 42493
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 42490:4 42493:1
+Hardware assisted breakpoint 607 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=5
+OLD_PAH0_SPLIT_ENTER n=207 slot=57 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 608 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=57 mode=1 key:0x26f201e:	39	2	54	10	10
+Hardware assisted breakpoint 609 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=57 mode=1 appended=37 total=2 ids: 16143 16153
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 16143:33 16153:4
+Hardware assisted breakpoint 610 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=37
+OLD_PAH0_SPLIT_ENTER n=208 slot=58 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 611 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=58 mode=1 key:0x26f2023:	2	54	48	1	1
+Hardware assisted breakpoint 612 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=58 mode=1 appended=8 total=3 ids: 5973 5974 5975
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 5973:5 5974:2 5975:1
+Hardware assisted breakpoint 613 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=8
+OLD_PAH0_SPLIT_ENTER n=209 slot=59 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 614 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=59 mode=1 key:0x26f2028:	54	48	19	11	11
+Hardware assisted breakpoint 615 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=59 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=210 slot=61 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 616 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=61 mode=1 key:0x26f202d:	48	19	39	10	10
+Hardware assisted breakpoint 617 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=61 mode=1 appended=201 total=19 ids: 368 369 370 371 372 373 374 403 404 405 406 407 408 409 410 411 412 413 414
+OLD_PAH0_METRIC_ENTRY count=19 ids_weights: 368:2 369:5 370:15 371:12 372:1 373:2 374:72 403:13 404:3 405:6 406:2 407:4 408:1 409:8 410:5 411:4 412:8 413:33 414:5
+Hardware assisted breakpoint 618 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=201
+OLD_PAH0_SPLIT_ENTER n=211 slot=62 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 619 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=62 mode=1 key:0x26f2032:	19	39	39	1	1
+Hardware assisted breakpoint 620 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=62 mode=1 appended=20 total=3 ids: 20809 20810 20814
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 20809:6 20810:9 20814:5
+Hardware assisted breakpoint 621 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=212 slot=63 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 622 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=63 mode=1 key:0x26f2037:	39	39	65	12	12
+Hardware assisted breakpoint 623 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=63 mode=1 appended=1 total=1 ids: 17441
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 17441:1
+Hardware assisted breakpoint 624 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=1
+OLD_PAH0_SPLIT_ENTER n=213 slot=65 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 625 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=65 mode=1 key:0x26f2310:	39	65	39	20	20
+Hardware assisted breakpoint 626 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=65 mode=1 appended=33 total=2 ids: 9370 9394
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 9370:28 9394:5
+Hardware assisted breakpoint 627 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=33
+OLD_PAH0_SPLIT_ENTER n=214 slot=66 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 628 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=66 mode=1 key:0x26f2315:	65	39	76	1	1
+Hardware assisted breakpoint 629 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=66 mode=1 appended=6 total=2 ids: 47110 47110
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 47110:3
+Hardware assisted breakpoint 630 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=215 slot=67 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 631 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=67 mode=1 key:0x26f231a:	39	76	39	10	10
+Hardware assisted breakpoint 632 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=67 mode=1 appended=34 total=5 ids: 11087 8123 11099 8124 8125
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 8123:1 8124:1 8125:1 11087:24 11099:7
+Hardware assisted breakpoint 633 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=34
+OLD_PAH0_SPLIT_ENTER n=216 slot=68 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 634 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=68 mode=1 key:0x26f231f:	76	39	24	1	1
+Hardware assisted breakpoint 635 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=68 mode=1 appended=18 total=2 ids: 50803 50785
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 50785:4 50803:14
+Hardware assisted breakpoint 636 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=18
+OLD_PAH0_SPLIT_ENTER n=217 slot=69 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 637 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=69 mode=1 key:0x26f2324:	39	24	44	10	10
+Hardware assisted breakpoint 638 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=69 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 639 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=218 slot=70 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 640 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=70 mode=1 key:0x26f2329:	24	44	24	1	1
+Hardware assisted breakpoint 641 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=70 mode=1 appended=20 total=4 ids: 25475 25447 25448 25449
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 25447:2 25448:2 25449:3 25475:13
+Hardware assisted breakpoint 642 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=20
+OLD_PAH0_SPLIT_ENTER n=219 slot=71 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 643 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=71 mode=1 key:0x26f232e:	44	24	43	10	10
+Hardware assisted breakpoint 644 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=71 mode=1 appended=7 total=4 ids: 39426 39427 39428 39429
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 39426:3 39427:1 39428:2 39429:1
+Hardware assisted breakpoint 645 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=220 slot=72 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 646 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=72 mode=1 key:0x26f2333:	24	43	53	2	2
+Hardware assisted breakpoint 647 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=72 mode=1 appended=8 total=2 ids: 25393 25393
+OLD_PAH0_METRIC_ENTRY count=1 ids_weights: 25393:4
+Hardware assisted breakpoint 648 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=4
+OLD_PAH0_SPLIT_ENTER n=221 slot=73 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 649 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=73 mode=1 key:0x26f260c:	43	53	39	20	20
+Hardware assisted breakpoint 650 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=73 mode=1 appended=13 total=3 ids: 37472 37473 37479
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 37472:4 37473:3 37479:6
+Hardware assisted breakpoint 651 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=13
+OLD_PAH0_SPLIT_ENTER n=222 slot=74 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 652 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=74 mode=1 key:0x26f2611:	53	39	30	1	1
+Hardware assisted breakpoint 653 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=74 mode=1 appended=14 total=3 ids: 42495 42496 42497
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 42495:11 42496:2 42497:1
+Hardware assisted breakpoint 654 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=223 slot=75 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 655 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=75 mode=1 key:0x26f2616:	39	30	20	10	10
+Hardware assisted breakpoint 656 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=75 mode=1 appended=14 total=5 ids: 17122 17131 17132 17133 17134
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 17122:6 17131:2 17132:2 17133:2 17134:2
+Hardware assisted breakpoint 657 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=14
+OLD_PAH0_SPLIT_ENTER n=224 slot=76 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 658 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=76 mode=1 key:0x26f261b:	30	20	48	1	1
+Hardware assisted breakpoint 659 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=76 mode=1 appended=7 total=2 ids: 875 878
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 875:4 878:3
+Hardware assisted breakpoint 660 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=225 slot=77 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 661 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=77 mode=1 key:0x26f2620:	20	48	24	11	11
+Hardware assisted breakpoint 662 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=77 mode=1 appended=0 total=0 ids:
+OLD_PAH0_SPLIT_ENTER n=226 slot=79 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 663 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=79 mode=1 key:0x26f2625:	48	24	45	10	10
+Hardware assisted breakpoint 664 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=79 mode=1 appended=7 total=2 ids: 14190 14197
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 14190:4 14197:3
+Hardware assisted breakpoint 665 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=7
+OLD_PAH0_SPLIT_ENTER n=227 slot=80 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 666 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=80 mode=1 key:0x26f262a:	24	45	39	1	1
+Hardware assisted breakpoint 667 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=80 mode=1 appended=23 total=5 ids: 25581 25582 25583 25584 25585
+OLD_PAH0_METRIC_ENTRY count=5 ids_weights: 25581:1 25582:16 25583:2 25584:3 25585:1
+Hardware assisted breakpoint 668 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=23
+OLD_PAH0_SPLIT_ENTER n=228 slot=81 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 669 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=81 mode=1 key:0x26f262f:	45	39	24	11	11
+Hardware assisted breakpoint 670 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=81 mode=1 appended=3 total=3 ids: 41408 39922 39923
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 39922:1 39923:1 41408:1
+Hardware assisted breakpoint 671 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+OLD_PAH0_SPLIT_ENTER n=229 slot=82 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 672 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=82 mode=1 key:0x26f2634:	39	24	44	10	10
+Hardware assisted breakpoint 673 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=82 mode=1 appended=36 total=4 ids: 16868 16872 16873 16874
+OLD_PAH0_METRIC_ENTRY count=4 ids_weights: 16868:29 16872:1 16873:4 16874:2
+Hardware assisted breakpoint 674 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=36
+OLD_PAH0_SPLIT_ENTER n=230 slot=83 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 675 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=83 mode=1 key:0x26f2639:	24	44	39	1	1
+Hardware assisted breakpoint 676 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=83 mode=1 appended=6 total=3 ids: 25482 25483 25484
+OLD_PAH0_METRIC_ENTRY count=3 ids_weights: 25482:4 25483:1 25484:1
+Hardware assisted breakpoint 677 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=6
+OLD_PAH0_SPLIT_ENTER n=231 slot=84 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 678 at 0x1001e621
+OLD_PAH0_CLASS_LOOKUP slot=84 mode=1 key:0x26f263e:	44	39	90	14	14
+Hardware assisted breakpoint 679 at 0x1001e012
+OLD_PAH0_CLASS_RETURN slot=84 mode=1 appended=3 total=2 ids: 39985 39986
+OLD_PAH0_METRIC_ENTRY count=2 ids_weights: 39985:2 39986:1
+Hardware assisted breakpoint 680 at 0x1001e0fa
+OLD_PAH0_METRIC_RETURN sum=3
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

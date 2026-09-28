@@ -1,0 +1,148 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /probe/probe-original-kate-2006.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /probe/runtime-original-control-2006-parser.log.
+Copying debug output to /probe/runtime-original-control-2006-parser.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x408187
+Wine-gdb> >>>> > > > > > >  >  >  >  >  >   >   >   >   >   >   >    >    >    >    >    >   >   >  > > >>>Wine-gdb> Continuing.
+DLL_LOADED_BEFORE_FIRST_API_CALL
+Breakpoint 2 at 0x100546d0
+LEGACY_TEXT_PARSE_ENTRY n=1 source=0xbe8040:	"Hello from the VoiceText Stage 1 runtime check.\n"
+state=0xbb0ac0 result_buffer=0x1a014f8
+Temporary breakpoint 3 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=1 status=1 consumed=47 records=8
+LEGACY_RECORD n=1 i=0 span=0..5
+LEGACY_RECORD n=1 i=1 span=6..10
+LEGACY_RECORD n=1 i=2 span=11..14
+LEGACY_RECORD n=1 i=3 span=15..24
+LEGACY_RECORD n=1 i=4 span=25..30
+LEGACY_RECORD n=1 i=5 span=31..32
+LEGACY_RECORD n=1 i=6 span=33..40
+LEGACY_RECORD n=1 i=7 span=41..46
+LEGACY_TEXT_PARSE_ENTRY n=2 source=0xbe806f:	"\n"
+state=0xbb0ac0 result_buffer=0x1a014f8
+Temporary breakpoint 4 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=2 status=0 consumed=1 records=0
+LEGACY_TEXT_PARSE_ENTRY n=3 source=0xbe8070:	""
+state=0xbb0ac0 result_buffer=0x1a014f8
+Temporary breakpoint 5 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=3 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=4 source=0xbe8070:	""
+state=0xbb0ac0 result_buffer=0x1a014f8
+Temporary breakpoint 6 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=4 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=5 source=0xbe0070:	"The temperature is 72 degrees at 5 PM.\n"
+state=0xbe8fc0 result_buffer=0x1a010d0
+Temporary breakpoint 7 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=5 status=1 consumed=38 records=9
+LEGACY_RECORD n=5 i=0 span=0..3
+LEGACY_RECORD n=5 i=1 span=4..15
+LEGACY_RECORD n=5 i=2 span=16..18
+LEGACY_RECORD n=5 i=3 span=19..21
+LEGACY_RECORD n=5 i=4 span=19..21
+LEGACY_RECORD n=5 i=5 span=22..29
+LEGACY_RECORD n=5 i=6 span=30..32
+LEGACY_RECORD n=5 i=7 span=33..34
+LEGACY_RECORD n=5 i=8 span=35..37
+LEGACY_TEXT_PARSE_ENTRY n=6 source=0xbe0096:	"\n"
+state=0xbe8fc0 result_buffer=0x1a010d0
+Temporary breakpoint 8 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=6 status=0 consumed=1 records=0
+LEGACY_TEXT_PARSE_ENTRY n=7 source=0xbe0097:	""
+state=0xbe8fc0 result_buffer=0x1a010d0
+Temporary breakpoint 9 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=7 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=8 source=0xbe0097:	""
+state=0xbe8fc0 result_buffer=0x1a010d0
+Temporary breakpoint 10 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=8 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=9 source=0xbe8070:	"Meet me at 123 Main St. in Albany, NY.\n"
+state=0xbe0fc0 result_buffer=0x1a010d0
+Temporary breakpoint 11 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=9 status=1 consumed=38 records=12
+LEGACY_RECORD n=9 i=0 span=0..4
+LEGACY_RECORD n=9 i=1 span=5..7
+LEGACY_RECORD n=9 i=2 span=8..10
+LEGACY_RECORD n=9 i=3 span=11..14
+LEGACY_RECORD n=9 i=4 span=11..14
+LEGACY_RECORD n=9 i=5 span=11..14
+LEGACY_RECORD n=9 i=6 span=15..19
+LEGACY_RECORD n=9 i=7 span=20..22
+LEGACY_RECORD n=9 i=8 span=24..26
+LEGACY_RECORD n=9 i=9 span=27..33
+LEGACY_RECORD n=9 i=10 span=35..37
+LEGACY_RECORD n=9 i=11 span=35..37
+LEGACY_TEXT_PARSE_ENTRY n=10 source=0xbe8096:	"\n"
+state=0xbe0fc0 result_buffer=0x1a010d0
+Temporary breakpoint 12 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=10 status=0 consumed=1 records=0
+LEGACY_TEXT_PARSE_ENTRY n=11 source=0xbe8097:	""
+state=0xbe0fc0 result_buffer=0x1a010d0
+Temporary breakpoint 13 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=11 status=0 consumed=0 records=0
+LEGACY_TEXT_PARSE_ENTRY n=12 source=0xbe8097:	""
+state=0xbe0fc0 result_buffer=0x1a010d0
+Temporary breakpoint 14 at 0x1001c1b4
+LEGACY_TEXT_PARSE_RETURN n=12 status=0 consumed=0 records=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\probe\probe-original-kate-2006.exe'/00000000 @004013E0 (204288<1830>)
+0114:0118: create thread I @004013E0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C20000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BA0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL C:\windows\system32\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: unload DLL @10000000
+00000114:00000118: unload DLL @779C0000
+00000114:00000118: unload DLL @7AE40000
+00000114:00000118: unload DLL @77940000
+00000114:00000118: unload DLL @77970000
+00000114:00000118: unload DLL @78C20000
+00000114:00000118: unload DLL @7A9F0000
+00000114:00000118: unload DLL @79E40000
+00000114:00000118: unload DLL @7A890000
+00000114:00000118: unload DLL @79EA0000
+00000114:00000118: unload DLL @78BA0000
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

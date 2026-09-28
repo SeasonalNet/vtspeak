@@ -1,0 +1,43 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cff0
+Wine-gdb> >>>>>>> > > > > > > > > >  >  >  >  >   >   >   >   >   >   >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_NEIGHBOR_TRACE_READY
+Hardware assisted breakpoint 3 at 0x1001e6d4
+LEGACY_NEIGHBOR_RETURN call=1 position=0 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=0 index=0 unit=272822 score=0 predecessor_index=0
+Hardware assisted breakpoint 4 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=2 position=1 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=1 index=0 unit=272823 score=0 predecessor_index=0 predecessor_unit=272822
+Hardware assisted breakpoint 5 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=3 position=2 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=2 index=0 unit=272824 score=0 predecessor_index=0 predecessor_unit=272823
+Hardware assisted breakpoint 6 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=4 position=3 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=3 index=0 unit=272825 score=0 predecessor_index=0 predecessor_unit=272824
+Hardware assisted breakpoint 7 at 0x1001e6d4
+LEGACY_NEIGHBOR_RETURN call=5 position=0 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=0 index=0 unit=272822 score=0 predecessor_index=0
+Hardware assisted breakpoint 8 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=6 position=1 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=1 index=0 unit=272823 score=0 predecessor_index=0 predecessor_unit=272822
+Hardware assisted breakpoint 9 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=7 position=2 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=2 index=0 unit=272824 score=0 predecessor_index=0 predecessor_unit=272823
+Hardware assisted breakpoint 10 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=8 position=3 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=3 index=0 unit=272825 score=0 predecessor_index=0 predecessor_unit=272824
+Hardware assisted breakpoint 11 at 0x1001e6d4
+LEGACY_NEIGHBOR_RETURN call=9 position=0 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=0 index=0 unit=272822 score=0 predecessor_index=0
+Hardware assisted breakpoint 12 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=10 position=1 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=1 index=0 unit=272823 score=0 predecessor_index=0 predecessor_unit=272822
+Hardware assisted breakpoint 13 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=11 position=2 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=2 index=0 unit=272824 score=0 predecessor_index=0 predecessor_unit=272823
+Hardware assisted breakpoint 14 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=12 position=3 retained=1
+LEGACY_NEIGHBOR_CANDIDATE position=3 index=0 unit=272825 score=0 predecessor_index=0 predecessor_unit=272824
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

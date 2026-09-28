@@ -1,0 +1,6 @@
+INVALID_SWITCH input=6 first_ax=0 occupancy=02
+INVALID_SWITCH input=6 different_base_ax=0 occupancy=02
+INVALID_SWITCH after_different_base slot0=4294967295/0 slot1=1/508121688 slot2=4294967295/0 slot3=4294967295/0 slot4=4294967295/0 slot5=4294967295/0
+INVALID_SWITCH recovery_james_ax=0 occupancy=12
+INVALID_SWITCH after_recovery_james slot0=4294967295/0 slot1=1/508121688 slot2=4294967295/0 slot3=4294967295/0 slot4=1/253797273 slot5=4294967295/0
+PROCESS_STATUS slot=6 status=0

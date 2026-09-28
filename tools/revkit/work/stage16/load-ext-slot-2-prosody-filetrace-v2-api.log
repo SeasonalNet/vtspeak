@@ -1,0 +1,125 @@
+WINE_PROCESS_STATUS=0
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/hashparams_emb" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/hashparams_emb",0063EE7C,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/hashparams_emb" 520 0063EBF8 00000000)
+0024:trace:file:NtCreateFile handle=0x63ee78 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\hashparams_emb" objattr=00000042 root=(nil) sec=(nil) io=0x63ee84 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\hashparams_emb" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/hashparams_emb"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/engttsdict_emb" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/engttsdict_emb",0063F094,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/engttsdict_emb" 520 0063EE10 00000000)
+0024:trace:file:NtCreateFile handle=0x63f090 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\engttsdict_emb" objattr=00000042 root=(nil) sec=(nil) io=0x63f09c alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\engttsdict_emb" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/engttsdict_emb"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/hashidx_emb" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/hashidx_emb",0063F090,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/hashidx_emb" 520 0063EE0C 00000000)
+0024:trace:file:NtCreateFile handle=0x63f08c access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\hashidx_emb" objattr=00000042 root=(nil) sec=(nil) io=0x63f098 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\hashidx_emb" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/hashidx_emb"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/hashcont_emb" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/hashcont_emb",0063F090,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/hashcont_emb" 520 0063EE0C 00000000)
+0024:trace:file:NtCreateFile handle=0x63f08c access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\hashcont_emb" objattr=00000042 root=(nil) sec=(nil) io=0x63f098 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\hashcont_emb" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/hashcont_emb"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/exceptdict" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/exceptdict",0063F378,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/exceptdict" 520 0063F0F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f374 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\exceptdict" objattr=00000042 root=(nil) sec=(nil) io=0x63f380 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\exceptdict" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/exceptdict"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/chc_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/chc_sort.txt2",0063F330,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/chc_sort.txt2" 520 0063F0AC 00000000)
+0024:trace:file:NtCreateFile handle=0x63f32c access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\chc_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f338 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\chc_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/chc_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/wab.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/wab.txt2",0063F334,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/wab.txt2" 520 0063F0B0 00000000)
+0024:trace:file:NtCreateFile handle=0x63f330 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\wab.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f33c alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\wab.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/wab.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/atmt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/atmt.tree3",0063F368,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/atmt.tree3" 520 0063F0E4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f364 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f370 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\atmt.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/atmt.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/poly.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/poly.tree3",0063F57C,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/poly.tree3" 520 0063F2F8 00000000)
+0024:trace:file:NtCreateFile handle=0x63f578 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f584 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\poly.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/poly.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/engbi.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/engbi.tree3",0063F6BC,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/engbi.tree3" 520 0063F438 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6b8 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6c4 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\engbi.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/engbi.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/hashparams_eng_tpp" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/hashparams_eng_tpp",0063EEA0,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/hashparams_eng_tpp" 520 0063EC1C 00000000)
+0024:trace:file:NtCreateFile handle=0x63ee9c access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\hashparams_eng_tpp" objattr=00000042 root=(nil) sec=(nil) io=0x63eea8 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\hashparams_eng_tpp" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/hashparams_eng_tpp"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/tppdict_eng" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/tppdict_eng",0063F0B8,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/tppdict_eng" 520 0063EE34 00000000)
+0024:trace:file:NtCreateFile handle=0x63f0b4 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\tppdict_eng" objattr=00000042 root=(nil) sec=(nil) io=0x63f0c0 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\tppdict_eng" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/tppdict_eng"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/hashidx_eng_tpp" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/hashidx_eng_tpp",0063F0B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/hashidx_eng_tpp" 520 0063EE30 00000000)
+0024:trace:file:NtCreateFile handle=0x63f0b0 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\hashidx_eng_tpp" objattr=00000042 root=(nil) sec=(nil) io=0x63f0bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\hashidx_eng_tpp" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/hashidx_eng_tpp"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/hashcont_eng_tpp" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/hashcont_eng_tpp",0063F0B4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/hashcont_eng_tpp" 520 0063EE30 00000000)
+0024:trace:file:NtCreateFile handle=0x63f0b0 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\hashcont_eng_tpp" objattr=00000042 root=(nil) sec=(nil) io=0x63f0bc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\hashcont_eng_tpp" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/hashcont_eng_tpp"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/streeta_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/streeta_sort.txt2",0063F478,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/streeta_sort.txt2" 520 0063F1F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f474 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\streeta_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f480 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\streeta_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/streeta_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/streetf_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/streetf_sort.txt2",0063F478,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/streetf_sort.txt2" 520 0063F1F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f474 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\streetf_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f480 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\streetf_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/streetf_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/citya_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/citya_sort.txt2",0063F478,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/citya_sort.txt2" 520 0063F1F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f474 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\citya_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f480 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\citya_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/citya_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/abbrh_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/abbrh_sort.txt2",0063F478,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/abbrh_sort.txt2" 520 0063F1F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f474 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\abbrh_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f480 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\abbrh_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/abbrh_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/abbrt_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/abbrt_sort.txt2",0063F478,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/abbrt_sort.txt2" 520 0063F1F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f474 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\abbrt_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f480 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\abbrt_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/abbrt_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/abbrc_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/abbrc_sort.txt2",0063F478,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/abbrc_sort.txt2" 520 0063F1F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f474 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\abbrc_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f480 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\abbrc_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/abbrc_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/sbdw_sort.txt2" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/sbdw_sort.txt2",0063F478,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/sbdw_sort.txt2" 520 0063F1F4 00000000)
+0024:trace:file:NtCreateFile handle=0x63f474 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\sbdw_sort.txt2" objattr=00000042 root=(nil) sec=(nil) io=0x63f480 alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\sbdw_sort.txt2" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/sbdw_sort.txt2"
+0024:trace:file:CreateFileW L"Z:/work/data-common/dict-eng/sbd.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/dict-eng/sbd.tree3",0063F6C4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/dict-eng/sbd.tree3" 520 0063F440 00000000)
+0024:trace:file:NtCreateFile handle=0x63f6c0 access=80100080 name=L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f6cc alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\dict-eng\\sbd.tree3" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/dict-eng/sbd.tree3"
+0024:trace:file:CreateFileW L"Z:/work/data-common/userdict/userdict_eng.csv" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-common/userdict/userdict_eng.csv",0063F344,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-common/userdict/userdict_eng.csv" 520 0063F0C0 00000000)
+0024:trace:file:NtCreateFile handle=0x63f340 access=80100080 name=L"\\??\\Z:\\work\\data-common\\userdict\\userdict_eng.csv" objattr=00000042 root=(nil) sec=(nil) io=0x63f34c alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"\\??\\Z:\\work\\data-common\\userdict\\userdict_eng.csv" -> "/work/stage2-copy/wineprefix/dosdevices/z:/work/data-common/userdict/userdict_eng.csv"
+0024:trace:file:CreateFileW L"Z:/work/data-em001/M16/ttsdata/tree3/pitch/nbt.tree3" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80
+0024:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"Z:/work/data-em001/M16/ttsdata/tree3/pitch/nbt.tree3",0063F8A4,00000000,00000000)
+0024:trace:file:RtlGetFullPathName_U (L"Z:/work/data-em001/M16/ttsdata/tree3/pitch/nbt.tree3" 520 0063F620 00000000)
+0024:trace:file:NtCreateFile handle=0x63f8a0 access=80100080 name=L"\\??\\Z:\\work\\data-em001\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" objattr=00000042 root=(nil) sec=(nil) io=0x63f8ac alloc_size=(nil) attr=00000080 sharing=00000003 disp=1 options=00000060 ea=(nil).0x00000000
+0024:trace:file:nt_to_unix_file_name_no_root L"work\\data-em001\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" not found in "/work/stage2-copy/wineprefix/dosdevices/z:"
+0024:warn:file:NtCreateFile L"\\??\\Z:\\work\\data-em001\\M16\\ttsdata\\tree3\\pitch\\nbt.tree3" not found (c000003a)
+0024:warn:file:CreateFileW Unable to create file L"Z:/work/data-em001/M16/ttsdata/tree3/pitch/nbt.tree3" (status c000003a)
+SLOT input=2 load_ax=8 occupancy=00
+SLOT sizes slot0=4294967295/0 slot1=4294967295/0 slot2=4294967295/0 slot3=4294967295/0 slot4=4294967295/0 slot5=4294967295/0

@@ -1,0 +1,10 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/whole-target-keys-context-tail-map-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10018770
+Wine-gdb> >>> > > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HELLO_WHOLE_TARGET slot=0 mode=1 caller=0x10024119:0x24e0752:	90	90	34	23	43	160	0
+HELLO_WHOLE_TARGET slot=1 mode=1 caller=0x10024119:0x24e0759:	90	34	23	43	48	32	0
+HELLO_WHOLE_TARGET slot=3 mode=1 caller=0x10024119:0x24e0760:	34	23	43	48	90	0	0
+HELLO_WHOLE_TARGET slot=4 mode=1 caller=0x10024119:0x24e0767:	23	43	48	90	90	69	0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

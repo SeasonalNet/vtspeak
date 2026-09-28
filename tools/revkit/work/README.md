@@ -31,6 +31,9 @@ state, or complete local copies of proprietary inputs:
 
 - `home/`: Ghidra preferences, caches, and shell history.
 - `projects/`: Ghidra project databases and caches.
+- `corpus-parity/kate-msi/`: the extracted original Kate MSI package;
+  `corpus-parity/ghidra/` and
+  `corpus-parity/full-analysis-2006/ghidra/`: Ghidra project databases.
 - `data-common` and `data-paul`: container bind-mount links.
 - `stage1-copy/` and `stage1-run/`: bulk runtime copies and very large raw
   syscall traces.

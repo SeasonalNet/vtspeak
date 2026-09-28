@@ -1,0 +1,38 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/split-threshold-slot5-suffix-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>> > > > > > > > > > > >>>> > >  >  >  >  > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100242a0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x100249bb
+SLOT5_TRACE_SPLIT_ENTER slot=0
+Temporary breakpoint 7 at 0x10024808
+SLOT5_TRACE_SPLIT_RETURN slot=0 accepted=0
+SLOT5_TRACE_FALLBACK_ENTER slot=0
+Temporary breakpoint 8 at 0x1002481e
+SLOT5_TRACE_FALLBACK_RETURN slot=0 positions=2
+SLOT5_TRACE_SPLIT_ENTER slot=2
+Temporary breakpoint 9 at 0x10024808
+SLOT5_TRACE_SPLIT_RETURN slot=2 accepted=0
+SLOT5_TRACE_FALLBACK_ENTER slot=2
+Temporary breakpoint 10 at 0x1002481e
+SLOT5_TRACE_FALLBACK_RETURN slot=2 positions=2
+SLOT5_TRACE_SPLIT_ENTER slot=4
+Temporary breakpoint 11 at 0x10024808
+SLOT5_TRACE_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 9147:25
+Temporary breakpoint 12 at 0x10024271
+SLOT5_TRACE_METRIC_RETURN sum=25
+SLOT5_TRACE_SPLIT_RETURN slot=4 accepted=1
+PATCH_SLOT5_SIGNATURE_BEFORE:0x24e0767:	23	43	48	90	90	69	0
+PATCH_SLOT5_SIGNATURE_DURING:0x24e0767:	23	43	48	90	90	4	0
+SLOT5_TRACE_SPLIT_ENTER slot=5
+Temporary breakpoint 13 at 0x10024808
+SLOT5_TRACE_METRIC_ENTRY caller=0x10024271 count=2 ids_weights: 18856:6 18854:4
+Temporary breakpoint 14 at 0x10024271
+SLOT5_TRACE_METRIC_RETURN sum=10
+PATCH_SLOT5_SIGNATURE_RESTORED:0x24e0767:	23	43	48	90	90	69	0
+SLOT5_TRACE_SPLIT_RETURN slot=5 accepted=1
+SLOT5_TRACE_POSITION_BUILDER_RETURN positions=6
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

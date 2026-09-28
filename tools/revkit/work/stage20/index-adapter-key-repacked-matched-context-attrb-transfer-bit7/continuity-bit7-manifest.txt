@@ -1,0 +1,10 @@
+variant=matched-context attr_40 transfer plus legacy attr_48 to signature byte 6 bit 7
+base=tools/revkit/work/stage20/index-adapter-key-repacked-matched-context-attrb-transfer
+legacy_source=tools/revkit/work/stage19/data-kate-copy/M16/mc_idx_tbl/unit-gen2.idx
+modified_global_units=272822,272823,272824
+row=92827 legacy_attr_48=01 signature_byte6=00->80
+row=92828 legacy_attr_48=01 signature_byte6=5a->da
+row=92829 legacy_attr_48=01 signature_byte6=27->a7
+base_sha256=17fed97418fd6eef6d3f3aa9a3cb41110051a45bb9a511ff8fc150f4a24a7b7b
+variant_sha256=f0c98ebcc2f16a34dac5b64d781283223cb9d7b08bf2889d95b3e44c781740fb
+validated_units=98133

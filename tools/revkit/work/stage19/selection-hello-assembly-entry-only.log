@@ -1,0 +1,5 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1002bd90
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Continuing.
+ASSEMBLY_ENTRY_ONLY call=1 state=0x24e0020 scratch=0x14bf310
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

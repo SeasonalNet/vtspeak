@@ -13,12 +13,15 @@ The DLL copy has three guarded byte changes:
 
 The supplied 2013 DLL does not contain the old recursive tree reader. The
 converter therefore parses Kate's recursive tree2 data and serializes
-equivalent indexed tree3 payloads into the copied package's `tree2/` directory.
-It checks 128 deterministic signed feature vectors per non-leaf tree against
-the legacy parser. Four common dictionary tree files are copied under the
-requested `.tree2` suffix in a local overlay. The eight pitch files whose
-legacy parser sees a root leaf and an opaque suffix are converted from that
-root only; their suffixes remain unresolved.
+candidate indexed tree3 payloads into the copied package's `tree2/` directory.
+Its 128 deterministic signed feature checks per non-leaf tree compare one
+scalar result per lookup. They do not validate the legacy multi-output tree
+contract. Four common dictionary tree files are copied under the
+requested `.tree2` suffix in a local overlay. The generic converter also
+misreads four special vector pitch files (`nbf`, `bf`, `qbf`, and `sbf`) as
+one-leaf scalar trees: the old engine uses a separate loader for these files,
+and their byte 4 is a vector width. The converted Stage 19 package therefore
+does not preserve their old decision trees or vector outputs.
 
 Build the disposable artifacts and run the Wine probe from the repository
 root:
@@ -49,11 +52,11 @@ the versioned-index adapter below is the working path.
 `convert_legacy_indexes.py` writes a disposable index overlay for the current
 versioned reader. It preserves each legacy 19-byte unit record, changes the
 version string from `ver.2005` to `ver.2013`, and inserts one zero-filled
-column after the first 1-byte and 7-byte column groups. The legacy feature
-tail is column-major; inserting a byte into each 20-byte per-unit slice
-corrupted the metric groups and caused the scorer to dereference an invalid
-distance row. The corrected converter inserts a full unit-count-sized column
-at the group boundary. It checks every masked word in all three feature
+unit-count-sized block after the first `N`-byte attribute and `7N`-byte
+signature blocks. Inserting one byte into each 20-byte slice instead split
+those bulk-read regions and caused the scorer to dereference an invalid
+distance row. The corrected converter inserts a full block at the boundary.
+It checks every masked word in all three feature
 groups against the 1,024-row `cepdist.tbl` dimension. All five indexes retain
 their unit counts and 19-byte record stride and pass the current structural
 inspector. This is a structurally valid mapping, but its byte-to-column
@@ -88,14 +91,16 @@ captured WAVs, per-fixture runtime logs, `runtime-matrix.tsv`, and fault trace
 are retained beside this README. The run scripts back up and restore Stage 5
 input/output fixtures.
 
-### Index-column mapping and tree-suffix controls
+### Index-column mapping and suffix append control
 
 Two controls now isolate parts of the remaining mismatch. First, a disposable
-variant appends the original opaque suffixes to the four converted root-leaf
-pitch trees. The suffixes are 803, 19,931, 245, and 3,691 bytes. The standard
-reader produced byte-identical WAVs for all three fixtures with and without
-those suffixes. They therefore do not affect these tested synthesis paths.
-The captures and hashes are `runtime-suffix-{prose,numbers,address}.wav` and
+variant appends the unparsed source bytes to the four converted one-leaf pitch
+files. The appended byte counts are 803, 19,931, 245, and 3,691. The adapted
+2013 reader produced byte-identical WAVs for all three fixtures with and
+without these appended bytes. This only shows that the 2013 reader ignores
+bytes after the converted tree3 payload; it says nothing about how the 2006
+special loader interprets those bytes as part of its tree format. The captures
+and hashes are `runtime-suffix-{prose,numbers,address}.wav` and
 `runtime-suffix-matrix.tsv`. Recreate that comparison with:
 
 ```sh
@@ -241,8 +246,19 @@ requester's listening review rejects the output as intelligible Kate speech,
 so functional voice compatibility remains unresolved. The tree converter
 still serializes legacy recursive nodes into the standard reader's indexed
 layout under a `tree2/` directory; the standard DLL's native recursive tree2
-parser has not been restored. The inserted byte column's meaning and the
-eight root-leaf pitch files' opaque source suffixes also remain unresolved.
+parser has not been restored. A same-input Stage 20 trace shows identical
+results for four initial scalar lookups, but different outputs for paired
+vector lookups. The old special loader reads 12-value vector trees from the
+`nbf`, `bf`, `qbf`, and `sbf` resources; the generic Stage 19 parser instead
+misreads these files as one-scalar leaves and stops after 9 bytes. This is the
+specific gap in the default Stage 19 conversion. The inserted index byte's
+meaning and the remaining index feature semantics are still open. Stage 20
+now contains an experimental parser and converted overlay for the four vector
+pitch files; the default Stage 19 package remains the misparsed baseline. See
+the
+[Lead 5 comparison](../../../docs/reverse-engineering/lead5-kate-common-resource-comparison-2026-09-26.md#matched-ordinary-text-tree-trace).
+The reversible differential and preserved traces are documented in
+[Stage 20](../stage20/README.md).
 
 ### C-edge localization and runtime path trace
 
@@ -320,25 +336,53 @@ The trace WAVs, logs, results, equality-only matrix, and generated variant
 manifest are stored in this directory. The run scripts restore the Stage 5
 input and output fixtures after each probe.
 
-### Missing attribute-B fills
+### Legacy index layout and attribute-B probes
 
-The corrected adapter preserves Kate's legacy 20-byte feature tail and inserts
-zero as the 2013 reader's second one-byte attribute (`attr_b`). In the
-addressed class of unit-cost calls, the baseline trace sees target `attr_b=8`;
-candidate `attr_b=0` gives the same pair cost `0.4` for every traced unit. This
-made the missing field a concrete selection hypothesis to test.
+The native 2006 versioned-index reader `FUN_100123a0` reads the legacy tail as
+`attr_4c[N]`, `attr_48[N]`, `key[5N]`, `attr_40[N]`, then three metric groups
+totaling `12N`. The 2013 reader expects `attr_a[N]`, a unit-major
+`signature[7N]`, `attr_b[N]`, and metrics. The adapter that produced the
+original experimental outputs only inserted `N` zero bytes at offset `8N`;
+it did not transpose the old per-field arrays into per-unit signatures. The
+bytes presented as the 2013 signature therefore mix `attr_48`, all five key
+columns, and `attr_40`, then get chunked every seven bytes as if each chunk
+belonged to one unit.
 
-`make-index-attribute-variants.py` builds three overlays while preserving the
-legacy first byte, all seven signature bytes, the 19-byte unit records, and
-the feature groups except where a variant explicitly moves the final
-signature byte:
+The 2013 key builder `FUN_10016ea0` reads signature positions 1, 2, 3, 5,
+and 6 to make its five-byte key. A structurally constrained candidate is
+`[attr_48, key[0:3], attr_40, key[3:5]]`; this keeps the five old key bytes in
+all five consumed slots and the two remaining legacy bytes in slots 0 and 4.
+For `unit-etc` row 1286, this reconstructs
+`02 13 42 18 21 00 1e` from `attr_48=02`, key `13 42 18 00 1e`, and
+`attr_40=21`. This fit is strong structural evidence, not paired-generation
+confirmation.
+
+The original `signature-last-*` variants remain useful as historical
+experiments, but their names were misleading. Their `[7N:8N]` source window
+is the genuine legacy `attr_40` field. The copy variant duplicates that field
+into 2013 `attr_b` while leaving it in the un-repacked signature. The transfer
+variant copies it into `attr_b` and zeros its original location in that
+malformed signature. Neither variant repaired the seven-byte signature
+layout.
+
+The four fixture runs all exited 0 and wrote valid WAVs. `attr-a-copy` is
+byte-identical to zero-fill baseline for all three fixtures. The other
+variants produce:
 
 | Variant | Inserted `attr_b` | Signature handling |
 | --- | --- | --- |
 | `attr-a-copy` | Copy legacy column 00 | Preserve all seven bytes |
-| `signature-last-copy` | Copy legacy column 07 | Preserve all seven bytes |
-| `signature-last-transfer` | Copy legacy column 07 | Zero the final signature slot |
+| `signature-last-copy` | Copy legacy `attr_40` | Preserve its source bytes in the malformed signature |
+| `signature-last-transfer` | Copy legacy `attr_40` | Zero its source bytes in the malformed signature |
 | `constant-8` | Fill every unit with 8 | Preserve all seven bytes |
+
+The `signature-last-*` names reflect an earlier layout interpretation and are
+misleading. Their `[7N:8N]` source window is the old `attr_40` field. Because
+the adapter has not rebuilt a unit-major signature, that field sits at the
+end of the bulk `7N` region and is misread as part of the signature. Copying
+it to `attr_b` duplicates the field in the malformed view; transferring it
+zeros its original bytes. These runs do not test the corrected per-unit
+mapping described in Stage 20.
 
 The three-fixture runs all exited 0 and wrote valid WAVs. `attr-a-copy` is
 byte-identical to zero-fill baseline for all three fixtures. The other
@@ -356,30 +400,27 @@ variants produce:
 | `signature-last-transfer` | Number/time | 77,602 | `27947c0263ccc718c81448f639f730f1a391d63d3277630e93465d4e079b16d4` |
 | `signature-last-transfer` | Address | 79,314 | `beb8601a56803fe2733b03318e8fdcc6461a857324072ca1f6425c32e243afa5` |
 
-The attribute-cost trace supports the runtime effect. Copying the last
-signature byte makes the first traced candidate costs range from about 0.1 to
-219.7 instead of the baseline constant 0.4. Filling it with 8 changes those
-costs to zero. The selection trace for `signature-last-transfer` also changes
-the first three ranked classes and the unit shortlist (baseline first context
-selected 11 units from an input set of 10; transfer selected 30 from a set of
-6). These are direct changes to candidate scoring and selection, but their
-linguistic correctness is unknown.
+The attribute-cost trace confirms that copying legacy `attr_40` into
+`attr_b` restores candidate-specific pair costs where zero-fill gave the
+same cost to every candidate in the traced context. This establishes a real
+scoring effect, not the intended mapping. The old distribution comparison
+remains valid only as a descriptive comparison of legacy `attr_40` against
+Paul's 2013 `attr_b`; byte-distribution similarity does not establish semantic
+equivalence.
 
-The data gives a limited reason to prioritize `signature-last-copy` for
-audition: on Kate `unit-gen`, legacy column 07 ranges from 5 to 137 and its
-byte-distribution distance to Paul's modern `attr_b` column is 0.426 using the
-one-dimensional normalized cumulative-distribution distance implemented by
-`compare-index-column-distributions.py`. The next closest Kate gen column has
-distance 9.812. Kate `unit-gen2` and `unit-num` also have column 07 as the
-closest distribution. The pattern does not hold for `unit-etc` and `unit-alp`,
-and matching distributions do not establish matching field semantics. The
-script writes the complete comparison to `index-attribute-distribution.tsv`.
+A separate Stage 20 experiment rebuilt the 7-byte signature using the
+constrained ordering above. It preserved the first four scalar tree results
+and both recovered vector rows but changed the class ID, candidate sets, and
+selected units. Transferring `attr_40` into `attr_b` after this rebuild also
+restored variable score costs while changing the selected sequence. The new
+`attr_b` field has no proven `ver.2005` counterpart; move, duplicate, and
+transformation remain testable alternatives.
 
 No speech recognizer is installed in the local environment, and WAV hashes or
 durations do not measure intelligibility. The generated files are retained
-as `runtime-index-<variant>-<fixture>.wav` for listening. The signature-byte
-copy and transfer are test candidates, not accepted mappings; Kate speech
-quality remains to be judged by listening.
+as `runtime-index-<variant>-<fixture>.wav` for listening. The old candidates
+are not accepted mappings; the rebuilt signature experiment narrows the
+layout but does not yet establish intelligible synthesis.
 
 Recreate the variants and their matrices from the repository root:
 
@@ -447,11 +488,11 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools/revkit/scripts \
 
 These results narrow the gibberish away from compressed waveform decoding:
 the indexed audio payloads and their UPM timing counts agree with the standard
-decoder over the complete Kate corpus. The strongest remaining direct clue is
-the index adapter's inserted one-byte `attr_b`: the zero-fill baseline
-produces constant pair costs for the traced target value, while copying legacy
-column 07 changes those costs and the output WAVs. Tree2-to-indexed conversion
-also remains an unproven semantic translation even though converted trees
-parse and selected traversal experiments change output. The available traces
-do not yet identify which adapted unit sequence corresponds to the intended
-phonetic stream.
+decoder over the complete Kate corpus. The zero-fill baseline produces
+constant pair costs for the traced target `attr_b`; the experimental copied
+byte window changes those costs and the output WAVs. A later layout audit
+showed that this window is not a per-unit signature byte or a verified field
+mapping. The 2006 and 2013 tree formats also differ for the special vector
+pitch resources, and the ordinary tree2-to-indexed conversion remains an
+unproven semantic translation. The available traces do not yet identify which
+adapted unit sequence corresponds to the intended phonetic stream.
