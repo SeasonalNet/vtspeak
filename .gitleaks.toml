@@ -7,5 +7,6 @@ useDefault = true
 description = "Generated CAPA reports list imported API names that trigger generic-api-key false positives."
 paths = [
   '''(?:^|/)tools/revkit/work/reports/vt_(?:jam|jul|kat|pau)\.capa\.json$''',
+  '''(?:^|/)tools/revkit/work/corpus-parity/full-analysis-2006/capa\.json$''',
 ]
 targetRules = ["generic-api-key"]
