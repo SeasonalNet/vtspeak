@@ -10,3 +10,12 @@ paths = [
   '''(?:^|/)tools/revkit/work/corpus-parity/full-analysis-2006/capa\.json$''',
 ]
 targetRules = ["generic-api-key"]
+
+[[allowlists]]
+description = "Reimplementation engine false positives"
+condition = "AND"
+paths = [
+  '''^engine/duration/paul2013\.go$''',
+]
+regexTarget = "line"
+regexes = ['''// whole-token processing, EvaluatePaul2013NormalizerCharacterSequence''']
