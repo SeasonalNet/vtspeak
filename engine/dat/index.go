@@ -36,17 +36,23 @@ func BankName(index []byte) (string, error) {
 	return name, nil
 }
 
-// UnitRecord contains the observed payload span fields and the raw 21-byte
-// feature row. Feature meanings remain intentionally unnamed.
+// UnitRecord contains the observed payload span fields and one logical
+// 21-byte feature row reassembled from the index's column-major arrays.
+// MetricCodes and FeatureCodes expose the three opaque four-byte groups in
+// their original order without assigning semantic names to their values.
 type UnitRecord struct {
-	DATOffset      uint32
-	DATLength      uint16
-	UPMOffset      uint32
-	UPMFirstCount  byte
-	UPMSecondCount byte
-	UPMEdges       [3]byte
-	Signature      [7]byte
-	Features       [featureStride]byte
+	DATOffset         uint32
+	FirstSideSamples  uint16
+	SecondSideSamples uint16
+	DATLength         uint16
+	UPMOffset         uint32
+	UPMFirstCount     byte
+	UPMSecondCount    byte
+	UPMEdges          [3]byte
+	Signature         [7]byte
+	Features          [featureStride]byte
+	MetricCodes       [3]uint16
+	FeatureCodes      [3][2]byte
 }
 
 // ReadUnit reads the 2013 Paul record and its columnar 21-byte feature row.
@@ -67,14 +73,37 @@ func ReadUnit(index []byte, unit uint32) (UnitRecord, error) {
 	recordStart := uint64(indexHeaderSize) + uint64(unit)*unitStride
 	record := index[recordStart : recordStart+unitStride]
 	result.DATOffset = binary.LittleEndian.Uint32(record[:4])
+	result.FirstSideSamples = binary.LittleEndian.Uint16(record[4:6])
+	result.SecondSideSamples = binary.LittleEndian.Uint16(record[6:8])
 	result.DATLength = binary.LittleEndian.Uint16(record[8:10])
 	result.UPMOffset = binary.LittleEndian.Uint32(record[10:14])
 	result.UPMFirstCount = record[14]
 	result.UPMSecondCount = record[15]
 	copy(result.UPMEdges[:], record[16:19])
-	columnsStart := uint64(indexHeaderSize) + uint64(count)*unitStride + uint64(unit)*featureStride
-	copy(result.Features[:], index[columnsStart:columnsStart+featureStride])
-	copy(result.Signature[:], result.Features[1:8])
+	// FUN_10019940 reads the feature section as a sequence of columns, not
+	// 21-byte per-unit rows. Reassemble one logical row from those arrays.
+	columnsStart := uint64(indexHeaderSize) + uint64(count)*unitStride
+	column := func(offset, width uint64) []byte {
+		start := columnsStart + offset*uint64(count) + uint64(unit)*width
+		return index[start : start+width]
+	}
+	copy(result.Features[0:1], column(0, 1))
+	copy(result.Signature[:], column(1, 7))
+	copy(result.Features[1:8], result.Signature[:])
+	copy(result.Features[8:9], column(8, 1))
+	for group := uint64(0); group < 3; group++ {
+		columnBase := uint64(9) + group*4
+		rowBase := 9 + group*4
+		metric := column(columnBase, 2)
+		result.MetricCodes[group] = binary.LittleEndian.Uint16(metric)
+		copy(result.Features[rowBase:rowBase+2], metric)
+		copy(result.Features[rowBase+2:rowBase+3], column(columnBase+2, 1))
+		copy(result.Features[rowBase+3:rowBase+4], column(columnBase+3, 1))
+		result.FeatureCodes[group] = [2]byte{
+			result.Features[rowBase+2],
+			result.Features[rowBase+3],
+		}
+	}
 	return result, nil
 }
 
@@ -113,4 +142,22 @@ func UPMPayload(record UnitRecord, bank io.ReaderAt, bankSize int64) ([]byte, er
 		return nil, fmt.Errorf("read unit UPM span: %w", err)
 	}
 	return value, nil
+}
+
+// UPMSides returns the first and second UPM side vectors. The sides overlap
+// at the final period of the first side, as FUN_1002c120's second-side offset
+// is base + firstCount - 1. The supplied combined vector must match the two
+// counts stored in the unit record.
+func (record UnitRecord) UPMSides(upm []byte) ([]byte, []byte, error) {
+	firstCount := int(record.UPMFirstCount)
+	secondCount := int(record.UPMSecondCount)
+	if firstCount == 0 || secondCount == 0 {
+		return nil, nil, errors.New("unit UPM side count is zero")
+	}
+	combinedCount := firstCount + secondCount - 1
+	if len(upm) != combinedCount {
+		return nil, nil, fmt.Errorf("combined UPM vector has %d periods; record requires %d", len(upm), combinedCount)
+	}
+	sharedBoundary := firstCount - 1
+	return upm[:firstCount], upm[sharedBoundary:], nil
 }

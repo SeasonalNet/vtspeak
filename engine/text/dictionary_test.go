@@ -5,6 +5,7 @@ import (
 	"encoding/binary"
 	"os"
 	"path/filepath"
+	"reflect"
 	"testing"
 )
 
@@ -254,6 +255,7 @@ func TestLoadEmbeddedDictionaryAndParseEveryPhonePayload(t *testing.T) {
 	}
 	pronunciationRecords := 0
 	codebook := Paul2013PhoneIDCodebook()
+	row := make([]byte, Paul2013TokenResultRowSize)
 	for key, record := range dictionary.records {
 		parsed, err := ParsePhonePayload(record.Payload)
 		if err != nil {
@@ -261,6 +263,13 @@ func TestLoadEmbeddedDictionaryAndParseEveryPhonePayload(t *testing.T) {
 		}
 		if _, err := parsed.ExpandPronunciations(codebook); err != nil {
 			t.Fatalf("expand %q: %v", key, err)
+		}
+		rows, err := parsed.BuildPaul2013DictionaryPhoneRows(codebook)
+		if err != nil {
+			t.Fatalf("build parser phone rows for %q: %v", key, err)
+		}
+		if err := WritePaul2013DictionaryPhoneRow(row, 0, []byte("x"), rows); err != nil {
+			t.Fatalf("write parser token-result row for %q: %v", key, err)
 		}
 		if len(parsed.Pronunciations) > 0 {
 			pronunciationRecords++
@@ -370,13 +379,47 @@ func TestLexiconFrontendResolvesKnownLocalText(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	tokens, err := (LexiconFrontend{Dictionary: dictionary}).ResolveText(context.Background(), "Hello.")
+	analysis, err := (LexiconFrontend{Dictionary: dictionary}).AnalyzeText(context.Background(), "Hello.")
 	if err != nil {
 		t.Fatal(err)
 	}
+	tokens := analysis.Tokens
 	if len(tokens) != 1 || tokens[0].Surface != "Hello" || tokens[0].SeparatorAfter != "." ||
 		len(tokens[0].Alternatives) != 1 {
 		t.Fatalf("resolved tokens = %+v", tokens)
+	}
+	if len(analysis.PronunciationFeatures) != len(tokens) {
+		t.Fatalf("pronunciation feature rows = %d, want %d", len(analysis.PronunciationFeatures), len(tokens))
+	}
+	features := analysis.PronunciationFeatures[0]
+	if features.Values[14] != 1 || features.Available != 0x5fff {
+		t.Fatalf("Hello pronunciation features = %+v, want available mask 0x5fff and uppercase flag 1", features)
+	}
+	if !reflect.DeepEqual(features.MissingPositions(), []int{13}) {
+		t.Fatalf("Hello missing pronunciation features = %v", features.MissingPositions())
+	}
+	wantCandidateCount := 0
+	for _, alternative := range tokens[0].Alternatives {
+		for _, pathGroup := range alternative.PathGroups {
+			wantCandidateCount += len(pathGroup)
+		}
+	}
+	candidates := analysis.PronunciationCandidates[0]
+	if len(candidates) != wantCandidateCount {
+		t.Fatalf("pronunciation candidates = %d, want one row for each of %d nonempty path groups", len(candidates), wantCandidateCount)
+	}
+	for _, candidate := range candidates {
+		if candidate.Features.Available&(1<<13) == 0 {
+			t.Errorf("candidate feature row omits path position 13: %+v", candidate.Features)
+		}
+		if len(candidate.Features.MissingPositions()) != 0 {
+			t.Errorf("candidate feature row has unexpected missing positions: %v", candidate.Features.MissingPositions())
+		}
+		pathCode := tokens[0].Alternatives[candidate.AlternativeIndex].PathGroups[candidate.PathGroupIndex][candidate.PathCodeIndex]
+		wantClass, _, err := Paul2013PronunciationPathClass([]byte{pathCode})
+		if err != nil || candidate.Features.Values[13] != wantClass {
+			t.Errorf("candidate path code %#x feature = %d, want %d (error %v)", pathCode, candidate.Features.Values[13], wantClass, err)
+		}
 	}
 	want := []CMUPhone{{Label: "HH"}, {Label: "EH", Stress: 0, Vowel: true}, {Label: "L"}, {Label: "OW", Stress: 1, Vowel: true}}
 	got := tokens[0].Alternatives[0].Phones

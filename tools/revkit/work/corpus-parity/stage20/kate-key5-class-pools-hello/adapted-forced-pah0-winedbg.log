@@ -1,0 +1,76 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/kate-key5-class-pools-hello/class-pools-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/kate-key5-class-pools-hello/class-pools-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023350
+Wine-gdb> >>>>> > > > > > > > >  >  >  >  >  >  >  >   >   >    >    >    >   >   >  >   >   >  >   >   >  >  >  > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x100235f6
+Wine-gdb> >>>> > > > >  >  >  >   >   >   >  >  > >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+KATE_OLDROW_CLASSES context=0 class_count=10 {class=48489 key=5a22011e00 members=57 old_rows=-} {class=48491 key=5a22041e00 members=42 old_rows=-} {class=48493 key=5a22071e00 members=19 old_rows=-} {class=48495 key=5a220a1e00 members=2 old_rows=-} {class=48496 key=5a22171e00 members=28 old_rows=272822} {class=48498 key=5a22231e00 members=211 old_rows=-} {class=48501 key=5a222c2200 members=1 old_rows=-} {class=48502 key=5a222f1e00 members=13 old_rows=-} {class=48505 key=5a223b1e00 members=42 old_rows=-} {class=48507 key=5a22421e00 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATE context=0 rank=14 id=272822 span=2
+KATE_OLDROW_CLASSES context=1 class_count=10 {class=2174 key=0722171400 members=2 old_rows=-} {class=5446 key=0d22171400 members=2 old_rows=-} {class=7284 key=1022171400 members=5 old_rows=-} {class=15614 key=1a22171400 members=10 old_rows=-} {class=21756 key=2322171400 members=11 old_rows=-} {class=27568 key=2b22171400 members=4 old_rows=-} {class=31883 key=2d22171400 members=6 old_rows=-} {class=40738 key=3b22170a00 members=1 old_rows=-} {class=40739 key=3b22171400 members=8 old_rows=-} {class=48496 key=5a22171e00 members=28 old_rows=272822}
+KATE_OLDROW_CANDIDATE context=1 rank=18 id=272822 span=2
+KATE_OLDROW_CLASSES context=2 class_count=3 {class=20083 key=22172b0000 members=4 old_rows=-} {class=20084 key=22172b1e00 members=5 old_rows=272823} {class=20085 key=2217410000 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATE context=2 rank=7 id=272823 span=1
+KATE_OLDROW_CLASSES context=3 class_count=9 {class=4957 key=0d172b0000 members=1 old_rows=-} {class=10105 key=14172b0000 members=1 old_rows=-} {class=11204 key=15172b0000 members=1 old_rows=-} {class=17968 key=20172b0000 members=1 old_rows=-} {class=19028 key=21172b0000 members=1 old_rows=-} {class=20083 key=22172b0000 members=4 old_rows=-} {class=42182 key=41172b0000 members=2 old_rows=-} {class=45262 key=46172b0000 members=1 old_rows=-} {class=46142 key=48172b0000 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATES_NONE context=3 count=13
+KATE_OLDROW_CLASSES context=4 class_count=1 {class=13286 key=172b2f0000 members=11 old_rows=272824}
+KATE_OLDROW_CANDIDATE context=4 rank=10 id=272824 span=1
+KATE_OLDROW_CLASSES context=5 class_count=10 {class=28162 key=2b30150500 members=1 old_rows=-} {class=28168 key=2b30160400 members=1 old_rows=-} {class=28181 key=2b30230000 members=1 old_rows=-} {class=28188 key=2b302a1e00 members=1 old_rows=-} {class=28191 key=2b302b1600 members=1 old_rows=-} {class=28219 key=2b30410a00 members=3 old_rows=-} {class=28230 key=2b305a0300 members=1 old_rows=-} {class=28232 key=2b305a0400 members=4 old_rows=272825} {class=28234 key=2b305a2100 members=1 old_rows=-} {class=28236 key=2b305e0500 members=2 old_rows=-}
+KATE_OLDROW_CANDIDATE context=5 rank=4 id=272825 span=2
+KATE_OLDROW_CLASSES context=6 class_count=10 {class=12956 key=16305e0500 members=3 old_rows=-} {class=16753 key=1a305e0500 members=2 old_rows=-} {class=22710 key=23305a0d00 members=1 old_rows=-} {class=28230 key=2b305a0300 members=1 old_rows=-} {class=28232 key=2b305a0400 members=4 old_rows=272825} {class=28236 key=2b305e0500 members=2 old_rows=-} {class=32538 key=2d305a0400 members=7 old_rows=-} {class=32546 key=2d305e0500 members=4 old_rows=-} {class=36869 key=37305e0500 members=1 old_rows=-} {class=42883 key=41305e0500 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATE context=6 rank=5 id=272825 span=2
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0118:011c: create thread I @004014C0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

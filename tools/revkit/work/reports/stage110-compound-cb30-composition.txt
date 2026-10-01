@@ -1,0 +1,49 @@
+VoiceText Paul 2013 compound context lookup composition
+=======================================================
+
+Evidence
+--------
+
+`FUN_10009dc0` at VA `0x10009dc0` calls `FUN_10003b10` and
+`FUN_1000ffd0` for each multi-byte component. If either gate fails, it calls
+`FUN_1000cb30`; return value 1 skips later handlers and ORs bit 0 into the
+caller's row flags. A miss continues through `FUN_1000a140`, `FUN_1000c710`,
+`FUN_1000c040`, `FUN_1000c3a0`, and `FUN_10002f10`, then the compound path
+falls back to `FUN_10009cd0`. The caller passes its computed hyphen context to
+`FUN_1000c040`.
+
+The complete `FUN_10009dc0` pseudocode is in
+`tools/revkit/work/reports/stage6-deep-text-functions.txt` (lines 1-220);
+`FUN_1000cb30` is recorded there at lines 1988-2030. Stages 78-80 document
+the compound scanner and the two preceding component gates.
+
+Implementation
+--------------
+
+`NormalizePaul2013CompoundContextWithEmbeddedDictionary` composes the
+existing scanner/gates with the loaded dictionary-backed
+`FUN_1000cb30` implementation. It copies the result and applies bit 0 when
+that call returns 1. Components passing both native gates go directly to the
+context encoder. `NormalizePaul2013CompoundContextWithSupportedHandlers`
+adds the known A140, trailing-apostrophe, contraction-suffix, C3A0, and
+generic handlers in order. The c040 prefix now defaults to the supported
+dictionary/`FUN_100086c0`/compound/A140/generic/context-encoder composition;
+callers can override it when supplying a separately recovered prefix path.
+`NormalizePaul2013CompoundModelContextRow` writes matched results to counted
+model rows. `RunPaul2013KnownModelContextPassesWithCompoundAndC3A0Rows` and its
+shared-arena segment wrapper carry caller-selected branch rows through the
+known form/exception/compound/C3A0 order.
+
+The component comparisons for `the` and (after the first component) `de`
+preserve the native `local_14` state. When the next component's first output
+byte passes the recovered context-code table gate, an existing accumulated
+output tail is changed to `&`. If the accumulated output is empty, the write
+targets the byte before the output buffer; that destination is reported in
+`MarkerWithoutPriorOutputRows` and remains unapplied. Original-runtime row
+parity remains open.
+
+The Stage 78 overflow description was corrected alongside this composition:
+native `FUN_10009dc0` writes NUL at the current output pointer on overflow, so
+previously accumulated component bytes remain in its output buffer. The Go
+result now retains those bytes and reports a match when the retained output is
+nonempty.

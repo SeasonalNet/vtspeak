@@ -1,0 +1,35 @@
+VoiceText Paul 2013 counted-row helper predicates
+================================================
+
+Evidence
+--------
+
+Ghidra 12.1.4 pseudocode for `FUN_10008440`, `FUN_10008550`, and
+`FUN_10008580` is attached in `stage112-fun10008440-pseudo.c` and
+`stage112-fun10008550-08580-pseudo.c`. The matching PE instructions are in
+`vt_pau-objdump-disassembly.txt`. Decompiled names and control flow remain
+pseudocode.
+
+Recovered behavior
+------------------
+
+- `FUN_10008440(left, right)` checks the 30-entry class-2 word table when
+  `right` is null or empty. With a nonempty right operand, it matches `wo`,
+  `sha`, or `ca` followed by `n't`; it also matches `need`, `ought`, `have`,
+  `has`, or `had` followed by `'s`. Comparisons use `FUN_1001c2c0` mapped
+  string ordering.
+- `FUN_10008550(surface)` reports membership in the 53-entry number-word
+  pointer table at `PTR_s_billion_10078768`, searched with
+  `FUN_100560a0` mode `0x49`.
+- `FUN_10008580(model, row)` returns 1 immediately for row zero. For rows
+  greater than one it checks the opaque relative strings against `let`, the
+  `FUN_10008440` pair rules, the row-0/row-1 surface pair, and the class-2
+  table with the `not` and `can't` exclusions. For every positive row it then
+  checks the row-relative string against `do` and `to`, followed by the
+  class-2 table.
+
+The relative addresses and branch order are preserved in
+`engine/duration/context_special_helpers.go`; the two literal tables are
+already captured in `engine/text/pronunciation_context.go`. This is a static
+port of helper behavior. It does not establish the outer caller's row
+selection or runtime row parity.

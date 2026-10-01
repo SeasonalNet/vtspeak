@@ -1,0 +1,101 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x100235f6
+Wine-gdb> >>>>>>> > > > >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_2013_CANDIDATE_LIST position=0 count=67 [0]=6383(span=1,weighted=0)
+ [1]=229517(span=1,weighted=0) [2]=233162(span=1,weighted=0)
+ [3]=235930(span=1,weighted=0) [4]=249911(span=1,weighted=0)
+ [5]=252074(span=1,weighted=0) [6]=252321(span=1,weighted=0)
+ [7]=255985(span=1,weighted=0) [8]=258691(span=1,weighted=0)
+ [9]=259622(span=1,weighted=0) [10]=261254(span=1,weighted=0)
+ [11]=262832(span=1,weighted=0) [12]=264327(span=1,weighted=0)
+ [13]=264440(span=1,weighted=0) [14]=266424(span=1,weighted=0)
+ [15]=266510(span=1,weighted=0) [16]=267511(span=1,weighted=0)
+ [17]=268243(span=1,weighted=0) [18]=268259(span=1,weighted=0)
+ [19]=269106(span=1,weighted=0) [20]=271307(span=1,weighted=0)
+ [21]=271762(span=1,weighted=0) [22]=272305(span=1,weighted=0)
+ [23]=272353(span=1,weighted=0) [24]=272820(span=1,weighted=0)
+ [25]=273094(span=1,weighted=0) [26]=273182(span=1,weighted=0)
+ [27]=273203(span=1,weighted=0) [28]=273271(span=1,weighted=0)
+ [29]=275865(span=1,weighted=0) [30]=275869(span=1,weighted=0)
+ [31]=277079(span=1,weighted=0) [32]=277527(span=1,weighted=0)
+ [33]=225192(span=1,weighted=0) [34]=223670(span=1,weighted=0)
+ [35]=8528(span=1,weighted=0) [36]=22336(span=1,weighted=0)
+ [37]=23272(span=1,weighted=0) [38]=23555(span=1,weighted=0)
+ [39]=27111(span=1,weighted=0) [40]=41104(span=1,weighted=0)
+ [41]=53134(span=1,weighted=0) [42]=65331(span=1,weighted=0)
+ [43]=75811(span=1,weighted=0) [44]=87152(span=1,weighted=0)
+ [45]=93904(span=1,weighted=0) [46]=122874(span=1,weighted=0)
+ [47]=126198(span=1,weighted=0) [48]=131518(span=1,weighted=0)
+ [49]=135441(span=1,weighted=0) [50]=161158(span=1,weighted=0)
+ [51]=164116(span=1,weighted=0) [52]=178825(span=1,weighted=0)
+ [53]=179010(span=1,weighted=0) [54]=179137(span=1,weighted=0)
+ [55]=179422(span=1,weighted=0) [56]=196165(span=1,weighted=0)
+ [57]=197242(span=1,weighted=0) [58]=198590(span=1,weighted=0)
+ [59]=204920(span=1,weighted=0) [60]=205125(span=1,weighted=0)
+ [61]=208796(span=1,weighted=0) [62]=216572(span=1,weighted=0)
+ [63]=217770(span=1,weighted=0) [64]=219724(span=1,weighted=0)
+ [65]=221876(span=1,weighted=0) [66]=279467(span=1,weighted=0)
+HI_2013_CANDIDATE_LIST position=1 count=9 [0]=4087(span=1,weighted=0)
+ [1]=4102(span=1,weighted=0) [2]=84094(span=1,weighted=0)
+ [3]=177718(span=1,weighted=0) [4]=243540(span=1,weighted=0)
+ [5]=272821(span=1,weighted=0) [6]=279498(span=1,weighted=0)
+ [7]=279499(span=1,weighted=0) [8]=280449(span=1,weighted=0)
+HI_2013_SELECTED_UNIT n=1 id=272820
+HI_2013_SELECTED_UNIT n=2 id=272821
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

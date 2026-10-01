@@ -1,0 +1,11 @@
+Wine-gdb> Already logging to /probe/stage20/hi-2006-scalar-array-state/legacy-scalar-array-state-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x1001c860
+Wine-gdb> >>> > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_SCALAR_STATE_TRACE_READY
+LEGACY_SCALAR_STATE unit=272820 state=0x18e1b30
+LEGACY_SCALAR_STATE pointers=0x18e1b78:	0x019299d8	0x019b4248	0x02025458	0x0196ee10
+0x18e1b88:	0x01fe0020	0x0206a890
+LEGACY_SCALAR_STATE values=85,126,168,78,69,77
+[Inferior 1 (Remote target) exited with code 030000000005]
+Wine-gdb> 

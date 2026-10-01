@@ -1,0 +1,97 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023948
+Wine-gdb> >>> > > > > >  >  >   >   >   >    >    >    >     >     >     >     >    >   >  >  >  > > > >  >  >  >  >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+NATIVE_HEAP_SORT_PRE count=75 [0]=63:00000000 [1]=233533:40400000
+ [2]=222240:40400000 [3]=220903:40400000 [4]=214148:40400000
+ [5]=211497:40400000 [6]=208625:40400000 [7]=208165:40400000
+ [8]=207948:40400000 [9]=206118:40400000 [10]=205939:40400000
+ [11]=204612:40400000 [12]=200614:40400000 [13]=200525:40400000
+ [14]=198921:40400000 [15]=197867:40400000 [16]=195687:40400000
+ [17]=189906:40400000 [18]=233824:40400000 [19]=233955:40400000
+ [20]=279479:40400000 [21]=273369:40400000 [22]=272822:40400000
+ [23]=271915:40400000 [24]=271878:40400000 [25]=270371:40400000
+ [26]=268190:40400000 [27]=267478:40400000 [28]=264663:40400000
+ [29]=264405:40400000 [30]=262454:40400000 [31]=258594:40400000
+ [32]=255501:40400000 [33]=252497:40400000 [34]=248753:40400000
+ [35]=245736:40400000 [36]=234795:40400000 [37]=182880:3f800000
+ [38]=179388:40400000 [39]=51310:40400000 [40]=50118:40400000
+ [41]=32995:40400000 [42]=31795:40400000 [43]=31347:40400000
+ [44]=28430:40400000 [45]=25895:40400000 [46]=22451:40400000
+ [47]=20499:40400000 [48]=19888:40400000 [49]=18378:40400000
+ [50]=13531:40400000 [51]=6208:40400000 [52]=5218:40400000 [53]=3756:40400000
+ [54]=2525:40400000 [55]=1200:40400000 [56]=52542:40400000 [57]=88195:40400000
+ [58]=178453:40400000 [59]=169343:40400000 [60]=167546:40400000
+ [61]=165351:40400000 [62]=158787:40400000 [63]=149799:40400000
+ [64]=146049:40400000 [65]=129641:40400000 [66]=116320:40400000
+ [67]=113167:40400000 [68]=111587:40400000 [69]=100640:40400000
+ [70]=100016:40400000 [71]=99833:40400000 [72]=97386:40400000
+ [73]=92183:40400000 [74]=279484:40000000
+Temporary breakpoint 3 at 0x1002394d
+NATIVE_HEAP_SORT_POST count=75 [0]=63 [1]=182880 [2]=279484 [3]=1200 [4]=2525
+ [5]=3756 [6]=5218 [7]=6208 [8]=13531 [9]=18378 [10]=19888 [11]=20499
+ [12]=22451 [13]=25895 [14]=28430 [15]=31347 [16]=31795 [17]=32995 [18]=50118
+ [19]=51310 [20]=52542 [21]=88195 [22]=92183 [23]=97386 [24]=99833 [25]=100016
+ [26]=100640 [27]=111587 [28]=113167 [29]=116320 [30]=129641 [31]=146049
+ [32]=149799 [33]=158787 [34]=165351 [35]=167546 [36]=169343 [37]=178453
+ [38]=179388 [39]=233533 [40]=233824 [41]=189906 [42]=195687 [43]=197867
+ [44]=198921 [45]=200525 [46]=200614 [47]=204612 [48]=205939 [49]=206118
+ [50]=207948 [51]=208165 [52]=208625 [53]=211497 [54]=214148 [55]=220903
+ [56]=233955 [57]=279479 [58]=234795 [59]=245736 [60]=248753 [61]=252497
+ [62]=255501 [63]=258594 [64]=262454 [65]=264405 [66]=264663 [67]=267478
+ [68]=268190 [69]=270371 [70]=271878 [71]=271915 [72]=272822 [73]=273369
+ [74]=222240
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

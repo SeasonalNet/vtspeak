@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage20/index-adapter-key-repacked-repeat-hello-attrb40-bit7-continuity:/work/data-kate/M16/mc_idx_tbl:ro

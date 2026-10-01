@@ -1,0 +1,85 @@
+Stage 141: bounded FUN_1005a350 mode-0x15 ASCII token paths
+
+Direct source
+
+- Ghidra pseudocode: tools/revkit/work/reports/stage135-fun1005a350-pseudo.txt,
+  especially the letter-class loop at lines 856-878, numeric path and mode
+  dispatch at lines 1370-1450, status-2 result writer at lines 1498-1562,
+  the United States branch at lines 981-992, and status-1 result writer at
+  lines 1602-1628.
+- Native disassembly: tools/revkit/work/reports/vt_pau-objdump-disassembly.txt,
+  FUN_10062f50 at 0x10062f50 (lines 145996 onward) and FUN_10062370 at
+  0x10062370 (lines 144796 onward).
+- The scanner mode is 0x15 at FUN_10034180's proper-name call site, recorded
+  in the Stage 135 report.
+
+Ported behavior
+
+text.ObservePaul2013ProperNameASCIIToken accepts a NUL-terminated input whose
+post-prefix token is one of: a 1-28 digit run; one uppercase letter, one
+digit, one uppercase letter, then an ASCII-letter word; one digit, one
+uppercase letter, then a digit run; a 1-28 ASCII-letter word optionally
+joined by internal dots or hyphens; or the mapped two-component phrase
+"United States". The numeric path also preserves the direct comma-grouping
+and decimal predicates: comma groups contain exactly three digits and reject
+a leading zero, while one decimal point must be followed by at least one
+digit. A comma group may precede that decimal point. A letter token may end at NUL, ASCII whitespace, or ASCII
+punctuation that is not an accepted internal dot/hyphen. Its consumed-byte
+count stops before that delimiter. A digit run may also end before one ASCII
+delimiter immediately followed by NUL. Longer numeric lookahead remains
+unsupported.
+Its ASCII letter intervals correspond to the observed letter-class entries in
+DAT_1007e188. FUN_10062f50
+returns the expansion-record length at 0x10077e58 for ASCII letters;
+FUN_10009cd0 uses those same 26 records as the letter expansion table. The
+port derives that length directly and checks the native cumulative 0x40 guard
+before claiming the simple path.
+On the letter path the native loop copies each letter and accepted separator
+unchanged. NUL, ordinary ASCII whitespace, or an ASCII punctuation boundary
+reaches the status-1 result writer; the returned consumed-byte offset stops
+before that delimiter. A
+trailing dot or hyphen is not copied unless followed by an accepted letter, so
+it also ends the current token. On a plain digit run, FUN_10062370 returns
+zero when NUL occurs in its two-byte lookahead; this includes one ASCII
+delimiter followed by NUL and directs the mode-0x15 branch to the status-2
+result writer without consuming the delimiter. The numeric punctuation
+predicates at pseudocode lines 1419-1434 accept one decimal point followed by
+a digit and comma groups with three following digits, provided the first
+numeric byte is not `0`; the comma test also requires the next byte after the
+group to be NUL or non-digit. The Go observer models repeated comma groups
+and an optional following decimal by reapplying those same checks. Longer
+numeric lookahead still depends on digit-specific branches and is not
+generalized here. The mixed
+forms follow the one-character predicates at pseudocode lines 972-979 and
+1441-1449. The United States branch uses the mapped comparisons and trailing
+boundary check at lines 981-992. The recovered
+leading whitespace count and one-LF marker are also reported. Multiline and
+empty-input status 8/9 early returns are reported as
+supported terminal observations.
+
+The ordinal branch at pseudocode lines 1498-1529 checks `st` after a number
+ending in 1, `nd` after 2, `rd` after 3, and `th` for other endings; 11th,
+12th, and 13th use the teen override. The Go subset compares ASCII suffix
+letters through the recovered lowercase mapping and preserves the same
+one-byte ASCII terminal boundary. It also preserves the byte-exact `Rd`
+exception in the native third-suffix branch. Non-ASCII mapped suffix
+comparisons remain open.
+
+duration.Engine.MatchProperNameTPPComponentArenaWithASCIIScannerInputAndContextTables
+composes that observation with the existing counted-row projection, exact
+lookup, marker gate, and context gate. If scanning is outside the supported
+slice, it returns the lookup result with context checks still pending and
+reports the unsupported reason.
+The duration-package integration test also exercises ordinal scanner inputs
+through the TPP component-arena append wrapper against the local shared TPP
+dictionary. This validates Go composition only; it is not an original-runtime
+differential.
+
+Limits
+
+This is not a full scanner port. Other mixed alphanumeric forms, multibyte
+input, tokens over 28 bytes, and other scanner modes remain unsupported.
+Runtime context
+tables remain caller-supplied. No native runtime
+differential capture was performed for this stage. Whole-scanner and
+end-to-end TPP parity remain open.

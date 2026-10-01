@@ -1,0 +1,47 @@
+Stage 184: mode-0/1 and mode-8 ASCII word joins
+
+Evidence
+
+- FUN_1005a350 x86 at 1005ac34-1005acb9 dispatches mode 8 directly to
+  1005acbf; modes 0/1 first try a dot followed by a letter or a three-byte
+  word mapped-equal to the literal at 1009c060 followed by apostrophe/letter.
+  Read-only PE extraction establishes that literal as int. Other mode-0/1
+  delimiters enter 1005acb6, which routes non-mode-8 to 1005af62 and then
+  the remaining mode-specific dispatch. They do not enter mode-8 contractions.
+- At 1005acbf-1005ad17, mode-8 hyphen/letter calls FUN_1005e010(pointer,
+  followingSource,0), then FUN_1005e1a0 only for a negative first result.
+  Nonnegative results branch to 1005bb77. That result writer returns at
+  1005bbd0 without the ordinary post-token lookup or its raw +0x1a flag.
+  A zero model pointer or two negative results joins the hyphen.
+- Mode-8 dot/letter at 1005ad17 first checks for an existing dot, first-byte
+  lowercase and following-byte uppercase. No prior dot plus lowercase-first
+  and uppercase-next stops the token; other dot joins use the same model gate.
+- FUN_100621f0 supplies mode-8 contractions. An accepted suffix followed
+  by hyphen/letter continues directly, bypassing an internal lookup. The
+  separate mapped wi case at 1009c428 consumes an apostrophe and stops.
+  Dot-apostrophe suffixes consume dot plus suffix and stop. Mode 0x17 keeps
+  its separate recovered branch, which stops after a recognized suffix.
+- Letter cost/length overflow at 1005abe1 rolls back to the last source
+  dot/hyphen, excluding that delimiter. This is not restricted to mode 0x17.
+
+Implementation and validation
+
+- The standalone ASCII API retains its zero-model-pointer contract. The
+  composed scanner passes the model pointer and callback into internal word
+  scanning, preserving internal and post-token lookup ordering. Callback
+  errors and cancellation propagate. Non-ASCII continuations delegate with
+  the original source, coordinate, mode and model pointer.
+- Tests distinguish modes 0/1, 8 and 0x17, cover repeated joins, uppercase
+  dot boundaries, int/wi case variants, contractions, dot-apostrophe stops,
+  whitespace/result coordinates, last-delimiter cost rollback, both lookup
+  short circuits, rejected-join flag behavior and original-argument fallback.
+  Local PE tests verify both NUL-terminated literals against the DLL bytes.
+- Changed Go files formatted. From engine/ with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Mode-8 numeric/punctuation starts, other mode-specific branches, non-ASCII,
+  structural markers and native index construction remain unported. These
+  tests validate static-evidence mechanics, not original-engine differential
+  scanner parity or complete text-to-speech synthesis parity.

@@ -1,0 +1,67 @@
+Stage 144: 2013 Paul model-source matcher table inventory
+
+Direct source
+
+- Read-only input: `binary/vt_pau.dll`. The `.data` section maps VA
+  `0x10077000` to file offset `0x77000`; the matcher table begins at VA
+  `0x1007e888` (file offset `0x7e888`).
+- `FUN_1002e990` walks 24-byte records. The observed record layout is six
+  little-endian dwords: key pointer, key length, auxiliary pointer, flag,
+  handler pointer, and additional pointer. Entry 31 has key length zero and
+  terminates the table; entries 0 through 30 have nonempty literal keys.
+- The table has the following source keys and handler addresses in order:
+
+  ```text
+  00 <vtml_break       1002ef70   01 <vtml_emotion     10030c60
+  02 </vtml_emotion    10030c60   03 <vtml_mark        1002efd0
+  04 <vtml_partofsp    1002f3a0   05 </vtml_partofsp  1002f3a0
+  06 <vtml_pause       1002fb10   07 <vtml_phoneme     1002fcf0
+  08 </vtml_phoneme    1002fcf0   09 <vtml_pitch       10030b40
+  10 </vtml_pitch      10030b40   11 <vtml_sayas       10030c90
+  12 </vtml_sayas      10030c90   13 <vtml_skip        100313d0
+  14 </vtml_skip       100313d0   15 <vtml_speed       10030b70
+  16 </vtml_speed      10030b70   17 <vtml_sub         10031ce0
+  18 </vtml_sub        10031ce0   19 <vtml_volume      10030ba0
+  20 </vtml_volume     10030ba0   21 <vt_pitch         10030bd0
+  22 </vt_pitch        10030bd0   23 <vt_speed         10030c00
+  24 </vt_speed        10030c00   25 <vt_volume        10030c30
+  26 </vt_volume       10030c30   27 <vt_pause         1002fb40
+  28 <vt_break         1002efa0   29 <say-as           10031d10
+  30 </say-as          10031d10
+  ```
+
+Ported behavior
+
+- `text.Paul2013ModelSourceRuleDescriptors` returns a copy of the 31-entry
+  key/order/metadata inventory. It preserves observed addresses without
+  asserting meanings for opaque table pointers.
+- `text.BindPaul2013ModelSourceRules` combines that inventory with explicit
+  handler implementations keyed by observed handler address. It refuses to
+  bind an absent handler. `text.DispatchPaul2013ModelSourceRule` then performs
+  the generic longest-key selection and selected-handler cursor behavior
+  described in Stage 143.
+- Tests check all 31 keys in order, copy isolation, metadata binding, and
+  fail-closed behavior when handlers are absent.
+
+Limits
+
+- This is a static table transcription, not runtime table parity. Handler
+  semantics remain unported except where separate Go APIs explicitly cover a
+  narrow behavior such as the exact self-closing `<vtml_pause time="N"/>`
+  lexical boundary. That API has not been connected to this table dispatcher.
+- Decompiled handler bodies are incomplete or depend on parser/model state.
+  The inventory does not imply support for arbitrary VTML, SSML, attribute
+  ordering, nested tags, settings, phoneme tags, or audio effects.
+- No original-DLL differential was captured for these 31 entries.
+
+Evidence inspected
+
+- `tools/revkit/work/reports/stage6-lookup-functions.txt`:
+  `FUN_1002e990`, `FUN_1002ea80`, and `FUN_1002eab0`.
+- `tools/revkit/work/reports/stage6-synthesis-and-tag-dispatch.txt`:
+  wrappers `FUN_10030b40`, `FUN_10030c60`, and `FUN_10030c90`.
+- `tools/revkit/work/reports/stage21-highlight-flag-map-chain.c`:
+  `FUN_1002efd0` and associated marker-state path.
+- Raw data extraction was performed against the local DLL without modifying
+  the file. The table is a directly observed binary datum; handler names and
+  semantics remain function-address references unless separately established.

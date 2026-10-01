@@ -1,0 +1,35 @@
+Stage 174: complete scanner terminal-prefix results
+
+Evidence
+
+- FUN_1005a350 pseudocode in stage135-fun1005a350-pseudo.txt and original
+  x86 at 0x1005a350 onward initialize all 0x44 result bytes to zero and skip
+  space/tab/CR/LF, incrementing result +0 and consumed count for each byte.
+  Two-or-more LF returns status 8 before ordinary token scanning. Exactly
+  one LF sets result +4 to 1 only after that multiline gate. NUL then returns
+  status 9. These early branches precede mode-dependent token processing.
+- Coordinates +8 and +0xc both become sourceOffset + consumed. Result text
+  at +0x20 uses empty-string byte DAT_1009f948, which is zero in the local
+  DLL. Length +0x10 is zero. Result +0x14 and native scanner return both equal
+  consumed count. Fixed-width x86 additions wrap.
+
+Implementation and validation
+
+- ScanPaul2013ModelScannerTerminalPrefix supplies all recovered result fields
+  for the two early branches. Nonterminal input returns handled=false.
+  NewPaul2013ModelScannerWithTerminalPrefixes checks these paths before its
+  general fallback, preserving original source/control parameters.
+- Tests check exact result structs for empty input, whitespace-only input,
+  one LF, multiline input with and without following words; nonterminal gates,
+  unterminated input and missing ordinary scanner errors are explicit.
+- An integration test runs the real early scanner, terminal handler and primary
+  loop on two LF bytes, requiring no fixture scanner or row handler body.
+  Fallback delegation is tested independently and labeled as a fixture.
+- Changed Go files formatted with gofmt. From engine/, GOCACHE=/tmp/vtspeak-go-cache
+  go test ./..., go build ./..., go vet ./... passed; git diff --check passed.
+
+Limits
+
+- These are complete early-return paths, not a complete general scanner.
+  Ordinary mode-dependent tokens and punctuation context recognition remain
+  unported here. No new original-engine capture or whole-engine parity claim.

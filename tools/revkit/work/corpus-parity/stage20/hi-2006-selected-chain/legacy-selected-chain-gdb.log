@@ -1,0 +1,13 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ed7f
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_HI_CHAIN_TRACE_READY
+LEGACY_HI_FINAL_CHAIN call=1 selected_index=0 unit_id=272820 selected_index_array=0x27a9234
+LEGACY_HI_FINAL_CHAIN call=2 selected_index=0 unit_id=272821 selected_index_array=0x27a9236
+LEGACY_HI_FINAL_CHAIN call=3 selected_index=0 unit_id=272820 selected_index_array=0x27a9234
+LEGACY_HI_FINAL_CHAIN call=4 selected_index=0 unit_id=272821 selected_index_array=0x27a9236
+LEGACY_HI_FINAL_CHAIN call=5 selected_index=0 unit_id=272820 selected_index_array=0x27a9234
+LEGACY_HI_FINAL_CHAIN call=6 selected_index=0 unit_id=272821 selected_index_array=0x27a9236
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

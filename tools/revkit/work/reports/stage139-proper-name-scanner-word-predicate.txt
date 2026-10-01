@@ -1,0 +1,37 @@
+VoiceText Paul 2013 proper-name scanner word predicate
+=====================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_10010120` is in
+`tools/revkit/work/reports/stage137-proper-name-context-helper-pseudocode.txt`.
+Its result is consumed by `FUN_10034180` only through the low word. The helper
+first tries recursive skips for an `M` plus mapped `C`, a `D` plus mapped
+`E`, and a letter-apostrophe-letter prefix. It then requires bit `0x80` on
+the first remaining byte, skips members of the DLL string at VA `0x10079284`
+(`.-_&'`) after that byte, and requires the next character to have class bit
+`0x80` or `0x40`. Remaining non-punctuation characters must retain the chosen
+class bit. Reaching NUL after the class check returns low-word one; a failed
+predicate returns low-word zero.
+
+Port
+----
+
+`text.Paul2013ProperNameScannerWordPredicate` ports the bounded byte and
+class logic using the existing 2013 attribute and character-map snapshots.
+The context-gate entry point that accepts scanner output now derives both
+this predicate and the `FUN_10041df0` late lookup directly, as well as the
+`FUN_100035d0` results from supplied table snapshots.
+
+The first-byte class gate followed immediately by NUL is a successful path in
+the native helper. The Go implementation handles that one-byte case directly;
+its regression test covers a qualifying single-byte uppercase surface and
+single-byte values that fail the first-byte class gate.
+
+Evidence boundary
+-----------------
+
+This ports only the Boolean helper over a supplied scanner string. It does
+not produce that string, and the original scanner's broader transliteration,
+punctuation, numeric, and resource-dependent state machine remains open.

@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ${APPLE_METRIC_OVERLAY_DIR:?set to the disposable metric-match overlay}:/work/data-kate/M16/mc_idx_tbl:ro

@@ -1,0 +1,8 @@
+source=tools/revkit/work/stage19/vt_kat-tree2-versioned.dll
+source_sha256=9f006d1474cc912535699bd94c04d5d7649a4489431059fa8b816ebcd10421b5
+file_offset=0x7c298
+virtual_address=0x1007c298
+selector_slot=1
+feature=derived-B
+coefficient=0000a040->00002041 (5.0->10.0)
+patched_sha256=3eed531b5aecb3a2bf0300fb22dea05d67d78a0405e40dcb5ed5f7c54956f41f

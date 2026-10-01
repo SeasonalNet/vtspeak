@@ -1,0 +1,37 @@
+VoiceText Paul 2013 FUN_1000a140 directly compared suffix inventory
+
+Scope
+
+This is a static inventory of the directly compared suffix families in the
+checked-in Ghidra pseudocode for FUN_1000a140 and their Go handler coverage.
+The source is `stage6-deep-text-functions.txt`, lines 223-1670; the binary
+cross-check is `vt_pau-objdump-disassembly.txt`, beginning at VA 0x1000a140.
+Ghidra output is pseudocode, not recovered source. This inventory says nothing
+about native row-for-row parity.
+
+Directly compared suffixes and Go handlers
+
+- `liness`: `NormalizePaul2013LinessSuffixContext` and the A140 cascade
+  adapter; ordered before the later long-input `ed`/`er` handlers.
+- `ance`, `ness`, `ment`, `ship`, `less`: their corresponding context handlers
+  in the short 7- and 8-byte branch.
+- `ers`, `est`: `NormalizePaul2013ErsSuffixContext` and
+  `NormalizePaul2013EstSuffixContext`, including their 6- to 8-byte paths.
+- `ed`, `er`: their context handlers in the long 9- to 31-byte path.
+- `ing`, `ist`, `ful`, `ly`, and terminal `s`: their context handlers and
+  A140 cascade adapters, covering the recovered short and long ranges.
+
+The suffix predicates use the recovered character map, and the table-gated
+predicates use the complete signed short-table index window documented in
+Stage 106. The cascade records native ordering and whether a matching suffix
+handler missed its dictionary lookup. The suffix stems still depend on loaded
+dictionary and pronunciation resources supplied by the engine.
+
+Boundary
+
+This inventory establishes coverage for the direct suffix comparisons visible
+in the named pseudocode. It does not establish that every branch in
+FUN_1000a140 has been translated: table-driven and state-dependent paths still
+need branch-by-branch comparison, and the exact upstream exception rows,
+resource/state production, and runtime output parity are not established. The
+Go engine remains an independent, evidence-bounded implementation.

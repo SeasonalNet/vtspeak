@@ -1,0 +1,129 @@
+VTDTTS ASCII
+3
+4
+merged-gen
+merged-num
+merged-etc
+merged-alp
+
+TypeFlag : 2
+PhoneString : N
+File Index : 0
+PCM Pos : 22187200
+PCM Size : 1724
+PCM Coded Size : 920
+Phone Mode : 0
+Pitch_first : 104
+Pitch_last : 146
+PM Pos : 325135
+PM Size : 14
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : OH1
+File Index : 0
+PCM Pos : 22188120
+PCM Size : 1678
+PCM Coded Size : 880
+Phone Mode : 0
+Pitch_first : 146
+Pitch_last : 160
+PM Pos : 325149
+PM Size : 11
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : R
+File Index : 0
+PCM Pos : 22189000
+PCM Size : 1320
+PCM Coded Size : 688
+Phone Mode : 0
+Pitch_first : 160
+Pitch_last : 174
+PM Pos : 325160
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : TH
+File Index : 0
+PCM Pos : 48949232
+PCM Size : 1058
+PCM Coded Size : 528
+Phone Mode : 0
+Pitch_first : 158
+Pitch_last : 128
+PM Pos : 734238
+PM Size : 7
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : IY1
+File Index : 0
+PCM Pos : 48949760
+PCM Size : 1812
+PCM Coded Size : 1756
+Phone Mode : 1
+Pitch_first : 128
+Pitch_last : 134
+PM Pos : 734245
+PM Size : 15
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : IY1
+File Index : 2
+PCM Pos : 70644580
+PCM Size : 1736
+PCM Coded Size : 1692
+Phone Mode : 2
+Shift Size : 1548
+Pitch_first : 140
+Pitch_last : 86
+PM Pos : 1109300
+PM Size : 17
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : S
+File Index : 2
+PCM Pos : 68178688
+PCM Size : 1650
+PCM Coded Size : 832
+Phone Mode : 0
+Pitch_first : 84
+Pitch_last : 84
+PM Pos : 1068067
+PM Size : 20
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : T
+File Index : 2
+PCM Pos : 68179520
+PCM Size : 1534
+PCM Coded Size : 764
+Phone Mode : 0
+Pitch_first : 84
+Pitch_last : 82
+PM Pos : 1068087
+PM Size : 18
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+

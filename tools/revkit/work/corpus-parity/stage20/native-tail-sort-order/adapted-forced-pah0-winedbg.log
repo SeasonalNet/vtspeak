@@ -1,0 +1,110 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023948
+Wine-gdb> >>> > > > > >  >  >  >  > > > >  >  >  >  >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+NATIVE_TAIL_SORT_PRE count=75 [0]=63:4119999a [1]=233533:41cccccd
+ [2]=222240:4119999a [3]=220903:4119999a [4]=214148:41c4cccd
+ [5]=211497:4119999a [6]=208625:4119999a [7]=208165:4119999a
+ [8]=207948:4119999a [9]=206118:41eccccd [10]=205939:4119999a
+ [11]=204612:41c4cccd [12]=200614:41c4cccd [13]=200525:41c4cccd
+ [14]=198921:4119999a [15]=197867:4119999a [16]=195687:41c4cccd
+ [17]=189906:41c4cccd [18]=233824:4119999a [19]=233955:4119999a
+ [20]=279479:43460000 [21]=273369:4119999a [22]=272822:4119999a
+ [23]=271915:4119999a [24]=271878:4119999a [25]=270371:4119999a
+ [26]=268190:4119999a [27]=267478:4119999a [28]=264663:4119999a
+ [29]=264405:4119999a [30]=262454:41c4cccd [31]=258594:4119999a
+ [32]=255501:4119999a [33]=252497:4119999a [34]=248753:4119999a
+ [35]=245736:41cccccd [36]=234795:4119999a [37]=182880:41c4cccd
+ [38]=179388:41c4cccd [39]=51310:41c4cccd [40]=50118:4119999a
+ [41]=32995:4119999a [42]=31795:41c4cccd [43]=31347:41cccccd
+ [44]=28430:41eccccd [45]=25895:4119999a [46]=22451:41cccccd
+ [47]=20499:41cccccd [48]=19888:4119999a [49]=18378:4119999a
+ [50]=13531:4119999a [51]=6208:4119999a [52]=5218:4119999a [53]=3756:4119999a
+ [54]=2525:41eccccd [55]=1200:41cccccd [56]=52542:41cccccd [57]=88195:4119999a
+ [58]=178453:41c4cccd [59]=169343:4119999a [60]=167546:4119999a
+ [61]=165351:41cccccd [62]=158787:4119999a [63]=149799:4119999a
+ [64]=146049:4119999a [65]=129641:41cccccd [66]=116320:41c4cccd
+ [67]=113167:4119999a [68]=111587:4119999a [69]=100640:4119999a
+ [70]=100016:4119999a [71]=99833:4119999a [72]=97386:4119999a
+ [73]=92183:41c4cccd [74]=279484:432d0000
+Temporary breakpoint 3 at 0x1002394d
+NATIVE_TAIL_SORT_POST count=75 [0]=63:4119999a [1]=270371:4119999a
+ [2]=268190:4119999a [3]=267478:4119999a [4]=264663:4119999a
+ [5]=264405:4119999a [6]=149799:4119999a [7]=258594:4119999a
+ [8]=255501:4119999a [9]=252497:4119999a [10]=248753:4119999a
+ [11]=158787:4119999a [12]=234795:4119999a [13]=167546:4119999a
+ [14]=169343:4119999a [15]=50118:4119999a [16]=32995:4119999a
+ [17]=88195:4119999a [18]=3756:4119999a [19]=5218:4119999a [20]=25895:4119999a
+ [21]=6208:4119999a [22]=13531:4119999a [23]=19888:4119999a
+ [24]=271878:4119999a [25]=271915:4119999a [26]=222240:4119999a
+ [27]=220903:4119999a [28]=97386:4119999a [29]=211497:4119999a
+ [30]=208625:4119999a [31]=208165:4119999a [32]=207948:4119999a
+ [33]=99833:4119999a [34]=205939:4119999a [35]=100016:4119999a
+ [36]=100640:4119999a [37]=111587:4119999a [38]=198921:4119999a
+ [39]=197867:4119999a [40]=113167:4119999a [41]=233824:4119999a
+ [42]=233955:4119999a [43]=146049:4119999a [44]=273369:4119999a
+ [45]=272822:4119999a [46]=18378:4119999a [47]=178453:41c4cccd
+ [48]=116320:41c4cccd [49]=92183:41c4cccd [50]=214148:41c4cccd
+ [51]=204612:41c4cccd [52]=200614:41c4cccd [53]=200525:41c4cccd
+ [54]=195687:41c4cccd [55]=31795:41c4cccd [56]=51310:41c4cccd
+ [57]=179388:41c4cccd [58]=182880:41c4cccd [59]=189906:41c4cccd
+ [60]=262454:41c4cccd [61]=20499:41cccccd [62]=233533:41cccccd
+ [63]=129641:41cccccd [64]=245736:41cccccd [65]=165351:41cccccd
+ [66]=52542:41cccccd [67]=1200:41cccccd [68]=31347:41cccccd [69]=22451:41cccccd
+ [70]=2525:41eccccd [71]=206118:41eccccd [72]=28430:41eccccd
+ [73]=279484:432d0000 [74]=279479:43460000
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

@@ -1,0 +1,20 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10027fe0
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1002aac0
+Wine-gdb> >>>>>>>>>> >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HELLO_NATIVE_VOLUME old=200 new=100
+HELLO_NATIVE_SELECTED n=1 id=272822
+HELLO_NATIVE_SELECTED n=2 id=272823
+HELLO_NATIVE_SELECTED n=3 id=272823
+HELLO_NATIVE_SELECTED n=4 id=272824
+HELLO_NATIVE_SELECTED n=5 id=272825
+HELLO_NATIVE_SELECTED n=6 id=272825
+HELLO_NATIVE_JOIN call=1 slot=0 count=1210 leading=78 trailing=72 source=0x25eef14
+HELLO_NATIVE_JOIN call=2 slot=1 count=290 leading=72 trailing=72 source=0x25eef14
+HELLO_NATIVE_JOIN call=3 slot=2 count=360 leading=72 trailing=72 source=0x25eef14
+HELLO_NATIVE_JOIN call=4 slot=3 count=1180 leading=72 trailing=68 source=0x25eef14
+HELLO_NATIVE_JOIN call=5 slot=4 count=2112 leading=68 trailing=102 source=0x25eef14
+HELLO_NATIVE_JOIN call=6 slot=5 count=2844 leading=102 trailing=126 source=0x25eef14
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

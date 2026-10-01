@@ -1,0 +1,13 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023350
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10023814
+Wine-gdb> >> > > > > > > >  >  >  >  >   >    >    >   >   >    >    >   >  >   >   >   >    >    >     >     >    >    >   >    >    >    >   >  >  > > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x100191bc
+Wine-gdb> >>>>>>>>>> > >> > >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_LEGACY_POOL_BEFORE context=2 count=50
+APPLE_2013_LEGACY_POOL_AFTER context=2 count=30
+APPLE_2013_LEGACY_POOL_BEFORE context=4 count=158
+APPLE_2013_LEGACY_POOL_AFTER context=4 count=28
+APPLE_2013_LEGACY_SHORTLISTS_WEIGHTS_SELECTED n=1 unit=177774
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

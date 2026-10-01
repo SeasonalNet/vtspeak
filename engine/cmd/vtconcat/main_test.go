@@ -1,6 +1,10 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"vtspeak/engine/synthesis"
+)
 
 func TestParseUnitRefs(t *testing.T) {
 	units, err := parseUnitRefs("gen:12,num:7")
@@ -20,5 +24,25 @@ func TestParseUnitRefsRejectsMalformedInput(t *testing.T) {
 				t.Fatalf("parseUnitRefs(%q) accepted malformed input", value)
 			}
 		})
+	}
+}
+
+func TestMakeRendererSelectsCursorTimeline(t *testing.T) {
+	renderer, err := makeRenderer("cursor", nil, false)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, ok := renderer.(synthesis.CursorTimelineRenderer); !ok {
+		t.Fatalf("cursor renderer type = %T, want synthesis.CursorTimelineRenderer", renderer)
+	}
+}
+
+func TestMakeRendererSelectsEqualSpanJoin(t *testing.T) {
+	renderer, err := makeRenderer("join", nil, false)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, ok := renderer.(synthesis.UPMTimelineJoinRenderer); !ok {
+		t.Fatalf("join renderer type = %T, want synthesis.UPMTimelineJoinRenderer", renderer)
 	}
 }

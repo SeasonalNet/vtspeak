@@ -1,0 +1,25 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hi-query-cutoff9-volume100-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024060
+Wine-gdb> >>>>>> > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x10027fe0
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1002c8b0
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 6 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 7 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_VOLUME100_SETTER original_volume=200 replacement_volume=100
+Temporary breakpoint 8 at 0x100249bb
+Temporary breakpoint 9 at 0x10024808
+HI_VOLUME100_METRIC_INPUT count=1 id_weight=32924:67 
+Temporary breakpoint 10 at 0x10024271
+HI_VOLUME100_METRIC_SUM value=67
+Temporary breakpoint 11 at 0x10024808
+HI_VOLUME100_METRIC_INPUT count=2 id_weight=13468:4 13467:5 
+Temporary breakpoint 12 at 0x10024271
+HI_VOLUME100_METRIC_SUM value=9
+HI_VOLUME100_CUTOFF_OVERRIDE metric=9
+HI_VOLUME100_POSITION_BUILDER positions=2
+HI_VOLUME100_SELECTED n=1 id=272820
+HI_VOLUME100_DECODED_ROW call=1 samples=1420 sample_scale=100
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

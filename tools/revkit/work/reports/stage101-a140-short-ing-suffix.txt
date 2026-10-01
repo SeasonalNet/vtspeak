@@ -1,0 +1,35 @@
+VoiceText Paul 2013 FUN_1000a140 short `ing` suffix
+==================================================
+
+Evidence
+--------
+
+The `FUN_1000a140` pseudocode in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, around
+lines 973-1157, compares the mapped final three bytes with `DAT_10077378`
+(`ing`). The short-table predicate reads offsets `length-5` and `length-4`.
+In the branch that may inspect `length-7` and `length-6`, the decompiler
+pseudocode first checks `length < 7`; that condition skips both reads for
+short inputs. The selected stem is then looked up through `FUN_1000cbe0`
+with `%`, followed by the generic `FUN_1000cb30` fallback. A nonempty result
+gets the `#.` tail and row-flag bit 3 through the common success path.
+
+Implementation
+--------------
+
+`NormalizePaul2013IngSuffixContext` applies this branch for 5- to 31-byte
+ASCII C strings. It retains the minimum `length-5` and `length-4` table
+indexes, avoids the guarded earlier-pair reads below seven bytes, preserves
+the selected stem order, and appends `#.` on success. The previous
+`NormalizePaul2013LongIngSuffixContext` method delegates to the generalized
+entry point. The short cascade tries this branch after `ers` and `est`,
+before `ist`, `ful`, `ly`, and terminal `s`.
+
+Evidence boundary
+-----------------
+
+This is a static pseudocode port; no original-runtime row comparison has been
+made. Stage 106 later recovers the complete signed short-table window used by
+this branch, including its high-bit byte indexes. Other A140 cases, exception
+resource/state production, general Unicode text handling, and full C3A0 runtime
+parity remain open.

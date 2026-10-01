@@ -1,0 +1,59 @@
+VoiceText Paul 2013 proper-name TPP nonzero context decision
+============================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_10034180` is preserved in
+`tools/revkit/work/reports/stage6-tpp-callers.txt`. The full Ghidra
+pseudocode for the called scanner `FUN_1005a350` is now preserved in
+`tools/revkit/work/reports/stage135-fun1005a350-pseudo.txt`. After the final
+component row's raw `+0x18` value is found nonzero, the function casts it to
+`byte *` and calls the scanner. It then consumes the outputs corresponding to
+`local_3c`, `local_4c[0]`, `local_30`, and `local_2c`.
+
+The first branch enters the special-case tree when any scanner count/prefix/
+status bound fails, or when both `FUN_100035d0` results are above
+`0x7fffffff`. The count-one path first requires a nonzero
+`FUN_1001c1f0(surface, DAT_1008009c)` result. A two-component success return
+at `LAB_10034470` is reachable when all these predicates hold:
+
+* the first surface comparison against `George` returns zero;
+* the final component marker is `d`;
+* the comparison against `DAT_10079144` returns zero;
+* scanner count is positive, prefix count is at most one, and status is one;
+* `FUN_10010120(local_2c)` has a nonzero low word.
+
+For a one-component candidate, three later branches jump to the zero-low-word
+return: `FUN_10041df0(local_2c) < 0x80000000`; either the `George` or
+`DAT_100773c4` surface comparison returns zero under the same scanner bounds
+and nonzero `FUN_10010120` low word; or either the `Martin` or `Luther`
+comparison returns zero under those bounds and predicate. When those reject
+branches do not fire, control reaches `LAB_10034470`'s low-word value one.
+The report describes Ghidra pseudocode and does not assign meaning to opaque
+tables or helper routines.
+
+Port
+----
+
+`text.EvaluatePaul2013ProperNameTPPContextGate` ports this post-scanner
+Boolean decision tree. It accepts scanner counters/status plus booleans for
+the direct helper and table outcomes. `duration.Engine.MatchProperNameTPPComponentArenaWithContext`
+derives component count from the supplied arena and evaluates the gate only
+after the known selector, exact lookup, and marker/value checks pass.
+`MatchAndAppendProperNameTPPComponentArenaWithContext` performs the
+`FUN_10034110` source-row append only when that result accepts.
+
+Evidence boundary
+-----------------
+
+This ports the branch logic, not `FUN_1005a350` or the production of its
+ordinary scanner output. The whitespace prefix and status 8/9 terminal paths
+are ported separately in Stage 140. The `FUN_100035d0` search algorithm is
+separately ported in Stage 136 for caller-supplied table snapshots; the actual
+runtime tables at `DAT_100a7a40` and `DAT_100a7a44` are not recovered or loaded
+here. The `FUN_10041df0` Roman-numeral/two-byte membership and `FUN_10010120`
+scanner-word predicates are ported in Stages 138 and 139. The other surface
+predicates, pointed-to scanner-input contents, component-arena producer, and
+row-for-row runtime parity remain unresolved. The zero-input fast path is
+recorded in Stage 132 and append composition in Stage 133.

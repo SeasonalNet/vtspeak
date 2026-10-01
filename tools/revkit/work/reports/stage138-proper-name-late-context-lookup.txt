@@ -1,0 +1,35 @@
+VoiceText Paul 2013 proper-name late context lookup
+===================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_10041df0` is in
+`tools/revkit/work/reports/stage137-proper-name-context-helper-pseudocode.txt`.
+It checks 20 exact C-string entries before its byte-length branch. The
+pointer table resolves to the uppercase Roman numerals `I` through `XX`; the
+entry strings at the high end are visible in the read-only DLL data beginning
+at VA `0x1008066c`. A match returns a positive one-based index. The remaining
+nonnegative return case accepts a two-byte sequence when the first byte is
+`0xa5` and the second is in `0xb0..0xb9`. Those bytes satisfy the function's
+surrounding two-byte ranges; other candidates return `-1`.
+
+In `FUN_10034180`, the one-component branch rejects when the unsigned result
+is below `0x80000000`. Since this helper returns either a nonnegative index or
+`-1`, that gate is equivalent to a match in the cases above.
+
+Port
+----
+
+`text.Paul2013ProperNameContextLateLookup` ports those exact membership cases.
+The `WithStringTables` context-gate entry point derives this predicate from
+the scanner output before evaluating the remaining decision tree, so callers
+no longer need to supply this one helper result.
+
+Evidence boundary
+-----------------
+
+This does not port the scanner that produces the C string or the other
+surface/table predicates in `FUN_10034180`. The helper result is bounded to
+the observed Roman-numeral and two-byte cases; no broader linguistic meaning
+is assigned.

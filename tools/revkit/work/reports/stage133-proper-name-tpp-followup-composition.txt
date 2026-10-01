@@ -1,0 +1,30 @@
+VoiceText Paul 2013 proper-name TPP fast-path composition
+=========================================================
+
+Evidence
+--------
+
+`FUN_10033b60` in `tools/revkit/work/reports/stage6-text-table-consumers.txt`
+calls `FUN_10034180` for a matching component candidate. A nonzero low-word
+result then calls `FUN_10034110`; a zero low-word result skips that append.
+The `FUN_10034180` zero-input branch is documented in Stage 132. The
+`FUN_10034110` append fields and raw constants are documented in Stage 130.
+
+Port
+----
+
+`duration.Engine.MatchAndAppendProperNameTPPComponentArena` composes the
+component-arena projection, A-D TPP lookup, marker/value gate, raw final-row
+`+0x18` zero-input bypass, and `FUN_10034110` source-row append. Its
+`WithContext` variant also applies the Stage 134 post-scanner decision tree
+from caller-supplied scanner/helper outcomes. It invokes the append only when
+the known gates succeed and context is accepted. The result
+retains whether the follow-up ran and succeeded, plus the returned source
+arena. Pending or rejected context leaves the supplied source arena unchanged.
+
+Evidence boundary
+-----------------
+
+Component candidate production, raw scanner execution, pointer-backed helper
+and table lookups, and row-for-row runtime comparison remain unimplemented or
+unverified.

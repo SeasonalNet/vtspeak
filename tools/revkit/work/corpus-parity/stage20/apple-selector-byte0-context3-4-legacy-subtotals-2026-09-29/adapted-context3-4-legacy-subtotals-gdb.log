@@ -1,0 +1,18 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/apple-selector-byte0-context3-4-legacy-subtotals-2026-09-29/adapted-context3-4-legacy-subtotals-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x100191bc
+Wine-gdb> >>>>>>> > >> > >> > >> > >> > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL context=3 current=2554 previous=64719 before=10.477 after=14.2417
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL context=3 current=82036 previous=64719 before=11.5966 after=16.3335
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL context=3 current=59558 previous=100180 before=11.7516 after=11.9439
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL context=4 current=82037 previous=82036 before=2 after=0
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL context=4 current=59559 previous=59558 before=2 after=0
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL context=4 current=2555 previous=2554 before=2 after=0
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL_SELECTED id=177774
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL_SELECTED id=177774
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL_SELECTED id=100180
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL_SELECTED id=59558
+APPLE_2013_CONTEXT3_4_LEGACY_SUBTOTAL_SELECTED id=59559
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

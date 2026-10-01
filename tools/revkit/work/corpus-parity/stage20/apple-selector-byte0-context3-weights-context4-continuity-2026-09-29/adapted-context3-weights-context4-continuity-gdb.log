@@ -1,0 +1,17 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > >  >  > >> > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_EDGE current=2554 previous=64719 raw=0.370441 derived_a=0.503937 derived_b=0.752941 replacement=14.2417
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_EDGE current=82036 previous=64719 raw=0.479421 derived_a=0.0327869 derived_b=0.947368 replacement=16.3335
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_EDGE current=59558 previous=100180 raw=0.849702 derived_a=0.531148 derived_b=0.0384615 replacement=11.9439
+APPLE_2013_CONTEXT4_OLD_CONTINUITY_EDGE current=82037 previous=82036 before=2 after=0
+APPLE_2013_CONTEXT4_OLD_CONTINUITY_EDGE current=59559 previous=59558 before=2 after=0
+APPLE_2013_CONTEXT4_OLD_CONTINUITY_EDGE current=2555 previous=2554 before=2 after=0
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_CONTEXT4_CONTINUITY_SELECTED n=1 id=177774
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_CONTEXT4_CONTINUITY_SELECTED n=2 id=177774
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_CONTEXT4_CONTINUITY_SELECTED n=3 id=100180
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_CONTEXT4_CONTINUITY_SELECTED n=4 id=59558
+APPLE_2013_CONTEXT3_OLD_SCHEDULE_CONTEXT4_CONTINUITY_SELECTED n=5 id=59559
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

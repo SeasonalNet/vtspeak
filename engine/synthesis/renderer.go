@@ -139,7 +139,7 @@ func PlanPaul2013UPMSegmentResampling(segments []UPMSegment) ([]UPMSegmentResamp
 	targetCoordinate := int32(initialCoordinate)
 	var priorOutputSamples int32
 	steps := make([]UPMSegmentResampleStep, 0, len(segments))
-	for stepIndex := 0; stepIndex < len(segments); stepIndex++ {
+	for {
 		segmentIndex, found, err := SelectPaul2013UPMSegment(segments, targetCoordinate)
 		if err != nil {
 			return nil, err
@@ -148,9 +148,16 @@ func PlanPaul2013UPMSegmentResampling(segments []UPMSegment) ([]UPMSegmentResamp
 			return steps, nil
 		}
 		segment := segments[segmentIndex]
+		remainingBudget := int64(segment.FirstPeriod) - int64(priorOutputSamples) + int64(segments[0].FirstPeriod)
+		if remainingBudget <= 0 {
+			return steps, nil
+		}
 		periodLength, err := Paul2013UPMSegmentTargetLength(segments, segmentIndex, priorOutputSamples)
 		if err != nil {
 			return nil, fmt.Errorf("calculate target length for segment %d: %w", segmentIndex, err)
+		}
+		if periodLength <= 0 {
+			return nil, fmt.Errorf("UPM segment %d produced a nonpositive resampled length", segmentIndex)
 		}
 		steps = append(steps, UPMSegmentResampleStep{
 			SegmentIndex:        segmentIndex,
@@ -166,6 +173,10 @@ func PlanPaul2013UPMSegmentResampling(segments []UPMSegment) ([]UPMSegmentResamp
 		priorOutputSamples = int32(priorOutput)
 		nextCoordinate := (priorOutput + int64(segment.SecondPeriod)) * 100 / int64(segment.SpeedRatio)
 		if nextCoordinate <= int64(targetCoordinate) {
+			remainingBudget := int64(segment.FirstPeriod) - int64(priorOutputSamples) + int64(segments[0].FirstPeriod)
+			if remainingBudget <= 0 {
+				return steps, nil
+			}
 			return nil, errors.New("UPM target coordinate failed to advance")
 		}
 		if nextCoordinate > int64(^uint32(0)>>1) {
@@ -173,14 +184,6 @@ func PlanPaul2013UPMSegmentResampling(segments []UPMSegment) ([]UPMSegmentResamp
 		}
 		targetCoordinate = int32(nextCoordinate)
 	}
-	_, found, err := SelectPaul2013UPMSegment(segments, targetCoordinate)
-	if err != nil {
-		return nil, err
-	}
-	if !found {
-		return steps, nil
-	}
-	return nil, errors.New("UPM segment scan exceeded the segment count")
 }
 
 // Paul2013ResampledPeriodLength applies the captured pitch-period ratio and
@@ -451,27 +454,22 @@ func (renderer PeriodResamplingRenderer) Render(
 		for index := range samples {
 			samples[index] = int16(binary.LittleEndian.Uint16(unit.PCM[index*2:]))
 		}
-		periodStart := 0
-		for periodIndex, period := range unit.UPM {
+		sides, err := SplitPaul2013UnitUPMSides(unit.Record, unit.UPM, samples)
+		if err != nil {
+			return PCM{}, fmt.Errorf("split selected unit %d (%s:%d) UPM sides: %w", unitPosition, reference.Bank, reference.Index, err)
+		}
+		periods := append(sides.First, sides.Second[1:]...)
+		for _, period := range periods {
 			if err := ctx.Err(); err != nil {
 				return PCM{}, err
 			}
-			periodLength := int(period) * 2
-			periodEnd := periodStart + periodLength
-			if periodLength == 0 || periodEnd > len(samples) {
-				return PCM{}, fmt.Errorf("selected unit %d (%s:%d) UPM period %d exceeds decoded PCM", unitPosition, reference.Bank, reference.Index, periodIndex)
-			}
-			periodSamples, err := ResamplePaul2013Period(samples[periodStart:periodEnd], pitchControlWord)
+			periodSamples, err := ResamplePaul2013Period(period.Samples, pitchControlWord)
 			if err != nil {
-				return PCM{}, fmt.Errorf("resample selected unit %d (%s:%d) period %d: %w", unitPosition, reference.Bank, reference.Index, periodIndex, err)
+				return PCM{}, fmt.Errorf("resample selected unit %d (%s:%d) period %d: %w", unitPosition, reference.Bank, reference.Index, period.Index, err)
 			}
 			for _, sample := range periodSamples {
 				output = append(output, scaleSample(sample, gainPercent))
 			}
-			periodStart = periodEnd
-		}
-		if periodStart != len(samples) {
-			return PCM{}, fmt.Errorf("selected unit %d (%s:%d) UPM periods cover %d of %d samples", unitPosition, reference.Bank, reference.Index, periodStart, len(samples))
 		}
 	}
 	if len(output) == 0 {
@@ -490,8 +488,9 @@ type UPMSegmentPlanRenderer struct {
 
 // Render executes the segment plan using source spans from each selected
 // unit. It normalizes raw pitch and speed inputs using the observed API
-// defaults and clamps; sample interpolation remains approximate and output is
-// not DLL parity.
+// defaults and clamps. Non-default controls use the captured neighboring
+// window coefficients; the full context and timeline renderer is still
+// incomplete.
 func (renderer UPMSegmentPlanRenderer) Render(
 	ctx context.Context,
 	units []selection.UnitRef,
@@ -526,6 +525,19 @@ func (renderer UPMSegmentPlanRenderer) Render(
 		if len(unit.PCM) == 0 || len(unit.PCM)%2 != 0 {
 			return PCM{}, fmt.Errorf("selected unit %d (%s:%d) has invalid PCM byte length %d", unitPosition, reference.Bank, reference.Index, len(unit.PCM))
 		}
+		if err := validateRendererUnitTiming(unit.UPM, len(unit.PCM)/2); err != nil {
+			return PCM{}, fmt.Errorf("selected unit %d (%s:%d) has invalid timing metadata: %w", unitPosition, reference.Bank, reference.Index, err)
+		}
+		samples := make([]int16, len(unit.PCM)/2)
+		for index := range samples {
+			samples[index] = int16(binary.LittleEndian.Uint16(unit.PCM[index*2:]))
+		}
+		if pitchControlWord == 100 && speedControlWord == 100 {
+			for _, sample := range samples {
+				output = append(output, scaleSample(sample, gainPercent))
+			}
+			continue
+		}
 		segments, err := BuildPaul2013UPMSegments(unit.UPM, pitchControlWord, speedControlWord)
 		if err != nil {
 			return PCM{}, fmt.Errorf("build selected unit %d (%s:%d) UPM segments: %w", unitPosition, reference.Bank, reference.Index, err)
@@ -534,12 +546,9 @@ func (renderer UPMSegmentPlanRenderer) Render(
 		if err != nil {
 			return PCM{}, fmt.Errorf("plan selected unit %d (%s:%d) UPM segments: %w", unitPosition, reference.Bank, reference.Index, err)
 		}
-		samples := make([]int16, len(unit.PCM)/2)
-		for index := range samples {
-			samples[index] = int16(binary.LittleEndian.Uint16(unit.PCM[index*2:]))
-		}
 		unitOutputStart := len(output)
 		priorOutputSamples := 0
+		var priorContextWindow []int16
 		for stepIndex, step := range plan {
 			if err := ctx.Err(); err != nil {
 				return PCM{}, err
@@ -555,7 +564,14 @@ func (renderer UPMSegmentPlanRenderer) Render(
 				secondPeriodEnd > int64(len(samples)) || step.SourcePeriod != segment.FirstPeriod {
 				return PCM{}, fmt.Errorf("selected unit %d (%s:%d) planned segment %d has an invalid PCM span", unitPosition, reference.Bank, reference.Index, step.SegmentIndex)
 			}
-			period, err := resamplePaul2013SamplesToLength(samples[int(start):int(firstPeriodEnd)], step.ResampledPeriodSize)
+			if len(priorContextWindow) == 0 {
+				priorContextWindow = make([]int16, int(step.SourcePeriod))
+			}
+			period, err := BlendPaul2013UPMSegmentWindows(
+				priorContextWindow,
+				samples[int(start):int(firstPeriodEnd)],
+				int(step.ResampledPeriodSize),
+			)
 			if err != nil {
 				return PCM{}, fmt.Errorf("resample selected unit %d (%s:%d) plan step %d: %w", unitPosition, reference.Bank, reference.Index, stepIndex, err)
 			}
@@ -571,12 +587,30 @@ func (renderer UPMSegmentPlanRenderer) Render(
 			for sampleIndex, sample := range samples[int(firstPeriodEnd):int(secondPeriodEnd)] {
 				output[tailOffset+sampleIndex] = scaleSample(sample, gainPercent)
 			}
+			priorContextWindow = samples[int(firstPeriodEnd):int(secondPeriodEnd)]
 		}
 	}
 	if len(output) == 0 {
 		return PCM{}, errors.New("UPM segment plan produced no PCM samples")
 	}
 	return PCM{SampleRate: 16000, Samples: output}, nil
+}
+
+func validateRendererUnitTiming(upm []byte, sampleCount int) error {
+	if len(upm) == 0 {
+		return errors.New("UPM vector is empty")
+	}
+	var upmSampleCount int64
+	for periodIndex, period := range upm {
+		if period == 0 {
+			return fmt.Errorf("UPM period %d is zero", periodIndex)
+		}
+		upmSampleCount += int64(period) * 2
+	}
+	if upmSampleCount != int64(sampleCount) {
+		return fmt.Errorf("UPM vector describes %d samples but PCM has %d", upmSampleCount, sampleCount)
+	}
+	return nil
 }
 
 // scaleSample applies integer gain with the asymmetric limits recovered from

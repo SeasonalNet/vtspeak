@@ -1,0 +1,161 @@
+Wine-gdb> Breakpoint 1 at 0x1002df50
+Breakpoint 2 at 0x100195a5
+Hardware assisted breakpoint 3 at 0x408187
+HELLO_RANGE_SCOPE_ENTRY call=1 mode=0 width=10 query=00002205015a285a0001
+HELLO_RANGE_SCOPE_RETURN call=1 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=2 mode=0 width=9 query=00002205015a285a0001
+HELLO_RANGE_SCOPE_RETURN call=2 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=3 mode=0 width=8 query=00002205015a285a0001
+HELLO_RANGE_SCOPE_RETURN call=3 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=4 mode=0 width=7 query=00002205015a285a0001
+HELLO_RANGE_SCOPE_RETURN call=4 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=5 mode=0 width=6 query=00002205015a285a0001
+HELLO_RANGE_SCOPE_RETURN call=5 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=6 mode=0 width=5 query=00002205015a285a0001
+HELLO_RANGE_SCOPE_RETURN call=6 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=7 mode=0 width=4 query=00002205015a285a0001
+HELLO_RANGE_SCOPE_RETURN call=7 count=13 classes: {32926 key=5a22071e00 members=21} {32924 key=5a22011e00 members=10} {32925 key=5a22041e00 members=45} {32929 key=5a22171e00 members=30} {32927 key=5a220a1e00 members=2} {32935 key=5a223b1e00 members=50} {32933 key=5a222f1e00 members=16} {32930 key=5a22231e00 members=227} {32934 key=5a22361e00 members=2} {32937 key=5a22431e00 members=5} {32936 key=5a22421e00 members=1} {32931 key=5a222b1e00 members=1} {32928 key=5a22131e00 members=57}
+HELLO_RANGE_SCOPE_ENTRY call=8 mode=0 width=10 query=00002205015a1e5a0001
+HELLO_RANGE_SCOPE_RETURN call=8 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=9 mode=0 width=9 query=00002205015a1e5a0001
+HELLO_RANGE_SCOPE_RETURN call=9 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=10 mode=0 width=8 query=00002205015a1e5a0001
+HELLO_RANGE_SCOPE_RETURN call=10 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=11 mode=0 width=7 query=00002205015a1e5a0001
+HELLO_RANGE_SCOPE_RETURN call=11 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=12 mode=0 width=6 query=00002205015a1e5a0001
+HELLO_RANGE_SCOPE_RETURN call=12 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=13 mode=0 width=5 query=00002205015a1e5a0001
+HELLO_RANGE_SCOPE_RETURN call=13 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=14 mode=1 width=10 query=01002201000401170405
+HELLO_RANGE_SCOPE_RETURN call=14 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=15 mode=1 width=9 query=01002201000401170405
+HELLO_RANGE_SCOPE_RETURN call=15 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=16 mode=1 width=8 query=01002201000401170405
+HELLO_RANGE_SCOPE_RETURN call=16 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=17 mode=1 width=7 query=01002201000401170405
+HELLO_RANGE_SCOPE_RETURN call=17 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=18 mode=1 width=6 query=01002201000401170405
+HELLO_RANGE_SCOPE_RETURN call=18 count=84 classes: {3743 key=0d22040000 members=1} {14618 key=2322040000 members=5} {1610 key=0722040000 members=6} {10551 key=1a22040000 members=13} {5081 key=1022040000 members=1} {22537 key=2e22040000 members=6} {21350 key=2d22040000 members=8} {19974 key=2c22040000 members=1} {26090 key=3922040000 members=2} {3749 key=0d22170000 members=2} {14625 key=2322170000 members=8} {1616 key=0722170000 members=15} {10557 key=1a22170000 members=5} {18449 key=2b22170000 members=1} {21358 key=2d22170000 members=2} {19981 key=2c22170000 members=1} {8028 key=1522170000 members=1} {24286 key=3722170000 members=2} {23206 key=3522170000 members=1} {26096 key=3922170000 members=2} {3744 key=0d22040a00 members=1} {14619 key=2322040a00 members=19} {27549 key=3b22040a00 members=21} {10552 key=1a22040a00 members=1} {5082 key=1022040a00 members=27} {19975 key=2c22040a00 members=1} {21351 key=2d22040a00 members=1} {18445 key=2b22040a00 members=2} {8022 key=1522040a00 members=6} {30150 key=4422040a00 members=1} {32501 key=4e22040a00 members=2} {32220 key=4d22040a00 members=3} {24281 key=3722040a00 members=2} {26091 key=3922040a00 members=6} {27554 key=3b22170a00 members=1} {3745 key=0d22041400 members=18} {14620 key=2322041400 members=106} {27550 key=3b22041400 members=64} {1611 key=0722041400 members=32} {10553 key=1a22041400 members=47} {5083 key=1022041400 members=62} {22538 key=2e22041400 members=11} {19976 key=2c22041400 members=9} {21352 key=2d22041400 members=51} {18446 key=2b22041400 members=38} {8023 key=1522041400 members=50} {30151 key=4422041400 members=85} {12871 key=2122041400 members=7} {6391 key=1322041400 members=1} {28855 key=4122041400 members=15} {16231 key=2922041400 members=4} {26907 key=3a22041400 members=3} {7083 key=1422041400 members=6} {26092 key=3922041400 members=108} {25342 key=3822041400 members=5} {12215 key=2022041400 members=5} {24282 key=3722041400 members=42} {23203 key=3522041400 members=2} {17012 key=2a22041400 members=14} {14626 key=2322171400 members=22} {3750 key=0d22171400 members=4} {1617 key=0722171400 members=36} {10558 key=1a22171400 members=25} {5085 key=1022171400 members=12}
+HELLO_RANGE_SCOPE_ENTRY call=19 mode=1 width=10 query=01002201000401170305
+HELLO_RANGE_SCOPE_RETURN call=19 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=20 mode=1 width=9 query=01002201000401170305
+HELLO_RANGE_SCOPE_RETURN call=20 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=21 mode=1 width=8 query=01002201000401170305
+HELLO_RANGE_SCOPE_RETURN call=21 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=22 mode=1 width=7 query=01002201000401170305
+HELLO_RANGE_SCOPE_RETURN call=22 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=23 mode=1 width=6 query=01002201000401170305
+HELLO_RANGE_SCOPE_RETURN call=23 count=84 classes: {3743 key=0d22040000 members=1} {14618 key=2322040000 members=5} {1610 key=0722040000 members=6} {10551 key=1a22040000 members=13} {5081 key=1022040000 members=1} {22537 key=2e22040000 members=6} {21350 key=2d22040000 members=8} {19974 key=2c22040000 members=1} {26090 key=3922040000 members=2} {3749 key=0d22170000 members=2} {14625 key=2322170000 members=8} {1616 key=0722170000 members=15} {10557 key=1a22170000 members=5} {18449 key=2b22170000 members=1} {21358 key=2d22170000 members=2} {19981 key=2c22170000 members=1} {8028 key=1522170000 members=1} {24286 key=3722170000 members=2} {23206 key=3522170000 members=1} {26096 key=3922170000 members=2} {3744 key=0d22040a00 members=1} {14619 key=2322040a00 members=19} {27549 key=3b22040a00 members=21} {10552 key=1a22040a00 members=1} {5082 key=1022040a00 members=27} {19975 key=2c22040a00 members=1} {21351 key=2d22040a00 members=1} {18445 key=2b22040a00 members=2} {8022 key=1522040a00 members=6} {30150 key=4422040a00 members=1} {32501 key=4e22040a00 members=2} {32220 key=4d22040a00 members=3} {24281 key=3722040a00 members=2} {26091 key=3922040a00 members=6} {27554 key=3b22170a00 members=1} {3745 key=0d22041400 members=18} {14620 key=2322041400 members=106} {27550 key=3b22041400 members=64} {1611 key=0722041400 members=32} {10553 key=1a22041400 members=47} {5083 key=1022041400 members=62} {22538 key=2e22041400 members=11} {19976 key=2c22041400 members=9} {21352 key=2d22041400 members=51} {18446 key=2b22041400 members=38} {8023 key=1522041400 members=50} {30151 key=4422041400 members=85} {12871 key=2122041400 members=7} {6391 key=1322041400 members=1} {28855 key=4122041400 members=15} {16231 key=2922041400 members=4} {26907 key=3a22041400 members=3} {7083 key=1422041400 members=6} {26092 key=3922041400 members=108} {25342 key=3822041400 members=5} {12215 key=2022041400 members=5} {24282 key=3722041400 members=42} {23203 key=3522041400 members=2} {17012 key=2a22041400 members=14} {14626 key=2322171400 members=22} {3750 key=0d22171400 members=4} {1617 key=0722171400 members=36} {10558 key=1a22171400 members=25} {5085 key=1022171400 members=12}
+HELLO_RANGE_SCOPE_ENTRY call=24 mode=0 width=10 query=00001702002228220002
+HELLO_RANGE_SCOPE_RETURN call=24 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=25 mode=0 width=9 query=00001702002228220002
+HELLO_RANGE_SCOPE_RETURN call=25 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=26 mode=0 width=8 query=00001702002228220002
+HELLO_RANGE_SCOPE_RETURN call=26 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=27 mode=0 width=7 query=00001702002228220002
+HELLO_RANGE_SCOPE_RETURN call=27 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=28 mode=0 width=6 query=00001702002228220002
+HELLO_RANGE_SCOPE_RETURN call=28 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_RANGE_SCOPE_ENTRY call=29 mode=0 width=10 query=0000170200221e220002
+HELLO_RANGE_SCOPE_RETURN call=29 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=30 mode=0 width=9 query=0000170200221e220002
+HELLO_RANGE_SCOPE_RETURN call=30 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=31 mode=0 width=8 query=0000170200221e220002
+HELLO_RANGE_SCOPE_RETURN call=31 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=32 mode=0 width=7 query=0000170200221e220002
+HELLO_RANGE_SCOPE_RETURN call=32 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=33 mode=0 width=6 query=0000170200221e220002
+HELLO_RANGE_SCOPE_RETURN call=33 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_RANGE_SCOPE_ENTRY call=34 mode=0 width=10 query=00001702002214220002
+HELLO_RANGE_SCOPE_RETURN call=34 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=35 mode=0 width=9 query=00001702002214220002
+HELLO_RANGE_SCOPE_RETURN call=35 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=36 mode=0 width=8 query=00001702002214220002
+HELLO_RANGE_SCOPE_RETURN call=36 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=37 mode=0 width=7 query=00001702002214220002
+HELLO_RANGE_SCOPE_RETURN call=37 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=38 mode=0 width=6 query=00001702002214220002
+HELLO_RANGE_SCOPE_RETURN call=38 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_RANGE_SCOPE_ENTRY call=39 mode=0 width=10 query=0000170200220a220002
+HELLO_RANGE_SCOPE_RETURN call=39 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=40 mode=0 width=9 query=0000170200220a220002
+HELLO_RANGE_SCOPE_RETURN call=40 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=41 mode=0 width=8 query=0000170200220a220002
+HELLO_RANGE_SCOPE_RETURN call=41 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=42 mode=0 width=7 query=0000170200220a220002
+HELLO_RANGE_SCOPE_RETURN call=42 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=43 mode=0 width=6 query=0000170200220a220002
+HELLO_RANGE_SCOPE_RETURN call=43 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_RANGE_SCOPE_ENTRY call=44 mode=1 width=10 query=01001702002b002b0402
+HELLO_RANGE_SCOPE_RETURN call=44 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=45 mode=1 width=9 query=01001702002b002b0402
+HELLO_RANGE_SCOPE_RETURN call=45 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=46 mode=1 width=8 query=01001702002b002b0402
+HELLO_RANGE_SCOPE_RETURN call=46 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_RANGE_SCOPE_ENTRY call=47 mode=1 width=10 query=01001702002b002b0302
+HELLO_RANGE_SCOPE_RETURN call=47 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=48 mode=1 width=9 query=01001702002b002b0302
+HELLO_RANGE_SCOPE_RETURN call=48 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=49 mode=1 width=8 query=01001702002b002b0302
+HELLO_RANGE_SCOPE_RETURN call=49 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_RANGE_SCOPE_ENTRY call=50 mode=1 width=10 query=01001702002b002b0202
+HELLO_RANGE_SCOPE_RETURN call=50 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=51 mode=1 width=9 query=01001702002b002b0202
+HELLO_RANGE_SCOPE_RETURN call=51 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=52 mode=1 width=8 query=01001702002b002b0202
+HELLO_RANGE_SCOPE_RETURN call=52 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_RANGE_SCOPE_ENTRY call=53 mode=1 width=10 query=01001702002b002b0102
+HELLO_RANGE_SCOPE_RETURN call=53 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=54 mode=1 width=9 query=01001702002b002b0102
+HELLO_RANGE_SCOPE_RETURN call=54 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=55 mode=1 width=8 query=01001702002b002b0102
+HELLO_RANGE_SCOPE_RETURN call=55 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_RANGE_SCOPE_ENTRY call=56 mode=0 width=10 query=00003002001a012b0505
+HELLO_RANGE_SCOPE_RETURN call=56 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=57 mode=0 width=9 query=00003002001a012b0505
+HELLO_RANGE_SCOPE_RETURN call=57 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=58 mode=0 width=8 query=00003002001a012b0505
+HELLO_RANGE_SCOPE_RETURN call=58 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=59 mode=0 width=7 query=00003002001a012b0505
+HELLO_RANGE_SCOPE_RETURN call=59 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=60 mode=0 width=6 query=00003002001a012b0505
+HELLO_RANGE_SCOPE_RETURN call=60 count=51 classes: {18823 key=2b30230000 members=4} {18804 key=2b30070000 members=11} {18802 key=2b30010000 members=1} {18839 key=2b30360000 members=1} {18833 key=2b302d0000 members=30} {18831 key=2b302c0000 members=3} {18828 key=2b302b0000 members=4} {18821 key=2b30220000 members=1} {18853 key=2b304d0000 members=3} {18851 key=2b30440000 members=22} {18846 key=2b30410000 members=1} {18820 key=2b30210000 members=2} {18811 key=2b30160000 members=7} {18808 key=2b30150000 members=13} {18806 key=2b30130000 members=14} {18841 key=2b30370000 members=27} {18835 key=2b30350000 members=2} {18827 key=2b302a0000 members=20} {18825 key=2b30290000 members=1} {18817 key=2b30200000 members=2} {18807 key=2b30140000 members=1} {18824 key=2b30230100 members=3} {18815 key=2b30170100 members=1} {18805 key=2b30070100 members=2} {18803 key=2b30040100 members=1} {18849 key=2b30430100 members=1} {18813 key=2b30160100 members=3} {18843 key=2b30390100 members=1} {18836 key=2b30350100 members=1} {18816 key=2b30170200 members=1} {18840 key=2b30360200 members=1} {18832 key=2b302c0200 members=1} {18829 key=2b302b0200 members=2} {18822 key=2b30220200 members=1} {18852 key=2b30440200 members=1} {18847 key=2b30410200 members=1} {18814 key=2b30160200 members=1} {18809 key=2b30150200 members=1} {18845 key=2b303a0200 members=1} {18844 key=2b30390200 members=3} {18842 key=2b30370200 members=1} {18837 key=2b30350200 members=1} {18819 key=2b30200200 members=1} {18854 key=2b305a0300 members=4} {18856 key=2b305a0400 members=6} {18858 key=2b305e0500 members=3} {18848 key=2b30410a00 members=8} {18850 key=2b30430b00 members=1} {18834 key=2b302d1400 members=3} {18838 key=2b30351400 members=3} {18830 key=2b302b1600 members=1}
+HELLO_RANGE_SCOPE_ENTRY call=61 mode=0 width=10 query=00003002001a0b2b0505
+HELLO_RANGE_SCOPE_RETURN call=61 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=62 mode=0 width=9 query=00003002001a0b2b0505
+HELLO_RANGE_SCOPE_RETURN call=62 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=63 mode=0 width=8 query=00003002001a0b2b0505
+HELLO_RANGE_SCOPE_RETURN call=63 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=64 mode=0 width=7 query=00003002001a0b2b0505
+HELLO_RANGE_SCOPE_RETURN call=64 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=65 mode=0 width=6 query=00003002001a0b2b0505
+HELLO_RANGE_SCOPE_RETURN call=65 count=51 classes: {18823 key=2b30230000 members=4} {18804 key=2b30070000 members=11} {18802 key=2b30010000 members=1} {18839 key=2b30360000 members=1} {18833 key=2b302d0000 members=30} {18831 key=2b302c0000 members=3} {18828 key=2b302b0000 members=4} {18821 key=2b30220000 members=1} {18853 key=2b304d0000 members=3} {18851 key=2b30440000 members=22} {18846 key=2b30410000 members=1} {18820 key=2b30210000 members=2} {18811 key=2b30160000 members=7} {18808 key=2b30150000 members=13} {18806 key=2b30130000 members=14} {18841 key=2b30370000 members=27} {18835 key=2b30350000 members=2} {18827 key=2b302a0000 members=20} {18825 key=2b30290000 members=1} {18817 key=2b30200000 members=2} {18807 key=2b30140000 members=1} {18824 key=2b30230100 members=3} {18815 key=2b30170100 members=1} {18805 key=2b30070100 members=2} {18803 key=2b30040100 members=1} {18849 key=2b30430100 members=1} {18813 key=2b30160100 members=3} {18843 key=2b30390100 members=1} {18836 key=2b30350100 members=1} {18816 key=2b30170200 members=1} {18840 key=2b30360200 members=1} {18832 key=2b302c0200 members=1} {18829 key=2b302b0200 members=2} {18822 key=2b30220200 members=1} {18852 key=2b30440200 members=1} {18847 key=2b30410200 members=1} {18814 key=2b30160200 members=1} {18809 key=2b30150200 members=1} {18845 key=2b303a0200 members=1} {18844 key=2b30390200 members=3} {18842 key=2b30370200 members=1} {18837 key=2b30350200 members=1} {18819 key=2b30200200 members=1} {18854 key=2b305a0300 members=4} {18856 key=2b305a0400 members=6} {18858 key=2b305e0500 members=3} {18848 key=2b30410a00 members=8} {18850 key=2b30430b00 members=1} {18834 key=2b302d1400 members=3} {18838 key=2b30351400 members=3} {18830 key=2b302b1600 members=1}
+HELLO_RANGE_SCOPE_ENTRY call=66 mode=1 width=10 query=01003005015a325a0002
+HELLO_RANGE_SCOPE_RETURN call=66 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=67 mode=1 width=9 query=01003005015a325a0002
+HELLO_RANGE_SCOPE_RETURN call=67 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=68 mode=1 width=8 query=01003005015a325a0002
+HELLO_RANGE_SCOPE_RETURN call=68 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=69 mode=1 width=7 query=01003005015a325a0002
+HELLO_RANGE_SCOPE_RETURN call=69 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=70 mode=1 width=6 query=01003005015a325a0002
+HELLO_RANGE_SCOPE_RETURN call=70 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=71 mode=1 width=5 query=01003005015a325a0002
+HELLO_RANGE_SCOPE_RETURN call=71 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=72 mode=1 width=4 query=01003005015a325a0002
+HELLO_RANGE_SCOPE_RETURN call=72 count=66 classes: {15232 key=23305a1800 members=5} {11236 key=1a305a1800 members=1} {5503 key=10305a1800 members=6} {4183 key=0d305a1800 members=5} {20259 key=2c305a1800 members=1} {29098 key=41305a1800 members=1} {7214 key=14305a1800 members=1} {12398 key=20305a1800 members=1} {11231 key=1a305a0300 members=1} {4180 key=0d305a0300 members=1} {13732 key=22305a0300 members=2} {21796 key=2d305a0300 members=12} {18854 key=2b305a0300 members=4} {29096 key=41305a0300 members=2} {13037 key=21305a0300 members=14} {8900 key=16305a0300 members=5} {31901 key=4c305a0300 members=3} {25524 key=38305a0300 members=3} {24736 key=37305a0300 members=2} {11232 key=1a305a0400 members=4} {4181 key=0d305a0400 members=2} {29450 key=43305a0400 members=1} {21798 key=2d305a0400 members=14} {20257 key=2c305a0400 members=1} {18856 key=2b305a0400 members=6} {30622 key=45305a0400 members=1} {6617 key=13305a0400 members=4} {13038 key=21305a0400 members=25} {31605 key=48305a0400 members=2} {8902 key=16305a0400 members=2} {8333 key=15305a0400 members=3} {31902 key=4c305a0400 members=2} {25525 key=38305a0400 members=5} {12395 key=20305a0400 members=1} {24738 key=37305a0400 members=11} {23387 key=35305a0400 members=1} {17225 key=2a305a0400 members=1} {16405 key=29305a0400 members=1} {15230 key=23305a0d00 members=1} {11237 key=1a305e0500 members=3} {5504 key=10305e0500 members=1} {13733 key=22305e0500 members=1} {21801 key=2d305e0500 members=5} {18858 key=2b305e0500 members=3} {13040 key=21305e0500 members=2} {8904 key=16305e0500 members=5} {29099 key=41305e0500 members=1} {31904 key=4c305e0500 members=2} {25527 key=38305e0500 members=1} {24741 key=37305e0500 members=3} {23389 key=35305e0500 members=1} {27892 key=3b305a0e00 members=1} {11234 key=1a305a0e00 members=1} {15231 key=23305a0e00 members=7} {5502 key=10305a0e00 members=2} {4182 key=0d305a0e00 members=3} {21800 key=2d305a0e00 members=3} {20258 key=2c305a0e00 members=2} {32332 key=4d305a0e00 members=2} {7213 key=14305a0e00 members=3} {12397 key=20305a0e00 members=3} {24740 key=37305a0e00 members=3} {2036 key=07305a1700 members=1} {11235 key=1a305a1700 members=1}
+HELLO_RANGE_SCOPE_ENTRY call=73 mode=1 width=10 query=01003005015a325a0102
+HELLO_RANGE_SCOPE_RETURN call=73 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=74 mode=1 width=9 query=01003005015a325a0102
+HELLO_RANGE_SCOPE_RETURN call=74 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=75 mode=1 width=8 query=01003005015a325a0102
+HELLO_RANGE_SCOPE_RETURN call=75 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=76 mode=1 width=7 query=01003005015a325a0102
+HELLO_RANGE_SCOPE_RETURN call=76 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=77 mode=1 width=6 query=01003005015a325a0102
+HELLO_RANGE_SCOPE_RETURN call=77 count=0 classes:
+HELLO_RANGE_SCOPE_ENTRY call=78 mode=1 width=5 query=01003005015a325a0102
+HELLO_RANGE_SCOPE_RETURN call=78 count=0 classes:
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

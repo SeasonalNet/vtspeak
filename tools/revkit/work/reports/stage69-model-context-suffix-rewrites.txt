@@ -1,0 +1,48 @@
+VoiceText Paul 2013 model-context suffix rewrites
+==================================================
+
+Evidence boundary
+-----------------
+
+This report records the direct suffix cases in FUN_1000b4d0 at VA 0x1000b4d0
+from the checked-in Ghidra pseudocode in stage6-deep-text-functions.txt. The
+function compares the end of its input with FUN_1001c2c0 and, on a match,
+copies the stem, appends a replacement literal, and calls FUN_1000cb30. A
+nonempty result ORs 0x09 into the caller's row flag byte. The source code is
+decompiler pseudocode; this report does not assign linguistic meanings to
+the suffix rules.
+
+The suffix and replacement strings below are directly identified by their
+static string labels in the pseudocode, or by the bytes at the referenced
+.data addresses in binary/vt_pau.dll. The DLL .data section has VA 0x10077000
+and file offset 0x77000, so these addresses also identify the corresponding
+file offsets for the inspected image.
+
+| Match suffix | Replacement | Source evidence |
+| --- | --- | --- |
+| `isations` | `izations` | `s_isations_10077978`, `s_izations_1007796c` |
+| `isation` | `ization` | `s_isation_10077964`, `s_ization_1007795c` |
+| `isingly` | `izingly` | `s_isingly_10077954`, `s_izingly_1007794c` |
+| `isably` | `izably` | `s_isably_10077944`, `s_izably_1007793c` |
+| `isable` | `izable` | `s_isable_10077934`, `s_izable_1007792c` |
+| `ising` | `izing` | `s_ising_10077924`, `s_izing_1007791c` |
+| `ised` | `ized` | `0x10077914`, `0x1007790c` |
+| `ises` | `izes` | `0x10077904`, `0x100778fc` |
+| `ise` | `ize` | `0x100778f8`, `0x100778f4` |
+
+The final three pairs were verified by dumping the corresponding .data range
+from vt_pau.dll. At offsets 0x778f4 through 0x77914 the NUL-terminated bytes
+include `ize`, `ise`, `izes`, `ises`, `ized`, and `ised` at the addresses
+listed above.
+
+The decompiler's length branches require at least one byte before each matched
+suffix. For example, `ise` is checked only once the input length is greater
+than three; the longer suffix checks have equivalent stem-presence guards.
+The Go port preserves this condition and compares through the recovered
+Paul character map before copying the unchanged stem and lowercase
+replacement.
+
+FUN_1000b4d0 appears in FUN_10007520 after FUN_10009dc0 and FUN_1000a140.
+The helper port therefore exposes this stage separately and does not claim
+that it can be run before those earlier fallbacks. Runtime row-for-row parity
+for the suffix cases has not been captured.

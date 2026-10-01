@@ -6,13 +6,18 @@ import (
 )
 
 // LexicalTokenSpan maps one explicitly selected token pronunciation into a
-// flattened phone sequence. The offsets are half-open phone indexes.
+// flattened phone sequence. Source byte bounds are inclusive; phone indexes
+// are half-open.
 type LexicalTokenSpan struct {
 	SourceSurface      string
 	Surface            string
+	SourceByteStart    int
+	SourceByteEnd      int
+	HasSourceByteSpan  bool
 	SeparatorBefore    string
 	SeparatorAfter     string
 	DictionaryMetadata [4]bool
+	ModelPhoneRows     Paul2013DictionaryPhoneRows
 	AlternativeIndex   int
 	PhoneStart         int
 	PhoneEnd           int
@@ -21,9 +26,11 @@ type LexicalTokenSpan struct {
 // LexicalPhoneSequence contains pronunciations in source order while
 // retaining each token boundary and its original separators.
 type LexicalPhoneSequence struct {
-	Phones  []CMUPhone
-	Symbols []byte
-	Tokens  []LexicalTokenSpan
+	Phones       []CMUPhone
+	Symbols      []byte
+	Tokens       []LexicalTokenSpan
+	InlinePauses []Paul2013InlinePause
+	InlineMarks  []Paul2013InlineMarkEvent
 }
 
 // LexicalTokenNeighborhoods pairs one token's source metadata with its slice
@@ -91,9 +98,13 @@ func SelectLexicalPronunciations(tokens []LexicalToken, alternativeIndexes []int
 		sequence.Tokens = append(sequence.Tokens, LexicalTokenSpan{
 			SourceSurface:      token.SourceSurface,
 			Surface:            token.Surface,
+			SourceByteStart:    token.SourceByteStart,
+			SourceByteEnd:      token.SourceByteEnd,
+			HasSourceByteSpan:  token.HasSourceByteSpan,
 			SeparatorBefore:    token.SeparatorBefore,
 			SeparatorAfter:     token.SeparatorAfter,
 			DictionaryMetadata: token.DictionaryMetadata,
+			ModelPhoneRows:     token.ModelPhoneRows.Clone(),
 			AlternativeIndex:   alternativeIndex,
 			PhoneStart:         start,
 			PhoneEnd:           len(sequence.Phones),
@@ -107,8 +118,26 @@ func SelectLexicalPronunciations(tokens []LexicalToken, alternativeIndexes []int
 // either side of a word boundary are adjacent in the phone sequence; preserved
 // separators remain available to later prosody and boundary processing.
 func BuildPaul2013TokenPhoneNeighborhoods(sequence LexicalPhoneSequence) ([]LexicalTokenNeighborhoods, error) {
+	markers := make([]byte, len(sequence.Phones))
+	for index := range markers {
+		markers[index] = '0'
+	}
+	return BuildPaul2013TokenPhoneNeighborhoodsWithPhoneMarkers(sequence, markers)
+}
+
+// BuildPaul2013TokenPhoneNeighborhoodsWithPhoneMarkers derives utterance-wide
+// phone neighbors and rebuilds FUN_10013c00 groups independently for each
+// marker-delimited block within a token. phoneMarkers are the explicit bytes
+// consumed by FUN_10012c70; their producer from source text remains separate.
+func BuildPaul2013TokenPhoneNeighborhoodsWithPhoneMarkers(
+	sequence LexicalPhoneSequence,
+	phoneMarkers []byte,
+) ([]LexicalTokenNeighborhoods, error) {
 	if err := validateLexicalPhoneSpans(sequence); err != nil {
 		return nil, err
+	}
+	if len(phoneMarkers) != len(sequence.Phones) {
+		return nil, fmt.Errorf("received %d phone-block markers for %d phones", len(phoneMarkers), len(sequence.Phones))
 	}
 	utteranceFeatures, err := BuildPaul2013PhoneNeighborhoods(sequence.Phones)
 	if err != nil {
@@ -116,13 +145,47 @@ func BuildPaul2013TokenPhoneNeighborhoods(sequence LexicalPhoneSequence) ([]Lexi
 	}
 	result := make([]LexicalTokenNeighborhoods, len(sequence.Tokens))
 	for tokenIndex, token := range sequence.Tokens {
-		groups, err := BuildPaul2013PhoneGroups(sequence.Phones[token.PhoneStart:token.PhoneEnd])
+		tokenPhones := sequence.Phones[token.PhoneStart:token.PhoneEnd]
+		blocks, err := SplitPaul2013TokenPhoneBlocks(phoneMarkers[token.PhoneStart:token.PhoneEnd])
 		if err != nil {
-			return nil, fmt.Errorf("build phone groups for token %d (%q): %w", tokenIndex, token.SourceSurface, err)
+			return nil, fmt.Errorf("split phone blocks for token %d (%q): %w", tokenIndex, token.SourceSurface, err)
 		}
-		durationContexts, err := buildPaul2013PhoneDurationContexts(sequence.Phones[token.PhoneStart:token.PhoneEnd], groups)
-		if err != nil {
-			return nil, fmt.Errorf("build duration contexts for token %d (%q): %w", tokenIndex, token.SourceSurface, err)
+		groups := make([]Paul2013PhoneGroup, 0)
+		durationContexts := make([]Paul2013PhoneDurationContext, len(tokenPhones))
+		groupOffset := 0
+		for _, block := range blocks {
+			blockPhones := tokenPhones[block.Start:block.End]
+			blockGroups, err := BuildPaul2013PhoneGroups(blockPhones)
+			if err != nil {
+				return nil, fmt.Errorf("build phone groups for token %d (%q) block [%d,%d): %w", tokenIndex, token.SourceSurface, block.Start, block.End, err)
+			}
+			blockContexts, err := buildPaul2013PhoneDurationContexts(blockPhones, blockGroups)
+			if err != nil {
+				return nil, fmt.Errorf("build duration contexts for token %d (%q) block [%d,%d): %w", tokenIndex, token.SourceSurface, block.Start, block.End, err)
+			}
+			for groupIndex := range blockGroups {
+				group := blockGroups[groupIndex]
+				group.Start += block.Start
+				group.End += block.Start
+				group.OnsetStart += block.Start
+				group.Nucleus += block.Start
+				groups = append(groups, group)
+			}
+			for phoneIndex, phoneContext := range blockContexts {
+				phoneContext.GroupStart += block.Start
+				phoneContext.GroupEnd += block.Start
+				phoneContext.GroupIndex += groupOffset
+				phoneContext.RowStart += block.Start
+				durationContexts[block.Start+phoneIndex] = phoneContext
+			}
+			if len(blockGroups) == 0 {
+				groupOffset++
+			} else {
+				groupOffset += len(blockGroups)
+			}
+		}
+		for phoneIndex := range durationContexts {
+			durationContexts[phoneIndex].GroupCount = groupOffset
 		}
 		result[tokenIndex] = LexicalTokenNeighborhoods{
 			Token:            token,
@@ -131,10 +194,10 @@ func BuildPaul2013TokenPhoneNeighborhoods(sequence LexicalPhoneSequence) ([]Lexi
 			DurationContexts: durationContexts,
 		}
 	}
-	if len(sequence.Phones) > 0 {
-		result[0].DurationContexts[0].TreePositionState = 1
+	firstTokenIndex, lastTokenIndex := lexicalPhoneBoundaryTokens(sequence)
+	if firstTokenIndex >= 0 {
+		result[firstTokenIndex].DurationContexts[0].TreePositionState = 1
 		if len(sequence.Phones) > 1 {
-			lastTokenIndex := len(result) - 1
 			lastPhoneIndex := len(result[lastTokenIndex].DurationContexts) - 1
 			// FUN_100135d0 uses marker-dependent terminal states. The independent
 			// text path currently emits the standard 'Z' utterance terminator.
@@ -149,6 +212,42 @@ func BuildPaul2013TokenPhoneNeighborhoods(sequence LexicalPhoneSequence) ([]Lexi
 		}
 	}
 	return result, nil
+}
+
+// BuildPaul2013TokenPhoneNeighborhoodsWithPositionStates composes phone
+// grouping with caller-supplied terminal markers and per-phone states. The
+// caller owns the state producer; this entry point preserves observed paths
+// whose state assignment differs from the ordinary lexical-text path.
+func BuildPaul2013TokenPhoneNeighborhoodsWithPositionStates(
+	sequence LexicalPhoneSequence,
+	phoneMarkers []byte,
+	terminalMarkers []byte,
+	positionStates []uint8,
+) ([]LexicalTokenNeighborhoods, error) {
+	if err := validateLexicalPhoneSpans(sequence); err != nil {
+		return nil, err
+	}
+	if len(positionStates) != len(sequence.Phones) {
+		return nil, fmt.Errorf("received %d duration position states for %d phones", len(positionStates), len(sequence.Phones))
+	}
+	for phoneIndex, state := range positionStates {
+		if state < 1 || state > 3 {
+			return nil, fmt.Errorf("duration position state %d for phone %d is outside 1 through 3", state, phoneIndex)
+		}
+	}
+	neighborhoods, err := BuildPaul2013TokenPhoneNeighborhoodsWithPhoneMarkers(sequence, phoneMarkers)
+	if err != nil {
+		return nil, err
+	}
+	if err := applyPaul2013TerminalMarkerStates(sequence, terminalMarkers, neighborhoods); err != nil {
+		return nil, err
+	}
+	for tokenIndex, token := range sequence.Tokens {
+		for phoneIndex := token.PhoneStart; phoneIndex < token.PhoneEnd; phoneIndex++ {
+			neighborhoods[tokenIndex].DurationContexts[phoneIndex-token.PhoneStart].TreePositionState = positionStates[phoneIndex]
+		}
+	}
+	return neighborhoods, nil
 }
 
 func buildPaul2013PhoneDurationContexts(phones []CMUPhone, groups []Paul2013PhoneGroup) ([]Paul2013PhoneDurationContext, error) {
@@ -255,15 +354,91 @@ func BuildPaul2013TokenDurationInputs(
 // vectors from a resolved phone sequence. It ports the FUN_10013c00 row bytes
 // and auxiliary labels, uses adjacent phones across token boundaries, and
 // applies the ordinary single-utterance edge sentinels from FUN_100135d0.
-// This text path assumes the standard terminal 'Z' marker; alternate marker
-// transitions used for special pauses and phrase boundaries remain unsupported.
+// This convenience path assumes the standard terminal 'Z' marker. Callers
+// with a directly observed terminal marker can use the explicit-marker form.
 func BuildPaul2013TokenDurationInputsFromText(sequence LexicalPhoneSequence) ([]Paul2013TokenDurationInputs, error) {
+	terminalMarkers := make([]byte, len(sequence.Tokens))
+	if len(terminalMarkers) != 0 {
+		terminalMarkers[len(terminalMarkers)-1] = 'Z'
+	}
+	return BuildPaul2013TokenDurationInputsWithMarkers(sequence, terminalMarkers)
+}
+
+// BuildPaul2013TokenDurationInputsWithMarkers builds the ordinary duration
+// rows while using the supplied marker for the utterance's final nonempty
+// token. FUN_100135d0 maps the recognized final markers to boundary identity
+// 40 and position state 3; other final marker bytes use boundary identity 42
+// and position state 2. Earlier token edges continue to use their neighboring
+// phones because this input describes token terminators, not per-phone block
+// delimiters.
+func BuildPaul2013TokenDurationInputsWithMarkers(
+	sequence LexicalPhoneSequence,
+	terminalMarkers []byte,
+) ([]Paul2013TokenDurationInputs, error) {
+	return BuildPaul2013TokenDurationInputsWithPhoneMarkers(sequence, nil, terminalMarkers)
+}
+
+// BuildPaul2013TokenDurationInputsWithPhoneMarkers composes explicit
+// FUN_10012c70 block markers with duration vectors from each block's
+// FUN_10013c00 phone groups. terminalMarkers separately control the final
+// boundary behavior in FUN_100135d0.
+func BuildPaul2013TokenDurationInputsWithPhoneMarkers(
+	sequence LexicalPhoneSequence,
+	phoneMarkers []byte,
+	terminalMarkers []byte,
+) ([]Paul2013TokenDurationInputs, error) {
+	return buildPaul2013TokenDurationInputs(sequence, phoneMarkers, terminalMarkers, nil, false)
+}
+
+// BuildPaul2013TokenDurationInputsWithPositionStates composes the phone-group
+// rows with caller-supplied per-phone position states from FUN_100135d0. This
+// supports captured paths whose state producer is not yet recovered, such as
+// the controlled VTML phoneme fixtures; it does not infer those states from
+// source text.
+func BuildPaul2013TokenDurationInputsWithPositionStates(
+	sequence LexicalPhoneSequence,
+	phoneMarkers []byte,
+	terminalMarkers []byte,
+	positionStates []uint8,
+) ([]Paul2013TokenDurationInputs, error) {
+	return buildPaul2013TokenDurationInputs(sequence, phoneMarkers, terminalMarkers, positionStates, true)
+}
+
+func buildPaul2013TokenDurationInputs(
+	sequence LexicalPhoneSequence,
+	phoneMarkers []byte,
+	terminalMarkers []byte,
+	positionStates []uint8,
+	overridePositionStates bool,
+) ([]Paul2013TokenDurationInputs, error) {
 	if err := validateLexicalPhoneSpans(sequence); err != nil {
 		return nil, err
 	}
-	tokenNeighborhoods, err := BuildPaul2013TokenPhoneNeighborhoods(sequence)
-	if err != nil {
-		return nil, err
+	if len(terminalMarkers) != len(sequence.Tokens) {
+		return nil, fmt.Errorf("received %d duration terminal markers for %d tokens", len(terminalMarkers), len(sequence.Tokens))
+	}
+	var tokenNeighborhoods []LexicalTokenNeighborhoods
+	if overridePositionStates {
+		var err error
+		tokenNeighborhoods, err = BuildPaul2013TokenPhoneNeighborhoodsWithPositionStates(
+			sequence, phoneMarkers, terminalMarkers, positionStates,
+		)
+		if err != nil {
+			return nil, err
+		}
+	} else {
+		var err error
+		if phoneMarkers == nil {
+			tokenNeighborhoods, err = BuildPaul2013TokenPhoneNeighborhoods(sequence)
+		} else {
+			tokenNeighborhoods, err = BuildPaul2013TokenPhoneNeighborhoodsWithPhoneMarkers(sequence, phoneMarkers)
+		}
+		if err != nil {
+			return nil, err
+		}
+		if err := applyPaul2013TerminalMarkerStates(sequence, terminalMarkers, tokenNeighborhoods); err != nil {
+			return nil, err
+		}
 	}
 	result := make([]Paul2013TokenDurationInputs, len(sequence.Tokens))
 	for tokenIndex, neighborhood := range tokenNeighborhoods {
@@ -277,6 +452,8 @@ func BuildPaul2013TokenDurationInputsFromText(sequence LexicalPhoneSequence) ([]
 			next := Paul2013DurationTreeNeighbor{BoundaryIdentityOrdinal: paul2013OrdinaryBoundaryOrdinal}
 			if phoneIndex+1 < len(sequence.Phones) {
 				next = Paul2013DurationTreeNeighbor{Phone: &sequence.Phones[phoneIndex+1]}
+			} else {
+				next.BoundaryIdentityOrdinal = Paul2013DurationBoundaryOrdinal(terminalMarkers[tokenIndex])
 			}
 			durationContext := neighborhood.DurationContexts[phoneIndex-token.PhoneStart]
 			metadata := Paul2013DurationTreeMetadata{
@@ -297,6 +474,54 @@ func BuildPaul2013TokenDurationInputsFromText(sequence LexicalPhoneSequence) ([]
 	return result, nil
 }
 
+func applyPaul2013TerminalMarkerStates(
+	sequence LexicalPhoneSequence,
+	terminalMarkers []byte,
+	neighborhoods []LexicalTokenNeighborhoods,
+) error {
+	if len(terminalMarkers) != len(sequence.Tokens) || len(neighborhoods) != len(sequence.Tokens) {
+		return fmt.Errorf("terminal marker state has %d markers and %d neighborhoods for %d tokens", len(terminalMarkers), len(neighborhoods), len(sequence.Tokens))
+	}
+	if len(sequence.Phones) == 0 {
+		return nil
+	}
+	firstTokenIndex := -1
+	lastTokenIndex := -1
+	for tokenIndex, token := range sequence.Tokens {
+		if token.PhoneEnd > token.PhoneStart {
+			if firstTokenIndex < 0 {
+				firstTokenIndex = tokenIndex
+			}
+			lastTokenIndex = tokenIndex
+		}
+		for phoneIndex := range neighborhoods[tokenIndex].DurationContexts {
+			neighborhoods[tokenIndex].DurationContexts[phoneIndex].TreePositionState = 2
+		}
+	}
+	if firstTokenIndex >= 0 && len(neighborhoods[firstTokenIndex].DurationContexts) > 0 {
+		neighborhoods[firstTokenIndex].DurationContexts[0].TreePositionState = 1
+	}
+	if lastTokenIndex >= 0 && len(sequence.Phones) > 1 && len(neighborhoods[lastTokenIndex].DurationContexts) > 0 &&
+		Paul2013DurationBoundaryOrdinal(terminalMarkers[lastTokenIndex]) == 40 {
+		lastContext := len(neighborhoods[lastTokenIndex].DurationContexts) - 1
+		neighborhoods[lastTokenIndex].DurationContexts[lastContext].TreePositionState = 3
+	}
+	return nil
+}
+
+// Paul2013DurationBoundaryOrdinal ports the right-edge marker cases in
+// FUN_100135d0. The left-edge default used by the ordinary text path remains
+// 40; the function's marked initial-boundary branch depends on a separate
+// model-state marker that this token-level API does not receive.
+func Paul2013DurationBoundaryOrdinal(marker byte) int16 {
+	switch marker {
+	case '[', 'Z', '^', '`':
+		return 40
+	default:
+		return 42
+	}
+}
+
 func validateLexicalPhoneSpans(sequence LexicalPhoneSequence) error {
 	if len(sequence.Tokens) == 0 {
 		return errors.New("lexical phone sequence has no token spans")
@@ -312,4 +537,18 @@ func validateLexicalPhoneSpans(sequence LexicalPhoneSequence) error {
 		return errors.New("token spans do not cover the complete phone sequence")
 	}
 	return nil
+}
+
+func lexicalPhoneBoundaryTokens(sequence LexicalPhoneSequence) (int, int) {
+	firstTokenIndex := -1
+	lastTokenIndex := -1
+	for tokenIndex, token := range sequence.Tokens {
+		if token.PhoneEnd > token.PhoneStart {
+			if firstTokenIndex < 0 {
+				firstTokenIndex = tokenIndex
+			}
+			lastTokenIndex = tokenIndex
+		}
+	}
+	return firstTokenIndex, lastTokenIndex
 }

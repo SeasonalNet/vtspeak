@@ -1,0 +1,68 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000-final/adapted-split-threshold-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100242a0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x100249bb
+REPEAT_SPLIT_ENTER slot=0
+Temporary breakpoint 7 at 0x10024808
+REPEAT_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 32927:75
+Temporary breakpoint 8 at 0x10024271
+REPEAT_SPLIT_METRIC_RETURN sum=75
+REPEAT_SPLIT_RETURN slot=0 accepted=1
+REPEAT_SPLIT_ENTER slot=1
+Temporary breakpoint 9 at 0x10024808
+REPEAT_SPLIT_RETURN slot=1 accepted=0
+REPEAT_SPLIT_FALLBACK_ENTER slot=1
+Temporary breakpoint 10 at 0x1002481e
+REPEAT_SPLIT_FALLBACK_RETURN slot=1 positions=2
+REPEAT_SPLIT_ENTER slot=3
+Temporary breakpoint 11 at 0x10024808
+REPEAT_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 9147:25
+Temporary breakpoint 12 at 0x10024271
+REPEAT_SPLIT_METRIC_RETURN sum=25
+REPEAT_SPLIT_RETURN slot=3 accepted=1
+REPEAT_SPLIT_ENTER slot=4
+Temporary breakpoint 13 at 0x10024808
+REPEAT_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 18821:1
+Temporary breakpoint 14 at 0x10024271
+REPEAT_SPLIT_METRIC_RETURN sum=1
+REPEAT_SPLIT_RETURN slot=4 accepted=0
+REPEAT_SPLIT_FALLBACK_ENTER slot=4
+Temporary breakpoint 15 at 0x1002481e
+REPEAT_SPLIT_FALLBACK_RETURN slot=4 positions=2
+REPEAT_SPLIT_ENTER slot=6
+Temporary breakpoint 16 at 0x10024808
+REPEAT_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 3749:2
+Temporary breakpoint 17 at 0x10024271
+REPEAT_SPLIT_METRIC_RETURN sum=2
+REPEAT_SPLIT_RETURN slot=6 accepted=0
+REPEAT_SPLIT_FALLBACK_ENTER slot=6
+Temporary breakpoint 18 at 0x1002481e
+REPEAT_SPLIT_FALLBACK_RETURN slot=6 positions=2
+REPEAT_SPLIT_ENTER slot=8
+Temporary breakpoint 19 at 0x10024808
+REPEAT_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 13478:9
+Temporary breakpoint 20 at 0x10024271
+REPEAT_SPLIT_METRIC_RETURN sum=9
+REPEAT_SPLIT_RETURN slot=8 accepted=0
+REPEAT_SPLIT_FALLBACK_ENTER slot=8
+Temporary breakpoint 21 at 0x1002481e
+REPEAT_SPLIT_FALLBACK_RETURN slot=8 positions=2
+REPEAT_SPLIT_ENTER slot=10
+Temporary breakpoint 22 at 0x10024808
+REPEAT_SPLIT_METRIC_ENTRY caller=0x10024271 count=1 ids_weights: 9147:25
+Temporary breakpoint 23 at 0x10024271
+REPEAT_SPLIT_METRIC_RETURN sum=25
+REPEAT_SPLIT_RETURN slot=10 accepted=1
+REPEAT_SPLIT_ENTER slot=11
+Temporary breakpoint 24 at 0x10024808
+REPEAT_SPLIT_RETURN slot=11 accepted=0
+REPEAT_SPLIT_FALLBACK_ENTER slot=11
+Temporary breakpoint 25 at 0x1002481e
+REPEAT_SPLIT_FALLBACK_RETURN slot=11 positions=2
+REPEAT_POSITION_BUILDER_RETURN positions=13
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

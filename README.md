@@ -3,10 +3,11 @@
 `vtspeak` is a research and reimplementation workspace for understanding the legacy VoiceText text-to-speech engine and its voice data.
 
 - The current work combines static analysis of the Windows executable and DLLs with controlled runtime traces of the model readers and synthesis path.
-- A native POSIX reimplementation is in progress under `engine/`; it decodes
-  2013 Paul DAT units, resolves supported dictionary pronunciations, and now
-  evaluates their ordinary-path duration trees, but does not yet select units
-  or synthesize ordinary text.
+- A native Go reimplementation is in progress under `engine/`; it now covers
+  evidence-backed text, model lookup, duration/pitch, unit-selection, and audio
+  reconstruction stages. Source-text model-context production and end-to-end
+  synthesis remain incomplete, and the implementation does not claim whole-
+  engine parity.
 
 ## Repository map
 

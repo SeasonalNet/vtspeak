@@ -1,0 +1,317 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>> > > > > > > > > > > >  >   >   >  >  >  >   >   >   >    >    >   >   >   >   >    >    >   >   >  > >  >  >  >  >  > > >>>>>Wine-gdb> Wine-gdb> Continuing.
+CSV_BYTE value=000 result=1 count=1 f0=41
+CSV_BYTE value=001 result=1 count=2 f0=410142 f1=58
+CSV_BYTE value=002 result=1 count=2 f0=410242 f1=58
+CSV_BYTE value=003 result=1 count=2 f0=410342 f1=58
+CSV_BYTE value=004 result=1 count=2 f0=410442 f1=58
+CSV_BYTE value=005 result=1 count=2 f0=410542 f1=58
+CSV_BYTE value=006 result=1 count=2 f0=410642 f1=58
+CSV_BYTE value=007 result=1 count=2 f0=410742 f1=58
+CSV_BYTE value=008 result=1 count=2 f0=410842 f1=58
+CSV_BYTE value=009 result=1 count=2 f0=410942 f1=58
+CSV_BYTE value=010 result=1 count=2 f0=410a42 f1=58
+CSV_BYTE value=011 result=1 count=2 f0=410b42 f1=58
+CSV_BYTE value=012 result=1 count=2 f0=410c42 f1=58
+CSV_BYTE value=013 result=1 count=2 f0=410d42 f1=58
+CSV_BYTE value=014 result=1 count=2 f0=410e42 f1=58
+CSV_BYTE value=015 result=1 count=2 f0=410f42 f1=58
+CSV_BYTE value=016 result=1 count=2 f0=411042 f1=58
+CSV_BYTE value=017 result=1 count=2 f0=411142 f1=58
+CSV_BYTE value=018 result=1 count=2 f0=411242 f1=58
+CSV_BYTE value=019 result=1 count=2 f0=411342 f1=58
+CSV_BYTE value=020 result=1 count=2 f0=411442 f1=58
+CSV_BYTE value=021 result=1 count=2 f0=411542 f1=58
+CSV_BYTE value=022 result=1 count=2 f0=411642 f1=58
+CSV_BYTE value=023 result=1 count=2 f0=411742 f1=58
+CSV_BYTE value=024 result=1 count=2 f0=411842 f1=58
+CSV_BYTE value=025 result=1 count=2 f0=411942 f1=58
+CSV_BYTE value=026 result=1 count=2 f0=411a42 f1=58
+CSV_BYTE value=027 result=1 count=2 f0=411b42 f1=58
+CSV_BYTE value=028 result=1 count=2 f0=411c42 f1=58
+CSV_BYTE value=029 result=1 count=2 f0=411d42 f1=58
+CSV_BYTE value=030 result=1 count=2 f0=411e42 f1=58
+CSV_BYTE value=031 result=1 count=2 f0=411f42 f1=58
+CSV_BYTE value=032 result=1 count=2 f0=412042 f1=58
+CSV_BYTE value=033 result=1 count=2 f0=412142 f1=58
+CSV_BYTE value=034 result=1 count=2 f0=412242 f1=58
+CSV_BYTE value=035 result=1 count=2 f0=412342 f1=58
+CSV_BYTE value=036 result=1 count=2 f0=412442 f1=58
+CSV_BYTE value=037 result=1 count=2 f0=412542 f1=58
+CSV_BYTE value=038 result=1 count=2 f0=412642 f1=58
+CSV_BYTE value=039 result=1 count=2 f0=412742 f1=58
+CSV_BYTE value=040 result=1 count=2 f0=412842 f1=58
+CSV_BYTE value=041 result=1 count=2 f0=412942 f1=58
+CSV_BYTE value=042 result=1 count=2 f0=412a42 f1=58
+CSV_BYTE value=043 result=1 count=2 f0=412b42 f1=58
+CSV_BYTE value=044 result=1 count=3 f0=41 f1=42 f2=58
+CSV_BYTE value=045 result=1 count=2 f0=412d42 f1=58
+CSV_BYTE value=046 result=1 count=2 f0=412e42 f1=58
+CSV_BYTE value=047 result=1 count=2 f0=412f42 f1=58
+CSV_BYTE value=048 result=1 count=2 f0=413042 f1=58
+CSV_BYTE value=049 result=1 count=2 f0=413142 f1=58
+CSV_BYTE value=050 result=1 count=2 f0=413242 f1=58
+CSV_BYTE value=051 result=1 count=2 f0=413342 f1=58
+CSV_BYTE value=052 result=1 count=2 f0=413442 f1=58
+CSV_BYTE value=053 result=1 count=2 f0=413542 f1=58
+CSV_BYTE value=054 result=1 count=2 f0=413642 f1=58
+CSV_BYTE value=055 result=1 count=2 f0=413742 f1=58
+CSV_BYTE value=056 result=1 count=2 f0=413842 f1=58
+CSV_BYTE value=057 result=1 count=2 f0=413942 f1=58
+CSV_BYTE value=058 result=1 count=2 f0=413a42 f1=58
+CSV_BYTE value=059 result=1 count=2 f0=413b42 f1=58
+CSV_BYTE value=060 result=1 count=2 f0=413c42 f1=58
+CSV_BYTE value=061 result=1 count=2 f0=413d42 f1=58
+CSV_BYTE value=062 result=1 count=2 f0=413e42 f1=58
+CSV_BYTE value=063 result=1 count=2 f0=413f42 f1=58
+CSV_BYTE value=064 result=1 count=2 f0=414042 f1=58
+CSV_BYTE value=065 result=1 count=2 f0=414142 f1=58
+CSV_BYTE value=066 result=1 count=2 f0=414242 f1=58
+CSV_BYTE value=067 result=1 count=2 f0=414342 f1=58
+CSV_BYTE value=068 result=1 count=2 f0=414442 f1=58
+CSV_BYTE value=069 result=1 count=2 f0=414542 f1=58
+CSV_BYTE value=070 result=1 count=2 f0=414642 f1=58
+CSV_BYTE value=071 result=1 count=2 f0=414742 f1=58
+CSV_BYTE value=072 result=1 count=2 f0=414842 f1=58
+CSV_BYTE value=073 result=1 count=2 f0=414942 f1=58
+CSV_BYTE value=074 result=1 count=2 f0=414a42 f1=58
+CSV_BYTE value=075 result=1 count=2 f0=414b42 f1=58
+CSV_BYTE value=076 result=1 count=2 f0=414c42 f1=58
+CSV_BYTE value=077 result=1 count=2 f0=414d42 f1=58
+CSV_BYTE value=078 result=1 count=2 f0=414e42 f1=58
+CSV_BYTE value=079 result=1 count=2 f0=414f42 f1=58
+CSV_BYTE value=080 result=1 count=2 f0=415042 f1=58
+CSV_BYTE value=081 result=1 count=2 f0=415142 f1=58
+CSV_BYTE value=082 result=1 count=2 f0=415242 f1=58
+CSV_BYTE value=083 result=1 count=2 f0=415342 f1=58
+CSV_BYTE value=084 result=1 count=2 f0=415442 f1=58
+CSV_BYTE value=085 result=1 count=2 f0=415542 f1=58
+CSV_BYTE value=086 result=1 count=2 f0=415642 f1=58
+CSV_BYTE value=087 result=1 count=2 f0=415742 f1=58
+CSV_BYTE value=088 result=1 count=2 f0=415842 f1=58
+CSV_BYTE value=089 result=1 count=2 f0=415942 f1=58
+CSV_BYTE value=090 result=1 count=2 f0=415a42 f1=58
+CSV_BYTE value=091 result=1 count=2 f0=415b42 f1=58
+CSV_BYTE value=092 result=1 count=2 f0=415c42 f1=58
+CSV_BYTE value=093 result=1 count=2 f0=415d42 f1=58
+CSV_BYTE value=094 result=1 count=2 f0=415e42 f1=58
+CSV_BYTE value=095 result=1 count=2 f0=415f42 f1=58
+CSV_BYTE value=096 result=1 count=2 f0=416042 f1=58
+CSV_BYTE value=097 result=1 count=2 f0=416142 f1=58
+CSV_BYTE value=098 result=1 count=2 f0=416242 f1=58
+CSV_BYTE value=099 result=1 count=2 f0=416342 f1=58
+CSV_BYTE value=100 result=1 count=2 f0=416442 f1=58
+CSV_BYTE value=101 result=1 count=2 f0=416542 f1=58
+CSV_BYTE value=102 result=1 count=2 f0=416642 f1=58
+CSV_BYTE value=103 result=1 count=2 f0=416742 f1=58
+CSV_BYTE value=104 result=1 count=2 f0=416842 f1=58
+CSV_BYTE value=105 result=1 count=2 f0=416942 f1=58
+CSV_BYTE value=106 result=1 count=2 f0=416a42 f1=58
+CSV_BYTE value=107 result=1 count=2 f0=416b42 f1=58
+CSV_BYTE value=108 result=1 count=2 f0=416c42 f1=58
+CSV_BYTE value=109 result=1 count=2 f0=416d42 f1=58
+CSV_BYTE value=110 result=1 count=2 f0=416e42 f1=58
+CSV_BYTE value=111 result=1 count=2 f0=416f42 f1=58
+CSV_BYTE value=112 result=1 count=2 f0=417042 f1=58
+CSV_BYTE value=113 result=1 count=2 f0=417142 f1=58
+CSV_BYTE value=114 result=1 count=2 f0=417242 f1=58
+CSV_BYTE value=115 result=1 count=2 f0=417342 f1=58
+CSV_BYTE value=116 result=1 count=2 f0=417442 f1=58
+CSV_BYTE value=117 result=1 count=2 f0=417542 f1=58
+CSV_BYTE value=118 result=1 count=2 f0=417642 f1=58
+CSV_BYTE value=119 result=1 count=2 f0=417742 f1=58
+CSV_BYTE value=120 result=1 count=2 f0=417842 f1=58
+CSV_BYTE value=121 result=1 count=2 f0=417942 f1=58
+CSV_BYTE value=122 result=1 count=2 f0=417a42 f1=58
+CSV_BYTE value=123 result=1 count=2 f0=417b42 f1=58
+CSV_BYTE value=124 result=1 count=2 f0=417c42 f1=58
+CSV_BYTE value=125 result=1 count=2 f0=417d42 f1=58
+CSV_BYTE value=126 result=1 count=2 f0=417e42 f1=58
+CSV_BYTE value=127 result=1 count=2 f0=417f42 f1=58
+CSV_BYTE value=128 result=1 count=2 f0=418042 f1=58
+CSV_BYTE value=129 result=1 count=2 f0=418142 f1=58
+CSV_BYTE value=130 result=1 count=2 f0=418242 f1=58
+CSV_BYTE value=131 result=1 count=2 f0=418342 f1=58
+CSV_BYTE value=132 result=1 count=2 f0=418442 f1=58
+CSV_BYTE value=133 result=1 count=2 f0=418542 f1=58
+CSV_BYTE value=134 result=1 count=2 f0=418642 f1=58
+CSV_BYTE value=135 result=1 count=2 f0=418742 f1=58
+CSV_BYTE value=136 result=1 count=2 f0=418842 f1=58
+CSV_BYTE value=137 result=1 count=2 f0=418942 f1=58
+CSV_BYTE value=138 result=1 count=2 f0=418a42 f1=58
+CSV_BYTE value=139 result=1 count=2 f0=418b42 f1=58
+CSV_BYTE value=140 result=1 count=2 f0=418c42 f1=58
+CSV_BYTE value=141 result=1 count=2 f0=418d42 f1=58
+CSV_BYTE value=142 result=1 count=2 f0=418e42 f1=58
+CSV_BYTE value=143 result=1 count=2 f0=418f42 f1=58
+CSV_BYTE value=144 result=1 count=2 f0=419042 f1=58
+CSV_BYTE value=145 result=1 count=2 f0=419142 f1=58
+CSV_BYTE value=146 result=1 count=2 f0=419242 f1=58
+CSV_BYTE value=147 result=1 count=2 f0=419342 f1=58
+CSV_BYTE value=148 result=1 count=2 f0=419442 f1=58
+CSV_BYTE value=149 result=1 count=2 f0=419542 f1=58
+CSV_BYTE value=150 result=1 count=2 f0=419642 f1=58
+CSV_BYTE value=151 result=1 count=2 f0=419742 f1=58
+CSV_BYTE value=152 result=1 count=2 f0=419842 f1=58
+CSV_BYTE value=153 result=1 count=2 f0=419942 f1=58
+CSV_BYTE value=154 result=1 count=2 f0=419a42 f1=58
+CSV_BYTE value=155 result=1 count=2 f0=419b42 f1=58
+CSV_BYTE value=156 result=1 count=2 f0=419c42 f1=58
+CSV_BYTE value=157 result=1 count=2 f0=419d42 f1=58
+CSV_BYTE value=158 result=1 count=2 f0=419e42 f1=58
+CSV_BYTE value=159 result=1 count=2 f0=419f42 f1=58
+CSV_BYTE value=160 result=1 count=2 f0=41a042 f1=58
+CSV_BYTE value=161 result=1 count=2 f0=41a142 f1=58
+CSV_BYTE value=162 result=1 count=2 f0=41a242 f1=58
+CSV_BYTE value=163 result=1 count=2 f0=41a342 f1=58
+CSV_BYTE value=164 result=1 count=2 f0=41a442 f1=58
+CSV_BYTE value=165 result=1 count=2 f0=41a542 f1=58
+CSV_BYTE value=166 result=1 count=2 f0=41a642 f1=58
+CSV_BYTE value=167 result=1 count=2 f0=41a742 f1=58
+CSV_BYTE value=168 result=1 count=2 f0=41a842 f1=58
+CSV_BYTE value=169 result=1 count=2 f0=41a942 f1=58
+CSV_BYTE value=170 result=1 count=2 f0=41aa42 f1=58
+CSV_BYTE value=171 result=1 count=2 f0=41ab42 f1=58
+CSV_BYTE value=172 result=1 count=2 f0=41ac42 f1=58
+CSV_BYTE value=173 result=1 count=2 f0=41ad42 f1=58
+CSV_BYTE value=174 result=1 count=2 f0=41ae42 f1=58
+CSV_BYTE value=175 result=1 count=2 f0=41af42 f1=58
+CSV_BYTE value=176 result=1 count=2 f0=41b042 f1=58
+CSV_BYTE value=177 result=1 count=2 f0=41b142 f1=58
+CSV_BYTE value=178 result=1 count=2 f0=41b242 f1=58
+CSV_BYTE value=179 result=1 count=2 f0=41b342 f1=58
+CSV_BYTE value=180 result=1 count=2 f0=41b442 f1=58
+CSV_BYTE value=181 result=1 count=2 f0=41b542 f1=58
+CSV_BYTE value=182 result=1 count=2 f0=41b642 f1=58
+CSV_BYTE value=183 result=1 count=2 f0=41b742 f1=58
+CSV_BYTE value=184 result=1 count=2 f0=41b842 f1=58
+CSV_BYTE value=185 result=1 count=2 f0=41b942 f1=58
+CSV_BYTE value=186 result=1 count=2 f0=41ba42 f1=58
+CSV_BYTE value=187 result=1 count=2 f0=41bb42 f1=58
+CSV_BYTE value=188 result=1 count=2 f0=41bc42 f1=58
+CSV_BYTE value=189 result=1 count=2 f0=41bd42 f1=58
+CSV_BYTE value=190 result=1 count=2 f0=41be42 f1=58
+CSV_BYTE value=191 result=1 count=2 f0=41bf42 f1=58
+CSV_BYTE value=192 result=1 count=2 f0=41c042 f1=58
+CSV_BYTE value=193 result=1 count=2 f0=41c142 f1=58
+CSV_BYTE value=194 result=1 count=2 f0=41c242 f1=58
+CSV_BYTE value=195 result=1 count=2 f0=41c342 f1=58
+CSV_BYTE value=196 result=1 count=2 f0=41c442 f1=58
+CSV_BYTE value=197 result=1 count=2 f0=41c542 f1=58
+CSV_BYTE value=198 result=1 count=2 f0=41c642 f1=58
+CSV_BYTE value=199 result=1 count=2 f0=41c742 f1=58
+CSV_BYTE value=200 result=1 count=2 f0=41c842 f1=58
+CSV_BYTE value=201 result=1 count=2 f0=41c942 f1=58
+CSV_BYTE value=202 result=1 count=2 f0=41ca42 f1=58
+CSV_BYTE value=203 result=1 count=2 f0=41cb42 f1=58
+CSV_BYTE value=204 result=1 count=2 f0=41cc42 f1=58
+CSV_BYTE value=205 result=1 count=2 f0=41cd42 f1=58
+CSV_BYTE value=206 result=1 count=2 f0=41ce42 f1=58
+CSV_BYTE value=207 result=1 count=2 f0=41cf42 f1=58
+CSV_BYTE value=208 result=1 count=2 f0=41d042 f1=58
+CSV_BYTE value=209 result=1 count=2 f0=41d142 f1=58
+CSV_BYTE value=210 result=1 count=2 f0=41d242 f1=58
+CSV_BYTE value=211 result=1 count=2 f0=41d342 f1=58
+CSV_BYTE value=212 result=1 count=2 f0=41d442 f1=58
+CSV_BYTE value=213 result=1 count=2 f0=41d542 f1=58
+CSV_BYTE value=214 result=1 count=2 f0=41d642 f1=58
+CSV_BYTE value=215 result=1 count=2 f0=41d742 f1=58
+CSV_BYTE value=216 result=1 count=2 f0=41d842 f1=58
+CSV_BYTE value=217 result=1 count=2 f0=41d942 f1=58
+CSV_BYTE value=218 result=1 count=2 f0=41da42 f1=58
+CSV_BYTE value=219 result=1 count=2 f0=41db42 f1=58
+CSV_BYTE value=220 result=1 count=2 f0=41dc42 f1=58
+CSV_BYTE value=221 result=1 count=2 f0=41dd42 f1=58
+CSV_BYTE value=222 result=1 count=2 f0=41de42 f1=58
+CSV_BYTE value=223 result=1 count=2 f0=41df42 f1=58
+CSV_BYTE value=224 result=1 count=2 f0=41e042 f1=58
+CSV_BYTE value=225 result=1 count=2 f0=41e142 f1=58
+CSV_BYTE value=226 result=1 count=2 f0=41e242 f1=58
+CSV_BYTE value=227 result=1 count=2 f0=41e342 f1=58
+CSV_BYTE value=228 result=1 count=2 f0=41e442 f1=58
+CSV_BYTE value=229 result=1 count=2 f0=41e542 f1=58
+CSV_BYTE value=230 result=1 count=2 f0=41e642 f1=58
+CSV_BYTE value=231 result=1 count=2 f0=41e742 f1=58
+CSV_BYTE value=232 result=1 count=2 f0=41e842 f1=58
+CSV_BYTE value=233 result=1 count=2 f0=41e942 f1=58
+CSV_BYTE value=234 result=1 count=2 f0=41ea42 f1=58
+CSV_BYTE value=235 result=1 count=2 f0=41eb42 f1=58
+CSV_BYTE value=236 result=1 count=2 f0=41ec42 f1=58
+CSV_BYTE value=237 result=1 count=2 f0=41ed42 f1=58
+CSV_BYTE value=238 result=1 count=2 f0=41ee42 f1=58
+CSV_BYTE value=239 result=1 count=2 f0=41ef42 f1=58
+CSV_BYTE value=240 result=1 count=2 f0=41f042 f1=58
+CSV_BYTE value=241 result=1 count=2 f0=41f142 f1=58
+CSV_BYTE value=242 result=1 count=2 f0=41f242 f1=58
+CSV_BYTE value=243 result=1 count=2 f0=41f342 f1=58
+CSV_BYTE value=244 result=1 count=2 f0=41f442 f1=58
+CSV_BYTE value=245 result=1 count=2 f0=41f542 f1=58
+CSV_BYTE value=246 result=1 count=2 f0=41f642 f1=58
+CSV_BYTE value=247 result=1 count=2 f0=41f742 f1=58
+CSV_BYTE value=248 result=1 count=2 f0=41f842 f1=58
+CSV_BYTE value=249 result=1 count=2 f0=41f942 f1=58
+CSV_BYTE value=250 result=1 count=2 f0=41fa42 f1=58
+CSV_BYTE value=251 result=1 count=2 f0=41fb42 f1=58
+CSV_BYTE value=252 result=1 count=2 f0=41fc42 f1=58
+CSV_BYTE value=253 result=1 count=2 f0=41fd42 f1=58
+CSV_BYTE value=254 result=1 count=2 f0=41fe42 f1=58
+CSV_BYTE value=255 result=1 count=2 f0=41ff42 f1=58
+CSV_BYTE_DOMAIN passed=256 failed=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0118:011c: create thread I @004014C0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

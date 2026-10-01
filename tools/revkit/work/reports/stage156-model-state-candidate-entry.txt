@@ -1,0 +1,38 @@
+Stage 156: counted model-state candidate entry
+
+Implementation
+
+- Added `selection.LookupPaul2013PhoneMarkerModelStateArenaCandidatesWithPointerResolver`.
+  It reads the signed count at model-state arena +2, bounds-checks the
+  0x3c0-byte records beginning at +0x64c, then uses the existing shared-state
+  reset, marker prepass, group formation, packed-context projection, and exact
+  class lookup.
+- The pointer resolver for record +0x3b8 strings, character map, class
+  catalog, and unit cap remain caller inputs. Query broadening and selection
+  state production remain later stages.
+- Corrected Stage 155's `FUN_10016c90` marker writes: `d`/`c` updates the
+  preceding-marker array at record +0x328, while each emitted code initializes
+  the overlapping following-marker array at +0x329. The tests now check the
+  final overlapping bytes and the selection group consumes them as expected.
+
+Evidence and validation
+
+- The record field writes are visible in `FUN_10016c90` in
+  `tools/revkit/work/reports/vt_pau-synthesis-pseudocode.c`; the following and
+  preceding marker arrays are consumed separately at +0x329 and +0x328 by
+  `PreparePaul2013PackedContextPhoneGroup`.
+- `GOCACHE=/tmp/vtspeak-go-cache go test ./selection -run TestPhoneMarkerModelStateArenaCandidatesReadsCountAndRecordBase -count=1`
+  passed from `engine/`. The current fixture finalizes a model context table
+  containing `ABdMc`, builds records, and passes the full arena to selection.
+  It verifies one record produces three prepared contexts and candidate pools.
+- The adapter also rejects a negative signed count and a truncated record
+  range before any record reads.
+
+Limits
+
+- This closes the counted-arena handoff only. It does not produce the parser
+  rows, eligibility shorts, position-query states, per-position score inputs,
+  or native pointer address space needed for text-driven path parity.
+- Candidate class IDs and candidate pools are not a selected path or audio
+  output; later ranking, scoring, transitions, and rendering still need their
+  upstream state producers.

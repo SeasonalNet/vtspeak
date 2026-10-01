@@ -1,0 +1,54 @@
+VoiceText Paul 2013 FUN_1000a140 long-input s/ing branch gate
+============================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_1000a140` compares the mapped final byte with
+`s` at approximately lines 1447-1600 of
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`. It then
+tries ordered stem lookups and emits branch-specific `D`, `#`, `%`, `9`,
+`15`, or `.` markers. This is a substantial branch with multiple table and
+lookup conditions; a miss from the small recovered suffix subset is not
+equivalent to the native handler returning a miss.
+
+The same function compares the mapped three-byte tail with `ing` at the
+`DAT_10077378` path (DLL VA `0x10077378`, bytes `ing\0` in the DLL `.data`
+section). It performs ordered marker lookups and class-table-dependent stem
+edits before returning. The `ist` literal at `DAT_10077780` is handled by the
+bounded Stage 92 port.
+
+The long `ing` branch is now ported, with its full signed short-table index
+window captured later in Stage 106. It tries the `ing`-stripped stem through `FUN_1000cbe0` with marker
+`%`, then `FUN_1000cb30` when path selection is empty; its table-gated path
+also tries the shortened or `e`-substituted stem before appending `#.`. The
+Go path selector and the long `ed`/`er` ports provide the corresponding shared
+lookup and short-table behavior. The long terminal-`s` branch still has
+unported ordered stem edits and marker choices, so its inputs remain
+fail-closed. The pointer at `DAT_10077774` is the separate `ed` literal; the
+`ing` gate uses `DAT_10077378`.
+
+Implementation boundary
+-----------------------
+
+`paul2013HasUnportedLongA140Suffix` recognizes mapped long C strings of 9 to
+31 bytes ending in `s`. The supported A140 cascade returns `UnsupportedBranch`
+for this case after trying its recovered handlers.
+`NormalizePaul2013C3A0SupportedA140Component` converts that result to an
+explicit error, preventing the later apostrophe-s and generic handlers from
+silently treating an unported A140 branch as an ordinary miss.
+
+This is a fail-closed dispatch boundary for terminal `s`, not a port of that
+branch's normalization behavior. Its ordered lookup modes, table predicates,
+and marker tails remain to be implemented. No row-for-row runtime comparison
+was made for either suffix path.
+
+Superseded by Stage 97
+----------------------
+
+Stage 97 replaces the historical terminal-`s` gate with
+`NormalizePaul2013SSuffixContext`, porting the 5- to 31-byte ordered stem
+branches and marker tail for reachable ASCII short-table entries. The gate-specific
+`UnsupportedBranch` result is no longer used for terminal `s`; Stage 106 later
+captures the full signed table window. Runtime row parity remains
+unverified.

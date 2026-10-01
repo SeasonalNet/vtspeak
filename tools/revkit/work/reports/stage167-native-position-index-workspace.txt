@@ -1,0 +1,37 @@
+Stage 167: native position mapping workspace handoff
+
+Evidence
+
+- FUN_10022dc0's post-FUN_10022970 mapping in stage23-state-array-writers.c
+  is confirmed by vt_pau-objdump-disassembly.txt at 0x10022edc-0x10022fba.
+  Shared object DAT_100a0460 +0x20424 must equal byte 1 to take the remap
+  branch; every other byte takes the ordinary branch.
+- Native workspace pointer fields are little-endian uint32 at +0x47794
+  (start table), +0x47798 (end table), and +0x47790 (final remap table).
+  Model indexes are signed int32 at arena +0x64c/+0x650, stride 0x3c0.
+  Ordinary indexes clamp to [0, sourceLength-1] using workspace signed +0.
+  Remapped indexes bypass that clamp, then both inner results index final.
+- Original x86 at 0x10022fbc-0x10022fc5 advances workspace +4 by parser
+  consumed-byte count after mapping. That segment-driver write is not part
+  of the adapters added here and remains explicitly outstanding.
+
+Implementation and validation
+
+- ReadPaul2013PositionIndexWorkspaceTables derives pointers, source bound
+  and remap gate from native snapshots. The resolver reads only prefixes
+  needed by record indexes and final-table indexes actually used. Unused
+  prefix entries need not be valid final indexes.
+- RunNativePositionWorkspaceBoundaries and the duration engine wrapper
+  compose native mapping inputs, descriptor reads, model-state changes and
+  the loaded shared boundary tree, retaining copied workspace/model bytes.
+- Tests run the full pipeline for shared flags 0/1/2, verify both native
+  branches and required resolver lengths, clamp negative/oversized ordinary
+  indexes, preserve inputs, and reject truncated snapshots, null pointers,
+  invalid source bounds, negative/overflowing remap indexes and bad resolvers.
+
+Limits
+
+- Native source-index/table producers, descriptor producers, shared-object
+  snapshot ownership, segment-driver advancement and original-engine arena
+  comparison remain outside this port. No runtime capture was manufactured.
+- Synthetic composition plus static x86 evidence is not whole-synthesis parity.

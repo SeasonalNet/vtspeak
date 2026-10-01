@@ -1,0 +1,48 @@
+VoiceText Paul 2013 `live`/`lives` feature-4 pronunciation gate
+============================================================== 
+
+Evidence
+--------
+
+In `FUN_100049b0`, after the earlier `live`/`lives` literal phrase cases,
+the branch checks the next surface against a 17-entry literal set: `at`,
+`by`, `down`, `for`, `in`, `near`, `off`, `on`, `out`, `through`, `to`,
+`together`, `up`, `upon`, `with`, `call`, and `calls`. A match selects `%`
+for singular `live` and `*` for plural `lives`. The literals are at VAs
+`0x10077694`, `0x100776b4`, `0x10077674`, `0x100773f0`, `0x10077688`,
+`0x100773e8`, `0x1007750c`, `0x100776b0`, `0x10077508`, `0x1007740c`,
+`0x10077380`, `0x100773dc`, `0x1007767c`, `0x100776a8`, `0x10077680`,
+`0x100776a0`, and `0x10077698`.
+
+If that set misses, a following row with `FUN_10007160` result 4 reaches
+`LAB_10006627` and selects `%` for `live`, `*` for `lives`. The function
+call, branch, and target labels are in
+`tools/revkit/work/reports/stage6-text-table-consumers.txt` around lines
+2700-2742. `FUN_10007160` is ported by
+`text.Paul2013PronunciationPhoneContextFeature`.
+
+If the feature-4 gate misses, the same native block checks its previous-row
+exceptions. `live` selects 0x0e and `lives` selects 0x16 when the previous
+surface is one of `Window`, `Windows`, `xbox`, `the`, or `a`, or when the
+two preceding surfaces are `Larry King`. These literals are at VAs
+`0x100773bc`, `0x100773b4`, `0x100773ac`, `0x1007736c`, `0x10077718`,
+`0x100773cc`, and `0x100773c4`; the pseudocode is around lines 2730-2760.
+
+Recovered implementation
+------------------------
+
+`text.SelectPaul2013ModelNameContextPronunciation` applies the following
+literal set, feature-4 gate, and previous-row exceptions in that order. It
+selects `%`/`*` for a matching following surface, then 0x0e/0x16 for the
+previous-row exceptions.
+
+Evidence boundary
+-----------------
+
+The Go selector covers the directly observed `live`/`lives` branch order:
+`on` and its `put`/`lay` exception, `on TV`, the following-literal set,
+the `it up`/`up to`/`to *self` patterns, the `FUN_10007160` feature-4 gate,
+and the `Window`/`Windows`/`xbox`/`the`/`a` and `Larry King` predecessor
+exceptions. The `self` test uses the native four-byte suffix comparison.
+This remains a static port using the existing `FUN_10007160` implementation;
+no direct runtime pronunciation-choice comparison has been made.

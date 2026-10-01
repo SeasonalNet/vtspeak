@@ -1,0 +1,38 @@
+VoiceText Paul 2013 `a` article post-handler marker
+===================================================
+
+Evidence
+--------
+
+The rule appears in the Ghidra pseudocode for `FUN_10007520` at VA
+`0x10007520`, in `stage6-phone-record-consumers.txt` lines 287 through 325.
+The current counted surface is compared with mapped DLL string
+`DAT_10077718`; its linked parser row is skipped when class byte `+0x24` is
+`S`. Treat the decompiler output as pseudocode.
+
+Recovered cases
+---------------
+
+For the ordinary branch, a current first-character attribute mask of `0x40`,
+a first phone-code byte from `0x1d` through `0x1f`, and a following surface
+whose first-character attributes include both `0x40` and `0x80` write marker
+`7` at `model + 0x429cb + row*0x70` and set row-state bit 3 at
+`model + 0x429a6 + row*0x70`.
+
+If that branch does not match, the next row shares the current parser-row
+index, and the next surface is mapped string `DAT_100773a0` (`'s`), the same
+phone-code location receives `0x1e` and the same state bit is set. This shared
+fallback also follows the initial-row special gate when that gate reaches its
+`LAB_10007a7d` path.
+
+Initial-row branch
+------------------
+
+At row zero, a high-bit first-character attribute combined with initial phone
+code in `(0x1c, 0x20)` enters a branch that checks the following surface in
+the recovered class-4 (`PTR_1007844c`) and class-3 (`PTR_10078010`) tables.
+When neither class matches and the following first character has any `0xc0`
+attribute bits, it writes marker `7` and sets state bit 3. Otherwise execution
+continues to the shared same-parser-row apostrophe-s check. The Go pass uses
+the portable class tables in `text.Paul2013TripletTableContains`. No non-ASCII
+behavior or runtime row parity is claimed.

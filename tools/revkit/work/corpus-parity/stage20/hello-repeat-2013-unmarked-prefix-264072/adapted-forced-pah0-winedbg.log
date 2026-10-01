@@ -1,0 +1,103 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/hello-repeat-2013-unmarked-prefix-264072/adapted-prefix-edges-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/hello-repeat-2013-unmarked-prefix-264072/adapted-prefix-edges-gdb.log.
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-unmarked-prefix-264072/adapted-prefix-edges-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10023331
+Wine-gdb> >>>> > > >  >  >   >   >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+UNMARKED_264072_EDGE context=1 current=264072 previous=273369 feature=8.61681 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=24.567
+UNMARKED_264072_EDGE context=1 current=264072 previous=63 feature=22.0066 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=37.9568
+UNMARKED_264072_EDGE context=1 current=264072 previous=268190 feature=8.91623 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=24.8664
+UNMARKED_264072_EDGE context=1 current=264072 previous=267478 feature=10.2543 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=26.2045
+UNMARKED_264072_EDGE context=1 current=264072 previous=264663 feature=16.4365 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=32.3867
+UNMARKED_264072_EDGE context=1 current=264072 previous=264405 feature=12.879 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=28.8292
+UNMARKED_264072_EDGE context=1 current=264072 previous=149799 feature=10.6512 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=26.6014
+UNMARKED_264072_EDGE context=1 current=264072 previous=258594 feature=19.7233 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=35.6735
+UNMARKED_264072_EDGE context=1 current=264072 previous=255501 feature=10.3278 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=26.278
+UNMARKED_264072_EDGE context=1 current=264072 previous=252497 feature=8.50575 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=24.4559
+UNMARKED_264072_EDGE context=1 current=264072 previous=248753 feature=25.4384 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=41.3886
+UNMARKED_264072_EDGE context=1 current=264072 previous=158787 feature=12.3213 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=28.2715
+UNMARKED_264072_EDGE context=1 current=264072 previous=234795 feature=22.5246 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=38.4747
+UNMARKED_264072_EDGE context=1 current=264072 previous=167546 feature=23.3476 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=39.2977
+UNMARKED_264072_EDGE context=1 current=264072 previous=169343 feature=13.2464 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=29.1965
+UNMARKED_264072_EDGE context=1 current=264072 previous=50118 feature=9.26742 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=25.2176
+UNMARKED_264072_EDGE context=1 current=264072 previous=32995 feature=23.1224 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=39.0726
+UNMARKED_264072_EDGE context=1 current=264072 previous=88195 feature=34.1759 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=50.1261
+UNMARKED_264072_EDGE context=1 current=264072 previous=3756 feature=29.295 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=45.2452
+UNMARKED_264072_EDGE context=1 current=264072 previous=5218 feature=18.5296 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=34.4798
+UNMARKED_264072_EDGE context=1 current=264072 previous=25895 feature=18.7311 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=34.6813
+UNMARKED_264072_EDGE context=1 current=264072 previous=6208 feature=13.8298 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=29.78
+UNMARKED_264072_EDGE context=1 current=264072 previous=13531 feature=20.4888 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=36.439
+UNMARKED_264072_EDGE context=1 current=264072 previous=19888 feature=24.6874 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=40.6376
+UNMARKED_264072_EDGE context=1 current=264072 previous=270371 feature=10.3692 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=26.3194
+UNMARKED_264072_EDGE context=1 current=264072 previous=271878 feature=10.2543 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=26.2045
+UNMARKED_264072_EDGE context=1 current=264072 previous=222240 feature=15.1682 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=31.1183
+UNMARKED_264072_EDGE context=1 current=264072 previous=220903 feature=15.9762 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=31.9264
+UNMARKED_264072_EDGE context=1 current=264072 previous=97386 feature=12.717 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=28.6672
+UNMARKED_264072_EDGE context=1 current=264072 previous=211497 feature=24.2351 divisor=1 penalty=0 previous_path=4.8 local=11.1502 total=40.1853
+UNMARKED_264072_EDGE context=2 current=264072 previous=13942 feature=14.2253 divisor=1 penalty=5 previous_path=30.1179 local=11.0296 total=60.3727
+UNMARKED_264072_EDGE context=2 current=264072 previous=36540 feature=12.3122 divisor=1 penalty=5 previous_path=27.2325 local=11.0296 total=55.5742
+UNMARKED_264072_EDGE context=2 current=264072 previous=53487 feature=11.1916 divisor=1 penalty=5 previous_path=22.2927 local=11.0296 total=49.5139
+UNMARKED_264072_EDGE context=2 current=264072 previous=96599 feature=10.5958 divisor=1 penalty=5 previous_path=28.5343 local=11.0296 total=55.1596
+UNMARKED_264072_EDGE context=2 current=264072 previous=264072 feature=0 divisor=1 penalty=0 previous_path=24.4559 local=11.0296 total=35.4855
+UNMARKED_264072_EDGE context=2 current=264072 previous=268760 feature=23.8593 divisor=1 penalty=5 previous_path=23.3993 local=11.0296 total=63.2882
+UNMARKED_264072_EDGE context=2 current=264072 previous=272152 feature=6.73257 divisor=1 penalty=5 previous_path=26.5031 local=11.0296 total=49.2653
+UNMARKED_264072_EDGE context=2 current=264072 previous=272823 feature=34.3272 divisor=1 penalty=5 previous_path=24.8885 local=11.0296 total=75.2452
+UNMARKED_264072_EDGE context=2 current=264072 previous=273370 feature=13.629 divisor=1 penalty=5 previous_path=17.8116 local=11.0296 total=47.4702
+UNMARKED_264072_EDGE context=2 current=264072 previous=145101 feature=12.5808 divisor=1 penalty=5 previous_path=22.5356 local=11.0296 total=51.1459
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

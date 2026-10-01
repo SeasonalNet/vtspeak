@@ -1,0 +1,249 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Continuing.
+MAKEINFO_THIRD_SWEEP case=b-UUUU-plain raw_eax=0x1 text=A A B D path=Z:/work/stage21/mi-letter-third-sweep-b-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=b-UUUU-question raw_eax=0x1 text=A A B D? path=Z:/work/stage21/mi-letter-third-sweep-b-UUUU-question
+MAKEINFO_THIRD_SWEEP case=b-UUUL-plain raw_eax=0x1 text=A A B d path=Z:/work/stage21/mi-letter-third-sweep-b-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=b-UUUL-question raw_eax=0x1 text=A A B d? path=Z:/work/stage21/mi-letter-third-sweep-b-UUUL-question
+MAKEINFO_THIRD_SWEEP case=b-ULUU-plain raw_eax=0x1 text=A a B D path=Z:/work/stage21/mi-letter-third-sweep-b-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=b-ULUU-question raw_eax=0x1 text=A a B D? path=Z:/work/stage21/mi-letter-third-sweep-b-ULUU-question
+MAKEINFO_THIRD_SWEEP case=b-ULUL-plain raw_eax=0x1 text=A a B d path=Z:/work/stage21/mi-letter-third-sweep-b-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=b-ULUL-question raw_eax=0x1 text=A a B d? path=Z:/work/stage21/mi-letter-third-sweep-b-ULUL-question
+MAKEINFO_THIRD_SWEEP case=c-UUUU-plain raw_eax=0x1 text=A A C D path=Z:/work/stage21/mi-letter-third-sweep-c-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=c-UUUU-question raw_eax=0x1 text=A A C D? path=Z:/work/stage21/mi-letter-third-sweep-c-UUUU-question
+MAKEINFO_THIRD_SWEEP case=c-UUUL-plain raw_eax=0x1 text=A A C d path=Z:/work/stage21/mi-letter-third-sweep-c-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=c-UUUL-question raw_eax=0x1 text=A A C d? path=Z:/work/stage21/mi-letter-third-sweep-c-UUUL-question
+MAKEINFO_THIRD_SWEEP case=c-ULUU-plain raw_eax=0x1 text=A a C D path=Z:/work/stage21/mi-letter-third-sweep-c-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=c-ULUU-question raw_eax=0x1 text=A a C D? path=Z:/work/stage21/mi-letter-third-sweep-c-ULUU-question
+MAKEINFO_THIRD_SWEEP case=c-ULUL-plain raw_eax=0x1 text=A a C d path=Z:/work/stage21/mi-letter-third-sweep-c-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=c-ULUL-question raw_eax=0x1 text=A a C d? path=Z:/work/stage21/mi-letter-third-sweep-c-ULUL-question
+MAKEINFO_THIRD_SWEEP case=d-UUUU-plain raw_eax=0x1 text=A A D D path=Z:/work/stage21/mi-letter-third-sweep-d-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=d-UUUU-question raw_eax=0x1 text=A A D D? path=Z:/work/stage21/mi-letter-third-sweep-d-UUUU-question
+MAKEINFO_THIRD_SWEEP case=d-UUUL-plain raw_eax=0x1 text=A A D d path=Z:/work/stage21/mi-letter-third-sweep-d-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=d-UUUL-question raw_eax=0x1 text=A A D d? path=Z:/work/stage21/mi-letter-third-sweep-d-UUUL-question
+MAKEINFO_THIRD_SWEEP case=d-ULUU-plain raw_eax=0x1 text=A a D D path=Z:/work/stage21/mi-letter-third-sweep-d-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=d-ULUU-question raw_eax=0x1 text=A a D D? path=Z:/work/stage21/mi-letter-third-sweep-d-ULUU-question
+MAKEINFO_THIRD_SWEEP case=d-ULUL-plain raw_eax=0x1 text=A a D d path=Z:/work/stage21/mi-letter-third-sweep-d-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=d-ULUL-question raw_eax=0x1 text=A a D d? path=Z:/work/stage21/mi-letter-third-sweep-d-ULUL-question
+MAKEINFO_THIRD_SWEEP case=e-UUUU-plain raw_eax=0x1 text=A A E D path=Z:/work/stage21/mi-letter-third-sweep-e-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=e-UUUU-question raw_eax=0x1 text=A A E D? path=Z:/work/stage21/mi-letter-third-sweep-e-UUUU-question
+MAKEINFO_THIRD_SWEEP case=e-UUUL-plain raw_eax=0x1 text=A A E d path=Z:/work/stage21/mi-letter-third-sweep-e-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=e-UUUL-question raw_eax=0x1 text=A A E d? path=Z:/work/stage21/mi-letter-third-sweep-e-UUUL-question
+MAKEINFO_THIRD_SWEEP case=e-ULUU-plain raw_eax=0x1 text=A a E D path=Z:/work/stage21/mi-letter-third-sweep-e-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=e-ULUU-question raw_eax=0x1 text=A a E D? path=Z:/work/stage21/mi-letter-third-sweep-e-ULUU-question
+MAKEINFO_THIRD_SWEEP case=e-ULUL-plain raw_eax=0x1 text=A a E d path=Z:/work/stage21/mi-letter-third-sweep-e-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=e-ULUL-question raw_eax=0x1 text=A a E d? path=Z:/work/stage21/mi-letter-third-sweep-e-ULUL-question
+MAKEINFO_THIRD_SWEEP case=f-UUUU-plain raw_eax=0x1 text=A A F D path=Z:/work/stage21/mi-letter-third-sweep-f-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=f-UUUU-question raw_eax=0x1 text=A A F D? path=Z:/work/stage21/mi-letter-third-sweep-f-UUUU-question
+MAKEINFO_THIRD_SWEEP case=f-UUUL-plain raw_eax=0x1 text=A A F d path=Z:/work/stage21/mi-letter-third-sweep-f-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=f-UUUL-question raw_eax=0x1 text=A A F d? path=Z:/work/stage21/mi-letter-third-sweep-f-UUUL-question
+MAKEINFO_THIRD_SWEEP case=f-ULUU-plain raw_eax=0x1 text=A a F D path=Z:/work/stage21/mi-letter-third-sweep-f-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=f-ULUU-question raw_eax=0x1 text=A a F D? path=Z:/work/stage21/mi-letter-third-sweep-f-ULUU-question
+MAKEINFO_THIRD_SWEEP case=f-ULUL-plain raw_eax=0x1 text=A a F d path=Z:/work/stage21/mi-letter-third-sweep-f-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=f-ULUL-question raw_eax=0x1 text=A a F d? path=Z:/work/stage21/mi-letter-third-sweep-f-ULUL-question
+MAKEINFO_THIRD_SWEEP case=h-UUUU-plain raw_eax=0x1 text=A A H D path=Z:/work/stage21/mi-letter-third-sweep-h-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=h-UUUU-question raw_eax=0x1 text=A A H D? path=Z:/work/stage21/mi-letter-third-sweep-h-UUUU-question
+MAKEINFO_THIRD_SWEEP case=h-UUUL-plain raw_eax=0x1 text=A A H d path=Z:/work/stage21/mi-letter-third-sweep-h-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=h-UUUL-question raw_eax=0x1 text=A A H d? path=Z:/work/stage21/mi-letter-third-sweep-h-UUUL-question
+MAKEINFO_THIRD_SWEEP case=h-ULUU-plain raw_eax=0x1 text=A a H D path=Z:/work/stage21/mi-letter-third-sweep-h-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=h-ULUU-question raw_eax=0x1 text=A a H D? path=Z:/work/stage21/mi-letter-third-sweep-h-ULUU-question
+MAKEINFO_THIRD_SWEEP case=h-ULUL-plain raw_eax=0x1 text=A a H d path=Z:/work/stage21/mi-letter-third-sweep-h-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=h-ULUL-question raw_eax=0x1 text=A a H d? path=Z:/work/stage21/mi-letter-third-sweep-h-ULUL-question
+MAKEINFO_THIRD_SWEEP case=i-UUUU-plain raw_eax=0x1 text=A A I D path=Z:/work/stage21/mi-letter-third-sweep-i-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=i-UUUU-question raw_eax=0x1 text=A A I D? path=Z:/work/stage21/mi-letter-third-sweep-i-UUUU-question
+MAKEINFO_THIRD_SWEEP case=i-UUUL-plain raw_eax=0x1 text=A A I d path=Z:/work/stage21/mi-letter-third-sweep-i-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=i-UUUL-question raw_eax=0x1 text=A A I d? path=Z:/work/stage21/mi-letter-third-sweep-i-UUUL-question
+MAKEINFO_THIRD_SWEEP case=i-ULUU-plain raw_eax=0x1 text=A a I D path=Z:/work/stage21/mi-letter-third-sweep-i-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=i-ULUU-question raw_eax=0x1 text=A a I D? path=Z:/work/stage21/mi-letter-third-sweep-i-ULUU-question
+MAKEINFO_THIRD_SWEEP case=i-ULUL-plain raw_eax=0x1 text=A a I d path=Z:/work/stage21/mi-letter-third-sweep-i-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=i-ULUL-question raw_eax=0x1 text=A a I d? path=Z:/work/stage21/mi-letter-third-sweep-i-ULUL-question
+MAKEINFO_THIRD_SWEEP case=j-UUUU-plain raw_eax=0x1 text=A A J D path=Z:/work/stage21/mi-letter-third-sweep-j-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=j-UUUU-question raw_eax=0x1 text=A A J D? path=Z:/work/stage21/mi-letter-third-sweep-j-UUUU-question
+MAKEINFO_THIRD_SWEEP case=j-UUUL-plain raw_eax=0x1 text=A A J d path=Z:/work/stage21/mi-letter-third-sweep-j-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=j-UUUL-question raw_eax=0x1 text=A A J d? path=Z:/work/stage21/mi-letter-third-sweep-j-UUUL-question
+MAKEINFO_THIRD_SWEEP case=j-ULUU-plain raw_eax=0x1 text=A a J D path=Z:/work/stage21/mi-letter-third-sweep-j-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=j-ULUU-question raw_eax=0x1 text=A a J D? path=Z:/work/stage21/mi-letter-third-sweep-j-ULUU-question
+MAKEINFO_THIRD_SWEEP case=j-ULUL-plain raw_eax=0x1 text=A a J d path=Z:/work/stage21/mi-letter-third-sweep-j-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=j-ULUL-question raw_eax=0x1 text=A a J d? path=Z:/work/stage21/mi-letter-third-sweep-j-ULUL-question
+MAKEINFO_THIRD_SWEEP case=k-UUUU-plain raw_eax=0x1 text=A A K D path=Z:/work/stage21/mi-letter-third-sweep-k-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=k-UUUU-question raw_eax=0x1 text=A A K D? path=Z:/work/stage21/mi-letter-third-sweep-k-UUUU-question
+MAKEINFO_THIRD_SWEEP case=k-UUUL-plain raw_eax=0x1 text=A A K d path=Z:/work/stage21/mi-letter-third-sweep-k-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=k-UUUL-question raw_eax=0x1 text=A A K d? path=Z:/work/stage21/mi-letter-third-sweep-k-UUUL-question
+MAKEINFO_THIRD_SWEEP case=k-ULUU-plain raw_eax=0x1 text=A a K D path=Z:/work/stage21/mi-letter-third-sweep-k-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=k-ULUU-question raw_eax=0x1 text=A a K D? path=Z:/work/stage21/mi-letter-third-sweep-k-ULUU-question
+MAKEINFO_THIRD_SWEEP case=k-ULUL-plain raw_eax=0x1 text=A a K d path=Z:/work/stage21/mi-letter-third-sweep-k-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=k-ULUL-question raw_eax=0x1 text=A a K d? path=Z:/work/stage21/mi-letter-third-sweep-k-ULUL-question
+MAKEINFO_THIRD_SWEEP case=l-UUUU-plain raw_eax=0x1 text=A A L D path=Z:/work/stage21/mi-letter-third-sweep-l-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=l-UUUU-question raw_eax=0x1 text=A A L D? path=Z:/work/stage21/mi-letter-third-sweep-l-UUUU-question
+MAKEINFO_THIRD_SWEEP case=l-UUUL-plain raw_eax=0x1 text=A A L d path=Z:/work/stage21/mi-letter-third-sweep-l-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=l-UUUL-question raw_eax=0x1 text=A A L d? path=Z:/work/stage21/mi-letter-third-sweep-l-UUUL-question
+MAKEINFO_THIRD_SWEEP case=l-ULUU-plain raw_eax=0x1 text=A a L D path=Z:/work/stage21/mi-letter-third-sweep-l-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=l-ULUU-question raw_eax=0x1 text=A a L D? path=Z:/work/stage21/mi-letter-third-sweep-l-ULUU-question
+MAKEINFO_THIRD_SWEEP case=l-ULUL-plain raw_eax=0x1 text=A a L d path=Z:/work/stage21/mi-letter-third-sweep-l-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=l-ULUL-question raw_eax=0x1 text=A a L d? path=Z:/work/stage21/mi-letter-third-sweep-l-ULUL-question
+MAKEINFO_THIRD_SWEEP case=m-UUUU-plain raw_eax=0x1 text=A A M D path=Z:/work/stage21/mi-letter-third-sweep-m-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=m-UUUU-question raw_eax=0x1 text=A A M D? path=Z:/work/stage21/mi-letter-third-sweep-m-UUUU-question
+MAKEINFO_THIRD_SWEEP case=m-UUUL-plain raw_eax=0x1 text=A A M d path=Z:/work/stage21/mi-letter-third-sweep-m-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=m-UUUL-question raw_eax=0x1 text=A A M d? path=Z:/work/stage21/mi-letter-third-sweep-m-UUUL-question
+MAKEINFO_THIRD_SWEEP case=m-ULUU-plain raw_eax=0x1 text=A a M D path=Z:/work/stage21/mi-letter-third-sweep-m-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=m-ULUU-question raw_eax=0x1 text=A a M D? path=Z:/work/stage21/mi-letter-third-sweep-m-ULUU-question
+MAKEINFO_THIRD_SWEEP case=m-ULUL-plain raw_eax=0x1 text=A a M d path=Z:/work/stage21/mi-letter-third-sweep-m-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=m-ULUL-question raw_eax=0x1 text=A a M d? path=Z:/work/stage21/mi-letter-third-sweep-m-ULUL-question
+MAKEINFO_THIRD_SWEEP case=n-UUUU-plain raw_eax=0x1 text=A A N D path=Z:/work/stage21/mi-letter-third-sweep-n-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=n-UUUU-question raw_eax=0x1 text=A A N D? path=Z:/work/stage21/mi-letter-third-sweep-n-UUUU-question
+MAKEINFO_THIRD_SWEEP case=n-UUUL-plain raw_eax=0x1 text=A A N d path=Z:/work/stage21/mi-letter-third-sweep-n-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=n-UUUL-question raw_eax=0x1 text=A A N d? path=Z:/work/stage21/mi-letter-third-sweep-n-UUUL-question
+MAKEINFO_THIRD_SWEEP case=n-ULUU-plain raw_eax=0x1 text=A a N D path=Z:/work/stage21/mi-letter-third-sweep-n-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=n-ULUU-question raw_eax=0x1 text=A a N D? path=Z:/work/stage21/mi-letter-third-sweep-n-ULUU-question
+MAKEINFO_THIRD_SWEEP case=n-ULUL-plain raw_eax=0x1 text=A a N d path=Z:/work/stage21/mi-letter-third-sweep-n-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=n-ULUL-question raw_eax=0x1 text=A a N d? path=Z:/work/stage21/mi-letter-third-sweep-n-ULUL-question
+MAKEINFO_THIRD_SWEEP case=o-UUUU-plain raw_eax=0x1 text=A A O D path=Z:/work/stage21/mi-letter-third-sweep-o-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=o-UUUU-question raw_eax=0x1 text=A A O D? path=Z:/work/stage21/mi-letter-third-sweep-o-UUUU-question
+MAKEINFO_THIRD_SWEEP case=o-UUUL-plain raw_eax=0x1 text=A A O d path=Z:/work/stage21/mi-letter-third-sweep-o-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=o-UUUL-question raw_eax=0x1 text=A A O d? path=Z:/work/stage21/mi-letter-third-sweep-o-UUUL-question
+MAKEINFO_THIRD_SWEEP case=o-ULUU-plain raw_eax=0x1 text=A a O D path=Z:/work/stage21/mi-letter-third-sweep-o-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=o-ULUU-question raw_eax=0x1 text=A a O D? path=Z:/work/stage21/mi-letter-third-sweep-o-ULUU-question
+MAKEINFO_THIRD_SWEEP case=o-ULUL-plain raw_eax=0x1 text=A a O d path=Z:/work/stage21/mi-letter-third-sweep-o-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=o-ULUL-question raw_eax=0x1 text=A a O d? path=Z:/work/stage21/mi-letter-third-sweep-o-ULUL-question
+MAKEINFO_THIRD_SWEEP case=p-UUUU-plain raw_eax=0x1 text=A A P D path=Z:/work/stage21/mi-letter-third-sweep-p-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=p-UUUU-question raw_eax=0x1 text=A A P D? path=Z:/work/stage21/mi-letter-third-sweep-p-UUUU-question
+MAKEINFO_THIRD_SWEEP case=p-UUUL-plain raw_eax=0x1 text=A A P d path=Z:/work/stage21/mi-letter-third-sweep-p-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=p-UUUL-question raw_eax=0x1 text=A A P d? path=Z:/work/stage21/mi-letter-third-sweep-p-UUUL-question
+MAKEINFO_THIRD_SWEEP case=p-ULUU-plain raw_eax=0x1 text=A a P D path=Z:/work/stage21/mi-letter-third-sweep-p-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=p-ULUU-question raw_eax=0x1 text=A a P D? path=Z:/work/stage21/mi-letter-third-sweep-p-ULUU-question
+MAKEINFO_THIRD_SWEEP case=p-ULUL-plain raw_eax=0x1 text=A a P d path=Z:/work/stage21/mi-letter-third-sweep-p-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=p-ULUL-question raw_eax=0x1 text=A a P d? path=Z:/work/stage21/mi-letter-third-sweep-p-ULUL-question
+MAKEINFO_THIRD_SWEEP case=q-UUUU-plain raw_eax=0x1 text=A A Q D path=Z:/work/stage21/mi-letter-third-sweep-q-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=q-UUUU-question raw_eax=0x1 text=A A Q D? path=Z:/work/stage21/mi-letter-third-sweep-q-UUUU-question
+MAKEINFO_THIRD_SWEEP case=q-UUUL-plain raw_eax=0x1 text=A A Q d path=Z:/work/stage21/mi-letter-third-sweep-q-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=q-UUUL-question raw_eax=0x1 text=A A Q d? path=Z:/work/stage21/mi-letter-third-sweep-q-UUUL-question
+MAKEINFO_THIRD_SWEEP case=q-ULUU-plain raw_eax=0x1 text=A a Q D path=Z:/work/stage21/mi-letter-third-sweep-q-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=q-ULUU-question raw_eax=0x1 text=A a Q D? path=Z:/work/stage21/mi-letter-third-sweep-q-ULUU-question
+MAKEINFO_THIRD_SWEEP case=q-ULUL-plain raw_eax=0x1 text=A a Q d path=Z:/work/stage21/mi-letter-third-sweep-q-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=q-ULUL-question raw_eax=0x1 text=A a Q d? path=Z:/work/stage21/mi-letter-third-sweep-q-ULUL-question
+MAKEINFO_THIRD_SWEEP case=r-UUUU-plain raw_eax=0x1 text=A A R D path=Z:/work/stage21/mi-letter-third-sweep-r-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=r-UUUU-question raw_eax=0x1 text=A A R D? path=Z:/work/stage21/mi-letter-third-sweep-r-UUUU-question
+MAKEINFO_THIRD_SWEEP case=r-UUUL-plain raw_eax=0x1 text=A A R d path=Z:/work/stage21/mi-letter-third-sweep-r-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=r-UUUL-question raw_eax=0x1 text=A A R d? path=Z:/work/stage21/mi-letter-third-sweep-r-UUUL-question
+MAKEINFO_THIRD_SWEEP case=r-ULUU-plain raw_eax=0x1 text=A a R D path=Z:/work/stage21/mi-letter-third-sweep-r-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=r-ULUU-question raw_eax=0x1 text=A a R D? path=Z:/work/stage21/mi-letter-third-sweep-r-ULUU-question
+MAKEINFO_THIRD_SWEEP case=r-ULUL-plain raw_eax=0x1 text=A a R d path=Z:/work/stage21/mi-letter-third-sweep-r-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=r-ULUL-question raw_eax=0x1 text=A a R d? path=Z:/work/stage21/mi-letter-third-sweep-r-ULUL-question
+MAKEINFO_THIRD_SWEEP case=s-UUUU-plain raw_eax=0x1 text=A A S D path=Z:/work/stage21/mi-letter-third-sweep-s-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=s-UUUU-question raw_eax=0x1 text=A A S D? path=Z:/work/stage21/mi-letter-third-sweep-s-UUUU-question
+MAKEINFO_THIRD_SWEEP case=s-UUUL-plain raw_eax=0x1 text=A A S d path=Z:/work/stage21/mi-letter-third-sweep-s-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=s-UUUL-question raw_eax=0x1 text=A A S d? path=Z:/work/stage21/mi-letter-third-sweep-s-UUUL-question
+MAKEINFO_THIRD_SWEEP case=s-ULUU-plain raw_eax=0x1 text=A a S D path=Z:/work/stage21/mi-letter-third-sweep-s-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=s-ULUU-question raw_eax=0x1 text=A a S D? path=Z:/work/stage21/mi-letter-third-sweep-s-ULUU-question
+MAKEINFO_THIRD_SWEEP case=s-ULUL-plain raw_eax=0x1 text=A a S d path=Z:/work/stage21/mi-letter-third-sweep-s-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=s-ULUL-question raw_eax=0x1 text=A a S d? path=Z:/work/stage21/mi-letter-third-sweep-s-ULUL-question
+MAKEINFO_THIRD_SWEEP case=t-UUUU-plain raw_eax=0x1 text=A A T D path=Z:/work/stage21/mi-letter-third-sweep-t-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=t-UUUU-question raw_eax=0x1 text=A A T D? path=Z:/work/stage21/mi-letter-third-sweep-t-UUUU-question
+MAKEINFO_THIRD_SWEEP case=t-UUUL-plain raw_eax=0x1 text=A A T d path=Z:/work/stage21/mi-letter-third-sweep-t-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=t-UUUL-question raw_eax=0x1 text=A A T d? path=Z:/work/stage21/mi-letter-third-sweep-t-UUUL-question
+MAKEINFO_THIRD_SWEEP case=t-ULUU-plain raw_eax=0x1 text=A a T D path=Z:/work/stage21/mi-letter-third-sweep-t-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=t-ULUU-question raw_eax=0x1 text=A a T D? path=Z:/work/stage21/mi-letter-third-sweep-t-ULUU-question
+MAKEINFO_THIRD_SWEEP case=t-ULUL-plain raw_eax=0x1 text=A a T d path=Z:/work/stage21/mi-letter-third-sweep-t-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=t-ULUL-question raw_eax=0x1 text=A a T d? path=Z:/work/stage21/mi-letter-third-sweep-t-ULUL-question
+MAKEINFO_THIRD_SWEEP case=u-UUUU-plain raw_eax=0x1 text=A A U D path=Z:/work/stage21/mi-letter-third-sweep-u-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=u-UUUU-question raw_eax=0x1 text=A A U D? path=Z:/work/stage21/mi-letter-third-sweep-u-UUUU-question
+MAKEINFO_THIRD_SWEEP case=u-UUUL-plain raw_eax=0x1 text=A A U d path=Z:/work/stage21/mi-letter-third-sweep-u-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=u-UUUL-question raw_eax=0x1 text=A A U d? path=Z:/work/stage21/mi-letter-third-sweep-u-UUUL-question
+MAKEINFO_THIRD_SWEEP case=u-ULUU-plain raw_eax=0x1 text=A a U D path=Z:/work/stage21/mi-letter-third-sweep-u-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=u-ULUU-question raw_eax=0x1 text=A a U D? path=Z:/work/stage21/mi-letter-third-sweep-u-ULUU-question
+MAKEINFO_THIRD_SWEEP case=u-ULUL-plain raw_eax=0x1 text=A a U d path=Z:/work/stage21/mi-letter-third-sweep-u-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=u-ULUL-question raw_eax=0x1 text=A a U d? path=Z:/work/stage21/mi-letter-third-sweep-u-ULUL-question
+MAKEINFO_THIRD_SWEEP case=v-UUUU-plain raw_eax=0x1 text=A A V D path=Z:/work/stage21/mi-letter-third-sweep-v-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=v-UUUU-question raw_eax=0x1 text=A A V D? path=Z:/work/stage21/mi-letter-third-sweep-v-UUUU-question
+MAKEINFO_THIRD_SWEEP case=v-UUUL-plain raw_eax=0x1 text=A A V d path=Z:/work/stage21/mi-letter-third-sweep-v-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=v-UUUL-question raw_eax=0x1 text=A A V d? path=Z:/work/stage21/mi-letter-third-sweep-v-UUUL-question
+MAKEINFO_THIRD_SWEEP case=v-ULUU-plain raw_eax=0x1 text=A a V D path=Z:/work/stage21/mi-letter-third-sweep-v-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=v-ULUU-question raw_eax=0x1 text=A a V D? path=Z:/work/stage21/mi-letter-third-sweep-v-ULUU-question
+MAKEINFO_THIRD_SWEEP case=v-ULUL-plain raw_eax=0x1 text=A a V d path=Z:/work/stage21/mi-letter-third-sweep-v-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=v-ULUL-question raw_eax=0x1 text=A a V d? path=Z:/work/stage21/mi-letter-third-sweep-v-ULUL-question
+MAKEINFO_THIRD_SWEEP case=w-UUUU-plain raw_eax=0x1 text=A A W D path=Z:/work/stage21/mi-letter-third-sweep-w-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=w-UUUU-question raw_eax=0x1 text=A A W D? path=Z:/work/stage21/mi-letter-third-sweep-w-UUUU-question
+MAKEINFO_THIRD_SWEEP case=w-UUUL-plain raw_eax=0x1 text=A A W d path=Z:/work/stage21/mi-letter-third-sweep-w-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=w-UUUL-question raw_eax=0x1 text=A A W d? path=Z:/work/stage21/mi-letter-third-sweep-w-UUUL-question
+MAKEINFO_THIRD_SWEEP case=w-ULUU-plain raw_eax=0x1 text=A a W D path=Z:/work/stage21/mi-letter-third-sweep-w-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=w-ULUU-question raw_eax=0x1 text=A a W D? path=Z:/work/stage21/mi-letter-third-sweep-w-ULUU-question
+MAKEINFO_THIRD_SWEEP case=w-ULUL-plain raw_eax=0x1 text=A a W d path=Z:/work/stage21/mi-letter-third-sweep-w-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=w-ULUL-question raw_eax=0x1 text=A a W d? path=Z:/work/stage21/mi-letter-third-sweep-w-ULUL-question
+MAKEINFO_THIRD_SWEEP case=x-UUUU-plain raw_eax=0x1 text=A A X D path=Z:/work/stage21/mi-letter-third-sweep-x-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=x-UUUU-question raw_eax=0x1 text=A A X D? path=Z:/work/stage21/mi-letter-third-sweep-x-UUUU-question
+MAKEINFO_THIRD_SWEEP case=x-UUUL-plain raw_eax=0x1 text=A A X d path=Z:/work/stage21/mi-letter-third-sweep-x-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=x-UUUL-question raw_eax=0x1 text=A A X d? path=Z:/work/stage21/mi-letter-third-sweep-x-UUUL-question
+MAKEINFO_THIRD_SWEEP case=x-ULUU-plain raw_eax=0x1 text=A a X D path=Z:/work/stage21/mi-letter-third-sweep-x-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=x-ULUU-question raw_eax=0x1 text=A a X D? path=Z:/work/stage21/mi-letter-third-sweep-x-ULUU-question
+MAKEINFO_THIRD_SWEEP case=x-ULUL-plain raw_eax=0x1 text=A a X d path=Z:/work/stage21/mi-letter-third-sweep-x-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=x-ULUL-question raw_eax=0x1 text=A a X d? path=Z:/work/stage21/mi-letter-third-sweep-x-ULUL-question
+MAKEINFO_THIRD_SWEEP case=y-UUUU-plain raw_eax=0x1 text=A A Y D path=Z:/work/stage21/mi-letter-third-sweep-y-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=y-UUUU-question raw_eax=0x1 text=A A Y D? path=Z:/work/stage21/mi-letter-third-sweep-y-UUUU-question
+MAKEINFO_THIRD_SWEEP case=y-UUUL-plain raw_eax=0x1 text=A A Y d path=Z:/work/stage21/mi-letter-third-sweep-y-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=y-UUUL-question raw_eax=0x1 text=A A Y d? path=Z:/work/stage21/mi-letter-third-sweep-y-UUUL-question
+MAKEINFO_THIRD_SWEEP case=y-ULUU-plain raw_eax=0x1 text=A a Y D path=Z:/work/stage21/mi-letter-third-sweep-y-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=y-ULUU-question raw_eax=0x1 text=A a Y D? path=Z:/work/stage21/mi-letter-third-sweep-y-ULUU-question
+MAKEINFO_THIRD_SWEEP case=y-ULUL-plain raw_eax=0x1 text=A a Y d path=Z:/work/stage21/mi-letter-third-sweep-y-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=y-ULUL-question raw_eax=0x1 text=A a Y d? path=Z:/work/stage21/mi-letter-third-sweep-y-ULUL-question
+MAKEINFO_THIRD_SWEEP case=z-UUUU-plain raw_eax=0x1 text=A A Z D path=Z:/work/stage21/mi-letter-third-sweep-z-UUUU-plain
+MAKEINFO_THIRD_SWEEP case=z-UUUU-question raw_eax=0x1 text=A A Z D? path=Z:/work/stage21/mi-letter-third-sweep-z-UUUU-question
+MAKEINFO_THIRD_SWEEP case=z-UUUL-plain raw_eax=0x1 text=A A Z d path=Z:/work/stage21/mi-letter-third-sweep-z-UUUL-plain
+MAKEINFO_THIRD_SWEEP case=z-UUUL-question raw_eax=0x1 text=A A Z d? path=Z:/work/stage21/mi-letter-third-sweep-z-UUUL-question
+MAKEINFO_THIRD_SWEEP case=z-ULUU-plain raw_eax=0x1 text=A a Z D path=Z:/work/stage21/mi-letter-third-sweep-z-ULUU-plain
+MAKEINFO_THIRD_SWEEP case=z-ULUU-question raw_eax=0x1 text=A a Z D? path=Z:/work/stage21/mi-letter-third-sweep-z-ULUU-question
+MAKEINFO_THIRD_SWEEP case=z-ULUL-plain raw_eax=0x1 text=A a Z d path=Z:/work/stage21/mi-letter-third-sweep-z-ULUL-plain
+MAKEINFO_THIRD_SWEEP case=z-ULUL-question raw_eax=0x1 text=A a Z d? path=Z:/work/stage21/mi-letter-third-sweep-z-ULUL-question
+[Inferior 1 (Remote target) killed]
+0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)

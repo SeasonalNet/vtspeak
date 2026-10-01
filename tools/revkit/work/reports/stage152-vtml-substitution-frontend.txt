@@ -1,0 +1,28 @@
+Stage 152: VTML substitution frontend connection
+
+Ported behavior
+
+- `LexiconFrontend.ResolveTextWithPaul2013CapturedVTMLSubstitutions` composes
+  the Stage 151 bounded alias expansion with the existing embedded-dictionary
+  resolver.
+- Token source spans map to the corresponding contiguous bytes inside the
+  alias attribute of the original marked-up source. Numeric expansions retain
+  the normalizer's shared token span behavior.
+- A token spanning plain source and an alias rewrite is rejected because its
+  original-source interval would not be contiguous. Unsupported markup and
+  alias encodings continue to fail closed.
+- A local-resource test resolves a repeated `Hello` alias through the
+  dictionary, checks original-source spans, and flattens explicit first
+  pronunciation choices. The Stage 16 `Hello world.` capture remains covered
+  at the parser-expansion layer because the local `world` entry has no
+  pronunciation.
+
+Evidence and limits
+
+- The alias rule is based on Stage 16's byte-identical WAV comparison between
+  `<vtml_sub alias="Hello world.">x</vtml_sub>` and `Hello world.`. The
+  mapping of token spans to alias-attribute bytes is a Go source-location
+  convention; it was not directly observed from the DLL's EX descriptor.
+- No claim is made for source coordinates emitted by the native synthesis
+  pipeline, alternate attributes, escaped values, nested tags, or general
+  VTML parsing.

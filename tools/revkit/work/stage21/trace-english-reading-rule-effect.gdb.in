@@ -1,0 +1,33 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+set $field_accesses = 0
+break *0x1001da50
+break *0x4016d9
+commands 2
+  silent
+  printf "READING_RULE_SYNTHESIS_RETURN eax=%#x value=%d accesses=%d\n", $eax, *(int *)$field_address, $field_accesses
+  disable 2
+  continue
+end
+
+continue
+printf "READING_RULE_TEXT_ENTRY eip=%#x format=%d text=%s speaker=%d pitch=%d speed=%d volume=%d pause=%d dict=%d texttype=%d load_base=%#x speaker1=%#x\n", $eip, *(int *)($esp + 4), *(char **)($esp + 8), *(int *)($esp + 16), *(int *)($esp + 20), *(int *)($esp + 24), *(int *)($esp + 28), *(int *)($esp + 32), *(int *)($esp + 36), *(int *)($esp + 40), *(unsigned int *)0x100a0460, *(unsigned int *)0x100a0468
+call ((void (*)(int))0x100283c0)(@MODE@)
+set $field_address = *(unsigned int *)0x100a0460 + 0x20420
+set $field_before = *(unsigned int *)$field_address
+printf "READING_RULE_SET mode=@MODE@ field=%#x value=%u\n", $field_address, $field_before
+disable 1
+awatch *(unsigned int *)$field_address
+commands 3
+  silent
+  set $field_accesses = $field_accesses + 1
+  printf "READING_RULE_FIELD_ACCESS count=%d pc=%#x before=%u after=%u\n", $field_accesses, $eip, $field_before, *(unsigned int *)$field_address
+  bt 5
+  set $field_before = *(unsigned int *)$field_address
+  continue
+end
+
+continue

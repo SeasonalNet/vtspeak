@@ -1,0 +1,12 @@
+source=Kate ver.2005 unit indexes
+legacy_read_order=attr_4c[N],attr_48[N],key[5N],attr_40[N],metrics[12N]
+signature7_order=attr48,key5[:3],attr40,key5[3:]
+attr_b=zero
+transfer_attr_40=false
+matched_context_tail_map=5a2217:1e1e:a000,0d2217:0a0a:0000,0d2217:1414:0000,2b305a:0404:4500,2b3022:0202:0000
+candidate_prefix_tail_map=5a2205:1e1e:5a2217,5b2205:1e1e:5a2217,112205:0a0a:2f221e,1a2217:1414:2f221e,1e2205:0a0a:2f221e,1e2217:1414:2f221e,272205:0a0a:2f221e,2f2205:0a0a:2f221e,362205:0a0a:2f221e,3e2205:0a0a:2f221e,3e2218:0a0a:2f221e,3f2205:0a0a:2f221e
+unit-alp.idx: units=905 bytes=36245
+unit-etc.idx: units=3666 bytes=146685
+unit-gen.idx: units=179995 bytes=7199845
+unit-gen2.idx: units=98133 bytes=3925366
+unit-num.idx: units=997 bytes=39925

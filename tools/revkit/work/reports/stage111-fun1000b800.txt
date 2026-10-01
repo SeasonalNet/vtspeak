@@ -1,0 +1,63 @@
+VoiceText Paul 2013 FUN_1000b800 model-context handler
+=====================================================
+
+Evidence
+--------
+
+`FUN_1000b800` at VA `0x1000b800` was decompiled from the checked-in Ghidra
+project with Ghidra 12.1.4. Its complete generated pseudocode is attached as
+`stage111-fun1000b800-pseudo.c`; the matching PE32 instructions are in
+`vt_pau-objdump-disassembly.txt` from `0x1000b800` through the return at
+`0x1000c03a`. Treat the decompiler output as pseudocode.
+
+Recovered flow
+--------------
+
+1. The handler returns zero for `param_2 < 1`, unequal 16-bit row words at
+   `model + 0x42938 + row*0x70` and `model + 0x429a8 + row*0x70`, or a one-byte
+   current surface in the DLL punctuation string `,.!?` at `0x10077988`.
+2. It scans backward while each preceding/current pair of words at the second
+   row base (`+0x429a8`) is equal, joins the rows' NUL-terminated surfaces in
+   the native 32-byte local buffer, and calls `FUN_1000cb30` with context at
+   `model + 0x48128`. A return of 1 copies the output to the first row phone
+   string, ORs bit 3 into each grouped row flag, clears later-row phone
+   strings, and returns 1.
+3. If dictionary normalization misses, the suffix dispatcher reads the
+   auxiliary phone-code string at `model + 0x4295b + row*0x70` and applies
+   these literal cases. The bytes below are written at the current context
+   row's `+0x23`, followed by NUL; every match ORs bit 3 into row flags:
+
+   | Surface condition | Output rule |
+   | --- | --- |
+   | mapped `"'s"` | `D`, `7`, or `#D`, selected by the final auxiliary code |
+   | exact `"n't"` or `"N'T"` | `2D 39` when the final or final-two code test accepts; otherwise `07 2D 39` |
+   | exact `"'ve"`, `"'VE"`, or `"'em"` | `41` or `07 41` using the same final/final-two class condition |
+   | exact `"'EM"` or `"'re"` | `2C` or `07 2C` using that class condition |
+   | exact `"'RE"` or `"'ll"` | `36` when the final code is in the recovered class table, otherwise `1A` |
+   | exact `"'LL"` | `2B` or `07 2B` using the final/final-two class condition |
+   | mapped `"'d"` | consults both word tables below, then emits `15`, `07 15`, `39`, or `# 15` under the recovered character-class conditions |
+   | mapped `"'m"` | `2C` or `07 2C` according to the final-code class |
+
+   Class membership is the 16-bit table at `0x10077d94`, indexed only for
+   signed byte values 1 through `0x45`. The `'d` word checks use the sorted
+   10-entry table at `PTR_s_anybody_100786f0` / `DAT_10078718` and the sorted
+   18-entry table at `PTR_DAT_1007871c` / `DAT_10078764`, both through
+   `FUN_100560a0` mode `0x49`. Their snapshots are already represented by
+   `engine/text/pronunciation_context.go`.
+
+Implementation boundary
+-----------------------
+
+`engine/duration/b800_model_row.go` ports the entry gates, backward grouping,
+bounded surface join, embedded dictionary call, and matched group writes.
+`b800_suffix_model.go` ports every literal/table branch shown in the static
+function. The model offsets, strings, comparisons, writes, and opaque marker
+bytes are preserved without assigning phonetic meaning to the markers. The
+native source uses a fixed 32-byte join buffer; the Go port returns an error
+when the joined bytes cannot fit with a terminator instead of reproducing an
+out-of-bounds write. Unterminated auxiliary strings also fail closed.
+
+This establishes a static implementation of the recovered handler body. It
+does not establish row-for-row comparison with the original DLL, upstream
+production of the model arena, or the caller's outer decision to invoke this
+handler on each row. No runtime parity claim is made.

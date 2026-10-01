@@ -1,0 +1,27 @@
+VoiceText Paul 2013 FUN_1000a140 long-input ly branch
+====================================================
+
+Evidence
+--------
+
+At `LAB_1000b006`, `FUN_1000a140` compares the mapped final two bytes with
+`DAT_10077784`, whose bytes in the DLL `.data` section are `ly\0`. On a match,
+it normalizes the source with those two bytes removed. If that lookup writes no
+output, it checks `DAT_10077d5e` using the mapped byte at source offset
+`length-4` and requires the mapped byte at `length-3` to be `i`; a zero table
+value enables a retry with that `i` replaced by lowercase `y`.
+
+For nonempty output, a final `&` is changed to byte `0x07`. The handler then
+appends `+` unless the final byte is already `+`, and appends `&`. The common
+success path NUL-terminates the result and ORs row-flag bit 3. The pseudocode
+is in `tools/revkit/work/reports/stage6-dictionary-record-functions.txt`,
+`FUN_1000a140`, around `LAB_1000b006`; the DLL string bytes are at
+`0x10077784`.
+
+Implementation boundary
+-----------------------
+
+`NormalizePaul2013LongLySuffixContext` ports this case for C-string lengths 9
+through 31 using the loaded embedded dictionary. Stage 106 later captures the
+complete signed-index table window used by its retry. Runtime row parity has
+not been captured.

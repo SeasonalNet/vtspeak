@@ -1,0 +1,22 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hi-window-inputs-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023060
+Wine-gdb> >>> > > > > > > >  >  >  >  > > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024060
+Wine-gdb> >>>>>> > >  >  >  > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x10027fe0
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1002aac0
+Wine-gdb> >>>>>>>>>>> > > >  >  > >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_WINDOW_VOLUME old=200 new=100
+Temporary breakpoint 6 at 0x10024808
+HI_WINDOW_METRIC id=32924 weight=67
+Temporary breakpoint 7 at 0x10024271
+HI_WINDOW_METRIC_SUM value=67
+Temporary breakpoint 8 at 0x10024808
+HI_WINDOW_METRIC id=13468 weight=4
+HI_WINDOW_METRIC id=13467 weight=5
+Temporary breakpoint 9 at 0x10024271
+HI_WINDOW_METRIC_SUM value=9
+HI_WINDOW_CUTOFF_OVERRIDE slot=1 metric=9
+HI_WINDOW_JOIN call=1 slot=0 count=1420 leading=80 trailing=72 pending=0 source=0x25eef14
+HI_WINDOW_JOIN call=2 slot=1 count=5910 leading=72 trailing=134 pending=0 source=0x25eef14
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

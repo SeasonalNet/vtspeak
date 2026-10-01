@@ -1,0 +1,92 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/hello-repeat-2013-pairmatrix/adapted-pairmatrix-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/hello-repeat-2013-pairmatrix/adapted-pairmatrix-gdb.log.
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-pairmatrix/adapted-pairmatrix-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+NEW_PAIR_COST context=1 current=272823 previous=272822 feature=0 divisor=1 penalty=0 previous_path=0.000945626 local=3.29502 total=3.29596
+NEW_PAIR_COST context=1 current=272823 previous=273369 feature=21.9468 divisor=1 penalty=0 previous_path=0.00882353 local=3.29502 total=25.2507
+NEW_PAIR_COST context=1 current=272823 previous=1200 feature=8.56881 divisor=1 penalty=0 previous_path=8.016 local=3.29502 total=19.8798
+NEW_PAIR_COST context=1 current=272823 previous=279479 feature=15.1655 divisor=1 penalty=0 previous_path=15.016 local=3.29502 total=33.4765
+NEW_PAIR_COST context=1 current=272823 previous=262454 feature=19.1119 divisor=1 penalty=0 previous_path=7.50408 local=3.29502 total=29.911
+NEW_PAIR_COST context=1 current=272823 previous=245736 feature=25.8029 divisor=1 penalty=0 previous_path=8.01739 local=3.29502 total=37.1153
+NEW_PAIR_COST context=1 current=272823 previous=233533 feature=10.7053 divisor=1 penalty=0 previous_path=8.48 local=3.29502 total=22.4803
+NEW_PAIR_COST context=1 current=272823 previous=214148 feature=14.4499 divisor=1 penalty=0 previous_path=7.57273 local=3.29502 total=25.3177
+NEW_PAIR_COST context=1 current=272823 previous=206118 feature=14.5136 divisor=1 penalty=0 previous_path=10.0615 local=3.29502 total=27.8701
+NEW_PAIR_COST context=1 current=272823 previous=204612 feature=26.2812 divisor=1 penalty=0 previous_path=7.50426 local=3.29502 total=37.0805
+NEW_PAIR_COST context=1 current=272823 previous=200614 feature=12.5405 divisor=1 penalty=0 previous_path=7.51739 local=3.29502 total=23.3529
+NEW_PAIR_COST context=1 current=272823 previous=200525 feature=12.6636 divisor=1 penalty=0 previous_path=7.516 local=3.29502 total=23.4746
+NEW_PAIR_COST context=1 current=272823 previous=195687 feature=8.31027 divisor=1 penalty=0 previous_path=7.50408 local=3.29502 total=19.1094
+NEW_PAIR_COST context=1 current=272823 previous=189906 feature=27.3365 divisor=1 penalty=0 previous_path=7.57273 local=3.29502 total=38.2042
+NEW_PAIR_COST context=1 current=272823 previous=182880 feature=23.4822 divisor=1 penalty=0 previous_path=7.50426 local=3.29502 total=34.2815
+NEW_PAIR_COST context=1 current=272823 previous=179388 feature=7.14071 divisor=1 penalty=0 previous_path=7.63333 local=3.29502 total=18.0691
+NEW_PAIR_COST context=1 current=272823 previous=178453 feature=19.0766 divisor=1 penalty=0 previous_path=7.57273 local=3.29502 total=29.9444
+NEW_PAIR_COST context=1 current=272823 previous=165351 feature=31.4234 divisor=1 penalty=0 previous_path=8.03529 local=3.29502 total=42.7537
+NEW_PAIR_COST context=1 current=272823 previous=129641 feature=11.7602 divisor=1 penalty=0 previous_path=8.00408 local=3.29502 total=23.0593
+NEW_PAIR_COST context=1 current=272823 previous=116320 feature=11.1102 divisor=1 penalty=0 previous_path=7.57273 local=3.29502 total=21.9779
+NEW_PAIR_COST context=1 current=272823 previous=92183 feature=7.91599 divisor=1 penalty=0 previous_path=7.50408 local=3.29502 total=18.7151
+NEW_PAIR_COST context=1 current=272823 previous=52542 feature=20.0432 divisor=1 penalty=0 previous_path=8.28421 local=3.29502 total=31.6225
+NEW_PAIR_COST context=1 current=272823 previous=51310 feature=11.5161 divisor=1 penalty=0 previous_path=7.51739 local=3.29502 total=22.3285
+NEW_PAIR_COST context=1 current=272823 previous=31795 feature=9.5804 divisor=1 penalty=0 previous_path=7.51739 local=3.29502 total=20.3928
+NEW_PAIR_COST context=1 current=272823 previous=31347 feature=7.33704 divisor=1 penalty=0 previous_path=8.17818 local=3.29502 total=18.8102
+NEW_PAIR_COST context=1 current=272823 previous=28430 feature=20.6544 divisor=1 penalty=0 previous_path=10 local=3.29502 total=33.9495
+NEW_PAIR_COST context=1 current=272823 previous=22451 feature=8.51386 divisor=1 penalty=0 previous_path=8.09434 local=3.29502 total=19.9032
+NEW_PAIR_COST context=1 current=272823 previous=20499 feature=9.8695 divisor=1 penalty=0 previous_path=8.00426 local=3.29502 total=21.1688
+NEW_PAIR_COST context=1 current=272823 previous=2525 feature=18.4011 divisor=1 penalty=0 previous_path=10 local=3.29502 total=31.6961
+NEW_PAIR_COST context=1 current=272823 previous=279484 feature=10.3809 divisor=1 penalty=0 previous_path=12.6714 local=3.29502 total=26.3474
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

@@ -1,0 +1,72 @@
+Stage 163: marker-tree resource and native state workspace
+
+Observed resource mapping
+
+- FUN_10012280 x86 0x10012294 pushes VA 0x100793ec as a format string,
+  formats it using the shared dictionary root, and calls FUN_10001000 at
+  0x100122a7. The read-only local DLL string at that VA is exactly
+  %sdict-eng/engbi.tree3. It was read through PE section mapping using
+  extract_paul2013_context_classifier_tables.py's parse_pe/c_string helpers.
+- FUN_10001000 at 0x10001009 adds 0x200 to its destination, then calls
+  FUN_10001900. FUN_10012f00's x86 0x10013074 reads context +0x4d08 and
+  0x1001307a adds 0x200 before evaluation. At 0x10027d9c the context +0x4d08
+  field is assigned the shared DAT_100a0460 object. These establish the
+  shared engbi resource, not a guessed voice pitch tree.
+- Existing LoadPaul2013PronunciationTree loads this same shared resource.
+  OpenPaul2013 already places it in Catalog.Pronunciation. Its role in the
+  marker scan is additional to the previously documented classifier role.
+
+Observed state layout
+
+- FUN_10022dc0 initializes arrays from native defaults +0x1210fc,
+  +0x1210f4, +0x1210f8. Array slots 3, 4, and 7 initialize to -1.
+- Recovered workspace bases are: slot 0 +0x121100, slot 1 +0x121420,
+  slot 2 +0x121740, slot 3 +0x121a60, slot 4 +0x121d80, and slot 7
+  +0x1220a0. Slot numbers are logical selectors, not a uniform eight-array
+  stride. Writes are little-endian signed int32 values and cover only count
+  entries, preserving subsequent workspace cells.
+- FUN_100130e0 x86 0x1001320c starts its boundary value writes at
+  +0x121a64, one cell into slot 3. It reads count boundary values, so the
+  final value is slot3[count], beyond the initialized prefix. That cell must
+  retain captured/caller workspace data; inventing a -1 would change behavior.
+  The boundary states start at slot 4 +0x121d80.
+- FUN_10022970's optional terminal result writes +0x122440. The adapter
+  writes that value when the supplied program executes its terminal pass.
+- Evidence: vt_pau-objdump-disassembly.txt, vt_pau-synthesis-pseudocode.c,
+  and stage23-state-array-writers.c. Decompiled output remains pseudocode.
+
+Implementation
+
+- ApplyPaul2013PositionStateProgramToWorkspace uses native defaults, runs
+  the existing recovered range/event program, and writes owned workspace
+  arrays without clearing tail cells or unrelated memory.
+- Paul2013FinalizedModelState.RunTokenBoundariesWithWorkspace derives the
+  value/state inputs, chooses Catalog.Pronunciation's engbi resource, runs
+  the complete supported boundary pipeline, and writes native workspace
+  value/state outputs. Pointer resolution remains an explicit address map.
+- duration.Engine.RunPaul2013ModelTokenBoundaries supplies its already-loaded
+  shared catalog, removing manual marker-tree selection from that entry point.
+
+Validation
+
+- Tests cover native default order, all six array destinations, untouched
+  tail cells, shifted value reads, parser -2 normalization, preceding-state
+  propagation, native workspace writeback, preserved caller memory, short
+  workspace rejection, missing shared resource, and nil/unloaded engines.
+- A local-resource test loads data-common/dict-eng/engbi.tree3 and evaluates
+  an eligible two-record marker scan. It passed with the resource present.
+  This exercises the selected resource, not a captured native whole-arena
+  output comparison.
+- Event-program tests also verify selector-3 and selector-4 writes at their
+  native destinations. Full go test ./..., go build ./..., and go vet ./...
+  passed from engine/ with GOCACHE=/tmp/vtspeak-go-cache. gofmt applied;
+  git diff --check passed from the repository root.
+
+Limits
+
+- Range/event table producers, optional index mappings, native pointer
+  resolvers, and the remaining parser/context producers remain explicit.
+- This adapter writes recovered destination arrays and the terminal scalar.
+  It does not reconstruct every event-table cursor field or complete
+  workspace initialization. Caller workspace tail bytes remain meaningful.
+- End-to-end synthesis and native full-arena parity remain unproven.

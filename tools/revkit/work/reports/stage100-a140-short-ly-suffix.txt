@@ -1,0 +1,32 @@
+VoiceText Paul 2013 FUN_1000a140 short `ly` suffix
+=================================================
+
+Evidence
+--------
+
+The `FUN_1000a140` fallback at
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, around
+lines 1379-1445, rejects source lengths below five and compares the mapped
+final two bytes with `DAT_10077784` (`ly`). It removes `ly` and calls
+`FUN_1000cb30`. On a miss, it reads the short-table value at `length-4`; when
+that value is zero and the mapped byte at `length-3` is `i`, it retries with
+that byte replaced by `y`. A nonempty result changes a trailing `&` to `0x07`,
+adds `+` unless the output already ends in `+`, then appends `&` and sets
+row-flag bit 3.
+
+Implementation
+--------------
+
+`NormalizePaul2013LySuffixContext` applies this same bounded branch for
+5- to 31-byte inputs. The existing `NormalizePaul2013LongLySuffixContext`
+entry point delegates to it for compatibility. The supported suffix cascade
+invokes the handler after the short `ers`, `est`, `ing`, `ist`, and `ful`
+handlers and before its terminal-`s` handler, matching the direct suffix
+order.
+
+Evidence boundary
+-----------------
+
+This is a static pseudocode port. No original-runtime row comparison has been
+made. Other A140 cases, exception resource/state production, and full C3A0
+runtime parity remain open.

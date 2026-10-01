@@ -1,0 +1,38 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000-v2/adapted-path-costs-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024900
+Wine-gdb> >>>>>>> > > > > > >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 3 at 0x10024a30
+SLOT0_ALIAS_PATH_COSTS first=0 last=12 count=30 selected_index=6
+SLOT0_ALIAS_PATH index=0 unit=63 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=1 unit=270371 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=2 unit=268190 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=3 unit=267478 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=4 unit=264663 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=5 unit=264405 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=6 unit=149799 cumulative=4.8 selected=1
+SLOT0_ALIAS_PATH index=7 unit=258594 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=8 unit=255501 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=9 unit=252497 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=10 unit=248753 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=11 unit=158787 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=12 unit=234795 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=13 unit=167546 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=14 unit=169343 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=15 unit=50118 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=16 unit=32995 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=17 unit=88195 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=18 unit=3756 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=19 unit=5218 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=20 unit=25895 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=21 unit=6208 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=22 unit=13531 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=23 unit=19888 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=24 unit=271878 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=25 unit=271915 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=26 unit=222240 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=27 unit=220903 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=28 unit=97386 cumulative=4.8 selected=0
+SLOT0_ALIAS_PATH index=29 unit=211497 cumulative=4.8 selected=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

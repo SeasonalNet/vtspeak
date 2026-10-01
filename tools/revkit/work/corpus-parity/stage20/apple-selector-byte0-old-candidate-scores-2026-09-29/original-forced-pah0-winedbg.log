@@ -1,0 +1,147 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /probe/probe-original-kate-2006.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /probe/stage20/apple-selector-byte0-old-candidate-scores-2026-09-29/apple-old-candidate-scores-gdb.log.
+Copying debug output to /probe/stage20/apple-selector-byte0-old-candidate-scores-2026-09-29/apple-old-candidate-scores-gdb.log.
+Wine-gdb> Already logging to /probe/stage20/apple-selector-byte0-old-candidate-scores-2026-09-29/apple-old-candidate-scores-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001c860
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_OLD_CANDIDATE_SCORE_TRACE_READY
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+Hardware assisted breakpoint 3 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=64719 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24bf02b:	5	71	7	0	0
+Hardware assisted breakpoint 4 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=64719 target_row=2 score=0.0765957
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2554 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x2473202:	71	7	43	0	4
+Hardware assisted breakpoint 5 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2554 target_row=3 score=1.3899
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82036 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24d4264:	71	7	43	0	4
+Hardware assisted breakpoint 6 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82036 target_row=3 score=1.06144
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59558 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24b8b5e:	71	7	43	0	4
+Hardware assisted breakpoint 7 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59558 target_row=3 score=0.323902
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59559 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24b8b63:	7	43	90	4	4
+Hardware assisted breakpoint 8 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59559 target_row=4 score=0.307186
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82037 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24d4269:	7	43	90	4	4
+Hardware assisted breakpoint 9 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82037 target_row=4 score=0.247923
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2555 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x2473207:	7	43	90	4	4
+Hardware assisted breakpoint 10 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2555 target_row=4 score=0.377395
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+Hardware assisted breakpoint 11 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=64719 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24bf02b:	5	71	7	0	0
+Hardware assisted breakpoint 12 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=64719 target_row=2 score=0.0765957
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2554 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x2473202:	71	7	43	0	4
+Hardware assisted breakpoint 13 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2554 target_row=3 score=1.3899
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82036 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24d4264:	71	7	43	0	4
+Hardware assisted breakpoint 14 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82036 target_row=3 score=1.06144
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59558 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24b8b5e:	71	7	43	0	4
+Hardware assisted breakpoint 15 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59558 target_row=3 score=0.323902
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59559 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24b8b63:	7	43	90	4	4
+Hardware assisted breakpoint 16 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59559 target_row=4 score=0.307186
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82037 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24d4269:	7	43	90	4	4
+Hardware assisted breakpoint 17 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82037 target_row=4 score=0.247923
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2555 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x2473207:	7	43	90	4	4
+Hardware assisted breakpoint 18 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2555 target_row=4 score=0.377395
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+Hardware assisted breakpoint 19 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=64719 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24bf02b:	5	71	7	0	0
+Hardware assisted breakpoint 20 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=64719 target_row=2 score=0.0765957
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2554 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x2473202:	71	7	43	0	4
+Hardware assisted breakpoint 21 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2554 target_row=3 score=1.3899
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82036 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24d4264:	71	7	43	0	4
+Hardware assisted breakpoint 22 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82036 target_row=3 score=1.06144
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59558 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24b8b5e:	71	7	43	0	4
+Hardware assisted breakpoint 23 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59558 target_row=3 score=0.323902
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59559 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24b8b63:	7	43	90	4	4
+Hardware assisted breakpoint 24 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59559 target_row=4 score=0.307186
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82037 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24d4269:	7	43	90	4	4
+Hardware assisted breakpoint 25 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82037 target_row=4 score=0.247923
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2555 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x2473207:	7	43	90	4	4
+Hardware assisted breakpoint 26 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2555 target_row=4 score=0.377395
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\probe\probe-original-kate-2006.exe'/00000000 @004013E0 (204288<1830>)
+0118:011c: create thread I @004013E0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000118:0000011c: unload DLL @10000000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000118:0000011c: unload DLL @10000000
+0118:011c: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78E90000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78E10000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL C:\windows\system32\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @77FF0000 (671744<3646>)
+00000118:0000011c: unload DLL @10000000
+00000118:0000011c: unload DLL @779C0000
+00000118:0000011c: unload DLL @7AE40000
+00000118:0000011c: unload DLL @77940000
+00000118:0000011c: unload DLL @77970000
+00000118:0000011c: unload DLL @78E90000
+00000118:0000011c: unload DLL @7A9F0000
+00000118:0000011c: unload DLL @79E40000
+00000118:0000011c: unload DLL @7A890000
+00000118:0000011c: unload DLL @79EA0000
+00000118:0000011c: unload DLL @78E10000
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

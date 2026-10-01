@@ -1,0 +1,131 @@
+VTDTTS ASCII
+3
+4
+merged-gen
+merged-num
+merged-etc
+merged-alp
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 337375140
+PCM Size : 1906
+PCM Coded Size : 1352
+Phone Mode : 1
+Pitch_first : 140
+Pitch_last : 130
+PM Pos : 5089902
+PM Size : 14
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 337375140
+PCM Size : 886
+PCM Coded Size : 1352
+Phone Mode : 2
+Shift Size : 1776
+Pitch_first : 130
+Pitch_last : 122
+PM Pos : 5089915
+PM Size : 7
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 337376492
+PCM Size : 722
+PCM Coded Size : 800
+Phone Mode : 1
+Pitch_first : 122
+Pitch_last : 120
+PM Pos : 5089922
+PM Size : 6
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 337129764
+PCM Size : 504
+PCM Coded Size : 568
+Phone Mode : 2
+Shift Size : 564
+Pitch_first : 126
+Pitch_last : 128
+PM Pos : 5086060
+PM Size : 4
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : L
+File Index : 0
+PCM Pos : 337130332
+PCM Size : 2160
+PCM Coded Size : 1136
+Phone Mode : 0
+Pitch_first : 128
+Pitch_last : 128
+PM Pos : 5086064
+PM Size : 17
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 345450708
+PCM Size : 1062
+PCM Coded Size : 1156
+Phone Mode : 1
+Pitch_first : 120
+Pitch_last : 156
+PM Pos : 5215621
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 345450708
+PCM Size : 1298
+PCM Coded Size : 1156
+Phone Mode : 2
+Shift Size : 906
+Pitch_first : 156
+Pitch_last : 202
+PM Pos : 5215628
+PM Size : 7
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : S
+File Index : 0
+PCM Pos : 345451864
+PCM Size : 3710
+PCM Coded Size : 1936
+Phone Mode : 0
+Pitch_first : 202
+Pitch_last : 196
+PM Pos : 5215635
+PM Size : 19
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+

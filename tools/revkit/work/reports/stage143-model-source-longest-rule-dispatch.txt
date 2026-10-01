@@ -1,0 +1,32 @@
+Stage 143: FUN_1002e990 longest model-source rule dispatch
+
+Direct source
+
+- Ghidra pseudocode: `tools/revkit/work/reports/stage6-lookup-functions.txt`,
+  `FUN_1002e990` at `0x1002e990` and `FUN_1002ea80` at `0x1002ea80`.
+- `FUN_1002ea80` verifies that the candidate source span contains no NUL.
+  `FUN_1002e990` compares that span to each table key with
+  `FUN_1001c320`'s mapped-byte weights from `0x1007e388`, selects the longest
+  matching key, and invokes only that entry's handler.
+- If there is no matching key or the selected handler returns zero, the
+  wrapper restores both source and destination cursors. It does not retry a
+  shorter matching rule. Handler writes are not rolled back by this wrapper.
+
+Ported behavior
+
+- `text.DispatchPaul2013ModelSourceRule` ports longest-key selection with the
+  provisioned Paul 2013 character weights, first-entry tie behavior, and the
+  native cursor restore when no handler accepts.
+- It forwards the observed flag, rule data, and caller state to the selected
+  handler. The output destination is copied before handler execution so the
+  Go call does not mutate caller-owned bytes.
+- Unit tests cover mapped case matching, longest selection, ties, embedded
+  NUL rejection, miss behavior, cursor restoration, retained handler writes,
+  forwarded context, and malformed inputs. These test the pseudocode
+  translation; no original-runtime differential was captured.
+
+Limits
+
+This ports the generic dispatcher, not the full DLL rule table or all its
+handler functions. Source normalization and rule-table production remain
+separate, and handler callbacks are supplied by the caller.

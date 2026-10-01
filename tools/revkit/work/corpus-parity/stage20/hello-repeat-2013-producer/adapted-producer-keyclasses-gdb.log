@@ -1,0 +1,95 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-producer/adapted-producer-keyclasses-gdb.log.
+Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10018770
+Wine-gdb> >>>>>>>>>>>>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10023dc0
+Wine-gdb> >>>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+REPEAT_2013_PRODUCER n=1 slot=0 mode=1 row:0x25cc648:	0	0	0	0	0	1
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0752:	90	90	34	23	43	160	0
+Temporary breakpoint 4 at 0x1001896a
+REPEAT_2013_QUERY n=1 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00 count=0
+Temporary breakpoint 5 at 0x10018a45
+REPEAT_2013_QUERY n=2 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00 count=0
+REPEAT_2013_PRODUCER n=2 slot=0 mode=1 row:0x25cc648:	0	0	0	0	1	1
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0752:	90	90	34	23	43	160	0
+REPEAT_2013_PRODUCER n=3 slot=1 mode=1 row:0x25cc64e:	0	0	0	1	2	1
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0752:	90	90	34	23	43	160	0
+REPEAT_2013_PRODUCER n=4 slot=2 mode=1 row:0x25cc654:	0	0	1	2	0	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0759:	90	34	23	43	48	32	0
+Temporary breakpoint 6 at 0x1001896a
+REPEAT_2013_QUERY n=3 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00 count=0
+Temporary breakpoint 7 at 0x10018a45
+REPEAT_2013_QUERY n=4 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00 count=0
+Temporary breakpoint 8 at 0x10018a45
+REPEAT_2013_QUERY n=5 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00 count=0
+Temporary breakpoint 9 at 0x10018a45
+REPEAT_2013_QUERY n=6 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00 count=0
+REPEAT_2013_PRODUCER n=5 slot=2 mode=1 row:0x25cc654:	0	0	1	2	1	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0759:	90	34	23	43	48	32	0
+REPEAT_2013_PRODUCER n=6 slot=3 mode=1 row:0x25cc65a:	0	0	1	3	2	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0759:	90	34	23	43	48	32	0
+REPEAT_2013_PRODUCER n=7 slot=4 mode=1 row:0x25cc660:	0	1	2	4	0	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0760:	34	23	43	48	34	0	0
+Temporary breakpoint 10 at 0x1001896a
+REPEAT_2013_QUERY n=7 signature=22,17,2b,30,22,00,00 key=17,2b,2f,00,00 count=1
+Temporary breakpoint 11 at 0x10018a45
+REPEAT_2013_QUERY n=8 signature=22,17,2b,30,22,08,00 key=17,2b,2f,08,00 count=0
+REPEAT_2013_PRODUCER n=8 slot=5 mode=1 row:0x25cc666:	0	1	3	5	0	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0767:	23	43	48	34	23	65	0
+Temporary breakpoint 12 at 0x1001896a
+REPEAT_2013_QUERY n=9 signature=17,2b,30,22,17,41,00 key=2b,30,22,41,00 count=0
+Temporary breakpoint 13 at 0x10018a45
+REPEAT_2013_QUERY n=10 signature=17,2b,30,22,17,00,00 key=2b,30,22,00,00 count=1
+Temporary breakpoint 14 at 0x10018a45
+REPEAT_2013_QUERY n=11 signature=17,2b,30,22,17,42,00 key=2b,30,22,42,00 count=0
+Temporary breakpoint 15 at 0x10018a45
+REPEAT_2013_QUERY n=12 signature=17,2b,30,22,17,49,00 key=2b,30,22,49,00 count=0
+Temporary breakpoint 16 at 0x10018a45
+REPEAT_2013_QUERY n=13 signature=17,2b,30,22,17,08,00 key=2b,30,22,08,00 count=0
+Temporary breakpoint 17 at 0x10018a45
+REPEAT_2013_QUERY n=14 signature=17,2b,30,22,17,4a,00 key=2b,30,22,4a,00 count=0
+REPEAT_2013_PRODUCER n=9 slot=5 mode=1 row:0x25cc666:	0	1	3	5	1	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0767:	23	43	48	34	23	65	0
+REPEAT_2013_PRODUCER n=10 slot=6 mode=1 row:0x25cc66c:	0	1	3	6	2	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0767:	23	43	48	34	23	65	0
+REPEAT_2013_PRODUCER n=11 slot=7 mode=1 row:0x25cc672:	1	0	0	0	0	1
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b12:	43	48	34	23	43	136	0
+Temporary breakpoint 18 at 0x1001896a
+REPEAT_2013_QUERY n=15 signature=2b,30,22,17,2b,88,00 key=0d,22,17,88,00 count=0
+Temporary breakpoint 19 at 0x10018a45
+REPEAT_2013_QUERY n=16 signature=2b,30,22,17,2b,00,00 key=0d,22,17,00,00 count=1
+Temporary breakpoint 20 at 0x10018a45
+REPEAT_2013_QUERY n=17 signature=2b,30,22,17,2b,90,00 key=0d,22,17,90,00 count=0
+REPEAT_2013_PRODUCER n=12 slot=7 mode=1 row:0x25cc672:	1	0	0	0	1	1
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b12:	43	48	34	23	43	136	0
+REPEAT_2013_PRODUCER n=13 slot=8 mode=1 row:0x25cc678:	1	0	0	1	2	1
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b12:	43	48	34	23	43	136	0
+REPEAT_2013_PRODUCER n=14 slot=9 mode=1 row:0x25cc67e:	1	0	1	2	0	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b19:	48	34	23	43	48	8	0
+Temporary breakpoint 21 at 0x1001896a
+REPEAT_2013_QUERY n=18 signature=30,22,17,2b,30,08,00 key=22,17,2b,08,00 count=0
+Temporary breakpoint 22 at 0x10018a45
+REPEAT_2013_QUERY n=19 signature=30,22,17,2b,30,00,00 key=22,17,2b,00,00 count=1
+Temporary breakpoint 23 at 0x10018a45
+REPEAT_2013_QUERY n=20 signature=30,22,17,2b,30,10,00 key=22,17,2b,10,00 count=0
+REPEAT_2013_PRODUCER n=15 slot=9 mode=1 row:0x25cc67e:	1	0	1	2	1	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b19:	48	34	23	43	48	8	0
+REPEAT_2013_PRODUCER n=16 slot=10 mode=1 row:0x25cc684:	1	0	1	3	2	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b19:	48	34	23	43	48	8	0
+REPEAT_2013_PRODUCER n=17 slot=11 mode=1 row:0x25cc68a:	1	1	2	4	0	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b20:	34	23	43	48	90	0	0
+Temporary breakpoint 24 at 0x1001896a
+REPEAT_2013_QUERY n=21 signature=22,17,2b,30,5a,00,00 key=17,2b,2f,00,00 count=1
+Temporary breakpoint 25 at 0x10018a45
+REPEAT_2013_QUERY n=22 signature=22,17,2b,30,5a,08,00 key=17,2b,2f,08,00 count=0
+REPEAT_2013_PRODUCER n=18 slot=12 mode=1 row:0x25cc690:	1	1	3	5	0	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b27:	23	43	48	90	90	69	0
+Temporary breakpoint 26 at 0x1001896a
+REPEAT_2013_QUERY n=23 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00 count=0
+Temporary breakpoint 27 at 0x10018a45
+REPEAT_2013_QUERY n=24 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00 count=0
+REPEAT_2013_PRODUCER n=19 slot=12 mode=1 row:0x25cc690:	1	1	3	5	1	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b27:	23	43	48	90	90	69	0
+REPEAT_2013_PRODUCER n=20 slot=13 mode=1 row:0x25cc696:	1	1	3	6	2	0
+REPEAT_2013_SOURCE_SIGNATURE:0x24e0b27:	23	43	48	90	90	69	0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

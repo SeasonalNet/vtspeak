@@ -1,0 +1,78 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       Yes	Yes	No		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       Yes	Yes	No		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>>>>>>>>>>>>>>>> > > > > > > > > > > > > > > >>> > > > > > >>>>>>Wine-gdb> Wine-gdb> Continuing.
+CSV_MAKE_PAIR_PTRS code=003e0670 fields=003e0878 field=003e26f0 raw=003e2708 results=01990020
+0x3e0670:	0x55	0x89	0xe5	0x53	0x56	0x57	0x83	0xec
+0x3e0678:	0x10	0xe8	0x00	0x00	0x00	0x00	0x59	0x8b
+0x3e0680:	0xb1	0xe4	0x00	0x00	0x00	0x8b	0xb9	0xe8
+0x3e0688:	0x00	0x00	0x00	0x8b	0x99	0xec	0x00	0x00
+0x3e0690:	0x00	0x8b	0x81	0xf0	0x00	0x00	0x00	0x89
+0x3e0698:	0x45	0xf0	0xc7	0x45	0xe8	0x00	0x00	0x00
+0x3e0760:	0xc9	0xc3	0x78	0x08	0x3e	0x00	0xf0	0x26
+0x3e0768:	0x3e	0x00	0x08	0x27	0x3e	0x00	0x20	0x00
+Breakpoint 2 at 0x3e0772
+Catchpoint 3 (signal SIGSEGV)
+CSV_MAKE_PAIR_FAULT eip=10016a53 a=00 b=01 done=1 esp=003e667c ebp=003e668c eax=00000000 ebx=00000000 esi=00000001 edi=31313131
+wine: Unhandled page fault on read access to 31313131 at address 10016A53 (thread 0118), starting debugger...
+=> 0x10016a53:	repnz scas %es:(%edi),%al
+   0x10016a55:	not    %ecx
+   0x10016a57:	dec    %ecx
+   0x10016a58:	mov    %ebx,0x8(%ebp)
+   0x10016a5b:	cmp    %ebx,%ecx
+   0x10016a5d:	mov    %ecx,-0x4(%ebp)
+   0x10016a60:	jle    0x10016b1c
+   0x10016a66:	mov    0xc(%ebp),%esi
+[Inferior 1 (Remote target) detached]
+0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)

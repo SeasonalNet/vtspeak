@@ -1,0 +1,37 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+break *0x4016d9
+break *0x1003e470
+break *0x1003e47c
+
+commands 2
+  silent
+  printf "PAREN_SYNTHESIS_RETURN eax=%#x global_value=%u\n", $eax, *(unsigned int *)(*(unsigned int *)0x100a0460 + 0x2041c)
+  disable 2
+  continue
+end
+
+commands 3
+  silent
+  printf "PAREN_CONTEXT_CALL context=%#x value=%u\n", *(unsigned int *)($esp + 4), *(unsigned int *)($esp + 8)
+  continue
+end
+
+commands 4
+  silent
+  set $paren_context = *(unsigned int *)($ebp + 8)
+  printf "PAREN_CONTEXT_STORED context=%#x arg=%u field_plus8=%u\n", $paren_context, *(unsigned int *)($ebp + 12), *(unsigned int *)($paren_context + 8)
+  continue
+end
+
+continue
+set $paren_global = *(unsigned int *)0x100a0460 + 0x2041c
+printf "PAREN_TEXT_ENTRY eip=%#x format=%d text=%s global=%#x before=%u\n", $eip, *(int *)($esp + 4), *(char **)($esp + 8), $paren_global, *(unsigned int *)$paren_global
+call ((void (*)(int))0x10028390)(@MODE@)
+printf "PAREN_SET mode=@MODE@ value=%u\n", *(unsigned int *)$paren_global
+disable 1
+continue

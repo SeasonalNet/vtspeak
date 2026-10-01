@@ -1,0 +1,10 @@
+source=Bridget 2005 indexes; source files remain read-only
+adapter=ver.2005 to ver.2013
+signature=[attr_48,key[0:5],attr_40]
+attr_b=zero; metric columns preserved; producer tag normalized to VoiceText-Eng
+layout=structural
+semantic_status=experimental mapping, not a recovered native Bridget 2013 format
+unit-alp.idx: units=1130 bytes=44115->45245 producer=VoiceText-Bre->VoiceText-Eng
+unit-etc.idx: units=47249 bytes=1842756->1890005 producer=VoiceText-Bre->VoiceText-Eng
+unit-exp.idx: units=8889 bytes=346716->355605 producer=VoiceText-Bre->VoiceText-Eng
+unit-gen.idx: units=723614 bytes=28220991->28944605 producer=VoiceText-Bre->VoiceText-Eng

@@ -85,6 +85,115 @@ func TestRejectMalformedTrees(t *testing.T) {
 	}
 }
 
+func TestParseAtReadsOneTreeFromConcatenatedBuffer(t *testing.T) {
+	first := makeEmptyTree(1)
+	second := makeEmptyTree(2)
+	data := append(append([]byte(nil), first...), second...)
+	tree, end, err := ParseAt(data, 0)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if end != len(first) || tree.OutputWidth != 1 {
+		t.Fatalf("first tree end/width = %d/%d, want %d/1", end, tree.OutputWidth, len(first))
+	}
+	tree, end, err = ParseAt(data, end)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if end != len(data) || tree.OutputWidth != 2 {
+		t.Fatalf("second tree end/width = %d/%d, want %d/2", end, tree.OutputWidth, len(data))
+	}
+	if _, err := Parse(data); err == nil {
+		t.Fatal("Parse accepted a concatenated tree buffer")
+	}
+}
+
+func TestParseATMTValidatesCountAndEOF(t *testing.T) {
+	data := make([]byte, 4)
+	binary.LittleEndian.PutUint32(data, paul2013ATMTTreeCount)
+	for range paul2013ATMTTreeCount {
+		data = append(data, makeEmptyTree(1)...)
+	}
+	trees, err := ParseATMT(data)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(trees) != paul2013ATMTTreeCount {
+		t.Fatalf("parsed %d ATMT trees, want %d", len(trees), paul2013ATMTTreeCount)
+	}
+	withTrailingByte := append(append([]byte(nil), data...), 0)
+	if _, err := ParseATMT(withTrailingByte); err == nil {
+		t.Fatal("ATMT parser accepted trailing bytes")
+	}
+	wrongCount := append([]byte(nil), data...)
+	binary.LittleEndian.PutUint32(wrongCount[:4], 26)
+	if _, err := ParseATMT(wrongCount); err == nil {
+		t.Fatal("ATMT parser accepted an unexpected tree count")
+	}
+}
+
+func TestLoadPaul2013ATMTTreesFromLocalCommonData(t *testing.T) {
+	root := filepath.Join("..", "..", "data-common", "dict-eng")
+	if _, err := os.Stat(filepath.Join(root, "atmt.tree3")); err != nil {
+		t.Skip("local shared English ATMT tree container is unavailable")
+	}
+	trees, err := LoadPaul2013ATMTTrees(root)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(trees) != paul2013ATMTTreeCount {
+		t.Fatalf("loaded %d ATMT trees, want %d", len(trees), paul2013ATMTTreeCount)
+	}
+	nodes := 0
+	for _, tree := range trees {
+		nodes += len(tree.Nodes)
+	}
+	if nodes != 13879 {
+		t.Fatalf("ATMT container has %d nodes, want observed total 13879", nodes)
+	}
+}
+
+func makeEmptyTree(outputWidth byte) []byte {
+	data := make([]byte, 7+2*int(outputWidth))
+	data[2] = outputWidth
+	return data
+}
+
+func TestLoadPaul2013PronunciationTreeRejectsUnexpectedShape(t *testing.T) {
+	root := t.TempDir()
+	data := make([]byte, 9)
+	binary.LittleEndian.PutUint16(data[0:2], 0)
+	data[2] = 1
+	binary.LittleEndian.PutUint16(data[7:9], 7)
+	if err := os.WriteFile(filepath.Join(root, "engbi.tree3"), data, 0o600); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := LoadPaul2013PronunciationTree(root); err == nil {
+		t.Fatal("unexpected pronunciation-tree shape accepted")
+	}
+}
+
+func TestLoadPaul2013PronunciationTreeFromLocalCommonData(t *testing.T) {
+	root := filepath.Join("..", "..", "data-common", "dict-eng")
+	if _, err := os.Stat(filepath.Join(root, "engbi.tree3")); err != nil {
+		t.Skip("local shared English tree is unavailable")
+	}
+	tree, err := LoadPaul2013PronunciationTree(root)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(tree.Nodes) != 531 || tree.OutputWidth != 1 {
+		t.Fatalf("pronunciation tree shape = %d nodes by %d outputs", len(tree.Nodes), tree.OutputWidth)
+	}
+	_, output, err := tree.Evaluate(make([]int16, 15))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(output) != 1 {
+		t.Fatalf("pronunciation output width = %d, want 1", len(output))
+	}
+}
+
 func TestAllPaulTreesAndRuntimeLookups(t *testing.T) {
 	root := filepath.Join("..", "..")
 	treeDir := filepath.Join(root, "data-paul", "M16", "ttsdata", "tree3")

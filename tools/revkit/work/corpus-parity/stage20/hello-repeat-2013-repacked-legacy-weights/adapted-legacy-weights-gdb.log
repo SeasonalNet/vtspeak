@@ -1,0 +1,57 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10018c80
+Wine-gdb> >>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x100191bc
+Wine-gdb> >>>> > > > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+REPACKED_WEIGHT_OVERRIDE before=10,5,2 context=1
+REPACKED_WEIGHT_OVERRIDE after=10,2,10
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=279484 feature=13.4188 divisor=1 penalty=0 previous_path=779.478 local=69.8103 total=862.707
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=1200 feature=8.52855 divisor=1 penalty=0 previous_path=772.714 local=69.8103 total=851.053
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=2525 feature=20.4079 divisor=1 penalty=0 previous_path=786.834 local=69.8103 total=877.052
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=20499 feature=14.548 divisor=1 penalty=0 previous_path=774.995 local=69.8103 total=859.353
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=22451 feature=8.56249 divisor=1 penalty=0 previous_path=777.751 local=69.8103 total=856.124
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=28430 feature=24.3313 divisor=1 penalty=0 previous_path=779.905 local=69.8103 total=874.046
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=31347 feature=7.62222 divisor=1 penalty=0 previous_path=781.683 local=69.8103 total=859.115
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=31795 feature=9.43418 divisor=1 penalty=0 previous_path=776.794 local=69.8103 total=856.039
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=51310 feature=10.065 divisor=1 penalty=0 previous_path=780.135 local=69.8103 total=860.011
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=52542 feature=14.0187 divisor=1 penalty=0 previous_path=810.379 local=69.8103 total=894.208
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=92183 feature=7.92519 divisor=1 penalty=0 previous_path=779.731 local=69.8103 total=857.467
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=116320 feature=11.5473 divisor=1 penalty=0 previous_path=776.737 local=69.8103 total=858.094
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=129641 feature=12.3882 divisor=1 penalty=0 previous_path=770.925 local=69.8103 total=853.124
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=165351 feature=27.1474 divisor=1 penalty=0 previous_path=794.391 local=69.8103 total=891.349
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=178453 feature=19.3893 divisor=1 penalty=0 previous_path=776.735 local=69.8103 total=865.935
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=179388 feature=7.33703 divisor=1 penalty=0 previous_path=772.989 local=69.8103 total=850.136
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=182880 feature=26.733 divisor=1 penalty=0 previous_path=772.884 local=69.8103 total=869.427
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=279479 feature=14.9511 divisor=1 penalty=0 previous_path=785.521 local=69.8103 total=870.283
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=273369 feature=19.0558 divisor=1 penalty=0 previous_path=505.8 local=69.8103 total=594.666
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=272822 feature=2 divisor=1 penalty=0 previous_path=505.8 local=69.8103 total=577.61
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=262454 feature=12.7313 divisor=1 penalty=0 previous_path=771.563 local=69.8103 total=854.104
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=245736 feature=20.6126 divisor=1 penalty=0 previous_path=774.674 local=69.8103 total=865.097
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=233533 feature=12.3362 divisor=1 penalty=0 previous_path=777.963 local=69.8103 total=860.109
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=214148 feature=11.3933 divisor=1 penalty=0 previous_path=773.313 local=69.8103 total=854.517
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=206118 feature=14.552 divisor=1 penalty=0 previous_path=784.171 local=69.8103 total=868.533
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=204612 feature=18.8895 divisor=1 penalty=0 previous_path=775.088 local=69.8103 total=863.788
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=200614 feature=11.1029 divisor=1 penalty=0 previous_path=776.085 local=69.8103 total=856.998
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=200525 feature=12.5014 divisor=1 penalty=0 previous_path=779.93 local=69.8103 total=862.242
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=195687 feature=8.42382 divisor=1 penalty=0 previous_path=776.309 local=69.8103 total=854.543
+REPACKED_OLD_WEIGHT_PAIR context=2 current=272823 previous=189906 feature=58.6417 divisor=1 penalty=0 previous_path=775.499 local=69.8103 total=903.951
+REPACKED_OLD_WEIGHT_SELECTED n=1 id=272822
+REPACKED_OLD_WEIGHT_SELECTED n=2 id=272822
+REPACKED_OLD_WEIGHT_SELECTED n=3 id=272823
+REPACKED_OLD_WEIGHT_SELECTED n=4 id=272823
+REPACKED_OLD_WEIGHT_SELECTED n=5 id=272824
+REPACKED_OLD_WEIGHT_SELECTED n=6 id=232750
+REPACKED_OLD_WEIGHT_SELECTED n=7 id=34312
+REPACKED_OLD_WEIGHT_SELECTED n=8 id=243207
+REPACKED_OLD_WEIGHT_SELECTED n=9 id=63876
+REPACKED_OLD_WEIGHT_SELECTED n=10 id=273370
+REPACKED_OLD_WEIGHT_SELECTED n=11 id=273370
+REPACKED_OLD_WEIGHT_SELECTED n=12 id=273371
+REPACKED_OLD_WEIGHT_SELECTED n=13 id=282025
+REPACKED_OLD_WEIGHT_SELECTED n=14 id=282025
+REPACKED_OLD_WEIGHT_SELECTED n=15 id=34312
+REPACKED_OLD_WEIGHT_SELECTED n=16 id=232750
+REPACKED_OLD_WEIGHT_SELECTED n=17 id=63876
+REPACKED_OLD_WEIGHT_SELECTED n=18 id=243207
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

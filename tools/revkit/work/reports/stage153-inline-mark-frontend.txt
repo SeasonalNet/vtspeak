@@ -1,0 +1,24 @@
+Stage 153: inline mark frontend connection
+
+Ported behavior
+
+- `LexiconFrontend.ResolveTextWithPaul2013InlineMarks` resolves ordinary text
+  around the captured unnamed/named mark tags using the existing embedded
+  dictionary frontend.
+- Mark tags are removed from lexical input; returned records retain the
+  captured kind, name, and exact source-byte offset. Token source spans use
+  the enclosing interval in the original marked input, including any mark tag
+  contained inside a lexical token.
+- `SelectLexicalPronunciationsWithMarks` carries those records into the
+  flattened phone sequence without assigning an audio-frame coordinate.
+- A local-resource test checks two resolved `Hello` tokens, a mark inside the
+  first token, an unnamed inter-token mark, and event retention after
+  pronunciation selection.
+
+Limits
+
+- The source-span hull and phone-sequence event field are Go integration
+  conventions. The DLL evidence identifies mark records and source offsets,
+  but does not establish their final consumer contract or frame placement.
+- Mixed mark/pause/substitution parsing, other markup, and synthesis timeline
+  integration remain unimplemented.

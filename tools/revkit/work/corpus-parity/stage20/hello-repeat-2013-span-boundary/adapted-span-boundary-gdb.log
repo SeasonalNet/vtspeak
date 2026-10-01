@@ -1,0 +1,13 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-span-boundary/adapted-span-boundary-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x100230a0
+Wine-gdb> >>> > > > > > > > > > > > > >  >  >  > > > >  >  >  >   >   >   >  >  > > >  >  >  >   >   >   >    >    >   >   >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+SPAN2013_ENTRY position=6 record_count=79 packed_row=0x25cc66c:	1	0	0	0	0	1
+SPAN2013_POSITION_IDS=3748 
+SPAN2013_UNIT_SIGNATURE position=6 index=14 unit=49874 bytes=0x1e253de:	1	47	34	30	22	0	0
+SPAN2013_UNIT_SIGNATURE position=6 index=76 unit=264071 bytes=0x1f934d1:	1	47	34	30	13	0	0
+Temporary breakpoint 3 at 0x100235f6
+SPAN2013_RESULT position=6 index=22 unit=264071 right=0 total=1 weighted=0
+SPAN2013_RESULT position=6 index=45 unit=49874 right=0 total=1 weighted=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

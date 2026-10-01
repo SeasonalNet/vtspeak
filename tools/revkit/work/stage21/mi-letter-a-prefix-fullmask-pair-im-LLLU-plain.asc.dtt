@@ -1,0 +1,147 @@
+VTDTTS ASCII
+3
+4
+merged-gen
+merged-num
+merged-etc
+merged-alp
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 176121200
+PCM Size : 2128
+PCM Coded Size : 2256
+Phone Mode : 1
+Pitch_first : 104
+Pitch_last : 98
+PM Pos : 2706226
+PM Size : 20
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 176121200
+PCM Size : 2424
+PCM Coded Size : 2256
+Phone Mode : 2
+Shift Size : 2030
+Pitch_first : 98
+Pitch_last : 130
+PM Pos : 2706245
+PM Size : 22
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 176123456
+PCM Size : 1840
+PCM Coded Size : 1824
+Phone Mode : 1
+Pitch_first : 130
+Pitch_last : 110
+PM Pos : 2706267
+PM Size : 16
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 312669284
+PCM Size : 914
+PCM Coded Size : 924
+Phone Mode : 2
+Shift Size : 976
+Pitch_first : 108
+Pitch_last : 120
+PM Pos : 4731558
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : AY1
+File Index : 0
+PCM Pos : 312670208
+PCM Size : 1092
+PCM Coded Size : 1080
+Phone Mode : 1
+Pitch_first : 120
+Pitch_last : 138
+PM Pos : 4731566
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : AY1
+File Index : 0
+PCM Pos : 289018156
+PCM Size : 792
+PCM Coded Size : 1164
+Phone Mode : 2
+Shift Size : 1454
+Pitch_first : 136
+Pitch_last : 130
+PM Pos : 4389957
+PM Size : 6
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 188351952
+PCM Size : 1040
+PCM Coded Size : 1080
+Phone Mode : 1
+Pitch_first : 134
+Pitch_last : 128
+PM Pos : 2893207
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 188351952
+PCM Size : 1272
+PCM Coded Size : 1080
+Phone Mode : 2
+Shift Size : 912
+Pitch_first : 128
+Pitch_last : 168
+PM Pos : 2893214
+PM Size : 9
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : M
+File Index : 0
+PCM Pos : 188353032
+PCM Size : 2204
+PCM Coded Size : 1112
+Phone Mode : 0
+Pitch_first : 168
+Pitch_last : 208
+PM Pos : 2893223
+PM Size : 11
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+

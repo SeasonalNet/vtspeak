@@ -1,0 +1,11 @@
+Wine-gdb> Already logging to /probe/stage20/hello-repeat-2006-feature-components-v2/legacy-feature-components-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ea73
+Wine-gdb> >>>> > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_FEATURE_COMPONENTS_TRACE_READY
+LEGACY_FEATURE_COMPONENTS current=272823 previous=273369 category=1 metrics=1.04473,1.77778,0.305296 weights=10,10,2 bias=2 weighted_sum=30.8357
+LEGACY_FEATURE_COMPONENTS current=272823 previous=273369 category=1 metrics=1.04473,1.77778,0.305296 weights=10,10,2 bias=2 weighted_sum=30.8357
+LEGACY_FEATURE_COMPONENTS current=272823 previous=273369 category=1 metrics=1.04473,1.77778,0.305296 weights=10,10,2 bias=2 weighted_sum=30.8357
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

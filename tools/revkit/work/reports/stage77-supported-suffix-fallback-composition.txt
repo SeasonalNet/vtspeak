@@ -1,0 +1,31 @@
+VoiceText Paul 2013 supported suffix fallback composition
+=========================================================
+
+Scope
+-----
+
+`duration.Engine.NormalizePaul2013SupportedSuffixFallbackAfter09DC0` joins
+the locally ported portions of the ordered fallback after
+`FUN_10009dc0` has already missed. It tries the direct 7-8 byte
+`FUN_1000a140` handlers in their recovered check order (`ance`, `ness`,
+`ment`, `ship`, `less`), then the 9-31 byte `liness` gate, followed by its
+directly recovered long `ed`, `er`, and `ly` branches, then the nine literal
+rewrites in `FUN_1000b4d0`. A suffix match
+whose stem lookup produces no output is recorded and dispatch continues to
+the next handler, matching the caller's zero-return fallback order. A
+successful output returns the row flags and bytes from that handler.
+
+Evidence and limits
+-------------------
+
+The handler order and calling cascade are represented in the Ghidra
+pseudocode in `tools/revkit/work/reports/stage6-deep-text-functions.txt` and
+`tools/revkit/work/reports/stage6-phone-dictionary-expanded.txt`. The
+individual bounded handlers are supported by Stage 69 through Stage 76
+reports, with the `liness` gate and `ly` branch added in Stages 89 and 90.
+Unsupported short-table indices are reported on the result instead of being
+treated as ordinary misses. This composition only wires those already ported
+cases. It does not implement `FUN_10009dc0`, the
+remaining `FUN_1000a140` branches, or native runtime row parity. Callers must
+preserve the earlier `FUN_10009dc0` step and must not interpret an unmatched
+result as proof that all native handlers missed.

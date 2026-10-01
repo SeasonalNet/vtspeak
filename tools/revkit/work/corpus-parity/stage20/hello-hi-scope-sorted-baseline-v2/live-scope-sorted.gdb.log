@@ -1,0 +1,6 @@
+Wine-gdb> Breakpoint 1 at 0x10023d43
+Hardware assisted breakpoint 2 at 0x408187
+HELLO_SORTED_SCOPE query=2b305a4500 count=51 state=025277cc nodes=0256ef78 model=014bf1c8 {rank=0 node=null} {rank=1 node=null} {rank=2 node=null} {rank=3 node=null} {rank=4 node=null} {rank=5 node=null} {rank=6 node=null} {rank=7 node=null} {rank=8 node=null} {rank=9 node=null} {rank=10 node=null} {rank=11 node=null}
+HELLO_SORTED_SCOPE query=2b305a4500 count=66 state=025277cc nodes=0256ef78 model=014bf1c8 {rank=0 node=null} {rank=1 node=null} {rank=2 node=null} {rank=3 node=null} {rank=4 node=null} {rank=5 node=null} {rank=6 node=null} {rank=7 node=null} {rank=8 node=null} {rank=9 node=null} {rank=10 node=null} {rank=11 node=null}
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,294 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023350
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023814
+Wine-gdb> >>>>>>>>>>> > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_COVERAGE_CONTEXT call=1 context=0 positions=5 candidates=113
+APPLE_COVERAGE_ROW context=0 rank=0 unit=177774 right_matches=1 span=2 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=1 unit=7004 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=2 unit=131829 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=3 unit=131070 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=4 unit=64625 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=5 unit=35103 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=6 unit=22864 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=7 unit=15652 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=8 unit=11156 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=9 unit=266842 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=10 unit=260526 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=11 unit=260024 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=12 unit=257183 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=13 unit=254282 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=14 unit=252720 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=15 unit=246989 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=16 unit=239445 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=17 unit=226256 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=18 unit=218033 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=19 unit=217198 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=20 unit=206615 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=21 unit=202593 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=22 unit=196942 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=23 unit=162606 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=24 unit=153125 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=25 unit=151949 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=26 unit=125936 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=27 unit=121516 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=28 unit=147194 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=29 unit=149444 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=30 unit=257217 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=31 unit=238347 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=32 unit=235061 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=33 unit=225654 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=34 unit=206428 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=35 unit=199864 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=36 unit=151080 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=37 unit=147963 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=38 unit=141947 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=39 unit=134205 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=40 unit=87333 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=41 unit=70519 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=42 unit=66400 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=43 unit=54112 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=44 unit=13736 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=45 unit=11027 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=46 unit=7248 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=47 unit=266863 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=48 unit=264113 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=49 unit=236496 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=50 unit=82755 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=51 unit=240885 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=52 unit=217690 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=53 unit=215368 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=54 unit=206721 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=55 unit=206006 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=56 unit=117529 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=57 unit=106965 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=58 unit=64665 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=0 rank=59 unit=36668 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_CONTEXT call=2 context=1 positions=5 candidates=34
+APPLE_COVERAGE_ROW context=1 rank=0 unit=177774 right_matches=0 span=2 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=1 unit=86765 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0x14
+APPLE_COVERAGE_ROW context=1 rank=2 unit=64718 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0xa
+APPLE_COVERAGE_ROW context=1 rank=3 unit=188825 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0xa
+APPLE_COVERAGE_ROW context=1 rank=4 unit=227604 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0xa
+APPLE_COVERAGE_ROW context=1 rank=5 unit=279649 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=6 unit=179969 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=7 unit=225631 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=8 unit=212593 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=9 unit=106017 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=10 unit=52644 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=11 unit=40502 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0x14
+APPLE_COVERAGE_ROW context=1 rank=12 unit=272238 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=13 unit=268752 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=14 unit=263415 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=15 unit=257776 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=16 unit=255878 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=17 unit=224971 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=18 unit=219637 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=19 unit=213333 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=20 unit=207854 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=21 unit=195352 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=22 unit=189545 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=23 unit=187543 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=24 unit=181638 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=25 unit=178783 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=26 unit=113307 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=27 unit=95538 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=28 unit=84280 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0x3
+APPLE_COVERAGE_ROW context=1 rank=29 unit=48612 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=30 unit=46891 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0x4
+APPLE_COVERAGE_ROW context=1 rank=31 unit=33522 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=32 unit=261978 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=1 rank=33 unit=64727 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0xa
+APPLE_COVERAGE_CONTEXT call=3 context=2 positions=5 candidates=50
+APPLE_COVERAGE_ROW context=2 rank=0 unit=2645 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=1 unit=127405 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=2 unit=128863 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=3 unit=137215 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=4 unit=138741 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=5 unit=145945 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=6 unit=150075 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=7 unit=151210 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=8 unit=157135 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=9 unit=158593 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=10 unit=175727 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=11 unit=188302 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=12 unit=188826 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=13 unit=189455 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=14 unit=199880 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=15 unit=208106 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=16 unit=213256 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=17 unit=223157 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=18 unit=227605 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=19 unit=231014 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=20 unit=244717 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=21 unit=258032 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=22 unit=265201 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=23 unit=271727 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=24 unit=118661 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=25 unit=111020 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=26 unit=32957 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=27 unit=38294 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=28 unit=40503 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=29 unit=40810 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=30 unit=41008 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=31 unit=42412 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=32 unit=45509 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=33 unit=55213 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=34 unit=56167 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=35 unit=61725 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=36 unit=64719 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=37 unit=64728 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=38 unit=78432 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=39 unit=82377 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=40 unit=82557 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=41 unit=82709 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=42 unit=83349 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=43 unit=86012 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=44 unit=92769 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=45 unit=96145 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=46 unit=97601 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=47 unit=100180 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=48 unit=108878 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=2 rank=49 unit=272427 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_CONTEXT call=4 context=3 positions=5 candidates=20
+APPLE_COVERAGE_ROW context=3 rank=0 unit=2554 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=1 unit=256581 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=2 unit=232462 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=3 unit=218670 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=4 unit=158830 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=5 unit=131118 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=6 unit=129559 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=7 unit=103238 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=8 unit=97884 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=9 unit=86327 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=10 unit=82036 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=11 unit=59558 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=12 unit=41057 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=13 unit=40214 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=14 unit=28631 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=15 unit=27966 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=16 unit=27794 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=17 unit=27440 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=18 unit=11135 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_ROW context=3 rank=19 unit=258822 right_matches=0 span=1 weighted_coverage=0 byte0=0x1 byte6=0
+APPLE_COVERAGE_CONTEXT call=5 context=4 positions=5 candidates=158
+APPLE_COVERAGE_ROW context=4 rank=0 unit=402 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=1 unit=199623 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=2 unit=207007 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=3 unit=207295 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=4 unit=207850 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=5 unit=208317 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=6 unit=209264 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=7 unit=211856 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=8 unit=216381 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=9 unit=217041 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=10 unit=218671 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=11 unit=219326 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=12 unit=219477 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=13 unit=220694 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=14 unit=221272 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=15 unit=223083 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=16 unit=223707 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=17 unit=226760 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=18 unit=228636 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=19 unit=197174 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=20 unit=196613 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=21 unit=160420 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=22 unit=160493 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=23 unit=161353 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=24 unit=162361 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=25 unit=162687 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=26 unit=163137 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=27 unit=168901 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=28 unit=173289 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=29 unit=174354 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=30 unit=180825 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=31 unit=182016 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=32 unit=187942 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=33 unit=188878 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=34 unit=189093 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=35 unit=189212 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=36 unit=190635 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=37 unit=194124 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=38 unit=196501 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=39 unit=231458 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=40 unit=232463 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=41 unit=258823 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=42 unit=261692 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=43 unit=262799 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=44 unit=265707 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=45 unit=265928 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=46 unit=267916 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=47 unit=268559 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=48 unit=270302 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=49 unit=274861 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=50 unit=275163 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=51 unit=275203 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=52 unit=276145 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=53 unit=276552 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=54 unit=276879 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=55 unit=277062 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=56 unit=277324 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=57 unit=277768 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=58 unit=278423 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_ROW context=4 rank=59 unit=258624 right_matches=0 span=1 weighted_coverage=0 byte0=0 byte6=0
+APPLE_COVERAGE_SELECTED unit=177774
+APPLE_COVERAGE_SELECTED unit=177774
+APPLE_COVERAGE_SELECTED unit=64719
+APPLE_COVERAGE_SELECTED unit=82036
+APPLE_COVERAGE_SELECTED unit=82037
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

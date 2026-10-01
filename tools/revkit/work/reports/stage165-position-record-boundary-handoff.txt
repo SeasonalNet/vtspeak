@@ -1,0 +1,55 @@
+Stage 165: position-state results to model records and boundaries
+
+Evidence and ordering
+
+- FUN_10022dc0 calls FUN_10022970 over inclusive source record intervals,
+  then optionally maps start/end indexes through the model lookup tables.
+  FUN_10016c90 consumes the produced slot-7 state array, writes record +0x2df
+  flags (12 when value != -1, otherwise zero), and derives arena +0x4770a
+  from the last control code/flag and parser-state +2 pitch-value count.
+  FUN_100130e0 subsequently consumes the mapped intervals and final mode.
+- Existing source evidence is vt_pau-synthesis-pseudocode.c and
+  stage23-state-array-writers.c, with original x86 in
+  vt_pau-objdump-disassembly.txt. Decompiled output remains pseudocode.
+- MapPaul2013PositionStateRecordIndexes reads full-arena offsets +0x64c
+  and +0x650 at 0x3c0 strides. Its former size check omitted that base;
+  the Stage 164 model adapter incorrectly supplied only the record slice.
+  The combination could read unrelated fields or panic on short arenas.
+
+Implementation
+
+- Corrected the mapping adapter to receive the complete enclosing arena and
+  reject inputs lacking base + count*stride bytes. The public signature is
+  preserved and its full-arena requirement is explicit.
+- Paul2013FinalizedModelState.ApplyPositionStatesAndRunTokenBoundaries
+  derives segment consumed-byte count from retained parser-state +4, runs
+  native model-gap state production, writes optional mapped intervals,
+  applies produced slot-7 flags, recomputes mode, and runs the boundary tree,
+  dispatch, descriptor, and workspace writebacks.
+- The returned result retains position outputs, final model records, and
+  boundary outputs. It copies model bytes and workspace memory, preserving
+  caller inputs. Model phone/control/pointer fields already projected by
+  the finalizer handoff are retained; only state-dependent writes are updated
+  before the existing downstream native boundary writes.
+- duration.Engine.RunPaul2013PositionStateBoundaries supplies the already-
+  loaded shared engbi resource to this combined path.
+
+Validation
+
+- Tests follow slot-7 range production through record flags/final mode,
+  optional start/end mapping, marker-tree execution, and descriptor writeback.
+- Additional cases exercise final control codes 0/3/4, zero/nonzero pitch
+  counts, absent/present slot-7 values, stale-flag clearing, modes 5/6/7,
+  preserved caller memory, and nil/unloaded duration-engine resources.
+- Mapping tests distinguish full arenas from record-only slices, reject
+  one-byte truncation, and verify correct mapped values without a panic.
+- From engine/, GOCACHE=/tmp/vtspeak-go-cache go test ./..., go build ./...,
+  and go vet ./... passed. Changed Go files were formatted with gofmt;
+  git diff --check passed from the repository root.
+
+Limits
+
+- Range/event boundary/value producers, clamp inputs, index tables, pointer
+  mapping, and remaining source-text/context stages are still explicit.
+- Static caller ordering and synthetic tests do not prove whole native arena
+  or end-to-end synthesis parity. No new original-engine capture was made.

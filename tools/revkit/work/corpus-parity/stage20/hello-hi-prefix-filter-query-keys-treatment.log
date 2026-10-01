@@ -1,0 +1,26 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-hi-prefix-filter-query-keys-treatment.log.
+Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023dc0
+Wine-gdb> >>>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 3 at 0x1001896a
+HELLO_2013_QUERY call=1 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00 count=0
+Temporary breakpoint 4 at 0x10018a45
+HELLO_2013_QUERY call=2 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00 count=0
+Temporary breakpoint 5 at 0x1001896a
+HELLO_2013_QUERY call=3 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00 count=0
+Temporary breakpoint 6 at 0x10018a45
+HELLO_2013_QUERY call=4 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00 count=0
+Temporary breakpoint 7 at 0x10018a45
+HELLO_2013_QUERY call=5 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00 count=0
+Temporary breakpoint 8 at 0x10018a45
+HELLO_2013_QUERY call=6 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00 count=0
+Temporary breakpoint 9 at 0x1001896a
+HELLO_2013_QUERY call=7 signature=22,17,2b,30,5a,00,00 key=17,2b,2f,00,00 count=1
+Temporary breakpoint 10 at 0x10018a45
+HELLO_2013_QUERY call=8 signature=22,17,2b,30,5a,08,00 key=17,2b,2f,08,00 count=0
+Temporary breakpoint 11 at 0x1001896a
+HELLO_2013_QUERY call=9 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00 count=0
+Temporary breakpoint 12 at 0x10018a45
+HELLO_2013_QUERY call=10 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00 count=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

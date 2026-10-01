@@ -1,0 +1,20 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023350
+Wine-gdb> >>>>> > > > > > > > >  >  >  >  >  >  >  >   >   >    >    >    >   >   >  >   >   >  >   >   >  >  >  > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x100235f6
+Wine-gdb> >>>> > > > >  >  >  >   >   >   >  >  > >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+KATE_OLDROW_CLASSES context=0 class_count=10 {class=48489 key=5a22011e00 members=57 old_rows=-} {class=48491 key=5a22041e00 members=42 old_rows=-} {class=48493 key=5a22071e00 members=19 old_rows=-} {class=48495 key=5a220a1e00 members=2 old_rows=-} {class=48496 key=5a22171e00 members=28 old_rows=272822} {class=48498 key=5a22231e00 members=211 old_rows=-} {class=48501 key=5a222c2200 members=1 old_rows=-} {class=48502 key=5a222f1e00 members=13 old_rows=-} {class=48505 key=5a223b1e00 members=42 old_rows=-} {class=48507 key=5a22421e00 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATE context=0 rank=14 id=272822 span=2
+KATE_OLDROW_CLASSES context=1 class_count=10 {class=2174 key=0722171400 members=2 old_rows=-} {class=5446 key=0d22171400 members=2 old_rows=-} {class=7284 key=1022171400 members=5 old_rows=-} {class=15614 key=1a22171400 members=10 old_rows=-} {class=21756 key=2322171400 members=11 old_rows=-} {class=27568 key=2b22171400 members=4 old_rows=-} {class=31883 key=2d22171400 members=6 old_rows=-} {class=40738 key=3b22170a00 members=1 old_rows=-} {class=40739 key=3b22171400 members=8 old_rows=-} {class=48496 key=5a22171e00 members=28 old_rows=272822}
+KATE_OLDROW_CANDIDATE context=1 rank=18 id=272822 span=2
+KATE_OLDROW_CLASSES context=2 class_count=3 {class=20083 key=22172b0000 members=4 old_rows=-} {class=20084 key=22172b1e00 members=5 old_rows=272823} {class=20085 key=2217410000 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATE context=2 rank=7 id=272823 span=1
+KATE_OLDROW_CLASSES context=3 class_count=9 {class=4957 key=0d172b0000 members=1 old_rows=-} {class=10105 key=14172b0000 members=1 old_rows=-} {class=11204 key=15172b0000 members=1 old_rows=-} {class=17968 key=20172b0000 members=1 old_rows=-} {class=19028 key=21172b0000 members=1 old_rows=-} {class=20083 key=22172b0000 members=4 old_rows=-} {class=42182 key=41172b0000 members=2 old_rows=-} {class=45262 key=46172b0000 members=1 old_rows=-} {class=46142 key=48172b0000 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATES_NONE context=3 count=13
+KATE_OLDROW_CLASSES context=4 class_count=1 {class=13286 key=172b2f0000 members=11 old_rows=272824}
+KATE_OLDROW_CANDIDATE context=4 rank=10 id=272824 span=1
+KATE_OLDROW_CLASSES context=5 class_count=10 {class=28162 key=2b30150500 members=1 old_rows=-} {class=28168 key=2b30160400 members=1 old_rows=-} {class=28181 key=2b30230000 members=1 old_rows=-} {class=28188 key=2b302a1e00 members=1 old_rows=-} {class=28191 key=2b302b1600 members=1 old_rows=-} {class=28219 key=2b30410a00 members=3 old_rows=-} {class=28230 key=2b305a0300 members=1 old_rows=-} {class=28232 key=2b305a0400 members=4 old_rows=272825} {class=28234 key=2b305a2100 members=1 old_rows=-} {class=28236 key=2b305e0500 members=2 old_rows=-}
+KATE_OLDROW_CANDIDATE context=5 rank=4 id=272825 span=2
+KATE_OLDROW_CLASSES context=6 class_count=10 {class=12956 key=16305e0500 members=3 old_rows=-} {class=16753 key=1a305e0500 members=2 old_rows=-} {class=22710 key=23305a0d00 members=1 old_rows=-} {class=28230 key=2b305a0300 members=1 old_rows=-} {class=28232 key=2b305a0400 members=4 old_rows=272825} {class=28236 key=2b305e0500 members=2 old_rows=-} {class=32538 key=2d305a0400 members=7 old_rows=-} {class=32546 key=2d305e0500 members=4 old_rows=-} {class=36869 key=37305e0500 members=1 old_rows=-} {class=42883 key=41305e0500 members=1 old_rows=-}
+KATE_OLDROW_CANDIDATE context=6 rank=5 id=272825 span=2
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

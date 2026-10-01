@@ -1,0 +1,33 @@
+Stage 147: transition-state row to whole-position query join
+
+Direct pseudocode evidence
+
+- `tools/revkit/work/reports/stage7-backtrack.txt`, `FUN_10024680` at
+  `0x10024680`, sets `pbVar2` to `param2 + uVar12*6 + 0xec628`, writes byte
+  `+0` from the current record ordinal and byte `+2` from the phone ordinal,
+  then calls `FUN_10024060(uVar12, param2, param3)`.
+- `tools/revkit/work/reports/stage25-feature-scope-query.c`,
+  `FUN_10024060` at `0x10024060`, reads the row at
+  `param2 + (param1*3 + 0x76314)*2`. This expression is byte offset
+  `0xec628 + param1*6`, the same compact row base and stride written by
+  `FUN_10024680`.
+- `FUN_10024060` uses row byte `+0` to select the record block and byte `+2`
+  to select the seven-byte signature within it. It writes row class to byte
+  `+3`, clears byte `+4`, then dispatches the whole-position query.
+
+Ported behavior
+
+- `selection.QueryPaul2013WholePositionFromTransitionState` accepts the
+  existing `Paul2013TransitionContextState` and composes its exact six bytes
+  with the Stage 146 record-arena projection and whole-position query.
+- A unit test verifies that the signature selected by a transition state's
+  block and phone ordinals reaches the whole-position query attempt.
+
+Limits
+
+- The join is supported by decompiler pseudocode and address arithmetic; no
+  original-DLL differential capture was added for this Go call composition.
+- The transition builder still needs record-group mapping, workspace
+  eligibility values, period-pointer resolution, and query results for its
+  compact-state advancement. Prior metric, context-gate production,
+  conditional fallback inputs, and text-derived phone state remain open.

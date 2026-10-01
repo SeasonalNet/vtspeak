@@ -1,0 +1,26 @@
+VoiceText Paul 2013 multi-segment model-row projection
+
+`FUN_1000e2f0` resets the model token/context counters once and invokes
+`FUN_1000d190` once with the source-row count. In the `FUN_1000d190` pseudocode,
+the outer loop advances through that complete row array, writes each token
+through the shared model pointer, and increments the model token count; no
+segment-boundary counter reset appears in that loop. The evidence is in
+`stage6-deep-text-functions.txt`, under `FUN_1000d190` and `FUN_1000e2f0`.
+
+The ordinary parser offset producer separately records sentence-relative
+offsets and resets the next segment's origin at `.`, `?`, and `!`; this
+behavior is directly captured in `stage20/README.md` under “Ordinary
+model-parser offset rows” and its punctuation-boundary trace. These findings
+support flattening the source rows in order while leaving each row's offsets
+unchanged, then running the parser-row traversal and model-context projection
+once.
+
+`BuildPaul2013ModelPhoneRowsFromOrdinarySegmentsInSharedArena` does this and
+returns each segment's half-open row range. Per-row controls remain explicit.
+It requires zero initial token and context counts, matching a fresh native
+parser call, and uses the loaded dictionary and pronunciation tree through the
+duration-engine wrapper.
+
+This composes the supported row producer and projection only. Parser-control
+production, the earlier normalization/TPP stages, remaining context-row
+mutations, and multi-segment runtime row comparison remain open.

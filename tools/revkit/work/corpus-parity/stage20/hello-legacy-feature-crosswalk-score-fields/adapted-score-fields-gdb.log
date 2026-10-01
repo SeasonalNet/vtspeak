@@ -1,0 +1,15 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-legacy-feature-crosswalk-score-fields/adapted-score-fields-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > > > > > > > > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x10024808
+Temporary breakpoint 7 at 0x10024808
+SCORE_FIELDS_SELECTED n=1 id=277694
+SCORE_FIELDS_SELECTED n=2 id=277694
+SCORE_FIELDS_SELECTED n=3 id=282532
+SCORE_FIELDS_SELECTED n=4 id=282532
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

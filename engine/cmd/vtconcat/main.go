@@ -20,7 +20,7 @@ func main() {
 	dataRoot := flag.String("data-root", "", "local 2013 Paul M16 data root")
 	unitList := flag.String("units", "", "comma-separated bank:index sequence, for example gen:12,gen:13")
 	outputPath := flag.String("output", "", "new WAVE output path (must not already exist)")
-	renderMode := flag.String("render-mode", "concat", "renderer: concat, periods, or segments")
+	renderMode := flag.String("render-mode", "concat", "renderer: concat, cursor, join, join-equal, periods, or segments")
 	pitch := flag.Int("pitch", -1, "pitch control; -1 selects the engine default")
 	speed := flag.Int("speed", -1, "speed control; -1 selects the engine default")
 	volume := flag.Int("volume", -1, "volume control; -1 selects the engine default")
@@ -132,8 +132,14 @@ func makeRenderer(mode string, units synthesis.UnitReader, applyGain bool) (synt
 		return synthesis.PeriodResamplingRenderer{Units: units, ApplyObservedGain: applyGain}, nil
 	case "segments":
 		return synthesis.UPMSegmentPlanRenderer{Units: units, ApplyObservedGain: applyGain}, nil
+	case "cursor":
+		return synthesis.CursorTimelineRenderer{Units: units, ApplyObservedGain: applyGain}, nil
+	case "join":
+		return synthesis.UPMTimelineJoinRenderer{Units: units, ApplyObservedGain: applyGain}, nil
+	case "join-equal":
+		return synthesis.UPMEqualSpanJoinRenderer{Units: units, ApplyObservedGain: applyGain}, nil
 	default:
-		return nil, fmt.Errorf("unknown -render-mode %q (want concat, periods, or segments)", mode)
+		return nil, fmt.Errorf("unknown -render-mode %q (want concat, cursor, join, join-equal, periods, or segments)", mode)
 	}
 }
 

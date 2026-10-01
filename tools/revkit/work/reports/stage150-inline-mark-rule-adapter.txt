@@ -1,0 +1,37 @@
+Stage 150: supported inline VTML mark model-source rule
+
+Runtime evidence
+
+- `docs/reverse-engineering/lead6-file-api-behavior-2026-09-25.md` records
+  the Stage 16 captures for `<vtml_mark/>`, named marks, empty and whitespace
+  names, uppercase `NAME`, and name lengths 1, 255, 256, 510, 511, and 512.
+- The captures identify unnamed marks as kind 2 with an empty inline name;
+  nonempty names below 512 bytes use kind 1; a 512-byte name uses kind 3 and
+  stores the first 511 bytes. An explicitly empty name emits no record, while
+  one space is a named record. Named and unnamed output frame positions match
+  their observed marker positions.
+- The ordered source-rule table in
+  `tools/revkit/work/reports/stage144-model-source-rule-table.txt` maps
+  `<vtml_mark` to handler `0x1002efd0`.
+
+Ported behavior
+
+- `text.Paul2013InlineMarkModelSourceRule` binds the observed descriptor to
+  the generic longest-key dispatcher and emits a `Paul2013InlineMarkEvent` at
+  the source byte offset.
+- The adapter handles the observed unnamed and named forms, matches the
+  `name` attribute without case sensitivity, emits no event for `name=""`,
+  preserves whitespace names, and truncates names of at least 512 ASCII bytes
+  to 511 bytes with kind 3. It consumes the tag without inserting lexical
+  bytes.
+- Unit tests cover those forms and decline unsupported extra attributes,
+  nested contents, and non-ASCII names with dispatcher cursor restoration.
+
+Limits
+
+- The port covers the captured tag/record projection, not the shared native
+  selector-2 handler's parser-row writes or complete `VT_TextToBufferEX_ENG`
+  descriptor semantics.
+- Mapping source offsets to output frames, mixed-tag parsing, and other mark
+  syntax remain caller work. No new original-DLL differential was run for the
+  Go adapter.

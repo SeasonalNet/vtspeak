@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - /tmp/vtspeak-vt-kat-legacy-continuity-byte0-cutoff3.dll:/samples/vt_kat.dll:ro

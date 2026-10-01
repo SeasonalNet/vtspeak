@@ -1,0 +1,54 @@
+VoiceText Paul 2013 contraction suffix marker tails
+===================================================
+
+Evidence
+--------
+
+`FUN_1000c040` at VA `0x1000c040` first finds one of the direct suffixes
+`'n`, `'ee`, `'er`, or `'ers`, including uppercase variants. The Ghidra
+pseudocode is in `tools/revkit/work/reports/stage6-numeric-rules.txt`, around
+the `FUN_1000c040` entry. The suffix literals are in `.data` at
+`0x100778a4`, `0x100778a0`, `0x1007789c`, and `0x10077894`; uppercase
+counterparts are at `0x100779a0`, `0x1007799c`, `0x10077998`, and
+`0x10077990`. Their bytes were inspected in the PE `.data` section. The
+native routine copies the bytes preceding the match into a 32-byte local
+buffer, then calls the preceding normalization chain.
+
+The prefix chain first checks the parsed dictionary result type. Types `E` and
+`A` enter `FUN_100086c0`; a nonzero low-short result selects the
+`FUN_10009cd0` context encoder. Otherwise a positive parsed pronunciation
+count copies the first internal-symbol string and sets flag bit 0. With no
+parsed pronunciation, the routine tries `FUN_10009dc0`, `FUN_1000a140`,
+`FUN_10002f10`, and finally `FUN_10009cd0`, in that order. The decompiled
+function is in `tools/revkit/work/reports/stage6-dictionary-record-functions.txt`.
+
+After prefix normalization, the routine appends these bytes:
+
+- `'n`: append `0x07 0x2d` when the last normalized byte is not a context
+  class and either the previous byte is not a context class or the last byte
+  is not `0x36`; otherwise append `0x2d` only.
+- `'ee`: append `0x26` (`&`).
+- `'er`: append `0x1a`.
+- `'ers`: append `0x1a 0x44` (`D`).
+
+The context-class membership test for `'n` reads the 16-bit table at
+`0x10077d94`, indexed by byte values `1` through `'E'`. The routine sets row
+flag bit 3 only when the final output is nonempty. It uses a 68-byte local
+output buffer including its NUL terminator.
+
+Implementation boundary
+-----------------------
+
+`engine/duration/contraction_suffix.go` ports suffix recognition, the marker
+tail, the table-backed `'n` condition, and bit-3 behavior. Its
+`NormalizePaul2013ContractionSuffixWithSupportedPrefix` entry point composes
+the parsed record, supported `FUN_100086c0`, compound, A140, generic, and
+context-encoder paths. It takes the model arena and row index explicitly for
+the row-dependent decision; unsupported selected branches return an error.
+`NormalizePaul2013ContractionModelContextRow` applies a matched result to a
+copied counted-row arena when the caller selects that branch. The low-level
+helper still accepts a callback for callers that already own a prefix chain.
+The implementation applies an explicit 31-byte source bound and 68-byte
+output bound for the native local buffers. Static pseudocode and literal/table
+inspection support this port; no native runtime row comparison is claimed,
+and outer model-row dispatch remains separate.

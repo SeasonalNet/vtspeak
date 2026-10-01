@@ -1,0 +1,54 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cff0
+Wine-gdb> >>>> > > > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001d3f4
+Wine-gdb> >> > > >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001d48e
+Wine-gdb> >> > > > > > > >  >  >  >   >   >  >  > > >  >  >  >  >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_SHORTLIST_SORT_TRACE_READY
+LEGACY_SHORTLIST_ENTRY position=5 class_count=10
+LEGACY_UNIT_FEATURE unit=264071 phone=3434 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264072 phone=32400 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264073 phone=25383 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264074 phone=37302 boundary_byte=0
+LEGACY_POSITION_BOUNDARY_BYTES positions=5..8 bytes=0x27a9a26:	0	1	1	0	1	1	0	0
+0x27a9a2e:	1	1	2	2	0	0	1	1
+0x27a9a36:	3	3	0	0	0	0	0	0
+LEGACY_UNIT_SCORE position=5 unit=264071 score=7.304 rank_key=-8 span_left=0 span_right=3 span=4
+LEGACY_UNIT_SCORE position=5 unit=49874 score=23.5254 rank_key=-2 span_left=0 span_right=0 span=1
+LEGACY_SHORTLIST_SORT_INPUT position=5 total=73 presorted_prefix=3 suffix_count=70
+LEGACY_SHORTLIST_SORT_TARGET position=5 index=0 unit=264071 score=7.304 key=-8 flags=0
+LEGACY_SHORTLIST_SORT_TARGET position=5 index=24 unit=49874 score=23.5254 key=23.5254 flags=0
+Temporary breakpoint 5 at 0x1001d493
+LEGACY_SHORTLIST_SORTED_TOP30 position=5 [0]=264071(score=7.304,key=-8,span=4) [1]=272151(score=6.97531,key=-6,span=3) [2]=13941(score=5.0338,key=-6,span=3) [3]=21433(score=14.2118,key=14.2118,span=1) [4]=160974(score=22.625,key=22.625,span=1) [5]=200323(score=22.929,key=22.929,span=1) [6]=8054(score=22.929,key=22.929,span=1) [7]=243207(score=23.5254,key=23.5254,span=1) [8]=49874(score=23.5254,key=23.5254,span=1) [9]=104395(score=24.0281,key=24.0281,span=1) [10]=175733(score=24.3143,key=24.3143,span=1) [11]=5030(score=26.149,key=26.149,span=1) [12]=27063(score=26.149,key=26.149,span=1) [13]=264213(score=26.608,key=26.608,span=1) [14]=231058(score=27.102,key=27.102,span=1) [15]=9887(score=27.6333,key=27.6333,span=1) [16]=179927(score=27.6333,key=27.6333,span=1) [17]=97409(score=27.6333,key=27.6333,span=1) [18]=192035(score=28.2043,key=28.2043,span=1) [19]=193044(score=28.2043,key=28.2043,span=1) [20]=224085(score=28.2043,key=28.2043,span=1) [21]=68423(score=28.8174,key=28.8174,span=1) [22]=62239(score=28.8174,key=28.8174,span=1) [23]=212241(score=28.8174,key=28.8174,span=1) [24]=215444(score=28.8174,key=28.8174,span=1) [25]=172912(score=28.8174,key=28.8174,span=1) [26]=56107(score=30.0055,key=30.0055,span=1) [27]=223362(score=30.1449,key=30.1449,span=1) [28]=260513(score=30.2925,key=30.2925,span=1) [29]=19726(score=30.3879,key=30.3879,span=1)
+LEGACY_SHORTLIST_ENTRY position=5 class_count=10
+LEGACY_UNIT_FEATURE unit=264071 phone=3434 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264072 phone=32400 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264073 phone=25383 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264074 phone=37302 boundary_byte=0
+LEGACY_POSITION_BOUNDARY_BYTES positions=5..8 bytes=0x27a9a26:	0	1	1	0	1	1	0	0
+0x27a9a2e:	1	1	2	2	0	0	1	1
+0x27a9a36:	3	3	0	0	0	0	0	0
+LEGACY_UNIT_SCORE position=5 unit=264071 score=7.304 rank_key=-8 span_left=0 span_right=3 span=4
+LEGACY_UNIT_SCORE position=5 unit=49874 score=23.5254 rank_key=-2 span_left=0 span_right=0 span=1
+LEGACY_SHORTLIST_SORT_INPUT position=5 total=73 presorted_prefix=3 suffix_count=70
+LEGACY_SHORTLIST_SORT_TARGET position=5 index=0 unit=264071 score=7.304 key=-8 flags=0
+LEGACY_SHORTLIST_SORT_TARGET position=5 index=24 unit=49874 score=23.5254 key=23.5254 flags=0
+Temporary breakpoint 6 at 0x1001d493
+LEGACY_SHORTLIST_SORTED_TOP30 position=5 [0]=264071(score=7.304,key=-8,span=4) [1]=272151(score=6.97531,key=-6,span=3) [2]=13941(score=5.0338,key=-6,span=3) [3]=21433(score=14.2118,key=14.2118,span=1) [4]=160974(score=22.625,key=22.625,span=1) [5]=200323(score=22.929,key=22.929,span=1) [6]=8054(score=22.929,key=22.929,span=1) [7]=243207(score=23.5254,key=23.5254,span=1) [8]=49874(score=23.5254,key=23.5254,span=1) [9]=104395(score=24.0281,key=24.0281,span=1) [10]=175733(score=24.3143,key=24.3143,span=1) [11]=5030(score=26.149,key=26.149,span=1) [12]=27063(score=26.149,key=26.149,span=1) [13]=264213(score=26.608,key=26.608,span=1) [14]=231058(score=27.102,key=27.102,span=1) [15]=9887(score=27.6333,key=27.6333,span=1) [16]=179927(score=27.6333,key=27.6333,span=1) [17]=97409(score=27.6333,key=27.6333,span=1) [18]=192035(score=28.2043,key=28.2043,span=1) [19]=193044(score=28.2043,key=28.2043,span=1) [20]=224085(score=28.2043,key=28.2043,span=1) [21]=68423(score=28.8174,key=28.8174,span=1) [22]=62239(score=28.8174,key=28.8174,span=1) [23]=212241(score=28.8174,key=28.8174,span=1) [24]=215444(score=28.8174,key=28.8174,span=1) [25]=172912(score=28.8174,key=28.8174,span=1) [26]=56107(score=30.0055,key=30.0055,span=1) [27]=223362(score=30.1449,key=30.1449,span=1) [28]=260513(score=30.2925,key=30.2925,span=1) [29]=19726(score=30.3879,key=30.3879,span=1)
+LEGACY_SHORTLIST_ENTRY position=5 class_count=10
+LEGACY_UNIT_FEATURE unit=264071 phone=3434 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264072 phone=32400 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264073 phone=25383 boundary_byte=0x1
+LEGACY_UNIT_FEATURE unit=264074 phone=37302 boundary_byte=0
+LEGACY_POSITION_BOUNDARY_BYTES positions=5..8 bytes=0x27a9a26:	0	1	1	0	1	1	0	0
+0x27a9a2e:	1	1	2	2	0	0	1	1
+0x27a9a36:	3	3	0	0	0	0	0	0
+LEGACY_UNIT_SCORE position=5 unit=264071 score=7.304 rank_key=-8 span_left=0 span_right=3 span=4
+LEGACY_UNIT_SCORE position=5 unit=49874 score=23.5254 rank_key=-2 span_left=0 span_right=0 span=1
+LEGACY_SHORTLIST_SORT_INPUT position=5 total=73 presorted_prefix=3 suffix_count=70
+LEGACY_SHORTLIST_SORT_TARGET position=5 index=0 unit=264071 score=7.304 key=-8 flags=0
+LEGACY_SHORTLIST_SORT_TARGET position=5 index=24 unit=49874 score=23.5254 key=23.5254 flags=0
+Temporary breakpoint 7 at 0x1001d493
+LEGACY_SHORTLIST_SORTED_TOP30 position=5 [0]=264071(score=7.304,key=-8,span=4) [1]=272151(score=6.97531,key=-6,span=3) [2]=13941(score=5.0338,key=-6,span=3) [3]=21433(score=14.2118,key=14.2118,span=1) [4]=160974(score=22.625,key=22.625,span=1) [5]=200323(score=22.929,key=22.929,span=1) [6]=8054(score=22.929,key=22.929,span=1) [7]=243207(score=23.5254,key=23.5254,span=1) [8]=49874(score=23.5254,key=23.5254,span=1) [9]=104395(score=24.0281,key=24.0281,span=1) [10]=175733(score=24.3143,key=24.3143,span=1) [11]=5030(score=26.149,key=26.149,span=1) [12]=27063(score=26.149,key=26.149,span=1) [13]=264213(score=26.608,key=26.608,span=1) [14]=231058(score=27.102,key=27.102,span=1) [15]=9887(score=27.6333,key=27.6333,span=1) [16]=179927(score=27.6333,key=27.6333,span=1) [17]=97409(score=27.6333,key=27.6333,span=1) [18]=192035(score=28.2043,key=28.2043,span=1) [19]=193044(score=28.2043,key=28.2043,span=1) [20]=224085(score=28.2043,key=28.2043,span=1) [21]=68423(score=28.8174,key=28.8174,span=1) [22]=62239(score=28.8174,key=28.8174,span=1) [23]=212241(score=28.8174,key=28.8174,span=1) [24]=215444(score=28.8174,key=28.8174,span=1) [25]=172912(score=28.8174,key=28.8174,span=1) [26]=56107(score=30.0055,key=30.0055,span=1) [27]=223362(score=30.1449,key=30.1449,span=1) [28]=260513(score=30.2925,key=30.2925,span=1) [29]=19726(score=30.3879,key=30.3879,span=1)
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

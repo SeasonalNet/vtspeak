@@ -1,0 +1,34 @@
+Stage 142: FUN_1001d5d0 position-state boundary pairing
+
+Direct source
+
+- Ghidra pseudocode: tools/revkit/work/reports/stage6-text-functions.txt,
+  FUN_1001d5d0 at 0x1001d5d0, specifically the mode 0-2 loops following the
+  parser text copy.
+- The pseudocode reads each selected mode's boundary and value arrays through
+  the state slots at model +0x1223c0 plus mode*0x10. It compacts marked pairs,
+  then pairs remaining nonnegative values and replaces selected negative
+  values from the preceding value. These arrays are consumed later by
+  FUN_10022970.
+
+Ported behavior
+
+- `text.NormalizePaul2013PositionStateProducerSeries` ports the two ordered
+  pair scans, compaction, index-pair map, and negative-value fill. It returns
+  independent slices and rejects mismatched boundary/value counts.
+- `text.NormalizePaul2013PositionStateProducerArrays` applies that operation
+  to modes 0, 1, and 2 in array order.
+- `text.ApplyPaul2013PositionStateProgramWithProducerArrays` connects these
+  normalized arrays to the existing `FUN_10022970` range passes while keeping
+  row keys, initial states, bounds, and later event inputs explicit.
+- Unit tests cover pair selection, compaction, sentinel filling, no mutation,
+  empty series, malformed input, and the composed producer-to-range path.
+  They validate the Go translation against the pseudocode only; no
+  original-runtime differential was captured.
+
+Limits
+
+This ports the cleanup/normalization after the state arrays have been
+populated. `FUN_1002e990` table matching, the source-row and byte-coordinate
+producers, and the event arrays for modes 3, 4, and 7 remain explicit inputs.
+Do not interpret the opaque mode indexes as semantic labels.

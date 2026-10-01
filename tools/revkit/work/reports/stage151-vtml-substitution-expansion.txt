@@ -1,0 +1,27 @@
+Stage 151: bounded VTML substitution expansion
+
+Runtime evidence
+
+- The Stage 16 report records `<vtml_sub alias="Hello world.">x</vtml_sub>`
+  producing a WAVE byte-identical to the plain `Hello world.` input under text
+  formats 0, 4, 6, and 8. The `x` control produced a different WAVE.
+- This establishes alias expansion for that captured ASCII fixture only. It
+  does not establish general VTML parsing, attribute order, escaping, nested
+  markup, malformed-input behavior, or source-coordinate mapping.
+
+Ported behavior
+
+- `text.ExpandPaul2013CapturedVTMLSubstitutions` replaces the body of the
+  exact `<vtml_sub alias="...">surface</vtml_sub>` shape with its printable
+  ASCII alias and preserves surrounding plain text.
+- The helper rejects other markup, extra attributes, nested body markup,
+  empty aliases, and aliases with non-ASCII or XML-escaped characters.
+- Tests cover the captured form, surrounding text, multiple tags, and the
+  fail-closed cases. Expansion returns text only; callers that need source
+  spans must supply their own mapping.
+
+Limits
+
+- No new DLL differential was run. No claim is made for attribute escapes,
+  alternative attribute order/case, nested substitutions, or audio output
+  beyond the Stage 16 fixture.

@@ -1,0 +1,49 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-plain-crosswalk-transition-path-v3/adapted-transition-path-gdb.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023350
+Wine-gdb> >>>>> > >  >  >  >  >  >  >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10018c80
+Wine-gdb> >>>> > > > > > > >  >  >  > > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 6 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 7 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 8 at 0x10024808
+Temporary breakpoint 9 at 0x10024271
+Temporary breakpoint 10 at 0x10024808
+Temporary breakpoint 11 at 0x10024271
+TRANSITION_PATH_CUTOFF_OVERRIDE slot=1 sum=9
+Temporary breakpoint 12 at 0x10024808
+Temporary breakpoint 13 at 0x10024271
+TRANSITION_PATH_CUTOFF_OVERRIDE slot=2 sum=5
+Temporary breakpoint 14 at 0x10024808
+Temporary breakpoint 15 at 0x10024271
+TRANSITION_PATH_CUTOFF_OVERRIDE slot=3 sum=6
+Temporary breakpoint 16 at 0x100249d5
+RANK_RETURN context=0 count=30 rows=63(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 2525(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 3756(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 5218(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 6208(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 13531(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 18378(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 19888(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 20499(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 22451(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 25895(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 28430(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 31347(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 31795(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 32995(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 50118(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 51310(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 179388(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 1200(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 52542(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 92183(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 97386(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 99833(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 100016(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 100640(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 111587(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 113167(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 116320(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 129641(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 146049(score=9.6,rank=9.6,span=1,weighted=0,flags=0x1) 
+Temporary breakpoint 17 at 0x100248ce
+RANK_RETURN context=1 count=9 rows=13942(score=26.7912,rank=-1,span=1,weighted=0,flags=0x1) 36540(score=25.3183,rank=-1,span=1,weighted=0,flags=0x1) 53487(score=25.7438,rank=-1,span=1,weighted=0,flags=0x1) 96599(score=27.2546,rank=-1,span=1,weighted=0,flags=0x1) 264072(score=27.1761,rank=-1,span=1,weighted=0,flags=0x1) 268760(score=26.445,rank=-1,span=1,weighted=0,flags=0x1) 272152(score=27.131,rank=-1,span=1,weighted=0,flags=0x1) 272823(score=26.5764,rank=-1,span=1,weighted=0,flags=0x1) 273370(score=24.9582,rank=-1,span=1,weighted=0,flags=0x1) 
+TRANSITION_LISTS context=1 current_count=9 current=13942 36540 53487 96599 264072 268760 272152 272823 273370 previous_count=30 previous=63 2525 3756 5218 6208 13531 18378 19888 20499 22451 25895 28430 31347 31795 32995 50118 51310 179388 1200 52542 92183 97386 99833 100016 100640 111587 113167 116320 129641 146049 
+TRANSITION_EDGE context=1 current=272823 previous=179388 feature=7.14071 divisor=1 penalty=0 previous_path=4.8 local=13.2882 total=25.2289
+TRANSITION_EDGE context=1 current=272823 previous=52542 feature=20.0432 divisor=1 penalty=0 previous_path=4.8 local=13.2882 total=38.1314
+TRANSITION_EDGE context=1 current=273370 previous=179388 feature=20.7602 divisor=1 penalty=0 previous_path=4.8 local=12.4791 total=38.0393
+TRANSITION_EDGE context=1 current=273370 previous=52542 feature=6.51719 divisor=1 penalty=0 previous_path=4.8 local=12.4791 total=23.7963
+Temporary breakpoint 18 at 0x100248ce
+RANK_RETURN context=2 count=5 rows=13943(score=135.966,rank=-1,span=1,weighted=0,flags=0x1) 264073(score=142.332,rank=-1,span=1,weighted=0,flags=0x1) 272153(score=146.743,rank=-1,span=1,weighted=0,flags=0x1) 272824(score=173.792,rank=-1,span=1,weighted=0,flags=0x1) 273371(score=136.48,rank=-1,span=1,weighted=0,flags=0x1) 
+TRANSITION_LISTS context=2 current_count=5 current=13943 264073 272153 272824 273371 previous_count=9 previous=13942 36540 53487 96599 264072 268760 272152 272823 273370 
+TRANSITION_EDGE context=2 current=272824 previous=272823 feature=2 divisor=1 penalty=0 previous_path=25.2289 local=86.8958 total=114.125
+TRANSITION_EDGE context=2 current=272824 previous=273370 feature=56.9509 divisor=1 penalty=10 previous_path=23.7963 local=86.8958 total=177.643
+TRANSITION_EDGE context=2 current=273371 previous=272823 feature=56.9509 divisor=1 penalty=10 previous_path=25.2289 local=68.2398 total=160.42
+TRANSITION_EDGE context=2 current=273371 previous=273370 feature=2 divisor=1 penalty=0 previous_path=23.7963 local=68.2398 total=94.0361
+Temporary breakpoint 19 at 0x100248ce
+RANK_RETURN context=3 count=6 rows=1869(score=78.25,rank=-1,span=1,weighted=0,flags=0x1) 5170(score=74.5,rank=-1,span=1,weighted=0,flags=0x1) 246677(score=74.5,rank=-1,span=1,weighted=0,flags=0x1) 255282(score=74,rank=-1,span=1,weighted=0,flags=0x1) 264074(score=75.25,rank=-1,span=1,weighted=0,flags=0x1) 272825(score=71.25,rank=-1,span=1,weighted=0,flags=0x1) 
+TRANSITION_LISTS context=3 current_count=6 current=1869 5170 246677 255282 264074 272825 previous_count=5 previous=13943 264073 272153 272824 273371 
+TRANSITION_EDGE context=3 current=255282 previous=272824 feature=70.7129 divisor=1 penalty=0 previous_path=114.125 local=37 total=221.838
+TRANSITION_EDGE context=3 current=255282 previous=273371 feature=6.39509 divisor=1 penalty=0 previous_path=94.0361 local=37 total=137.431
+TRANSITION_EDGE context=3 current=272825 previous=272824 feature=2 divisor=1 penalty=0 previous_path=114.125 local=35.625 total=151.75
+TRANSITION_EDGE context=3 current=272825 previous=273371 feature=59.1905 divisor=1 penalty=0 previous_path=94.0361 local=35.625 total=188.852
+TRANSITION_PATH_SELECTED n=1 id=52542
+TRANSITION_PATH_SELECTED n=2 id=273370
+TRANSITION_PATH_SELECTED n=3 id=273371
+TRANSITION_PATH_SELECTED n=4 id=255282
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

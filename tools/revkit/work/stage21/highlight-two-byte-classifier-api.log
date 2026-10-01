@@ -1,0 +1,234 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>> > > > >  >  >  >  >  >  >  >  >  > > > >>>>Wine-gdb> Wine-gdb> Continuing.
+CLASSIFIER_ROW lead=00 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=01 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=02 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=03 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=04 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=05 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=06 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=07 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=08 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=09 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=0a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=0b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=0c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=0d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=0e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=0f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=10 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=11 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=12 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=13 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=14 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=15 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=16 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=17 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=18 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=19 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=1a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=1b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=1c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=1d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=1e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=1f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=20 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=21 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=22 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=23 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=24 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=25 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=26 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=27 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=28 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=29 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=2a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=2b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=2c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=2d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=2e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=2f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=30 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=31 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=32 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=33 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=34 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=35 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=36 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=37 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=38 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=39 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=3a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=3b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=3c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=3d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=3e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=3f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=40 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=41 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=42 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=43 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=44 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=45 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=46 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=47 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=48 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=49 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=4a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=4b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=4c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=4d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=4e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=4f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=50 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=51 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=52 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=53 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=54 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=55 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=56 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=57 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=58 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=59 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=5a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=5b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=5c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=5d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=5e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=5f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=60 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=61 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=62 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=63 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=64 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=65 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=66 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=67 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=68 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=69 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=6a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=6b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=6c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=6d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=6e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=6f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=70 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=71 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=72 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=73 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=74 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=75 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=76 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=77 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=78 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=79 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=7a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=7b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=7c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=7d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=7e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=7f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=80 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=81 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=82 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=83 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=84 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=85 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=86 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=87 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=88 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=89 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=8a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=8b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=8c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=8d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=8e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=8f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=90 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=91 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=92 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=93 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=94 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=95 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=96 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=97 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=98 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=99 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=9a accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=9b accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=9c accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=9d accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=9e accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=9f accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=a0 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=a1 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a2 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a3 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a4 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a5 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a6 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a7 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a8 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=a9 accepted=94 digest=63157777
+CLASSIFIER_ROW lead=aa accepted=94 digest=63157777
+CLASSIFIER_ROW lead=ab accepted=94 digest=63157777
+CLASSIFIER_ROW lead=ac accepted=94 digest=63157777
+CLASSIFIER_ROW lead=ad accepted=94 digest=63157777
+CLASSIFIER_ROW lead=ae accepted=34 digest=d1cac263
+CLASSIFIER_ROW lead=af accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b0 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b1 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b2 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b3 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b4 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b5 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b6 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b7 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b8 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=b9 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=ba accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=bb accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=bc accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=bd accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=be accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=bf accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c0 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c1 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c2 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c3 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c4 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c5 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c6 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c7 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c8 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=c9 accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=ca accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=cb accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=cc accepted=0 digest=e6a1d1c5
+CLASSIFIER_ROW lead=cd accepted=0 digest=e6a1d1c5
+X connection to :99 broken (explicit kill or server shutdown).
+Remote communication error.  Target disconnected: error while reading: Connection reset by peer.X connection to :99 broken (explicit kill or server shutdown).
+

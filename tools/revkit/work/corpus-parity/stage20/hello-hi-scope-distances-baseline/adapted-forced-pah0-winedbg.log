@@ -1,0 +1,410 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/hello-hi-scope-distances-baseline/live-scope-distances.gdb.log.
+Copying debug output to /work/corpus-parity/stage20/hello-hi-scope-distances-baseline/live-scope-distances.gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10023c70
+Breakpoint 2 at 0x10023a70
+Breakpoint 3 at 0x10023d14
+Hardware assisted breakpoint 4 at 0x408187
+HELLO_SCOPE_DISTANCE n=1 query=5a2217a000 width=1 class=32927 key=5a220a1e00 score=1600
+HELLO_SCOPE_DISTANCE n=2 query=5a2217a000 width=1 class=32925 key=5a22041e00 score=1600
+HELLO_SCOPE_DISTANCE n=3 query=5a2217a000 width=1 class=32928 key=5a22171e00 score=1560
+HELLO_SCOPE_DISTANCE n=4 query=5a2217a000 width=1 class=32924 key=5a22011e00 score=1600
+HELLO_SCOPE_DISTANCE n=5 query=5a2217a000 width=1 class=32926 key=5a22071e00 score=1600
+HELLO_SCOPE_DISTANCE n=6 query=5a2217a000 width=1 class=32934 key=5a223b1e00 score=1600
+HELLO_SCOPE_DISTANCE n=7 query=5a2217a000 width=1 class=32929 key=5a22231e00 score=1600
+HELLO_SCOPE_DISTANCE n=8 query=5a2217a000 width=1 class=32932 key=5a222f1e00 score=1600
+HELLO_SCOPE_DISTANCE n=9 query=5a2217a000 width=1 class=32933 key=5a22361e00 score=1620
+HELLO_SCOPE_DISTANCE n=10 query=5a2217a000 width=1 class=32936 key=5a22431e00 score=1620
+HELLO_SCOPE_DISTANCE n=11 query=5a2217a000 width=1 class=32935 key=5a22421e00 score=1620
+HELLO_SCOPE_DISTANCE n=12 query=5a2217a000 width=1 class=32930 key=5a222b1e00 score=1620
+HELLO_SCOPE_DISTANCE n=13 query=5a2217a000 width=2 class=3743 key=0d22040000 score=760
+HELLO_SCOPE_DISTANCE n=14 query=5a2217a000 width=2 class=14618 key=2322040000 score=760
+HELLO_SCOPE_DISTANCE n=15 query=5a2217a000 width=2 class=1610 key=0722040000 score=760
+HELLO_SCOPE_DISTANCE n=16 query=5a2217a000 width=2 class=10551 key=1a22040000 score=760
+HELLO_SCOPE_DISTANCE n=17 query=5a2217a000 width=2 class=5081 key=1022040000 score=760
+HELLO_SCOPE_DISTANCE n=18 query=5a2217a000 width=2 class=21350 key=2d22040000 score=760
+HELLO_SCOPE_DISTANCE n=19 query=5a2217a000 width=2 class=19974 key=2c22040000 score=760
+HELLO_SCOPE_DISTANCE n=20 query=5a2217a000 width=2 class=22537 key=2e22040000 score=760
+HELLO_SCOPE_DISTANCE n=21 query=5a2217a000 width=2 class=26090 key=3922040000 score=760
+HELLO_SCOPE_DISTANCE n=22 query=5a2217a000 width=2 class=3749 key=0d22170000 score=620
+HELLO_SCOPE_DISTANCE n=23 query=5a2217a000 width=2 class=14625 key=2322170000 score=620
+HELLO_SCOPE_DISTANCE n=24 query=5a2217a000 width=2 class=1616 key=0722170000 score=620
+HELLO_SCOPE_DISTANCE n=25 query=5a2217a000 width=2 class=10557 key=1a22170000 score=620
+HELLO_SCOPE_DISTANCE n=26 query=5a2217a000 width=2 class=18449 key=2b22170000 score=620
+HELLO_SCOPE_DISTANCE n=27 query=5a2217a000 width=2 class=21358 key=2d22170000 score=620
+HELLO_SCOPE_DISTANCE n=28 query=5a2217a000 width=2 class=19981 key=2c22170000 score=620
+HELLO_SCOPE_DISTANCE n=29 query=5a2217a000 width=2 class=8028 key=1522170000 score=620
+HELLO_SCOPE_DISTANCE n=30 query=5a2217a000 width=2 class=24286 key=3722170000 score=620
+HELLO_SCOPE_DISTANCE n=31 query=5a2217a000 width=2 class=23206 key=3522170000 score=620
+HELLO_SCOPE_DISTANCE n=32 query=5a2217a000 width=2 class=26096 key=3922170000 score=620
+HELLO_SCOPE_DISTANCE n=33 query=5a2217a000 width=2 class=3744 key=0d22040a00 score=760
+HELLO_SCOPE_DISTANCE n=34 query=5a2217a000 width=2 class=14619 key=2322040a00 score=760
+HELLO_SCOPE_DISTANCE n=35 query=5a2217a000 width=2 class=27549 key=3b22040a00 score=760
+HELLO_SCOPE_DISTANCE n=36 query=5a2217a000 width=2 class=10552 key=1a22040a00 score=760
+HELLO_SCOPE_DISTANCE n=37 query=5a2217a000 width=2 class=5082 key=1022040a00 score=760
+HELLO_SCOPE_DISTANCE n=38 query=5a2217a000 width=2 class=19975 key=2c22040a00 score=760
+HELLO_SCOPE_DISTANCE n=39 query=5a2217a000 width=2 class=21351 key=2d22040a00 score=760
+HELLO_SCOPE_DISTANCE n=40 query=5a2217a000 width=2 class=18445 key=2b22040a00 score=760
+HELLO_SCOPE_DISTANCE n=41 query=5a2217a000 width=2 class=8022 key=1522040a00 score=760
+HELLO_SCOPE_DISTANCE n=42 query=5a2217a000 width=2 class=30150 key=4422040a00 score=760
+HELLO_SCOPE_DISTANCE n=43 query=5a2217a000 width=2 class=32501 key=4e22040a00 score=760
+HELLO_SCOPE_DISTANCE n=44 query=5a2217a000 width=2 class=32220 key=4d22040a00 score=760
+HELLO_SCOPE_DISTANCE n=45 query=5a2217a000 width=2 class=24281 key=3722040a00 score=760
+HELLO_SCOPE_DISTANCE n=46 query=5a2217a000 width=2 class=26091 key=3922040a00 score=760
+HELLO_SCOPE_DISTANCE n=47 query=5a2217a000 width=2 class=27554 key=3b22170a00 score=620
+HELLO_SCOPE_DISTANCE n=48 query=5a2217a000 width=2 class=3745 key=0d22041400 score=760
+HELLO_SCOPE_DISTANCE n=49 query=5a2217a000 width=2 class=14620 key=2322041400 score=760
+HELLO_SCOPE_DISTANCE n=50 query=5a2217a000 width=2 class=27550 key=3b22041400 score=760
+HELLO_SCOPE_DISTANCE n=51 query=5a2217a000 width=2 class=1611 key=0722041400 score=760
+HELLO_SCOPE_DISTANCE n=52 query=5a2217a000 width=2 class=10553 key=1a22041400 score=760
+HELLO_SCOPE_DISTANCE n=53 query=5a2217a000 width=2 class=5083 key=1022041400 score=760
+HELLO_SCOPE_DISTANCE n=54 query=5a2217a000 width=2 class=21352 key=2d22041400 score=760
+HELLO_SCOPE_DISTANCE n=55 query=5a2217a000 width=2 class=22538 key=2e22041400 score=760
+HELLO_SCOPE_DISTANCE n=56 query=5a2217a000 width=2 class=19976 key=2c22041400 score=760
+HELLO_SCOPE_DISTANCE n=57 query=5a2217a000 width=2 class=18446 key=2b22041400 score=760
+HELLO_SCOPE_DISTANCE n=58 query=5a2217a000 width=2 class=8023 key=1522041400 score=760
+HELLO_SCOPE_DISTANCE n=59 query=5a2217a000 width=2 class=12871 key=2122041400 score=760
+HELLO_SCOPE_DISTANCE n=60 query=5a2217a000 width=2 class=6391 key=1322041400 score=760
+HELLO_SCOPE_DISTANCE n=61 query=5a2217a000 width=2 class=28855 key=4122041400 score=760
+HELLO_SCOPE_DISTANCE n=62 query=5a2217a000 width=2 class=30151 key=4422041400 score=760
+HELLO_SCOPE_DISTANCE n=63 query=5a2217a000 width=2 class=16231 key=2922041400 score=760
+HELLO_SCOPE_DISTANCE n=64 query=5a2217a000 width=2 class=26907 key=3a22041400 score=760
+HELLO_SCOPE_DISTANCE n=65 query=5a2217a000 width=2 class=7083 key=1422041400 score=760
+HELLO_SCOPE_DISTANCE n=66 query=5a2217a000 width=2 class=26092 key=3922041400 score=760
+HELLO_SCOPE_DISTANCE n=67 query=5a2217a000 width=2 class=25342 key=3822041400 score=760
+HELLO_SCOPE_DISTANCE n=68 query=5a2217a000 width=2 class=12215 key=2022041400 score=760
+HELLO_SCOPE_DISTANCE n=69 query=5a2217a000 width=2 class=24282 key=3722041400 score=760
+HELLO_SCOPE_DISTANCE n=70 query=5a2217a000 width=2 class=23203 key=3522041400 score=760
+HELLO_SCOPE_DISTANCE n=71 query=5a2217a000 width=2 class=17012 key=2a22041400 score=760
+HELLO_SCOPE_DISTANCE n=72 query=5a2217a000 width=2 class=3750 key=0d22171400 score=620
+HELLO_SCOPE_DISTANCE n=73 query=5a2217a000 width=2 class=14626 key=2322171400 score=620
+HELLO_SCOPE_DISTANCE n=74 query=5a2217a000 width=2 class=1617 key=0722171400 score=620
+HELLO_SCOPE_DISTANCE n=75 query=5a2217a000 width=2 class=27555 key=3b22171400 score=620
+HELLO_SCOPE_DISTANCE n=76 query=5a2217a000 width=2 class=10558 key=1a22171400 score=620
+HELLO_SCOPE_DISTANCE n=77 query=5a2217a000 width=2 class=5085 key=1022171400 score=620
+HELLO_SCOPE_DISTANCE n=78 query=5a2217a000 width=2 class=22544 key=2e22171400 score=620
+HELLO_SCOPE_DISTANCE n=79 query=5a2217a000 width=2 class=21359 key=2d22171400 score=620
+HELLO_SCOPE_DISTANCE n=80 query=5a2217a000 width=2 class=19982 key=2c22171400 score=620
+HELLO_SCOPE_DISTANCE n=81 query=5a2217a000 width=2 class=18450 key=2b22171400 score=620
+HELLO_SCOPE_DISTANCE n=82 query=5a2217a000 width=2 class=8029 key=1522171400 score=620
+HELLO_SCOPE_DISTANCE n=83 query=5a2217a000 width=2 class=12873 key=2122171400 score=620
+HELLO_SCOPE_DISTANCE n=84 query=5a2217a000 width=2 class=6394 key=1322171400 score=620
+HELLO_SCOPE_DISTANCE n=85 query=5a2217a000 width=2 class=28859 key=4122171400 score=620
+HELLO_SCOPE_DISTANCE n=86 query=5a2217a000 width=2 class=30155 key=4422171400 score=620
+HELLO_SCOPE_DISTANCE n=87 query=5a2217a000 width=2 class=16234 key=2922171400 score=620
+HELLO_SCOPE_DISTANCE n=88 query=5a2217a000 width=2 class=24287 key=3722171400 score=620
+HELLO_SCOPE_DISTANCE n=89 query=5a2217a000 width=2 class=26909 key=3a22171400 score=620
+HELLO_SCOPE_DISTANCE n=90 query=5a2217a000 width=2 class=12218 key=2022171400 score=620
+HELLO_SCOPE_DISTANCE n=91 query=5a2217a000 width=2 class=26097 key=3922171400 score=620
+HELLO_SCOPE_DISTANCE n=92 query=5a2217a000 width=2 class=25343 key=3822171400 score=620
+HELLO_SCOPE_DISTANCE n=93 query=5a2217a000 width=2 class=23207 key=3522171400 score=620
+HELLO_SCOPE_DISTANCE n=94 query=5a2217a000 width=2 class=17016 key=2a22171400 score=620
+HELLO_SCOPE_DISTANCE n=95 query=5a2217a000 width=2 class=32925 key=5a22041e00 score=700
+HELLO_SCOPE_DISTANCE n=96 query=5a2217a000 width=2 class=32928 key=5a22171e00 score=560
+HELLO_SCOPE_DISTANCE n=97 query=5a22179800 width=2 class=3743 key=0d22040000 score=760
+HELLO_SCOPE_DISTANCE n=98 query=5a22179800 width=2 class=14618 key=2322040000 score=760
+HELLO_SCOPE_DISTANCE n=99 query=5a22179800 width=2 class=1610 key=0722040000 score=760
+HELLO_SCOPE_DISTANCE n=100 query=5a22179800 width=2 class=10551 key=1a22040000 score=760
+HELLO_SCOPE_DISTANCE n=101 query=5a22179800 width=2 class=5081 key=1022040000 score=760
+HELLO_SCOPE_DISTANCE n=102 query=5a22179800 width=2 class=21350 key=2d22040000 score=760
+HELLO_SCOPE_DISTANCE n=103 query=5a22179800 width=2 class=19974 key=2c22040000 score=760
+HELLO_SCOPE_DISTANCE n=104 query=5a22179800 width=2 class=22537 key=2e22040000 score=760
+HELLO_SCOPE_DISTANCE n=105 query=5a22179800 width=2 class=26090 key=3922040000 score=760
+HELLO_SCOPE_DISTANCE n=106 query=5a22179800 width=2 class=3749 key=0d22170000 score=620
+HELLO_SCOPE_DISTANCE n=107 query=5a22179800 width=2 class=14625 key=2322170000 score=620
+HELLO_SCOPE_DISTANCE n=108 query=5a22179800 width=2 class=1616 key=0722170000 score=620
+HELLO_SCOPE_DISTANCE n=109 query=5a22179800 width=2 class=10557 key=1a22170000 score=620
+HELLO_SCOPE_DISTANCE n=110 query=5a22179800 width=2 class=18449 key=2b22170000 score=620
+HELLO_SCOPE_DISTANCE n=111 query=5a22179800 width=2 class=21358 key=2d22170000 score=620
+HELLO_SCOPE_DISTANCE n=112 query=5a22179800 width=2 class=19981 key=2c22170000 score=620
+HELLO_SCOPE_DISTANCE n=113 query=5a22179800 width=2 class=8028 key=1522170000 score=620
+HELLO_SCOPE_DISTANCE n=114 query=5a22179800 width=2 class=24286 key=3722170000 score=620
+HELLO_SCOPE_DISTANCE n=115 query=5a22179800 width=2 class=23206 key=3522170000 score=620
+HELLO_SCOPE_DISTANCE n=116 query=5a22179800 width=2 class=26096 key=3922170000 score=620
+HELLO_SCOPE_DISTANCE n=117 query=5a22179800 width=2 class=3744 key=0d22040a00 score=760
+HELLO_SCOPE_DISTANCE n=118 query=5a22179800 width=2 class=14619 key=2322040a00 score=760
+HELLO_SCOPE_DISTANCE n=119 query=5a22179800 width=2 class=27549 key=3b22040a00 score=760
+HELLO_SCOPE_DISTANCE n=120 query=5a22179800 width=2 class=10552 key=1a22040a00 score=760
+HELLO_SCOPE_DISTANCE n=121 query=5a22179800 width=2 class=5082 key=1022040a00 score=760
+HELLO_SCOPE_DISTANCE n=122 query=5a22179800 width=2 class=19975 key=2c22040a00 score=760
+HELLO_SCOPE_DISTANCE n=123 query=5a22179800 width=2 class=21351 key=2d22040a00 score=760
+HELLO_SCOPE_DISTANCE n=124 query=5a22179800 width=2 class=18445 key=2b22040a00 score=760
+HELLO_SCOPE_DISTANCE n=125 query=5a22179800 width=2 class=8022 key=1522040a00 score=760
+HELLO_SCOPE_DISTANCE n=126 query=5a22179800 width=2 class=30150 key=4422040a00 score=760
+HELLO_SCOPE_DISTANCE n=127 query=5a22179800 width=2 class=32501 key=4e22040a00 score=760
+HELLO_SCOPE_DISTANCE n=128 query=5a22179800 width=2 class=32220 key=4d22040a00 score=760
+HELLO_SCOPE_DISTANCE n=129 query=5a22179800 width=2 class=24281 key=3722040a00 score=760
+HELLO_SCOPE_DISTANCE n=130 query=5a22179800 width=2 class=26091 key=3922040a00 score=760
+HELLO_SCOPE_DISTANCE n=131 query=5a22179800 width=2 class=27554 key=3b22170a00 score=620
+HELLO_SCOPE_DISTANCE n=132 query=5a22179800 width=2 class=3745 key=0d22041400 score=760
+HELLO_SCOPE_DISTANCE n=133 query=5a22179800 width=2 class=14620 key=2322041400 score=760
+HELLO_SCOPE_DISTANCE n=134 query=5a22179800 width=2 class=27550 key=3b22041400 score=760
+HELLO_SCOPE_DISTANCE n=135 query=5a22179800 width=2 class=1611 key=0722041400 score=760
+HELLO_SCOPE_DISTANCE n=136 query=5a22179800 width=2 class=10553 key=1a22041400 score=760
+HELLO_SCOPE_DISTANCE n=137 query=5a22179800 width=2 class=5083 key=1022041400 score=760
+HELLO_SCOPE_DISTANCE n=138 query=5a22179800 width=2 class=21352 key=2d22041400 score=760
+HELLO_SCOPE_DISTANCE n=139 query=5a22179800 width=2 class=22538 key=2e22041400 score=760
+HELLO_SCOPE_DISTANCE n=140 query=5a22179800 width=2 class=19976 key=2c22041400 score=760
+HELLO_SCOPE_DISTANCE n=141 query=5a22179800 width=2 class=18446 key=2b22041400 score=760
+HELLO_SCOPE_DISTANCE n=142 query=5a22179800 width=2 class=8023 key=1522041400 score=760
+HELLO_SCOPE_DISTANCE n=143 query=5a22179800 width=2 class=12871 key=2122041400 score=760
+HELLO_SCOPE_DISTANCE n=144 query=5a22179800 width=2 class=6391 key=1322041400 score=760
+HELLO_SCOPE_DISTANCE n=145 query=5a22179800 width=2 class=28855 key=4122041400 score=760
+HELLO_SCOPE_DISTANCE n=146 query=5a22179800 width=2 class=30151 key=4422041400 score=760
+HELLO_SCOPE_DISTANCE n=147 query=5a22179800 width=2 class=16231 key=2922041400 score=760
+HELLO_SCOPE_DISTANCE n=148 query=5a22179800 width=2 class=26907 key=3a22041400 score=760
+HELLO_SCOPE_DISTANCE n=149 query=5a22179800 width=2 class=7083 key=1422041400 score=760
+HELLO_SCOPE_DISTANCE n=150 query=5a22179800 width=2 class=26092 key=3922041400 score=760
+HELLO_SCOPE_DISTANCE n=151 query=5a22179800 width=2 class=25342 key=3822041400 score=760
+HELLO_SCOPE_DISTANCE n=152 query=5a22179800 width=2 class=12215 key=2022041400 score=760
+HELLO_SCOPE_DISTANCE n=153 query=5a22179800 width=2 class=24282 key=3722041400 score=760
+HELLO_SCOPE_DISTANCE n=154 query=5a22179800 width=2 class=23203 key=3522041400 score=760
+HELLO_SCOPE_DISTANCE n=155 query=5a22179800 width=2 class=17012 key=2a22041400 score=760
+HELLO_SCOPE_DISTANCE n=156 query=5a22179800 width=2 class=3750 key=0d22171400 score=620
+HELLO_SCOPE_DISTANCE n=157 query=5a22179800 width=2 class=14626 key=2322171400 score=620
+HELLO_SCOPE_DISTANCE n=158 query=5a22179800 width=2 class=1617 key=0722171400 score=620
+HELLO_SCOPE_DISTANCE n=159 query=5a22179800 width=2 class=27555 key=3b22171400 score=620
+HELLO_SCOPE_DISTANCE n=160 query=5a22179800 width=2 class=10558 key=1a22171400 score=620
+HELLO_SCOPE_DISTANCE n=161 query=5a22179800 width=2 class=5085 key=1022171400 score=620
+HELLO_SCOPE_DISTANCE n=162 query=5a22179800 width=2 class=22544 key=2e22171400 score=620
+HELLO_SCOPE_DISTANCE n=163 query=5a22179800 width=2 class=21359 key=2d22171400 score=620
+HELLO_SCOPE_DISTANCE n=164 query=5a22179800 width=2 class=19982 key=2c22171400 score=620
+HELLO_SCOPE_DISTANCE n=165 query=5a22179800 width=2 class=18450 key=2b22171400 score=620
+HELLO_SCOPE_DISTANCE n=166 query=5a22179800 width=2 class=8029 key=1522171400 score=620
+HELLO_SCOPE_DISTANCE n=167 query=5a22179800 width=2 class=12873 key=2122171400 score=620
+HELLO_SCOPE_DISTANCE n=168 query=5a22179800 width=2 class=6394 key=1322171400 score=620
+HELLO_SCOPE_DISTANCE n=169 query=5a22179800 width=2 class=28859 key=4122171400 score=620
+HELLO_SCOPE_DISTANCE n=170 query=5a22179800 width=2 class=30155 key=4422171400 score=620
+HELLO_SCOPE_DISTANCE n=171 query=5a22179800 width=2 class=16234 key=2922171400 score=620
+HELLO_SCOPE_DISTANCE n=172 query=5a22179800 width=2 class=24287 key=3722171400 score=620
+HELLO_SCOPE_DISTANCE n=173 query=5a22179800 width=2 class=26909 key=3a22171400 score=620
+HELLO_SCOPE_DISTANCE n=174 query=5a22179800 width=2 class=12218 key=2022171400 score=620
+HELLO_SCOPE_DISTANCE n=175 query=5a22179800 width=2 class=26097 key=3922171400 score=620
+HELLO_SCOPE_DISTANCE n=176 query=5a22179800 width=2 class=25343 key=3822171400 score=620
+HELLO_SCOPE_DISTANCE n=177 query=5a22179800 width=2 class=23207 key=3522171400 score=620
+HELLO_SCOPE_DISTANCE n=178 query=5a22179800 width=2 class=17016 key=2a22171400 score=620
+HELLO_SCOPE_DISTANCE n=179 query=5a22179800 width=2 class=32925 key=5a22041e00 score=650
+HELLO_SCOPE_DISTANCE n=180 query=5a22179800 width=2 class=32928 key=5a22171e00 score=510
+HELLO_SCOPE_DISTANCE n=181 query=2b305a4500 width=1 class=18823 key=2b30230000 score=620
+HELLO_SCOPE_DISTANCE n=182 query=2b305a4500 width=1 class=18804 key=2b30070000 score=620
+HELLO_SCOPE_DISTANCE n=183 query=2b305a4500 width=1 class=18802 key=2b30010000 score=620
+HELLO_SCOPE_DISTANCE n=184 query=2b305a4500 width=1 class=18839 key=2b30360000 score=620
+HELLO_SCOPE_DISTANCE n=185 query=2b305a4500 width=1 class=18833 key=2b302d0000 score=620
+HELLO_SCOPE_DISTANCE n=186 query=2b305a4500 width=1 class=18831 key=2b302c0000 score=620
+HELLO_SCOPE_DISTANCE n=187 query=2b305a4500 width=1 class=18828 key=2b302b0000 score=620
+HELLO_SCOPE_DISTANCE n=188 query=2b305a4500 width=1 class=18821 key=2b30220000 score=620
+HELLO_SCOPE_DISTANCE n=189 query=2b305a4500 width=1 class=18853 key=2b304d0000 score=620
+HELLO_SCOPE_DISTANCE n=190 query=2b305a4500 width=1 class=18851 key=2b30440000 score=620
+HELLO_SCOPE_DISTANCE n=191 query=2b305a4500 width=1 class=18846 key=2b30410000 score=620
+HELLO_SCOPE_DISTANCE n=192 query=2b305a4500 width=1 class=18820 key=2b30210000 score=620
+HELLO_SCOPE_DISTANCE n=193 query=2b305a4500 width=1 class=18811 key=2b30160000 score=620
+HELLO_SCOPE_DISTANCE n=194 query=2b305a4500 width=1 class=18808 key=2b30150000 score=620
+HELLO_SCOPE_DISTANCE n=195 query=2b305a4500 width=1 class=18806 key=2b30130000 score=620
+HELLO_SCOPE_DISTANCE n=196 query=2b305a4500 width=1 class=18841 key=2b30370000 score=620
+HELLO_SCOPE_DISTANCE n=197 query=2b305a4500 width=1 class=18835 key=2b30350000 score=620
+HELLO_SCOPE_DISTANCE n=198 query=2b305a4500 width=1 class=18827 key=2b302a0000 score=620
+HELLO_SCOPE_DISTANCE n=199 query=2b305a4500 width=1 class=18825 key=2b30290000 score=620
+HELLO_SCOPE_DISTANCE n=200 query=2b305a4500 width=1 class=18817 key=2b30200000 score=620
+HELLO_SCOPE_DISTANCE n=201 query=2b305a4500 width=1 class=18807 key=2b30140000 score=620
+HELLO_SCOPE_DISTANCE n=202 query=2b305a4500 width=1 class=18824 key=2b30230100 score=620
+HELLO_SCOPE_DISTANCE n=203 query=2b305a4500 width=1 class=18815 key=2b30170100 score=620
+HELLO_SCOPE_DISTANCE n=204 query=2b305a4500 width=1 class=18805 key=2b30070100 score=620
+HELLO_SCOPE_DISTANCE n=205 query=2b305a4500 width=1 class=18803 key=2b30040100 score=620
+HELLO_SCOPE_DISTANCE n=206 query=2b305a4500 width=1 class=18849 key=2b30430100 score=620
+HELLO_SCOPE_DISTANCE n=207 query=2b305a4500 width=1 class=18813 key=2b30160100 score=620
+HELLO_SCOPE_DISTANCE n=208 query=2b305a4500 width=1 class=18843 key=2b30390100 score=620
+HELLO_SCOPE_DISTANCE n=209 query=2b305a4500 width=1 class=18836 key=2b30350100 score=620
+HELLO_SCOPE_DISTANCE n=210 query=2b305a4500 width=1 class=18816 key=2b30170200 score=620
+HELLO_SCOPE_DISTANCE n=211 query=2b305a4500 width=1 class=18840 key=2b30360200 score=620
+HELLO_SCOPE_DISTANCE n=212 query=2b305a4500 width=1 class=18832 key=2b302c0200 score=620
+HELLO_SCOPE_DISTANCE n=213 query=2b305a4500 width=1 class=18829 key=2b302b0200 score=620
+HELLO_SCOPE_DISTANCE n=214 query=2b305a4500 width=1 class=18822 key=2b30220200 score=620
+HELLO_SCOPE_DISTANCE n=215 query=2b305a4500 width=1 class=18852 key=2b30440200 score=620
+HELLO_SCOPE_DISTANCE n=216 query=2b305a4500 width=1 class=18847 key=2b30410200 score=620
+HELLO_SCOPE_DISTANCE n=217 query=2b305a4500 width=1 class=18814 key=2b30160200 score=620
+HELLO_SCOPE_DISTANCE n=218 query=2b305a4500 width=1 class=18809 key=2b30150200 score=620
+HELLO_SCOPE_DISTANCE n=219 query=2b305a4500 width=1 class=18845 key=2b303a0200 score=620
+HELLO_SCOPE_DISTANCE n=220 query=2b305a4500 width=1 class=18844 key=2b30390200 score=620
+HELLO_SCOPE_DISTANCE n=221 query=2b305a4500 width=1 class=18842 key=2b30370200 score=620
+HELLO_SCOPE_DISTANCE n=222 query=2b305a4500 width=1 class=18837 key=2b30350200 score=620
+HELLO_SCOPE_DISTANCE n=223 query=2b305a4500 width=1 class=18819 key=2b30200200 score=620
+HELLO_SCOPE_DISTANCE n=224 query=2b305a4500 width=1 class=18854 key=2b305a0300 score=560
+HELLO_SCOPE_DISTANCE n=225 query=2b305a4500 width=1 class=18856 key=2b305a0400 score=560
+HELLO_SCOPE_DISTANCE n=226 query=2b305a4500 width=1 class=18858 key=2b305e0500 score=550
+HELLO_SCOPE_DISTANCE n=227 query=2b305a4500 width=1 class=18848 key=2b30410a00 score=620
+HELLO_SCOPE_DISTANCE n=228 query=2b305a4500 width=1 class=18850 key=2b30430b00 score=620
+HELLO_SCOPE_DISTANCE n=229 query=2b305a4500 width=1 class=18834 key=2b302d1400 score=620
+HELLO_SCOPE_DISTANCE n=230 query=2b305a4500 width=1 class=18838 key=2b30351400 score=620
+HELLO_SCOPE_DISTANCE n=231 query=2b305a4500 width=1 class=18830 key=2b302b1600 score=620
+HELLO_SCOPE_DISTANCE n=232 query=2b305a4d00 width=1 class=18823 key=2b30230000 score=620
+HELLO_SCOPE_DISTANCE n=233 query=2b305a4d00 width=1 class=18804 key=2b30070000 score=620
+HELLO_SCOPE_DISTANCE n=234 query=2b305a4d00 width=1 class=18802 key=2b30010000 score=620
+HELLO_SCOPE_DISTANCE n=235 query=2b305a4d00 width=1 class=18839 key=2b30360000 score=620
+HELLO_SCOPE_DISTANCE n=236 query=2b305a4d00 width=1 class=18833 key=2b302d0000 score=620
+HELLO_SCOPE_DISTANCE n=237 query=2b305a4d00 width=1 class=18831 key=2b302c0000 score=620
+HELLO_SCOPE_DISTANCE n=238 query=2b305a4d00 width=1 class=18828 key=2b302b0000 score=620
+HELLO_SCOPE_DISTANCE n=239 query=2b305a4d00 width=1 class=18821 key=2b30220000 score=620
+HELLO_SCOPE_DISTANCE n=240 query=2b305a4d00 width=1 class=18853 key=2b304d0000 score=620
+HELLO_SCOPE_DISTANCE n=241 query=2b305a4d00 width=1 class=18851 key=2b30440000 score=620
+HELLO_SCOPE_DISTANCE n=242 query=2b305a4d00 width=1 class=18846 key=2b30410000 score=620
+HELLO_SCOPE_DISTANCE n=243 query=2b305a4d00 width=1 class=18820 key=2b30210000 score=620
+HELLO_SCOPE_DISTANCE n=244 query=2b305a4d00 width=1 class=18811 key=2b30160000 score=620
+HELLO_SCOPE_DISTANCE n=245 query=2b305a4d00 width=1 class=18808 key=2b30150000 score=620
+HELLO_SCOPE_DISTANCE n=246 query=2b305a4d00 width=1 class=18806 key=2b30130000 score=620
+HELLO_SCOPE_DISTANCE n=247 query=2b305a4d00 width=1 class=18841 key=2b30370000 score=620
+HELLO_SCOPE_DISTANCE n=248 query=2b305a4d00 width=1 class=18835 key=2b30350000 score=620
+HELLO_SCOPE_DISTANCE n=249 query=2b305a4d00 width=1 class=18827 key=2b302a0000 score=620
+HELLO_SCOPE_DISTANCE n=250 query=2b305a4d00 width=1 class=18825 key=2b30290000 score=620
+HELLO_SCOPE_DISTANCE n=251 query=2b305a4d00 width=1 class=18817 key=2b30200000 score=620
+HELLO_SCOPE_DISTANCE n=252 query=2b305a4d00 width=1 class=18807 key=2b30140000 score=620
+HELLO_SCOPE_DISTANCE n=253 query=2b305a4d00 width=1 class=18824 key=2b30230100 score=620
+HELLO_SCOPE_DISTANCE n=254 query=2b305a4d00 width=1 class=18815 key=2b30170100 score=620
+HELLO_SCOPE_DISTANCE n=255 query=2b305a4d00 width=1 class=18805 key=2b30070100 score=620
+HELLO_SCOPE_DISTANCE n=256 query=2b305a4d00 width=1 class=18803 key=2b30040100 score=620
+HELLO_SCOPE_DISTANCE n=257 query=2b305a4d00 width=1 class=18849 key=2b30430100 score=620
+HELLO_SCOPE_DISTANCE n=258 query=2b305a4d00 width=1 class=18813 key=2b30160100 score=620
+HELLO_SCOPE_DISTANCE n=259 query=2b305a4d00 width=1 class=18843 key=2b30390100 score=620
+HELLO_SCOPE_DISTANCE n=260 query=2b305a4d00 width=1 class=18836 key=2b30350100 score=620
+HELLO_SCOPE_DISTANCE n=261 query=2b305a4d00 width=1 class=18816 key=2b30170200 score=620
+HELLO_SCOPE_DISTANCE n=262 query=2b305a4d00 width=1 class=18840 key=2b30360200 score=620
+HELLO_SCOPE_DISTANCE n=263 query=2b305a4d00 width=1 class=18832 key=2b302c0200 score=620
+HELLO_SCOPE_DISTANCE n=264 query=2b305a4d00 width=1 class=18829 key=2b302b0200 score=620
+HELLO_SCOPE_DISTANCE n=265 query=2b305a4d00 width=1 class=18822 key=2b30220200 score=620
+HELLO_SCOPE_DISTANCE n=266 query=2b305a4d00 width=1 class=18852 key=2b30440200 score=620
+HELLO_SCOPE_DISTANCE n=267 query=2b305a4d00 width=1 class=18847 key=2b30410200 score=620
+HELLO_SCOPE_DISTANCE n=268 query=2b305a4d00 width=1 class=18814 key=2b30160200 score=620
+HELLO_SCOPE_DISTANCE n=269 query=2b305a4d00 width=1 class=18809 key=2b30150200 score=620
+HELLO_SCOPE_DISTANCE n=270 query=2b305a4d00 width=1 class=18845 key=2b303a0200 score=620
+HELLO_SCOPE_DISTANCE n=271 query=2b305a4d00 width=1 class=18844 key=2b30390200 score=620
+HELLO_SCOPE_DISTANCE n=272 query=2b305a4d00 width=1 class=18842 key=2b30370200 score=620
+HELLO_SCOPE_DISTANCE n=273 query=2b305a4d00 width=1 class=18837 key=2b30350200 score=620
+HELLO_SCOPE_DISTANCE n=274 query=2b305a4d00 width=1 class=18819 key=2b30200200 score=620
+HELLO_SCOPE_DISTANCE n=275 query=2b305a4d00 width=1 class=18854 key=2b305a0300 score=560
+HELLO_SCOPE_DISTANCE n=276 query=2b305a4d00 width=1 class=18856 key=2b305a0400 score=560
+HELLO_SCOPE_DISTANCE n=277 query=2b305a4d00 width=1 class=18858 key=2b305e0500 score=550
+HELLO_SCOPE_DISTANCE n=278 query=2b305a4d00 width=1 class=18848 key=2b30410a00 score=620
+HELLO_SCOPE_DISTANCE n=279 query=2b305a4d00 width=1 class=18850 key=2b30430b00 score=620
+HELLO_SCOPE_DISTANCE n=280 query=2b305a4d00 width=1 class=18834 key=2b302d1400 score=620
+HELLO_SCOPE_DISTANCE n=281 query=2b305a4d00 width=1 class=18838 key=2b30351400 score=620
+HELLO_SCOPE_DISTANCE n=282 query=2b305a4d00 width=1 class=18830 key=2b302b1600 score=620
+HELLO_SCOPE_DISTANCE n=283 query=2b305a4500 width=2 class=15232 key=23305a1800 score=1620
+HELLO_SCOPE_DISTANCE n=284 query=2b305a4500 width=2 class=11236 key=1a305a1800 score=1620
+HELLO_SCOPE_DISTANCE n=285 query=2b305a4500 width=2 class=5503 key=10305a1800 score=1620
+HELLO_SCOPE_DISTANCE n=286 query=2b305a4500 width=2 class=4183 key=0d305a1800 score=1620
+HELLO_SCOPE_DISTANCE n=287 query=2b305a4500 width=2 class=20259 key=2c305a1800 score=1600
+HELLO_SCOPE_DISTANCE n=288 query=2b305a4500 width=2 class=29098 key=41305a1800 score=1620
+HELLO_SCOPE_DISTANCE n=289 query=2b305a4500 width=2 class=7214 key=14305a1800 score=1620
+HELLO_SCOPE_DISTANCE n=290 query=2b305a4500 width=2 class=12398 key=20305a1800 score=1620
+HELLO_SCOPE_DISTANCE n=291 query=2b305a4500 width=2 class=11231 key=1a305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=292 query=2b305a4500 width=2 class=4180 key=0d305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=293 query=2b305a4500 width=2 class=13732 key=22305a0300 score=1550
+HELLO_SCOPE_DISTANCE n=294 query=2b305a4500 width=2 class=21796 key=2d305a0300 score=1550
+HELLO_SCOPE_DISTANCE n=295 query=2b305a4500 width=2 class=18854 key=2b305a0300 score=1510
+HELLO_SCOPE_DISTANCE n=296 query=2b305a4500 width=2 class=29096 key=41305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=297 query=2b305a4500 width=2 class=13037 key=21305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=298 query=2b305a4500 width=2 class=8900 key=16305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=299 query=2b305a4500 width=2 class=31901 key=4c305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=300 query=2b305a4500 width=2 class=25524 key=38305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=301 query=2b305a4500 width=2 class=24736 key=37305a0300 score=1570
+HELLO_SCOPE_DISTANCE n=302 query=2b305a4500 width=2 class=11232 key=1a305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=303 query=2b305a4500 width=2 class=4181 key=0d305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=304 query=2b305a4500 width=2 class=29450 key=43305a0400 score=1550
+HELLO_SCOPE_DISTANCE n=305 query=2b305a4500 width=2 class=21798 key=2d305a0400 score=1550
+HELLO_SCOPE_DISTANCE n=306 query=2b305a4500 width=2 class=20257 key=2c305a0400 score=1550
+HELLO_SCOPE_DISTANCE n=307 query=2b305a4500 width=2 class=18856 key=2b305a0400 score=1510
+HELLO_SCOPE_DISTANCE n=308 query=2b305a4500 width=2 class=30622 key=45305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=309 query=2b305a4500 width=2 class=6617 key=13305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=310 query=2b305a4500 width=2 class=13038 key=21305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=311 query=2b305a4500 width=2 class=31605 key=48305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=312 query=2b305a4500 width=2 class=8902 key=16305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=313 query=2b305a4500 width=2 class=8333 key=15305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=314 query=2b305a4500 width=2 class=31902 key=4c305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=315 query=2b305a4500 width=2 class=25525 key=38305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=316 query=2b305a4500 width=2 class=12395 key=20305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=317 query=2b305a4500 width=2 class=24738 key=37305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=318 query=2b305a4500 width=2 class=23387 key=35305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=319 query=2b305a4500 width=2 class=17225 key=2a305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=320 query=2b305a4500 width=2 class=16405 key=29305a0400 score=1570
+HELLO_SCOPE_DISTANCE n=321 query=2b305a4500 width=2 class=15230 key=23305a0d00 score=1120
+HELLO_SCOPE_DISTANCE n=322 query=2b305a4500 width=2 class=11237 key=1a305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=323 query=2b305a4500 width=2 class=5504 key=10305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=324 query=2b305a4500 width=2 class=13733 key=22305e0500 score=1190
+HELLO_SCOPE_DISTANCE n=325 query=2b305a4500 width=2 class=21801 key=2d305e0500 score=1190
+HELLO_SCOPE_DISTANCE n=326 query=2b305a4500 width=2 class=18858 key=2b305e0500 score=1150
+HELLO_SCOPE_DISTANCE n=327 query=2b305a4500 width=2 class=29099 key=41305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=328 query=2b305a4500 width=2 class=13040 key=21305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=329 query=2b305a4500 width=2 class=8904 key=16305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=330 query=2b305a4500 width=2 class=31904 key=4c305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=331 query=2b305a4500 width=2 class=25527 key=38305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=332 query=2b305a4500 width=2 class=24741 key=37305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=333 query=2b305a4500 width=2 class=23389 key=35305e0500 score=1210
+HELLO_SCOPE_DISTANCE n=334 query=2b305a4500 width=2 class=27892 key=3b305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=335 query=2b305a4500 width=2 class=15231 key=23305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=336 query=2b305a4500 width=2 class=11234 key=1a305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=337 query=2b305a4500 width=2 class=5502 key=10305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=338 query=2b305a4500 width=2 class=4182 key=0d305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=339 query=2b305a4500 width=2 class=21800 key=2d305a0e00 score=1600
+HELLO_SCOPE_DISTANCE n=340 query=2b305a4500 width=2 class=20258 key=2c305a0e00 score=1600
+HELLO_SCOPE_DISTANCE n=341 query=2b305a4500 width=2 class=32332 key=4d305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=342 query=2b305a4500 width=2 class=7213 key=14305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=343 query=2b305a4500 width=2 class=12397 key=20305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=344 query=2b305a4500 width=2 class=24740 key=37305a0e00 score=1620
+HELLO_SCOPE_DISTANCE n=345 query=2b305a4500 width=2 class=2036 key=07305a1700 score=1620
+HELLO_SCOPE_DISTANCE n=346 query=2b305a4500 width=2 class=11235 key=1a305a1700 score=1620
+HELLO_SCOPE_DISTANCE n=347 query=2b305a4500 width=2 class=22690 key=2e305a1700 score=1600
+HELLO_SCOPE_DISTANCE n=348 query=2b305a4500 width=2 class=26319 key=39305a1700 score=1620
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78A80000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78A00000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

@@ -1,0 +1,45 @@
+Wine-gdb> Already logging to /probe/stage20/hi-plain-2006-query-key-trace.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001dfb0
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001da80
+Wine-gdb> >>> > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_PLAIN_2006_QUERY_TRACE_READY
+HI_PLAIN_2006_SPLIT_ENTER slot=0
+Hardware assisted breakpoint 4 at 0x1001e621
+HI_PLAIN_2006_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	34	17	30	30
+Hardware assisted breakpoint 5 at 0x1001e012
+HI_PLAIN_2006_CLASS_RETURN slot=0 mode=1 appended=10 total=1
+HI_PLAIN_2006_SPLIT_RETURN slot=0 accepted=1
+HI_PLAIN_2006_SPLIT_ENTER slot=1
+Hardware assisted breakpoint 6 at 0x1001e621
+HI_PLAIN_2006_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	34	17	90	4	34
+Hardware assisted breakpoint 7 at 0x1001e012
+HI_PLAIN_2006_CLASS_RETURN slot=1 mode=1 appended=9 total=2
+HI_PLAIN_2006_SPLIT_RETURN slot=1 accepted=1
+HI_PLAIN_2006_SPLIT_ENTER slot=0
+Hardware assisted breakpoint 8 at 0x1001e621
+HI_PLAIN_2006_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	34	17	30	30
+Hardware assisted breakpoint 9 at 0x1001e012
+HI_PLAIN_2006_CLASS_RETURN slot=0 mode=1 appended=10 total=1
+HI_PLAIN_2006_SPLIT_RETURN slot=0 accepted=1
+HI_PLAIN_2006_SPLIT_ENTER slot=1
+Hardware assisted breakpoint 10 at 0x1001e621
+HI_PLAIN_2006_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	34	17	90	4	34
+Hardware assisted breakpoint 11 at 0x1001e012
+HI_PLAIN_2006_CLASS_RETURN slot=1 mode=1 appended=9 total=2
+HI_PLAIN_2006_SPLIT_RETURN slot=1 accepted=1
+HI_PLAIN_2006_SPLIT_ENTER slot=0
+Hardware assisted breakpoint 12 at 0x1001e621
+HI_PLAIN_2006_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	34	17	30	30
+Hardware assisted breakpoint 13 at 0x1001e012
+HI_PLAIN_2006_CLASS_RETURN slot=0 mode=1 appended=10 total=1
+HI_PLAIN_2006_SPLIT_RETURN slot=0 accepted=1
+HI_PLAIN_2006_SPLIT_ENTER slot=1
+Hardware assisted breakpoint 14 at 0x1001e621
+HI_PLAIN_2006_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	34	17	90	4	34
+Hardware assisted breakpoint 15 at 0x1001e012
+HI_PLAIN_2006_CLASS_RETURN slot=1 mode=1 appended=9 total=2
+HI_PLAIN_2006_SPLIT_RETURN slot=1 accepted=1
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

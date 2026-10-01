@@ -3,6 +3,7 @@ package dat
 import (
 	"encoding/binary"
 	"errors"
+	"io"
 )
 
 // WAV wraps mono 16 kHz signed 16-bit PCM in a 44-byte RIFF/WAVE header.
@@ -31,6 +32,75 @@ func WAVFromSamples(samples []int16) ([]byte, error) {
 		binary.LittleEndian.PutUint16(wav[44+index*2:], uint16(sample))
 	}
 	return wav, nil
+}
+
+// WriteWAV writes signed 16-bit mono PCM in the observed 16 kHz WAVE profile
+// without assembling a second copy of the complete file in memory. The data
+// length is known up front, so the finalized RIFF header is written first.
+func WriteWAV(destination io.Writer, pcm []byte) error {
+	if destination == nil {
+		return errors.New("WAVE destination is nil")
+	}
+	if len(pcm)%2 != 0 || uint64(len(pcm)) > uint64(^uint32(0))-36 {
+		return errors.New("PCM length is invalid for a RIFF/WAVE file")
+	}
+	var header [44]byte
+	writeWAVHeader(header[:], uint32(len(pcm)))
+	if err := writeAll(destination, header[:]); err != nil {
+		return err
+	}
+	return writeAll(destination, pcm)
+}
+
+// WriteWAVFromSamples streams signed samples through a fixed-size conversion
+// buffer, avoiding both the intermediate PCM byte slice and the complete WAVE
+// allocation used by WAVFromSamples.
+func WriteWAVFromSamples(destination io.Writer, samples []int16) error {
+	if destination == nil {
+		return errors.New("WAVE destination is nil")
+	}
+	dataBytes := uint64(len(samples)) * 2
+	if dataBytes > uint64(^uint32(0))-36 {
+		return errors.New("PCM length is invalid for a RIFF/WAVE file")
+	}
+	var header [44]byte
+	writeWAVHeader(header[:], uint32(dataBytes))
+	if err := writeAll(destination, header[:]); err != nil {
+		return err
+	}
+	var buffer [8192]byte
+	for offset := 0; offset < len(samples); {
+		count := len(buffer) / 2
+		if remaining := len(samples) - offset; remaining < count {
+			count = remaining
+		}
+		chunk := buffer[:count*2]
+		for index, sample := range samples[offset : offset+count] {
+			binary.LittleEndian.PutUint16(chunk[index*2:], uint16(sample))
+		}
+		if err := writeAll(destination, chunk); err != nil {
+			return err
+		}
+		offset += count
+	}
+	return nil
+}
+
+func writeAll(destination io.Writer, value []byte) error {
+	for len(value) != 0 {
+		written, err := destination.Write(value)
+		if written < 0 || written > len(value) {
+			return errors.New("WAVE destination returned an invalid write count")
+		}
+		value = value[written:]
+		if err != nil {
+			return err
+		}
+		if written == 0 {
+			return io.ErrShortWrite
+		}
+	}
+	return nil
 }
 
 func writeWAVHeader(header []byte, dataBytes uint32) {

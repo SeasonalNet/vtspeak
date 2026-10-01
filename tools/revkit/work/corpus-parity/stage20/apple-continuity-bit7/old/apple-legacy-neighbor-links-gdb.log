@@ -1,0 +1,391 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cff0
+Wine-gdb> >>>>>>> > > > > > > > >  >  >  >   >   >   >   >   >   >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_OLD_NEIGHBOR_TRACE_READY
+Hardware assisted breakpoint 3 at 0x1001e6d4
+APPLE_OLD_NEIGHBOR_RETURN call=1 position=0 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=177774 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=66400 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=241971 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=11027 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=141947 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=51262 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=257217 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254282 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=7248 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=271390 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=235061 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=134205 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254839 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=259475 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=200178 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=70519 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=241852 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=252730 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=187313 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=238677 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=151949 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=209373 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=198340 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=117529 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254363 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=266842 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=238347 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=23320 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=153125 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=147963 predecessor_index=0
+Hardware assisted breakpoint 4 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=2 position=1 retained=8
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=177774 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=261978 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=52644 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=106017 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=212593 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=225631 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=179969 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=279649 predecessor_index=0 predecessor_unit=177774
+Hardware assisted breakpoint 5 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=3 position=2 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=189455 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=100180 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=2645 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=188302 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=199880 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=38294 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=137215 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=45509 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=61725 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=40810 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=151210 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=41008 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=96145 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=231014 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=118661 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=56167 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=108878 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=244717 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=213256 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=64719 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=64728 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=82377 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=82709 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=97601 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=128863 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=40503 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=86012 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=78432 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=150075 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=32957 predecessor_index=0 predecessor_unit=177774
+Hardware assisted breakpoint 6 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=4 position=3 retained=20
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=2554 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=256581 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=232462 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=218670 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=158830 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=131118 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=129559 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=103238 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=97884 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=86327 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=82036 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=59558 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=41057 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=40214 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=28631 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27966 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27794 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27440 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=11135 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=258822 predecessor_index=0 predecessor_unit=189455
+Hardware assisted breakpoint 7 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=5 position=4 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=158831 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=232463 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=86328 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=97885 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=103239 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=59559 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=218671 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=256582 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=129560 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=41058 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=40215 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=131119 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=258823 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=28632 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27967 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27795 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=82037 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27441 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=11136 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=2555 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=261692 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=258101 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=250167 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=9835 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=11069 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=238346 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=160420 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=249481 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=162687 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=102356 predecessor_index=0 predecessor_unit=2554
+Hardware assisted breakpoint 8 at 0x1001e6d4
+APPLE_OLD_NEIGHBOR_RETURN call=6 position=0 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=177774 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=66400 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=241971 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=11027 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=141947 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=51262 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=257217 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254282 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=7248 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=271390 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=235061 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=134205 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254839 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=259475 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=200178 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=70519 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=241852 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=252730 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=187313 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=238677 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=151949 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=209373 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=198340 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=117529 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254363 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=266842 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=238347 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=23320 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=153125 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=147963 predecessor_index=0
+Hardware assisted breakpoint 9 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=7 position=1 retained=8
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=177774 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=261978 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=52644 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=106017 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=212593 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=225631 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=179969 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=279649 predecessor_index=0 predecessor_unit=177774
+Hardware assisted breakpoint 10 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=8 position=2 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=189455 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=100180 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=2645 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=188302 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=199880 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=38294 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=137215 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=45509 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=61725 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=40810 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=151210 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=41008 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=96145 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=231014 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=118661 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=56167 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=108878 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=244717 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=213256 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=64719 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=64728 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=82377 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=82709 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=97601 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=128863 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=40503 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=86012 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=78432 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=150075 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=32957 predecessor_index=0 predecessor_unit=177774
+Hardware assisted breakpoint 11 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=9 position=3 retained=20
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=2554 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=256581 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=232462 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=218670 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=158830 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=131118 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=129559 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=103238 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=97884 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=86327 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=82036 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=59558 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=41057 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=40214 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=28631 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27966 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27794 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27440 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=11135 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=258822 predecessor_index=0 predecessor_unit=189455
+Hardware assisted breakpoint 12 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=10 position=4 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=158831 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=232463 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=86328 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=97885 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=103239 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=59559 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=218671 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=256582 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=129560 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=41058 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=40215 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=131119 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=258823 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=28632 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27967 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27795 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=82037 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27441 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=11136 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=2555 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=261692 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=258101 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=250167 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=9835 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=11069 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=238346 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=160420 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=249481 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=162687 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=102356 predecessor_index=0 predecessor_unit=2554
+Hardware assisted breakpoint 13 at 0x1001e6d4
+APPLE_OLD_NEIGHBOR_RETURN call=11 position=0 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=177774 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=66400 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=241971 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=11027 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=141947 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=51262 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=257217 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254282 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=7248 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=271390 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=235061 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=134205 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254839 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=259475 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=200178 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=70519 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=241852 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=252730 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=187313 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=238677 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=151949 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=209373 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=198340 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=117529 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=254363 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=266842 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=238347 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=23320 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=153125 predecessor_index=0
+APPLE_OLD_NEIGHBOR_LINK position=0 candidate=147963 predecessor_index=0
+Hardware assisted breakpoint 14 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=12 position=1 retained=8
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=177774 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=261978 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=52644 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=106017 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=212593 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=225631 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=179969 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=1 candidate=279649 predecessor_index=0 predecessor_unit=177774
+Hardware assisted breakpoint 15 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=13 position=2 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=189455 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=100180 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=2645 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=188302 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=199880 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=38294 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=137215 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=45509 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=61725 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=40810 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=151210 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=41008 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=96145 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=231014 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=118661 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=56167 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=108878 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=244717 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=213256 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=64719 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=64728 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=82377 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=82709 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=97601 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=128863 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=40503 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=86012 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=78432 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=150075 predecessor_index=0 predecessor_unit=177774
+APPLE_OLD_NEIGHBOR_LINK position=2 candidate=32957 predecessor_index=0 predecessor_unit=177774
+Hardware assisted breakpoint 16 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=14 position=3 retained=20
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=2554 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=256581 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=232462 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=218670 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=158830 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=131118 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=129559 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=103238 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=97884 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=86327 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=82036 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=59558 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=41057 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=40214 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=28631 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27966 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27794 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=27440 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=11135 predecessor_index=0 predecessor_unit=189455
+APPLE_OLD_NEIGHBOR_LINK position=3 candidate=258822 predecessor_index=0 predecessor_unit=189455
+Hardware assisted breakpoint 17 at 0x1001e771
+APPLE_OLD_NEIGHBOR_RETURN call=15 position=4 retained=30
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=158831 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=232463 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=86328 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=97885 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=103239 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=59559 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=218671 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=256582 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=129560 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=41058 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=40215 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=131119 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=258823 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=28632 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27967 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27795 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=82037 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=27441 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=11136 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=2555 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=261692 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=258101 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=250167 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=9835 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=11069 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=238346 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=160420 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=249481 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=162687 predecessor_index=0 predecessor_unit=2554
+APPLE_OLD_NEIGHBOR_LINK position=4 candidate=102356 predecessor_index=0 predecessor_unit=2554
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

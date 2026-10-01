@@ -1,0 +1,27 @@
+VoiceText Paul 2013 compound dictionary eligibility gate
+========================================================
+
+Evidence
+--------
+
+Inside `FUN_10009dc0`, each non-single-letter component first passes through
+`FUN_10003b10(surface, 0, dictionaryState)`. The pseudocode at lines 86-98 of
+`tools/revkit/work/reports/stage6-deep-text-functions.txt` shows that this
+helper calls `FUN_10003a70` in mode 0, then checks the first output byte:
+zero is ineligible; otherwise the component is eligible when bit 2 is set or
+when `(flag & 0xf8) == 0x08`. The result meanings remain opaque.
+
+`FUN_10003a70` mode 0 transforms the surface with `FUN_1000fd70` and submits
+that key to `FUN_10011820`; see
+`tools/revkit/work/reports/stage27-context-normalization-helpers.c` and
+`stage60-parser-punctuation-dictionary-lookup.c`. The loaded dictionary's
+`ResolvePaul2013Surface` follows the same observed embedded-key and payload
+path, and `ParsePhonePayload` retains the raw first payload byte.
+
+Implementation
+--------------
+
+`Engine.LookupPaul2013CompoundDictionaryGate` returns lookup presence, the
+raw first payload flag, and the exact predicate. It does not assign semantics
+to the accepted bit patterns. The adjacent `FUN_1000ffd0` gate is implemented
+separately in the Stage 80 report.

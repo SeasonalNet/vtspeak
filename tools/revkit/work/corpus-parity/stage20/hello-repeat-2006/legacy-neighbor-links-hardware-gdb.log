@@ -1,0 +1,546 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cff0
+Wine-gdb> >>>>>>> > > > > > > > >  >  >  >   >   >   >   >   >   >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001c860
+Wine-gdb> >>> > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_NEIGHBOR_TRACE_READY
+Hardware assisted breakpoint 5 at 0x1001e6d4
+LEGACY_REPEAT_SCORE_INPUT unit=273369 row=0 target_context=0x27a9a04 features=0x63fa94
+Temporary breakpoint 6 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=273369 row=0 cost=0.0201681
+LEGACY_REPEAT_SCORE_INPUT unit=272822 row=0 target_context=0x27a9a04 features=0x63fa94
+Temporary breakpoint 7 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=272822 row=0 cost=0.00243161
+LEGACY_NEIGHBOR_RETURN call=1 position=0 retained=30
+LEGACY_NEIGHBOR_LINK position=0 candidate=273369 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=272822 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=92183 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=262454 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=195687 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=182880 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=204612 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=200525 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=51310 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=31795 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=200614 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=116320 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=214148 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=189906 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=178453 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=179388 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=129641 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=20499 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=1200 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=245736 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=165351 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=22451 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=31347 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=52542 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=233533 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=25895 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=28430 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=2525 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=234795 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=264663 predecessor_index=0
+Hardware assisted breakpoint 8 at 0x1001e771
+LEGACY_REPEAT_SCORE_INPUT unit=272823 row=1 target_context=0x27a9a0a features=0x63fa94
+Temporary breakpoint 9 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=272823 row=1 cost=1.27656
+LEGACY_REPEAT_SCORE_INPUT unit=273370 row=1 target_context=0x27a9a0a features=0x63fa94
+Temporary breakpoint 10 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=273370 row=1 cost=2.33293
+LEGACY_NEIGHBOR_RETURN call=2 position=1 retained=9
+LEGACY_NEIGHBOR_LINK position=1 candidate=272823 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=273370 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=272152 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=13942 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=264072 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=36540 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=53487 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=96599 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=268760 predecessor_index=0 predecessor_unit=273369
+Hardware assisted breakpoint 11 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=3 position=2 retained=5
+LEGACY_NEIGHBOR_LINK position=2 candidate=272153 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=272824 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=273371 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=13943 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=264073 predecessor_index=0 predecessor_unit=272823
+Hardware assisted breakpoint 12 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=4 position=3 retained=30
+LEGACY_NEIGHBOR_LINK position=3 candidate=272154 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=184279 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=185764 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=252843 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=168174 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=224354 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=33050 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=266905 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=269907 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=241200 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=220464 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=241241 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=61117 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=232670 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=208339 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=232750 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=255006 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=253777 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=239975 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=202604 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=182449 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=250243 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=17653 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=31690 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=84319 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=209719 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=25974 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=118271 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=86460 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=36287 predecessor_index=0 predecessor_unit=272153
+Hardware assisted breakpoint 13 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=5 position=4 retained=30
+LEGACY_NEIGHBOR_LINK position=4 candidate=184279 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=185764 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=183342 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=244251 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=70160 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=67509 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=134140 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=265139 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=216044 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=213995 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=212344 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=139207 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=129448 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=82668 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=73098 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=68970 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=60891 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=39483 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=34312 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=32698 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=31689 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=30843 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=24082 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=12561 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=113145 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=128048 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=96680 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=266023 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=181700 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=179911 predecessor_index=0 predecessor_unit=272154
+Hardware assisted breakpoint 14 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=6 position=5 retained=30
+LEGACY_NEIGHBOR_LINK position=5 candidate=264071 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=272151 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=13941 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=21433 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=160974 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=200323 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=8054 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=243207 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=49874 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=104395 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=175733 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=5030 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=27063 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=264213 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=231058 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=9887 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=179927 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=97409 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=192035 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=193044 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=224085 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=68423 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=62239 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=212241 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=215444 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=172912 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=56107 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=223362 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=260513 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=19726 predecessor_index=0 predecessor_unit=185764
+Hardware assisted breakpoint 15 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=7 position=6 retained=4
+LEGACY_NEIGHBOR_LINK position=6 candidate=264072 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=13942 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=272152 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=36540 predecessor_index=0 predecessor_unit=264071
+Hardware assisted breakpoint 16 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=8 position=7 retained=5
+LEGACY_NEIGHBOR_LINK position=7 candidate=264073 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=13943 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=272153 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=272824 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=273371 predecessor_index=0 predecessor_unit=264072
+Hardware assisted breakpoint 17 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=9 position=8 retained=6
+LEGACY_NEIGHBOR_LINK position=8 candidate=264074 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=272825 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=1869 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=5170 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=246677 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=255282 predecessor_index=0 predecessor_unit=264073
+Hardware assisted breakpoint 18 at 0x1001e6d4
+LEGACY_REPEAT_SCORE_INPUT unit=273369 row=0 target_context=0x27a9a04 features=0x63fa94
+Temporary breakpoint 19 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=273369 row=0 cost=0.0201681
+LEGACY_REPEAT_SCORE_INPUT unit=272822 row=0 target_context=0x27a9a04 features=0x63fa94
+Temporary breakpoint 20 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=272822 row=0 cost=0.00243161
+LEGACY_NEIGHBOR_RETURN call=10 position=0 retained=30
+LEGACY_NEIGHBOR_LINK position=0 candidate=273369 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=272822 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=92183 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=262454 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=195687 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=182880 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=204612 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=200525 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=51310 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=31795 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=200614 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=116320 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=214148 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=189906 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=178453 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=179388 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=129641 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=20499 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=1200 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=245736 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=165351 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=22451 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=31347 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=52542 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=233533 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=25895 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=28430 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=2525 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=234795 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=264663 predecessor_index=0
+Hardware assisted breakpoint 21 at 0x1001e771
+LEGACY_REPEAT_SCORE_INPUT unit=272823 row=1 target_context=0x27a9a0a features=0x63fa94
+Temporary breakpoint 22 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=272823 row=1 cost=1.27656
+LEGACY_REPEAT_SCORE_INPUT unit=273370 row=1 target_context=0x27a9a0a features=0x63fa94
+Temporary breakpoint 23 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=273370 row=1 cost=2.33293
+LEGACY_NEIGHBOR_RETURN call=11 position=1 retained=9
+LEGACY_NEIGHBOR_LINK position=1 candidate=272823 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=273370 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=272152 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=13942 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=264072 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=36540 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=53487 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=96599 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=268760 predecessor_index=0 predecessor_unit=273369
+Hardware assisted breakpoint 24 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=12 position=2 retained=5
+LEGACY_NEIGHBOR_LINK position=2 candidate=272153 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=272824 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=273371 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=13943 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=264073 predecessor_index=0 predecessor_unit=272823
+Hardware assisted breakpoint 25 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=13 position=3 retained=30
+LEGACY_NEIGHBOR_LINK position=3 candidate=272154 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=184279 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=185764 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=252843 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=168174 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=224354 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=33050 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=266905 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=269907 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=241200 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=220464 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=241241 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=61117 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=232670 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=208339 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=232750 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=255006 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=253777 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=239975 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=202604 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=182449 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=250243 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=17653 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=31690 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=84319 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=209719 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=25974 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=118271 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=86460 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=36287 predecessor_index=0 predecessor_unit=272153
+Hardware assisted breakpoint 26 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=14 position=4 retained=30
+LEGACY_NEIGHBOR_LINK position=4 candidate=184279 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=185764 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=183342 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=244251 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=70160 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=67509 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=134140 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=265139 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=216044 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=213995 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=212344 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=139207 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=129448 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=82668 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=73098 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=68970 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=60891 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=39483 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=34312 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=32698 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=31689 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=30843 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=24082 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=12561 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=113145 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=128048 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=96680 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=266023 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=181700 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=179911 predecessor_index=0 predecessor_unit=272154
+Hardware assisted breakpoint 27 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=15 position=5 retained=30
+LEGACY_NEIGHBOR_LINK position=5 candidate=264071 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=272151 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=13941 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=21433 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=160974 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=200323 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=8054 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=243207 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=49874 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=104395 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=175733 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=5030 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=27063 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=264213 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=231058 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=9887 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=179927 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=97409 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=192035 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=193044 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=224085 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=68423 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=62239 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=212241 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=215444 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=172912 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=56107 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=223362 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=260513 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=19726 predecessor_index=0 predecessor_unit=185764
+Hardware assisted breakpoint 28 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=16 position=6 retained=4
+LEGACY_NEIGHBOR_LINK position=6 candidate=264072 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=13942 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=272152 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=36540 predecessor_index=0 predecessor_unit=264071
+Hardware assisted breakpoint 29 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=17 position=7 retained=5
+LEGACY_NEIGHBOR_LINK position=7 candidate=264073 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=13943 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=272153 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=272824 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=273371 predecessor_index=0 predecessor_unit=264072
+Hardware assisted breakpoint 30 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=18 position=8 retained=6
+LEGACY_NEIGHBOR_LINK position=8 candidate=264074 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=272825 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=1869 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=5170 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=246677 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=255282 predecessor_index=0 predecessor_unit=264073
+Hardware assisted breakpoint 31 at 0x1001e6d4
+LEGACY_REPEAT_SCORE_INPUT unit=273369 row=0 target_context=0x27a9a04 features=0x63fa94
+Temporary breakpoint 32 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=273369 row=0 cost=0.0201681
+LEGACY_REPEAT_SCORE_INPUT unit=272822 row=0 target_context=0x27a9a04 features=0x63fa94
+Temporary breakpoint 33 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=272822 row=0 cost=0.00243161
+LEGACY_NEIGHBOR_RETURN call=19 position=0 retained=30
+LEGACY_NEIGHBOR_LINK position=0 candidate=273369 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=272822 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=92183 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=262454 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=195687 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=182880 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=204612 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=200525 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=51310 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=31795 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=200614 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=116320 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=214148 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=189906 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=178453 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=179388 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=129641 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=20499 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=1200 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=245736 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=165351 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=22451 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=31347 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=52542 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=233533 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=25895 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=28430 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=2525 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=234795 predecessor_index=0
+LEGACY_NEIGHBOR_LINK position=0 candidate=264663 predecessor_index=0
+Hardware assisted breakpoint 34 at 0x1001e771
+LEGACY_REPEAT_SCORE_INPUT unit=272823 row=1 target_context=0x27a9a0a features=0x63fa94
+Temporary breakpoint 35 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=272823 row=1 cost=1.27656
+LEGACY_REPEAT_SCORE_INPUT unit=273370 row=1 target_context=0x27a9a0a features=0x63fa94
+Temporary breakpoint 36 at 0x1001d3f4
+LEGACY_REPEAT_SCORE_RETURN unit=273370 row=1 cost=2.33293
+LEGACY_NEIGHBOR_RETURN call=20 position=1 retained=9
+LEGACY_NEIGHBOR_LINK position=1 candidate=272823 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=273370 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=272152 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=13942 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=264072 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=36540 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=53487 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=96599 predecessor_index=0 predecessor_unit=273369
+LEGACY_NEIGHBOR_LINK position=1 candidate=268760 predecessor_index=0 predecessor_unit=273369
+Hardware assisted breakpoint 37 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=21 position=2 retained=5
+LEGACY_NEIGHBOR_LINK position=2 candidate=272153 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=272824 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=273371 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=13943 predecessor_index=0 predecessor_unit=272823
+LEGACY_NEIGHBOR_LINK position=2 candidate=264073 predecessor_index=0 predecessor_unit=272823
+Hardware assisted breakpoint 38 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=22 position=3 retained=30
+LEGACY_NEIGHBOR_LINK position=3 candidate=272154 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=184279 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=185764 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=252843 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=168174 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=224354 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=33050 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=266905 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=269907 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=241200 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=220464 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=241241 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=61117 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=232670 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=208339 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=232750 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=255006 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=253777 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=239975 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=202604 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=182449 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=250243 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=17653 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=31690 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=84319 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=209719 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=25974 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=118271 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=86460 predecessor_index=0 predecessor_unit=272153
+LEGACY_NEIGHBOR_LINK position=3 candidate=36287 predecessor_index=0 predecessor_unit=272153
+Hardware assisted breakpoint 39 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=23 position=4 retained=30
+LEGACY_NEIGHBOR_LINK position=4 candidate=184279 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=185764 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=183342 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=244251 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=70160 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=67509 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=134140 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=265139 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=216044 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=213995 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=212344 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=139207 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=129448 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=82668 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=73098 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=68970 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=60891 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=39483 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=34312 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=32698 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=31689 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=30843 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=24082 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=12561 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=113145 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=128048 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=96680 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=266023 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=181700 predecessor_index=0 predecessor_unit=272154
+LEGACY_NEIGHBOR_LINK position=4 candidate=179911 predecessor_index=0 predecessor_unit=272154
+Hardware assisted breakpoint 40 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=24 position=5 retained=30
+LEGACY_NEIGHBOR_LINK position=5 candidate=264071 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=272151 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=13941 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=21433 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=160974 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=200323 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=8054 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=243207 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=49874 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=104395 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=175733 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=5030 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=27063 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=264213 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=231058 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=9887 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=179927 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=97409 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=192035 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=193044 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=224085 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=68423 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=62239 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=212241 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=215444 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=172912 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=56107 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=223362 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=260513 predecessor_index=0 predecessor_unit=185764
+LEGACY_NEIGHBOR_LINK position=5 candidate=19726 predecessor_index=0 predecessor_unit=185764
+Hardware assisted breakpoint 41 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=25 position=6 retained=4
+LEGACY_NEIGHBOR_LINK position=6 candidate=264072 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=13942 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=272152 predecessor_index=0 predecessor_unit=264071
+LEGACY_NEIGHBOR_LINK position=6 candidate=36540 predecessor_index=0 predecessor_unit=264071
+Hardware assisted breakpoint 42 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=26 position=7 retained=5
+LEGACY_NEIGHBOR_LINK position=7 candidate=264073 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=13943 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=272153 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=272824 predecessor_index=0 predecessor_unit=264072
+LEGACY_NEIGHBOR_LINK position=7 candidate=273371 predecessor_index=0 predecessor_unit=264072
+Hardware assisted breakpoint 43 at 0x1001e771
+LEGACY_NEIGHBOR_RETURN call=27 position=8 retained=6
+LEGACY_NEIGHBOR_LINK position=8 candidate=264074 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=272825 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=1869 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=5170 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=246677 predecessor_index=0 predecessor_unit=264073
+LEGACY_NEIGHBOR_LINK position=8 candidate=255282 predecessor_index=0 predecessor_unit=264073
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

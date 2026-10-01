@@ -1,0 +1,23 @@
+VoiceText Paul 2013 bounded “ment” suffix handler
+=================================================
+
+Evidence boundary
+-----------------
+
+FUN_1000a140 at VA 0x1000a140 has a branch comparing the final four bytes of
+the input with DAT_100777f0. The checked-in `binary/vt_pau.dll` .data bytes at
+that address are the NUL-terminated string `ment`. In the surrounding
+FUN_1000a140 pseudocode in `stage6-deep-text-functions.txt`, this check is in
+the short-input branch for source lengths 7 and 8, after the earlier `ance`
+and `ness` checks.
+
+On a match, the decompiler copies the C string into a local buffer, terminates
+it four bytes before the original end, and calls FUN_1000cb30 on that stem. An
+empty result returns no match. A nonempty result is extended with bytes
+`0x2c`, `0x07`, `0x2d`, `0x39`, followed by NUL; the common return path ORs
+`0x08` into the caller's row flag.
+
+The Go port shares the bounded stem lookup and marker construction with the
+adjacent `ness` branch. It implements only the directly compared 7- and 8-byte
+case. Other FUN_1000a140 branches and runtime row-for-row parity remain open.
+No linguistic interpretation is assigned to the marker bytes.

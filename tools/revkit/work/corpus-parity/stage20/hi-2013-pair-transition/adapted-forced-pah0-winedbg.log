@@ -1,0 +1,218 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/hi-2013-pair-transition/adapted-pair-transition-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/hi-2013-pair-transition/adapted-pair-transition-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10018c80
+Wine-gdb> >>>>> > > > > > > >  >  >  > > > >  >  >  > > > >  >  >  >  >  >  >   >   >   >   >   >   >    >    >   >    >    >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_TRANSITION_BEGIN context=1 current_count=19 previous_count=30 current=281932 280449 279499 279498 272821 243540 177718 84094 4102 4087 247093 246531 92750 183816 145017 141537 90567 85448 12507  previous=135441 219724 277527 205125 255985 272820 22336 164116 65331 75811 122874 275869 277079 225192 8528 23555 93904 126198 131518 6383 161158 179010 196165 197242 204920 208796 216572 217770 221876 275865 
+Temporary breakpoint 5 at 0x100248d6
+HI_TRANSITION_EDGE context=1 current=281932 previous=135441 feature=27.3577 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=64.9069
+HI_TRANSITION_EDGE context=1 current=281932 previous=219724 feature=7.80901 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=45.3582
+HI_TRANSITION_EDGE context=1 current=281932 previous=277527 feature=9.8217 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=47.3709
+HI_TRANSITION_EDGE context=1 current=281932 previous=205125 feature=9.23571 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=46.7849
+HI_TRANSITION_EDGE context=1 current=281932 previous=255985 feature=34.9573 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=72.5065
+HI_TRANSITION_EDGE context=1 current=281932 previous=272820 feature=8.49743 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=46.0466
+HI_TRANSITION_EDGE context=1 current=281932 previous=22336 feature=12.2846 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=49.8338
+HI_TRANSITION_EDGE context=1 current=281932 previous=164116 feature=11.618 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=49.1672
+HI_TRANSITION_EDGE context=1 current=281932 previous=65331 feature=3.00935 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=40.5585
+HI_TRANSITION_EDGE context=1 current=281932 previous=75811 feature=14.1225 divisor=1 penalty=0 previous_path=5.4 local=32.1492 total=51.6717
+HI_TRANSITION_EDGE context=1 current=281932 previous=122874 feature=14.2138 divisor=1 penalty=0 previous_path=8.9 local=32.1492 total=55.263
+HI_TRANSITION_EDGE context=1 current=281932 previous=275869 feature=21.8561 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=64.4053
+HI_TRANSITION_EDGE context=1 current=281932 previous=277079 feature=2.25843 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=44.8076
+HI_TRANSITION_EDGE context=1 current=281932 previous=225192 feature=37.0793 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=79.6285
+HI_TRANSITION_EDGE context=1 current=281932 previous=8528 feature=7.63433 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=50.1835
+HI_TRANSITION_EDGE context=1 current=281932 previous=23555 feature=14.8812 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=57.4304
+HI_TRANSITION_EDGE context=1 current=281932 previous=93904 feature=10.161 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=52.7102
+HI_TRANSITION_EDGE context=1 current=281932 previous=126198 feature=16.32 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=58.8692
+HI_TRANSITION_EDGE context=1 current=281932 previous=131518 feature=28.5061 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=71.0552
+HI_TRANSITION_EDGE context=1 current=281932 previous=6383 feature=13.6031 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=56.1523
+HI_TRANSITION_EDGE context=1 current=281932 previous=161158 feature=11.3651 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=53.9143
+HI_TRANSITION_EDGE context=1 current=281932 previous=179010 feature=19.0664 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=61.6156
+HI_TRANSITION_EDGE context=1 current=281932 previous=196165 feature=14.6792 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=57.2284
+HI_TRANSITION_EDGE context=1 current=281932 previous=197242 feature=9.8819 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=52.4311
+HI_TRANSITION_EDGE context=1 current=281932 previous=204920 feature=14.0397 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=56.5889
+HI_TRANSITION_EDGE context=1 current=281932 previous=208796 feature=18.3885 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=60.9377
+HI_TRANSITION_EDGE context=1 current=281932 previous=216572 feature=38.041 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=80.5902
+HI_TRANSITION_EDGE context=1 current=281932 previous=217770 feature=20.1815 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=62.7307
+HI_TRANSITION_EDGE context=1 current=281932 previous=221876 feature=13.5074 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=56.0566
+HI_TRANSITION_EDGE context=1 current=281932 previous=275865 feature=64.3931 divisor=1 penalty=0 previous_path=10.4 local=32.1492 total=106.942
+HI_TRANSITION_EDGE context=1 current=280449 previous=272820 feature=8.98507 divisor=1 penalty=0 previous_path=5.4 local=26.1492 total=40.5343
+HI_TRANSITION_EDGE context=1 current=280449 previous=65331 feature=2.31546 divisor=1 penalty=0 previous_path=5.4 local=26.1492 total=33.8647
+HI_TRANSITION_EDGE context=1 current=279499 previous=272820 feature=22.1774 divisor=1 penalty=0 previous_path=5.4 local=27.0326 total=54.61
+HI_TRANSITION_EDGE context=1 current=279499 previous=65331 feature=16.2261 divisor=1 penalty=0 previous_path=5.4 local=27.0326 total=48.6587
+HI_TRANSITION_EDGE context=1 current=279498 previous=272820 feature=2.6079 divisor=1 penalty=0 previous_path=5.4 local=25.4622 total=33.4701
+HI_TRANSITION_EDGE context=1 current=279498 previous=65331 feature=12.618 divisor=1 penalty=0 previous_path=5.4 local=25.4622 total=43.4802
+HI_TRANSITION_EDGE context=1 current=272821 previous=135441 feature=24.8297 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=49.5387
+HI_TRANSITION_EDGE context=1 current=272821 previous=219724 feature=6.40613 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=31.1151
+HI_TRANSITION_EDGE context=1 current=272821 previous=277527 feature=12.8078 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=37.5168
+HI_TRANSITION_EDGE context=1 current=272821 previous=205125 feature=12.0134 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=36.7224
+HI_TRANSITION_EDGE context=1 current=272821 previous=255985 feature=48.7076 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=73.4166
+HI_TRANSITION_EDGE context=1 current=272821 previous=272820 feature=2 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=26.709
+HI_TRANSITION_EDGE context=1 current=272821 previous=22336 feature=11.3269 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=36.0359
+HI_TRANSITION_EDGE context=1 current=272821 previous=164116 feature=8.5403 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=33.2493
+HI_TRANSITION_EDGE context=1 current=272821 previous=65331 feature=10.1671 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=34.8761
+HI_TRANSITION_EDGE context=1 current=272821 previous=75811 feature=19.0753 divisor=1 penalty=0 previous_path=5.4 local=19.309 total=43.7843
+HI_TRANSITION_EDGE context=1 current=272821 previous=122874 feature=11.4833 divisor=1 penalty=0 previous_path=8.9 local=19.309 total=39.6923
+HI_TRANSITION_EDGE context=1 current=272821 previous=275869 feature=26.0235 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=55.7325
+HI_TRANSITION_EDGE context=1 current=272821 previous=277079 feature=8.54566 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=38.2546
+HI_TRANSITION_EDGE context=1 current=272821 previous=225192 feature=48.9779 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=78.6869
+HI_TRANSITION_EDGE context=1 current=272821 previous=8528 feature=4.16807 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=33.8771
+HI_TRANSITION_EDGE context=1 current=272821 previous=23555 feature=15.1895 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=44.8985
+HI_TRANSITION_EDGE context=1 current=272821 previous=93904 feature=13.323 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=43.032
+HI_TRANSITION_EDGE context=1 current=272821 previous=126198 feature=27.4582 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=57.1672
+HI_TRANSITION_EDGE context=1 current=272821 previous=131518 feature=40.8784 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=70.5874
+HI_TRANSITION_EDGE context=1 current=272821 previous=6383 feature=11.2374 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=40.9464
+HI_TRANSITION_EDGE context=1 current=272821 previous=161158 feature=9.91394 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=39.6229
+HI_TRANSITION_EDGE context=1 current=272821 previous=179010 feature=25.4877 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=55.1967
+HI_TRANSITION_EDGE context=1 current=272821 previous=196165 feature=13.743 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=43.452
+HI_TRANSITION_EDGE context=1 current=272821 previous=197242 feature=8.11055 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=37.8195
+HI_TRANSITION_EDGE context=1 current=272821 previous=204920 feature=16.691 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=46.4
+HI_TRANSITION_EDGE context=1 current=272821 previous=208796 feature=16.6552 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=46.3642
+HI_TRANSITION_EDGE context=1 current=272821 previous=216572 feature=50.9225 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=80.6315
+HI_TRANSITION_EDGE context=1 current=272821 previous=217770 feature=25.8079 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=55.5169
+HI_TRANSITION_EDGE context=1 current=272821 previous=221876 feature=15.9321 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=45.6411
+HI_TRANSITION_EDGE context=1 current=272821 previous=275865 feature=82.4874 divisor=1 penalty=0 previous_path=10.4 local=19.309 total=112.196
+HI_TRANSITION_EDGE context=1 current=243540 previous=272820 feature=16.4857 divisor=1 penalty=0 previous_path=5.4 local=37.875 total=59.7607
+HI_TRANSITION_EDGE context=1 current=243540 previous=65331 feature=10.9651 divisor=1 penalty=0 previous_path=5.4 local=37.875 total=54.2401
+HI_TRANSITION_EDGE context=1 current=177718 previous=272820 feature=14.9318 divisor=1 penalty=0 previous_path=5.4 local=38.72 total=59.0518
+HI_TRANSITION_EDGE context=1 current=177718 previous=65331 feature=10.6423 divisor=1 penalty=0 previous_path=5.4 local=38.72 total=54.7623
+HI_TRANSITION_EDGE context=1 current=84094 previous=272820 feature=18.8832 divisor=1 penalty=0 previous_path=5.4 local=38.3309 total=62.6141
+HI_TRANSITION_EDGE context=1 current=84094 previous=65331 feature=13.9675 divisor=1 penalty=0 previous_path=5.4 local=38.3309 total=57.6984
+HI_TRANSITION_EDGE context=1 current=4102 previous=272820 feature=7.83259 divisor=1 penalty=0 previous_path=5.4 local=35.9526 total=49.1852
+HI_TRANSITION_EDGE context=1 current=4102 previous=65331 feature=5.10769 divisor=1 penalty=0 previous_path=5.4 local=35.9526 total=46.4603
+HI_TRANSITION_EDGE context=1 current=4087 previous=272820 feature=9.03908 divisor=1 penalty=0 previous_path=5.4 local=35.2221 total=49.6611
+HI_TRANSITION_EDGE context=1 current=4087 previous=65331 feature=6.4713 divisor=1 penalty=0 previous_path=5.4 local=35.2221 total=47.0934
+HI_TRANSITION_EDGE context=1 current=247093 previous=272820 feature=15.5475 divisor=1 penalty=0 previous_path=5.4 local=49.1071 total=70.0546
+HI_TRANSITION_EDGE context=1 current=247093 previous=65331 feature=15.3132 divisor=1 penalty=0 previous_path=5.4 local=49.1071 total=69.8204
+HI_TRANSITION_EDGE context=1 current=246531 previous=272820 feature=9.87688 divisor=1 penalty=0 previous_path=5.4 local=51.766 total=67.0428
+HI_TRANSITION_EDGE context=1 current=246531 previous=65331 feature=9.54501 divisor=1 penalty=0 previous_path=5.4 local=51.766 total=66.711
+HI_TRANSITION_EDGE context=1 current=92750 previous=272820 feature=14.7452 divisor=1 penalty=0 previous_path=5.4 local=50.4162 total=70.5614
+HI_TRANSITION_EDGE context=1 current=92750 previous=65331 feature=9.35947 divisor=1 penalty=0 previous_path=5.4 local=50.4162 total=65.1757
+HI_TRANSITION_EDGE context=1 current=183816 previous=272820 feature=11.0361 divisor=1 penalty=0 previous_path=5.4 local=73.2425 total=89.6786
+HI_TRANSITION_EDGE context=1 current=183816 previous=65331 feature=8.6299 divisor=1 penalty=0 previous_path=5.4 local=73.2425 total=87.2724
+HI_TRANSITION_EDGE context=1 current=145017 previous=272820 feature=8.67541 divisor=1 penalty=0 previous_path=5.4 local=73.8276 total=87.903
+HI_TRANSITION_EDGE context=1 current=145017 previous=65331 feature=12.049 divisor=1 penalty=0 previous_path=5.4 local=73.8276 total=91.2766
+HI_TRANSITION_EDGE context=1 current=141537 previous=272820 feature=16.472 divisor=1 penalty=0 previous_path=5.4 local=75.9847 total=97.8567
+HI_TRANSITION_EDGE context=1 current=141537 previous=65331 feature=8.12057 divisor=1 penalty=0 previous_path=5.4 local=75.9847 total=89.5053
+HI_TRANSITION_EDGE context=1 current=90567 previous=272820 feature=12.5428 divisor=1 penalty=0 previous_path=5.4 local=72.9526 total=90.8954
+HI_TRANSITION_EDGE context=1 current=90567 previous=65331 feature=11.3237 divisor=1 penalty=0 previous_path=5.4 local=72.9526 total=89.6763
+HI_TRANSITION_EDGE context=1 current=85448 previous=272820 feature=8.85459 divisor=1 penalty=0 previous_path=5.4 local=75.6662 total=89.9208
+HI_TRANSITION_EDGE context=1 current=85448 previous=65331 feature=9.4347 divisor=1 penalty=0 previous_path=5.4 local=75.6662 total=90.5009
+HI_TRANSITION_EDGE context=1 current=12507 previous=272820 feature=9.835 divisor=1 penalty=0 previous_path=5.4 local=73.6071 total=88.8421
+HI_TRANSITION_EDGE context=1 current=12507 previous=65331 feature=7.49665 divisor=1 penalty=0 previous_path=5.4 local=73.6071 total=86.5038
+HI_TRANSITION_RESULT context=1 count=19 [i=0 unit=281932 cost=40.5585 pred=8 pred_unit=65331] [i=1 unit=280449 cost=33.8647 pred=8 pred_unit=65331] [i=3 unit=279498 cost=33.4701 pred=5 pred_unit=272820] [i=4 unit=272821 cost=26.709 pred=5 pred_unit=272820] [i=8 unit=4102 cost=46.4603 pred=8 pred_unit=65331] [i=9 unit=4087 cost=47.0934 pred=8 pred_unit=65331] [i=13 unit=183816 cost=87.2724 pred=8 pred_unit=65331] [i=15 unit=141537 cost=89.5053 pred=8 pred_unit=65331] [i=18 unit=12507 cost=86.5038 pred=8 pred_unit=65331]
+HI_TRANSITION_BEGIN context=2 current_count=15 previous_count=13 current=272821 279498 279499 280449 281932 43632 210571 45 27998 282470 282189 139767 27432 240647 211922  previous=281932 280449 279499 279498 272821 243540 177718 84094 4102 4087 247093 246531 92750 
+Temporary breakpoint 6 at 0x100248d6
+HI_TRANSITION_EDGE context=2 current=272821 previous=281932 feature=51.3245 divisor=1 penalty=5 previous_path=40.5585 local=28 total=124.883
+HI_TRANSITION_EDGE context=2 current=272821 previous=280449 feature=21.6938 divisor=1 penalty=5 previous_path=33.8647 local=28 total=88.5584
+HI_TRANSITION_EDGE context=2 current=272821 previous=279499 feature=44.9874 divisor=1 penalty=5 previous_path=42.8401 local=28 total=120.827
+HI_TRANSITION_EDGE context=2 current=272821 previous=279498 feature=25.2913 divisor=1 penalty=5 previous_path=33.4701 local=28 total=91.7614
+HI_TRANSITION_EDGE context=2 current=272821 previous=272821 feature=0 divisor=1 penalty=0 previous_path=26.709 local=28 total=54.709
+HI_TRANSITION_EDGE context=2 current=272821 previous=243540 feature=66.1094 divisor=1 penalty=5 previous_path=53.0457 local=28 total=152.155
+HI_TRANSITION_EDGE context=2 current=272821 previous=177718 feature=82.7608 divisor=1 penalty=5 previous_path=46.462 local=28 total=162.223
+HI_TRANSITION_EDGE context=2 current=272821 previous=84094 feature=57.4574 divisor=1 penalty=5 previous_path=51.2748 local=28 total=141.732
+HI_TRANSITION_EDGE context=2 current=272821 previous=4102 feature=37.0829 divisor=1 penalty=5 previous_path=46.4603 local=28 total=116.543
+HI_TRANSITION_EDGE context=2 current=272821 previous=4087 feature=23.9159 divisor=1 penalty=5 previous_path=47.0934 local=28 total=104.009
+HI_TRANSITION_EDGE context=2 current=272821 previous=247093 feature=8.12841 divisor=1 penalty=5 previous_path=67.7607 local=28 total=108.889
+HI_TRANSITION_EDGE context=2 current=272821 previous=246531 feature=31.7052 divisor=1 penalty=5 previous_path=64.4191 local=28 total=129.124
+HI_TRANSITION_EDGE context=2 current=272821 previous=92750 feature=14.9012 divisor=1 penalty=5 previous_path=63.024 local=28 total=110.925
+HI_TRANSITION_EDGE context=2 current=279498 previous=281932 feature=15.9024 divisor=1 penalty=5 previous_path=40.5585 local=34 total=95.461
+HI_TRANSITION_EDGE context=2 current=279498 previous=272821 feature=25.2913 divisor=1 penalty=5 previous_path=26.709 local=34 total=91.0003
+HI_TRANSITION_EDGE context=2 current=279499 previous=281932 feature=7.44174 divisor=1 penalty=5 previous_path=40.5585 local=35.25 total=88.2503
+HI_TRANSITION_EDGE context=2 current=279499 previous=272821 feature=44.9874 divisor=1 penalty=5 previous_path=26.709 local=35.25 total=111.946
+HI_TRANSITION_EDGE context=2 current=280449 previous=281932 feature=16.6644 divisor=1 penalty=5 previous_path=40.5585 local=33.625 total=95.848
+HI_TRANSITION_EDGE context=2 current=280449 previous=272821 feature=21.6938 divisor=1 penalty=5 previous_path=26.709 local=33.625 total=87.0277
+HI_TRANSITION_EDGE context=2 current=281932 previous=281932 feature=0 divisor=1 penalty=0 previous_path=40.5585 local=82.375 total=122.934
+HI_TRANSITION_EDGE context=2 current=281932 previous=280449 feature=16.6644 divisor=1 penalty=5 previous_path=33.8647 local=82.375 total=137.904
+HI_TRANSITION_EDGE context=2 current=281932 previous=279499 feature=7.44174 divisor=1 penalty=5 previous_path=42.8401 local=82.375 total=137.657
+HI_TRANSITION_EDGE context=2 current=281932 previous=279498 feature=15.9024 divisor=1 penalty=5 previous_path=33.4701 local=82.375 total=136.748
+HI_TRANSITION_EDGE context=2 current=281932 previous=272821 feature=51.3245 divisor=1 penalty=5 previous_path=26.709 local=82.375 total=165.409
+HI_TRANSITION_EDGE context=2 current=281932 previous=243540 feature=7.82873 divisor=1 penalty=5 previous_path=53.0457 local=82.375 total=148.249
+HI_TRANSITION_EDGE context=2 current=281932 previous=177718 feature=10.9837 divisor=1 penalty=5 previous_path=46.462 local=82.375 total=144.821
+HI_TRANSITION_EDGE context=2 current=281932 previous=84094 feature=7.90533 divisor=1 penalty=5 previous_path=51.2748 local=82.375 total=146.555
+HI_TRANSITION_EDGE context=2 current=281932 previous=4102 feature=9.49294 divisor=1 penalty=5 previous_path=46.4603 local=82.375 total=143.328
+HI_TRANSITION_EDGE context=2 current=281932 previous=4087 feature=13.8866 divisor=1 penalty=5 previous_path=47.0934 local=82.375 total=148.355
+HI_TRANSITION_EDGE context=2 current=281932 previous=247093 feature=32.5227 divisor=1 penalty=5 previous_path=67.7607 local=82.375 total=187.658
+HI_TRANSITION_EDGE context=2 current=281932 previous=246531 feature=8.45636 divisor=1 penalty=5 previous_path=64.4191 local=82.375 total=160.25
+HI_TRANSITION_EDGE context=2 current=281932 previous=92750 feature=23.8845 divisor=1 penalty=5 previous_path=63.024 local=82.375 total=174.284
+HI_TRANSITION_EDGE context=2 current=43632 previous=281932 feature=6.26844 divisor=1 penalty=5 previous_path=40.5585 local=85.625 total=137.452
+HI_TRANSITION_EDGE context=2 current=43632 previous=272821 feature=48.2715 divisor=1 penalty=5 previous_path=26.709 local=85.625 total=165.605
+HI_TRANSITION_EDGE context=2 current=210571 previous=281932 feature=24.1581 divisor=1 penalty=5 previous_path=40.5585 local=80.5 total=150.217
+HI_TRANSITION_EDGE context=2 current=210571 previous=272821 feature=13.7269 divisor=1 penalty=5 previous_path=26.709 local=80.5 total=125.936
+HI_TRANSITION_EDGE context=2 current=45 previous=281932 feature=9.71647 divisor=1 penalty=5 previous_path=40.5585 local=83.75 total=139.025
+HI_TRANSITION_EDGE context=2 current=45 previous=272821 feature=62.6565 divisor=1 penalty=5 previous_path=26.709 local=83.75 total=178.115
+HI_TRANSITION_EDGE context=2 current=27998 previous=281932 feature=91.1436 divisor=1 penalty=5 previous_path=40.5585 local=83 total=219.702
+HI_TRANSITION_EDGE context=2 current=27998 previous=272821 feature=13.5362 divisor=1 penalty=5 previous_path=26.709 local=83 total=128.245
+HI_TRANSITION_EDGE context=2 current=282470 previous=281932 feature=20.0681 divisor=1 penalty=5 previous_path=40.5585 local=86.125 total=151.752
+HI_TRANSITION_EDGE context=2 current=282470 previous=272821 feature=113.982 divisor=1 penalty=5 previous_path=26.709 local=86.125 total=231.816
+HI_TRANSITION_EDGE context=2 current=282189 previous=281932 feature=34.8336 divisor=1 penalty=5 previous_path=40.5585 local=90.75 total=171.142
+HI_TRANSITION_EDGE context=2 current=282189 previous=272821 feature=147.962 divisor=1 penalty=5 previous_path=26.709 local=90.75 total=270.421
+HI_TRANSITION_EDGE context=2 current=139767 previous=281932 feature=7.61142 divisor=1 penalty=5 previous_path=40.5585 local=85.375 total=138.545
+HI_TRANSITION_EDGE context=2 current=139767 previous=272821 feature=39.4505 divisor=1 penalty=5 previous_path=26.709 local=85.375 total=156.535
+HI_TRANSITION_EDGE context=2 current=27432 previous=281932 feature=137.692 divisor=1 penalty=5 previous_path=40.5585 local=80.25 total=263.501
+HI_TRANSITION_EDGE context=2 current=27432 previous=272821 feature=32.4247 divisor=1 penalty=5 previous_path=26.709 local=80.25 total=144.384
+HI_TRANSITION_EDGE context=2 current=240647 previous=281932 feature=13.5147 divisor=1 penalty=5 previous_path=40.5585 local=88.25 total=147.323
+HI_TRANSITION_EDGE context=2 current=240647 previous=272821 feature=92.791 divisor=1 penalty=5 previous_path=26.709 local=88.25 total=212.75
+HI_TRANSITION_EDGE context=2 current=211922 previous=281932 feature=36.1779 divisor=1 penalty=5 previous_path=40.5585 local=84.375 total=166.111
+HI_TRANSITION_EDGE context=2 current=211922 previous=272821 feature=8.92965 divisor=1 penalty=5 previous_path=26.709 local=84.375 total=125.014
+HI_TRANSITION_RESULT context=2 count=15 [i=0 unit=272821 cost=54.709 pred=4 pred_unit=272821] [i=4 unit=281932 cost=122.934 pred=0 pred_unit=281932] [i=5 unit=43632 cost=137.452 pred=0 pred_unit=281932] [i=6 unit=210571 cost=125.936 pred=4 pred_unit=272821] [i=7 unit=45 cost=139.025 pred=0 pred_unit=281932] [i=8 unit=27998 cost=128.245 pred=4 pred_unit=272821] [i=12 unit=27432 cost=144.384 pred=4 pred_unit=272821] [i=13 unit=240647 cost=147.323 pred=0 pred_unit=281932] [i=14 unit=211922 cost=125.014 pred=4 pred_unit=272821]
+HI_TRANSITION_SELECTED n=1 id=272820
+HI_TRANSITION_SELECTED n=2 id=272821
+HI_TRANSITION_SELECTED n=3 id=272821
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0118:011c: create thread I @004014C0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

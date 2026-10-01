@@ -1,0 +1,28 @@
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153414138
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153414950
+MESSAGE hwnd=0002004a message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153414950
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000004 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153414950
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153414950
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153415041
+MESSAGE hwnd=0002004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153415051
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000006 lparam=0x0000000a open=1 done=1 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153415051
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153415051
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153415142
+MESSAGE hwnd=0002004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8440 open=1 done=2 caller=2
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153415162
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=2 caller=3
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153415162
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153415162
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153415162
+PLAYBACK_END elapsed_ms=212 open=1 done=2 caller=3 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153415162
+PROBE_END
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

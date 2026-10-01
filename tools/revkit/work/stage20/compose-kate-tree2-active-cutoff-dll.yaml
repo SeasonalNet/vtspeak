@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - /tmp/vtspeak-vt-kat-tree2-active-cutoff3.dll:/samples/vt_kat.dll:ro

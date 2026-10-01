@@ -1,0 +1,74 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hi-scalar-array-state/adapted-scalar-array-state-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+SCALAR_STATE unit=272820 context=00,00,00,00,00,01 state=0x14bf310 param2=0x24e0020
+SCALAR_STATE pointers=0x14bf358:	0x01ab0020	0x01b3a890	0x01bc5100	0x01af5458
+0x14bf368:	0x01b7fcc8	0x01c0a538
+SCALAR_STATE values=85,126,168,78,69,77
+SCALAR_STATE direct_columns=0x14bf370:	0x01c4f970	0x01dd0020	0x01fc0020
+#0  0x100182e0 in vt_eng!VT_CsvParser_IsCsv_ENG () from /samples/vt_kat.dll
+#1  0x100249d5 in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#2  0x00000000 in ?? ()
+SCALAR_STATE unit=65331 context=00,00,00,00,00,01 state=0x14bf310 param2=0x24e0020
+SCALAR_STATE pointers=0x14bf358:	0x01ab0020	0x01b3a890	0x01bc5100	0x01af5458
+0x14bf368:	0x01b7fcc8	0x01c0a538
+SCALAR_STATE values=71,108,156,64,80,81
+SCALAR_STATE direct_columns=0x14bf370:	0x01c4f970	0x01dd0020	0x01fc0020
+#0  0x100182e0 in vt_eng!VT_CsvParser_IsCsv_ENG () from /samples/vt_kat.dll
+#1  0x100249d5 in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#2  0x00000000 in ?? ()
+SCALAR_STATE unit=280449 context=00,00,01,01,01,00 state=0x14bf310 param2=0x24e0020
+SCALAR_STATE pointers=0x14bf358:	0x01ab0020	0x01b3a890	0x01bc5100	0x01af5458
+0x14bf368:	0x01b7fcc8	0x01c0a538
+SCALAR_STATE values=161,169,124,81,86,111
+SCALAR_STATE direct_columns=0x14bf370:	0x01c4f970	0x01dd0020	0x01fc0020
+#0  0x100182e0 in vt_eng!VT_CsvParser_IsCsv_ENG () from /samples/vt_kat.dll
+#1  0x100248ce in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#2  0x00000001 in ?? ()
+#3  0x024e0020 in ?? ()
+#4  0x10024a1f in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#5  0x00000001 in ?? ()
+#6  0x00000002 in ?? ()
+#7  0x024e0020 in ?? ()
+SCALAR_STATE unit=272821 context=00,00,01,01,01,00 state=0x14bf310 param2=0x24e0020
+SCALAR_STATE pointers=0x14bf358:	0x01ab0020	0x01b3a890	0x01bc5100	0x01af5458
+0x14bf368:	0x01b7fcc8	0x01c0a538
+SCALAR_STATE values=168,171,127,77,75,117
+SCALAR_STATE direct_columns=0x14bf370:	0x01c4f970	0x01dd0020	0x01fc0020
+#0  0x100182e0 in vt_eng!VT_CsvParser_IsCsv_ENG () from /samples/vt_kat.dll
+#1  0x100248ce in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#2  0x00000001 in ?? ()
+#3  0x024e0020 in ?? ()
+#4  0x10024a1f in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#5  0x00000001 in ?? ()
+#6  0x00000002 in ?? ()
+#7  0x024e0020 in ?? ()
+SCALAR_STATE unit=272821 context=00,00,01,02,02,00 state=0x14bf310 param2=0x24e0020
+SCALAR_STATE pointers=0x14bf358:	0x01ab0020	0x01b3a890	0x01bc5100	0x01af5458
+0x14bf368:	0x01b7fcc8	0x01c0a538
+SCALAR_STATE values=168,171,127,77,75,117
+SCALAR_STATE direct_columns=0x14bf370:	0x01c4f970	0x01dd0020	0x01fc0020
+#0  0x100182e0 in vt_eng!VT_CsvParser_IsCsv_ENG () from /samples/vt_kat.dll
+#1  0x100248ce in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#2  0x00000002 in ?? ()
+#3  0x024e0020 in ?? ()
+#4  0x10024a1f in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#5  0x00000001 in ?? ()
+#6  0x00000002 in ?? ()
+#7  0x024e0020 in ?? ()
+SCALAR_STATE unit=280449 context=00,00,01,02,02,00 state=0x14bf310 param2=0x24e0020
+SCALAR_STATE pointers=0x14bf358:	0x01ab0020	0x01b3a890	0x01bc5100	0x01af5458
+0x14bf368:	0x01b7fcc8	0x01c0a538
+SCALAR_STATE values=161,169,124,81,86,111
+SCALAR_STATE direct_columns=0x14bf370:	0x01c4f970	0x01dd0020	0x01fc0020
+#0  0x100182e0 in vt_eng!VT_CsvParser_IsCsv_ENG () from /samples/vt_kat.dll
+#1  0x100248ce in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#2  0x00000002 in ?? ()
+#3  0x024e0020 in ?? ()
+#4  0x10024a1f in vt_eng!VT_GetDefUserDictRelativeName_ENG () from /samples/vt_kat.dll
+#5  0x00000001 in ?? ()
+#6  0x00000002 in ?? ()
+#7  0x024e0020 in ?? ()
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

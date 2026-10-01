@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage20/index-adapter-key-repacked-legacy-feature-class-slot2-split:/work/data-kate/M16/mc_idx_tbl:ro

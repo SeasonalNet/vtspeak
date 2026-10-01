@@ -1,0 +1,36 @@
+VoiceText Paul 2013 FUN_1000c3a0 supported handler order
+=======================================================
+
+Evidence
+--------
+
+The `FUN_1000c3a0` pseudocode in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt` establishes
+this per-component order:
+
+1. `FUN_10003a70`/`FUN_10003c50` embedded-record parse; components at least two
+   bytes long with positive pronunciation count copy the parsed string and set
+   row-flag bit 0.
+2. Otherwise, payload bit 7 gates a `FUN_10002f10` precheck. A nonzero generic
+   return skips `FUN_100086c0` and `FUN_1000a140`; a zero bit-7 gate or zero
+   generic return reaches exception handling and then `FUN_1000a140`.
+3. After those earlier handlers miss or are skipped, the exact case-sensitive
+   `'s` suffix lookup and tail rewrite runs, as documented in Stage 83.
+4. If the suffix path does not match, the final `FUN_10002f10` call and
+   `FUN_10009cd0` context-string fallback produce component output.
+
+Implementation boundary
+-----------------------
+
+`NormalizePaul2013C3A0EmbeddedRecordComponent` implements only the positive
+length/count parsed-string branch. The ordered composition looks up the
+payload gate and runs the generic precheck when bit 7 is set; the precheck's
+success suppresses the earlier callback, while a miss reaches that callback
+for exception and `FUN_1000a140` handling. It then tries the embedded
+apostrophe-s path. When `AfterApostropheS` is omitted, the engine calls
+`NormalizePaul2013C3A0GenericFallbackComponent`, which selects supported
+`FUN_10002f10` class/context codes or directly encodes the component through
+`FUN_10009cd0`. A supplied later callback can still replace that fallback.
+The earlier callback paths still require their row/resource inputs, and the
+bit-7 precheck only retains the generic flag writes represented by the Go
+normalizer. This does not establish runtime row parity for `FUN_1000c3a0`.

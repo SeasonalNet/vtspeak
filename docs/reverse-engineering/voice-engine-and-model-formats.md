@@ -119,7 +119,7 @@ recovered formats.
 
 The index reader accepts two layouts. `FUN_10019e80` reads a one-byte length followed by that many bytes. When the payload begins with `ver.` and matches the expected version marker, it records a versioned-header flag and the header extent; otherwise it selects the older layout. All four Paul indexes use the versioned `ver.2013\0VoiceText-Eng\0` header. Each has one bank-name entry (`merged-gen`, `merged-num`, `merged-etc`, or `merged-alp`), a zero tag byte, a 32-bit unit count, and a 16-bit per-unit block stride of 19.
 
-For these files, the complete header and table occupy 45 bytes. `FUN_10019940` then skips `19 * unit_count` bytes and bulk-reads 21 bytes per unit into separate arrays, in this order: one byte, a 7-byte unit signature, one byte, then three groups each containing a 16-bit column and two byte columns. The 19-byte per-unit block is skipped by this loader path; its payload span fields are traced below. This predicts a total file length of `45 + 40 * unit_count` bytes. The read-only inspector at `tools/revkit/scripts/inspect_unit_idx.py` applies this layout to all four files. Each calculated length matches the actual file exactly:
+For these files, the complete header and table occupy 45 bytes. `FUN_10019940` then skips `19 * unit_count` bytes and bulk-reads 21 column arrays in this order: a one-byte column, a seven-byte signature per unit, another one-byte column, then three groups each containing a 16-bit column and two one-byte columns. These are column-major arrays, not contiguous 21-byte rows: for unit `i`, its signature starts at `feature_start + unit_count + 7*i`. The 19-byte per-unit block is skipped by this loader path; its payload span fields are traced below. This predicts a total file length of `45 + 40 * unit_count` bytes. The read-only inspector at `tools/revkit/scripts/inspect_unit_idx.py` applies this layout to all four files. Each calculated length matches the actual file exactly:
 
 | Index | Units | File size |
 | --- | ---: | ---: |
@@ -128,7 +128,7 @@ For these files, the complete header and table occupy 45 bytes. `FUN_10019940` t
 | `unit-etc.idx` | 115,723 | 4,628,965 bytes |
 | `unit-alp.idx` | 119 | 4,805 bytes |
 
-The field names above describe widths and order only. Use sites reveal more about the 7-byte unit signature: `FUN_10016ea0` maps selected bytes through lookup tables and derives a 5-byte class key; `FUN_1001a5a0` sorts/deduplicates these keys and creates unit-to-class mappings. `FUN_10016ef0` expands a 5-byte class key into one of two 10-byte feature views. `FUN_10023a70` scores key differences using weight tables. The algorithm therefore uses these fields as context-matching features, although the individual phonetic and attribute meanings are not fully identified.
+The field names above describe widths and order only. Use sites reveal more about the 7-byte unit signature: `FUN_10016ea0` maps selected bytes through lookup tables and derives a 5-byte class key; `FUN_1001a5a0` sorts/deduplicates these keys and creates unit-to-class mappings. `FUN_10016ef0` expands a 5-byte class key into one of two 10-byte feature views. `FUN_10023a70` scores key differences using weight tables. The algorithm therefore uses these fields as context-matching features, although the individual phonetic and attribute meanings are not fully identified. The Go reader reconstructs a logical feature row and exposes its three 16-bit group words plus the two byte columns in each group, preserving their opaque group order. `FUN_10018c80` selects metric and feature groups from that layout according to the current context mode; the Go transition-input builder now applies those observed indexes. Against the local M16 indexes, the signatures produce 61,566 sorted keys; the captured P/B key lookups resolve to the observed native IDs 48721, 48655, and 48656. This cross-check validates the array stride and class ordering for these examples, not every unit membership or every class lookup.
 
 The older `ver.2005` and `ver.2009` indexes have the same one-byte-length,
 NUL-separated version/producer header shape and one bank entry, but their
@@ -165,13 +165,18 @@ The integer fields are little-endian:
 | Record offset | Width | Field | Evidence |
 | ---: | ---: | --- | --- |
 | 0 | 4 | `.dat` offset | Used by the DAT reader and confirmed by runtime seeks. |
-| 4 | 2 | First-side sample span | Little-endian value; cross-checked as twice the sum of the first-side UPM bytes, including the shared boundary period. |
-| 6 | 2 | Second-side sample span | Little-endian value; cross-checked as twice the sum of the second-side UPM bytes, including the shared boundary period. |
+| 4 | 2 | First-side sample span | Little-endian value; cross-checked as twice the sum of the first-side UPM bytes, including the shared boundary period. Go exposes this as `UnitRecord.FirstSideSamples`. |
+| 6 | 2 | Second-side sample span | Little-endian value; cross-checked as twice the sum of the second-side UPM bytes, including the shared boundary period. Go exposes this as `UnitRecord.SecondSideSamples`. |
 | 8 | 2 | `.dat` span length | Used by the DAT reader; offset plus length reaches the next record or EOF. |
 | 10 | 4 | `.upm` offset | Base offset for the unit's combined UPM span. |
 | 14 | 1 | First UPM count | Used alone for the first side or in the combined span. |
 | 15 | 1 | Second UPM count | Used alone for the second side or in the combined span. |
 | 16 | 3 | Cached UPM edge periods | First, shared middle, and last values of the combined UPM vector. |
+
+`dat.UnitRecord.UPMSides` splits the combined vector at the shared period:
+the first side is `[0:firstCount]`, and the second is
+`[firstCount-1:firstCount+secondCount-1]`. This matches the second-side offset
+in `FUN_1002c120`; the boundary period belongs to both side views.
 
 `FUN_1002c120` chooses one of three UPM views. For the first side, it reads
 `first_count` bytes at the base offset. For the second side, it reads
@@ -220,8 +225,105 @@ including pitch-mark and prosody meanings, still need their own checks.
 
 A separate `A. B. C.` runtime attempt loaded the `alp` index and payload paths
 but did not cause a unit-level `merged-alp.dat` or `.upm` read. The alphabet
-bank's complete span partition is therefore established structurally; this
-runtime corpus only selected `gen` units.
+bank's complete span partition is therefore established structurally; opening
+its paths during initialization does not establish selection. The separate
+Stage 16 MakeInfo spelling fixture (`A.B.C.`) likewise emits six rows, all
+with file index 0 (`merged-gen`). A separate Stage 21 MakeInfo matrix then
+called the export for each standalone uppercase letter A–Z: 14 letters emitted
+rows using file index 3 (`merged-alp`), nine used index 2 (`merged-etc`), and
+three used index 0 (`merged-gen`). The four composite spelling/acronym controls
+all used index 0. Every captured `PCM Pos` matches an indexed DAT offset in the
+bank named by its `File Index`. The static per-phone candidate records carry
+bank-index bytes; generic candidate routines use them to index bank
+descriptors, and `FUN_1002c220` serializes a candidate's bank byte into the DTT
+`File Index`. So `alp` selection is runtime-confirmed and letter-dependent in
+these standalone calls. Lowercase standalone letters select the same banks as
+uppercase. Full uppercase and lowercase A–Z terminal-punctuation matrices
+found that `.`, `,`, and `!` produce TypeFlag=2 records field-for-field
+identical to the standalone letter for all 26 letters; terminal `?` changes
+every letter's record list (nine gen-only, two etc-only, fifteen mixed
+gen/etc). Uppercase and lowercase records match for all 104 letter/mark
+pairs. None of these 208 isolated letter/punctuation cases emits TypeFlag=1.
+Of the 22 phrase/punctuation
+contexts, `A, B` emits one TypeFlag=1 silence row while changing the bank for
+the A rows; `A B`, `A B C`, and `B C D` use gen, and `B C` uses etc. Overall,
+all 322,958 TypeFlag=2 rows among the 46,254 validated Stage 21 captures match a DAT offset
+and unit ordinal in the selected index (289,681 gen, 10,689 num, 21,948 etc,
+640 alp); the sole TypeFlag=1 row is in `A, B`. Complete uppercase and lowercase
+ordered-pair probes tested all 676 two-letter space-separated inputs both
+without punctuation and with terminal `?`. For each case, every pair changed
+TypeFlag=2 rows; 430 changed the bank set and 246 changed units within the same
+bank set. Uppercase/lowercase outputs match in 1,302 of 1,352 comparisons;
+the 50 differences all begin with A/a, where the first phone row is `AH0` for
+uppercase A and `EY1` for lowercase a. Seventeen differences change bank sets
+and 33 change records within the same bank set. In each case, question-mark
+pair outputs contain six alp rows in `E P?`, `Q J?`, `T F?`, `T S?`, and
+`V P?`; unpunctuated pairs contain no alp rows. No pair emitted TypeFlag=1.
+Two mixed-case matrices (`Upper lower`, `lower Upper`) matched uppercase
+output field-for-field for all 1,352 pair/form comparisons in each pattern.
+The measured lowercase effect therefore requires both tokens lowercase and
+begins only with `a` in this matrix. The next 8,112 calls tested terminal
+period, comma, and exclamation mark on all ordered pairs under all four case
+patterns. Uppercase period/comma and lowercase comma/exclamation preserve every
+same-case plain row list. Uppercase exclamation changes only `AA!`; lowercase
+period changes `aa`, `ae`, `ai`, `ao`, `au`, and `ay`, with bank-set changes
+only for `aa` and `ao`. Each mixed-case pattern preserves all period/comma
+rows and changes only `aa!` for exclamation. Mixed-case outputs match uppercase
+for all 2,028 pair/mark comparisons per pattern. Lowercase versus uppercase
+differs in 69/2,028 terminal pair comparisons (19 period, 25 comma, 25
+exclamation), all beginning with `a`. Each of the six lowercase-period
+exceptions exactly matches its uppercase unpunctuated counterpart. None of
+the pair-punctuation captures emits TypeFlag=1. A 5,408-call three-token
+extension covered all 676 continuations after initial `A`/`a` under uppercase,
+lowercase, `A b c`, and `a B C`, each plain and with `?`. Every uppercase and
+mixed-pattern plain/question comparison changes rows (415 bank-set changes,
+261 same-bank changes); all-lowercase has 394 bank-set changes and 282
+same-bank changes. Compared with uppercase, 649/676 all-lowercase continuations
+differ per form; only `ga` through `gz` and `ne` match exactly in both forms.
+Both mixed patterns match uppercase for all 1,352 outputs. No triple emits
+TypeFlag=1. This samples one three-token shape, so the general assignment rule
+and arbitrary longer contexts remain open.
+Four additional A-leading matrices tested the missing masks `LLU`, `LUL`,
+`ULU`, and `UUL` (all 676 continuations, plain and with `?`). The initial LUL
+and ULU captures used an incorrect middle-token case mapping; they are retained
+under Stage 21 `invalid-case-map/` and excluded from the aggregate, with
+corrected runs included in the 46,254-capture analysis. Against UUU, LLL and
+LLU differed in 1,298/1,352 outputs; ULU differed in 50/1,352, while ULL, LUU,
+LUL, and UUL matched exactly. The retained calls returned raw EAX 1, their row
+offsets mapped to indexed units, and none emitted TypeFlag=1. ULU differs for
+the same 25 continuations in both forms (`aa`–`af` and `ah`–`az`; `ag` is
+unchanged); 9 plain and 7 question results change bank sets, with the rest
+changing records within the same bank set. This shows a case interaction with
+uppercase leading A; the evidence does not reduce to a rule based only on A's
+case or all-lowercase input, and remains bounded to the tested shape.
+Stage 21 then tested all `B A C` and `B C A` contexts (676 ordered surrounding
+letter pairs per shape), plain and with terminal `?`, in all eight per-token
+case masks. For `B A C`, UUU question comparisons changed banks in 352/676
+cases and changed same-bank records in 324; LLL split 351/325, LLU 391/285,
+and ULU 388/288. The other four masks matched UUU's split. For `B C A`, UUU
+split 141/535, LLL 143/533, LLU 140/536, and ULU 137/539; the other four
+masks matched UUU. Compared field by
+field with UUU, `B A C` changed for LLL/LLU/ULU in 52/1,352, 1,302/1,352, and
+1,300/1,352 outputs; `B C A` changed for those masks in 50/1,352, 100/1,352,
+and 52/1,352. Other masks exactly matched uppercase. No added case emitted
+TypeFlag=1. Case behavior therefore depends jointly on A's position and the
+complete three-token case mask in these tested shapes. A separate 464-capture
+four-token follow-up tested `A A A D` and `A A G D` under all 16 case masks,
+then swept the final token A–Z in both contexts for masks UUUU, UUUL, ULUU, and
+ULUL, using the D results from the first set. All 4,952 TypeFlag=2 offsets
+mapped to indexed units, no TypeFlag=1 appeared, and terminal `?` changed
+banks in all 32 shape/mask comparisons for D. Across the sweep, ULUU/ULUL
+(`A a A X`/`A a A x`) differed from UUUU for every final letter X in both
+forms; the corresponding `A a G X`/`A a G x` controls matched UUUU for every
+letter and form. For the `A a A` context, plain outputs changed banks only at
+X=a,b; question outputs changed banks at X=b,e,h,j,m,n,s. This carries the
+selected case contrast across each tested fourth token, while general
+four-token and free-text rules remain open. The initial 5,408-capture matrix covered all 676 ordered `X Y` pairs in `A A X Y` and `A a X Y` under UUUU, UUUL, ULUU, and ULUL, both plain and with `?`. Three additional batches tested the other 12 masks, making 21,632 calls and 43,264 paired captures across all 16 masks, separate from the 46,254-capture aggregate. All returned raw EAX 1; all 220,076 TypeFlag=2 offsets mapped to indexed units, and no TypeFlag=1 appeared. Every mask changed rows between plain and question forms for all 676 pairs. Bank-set / same-bank record splits were 402/274 for UUUU, UUUL, UULL, LUUU, LUUL, and LULL; 403/273 for UULU and LULU; 416/260 for ULUU and ULUL; 404/272 for ULLU; 403/273 for ULLL; and 410/266 for LLUU, LLUL, LLLU, and LLLL.
+
+The exact equivalence groups across both forms and all pairs are `UUUU, UUUL, UULL, LUUU, LUUL, LULL`; `UULU, LULU`; `ULUU, ULUL`; `ULLU`; `ULLL`; `LLUU, LLUL`; `LLLU`; and `LLLL`. Token 1 casing has no effect if token 2 is uppercase, but interacts with token 2 casing in other masks. Token 4 casing is inert in several equivalence groups, but not generally. Against UUUU, UULU/LULU differ in 25 pairs per form, ULLU in 26, and ULLL in one; ULUU/ULUL differ in 650 (only `ga`–`gz` match); LLUU/LLUL and LLLU/LLLL differ on every pair. This closes the case-mask matrix for these two prefixes; other prefixes and free-text contexts remain open.
+
+The earlier `A. B. C.` runtime attempt demonstrates initialization of `alp`
+resources but, by itself, not selection of `alp` units.
 
 The DLL was run under Wine for this behavior check, not under a native Windows
 debugger. No model files were changed, and verification/license data was not
@@ -501,22 +603,194 @@ all phones 1.
 current identity, previous identity or boundary sentinel, next identity or
 boundary sentinel, current vowel stress, row bytes 1 and 2, token-position
 state, row count for that token block, and the per-phone 1/2/3 label. The
-ordinary initial boundary maps to 40; ordinary terminal marker `Z` maps to 40
-and final position state 3. Other sentinels and position transitions depend
-on marker bytes produced upstream. The Go text path ports the row fields and
-ordinary single-utterance path; special markers and all outer token-splitting
-rules are still unresolved. These statements describe recovered mechanics,
-not recovered phonetic names for the row fields.
+ordinary initial boundary maps to 40. At the utterance's final phone,
+`FUN_100135d0` maps terminal markers `[`, `Z`, `^`, and backtick to boundary
+identity 40 and final position state 3; other bytes use identity 42 and state
+2. The Go duration and pitch input builders accept these terminal markers
+explicitly, and `duration.Engine.EvaluateWithMarkers` applies them to both
+tree paths. The separate marked-initial-boundary branch depends on a model
+state marker not included in this API. This marker mapping comes from static
+disassembly and has not been compared row-for-row with a native marker capture.
+`text.SplitPaul2013TokenPhoneBlocks` ports the `FUN_10012c70` span rule when
+per-phone bytes are supplied: every non-`'0'` marker closes a block, and the
+final phone always closes one. `text.ApplyPaul2013PhoneBlockDurationLimit`
+also ports the later `FUN_100130e0` scan: it doubles each supplied per-phone
+byte, inserts `[` after the prior phone when a running block total exceeds
+1,000, and resets on `[`, `Z`, `^`, and backtick. A single phone over the
+limit is not possible for the observed byte input; the byte-value and
+initial-marker producers remain unresolved. `BuildPaul2013TokenPhoneNeighborhoodsWithPhoneMarkers`
+now rebuilds the `FUN_10013f30`/`FUN_10013c00` groups independently inside
+each block while retaining utterance-wide phone-neighbor features. The
+phone-marker entry points for duration and pitch evaluation use these rows;
+the ordinary text path supplies zero markers and keeps one block per lexical
+token. Source-text marker production remains unresolved. The decompiles for
+`FUN_10012df0`, `FUN_10012f00`, `FUN_10012c70`, `FUN_10013f30`,
+`FUN_10013c00`, and `FUN_100135d0` are preserved as Ghidra pseudocode in
+`tools/revkit/work/reports/stage21-frontend-marker-decomp.c`. In particular,
+`FUN_10012f00` derives a marker from a tree lookup over state-row fields and
+has a threshold branch at 500. `text.BuildPaul2013MarkerTreeInput` now ports
+its 15-short feature assembly from adjacent 0x3c0-byte records and explicit
+scan counters, and `text.EvaluatePaul2013MarkerTreeInput` connects that vector
+to a caller-selected scalar `tree3.Tree`; `text.RunPaul2013MarkerTreeToken`
+carries those counters through one supplied native-order token scan. The two
+string bytes are still explicit because the native record contains pointers
+whose targets are not captured in the portable phone-row buffers; the native
+tree-selection rule
+and full token-group arena walk also remain open. These statements describe
+recovered mechanics, not recovered phonetic names for the row fields.
 
-`FUN_100138c0` performs pitch-related lookups. `FUN_10013a20` constructs the
-pitch context values; a family selector chooses one scalar tree and its paired
-12-value tree. The scalar result is stored as one byte in the phone record;
-the 12-value row is copied as 16-bit values. `FUN_100137c0` then consumes the
-12 values as two six-value groups through `FUN_10013790`. The values are used
-in the pitch path, but their physical units and complete acoustic meaning are
-not recovered. The input slots' exact phonetic names also remain partly
-unknown; runtime captures show 12 readable short values at the lookup
-boundary, and tree selectors range as high as 11.
+After marker dispatch, `FUN_10012df0` builds a separate group index. It joins
+adjacent phone rows when the current marker is `\\` or `]`; other markers end
+the group. It also sums the explicit byte at each phone row's `+0x94` into its
+group total. `text.BuildPaul2013MarkerTreeGroups` ports these boundaries and
+sums with caller-supplied marker and value vectors. These groups feed the
+marker-tree stage and are distinct from the delimiter spans used by
+`FUN_10012c70`.
+
+`FUN_100130e0` then maps its per-token state array: states 0, 1, 2, and 3
+select `]`, backslash, `[`, and `Z` for non-final tokens. States 0 and 1 also
+set the adjacent previous-state flag. For the final token, states 0–2 select
+`[`, while other states preserve the initialized marker. The initial marker
+table at DLL address `0x10079a30` contains 13 bytes:
+`] [ Z ^ Z [ ] [ [ ] [ ] \\`. `text.BuildPaul2013InitialTokenMarkers`
+ports this lookup for explicit signed state codes and rejects indexes outside
+the recovered table. The Go
+`text.BuildPaul2013TokenBoundaryStateResult` also ports the visible update:
+the first N-1 values read from the `+0x20` field at `0x94`-byte strides map
+`-2` to 100, copy nonnegative values, and leave other negative values intact;
+for indexes 1 through N-1, a nonnegative resulting value sets state 2.
+`text.BuildPaul2013TokenBoundaryMarkers` applies the marker mapping from
+explicit initial markers and states. The follow-on adjacent-token pass forces
+`\` when the current row byte is not 8, the next row byte is 8, and the current
+marker is `]` or `\`; it also sets the previous-state flag. In the other
+branch, token code 12 sets that flag without changing the marker.
+`text.BuildPaul2013TokenBoundaryMarkerTransitions` ports these explicit
+branches. The producers for the state arrays, signed marker-table indexes,
+and transition row bytes still need to be connected to text and model-state
+generation. Its Ghidra pseudocode is included in
+`tools/revkit/work/reports/stage22-context-marker-producers.c`; addresses
+`0x10013170` and `0x10013250` resolved to the same function boundary as
+`FUN_100130e0` in this project, so the report repeats that decompile under
+those requested addresses.
+
+The only direct call reference to `FUN_100130e0` found in the Ghidra project
+is from `FUN_10026630`. Its caller first completes the `FUN_10022dc0` loop,
+then calls `FUN_10016c90`, then enters marker construction; duration and pitch
+tree evaluation follow. This fixes the stage order, but does not establish
+how the caller-owned `+0x20` state values or initial token markers are made.
+`FUN_10016c90` scans at most 65 bytes from each supplied code string. Its
+`d` and `c` bytes set the preceding phone marker to ASCII `1` and `2`; other
+nonzero bytes through ASCII `E` append a code with marker `0`, and `M` also
+sets a parallel flag. A byte outside those cases stops the scan. The Go
+`text.ParsePaul2013ContextCodes` helper returns these arrays while keeping the
+code meanings opaque; it does not build the enclosing model context or derive
+the caller's state class. The same function maps each supplied per-token state
+value to byte 0 when it equals -1 and byte 12 otherwise, then emits mode byte 6
+for final state 3 with an empty terminal pitch list, mode 5 for other states
+except 4 when the auxiliary byte is not 12, and mode 7 in the remaining cases.
+`text.SummarizePaul2013ContextCodeState` ports those explicit branches while
+preserving their state inputs as opaque values. The caller pseudocode is preserved in
+`tools/revkit/work/reports/stage24-marker-pipeline-caller.c`; surrounding
+state-array and context setup functions are in
+`tools/revkit/work/reports/stage23-state-array-writers.c`.
+
+`FUN_10022dc0` converts parser row offsets to inclusive absolute intervals,
+initializes per-phone state arrays, invokes `FUN_10022970`, then maps the
+resulting row indexes through caller tables. `text.BuildPaul2013PositionIntervals`
+ports its `base + start` and conditional `base + end - 1` arithmetic, using a
+single-point interval when the end offset does not exceed the start offset.
+The post-pass uses separate start/end tables; ordinary mode clamps indexes to
+the row limit first, while the alternate branch applies a final table to both
+lookup results. `text.MapPaul2013PositionStateIndexes` ports these branches
+with explicit lookup tables. The first four
+passes in `FUN_10022970` (array selectors 0, 1, 2, and 7) sweep sorted row keys
+across sorted boundaries. Each interval takes the preceding table value;
+negative values retain the destination's initialized/current value, and the
+ordinary arrays clamp to caller-supplied limits. Selector 7 preserves `-1`
+without clamping. The Go helper `text.ApplyPaul2013PositionStateRanges`
+implements this array sweep with opaque field names and explicit inputs. The
+second scan handles selectors 3 and 4 using per-row inclusive intervals over
+the sorted boundary table. Selector 3 sums matching values and clamps after
+each addition; selector 4 assigns each matching value, leaving the last match
+in the row. `text.ApplyPaul2013PositionEventValues` ports those per-row
+operations, preserves the cursor that advances only after a match, and returns
+selector 3's separate upper-clamp cursor. `text.EvaluatePaul2013PositionTerminalAccumulator`
+ports the final selector-3 scan when given its caller gate and interval. The
+The ASCII-word and captured unsigned-cardinal offset helper reproduces the
+directly captured source spans, but full parser-row and event-table production
+remain unported. These array operations do not establish the fields' semantic
+names.
+The complete decompiles are in
+[`stage23-state-array-writers.c`](../../tools/revkit/work/reports/stage23-state-array-writers.c).
+
+The direct caller shows the parser boundary immediately before those offsets:
+`FUN_10022dc0` invokes `FUN_1003d350` with the input buffer and parser state.
+Static disassembly of `FUN_1003d350` shows it first calls `FUN_1003e210`, then
+initializes the dword at `+0x20` in each of 100 records spaced `0x94` bytes
+apart to `-1`. If state `+0x39e8` is zero, it calls `FUN_1003d3d0`. If that
+pointer is nonzero, it calls `FUN_1005f2c0` on it: a zero low-short result
+selects `FUN_1003e070`, while a nonzero result selects `FUN_1003d3d0`. Both
+paths pass their result to `FUN_1003e240`. The wrapper returns the boolean
+conversion of the finalizer's low short: zero maps to false and any nonzero
+value maps to true. This follows the final `neg ax; sbb eax,eax; neg eax`
+sequence at `0x1003d3b7`–`0x1003d3bf`.
+
+`text.InitializePaul2013ModelParserState` ports `FUN_1003e210`'s counter,
+control-word, and `0xe74`-dword clearing behavior. `text.Paul2013ModeProbeHasWord`
+ports `FUN_1005f2c0`'s null check and little-endian word test at pointed offset
+`+8`. `text.DispatchPaul2013ModelParser` joins those operations to the 100-row
+sentinel initialization and parser selection. It requires explicit callbacks
+for the two inner parsers and `FUN_1003e240` because their behaviors are not
+ported. Runtime captures at `FUN_1003e240` establish ordinary ASCII-word row
+offsets for repeated words, comma-separated words, and `.?!` sentence resets.
+Unsigned numeric captures show one row per normalized word, with each row
+reusing the complete source-token span: `1` and `12` produce one row, `123`
+four, and `1234` and `2024` three. The engine reproduces those five captured
+counts and infers other unsigned-cardinal counts from its existing number
+expander. Separate native captures establish parser offsets for `+12`,
+`1.25`, `$5.00`, `25%`, `21st`, `01/02/2024`, `3:45 PM`, and `555-1234`.
+These confirm sign and hyphen rows, a percentage suffix row, and shared spans
+for the other captured forms. The telephone rows divide into cardinalized
+digit groups around the hyphen. Stage 20 row-string captures show the
+intervening `to`, and the independent Stage 5 phone-row capture records
+`five hundred fifty five to twelve thirty four`. This confirms the normalized
+spoken words for the captured `555-1234` form.
+`text.BuildPaul2013OrdinaryParserOffsetSegments` implements these captured
+offset paths. It does not construct raw parser rows or model the parser
+callbacks. General abbreviation, exception, TPP, and source lookup paths
+remain unavailable from source text; other numeric multiplicities use the
+existing normalizers as inference. The call and
+branch bytes are preserved in
+[`vt_pau-objdump-disassembly.txt`](../../tools/revkit/work/reports/vt_pau-objdump-disassembly.txt)
+at `0x1003d350`–`0x1003d3c0`, with the initializer and probe at
+`0x1003e210` and `0x1005f2c0`.
+
+`FUN_100138c0` performs pitch-related lookups. For each model-state record it
+loops over the counted group rows at record offset `+0x94`, passes the group
+index to `FUN_10013a20`, and writes one scalar/vector result at each `0x1e`-
+byte row. `FUN_10013a20` builds its 11 inputs from the group's first phone
+class, the phone labeled nucleus (falling back to the group's final phone),
+the group's stress and row flags, adjacent group-row fields, and boundary
+state. Only the final counted group selects a terminal pair: `^` selects
+`bt/bf`, `Z` selects `sbt/sbf`, `[` selects `qbt/qbf`, and other markers use
+`nbt/nbf`. `text.BuildPaul2013ModelRecordPitchInputs` now follows this native
+group loop. The separate lexical convenience builder emits per-phone rows;
+that projection does not establish native pitch-row cardinality.
+The scalar result is stored as one signed byte in the phone record,
+sign-extended into vector input 11, and the vector tree returns 12 signed-short
+values. `FUN_100137c0` consumes neighboring 12-short output rows in pairs.
+For each pair it copies both vectors, then calls `FUN_10013790` six times over
+seven-short windows starting
+at joined offsets 6 through 11. Each result is
+`(7 + 2 * sum(window)) / 14` with signed integer division; the first three
+results overwrite the left vector's final three values and the right vector's
+first three values in place. The independent engine ports this arithmetic and
+currently applies it to adjacent rows within each lexical token. How that
+pairing maps to the model-record group loop remains unverified. These mechanics
+are static-analysis-derived and have not yet been compared row-for-row with
+runtime pitch inputs and outputs.
+The values' physical units and complete acoustic meaning remain unresolved;
+tree selectors reach input position 11.
 
 **Runtime cross-check:** across three controlled inputs, GDB captured 307
 calls to `FUN_10001670` and `FUN_100016a0`. The parser reproduced the DLL's
@@ -601,7 +875,8 @@ have different consumers and different grammars:
   also carry a second `G` code, as in `ACCORD → A0 G95`. These category
   associations are corroborated by decoded key contents and caller behavior.
   In the multi-token consumer, `FUN_10064645` calls `FUN_100645ba`, which
-  parses an optional sign and decimal digits; `FUN_1000e0c0` narrows that
+  skips leading bytes marked `0x08`, accepts an optional sign, and accumulates
+  bytes marked `0x04` with 32-bit arithmetic; `FUN_1000e0c0` narrows that
   result to one byte and writes it to token field `+0x25`. This identifies
   the `F`/`G` numeric suffix operation and destination, not the linguistic
   name or full downstream meaning of each numeric class. Both suffix families
@@ -660,13 +935,27 @@ exactly to EOF and contains 123 rows: 11, 89, 22, and 1 in groups 1–4.
 `FUN_10003b70` binary-searches the selected group by key and returns the
 paired value; `FUN_10008dc0` applies this lookup to concatenated phone/context
 text and submits a match to `FUN_1000ca50`. The grouping and lookup behavior
-are recovered. `FUN_1000c9c0` normalizes each surface while preserving
+are recovered. In `FUN_10007520`, the exception lookup runs only when the
+signed byte at source-record `+0x30` is `-1` or the phone/context-row byte at
+`+0x29` is zero; the source-record type at `+0x23` is `U` or its `+0x52`
+context string is empty; and the low short returned by `FUN_100091b0` is zero.
+The Go helper ports this gate from explicit row fields; their source-text
+producer and the subsequent handler cascade remain open. `FUN_1000c9c0`
+normalizes each surface while preserving
 apostrophes and hyphens, counts one component plus one for each hyphen, and
 rejects unsupported characters. `FUN_10008dc0` accumulates that component
 count across adjacent rows; it is the selected category id (1–4). It joins
 the corresponding normalized components with hyphens and tries an exact
-compressed-key lookup. For a token marked `X`, a failed full-sequence lookup
-retries after dropping its final component. The four groups therefore encode
+compressed-key lookup. If that lookup misses on a row whose source marker at
+`+0x66` is `X`, the caller retries with the current normalized surface
+formatted as `h'` plus that surface, using the same accumulated category.
+The disassembly passes the current normalized buffer to the `h'%s` format at
+`0x10077888`; the separate `-%s` format at `0x10077890` builds joined
+prefixes. The retry-marker producer remains unresolved. `FUN_1000ca30` counts
+literal hyphens in each original destination surface and returns that count
+plus one; `FUN_1000ca50` uses those values to decide whether each encoded `d`
+is retained or advances to the next phone row. The Go decoder derives these
+counts from the matched source surfaces. The four groups therefore encode
 one-, two-, three-, and four-component pronunciation exceptions. Reversing
 the pair table at `0x10081568` exposes readable keys: group 1 includes
 `h'expose`, `pinata`, and `toysrus`; group 2 includes `a-cappella`,
@@ -691,7 +980,7 @@ validates the transform, row count, and callsite-selected column shape.
 
 | Resource | Rows | Mode | Observed columns and use |
 | --- | ---: | :---: | --- |
-| `wab.txt2` | 113 | L | One-column word list; `FUN_1000dfc0` stores matching row index plus one in token-record byte `+0x26`. |
+| `wab.txt2` | 113 | L | One-column word list; `FUN_1000dfc0` stores matching row index plus one in token-record byte `+0x26`. Its loader sets mode byte `'I'`, selecting `FUN_1001c2c0` mapped-character binary search in `FUN_100035d0`. |
 | `chc_sort.txt2` | 2,581 | M | Key and four-character `0`/`1` mask; `FUN_10002680` maps characters to bits `8,4,2,1` and checks that all requested bits are present. |
 | `streeta_sort.txt2` | 347 | M | Uppercase street alias to canonical street name; used with `streetf_sort`. |
 | `streetf_sort.txt2` | 211 | L | One-column canonical street-name list, used by address processing. |
@@ -759,7 +1048,7 @@ membership sets alone.
 | `0x02`, `0x04`, `0x06`, `0x08` | 4 × u16 | Boolean fields set to 1 from payload bits 6, 4, 5, and 7; higher-level names unknown. |
 | `0x0c` | u32 | Parsed pronunciation alternative/path count. |
 | `0x10` | 5 × 65 bytes | Five fixed-width NUL-terminated pronunciation text slots. |
-| `0x155` | 103 bytes | Alternative path/control records, using 20-byte strides and `0xff` terminators. |
+| `0x155` | 5 × 20 bytes | Alternative path/control records, using 20-byte strides and `0xff` terminators. |
 
 Payload bit 0 selects the direct-ID form: bytes after the flag are
 phone-symbol IDs terminated by NUL; each ID expands through the shared
@@ -798,19 +1087,22 @@ below are relative to its first argument:
 | `0x54c`–`0x552` | 4 × u16 | Dictionary metadata copied from `FUN_10003c50` offsets `0x02`–`0x08`. |
 
 The control-marker area before the pronunciation slots is 20 bytes wide. The
-`0x17c`–`0x54b` portion of the `0x554`-byte stride is not written by
+dynamic NUL terminator written after the phone slots reaches offset `0x17c`
+when all five alternatives are present; at smaller counts it is written at
+the next slot's start. The remainder of `0x17c`–`0x54b` is not written by
 `FUN_1000d450`. The builder has one caller, `FUN_1000d190`; the next converter
 `FUN_1000ea20` reads the count, source index, status, surface,
 first/selected-pronunciation slot, marker, and four trailing metadata words.
 The context-rule pipeline then uses the converted `0x70`-byte rows. A whole-
 DLL instruction scan for scalar constants `0x17c`, `0x54b`, and `0x554` found
-no `0x54b` reference and no `0x17c` reference used as a token offset; the
-single `0x17c` occurrence is a stack-frame allocation. The `0x554` stride
+no `0x54b` reference and no immediate `0x17c` token offset; the dynamic phone
+terminator address can nevertheless reach `0x17c` at five alternatives. The
+single scalar `0x17c` occurrence is a stack-frame allocation. The `0x554` stride
 references occur in `FUN_1000cf00` and `FUN_1000ea20`, the string-search and
 record-conversion functions. `FUN_1000cf00` forms addresses at stride-relative
 offset `+0x05` and compares NUL-terminated strings; it does not inspect the
-gap. No direct static reader or writer for the gap was found anywhere in this
-DLL. This closes the direct code-reference question for the analyzed binary;
+gap. No other direct static reader or writer for the gap was found anywhere in
+this DLL. This closes the direct code-reference question for the analyzed binary;
 it cannot rule out an indirect access through an opaque pointer or code in
 another DLL. The gap is not a field or vendor-declared padding.
 
@@ -841,6 +1133,19 @@ the surface/code and flags through its normalization rule cascade. These
 layouts and copy paths are recovered; names for all rule flags, code values,
 and metadata words are not.
 
+The classifier row is 15 signed shorts. `FUN_10006ae0` fills positions 0–3
+from four surrounding words, positions 4–7 from four neighboring triplets,
+positions 8–12 by applying `FUN_10007160` to the two preceding words, center
+word, and two following words, and position 14 from the center surface's
+first-byte attribute. `FUN_100068b0` loops through every code in each parsed
+path group, maps that code through `DAT_100783ec` into position 13, evaluates
+`engbi.tree3`, and accumulates each output against every path group. It selects
+the stable maximum-scoring group and copies the pronunciation slot built at
+the same alternative index by `FUN_1000d450`. The independent engine now ports
+this call and selection flow. Its statically generated feature rows and
+selected alternatives have not yet been compared with captured runtime rows
+and choices.
+
 ### Runtime cross-check
 
 Isolated Wine/GDB runs exercised ordinary words, numeric boundaries, dates,
@@ -860,7 +1165,7 @@ digit group. Captured token surfaces establish these cases:
 | `3.14`, `12.05`, `.5`, `1,000.00` | `three point one four`; `twelve point zero five`; `point five`; `one thousand point zero zero` |
 | `01/02/2024` | `January second twenty twenty four` |
 | `3:45 PM` | `three forty five PM` |
-| `555-1234` | `five five five one two three four` |
+| `555-1234` | `five hundred fifty five to twelve thirty four` |
 | `-12.5`, `+7`, `$5.00`, `25%` | `minus twelve point five`; `plus seven`; `five dollars`; `twenty five percent` |
 
 The helpers divide the cases by syntax. In ordinary (`L`) mode,
@@ -884,15 +1189,16 @@ digitwise spelling for a component beginning with zero (`12.05` → “twelve
 point zero five”, `.5` → “point five”). `FUN_10060fc0` calls the year helper
 only for a four-digit all-numeric string whose first digit is nonzero, so a
 three-digit value such as `999` stays in the ordinary numeric path and `0999`
-is digitwise. For the year helper's four-digit range, a zero hundreds digit
-and a final two-digit value below 10 select ordinary cardinal form. If the
-last two digits are `00` and the hundreds digit is nonzero, the helper says
-`(year / 100)` as a cardinal plus “hundred”. All other cases say `(year / 100)`
-as a cardinal, followed by the last two digits; a one-digit remainder is
-spoken as “oh” plus that digit. Runtime confirms `1010` → “ten ten”,
-`1099` → “ten ninety nine”, `1900` → “nineteen hundred”, `2009` → “two
-thousand nine”, `2101` → “twenty one oh one”, and `9999` → “ninety nine
-ninety nine”. Slash dates use month/day/year in the captured cases and
+is digitwise. The four-digit year helper keeps the captured `10xx` and `20xx`
+forms with suffixes `00` through `09` in cardinal form (`1000`, `1001`,
+`1009`, `2000`, `2001`, `2005`, `2009`). Other captured cases split into the
+first and last two digits: a zero ending with a non-round decade uses
+“(year / 100) hundred”, and a nonzero one-digit remainder after a zero
+hundreds digit uses “oh” plus that digit. Runtime confirms `1010` → “ten ten”,
+`1099` → “ten ninety nine”, `1100` → “eleven hundred”, `1900` → “nineteen
+hundred”, `2010` → “twenty ten”, `2100` → “twenty one hundred”, `2101` →
+“twenty one oh one”, and `9999` → “ninety nine ninety nine”. Other branches
+of the four-digit range remain inferred. Slash dates use month/day/year in the captured cases and
 ordinal day words (`01/02/2024` → “January second twenty twenty four”).
 `FUN_10061450` and its callers add the observed sign, currency, percent, time,
 telephone, and punctuation behavior.
@@ -999,10 +1305,10 @@ comparator using the commands in [the revkit README](../../tools/revkit/README.m
 
 The remaining direct-reference check for the token-result stride is complete:
 the whole-DLL scalar scan and decompilation of the functions containing
-direct `0x554` stride references found no direct access to `0x17c`–`0x54b`.
-The region is unused by direct
-references in this DLL, with the indirect-pointer and other-module limits
-stated above.
+direct `0x554` stride references found no direct access to `0x17c`–`0x54b`
+apart from the count-dependent phone-slot terminator described above. The rest
+of the region is unused by direct references in this DLL, with the
+indirect-pointer and other-module limits stated above.
 
 The four copied dictionary metadata values are characterized as Boolean
 payload fields from bits 6, 4, 5, and 7 of the source record. The controlled
@@ -1045,6 +1351,21 @@ These structures form the class-level index used before individual waveform
 units are considered. Their bytes are categorical model features, not direct
 distance values. Their individual phonetic meanings are not recoverable from
 the traced operations alone.
+
+The range-index implementation is visible in `FUN_1001aa90` and
+`FUN_1002df50` (Ghidra pseudocode in
+[`stage26-feature-range-index.c`](../../tools/revkit/work/reports/stage26-feature-range-index.c)).
+`FUN_1001aa90` reads two class-ID vectors, each with exactly the class count,
+and validates that their expanded feature views are nondecreasing across all
+10 bytes. `FUN_1002df50` selects the mode's vector, binary-searches the query
+prefix, then returns the contiguous equal-prefix range. These are full class
+indexes, not state-filtered subsets. `voice.ClassCatalog` reconstructs both
+vectors from local unit indexes and provides the same prefix-range operation;
+the local Paul data tree has no `sclass.idx`, so equal-view ordering is
+reconstructed as ascending class ID and is not claimed to match the native
+vector. `selection.LookupPaul2013WholePositionByFeatureViewCatalog` connects
+that index to the native prefix relaxation and bounded shortlist logic while
+keeping the 10,000-candidate score boundary explicit.
 
 The key's first three bytes are lookup-table mappings of signature bytes
 1–3; key byte 3 copies signature byte 5, and key byte 4 is signature byte 6
@@ -1090,10 +1411,44 @@ Because it emits a whole class before checking the threshold, the result can
 exceed the population budget by that last class's size. At the traced callsite
 these limits are 30 classes and 10,000 units. The 10,000 threshold limits the
 population considered by the scorer; the binary contains no evidence for why
-the author selected that value. The related feature-view path
-(`FUN_10023c70`, called through `FUN_10023e70`) searches matching class ranges
-and broadens its context window when necessary; its callsite uses limits of
-10 classes and 10,000 units.
+the author selected that value. When the fast path does not apply, both
+scoring loops process at most 10,000 class candidates. `FUN_10023c70` sorts
+only the copied prefix; `FUN_10023af0` passes its original candidate count to
+the sort helper after scoring that bounded prefix. The unscored tail's scratch
+contents are not established, so the independent ranker rejects pools above
+10,000 on the key-only path rather than guessing their order. The independent
+sorter ports `FUN_1001b5f0`'s 17-entry insertion cutoff, median-of-three
+partition, strict scans, and 32:1 imbalance fallback to `FUN_1001b400`'s heap
+path. The insertion path preserves equal entries; partition and heap swaps
+determine larger-list tie order. The Go sorter matches two 75-entry native
+permutations: the natural local-score tail from the repeated-Hello run and a
+controlled run whose process-local scores force the 32:1 heap fallback. The
+first checks native ordering for its observed partition path; the second checks
+the heap fallback for that constructed split. The forced case does not establish
+that a natural workload takes the fallback, and neither vector establishes
+parity for every range size or call site. Portable vectors and GDB scripts are
+under `tools/revkit/work/stage20/`. The related feature-view path
+feature-view path (`FUN_10023c70`, called through `FUN_10023e70`) searches
+matching class ranges and broadens its context window when necessary; its
+callsite uses limits of 10 classes and 10,000 units. Static disassembly of
+`FUN_1002df50` reads the prefix width from the caller's query structure; the
+`FUN_10023e70` caller starts at 10 bytes and decrements the width on each
+retry. The selection helper applies that shrinking range search, rank limits,
+and member-count stop to a supplied candidate scope. The query-sequence port
+also obtains these ranges directly from the reconstructed full-catalog index;
+an explicit scope remains available for controlled comparisons. A full-catalog Go probe
+on the traced P half-key initially returned exact-view matches where the
+native trace returned none. Comparing the ten query bytes exposed a Go mapping
+error: byte 8 used the high three flag bits in mode 1 and the low three in
+mode 2, opposite to `FUN_10016ef0`. After correcting both projections, the Go
+catalog matches the captured P query bytes and range counts at widths 10, 9,
+and 8 in both view modes for two queries. The captures are in the
+[P half-key trace](../../tools/revkit/work/stage10/tree-context-t-middle-b-p-half-keys-all.log).
+This does not establish native result ordering or parity for other queries.
+The `sclass.idx` resource is absent from the local Paul tree, so the
+reconstructed equal-view order remains unverified.
+The query and index pseudocode are also preserved in
+[`stage25-feature-scope-query.c`](../../tools/revkit/work/reports/stage25-feature-scope-query.c).
 
 `FUN_10023350` expands each context's class candidates into actual unit
 candidates, applies neighboring-context and duration handling, then invokes
@@ -1123,7 +1478,7 @@ offset `+0x0c`. Each side's 16-bit per-unit metric code is masked with
 established cepstral value. The per-context selector at byte `+4` chooses
 the metric-code arrays: value `2` selects array `1` for both sides; other
 observed values select array `0` for the current side and array `2` for the
-previous side. The transition adds a weighted raw-table distance, three
+previous side. The transition adds a weighted raw-table distance, two
 derived 256-bin feature distances, categorical penalties, the preceding
 cumulative cost, and a current duration/prosody term. It picks
 the minimum predecessor with `FUN_10023010` and stores both the predecessor
@@ -1311,7 +1666,22 @@ add a synthetic row at a sentence boundary. On that row kind, it computes the
 `+0x0c` duration as `((((v >> 1) + 10000) / v) * q + 50) / 100`, using a
 lookup value `v` and synthesis-state integer `q`. For a normal
 selected-unit row, `FUN_1002c120` fills `+0x0c` from the selected unit's sample
-span and attaches the descriptor fields. `FUN_1002c530` at `0x1002c530` links
+span and attaches the descriptor fields. View mode 1 selects the first DAT/UPM
+side; mode 2 advances the DAT offset past the first side's nonshared samples
+and the UPM offset past its shared boundary; other mode values use the combined
+view. `synthesis.BuildPaul2013TimelineUnitView` ports these offsets, counts,
+and cached edge values from a decoded record when the mode is supplied.
+`synthesis.BuildPaul2013NormalTimelineRow` also assembles the observed normal
+row kind, primary index, three carried control words, and doubled edge spans;
+it represents the descriptor address as a unit reference. The mode producer
+remains outside the Go path. `synthesis.BuildPaul2013SyntheticTimelineRow`
+ports the boundary row's fixed kind, duration expression, opaque index,
+sentinels, and marker from explicit lookup/state inputs; those inputs are not
+yet produced from text. `FUN_1002c8b0` chooses the decoded PCM start from mode
+`+0x26`: modes 0 and 1 copy from the unit start, while mode 2 starts at the
+decoded unit length minus the row's leading span. The normal row kind at
+`+0x27` does not select that offset. The Go renderer now carries both bytes
+separately. `FUN_1002c530` at `0x1002c530` links
 row transitions into a circular 600-entry history of 36-byte records;
 repeated compatible contexts reuse the prior history slot. Observed row fields
 used downstream are:
@@ -1361,6 +1731,14 @@ saturated before joining. The default and volume-120 WAV peaks are 30,720 and
 per-sample deviations from a direct 0.6 ratio arise from integer rounding in
 decoding, interpolation, and overlap.
 
+The preceding control propagation in `FUN_10022850` independently selects
+each carried pitch, speed, and volume word from the request when its matching
+override flag is set, otherwise using the engine-level value. It then clamps
+the chosen values to 50–200, 50–400, and 0–500. The Go engine exposes this
+selection and clamp through `synthesis.ResolvePaul2013ControlOverrides`;
+`synthesis.NormalizePaul2013Controls` separately handles the API's negative
+default sentinels and speed-zero behavior.
+
 ### Pitch periods and joins
 
 `FUN_1002bbd0` reads the unit's selected UPM byte span and widens each byte to
@@ -1381,11 +1759,40 @@ the segment whose reconstructed coordinate has the smallest residual.
 `FUN_1002afb0` calculates `source_period * 100 / segment[4]`, clamps the
 result between `floor(source_period / 16)` and
 `floor(source_period * 31 / 16)`, and shortens it again if the remaining
-context sample budget is smaller. It then resamples neighboring sample
-windows. `FUN_1002d010` and `FUN_1002cdf0`
-interpolate between sample windows and zero-extend where a requested window
-runs past its source. Their results are accumulated with integer edge weights
-and saturated into the output buffer.
+context sample budget is smaller. In the `FUN_1002afb0` decompile, one window
+reads the current output context at its write cursor and is left-aligned under
+the falling table half. The other reads a tail-aligned slice of the selected
+source period and is right-aligned under the rising half. Each can be cropped
+at the corresponding edge or zero-extended, then their weighted 16-bit samples
+are added before the following source-period span is copied to output.
+`FUN_1002d010` and `FUN_1002cdf0` implement the aligned window operations:
+they multiply copied samples by the indexed coefficient before writing them.
+The later timeline path accumulates supplied windows with integer edge weights
+and saturation. This separates the local segment-window sum in the pseudocode
+from the timeline accumulator's distinct clipping behavior.
+The two sample-window helpers index a shared coefficient table: the d010 path
+starts at `0x1006d1b0`, while the cdf0 path adds 4,096 to each coefficient
+index. The preceding global at `0x1006d1ac` contains `0x2000`, giving 8,192
+float32 entries. The table starts at file offset `0x6d1b0`; sampled values
+include `0x00000000` at index 0, `0x3f800000` at index 4,096, and small positive
+values near both ends. These samples fit the inferred curve
+`sin(pi*index/8192)^2`. The d010 path uses the rising half and cdf0 uses the
+falling half. Its integer phase advances by `floor(sample_index*4096/span)`,
+where `span` is the smaller source/output window length. A full 8,192-entry
+comparison with `tools/revkit/scripts/compare_blend_table.py` found 5,640
+bitwise differences against the host analytic formula, with a maximum
+difference of 2,300 ULPs near small coefficients. The engine now embeds the
+exact float32 slice in `engine/synthesis/window_table.bin`; both blend-window
+and equal-span mixing read those values directly. The reproducible
+`tools/revkit/scripts/extract_paul2013_window_table.py` maps the PE section,
+checks table shape and range, and writes only the coefficient slice. The
+original proprietary DLL remains untouched.
+Before writing each weighted sample, the helpers clamp products above 32,766
+or below -32,767. They call `FUN_1006479c`, which saves the x87 control word,
+sets its rounding-control bits to truncate toward zero for `FISTP`, then
+restores the prior word. The Go window and timeline-join paths use truncation
+after those asymmetric bounds; nearest-even conversion would differ for
+fractional products.
 At the default pitch sentinel, the segment builder is bypassed and
 `FUN_1002aac0` takes its ratio-100 path, carrying pending samples between
 timeline rows and draining the final tail when the last row is reached.
@@ -1442,6 +1849,15 @@ All four controlled long-input outputs parsed as valid PCM WAVE files and the
 Wine/GDB inferiors exited normally. The short-input output was 6,388 frames;
 its one 12,776-byte PCM block equals its complete WAVE data chunk.
 
+The Go renderer reproduces `tools/revkit/work/stage8/map-short.wav`
+byte-for-byte for the two unit references recorded by the short-input trace
+(`gen:210603`, `gen:210604`) with explicit combined-view normal rows and
+observed default gain. The optional local-model regression is `go test
+./synthesis -run TestStage8ShortNoContextJoinMatchesRuntimeCapture`; it skips
+when the local Paul model inputs are absent. This verifies normal-row mode
+propagation and the short no-context join. It does not validate text-derived
+unit selection or the eligible-neighbor path exercised by the long input.
+
 ### Bounded limits
 
 Stage 8 maps the selected-unit synthesis path, the exact UPM-to-output frame
@@ -1464,6 +1880,17 @@ produced four and five PCM blocks. All returned PCM bytes concatenate exactly
 to their WAVE data chunks, and both WAVE files match the earlier Stage 6
 references byte-for-byte. Coverage remains bounded to those inputs and
 settings.
+
+Stage 16 also compared `Hello<vtml_pause time="N"/>world.` against its plain
+control for `N=0`, `200`, and `1000` ms. At 16 kHz, the reported PCM frame
+counts increase by exactly 3,200 and 16,000 for the two nonzero cases. The
+Go `text.LexiconFrontend.ResolveTextWithPaul2013InlinePauses` recognizes this
+captured self-closing spelling, preserves the pause's source position between
+lexical tokens, and returns its exact 16 kHz frame count. Other VTML tags,
+attribute spellings, and integration into native selected-unit timeline rows
+remain unsupported. The controlled counts are recorded in the
+[Lead 6 API report](lead6-file-api-behavior-2026-09-25.md) and Stage 16
+artifacts.
 
 ## Limits of this pass
 

@@ -1,0 +1,42 @@
+VoiceText Paul 2013 FUN_10034180 final-row context bypass
+========================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_10034180` in
+`tools/revkit/work/reports/stage6-tpp-callers.txt` applies the component
+surface, family lookup, and marker/value checks first. It then evaluates
+`puVar2[uVar4 * 0x50 - 0x47] == 0`; a zero value jumps to the success return
+at `LAB_10034470`, before the following context predicates. When nonzero, the
+same dword is cast to `byte *` and passed to `FUN_1005a350` as its scan input.
+The pointed-to layout and contents remain unknown. The component count is
+`uVar4`, and each row is `0x140` bytes. With the first row beginning
+at arena `+0x0c`, this expression addresses the final row's dword at `+0x18`:
+
+```text
+4 * (count * 0x50 - 0x47) = count * 0x140 - 0x11c
+0x0c + (count - 1) * 0x140 + 0x18 = count * 0x140 - 0x11c
+```
+
+Port
+----
+
+`text.Paul2013ProperNameTPPComponentsFromArena` now projects that dword from
+the final component row and marks the field as available. After the supported
+lookup and marker/value gate succeeds, `duration.Engine.MatchProperNameTPPComponents`
+sets `ContextChecksBypassed` only when this raw dword is zero. A nonzero value,
+or a component list without the raw arena field, leaves `ContextChecksPending`
+true. This preserves the distinction between passing the known lookup gate and
+being accepted by the complete native function.
+
+The proper-name surface builder also bounds each stored-length addition before
+performing it, so malformed large lengths cannot wrap the `0x1d` accumulator.
+
+Evidence boundary
+-----------------
+
+This ports the direct zero-input fast path. Stage 134 separately ports the
+post-scanner Boolean decision tree from caller-supplied observations. The raw
+scanner and pointer-backed helper/table lookups remain unimplemented, as do
+component-arena production and runtime row parity.

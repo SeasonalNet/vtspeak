@@ -1,0 +1,33 @@
+VoiceText Paul 2013 user-dictionary source normalizer
+====================================================
+
+Behavior and evidence
+--------------------
+
+`VT_CheckUserDict_SourceNorm_ENG` at `0x1002a550` calls
+`FUN_1005f2e0(output, input)` at `0x1005f2e0`, then discards both the helper
+return code and its 52-byte stack output. The helper skips leading and trims
+trailing ASCII space, TAB, LF, and CR. It copies all other bytes unchanged,
+returns `-1` when trimming leaves no bytes, and returns `-5` when the trimmed
+source exceeds the observed 49-byte limit.
+
+The pair predicate at `0x10061f90` rejects `[a1-ad][a1-fe]`,
+`ae[a1-c2]`, and `fd fe`. Stage 21's direct PE32 harness tested every
+two-byte value pair followed by NUL: all 65,536 results, output bytes,
+terminators, and input-immutability checks matched the recovered rules. The
+one-byte domain and all one-byte prefixes/suffixes around every rejected pair
+were also covered. When a rejected pair follows copied bytes, the helper
+returns `-3` with that prefix left unterminated. Its remaining scratch bytes
+are uninitialized and are not valid output.
+
+Implementation
+--------------
+
+`text.NormalizePaul2013UserDictionarySource` returns the signed helper code,
+copied bytes, and whether the copied prefix is NUL-terminated. It models only
+bytes actually initialized by the wrapper/helper and does not invent contents
+for the rest of the 52-byte scratch buffer. The helper's behavior for longer
+sequences is implemented from the recovered static loop and pair predicate;
+runtime exhaustive coverage proves all two-byte inputs and the tested
+one-byte contexts, not every longer byte string or the meaning of the error
+codes. The public export itself exposes no normalized data to callers.

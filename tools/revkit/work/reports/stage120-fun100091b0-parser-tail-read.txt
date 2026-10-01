@@ -1,0 +1,51 @@
+VoiceText Paul 2013 `FUN_100091b0` parser tail extraction
+=======================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_100091b0` is in
+`lead3-ax-metadata-helper-static-2026-09-25.txt`. In both the Y and S paths,
+the function reads a signed offset from the selected 0x94-byte parser row at
+`+0x14`. If positive, it copies the dword length at `+0x18` from the parser
+arena address `row + 0x34 + offset`, then writes a NUL at the supplied length
+in its 32-byte local buffer. For Y, selection occurs after duplicate context
+rows advance the row index; S uses its current context row.
+
+Recovered implementation
+------------------------
+
+`text.paul2013ParserTailSurface` implements that bounded parser-arena read and
+fails closed if the source range exceeds the arena or the copy would exceed
+the local buffer. Form-Y/S helpers now derive this tail automatically when
+the caller does not provide an explicit `tailSurface`; the counted-row pass's
+existing explicit map remains an override. `FUN_100091b0` then feeds the
+derived string into its literal suffix handling.
+
+The Go ordinary parser-row writer does not yet produce the `+0x14` offset
+field from source text, so rows with a zero field correctly derive an empty
+tail. That producer and runtime row-for-row parity remain open.
+
+Producer boundary checked
+-------------------------
+
+The available ordinary source-row appenders do not establish a producer for
+these tail fields. The pseudocode excerpt for `FUN_10044fd0` and
+`FUN_10045070` writes the coordinate/length fields, type/class at `+0x23` and
+`+0x24`, flag at `+0x28`, status at `+0x30`, and primary text at `+0x34`;
+the latter also writes auxiliary text at `+0x52`. Neither helper writes
+`+0x14` or `+0x18`. The parser-row projection in
+`WritePaul2013ParserOffsetRows` likewise writes offsets at `+0`/`+4`, length
+at `+0x08`, type at `+0x24`, and text at `+0x34`, leaving `+0x14`/`+0x18`
+untouched.
+
+The disassembly of `FUN_100457b0` shows its source-token branches append via
+`FUN_10044fd0`; its post-append hyphen branch writes the source row type at
+`+0x2c`. This confirms that this caller does not supply the tail offset or
+length either. These observations cover the identified append paths only:
+they do not prove that no other caller or later mutation produces the fields.
+In particular, the `+0x28` flag and `+0x2c` type are separate fields and must
+not be reused to synthesize the `+0x14` tail offset. The remaining task is to
+identify and trace the producer or later updater that sets `+0x14` and
+`+0x18`, then compare complete rows against native output before connecting
+it to ordinary source-to-model execution.

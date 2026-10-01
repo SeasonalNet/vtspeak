@@ -1,0 +1,30 @@
+VoiceText Paul 2013 FUN_1000a140 long-input liness branch
+=======================================================
+
+Evidence
+--------
+
+`FUN_1000a140` admits inputs of at least nine C-string bytes into its short
+suffix path when the mapped final six bytes compare equal to the literal
+`liness` at `s_liness_10077830`. That path reaches the `ness` stem case: it
+first normalizes the input with the final four bytes removed. If that lookup
+misses, the pseudocode checks the recovered short table at the byte before
+the final `i`; when the table value is zero, it retries with that `i` changed
+to `y`. Successful output receives the literal bytes `-#7` and row-flag bit 3.
+
+The control flow is in `tools/revkit/work/reports/stage6-deep-text-functions.txt`
+and `tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, under
+`FUN_1000a140`. The short-table values used by the retry are extracted from
+DLL address `DAT_10077d5e` and documented in
+`tools/revkit/work/reports/stage75-ed-suffix-context.txt`.
+
+Implementation boundary
+-----------------------
+
+`NormalizePaul2013LinessSuffixContext` ports this gate, the first stem lookup,
+the table-gated `i`-to-`y` retry, marker, and row-flag write for inputs of 9
+to 31 bytes. Stage 106 later captures the complete signed-index table window,
+including high-bit source bytes. `NormalizePaul2013SupportedA140Suffixes`
+checks it before the later long `ed` and `er` handlers. Row-for-row runtime
+parity remains unverified; this byte-level support does not claim Unicode
+normalization.

@@ -1,0 +1,222 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /probe/probe-original-kate-2006.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /probe/stage20/apple-selector-byte0-old-weight-counterfactual-candidates-2026-09-29/legacy-weight-counterfactual-candidates-gdb.log.
+Copying debug output to /probe/stage20/apple-selector-byte0-old-weight-counterfactual-candidates-2026-09-29/legacy-weight-counterfactual-candidates-gdb.log.
+Wine-gdb> Already logging to /probe/stage20/apple-selector-byte0-old-weight-counterfactual-candidates-2026-09-29/legacy-weight-counterfactual-candidates-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ec07
+Wine-gdb> >>>>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001ed7f
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_OLD_COUNTERFACTUAL_TRACE_READY
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=189455 transition=41.4772 previous_path=19.3989 local=2.65529 total=63.5314 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=100180 transition=47.5784 previous_path=15.3267 local=2.65529 total=65.5605 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=2645 transition=45.4731 previous_path=22.6226 local=2.65529 total=70.751 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=188302 transition=26.3953 previous_path=17.1543 local=2.65529 total=46.2048 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=199880 transition=19.0468 previous_path=14.2877 local=2.65529 total=35.9898 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=45509 transition=63.7348 previous_path=15.3712 local=2.65529 total=81.7613 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=61725 transition=21.8814 previous_path=16.4491 local=2.65529 total=40.9857 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=40810 transition=20.3717 previous_path=24.3438 local=2.65529 total=47.3708 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=41008 transition=81.7198 previous_path=22.9864 local=2.65529 total=107.361 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=96145 transition=86.3518 previous_path=27.13 local=2.65529 total=116.137 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=231014 transition=32.1777 previous_path=17.2242 local=2.65529 total=52.0572 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=118661 transition=29.4688 previous_path=15.9216 local=2.65529 total=48.0456 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=56167 transition=41.4956 previous_path=19.264 local=2.65529 total=63.4149 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=108878 transition=61.2685 previous_path=24.9748 local=2.65529 total=88.8987 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=244717 transition=17.5523 previous_path=27.8343 local=2.65529 total=48.0419 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=213256 transition=6.40418 previous_path=22.1814 local=2.65529 total=31.2409 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=64719 transition=14.737 previous_path=14.2952 local=2.65529 total=31.6875 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=64728 transition=17.1998 previous_path=27.6742 local=2.65529 total=47.5293 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=82709 transition=84.7324 previous_path=19.0961 local=2.65529 total=106.484 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=97601 transition=45.2846 previous_path=15.5873 local=2.65529 total=63.5272 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=128863 transition=31.0051 previous_path=10.9383 local=2.65529 total=44.5988 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=40503 transition=76.4758 previous_path=23.3079 local=2.65529 total=102.439 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=86012 transition=34.0272 previous_path=14.8008 local=2.65529 total=51.4833 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=150075 transition=41.7527 previous_path=15.5656 local=2.65529 total=59.9736 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=2554 transition=19.5051 previous_path=29.9268 local=0.522934 total=49.9548 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=256581 transition=26.8364 previous_path=162.362 local=0.522934 total=189.721 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=232462 transition=19.1977 previous_path=92.0124 local=0.522934 total=111.733 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=218670 transition=22.8029 previous_path=30.5799 local=0.522934 total=53.9057 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=158830 transition=28.5359 previous_path=32.8638 local=0.522934 total=61.9226 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=131118 transition=20.3126 previous_path=34.1769 local=0.522934 total=55.0124 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=129559 transition=0 previous_path=31.2409 local=0.522934 total=31.7638 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=103238 transition=28.7285 previous_path=30.7896 local=0.522934 total=60.041 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=97884 transition=100.363 previous_path=101.872 local=0.522934 total=202.758 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=86327 transition=20.763 previous_path=30.4565 local=0.522934 total=51.7424 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=82036 transition=14.7645 previous_path=31.6901 local=0.522934 total=46.9776 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=59558 transition=21.4476 previous_path=27.5946 local=0.522934 total=49.5651 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=41057 transition=22.5359 previous_path=34.1021 local=0.522934 total=57.1609 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=40214 transition=16.8954 previous_path=34.6053 local=0.522934 total=52.0236 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=28631 transition=21.2331 previous_path=36.98 local=0.522934 total=58.736 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27966 transition=18.3091 previous_path=61.7962 local=0.522934 total=80.6282 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27794 transition=20.1506 previous_path=37.193 local=0.522934 total=57.8665 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27440 transition=19.6037 previous_path=28.455 local=0.522934 total=48.5817 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=11135 transition=24.0854 previous_path=32.2385 local=0.522934 total=56.8468 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=258822 transition=44.0998 previous_path=33.1472 local=0.522934 total=77.7699 penalty=10
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=177774
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=177774
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=100180
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=59558
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=59559
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=189455 transition=41.4772 previous_path=19.3989 local=2.65529 total=63.5314 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=100180 transition=47.5784 previous_path=15.3267 local=2.65529 total=65.5605 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=2645 transition=45.4731 previous_path=22.6226 local=2.65529 total=70.751 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=188302 transition=26.3953 previous_path=17.1543 local=2.65529 total=46.2048 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=199880 transition=19.0468 previous_path=14.2877 local=2.65529 total=35.9898 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=45509 transition=63.7348 previous_path=15.3712 local=2.65529 total=81.7613 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=61725 transition=21.8814 previous_path=16.4491 local=2.65529 total=40.9857 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=40810 transition=20.3717 previous_path=24.3438 local=2.65529 total=47.3708 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=41008 transition=81.7198 previous_path=22.9864 local=2.65529 total=107.361 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=96145 transition=86.3518 previous_path=27.13 local=2.65529 total=116.137 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=231014 transition=32.1777 previous_path=17.2242 local=2.65529 total=52.0572 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=118661 transition=29.4688 previous_path=15.9216 local=2.65529 total=48.0456 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=56167 transition=41.4956 previous_path=19.264 local=2.65529 total=63.4149 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=108878 transition=61.2685 previous_path=24.9748 local=2.65529 total=88.8987 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=244717 transition=17.5523 previous_path=27.8343 local=2.65529 total=48.0419 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=213256 transition=6.40418 previous_path=22.1814 local=2.65529 total=31.2409 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=64719 transition=14.737 previous_path=14.2952 local=2.65529 total=31.6875 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=64728 transition=17.1998 previous_path=27.6742 local=2.65529 total=47.5293 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=82709 transition=84.7324 previous_path=19.0961 local=2.65529 total=106.484 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=97601 transition=45.2846 previous_path=15.5873 local=2.65529 total=63.5272 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=128863 transition=31.0051 previous_path=10.9383 local=2.65529 total=44.5988 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=40503 transition=76.4758 previous_path=23.3079 local=2.65529 total=102.439 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=86012 transition=34.0272 previous_path=14.8008 local=2.65529 total=51.4833 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=150075 transition=41.7527 previous_path=15.5656 local=2.65529 total=59.9736 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=2554 transition=19.5051 previous_path=29.9268 local=0.522934 total=49.9548 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=256581 transition=26.8364 previous_path=162.362 local=0.522934 total=189.721 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=232462 transition=19.1977 previous_path=92.0124 local=0.522934 total=111.733 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=218670 transition=22.8029 previous_path=30.5799 local=0.522934 total=53.9057 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=158830 transition=28.5359 previous_path=32.8638 local=0.522934 total=61.9226 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=131118 transition=20.3126 previous_path=34.1769 local=0.522934 total=55.0124 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=129559 transition=0 previous_path=31.2409 local=0.522934 total=31.7638 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=103238 transition=28.7285 previous_path=30.7896 local=0.522934 total=60.041 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=97884 transition=100.363 previous_path=101.872 local=0.522934 total=202.758 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=86327 transition=20.763 previous_path=30.4565 local=0.522934 total=51.7424 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=82036 transition=14.7645 previous_path=31.6901 local=0.522934 total=46.9776 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=59558 transition=21.4476 previous_path=27.5946 local=0.522934 total=49.5651 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=41057 transition=22.5359 previous_path=34.1021 local=0.522934 total=57.1609 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=40214 transition=16.8954 previous_path=34.6053 local=0.522934 total=52.0236 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=28631 transition=21.2331 previous_path=36.98 local=0.522934 total=58.736 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27966 transition=18.3091 previous_path=61.7962 local=0.522934 total=80.6282 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27794 transition=20.1506 previous_path=37.193 local=0.522934 total=57.8665 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27440 transition=19.6037 previous_path=28.455 local=0.522934 total=48.5817 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=11135 transition=24.0854 previous_path=32.2385 local=0.522934 total=56.8468 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=258822 transition=44.0998 previous_path=33.1472 local=0.522934 total=77.7699 penalty=10
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=177774
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=177774
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=100180
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=59558
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=59559
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=189455 transition=41.4772 previous_path=19.3989 local=2.65529 total=63.5314 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=100180 transition=47.5784 previous_path=15.3267 local=2.65529 total=65.5605 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=2645 transition=45.4731 previous_path=22.6226 local=2.65529 total=70.751 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=188302 transition=26.3953 previous_path=17.1543 local=2.65529 total=46.2048 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=199880 transition=19.0468 previous_path=14.2877 local=2.65529 total=35.9898 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=45509 transition=63.7348 previous_path=15.3712 local=2.65529 total=81.7613 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=61725 transition=21.8814 previous_path=16.4491 local=2.65529 total=40.9857 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=40810 transition=20.3717 previous_path=24.3438 local=2.65529 total=47.3708 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=41008 transition=81.7198 previous_path=22.9864 local=2.65529 total=107.361 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=96145 transition=86.3518 previous_path=27.13 local=2.65529 total=116.137 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=231014 transition=32.1777 previous_path=17.2242 local=2.65529 total=52.0572 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=118661 transition=29.4688 previous_path=15.9216 local=2.65529 total=48.0456 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=56167 transition=41.4956 previous_path=19.264 local=2.65529 total=63.4149 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=108878 transition=61.2685 previous_path=24.9748 local=2.65529 total=88.8987 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=244717 transition=17.5523 previous_path=27.8343 local=2.65529 total=48.0419 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=213256 transition=6.40418 previous_path=22.1814 local=2.65529 total=31.2409 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=64719 transition=14.737 previous_path=14.2952 local=2.65529 total=31.6875 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=64728 transition=17.1998 previous_path=27.6742 local=2.65529 total=47.5293 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=82709 transition=84.7324 previous_path=19.0961 local=2.65529 total=106.484 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=97601 transition=45.2846 previous_path=15.5873 local=2.65529 total=63.5272 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=128863 transition=31.0051 previous_path=10.9383 local=2.65529 total=44.5988 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=40503 transition=76.4758 previous_path=23.3079 local=2.65529 total=102.439 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=86012 transition=34.0272 previous_path=14.8008 local=2.65529 total=51.4833 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=3 current=129559 previous=150075 transition=41.7527 previous_path=15.5656 local=2.65529 total=59.9736 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=2554 transition=19.5051 previous_path=29.9268 local=0.522934 total=49.9548 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=256581 transition=26.8364 previous_path=162.362 local=0.522934 total=189.721 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=232462 transition=19.1977 previous_path=92.0124 local=0.522934 total=111.733 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=218670 transition=22.8029 previous_path=30.5799 local=0.522934 total=53.9057 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=158830 transition=28.5359 previous_path=32.8638 local=0.522934 total=61.9226 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=131118 transition=20.3126 previous_path=34.1769 local=0.522934 total=55.0124 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=129559 transition=0 previous_path=31.2409 local=0.522934 total=31.7638 penalty=0
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=103238 transition=28.7285 previous_path=30.7896 local=0.522934 total=60.041 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=97884 transition=100.363 previous_path=101.872 local=0.522934 total=202.758 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=86327 transition=20.763 previous_path=30.4565 local=0.522934 total=51.7424 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=82036 transition=14.7645 previous_path=31.6901 local=0.522934 total=46.9776 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=59558 transition=21.4476 previous_path=27.5946 local=0.522934 total=49.5651 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=41057 transition=22.5359 previous_path=34.1021 local=0.522934 total=57.1609 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=40214 transition=16.8954 previous_path=34.6053 local=0.522934 total=52.0236 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=28631 transition=21.2331 previous_path=36.98 local=0.522934 total=58.736 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27966 transition=18.3091 previous_path=61.7962 local=0.522934 total=80.6282 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27794 transition=20.1506 previous_path=37.193 local=0.522934 total=57.8665 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=27440 transition=19.6037 previous_path=28.455 local=0.522934 total=48.5817 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=11135 transition=24.0854 previous_path=32.2385 local=0.522934 total=56.8468 penalty=10
+APPLE_OLD_COUNTERFACTUAL_EDGE context=4 current=129560 previous=258822 transition=44.0998 previous_path=33.1472 local=0.522934 total=77.7699 penalty=10
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=177774
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=177774
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=100180
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=59558
+APPLE_OLD_COUNTERFACTUAL_SELECTED id=59559
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\probe\probe-original-kate-2006.exe'/00000000 @004013E0 (204288<1830>)
+0114:0118: create thread I @004013E0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78E90000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E10000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL C:\windows\system32\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: unload DLL @10000000
+00000114:00000118: unload DLL @779C0000
+00000114:00000118: unload DLL @7AE40000
+00000114:00000118: unload DLL @77940000
+00000114:00000118: unload DLL @77970000
+00000114:00000118: unload DLL @78E90000
+00000114:00000118: unload DLL @7A9F0000
+00000114:00000118: unload DLL @79E40000
+00000114:00000118: unload DLL @7A890000
+00000114:00000118: unload DLL @79EA0000
+00000114:00000118: unload DLL @78E10000
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

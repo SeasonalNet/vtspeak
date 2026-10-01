@@ -183,6 +183,17 @@ func (dictionary *EmbeddedDictionary) LookupSurface(surface []byte, tables Embed
 	return record, ok, nil
 }
 
+// ContainsPaul2013Surface performs the canonical key transform and exact
+// embedded-record lookup used by the parser's punctuation-retention probe.
+// It checks record presence without parsing or expanding the pronunciation.
+func (dictionary *EmbeddedDictionary) ContainsPaul2013Surface(surface []byte) (bool, error) {
+	if dictionary == nil {
+		return false, errors.New("embedded dictionary is nil")
+	}
+	_, found, err := dictionary.LookupSurface(surface, Paul2013EmbeddedKeyTables())
+	return found, err
+}
+
 // ResolveSurfacePronunciation performs key encoding, exact embedded lookup,
 // payload parsing, and phone-ID expansion for one canonical surface token.
 func (dictionary *EmbeddedDictionary) ResolveSurfacePronunciation(
@@ -260,6 +271,181 @@ type PhonePayload struct {
 	Pronunciations []Pronunciation
 }
 
+const (
+	// Paul2013ParsedDictionaryRecordSize spans the fixed fields, five 65-byte
+	// phone slots, and five 20-byte path rows written by FUN_10003c50.
+	Paul2013ParsedDictionaryRecordSize = 0x1b9
+	paul2013ParsedDictionaryPhoneBase  = 0x10
+	paul2013ParsedDictionaryPathBase   = 0x155
+)
+
+// BuildPaul2013ParsedDictionaryRecord projects a parsed payload into the
+// caller-local record written by FUN_10003c50. It retains the native offsets
+// consumed by FUN_100086c0; metadata meanings remain opaque.
+func (payload PhonePayload) BuildPaul2013ParsedDictionaryRecord(
+	codebook PhoneIDCodebook,
+) ([]byte, error) {
+	result := make([]byte, Paul2013ParsedDictionaryRecordSize)
+	result[0] = payload.ResultType
+	for index, set := range payload.Metadata {
+		if set {
+			binary.LittleEndian.PutUint16(result[2+index*2:], 1)
+		}
+	}
+
+	expanded, err := payload.ExpandPronunciations(codebook)
+	if err != nil {
+		return nil, err
+	}
+	if len(expanded) > 5 {
+		return nil, fmt.Errorf("parsed dictionary record has %d alternatives, maximum is 5", len(expanded))
+	}
+	binary.LittleEndian.PutUint32(result[0x0c:], uint32(len(expanded)))
+	for index, alternative := range expanded {
+		if len(alternative.Symbols) >= 65 {
+			return nil, fmt.Errorf("parsed dictionary phone string %d has %d bytes, maximum is 64", index, len(alternative.Symbols))
+		}
+		phoneStart := paul2013ParsedDictionaryPhoneBase + index*65
+		copy(result[phoneStart:phoneStart+65], alternative.Symbols)
+		if len(expanded) == 1 {
+			continue
+		}
+		if len(alternative.Path) >= 20 {
+			return nil, fmt.Errorf("parsed dictionary path %d has %d bytes, maximum is 19", index, len(alternative.Path))
+		}
+		pathStart := paul2013ParsedDictionaryPathBase + index*20
+		copy(result[pathStart:pathStart+20], alternative.Path)
+		result[pathStart+len(alternative.Path)] = 0xff
+	}
+	if len(expanded) == 1 {
+		result[paul2013ParsedDictionaryPathBase] = 0xff
+	}
+	return result, nil
+}
+
+// Paul2013DictionaryPhoneRows is the field-level output of the ordinary
+// branch in FUN_1000d450. PathControlBytes holds its 0xff-terminated path
+// stream; PhoneStrings contains the NUL-free internal-symbol string for each
+// alternative. Their meanings remain opaque.
+type Paul2013DictionaryPhoneRows struct {
+	ResultType        byte
+	Metadata          [4]bool
+	AlternativeCount  int
+	PathControlBytes  []byte
+	PhoneStrings      [][]byte
+	ContextMarker     byte
+	HasContextMarker  bool
+	MarkerSentinel    byte
+	HasMarkerSentinel bool
+	SelectedPhone     []byte
+}
+
+// Clone returns an independently owned copy of the row projection.
+func (rows Paul2013DictionaryPhoneRows) Clone() Paul2013DictionaryPhoneRows {
+	clone := rows
+	clone.PathControlBytes = append([]byte(nil), rows.PathControlBytes...)
+	clone.PhoneStrings = make([][]byte, len(rows.PhoneStrings))
+	for index := range rows.PhoneStrings {
+		clone.PhoneStrings[index] = append([]byte(nil), rows.PhoneStrings[index]...)
+	}
+	clone.SelectedPhone = append([]byte(nil), rows.SelectedPhone...)
+	return clone
+}
+
+// SelectAlternativeForPathCode applies FUN_10010640 to this row projection.
+// It returns the first aligned phone string whose path contains a code in the
+// requested DLL class. Rows produced by the conditional marker branch have no
+// alternatives and return found=false.
+func (rows Paul2013DictionaryPhoneRows) SelectAlternativeForPathCode(
+	requestedCode byte,
+) (alternativeIndex int, phoneString []byte, found bool, err error) {
+	if rows.AlternativeCount < 0 {
+		return 0, nil, false, fmt.Errorf("pronunciation row has negative alternative count %d", rows.AlternativeCount)
+	}
+	if rows.AlternativeCount != len(rows.PhoneStrings) {
+		return 0, nil, false, fmt.Errorf("pronunciation row declares %d alternatives but has %d phone strings", rows.AlternativeCount, len(rows.PhoneStrings))
+	}
+	if rows.AlternativeCount == 0 {
+		return 0, nil, false, nil
+	}
+	return FindPaul2013PronunciationForPathCode(
+		rows.PathControlBytes, rows.PhoneStrings, requestedCode,
+	)
+}
+
+// BuildPaul2013DictionaryPhoneRows expands the parsed phone IDs and applies
+// FUN_1000d450's default/final-row path-stream writes. The caller still owns
+// the native row index, surface copy, and conditional marker branch.
+func (payload PhonePayload) BuildPaul2013DictionaryPhoneRows(
+	codebook PhoneIDCodebook,
+) (Paul2013DictionaryPhoneRows, error) {
+	return payload.BuildPaul2013DictionaryPhoneRowsForState(
+		codebook,
+		Paul2013DictionaryPhoneRowState{FinalRow: true},
+	)
+}
+
+// Paul2013DictionaryPhoneRowState contains the row-index/marker inputs that
+// select FUN_1000d450's default/final or conditional non-final branch.
+// SelectPathPhone means the caller's two native pointer/flag gates both held.
+type Paul2013DictionaryPhoneRowState struct {
+	FinalRow        bool
+	HasMarker       bool
+	Marker          byte
+	SelectPathPhone bool
+}
+
+// BuildPaul2013DictionaryPhoneRowsForState ports both branches of
+// FUN_1000d450 over one parsed embedded payload. The selector and the gate
+// that enables marker-based phone extraction remain explicit inputs.
+func (payload PhonePayload) BuildPaul2013DictionaryPhoneRowsForState(
+	codebook PhoneIDCodebook,
+	state Paul2013DictionaryPhoneRowState,
+) (Paul2013DictionaryPhoneRows, error) {
+	result := Paul2013DictionaryPhoneRows{
+		ResultType: payload.ResultType,
+		Metadata:   payload.Metadata,
+	}
+	if state.HasMarker && !state.FinalRow {
+		result.ContextMarker = state.Marker
+		result.HasContextMarker = true
+		result.MarkerSentinel = 0xff
+		result.HasMarkerSentinel = true
+		if state.SelectPathPhone {
+			phone, found, err := payload.SelectPaul2013PronunciationByPathMarker(state.Marker, codebook)
+			if err != nil {
+				return Paul2013DictionaryPhoneRows{}, err
+			}
+			if found {
+				result.SelectedPhone = phone
+			}
+		}
+		return result, nil
+	}
+
+	expanded, err := payload.ExpandPronunciations(codebook)
+	if err != nil {
+		return Paul2013DictionaryPhoneRows{}, err
+	}
+	result.AlternativeCount = len(expanded)
+	result.PathControlBytes = []byte{0xff}
+	result.PhoneStrings = make([][]byte, len(expanded))
+	if len(expanded) != 1 {
+		result.PathControlBytes = make([]byte, 0, len(expanded)*2+1)
+		for index, alternative := range expanded {
+			result.PathControlBytes = append(result.PathControlBytes, paul2013PathRowBytes(alternative.Path)...)
+			if index+1 < len(expanded) {
+				result.PathControlBytes = append(result.PathControlBytes, 'd')
+			}
+		}
+		result.PathControlBytes = append(result.PathControlBytes, 0xff)
+	}
+	for index := range expanded {
+		result.PhoneStrings[index] = append([]byte(nil), expanded[index].Symbols...)
+	}
+	return result, nil
+}
+
 // ParsePhonePayload applies the recovered embedded payload grammar. A leading
 // NUL denotes a marker record. Direct-ID form (bit 0) takes precedence over
 // alternative form (bit 1), matching the legacy parser branch order.
@@ -322,6 +508,27 @@ func (payload PhonePayload) ExpandPronunciations(codebook PhoneIDCodebook) ([]Ex
 		})
 	}
 	return expanded, nil
+}
+
+// SelectPaul2013PronunciationByPathMarker composes compact phone-ID expansion
+// with FUN_10003f10's marker lookup. It returns the internal phone-symbol
+// string aligned with the selected path row; the source of selector remains
+// outside this operation.
+func (payload PhonePayload) SelectPaul2013PronunciationByPathMarker(
+	selector byte,
+	codebook PhoneIDCodebook,
+) ([]byte, bool, error) {
+	expanded, err := payload.ExpandPronunciations(codebook)
+	if err != nil {
+		return nil, false, err
+	}
+	paths := make([][]byte, len(expanded))
+	phones := make([][]byte, len(expanded))
+	for index := range expanded {
+		paths[index] = expanded[index].Path
+		phones[index] = expanded[index].Symbols
+	}
+	return SelectPaul2013PronunciationByPathMarker(paths, phones, selector)
 }
 
 func parseDirectPhoneIDs(data []byte) ([]byte, error) {

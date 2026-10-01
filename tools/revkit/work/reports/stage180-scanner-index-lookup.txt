@@ -1,0 +1,45 @@
+Stage 180: scanner post-token index lookup and boundary body
+
+Evidence
+
+- Original vt_pau x86 FUN_1005e010 (0x1005e010-0x1005e19b) reads model
+  pointer +0xc; FUN_1005e1a0 (0x1005e1a0-0x1005e32b) reads +0x10.
+  Both objects contain signed length count at +0, lower/upper dword arrays
+  via +4/+8, and 20-byte-stride rows via +0xc. The row key pointer is +0xc.
+  Lengths descend from count to 1. Negative range endpoints or too-short
+  input skip a bucket. Exact FUN_1001c280 and mapped FUN_1001c320 compare
+  input/key prefixes. Endpoint/midpoint equality calls FUN_1005f840 and
+  accepts a nonzero low short. A miss moves the inclusive search bounds;
+  equal-but-rejected midpoint moves the lower bound and rechecks endpoints.
+- FUN_1005f840 (0x1005f840-0x1005f9a6) accepts whitespace at source+length.
+  Otherwise it scans repeatedly in mode 0x17, pointer 0, offsets starting 0.
+  Scanner return 0, status 9 or text length 0 accepts. Cumulative advance
+  equal to length accepts; overshoot examines the final token's first internal
+  dot, recognized apostrophe suffix or hyphen. It accepts when the source
+  position minus the token suffix length equals the requested prefix length.
+  Dot/hyphen require a following attribute-C0 letter. The third argument's
+  special dot decision is repeated by the ordinary dot branch, preserving
+  the same boolean result for scanner calls with zero third argument.
+- FUN_1005f9b0 (0x1005f9b0-0x1005fa5b) requires initial apostrophe and
+  exactly mapped suffix s/d/m/ve/em/re/ll. No n't alternative is present.
+
+Implementation and validation
+
+- Paul2013ScannerLookupIndex.Lookup ports both searches. The index shape
+  is explicit; native pointer-to-key resolution is not inferred.
+- CheckPaul2013ScannerLookupBoundary supplies the boundary body around an
+  explicit scanner. NewPaul2013ScannerIndexedTokenLookup adapts both index
+  searches to the ASCII scanner's post-token callback interface.
+- Tests check exact versus mapped results, low/high/midpoint search outcomes,
+  repeated rejected midpoint gate order, null indexes, missing dependencies,
+  cancellation, whitespace/exact/overshoot boundaries and suffix alternatives.
+  A labeled mode-0x17 scanner fixture connects mapped-index acceptance to
+  the real ASCII scanner's +0x1a flag write.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Native index arena projection and mode-0x17 scanner body remain explicit.
+  Invalid ranges/spans return errors. Tests use synthetic index/scanner input;
+  no original-engine differential or whole-text/synthesis parity is claimed.

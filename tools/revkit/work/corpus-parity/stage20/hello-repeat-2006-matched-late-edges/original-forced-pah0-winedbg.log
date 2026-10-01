@@ -1,0 +1,216 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /probe/probe-original-kate-2006.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /probe/stage20/hello-repeat-2006-matched-late-edges/legacy-matched-late-edges-gdb.log.
+Copying debug output to /probe/stage20/hello-repeat-2006-matched-late-edges/legacy-matched-late-edges-gdb.log.
+Wine-gdb> Already logging to /probe/stage20/hello-repeat-2006-matched-late-edges/legacy-matched-late-edges-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ec07
+Wine-gdb> >>>>> > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_MATCHED_EDGE_TRACE_READY
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=272153 transition=13.4018 previous_path=21.7449 local=4.31396 total=39.4606 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=272824 transition=106.746 previous_path=8.70859 local=4.31396 total=119.768 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=273371 transition=7.45827 previous_path=2.92889 local=4.31396 total=14.7011 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=13943 transition=11.3113 previous_path=34.0191 local=4.31396 total=49.6443 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=264073 transition=7.16791 previous_path=30.2999 local=4.31396 total=41.7818 penalty=0
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=272154 transition=20.0744 previous_path=18.4083 local=2.78161 total=41.2643 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=184279 transition=34.7866 previous_path=59.0911 local=2.78161 total=96.6593 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=185764 transition=35.4676 previous_path=39.3397 local=2.78161 total=77.5889 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=252843 transition=26.0414 previous_path=22.9768 local=2.78161 total=51.7998 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=168174 transition=18.3173 previous_path=18.7868 local=2.78161 total=39.8857 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=224354 transition=18.9779 previous_path=16.9424 local=2.78161 total=38.702 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=33050 transition=25.6296 previous_path=17.4668 local=2.78161 total=45.878 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=269907 transition=43.279 previous_path=14.812 local=2.78161 total=60.8725 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=220464 transition=45.4646 previous_path=36.7684 local=2.78161 total=85.0146 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=61117 transition=19.1223 previous_path=22.1153 local=2.78161 total=44.0192 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=232670 transition=18.977 previous_path=14.7011 local=2.78161 total=36.4597 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=208339 transition=42.2462 previous_path=16.8324 local=2.78161 total=61.8602 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=232750 transition=66.0121 previous_path=24.4786 local=2.78161 total=93.2723 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=255006 transition=56.224 previous_path=22.1743 local=2.78161 total=81.1799 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=239975 transition=198.099 previous_path=33.6032 local=2.78161 total=234.484 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=202604 transition=18.2478 previous_path=31.8486 local=2.78161 total=52.8779 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=182449 transition=18.9788 previous_path=35.5539 local=2.78161 total=57.3144 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=17653 transition=46.2857 previous_path=34.3714 local=2.78161 total=83.4387 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=31690 transition=16.9882 previous_path=37.3948 local=2.78161 total=57.1646 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=118271 transition=27.0303 previous_path=35.8278 local=2.78161 total=65.6397 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=86460 transition=18.6699 previous_path=35.9788 local=2.78161 total=57.4303 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=36287 transition=40.6733 previous_path=36.8829 local=2.78161 total=80.3378 penalty=10
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=185764 transition=15.3758 previous_path=34.65 local=7.304 total=57.3297 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=183342 transition=15.0578 previous_path=37.5896 local=7.304 total=59.9514 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=70160 transition=35.064 previous_path=39.5781 local=7.304 total=81.9461 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=67509 transition=46.5777 previous_path=41.8654 local=7.304 total=95.7471 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=265139 transition=57.5779 previous_path=36.4883 local=7.304 total=101.37 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=216044 transition=28.9021 previous_path=39.5498 local=7.304 total=75.7558 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=213995 transition=39.5237 previous_path=37.3701 local=7.304 total=84.1978 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=139207 transition=39.6973 previous_path=49.1064 local=7.304 total=96.1077 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=129448 transition=62.7048 previous_path=44.909 local=7.304 total=114.918 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=82668 transition=37.4172 previous_path=37.9526 local=7.304 total=82.6738 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=68970 transition=49.1863 previous_path=49.1955 local=7.304 total=105.686 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=60891 transition=32.4509 previous_path=35.2381 local=7.304 total=74.9929 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=39483 transition=43.097 previous_path=41.1687 local=7.304 total=91.5696 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=34312 transition=42.2254 previous_path=46.5553 local=7.304 total=96.0847 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=32698 transition=23.4934 previous_path=44.5421 local=7.304 total=75.3395 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=12561 transition=34.3089 previous_path=35.8171 local=7.304 total=77.43 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=96680 transition=27.5179 previous_path=37.0107 local=7.304 total=71.8326 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=266023 transition=12.3499 previous_path=36.4597 local=7.304 total=56.1137 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=181700 transition=52.7631 previous_path=49.3243 local=7.304 total=109.391 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=179911 transition=38.2586 previous_path=40.4244 local=7.304 total=85.987 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=272153 transition=13.4018 previous_path=21.7449 local=4.31396 total=39.4606 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=272824 transition=106.746 previous_path=8.70859 local=4.31396 total=119.768 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=273371 transition=7.45827 previous_path=2.92889 local=4.31396 total=14.7011 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=13943 transition=11.3113 previous_path=34.0191 local=4.31396 total=49.6443 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=264073 transition=7.16791 previous_path=30.2999 local=4.31396 total=41.7818 penalty=0
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=272154 transition=20.0744 previous_path=18.4083 local=2.78161 total=41.2643 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=184279 transition=34.7866 previous_path=59.0911 local=2.78161 total=96.6593 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=185764 transition=35.4676 previous_path=39.3397 local=2.78161 total=77.5889 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=252843 transition=26.0414 previous_path=22.9768 local=2.78161 total=51.7998 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=168174 transition=18.3173 previous_path=18.7868 local=2.78161 total=39.8857 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=224354 transition=18.9779 previous_path=16.9424 local=2.78161 total=38.702 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=33050 transition=25.6296 previous_path=17.4668 local=2.78161 total=45.878 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=269907 transition=43.279 previous_path=14.812 local=2.78161 total=60.8725 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=220464 transition=45.4646 previous_path=36.7684 local=2.78161 total=85.0146 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=61117 transition=19.1223 previous_path=22.1153 local=2.78161 total=44.0192 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=232670 transition=18.977 previous_path=14.7011 local=2.78161 total=36.4597 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=208339 transition=42.2462 previous_path=16.8324 local=2.78161 total=61.8602 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=232750 transition=66.0121 previous_path=24.4786 local=2.78161 total=93.2723 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=255006 transition=56.224 previous_path=22.1743 local=2.78161 total=81.1799 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=239975 transition=198.099 previous_path=33.6032 local=2.78161 total=234.484 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=202604 transition=18.2478 previous_path=31.8486 local=2.78161 total=52.8779 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=182449 transition=18.9788 previous_path=35.5539 local=2.78161 total=57.3144 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=17653 transition=46.2857 previous_path=34.3714 local=2.78161 total=83.4387 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=31690 transition=16.9882 previous_path=37.3948 local=2.78161 total=57.1646 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=118271 transition=27.0303 previous_path=35.8278 local=2.78161 total=65.6397 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=86460 transition=18.6699 previous_path=35.9788 local=2.78161 total=57.4303 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=36287 transition=40.6733 previous_path=36.8829 local=2.78161 total=80.3378 penalty=10
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=185764 transition=15.3758 previous_path=34.65 local=7.304 total=57.3297 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=183342 transition=15.0578 previous_path=37.5896 local=7.304 total=59.9514 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=70160 transition=35.064 previous_path=39.5781 local=7.304 total=81.9461 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=67509 transition=46.5777 previous_path=41.8654 local=7.304 total=95.7471 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=265139 transition=57.5779 previous_path=36.4883 local=7.304 total=101.37 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=216044 transition=28.9021 previous_path=39.5498 local=7.304 total=75.7558 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=213995 transition=39.5237 previous_path=37.3701 local=7.304 total=84.1978 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=139207 transition=39.6973 previous_path=49.1064 local=7.304 total=96.1077 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=129448 transition=62.7048 previous_path=44.909 local=7.304 total=114.918 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=82668 transition=37.4172 previous_path=37.9526 local=7.304 total=82.6738 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=68970 transition=49.1863 previous_path=49.1955 local=7.304 total=105.686 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=60891 transition=32.4509 previous_path=35.2381 local=7.304 total=74.9929 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=39483 transition=43.097 previous_path=41.1687 local=7.304 total=91.5696 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=34312 transition=42.2254 previous_path=46.5553 local=7.304 total=96.0847 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=32698 transition=23.4934 previous_path=44.5421 local=7.304 total=75.3395 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=12561 transition=34.3089 previous_path=35.8171 local=7.304 total=77.43 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=96680 transition=27.5179 previous_path=37.0107 local=7.304 total=71.8326 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=266023 transition=12.3499 previous_path=36.4597 local=7.304 total=56.1137 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=181700 transition=52.7631 previous_path=49.3243 local=7.304 total=109.391 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=179911 transition=38.2586 previous_path=40.4244 local=7.304 total=85.987 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=272153 transition=13.4018 previous_path=21.7449 local=4.31396 total=39.4606 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=272824 transition=106.746 previous_path=8.70859 local=4.31396 total=119.768 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=273371 transition=7.45827 previous_path=2.92889 local=4.31396 total=14.7011 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=13943 transition=11.3113 previous_path=34.0191 local=4.31396 total=49.6443 penalty=0
+LEGACY_MATCHED_EDGE context=3 current=232670 previous=264073 transition=7.16791 previous_path=30.2999 local=4.31396 total=41.7818 penalty=0
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=272154 transition=20.0744 previous_path=18.4083 local=2.78161 total=41.2643 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=184279 transition=34.7866 previous_path=59.0911 local=2.78161 total=96.6593 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=185764 transition=35.4676 previous_path=39.3397 local=2.78161 total=77.5889 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=252843 transition=26.0414 previous_path=22.9768 local=2.78161 total=51.7998 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=168174 transition=18.3173 previous_path=18.7868 local=2.78161 total=39.8857 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=224354 transition=18.9779 previous_path=16.9424 local=2.78161 total=38.702 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=33050 transition=25.6296 previous_path=17.4668 local=2.78161 total=45.878 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=269907 transition=43.279 previous_path=14.812 local=2.78161 total=60.8725 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=220464 transition=45.4646 previous_path=36.7684 local=2.78161 total=85.0146 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=61117 transition=19.1223 previous_path=22.1153 local=2.78161 total=44.0192 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=232670 transition=18.977 previous_path=14.7011 local=2.78161 total=36.4597 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=208339 transition=42.2462 previous_path=16.8324 local=2.78161 total=61.8602 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=232750 transition=66.0121 previous_path=24.4786 local=2.78161 total=93.2723 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=255006 transition=56.224 previous_path=22.1743 local=2.78161 total=81.1799 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=239975 transition=198.099 previous_path=33.6032 local=2.78161 total=234.484 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=202604 transition=18.2478 previous_path=31.8486 local=2.78161 total=52.8779 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=182449 transition=18.9788 previous_path=35.5539 local=2.78161 total=57.3144 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=17653 transition=46.2857 previous_path=34.3714 local=2.78161 total=83.4387 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=31690 transition=16.9882 previous_path=37.3948 local=2.78161 total=57.1646 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=118271 transition=27.0303 previous_path=35.8278 local=2.78161 total=65.6397 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=86460 transition=18.6699 previous_path=35.9788 local=2.78161 total=57.4303 penalty=10
+LEGACY_MATCHED_EDGE context=4 current=266023 previous=36287 transition=40.6733 previous_path=36.8829 local=2.78161 total=80.3378 penalty=10
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=185764 transition=15.3758 previous_path=34.65 local=7.304 total=57.3297 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=183342 transition=15.0578 previous_path=37.5896 local=7.304 total=59.9514 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=70160 transition=35.064 previous_path=39.5781 local=7.304 total=81.9461 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=67509 transition=46.5777 previous_path=41.8654 local=7.304 total=95.7471 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=265139 transition=57.5779 previous_path=36.4883 local=7.304 total=101.37 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=216044 transition=28.9021 previous_path=39.5498 local=7.304 total=75.7558 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=213995 transition=39.5237 previous_path=37.3701 local=7.304 total=84.1978 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=139207 transition=39.6973 previous_path=49.1064 local=7.304 total=96.1077 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=129448 transition=62.7048 previous_path=44.909 local=7.304 total=114.918 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=82668 transition=37.4172 previous_path=37.9526 local=7.304 total=82.6738 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=68970 transition=49.1863 previous_path=49.1955 local=7.304 total=105.686 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=60891 transition=32.4509 previous_path=35.2381 local=7.304 total=74.9929 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=39483 transition=43.097 previous_path=41.1687 local=7.304 total=91.5696 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=34312 transition=42.2254 previous_path=46.5553 local=7.304 total=96.0847 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=32698 transition=23.4934 previous_path=44.5421 local=7.304 total=75.3395 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=12561 transition=34.3089 previous_path=35.8171 local=7.304 total=77.43 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=96680 transition=27.5179 previous_path=37.0107 local=7.304 total=71.8326 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=266023 transition=12.3499 previous_path=36.4597 local=7.304 total=56.1137 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=181700 transition=52.7631 previous_path=49.3243 local=7.304 total=109.391 penalty=0
+LEGACY_MATCHED_EDGE context=5 current=264071 previous=179911 transition=38.2586 previous_path=40.4244 local=7.304 total=85.987 penalty=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\probe\probe-original-kate-2006.exe'/00000000 @004013E0 (204288<1830>)
+0114:0118: create thread I @004013E0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78E90000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E10000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL C:\windows\system32\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: unload DLL @10000000
+00000114:00000118: unload DLL @779C0000
+00000114:00000118: unload DLL @7AE40000
+00000114:00000118: unload DLL @77940000
+00000114:00000118: unload DLL @77970000
+00000114:00000118: unload DLL @78E90000
+00000114:00000118: unload DLL @7A9F0000
+00000114:00000118: unload DLL @79E40000
+00000114:00000118: unload DLL @7A890000
+00000114:00000118: unload DLL @79EA0000
+00000114:00000118: unload DLL @78E10000
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

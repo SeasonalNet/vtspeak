@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage20/index-adapter-key-repacked-matched-context-attrb-duplicate:/work/data-kate/M16/mc_idx_tbl:ro

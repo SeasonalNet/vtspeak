@@ -1,0 +1,49 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10018ed3
+Wine-gdb> >> > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10018ed9
+Wine-gdb> >> > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x100191bc
+Wine-gdb> >>>>>>> > >> > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >> > >>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_SCORER_CALL n=1 context=1 current=64727 previous=177774 feature=68.5517
+APPLE_2013_SCORER_CALL n=2 context=1 current=64727 previous=206615 feature=14.7541
+APPLE_2013_SCORER_CALL n=3 context=1 current=64727 previous=141947 feature=17.5648
+APPLE_2013_SCORER_CALL n=4 context=1 current=64727 previous=259475 feature=10.7098
+APPLE_2013_SCORER_CALL n=5 context=1 current=64727 previous=241971 feature=21.8479
+APPLE_2013_SCORER_CALL n=6 context=1 current=64727 previous=36668 feature=4.37186
+APPLE_2013_SCORER_CALL n=7 context=1 current=64727 previous=117529 feature=15.8437
+APPLE_2013_SCORER_CALL n=8 context=1 current=64727 previous=254282 feature=16.3207
+APPLE_2013_SCORER_CALL n=9 context=1 current=64727 previous=277212 feature=20.1057
+APPLE_2013_SCORER_CALL n=10 context=1 current=64727 previous=254839 feature=12.1034
+APPLE_2013_SCORER_CALL n=11 context=1 current=64727 previous=11027 feature=20.028
+APPLE_2013_SCORER_CALL n=12 context=1 current=64727 previous=165377 feature=10.6028
+APPLE_2013_SCORER_CALL n=13 context=1 current=64727 previous=271390 feature=13.7115
+APPLE_2013_SCORER_CALL n=14 context=1 current=64727 previous=103871 feature=14.0763
+APPLE_2013_SCORER_CALL n=15 context=1 current=64727 previous=51262 feature=16.836
+APPLE_2013_SCORER_CALL n=16 context=1 current=64727 previous=241852 feature=12.4705
+APPLE_2013_SCORER_CALL n=17 context=1 current=64727 previous=35103 feature=29.4496
+APPLE_2013_SCORER_CALL n=18 context=1 current=64727 previous=66400 feature=31.9155
+APPLE_2013_SCORER_CALL n=19 context=1 current=64727 previous=277024 feature=33.2184
+APPLE_2013_SCORER_CALL n=20 context=1 current=64727 previous=238347 feature=23.5835
+APPLE_2013_SCORER_CALL n=21 context=1 current=64727 previous=183384 feature=21.5824
+APPLE_2013_SCORER_CALL n=22 context=1 current=64727 previous=153718 feature=9.4499
+APPLE_2013_SCORER_CALL n=23 context=1 current=64727 previous=257217 feature=27.0269
+APPLE_2013_SCORER_CALL n=24 context=1 current=64727 previous=254363 feature=23.438
+APPLE_2013_SCORER_CALL n=25 context=1 current=64727 previous=70519 feature=11.6343
+APPLE_2013_SCORER_CALL n=26 context=1 current=64727 previous=145539 feature=27.6124
+APPLE_2013_SCORER_CALL n=27 context=1 current=64727 previous=7248 feature=17.4471
+APPLE_2013_SCORER_CALL n=28 context=1 current=64727 previous=200178 feature=14.2407
+APPLE_2013_SCORER_CALL n=29 context=1 current=64727 previous=147963 feature=22.8759
+APPLE_2013_SCORER_CALL n=30 context=1 current=64727 previous=162606 feature=23.6711
+APPLE_2013_MARKER current=82037 previous=82036 before=0 after=128
+APPLE_2013_MARKER_BRANCH_TAKEN current=82037 previous=82036
+APPLE_2013_MARKER current=59559 previous=59558 before=0 after=128
+APPLE_2013_MARKER_BRANCH_TAKEN current=59559 previous=59558
+APPLE_2013_MARKER current=2555 previous=2554 before=0 after=128
+APPLE_2013_MARKER_BRANCH_TAKEN current=2555 previous=2554
+APPLE_2013_DEBUG_SUMMARY calls=2820 context3_edges=420 marker_edges=3
+APPLE_2013_DEBUG_SELECTED n=1 id=177774
+APPLE_2013_DEBUG_SELECTED n=2 id=177774
+APPLE_2013_DEBUG_SELECTED n=3 id=100180
+APPLE_2013_DEBUG_SELECTED n=4 id=59558
+APPLE_2013_DEBUG_SELECTED n=5 id=59559
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

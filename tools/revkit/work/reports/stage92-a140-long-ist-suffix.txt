@@ -1,0 +1,31 @@
+VoiceText Paul 2013 FUN_1000a140 long-input `ist` branch
+=======================================================
+
+Evidence
+--------
+
+In the Ghidra pseudocode for `FUN_1000a140`, after the long `ing` branch, the
+mapped three-byte tail is compared with `DAT_10077780`. The local copy is
+terminated three bytes before its end and passed to `FUN_1000cb30`. Empty
+output returns through the common miss path. Nonempty output receives `#7`,
+then the shared `LAB_1000af7e` tail appends `9`; the common success path NUL-
+terminates the buffer and sets row-flag bit 3. The source pseudocode is around
+lines 1159-1245 and 1591-1605 in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`.
+`binary/vt_pau.dll` `.data` bytes at `0x10077780` are `ist\0`.
+
+Implementation
+--------------
+
+`NormalizePaul2013LongIstSuffixContext` supports mapped 9- to 31-byte C
+strings. It removes `ist`, runs the already-ported embedded `FUN_1000cb30`
+path on that stem, and appends `#79` when the result is nonempty. The suffix
+cascade runs this case before the following `ful` and `ly` checks and returns
+the `ist` branch result even when the stem lookup misses, preserving the native
+branch's termination order. Stage 102 generalizes the implementation to the
+shared five-byte lower bound, retaining this method as a compatibility entry
+point.
+
+This is a static pseudocode port without row-for-row runtime comparison. The
+other A140 cases and the surrounding exception/resource producers remain
+unresolved.

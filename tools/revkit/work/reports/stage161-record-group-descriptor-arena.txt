@@ -1,0 +1,45 @@
+Stage 161: native record-group descriptor writeback
+
+Evidence
+
+- FUN_10012df0 at 0x10012df0 in stage22-context-marker-producers.c initializes
+  arena +0x14 to the first record at +0x64c, +0x0c to zero, and +0x0e to the
+  first count. Each closed group advances the descriptor by 0x10, writes its
+  next start index at descriptor +0x1c, and next record pointer at +0x24.
+- It writes the final signed group count at arena +0 and accumulates the
+  record +0x94 bytes into each group's +0x10 short. The native output pointer
+  at +0x18 is (short*)arena +0xbea6 + prefix*0x0f. Thus its byte offset is
+  +0x17d4c + prefix*0x1e. The existing OutputShortOffset value view uses short
+  units and must be doubled when constructing an address.
+- No records clears only arena +0. Other header, padding, and stale trailing
+  descriptors are not cleared. Decompiler output remains pseudocode.
+
+Implementation
+
+- PopulatePaul2013RecordGroupDescriptorArena writes these fields into an
+  owned arena copy, retaining the existing descriptor value views and using
+  an explicit 32-bit arena address. Native address overflow returns an error.
+- PreparePaul2013TokenBoundaryArena now writes the pre-tree descriptor arena.
+  RunPaul2013TokenBoundaryPipeline also writes the descriptors after Finish,
+  matching FUN_100130e0's second FUN_10012df0 call after boundary limiting.
+  Standalone Finish continues returning its arena and descriptor value views;
+  callers can explicitly invoke the writer when they have the address base.
+
+Validation
+
+- Tests check two groups' starts/counts/spans and record/group-row pointers,
+  the conversion of short offsets to bytes, preserved padding/unwritten
+  memory/caller input, zero-record behavior, pointer overflow, and a dispatch
+  that changes one initial group into two final groups with rebuilt pointers.
+- The staged/composed boundary test explicitly writes final descriptors before
+  comparing full arenas, so equality covers the new native writes.
+- From engine/, GOCACHE=/tmp/vtspeak-go-cache go test ./..., go build ./...,
+  and go vet ./... passed. Changed Go files were formatted with gofmt;
+  git diff --check passed from the repository root.
+
+Limits
+
+- Descriptor and pipeline parity is grounded in recovered static writes and
+  synthetic fixtures. No full native runtime arena comparison is claimed.
+- Workspace initialization, structural M grouping, and scalar resource-name
+  selection remain unresolved inputs to the larger engine port.

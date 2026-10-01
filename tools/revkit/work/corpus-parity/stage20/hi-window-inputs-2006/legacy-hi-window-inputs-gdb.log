@@ -1,0 +1,13 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023b40
+Wine-gdb> >>>>>>>>> > > >> > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_HI_WINDOW_TRACE_READY
+LEGACY_HI_WINDOW_JOIN call=1 slot=0 count=1420 span=72 source=0x27f8b82
+LEGACY_HI_WINDOW_JOIN call=2 slot=1 count=5910 span=134 source=0x27f8b82
+LEGACY_HI_WINDOW_JOIN call=3 slot=0 count=1420 span=72 source=0x27f8b82
+LEGACY_HI_WINDOW_JOIN call=4 slot=1 count=5910 span=134 source=0x27f8b82
+LEGACY_HI_WINDOW_JOIN call=5 slot=0 count=1420 span=72 source=0x27f8b82
+LEGACY_HI_WINDOW_JOIN call=6 slot=1 count=5910 span=134 source=0x27f8b82
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,38 @@
+VoiceText Paul 2013 FUN_10034180 bounded proper-name TPP input
+===============================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode in `stage6-tpp-callers.txt` shows `FUN_10034180`
+visiting the component rows at a `0x140` stride. For each component it adds
+the stored dword at row `+0x14` plus one to a running value and exits when the
+result exceeds `0x1d`. It passes each NUL-terminated surface at row `+0x46`
+to `FUN_10062400`, then selects family A, B, C, or D for one through four
+components. Counts of five or more bypass this selector block.
+
+The call-site disassembly at `0x100341ca-0x100341d9` pushes byte `'-'`, the
+component surface, and the destination before calling `FUN_10062400`. Its
+implementation at `0x10062400-0x10062464` copies the first string and appends
+subsequent strings through the `%c%s` format at DLL file offset `0x9c420`,
+with the separator byte supplied by the caller. The resulting key is passed
+to `FUN_1003a7b0` with the family selector and the shared key table at
+`param_1+0x39ec`. The selected pattern then reaches the previously ported
+marker/value gate.
+
+Port
+----
+
+`text.BuildPaul2013ProperNameTPPSurface` reproduces the one-through-four
+count gate, stored-length accumulation, 29-byte native bound, C-string reads,
+and hyphen join. `duration.Engine.MatchProperNameTPPComponents` composes that
+surface with the existing family lookup and marker/value gate. Stored lengths
+and marker bytes remain explicit fields from the native component rows. A
+stored-length/C-string mismatch fails closed because the native bound would
+not bound the actual copy in that malformed input case.
+
+Evidence boundary
+-----------------
+
+This is a static port. It does not produce component rows, verify the shared
+key table's order, or establish original-runtime lookup parity.

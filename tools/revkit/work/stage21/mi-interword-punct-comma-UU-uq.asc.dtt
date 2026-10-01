@@ -1,0 +1,86 @@
+VTDTTS ASCII
+3
+4
+merged-gen
+merged-num
+merged-etc
+merged-alp
+
+TypeFlag : 2
+PhoneString : Y
+File Index : 0
+PCM Pos : 231908752
+PCM Size : 2928
+PCM Coded Size : 1512
+Phone Mode : 0
+Pitch_first : 102
+Pitch_last : 84
+PM Pos : 3552992
+PM Size : 29
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : UW1
+File Index : 0
+PCM Pos : 231910264
+PCM Size : 4092
+PCM Coded Size : 2008
+Phone Mode : 0
+Pitch_first : 84
+Pitch_last : 130
+PM Pos : 3553021
+PM Size : 31
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 1
+Size : 3200
+
+TypeFlag : 2
+PhoneString : K
+File Index : 3
+PCM Pos : 58708
+PCM Size : 2230
+PCM Coded Size : 1188
+Phone Mode : 0
+Pitch_first : 96
+Pitch_last : 94
+PM Pos : 800
+PM Size : 23
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : Y
+File Index : 3
+PCM Pos : 59896
+PCM Size : 1466
+PCM Coded Size : 720
+Phone Mode : 0
+Pitch_first : 94
+Pitch_last : 106
+PM Pos : 823
+PM Size : 15
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : UW1
+File Index : 3
+PCM Pos : 60616
+PCM Size : 4022
+PCM Coded Size : 2008
+Phone Mode : 0
+Pitch_first : 106
+Pitch_last : 216
+PM Pos : 838
+PM Size : 24
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+

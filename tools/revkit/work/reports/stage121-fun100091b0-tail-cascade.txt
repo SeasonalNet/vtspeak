@@ -1,0 +1,33 @@
+VoiceText Paul 2013 `FUN_100091b0` Y/S tail cascade
+=================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_100091b0` is in
+`lead3-ax-metadata-helper-static-2026-09-25.txt`. After the Y/S form-specific
+write, it reads a parser tail using the selected parser row's `+0x14` offset
+and `+0x18` length. The parser tail is passed through direct contraction
+comparisons, then the shared fallback chain. The literal strings used by the
+direct table-backed branches occupy DLL `.data` at `0x10077894` through
+`0x100778cc`; `objdump -s -j .data` confirms the values and order recorded in
+the existing `ApplyPaul2013LiteralContextHandler` implementation.
+
+Recovered implementation
+------------------------
+
+`text.ApplyPaul2013ModelContextFormYWithTail` and its S counterpart now expose
+the selected tail bytes after preserving automatic extraction and explicit
+overrides. When the direct literal handler misses,
+`duration.Engine.ApplyPaul2013ModelContextTail` removes the leading byte and
+runs `FUN_1000cb30`, direct `FUN_10002f10`, and `FUN_10009cd0` in that order.
+The result is appended after the existing phone codes with the native `d`
+marker; the row-state writes preserve the nested generic flags and final bit 3.
+The counted-row pass runs this cascade before the `FUN_10007520` post-handler
+rules. For Y rows that consume duplicate parser rows, those post-handlers now
+use the advanced final context-row index.
+
+The implementation inherits the Go engine's existing ASCII normalizer and
+local dictionary limits. It does not port unresolved TPP/resource traversal,
+non-ASCII behavior, the parser-row `+0x14` producer, or native runtime
+row-for-row parity. Vendor DLL and model inputs remain read-only.

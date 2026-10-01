@@ -1,0 +1,37 @@
+Stage 154: composed captured VTML frontend
+
+Implementation
+
+- Added `text.LexiconFrontend.ResolveTextWithPaul2013CapturedVTML` to compose
+  the captured `<vtml_pause time="N"/>`, supported `<vtml_mark/>` forms, and
+  `<vtml_sub alias="...">...</vtml_sub>` form in one source pass.
+- Pause tags preserve the observed inserted lexical separator, N millisecond
+  duration, and N*16 output-frame count. Mark events retain their original
+  source byte offsets. Substitution output maps to alias bytes in the original
+  source. Tokens that cross a substitution boundary are rejected.
+- `text.SelectPaul2013CapturedVTMLPronunciations` retains pause and mark events
+  while flattening chosen lexical alternatives.
+- Added `duration.Engine.EvaluateWithCapturedVTML` to carry parsed tokens
+  through the loaded pronunciation classifier and duration/pitch evaluation.
+  The resulting sequence retains pause and mark events.
+
+Validation
+
+- `GOCACHE=/tmp/vtspeak-go-cache go test ./text ./duration` passed from
+  `engine/` after implementation. The package run included combined source
+  parsing, unsupported-markup rejection, pronunciation selection, and local
+  duration/pitch evaluation when the vendor resources were available.
+- `GOCACHE=/tmp/vtspeak-go-cache go test ./...` passed from `engine/` after the
+  end-to-end evaluation fixture used dictionary-backed words.
+- `GOCACHE=/tmp/vtspeak-go-cache go build ./...` passed from `engine/`.
+- `GOCACHE=/tmp/vtspeak-go-cache go vet ./...` passed from `engine/`.
+- `git diff --check` passed from the repository root.
+
+Limits
+
+- This is composition of already observed narrow input forms, not general
+  VTML/XML support.
+- Pause frames are not inserted into PCM by this evaluation method.
+- Mark output-frame mapping and audio integration remain unresolved.
+- It does not complete source parser rows, model-context production, unit
+  selection from text, or whole-engine synthesis.

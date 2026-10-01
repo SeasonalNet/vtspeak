@@ -1,0 +1,30 @@
+variant=Apple adapter with legacy attr_48 markers on all 20 captured context-3 candidates
+base=tools/revkit/work/stage20/index-adapter-key-repacked-attr48-key3-attr40-key2-apple-context-prefix-tail-map
+legacy_source=tools/revkit/work/stage19/data-kate-copy/M16/mc_idx_tbl
+candidate_count=20
+changed_byte_count=20
+bank=unit-gen changed_bytes=16 base_sha256=a18490a6b5f649c4202f72321b61d8f02bacd1418b3f9a20930fc967bdcbe2b2 overlay_sha256=ce24522edcaa7417a9b8f675b6ff5ef4e372dd7b286e0b70731760f399487071
+bank=unit-gen2 changed_bytes=4 base_sha256=c9fa6e86c863b71566136f476931dd3b01468ebd27a8d730b0cf5e7910a17beb overlay_sha256=19e8ad7826266c86d10b912184d00e2063bb480dfe8b2f29cc85cd0ac9e3ccf4
+bank=unit-etc changed_bytes=0 base_sha256=78b5b87da1fda574dc780318af35ac90a6f29a9e98d6e84ae8c33d866ae3a3b2 overlay_sha256=78b5b87da1fda574dc780318af35ac90a6f29a9e98d6e84ae8c33d866ae3a3b2
+bank=unit-alp changed_bytes=0 base_sha256=4a36ad5d92fe4cfcacc4f9ebb06df2d4138d2945598d9c71923155e560557f9f overlay_sha256=4a36ad5d92fe4cfcacc4f9ebb06df2d4138d2945598d9c71923155e560557f9f
+bank=unit-num changed_bytes=0 base_sha256=fde06b1fa821e6827e6f3bbb27346607e9c6cb70b52b8d8ee84a71b65899b5d9 overlay_sha256=fde06b1fa821e6827e6f3bbb27346607e9c6cb70b52b8d8ee84a71b65899b5d9
+unit=2554 bank=unit-gen row=2554 attr_48=1 offset=0x373425 before=0x00 after=0x80
+unit=256581 bank=unit-gen2 row=76586 attr_48=1 offset=0x2620fe before=0x00 after=0x80
+unit=232462 bank=unit-gen2 row=52467 attr_48=1 offset=0x238d7d before=0x00 after=0x80
+unit=218670 bank=unit-gen2 row=38675 attr_48=1 offset=0x22145d before=0x00 after=0x80
+unit=158830 bank=unit-gen row=158830 attr_48=1 offset=0x47e551 before=0x00 after=0x80
+unit=131118 bank=unit-gen row=131118 attr_48=1 offset=0x44ef91 before=0x00 after=0x80
+unit=129559 bank=unit-gen row=129559 attr_48=1 offset=0x44c4f0 before=0x00 after=0x80
+unit=103238 bank=unit-gen row=103238 attr_48=1 offset=0x41f539 before=0x00 after=0x80
+unit=97884 bank=unit-gen row=97884 attr_48=1 offset=0x4162d3 before=0x00 after=0x80
+unit=86327 bank=unit-gen row=86327 attr_48=1 offset=0x4026d0 before=0x00 after=0x80
+unit=82036 bank=unit-gen row=82036 attr_48=1 offset=0x3fb17b before=0x00 after=0x80
+unit=59558 bank=unit-gen row=59558 attr_48=1 offset=0x3d4ad9 before=0x00 after=0x80
+unit=41057 bank=unit-gen row=41057 attr_48=1 offset=0x3b50f6 before=0x00 after=0x80
+unit=40214 bank=unit-gen row=40214 attr_48=1 offset=0x3b39e9 before=0x00 after=0x80
+unit=28631 bank=unit-gen row=28631 attr_48=1 offset=0x39fd30 before=0x00 after=0x80
+unit=27966 bank=unit-gen row=27966 attr_48=1 offset=0x39eb01 before=0x00 after=0x80
+unit=27794 bank=unit-gen row=27794 attr_48=1 offset=0x39e64d before=0x00 after=0x80
+unit=27440 bank=unit-gen row=27440 attr_48=1 offset=0x39dc9f before=0x00 after=0x80
+unit=11135 bank=unit-gen row=11135 attr_48=1 offset=0x381ec8 before=0x00 after=0x80
+unit=258822 bank=unit-gen2 row=78827 attr_48=1 offset=0x265e45 before=0x00 after=0x80

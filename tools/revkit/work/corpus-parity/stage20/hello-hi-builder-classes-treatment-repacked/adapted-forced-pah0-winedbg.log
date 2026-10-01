@@ -1,0 +1,144 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> set logging: No such file or directory.
+Wine-gdb> Breakpoint 1 at 0x10023350
+Breakpoint 2 at 0x100230a0
+Breakpoint 3 at 0x100235f6
+Hardware assisted breakpoint 4 at 0x408187
+HELLO_BUILDER_CLASSES context=0 count=10 {class=32924 members=10 units=22336
+,65331,75811,135441,164116,205125,219724,255985,272820,277527}
+ {class=32925 members=45 units=63,3756,5218,6208,13531,18378,19888,25895,32995
+,50118,88195,97386,99833,100016,100640,111587,113167,146049,149799,158787
+,167546,169343,197867,198921,205939,207948,208165,208625,211497,220903,222240
+,233824,233955,234795,248753,252497,255501,258594,264405,264663,267478,268190
+,270371,271878,271915} {class=32926 members=21 units=4910,21061,29297,33386
+,42541,73832,77214,97975,127814,149557,158248,179322,184314,204179,205464
+,212514,262252,277084,278376,278735,278914} {class=32927 members=2 units=152996
+,164016} {class=32929 members=30 units=1200,2525,20499,22451,28430,31347,31795
+,51310,52542,92183,116320,129641,165351,178453,179388,182880,189906,195687
+,200525,200614,204612,206118,214148,233533,245736,262454,272822,273369,279479
+,279484} {class=32930 members=227 units=3253,4248,6255,7773,8869,9490,12280
+,12578,13285,13801,14908,17658,18246,18836,23600,28935,29851,31086,32347,33637
+,38527,38846,39208,40490,40616,40858,41457,42296,44417,46604,48497,48609,50271
+,50676,50954,52307,52658,52691,52803,53317,56949,57427,58573,59190,60500,61494
+,62059,62224,63680,64750,72135,72579,72647,72689,73697,74527,74607,75024,75098
+,75113,76077,78161,80578,81349} {class=32933 members=16 units=1670,16509,20660
+,97326,123679,127617,129708,159128,184020,196440,205660,217698,232217,252756
+,275843,279505} {class=32934 members=2 units=6172,280437}
+ {class=32935 members=50 units=1729,4500,10806,30177,34495,66699,68421,70321
+,73526,74074,75713,79402,92222,125134,125603,127840,136256,157814,163373,165568
+,166488,171087,178676,199673,200771,209447,242959,245543,252101,252281,252613
+,253229,253387,253659,253884,254410,254680,255874,255965,257277,260110,260673
+,260997,261283,261745,262131,271069,271214,272920,280130}
+ {class=32937 members=5 units=1578,37743,54424,215331,275918}
+HELLO_COVERAGE_ENTRY context=0 count=408 [0]=22336 [1]=65331 [2]=75811
+ [3]=135441 [4]=164116 [5]=205125 [6]=219724 [7]=255985 [8]=272820 [9]=277527
+ [10]=63 [11]=3756
+Temporary breakpoint 5 at 0x100235f6
+HELLO_PRE_SCORE context=0 count=408 [0]=272822(span=6,weighted=3)
+ [1]=273369(span=6,weighted=3) [2]=182880(span=2,weighted=0)
+ [3]=214148(span=2,weighted=0) [4]=206118(span=2,weighted=0)
+ [5]=204612(span=2,weighted=0) [6]=200614(span=2,weighted=0)
+ [7]=200525(span=2,weighted=0) [8]=195687(span=2,weighted=0)
+ [9]=189906(span=2,weighted=0) [10]=2525(span=2,weighted=0)
+ [11]=179388(span=2,weighted=0)
+HELLO_BUILDER_CLASSES context=1 count=10 {class=6394 members=1 units=8766}
+ {class=8029 members=22 units=12790,32803,82909,84961,87351,90590,108998,114948
+,135330,167628,187571,197584,197727,213094,213392,220147,227012,231344,236332
+,244521,248481,270783} {class=12873 members=1 units=98731}
+ {class=18450 members=6 units=23683,38181,47071,132809,137008,178139}
+ {class=19982 members=6 units=52504,82881,131728,189843,223533,237399}
+ {class=21359 members=16 units=9549,25664,29435,57278,61636,84517,101160,106022
+,157246,173090,183641,194048,225434,231336,256629,256922}
+ {class=24287 members=7 units=10963,39987,174871,185466,192788,219811,270960}
+ {class=28859 members=10 units=5989,9712,22249,64374,95985,146249,148718,224844
+,232997,235907} {class=30155 members=18 units=16116,19429,44449,54576,80588
+,100648,121962,136003,142692,153078,168964,191439,200611,216461,216749,228518
+,230117,236982} {class=32929 members=30 units=1200,2525,20499,22451,28430,31347
+,31795,51310,52542,92183,116320,129641,165351,178453,179388,182880,189906
+,195687,200525,200614,204612,206118,214148,233533,245736,262454,272822,273369
+,279479,279484}
+HELLO_COVERAGE_ENTRY context=1 count=117 [0]=8766 [1]=12790 [2]=32803 [3]=82909
+ [4]=84961 [5]=87351 [6]=90590 [7]=108998 [8]=114948 [9]=135330 [10]=167628
+ [11]=187571
+Temporary breakpoint 6 at 0x100235f6
+HELLO_PRE_SCORE context=1 count=117 [0]=273369(span=6,weighted=2)
+ [1]=272822(span=6,weighted=2) [2]=279484(span=2,weighted=0)
+ [3]=1200(span=2,weighted=0) [4]=2525(span=2,weighted=0)
+ [5]=20499(span=2,weighted=0) [6]=22451(span=2,weighted=0)
+ [7]=28430(span=2,weighted=0) [8]=31347(span=2,weighted=0)
+ [9]=31795(span=2,weighted=0) [10]=51310(span=2,weighted=0)
+ [11]=52542(span=2,weighted=0)
+HELLO_BUILDER_CLASSES context=6 count=10 {class=5504 members=1 units=280962}
+ {class=13733 members=1 units=281739} {class=15230 members=1 units=66928}
+ {class=18858 members=3 units=282025,282675,282713}
+ {class=21801 members=5 units=33797,74841,136758,200069,282035}
+ {class=23389 members=1 units=282043} {class=24741 members=3 units=269609
+,281136,281727} {class=25527 members=1 units=282011}
+ {class=29099 members=1 units=28799} {class=31904 members=2 units=282007,282628
+}
+HELLO_COVERAGE_ENTRY context=6 count=19 [0]=280962 [1]=281739 [2]=66928
+ [3]=282025 [4]=282675 [5]=282713 [6]=33797 [7]=74841 [8]=136758 [9]=200069
+ [10]=282035 [11]=282043
+Temporary breakpoint 7 at 0x100235f6
+HELLO_PRE_SCORE context=6 count=19 [0]=282025(span=2,weighted=0)
+ [1]=282675(span=2,weighted=0) [2]=282713(span=2,weighted=0)
+ [3]=280962(span=1,weighted=0) [4]=282007(span=1,weighted=0)
+ [5]=28799(span=1,weighted=0) [6]=282011(span=1,weighted=0)
+ [7]=281727(span=1,weighted=0) [8]=281136(span=1,weighted=0)
+ [9]=269609(span=1,weighted=0) [10]=282043(span=1,weighted=0)
+ [11]=282035(span=1,weighted=0)
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0118:011c: create thread I @004014C0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

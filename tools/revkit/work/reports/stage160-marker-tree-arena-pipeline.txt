@@ -1,0 +1,68 @@
+Stage 160: full record-group marker-tree scan and caller composition
+
+Observed evidence
+
+- FUN_10012f00 at 0x10012f00 (stage22-context-marker-producers.c) scans
+  FUN_10012df0 descriptors in forward order and each group's records from
+  its last record down to its second. Record stride is 0x3c0.
+- x86 0x10012f5b establishes the current record base. Eligibility compares
+  its +4 against the preceding record's +4 (current -0x3bc), then its +0
+  against preceding +4 plus one. Both comparisons must differ.
+- x86 0x10013030 reads current +0x2e4, then the first pointed-to signed byte.
+  x86 0x1001304b reads preceding +0x95 and 0x10013055 reads preceding
+  +0x2e4. The selected previous string byte is at phone-count minus one.
+  Signed bytes index DAT_1007b9e0; high-bit underflow remains unsupported.
+- x86 0x10012fb0/0x10012fb6 reads arena +(group+1)*0x10. This is the current
+  descriptor's +0x10 sum, not a following group's cumulative value. It is
+  supplied to the historical NextTokenCumulative feature-writer field.
+- x86 0x10013089 tests strictly above 500; 0x10013092 writes current base
+  minus three. That address is preceding record +0x3bd, not current +0x91.
+  The earlier helper's target was incorrect. Split counters reset after this
+  write; ordinal and total-span counters continue. Skipped visits still add
+  current +0x94 and increment counters without resolving pointers.
+- The tree pointer comes from context +0x4d08, then tree object +0x200.
+  Resource-name selection is not established by this scan evidence.
+- Sources include vt_pau-objdump-disassembly.txt and the named decompiler
+  report. Ghidra output is pseudocode. No new original-engine runtime dump
+  was captured in this stage.
+
+Implementation
+
+- Corrected ApplyPaul2013MarkerTreeDecision's marker offset and changed
+  EvaluatePaul2013MarkerTreeInput to apply it to the preceding record.
+  Existing public signatures remain intact; result-row documentation now
+  states which record is copied.
+- RunPaul2013MarkerTreeArena projects record groups, scans them in native
+  order, resolves eligible strings, runs the supplied tree, writes the
+  preceding terminal, and retains inputs, outputs, and counters per group.
+- RunPaul2013TokenBoundaryPipeline composes group preparation, marker
+  initialization, tree scan, flag transitions, state updates, dispatch,
+  cumulative limiting, and rebuilt descriptor views.
+- Paul2013FinalizedModelState.RunTokenBoundaries connects the finalized
+  context-table handoff to that pipeline and derives parser outputs directly.
+  Returned intermediate and final arenas are owned copies.
+
+Validation
+
+- Focused text/selection tests passed. Tests cover reverse pointer order,
+  exact group spans, counter carry/reset, unchanged +0x91, preceding +0x3bd
+  write, strict 500 cutoff, group-local counter restart, skipped-visit pointer
+  avoidance, missing tree/resolver, short strings, signed-byte underflow,
+  input preservation, staged/composed output equivalence, and finalized
+  context-table to full boundary pipeline with supported phone symbols.
+- Fixtures use explicit synthetic scalar trees. They prove orchestration
+  against recovered static operations, not native tree resource selection
+  or whole-arena runtime parity.
+- From engine/, GOCACHE=/tmp/vtspeak-go-cache go test ./..., go build ./...,
+  and go vet ./... passed. Changed Go files were formatted with gofmt;
+  git diff --check passed from the repository root.
+
+Limits
+
+- The supplied scalar tree must represent the native +0x200 object; the
+  resource-name mapping remains open. Workspace array initialization also
+  remains explicit, as do native pointer addresses and their resolvers.
+- Phone-group preparation currently rejects structural M; only recovered
+  symbols 0x01..0x45 reach this full composed path. Stage 161 subsequently
+  adds native descriptor pointer writeback to the composed pipeline.
+- Whole-synthesis and end-to-end speech parity are not established.

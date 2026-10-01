@@ -1,0 +1,199 @@
+Wine-gdb> Already logging to /probe/stage20/hi-2006-span-filter-bypass/legacy-span-filter-bypass-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cd60
+Wine-gdb> >>>>> > > >  >  > >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001c860
+Wine-gdb> >>>>> > > >  >  >  >  > >  >  >  >  >   >   >   >   >  >  >  > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001ed7f
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_SPAN_FILTER_TRACE_READY
+HI_SPAN_FILTER_RAW position=0 candidates=10
+HI_SPAN_FILTER_BYPASS position=0 raw=10 retained=1 candidates: 272820/2 22336/1 65331/1 75811/1 135441/1 164116/1 205125/1 219724/1 255985/1 277527/1
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=272820 candidates=10 weight=0.333333
+Hardware assisted breakpoint 5 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=272820 weight=0.333333 cost=0
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=22336 candidates=10 weight=1
+Hardware assisted breakpoint 6 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=22336 weight=1 cost=0.0285714
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=65331 candidates=10 weight=1
+Hardware assisted breakpoint 7 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=65331 weight=1 cost=0.0285714
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=75811 candidates=10 weight=1
+Hardware assisted breakpoint 8 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=75811 weight=1 cost=0.204082
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=135441 candidates=10 weight=1
+Hardware assisted breakpoint 9 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=135441 weight=1 cost=0.909091
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=164116 candidates=10 weight=1
+Hardware assisted breakpoint 10 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=164116 weight=1 cost=1.03077
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=205125 candidates=10 weight=1
+Hardware assisted breakpoint 11 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=205125 weight=1 cost=0.24
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=219724 candidates=10 weight=1
+Hardware assisted breakpoint 12 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=219724 weight=1 cost=0.00754717
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=255985 candidates=10 weight=1
+Hardware assisted breakpoint 13 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=255985 weight=1 cost=0.169492
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=277527 candidates=10 weight=1
+Hardware assisted breakpoint 14 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=277527 weight=1 cost=0.24
+HI_SPAN_FILTER_RAW position=1 candidates=9
+HI_SPAN_FILTER_BYPASS position=1 raw=9 retained=1 candidates: 272821/2 4087/1 4102/1 84094/1 177718/1 243540/1 279498/1 279499/1 280449/1
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=272821 candidates=9 weight=0.333333
+Hardware assisted breakpoint 15 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=272821 weight=0.333333 cost=10.3087
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=4087 candidates=9 weight=1
+Hardware assisted breakpoint 16 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=4087 weight=1 cost=27.1236
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=4102 candidates=9 weight=1
+Hardware assisted breakpoint 17 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=4102 weight=1 cost=33.5175
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=84094 candidates=9 weight=1
+Hardware assisted breakpoint 18 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=84094 weight=1 cost=17.3384
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=177718 candidates=9 weight=1
+Hardware assisted breakpoint 19 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=177718 weight=1 cost=17.9871
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=243540 candidates=9 weight=1
+Hardware assisted breakpoint 20 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=243540 weight=1 cost=14.4299
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=279498 candidates=9 weight=1
+Hardware assisted breakpoint 21 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=279498 weight=1 cost=33.6242
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=279499 candidates=9 weight=1
+Hardware assisted breakpoint 22 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=279499 weight=1 cost=28.6446
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=280449 candidates=9 weight=1
+Hardware assisted breakpoint 23 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=280449 weight=1 cost=64.2757
+HI_SPAN_FILTER_SELECTED call=1 index=0 unit=272820
+HI_SPAN_FILTER_SELECTED call=2 index=0 unit=272821
+HI_SPAN_FILTER_RAW position=0 candidates=10
+HI_SPAN_FILTER_BYPASS position=0 raw=10 retained=1 candidates: 272820/2 22336/1 65331/1 75811/1 135441/1 164116/1 205125/1 219724/1 255985/1 277527/1
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=272820 candidates=10 weight=0.333333
+Hardware assisted breakpoint 24 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=272820 weight=0.333333 cost=0
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=22336 candidates=10 weight=1
+Hardware assisted breakpoint 25 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=22336 weight=1 cost=0.0285714
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=65331 candidates=10 weight=1
+Hardware assisted breakpoint 26 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=65331 weight=1 cost=0.0285714
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=75811 candidates=10 weight=1
+Hardware assisted breakpoint 27 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=75811 weight=1 cost=0.204082
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=135441 candidates=10 weight=1
+Hardware assisted breakpoint 28 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=135441 weight=1 cost=0.909091
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=164116 candidates=10 weight=1
+Hardware assisted breakpoint 29 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=164116 weight=1 cost=1.03077
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=205125 candidates=10 weight=1
+Hardware assisted breakpoint 30 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=205125 weight=1 cost=0.24
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=219724 candidates=10 weight=1
+Hardware assisted breakpoint 31 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=219724 weight=1 cost=0.00754717
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=255985 candidates=10 weight=1
+Hardware assisted breakpoint 32 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=255985 weight=1 cost=0.169492
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=277527 candidates=10 weight=1
+Hardware assisted breakpoint 33 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=277527 weight=1 cost=0.24
+HI_SPAN_FILTER_RAW position=1 candidates=9
+HI_SPAN_FILTER_BYPASS position=1 raw=9 retained=1 candidates: 272821/2 4087/1 4102/1 84094/1 177718/1 243540/1 279498/1 279499/1 280449/1
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=272821 candidates=9 weight=0.333333
+Hardware assisted breakpoint 34 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=272821 weight=0.333333 cost=10.3087
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=4087 candidates=9 weight=1
+Hardware assisted breakpoint 35 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=4087 weight=1 cost=27.1236
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=4102 candidates=9 weight=1
+Hardware assisted breakpoint 36 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=4102 weight=1 cost=33.5175
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=84094 candidates=9 weight=1
+Hardware assisted breakpoint 37 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=84094 weight=1 cost=17.3384
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=177718 candidates=9 weight=1
+Hardware assisted breakpoint 38 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=177718 weight=1 cost=17.9871
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=243540 candidates=9 weight=1
+Hardware assisted breakpoint 39 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=243540 weight=1 cost=14.4299
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=279498 candidates=9 weight=1
+Hardware assisted breakpoint 40 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=279498 weight=1 cost=33.6242
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=279499 candidates=9 weight=1
+Hardware assisted breakpoint 41 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=279499 weight=1 cost=28.6446
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=280449 candidates=9 weight=1
+Hardware assisted breakpoint 42 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=280449 weight=1 cost=64.2757
+HI_SPAN_FILTER_SELECTED call=3 index=0 unit=272820
+HI_SPAN_FILTER_SELECTED call=4 index=0 unit=272821
+HI_SPAN_FILTER_RAW position=0 candidates=10
+HI_SPAN_FILTER_BYPASS position=0 raw=10 retained=1 candidates: 272820/2 22336/1 65331/1 75811/1 135441/1 164116/1 205125/1 219724/1 255985/1 277527/1
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=272820 candidates=10 weight=0.333333
+Hardware assisted breakpoint 43 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=272820 weight=0.333333 cost=0
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=22336 candidates=10 weight=1
+Hardware assisted breakpoint 44 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=22336 weight=1 cost=0.0285714
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=65331 candidates=10 weight=1
+Hardware assisted breakpoint 45 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=65331 weight=1 cost=0.0285714
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=75811 candidates=10 weight=1
+Hardware assisted breakpoint 46 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=75811 weight=1 cost=0.204082
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=135441 candidates=10 weight=1
+Hardware assisted breakpoint 47 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=135441 weight=1 cost=0.909091
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=164116 candidates=10 weight=1
+Hardware assisted breakpoint 48 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=164116 weight=1 cost=1.03077
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=205125 candidates=10 weight=1
+Hardware assisted breakpoint 49 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=205125 weight=1 cost=0.24
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=219724 candidates=10 weight=1
+Hardware assisted breakpoint 50 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=219724 weight=1 cost=0.00754717
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=255985 candidates=10 weight=1
+Hardware assisted breakpoint 51 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=255985 weight=1 cost=0.169492
+HI_SPAN_FILTER_SCORE_ENTRY position=0 unit=277527 candidates=10 weight=1
+Hardware assisted breakpoint 52 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=0 unit=277527 weight=1 cost=0.24
+HI_SPAN_FILTER_RAW position=1 candidates=9
+HI_SPAN_FILTER_BYPASS position=1 raw=9 retained=1 candidates: 272821/2 4087/1 4102/1 84094/1 177718/1 243540/1 279498/1 279499/1 280449/1
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=272821 candidates=9 weight=0.333333
+Hardware assisted breakpoint 53 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=272821 weight=0.333333 cost=10.3087
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=4087 candidates=9 weight=1
+Hardware assisted breakpoint 54 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=4087 weight=1 cost=27.1236
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=4102 candidates=9 weight=1
+Hardware assisted breakpoint 55 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=4102 weight=1 cost=33.5175
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=84094 candidates=9 weight=1
+Hardware assisted breakpoint 56 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=84094 weight=1 cost=17.3384
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=177718 candidates=9 weight=1
+Hardware assisted breakpoint 57 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=177718 weight=1 cost=17.9871
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=243540 candidates=9 weight=1
+Hardware assisted breakpoint 58 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=243540 weight=1 cost=14.4299
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=279498 candidates=9 weight=1
+Hardware assisted breakpoint 59 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=279498 weight=1 cost=33.6242
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=279499 candidates=9 weight=1
+Hardware assisted breakpoint 60 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=279499 weight=1 cost=28.6446
+HI_SPAN_FILTER_SCORE_ENTRY position=1 unit=280449 candidates=9 weight=1
+Hardware assisted breakpoint 61 at 0x1001d3f4
+HI_SPAN_FILTER_SCORE_RETURN position=1 unit=280449 weight=1 cost=64.2757
+HI_SPAN_FILTER_SELECTED call=5 index=0 unit=272820
+HI_SPAN_FILTER_SELECTED call=6 index=0 unit=272821
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

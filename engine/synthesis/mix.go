@@ -32,7 +32,7 @@ type Paul2013UPMPeriod struct {
 // one UPM interval, then accumulates current/left/right contributions using
 // edge entries at periodIndex and periodIndex+1, as FUN_1002d230 does. The
 // source windows must already be selected and reconstructed from the model;
-// the rising curve remains analytic.
+// the coefficient values come from the exact extracted table.
 func MixPaul2013UPMInterval(
 	output []int16,
 	outputOffset int,
@@ -55,6 +55,33 @@ func MixPaul2013UPMInterval(
 		return err
 	}
 	return AddPaul2013WeightedWindows(output, weights.Normalization, contributions)
+}
+
+// MixPaul2013ContextUPMTimeline composes the observed row gate, capped
+// left/right neighbor counts, edge weights, and timeline accumulator for one
+// current unit. Callers still provide gathered counts and reconstructed source
+// windows because their native producers depend on the missing neighbor
+// gatherer and shared-buffer reconstruction.
+func MixPaul2013ContextUPMTimeline(
+	output []int16,
+	outputOffset int,
+	gate ContextGateInput,
+	requestedLeftCount, requestedRightCount int,
+	periods []Paul2013UPMPeriod,
+) (Paul2013ContextEdgePlan, error) {
+	if len(periods) == 0 {
+		return Paul2013ContextEdgePlan{}, errors.New("context UPM timeline requires at least one period")
+	}
+	plan, err := BuildPaul2013ContextEdgePlan(
+		gate, len(periods), requestedLeftCount, requestedRightCount,
+	)
+	if err != nil {
+		return Paul2013ContextEdgePlan{}, err
+	}
+	if err := MixPaul2013UPMTimeline(output, outputOffset, plan.Weights, periods); err != nil {
+		return Paul2013ContextEdgePlan{}, fmt.Errorf("mix context UPM timeline: %w", err)
+	}
+	return plan, nil
 }
 
 // MixPaul2013UPMTimeline places all of one unit's prepared UPM periods at

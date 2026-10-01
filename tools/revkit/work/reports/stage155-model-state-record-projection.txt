@@ -1,0 +1,48 @@
+Stage 155: model-state record projection
+
+Implementation
+
+- Added `text.PopulatePaul2013ModelStateRecordsFromParserRows` to project the
+  recovered `FUN_10016c90` writes from an existing 0x94-stride parser-row
+  array into the counted 0x3c0-stride model-state records beginning at arena
+  +0x64c.
+- The projection writes the bounded context-code bytes at record +0x2e8, the
+  phone count at +0x95, preceding-phone `d`/`c` markers at +0x328 only when
+  marked, and M flags at +0x29e. It writes default following markers at
+  +0x329 before applying those preceding markers; the one-byte overlap between
+  these arrays is part of the native record layout, and unmarked +0x328 bytes
+  are preserved. It also copies the observed row control bytes
+  into +0x3ac through +0x3b5, writes the +0x2df per-token flag for values
+  other than -1, and fills
+  pointer fields +0x2e0, +0x2e4, and +0x3b8 through a caller-supplied address
+  resolver.
+- The helper validates the counted record header, row count, arena extent,
+  parser-row string termination, and required address resolver. It clones the
+  arena and leaves bytes outside the observed writes unchanged.
+- It also derives the final mode byte at arena +0x4770a from the last record's
+  signed +0x3ac code, its +0x2df state flag, and the caller-supplied terminal
+  pitch-value count, matching the final dispatch in the pseudocode.
+- The source evidence is the Ghidra pseudocode for `FUN_10016c90` in
+  `tools/revkit/work/reports/vt_pau-synthesis-pseudocode.c`, with the caller
+  ordering visible in the same report and
+  `tools/revkit/work/reports/stage24-marker-pipeline-caller.c`.
+
+Validation
+
+- `GOCACHE=/tmp/vtspeak-go-cache go test ./text` passed from `engine/` after
+  implementation. Tests cover two-row projection, pointer mapping, phone and
+  flag writes, preserved sentinel bytes, and rejected malformed inputs.
+- `GOCACHE=/tmp/vtspeak-go-cache go test ./...` passed from `engine/`.
+- `GOCACHE=/tmp/vtspeak-go-cache go build ./...` passed from `engine/`.
+- `GOCACHE=/tmp/vtspeak-go-cache go vet ./...` passed from `engine/`.
+- `git diff --check` passed from the repository root.
+
+Limits
+
+- This is a static-derived projection of writes, not a captured native-record
+  parity result. Its parser rows, per-token state values, and pointer address
+  space must be supplied by the caller.
+- Parser-row production, per-token state-value production, and terminal pitch
+  value production remain caller inputs. There is no captured native-record
+  parity result. This does not complete source-to-unit selection or
+  whole-engine synthesis.

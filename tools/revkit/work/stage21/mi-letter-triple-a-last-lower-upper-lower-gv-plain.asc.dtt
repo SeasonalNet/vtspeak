@@ -1,0 +1,131 @@
+VTDTTS ASCII
+3
+4
+merged-gen
+merged-num
+merged-etc
+merged-alp
+
+TypeFlag : 2
+PhoneString : JH
+File Index : 0
+PCM Pos : 340537012
+PCM Size : 2756
+PCM Coded Size : 1428
+Phone Mode : 0
+Pitch_first : 152
+Pitch_last : 116
+PM Pos : 5139254
+PM Size : 19
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : IY1
+File Index : 0
+PCM Pos : 340538440
+PCM Size : 964
+PCM Coded Size : 1000
+Phone Mode : 1
+Pitch_first : 116
+Pitch_last : 116
+PM Pos : 5139273
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : IY1
+File Index : 0
+PCM Pos : 182530184
+PCM Size : 918
+PCM Coded Size : 960
+Phone Mode : 2
+Shift Size : 1002
+Pitch_first : 110
+Pitch_last : 124
+PM Pos : 2806299
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : V
+File Index : 0
+PCM Pos : 182531144
+PCM Size : 980
+PCM Coded Size : 520
+Phone Mode : 0
+Pitch_first : 124
+Pitch_last : 118
+PM Pos : 2806307
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : IY1
+File Index : 0
+PCM Pos : 182531664
+PCM Size : 2276
+PCM Coded Size : 2448
+Phone Mode : 1
+Pitch_first : 118
+Pitch_last : 120
+PM Pos : 2806315
+PM Size : 21
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : IY1
+File Index : 0
+PCM Pos : 236139012
+PCM Size : 926
+PCM Coded Size : 1028
+Phone Mode : 2
+Shift Size : 1118
+Pitch_first : 116
+Pitch_last : 114
+PM Pos : 3614625
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 236140040
+PCM Size : 1750
+PCM Coded Size : 2212
+Phone Mode : 1
+Pitch_first : 114
+Pitch_last : 130
+PM Pos : 3614633
+PM Size : 15
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EY1
+File Index : 0
+PCM Pos : 236140040
+PCM Size : 2748
+PCM Coded Size : 2212
+Phone Mode : 2
+Shift Size : 1620
+Pitch_first : 130
+Pitch_last : 194
+PM Pos : 3614647
+PM Size : 15
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+

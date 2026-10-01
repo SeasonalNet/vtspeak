@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"path/filepath"
 
+	"vtspeak/engine/dat"
 	"vtspeak/engine/distance"
 	"vtspeak/engine/tree3"
 )
@@ -60,6 +61,18 @@ func (p *Paul2013) ReadUnit(bank string, index uint32) (Unit, error) {
 		return Unit{}, fmt.Errorf("unknown Paul unit bank %q", bank)
 	}
 	return resource.ReadUnit(index)
+}
+
+// ReadRecord reads indexed metadata without accessing DAT or UPM payloads.
+func (p *Paul2013) ReadRecord(bank string, index uint32) (dat.UnitRecord, error) {
+	if p == nil {
+		return dat.UnitRecord{}, errors.New("unit record lookup has no Paul model")
+	}
+	resource, ok := p.Banks[bank]
+	if !ok || resource == nil {
+		return dat.UnitRecord{}, fmt.Errorf("unknown or unavailable Paul unit bank %q", bank)
+	}
+	return resource.ReadRecord(index)
 }
 
 func (p *Paul2013) Close() error {

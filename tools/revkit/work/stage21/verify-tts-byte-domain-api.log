@@ -1,0 +1,315 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>> > > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+VERIFY_TTS_BYTE byte=0 ax=65533 eax=21889021
+VERIFY_TTS_BYTE byte=1 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=2 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=3 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=4 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=5 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=6 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=7 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=8 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=9 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=10 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=11 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=12 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=13 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=14 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=15 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=16 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=17 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=18 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=19 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=20 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=21 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=22 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=23 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=24 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=25 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=26 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=27 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=28 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=29 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=30 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=31 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=32 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=33 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=34 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=35 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=36 ax=1 eax=1
+VERIFY_TTS_BYTE byte=37 ax=1 eax=1
+VERIFY_TTS_BYTE byte=38 ax=1 eax=1
+VERIFY_TTS_BYTE byte=39 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=40 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=41 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=42 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=43 ax=1 eax=1
+VERIFY_TTS_BYTE byte=44 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=45 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=46 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=47 ax=1 eax=1
+VERIFY_TTS_BYTE byte=48 ax=1 eax=1
+VERIFY_TTS_BYTE byte=49 ax=1 eax=1
+VERIFY_TTS_BYTE byte=50 ax=1 eax=1
+VERIFY_TTS_BYTE byte=51 ax=1 eax=1
+VERIFY_TTS_BYTE byte=52 ax=1 eax=1
+VERIFY_TTS_BYTE byte=53 ax=1 eax=1
+VERIFY_TTS_BYTE byte=54 ax=1 eax=1
+VERIFY_TTS_BYTE byte=55 ax=1 eax=1
+VERIFY_TTS_BYTE byte=56 ax=1 eax=1
+VERIFY_TTS_BYTE byte=57 ax=1 eax=1
+VERIFY_TTS_BYTE byte=58 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=59 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=60 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=61 ax=1 eax=1
+VERIFY_TTS_BYTE byte=62 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=63 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=64 ax=1 eax=1
+VERIFY_TTS_BYTE byte=65 ax=1 eax=1
+VERIFY_TTS_BYTE byte=66 ax=1 eax=1
+VERIFY_TTS_BYTE byte=67 ax=1 eax=1
+VERIFY_TTS_BYTE byte=68 ax=1 eax=1
+VERIFY_TTS_BYTE byte=69 ax=1 eax=1
+VERIFY_TTS_BYTE byte=70 ax=1 eax=1
+VERIFY_TTS_BYTE byte=71 ax=1 eax=1
+VERIFY_TTS_BYTE byte=72 ax=1 eax=1
+VERIFY_TTS_BYTE byte=73 ax=1 eax=1
+VERIFY_TTS_BYTE byte=74 ax=1 eax=1
+VERIFY_TTS_BYTE byte=75 ax=1 eax=1
+VERIFY_TTS_BYTE byte=76 ax=1 eax=1
+VERIFY_TTS_BYTE byte=77 ax=1 eax=1
+VERIFY_TTS_BYTE byte=78 ax=1 eax=1
+VERIFY_TTS_BYTE byte=79 ax=1 eax=1
+VERIFY_TTS_BYTE byte=80 ax=1 eax=1
+VERIFY_TTS_BYTE byte=81 ax=1 eax=1
+VERIFY_TTS_BYTE byte=82 ax=1 eax=1
+VERIFY_TTS_BYTE byte=83 ax=1 eax=1
+VERIFY_TTS_BYTE byte=84 ax=1 eax=1
+VERIFY_TTS_BYTE byte=85 ax=1 eax=1
+VERIFY_TTS_BYTE byte=86 ax=1 eax=1
+VERIFY_TTS_BYTE byte=87 ax=1 eax=1
+VERIFY_TTS_BYTE byte=88 ax=1 eax=1
+VERIFY_TTS_BYTE byte=89 ax=1 eax=1
+VERIFY_TTS_BYTE byte=90 ax=1 eax=1
+VERIFY_TTS_BYTE byte=91 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=92 ax=1 eax=1
+VERIFY_TTS_BYTE byte=93 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=94 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=95 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=96 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=97 ax=1 eax=1
+VERIFY_TTS_BYTE byte=98 ax=1 eax=1
+VERIFY_TTS_BYTE byte=99 ax=1 eax=1
+VERIFY_TTS_BYTE byte=100 ax=1 eax=1
+VERIFY_TTS_BYTE byte=101 ax=1 eax=1
+VERIFY_TTS_BYTE byte=102 ax=1 eax=1
+VERIFY_TTS_BYTE byte=103 ax=1 eax=1
+VERIFY_TTS_BYTE byte=104 ax=1 eax=1
+VERIFY_TTS_BYTE byte=105 ax=1 eax=1
+VERIFY_TTS_BYTE byte=106 ax=1 eax=1
+VERIFY_TTS_BYTE byte=107 ax=1 eax=1
+VERIFY_TTS_BYTE byte=108 ax=1 eax=1
+VERIFY_TTS_BYTE byte=109 ax=1 eax=1
+VERIFY_TTS_BYTE byte=110 ax=1 eax=1
+VERIFY_TTS_BYTE byte=111 ax=1 eax=1
+VERIFY_TTS_BYTE byte=112 ax=1 eax=1
+VERIFY_TTS_BYTE byte=113 ax=1 eax=1
+VERIFY_TTS_BYTE byte=114 ax=1 eax=1
+VERIFY_TTS_BYTE byte=115 ax=1 eax=1
+VERIFY_TTS_BYTE byte=116 ax=1 eax=1
+VERIFY_TTS_BYTE byte=117 ax=1 eax=1
+VERIFY_TTS_BYTE byte=118 ax=1 eax=1
+VERIFY_TTS_BYTE byte=119 ax=1 eax=1
+VERIFY_TTS_BYTE byte=120 ax=1 eax=1
+VERIFY_TTS_BYTE byte=121 ax=1 eax=1
+VERIFY_TTS_BYTE byte=122 ax=1 eax=1
+VERIFY_TTS_BYTE byte=123 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=124 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=125 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=126 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=127 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=128 ax=1 eax=1
+VERIFY_TTS_BYTE byte=129 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=130 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=131 ax=1 eax=1
+VERIFY_TTS_BYTE byte=132 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=133 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=134 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=135 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=136 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=137 ax=1 eax=1
+VERIFY_TTS_BYTE byte=138 ax=1 eax=1
+VERIFY_TTS_BYTE byte=139 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=140 ax=1 eax=1
+VERIFY_TTS_BYTE byte=141 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=142 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=143 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=144 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=145 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=146 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=147 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=148 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=149 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=150 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=151 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=152 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=153 ax=1 eax=1
+VERIFY_TTS_BYTE byte=154 ax=1 eax=1
+VERIFY_TTS_BYTE byte=155 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=156 ax=1 eax=1
+VERIFY_TTS_BYTE byte=157 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=158 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=159 ax=1 eax=1
+VERIFY_TTS_BYTE byte=160 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=161 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=162 ax=1 eax=1
+VERIFY_TTS_BYTE byte=163 ax=1 eax=1
+VERIFY_TTS_BYTE byte=164 ax=1 eax=1
+VERIFY_TTS_BYTE byte=165 ax=1 eax=1
+VERIFY_TTS_BYTE byte=166 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=167 ax=1 eax=1
+VERIFY_TTS_BYTE byte=168 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=169 ax=1 eax=1
+VERIFY_TTS_BYTE byte=170 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=171 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=172 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=173 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=174 ax=1 eax=1
+VERIFY_TTS_BYTE byte=175 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=176 ax=1 eax=1
+VERIFY_TTS_BYTE byte=177 ax=1 eax=1
+VERIFY_TTS_BYTE byte=178 ax=1 eax=1
+VERIFY_TTS_BYTE byte=179 ax=1 eax=1
+VERIFY_TTS_BYTE byte=180 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=181 ax=1 eax=1
+VERIFY_TTS_BYTE byte=182 ax=1 eax=1
+VERIFY_TTS_BYTE byte=183 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=184 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=185 ax=1 eax=1
+VERIFY_TTS_BYTE byte=186 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=187 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=188 ax=1 eax=1
+VERIFY_TTS_BYTE byte=189 ax=1 eax=1
+VERIFY_TTS_BYTE byte=190 ax=1 eax=1
+VERIFY_TTS_BYTE byte=191 ax=65531 eax=65531
+VERIFY_TTS_BYTE byte=192 ax=1 eax=1
+VERIFY_TTS_BYTE byte=193 ax=1 eax=1
+VERIFY_TTS_BYTE byte=194 ax=1 eax=1
+VERIFY_TTS_BYTE byte=195 ax=1 eax=1
+VERIFY_TTS_BYTE byte=196 ax=1 eax=1
+VERIFY_TTS_BYTE byte=197 ax=1 eax=1
+VERIFY_TTS_BYTE byte=198 ax=1 eax=1
+VERIFY_TTS_BYTE byte=199 ax=1 eax=1
+VERIFY_TTS_BYTE byte=200 ax=1 eax=1
+VERIFY_TTS_BYTE byte=201 ax=1 eax=1
+VERIFY_TTS_BYTE byte=202 ax=1 eax=1
+VERIFY_TTS_BYTE byte=203 ax=1 eax=1
+VERIFY_TTS_BYTE byte=204 ax=1 eax=1
+VERIFY_TTS_BYTE byte=205 ax=1 eax=1
+VERIFY_TTS_BYTE byte=206 ax=1 eax=1
+VERIFY_TTS_BYTE byte=207 ax=1 eax=1
+VERIFY_TTS_BYTE byte=208 ax=1 eax=1
+VERIFY_TTS_BYTE byte=209 ax=1 eax=1
+VERIFY_TTS_BYTE byte=210 ax=1 eax=1
+VERIFY_TTS_BYTE byte=211 ax=1 eax=1
+VERIFY_TTS_BYTE byte=212 ax=1 eax=1
+VERIFY_TTS_BYTE byte=213 ax=1 eax=1
+VERIFY_TTS_BYTE byte=214 ax=1 eax=1
+VERIFY_TTS_BYTE byte=215 ax=1 eax=1
+VERIFY_TTS_BYTE byte=216 ax=1 eax=1
+VERIFY_TTS_BYTE byte=217 ax=1 eax=1
+VERIFY_TTS_BYTE byte=218 ax=1 eax=1
+VERIFY_TTS_BYTE byte=219 ax=1 eax=1
+VERIFY_TTS_BYTE byte=220 ax=1 eax=1
+VERIFY_TTS_BYTE byte=221 ax=1 eax=1
+VERIFY_TTS_BYTE byte=222 ax=1 eax=1
+VERIFY_TTS_BYTE byte=223 ax=1 eax=1
+VERIFY_TTS_BYTE byte=224 ax=1 eax=1
+VERIFY_TTS_BYTE byte=225 ax=1 eax=1
+VERIFY_TTS_BYTE byte=226 ax=1 eax=1
+VERIFY_TTS_BYTE byte=227 ax=1 eax=1
+VERIFY_TTS_BYTE byte=228 ax=1 eax=1
+VERIFY_TTS_BYTE byte=229 ax=1 eax=1
+VERIFY_TTS_BYTE byte=230 ax=1 eax=1
+VERIFY_TTS_BYTE byte=231 ax=1 eax=1
+VERIFY_TTS_BYTE byte=232 ax=1 eax=1
+VERIFY_TTS_BYTE byte=233 ax=1 eax=1
+VERIFY_TTS_BYTE byte=234 ax=1 eax=1
+VERIFY_TTS_BYTE byte=235 ax=1 eax=1
+VERIFY_TTS_BYTE byte=236 ax=1 eax=1
+VERIFY_TTS_BYTE byte=237 ax=1 eax=1
+VERIFY_TTS_BYTE byte=238 ax=1 eax=1
+VERIFY_TTS_BYTE byte=239 ax=1 eax=1
+VERIFY_TTS_BYTE byte=240 ax=1 eax=1
+VERIFY_TTS_BYTE byte=241 ax=1 eax=1
+VERIFY_TTS_BYTE byte=242 ax=1 eax=1
+VERIFY_TTS_BYTE byte=243 ax=1 eax=1
+VERIFY_TTS_BYTE byte=244 ax=1 eax=1
+VERIFY_TTS_BYTE byte=245 ax=1 eax=1
+VERIFY_TTS_BYTE byte=246 ax=1 eax=1
+VERIFY_TTS_BYTE byte=247 ax=1 eax=1
+VERIFY_TTS_BYTE byte=248 ax=1 eax=1
+VERIFY_TTS_BYTE byte=249 ax=1 eax=1
+VERIFY_TTS_BYTE byte=250 ax=1 eax=1
+VERIFY_TTS_BYTE byte=251 ax=1 eax=1
+VERIFY_TTS_BYTE byte=252 ax=1 eax=1
+VERIFY_TTS_BYTE byte=253 ax=1 eax=1
+VERIFY_TTS_BYTE byte=254 ax=1 eax=1
+VERIFY_TTS_BYTE byte=255 ax=1 eax=1
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @77FF0000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

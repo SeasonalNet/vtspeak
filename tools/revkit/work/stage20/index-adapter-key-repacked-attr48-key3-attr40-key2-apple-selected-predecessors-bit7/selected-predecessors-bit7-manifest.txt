@@ -1,0 +1,11 @@
+variant=Apple prefix/tail-map index with bit 7 set on three measured predecessor signatures
+base=tools/revkit/work/stage20/index-adapter-key-repacked-attr48-key3-attr40-key2-apple-context-prefix-tail-map
+bank=unit-gen
+unit_count=179995
+signature_start=0x36ee49
+base_sha256=a18490a6b5f649c4202f72321b61d8f02bacd1418b3f9a20930fc967bdcbe2b2
+overlay_sha256=6031c8d5207d40ed52e61574640f1e59fff86db54f6bcb16d1948f18d743f3ca
+changed_byte_count=3
+unit=59558 row=59558 offset=0x3d4ad9 before=0x00 after=0x80
+unit=82036 row=82036 offset=0x3fb17b before=0x00 after=0x80
+unit=2554 row=2554 offset=0x373425 before=0x00 after=0x80

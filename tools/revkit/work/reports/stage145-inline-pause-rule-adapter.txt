@@ -1,0 +1,34 @@
+Stage 145: narrow VTML pause rule adapter
+
+Ported behavior
+
+- `text.Paul2013InlinePauseModelSourceRule` selects the observed
+  `<vtml_pause` table entry at handler address `0x1002fb10` and binds the
+  supported exact `<vtml_pause time="N"/>` lexical form to the existing
+  decimal duration parser.
+- The dispatcher adapter consumes the tag, writes the synthetic separating
+  space used by the inline-pause text path, and reports the source byte offset,
+  duration in milliseconds, and 16 kHz frame count to a caller callback.
+  Token-boundary placement stays with the caller because this rule does not
+  tokenize surrounding text.
+- `LexiconFrontend.ResolveTextWithPaul2013InlinePauses` now sends each markup
+  boundary through the recovered longest-key dispatcher, so its supported
+  pause form uses the same handler and decimal parser as direct dispatcher
+  callers.
+- Unsupported attribute names, malformed or non-decimal values, and other
+  tag forms decline the selected rule. The generic dispatcher restores its
+  cursors on decline.
+
+Evidence and limits
+
+- `tools/revkit/work/reports/vt_pau-objdump-disassembly.txt` at `0x1002fb10`
+  shows a wrapper that forwards its arguments to `FUN_1002f8e0` with selector
+  6. The adapter connects the separately captured self-closing lexical form;
+  it does not port the shared routine's full settings, marker, token-index, or
+  caller-state behavior.
+- The observed rule-table key and handler address are listed in
+  `stage144-model-source-rule-table.txt`. The exact supported lexical form and
+  frame conversion are covered by `engine/text/vtml_pause_test.go`.
+- No original-DLL differential was run for this adapter. Full VTML pause
+  behavior, `<vt_pause>`, alternative attribute layouts, and pipeline timing
+  remain open.

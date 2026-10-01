@@ -1,0 +1,254 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x100235f6
+Wine-gdb> >>>>>> > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002389a
+Wine-gdb> Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10018c80
+Wine-gdb> >>>>>>>> > > > > >  >  >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HELLO_ORDER_COST_PRE_SCORE count=30 [0]=1200(key=-1,span=1,weighted=0)
+ [1]=279479(key=-1,span=1,weighted=0) [2]=273369(key=-1,span=1,weighted=0)
+ [3]=272822(key=-1,span=1,weighted=0) [4]=262454(key=-1,span=1,weighted=0)
+ [5]=245736(key=-1,span=1,weighted=0) [6]=233533(key=-1,span=1,weighted=0)
+ [7]=214148(key=-1,span=1,weighted=0)
+HELLO_ORDER_COST_LOCAL id=1200 key=-1 span=1 weighted=0 cost=16.032
+HELLO_ORDER_COST_LOCAL id=279479 key=-1 span=1 weighted=0 cost=30.032
+HELLO_ORDER_COST_LOCAL id=273369 key=-1 span=1 weighted=0 cost=0.0705882
+HELLO_ORDER_COST_LOCAL id=272822 key=-1 span=1 weighted=0 cost=0.00851064
+HELLO_ORDER_COST_LOCAL id=262454 key=-1 span=1 weighted=0 cost=15.0082
+HELLO_ORDER_COST_LOCAL id=245736 key=-1 span=1 weighted=0 cost=16.0348
+HELLO_ORDER_COST_LOCAL id=233533 key=-1 span=1 weighted=0 cost=16.96
+HELLO_ORDER_COST_LOCAL id=214148 key=-1 span=1 weighted=0 cost=15.1455
+HELLO_ORDER_COST_LOCAL id=206118 key=-1 span=1 weighted=0 cost=20.1231
+HELLO_ORDER_COST_LOCAL id=204612 key=-1 span=1 weighted=0 cost=15.0085
+HELLO_ORDER_COST_LOCAL id=200614 key=-1 span=1 weighted=0 cost=15.0348
+HELLO_ORDER_COST_LOCAL id=200525 key=-1 span=1 weighted=0 cost=15.032
+HELLO_ORDER_COST_LOCAL id=195687 key=-1 span=1 weighted=0 cost=15.0082
+HELLO_ORDER_COST_LOCAL id=189906 key=-1 span=1 weighted=0 cost=15.1455
+HELLO_ORDER_COST_LOCAL id=182880 key=-1 span=1 weighted=0 cost=15.0085
+HELLO_ORDER_COST_LOCAL id=179388 key=-1 span=1 weighted=0 cost=15.2667
+HELLO_ORDER_COST_LOCAL id=178453 key=-1 span=1 weighted=0 cost=15.1455
+HELLO_ORDER_COST_LOCAL id=165351 key=-1 span=1 weighted=0 cost=16.0706
+HELLO_ORDER_COST_LOCAL id=129641 key=-1 span=1 weighted=0 cost=16.0082
+HELLO_ORDER_COST_LOCAL id=116320 key=-1 span=1 weighted=0 cost=15.1455
+HELLO_ORDER_COST_LOCAL id=92183 key=-1 span=1 weighted=0 cost=15.0082
+HELLO_ORDER_COST_LOCAL id=52542 key=-1 span=1 weighted=0 cost=16.5684
+HELLO_ORDER_COST_LOCAL id=51310 key=-1 span=1 weighted=0 cost=15.0348
+HELLO_ORDER_COST_LOCAL id=31795 key=-1 span=1 weighted=0 cost=15.0348
+HELLO_ORDER_COST_LOCAL id=31347 key=-1 span=1 weighted=0 cost=16.3564
+HELLO_ORDER_COST_LOCAL id=28430 key=-1 span=1 weighted=0 cost=20
+HELLO_ORDER_COST_LOCAL id=22451 key=-1 span=1 weighted=0 cost=16.1887
+HELLO_ORDER_COST_LOCAL id=20499 key=-1 span=1 weighted=0 cost=16.0085
+HELLO_ORDER_COST_LOCAL id=2525 key=-1 span=1 weighted=0 cost=20
+HELLO_ORDER_COST_LOCAL id=279484 key=-1 span=1 weighted=0 cost=25.3429
+HELLO_ORDER_COST_PRE_SCORE count=30 [0]=13942(key=-2,span=2,weighted=0)
+ [1]=36540(key=-2,span=2,weighted=0) [2]=53487(key=-2,span=2,weighted=0)
+ [3]=96599(key=-2,span=2,weighted=0) [4]=264072(key=-2,span=2,weighted=0)
+ [5]=268760(key=-2,span=2,weighted=0) [6]=272152(key=-2,span=2,weighted=0)
+ [7]=272823(key=-2,span=2,weighted=0)
+HELLO_CONTROL_TRANSITION_ENTER context=1 current_count=10 previous_count=30
+Temporary breakpoint 6 at 0x100248d6
+HELLO_CONTROL_TRANSITION_RETURN context=1 candidates=10
+HELLO_CONTROL_PATH context=1 unit=13942 cumulative=16.6608 predecessor=273369 predecessor_index=2
+HELLO_CONTROL_PATH context=1 unit=36540 cumulative=13.3132 predecessor=273369 predecessor_index=2
+HELLO_CONTROL_PATH context=1 unit=53487 cumulative=6.65299 predecessor=273369 predecessor_index=2
+HELLO_CONTROL_PATH context=1 unit=96599 cumulative=13.0346 predecessor=273369 predecessor_index=2
+HELLO_CONTROL_PATH context=1 unit=264072 cumulative=9.34726 predecessor=273369 predecessor_index=2
+HELLO_CONTROL_PATH context=1 unit=268760 cumulative=9.15946 predecessor=272822 predecessor_index=3
+HELLO_CONTROL_PATH context=1 unit=272152 cumulative=10.7701 predecessor=273369 predecessor_index=2
+HELLO_CONTROL_PATH context=1 unit=272823 cumulative=2.32276 predecessor=272822 predecessor_index=3
+HELLO_CONTROL_PATH context=1 unit=273370 cumulative=2.98051 predecessor=273369 predecessor_index=2
+HELLO_CONTROL_PATH context=1 unit=145101 cumulative=20.2144 predecessor=273369 predecessor_index=2
+HELLO_ORDER_COST_PRE_SCORE count=30 [0]=36540(key=-2,span=2,weighted=0)
+ [1]=273370(key=-2,span=2,weighted=0) [2]=272823(key=-2,span=2,weighted=0)
+ [3]=272152(key=-2,span=2,weighted=0) [4]=268760(key=-2,span=2,weighted=0)
+ [5]=264072(key=-2,span=2,weighted=0) [6]=96599(key=-2,span=2,weighted=0)
+ [7]=13942(key=-2,span=2,weighted=0)
+HELLO_CONTROL_TRANSITION_ENTER context=2 current_count=23 previous_count=10
+Temporary breakpoint 7 at 0x100248d6
+HELLO_CONTROL_TRANSITION_RETURN context=2 candidates=23
+HELLO_CONTROL_PATH context=2 unit=36540 cumulative=13.4393 predecessor=36540 predecessor_index=1
+HELLO_CONTROL_PATH context=2 unit=273370 cumulative=3.92356 predecessor=273370 predecessor_index=8
+HELLO_CONTROL_PATH context=2 unit=272823 cumulative=2.85916 predecessor=272823 predecessor_index=7
+HELLO_CONTROL_PATH context=2 unit=272152 cumulative=10.8918 predecessor=272152 predecessor_index=6
+HELLO_CONTROL_PATH context=2 unit=268760 cumulative=9.42967 predecessor=268760 predecessor_index=5
+HELLO_CONTROL_PATH context=2 unit=264072 cumulative=10.0233 predecessor=264072 predecessor_index=4
+HELLO_CONTROL_PATH context=2 unit=96599 cumulative=13.5202 predecessor=96599 predecessor_index=3
+HELLO_CONTROL_PATH context=2 unit=13942 cumulative=17.0505 predecessor=13942 predecessor_index=0
+HELLO_CONTROL_PATH context=2 unit=53487 cumulative=6.8043 predecessor=53487 predecessor_index=2
+HELLO_CONTROL_PATH context=2 unit=4105 cumulative=34.3353 predecessor=273370 predecessor_index=8
+HELLO_CONTROL_PATH context=2 unit=72577 cumulative=22.0737 predecessor=273370 predecessor_index=8
+HELLO_CONTROL_PATH context=2 unit=63692 cumulative=39.1383 predecessor=272823 predecessor_index=7
+HELLO_CONTROL_PATH context=2 unit=93736 cumulative=29.6709 predecessor=273370 predecessor_index=8
+HELLO_CONTROL_PATH context=2 unit=235111 cumulative=37.9543 predecessor=273370 predecessor_index=8
+HELLO_CONTROL_PATH context=2 unit=57821 cumulative=93.4082 predecessor=13942 predecessor_index=0
+HELLO_CONTROL_PATH context=2 unit=128526 cumulative=42.4666 predecessor=272823 predecessor_index=7
+HELLO_CONTROL_PATH context=2 unit=2244 cumulative=95.687 predecessor=13942 predecessor_index=0
+HELLO_CONTROL_PATH context=2 unit=64011 cumulative=82.1162 predecessor=36540 predecessor_index=1
+HELLO_CONTROL_PATH context=2 unit=48369 cumulative=55.3097 predecessor=36540 predecessor_index=1
+HELLO_CONTROL_PATH context=2 unit=45237 cumulative=40.2488 predecessor=272823 predecessor_index=7
+HELLO_CONTROL_PATH context=2 unit=77285 cumulative=30.061 predecessor=273370 predecessor_index=8
+HELLO_CONTROL_PATH context=2 unit=281786 cumulative=37.4817 predecessor=273370 predecessor_index=8
+HELLO_CONTROL_PATH context=2 unit=115179 cumulative=35.4809 predecessor=273370 predecessor_index=8
+HELLO_ORDER_COST_PRE_SCORE count=30 [0]=2529(key=-1,span=1,weighted=0)
+ [1]=272824(key=-1,span=1,weighted=0) [2]=272153(key=-1,span=1,weighted=0)
+ [3]=265815(key=-1,span=1,weighted=0) [4]=264073(key=-1,span=1,weighted=0)
+ [5]=252236(key=-1,span=1,weighted=0) [6]=238356(key=-1,span=1,weighted=0)
+ [7]=233274(key=-1,span=1,weighted=0)
+HELLO_CONTROL_TRANSITION_ENTER context=3 current_count=25 previous_count=18
+Temporary breakpoint 8 at 0x100248d6
+HELLO_CONTROL_TRANSITION_RETURN context=3 candidates=25
+HELLO_CONTROL_PATH context=3 unit=2529 cumulative=133.351 predecessor=53487 predecessor_index=8
+HELLO_CONTROL_PATH context=3 unit=272824 cumulative=12.5038 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=272153 cumulative=14.5772 predecessor=272152 predecessor_index=3
+HELLO_CONTROL_PATH context=3 unit=265815 cumulative=134.564 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=264073 cumulative=16.3026 predecessor=264072 predecessor_index=5
+HELLO_CONTROL_PATH context=3 unit=252236 cumulative=136.209 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=238356 cumulative=129.838 predecessor=273370 predecessor_index=1
+HELLO_CONTROL_PATH context=3 unit=233274 cumulative=131.061 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=206047 cumulative=130.438 predecessor=53487 predecessor_index=8
+HELLO_CONTROL_PATH context=3 unit=173825 cumulative=131.135 predecessor=273370 predecessor_index=1
+HELLO_CONTROL_PATH context=3 unit=160529 cumulative=138.91 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=153132 cumulative=111.781 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=146098 cumulative=136.336 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=105185 cumulative=134.067 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=87003 cumulative=126.745 predecessor=273370 predecessor_index=1
+HELLO_CONTROL_PATH context=3 unit=83568 cumulative=134.049 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=75575 cumulative=138.703 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=49761 cumulative=129.733 predecessor=273370 predecessor_index=1
+HELLO_CONTROL_PATH context=3 unit=31841 cumulative=135.57 predecessor=53487 predecessor_index=8
+HELLO_CONTROL_PATH context=3 unit=29459 cumulative=140.382 predecessor=53487 predecessor_index=8
+HELLO_CONTROL_PATH context=3 unit=28296 cumulative=138.571 predecessor=53487 predecessor_index=8
+HELLO_CONTROL_PATH context=3 unit=13943 cumulative=19.7413 predecessor=13942 predecessor_index=7
+HELLO_CONTROL_PATH context=3 unit=6519 cumulative=134.061 predecessor=272823 predecessor_index=2
+HELLO_CONTROL_PATH context=3 unit=4632 cumulative=130.353 predecessor=53487 predecessor_index=8
+HELLO_CONTROL_PATH context=3 unit=273371 cumulative=6.45379 predecessor=273370 predecessor_index=1
+HELLO_ORDER_COST_PRE_SCORE count=30 [0]=282713(key=-2,span=2,weighted=0)
+ [1]=282675(key=-2,span=2,weighted=0) [2]=282025(key=-2,span=2,weighted=0)
+ [3]=272825(key=-2,span=2,weighted=0) [4]=264074(key=-2,span=2,weighted=0)
+ [5]=255282(key=-2,span=2,weighted=0) [6]=246677(key=-2,span=2,weighted=0)
+ [7]=5170(key=-2,span=2,weighted=0)
+HELLO_CONTROL_TRANSITION_ENTER context=4 current_count=25 previous_count=18
+Temporary breakpoint 9 at 0x100248d6
+HELLO_CONTROL_TRANSITION_RETURN context=4 candidates=25
+HELLO_CONTROL_PATH context=4 unit=282713 cumulative=52.252 predecessor=272824 predecessor_index=1
+HELLO_CONTROL_PATH context=4 unit=282675 cumulative=40.403 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=282025 cumulative=25.2351 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=272825 cumulative=17.4731 predecessor=272824 predecessor_index=1
+HELLO_CONTROL_PATH context=4 unit=264074 cumulative=14.7554 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=255282 cumulative=15.5176 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=246677 cumulative=20.3857 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=5170 cumulative=15.2943 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=1869 cumulative=28.3273 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=273372 cumulative=36.5339 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=268761 cumulative=57.0597 predecessor=272824 predecessor_index=1
+HELLO_CONTROL_PATH context=4 unit=65726 cumulative=59.3609 predecessor=272153 predecessor_index=2
+HELLO_CONTROL_PATH context=4 unit=13944 cumulative=43.2541 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=255006 cumulative=76.5529 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=232750 cumulative=74.1321 predecessor=272824 predecessor_index=1
+HELLO_CONTROL_PATH context=4 unit=241241 cumulative=88.8496 predecessor=272824 predecessor_index=1
+HELLO_CONTROL_PATH context=4 unit=208339 cumulative=66.4874 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=243651 cumulative=93.3032 predecessor=272824 predecessor_index=1
+HELLO_CONTROL_PATH context=4 unit=211910 cumulative=87.7234 predecessor=272824 predecessor_index=1
+HELLO_CONTROL_PATH context=4 unit=149397 cumulative=79.4829 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=132211 cumulative=70.6574 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=171885 cumulative=76.3104 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=224354 cumulative=70.8305 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=168174 cumulative=72.6658 predecessor=273371 predecessor_index=17
+HELLO_CONTROL_PATH context=4 unit=33050 cumulative=71.4679 predecessor=273371 predecessor_index=17
+HELLO_ORDER_COST_PRE_SCORE count=30 [0]=1869(key=-2,span=2,weighted=0)
+ [1]=282713(key=-2,span=2,weighted=0) [2]=282675(key=-2,span=2,weighted=0)
+ [3]=282025(key=-2,span=2,weighted=0) [4]=272825(key=-2,span=2,weighted=0)
+ [5]=264074(key=-2,span=2,weighted=0) [6]=255282(key=-2,span=2,weighted=0)
+ [7]=246677(key=-2,span=2,weighted=0)
+HELLO_CONTROL_TRANSITION_ENTER context=5 current_count=28 previous_count=13
+Temporary breakpoint 10 at 0x100248d6
+HELLO_CONTROL_TRANSITION_RETURN context=5 candidates=28
+HELLO_CONTROL_PATH context=5 unit=1869 cumulative=30.9662 predecessor=1869 predecessor_index=8
+HELLO_CONTROL_PATH context=5 unit=282713 cumulative=111.912 predecessor=282713 predecessor_index=0
+HELLO_CONTROL_PATH context=5 unit=282675 cumulative=88.4013 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=282025 cumulative=83.3928 predecessor=282025 predecessor_index=2
+HELLO_CONTROL_PATH context=5 unit=272825 cumulative=19.5923 predecessor=272825 predecessor_index=3
+HELLO_CONTROL_PATH context=5 unit=264074 cumulative=15.7349 predecessor=264074 predecessor_index=4
+HELLO_CONTROL_PATH context=5 unit=255282 cumulative=18.139 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=246677 cumulative=22.2488 predecessor=246677 predecessor_index=6
+HELLO_CONTROL_PATH context=5 unit=5170 cumulative=17.1707 predecessor=5170 predecessor_index=7
+HELLO_CONTROL_PATH context=5 unit=282035 cumulative=104.021 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=200069 cumulative=80.7219 predecessor=264074 predecessor_index=4
+HELLO_CONTROL_PATH context=5 unit=136758 cumulative=85.0107 predecessor=264074 predecessor_index=4
+HELLO_CONTROL_PATH context=5 unit=74841 cumulative=82.9978 predecessor=5170 predecessor_index=7
+HELLO_CONTROL_PATH context=5 unit=33797 cumulative=77.1523 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=280962 cumulative=110.117 predecessor=273372 predecessor_index=9
+HELLO_CONTROL_PATH context=5 unit=66928 cumulative=105.791 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=281739 cumulative=92.7306 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=282031 cumulative=91.7282 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=200145 cumulative=120.967 predecessor=273372 predecessor_index=9
+HELLO_CONTROL_PATH context=5 unit=282647 cumulative=125.038 predecessor=282713 predecessor_index=0
+HELLO_CONTROL_PATH context=5 unit=282009 cumulative=103.807 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=281857 cumulative=90.2086 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=281980 cumulative=97.5404 predecessor=255282 predecessor_index=5
+HELLO_CONTROL_PATH context=5 unit=105189 cumulative=89.7174 predecessor=264074 predecessor_index=4
+HELLO_CONTROL_PATH context=5 unit=94772 cumulative=121.465 predecessor=246677 predecessor_index=6
+HELLO_CONTROL_PATH context=5 unit=27246 cumulative=84.3372 predecessor=264074 predecessor_index=4
+HELLO_CONTROL_PATH context=5 unit=23010 cumulative=95.3163 predecessor=246677 predecessor_index=6
+HELLO_CONTROL_PATH context=5 unit=28799 cumulative=82.3348 predecessor=264074 predecessor_index=4
+HELLO_ORDER_COST_SELECTED n=1 id=273369
+HELLO_ORDER_COST_SELECTED n=2 id=273370
+HELLO_ORDER_COST_SELECTED n=3 id=273370
+HELLO_ORDER_COST_SELECTED n=4 id=273371
+HELLO_ORDER_COST_SELECTED n=5 id=264074
+HELLO_ORDER_COST_SELECTED n=6 id=264074
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

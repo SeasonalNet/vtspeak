@@ -1,0 +1,30 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 5 at 0x10024808
+Temporary breakpoint 6 at 0x10024271
+Temporary breakpoint 7 at 0x10024808
+Temporary breakpoint 8 at 0x10024271
+HI_SCORE_CONTEXT_CUTOFF_OVERRIDE slot=1 sum=9
+HI_SCORE_CONTEXT unit=272820 bytes=00,00,00,00,00,01
+Temporary breakpoint 9 at 0x1002389a
+HI_SCORE_RESULT unit=272820 score=10.8
+HI_SCORE_CONTEXT unit=65331 bytes=00,00,00,00,00,01
+Temporary breakpoint 10 at 0x1002389a
+HI_SCORE_RESULT unit=65331 score=10.8
+HI_SCORE_CONTEXT unit=272821 bytes=00,00,01,01,00,00
+Temporary breakpoint 11 at 0x1002389a
+HI_SCORE_RESULT unit=272821 score=57.118
+HI_SCORE_CONTEXT unit=279498 bytes=00,00,01,01,00,00
+Temporary breakpoint 12 at 0x1002389a
+HI_SCORE_RESULT unit=279498 score=65.4244
+HI_SCORE_CONTEXT unit=279499 bytes=00,00,01,01,00,00
+Temporary breakpoint 13 at 0x1002389a
+HI_SCORE_RESULT unit=279499 score=67.5652
+HI_SCORE_CONTEXT unit=280449 bytes=00,00,01,01,00,00
+Temporary breakpoint 14 at 0x1002389a
+HI_SCORE_RESULT unit=280449 score=66.5484
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

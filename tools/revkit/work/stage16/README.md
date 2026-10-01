@@ -41,6 +41,25 @@ docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
   /bin/bash /work/stage16/run-info.sh
 ```
 
+`run-info-extended.sh` probes request IDs -1, 27, 28, 100, 101, 102, and
+`INT_MAX`. It preserves the Stage 5 input and output in uniquely named
+Stage 16 backups and verifies both files after restoring them:
+
+```sh
+docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
+  /bin/bash /work/stage16/run-info-extended.sh
+```
+
+`run-info-empty-string-edges.sh` probes `VT_DB_BUILD_DATE` (request 23) with
+destination sizes -1, 0, 1, and 2, recording whether sentinel bytes are
+written. The GDB script terminates the inferior at the API breakpoint after
+the calls so synthesis cannot overwrite the shared Stage 5 output:
+
+```sh
+docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
+  /bin/bash /work/stage16/run-info-empty-string-edges.sh
+```
+
 `run-config.sh` queries the current speaker settings, applies upper-bound
 values through the configuration setters, checks the resulting getters, then
 captures file output with the synthesis arguments left at `-1`.
@@ -591,8 +610,9 @@ byte-identical; broader empty-source matching remains uncharacterized.
 loaded speaker's user-dictionary reference slot and matches its
 `+0x1312c0` dictionary field to a loaded dictionary. This drives the unload
 in-use return, then restores the slot, frees the scratch context, and confirms
-idle unload. It tests the guard with a controlled structure; it does not capture
-a naturally active synthesis context.
+idle unload. That capture tests the guard with a controlled structure. Stage 21
+now also reaches it through a real synthesis context; see the natural-context
+section in the Lead 6 behavior report and the Stage 21 README.
 
 ```sh
 docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
@@ -1121,7 +1141,15 @@ and the four NUL-terminated bank names `merged-gen`, `merged-num`,
 `merged-etc`, and `merged-alp`; the ASCII file shows `3`, `4`, and the same
 names. Four matches the bank count; the meaning of three remains open.
 Controlled text captures map `File Index` values 0, 1, and 2 to `merged-gen`,
-`merged-num`, and `merged-etc`; index 3 has not been observed. Type 2 is the
+`merged-num`, and `merged-etc`; these 15 paired ASCII captures contain 143
+rows and none uses index 3. The `A.B.C.` spelled-letter fixture contains six
+rows, all from `merged-gen`, so it does not test the alphabet bank. A separate
+Stage 21 matrix confirms that standalone uppercase and lowercase letters can
+select index 3, with the same bank assignment in either case; its per-letter
+map and offset cross-check are documented in
+[`Stage 21`](../stage21/README.md). Static pseudocode shows per-phone candidate
+records carrying a bank selector into descriptor selection, then the DTT
+writer serializing the selected bank as `File Index`. Type 2 is the
 detailed phone/unit record. Static synthesis handling shows that type 1 is
 zero-filled into the PCM stream, while the DTT writer represents it as a
 size-only row. A targeted matrix captured this type between OW1 and W for
@@ -1129,9 +1157,14 @@ size-only row. A targeted matrix captured this type between OW1 and W for
 (`Size=14800`); the plain-sentence control had no type-1 row. The synthesis
 loop uses twice `Size` as the byte count, so this is a silent PCM16 sample
 interval. Modes 0, 1, and 2 select complete, first-side, and
-second-side unit spans. The exact physical meaning of mode-2 `Shift Size`
-remains open, though the writer's subtraction is mapped in the behavior
-report. Rate captures tie `Pitch_rate` to pitch, `Volume_rate` to volume, and
+second-side unit spans. Across captured mode-2 rows, `Shift Size` equals the
+first-side sample span minus `Pitch_first`; its downstream use remains open.
+Run `python3 tools/revkit/scripts/check_makeinfo_shift_size.py` to cross-check
+the field against the unit indexes. `python3 tools/revkit/scripts/check_makeinfo_header.py`
+checks the stable `3`, `4` ASCII header and `03 04` binary header bytes in
+paired captures; the writer's fixed `3` is a likely revision marker, but no
+consumer has confirmed that label. Rate captures tie `Pitch_rate` to pitch,
+`Volume_rate` to volume, and
 `Duration_rate` to integer inverse-normalized speed; pause did not affect the
 three fields. Local host executables and binary searches revealed no DTT
 reader, so the downstream consumer is unidentified. The heap-backed runner
@@ -1142,8 +1175,9 @@ capture.
 holding text fixed. `run-makeinfo-text-banks.sh` emits numeric,
 spelled-letter, and mixed text captures used to map bank indices. Both use
 heap-backed strings and preserve the Stage 5 fixtures. Their captures record
-controlled examples; they do not establish all option/error behavior or use
-of `merged-alp`. `run-makeinfo-silence-cases.sh` compares plain, comma,
+controlled examples; they do not establish all option/error behavior or the
+per-letter `merged-alp` assignment rule. The Stage 21 alphabet matrix extends
+those controls. `run-makeinfo-silence-cases.sh` compares plain, comma,
 sentence, ellipsis, and pause-120 cases to observe when type-1 rows appear.
 
 ```sh
@@ -1162,8 +1196,12 @@ docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \
 `run-heap-lifecycle.sh` reads `VT_gHeapStartAddress_ENG` at DLL load, after
 model load, and after an unload attempt. The new pre-load reading is zero;
 earlier helper and unload traces also read zero after load and unload. The
-export's purpose remains unknown. The runner snapshots and restores Stage 5
-fixtures.
+export is at RVA `0xFF11C` in `.data`'s virtual-only tail: PE section headers
+report `.data` RVA `0x77000`, VirtualSize `0x894B0`, and raw size `0x29000`.
+The image loader zero-fills that location. No direct absolute-address
+reference was found in the DLL byte scan or reviewed pseudocode. Its intended
+use remains unknown; external writes and derived-address access are not
+excluded. The runner snapshots and restores Stage 5 fixtures.
 
 ```sh
 docker compose -f tools/revkit/work/stage8/compose.yaml run --rm runtime \

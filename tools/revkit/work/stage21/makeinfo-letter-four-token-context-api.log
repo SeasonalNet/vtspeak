@@ -1,0 +1,123 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Continuing.
+MAKEINFO_FOUR_TOKEN case=aa-UUUU-plain raw_eax=0x1 text=A A A D path=Z:/work/stage21/mi-letter-four-context-aa-UUUU-plain
+MAKEINFO_FOUR_TOKEN case=aa-UUUU-question raw_eax=0x1 text=A A A D? path=Z:/work/stage21/mi-letter-four-context-aa-UUUU-question
+MAKEINFO_FOUR_TOKEN case=aa-UUUL-plain raw_eax=0x1 text=A A A d path=Z:/work/stage21/mi-letter-four-context-aa-UUUL-plain
+MAKEINFO_FOUR_TOKEN case=aa-UUUL-question raw_eax=0x1 text=A A A d? path=Z:/work/stage21/mi-letter-four-context-aa-UUUL-question
+MAKEINFO_FOUR_TOKEN case=aa-UULU-plain raw_eax=0x1 text=A A a D path=Z:/work/stage21/mi-letter-four-context-aa-UULU-plain
+MAKEINFO_FOUR_TOKEN case=aa-UULU-question raw_eax=0x1 text=A A a D? path=Z:/work/stage21/mi-letter-four-context-aa-UULU-question
+MAKEINFO_FOUR_TOKEN case=aa-UULL-plain raw_eax=0x1 text=A A a d path=Z:/work/stage21/mi-letter-four-context-aa-UULL-plain
+MAKEINFO_FOUR_TOKEN case=aa-UULL-question raw_eax=0x1 text=A A a d? path=Z:/work/stage21/mi-letter-four-context-aa-UULL-question
+MAKEINFO_FOUR_TOKEN case=aa-ULUU-plain raw_eax=0x1 text=A a A D path=Z:/work/stage21/mi-letter-four-context-aa-ULUU-plain
+MAKEINFO_FOUR_TOKEN case=aa-ULUU-question raw_eax=0x1 text=A a A D? path=Z:/work/stage21/mi-letter-four-context-aa-ULUU-question
+MAKEINFO_FOUR_TOKEN case=aa-ULUL-plain raw_eax=0x1 text=A a A d path=Z:/work/stage21/mi-letter-four-context-aa-ULUL-plain
+MAKEINFO_FOUR_TOKEN case=aa-ULUL-question raw_eax=0x1 text=A a A d? path=Z:/work/stage21/mi-letter-four-context-aa-ULUL-question
+MAKEINFO_FOUR_TOKEN case=aa-ULLU-plain raw_eax=0x1 text=A a a D path=Z:/work/stage21/mi-letter-four-context-aa-ULLU-plain
+MAKEINFO_FOUR_TOKEN case=aa-ULLU-question raw_eax=0x1 text=A a a D? path=Z:/work/stage21/mi-letter-four-context-aa-ULLU-question
+MAKEINFO_FOUR_TOKEN case=aa-ULLL-plain raw_eax=0x1 text=A a a d path=Z:/work/stage21/mi-letter-four-context-aa-ULLL-plain
+MAKEINFO_FOUR_TOKEN case=aa-ULLL-question raw_eax=0x1 text=A a a d? path=Z:/work/stage21/mi-letter-four-context-aa-ULLL-question
+MAKEINFO_FOUR_TOKEN case=aa-LUUU-plain raw_eax=0x1 text=a A A D path=Z:/work/stage21/mi-letter-four-context-aa-LUUU-plain
+MAKEINFO_FOUR_TOKEN case=aa-LUUU-question raw_eax=0x1 text=a A A D? path=Z:/work/stage21/mi-letter-four-context-aa-LUUU-question
+MAKEINFO_FOUR_TOKEN case=aa-LUUL-plain raw_eax=0x1 text=a A A d path=Z:/work/stage21/mi-letter-four-context-aa-LUUL-plain
+MAKEINFO_FOUR_TOKEN case=aa-LUUL-question raw_eax=0x1 text=a A A d? path=Z:/work/stage21/mi-letter-four-context-aa-LUUL-question
+MAKEINFO_FOUR_TOKEN case=aa-LULU-plain raw_eax=0x1 text=a A a D path=Z:/work/stage21/mi-letter-four-context-aa-LULU-plain
+MAKEINFO_FOUR_TOKEN case=aa-LULU-question raw_eax=0x1 text=a A a D? path=Z:/work/stage21/mi-letter-four-context-aa-LULU-question
+MAKEINFO_FOUR_TOKEN case=aa-LULL-plain raw_eax=0x1 text=a A a d path=Z:/work/stage21/mi-letter-four-context-aa-LULL-plain
+MAKEINFO_FOUR_TOKEN case=aa-LULL-question raw_eax=0x1 text=a A a d? path=Z:/work/stage21/mi-letter-four-context-aa-LULL-question
+MAKEINFO_FOUR_TOKEN case=aa-LLUU-plain raw_eax=0x1 text=a a A D path=Z:/work/stage21/mi-letter-four-context-aa-LLUU-plain
+MAKEINFO_FOUR_TOKEN case=aa-LLUU-question raw_eax=0x1 text=a a A D? path=Z:/work/stage21/mi-letter-four-context-aa-LLUU-question
+MAKEINFO_FOUR_TOKEN case=aa-LLUL-plain raw_eax=0x1 text=a a A d path=Z:/work/stage21/mi-letter-four-context-aa-LLUL-plain
+MAKEINFO_FOUR_TOKEN case=aa-LLUL-question raw_eax=0x1 text=a a A d? path=Z:/work/stage21/mi-letter-four-context-aa-LLUL-question
+MAKEINFO_FOUR_TOKEN case=aa-LLLU-plain raw_eax=0x1 text=a a a D path=Z:/work/stage21/mi-letter-four-context-aa-LLLU-plain
+MAKEINFO_FOUR_TOKEN case=aa-LLLU-question raw_eax=0x1 text=a a a D? path=Z:/work/stage21/mi-letter-four-context-aa-LLLU-question
+MAKEINFO_FOUR_TOKEN case=aa-LLLL-plain raw_eax=0x1 text=a a a d path=Z:/work/stage21/mi-letter-four-context-aa-LLLL-plain
+MAKEINFO_FOUR_TOKEN case=aa-LLLL-question raw_eax=0x1 text=a a a d? path=Z:/work/stage21/mi-letter-four-context-aa-LLLL-question
+MAKEINFO_FOUR_TOKEN case=ag-UUUU-plain raw_eax=0x1 text=A A G D path=Z:/work/stage21/mi-letter-four-context-ag-UUUU-plain
+MAKEINFO_FOUR_TOKEN case=ag-UUUU-question raw_eax=0x1 text=A A G D? path=Z:/work/stage21/mi-letter-four-context-ag-UUUU-question
+MAKEINFO_FOUR_TOKEN case=ag-UUUL-plain raw_eax=0x1 text=A A G d path=Z:/work/stage21/mi-letter-four-context-ag-UUUL-plain
+MAKEINFO_FOUR_TOKEN case=ag-UUUL-question raw_eax=0x1 text=A A G d? path=Z:/work/stage21/mi-letter-four-context-ag-UUUL-question
+MAKEINFO_FOUR_TOKEN case=ag-UULU-plain raw_eax=0x1 text=A A g D path=Z:/work/stage21/mi-letter-four-context-ag-UULU-plain
+MAKEINFO_FOUR_TOKEN case=ag-UULU-question raw_eax=0x1 text=A A g D? path=Z:/work/stage21/mi-letter-four-context-ag-UULU-question
+MAKEINFO_FOUR_TOKEN case=ag-UULL-plain raw_eax=0x1 text=A A g d path=Z:/work/stage21/mi-letter-four-context-ag-UULL-plain
+MAKEINFO_FOUR_TOKEN case=ag-UULL-question raw_eax=0x1 text=A A g d? path=Z:/work/stage21/mi-letter-four-context-ag-UULL-question
+MAKEINFO_FOUR_TOKEN case=ag-ULUU-plain raw_eax=0x1 text=A a G D path=Z:/work/stage21/mi-letter-four-context-ag-ULUU-plain
+MAKEINFO_FOUR_TOKEN case=ag-ULUU-question raw_eax=0x1 text=A a G D? path=Z:/work/stage21/mi-letter-four-context-ag-ULUU-question
+MAKEINFO_FOUR_TOKEN case=ag-ULUL-plain raw_eax=0x1 text=A a G d path=Z:/work/stage21/mi-letter-four-context-ag-ULUL-plain
+MAKEINFO_FOUR_TOKEN case=ag-ULUL-question raw_eax=0x1 text=A a G d? path=Z:/work/stage21/mi-letter-four-context-ag-ULUL-question
+MAKEINFO_FOUR_TOKEN case=ag-ULLU-plain raw_eax=0x1 text=A a g D path=Z:/work/stage21/mi-letter-four-context-ag-ULLU-plain
+MAKEINFO_FOUR_TOKEN case=ag-ULLU-question raw_eax=0x1 text=A a g D? path=Z:/work/stage21/mi-letter-four-context-ag-ULLU-question
+MAKEINFO_FOUR_TOKEN case=ag-ULLL-plain raw_eax=0x1 text=A a g d path=Z:/work/stage21/mi-letter-four-context-ag-ULLL-plain
+MAKEINFO_FOUR_TOKEN case=ag-ULLL-question raw_eax=0x1 text=A a g d? path=Z:/work/stage21/mi-letter-four-context-ag-ULLL-question
+MAKEINFO_FOUR_TOKEN case=ag-LUUU-plain raw_eax=0x1 text=a A G D path=Z:/work/stage21/mi-letter-four-context-ag-LUUU-plain
+MAKEINFO_FOUR_TOKEN case=ag-LUUU-question raw_eax=0x1 text=a A G D? path=Z:/work/stage21/mi-letter-four-context-ag-LUUU-question
+MAKEINFO_FOUR_TOKEN case=ag-LUUL-plain raw_eax=0x1 text=a A G d path=Z:/work/stage21/mi-letter-four-context-ag-LUUL-plain
+MAKEINFO_FOUR_TOKEN case=ag-LUUL-question raw_eax=0x1 text=a A G d? path=Z:/work/stage21/mi-letter-four-context-ag-LUUL-question
+MAKEINFO_FOUR_TOKEN case=ag-LULU-plain raw_eax=0x1 text=a A g D path=Z:/work/stage21/mi-letter-four-context-ag-LULU-plain
+MAKEINFO_FOUR_TOKEN case=ag-LULU-question raw_eax=0x1 text=a A g D? path=Z:/work/stage21/mi-letter-four-context-ag-LULU-question
+MAKEINFO_FOUR_TOKEN case=ag-LULL-plain raw_eax=0x1 text=a A g d path=Z:/work/stage21/mi-letter-four-context-ag-LULL-plain
+MAKEINFO_FOUR_TOKEN case=ag-LULL-question raw_eax=0x1 text=a A g d? path=Z:/work/stage21/mi-letter-four-context-ag-LULL-question
+MAKEINFO_FOUR_TOKEN case=ag-LLUU-plain raw_eax=0x1 text=a a G D path=Z:/work/stage21/mi-letter-four-context-ag-LLUU-plain
+MAKEINFO_FOUR_TOKEN case=ag-LLUU-question raw_eax=0x1 text=a a G D? path=Z:/work/stage21/mi-letter-four-context-ag-LLUU-question
+MAKEINFO_FOUR_TOKEN case=ag-LLUL-plain raw_eax=0x1 text=a a G d path=Z:/work/stage21/mi-letter-four-context-ag-LLUL-plain
+MAKEINFO_FOUR_TOKEN case=ag-LLUL-question raw_eax=0x1 text=a a G d? path=Z:/work/stage21/mi-letter-four-context-ag-LLUL-question
+MAKEINFO_FOUR_TOKEN case=ag-LLLU-plain raw_eax=0x1 text=a a g D path=Z:/work/stage21/mi-letter-four-context-ag-LLLU-plain
+MAKEINFO_FOUR_TOKEN case=ag-LLLU-question raw_eax=0x1 text=a a g D? path=Z:/work/stage21/mi-letter-four-context-ag-LLLU-question
+MAKEINFO_FOUR_TOKEN case=ag-LLLL-plain raw_eax=0x1 text=a a g d path=Z:/work/stage21/mi-letter-four-context-ag-LLLL-plain
+MAKEINFO_FOUR_TOKEN case=ag-LLLL-question raw_eax=0x1 text=a a g d? path=Z:/work/stage21/mi-letter-four-context-ag-LLLL-question
+[Inferior 1 (Remote target) killed]
+0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

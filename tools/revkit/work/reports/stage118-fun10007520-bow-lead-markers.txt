@@ -1,0 +1,30 @@
+VoiceText Paul 2013 `bow` and `lead` post-handler table rules
+===========================================================
+
+Evidence
+--------
+
+Both branches appear in Ghidra pseudocode for `FUN_10007520` at VA
+`0x10007520` in `stage6-phone-record-consumers.txt`. The source literals are
+`bow` at DLL VA `0x10077840` and `lead` at `0x10077838`. The bow branch calls
+`FUN_1000cc60` in mode `B`, window 5, with the six-entry table at
+`PTR_10078334`; the lead branch requires phone-code byte `+0x2a` to be an
+apostrophe, then calls the same helper in mode `B`, window 10, with the
+ten-entry table at `PTR_10078350`. Both use comparison mode `0x49`.
+
+Recovered rules
+---------------
+
+The bow table contains `arrow`, `compass`, `fiddle`, `tie`, `violin`, and
+`window`. A hit writes `0x30` at row offset `+0x2a`; a miss writes `0x0e`.
+Either outcome sets row-state bit 3. The lead table contains `atomic`, `dust`,
+`element`, `hazard`, `metal`, `paint`, `pb`, `pencil`, `pencils`, and `toxic`.
+A hit for an eligible `lead` row changes byte `+0x2a` to `0x18` and sets
+row-state bit 3; a miss leaves it unchanged.
+
+`duration.ApplyPaul2013FUN10007520Bow` and
+`duration.ApplyPaul2013FUN10007520Lead` connect these table snapshots to the
+ported phrase-window helper. The counted-row pass invokes both after
+supported per-row handlers. Exact caller sequencing across unresolved
+handlers and runtime parity remain open. The `PTR_1007837c` lookup belongs to
+the `read` branch and is covered in Stage 119.

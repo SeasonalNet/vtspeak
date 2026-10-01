@@ -1,0 +1,34 @@
+VoiceText Paul 2013 bounded long-input “ed” suffix handler
+=========================================================
+
+Evidence boundary
+-----------------
+
+FUN_1000a140 at VA 0x1000a140 reaches the `ed` comparison in its long-input
+path after the short-input branch. It compares the final two bytes plus NUL
+against DAT_10077774, whose checked-in `binary/vt_pau.dll` `.data` bytes are
+`ed`. The pseudocode checks this case at `stage6-deep-text-functions.txt`
+lines 1277-1440. The Go helper bounds the C-string to 9-31 bytes so its
+source copy plus NUL fits the native 32-byte local buffer.
+
+The initial branch removes `ed` when the mapped byte before `ed` is not `e`,
+calls FUN_1000cbe0 with marker `%`, and falls back to
+FUN_1000cb30 if the marker-selected output is empty. If that does not produce
+text, the function uses two raw short-table values and a byte-equality check
+to choose between truncation and the observed `i`-to-`y` edit.
+Those paths use the same `%` lookup/fallback order. No linguistic meaning is
+assigned to the table or the selected output bytes.
+
+The short table is addressed as `DAT_10077d5e + mappedByte*2`, where the
+mapped byte comes from the 256-entry table at `0x1007e388`. For the supported
+ASCII `a`-through-`z` accesses, the raw u16 values are 0/1 and were read from
+DLL file offsets `0x77e20` through `0x77e52`. In `a`-to-`z` order they are
+`1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0`. Other mapped-byte
+indexes have not been provisioned by this helper and return an explicit
+unsupported-table result when reached.
+
+After a nonempty normalized output, the common branch appends `9`, `# 0x15`,
+or `0x15` according to the exact prior-output-byte comparisons in the
+pseudocode, then ORs `0x08` into the row flags. The Go implementation is in
+`engine/duration/ed_suffix.go`. Original-runtime row-for-row parity remains
+open.

@@ -1,0 +1,29 @@
+VoiceText Paul 2013 FUN_10008cc0 signed high-byte behavior
+=========================================================
+
+Evidence
+--------
+
+The source gate reads `DAT_1007e188` using sign-extended source bytes. As
+recorded in Stage 104, the 128 bytes immediately before this table are zero.
+For any input containing a byte in `0x80`-`0xff`, the first scan therefore
+sees no class bits for that byte. If it finds no mixed class transition, the
+gate returns false. If it enters the second scan, the same byte has neither
+class bit and is not an apostrophe, so that scan also returns false. The
+mapped `Mac`/`Mc` checks use the already recovered 256-entry low-byte map and
+do not make an unsupported access for high-bit source bytes.
+
+Implementation
+--------------
+
+`Paul2013C3A0Gate` no longer reports high-bit input as an unsupported error.
+It applies the observed predicate over the full byte sequence; high-bit input
+has the native ineligible result. The surrounding C3A0 scanner and component
+handlers retain their own input boundaries.
+
+Evidence boundary
+-----------------
+
+This is a static DLL-byte and disassembly result without original-runtime
+comparison. It establishes the source-gate result only, not Unicode decoding
+or non-ASCII behavior in later text-processing stages.

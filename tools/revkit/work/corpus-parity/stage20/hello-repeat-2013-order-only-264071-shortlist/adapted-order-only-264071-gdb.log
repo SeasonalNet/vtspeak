@@ -1,0 +1,17 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-order-only-264071-shortlist/adapted-order-only-264071-gdb.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023331
+Wine-gdb> >>>> > > >  >  >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x100235f6
+Wine-gdb> >>>> > > > >  >  >   >   >   >  >  > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1002389a
+Wine-gdb> >>> > > >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10023948
+Wine-gdb> >>> > > > > > > >  >  >  >   >   >  >  > > >  >  >  >  >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+ORDER_ONLY_SWAP position=6 unit=264071 old_index=22 new_index=0 unit_key=-1 unit_span=1 unit_weighted=0 swapped_with=4515 swapped_key=-1
+SHORTLIST_UNIT_SCORE position=6 unit=264071 score=59.8 key=-1
+SHORTLIST_UNIT_SCORE position=6 unit=49874 score=59.8 key=-1
+SHORTLIST_SORT_INPUT position=6 total=79 presorted_prefix=0 suffix_count=79
+SHORTLIST_SORT_TARGET position=6 index=0 unit=264071 score=59.8 key=59.8 flags=0
+SHORTLIST_SORT_TARGET position=6 index=45 unit=49874 score=59.8 key=59.8 flags=0
+Temporary breakpoint 6 at 0x1002394d
+SHORTLIST_SORTED_TOP30 position=6 [0]=177867(score=49.8,key=49.8) [1]=166213(score=54.8,key=54.8) [2]=114916(score=54.8,key=54.8) [3]=6694(score=59.8,key=59.8) [4]=8054(score=59.8,key=59.8) [5]=9887(score=59.8,key=59.8) [6]=11362(score=59.8,key=59.8) [7]=13941(score=59.8,key=59.8) [8]=14659(score=59.8,key=59.8) [9]=15884(score=59.8,key=59.8) [10]=19726(score=59.8,key=59.8) [11]=264071(score=59.8,key=59.8) [12]=21433(score=59.8,key=59.8) [13]=27063(score=59.8,key=59.8) [14]=32482(score=59.8,key=59.8) [15]=46001(score=59.8,key=59.8) [16]=49874(score=59.8,key=59.8) [17]=56107(score=59.8,key=59.8) [18]=59821(score=59.8,key=59.8) [19]=62239(score=59.8,key=59.8) [20]=68423(score=59.8,key=59.8) [21]=5030(score=59.8,key=59.8) [22]=69479(score=59.8,key=59.8) [23]=86057(score=59.8,key=59.8) [24]=93490(score=59.8,key=59.8) [25]=97409(score=59.8,key=59.8) [26]=97795(score=59.8,key=59.8) [27]=104395(score=59.8,key=59.8) [28]=105256(score=59.8,key=59.8) [29]=106543(score=59.8,key=59.8)
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

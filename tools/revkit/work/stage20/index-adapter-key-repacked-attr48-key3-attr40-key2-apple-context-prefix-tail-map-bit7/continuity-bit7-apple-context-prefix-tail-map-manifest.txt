@@ -1,0 +1,12 @@
+variant=Apple prefix/tail-map index plus legacy attr_48 in signature byte 6 bit 7
+base=tools/revkit/work/stage20/index-adapter-key-repacked-attr48-key3-attr40-key2-apple-context-prefix-tail-map
+legacy_source=tools/revkit/work/stage19/data-kate-copy/M16/mc_idx_tbl
+mapping=signature[row*7+6] |= 0x80 when legacy attr_48[row] is nonzero
+bank=unit-alp units=905 legacy_marked=698 newly_marked=698 base_sha256=4a36ad5d92fe4cfcacc4f9ebb06df2d4138d2945598d9c71923155e560557f9f overlay_sha256=d0b59daaaaa2d0386ddc4703e181327d3f45495caf8b50fe57bc50d5ce132e89
+bank=unit-etc units=3666 legacy_marked=672 newly_marked=672 base_sha256=78b5b87da1fda574dc780318af35ac90a6f29a9e98d6e84ae8c33d866ae3a3b2 overlay_sha256=df45f85a78775dcf3a447852372fa92dc4df9591169cf11638f8e4233b3e99cd
+bank=unit-gen units=179995 legacy_marked=153991 newly_marked=153991 base_sha256=a18490a6b5f649c4202f72321b61d8f02bacd1418b3f9a20930fc967bdcbe2b2 overlay_sha256=c7a5840514d08db0ee29a5dc7c5b481e51fc2bc780c879aa3c0d6c96ec6c7dfe
+bank=unit-gen2 units=98133 legacy_marked=84286 newly_marked=84286 base_sha256=c9fa6e86c863b71566136f476931dd3b01468ebd27a8d730b0cf5e7910a17beb overlay_sha256=eb03d2bbff922b3ef4ce8ec0fb1ab03096fc81aecc76ff4d1f39f48c21008f73
+bank=unit-num units=997 legacy_marked=770 newly_marked=770 base_sha256=fde06b1fa821e6827e6f3bbb27346607e9c6cb70b52b8d8ee84a71b65899b5d9 overlay_sha256=0dab8fc22589a4502dedc1e089649d1f834539c1c177d96fcba0eeec414f2ca2
+total_units=283696
+total_legacy_marked=240417
+total_newly_marked=240417

@@ -1,0 +1,36 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-plain-crosswalk-transition-path/adapted-transition-path-gdb.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x10024808
+Temporary breakpoint 7 at 0x10024271
+Temporary breakpoint 8 at 0x10024808
+Temporary breakpoint 9 at 0x10024271
+TRANSITION_PATH_CUTOFF_OVERRIDE slot=1 sum=9
+Temporary breakpoint 10 at 0x10024808
+Temporary breakpoint 11 at 0x10024271
+TRANSITION_PATH_CUTOFF_OVERRIDE slot=2 sum=5
+Temporary breakpoint 12 at 0x10024808
+Temporary breakpoint 13 at 0x10024271
+TRANSITION_PATH_CUTOFF_OVERRIDE slot=3 sum=6
+TRANSITION_EDGE context=1 current=272823 previous=179388 feature=7.14071 divisor=1 penalty=0 previous_path=4.8 local=13.2882 total=25.2289
+TRANSITION_EDGE context=1 current=272823 previous=52542 feature=20.0432 divisor=1 penalty=0 previous_path=4.8 local=13.2882 total=38.1314
+TRANSITION_EDGE context=1 current=273370 previous=179388 feature=20.7602 divisor=1 penalty=0 previous_path=4.8 local=12.4791 total=38.0393
+TRANSITION_EDGE context=1 current=273370 previous=52542 feature=6.51719 divisor=1 penalty=0 previous_path=4.8 local=12.4791 total=23.7963
+TRANSITION_EDGE context=2 current=272824 previous=272823 feature=2 divisor=1 penalty=0 previous_path=25.2289 local=86.8958 total=114.125
+TRANSITION_EDGE context=2 current=272824 previous=273370 feature=56.9509 divisor=1 penalty=10 previous_path=23.7963 local=86.8958 total=177.643
+TRANSITION_EDGE context=2 current=273371 previous=272823 feature=56.9509 divisor=1 penalty=10 previous_path=25.2289 local=68.2398 total=160.42
+TRANSITION_EDGE context=2 current=273371 previous=273370 feature=2 divisor=1 penalty=0 previous_path=23.7963 local=68.2398 total=94.0361
+TRANSITION_EDGE context=3 current=255282 previous=272824 feature=70.7129 divisor=1 penalty=0 previous_path=114.125 local=37 total=221.838
+TRANSITION_EDGE context=3 current=255282 previous=273371 feature=6.39509 divisor=1 penalty=0 previous_path=94.0361 local=37 total=137.431
+TRANSITION_EDGE context=3 current=272825 previous=272824 feature=2 divisor=1 penalty=0 previous_path=114.125 local=35.625 total=151.75
+TRANSITION_EDGE context=3 current=272825 previous=273371 feature=59.1905 divisor=1 penalty=0 previous_path=94.0361 local=35.625 total=188.852
+TRANSITION_PATH_SELECTED n=1 id=52542
+TRANSITION_PATH_SELECTED n=2 id=273370
+TRANSITION_PATH_SELECTED n=3 id=273371
+TRANSITION_PATH_SELECTED n=4 id=255282
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

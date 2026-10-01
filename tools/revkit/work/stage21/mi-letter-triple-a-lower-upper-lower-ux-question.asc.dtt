@@ -1,0 +1,146 @@
+VTDTTS ASCII
+3
+4
+merged-gen
+merged-num
+merged-etc
+merged-alp
+
+TypeFlag : 2
+PhoneString : AH0
+File Index : 0
+PCM Pos : 296860272
+PCM Size : 908
+PCM Coded Size : 780
+Phone Mode : 1
+Pitch_first : 154
+Pitch_last : 160
+PM Pos : 4502967
+PM Size : 6
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : AH0
+File Index : 0
+PCM Pos : 296860272
+PCM Size : 778
+PCM Coded Size : 780
+Phone Mode : 2
+Shift Size : 748
+Pitch_first : 160
+Pitch_last : 156
+PM Pos : 4502972
+PM Size : 5
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : Y
+File Index : 0
+PCM Pos : 206421360
+PCM Size : 1290
+PCM Coded Size : 624
+Phone Mode : 0
+Pitch_first : 158
+Pitch_last : 128
+PM Pos : 3168442
+PM Size : 9
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : UW1
+File Index : 0
+PCM Pos : 206421984
+PCM Size : 1460
+PCM Coded Size : 728
+Phone Mode : 0
+Pitch_first : 128
+Pitch_last : 116
+PM Pos : 3168451
+PM Size : 12
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 206422712
+PCM Size : 966
+PCM Coded Size : 804
+Phone Mode : 1
+Pitch_first : 116
+Pitch_last : 122
+PM Pos : 3168463
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : EH1
+File Index : 0
+PCM Pos : 220293136
+PCM Size : 1164
+PCM Coded Size : 972
+Phone Mode : 2
+Shift Size : 742
+Pitch_first : 126
+Pitch_last : 104
+PM Pos : 3374903
+PM Size : 11
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : K
+File Index : 0
+PCM Pos : 220294108
+PCM Size : 398
+PCM Coded Size : 388
+Phone Mode : 1
+Pitch_first : 104
+Pitch_last : 98
+PM Pos : 3374914
+PM Size : 4
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : K
+File Index : 2
+PCM Pos : 36486972
+PCM Size : 610
+PCM Coded Size : 632
+Phone Mode : 2
+Shift Size : 610
+Pitch_first : 102
+Pitch_last : 102
+PM Pos : 593479
+PM Size : 6
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : S
+File Index : 2
+PCM Pos : 36487604
+PCM Size : 2956
+PCM Coded Size : 1472
+Phone Mode : 0
+Pitch_first : 102
+Pitch_last : 102
+PM Pos : 593485
+PM Size : 29
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+

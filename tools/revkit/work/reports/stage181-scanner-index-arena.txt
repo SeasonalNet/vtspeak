@@ -1,0 +1,35 @@
+Stage 181: native scanner index projection
+
+Evidence
+
+- Original x86 at FUN_1005e010/FUN_1005e1a0, cited in Stage 180, directly
+  reads model dwords +0xc/+0x10. Each nonnull index object has signed count
+  +0, lower/upper dword-array pointers +4/+8, and row-array pointer +0xc.
+  Rows stride 20 bytes, with their C-string key pointer at +0xc. Native reads
+  are little-endian dwords. Either negative endpoint skips a length bucket;
+  nonpositive count enters no bucket. Null model index pointers return -1.
+
+Implementation and validation
+
+- ReadPaul2013ScannerLookupIndexes resolves those exact structures through
+  caller-owned memory/C-string callbacks. All returned cells/keys are copied.
+  NewPaul2013ScannerArenaTokenLookup composes this reader with both searches
+  and the recovered boundary body, reading fresh native snapshots per call.
+- Sparse key storage resolves only the union of active inclusive ranges.
+  Inactive gaps and negative endpoint buckets cause no key-pointer reads.
+  Overlapping ranges reuse already copied keys within each snapshot.
+- Tests construct explicit little-endian native addresses and exercise both
+  objects, signed bounds, sparse row 5, exact/mapped lookup results, reader
+  call counts and copied ownership after the backing memory is changed.
+  Inactive/null objects require no string resolver. Truncated memory spans
+  and model-address overflow fail explicitly.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- The native index builders and mode-0x17 scanner remain separate work.
+  Memory callbacks do not dereference process pointers directly. Invalid
+  pointer spans, null active cells and reversed ranges return errors instead
+  of reproducing invalid native memory access. Test arenas are labeled
+  synthetic evidence; no original-runtime or whole-engine parity claim.

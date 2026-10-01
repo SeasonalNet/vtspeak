@@ -1,0 +1,129 @@
+VTDTTS ASCII
+3
+4
+merged-gen
+merged-num
+merged-etc
+merged-alp
+
+TypeFlag : 2
+PhoneString : P
+File Index : 0
+PCM Pos : 220908860
+PCM Size : 1560
+PCM Coded Size : 772
+Phone Mode : 0
+Pitch_first : 92
+Pitch_last : 88
+PM Pos : 3384222
+PM Size : 17
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : AO1
+File Index : 0
+PCM Pos : 220909632
+PCM Size : 3012
+PCM Coded Size : 1572
+Phone Mode : 0
+Pitch_first : 88
+Pitch_last : 98
+PM Pos : 3384239
+PM Size : 33
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : L
+File Index : 0
+PCM Pos : 334362172
+PCM Size : 1010
+PCM Coded Size : 516
+Phone Mode : 0
+Pitch_first : 96
+Pitch_last : 110
+PM Pos : 5044073
+PM Size : 10
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : W
+File Index : 0
+PCM Pos : 305428688
+PCM Size : 1652
+PCM Coded Size : 828
+Phone Mode : 0
+Pitch_first : 110
+Pitch_last : 130
+PM Pos : 4624448
+PM Size : 13
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : ER1
+File Index : 0
+PCM Pos : 274455628
+PCM Size : 1066
+PCM Coded Size : 1084
+Phone Mode : 1
+Pitch_first : 128
+Pitch_last : 142
+PM Pos : 4181302
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : ER1
+File Index : 0
+PCM Pos : 274455628
+PCM Size : 1348
+PCM Coded Size : 1084
+Phone Mode : 2
+Shift Size : 924
+Pitch_first : 142
+Pitch_last : 200
+PM Pos : 4181309
+PM Size : 8
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : L
+File Index : 0
+PCM Pos : 274456712
+PCM Size : 1476
+PCM Coded Size : 728
+Phone Mode : 0
+Pitch_first : 200
+Pitch_last : 200
+PM Pos : 4181317
+PM Size : 7
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+
+TypeFlag : 2
+PhoneString : D
+File Index : 0
+PCM Pos : 274457440
+PCM Size : 816
+PCM Coded Size : 396
+Phone Mode : 0
+Pitch_first : 200
+Pitch_last : 220
+PM Pos : 4181324
+PM Size : 4
+Pitch_rate : 100
+Duration_rate : 100
+Volume_rate : 200
+

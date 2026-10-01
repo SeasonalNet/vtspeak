@@ -1,0 +1,41 @@
+VoiceText Paul 2013 FUN_1000a140 short `ers` suffix
+==================================================
+
+Evidence
+--------
+
+The `FUN_1000a140` pseudocode at
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, around
+lines 850-971, checks the mapped tail `ers` (`DAT_100778ec`) for inputs longer
+than five bytes after earlier short suffix cases. The corresponding
+`vt_pau.dll` disassembly is at
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`, around
+`0x1000a926`-`0x1000aae0`. It shows two generic stem lookups when the mapped
+byte at `length-4` is not `e`: first truncate at `length-2`, then after a miss
+truncate at `length-3`. The first success appends `D`; the second appends
+`0x1a D`.
+
+After those lookups, the branch indexes the short table at mapped bytes
+`length-6` and `length-5`. If the first table value is nonzero, the second is
+zero, and the raw bytes at `length-5` and `length-4` are equal, it truncates
+at `length-4` and appends `0x1a D` on success. Otherwise it requires the
+second table value to be zero and the mapped byte at `length-4` to be `i`; it
+replaces that byte with `y`, terminates at `length-3`, and appends `0x07 79`.
+The `0x07 79` case sets row-flag bit 3 through `LAB_1000a222`.
+
+Implementation
+--------------
+
+`NormalizePaul2013ErsSuffixContext` implements these 6- to 8-byte branches in
+the recovered order. Stage 106 later captures the full signed short-table
+window, so the compatibility `TableClassUnsupported` field is no longer set
+for these indexes. The A140 cascade invokes this handler after the
+directly handled `ance`, `ness`, `ment`, `ship`, and `less` cases, before the
+short `est` handler.
+
+Evidence boundary
+-----------------
+
+This is a static pseudocode/disassembly port. No original-runtime row
+comparison has been made. Other A140 cases, exception resource/state
+production, and full C3A0 runtime parity remain open.

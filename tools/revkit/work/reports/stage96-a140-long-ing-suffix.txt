@@ -1,0 +1,36 @@
+VoiceText Paul 2013 FUN_1000a140 long-input `ing` suffix
+=======================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_1000a140` tests the mapped three-byte suffix at
+`DAT_10077378` (`ing\0`) and enters its long-input branch in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, around
+lines 973-1157. The branch reads the short table at `DAT_10077d5e` through the
+character map at `DAT_1007e388`; the ASCII `a`-to-`z` short-table values are
+documented in Stage 75 and used by the existing long `ed` and `er` ports.
+Branch lookups call `FUN_1000cbe0` with marker `%`, then call `FUN_1000cb30`
+when path selection returns an empty output. Successful branch output appends
+`#.` and sets row-flag bit 3 through the common `LAB_1000a222` tail.
+
+Implementation
+--------------
+
+`NormalizePaul2013LongIngSuffixContext` now applies that lookup order for
+9- to 31-byte ASCII inputs. It tries the base stem with `ing` removed. The
+short-table branch either retries with the preceding byte removed or uses the
+`e`-substituted stem before retrying the base stem. A successful lookup gets
+the `#.` tail and flag `0x08`. `NormalizePaul2013SupportedA140Suffixes` invokes
+this handler before the long `ist`, `ly`, and terminal-`s` paths.
+
+Evidence boundary
+-----------------
+
+This is a static pseudocode port. No original-runtime row-for-row comparison
+has been made for the `ing` branch. Stage 106 extends its short-table reads
+from lowercase indexes to the full signed-byte window and removes the
+ASCII-only source rejection. The separate terminal-`s` branch is ported in
+Stage 97. Exception resource/state production, other A140 branches, and full
+C3A0 runtime parity remain open; high-bit bytes here do not establish general
+Unicode text support.

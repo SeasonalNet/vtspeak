@@ -1,0 +1,29 @@
+VoiceText Paul 2013 `invalid` direct pronunciation branch
+========================================================
+
+Evidence
+--------
+
+The `invalid` surface branch is in the Ghidra pseudocode for `FUN_100049b0`
+at `0x100049b0`, preserved in
+`tools/revkit/work/reports/stage6-text-table-consumers.txt`. It checks the
+preceding token against the ten-entry class-3 table at `PTR_10078010`. If that
+misses, it checks the token two rows back against the same table and then
+requires the immediate predecessor to equal one of the DLL literals at
+`0x10077568` (`n't`) or `0x10077608` (`not`). The native path code is `0x0e`.
+
+Recovered implementation
+------------------------
+
+`text.SelectPaul2013ModelNameContextPronunciation` selects `0x0e` when the
+immediate predecessor is class 3, or when the two-back predecessor is class 3
+and the immediate predecessor is `n't` or `not`. Other `invalid` contexts
+continue to the generic fallback.
+
+Evidence boundary
+-----------------
+
+This is a static port from the DLL pseudocode and literal data. No direct
+original-runtime pronunciation-choice comparison has been made for
+`invalid`. Unsupported high-level fallbacks remain fail-closed when no
+recovered path applies.

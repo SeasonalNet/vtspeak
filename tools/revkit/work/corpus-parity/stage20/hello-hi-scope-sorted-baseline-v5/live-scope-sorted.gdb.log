@@ -1,0 +1,6 @@
+Wine-gdb> Breakpoint 1 at 0x10023d43
+/work/stage20/trace-2013-hello-hi-prefix-scope-sorted-common.gdb:36: Error in sourced command file:
+This command cannot be used at the top level.
+Wine-gdb> Detaching from program: /samples/voicetext_kate.exe, Remote target
+Ending remote debugging.
+[Inferior 1 (Remote target) detached]

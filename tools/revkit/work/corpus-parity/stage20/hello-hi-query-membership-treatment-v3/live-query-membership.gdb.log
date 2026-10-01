@@ -1,0 +1,58 @@
+Wine-gdb> Breakpoint 1 at 0x10023f90
+Breakpoint 2 at 0x10023fca
+Breakpoint 3 at 0x10024006
+Hardware assisted breakpoint 4 at 0x408187
+HELLO_QUERY_MEMBERSHIP_ENTRY call=1 context=0 start=0 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=1 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=2 context=0 start=0 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=2 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=3 context=0 start=0 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=3 count=10 classes: {32929 key=5a22171e00 members=30} {32926 key=5a22071e00 members=21} {32924 key=5a22011e00 members=10} {32925 key=5a22041e00 members=45} {32927 key=5a220a1e00 members=2} {32935 key=5a223b1e00 members=50} {32933 key=5a222f1e00 members=16} {32930 key=5a22231e00 members=227} {32934 key=5a22361e00 members=2} {32937 key=5a22431e00 members=5}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=4 context=0 start=10 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=4 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=5 context=1 start=0 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=5 count=10 classes: {32929 key=5a22171e00 members=30} {24287 key=3722171400 members=7} {28859 key=4122171400 members=10} {30155 key=4422171400 members=18} {6394 key=1322171400 members=1} {12873 key=2122171400 members=1} {8029 key=1522171400 members=22} {18450 key=2b22171400 members=6} {19982 key=2c22171400 members=6} {21359 key=2d22171400 members=16}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=6 context=1 start=10 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=6 count=10 classes: {32929 key=5a22171e00 members=30} {24287 key=3722171400 members=7} {28859 key=4122171400 members=10} {30155 key=4422171400 members=18} {6394 key=1322171400 members=1} {12873 key=2122171400 members=1} {8029 key=1522171400 members=22} {18450 key=2b22171400 members=6} {19982 key=2c22171400 members=6} {21359 key=2d22171400 members=16}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=7 context=2 start=0 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=7 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=8 context=2 start=0 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=8 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=9 context=2 start=0 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=9 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=10 context=2 start=0 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=10 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=11 context=2 start=0 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=11 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=12 context=2 start=2 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=12 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=13 context=2 start=4 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=13 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=14 context=2 start=6 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=14 count=2 classes: {13478 key=22172b0000 members=9} {13479 key=2217410000 members=1}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=15 context=3 start=0 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=15 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=16 context=3 start=9 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=16 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=17 context=3 start=18 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=17 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=18 context=3 start=27 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=18 count=9 classes: {3454 key=0d172b0000 members=2} {13478 key=22172b0000 members=9} {12760 key=21172b0000 members=2} {30797 key=46172b0000 members=1} {7748 key=15172b0000 members=3} {31393 key=48172b0000 members=1} {28626 key=41172b0000 members=2} {6972 key=14172b0000 members=1} {12048 key=20172b0000 members=2}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=19 context=4 start=0 signature=22,17,2b,30,5a,00,00 key=17,2b,2f,00,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=19 count=1 classes: {9147 key=172b2f0000 members=25}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=20 context=4 start=1 signature=22,17,2b,30,5a,08,00 key=17,2b,2f,08,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=20 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=21 context=5 start=0 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=21 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=22 context=5 start=0 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=22 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=23 context=5 start=0 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=23 count=10 classes: {18858 key=2b305e0500 members=3} {18856 key=2b305a0400 members=6} {18854 key=2b305a0300 members=4} {18823 key=2b30230000 members=4} {18813 key=2b30160100 members=3} {18843 key=2b30390100 members=1} {18836 key=2b30350100 members=1} {18816 key=2b30170200 members=1} {18840 key=2b30360200 members=1} {18832 key=2b302c0200 members=1}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=24 context=5 start=10 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=24 count=10 classes: {18858 key=2b305e0500 members=3} {18856 key=2b305a0400 members=6} {18854 key=2b305a0300 members=4} {18823 key=2b30230000 members=4} {18813 key=2b30160100 members=3} {18843 key=2b30390100 members=1} {18836 key=2b30350100 members=1} {18816 key=2b30170200 members=1} {18840 key=2b30360200 members=1} {18832 key=2b302c0200 members=1}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=25 context=6 start=0 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=25 count=10 classes: {15230 key=23305a0d00 members=1} {18858 key=2b305e0500 members=3} {21801 key=2d305e0500 members=5} {13733 key=22305e0500 members=1} {5504 key=10305e0500 members=1} {23389 key=35305e0500 members=1} {24741 key=37305e0500 members=3} {25527 key=38305e0500 members=1} {31904 key=4c305e0500 members=2} {29099 key=41305e0500 members=1}
+HELLO_QUERY_MEMBERSHIP_ENTRY call=26 context=6 start=10 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=26 count=0 classes:
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

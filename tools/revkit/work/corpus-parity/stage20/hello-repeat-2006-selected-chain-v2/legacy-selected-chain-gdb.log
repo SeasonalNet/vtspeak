@@ -1,0 +1,34 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ed7f
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_FINAL_CHAIN_TRACE_READY
+LEGACY_FINAL_CHAIN call=1 selected_index=0 unit_id=273369 selected_index_array=0x27a9234
+LEGACY_FINAL_CHAIN call=2 selected_index=1 unit_id=273370 selected_index_array=0x27a9236
+LEGACY_FINAL_CHAIN call=3 selected_index=2 unit_id=273371 selected_index_array=0x27a9238
+LEGACY_FINAL_CHAIN call=4 selected_index=10 unit_id=232670 selected_index_array=0x27a923a
+LEGACY_FINAL_CHAIN call=5 selected_index=17 unit_id=266023 selected_index_array=0x27a923c
+LEGACY_FINAL_CHAIN call=6 selected_index=0 unit_id=264071 selected_index_array=0x27a923e
+LEGACY_FINAL_CHAIN call=7 selected_index=0 unit_id=264072 selected_index_array=0x27a9240
+LEGACY_FINAL_CHAIN call=8 selected_index=0 unit_id=264073 selected_index_array=0x27a9242
+LEGACY_FINAL_CHAIN call=9 selected_index=0 unit_id=264074 selected_index_array=0x27a9244
+LEGACY_FINAL_CHAIN call=10 selected_index=0 unit_id=273369 selected_index_array=0x27a9234
+LEGACY_FINAL_CHAIN call=11 selected_index=1 unit_id=273370 selected_index_array=0x27a9236
+LEGACY_FINAL_CHAIN call=12 selected_index=2 unit_id=273371 selected_index_array=0x27a9238
+LEGACY_FINAL_CHAIN call=13 selected_index=10 unit_id=232670 selected_index_array=0x27a923a
+LEGACY_FINAL_CHAIN call=14 selected_index=17 unit_id=266023 selected_index_array=0x27a923c
+LEGACY_FINAL_CHAIN call=15 selected_index=0 unit_id=264071 selected_index_array=0x27a923e
+LEGACY_FINAL_CHAIN call=16 selected_index=0 unit_id=264072 selected_index_array=0x27a9240
+LEGACY_FINAL_CHAIN call=17 selected_index=0 unit_id=264073 selected_index_array=0x27a9242
+LEGACY_FINAL_CHAIN call=18 selected_index=0 unit_id=264074 selected_index_array=0x27a9244
+LEGACY_FINAL_CHAIN call=19 selected_index=0 unit_id=273369 selected_index_array=0x27a9234
+LEGACY_FINAL_CHAIN call=20 selected_index=1 unit_id=273370 selected_index_array=0x27a9236
+LEGACY_FINAL_CHAIN call=21 selected_index=2 unit_id=273371 selected_index_array=0x27a9238
+LEGACY_FINAL_CHAIN call=22 selected_index=10 unit_id=232670 selected_index_array=0x27a923a
+LEGACY_FINAL_CHAIN call=23 selected_index=17 unit_id=266023 selected_index_array=0x27a923c
+LEGACY_FINAL_CHAIN call=24 selected_index=0 unit_id=264071 selected_index_array=0x27a923e
+LEGACY_FINAL_CHAIN call=25 selected_index=0 unit_id=264072 selected_index_array=0x27a9240
+LEGACY_FINAL_CHAIN call=26 selected_index=0 unit_id=264073 selected_index_array=0x27a9242
+LEGACY_FINAL_CHAIN call=27 selected_index=0 unit_id=264074 selected_index_array=0x27a9244
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,37 @@
+VoiceText Paul 2013 FUN_1000c3a0 component sequence shell
+=========================================================
+
+Evidence
+--------
+
+`FUN_1000c3a0` first gates on `FUN_10008cc0`, gets the source byte length,
+then repeatedly calls `FUN_1000c860` with the current offset and full source
+length. A first scan that consumes the whole source exits without invoking
+component handlers. Otherwise each component goes through its handler chain.
+Component results are appended in source order, with byte `0x64` (`d`) written
+whenever the accumulated output is already nonempty.
+Before copying, the function stops when `componentLength + 1 + accumulatedLength`
+exceeds `0x3f`. At exit it writes a NUL and returns success with row-flag bit
+3 only when output is nonempty and the local handled-state is set.
+The separator write is gated by accumulated output length, not by the current
+component result length; consequently an empty later result can leave a trailing
+`d` in the accumulator.
+
+The Ghidra pseudocode for `FUN_1000c3a0` is in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`. Its
+repeated scan, capacity check, separator, copy, final NUL, and return gate are
+cross-checkable in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt` from
+`0x1000c3a0` through `0x1000c703`.
+
+Implementation boundary
+-----------------------
+
+`engine/duration/c3a0_sequence.go` ports that outer sequence shell and
+requires the `FUN_10008cc0` result plus per-component handler as explicit
+inputs. It enforces the 31-byte component buffer limit and returns the
+component spans, accumulated output, overflow state, and row flags. The
+handler callback must represent the ordered dictionary, exception, TPP,
+suffix, and generic branches; the current implementation does not infer those
+choices. The apostrophe-s branch is available separately in Stage 83. This
+shell does not establish full `FUN_1000c3a0` behavior or runtime row parity.

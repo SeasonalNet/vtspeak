@@ -1,0 +1,17 @@
+Wine-gdb> Already logging to /probe/stage20/legacy-query-expansion-gdb.log.
+Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001da00
+Wine-gdb> >>> > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_QUERY_EXPANSION_TRACE_READY
+LEGACY_QUERY_VARIANT n=1 caller=0x1001dcb3 mode=0 key:0x63fa88:	90	34	17	30	30
+LEGACY_QUERY_VARIANT n=2 caller=0x1001dcb3 mode=0 key:0x63fa88:	34	17	90	4	34
+LEGACY_QUERY_VARIANT n=3 caller=0x1001dcb3 mode=0 key:0x63fa28:	34	17	90	4	4
+LEGACY_QUERY_VARIANT n=4 caller=0x1001dcb3 mode=0 key:0x63fa88:	90	34	17	30	30
+LEGACY_QUERY_VARIANT n=5 caller=0x1001dcb3 mode=0 key:0x63fa88:	34	17	90	4	34
+LEGACY_QUERY_VARIANT n=6 caller=0x1001dcb3 mode=0 key:0x63fa28:	34	17	90	4	4
+LEGACY_QUERY_VARIANT n=7 caller=0x1001dcb3 mode=0 key:0x63fa88:	90	34	17	30	30
+LEGACY_QUERY_VARIANT n=8 caller=0x1001dcb3 mode=0 key:0x63fa88:	34	17	90	4	34
+LEGACY_QUERY_VARIANT n=9 caller=0x1001dcb3 mode=0 key:0x63fa28:	34	17	90	4	4
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

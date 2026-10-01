@@ -1,0 +1,202 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Dump of assembler code from 0x100214d0 to 0x10021540:
+   0x100214d0 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13776>:	50                 	push   %eax
+   0x100214d1 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13777>:	e8 9a 53 00 00     	call   0x10026870 <vt_eng!VT_CopySyncInfo_New_ENG+880>
+   0x100214d6 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13782>:	83 c4 0c           	add    $0xc,%esp
+   0x100214d9 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13785>:	85 c0              	test   %eax,%eax
+   0x100214db <vt_eng!VT_GetDefUserDictRelativeName_ENG+13787>:	0f 8e 86 00 00 00  	jle    0x10021567 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13927>
+   0x100214e1 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13793>:	8b 4d 10           	mov    0x10(%ebp),%ecx
+   0x100214e4 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13796>:	8b 14 3e           	mov    (%esi,%edi,1),%edx
+   0x100214e7 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13799>:	51                 	push   %ecx
+   0x100214e8 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13800>:	52                 	push   %edx
+   0x100214e9 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13801>:	e8 d2 cb ff ff     	call   0x1001e0c0 <vt_eng!VT_GetDefUserDictRelativeName_ENG+448>
+   0x100214ee <vt_eng!VT_GetDefUserDictRelativeName_ENG+13806>:	8b 4d 24           	mov    0x24(%ebp),%ecx
+   0x100214f1 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13809>:	83 c4 08           	add    $0x8,%esp
+   0x100214f4 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13812>:	8b 41 0c           	mov    0xc(%ecx),%eax
+   0x100214f7 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13815>:	85 c0              	test   %eax,%eax
+   0x100214f9 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13817>:	75 07              	jne    0x10021502 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13826>
+   0x100214fb <vt_eng!VT_GetDefUserDictRelativeName_ENG+13819>:	b8 57 02 00 00     	mov    $0x257,%eax
+   0x10021500 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13824>:	eb 01              	jmp    0x10021503 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13827>
+   0x10021502 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13826>:	48                 	dec    %eax
+   0x10021503 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13827>:	8b 09              	mov    (%ecx),%ecx
+   0x10021505 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13829>:	8d 04 c0           	lea    (%eax,%eax,8),%eax
+   0x10021508 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13832>:	8b 54 81 10        	mov    0x10(%ecx,%eax,4),%edx
+   0x1002150c <vt_eng!VT_GetDefUserDictRelativeName_ENG+13836>:	8b 04 3e           	mov    (%esi,%edi,1),%eax
+   0x1002150f <vt_eng!VT_GetDefUserDictRelativeName_ENG+13839>:	52                 	push   %edx
+   0x10021510 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13840>:	8b 55 0c           	mov    0xc(%ebp),%edx
+   0x10021513 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13843>:	8b 08              	mov    (%eax),%ecx
+   0x10021515 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13845>:	8b 45 08           	mov    0x8(%ebp),%eax
+   0x10021518 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13848>:	51                 	push   %ecx
+   0x10021519 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13849>:	52                 	push   %edx
+   0x1002151a <vt_eng!VT_GetDefUserDictRelativeName_ENG+13850>:	50                 	push   %eax
+   0x1002151b <vt_eng!VT_GetDefUserDictRelativeName_ENG+13851>:	ff 15 10 d1 06 10  	call   *0x1006d110
+   0x10021521 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13857>:	8b 04 3e           	mov    (%esi,%edi,1),%eax
+   0x10021524 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13860>:	8b 48 30           	mov    0x30(%eax),%ecx
+   0x10021527 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13863>:	8d 14 19           	lea    (%ecx,%ebx,1),%edx
+   0x1002152a <vt_eng!VT_GetDefUserDictRelativeName_ENG+13866>:	81 fa 60 ea 00 00  	cmp    $0xea60,%edx
+   0x10021530 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13872>:	7d 65              	jge    0x10021597 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13975>
+   0x10021532 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13874>:	8b 40 38           	mov    0x38(%eax),%eax
+   0x10021535 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13877>:	8b 55 14           	mov    0x14(%ebp),%edx
+   0x10021538 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13880>:	51                 	push   %ecx
+   0x10021539 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13881>:	8b 48 04           	mov    0x4(%eax),%ecx
+   0x1002153c <vt_eng!VT_GetDefUserDictRelativeName_ENG+13884>:	8d 04 13           	lea    (%ebx,%edx,1),%eax
+   0x1002153f <vt_eng!VT_GetDefUserDictRelativeName_ENG+13887>:	51                 	push   %ecx
+End of assembler dump.
+Wine-gdb> Dump of assembler code from 0x100214d0 to 0x10021540:
+   0x100214d0 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13776>:	50                 	push   %eax
+   0x100214d1 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13777>:	e8 9a 53 00 00     	call   0x10026870 <vt_eng!VT_CopySyncInfo_New_ENG+880>
+   0x100214d6 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13782>:	83 c4 0c           	add    $0xc,%esp
+   0x100214d9 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13785>:	85 c0              	test   %eax,%eax
+   0x100214db <vt_eng!VT_GetDefUserDictRelativeName_ENG+13787>:	0f 8e 86 00 00 00  	jle    0x10021567 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13927>
+   0x100214e1 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13793>:	8b 4d 10           	mov    0x10(%ebp),%ecx
+   0x100214e4 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13796>:	8b 14 3e           	mov    (%esi,%edi,1),%edx
+   0x100214e7 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13799>:	51                 	push   %ecx
+   0x100214e8 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13800>:	52                 	push   %edx
+   0x100214e9 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13801>:	e8 d2 cb ff ff     	call   0x1001e0c0 <vt_eng!VT_GetDefUserDictRelativeName_ENG+448>
+   0x100214ee <vt_eng!VT_GetDefUserDictRelativeName_ENG+13806>:	8b 4d 24           	mov    0x24(%ebp),%ecx
+   0x100214f1 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13809>:	83 c4 08           	add    $0x8,%esp
+   0x100214f4 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13812>:	8b 41 0c           	mov    0xc(%ecx),%eax
+   0x100214f7 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13815>:	85 c0              	test   %eax,%eax
+   0x100214f9 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13817>:	75 07              	jne    0x10021502 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13826>
+   0x100214fb <vt_eng!VT_GetDefUserDictRelativeName_ENG+13819>:	b8 57 02 00 00     	mov    $0x257,%eax
+   0x10021500 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13824>:	eb 01              	jmp    0x10021503 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13827>
+   0x10021502 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13826>:	48                 	dec    %eax
+   0x10021503 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13827>:	8b 09              	mov    (%ecx),%ecx
+   0x10021505 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13829>:	8d 04 c0           	lea    (%eax,%eax,8),%eax
+   0x10021508 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13832>:	8b 54 81 10        	mov    0x10(%ecx,%eax,4),%edx
+   0x1002150c <vt_eng!VT_GetDefUserDictRelativeName_ENG+13836>:	8b 04 3e           	mov    (%esi,%edi,1),%eax
+   0x1002150f <vt_eng!VT_GetDefUserDictRelativeName_ENG+13839>:	52                 	push   %edx
+   0x10021510 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13840>:	8b 55 0c           	mov    0xc(%ebp),%edx
+   0x10021513 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13843>:	8b 08              	mov    (%eax),%ecx
+   0x10021515 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13845>:	8b 45 08           	mov    0x8(%ebp),%eax
+   0x10021518 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13848>:	51                 	push   %ecx
+   0x10021519 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13849>:	52                 	push   %edx
+   0x1002151a <vt_eng!VT_GetDefUserDictRelativeName_ENG+13850>:	50                 	push   %eax
+   0x1002151b <vt_eng!VT_GetDefUserDictRelativeName_ENG+13851>:	ff 15 10 d1 06 10  	call   *0x1006d110
+   0x10021521 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13857>:	8b 04 3e           	mov    (%esi,%edi,1),%eax
+   0x10021524 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13860>:	8b 48 30           	mov    0x30(%eax),%ecx
+   0x10021527 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13863>:	8d 14 19           	lea    (%ecx,%ebx,1),%edx
+   0x1002152a <vt_eng!VT_GetDefUserDictRelativeName_ENG+13866>:	81 fa 60 ea 00 00  	cmp    $0xea60,%edx
+   0x10021530 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13872>:	7d 65              	jge    0x10021597 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13975>
+   0x10021532 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13874>:	8b 40 38           	mov    0x38(%eax),%eax
+   0x10021535 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13877>:	8b 55 14           	mov    0x14(%ebp),%edx
+   0x10021538 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13880>:	51                 	push   %ecx
+   0x10021539 <vt_eng!VT_GetDefUserDictRelativeName_ENG+13881>:	8b 48 04           	mov    0x4(%eax),%ecx
+   0x1002153c <vt_eng!VT_GetDefUserDictRelativeName_ENG+13884>:	8d 04 13           	lea    (%ebx,%edx,1),%eax
+   0x1002153f <vt_eng!VT_GetDefUserDictRelativeName_ENG+13887>:	51                 	push   %ecx
+End of assembler dump.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10021513
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10021519
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x4016d9
+Wine-gdb> >>>> >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  >  > > > > >>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1001da50
+Wine-gdb> >>>>>> > >>>>> > >  >  >  >  > >  >  >  > > >>>>>>> > > > >>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x10021395
+Wine-gdb> >>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 6 at 0x10021439
+Wine-gdb> >>>> > >>>>Wine-gdb> Wine-gdb> Continuing.
+PROGRESS_TARGET_BEGIN hwnd=0 message=0x8005 source_bytes=13 text_bytes=55 text=Hello world.
+ Hello world.
+ Hello world.
+ Hello world.
+ stack=0x3e1620
+PROGRESS_CONTEXT_INIT context=0x2ae0020 first_dword=0
+Hardware watchpoint 7: -location *(unsigned int *)$progress_context
+PROGRESS_HELPER_STRING pointer=0x14c49e8 bytes=167 text=............................................................................................................... Hello world.
+ Hello world.
+ Hello world.
+ Hello world.
+
+PROGRESS_CONTEXT_WRITE eip=0x10026ad6 old=0 new=0xa7
+PROGRESS_SOURCE context=0x2ae0020 first_dword=0xa7
+PROGRESS_POST index=1 hwnd=0 message=0x8005 wparam=0xa7 lparam=0x18 context=0x2ae0020 context_first=0xa7 source_matches=1
+PROGRESS_SOURCE context=0x2ae0020 first_dword=0xa7
+PROGRESS_POST index=2 hwnd=0 message=0x8005 wparam=0xa7 lparam=0x26 context=0x2ae0020 context_first=0xa7 source_matches=1
+PROGRESS_RETURN poll=0 raw=0 output_bytes=60000 notifications=2
+PROGRESS_SOURCE context=0x2ae0020 first_dword=0xa7
+PROGRESS_POST index=3 hwnd=0 message=0x8005 wparam=0xa7 lparam=0x34 context=0x2ae0020 context_first=0xa7 source_matches=1
+PROGRESS_RETURN poll=1 raw=0 output_bytes=60000 notifications=3
+PROGRESS_SOURCE context=0x2ae0020 first_dword=0xa7
+PROGRESS_POST index=4 hwnd=0 message=0x8005 wparam=0xa7 lparam=0x34 context=0x2ae0020 context_first=0xa7 source_matches=1
+PROGRESS_RETURN poll=2 raw=0 output_bytes=60000 notifications=4
+PROGRESS_RETURN poll=3 raw=1 output_bytes=3224 notifications=4
+PROGRESS_COMPLETE raw=1 polls=3 notifications=4 total_bytes=183224
+
+
+Fatal signal: Segmentation fault
+----- Backtrace -----
+0x4d3574 ???
+0x5cb4f9 ???
+0x5cb68a ???
+0x77c95d92032f ???
+0x4b746c ???
+0x4b90dc ???
+0x62cf89 ???
+0x64db08 ???
+0x766c09 ???
+0x913bd5 ???
+0x954cbb ???
+0x697bec ???
+0x43f4d4 ???
+0x77c95d9051c9 ???
+0x77c95d90528a __libc_start_main
+0x445544 ???
+0xffffffffffffffff ???
+---------------------
+A fatal error internal to GDB has been detected, further
+debugging is not possible.  GDB will now terminate.
+
+This is a bug, please report it.  For instructions, see:
+<https://www.gnu.org/software/gdb/bugs/>.
+
+0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78CF0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78C70000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+X connection to :99 broken (explicit kill or server shutdown).

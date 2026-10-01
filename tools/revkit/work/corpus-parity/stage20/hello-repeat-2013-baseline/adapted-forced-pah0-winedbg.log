@@ -1,0 +1,296 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x100235f6
+Wine-gdb> >>>>>>>>> > > >  >  >   >   >  > > >>>> > > >  >  >  >  >  >  >  > > >>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+POSITION_WEIGHTED_COVERAGE position=0 count=11 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=0 index=0 id=274190 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=0 index=1 id=159313 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=2 id=172790 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=3 id=157716 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=4 id=283592 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=5 id=279671 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=6 id=279931 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=7 id=283559 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=8 id=280411 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=9 id=279826 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=0 index=10 id=164355 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=1 count=19 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=1 index=0 id=274190 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=1 index=1 id=280494 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=2 id=162247 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=3 id=179092 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=4 id=173106 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=5 id=266326 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=6 id=167768 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=7 id=276732 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=8 id=268779 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=9 id=171602 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=10 id=276698 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=1 index=11 id=157928 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=2 count=21 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=2 index=0 id=35672 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=2 index=1 id=168830 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=2 id=173569 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=3 id=168598 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=4 id=163180 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=5 id=179163 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=6 id=264212 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=7 id=178081 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=8 id=269315 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=9 id=174208 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=10 id=275816 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=2 index=11 id=129357 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=3 count=16 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=3 index=0 id=35672 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=3 index=1 id=233383 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=2 id=167772 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=3 id=80917 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=4 id=120502 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=5 id=158938 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=6 id=163278 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=7 id=264596 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=8 id=179247 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=9 id=274488 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=10 id=157910 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=3 index=11 id=170441 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=4 count=37 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=4 index=0 id=282192 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=4 index=1 id=282172 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=4 index=2 id=281072 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=4 index=3 id=64354 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=4 index=4 id=250473 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=4 index=5 id=214291 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=4 index=6 id=88702 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=4 index=7 id=222641 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=4 index=8 id=228961 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=4 index=9 id=248386 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=4 index=10 id=281550 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=4 index=11 id=120494 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=5 count=35 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=5 index=0 id=250473 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=5 index=1 id=64354 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=5 index=2 id=281072 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=5 index=3 id=282172 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=5 index=4 id=282192 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=5 index=5 id=216943 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=5 index=6 id=217403 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=5 index=7 id=231628 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=5 index=8 id=234998 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=5 index=9 id=45134 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=5 index=10 id=60374 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=5 index=11 id=82219 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=6 count=24 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=6 index=0 id=84762 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=6 index=1 id=254831 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=6 index=2 id=156052 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=3 id=172755 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=4 id=175862 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=5 id=137450 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=6 id=249391 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=7 id=56352 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=8 id=177036 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=9 id=165939 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=10 id=172401 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=6 index=11 id=164475 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=7 count=14 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=7 index=0 id=84762 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=7 index=1 id=254831 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=7 index=2 id=217973 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=3 id=241228 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=4 id=255463 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=5 id=258328 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=6 id=120624 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=7 id=275182 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=8 id=162171 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=9 id=57207 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=10 id=272426 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=7 index=11 id=156184 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=8 count=21 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=8 index=0 id=176579 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=8 index=1 id=276669 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=8 index=2 id=178560 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=8 index=3 id=267687 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=8 index=4 id=171421 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=8 index=5 id=276348 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=8 index=6 id=276732 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=8 index=7 id=159313 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=8 index=8 id=268952 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=8 index=9 id=81375 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=8 index=10 id=274617 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=8 index=11 id=157373 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=9 count=57 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=9 index=0 id=267687 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=9 index=1 id=176579 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=9 index=2 id=276669 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=9 index=3 id=178560 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=9 index=4 id=28939 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=9 index=5 id=218663 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=9 index=6 id=225113 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=9 index=7 id=227598 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=9 index=8 id=231873 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=9 index=9 id=239263 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=9 index=10 id=242933 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=9 index=11 id=248753 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=10 count=21 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=10 index=0 id=35672 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=10 index=1 id=168830 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=2 id=272075 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=3 id=266475 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=4 id=173569 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=5 id=156809 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=6 id=260319 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=7 id=156981 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=8 id=163180 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=9 id=264212 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=10 id=178081 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=10 index=11 id=269315 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=11 count=14 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=11 index=0 id=35672 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=11 index=1 id=157910 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=2 id=233383 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=3 id=167772 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=4 id=80917 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=5 id=120502 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=6 id=158938 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=7 id=163278 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=8 id=274488 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=9 id=90002 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=10 id=204071 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=11 index=11 id=158377 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=12 count=37 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=12 index=0 id=282192 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=12 index=1 id=282172 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=12 index=2 id=281072 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=12 index=3 id=64354 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=12 index=4 id=250473 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=12 index=5 id=214291 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=12 index=6 id=88702 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=12 index=7 id=222641 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=12 index=8 id=228961 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=12 index=9 id=248386 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=12 index=10 id=281550 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=12 index=11 id=120494 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=13 count=35 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=13 index=0 id=250473 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=13 index=1 id=64354 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=13 index=2 id=281072 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=13 index=3 id=282172 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=13 index=4 id=282192 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=13 index=5 id=216943 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=13 index=6 id=217403 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=13 index=7 id=231628 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=13 index=8 id=234998 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=13 index=9 id=45134 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=13 index=10 id=60374 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=13 index=11 id=82219 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=14 count=11 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=14 index=0 id=40472 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=14 index=1 id=56352 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=14 index=2 id=249391 rank_term=-2 fields_c_e_10=1,2,0
+POSITION_WEIGHTED_TOP position=14 index=3 id=86200 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=14 index=4 id=169018 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=14 index=5 id=245584 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=14 index=6 id=140190 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=14 index=7 id=155114 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=14 index=8 id=179344 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=14 index=9 id=275242 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=14 index=10 id=97962 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_COVERAGE position=15 count=12 nonzero=0 max=0
+POSITION_WEIGHTED_TOP position=15 index=0 id=40472 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=15 index=1 id=56352 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=15 index=2 id=249391 rank_term=-2 fields_c_e_10=0,2,0
+POSITION_WEIGHTED_TOP position=15 index=3 id=68867 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=4 id=250566 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=5 id=250706 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=6 id=281600 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=7 id=50132 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=8 id=34462 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=9 id=28547 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=10 id=47742 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_WEIGHTED_TOP position=15 index=11 id=244756 rank_term=-1 fields_c_e_10=0,1,0
+POSITION_SELECTED_UNIT id=280411
+POSITION_SELECTED_UNIT id=276348
+POSITION_SELECTED_UNIT id=265071
+POSITION_SELECTED_UNIT id=278054
+POSITION_SELECTED_UNIT id=263578
+POSITION_SELECTED_UNIT id=118259
+POSITION_SELECTED_UNIT id=84762
+POSITION_SELECTED_UNIT id=84762
+POSITION_SELECTED_UNIT id=176579
+POSITION_SELECTED_UNIT id=236368
+POSITION_SELECTED_UNIT id=179163
+POSITION_SELECTED_UNIT id=167772
+POSITION_SELECTED_UNIT id=71004
+POSITION_SELECTED_UNIT id=213073
+POSITION_SELECTED_UNIT id=249391
+POSITION_SELECTED_UNIT id=249391
+POSITION_SELECTED_UNIT id=276348
+POSITION_SELECTED_UNIT id=280411
+POSITION_SELECTED_UNIT id=278054
+POSITION_SELECTED_UNIT id=265071
+POSITION_SELECTED_UNIT id=118259
+POSITION_SELECTED_UNIT id=263578
+POSITION_SELECTED_UNIT id=236368
+POSITION_SELECTED_UNIT id=176579
+POSITION_SELECTED_UNIT id=167772
+POSITION_SELECTED_UNIT id=179163
+POSITION_SELECTED_UNIT id=213073
+POSITION_SELECTED_UNIT id=71004
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78D30000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78CB0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

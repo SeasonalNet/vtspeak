@@ -1,0 +1,17 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10018ed3
+Wine-gdb> >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10018ed9
+Wine-gdb> >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_MARKER_ONLY_BRANCH_INPUT current=82037 previous=82036 signature_byte6=128
+APPLE_2013_MARKER_ONLY_BRANCH_TAKEN current=82037 previous=82036
+APPLE_2013_MARKER_ONLY_BRANCH_INPUT current=2555 previous=2554 signature_byte6=128
+APPLE_2013_MARKER_ONLY_BRANCH_TAKEN current=2555 previous=2554
+APPLE_2013_MARKER_ONLY_BRANCH_INPUT current=59559 previous=59558 signature_byte6=128
+APPLE_2013_MARKER_ONLY_BRANCH_TAKEN current=59559 previous=59558
+APPLE_2013_MARKER_ONLY_SELECTED n=1 id=177774
+APPLE_2013_MARKER_ONLY_SELECTED n=2 id=177774
+APPLE_2013_MARKER_ONLY_SELECTED n=3 id=64719
+APPLE_2013_MARKER_ONLY_SELECTED n=4 id=2554
+APPLE_2013_MARKER_ONLY_SELECTED n=5 id=2555
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

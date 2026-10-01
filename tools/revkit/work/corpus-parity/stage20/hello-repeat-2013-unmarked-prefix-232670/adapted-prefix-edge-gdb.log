@@ -1,0 +1,25 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-unmarked-prefix-232670/adapted-prefix-edge-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023331
+Wine-gdb> >>>> > > >  >  >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=36540 feature=17.3689 divisor=1 penalty=10 previous_path=38.7541 local=35.1225 total=101.245
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=273370 feature=15.7059 divisor=1 penalty=10 previous_path=28.9985 local=35.1225 total=89.8269
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=272823 feature=33.3572 divisor=1 penalty=10 previous_path=36.8171 local=35.1225 total=115.297
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=272152 feature=11.0072 divisor=1 penalty=10 previous_path=37.5061 local=35.1225 total=93.6358
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=268760 feature=20.4667 divisor=1 penalty=10 previous_path=34.7094 local=35.1225 total=100.299
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=264072 feature=2 divisor=1 penalty=0 previous_path=35.4855 local=35.1225 total=72.608
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=96599 feature=11.2718 divisor=1 penalty=10 previous_path=39.6419 local=35.1225 total=96.0361
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=13942 feature=19.4778 divisor=1 penalty=10 previous_path=41.7486 local=35.1225 total=106.349
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=53487 feature=11.8166 divisor=1 penalty=10 previous_path=33.3076 local=35.1225 total=90.2466
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=4105 feature=12.0503 divisor=1 penalty=10 previous_path=42.576 local=35.1225 total=99.7488
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=72577 feature=9.61477 divisor=1 penalty=10 previous_path=41.9527 local=35.1225 total=96.69
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=63692 feature=24.4179 divisor=1 penalty=10 previous_path=50.5632 local=35.1225 total=120.104
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=93736 feature=20.5224 divisor=1 penalty=10 previous_path=46.8797 local=35.1225 total=112.525
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=235111 feature=24.8164 divisor=1 penalty=10 previous_path=46.5717 local=35.1225 total=116.511
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=45237 feature=30.5591 divisor=1 penalty=10 previous_path=46.9865 local=35.1225 total=122.668
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=77285 feature=11.7109 divisor=1 penalty=10 previous_path=45.0309 local=35.1225 total=101.864
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=281786 feature=24.5266 divisor=1 penalty=10 previous_path=46.1968 local=35.1225 total=115.846
+UNMARKED_PREFIX_EDGE context=3 current=264073 previous=115179 feature=10.0723 divisor=1 penalty=10 previous_path=40.081 local=35.1225 total=95.2758
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

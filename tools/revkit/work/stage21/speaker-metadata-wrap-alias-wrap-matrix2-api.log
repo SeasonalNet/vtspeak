@@ -1,0 +1,141 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>> > >  >  >  >  >  >  >  > > >>>>>Wine-gdb> Wine-gdb> Continuing.
+PATHKEY_WRAP k=1 slot=0 selector=536870912 value=SOFTWARE\VW\VT\Kate\M16
+SPEAKERSINFO_WRAP k=1 slot=0 selector=536870912 result=6 name=kate path=d:/eng/db/susan/pcm/
+PATHKEY_WRAP k=1 slot=1 selector=536870913 value=SOFTWARE\VW\VT\Paul\M16
+SPEAKERSINFO_WRAP k=1 slot=1 selector=536870913 result=6 name=paul path=d:/eng/db/isaac/pcm/
+PATHKEY_WRAP k=1 slot=2 selector=536870914 value=SOFTWARE\VW\VT\em001\M16
+SPEAKERSINFO_WRAP k=1 slot=2 selector=536870914 result=6 name=em001 path=d:/eng/db/em001/pcm/
+PATHKEY_WRAP k=1 slot=3 selector=536870915 value=SOFTWARE\VW\VT\Julie\M16
+SPEAKERSINFO_WRAP k=1 slot=3 selector=536870915 result=6 name=julie path=d:/eng/db/jennifer/pcm/
+PATHKEY_WRAP k=1 slot=4 selector=536870916 value=SOFTWARE\VW\VT\James\M16
+SPEAKERSINFO_WRAP k=1 slot=4 selector=536870916 result=6 name=james path=d:/eng/db/lee/pcm/
+PATHKEY_WRAP k=1 slot=5 selector=536870917 value=SOFTWARE\VW\VT\Ashley\M16
+SPEAKERSINFO_WRAP k=1 slot=5 selector=536870917 result=6 name=ashley path=d:/eng/db/casey/pcm/
+PATHKEY_WRAP k=2 slot=0 selector=1073741824 value=SOFTWARE\VW\VT\Kate\M16
+SPEAKERSINFO_WRAP k=2 slot=0 selector=1073741824 result=6 name=kate path=d:/eng/db/susan/pcm/
+PATHKEY_WRAP k=2 slot=1 selector=1073741825 value=SOFTWARE\VW\VT\Paul\M16
+SPEAKERSINFO_WRAP k=2 slot=1 selector=1073741825 result=6 name=paul path=d:/eng/db/isaac/pcm/
+PATHKEY_WRAP k=2 slot=2 selector=1073741826 value=SOFTWARE\VW\VT\em001\M16
+SPEAKERSINFO_WRAP k=2 slot=2 selector=1073741826 result=6 name=em001 path=d:/eng/db/em001/pcm/
+PATHKEY_WRAP k=2 slot=3 selector=1073741827 value=SOFTWARE\VW\VT\Julie\M16
+SPEAKERSINFO_WRAP k=2 slot=3 selector=1073741827 result=6 name=julie path=d:/eng/db/jennifer/pcm/
+PATHKEY_WRAP k=2 slot=4 selector=1073741828 value=SOFTWARE\VW\VT\James\M16
+SPEAKERSINFO_WRAP k=2 slot=4 selector=1073741828 result=6 name=james path=d:/eng/db/lee/pcm/
+PATHKEY_WRAP k=2 slot=5 selector=1073741829 value=SOFTWARE\VW\VT\Ashley\M16
+SPEAKERSINFO_WRAP k=2 slot=5 selector=1073741829 result=6 name=ashley path=d:/eng/db/casey/pcm/
+PATHKEY_WRAP k=3 slot=0 selector=1610612736 value=SOFTWARE\VW\VT\Kate\M16
+SPEAKERSINFO_WRAP k=3 slot=0 selector=1610612736 result=6 name=kate path=d:/eng/db/susan/pcm/
+PATHKEY_WRAP k=3 slot=1 selector=1610612737 value=SOFTWARE\VW\VT\Paul\M16
+SPEAKERSINFO_WRAP k=3 slot=1 selector=1610612737 result=6 name=paul path=d:/eng/db/isaac/pcm/
+PATHKEY_WRAP k=3 slot=2 selector=1610612738 value=SOFTWARE\VW\VT\em001\M16
+SPEAKERSINFO_WRAP k=3 slot=2 selector=1610612738 result=6 name=em001 path=d:/eng/db/em001/pcm/
+PATHKEY_WRAP k=3 slot=3 selector=1610612739 value=SOFTWARE\VW\VT\Julie\M16
+SPEAKERSINFO_WRAP k=3 slot=3 selector=1610612739 result=6 name=julie path=d:/eng/db/jennifer/pcm/
+PATHKEY_WRAP k=3 slot=4 selector=1610612740 value=SOFTWARE\VW\VT\James\M16
+SPEAKERSINFO_WRAP k=3 slot=4 selector=1610612740 result=6 name=james path=d:/eng/db/lee/pcm/
+PATHKEY_WRAP k=3 slot=5 selector=1610612741 value=SOFTWARE\VW\VT\Ashley\M16
+SPEAKERSINFO_WRAP k=3 slot=5 selector=1610612741 result=6 name=ashley path=d:/eng/db/casey/pcm/
+PATHKEY_WRAP k=4 slot=0 selector=-2147483648 value=SOFTWARE\VW\VT\Kate\M16
+SPEAKERSINFO_WRAP k=4 slot=0 selector=-2147483648 result=6 name=kate path=d:/eng/db/susan/pcm/
+PATHKEY_WRAP k=4 slot=1 selector=-2147483647 value=SOFTWARE\VW\VT\Paul\M16
+SPEAKERSINFO_WRAP k=4 slot=1 selector=-2147483647 result=6 name=paul path=d:/eng/db/isaac/pcm/
+PATHKEY_WRAP k=4 slot=2 selector=-2147483646 value=SOFTWARE\VW\VT\em001\M16
+SPEAKERSINFO_WRAP k=4 slot=2 selector=-2147483646 result=6 name=em001 path=d:/eng/db/em001/pcm/
+PATHKEY_WRAP k=4 slot=3 selector=-2147483645 value=SOFTWARE\VW\VT\Julie\M16
+SPEAKERSINFO_WRAP k=4 slot=3 selector=-2147483645 result=6 name=julie path=d:/eng/db/jennifer/pcm/
+PATHKEY_WRAP k=4 slot=4 selector=-2147483644 value=SOFTWARE\VW\VT\James\M16
+SPEAKERSINFO_WRAP k=4 slot=4 selector=-2147483644 result=6 name=james path=d:/eng/db/lee/pcm/
+PATHKEY_WRAP k=4 slot=5 selector=-2147483643 value=SOFTWARE\VW\VT\Ashley\M16
+SPEAKERSINFO_WRAP k=4 slot=5 selector=-2147483643 result=6 name=ashley path=d:/eng/db/casey/pcm/
+PATHKEY_WRAP k=5 slot=0 selector=-1610612736 value=SOFTWARE\VW\VT\Kate\M16
+SPEAKERSINFO_WRAP k=5 slot=0 selector=-1610612736 result=6 name=kate path=d:/eng/db/susan/pcm/
+PATHKEY_WRAP k=5 slot=1 selector=-1610612735 value=SOFTWARE\VW\VT\Paul\M16
+SPEAKERSINFO_WRAP k=5 slot=1 selector=-1610612735 result=6 name=paul path=d:/eng/db/isaac/pcm/
+PATHKEY_WRAP k=5 slot=2 selector=-1610612734 value=SOFTWARE\VW\VT\em001\M16
+SPEAKERSINFO_WRAP k=5 slot=2 selector=-1610612734 result=6 name=em001 path=d:/eng/db/em001/pcm/
+PATHKEY_WRAP k=5 slot=3 selector=-1610612733 value=SOFTWARE\VW\VT\Julie\M16
+SPEAKERSINFO_WRAP k=5 slot=3 selector=-1610612733 result=6 name=julie path=d:/eng/db/jennifer/pcm/
+PATHKEY_WRAP k=5 slot=4 selector=-1610612732 value=SOFTWARE\VW\VT\James\M16
+SPEAKERSINFO_WRAP k=5 slot=4 selector=-1610612732 result=6 name=james path=d:/eng/db/lee/pcm/
+PATHKEY_WRAP k=5 slot=5 selector=-1610612731 value=SOFTWARE\VW\VT\Ashley\M16
+SPEAKERSINFO_WRAP k=5 slot=5 selector=-1610612731 result=6 name=ashley path=d:/eng/db/casey/pcm/
+PATHKEY_WRAP k=6 slot=0 selector=-1073741824 value=SOFTWARE\VW\VT\Kate\M16
+SPEAKERSINFO_WRAP k=6 slot=0 selector=-1073741824 result=6 name=kate path=d:/eng/db/susan/pcm/
+PATHKEY_WRAP k=6 slot=1 selector=-1073741823 value=SOFTWARE\VW\VT\Paul\M16
+SPEAKERSINFO_WRAP k=6 slot=1 selector=-1073741823 result=6 name=paul path=d:/eng/db/isaac/pcm/
+PATHKEY_WRAP k=6 slot=2 selector=-1073741822 value=SOFTWARE\VW\VT\em001\M16
+SPEAKERSINFO_WRAP k=6 slot=2 selector=-1073741822 result=6 name=em001 path=d:/eng/db/em001/pcm/
+PATHKEY_WRAP k=6 slot=3 selector=-1073741821 value=SOFTWARE\VW\VT\Julie\M16
+SPEAKERSINFO_WRAP k=6 slot=3 selector=-1073741821 result=6 name=julie path=d:/eng/db/jennifer/pcm/
+PATHKEY_WRAP k=6 slot=4 selector=-1073741820 value=SOFTWARE\VW\VT\James\M16
+SPEAKERSINFO_WRAP k=6 slot=4 selector=-1073741820 result=6 name=james path=d:/eng/db/lee/pcm/
+PATHKEY_WRAP k=6 slot=5 selector=-1073741819 value=SOFTWARE\VW\VT\Ashley\M16
+SPEAKERSINFO_WRAP k=6 slot=5 selector=-1073741819 result=6 name=ashley path=d:/eng/db/casey/pcm/
+PATHKEY_WRAP k=7 slot=0 selector=-536870912 value=SOFTWARE\VW\VT\Kate\M16
+SPEAKERSINFO_WRAP k=7 slot=0 selector=-536870912 result=6 name=kate path=d:/eng/db/susan/pcm/
+PATHKEY_WRAP k=7 slot=1 selector=-536870911 value=SOFTWARE\VW\VT\Paul\M16
+SPEAKERSINFO_WRAP k=7 slot=1 selector=-536870911 result=6 name=paul path=d:/eng/db/isaac/pcm/
+PATHKEY_WRAP k=7 slot=2 selector=-536870910 value=SOFTWARE\VW\VT\em001\M16
+SPEAKERSINFO_WRAP k=7 slot=2 selector=-536870910 result=6 name=em001 path=d:/eng/db/em001/pcm/
+PATHKEY_WRAP k=7 slot=3 selector=-536870909 value=SOFTWARE\VW\VT\Julie\M16
+SPEAKERSINFO_WRAP k=7 slot=3 selector=-536870909 result=6 name=julie path=d:/eng/db/jennifer/pcm/
+PATHKEY_WRAP k=7 slot=4 selector=-536870908 value=SOFTWARE\VW\VT\James\M16
+SPEAKERSINFO_WRAP k=7 slot=4 selector=-536870908 result=6 name=james path=d:/eng/db/lee/pcm/
+PATHKEY_WRAP k=7 slot=5 selector=-536870907 value=SOFTWARE\VW\VT\Ashley\M16
+SPEAKERSINFO_WRAP k=7 slot=5 selector=-536870907 result=6 name=ashley path=d:/eng/db/casey/pcm/
+[Inferior 1 (Remote target) killed]
+0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78CF0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78C70000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)

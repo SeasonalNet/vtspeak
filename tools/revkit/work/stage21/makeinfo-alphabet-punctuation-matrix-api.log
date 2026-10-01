@@ -1,0 +1,162 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Continuing.
+MAKEINFO_PUNCT case=a-period raw_eax=0x1 text=A. path=Z:/work/stage21/mi-alphabet-punct-a-period
+MAKEINFO_PUNCT case=a-comma raw_eax=0x1 text=A, path=Z:/work/stage21/mi-alphabet-punct-a-comma
+MAKEINFO_PUNCT case=a-bang raw_eax=0x1 text=A! path=Z:/work/stage21/mi-alphabet-punct-a-bang
+MAKEINFO_PUNCT case=a-question raw_eax=0x1 text=A? path=Z:/work/stage21/mi-alphabet-punct-a-question
+MAKEINFO_PUNCT case=b-period raw_eax=0x1 text=B. path=Z:/work/stage21/mi-alphabet-punct-b-period
+MAKEINFO_PUNCT case=b-comma raw_eax=0x1 text=B, path=Z:/work/stage21/mi-alphabet-punct-b-comma
+MAKEINFO_PUNCT case=b-bang raw_eax=0x1 text=B! path=Z:/work/stage21/mi-alphabet-punct-b-bang
+MAKEINFO_PUNCT case=b-question raw_eax=0x1 text=B? path=Z:/work/stage21/mi-alphabet-punct-b-question
+MAKEINFO_PUNCT case=c-period raw_eax=0x1 text=C. path=Z:/work/stage21/mi-alphabet-punct-c-period
+MAKEINFO_PUNCT case=c-comma raw_eax=0x1 text=C, path=Z:/work/stage21/mi-alphabet-punct-c-comma
+MAKEINFO_PUNCT case=c-bang raw_eax=0x1 text=C! path=Z:/work/stage21/mi-alphabet-punct-c-bang
+MAKEINFO_PUNCT case=c-question raw_eax=0x1 text=C? path=Z:/work/stage21/mi-alphabet-punct-c-question
+MAKEINFO_PUNCT case=d-period raw_eax=0x1 text=D. path=Z:/work/stage21/mi-alphabet-punct-d-period
+MAKEINFO_PUNCT case=d-comma raw_eax=0x1 text=D, path=Z:/work/stage21/mi-alphabet-punct-d-comma
+MAKEINFO_PUNCT case=d-bang raw_eax=0x1 text=D! path=Z:/work/stage21/mi-alphabet-punct-d-bang
+MAKEINFO_PUNCT case=d-question raw_eax=0x1 text=D? path=Z:/work/stage21/mi-alphabet-punct-d-question
+MAKEINFO_PUNCT case=e-period raw_eax=0x1 text=E. path=Z:/work/stage21/mi-alphabet-punct-e-period
+MAKEINFO_PUNCT case=e-comma raw_eax=0x1 text=E, path=Z:/work/stage21/mi-alphabet-punct-e-comma
+MAKEINFO_PUNCT case=e-bang raw_eax=0x1 text=E! path=Z:/work/stage21/mi-alphabet-punct-e-bang
+MAKEINFO_PUNCT case=e-question raw_eax=0x1 text=E? path=Z:/work/stage21/mi-alphabet-punct-e-question
+MAKEINFO_PUNCT case=f-period raw_eax=0x1 text=F. path=Z:/work/stage21/mi-alphabet-punct-f-period
+MAKEINFO_PUNCT case=f-comma raw_eax=0x1 text=F, path=Z:/work/stage21/mi-alphabet-punct-f-comma
+MAKEINFO_PUNCT case=f-bang raw_eax=0x1 text=F! path=Z:/work/stage21/mi-alphabet-punct-f-bang
+MAKEINFO_PUNCT case=f-question raw_eax=0x1 text=F? path=Z:/work/stage21/mi-alphabet-punct-f-question
+MAKEINFO_PUNCT case=g-period raw_eax=0x1 text=G. path=Z:/work/stage21/mi-alphabet-punct-g-period
+MAKEINFO_PUNCT case=g-comma raw_eax=0x1 text=G, path=Z:/work/stage21/mi-alphabet-punct-g-comma
+MAKEINFO_PUNCT case=g-bang raw_eax=0x1 text=G! path=Z:/work/stage21/mi-alphabet-punct-g-bang
+MAKEINFO_PUNCT case=g-question raw_eax=0x1 text=G? path=Z:/work/stage21/mi-alphabet-punct-g-question
+MAKEINFO_PUNCT case=h-period raw_eax=0x1 text=H. path=Z:/work/stage21/mi-alphabet-punct-h-period
+MAKEINFO_PUNCT case=h-comma raw_eax=0x1 text=H, path=Z:/work/stage21/mi-alphabet-punct-h-comma
+MAKEINFO_PUNCT case=h-bang raw_eax=0x1 text=H! path=Z:/work/stage21/mi-alphabet-punct-h-bang
+MAKEINFO_PUNCT case=h-question raw_eax=0x1 text=H? path=Z:/work/stage21/mi-alphabet-punct-h-question
+MAKEINFO_PUNCT case=i-period raw_eax=0x1 text=I. path=Z:/work/stage21/mi-alphabet-punct-i-period
+MAKEINFO_PUNCT case=i-comma raw_eax=0x1 text=I, path=Z:/work/stage21/mi-alphabet-punct-i-comma
+MAKEINFO_PUNCT case=i-bang raw_eax=0x1 text=I! path=Z:/work/stage21/mi-alphabet-punct-i-bang
+MAKEINFO_PUNCT case=i-question raw_eax=0x1 text=I? path=Z:/work/stage21/mi-alphabet-punct-i-question
+MAKEINFO_PUNCT case=j-period raw_eax=0x1 text=J. path=Z:/work/stage21/mi-alphabet-punct-j-period
+MAKEINFO_PUNCT case=j-comma raw_eax=0x1 text=J, path=Z:/work/stage21/mi-alphabet-punct-j-comma
+MAKEINFO_PUNCT case=j-bang raw_eax=0x1 text=J! path=Z:/work/stage21/mi-alphabet-punct-j-bang
+MAKEINFO_PUNCT case=j-question raw_eax=0x1 text=J? path=Z:/work/stage21/mi-alphabet-punct-j-question
+MAKEINFO_PUNCT case=k-period raw_eax=0x1 text=K. path=Z:/work/stage21/mi-alphabet-punct-k-period
+MAKEINFO_PUNCT case=k-comma raw_eax=0x1 text=K, path=Z:/work/stage21/mi-alphabet-punct-k-comma
+MAKEINFO_PUNCT case=k-bang raw_eax=0x1 text=K! path=Z:/work/stage21/mi-alphabet-punct-k-bang
+MAKEINFO_PUNCT case=k-question raw_eax=0x1 text=K? path=Z:/work/stage21/mi-alphabet-punct-k-question
+MAKEINFO_PUNCT case=l-period raw_eax=0x1 text=L. path=Z:/work/stage21/mi-alphabet-punct-l-period
+MAKEINFO_PUNCT case=l-comma raw_eax=0x1 text=L, path=Z:/work/stage21/mi-alphabet-punct-l-comma
+MAKEINFO_PUNCT case=l-bang raw_eax=0x1 text=L! path=Z:/work/stage21/mi-alphabet-punct-l-bang
+MAKEINFO_PUNCT case=l-question raw_eax=0x1 text=L? path=Z:/work/stage21/mi-alphabet-punct-l-question
+MAKEINFO_PUNCT case=m-period raw_eax=0x1 text=M. path=Z:/work/stage21/mi-alphabet-punct-m-period
+MAKEINFO_PUNCT case=m-comma raw_eax=0x1 text=M, path=Z:/work/stage21/mi-alphabet-punct-m-comma
+MAKEINFO_PUNCT case=m-bang raw_eax=0x1 text=M! path=Z:/work/stage21/mi-alphabet-punct-m-bang
+MAKEINFO_PUNCT case=m-question raw_eax=0x1 text=M? path=Z:/work/stage21/mi-alphabet-punct-m-question
+MAKEINFO_PUNCT case=n-period raw_eax=0x1 text=N. path=Z:/work/stage21/mi-alphabet-punct-n-period
+MAKEINFO_PUNCT case=n-comma raw_eax=0x1 text=N, path=Z:/work/stage21/mi-alphabet-punct-n-comma
+MAKEINFO_PUNCT case=n-bang raw_eax=0x1 text=N! path=Z:/work/stage21/mi-alphabet-punct-n-bang
+MAKEINFO_PUNCT case=n-question raw_eax=0x1 text=N? path=Z:/work/stage21/mi-alphabet-punct-n-question
+MAKEINFO_PUNCT case=o-period raw_eax=0x1 text=O. path=Z:/work/stage21/mi-alphabet-punct-o-period
+MAKEINFO_PUNCT case=o-comma raw_eax=0x1 text=O, path=Z:/work/stage21/mi-alphabet-punct-o-comma
+MAKEINFO_PUNCT case=o-bang raw_eax=0x1 text=O! path=Z:/work/stage21/mi-alphabet-punct-o-bang
+MAKEINFO_PUNCT case=o-question raw_eax=0x1 text=O? path=Z:/work/stage21/mi-alphabet-punct-o-question
+MAKEINFO_PUNCT case=p-period raw_eax=0x1 text=P. path=Z:/work/stage21/mi-alphabet-punct-p-period
+MAKEINFO_PUNCT case=p-comma raw_eax=0x1 text=P, path=Z:/work/stage21/mi-alphabet-punct-p-comma
+MAKEINFO_PUNCT case=p-bang raw_eax=0x1 text=P! path=Z:/work/stage21/mi-alphabet-punct-p-bang
+MAKEINFO_PUNCT case=p-question raw_eax=0x1 text=P? path=Z:/work/stage21/mi-alphabet-punct-p-question
+MAKEINFO_PUNCT case=q-period raw_eax=0x1 text=Q. path=Z:/work/stage21/mi-alphabet-punct-q-period
+MAKEINFO_PUNCT case=q-comma raw_eax=0x1 text=Q, path=Z:/work/stage21/mi-alphabet-punct-q-comma
+MAKEINFO_PUNCT case=q-bang raw_eax=0x1 text=Q! path=Z:/work/stage21/mi-alphabet-punct-q-bang
+MAKEINFO_PUNCT case=q-question raw_eax=0x1 text=Q? path=Z:/work/stage21/mi-alphabet-punct-q-question
+MAKEINFO_PUNCT case=r-period raw_eax=0x1 text=R. path=Z:/work/stage21/mi-alphabet-punct-r-period
+MAKEINFO_PUNCT case=r-comma raw_eax=0x1 text=R, path=Z:/work/stage21/mi-alphabet-punct-r-comma
+MAKEINFO_PUNCT case=r-bang raw_eax=0x1 text=R! path=Z:/work/stage21/mi-alphabet-punct-r-bang
+MAKEINFO_PUNCT case=r-question raw_eax=0x1 text=R? path=Z:/work/stage21/mi-alphabet-punct-r-question
+MAKEINFO_PUNCT case=s-period raw_eax=0x1 text=S. path=Z:/work/stage21/mi-alphabet-punct-s-period
+MAKEINFO_PUNCT case=s-comma raw_eax=0x1 text=S, path=Z:/work/stage21/mi-alphabet-punct-s-comma
+MAKEINFO_PUNCT case=s-bang raw_eax=0x1 text=S! path=Z:/work/stage21/mi-alphabet-punct-s-bang
+MAKEINFO_PUNCT case=s-question raw_eax=0x1 text=S? path=Z:/work/stage21/mi-alphabet-punct-s-question
+MAKEINFO_PUNCT case=t-period raw_eax=0x1 text=T. path=Z:/work/stage21/mi-alphabet-punct-t-period
+MAKEINFO_PUNCT case=t-comma raw_eax=0x1 text=T, path=Z:/work/stage21/mi-alphabet-punct-t-comma
+MAKEINFO_PUNCT case=t-bang raw_eax=0x1 text=T! path=Z:/work/stage21/mi-alphabet-punct-t-bang
+MAKEINFO_PUNCT case=t-question raw_eax=0x1 text=T? path=Z:/work/stage21/mi-alphabet-punct-t-question
+MAKEINFO_PUNCT case=u-period raw_eax=0x1 text=U. path=Z:/work/stage21/mi-alphabet-punct-u-period
+MAKEINFO_PUNCT case=u-comma raw_eax=0x1 text=U, path=Z:/work/stage21/mi-alphabet-punct-u-comma
+MAKEINFO_PUNCT case=u-bang raw_eax=0x1 text=U! path=Z:/work/stage21/mi-alphabet-punct-u-bang
+MAKEINFO_PUNCT case=u-question raw_eax=0x1 text=U? path=Z:/work/stage21/mi-alphabet-punct-u-question
+MAKEINFO_PUNCT case=v-period raw_eax=0x1 text=V. path=Z:/work/stage21/mi-alphabet-punct-v-period
+MAKEINFO_PUNCT case=v-comma raw_eax=0x1 text=V, path=Z:/work/stage21/mi-alphabet-punct-v-comma
+MAKEINFO_PUNCT case=v-bang raw_eax=0x1 text=V! path=Z:/work/stage21/mi-alphabet-punct-v-bang
+MAKEINFO_PUNCT case=v-question raw_eax=0x1 text=V? path=Z:/work/stage21/mi-alphabet-punct-v-question
+MAKEINFO_PUNCT case=w-period raw_eax=0x1 text=W. path=Z:/work/stage21/mi-alphabet-punct-w-period
+MAKEINFO_PUNCT case=w-comma raw_eax=0x1 text=W, path=Z:/work/stage21/mi-alphabet-punct-w-comma
+MAKEINFO_PUNCT case=w-bang raw_eax=0x1 text=W! path=Z:/work/stage21/mi-alphabet-punct-w-bang
+MAKEINFO_PUNCT case=w-question raw_eax=0x1 text=W? path=Z:/work/stage21/mi-alphabet-punct-w-question
+MAKEINFO_PUNCT case=x-period raw_eax=0x1 text=X. path=Z:/work/stage21/mi-alphabet-punct-x-period
+MAKEINFO_PUNCT case=x-comma raw_eax=0x1 text=X, path=Z:/work/stage21/mi-alphabet-punct-x-comma
+MAKEINFO_PUNCT case=x-bang raw_eax=0x1 text=X! path=Z:/work/stage21/mi-alphabet-punct-x-bang
+MAKEINFO_PUNCT case=x-question raw_eax=0x1 text=X? path=Z:/work/stage21/mi-alphabet-punct-x-question
+MAKEINFO_PUNCT case=y-period raw_eax=0x1 text=Y. path=Z:/work/stage21/mi-alphabet-punct-y-period
+MAKEINFO_PUNCT case=y-comma raw_eax=0x1 text=Y, path=Z:/work/stage21/mi-alphabet-punct-y-comma
+MAKEINFO_PUNCT case=y-bang raw_eax=0x1 text=Y! path=Z:/work/stage21/mi-alphabet-punct-y-bang
+MAKEINFO_PUNCT case=y-question raw_eax=0x1 text=Y? path=Z:/work/stage21/mi-alphabet-punct-y-question
+MAKEINFO_PUNCT case=z-period raw_eax=0x1 text=Z. path=Z:/work/stage21/mi-alphabet-punct-z-period
+MAKEINFO_PUNCT case=z-comma raw_eax=0x1 text=Z, path=Z:/work/stage21/mi-alphabet-punct-z-comma
+MAKEINFO_PUNCT case=z-bang raw_eax=0x1 text=Z! path=Z:/work/stage21/mi-alphabet-punct-z-bang
+MAKEINFO_PUNCT case=z-question raw_eax=0x1 text=Z? path=Z:/work/stage21/mi-alphabet-punct-z-question
+[Inferior 1 (Remote target) killed]
+0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+X connection to :99 broken (explicit kill or server shutdown).

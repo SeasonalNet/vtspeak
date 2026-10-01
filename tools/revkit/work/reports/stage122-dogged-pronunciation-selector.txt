@@ -1,0 +1,42 @@
+VoiceText Paul 2013 `dogged` direct pronunciation branch
+=======================================================
+
+Evidence
+--------
+
+`FUN_100049b0` at `0x100049b0` compares the current surface with `dogged` at
+DLL VA `0x10077600`, then calls `FUN_1000cf00` at `0x1000cf00` with direction
+`L`, a three-row window, the ten-entry pointer table at `0x100783a4`, and
+comparison mode `0x49`. The call and branch gates are in
+`vt_pau-objdump-disassembly.txt` at `0x100051ce` through `0x1000525b`.
+
+The inspected input was `binary/vt_pau.dll` (SHA-256
+`200945bbb2853cc56b3eaa03770eedf26066b20bfc471ef5b0213387035b37ce`). The
+ten 32-bit little-endian table pointers begin at RVA `0x783a4` (VA
+`0x100783a4`); their target strings are read-only DLL data.
+
+The ten little-endian pointers at `0x100783a4` resolve to these strings, in
+table order: `'ve`, `had`, `had not`, `hadn't`, `has`, `has not`, `hasn't`,
+`have`, `have not`, and `haven't`. `FUN_1000cf00` bounds its pointer worklist
+to 20 records, binary-searches the supplied table with the requested mapped
+comparator, and checks phrase components across adjacent row surfaces. The
+`dogged` caller uses only the three rows immediately before the current row.
+
+Recovered implementation
+------------------------
+
+`text.SelectPaul2013ModelNameContextPronunciation` now searches that bounded
+left window. A miss selects path `0x0e`. A match selects `0x0e` when the
+native result is positive and the immediate preceding surface is in the
+class-12 table or equals `that`; all other matches select `(`. The helper
+preserves the native zero-versus-positive distinction: one-token matches
+return their window index, while multi-token matches return the final matched
+token index. The selected path must still exist in the token row's path stream.
+
+Evidence boundary
+-----------------
+
+This is a static port from the DLL disassembly and extracted pointer table.
+No original-runtime pronunciation-choice comparison has been made for
+`dogged`; the Ghidra/pseudocode control-flow interpretation and Go behavior
+remain subject to that comparison. Vendor DLL and voice data remain read-only.

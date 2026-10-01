@@ -1,0 +1,52 @@
+Stage 176: terminal recognizer context-window construction
+
+Evidence
+
+- Original vt_pau x86 FUN_10063300 (0x10063300-0x100633c7) strips trailing
+  ASCII space/tab/LF/CR, then copies backward with a 30*count-1 length gate.
+  Each whitespace encounter counts separately, not each lexical token.
+  The native gate decrements length before copying, producing a maximum
+  copied length of 30*count-2. Returned low short includes stripped trailing
+  whitespace; the copied C string excludes that whitespace. All-whitespace
+  prefixes return zero, including when trailing bytes were traversed.
+- FUN_10063660 (0x10063660-0x1006373d) initializes three 0x44-byte records,
+  scans with caller mode and mode pointer zero, advances by scanner +0x14
+  rather than the scanner return, and rolls nonempty prior records only while
+  another scan remains. It returns short 1 after consuming the string and
+  short 0 for an empty string.
+- FUN_10051cc0 (0x10051cc0-0x10051ff6) copies backward with count 3,
+  adjusts the prior source coordinate by that signed short, scans with mode 1,
+  and projects only +0, +0x10, +0x1c and the C string into a zeroed six-record
+  window. Current token is copied unconditionally, neighboring records only
+  when +0x10 > 0. Following scans use model-state +0x39e8 as mode pointer,
+  with positions from current +0x14 then first following +0x14. A invokes
+  FUN_10052520 followed by FUN_10001670 at global object 0x100a7a68;
+  a nonzero low byte returns P, otherwise N.
+
+Implementation and validation
+
+- CopyPaul2013BackwardContext, ScanPaul2013BackwardContext and
+  NewPaul2013TerminalContextRecognizer port those caller mechanics. The
+  recognizer owns a copied NUL-terminated utterance with source origin zero.
+  Source mismatch, invalid spans, cancellation and nonprogress fail explicitly.
+- Tests cover trailing/all whitespace, repeated whitespace encounters, exact
+  length gates, rolling records, return-versus-field14 advances, all six
+  projected records, mode pointers, low-byte fallback results, ownership,
+  missing dependencies, cancellation and integration through the terminal
+  handler's prior-row type update. Scanner/model callbacks are labeled fixtures.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Read-only initialization trace at 0x1003a300-0x1003a3a5 establishes the
+  fallback resources: globals 0x100a7a50/54/58 load abbrh_sort.txt2,
+  abbrt_sort.txt2 and abbrc_sort.txt2 (literal VAs 0x1008033c/32c/31c);
+  0x100a7a4c loads sbdw_sort.txt2 (0x1008030c); the tree path format at
+  0x100802fc is %s/sbd.tree3. FUN_10001670 reads the scalar short at the
+  FUN_100015f0-selected leaf. These identities are observed; complete key
+  production and abbreviation lookup behavior are still implementation work.
+- Ordinary scanner bodies and fallback key/table implementation remain explicit.
+  Native malformed scanner spans/nonprogress can access invalid memory or loop;
+  the Go implementation returns an error. There is no new native differential
+  capture or whole-text/synthesis parity claim.

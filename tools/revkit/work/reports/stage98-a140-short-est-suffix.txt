@@ -1,0 +1,32 @@
+VoiceText Paul 2013 FUN_1000a140 short `est` suffix
+==================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_1000a140` compares the mapped final three
+characters against `DAT_100778e8` (`est`) in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, around
+lines 854-866. This path is reached when the input is longer than five bytes
+and earlier 7- or 8-byte suffix handlers did not return. On a match, the
+function copies the source into its 32-byte local buffer, writes NUL at
+`local_8 - 4`, and calls `FUN_1000cb30`. A nonempty result has `0x07` written
+over its terminator, followed by `-7`; the common success path sets row-flag
+bit 3. DLL data inspection confirms `est\0` at VA `0x100778e8`.
+
+Implementation
+--------------
+
+`NormalizePaul2013EstSuffixContext` ports this branch for 6- to 8-byte C
+strings. It uses the character-map comparison, removes the final four source
+bytes, performs the existing generic embedded-stem lookup, appends
+`0x07 0x2d 0x37` to nonempty output, and sets flag `0x08`. The supported A140
+cascade invokes it after the directly ported 7- and 8-byte suffix handlers;
+it also reaches the branch for six-byte inputs.
+
+Evidence boundary
+-----------------
+
+This is a static pseudocode port. No original-runtime row comparison has been
+made. The adjacent short `ers` branch is ported in Stage 99. Other A140 cases
+and full C3A0 runtime parity remain open.

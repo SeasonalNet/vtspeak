@@ -1,0 +1,7 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-feature-components/adapted-feature-components-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+NEW_FEATURE_COMPONENTS context=1 current=272823 previous=273369 category=1 metrics=1.04473,0.305296,1.77778 weights=10,5,2 bias=2 weighted_sum=21.9468
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,6 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10027fe0
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+ADAPTED_HI_VOLUME_SETTER call=1 pitch=100 speed=100 volume=200 pause=925 speaker=1
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

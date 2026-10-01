@@ -1,0 +1,12 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/apple-selector-byte0-legacy-context-weights-only-2026-09-29/adapted-context-weights-only-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x100191bc
+Wine-gdb> >>>>>> > >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_LEGACY_CONTEXT_WEIGHTS_ONLY_SELECTED id=177774
+APPLE_2013_LEGACY_CONTEXT_WEIGHTS_ONLY_SELECTED id=177774
+APPLE_2013_LEGACY_CONTEXT_WEIGHTS_ONLY_SELECTED id=188826
+APPLE_2013_LEGACY_CONTEXT_WEIGHTS_ONLY_SELECTED id=129559
+APPLE_2013_LEGACY_CONTEXT_WEIGHTS_ONLY_SELECTED id=129560
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 
