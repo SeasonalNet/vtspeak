@@ -1,0 +1,427 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /probe/probe-original-kate-2006.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /probe/stage20/repeat-hello-old-query-pools/legacy-query-pools-gdb.log.
+Copying debug output to /probe/stage20/repeat-hello-old-query-pools/legacy-query-pools-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001dfb0
+Wine-gdb> >>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001da80
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  >  >  >  >  >   >   >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001e110
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+OLD_REPEAT_QUERY_TRACE_READY
+OLD_REPEAT_SPLIT_ENTER n=1 slot=0 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 5 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Hardware assisted breakpoint 6 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=0 mode=1 appended_metric=75 total=4 model=0x18e1b30 feature_base=0x21ccb00 ids: 52164
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52164 weight=45 feature:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52165 weight=2 feature:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52166 weight=24 feature:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52167 weight=4 feature:0x2225d71:	90	34	4	30	30	30	0
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=2 slot=1 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 7 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Hardware assisted breakpoint 8 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=1 mode=1 appended_metric=9 total=2 model=0x18e1b30 feature_base=0x21ccb00 ids: 32401
+OLD_REPEAT_CLASS_MEMBER slot=1 id=32401 weight=5 feature:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_REPEAT_CLASS_MEMBER slot=1 id=32400 weight=4 feature:0x22040f0:	34	23	43	0	0	43	34
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=3 slot=2 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 9 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Hardware assisted breakpoint 10 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=2 mode=1 appended_metric=5 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 25383
+OLD_REPEAT_CLASS_MEMBER slot=2 id=25383 weight=5 feature:0x21f8111:	23	43	47	0	0	48	23
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=4 slot=3 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 11 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=3 mode=1 key:0x26f0843:	43	48	34	2	2
+Hardware assisted breakpoint 12 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=3 mode=1 appended_metric=1 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 37258
+OLD_REPEAT_CLASS_MEMBER slot=3 id=37258 weight=1 feature:0x220c5c6:	43	48	34	2	2	34	43
+
+All hardware registers have been used
+OLD_REPEAT_FALLBACK_ENTER slot=3
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=5 slot=5 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 13 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=5 mode=1 key:0x26f0b30:	48	34	23	20	20
+Hardware assisted breakpoint 14 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=5 mode=1 appended_metric=73 total=10 model=0x18e1b30 feature_base=0x21ccb00 ids: 3408
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3408 weight=13 feature:0x21d2830:	1	34	4	10	10	5	17
+ 3409
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3409 weight=14 feature:0x21d2837:	1	34	4	10	10	5	30
+ 3410
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3410 weight=19 feature:0x21d283e:	1	34	4	10	10	5	39
+ 3411
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3411 weight=1 feature:0x21d2845:	1	34	4	10	10	5	47
+ 3412
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3412 weight=1 feature:0x21d284c:	1	34	4	10	10	5	54
+ 3413
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3413 weight=6 feature:0x21d2853:	1	34	4	10	10	5	62
+ 3414
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3414 weight=15 feature:0x21d285a:	1	34	4	10	10	5	63
+ 3415
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3415 weight=1 feature:0x21d2861:	1	34	4	10	10	24	62
+ 3433
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3433 weight=1 feature:0x21d28df:	1	34	4	20	20	23	26
+ 3434
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3434 weight=2 feature:0x21d28e6:	1	34	4	20	20	23	30
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=6 slot=6 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 15 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=6 mode=1 key:0x26f0b35:	34	23	43	0	0
+Hardware assisted breakpoint 16 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=6 mode=1 appended_metric=4 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 32400
+OLD_REPEAT_CLASS_MEMBER slot=6 id=32400 weight=4 feature:0x22040f0:	34	23	43	0	0	43	34
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=7 slot=7 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 17 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=7 mode=1 key:0x26f0b3a:	23	43	48	0	0
+Hardware assisted breakpoint 18 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=7 mode=1 appended_metric=5 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 25383
+OLD_REPEAT_CLASS_MEMBER slot=7 id=25383 weight=5 feature:0x21f8111:	23	43	47	0	0	48	23
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=8 slot=8 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 19 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=8 mode=1 key:0x26f0b3f:	43	48	90	4	4
+Hardware assisted breakpoint 20 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=8 mode=1 appended_metric=6 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 37302
+OLD_REPEAT_CLASS_MEMBER slot=8 id=37302 weight=6 feature:0x220c6fa:	43	48	90	4	4	0	43
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=9 slot=0 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 21 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Hardware assisted breakpoint 22 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=0 mode=1 appended_metric=75 total=4 model=0x18e1b30 feature_base=0x21ccb00 ids: 52164
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52164 weight=45 feature:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52165 weight=2 feature:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52166 weight=24 feature:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52167 weight=4 feature:0x2225d71:	90	34	4	30	30	30	0
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=10 slot=1 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 23 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Hardware assisted breakpoint 24 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=1 mode=1 appended_metric=9 total=2 model=0x18e1b30 feature_base=0x21ccb00 ids: 32401
+OLD_REPEAT_CLASS_MEMBER slot=1 id=32401 weight=5 feature:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_REPEAT_CLASS_MEMBER slot=1 id=32400 weight=4 feature:0x22040f0:	34	23	43	0	0	43	34
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=11 slot=2 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 25 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Hardware assisted breakpoint 26 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=2 mode=1 appended_metric=5 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 25383
+OLD_REPEAT_CLASS_MEMBER slot=2 id=25383 weight=5 feature:0x21f8111:	23	43	47	0	0	48	23
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=12 slot=3 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 27 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=3 mode=1 key:0x26f0843:	43	48	34	2	2
+Hardware assisted breakpoint 28 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=3 mode=1 appended_metric=1 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 37258
+OLD_REPEAT_CLASS_MEMBER slot=3 id=37258 weight=1 feature:0x220c5c6:	43	48	34	2	2	34	43
+
+All hardware registers have been used
+OLD_REPEAT_FALLBACK_ENTER slot=3
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=13 slot=5 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 29 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=5 mode=1 key:0x26f0b30:	48	34	23	20	20
+Hardware assisted breakpoint 30 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=5 mode=1 appended_metric=73 total=10 model=0x18e1b30 feature_base=0x21ccb00 ids: 3408
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3408 weight=13 feature:0x21d2830:	1	34	4	10	10	5	17
+ 3409
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3409 weight=14 feature:0x21d2837:	1	34	4	10	10	5	30
+ 3410
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3410 weight=19 feature:0x21d283e:	1	34	4	10	10	5	39
+ 3411
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3411 weight=1 feature:0x21d2845:	1	34	4	10	10	5	47
+ 3412
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3412 weight=1 feature:0x21d284c:	1	34	4	10	10	5	54
+ 3413
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3413 weight=6 feature:0x21d2853:	1	34	4	10	10	5	62
+ 3414
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3414 weight=15 feature:0x21d285a:	1	34	4	10	10	5	63
+ 3415
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3415 weight=1 feature:0x21d2861:	1	34	4	10	10	24	62
+ 3433
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3433 weight=1 feature:0x21d28df:	1	34	4	20	20	23	26
+ 3434
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3434 weight=2 feature:0x21d28e6:	1	34	4	20	20	23	30
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=14 slot=6 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 31 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=6 mode=1 key:0x26f0b35:	34	23	43	0	0
+Hardware assisted breakpoint 32 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=6 mode=1 appended_metric=4 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 32400
+OLD_REPEAT_CLASS_MEMBER slot=6 id=32400 weight=4 feature:0x22040f0:	34	23	43	0	0	43	34
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=15 slot=7 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 33 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=7 mode=1 key:0x26f0b3a:	23	43	48	0	0
+Hardware assisted breakpoint 34 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=7 mode=1 appended_metric=5 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 25383
+OLD_REPEAT_CLASS_MEMBER slot=7 id=25383 weight=5 feature:0x21f8111:	23	43	47	0	0	48	23
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=16 slot=8 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 35 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=8 mode=1 key:0x26f0b3f:	43	48	90	4	4
+Hardware assisted breakpoint 36 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=8 mode=1 appended_metric=6 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 37302
+OLD_REPEAT_CLASS_MEMBER slot=8 id=37302 weight=6 feature:0x220c6fa:	43	48	90	4	4	0	43
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=17 slot=0 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 37 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=0 mode=1 key:0x26f0834:	90	34	23	30	30
+Hardware assisted breakpoint 38 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=0 mode=1 appended_metric=75 total=4 model=0x18e1b30 feature_base=0x21ccb00 ids: 52164
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52164 weight=45 feature:0x2225d5c:	90	34	4	30	30	5	0
+ 52165
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52165 weight=2 feature:0x2225d63:	90	34	4	30	30	23	0
+ 52166
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52166 weight=24 feature:0x2225d6a:	90	34	4	30	30	24	0
+ 52167
+OLD_REPEAT_CLASS_MEMBER slot=0 id=52167 weight=4 feature:0x2225d71:	90	34	4	30	30	30	0
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=18 slot=1 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 39 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=1 mode=1 key:0x26f0839:	34	23	43	0	30
+Hardware assisted breakpoint 40 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=1 mode=1 appended_metric=9 total=2 model=0x18e1b30 feature_base=0x21ccb00 ids: 32401
+OLD_REPEAT_CLASS_MEMBER slot=1 id=32401 weight=5 feature:0x22040f7:	34	23	43	0	30	43	34
+ 32400
+OLD_REPEAT_CLASS_MEMBER slot=1 id=32400 weight=4 feature:0x22040f0:	34	23	43	0	0	43	34
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=19 slot=2 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 41 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=2 mode=1 key:0x26f083e:	23	43	48	0	0
+Hardware assisted breakpoint 42 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=2 mode=1 appended_metric=5 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 25383
+OLD_REPEAT_CLASS_MEMBER slot=2 id=25383 weight=5 feature:0x21f8111:	23	43	47	0	0	48	23
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=20 slot=3 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 43 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=3 mode=1 key:0x26f0843:	43	48	34	2	2
+Hardware assisted breakpoint 44 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=3 mode=1 appended_metric=1 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 37258
+OLD_REPEAT_CLASS_MEMBER slot=3 id=37258 weight=1 feature:0x220c5c6:	43	48	34	2	2	34	43
+
+All hardware registers have been used
+OLD_REPEAT_FALLBACK_ENTER slot=3
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=21 slot=5 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 45 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=5 mode=1 key:0x26f0b30:	48	34	23	20	20
+Hardware assisted breakpoint 46 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=5 mode=1 appended_metric=73 total=10 model=0x18e1b30 feature_base=0x21ccb00 ids: 3408
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3408 weight=13 feature:0x21d2830:	1	34	4	10	10	5	17
+ 3409
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3409 weight=14 feature:0x21d2837:	1	34	4	10	10	5	30
+ 3410
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3410 weight=19 feature:0x21d283e:	1	34	4	10	10	5	39
+ 3411
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3411 weight=1 feature:0x21d2845:	1	34	4	10	10	5	47
+ 3412
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3412 weight=1 feature:0x21d284c:	1	34	4	10	10	5	54
+ 3413
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3413 weight=6 feature:0x21d2853:	1	34	4	10	10	5	62
+ 3414
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3414 weight=15 feature:0x21d285a:	1	34	4	10	10	5	63
+ 3415
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3415 weight=1 feature:0x21d2861:	1	34	4	10	10	24	62
+ 3433
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3433 weight=1 feature:0x21d28df:	1	34	4	20	20	23	26
+ 3434
+OLD_REPEAT_CLASS_MEMBER slot=5 id=3434 weight=2 feature:0x21d28e6:	1	34	4	20	20	23	30
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=22 slot=6 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 47 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=6 mode=1 key:0x26f0b35:	34	23	43	0	0
+Hardware assisted breakpoint 48 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=6 mode=1 appended_metric=4 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 32400
+OLD_REPEAT_CLASS_MEMBER slot=6 id=32400 weight=4 feature:0x22040f0:	34	23	43	0	0	43	34
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=23 slot=7 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 49 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=7 mode=1 key:0x26f0b3a:	23	43	48	0	0
+Hardware assisted breakpoint 50 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=7 mode=1 appended_metric=5 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 25383
+OLD_REPEAT_CLASS_MEMBER slot=7 id=25383 weight=5 feature:0x21f8111:	23	43	47	0	0	48	23
+
+All hardware registers have been used
+OLD_REPEAT_SPLIT_ENTER n=24 slot=8 state=0x26f0020 context=0x18e1b30
+Hardware assisted breakpoint 51 at 0x1001e621
+All hardware registers have been used
+OLD_REPEAT_CLASS_LOOKUP slot=8 mode=1 key:0x26f0b3f:	43	48	90	4	4
+Hardware assisted breakpoint 52 at 0x1001e012
+All hardware registers have been used
+All hardware registers have been used
+OLD_REPEAT_CLASS_RETURN slot=8 mode=1 appended_metric=6 total=1 model=0x18e1b30 feature_base=0x21ccb00 ids: 37302
+OLD_REPEAT_CLASS_MEMBER slot=8 id=37302 weight=6 feature:0x220c6fa:	43	48	90	4	4	0	43
+
+All hardware registers have been used
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\probe\probe-original-kate-2006.exe'/00000000 @004013E0 (204288<1830>)
+0114:0118: create thread I @004013E0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @10000000 (0<0>)
+00000114:00000118: unload DLL @10000000
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78D00000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78C80000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL C:\windows\system32\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: unload DLL @10000000
+00000114:00000118: unload DLL @779C0000
+00000114:00000118: unload DLL @7AE40000
+00000114:00000118: unload DLL @77940000
+00000114:00000118: unload DLL @77970000
+00000114:00000118: unload DLL @78D00000
+00000114:00000118: unload DLL @7A9F0000
+00000114:00000118: unload DLL @79E40000
+00000114:00000118: unload DLL @7A890000
+00000114:00000118: unload DLL @79EA0000
+00000114:00000118: unload DLL @78C80000
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

@@ -1,0 +1,25 @@
+VoiceText Paul 2013 FUN_1000d640 high-byte scanner behavior
+
+The Stage 35 scanner port previously rejected every high-bit byte. The
+checked-in Ghidra pseudocode does not impose that guard. Its ordinary-byte
+path consults `DAT_1007e188` only for the period/comma grouping condition;
+Stage 104 records that the signed-index table prefix used for bytes 0x80-0xff
+is zero. Those bytes therefore miss the grouping condition and are copied by
+the scanner's ordinary path.
+
+There is one explicit pair check in that path: when the source length is not
+two, output already contains a byte, and the current source begins `0xa2 0xfe`,
+the output is terminated and the unconsumed source beginning at that pair is
+retained as the remainder. This report preserves the observed byte condition
+without assigning character or encoding semantics to the pair.
+
+The Go scanner now copies other high-bit bytes and exposes the pair split as
+`SplitAtNativePair`. `TransformPaul2013ASCIIModelSourceString` remains a
+strict-ASCII convenience wrapper; callers needing the native byte behavior
+must use the character-table entry point. Evidence is the `FUN_1000d640`
+pseudocode in `stage6-deep-text-functions.txt`, lines 2554-2951, checked
+against the signed table prefix in `stage104-signed-character-table-prefixes.txt`.
+
+This is static behavior coverage only. No row-for-row runtime comparison of
+the model-source scanner has been made, and the later contraction/normalizer
+chain remains separate.

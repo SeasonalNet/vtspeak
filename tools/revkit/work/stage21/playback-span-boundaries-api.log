@@ -1,0 +1,96 @@
+
+=== INPUT A A A ===
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\ text=A A A bytes=4120412041
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153937011
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153937575
+MESSAGE hwnd=0002004a message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153937575
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000000 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153937575
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153937575
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153937667
+MESSAGE hwnd=0002004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153937676
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000002 lparam=0x00000002 open=1 done=1 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153937676
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153937676
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153937767
+MESSAGE hwnd=0002004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8440 open=1 done=2 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153937777
+MESSAGE hwnd=0002004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8460 open=1 done=3 caller=2
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153937787
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000004 lparam=0x00000004 open=1 done=3 caller=3
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153937787
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=3 caller=4
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153937787
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153937787
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153937787
+PLAYBACK_END elapsed_ms=212 open=1 done=3 caller=4 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153937787
+PROBE_END
+
+=== INPUT Hello, world! ===
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\ text=Hello, world! bytes=48656c6c6f2c20776f726c6421
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153942376
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153943103
+MESSAGE hwnd=0003004c message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153943103
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000004 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153943103
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153943103
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153943194
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153943294
+MESSAGE hwnd=0003004c message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153943304
+MESSAGE hwnd=0003004c message=0x03bd wparam=0x0000ff00 lparam=0x100a8440 open=1 done=2 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153943304
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000004 open=1 done=2 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153943304
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000007 lparam=0x0000000b open=1 done=2 caller=3
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153943304
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153943304
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153943404
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153943504
+MESSAGE hwnd=0003004c message=0x03bd wparam=0x0000ff00 lparam=0x100a8460 open=1 done=3 caller=3
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153943514
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=3 caller=4
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153943515
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153943515
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153943515
+PLAYBACK_END elapsed_ms=412 open=1 done=3 caller=4 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153943515
+PROBE_END
+
+=== INPUT hex:636166e9206e6f6972 ===
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\ text=café noir bytes=636166e9206e6f6972
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153948824
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153949431
+MESSAGE hwnd=0004004e message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153949431
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000003 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153949431
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153949431
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153949522
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153949622
+MESSAGE hwnd=0004004e message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153949631
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000005 lparam=0x00000008 open=1 done=1 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153949631
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153949631
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153949731
+MESSAGE hwnd=0004004e message=0x03bd wparam=0x0000ff00 lparam=0x100a8440 open=1 done=2 caller=2
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153949742
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=2 caller=3
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153949742
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153949742
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153949742
+PLAYBACK_END elapsed_ms=311 open=1 done=2 caller=3 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153949742
+PROBE_END
+X connection to :99 broken (explicit kill or server shutdown).

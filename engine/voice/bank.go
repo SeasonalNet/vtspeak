@@ -136,6 +136,25 @@ func validateUnitTiming(record dat.UnitRecord, upm, pcm []byte) error {
 	if record.UPMEdges != [3]byte{upm[0], upm[sharedIndex], upm[len(upm)-1]} {
 		return errors.New("cached UPM edge bytes do not match the combined vector")
 	}
+	firstSide, secondSide, err := record.UPMSides(upm)
+	if err != nil {
+		return err
+	}
+	var firstSideSamples, secondSideSamples uint64
+	for _, period := range firstSide {
+		firstSideSamples += uint64(period) * 2
+	}
+	for _, period := range secondSide {
+		secondSideSamples += uint64(period) * 2
+	}
+	if firstSideSamples != uint64(record.FirstSideSamples) ||
+		secondSideSamples != uint64(record.SecondSideSamples) {
+		return fmt.Errorf(
+			"UPM sides describe %d and %d samples; unit record declares %d and %d",
+			firstSideSamples, secondSideSamples,
+			record.FirstSideSamples, record.SecondSideSamples,
+		)
+	}
 	var expectedSamples uint64
 	for _, period := range upm {
 		expectedSamples += uint64(period) * 2

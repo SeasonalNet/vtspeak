@@ -1,0 +1,443 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>> > > > > >>>Wine-gdb> Wine-gdb> Continuing.
+INFO_ID request=-128 result=2 output=0xa5a5a5a5
+INFO_ID request=-127 result=2 output=0xa5a5a5a5
+INFO_ID request=-126 result=2 output=0xa5a5a5a5
+INFO_ID request=-125 result=2 output=0xa5a5a5a5
+INFO_ID request=-124 result=2 output=0xa5a5a5a5
+INFO_ID request=-123 result=2 output=0xa5a5a5a5
+INFO_ID request=-122 result=2 output=0xa5a5a5a5
+INFO_ID request=-121 result=2 output=0xa5a5a5a5
+INFO_ID request=-120 result=2 output=0xa5a5a5a5
+INFO_ID request=-119 result=2 output=0xa5a5a5a5
+INFO_ID request=-118 result=2 output=0xa5a5a5a5
+INFO_ID request=-117 result=2 output=0xa5a5a5a5
+INFO_ID request=-116 result=2 output=0xa5a5a5a5
+INFO_ID request=-115 result=2 output=0xa5a5a5a5
+INFO_ID request=-114 result=2 output=0xa5a5a5a5
+INFO_ID request=-113 result=2 output=0xa5a5a5a5
+INFO_ID request=-112 result=2 output=0xa5a5a5a5
+INFO_ID request=-111 result=2 output=0xa5a5a5a5
+INFO_ID request=-110 result=2 output=0xa5a5a5a5
+INFO_ID request=-109 result=2 output=0xa5a5a5a5
+INFO_ID request=-108 result=2 output=0xa5a5a5a5
+INFO_ID request=-107 result=2 output=0xa5a5a5a5
+INFO_ID request=-106 result=2 output=0xa5a5a5a5
+INFO_ID request=-105 result=2 output=0xa5a5a5a5
+INFO_ID request=-104 result=2 output=0xa5a5a5a5
+INFO_ID request=-103 result=2 output=0xa5a5a5a5
+INFO_ID request=-102 result=2 output=0xa5a5a5a5
+INFO_ID request=-101 result=2 output=0xa5a5a5a5
+INFO_ID request=-100 result=2 output=0xa5a5a5a5
+INFO_ID request=-99 result=2 output=0xa5a5a5a5
+INFO_ID request=-98 result=2 output=0xa5a5a5a5
+INFO_ID request=-97 result=2 output=0xa5a5a5a5
+INFO_ID request=-96 result=2 output=0xa5a5a5a5
+INFO_ID request=-95 result=2 output=0xa5a5a5a5
+INFO_ID request=-94 result=2 output=0xa5a5a5a5
+INFO_ID request=-93 result=2 output=0xa5a5a5a5
+INFO_ID request=-92 result=2 output=0xa5a5a5a5
+INFO_ID request=-91 result=2 output=0xa5a5a5a5
+INFO_ID request=-90 result=2 output=0xa5a5a5a5
+INFO_ID request=-89 result=2 output=0xa5a5a5a5
+INFO_ID request=-88 result=2 output=0xa5a5a5a5
+INFO_ID request=-87 result=2 output=0xa5a5a5a5
+INFO_ID request=-86 result=2 output=0xa5a5a5a5
+INFO_ID request=-85 result=2 output=0xa5a5a5a5
+INFO_ID request=-84 result=2 output=0xa5a5a5a5
+INFO_ID request=-83 result=2 output=0xa5a5a5a5
+INFO_ID request=-82 result=2 output=0xa5a5a5a5
+INFO_ID request=-81 result=2 output=0xa5a5a5a5
+INFO_ID request=-80 result=2 output=0xa5a5a5a5
+INFO_ID request=-79 result=2 output=0xa5a5a5a5
+INFO_ID request=-78 result=2 output=0xa5a5a5a5
+INFO_ID request=-77 result=2 output=0xa5a5a5a5
+INFO_ID request=-76 result=2 output=0xa5a5a5a5
+INFO_ID request=-75 result=2 output=0xa5a5a5a5
+INFO_ID request=-74 result=2 output=0xa5a5a5a5
+INFO_ID request=-73 result=2 output=0xa5a5a5a5
+INFO_ID request=-72 result=2 output=0xa5a5a5a5
+INFO_ID request=-71 result=2 output=0xa5a5a5a5
+INFO_ID request=-70 result=2 output=0xa5a5a5a5
+INFO_ID request=-69 result=2 output=0xa5a5a5a5
+INFO_ID request=-68 result=2 output=0xa5a5a5a5
+INFO_ID request=-67 result=2 output=0xa5a5a5a5
+INFO_ID request=-66 result=2 output=0xa5a5a5a5
+INFO_ID request=-65 result=2 output=0xa5a5a5a5
+INFO_ID request=-64 result=2 output=0xa5a5a5a5
+INFO_ID request=-63 result=2 output=0xa5a5a5a5
+INFO_ID request=-62 result=2 output=0xa5a5a5a5
+INFO_ID request=-61 result=2 output=0xa5a5a5a5
+INFO_ID request=-60 result=2 output=0xa5a5a5a5
+INFO_ID request=-59 result=2 output=0xa5a5a5a5
+INFO_ID request=-58 result=2 output=0xa5a5a5a5
+INFO_ID request=-57 result=2 output=0xa5a5a5a5
+INFO_ID request=-56 result=2 output=0xa5a5a5a5
+INFO_ID request=-55 result=2 output=0xa5a5a5a5
+INFO_ID request=-54 result=2 output=0xa5a5a5a5
+INFO_ID request=-53 result=2 output=0xa5a5a5a5
+INFO_ID request=-52 result=2 output=0xa5a5a5a5
+INFO_ID request=-51 result=2 output=0xa5a5a5a5
+INFO_ID request=-50 result=2 output=0xa5a5a5a5
+INFO_ID request=-49 result=2 output=0xa5a5a5a5
+INFO_ID request=-48 result=2 output=0xa5a5a5a5
+INFO_ID request=-47 result=2 output=0xa5a5a5a5
+INFO_ID request=-46 result=2 output=0xa5a5a5a5
+INFO_ID request=-45 result=2 output=0xa5a5a5a5
+INFO_ID request=-44 result=2 output=0xa5a5a5a5
+INFO_ID request=-43 result=2 output=0xa5a5a5a5
+INFO_ID request=-42 result=2 output=0xa5a5a5a5
+INFO_ID request=-41 result=2 output=0xa5a5a5a5
+INFO_ID request=-40 result=2 output=0xa5a5a5a5
+INFO_ID request=-39 result=2 output=0xa5a5a5a5
+INFO_ID request=-38 result=2 output=0xa5a5a5a5
+INFO_ID request=-37 result=2 output=0xa5a5a5a5
+INFO_ID request=-36 result=2 output=0xa5a5a5a5
+INFO_ID request=-35 result=2 output=0xa5a5a5a5
+INFO_ID request=-34 result=2 output=0xa5a5a5a5
+INFO_ID request=-33 result=2 output=0xa5a5a5a5
+INFO_ID request=-32 result=2 output=0xa5a5a5a5
+INFO_ID request=-31 result=2 output=0xa5a5a5a5
+INFO_ID request=-30 result=2 output=0xa5a5a5a5
+INFO_ID request=-29 result=2 output=0xa5a5a5a5
+INFO_ID request=-28 result=2 output=0xa5a5a5a5
+INFO_ID request=-27 result=2 output=0xa5a5a5a5
+INFO_ID request=-26 result=2 output=0xa5a5a5a5
+INFO_ID request=-25 result=2 output=0xa5a5a5a5
+INFO_ID request=-24 result=2 output=0xa5a5a5a5
+INFO_ID request=-23 result=2 output=0xa5a5a5a5
+INFO_ID request=-22 result=2 output=0xa5a5a5a5
+INFO_ID request=-21 result=2 output=0xa5a5a5a5
+INFO_ID request=-20 result=2 output=0xa5a5a5a5
+INFO_ID request=-19 result=2 output=0xa5a5a5a5
+INFO_ID request=-18 result=2 output=0xa5a5a5a5
+INFO_ID request=-17 result=2 output=0xa5a5a5a5
+INFO_ID request=-16 result=2 output=0xa5a5a5a5
+INFO_ID request=-15 result=2 output=0xa5a5a5a5
+INFO_ID request=-14 result=2 output=0xa5a5a5a5
+INFO_ID request=-13 result=2 output=0xa5a5a5a5
+INFO_ID request=-12 result=2 output=0xa5a5a5a5
+INFO_ID request=-11 result=2 output=0xa5a5a5a5
+INFO_ID request=-10 result=2 output=0xa5a5a5a5
+INFO_ID request=-9 result=2 output=0xa5a5a5a5
+INFO_ID request=-8 result=2 output=0xa5a5a5a5
+INFO_ID request=-7 result=2 output=0xa5a5a5a5
+INFO_ID request=-6 result=2 output=0xa5a5a5a5
+INFO_ID request=-5 result=2 output=0xa5a5a5a5
+INFO_ID request=-4 result=2 output=0xa5a5a5a5
+INFO_ID request=-3 result=2 output=0xa5a5a5a5
+INFO_ID request=-2 result=2 output=0xa5a5a5a5
+INFO_ID request=-1 result=2 output=0xa5a5a5a5
+INFO_ID request=0 result=4 output=0xa5a5a5a5
+INFO_ID request=1 result=0 output=0
+INFO_ID request=2 result=0 output=0x6
+INFO_ID request=3 result=0 output=0x2f2e2e
+INFO_ID request=4 result=0 output=0
+INFO_ID request=5 result=0 output=0x6
+INFO_ID request=6 result=0 output=0x1
+INFO_ID request=7 result=0 output=0x4e4
+INFO_ID request=8 result=0 output=0
+INFO_ID request=9 result=0 output=0
+INFO_ID request=10 result=0 output=0x3e80
+INFO_ID request=11 result=0 output=0xc8
+INFO_ID request=12 result=0 output=0x64
+INFO_ID request=13 result=0 output=0x32
+INFO_ID request=14 result=0 output=0x190
+INFO_ID request=15 result=0 output=0x64
+INFO_ID request=16 result=0 output=0x32
+INFO_ID request=17 result=0 output=0x1f4
+INFO_ID request=18 result=0 output=0x64
+INFO_ID request=19 result=0 output=0
+INFO_ID request=20 result=0 output=0xffff
+INFO_ID request=21 result=0 output=0x2af
+INFO_ID request=22 result=0 output=0
+INFO_ID request=23 result=0 output=0xa5a5a5a5
+INFO_ID request=24 result=0 output=0xffff
+INFO_ID request=25 result=0 output=0xc8
+INFO_ID request=26 result=0 output=0
+INFO_ID request=27 result=2 output=0xa5a5a5a5
+INFO_ID request=28 result=2 output=0xa5a5a5a5
+INFO_ID request=29 result=2 output=0xa5a5a5a5
+INFO_ID request=30 result=2 output=0xa5a5a5a5
+INFO_ID request=31 result=2 output=0xa5a5a5a5
+INFO_ID request=32 result=2 output=0xa5a5a5a5
+INFO_ID request=33 result=2 output=0xa5a5a5a5
+INFO_ID request=34 result=2 output=0xa5a5a5a5
+INFO_ID request=35 result=2 output=0xa5a5a5a5
+INFO_ID request=36 result=2 output=0xa5a5a5a5
+INFO_ID request=37 result=2 output=0xa5a5a5a5
+INFO_ID request=38 result=2 output=0xa5a5a5a5
+INFO_ID request=39 result=2 output=0xa5a5a5a5
+INFO_ID request=40 result=2 output=0xa5a5a5a5
+INFO_ID request=41 result=2 output=0xa5a5a5a5
+INFO_ID request=42 result=2 output=0xa5a5a5a5
+INFO_ID request=43 result=2 output=0xa5a5a5a5
+INFO_ID request=44 result=2 output=0xa5a5a5a5
+INFO_ID request=45 result=2 output=0xa5a5a5a5
+INFO_ID request=46 result=2 output=0xa5a5a5a5
+INFO_ID request=47 result=2 output=0xa5a5a5a5
+INFO_ID request=48 result=2 output=0xa5a5a5a5
+INFO_ID request=49 result=2 output=0xa5a5a5a5
+INFO_ID request=50 result=2 output=0xa5a5a5a5
+INFO_ID request=51 result=2 output=0xa5a5a5a5
+INFO_ID request=52 result=2 output=0xa5a5a5a5
+INFO_ID request=53 result=2 output=0xa5a5a5a5
+INFO_ID request=54 result=2 output=0xa5a5a5a5
+INFO_ID request=55 result=2 output=0xa5a5a5a5
+INFO_ID request=56 result=2 output=0xa5a5a5a5
+INFO_ID request=57 result=2 output=0xa5a5a5a5
+INFO_ID request=58 result=2 output=0xa5a5a5a5
+INFO_ID request=59 result=2 output=0xa5a5a5a5
+INFO_ID request=60 result=2 output=0xa5a5a5a5
+INFO_ID request=61 result=2 output=0xa5a5a5a5
+INFO_ID request=62 result=2 output=0xa5a5a5a5
+INFO_ID request=63 result=2 output=0xa5a5a5a5
+INFO_ID request=64 result=2 output=0xa5a5a5a5
+INFO_ID request=65 result=2 output=0xa5a5a5a5
+INFO_ID request=66 result=2 output=0xa5a5a5a5
+INFO_ID request=67 result=2 output=0xa5a5a5a5
+INFO_ID request=68 result=2 output=0xa5a5a5a5
+INFO_ID request=69 result=2 output=0xa5a5a5a5
+INFO_ID request=70 result=2 output=0xa5a5a5a5
+INFO_ID request=71 result=2 output=0xa5a5a5a5
+INFO_ID request=72 result=2 output=0xa5a5a5a5
+INFO_ID request=73 result=2 output=0xa5a5a5a5
+INFO_ID request=74 result=2 output=0xa5a5a5a5
+INFO_ID request=75 result=2 output=0xa5a5a5a5
+INFO_ID request=76 result=2 output=0xa5a5a5a5
+INFO_ID request=77 result=2 output=0xa5a5a5a5
+INFO_ID request=78 result=2 output=0xa5a5a5a5
+INFO_ID request=79 result=2 output=0xa5a5a5a5
+INFO_ID request=80 result=2 output=0xa5a5a5a5
+INFO_ID request=81 result=2 output=0xa5a5a5a5
+INFO_ID request=82 result=2 output=0xa5a5a5a5
+INFO_ID request=83 result=2 output=0xa5a5a5a5
+INFO_ID request=84 result=2 output=0xa5a5a5a5
+INFO_ID request=85 result=2 output=0xa5a5a5a5
+INFO_ID request=86 result=2 output=0xa5a5a5a5
+INFO_ID request=87 result=2 output=0xa5a5a5a5
+INFO_ID request=88 result=2 output=0xa5a5a5a5
+INFO_ID request=89 result=2 output=0xa5a5a5a5
+INFO_ID request=90 result=2 output=0xa5a5a5a5
+INFO_ID request=91 result=2 output=0xa5a5a5a5
+INFO_ID request=92 result=2 output=0xa5a5a5a5
+INFO_ID request=93 result=2 output=0xa5a5a5a5
+INFO_ID request=94 result=2 output=0xa5a5a5a5
+INFO_ID request=95 result=2 output=0xa5a5a5a5
+INFO_ID request=96 result=2 output=0xa5a5a5a5
+INFO_ID request=97 result=2 output=0xa5a5a5a5
+INFO_ID request=98 result=2 output=0xa5a5a5a5
+INFO_ID request=99 result=2 output=0xa5a5a5a5
+INFO_ID request=100 result=2 output=0xa5a5a5a5
+INFO_ID request=101 result=0 output=0xa5a5a5a5
+INFO_ID request=102 result=2 output=0xa5a5a5a5
+INFO_ID request=103 result=2 output=0xa5a5a5a5
+INFO_ID request=104 result=2 output=0xa5a5a5a5
+INFO_ID request=105 result=2 output=0xa5a5a5a5
+INFO_ID request=106 result=2 output=0xa5a5a5a5
+INFO_ID request=107 result=2 output=0xa5a5a5a5
+INFO_ID request=108 result=2 output=0xa5a5a5a5
+INFO_ID request=109 result=2 output=0xa5a5a5a5
+INFO_ID request=110 result=2 output=0xa5a5a5a5
+INFO_ID request=111 result=2 output=0xa5a5a5a5
+INFO_ID request=112 result=2 output=0xa5a5a5a5
+INFO_ID request=113 result=2 output=0xa5a5a5a5
+INFO_ID request=114 result=2 output=0xa5a5a5a5
+INFO_ID request=115 result=2 output=0xa5a5a5a5
+INFO_ID request=116 result=2 output=0xa5a5a5a5
+INFO_ID request=117 result=2 output=0xa5a5a5a5
+INFO_ID request=118 result=2 output=0xa5a5a5a5
+INFO_ID request=119 result=2 output=0xa5a5a5a5
+INFO_ID request=120 result=2 output=0xa5a5a5a5
+INFO_ID request=121 result=2 output=0xa5a5a5a5
+INFO_ID request=122 result=2 output=0xa5a5a5a5
+INFO_ID request=123 result=2 output=0xa5a5a5a5
+INFO_ID request=124 result=2 output=0xa5a5a5a5
+INFO_ID request=125 result=2 output=0xa5a5a5a5
+INFO_ID request=126 result=2 output=0xa5a5a5a5
+INFO_ID request=127 result=2 output=0xa5a5a5a5
+INFO_ID request=128 result=2 output=0xa5a5a5a5
+INFO_ID request=129 result=2 output=0xa5a5a5a5
+INFO_ID request=130 result=2 output=0xa5a5a5a5
+INFO_ID request=131 result=2 output=0xa5a5a5a5
+INFO_ID request=132 result=2 output=0xa5a5a5a5
+INFO_ID request=133 result=2 output=0xa5a5a5a5
+INFO_ID request=134 result=2 output=0xa5a5a5a5
+INFO_ID request=135 result=2 output=0xa5a5a5a5
+INFO_ID request=136 result=2 output=0xa5a5a5a5
+INFO_ID request=137 result=2 output=0xa5a5a5a5
+INFO_ID request=138 result=2 output=0xa5a5a5a5
+INFO_ID request=139 result=2 output=0xa5a5a5a5
+INFO_ID request=140 result=2 output=0xa5a5a5a5
+INFO_ID request=141 result=2 output=0xa5a5a5a5
+INFO_ID request=142 result=2 output=0xa5a5a5a5
+INFO_ID request=143 result=2 output=0xa5a5a5a5
+INFO_ID request=144 result=2 output=0xa5a5a5a5
+INFO_ID request=145 result=2 output=0xa5a5a5a5
+INFO_ID request=146 result=2 output=0xa5a5a5a5
+INFO_ID request=147 result=2 output=0xa5a5a5a5
+INFO_ID request=148 result=2 output=0xa5a5a5a5
+INFO_ID request=149 result=2 output=0xa5a5a5a5
+INFO_ID request=150 result=2 output=0xa5a5a5a5
+INFO_ID request=151 result=2 output=0xa5a5a5a5
+INFO_ID request=152 result=2 output=0xa5a5a5a5
+INFO_ID request=153 result=2 output=0xa5a5a5a5
+INFO_ID request=154 result=2 output=0xa5a5a5a5
+INFO_ID request=155 result=2 output=0xa5a5a5a5
+INFO_ID request=156 result=2 output=0xa5a5a5a5
+INFO_ID request=157 result=2 output=0xa5a5a5a5
+INFO_ID request=158 result=2 output=0xa5a5a5a5
+INFO_ID request=159 result=2 output=0xa5a5a5a5
+INFO_ID request=160 result=2 output=0xa5a5a5a5
+INFO_ID request=161 result=2 output=0xa5a5a5a5
+INFO_ID request=162 result=2 output=0xa5a5a5a5
+INFO_ID request=163 result=2 output=0xa5a5a5a5
+INFO_ID request=164 result=2 output=0xa5a5a5a5
+INFO_ID request=165 result=2 output=0xa5a5a5a5
+INFO_ID request=166 result=2 output=0xa5a5a5a5
+INFO_ID request=167 result=2 output=0xa5a5a5a5
+INFO_ID request=168 result=2 output=0xa5a5a5a5
+INFO_ID request=169 result=2 output=0xa5a5a5a5
+INFO_ID request=170 result=2 output=0xa5a5a5a5
+INFO_ID request=171 result=2 output=0xa5a5a5a5
+INFO_ID request=172 result=2 output=0xa5a5a5a5
+INFO_ID request=173 result=2 output=0xa5a5a5a5
+INFO_ID request=174 result=2 output=0xa5a5a5a5
+INFO_ID request=175 result=2 output=0xa5a5a5a5
+INFO_ID request=176 result=2 output=0xa5a5a5a5
+INFO_ID request=177 result=2 output=0xa5a5a5a5
+INFO_ID request=178 result=2 output=0xa5a5a5a5
+INFO_ID request=179 result=2 output=0xa5a5a5a5
+INFO_ID request=180 result=2 output=0xa5a5a5a5
+INFO_ID request=181 result=2 output=0xa5a5a5a5
+INFO_ID request=182 result=2 output=0xa5a5a5a5
+INFO_ID request=183 result=2 output=0xa5a5a5a5
+INFO_ID request=184 result=2 output=0xa5a5a5a5
+INFO_ID request=185 result=2 output=0xa5a5a5a5
+INFO_ID request=186 result=2 output=0xa5a5a5a5
+INFO_ID request=187 result=2 output=0xa5a5a5a5
+INFO_ID request=188 result=2 output=0xa5a5a5a5
+INFO_ID request=189 result=2 output=0xa5a5a5a5
+INFO_ID request=190 result=2 output=0xa5a5a5a5
+INFO_ID request=191 result=2 output=0xa5a5a5a5
+INFO_ID request=192 result=2 output=0xa5a5a5a5
+INFO_ID request=193 result=2 output=0xa5a5a5a5
+INFO_ID request=194 result=2 output=0xa5a5a5a5
+INFO_ID request=195 result=2 output=0xa5a5a5a5
+INFO_ID request=196 result=2 output=0xa5a5a5a5
+INFO_ID request=197 result=2 output=0xa5a5a5a5
+INFO_ID request=198 result=2 output=0xa5a5a5a5
+INFO_ID request=199 result=2 output=0xa5a5a5a5
+INFO_ID request=200 result=2 output=0xa5a5a5a5
+INFO_ID request=201 result=2 output=0xa5a5a5a5
+INFO_ID request=202 result=2 output=0xa5a5a5a5
+INFO_ID request=203 result=2 output=0xa5a5a5a5
+INFO_ID request=204 result=2 output=0xa5a5a5a5
+INFO_ID request=205 result=2 output=0xa5a5a5a5
+INFO_ID request=206 result=2 output=0xa5a5a5a5
+INFO_ID request=207 result=2 output=0xa5a5a5a5
+INFO_ID request=208 result=2 output=0xa5a5a5a5
+INFO_ID request=209 result=2 output=0xa5a5a5a5
+INFO_ID request=210 result=2 output=0xa5a5a5a5
+INFO_ID request=211 result=2 output=0xa5a5a5a5
+INFO_ID request=212 result=2 output=0xa5a5a5a5
+INFO_ID request=213 result=2 output=0xa5a5a5a5
+INFO_ID request=214 result=2 output=0xa5a5a5a5
+INFO_ID request=215 result=2 output=0xa5a5a5a5
+INFO_ID request=216 result=2 output=0xa5a5a5a5
+INFO_ID request=217 result=2 output=0xa5a5a5a5
+INFO_ID request=218 result=2 output=0xa5a5a5a5
+INFO_ID request=219 result=2 output=0xa5a5a5a5
+INFO_ID request=220 result=2 output=0xa5a5a5a5
+INFO_ID request=221 result=2 output=0xa5a5a5a5
+INFO_ID request=222 result=2 output=0xa5a5a5a5
+INFO_ID request=223 result=2 output=0xa5a5a5a5
+INFO_ID request=224 result=2 output=0xa5a5a5a5
+INFO_ID request=225 result=2 output=0xa5a5a5a5
+INFO_ID request=226 result=2 output=0xa5a5a5a5
+INFO_ID request=227 result=2 output=0xa5a5a5a5
+INFO_ID request=228 result=2 output=0xa5a5a5a5
+INFO_ID request=229 result=2 output=0xa5a5a5a5
+INFO_ID request=230 result=2 output=0xa5a5a5a5
+INFO_ID request=231 result=2 output=0xa5a5a5a5
+INFO_ID request=232 result=2 output=0xa5a5a5a5
+INFO_ID request=233 result=2 output=0xa5a5a5a5
+INFO_ID request=234 result=2 output=0xa5a5a5a5
+INFO_ID request=235 result=2 output=0xa5a5a5a5
+INFO_ID request=236 result=2 output=0xa5a5a5a5
+INFO_ID request=237 result=2 output=0xa5a5a5a5
+INFO_ID request=238 result=2 output=0xa5a5a5a5
+INFO_ID request=239 result=2 output=0xa5a5a5a5
+INFO_ID request=240 result=2 output=0xa5a5a5a5
+INFO_ID request=241 result=2 output=0xa5a5a5a5
+INFO_ID request=242 result=2 output=0xa5a5a5a5
+INFO_ID request=243 result=2 output=0xa5a5a5a5
+INFO_ID request=244 result=2 output=0xa5a5a5a5
+INFO_ID request=245 result=2 output=0xa5a5a5a5
+INFO_ID request=246 result=2 output=0xa5a5a5a5
+INFO_ID request=247 result=2 output=0xa5a5a5a5
+INFO_ID request=248 result=2 output=0xa5a5a5a5
+INFO_ID request=249 result=2 output=0xa5a5a5a5
+INFO_ID request=250 result=2 output=0xa5a5a5a5
+INFO_ID request=251 result=2 output=0xa5a5a5a5
+INFO_ID request=252 result=2 output=0xa5a5a5a5
+INFO_ID request=253 result=2 output=0xa5a5a5a5
+INFO_ID request=254 result=2 output=0xa5a5a5a5
+INFO_ID request=255 result=2 output=0xa5a5a5a5
+INFO_ID request=256 result=2 output=0xa5a5a5a5
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78A80000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78A00000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @781B0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780B0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @77EF0000 (671744<3646>)
+00000114:00000118: exit process (0)

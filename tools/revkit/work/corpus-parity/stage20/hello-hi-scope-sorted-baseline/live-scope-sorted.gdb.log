@@ -1,0 +1,7 @@
+Wine-gdb> Breakpoint 1 at 0x10023d43
+Hardware assisted breakpoint 2 at 0x408187
+HELLO_SORTED_SCOPE query=2b305a4500 count=51/work/stage20/trace-2013-hello-hi-prefix-scope-sorted-common.gdb:39: Error in sourced command file:
+Cannot access memory at address 0x8
+Wine-gdb> Detaching from program: /samples/voicetext_kate.exe, Remote target
+Ending remote debugging.
+[Inferior 1 (Remote target) detached]

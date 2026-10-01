@@ -1,0 +1,51 @@
+Lead 6 heap-start data export: bundled-host lookup survey
+
+Inputs: binary/voicetext_{kate,julie,james,paul}.exe and their matching
+vt_{kat,jul,pau,jam}.dll files. All are read-only analysis inputs.
+
+For each of the four executables, `objdump -p` shows a matching voice DLL
+import and exactly these six named imports from it:
+
+  VT_GetTTSInfo_ENG
+  VT_LOADTTS_ENG
+  VT_SetCommaPause_ENG
+  VT_SetPitchSpeedVolumePause_ENG
+  VT_TextToFile_ENG
+  VT_UNLOADTTS_ENG
+
+None of the five DLL data exports appears in those import tables. Each EXE
+also imports GetModuleHandleW and GetProcAddress from KERNEL32. Disassembly
+shows one reference to the GetProcAddress IAT entry (VA 0x0040b15c), in
+`_init_codepage_func` at VA 0x00407b0c. That routine obtains `msvcrt.dll` with
+GetModuleHandleW, queries `___lc_codepage_func` (string VA 0x004095d6), falls
+back to `__lc_codepage` (VA 0x004095ea), and stores/jumps to the returned CRT
+function. The four copies have the same code and string addresses. Thus their
+GetProcAddress use is for CRT codepage initialization, not dynamic VoiceText
+export lookup.
+
+This rules out a named import or a dynamic GetProcAddress lookup by these four
+bundled executables. It does not establish whether an external/third-party
+host imports or resolves VT_gHeapStartAddress_ENG.
+
+All four matching DLLs have the same observed Windows-heap path using a
+different cell. At VA 0x10066924, a call to imported `HeapCreate` stores its
+returned handle at VA 0x101004a0. The allocator routines call imported
+`HeapAlloc`, `HeapFree`, and `HeapReAlloc` with that handle; cleanup calls
+`HeapDestroy` with it. Each DLL has the same exported zero-filled cell at VA
+0x100ff11c (RVA 0xff11c), and disassembly scans of all four contain no direct
+reference to that address. This establishes the handle used by the internal
+Windows-heap routines in these four binaries, not the intended meaning of the
+separate exported data variable.
+
+Reproduce the checks from the repository root:
+
+  objdump -p binary/voicetext_kate.exe
+  objdump -p binary/voicetext_julie.exe
+  objdump -p binary/voicetext_james.exe
+  objdump -p binary/voicetext_paul.exe
+  objdump -d -Mintel --start-address=0x407af0 --stop-address=0x407b90 binary/voicetext_paul.exe
+  objdump -s --start-address=0x4095c0 --stop-address=0x409610 binary/voicetext_paul.exe
+  objdump -d -Mintel --start-address=0x10066915 --stop-address=0x10066a35 binary/vt_pau.dll
+  objdump -d -Mintel --start-address=0x10066915 --stop-address=0x10066a35 binary/vt_kat.dll
+  objdump -d -Mintel --start-address=0x10066915 --stop-address=0x10066a35 binary/vt_jul.dll
+  objdump -d -Mintel --start-address=0x10066915 --stop-address=0x10066a35 binary/vt_jam.dll

@@ -1,0 +1,40 @@
+VoiceText Paul 2013 FUN_1000c860 component scan
+===============================================
+
+Evidence
+--------
+
+`FUN_1000c3a0` calls `FUN_1000c860` at VA `0x1000c860` to extract each
+component from the original source buffer. The call passes a 32-byte local
+component buffer, the source base, an in/out source offset, and the source
+length. The captured disassembly is in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt` at
+`0x1000c3f2` and `0x1000c860` through `0x1000c9b4`.
+
+The scanner copies bytes and advances the in/out offset until NUL, the
+exclusive source limit, or a boundary. It returns before the current byte
+when the previous output byte has attribute bit `0x40` and the current input
+byte has bit `0x80`. It also returns before the current byte when the previous
+output and current input bytes both have bit `0x80`, while the following input
+byte has bit `0x40`. Attribute bytes come from `DAT_1007e188` at VA
+`0x1007e188`.
+
+At an apostrophe, it consumes and includes `\'s` when the byte after `s` has
+attribute bit `0x80`, then returns. If the output already ends in `s` and the
+byte after the apostrophe has attribute bit `0x80`, it consumes the
+apostrophe, excludes it from output, and returns. Otherwise the apostrophe is
+copied as an ordinary byte. These branches and their offset updates are
+visible directly in the disassembly.
+
+Implementation boundary
+-----------------------
+
+`engine/text/c3a0_component.go` ports those copy, offset, boundary, and
+apostrophe rules for ASCII bytes. It returns the exclusive next source offset
+and a stop reason so a caller can reproduce the native loop. The native
+caller supplies its source length; the helper requires that limit to fit the
+provided slice. High-bit source bytes are rejected because the native table
+lookup sign-extends them and this implementation has not provisioned that
+behavior. This does not implement `FUN_1000c3a0`'s dictionary/TPP decisions,
+per-component normalization, marker-tail rewrite, output assembly, or full
+runtime parity.

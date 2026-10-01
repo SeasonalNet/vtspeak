@@ -1,0 +1,45 @@
+Stage 185: additional ASCII word modes and common dispatch correction
+
+Evidence
+
+- FUN_1005a350 original x86 at 1005ac34-1005acb9 selects mode 8 first,
+  excludes 9/0xc/0x1a/0x12/0x18/0x1d/0x1c from the common dot/int branch,
+  and otherwise tries dot/letter or mapped int followed by apostrophe/letter.
+  Mode 0x17 is not excluded: word.next joins before 1005af62 reaches its
+  suffix branch. Stage 182's contrary fixture expectation was incorrect and
+  is now replaced with the observed native dispatch expectation.
+- Modes 0x11/0x15 at 1005b04d-1005b136 additionally join hyphen/letter;
+  a single uppercase initial, digit and uppercase following letter; or
+  mapped United followed by one literal space and a mapped States prefix
+  whose next byte is not a letter. FUN_10062370(remaining,6) at 10062370
+  verifies six nonzero bytes, with signed count and signed-short result.
+  The space/digit is appended before resuming the common letter loop.
+- Mode 0x19 at 1005b136-1005b178 appends a digit after one uppercase letter,
+  without a following-letter condition. Later digits do not meet that gate.
+- Mode 0x16 at 1005b178-1005b1b7 joins apostrophe/letter or hyphen/letter;
+  modes 0xc/0x1a at 1005b1b7-1005b1d7 join apostrophe/letter without suffix
+  recognition. All such components retain original ASCII spelling/case.
+- Modes 9/0x12/0x18/0x1c have no additional ASCII word join in this dispatch.
+  Read-only PE tests confirm United at 1009c418 and States at 1009c410,
+  alongside the previously recovered int/wi strings.
+
+Implementation and validation
+
+- A common word-mode helper consumes only recovered separator bytes before
+  the existing letter loop resumes. Accumulated cost, the >28 pre-copy
+  length gate, raw result coordinates and model post-token lookup remain
+  shared across modes. Other numeric/nonletter starts explicitly delegate.
+- Tests cover every added mode, repeated unrestricted apostrophes, combined
+  joins, uppercase/digit gates and their case/length exclusions, mapped
+  United States and invalid plural/short/whitespace variants, truncation,
+  cost overflow, rollback, post-token flags and the corrected mode-0x17
+  common dot/int dispatch. Proprietary DLL literals are checked read-only.
+- Changed Go files formatted. From engine/ with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Mode-5/0xf/0x1b/0x1d special branches, additional numeric/punctuation
+  modes, non-ASCII and native index builders remain open. This is a port
+  of observed static control flow, without original-engine scanner
+  differential captures or whole-text/synthesis parity claims.

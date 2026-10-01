@@ -1,0 +1,64 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV stop print nopass
+
+break *0x1001da50
+commands 1
+  silent
+  disable 1
+  set $saved_eip = $eip
+  set $saved_esp = $esp
+  set $saved_ebp = $ebp
+  set $saved_eax = $eax
+  set $saved_ebx = $ebx
+  set $saved_ecx = $ecx
+  set $saved_edx = $edx
+  set $saved_esi = $esi
+  set $saved_edi = $edi
+  set $code = (unsigned char *)malloc(512)
+  source /work/stage21/load-csv-makecsv-byte-pairs-native-__RUN_ID__.gdb
+  set $fields = (char **)malloc(4)
+  set $field = (unsigned char *)malloc(3)
+  set $raw = (unsigned char *)malloc(10)
+  set $results = (unsigned char *)malloc(917510)
+  set $fields[0] = (char *)$field
+  set {unsigned int}($code + 0xfe) = (unsigned int)$fields
+  set {unsigned int}($code + 0x102) = (unsigned int)$field
+  set {unsigned int}($code + 0x106) = (unsigned int)$raw
+  set {unsigned int}($code + 0x10a) = (unsigned int)$results
+  printf "CSV_MAKE_PAIR_PTRS code=%08x fields=%08x field=%08x raw=%08x results=%08x\n", $code, $fields, $field, $raw, $results
+  set $stack = (unsigned char *)malloc(0x4000)
+  set $stack_top = (unsigned int *)((unsigned int)$stack + 0x3ff0)
+  break *($code + 270)
+  commands 2
+    silent
+    disable 2
+    printf "CSV_MAKE_PAIR_FULL cases=65536 bytes=917510 guards_checked=65536 probe_return=%d last_a=%02x last_b=%02x\n", $eax, $results[917504], $results[917505]
+    dump binary memory /work/stage21/csv-makecsv-byte-pairs-full-__RUN_ID__.bin $results ($results + 917510)
+    set $eip = $saved_eip
+    set $esp = $saved_esp
+    set $ebp = $saved_ebp
+    set $eax = $saved_eax
+    set $ebx = $saved_ebx
+    set $ecx = $saved_ecx
+    set $edx = $saved_edx
+    set $esi = $saved_esi
+    set $edi = $saved_edi
+    continue
+  end
+  catch signal SIGSEGV
+  commands 3
+    silent
+    printf "CSV_MAKE_PAIR_FAULT eip=%08x a=%02x b=%02x done=%u esp=%08x ebp=%08x eax=%08x ebx=%08x esi=%08x edi=%08x\n", $eip, $results[917504], $results[917505], *(unsigned int *)($results + 917506), $esp, $ebp, $eax, $ebx, $esi, $edi
+    x/8i $eip
+    dump binary memory /work/stage21/csv-makecsv-byte-pairs-fault-__RUN_ID__.bin $results ($results + 917510)
+    quit
+  end
+  set {unsigned int}$stack_top = (unsigned int)($code + 270)
+  set $esp = $stack_top
+  set $eip = (unsigned int)$code
+  continue
+end
+
+continue

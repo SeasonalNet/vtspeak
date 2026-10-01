@@ -1,0 +1,80 @@
+Wine-gdb> Already logging to /probe/stage20/apple-selector-byte0-old-candidate-scores-2026-09-29/apple-old-candidate-scores-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001c860
+Wine-gdb> >>> > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_OLD_CANDIDATE_SCORE_TRACE_READY
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+Hardware assisted breakpoint 3 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=64719 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24bf02b:	5	71	7	0	0
+Hardware assisted breakpoint 4 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=64719 target_row=2 score=0.0765957
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2554 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x2473202:	71	7	43	0	4
+Hardware assisted breakpoint 5 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2554 target_row=3 score=1.3899
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82036 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24d4264:	71	7	43	0	4
+Hardware assisted breakpoint 6 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82036 target_row=3 score=1.06144
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59558 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24b8b5e:	71	7	43	0	4
+Hardware assisted breakpoint 7 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59558 target_row=3 score=0.323902
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59559 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24b8b63:	7	43	90	4	4
+Hardware assisted breakpoint 8 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59559 target_row=4 score=0.307186
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82037 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24d4269:	7	43	90	4	4
+Hardware assisted breakpoint 9 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82037 target_row=4 score=0.247923
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2555 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x2473207:	7	43	90	4	4
+Hardware assisted breakpoint 10 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2555 target_row=4 score=0.377395
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+Hardware assisted breakpoint 11 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=64719 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24bf02b:	5	71	7	0	0
+Hardware assisted breakpoint 12 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=64719 target_row=2 score=0.0765957
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2554 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x2473202:	71	7	43	0	4
+Hardware assisted breakpoint 13 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2554 target_row=3 score=1.3899
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82036 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24d4264:	71	7	43	0	4
+Hardware assisted breakpoint 14 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82036 target_row=3 score=1.06144
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59558 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24b8b5e:	71	7	43	0	4
+Hardware assisted breakpoint 15 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59558 target_row=3 score=0.323902
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59559 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24b8b63:	7	43	90	4	4
+Hardware assisted breakpoint 16 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59559 target_row=4 score=0.307186
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82037 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24d4269:	7	43	90	4	4
+Hardware assisted breakpoint 17 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82037 target_row=4 score=0.247923
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2555 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x2473207:	7	43	90	4	4
+Hardware assisted breakpoint 18 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2555 target_row=4 score=0.377395
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+Hardware assisted breakpoint 19 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=64719 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24bf02b:	5	71	7	0	0
+Hardware assisted breakpoint 20 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=64719 target_row=2 score=0.0765957
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2554 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x2473202:	71	7	43	0	4
+Hardware assisted breakpoint 21 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2554 target_row=3 score=1.3899
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82036 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24d4264:	71	7	43	0	4
+Hardware assisted breakpoint 22 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82036 target_row=3 score=1.06144
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59558 target_row=3 target_context=0x27a9a16 target_features=0x63fa94 signature:0x24b8b5e:	71	7	43	0	4
+Hardware assisted breakpoint 23 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59558 target_row=3 score=0.323902
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=59559 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24b8b63:	7	43	90	4	4
+Hardware assisted breakpoint 24 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=59559 target_row=4 score=0.307186
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=82037 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x24d4269:	7	43	90	4	4
+Hardware assisted breakpoint 25 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=82037 target_row=4 score=0.247923
+APPLE_OLD_CANDIDATE_SCORE_INPUT unit=2555 target_row=4 target_context=0x27a9a1c target_features=0x63fa94 signature:0x2473207:	7	43	90	4	4
+Hardware assisted breakpoint 26 at 0x1001d3f4
+APPLE_OLD_CANDIDATE_SCORE_RETURN unit=2555 target_row=4 score=0.377395
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

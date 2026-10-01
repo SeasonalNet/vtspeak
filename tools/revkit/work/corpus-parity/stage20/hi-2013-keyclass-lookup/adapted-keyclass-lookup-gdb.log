@@ -1,0 +1,17 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023dc0
+Wine-gdb> >>>>>>>>>>>>>> > > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 3 at 0x1001896a
+HI_2013_KEYCLASS_LOOKUP call=1 signature=5a,5a,22,11,5a,a0,00 key=5a,22,01,a0,00 count=0 ids:
+Temporary breakpoint 4 at 0x10018a45
+HI_2013_KEYCLASS_LOOKUP call=2 signature=61,61,22,11,5a,98,00 key=5a,22,01,98,00 count=0 ids:
+Temporary breakpoint 5 at 0x1001896a
+HI_2013_KEYCLASS_LOOKUP call=3 signature=5a,22,11,5a,5a,65,00 key=22,11,5a,65,00 count=0 ids:
+Temporary breakpoint 6 at 0x10018a45
+HI_2013_KEYCLASS_LOOKUP call=4 signature=5a,22,11,5a,5a,5d,00 key=22,11,5a,5d,00 count=0 ids:
+Temporary breakpoint 7 at 0x10018a45
+HI_2013_KEYCLASS_LOOKUP call=5 signature=5a,22,11,5a,5a,55,00 key=22,11,5a,55,00 count=0 ids:
+Temporary breakpoint 8 at 0x10018a45
+HI_2013_KEYCLASS_LOOKUP call=6 signature=5a,22,11,5a,5a,4d,00 key=22,11,5a,4d,00 count=0 ids:
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

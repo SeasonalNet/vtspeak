@@ -1,0 +1,39 @@
+VoiceText Paul 2013 signed character table prefixes
+==================================================
+
+Evidence
+--------
+
+The `.data` section of `binary/vt_pau.dll` has VA `0x10077000` and file
+offset `0x77000` (`objdump -h`). `FUN_10010010` indexes
+`DAT_1007e188` with a sign-extended source byte. The 128 bytes immediately
+before that table, VA/file offsets `0x1007e108`/`0x7e108` through
+`0x1007e187`/`0x7e187`, are all zero. Therefore every source byte in
+`0x80`-`0xff` contributes attribute zero to this helper.
+The disassembly is at
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`, around lines
+21232-21341.
+
+`FUN_100100d0` indexes the 16-bit character map at `0x1007e388` with a
+sign-extended source byte. The 128 little-endian words immediately before
+that table, VA/file offsets `0x1007e288`/`0x7e288` through
+`0x1007e387`/`0x7e387`, are `0xff80` through `0xffff`. None equals the
+ASCII vowel values tested by the helper, so high-bit bytes do not increment
+its vowel count.
+Its disassembly begins in the same report around line 21342.
+
+Implementation
+--------------
+
+`Paul2013FUN10010010` now uses the existing signed-character attribute view,
+which maps high-bit inputs through the verified zero prefix. A high-bit byte
+therefore produces the native false result. `Paul2013FUN100100D0` counts
+ASCII vowels and ignores high-bit bytes, matching the observed signed-table
+values. The APIs retain their existing error return types.
+
+Evidence boundary
+-----------------
+
+This is a static DLL-byte and disassembly port without original-runtime
+comparison. It establishes these two helper behaviors only; other
+signed-indexed tables and broader non-ASCII text processing remain separate.

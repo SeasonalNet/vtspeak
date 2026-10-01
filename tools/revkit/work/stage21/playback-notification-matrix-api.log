@@ -1,0 +1,137 @@
+
+=== TEXT A ===
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\ text=A
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153644629
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153645221
+MESSAGE hwnd=0002004a message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153645221
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000000 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153645221
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153645221
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153645312
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153645412
+MESSAGE hwnd=0002004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153645434
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=1 caller=2
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153645434
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153645434
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153645434
+PLAYBACK_END elapsed_ms=213 open=1 done=1 caller=2 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153645434
+PROBE_END
+
+=== TEXT Hello. ===
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\ text=Hello.
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153649916
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153650457
+MESSAGE hwnd=0003004c message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153650457
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000004 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153650457
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153650457
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153650548
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153650648
+MESSAGE hwnd=0003004c message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153650669
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=1 caller=2
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153650670
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153650670
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153650670
+PLAYBACK_END elapsed_ms=213 open=1 done=1 caller=2 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153650670
+PROBE_END
+
+=== TEXT Hello there. ===
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\ text=Hello there.
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153655091
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153655650
+MESSAGE hwnd=0004004e message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153655650
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000004 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153655650
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153655650
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153655741
+MESSAGE hwnd=0004004e message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153655750
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000006 lparam=0x0000000a open=1 done=1 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153655750
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153655750
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153655850
+MESSAGE hwnd=0004004e message=0x03bd wparam=0x0000ff00 lparam=0x100a8440 open=1 done=2 caller=2
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153655861
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=2 caller=3
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153655861
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153655861
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153655861
+PLAYBACK_END elapsed_ms=211 open=1 done=2 caller=3 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153655861
+PROBE_END
+
+=== TEXT This is a substantially longer playback message. ===
+PROBE_BEGIN dll=Z:\samples\vt_pau.dll db=Z:\work\ text=This is a substantially longer playback message.
+LOAD result=0
+STATE phase=loaded_idle result=0 output=0x5a5a5a5a tick=153660421
+PLAY result=1
+STATE phase=play_return result=1 output=0x5a5a5a5a tick=153661033
+MESSAGE hwnd=0005004a message=0x03bb wparam=0x0000ff00 lparam=0x00000000 open=1 done=0 caller=0
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661034
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000003 open=1 done=0 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661034
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661034
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661125
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8420 open=1 done=1 caller=1
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661134
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000005 lparam=0x00000006 open=1 done=1 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661134
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661135
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661235
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8440 open=1 done=2 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661236
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8460 open=1 done=3 caller=2
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661236
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000008 lparam=0x00000008 open=1 done=3 caller=3
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661236
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x0000000a lparam=0x00000016 open=1 done=3 caller=4
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661236
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661236
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661334
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661434
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a8480 open=1 done=4 caller=4
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661437
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000018 lparam=0x0000001d open=1 done=4 caller=5
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661437
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661437
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661534
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a84a0 open=1 done=5 caller=5
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661537
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a84c0 open=1 done=6 caller=5
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661537
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x0000001f lparam=0x00000026 open=1 done=6 caller=6
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661537
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x0000001f lparam=0x00000026 open=1 done=6 caller=7
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661538
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661538
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661634
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a90a0 open=1 done=7 caller=7
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661638
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000028 lparam=0x0000002e open=1 done=7 caller=8
+STATE phase=after_dispatch result=1 output=0x5a5a5a5a tick=153661638
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661638
+STATE phase=poll result=1 output=0x5a5a5a5a tick=153661734
+MESSAGE hwnd=0005004a message=0x03bd wparam=0x0000ff00 lparam=0x100a90c0 open=1 done=8 caller=8
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153661745
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0x00000003 open=1 done=8 caller=9
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153661745
+MESSAGE hwnd=00000000 message=0x8051 wparam=0x00000000 lparam=0xffffffff open=1 done=8 caller=10
+STATE phase=after_dispatch result=0 output=0x5a5a5a5a tick=153661745
+STATE phase=poll result=0 output=0x5a5a5a5a tick=153661745
+STATE phase=before_stop result=0 output=0x5a5a5a5a tick=153661745
+PLAYBACK_END elapsed_ms=712 open=1 done=8 caller=10 quit=0 state=0
+STATE phase=after_stop result=0 output=0x5a5a5a5a tick=153661745
+PROBE_END

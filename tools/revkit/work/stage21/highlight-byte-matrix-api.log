@@ -1,0 +1,315 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>> > > >  >  >  >  > >  >  > > > >>>>>Wine-gdb> Wine-gdb> Continuing.
+HIGHLIGHT_BYTE input=0 stored=0 expected=0
+HIGHLIGHT_BYTE input=1 stored=1 expected=1
+HIGHLIGHT_BYTE input=2 stored=1 expected=1
+HIGHLIGHT_BYTE input=3 stored=1 expected=1
+HIGHLIGHT_BYTE input=4 stored=1 expected=1
+HIGHLIGHT_BYTE input=5 stored=1 expected=1
+HIGHLIGHT_BYTE input=6 stored=1 expected=1
+HIGHLIGHT_BYTE input=7 stored=1 expected=1
+HIGHLIGHT_BYTE input=8 stored=1 expected=1
+HIGHLIGHT_BYTE input=9 stored=1 expected=1
+HIGHLIGHT_BYTE input=10 stored=1 expected=1
+HIGHLIGHT_BYTE input=11 stored=1 expected=1
+HIGHLIGHT_BYTE input=12 stored=1 expected=1
+HIGHLIGHT_BYTE input=13 stored=1 expected=1
+HIGHLIGHT_BYTE input=14 stored=1 expected=1
+HIGHLIGHT_BYTE input=15 stored=1 expected=1
+HIGHLIGHT_BYTE input=16 stored=1 expected=1
+HIGHLIGHT_BYTE input=17 stored=1 expected=1
+HIGHLIGHT_BYTE input=18 stored=1 expected=1
+HIGHLIGHT_BYTE input=19 stored=1 expected=1
+HIGHLIGHT_BYTE input=20 stored=1 expected=1
+HIGHLIGHT_BYTE input=21 stored=1 expected=1
+HIGHLIGHT_BYTE input=22 stored=1 expected=1
+HIGHLIGHT_BYTE input=23 stored=1 expected=1
+HIGHLIGHT_BYTE input=24 stored=1 expected=1
+HIGHLIGHT_BYTE input=25 stored=1 expected=1
+HIGHLIGHT_BYTE input=26 stored=1 expected=1
+HIGHLIGHT_BYTE input=27 stored=1 expected=1
+HIGHLIGHT_BYTE input=28 stored=1 expected=1
+HIGHLIGHT_BYTE input=29 stored=1 expected=1
+HIGHLIGHT_BYTE input=30 stored=1 expected=1
+HIGHLIGHT_BYTE input=31 stored=1 expected=1
+HIGHLIGHT_BYTE input=32 stored=1 expected=1
+HIGHLIGHT_BYTE input=33 stored=1 expected=1
+HIGHLIGHT_BYTE input=34 stored=1 expected=1
+HIGHLIGHT_BYTE input=35 stored=1 expected=1
+HIGHLIGHT_BYTE input=36 stored=1 expected=1
+HIGHLIGHT_BYTE input=37 stored=1 expected=1
+HIGHLIGHT_BYTE input=38 stored=1 expected=1
+HIGHLIGHT_BYTE input=39 stored=1 expected=1
+HIGHLIGHT_BYTE input=40 stored=1 expected=1
+HIGHLIGHT_BYTE input=41 stored=1 expected=1
+HIGHLIGHT_BYTE input=42 stored=1 expected=1
+HIGHLIGHT_BYTE input=43 stored=1 expected=1
+HIGHLIGHT_BYTE input=44 stored=1 expected=1
+HIGHLIGHT_BYTE input=45 stored=1 expected=1
+HIGHLIGHT_BYTE input=46 stored=1 expected=1
+HIGHLIGHT_BYTE input=47 stored=1 expected=1
+HIGHLIGHT_BYTE input=48 stored=1 expected=1
+HIGHLIGHT_BYTE input=49 stored=1 expected=1
+HIGHLIGHT_BYTE input=50 stored=1 expected=1
+HIGHLIGHT_BYTE input=51 stored=1 expected=1
+HIGHLIGHT_BYTE input=52 stored=1 expected=1
+HIGHLIGHT_BYTE input=53 stored=1 expected=1
+HIGHLIGHT_BYTE input=54 stored=1 expected=1
+HIGHLIGHT_BYTE input=55 stored=1 expected=1
+HIGHLIGHT_BYTE input=56 stored=1 expected=1
+HIGHLIGHT_BYTE input=57 stored=1 expected=1
+HIGHLIGHT_BYTE input=58 stored=1 expected=1
+HIGHLIGHT_BYTE input=59 stored=1 expected=1
+HIGHLIGHT_BYTE input=60 stored=1 expected=1
+HIGHLIGHT_BYTE input=61 stored=1 expected=1
+HIGHLIGHT_BYTE input=62 stored=1 expected=1
+HIGHLIGHT_BYTE input=63 stored=1 expected=1
+HIGHLIGHT_BYTE input=64 stored=1 expected=1
+HIGHLIGHT_BYTE input=65 stored=1 expected=1
+HIGHLIGHT_BYTE input=66 stored=1 expected=1
+HIGHLIGHT_BYTE input=67 stored=1 expected=1
+HIGHLIGHT_BYTE input=68 stored=1 expected=1
+HIGHLIGHT_BYTE input=69 stored=1 expected=1
+HIGHLIGHT_BYTE input=70 stored=1 expected=1
+HIGHLIGHT_BYTE input=71 stored=1 expected=1
+HIGHLIGHT_BYTE input=72 stored=1 expected=1
+HIGHLIGHT_BYTE input=73 stored=1 expected=1
+HIGHLIGHT_BYTE input=74 stored=1 expected=1
+HIGHLIGHT_BYTE input=75 stored=1 expected=1
+HIGHLIGHT_BYTE input=76 stored=1 expected=1
+HIGHLIGHT_BYTE input=77 stored=1 expected=1
+HIGHLIGHT_BYTE input=78 stored=1 expected=1
+HIGHLIGHT_BYTE input=79 stored=1 expected=1
+HIGHLIGHT_BYTE input=80 stored=1 expected=1
+HIGHLIGHT_BYTE input=81 stored=1 expected=1
+HIGHLIGHT_BYTE input=82 stored=1 expected=1
+HIGHLIGHT_BYTE input=83 stored=1 expected=1
+HIGHLIGHT_BYTE input=84 stored=1 expected=1
+HIGHLIGHT_BYTE input=85 stored=1 expected=1
+HIGHLIGHT_BYTE input=86 stored=1 expected=1
+HIGHLIGHT_BYTE input=87 stored=1 expected=1
+HIGHLIGHT_BYTE input=88 stored=1 expected=1
+HIGHLIGHT_BYTE input=89 stored=1 expected=1
+HIGHLIGHT_BYTE input=90 stored=1 expected=1
+HIGHLIGHT_BYTE input=91 stored=1 expected=1
+HIGHLIGHT_BYTE input=92 stored=1 expected=1
+HIGHLIGHT_BYTE input=93 stored=1 expected=1
+HIGHLIGHT_BYTE input=94 stored=1 expected=1
+HIGHLIGHT_BYTE input=95 stored=1 expected=1
+HIGHLIGHT_BYTE input=96 stored=1 expected=1
+HIGHLIGHT_BYTE input=97 stored=1 expected=1
+HIGHLIGHT_BYTE input=98 stored=1 expected=1
+HIGHLIGHT_BYTE input=99 stored=1 expected=1
+HIGHLIGHT_BYTE input=100 stored=1 expected=1
+HIGHLIGHT_BYTE input=101 stored=1 expected=1
+HIGHLIGHT_BYTE input=102 stored=1 expected=1
+HIGHLIGHT_BYTE input=103 stored=1 expected=1
+HIGHLIGHT_BYTE input=104 stored=1 expected=1
+HIGHLIGHT_BYTE input=105 stored=1 expected=1
+HIGHLIGHT_BYTE input=106 stored=1 expected=1
+HIGHLIGHT_BYTE input=107 stored=1 expected=1
+HIGHLIGHT_BYTE input=108 stored=1 expected=1
+HIGHLIGHT_BYTE input=109 stored=1 expected=1
+HIGHLIGHT_BYTE input=110 stored=1 expected=1
+HIGHLIGHT_BYTE input=111 stored=1 expected=1
+HIGHLIGHT_BYTE input=112 stored=1 expected=1
+HIGHLIGHT_BYTE input=113 stored=1 expected=1
+HIGHLIGHT_BYTE input=114 stored=1 expected=1
+HIGHLIGHT_BYTE input=115 stored=1 expected=1
+HIGHLIGHT_BYTE input=116 stored=1 expected=1
+HIGHLIGHT_BYTE input=117 stored=1 expected=1
+HIGHLIGHT_BYTE input=118 stored=1 expected=1
+HIGHLIGHT_BYTE input=119 stored=1 expected=1
+HIGHLIGHT_BYTE input=120 stored=1 expected=1
+HIGHLIGHT_BYTE input=121 stored=1 expected=1
+HIGHLIGHT_BYTE input=122 stored=1 expected=1
+HIGHLIGHT_BYTE input=123 stored=1 expected=1
+HIGHLIGHT_BYTE input=124 stored=1 expected=1
+HIGHLIGHT_BYTE input=125 stored=1 expected=1
+HIGHLIGHT_BYTE input=126 stored=1 expected=1
+HIGHLIGHT_BYTE input=127 stored=1 expected=1
+HIGHLIGHT_BYTE input=128 stored=1 expected=1
+HIGHLIGHT_BYTE input=129 stored=1 expected=1
+HIGHLIGHT_BYTE input=130 stored=1 expected=1
+HIGHLIGHT_BYTE input=131 stored=1 expected=1
+HIGHLIGHT_BYTE input=132 stored=1 expected=1
+HIGHLIGHT_BYTE input=133 stored=1 expected=1
+HIGHLIGHT_BYTE input=134 stored=1 expected=1
+HIGHLIGHT_BYTE input=135 stored=1 expected=1
+HIGHLIGHT_BYTE input=136 stored=1 expected=1
+HIGHLIGHT_BYTE input=137 stored=1 expected=1
+HIGHLIGHT_BYTE input=138 stored=1 expected=1
+HIGHLIGHT_BYTE input=139 stored=1 expected=1
+HIGHLIGHT_BYTE input=140 stored=1 expected=1
+HIGHLIGHT_BYTE input=141 stored=1 expected=1
+HIGHLIGHT_BYTE input=142 stored=1 expected=1
+HIGHLIGHT_BYTE input=143 stored=1 expected=1
+HIGHLIGHT_BYTE input=144 stored=1 expected=1
+HIGHLIGHT_BYTE input=145 stored=1 expected=1
+HIGHLIGHT_BYTE input=146 stored=1 expected=1
+HIGHLIGHT_BYTE input=147 stored=1 expected=1
+HIGHLIGHT_BYTE input=148 stored=1 expected=1
+HIGHLIGHT_BYTE input=149 stored=1 expected=1
+HIGHLIGHT_BYTE input=150 stored=1 expected=1
+HIGHLIGHT_BYTE input=151 stored=1 expected=1
+HIGHLIGHT_BYTE input=152 stored=1 expected=1
+HIGHLIGHT_BYTE input=153 stored=1 expected=1
+HIGHLIGHT_BYTE input=154 stored=1 expected=1
+HIGHLIGHT_BYTE input=155 stored=1 expected=1
+HIGHLIGHT_BYTE input=156 stored=1 expected=1
+HIGHLIGHT_BYTE input=157 stored=1 expected=1
+HIGHLIGHT_BYTE input=158 stored=1 expected=1
+HIGHLIGHT_BYTE input=159 stored=1 expected=1
+HIGHLIGHT_BYTE input=160 stored=1 expected=1
+HIGHLIGHT_BYTE input=161 stored=1 expected=1
+HIGHLIGHT_BYTE input=162 stored=1 expected=1
+HIGHLIGHT_BYTE input=163 stored=1 expected=1
+HIGHLIGHT_BYTE input=164 stored=1 expected=1
+HIGHLIGHT_BYTE input=165 stored=1 expected=1
+HIGHLIGHT_BYTE input=166 stored=1 expected=1
+HIGHLIGHT_BYTE input=167 stored=1 expected=1
+HIGHLIGHT_BYTE input=168 stored=1 expected=1
+HIGHLIGHT_BYTE input=169 stored=1 expected=1
+HIGHLIGHT_BYTE input=170 stored=1 expected=1
+HIGHLIGHT_BYTE input=171 stored=1 expected=1
+HIGHLIGHT_BYTE input=172 stored=1 expected=1
+HIGHLIGHT_BYTE input=173 stored=1 expected=1
+HIGHLIGHT_BYTE input=174 stored=1 expected=1
+HIGHLIGHT_BYTE input=175 stored=1 expected=1
+HIGHLIGHT_BYTE input=176 stored=1 expected=1
+HIGHLIGHT_BYTE input=177 stored=1 expected=1
+HIGHLIGHT_BYTE input=178 stored=1 expected=1
+HIGHLIGHT_BYTE input=179 stored=1 expected=1
+HIGHLIGHT_BYTE input=180 stored=1 expected=1
+HIGHLIGHT_BYTE input=181 stored=1 expected=1
+HIGHLIGHT_BYTE input=182 stored=1 expected=1
+HIGHLIGHT_BYTE input=183 stored=1 expected=1
+HIGHLIGHT_BYTE input=184 stored=1 expected=1
+HIGHLIGHT_BYTE input=185 stored=1 expected=1
+HIGHLIGHT_BYTE input=186 stored=1 expected=1
+HIGHLIGHT_BYTE input=187 stored=1 expected=1
+HIGHLIGHT_BYTE input=188 stored=1 expected=1
+HIGHLIGHT_BYTE input=189 stored=1 expected=1
+HIGHLIGHT_BYTE input=190 stored=1 expected=1
+HIGHLIGHT_BYTE input=191 stored=1 expected=1
+HIGHLIGHT_BYTE input=192 stored=1 expected=1
+HIGHLIGHT_BYTE input=193 stored=1 expected=1
+HIGHLIGHT_BYTE input=194 stored=1 expected=1
+HIGHLIGHT_BYTE input=195 stored=1 expected=1
+HIGHLIGHT_BYTE input=196 stored=1 expected=1
+HIGHLIGHT_BYTE input=197 stored=1 expected=1
+HIGHLIGHT_BYTE input=198 stored=1 expected=1
+HIGHLIGHT_BYTE input=199 stored=1 expected=1
+HIGHLIGHT_BYTE input=200 stored=1 expected=1
+HIGHLIGHT_BYTE input=201 stored=1 expected=1
+HIGHLIGHT_BYTE input=202 stored=1 expected=1
+HIGHLIGHT_BYTE input=203 stored=1 expected=1
+HIGHLIGHT_BYTE input=204 stored=1 expected=1
+HIGHLIGHT_BYTE input=205 stored=1 expected=1
+HIGHLIGHT_BYTE input=206 stored=1 expected=1
+HIGHLIGHT_BYTE input=207 stored=1 expected=1
+HIGHLIGHT_BYTE input=208 stored=1 expected=1
+HIGHLIGHT_BYTE input=209 stored=1 expected=1
+HIGHLIGHT_BYTE input=210 stored=1 expected=1
+HIGHLIGHT_BYTE input=211 stored=1 expected=1
+HIGHLIGHT_BYTE input=212 stored=1 expected=1
+HIGHLIGHT_BYTE input=213 stored=1 expected=1
+HIGHLIGHT_BYTE input=214 stored=1 expected=1
+HIGHLIGHT_BYTE input=215 stored=1 expected=1
+HIGHLIGHT_BYTE input=216 stored=1 expected=1
+HIGHLIGHT_BYTE input=217 stored=1 expected=1
+HIGHLIGHT_BYTE input=218 stored=1 expected=1
+HIGHLIGHT_BYTE input=219 stored=1 expected=1
+HIGHLIGHT_BYTE input=220 stored=1 expected=1
+HIGHLIGHT_BYTE input=221 stored=1 expected=1
+HIGHLIGHT_BYTE input=222 stored=1 expected=1
+HIGHLIGHT_BYTE input=223 stored=1 expected=1
+HIGHLIGHT_BYTE input=224 stored=1 expected=1
+HIGHLIGHT_BYTE input=225 stored=1 expected=1
+HIGHLIGHT_BYTE input=226 stored=1 expected=1
+HIGHLIGHT_BYTE input=227 stored=1 expected=1
+HIGHLIGHT_BYTE input=228 stored=1 expected=1
+HIGHLIGHT_BYTE input=229 stored=1 expected=1
+HIGHLIGHT_BYTE input=230 stored=1 expected=1
+HIGHLIGHT_BYTE input=231 stored=1 expected=1
+HIGHLIGHT_BYTE input=232 stored=1 expected=1
+HIGHLIGHT_BYTE input=233 stored=1 expected=1
+HIGHLIGHT_BYTE input=234 stored=1 expected=1
+HIGHLIGHT_BYTE input=235 stored=1 expected=1
+HIGHLIGHT_BYTE input=236 stored=1 expected=1
+HIGHLIGHT_BYTE input=237 stored=1 expected=1
+HIGHLIGHT_BYTE input=238 stored=1 expected=1
+HIGHLIGHT_BYTE input=239 stored=1 expected=1
+HIGHLIGHT_BYTE input=240 stored=1 expected=1
+HIGHLIGHT_BYTE input=241 stored=1 expected=1
+HIGHLIGHT_BYTE input=242 stored=1 expected=1
+HIGHLIGHT_BYTE input=243 stored=1 expected=1
+HIGHLIGHT_BYTE input=244 stored=1 expected=1
+HIGHLIGHT_BYTE input=245 stored=1 expected=1
+HIGHLIGHT_BYTE input=246 stored=1 expected=1
+HIGHLIGHT_BYTE input=247 stored=1 expected=1
+HIGHLIGHT_BYTE input=248 stored=1 expected=1
+HIGHLIGHT_BYTE input=249 stored=1 expected=1
+HIGHLIGHT_BYTE input=250 stored=1 expected=1
+HIGHLIGHT_BYTE input=251 stored=1 expected=1
+HIGHLIGHT_BYTE input=252 stored=1 expected=1
+HIGHLIGHT_BYTE input=253 stored=1 expected=1
+HIGHLIGHT_BYTE input=254 stored=1 expected=1
+HIGHLIGHT_BYTE input=255 stored=1 expected=1
+HIGHLIGHT_MATRIX calls=256 mismatches=0 initial=0 restored=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78AC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78A40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)

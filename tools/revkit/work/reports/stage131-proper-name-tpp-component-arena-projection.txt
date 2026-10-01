@@ -1,0 +1,30 @@
+VoiceText Paul 2013 FUN_10034180 counted component-row projection
+================================================================
+
+Evidence
+--------
+
+The `FUN_10034180` pseudocode in `tools/revkit/work/reports/stage6-tpp-callers.txt`
+loads the component count from the arena's first dword, reads each surface at
+arena offset `+0x46` with a `0x140` stride, and reads the stored length from
+`surface - 0x32` (arena `+0x14` for the first component). Its marker loop reads
+at arena offset `+0x1a` with the same stride. `FUN_10034110` starts its row
+field pointer at arena offset `+0x0c`, confirming a 12-byte header before the
+first component row. Relative to that row, the length, marker, and surface
+are at `+0x08`, `+0x0e`, and `+0x3a`.
+
+Port
+----
+
+`text.Paul2013ProperNameTPPComponentsFromArena` checks the 12-byte header,
+count, row bounds, and NUL-terminated surfaces, then projects those three
+fields. `duration.Engine.MatchProperNameTPPComponentArena` connects the raw
+arena projection to the already ported bounded surface builder, A-D selector,
+exact dictionary lookup, and component marker/value gate.
+
+Evidence boundary
+----------------
+
+This composes only the fields and gates recovered for the basic TPP lookup.
+The remaining context-dependent `FUN_10034180` predicates, full candidate
+production, and runtime row parity are not represented by this helper.

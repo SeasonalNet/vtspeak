@@ -1,0 +1,303 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Wine-gdb> Wine-gdb> Continuing.
+TARGET_PHON_CASE family=single base=B input=B ax=1
+TARGET_PHON_CASE family=single base=B input=b ax=65527
+TARGET_PHON_CASE family=single base=D input=D ax=1
+TARGET_PHON_CASE family=single base=D input=d ax=65527
+TARGET_PHON_CASE family=single base=F input=F ax=1
+TARGET_PHON_CASE family=single base=F input=f ax=65527
+TARGET_PHON_CASE family=single base=G input=G ax=1
+TARGET_PHON_CASE family=single base=G input=g ax=65527
+TARGET_PHON_CASE family=single base=K input=K ax=1
+TARGET_PHON_CASE family=single base=K input=k ax=65527
+TARGET_PHON_CASE family=single base=L input=L ax=1
+TARGET_PHON_CASE family=single base=L input=l ax=65527
+TARGET_PHON_CASE family=single base=M input=M ax=1
+TARGET_PHON_CASE family=single base=M input=m ax=65527
+TARGET_PHON_CASE family=single base=N input=N ax=1
+TARGET_PHON_CASE family=single base=N input=n ax=65527
+TARGET_PHON_CASE family=single base=P input=P ax=1
+TARGET_PHON_CASE family=single base=P input=p ax=65527
+TARGET_PHON_CASE family=single base=R input=R ax=1
+TARGET_PHON_CASE family=single base=R input=r ax=65527
+TARGET_PHON_CASE family=single base=S input=S ax=1
+TARGET_PHON_CASE family=single base=S input=s ax=65527
+TARGET_PHON_CASE family=single base=T input=T ax=1
+TARGET_PHON_CASE family=single base=T input=t ax=65527
+TARGET_PHON_CASE family=single base=V input=V ax=1
+TARGET_PHON_CASE family=single base=V input=v ax=65527
+TARGET_PHON_CASE family=single base=W input=W ax=1
+TARGET_PHON_CASE family=single base=W input=w ax=65527
+TARGET_PHON_CASE family=single base=Y input=Y ax=1
+TARGET_PHON_CASE family=single base=Y input=y ax=65527
+TARGET_PHON_CASE family=single base=Z input=Z ax=1
+TARGET_PHON_CASE family=single base=Z input=z ax=65527
+TARGET_PHON_CASE family=pair base=CH input=CH ax=1
+TARGET_PHON_CASE family=pair base=CH input=cH ax=65527
+TARGET_PHON_CASE family=pair base=CH input=Ch ax=65527
+TARGET_PHON_CASE family=pair base=CH input=ch ax=65527
+TARGET_PHON_CASE family=pair base=DH input=DH ax=1
+TARGET_PHON_CASE family=pair base=DH input=dH ax=65527
+TARGET_PHON_CASE family=pair base=DH input=Dh ax=65527
+TARGET_PHON_CASE family=pair base=DH input=dh ax=65527
+TARGET_PHON_CASE family=pair base=HH input=HH ax=1
+TARGET_PHON_CASE family=pair base=HH input=hH ax=65527
+TARGET_PHON_CASE family=pair base=HH input=Hh ax=65527
+TARGET_PHON_CASE family=pair base=HH input=hh ax=65527
+TARGET_PHON_CASE family=pair base=JH input=JH ax=1
+TARGET_PHON_CASE family=pair base=JH input=jH ax=65527
+TARGET_PHON_CASE family=pair base=JH input=Jh ax=65527
+TARGET_PHON_CASE family=pair base=JH input=jh ax=65527
+TARGET_PHON_CASE family=pair base=NG input=NG ax=1
+TARGET_PHON_CASE family=pair base=NG input=nG ax=65527
+TARGET_PHON_CASE family=pair base=NG input=Ng ax=65527
+TARGET_PHON_CASE family=pair base=NG input=ng ax=65527
+TARGET_PHON_CASE family=pair base=SH input=SH ax=1
+TARGET_PHON_CASE family=pair base=SH input=sH ax=65527
+TARGET_PHON_CASE family=pair base=SH input=Sh ax=65527
+TARGET_PHON_CASE family=pair base=SH input=sh ax=65527
+TARGET_PHON_CASE family=pair base=TH input=TH ax=1
+TARGET_PHON_CASE family=pair base=TH input=tH ax=65527
+TARGET_PHON_CASE family=pair base=TH input=Th ax=65527
+TARGET_PHON_CASE family=pair base=TH input=th ax=65527
+TARGET_PHON_CASE family=pair base=ZH input=ZH ax=1
+TARGET_PHON_CASE family=pair base=ZH input=zH ax=65527
+TARGET_PHON_CASE family=pair base=ZH input=Zh ax=65527
+TARGET_PHON_CASE family=pair base=ZH input=zh ax=65527
+TARGET_PHON_CASE family=vowel base=AA0 input=AA0 ax=1
+TARGET_PHON_CASE family=vowel base=AA0 input=aA0 ax=65527
+TARGET_PHON_CASE family=vowel base=AA0 input=Aa0 ax=65527
+TARGET_PHON_CASE family=vowel base=AA0 input=aa0 ax=65527
+TARGET_PHON_CASE family=vowel base=AA1 input=AA1 ax=1
+TARGET_PHON_CASE family=vowel base=AA1 input=aA1 ax=65527
+TARGET_PHON_CASE family=vowel base=AA1 input=Aa1 ax=65527
+TARGET_PHON_CASE family=vowel base=AA1 input=aa1 ax=65527
+TARGET_PHON_CASE family=vowel base=AA2 input=AA2 ax=1
+TARGET_PHON_CASE family=vowel base=AA2 input=aA2 ax=65527
+TARGET_PHON_CASE family=vowel base=AA2 input=Aa2 ax=65527
+TARGET_PHON_CASE family=vowel base=AA2 input=aa2 ax=65527
+TARGET_PHON_CASE family=vowel base=AE0 input=AE0 ax=1
+TARGET_PHON_CASE family=vowel base=AE0 input=aE0 ax=65527
+TARGET_PHON_CASE family=vowel base=AE0 input=Ae0 ax=65527
+TARGET_PHON_CASE family=vowel base=AE0 input=ae0 ax=65527
+TARGET_PHON_CASE family=vowel base=AE1 input=AE1 ax=1
+TARGET_PHON_CASE family=vowel base=AE1 input=aE1 ax=65527
+TARGET_PHON_CASE family=vowel base=AE1 input=Ae1 ax=65527
+TARGET_PHON_CASE family=vowel base=AE1 input=ae1 ax=65527
+TARGET_PHON_CASE family=vowel base=AE2 input=AE2 ax=1
+TARGET_PHON_CASE family=vowel base=AE2 input=aE2 ax=65527
+TARGET_PHON_CASE family=vowel base=AE2 input=Ae2 ax=65527
+TARGET_PHON_CASE family=vowel base=AE2 input=ae2 ax=65527
+TARGET_PHON_CASE family=vowel base=AH0 input=AH0 ax=1
+TARGET_PHON_CASE family=vowel base=AH0 input=aH0 ax=65527
+TARGET_PHON_CASE family=vowel base=AH0 input=Ah0 ax=65527
+TARGET_PHON_CASE family=vowel base=AH0 input=ah0 ax=65527
+TARGET_PHON_CASE family=vowel base=AH1 input=AH1 ax=1
+TARGET_PHON_CASE family=vowel base=AH1 input=aH1 ax=65527
+TARGET_PHON_CASE family=vowel base=AH1 input=Ah1 ax=65527
+TARGET_PHON_CASE family=vowel base=AH1 input=ah1 ax=65527
+TARGET_PHON_CASE family=vowel base=AH2 input=AH2 ax=1
+TARGET_PHON_CASE family=vowel base=AH2 input=aH2 ax=65527
+TARGET_PHON_CASE family=vowel base=AH2 input=Ah2 ax=65527
+TARGET_PHON_CASE family=vowel base=AH2 input=ah2 ax=65527
+TARGET_PHON_CASE family=vowel base=AO0 input=AO0 ax=1
+TARGET_PHON_CASE family=vowel base=AO0 input=aO0 ax=65527
+TARGET_PHON_CASE family=vowel base=AO0 input=Ao0 ax=65527
+TARGET_PHON_CASE family=vowel base=AO0 input=ao0 ax=65527
+TARGET_PHON_CASE family=vowel base=AO1 input=AO1 ax=1
+TARGET_PHON_CASE family=vowel base=AO1 input=aO1 ax=65527
+TARGET_PHON_CASE family=vowel base=AO1 input=Ao1 ax=65527
+TARGET_PHON_CASE family=vowel base=AO1 input=ao1 ax=65527
+TARGET_PHON_CASE family=vowel base=AO2 input=AO2 ax=1
+TARGET_PHON_CASE family=vowel base=AO2 input=aO2 ax=65527
+TARGET_PHON_CASE family=vowel base=AO2 input=Ao2 ax=65527
+TARGET_PHON_CASE family=vowel base=AO2 input=ao2 ax=65527
+TARGET_PHON_CASE family=vowel base=AW0 input=AW0 ax=1
+TARGET_PHON_CASE family=vowel base=AW0 input=aW0 ax=65527
+TARGET_PHON_CASE family=vowel base=AW0 input=Aw0 ax=65527
+TARGET_PHON_CASE family=vowel base=AW0 input=aw0 ax=65527
+TARGET_PHON_CASE family=vowel base=AW1 input=AW1 ax=1
+TARGET_PHON_CASE family=vowel base=AW1 input=aW1 ax=65527
+TARGET_PHON_CASE family=vowel base=AW1 input=Aw1 ax=65527
+TARGET_PHON_CASE family=vowel base=AW1 input=aw1 ax=65527
+TARGET_PHON_CASE family=vowel base=AW2 input=AW2 ax=1
+TARGET_PHON_CASE family=vowel base=AW2 input=aW2 ax=65527
+TARGET_PHON_CASE family=vowel base=AW2 input=Aw2 ax=65527
+TARGET_PHON_CASE family=vowel base=AW2 input=aw2 ax=65527
+TARGET_PHON_CASE family=vowel base=AY0 input=AY0 ax=1
+TARGET_PHON_CASE family=vowel base=AY0 input=aY0 ax=65527
+TARGET_PHON_CASE family=vowel base=AY0 input=Ay0 ax=65527
+TARGET_PHON_CASE family=vowel base=AY0 input=ay0 ax=65527
+TARGET_PHON_CASE family=vowel base=AY1 input=AY1 ax=1
+TARGET_PHON_CASE family=vowel base=AY1 input=aY1 ax=65527
+TARGET_PHON_CASE family=vowel base=AY1 input=Ay1 ax=65527
+TARGET_PHON_CASE family=vowel base=AY1 input=ay1 ax=65527
+TARGET_PHON_CASE family=vowel base=AY2 input=AY2 ax=1
+TARGET_PHON_CASE family=vowel base=AY2 input=aY2 ax=65527
+TARGET_PHON_CASE family=vowel base=AY2 input=Ay2 ax=65527
+TARGET_PHON_CASE family=vowel base=AY2 input=ay2 ax=65527
+TARGET_PHON_CASE family=vowel base=EH0 input=EH0 ax=1
+TARGET_PHON_CASE family=vowel base=EH0 input=eH0 ax=65527
+TARGET_PHON_CASE family=vowel base=EH0 input=Eh0 ax=65527
+TARGET_PHON_CASE family=vowel base=EH0 input=eh0 ax=65527
+TARGET_PHON_CASE family=vowel base=EH1 input=EH1 ax=1
+TARGET_PHON_CASE family=vowel base=EH1 input=eH1 ax=65527
+TARGET_PHON_CASE family=vowel base=EH1 input=Eh1 ax=65527
+TARGET_PHON_CASE family=vowel base=EH1 input=eh1 ax=65527
+TARGET_PHON_CASE family=vowel base=EH2 input=EH2 ax=1
+TARGET_PHON_CASE family=vowel base=EH2 input=eH2 ax=65527
+TARGET_PHON_CASE family=vowel base=EH2 input=Eh2 ax=65527
+TARGET_PHON_CASE family=vowel base=EH2 input=eh2 ax=65527
+TARGET_PHON_CASE family=vowel base=ER0 input=ER0 ax=1
+TARGET_PHON_CASE family=vowel base=ER0 input=eR0 ax=65527
+TARGET_PHON_CASE family=vowel base=ER0 input=Er0 ax=65527
+TARGET_PHON_CASE family=vowel base=ER0 input=er0 ax=65527
+TARGET_PHON_CASE family=vowel base=ER1 input=ER1 ax=1
+TARGET_PHON_CASE family=vowel base=ER1 input=eR1 ax=65527
+TARGET_PHON_CASE family=vowel base=ER1 input=Er1 ax=65527
+TARGET_PHON_CASE family=vowel base=ER1 input=er1 ax=65527
+TARGET_PHON_CASE family=vowel base=ER2 input=ER2 ax=1
+TARGET_PHON_CASE family=vowel base=ER2 input=eR2 ax=65527
+TARGET_PHON_CASE family=vowel base=ER2 input=Er2 ax=65527
+TARGET_PHON_CASE family=vowel base=ER2 input=er2 ax=65527
+TARGET_PHON_CASE family=vowel base=EY0 input=EY0 ax=1
+TARGET_PHON_CASE family=vowel base=EY0 input=eY0 ax=65527
+TARGET_PHON_CASE family=vowel base=EY0 input=Ey0 ax=65527
+TARGET_PHON_CASE family=vowel base=EY0 input=ey0 ax=65527
+TARGET_PHON_CASE family=vowel base=EY1 input=EY1 ax=1
+TARGET_PHON_CASE family=vowel base=EY1 input=eY1 ax=65527
+TARGET_PHON_CASE family=vowel base=EY1 input=Ey1 ax=65527
+TARGET_PHON_CASE family=vowel base=EY1 input=ey1 ax=65527
+TARGET_PHON_CASE family=vowel base=EY2 input=EY2 ax=1
+TARGET_PHON_CASE family=vowel base=EY2 input=eY2 ax=65527
+TARGET_PHON_CASE family=vowel base=EY2 input=Ey2 ax=65527
+TARGET_PHON_CASE family=vowel base=EY2 input=ey2 ax=65527
+TARGET_PHON_CASE family=vowel base=IH0 input=IH0 ax=1
+TARGET_PHON_CASE family=vowel base=IH0 input=iH0 ax=65527
+TARGET_PHON_CASE family=vowel base=IH0 input=Ih0 ax=65527
+TARGET_PHON_CASE family=vowel base=IH0 input=ih0 ax=65527
+TARGET_PHON_CASE family=vowel base=IH1 input=IH1 ax=1
+TARGET_PHON_CASE family=vowel base=IH1 input=iH1 ax=65527
+TARGET_PHON_CASE family=vowel base=IH1 input=Ih1 ax=65527
+TARGET_PHON_CASE family=vowel base=IH1 input=ih1 ax=65527
+TARGET_PHON_CASE family=vowel base=IH2 input=IH2 ax=1
+TARGET_PHON_CASE family=vowel base=IH2 input=iH2 ax=65527
+TARGET_PHON_CASE family=vowel base=IH2 input=Ih2 ax=65527
+TARGET_PHON_CASE family=vowel base=IH2 input=ih2 ax=65527
+TARGET_PHON_CASE family=vowel base=IY0 input=IY0 ax=1
+TARGET_PHON_CASE family=vowel base=IY0 input=iY0 ax=65527
+TARGET_PHON_CASE family=vowel base=IY0 input=Iy0 ax=65527
+TARGET_PHON_CASE family=vowel base=IY0 input=iy0 ax=65527
+TARGET_PHON_CASE family=vowel base=IY1 input=IY1 ax=1
+TARGET_PHON_CASE family=vowel base=IY1 input=iY1 ax=65527
+TARGET_PHON_CASE family=vowel base=IY1 input=Iy1 ax=65527
+TARGET_PHON_CASE family=vowel base=IY1 input=iy1 ax=65527
+TARGET_PHON_CASE family=vowel base=IY2 input=IY2 ax=1
+TARGET_PHON_CASE family=vowel base=IY2 input=iY2 ax=65527
+TARGET_PHON_CASE family=vowel base=IY2 input=Iy2 ax=65527
+TARGET_PHON_CASE family=vowel base=IY2 input=iy2 ax=65527
+TARGET_PHON_CASE family=vowel base=OW0 input=OW0 ax=1
+TARGET_PHON_CASE family=vowel base=OW0 input=oW0 ax=65527
+TARGET_PHON_CASE family=vowel base=OW0 input=Ow0 ax=65527
+TARGET_PHON_CASE family=vowel base=OW0 input=ow0 ax=65527
+TARGET_PHON_CASE family=vowel base=OW1 input=OW1 ax=1
+TARGET_PHON_CASE family=vowel base=OW1 input=oW1 ax=65527
+TARGET_PHON_CASE family=vowel base=OW1 input=Ow1 ax=65527
+TARGET_PHON_CASE family=vowel base=OW1 input=ow1 ax=65527
+TARGET_PHON_CASE family=vowel base=OW2 input=OW2 ax=1
+TARGET_PHON_CASE family=vowel base=OW2 input=oW2 ax=65527
+TARGET_PHON_CASE family=vowel base=OW2 input=Ow2 ax=65527
+TARGET_PHON_CASE family=vowel base=OW2 input=ow2 ax=65527
+TARGET_PHON_CASE family=vowel base=OY0 input=OY0 ax=1
+TARGET_PHON_CASE family=vowel base=OY0 input=oY0 ax=65527
+TARGET_PHON_CASE family=vowel base=OY0 input=Oy0 ax=65527
+TARGET_PHON_CASE family=vowel base=OY0 input=oy0 ax=65527
+TARGET_PHON_CASE family=vowel base=OY1 input=OY1 ax=1
+TARGET_PHON_CASE family=vowel base=OY1 input=oY1 ax=65527
+TARGET_PHON_CASE family=vowel base=OY1 input=Oy1 ax=65527
+TARGET_PHON_CASE family=vowel base=OY1 input=oy1 ax=65527
+TARGET_PHON_CASE family=vowel base=OY2 input=OY2 ax=1
+TARGET_PHON_CASE family=vowel base=OY2 input=oY2 ax=65527
+TARGET_PHON_CASE family=vowel base=OY2 input=Oy2 ax=65527
+TARGET_PHON_CASE family=vowel base=OY2 input=oy2 ax=65527
+TARGET_PHON_CASE family=vowel base=UH0 input=UH0 ax=1
+TARGET_PHON_CASE family=vowel base=UH0 input=uH0 ax=65527
+TARGET_PHON_CASE family=vowel base=UH0 input=Uh0 ax=65527
+TARGET_PHON_CASE family=vowel base=UH0 input=uh0 ax=65527
+TARGET_PHON_CASE family=vowel base=UH1 input=UH1 ax=1
+TARGET_PHON_CASE family=vowel base=UH1 input=uH1 ax=65527
+TARGET_PHON_CASE family=vowel base=UH1 input=Uh1 ax=65527
+TARGET_PHON_CASE family=vowel base=UH1 input=uh1 ax=65527
+TARGET_PHON_CASE family=vowel base=UH2 input=UH2 ax=1
+TARGET_PHON_CASE family=vowel base=UH2 input=uH2 ax=65527
+TARGET_PHON_CASE family=vowel base=UH2 input=Uh2 ax=65527
+TARGET_PHON_CASE family=vowel base=UH2 input=uh2 ax=65527
+TARGET_PHON_CASE family=vowel base=UW0 input=UW0 ax=1
+TARGET_PHON_CASE family=vowel base=UW0 input=uW0 ax=65527
+TARGET_PHON_CASE family=vowel base=UW0 input=Uw0 ax=65527
+TARGET_PHON_CASE family=vowel base=UW0 input=uw0 ax=65527
+TARGET_PHON_CASE family=vowel base=UW1 input=UW1 ax=1
+TARGET_PHON_CASE family=vowel base=UW1 input=uW1 ax=65527
+TARGET_PHON_CASE family=vowel base=UW1 input=Uw1 ax=65527
+TARGET_PHON_CASE family=vowel base=UW1 input=uw1 ax=65527
+TARGET_PHON_CASE family=vowel base=UW2 input=UW2 ax=1
+TARGET_PHON_CASE family=vowel base=UW2 input=uW2 ax=65527
+TARGET_PHON_CASE family=vowel base=UW2 input=Uw2 ax=65527
+TARGET_PHON_CASE family=vowel base=UW2 input=uw2 ax=65527
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> The program is not being run.
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)

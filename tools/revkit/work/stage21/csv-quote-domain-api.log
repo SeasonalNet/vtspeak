@@ -1,0 +1,1189 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>> > > >  >  >  > > >  >  >  >   >   >   >    >    >    >     >     >     >     >    >   >   >  >  >  >  >  >  >   >   >   >  >  >   >   >  >  >   >   >   >    >    >    >    >     >     >     >    >   >   >  >  >  >  > > >>>>>Wine-gdb> Wine-gdb> Continuing.
+CSV_QDOMAIN case=0:0 input= low_ax=1 count=1 f0=
+CSV_QDOMAIN case=1:0 input=41 low_ax=1 count=1 f0=41
+CSV_QDOMAIN case=1:1 input=22 low_ax=1 count=1 f0=
+CSV_QDOMAIN case=1:2 input=2c low_ax=1 count=1 f0=
+CSV_QDOMAIN case=2:0 input=4141 low_ax=1 count=1 f0=4141
+CSV_QDOMAIN case=2:1 input=2241 low_ax=1 count=1 f0=41
+CSV_QDOMAIN case=2:2 input=2c41 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=2:3 input=4122 low_ax=1 count=1 f0=4122
+CSV_QDOMAIN case=2:4 input=2222 low_ax=1 count=1 f0=
+CSV_QDOMAIN case=2:5 input=2c22 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=2:6 input=412c low_ax=1 count=1 f0=41
+CSV_QDOMAIN case=2:7 input=222c low_ax=1 count=1 f0=2c
+CSV_QDOMAIN case=2:8 input=2c2c low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=3:0 input=414141 low_ax=1 count=1 f0=414141
+CSV_QDOMAIN case=3:1 input=224141 low_ax=1 count=1 f0=4141
+CSV_QDOMAIN case=3:2 input=2c4141 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=3:3 input=412241 low_ax=1 count=1 f0=412241
+CSV_QDOMAIN case=3:4 input=222241 low_ax=1 count=1 f0=
+CSV_QDOMAIN case=3:5 input=2c2241 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=3:6 input=412c41 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=3:7 input=222c41 low_ax=1 count=1 f0=2c41
+CSV_QDOMAIN case=3:8 input=2c2c41 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=3:9 input=414122 low_ax=1 count=1 f0=414122
+CSV_QDOMAIN case=3:10 input=224122 low_ax=1 count=1 f0=41
+CSV_QDOMAIN case=3:11 input=2c4122 low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=3:12 input=412222 low_ax=1 count=1 f0=412222
+CSV_QDOMAIN case=3:13 input=222222 low_ax=1 count=1 f0=22
+CSV_QDOMAIN case=3:14 input=2c2222 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=3:15 input=412c22 low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=3:16 input=222c22 low_ax=1 count=1 f0=2c
+CSV_QDOMAIN case=3:17 input=2c2c22 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=3:18 input=41412c low_ax=1 count=1 f0=4141
+CSV_QDOMAIN case=3:19 input=22412c low_ax=1 count=1 f0=412c
+CSV_QDOMAIN case=3:20 input=2c412c low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=3:21 input=41222c low_ax=1 count=1 f0=4122
+CSV_QDOMAIN case=3:22 input=22222c low_ax=1 count=1 f0=
+CSV_QDOMAIN case=3:23 input=2c222c low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=3:24 input=412c2c low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=3:25 input=222c2c low_ax=1 count=1 f0=2c2c
+CSV_QDOMAIN case=3:26 input=2c2c2c low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=4:0 input=41414141 low_ax=1 count=1 f0=41414141
+CSV_QDOMAIN case=4:1 input=22414141 low_ax=1 count=1 f0=414141
+CSV_QDOMAIN case=4:2 input=2c414141 low_ax=1 count=2 f0= f1=414141
+CSV_QDOMAIN case=4:3 input=41224141 low_ax=1 count=1 f0=41224141
+CSV_QDOMAIN case=4:4 input=22224141 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=4:5 input=2c224141 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=4:6 input=412c4141 low_ax=1 count=2 f0=41 f1=4141
+CSV_QDOMAIN case=4:7 input=222c4141 low_ax=1 count=1 f0=2c4141
+CSV_QDOMAIN case=4:8 input=2c2c4141 low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=4:9 input=41412241 low_ax=1 count=1 f0=41412241
+CSV_QDOMAIN case=4:10 input=22412241 low_ax=1 count=1 f0=41
+CSV_QDOMAIN case=4:11 input=2c412241 low_ax=1 count=2 f0= f1=412241
+CSV_QDOMAIN case=4:12 input=41222241 low_ax=1 count=1 f0=41222241
+CSV_QDOMAIN case=4:13 input=22222241 low_ax=1 count=1 f0=2241
+CSV_QDOMAIN case=4:14 input=2c222241 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=4:15 input=412c2241 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=4:16 input=222c2241 low_ax=1 count=1 f0=2c
+CSV_QDOMAIN case=4:17 input=2c2c2241 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=4:18 input=41412c41 low_ax=1 count=2 f0=4141 f1=41
+CSV_QDOMAIN case=4:19 input=22412c41 low_ax=1 count=1 f0=412c41
+CSV_QDOMAIN case=4:20 input=2c412c41 low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=4:21 input=41222c41 low_ax=1 count=2 f0=4122 f1=41
+CSV_QDOMAIN case=4:22 input=22222c41 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=4:23 input=2c222c41 low_ax=1 count=2 f0= f1=2c41
+CSV_QDOMAIN case=4:24 input=412c2c41 low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=4:25 input=222c2c41 low_ax=1 count=1 f0=2c2c41
+CSV_QDOMAIN case=4:26 input=2c2c2c41 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=4:27 input=41414122 low_ax=1 count=1 f0=41414122
+CSV_QDOMAIN case=4:28 input=22414122 low_ax=1 count=1 f0=4141
+CSV_QDOMAIN case=4:29 input=2c414122 low_ax=1 count=2 f0= f1=414122
+CSV_QDOMAIN case=4:30 input=41224122 low_ax=1 count=1 f0=41224122
+CSV_QDOMAIN case=4:31 input=22224122 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=4:32 input=2c224122 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=4:33 input=412c4122 low_ax=1 count=2 f0=41 f1=4122
+CSV_QDOMAIN case=4:34 input=222c4122 low_ax=1 count=1 f0=2c41
+CSV_QDOMAIN case=4:35 input=2c2c4122 low_ax=1 count=3 f0= f1= f2=4122
+CSV_QDOMAIN case=4:36 input=41412222 low_ax=1 count=1 f0=41412222
+CSV_QDOMAIN case=4:37 input=22412222 low_ax=1 count=1 f0=4122
+CSV_QDOMAIN case=4:38 input=2c412222 low_ax=1 count=2 f0= f1=412222
+CSV_QDOMAIN case=4:39 input=41222222 low_ax=1 count=1 f0=41222222
+CSV_QDOMAIN case=4:40 input=22222222 low_ax=1 count=1 f0=22
+CSV_QDOMAIN case=4:41 input=2c222222 low_ax=1 count=2 f0= f1=22
+CSV_QDOMAIN case=4:42 input=412c2222 low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=4:43 input=222c2222 low_ax=1 count=1 f0=2c22
+CSV_QDOMAIN case=4:44 input=2c2c2222 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=4:45 input=41412c22 low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=4:46 input=22412c22 low_ax=1 count=1 f0=412c
+CSV_QDOMAIN case=4:47 input=2c412c22 low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=4:48 input=41222c22 low_ax=1 count=2 f0=4122 f1=
+CSV_QDOMAIN case=4:49 input=22222c22 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=4:50 input=2c222c22 low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=4:51 input=412c2c22 low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=4:52 input=222c2c22 low_ax=1 count=1 f0=2c2c
+CSV_QDOMAIN case=4:53 input=2c2c2c22 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=4:54 input=4141412c low_ax=1 count=1 f0=414141
+CSV_QDOMAIN case=4:55 input=2241412c low_ax=1 count=1 f0=41412c
+CSV_QDOMAIN case=4:56 input=2c41412c low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=4:57 input=4122412c low_ax=1 count=1 f0=412241
+CSV_QDOMAIN case=4:58 input=2222412c low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=4:59 input=2c22412c low_ax=1 count=2 f0= f1=412c
+CSV_QDOMAIN case=4:60 input=412c412c low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=4:61 input=222c412c low_ax=1 count=1 f0=2c412c
+CSV_QDOMAIN case=4:62 input=2c2c412c low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=4:63 input=4141222c low_ax=1 count=1 f0=414122
+CSV_QDOMAIN case=4:64 input=2241222c low_ax=1 count=1 f0=41
+CSV_QDOMAIN case=4:65 input=2c41222c low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=4:66 input=4122222c low_ax=1 count=1 f0=412222
+CSV_QDOMAIN case=4:67 input=2222222c low_ax=1 count=1 f0=222c
+CSV_QDOMAIN case=4:68 input=2c22222c low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=4:69 input=412c222c low_ax=1 count=2 f0=41 f1=2c
+CSV_QDOMAIN case=4:70 input=222c222c low_ax=1 count=1 f0=2c
+CSV_QDOMAIN case=4:71 input=2c2c222c low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=4:72 input=41412c2c low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=4:73 input=22412c2c low_ax=1 count=1 f0=412c2c
+CSV_QDOMAIN case=4:74 input=2c412c2c low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=4:75 input=41222c2c low_ax=1 count=2 f0=4122 f1=
+CSV_QDOMAIN case=4:76 input=22222c2c low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=4:77 input=2c222c2c low_ax=1 count=2 f0= f1=2c2c
+CSV_QDOMAIN case=4:78 input=412c2c2c low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=4:79 input=222c2c2c low_ax=1 count=1 f0=2c2c2c
+CSV_QDOMAIN case=4:80 input=2c2c2c2c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=5:0 input=4141414141 low_ax=1 count=1 f0=4141414141
+CSV_QDOMAIN case=5:1 input=2241414141 low_ax=1 count=1 f0=41414141
+CSV_QDOMAIN case=5:2 input=2c41414141 low_ax=1 count=2 f0= f1=41414141
+CSV_QDOMAIN case=5:3 input=4122414141 low_ax=1 count=1 f0=4122414141
+CSV_QDOMAIN case=5:4 input=2222414141 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=5:5 input=2c22414141 low_ax=1 count=2 f0= f1=414141
+CSV_QDOMAIN case=5:6 input=412c414141 low_ax=1 count=2 f0=41 f1=414141
+CSV_QDOMAIN case=5:7 input=222c414141 low_ax=1 count=1 f0=2c414141
+CSV_QDOMAIN case=5:8 input=2c2c414141 low_ax=1 count=3 f0= f1= f2=414141
+CSV_QDOMAIN case=5:9 input=4141224141 low_ax=1 count=1 f0=4141224141
+CSV_QDOMAIN case=5:10 input=2241224141 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=5:11 input=2c41224141 low_ax=1 count=2 f0= f1=41224141
+CSV_QDOMAIN case=5:12 input=4122224141 low_ax=1 count=1 f0=4122224141
+CSV_QDOMAIN case=5:13 input=2222224141 low_ax=1 count=1 f0=224141
+CSV_QDOMAIN case=5:14 input=2c22224141 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=5:15 input=412c224141 low_ax=1 count=2 f0=41 f1=4141
+CSV_QDOMAIN case=5:16 input=222c224141 low_ax=1 count=2 f0=2c f1=41
+CSV_QDOMAIN case=5:17 input=2c2c224141 low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=5:18 input=41412c4141 low_ax=1 count=2 f0=4141 f1=4141
+CSV_QDOMAIN case=5:19 input=22412c4141 low_ax=1 count=1 f0=412c4141
+CSV_QDOMAIN case=5:20 input=2c412c4141 low_ax=1 count=3 f0= f1=41 f2=4141
+CSV_QDOMAIN case=5:21 input=41222c4141 low_ax=1 count=2 f0=4122 f1=4141
+CSV_QDOMAIN case=5:22 input=22222c4141 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=5:23 input=2c222c4141 low_ax=1 count=2 f0= f1=2c4141
+CSV_QDOMAIN case=5:24 input=412c2c4141 low_ax=1 count=3 f0=41 f1= f2=4141
+CSV_QDOMAIN case=5:25 input=222c2c4141 low_ax=1 count=1 f0=2c2c4141
+CSV_QDOMAIN case=5:26 input=2c2c2c4141 low_ax=1 count=4 f0= f1= f2= f3=4141
+CSV_QDOMAIN case=5:27 input=4141412241 low_ax=1 count=1 f0=4141412241
+CSV_QDOMAIN case=5:28 input=2241412241 low_ax=1 count=1 f0=4141
+CSV_QDOMAIN case=5:29 input=2c41412241 low_ax=1 count=2 f0= f1=41412241
+CSV_QDOMAIN case=5:30 input=4122412241 low_ax=1 count=1 f0=4122412241
+CSV_QDOMAIN case=5:31 input=2222412241 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=5:32 input=2c22412241 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=5:33 input=412c412241 low_ax=1 count=2 f0=41 f1=412241
+CSV_QDOMAIN case=5:34 input=222c412241 low_ax=1 count=1 f0=2c41
+CSV_QDOMAIN case=5:35 input=2c2c412241 low_ax=1 count=3 f0= f1= f2=412241
+CSV_QDOMAIN case=5:36 input=4141222241 low_ax=1 count=1 f0=4141222241
+CSV_QDOMAIN case=5:37 input=2241222241 low_ax=1 count=1 f0=412241
+CSV_QDOMAIN case=5:38 input=2c41222241 low_ax=1 count=2 f0= f1=41222241
+CSV_QDOMAIN case=5:39 input=4122222241 low_ax=1 count=1 f0=4122222241
+CSV_QDOMAIN case=5:40 input=2222222241 low_ax=1 count=1 f0=22
+CSV_QDOMAIN case=5:41 input=2c22222241 low_ax=1 count=2 f0= f1=2241
+CSV_QDOMAIN case=5:42 input=412c222241 low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=5:43 input=222c222241 low_ax=1 count=1 f0=2c2241
+CSV_QDOMAIN case=5:44 input=2c2c222241 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:45 input=41412c2241 low_ax=1 count=2 f0=4141 f1=41
+CSV_QDOMAIN case=5:46 input=22412c2241 low_ax=1 count=1 f0=412c
+CSV_QDOMAIN case=5:47 input=2c412c2241 low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=5:48 input=41222c2241 low_ax=1 count=2 f0=4122 f1=41
+CSV_QDOMAIN case=5:49 input=22222c2241 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=5:50 input=2c222c2241 low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=5:51 input=412c2c2241 low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=5:52 input=222c2c2241 low_ax=1 count=1 f0=2c2c
+CSV_QDOMAIN case=5:53 input=2c2c2c2241 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=5:54 input=4141412c41 low_ax=1 count=2 f0=414141 f1=41
+CSV_QDOMAIN case=5:55 input=2241412c41 low_ax=1 count=1 f0=41412c41
+CSV_QDOMAIN case=5:56 input=2c41412c41 low_ax=1 count=3 f0= f1=4141 f2=41
+CSV_QDOMAIN case=5:57 input=4122412c41 low_ax=1 count=2 f0=412241 f1=41
+CSV_QDOMAIN case=5:58 input=2222412c41 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=5:59 input=2c22412c41 low_ax=1 count=2 f0= f1=412c41
+CSV_QDOMAIN case=5:60 input=412c412c41 low_ax=1 count=3 f0=41 f1=41 f2=41
+CSV_QDOMAIN case=5:61 input=222c412c41 low_ax=1 count=1 f0=2c412c41
+CSV_QDOMAIN case=5:62 input=2c2c412c41 low_ax=1 count=4 f0= f1= f2=41 f3=41
+CSV_QDOMAIN case=5:63 input=4141222c41 low_ax=1 count=2 f0=414122 f1=41
+CSV_QDOMAIN case=5:64 input=2241222c41 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=5:65 input=2c41222c41 low_ax=1 count=3 f0= f1=4122 f2=41
+CSV_QDOMAIN case=5:66 input=4122222c41 low_ax=1 count=2 f0=412222 f1=41
+CSV_QDOMAIN case=5:67 input=2222222c41 low_ax=1 count=1 f0=222c41
+CSV_QDOMAIN case=5:68 input=2c22222c41 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=5:69 input=412c222c41 low_ax=1 count=2 f0=41 f1=2c41
+CSV_QDOMAIN case=5:70 input=222c222c41 low_ax=1 count=2 f0=2c f1=41
+CSV_QDOMAIN case=5:71 input=2c2c222c41 low_ax=1 count=3 f0= f1= f2=2c41
+CSV_QDOMAIN case=5:72 input=41412c2c41 low_ax=1 count=3 f0=4141 f1= f2=41
+CSV_QDOMAIN case=5:73 input=22412c2c41 low_ax=1 count=1 f0=412c2c41
+CSV_QDOMAIN case=5:74 input=2c412c2c41 low_ax=1 count=4 f0= f1=41 f2= f3=41
+CSV_QDOMAIN case=5:75 input=41222c2c41 low_ax=1 count=3 f0=4122 f1= f2=41
+CSV_QDOMAIN case=5:76 input=22222c2c41 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=5:77 input=2c222c2c41 low_ax=1 count=2 f0= f1=2c2c41
+CSV_QDOMAIN case=5:78 input=412c2c2c41 low_ax=1 count=4 f0=41 f1= f2= f3=41
+CSV_QDOMAIN case=5:79 input=222c2c2c41 low_ax=1 count=1 f0=2c2c2c41
+CSV_QDOMAIN case=5:80 input=2c2c2c2c41 low_ax=1 count=5 f0= f1= f2= f3= f4=41
+CSV_QDOMAIN case=5:81 input=4141414122 low_ax=1 count=1 f0=4141414122
+CSV_QDOMAIN case=5:82 input=2241414122 low_ax=1 count=1 f0=414141
+CSV_QDOMAIN case=5:83 input=2c41414122 low_ax=1 count=2 f0= f1=41414122
+CSV_QDOMAIN case=5:84 input=4122414122 low_ax=1 count=1 f0=4122414122
+CSV_QDOMAIN case=5:85 input=2222414122 low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=5:86 input=2c22414122 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=5:87 input=412c414122 low_ax=1 count=2 f0=41 f1=414122
+CSV_QDOMAIN case=5:88 input=222c414122 low_ax=1 count=1 f0=2c4141
+CSV_QDOMAIN case=5:89 input=2c2c414122 low_ax=1 count=3 f0= f1= f2=414122
+CSV_QDOMAIN case=5:90 input=4141224122 low_ax=1 count=1 f0=4141224122
+CSV_QDOMAIN case=5:91 input=2241224122 low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=5:92 input=2c41224122 low_ax=1 count=2 f0= f1=41224122
+CSV_QDOMAIN case=5:93 input=4122224122 low_ax=1 count=1 f0=4122224122
+CSV_QDOMAIN case=5:94 input=2222224122 low_ax=1 count=1 f0=2241
+CSV_QDOMAIN case=5:95 input=2c22224122 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:96 input=412c224122 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=5:97 input=222c224122 low_ax=1 count=2 f0=2c f1=
+CSV_QDOMAIN case=5:98 input=2c2c224122 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=5:99 input=41412c4122 low_ax=1 count=2 f0=4141 f1=4122
+CSV_QDOMAIN case=5:100 input=22412c4122 low_ax=1 count=1 f0=412c41
+CSV_QDOMAIN case=5:101 input=2c412c4122 low_ax=1 count=3 f0= f1=41 f2=4122
+CSV_QDOMAIN case=5:102 input=41222c4122 low_ax=1 count=2 f0=4122 f1=4122
+CSV_QDOMAIN case=5:103 input=22222c4122 low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=5:104 input=2c222c4122 low_ax=1 count=2 f0= f1=2c41
+CSV_QDOMAIN case=5:105 input=412c2c4122 low_ax=1 count=3 f0=41 f1= f2=4122
+CSV_QDOMAIN case=5:106 input=222c2c4122 low_ax=1 count=1 f0=2c2c41
+CSV_QDOMAIN case=5:107 input=2c2c2c4122 low_ax=1 count=4 f0= f1= f2= f3=4122
+CSV_QDOMAIN case=5:108 input=4141412222 low_ax=1 count=1 f0=4141412222
+CSV_QDOMAIN case=5:109 input=2241412222 low_ax=1 count=1 f0=414122
+CSV_QDOMAIN case=5:110 input=2c41412222 low_ax=1 count=2 f0= f1=41412222
+CSV_QDOMAIN case=5:111 input=4122412222 low_ax=1 count=1 f0=4122412222
+CSV_QDOMAIN case=5:112 input=2222412222 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=5:113 input=2c22412222 low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=5:114 input=412c412222 low_ax=1 count=2 f0=41 f1=412222
+CSV_QDOMAIN case=5:115 input=222c412222 low_ax=1 count=1 f0=2c4122
+CSV_QDOMAIN case=5:116 input=2c2c412222 low_ax=1 count=3 f0= f1= f2=412222
+CSV_QDOMAIN case=5:117 input=4141222222 low_ax=1 count=1 f0=4141222222
+CSV_QDOMAIN case=5:118 input=2241222222 low_ax=1 count=1 f0=4122
+CSV_QDOMAIN case=5:119 input=2c41222222 low_ax=1 count=2 f0= f1=41222222
+CSV_QDOMAIN case=5:120 input=4122222222 low_ax=1 count=1 f0=4122222222
+CSV_QDOMAIN case=5:121 input=2222222222 low_ax=1 count=1 f0=2222
+CSV_QDOMAIN case=5:122 input=2c22222222 low_ax=1 count=2 f0= f1=22
+CSV_QDOMAIN case=5:123 input=412c222222 low_ax=1 count=2 f0=41 f1=22
+CSV_QDOMAIN case=5:124 input=222c222222 low_ax=1 count=1 f0=2c22
+CSV_QDOMAIN case=5:125 input=2c2c222222 low_ax=1 count=3 f0= f1= f2=22
+CSV_QDOMAIN case=5:126 input=41412c2222 low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=5:127 input=22412c2222 low_ax=1 count=1 f0=412c22
+CSV_QDOMAIN case=5:128 input=2c412c2222 low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=5:129 input=41222c2222 low_ax=1 count=2 f0=4122 f1=
+CSV_QDOMAIN case=5:130 input=22222c2222 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=5:131 input=2c222c2222 low_ax=1 count=2 f0= f1=2c22
+CSV_QDOMAIN case=5:132 input=412c2c2222 low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=5:133 input=222c2c2222 low_ax=1 count=1 f0=2c2c22
+CSV_QDOMAIN case=5:134 input=2c2c2c2222 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=5:135 input=4141412c22 low_ax=1 count=2 f0=414141 f1=
+CSV_QDOMAIN case=5:136 input=2241412c22 low_ax=1 count=1 f0=41412c
+CSV_QDOMAIN case=5:137 input=2c41412c22 low_ax=1 count=3 f0= f1=4141 f2=
+CSV_QDOMAIN case=5:138 input=4122412c22 low_ax=1 count=2 f0=412241 f1=
+CSV_QDOMAIN case=5:139 input=2222412c22 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:140 input=2c22412c22 low_ax=1 count=2 f0= f1=412c
+CSV_QDOMAIN case=5:141 input=412c412c22 low_ax=1 count=3 f0=41 f1=41 f2=
+CSV_QDOMAIN case=5:142 input=222c412c22 low_ax=1 count=1 f0=2c412c
+CSV_QDOMAIN case=5:143 input=2c2c412c22 low_ax=1 count=4 f0= f1= f2=41 f3=
+CSV_QDOMAIN case=5:144 input=4141222c22 low_ax=1 count=2 f0=414122 f1=
+CSV_QDOMAIN case=5:145 input=2241222c22 low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=5:146 input=2c41222c22 low_ax=1 count=3 f0= f1=4122 f2=
+CSV_QDOMAIN case=5:147 input=4122222c22 low_ax=1 count=2 f0=412222 f1=
+CSV_QDOMAIN case=5:148 input=2222222c22 low_ax=1 count=1 f0=222c
+CSV_QDOMAIN case=5:149 input=2c22222c22 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:150 input=412c222c22 low_ax=1 count=2 f0=41 f1=2c
+CSV_QDOMAIN case=5:151 input=222c222c22 low_ax=1 count=2 f0=2c f1=
+CSV_QDOMAIN case=5:152 input=2c2c222c22 low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=5:153 input=41412c2c22 low_ax=1 count=3 f0=4141 f1= f2=
+CSV_QDOMAIN case=5:154 input=22412c2c22 low_ax=1 count=1 f0=412c2c
+CSV_QDOMAIN case=5:155 input=2c412c2c22 low_ax=1 count=4 f0= f1=41 f2= f3=
+CSV_QDOMAIN case=5:156 input=41222c2c22 low_ax=1 count=3 f0=4122 f1= f2=
+CSV_QDOMAIN case=5:157 input=22222c2c22 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:158 input=2c222c2c22 low_ax=1 count=2 f0= f1=2c2c
+CSV_QDOMAIN case=5:159 input=412c2c2c22 low_ax=1 count=4 f0=41 f1= f2= f3=
+CSV_QDOMAIN case=5:160 input=222c2c2c22 low_ax=1 count=1 f0=2c2c2c
+CSV_QDOMAIN case=5:161 input=2c2c2c2c22 low_ax=1 count=5 f0= f1= f2= f3= f4=
+CSV_QDOMAIN case=5:162 input=414141412c low_ax=1 count=1 f0=41414141
+CSV_QDOMAIN case=5:163 input=224141412c low_ax=1 count=1 f0=4141412c
+CSV_QDOMAIN case=5:164 input=2c4141412c low_ax=1 count=2 f0= f1=414141
+CSV_QDOMAIN case=5:165 input=412241412c low_ax=1 count=1 f0=41224141
+CSV_QDOMAIN case=5:166 input=222241412c low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=5:167 input=2c2241412c low_ax=1 count=2 f0= f1=41412c
+CSV_QDOMAIN case=5:168 input=412c41412c low_ax=1 count=2 f0=41 f1=4141
+CSV_QDOMAIN case=5:169 input=222c41412c low_ax=1 count=1 f0=2c41412c
+CSV_QDOMAIN case=5:170 input=2c2c41412c low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=5:171 input=414122412c low_ax=1 count=1 f0=41412241
+CSV_QDOMAIN case=5:172 input=224122412c low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=5:173 input=2c4122412c low_ax=1 count=2 f0= f1=412241
+CSV_QDOMAIN case=5:174 input=412222412c low_ax=1 count=1 f0=41222241
+CSV_QDOMAIN case=5:175 input=222222412c low_ax=1 count=1 f0=22412c
+CSV_QDOMAIN case=5:176 input=2c2222412c low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:177 input=412c22412c low_ax=1 count=2 f0=41 f1=412c
+CSV_QDOMAIN case=5:178 input=222c22412c low_ax=1 count=2 f0=2c f1=
+CSV_QDOMAIN case=5:179 input=2c2c22412c low_ax=1 count=3 f0= f1= f2=412c
+CSV_QDOMAIN case=5:180 input=41412c412c low_ax=1 count=2 f0=4141 f1=41
+CSV_QDOMAIN case=5:181 input=22412c412c low_ax=1 count=1 f0=412c412c
+CSV_QDOMAIN case=5:182 input=2c412c412c low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=5:183 input=41222c412c low_ax=1 count=2 f0=4122 f1=41
+CSV_QDOMAIN case=5:184 input=22222c412c low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=5:185 input=2c222c412c low_ax=1 count=2 f0= f1=2c412c
+CSV_QDOMAIN case=5:186 input=412c2c412c low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=5:187 input=222c2c412c low_ax=1 count=1 f0=2c2c412c
+CSV_QDOMAIN case=5:188 input=2c2c2c412c low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=5:189 input=414141222c low_ax=1 count=1 f0=41414122
+CSV_QDOMAIN case=5:190 input=224141222c low_ax=1 count=1 f0=4141
+CSV_QDOMAIN case=5:191 input=2c4141222c low_ax=1 count=2 f0= f1=414122
+CSV_QDOMAIN case=5:192 input=412241222c low_ax=1 count=1 f0=41224122
+CSV_QDOMAIN case=5:193 input=222241222c low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=5:194 input=2c2241222c low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=5:195 input=412c41222c low_ax=1 count=2 f0=41 f1=4122
+CSV_QDOMAIN case=5:196 input=222c41222c low_ax=1 count=1 f0=2c41
+CSV_QDOMAIN case=5:197 input=2c2c41222c low_ax=1 count=3 f0= f1= f2=4122
+CSV_QDOMAIN case=5:198 input=414122222c low_ax=1 count=1 f0=41412222
+CSV_QDOMAIN case=5:199 input=224122222c low_ax=1 count=1 f0=41222c
+CSV_QDOMAIN case=5:200 input=2c4122222c low_ax=1 count=2 f0= f1=412222
+CSV_QDOMAIN case=5:201 input=412222222c low_ax=1 count=1 f0=41222222
+CSV_QDOMAIN case=5:202 input=222222222c low_ax=1 count=1 f0=22
+CSV_QDOMAIN case=5:203 input=2c2222222c low_ax=1 count=2 f0= f1=222c
+CSV_QDOMAIN case=5:204 input=412c22222c low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=5:205 input=222c22222c low_ax=1 count=1 f0=2c222c
+CSV_QDOMAIN case=5:206 input=2c2c22222c low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:207 input=41412c222c low_ax=1 count=2 f0=4141 f1=2c
+CSV_QDOMAIN case=5:208 input=22412c222c low_ax=1 count=1 f0=412c
+CSV_QDOMAIN case=5:209 input=2c412c222c low_ax=1 count=3 f0= f1=41 f2=2c
+CSV_QDOMAIN case=5:210 input=41222c222c low_ax=1 count=2 f0=4122 f1=2c
+CSV_QDOMAIN case=5:211 input=22222c222c low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=5:212 input=2c222c222c low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=5:213 input=412c2c222c low_ax=1 count=3 f0=41 f1= f2=2c
+CSV_QDOMAIN case=5:214 input=222c2c222c low_ax=1 count=1 f0=2c2c
+CSV_QDOMAIN case=5:215 input=2c2c2c222c low_ax=1 count=4 f0= f1= f2= f3=2c
+CSV_QDOMAIN case=5:216 input=4141412c2c low_ax=1 count=2 f0=414141 f1=
+CSV_QDOMAIN case=5:217 input=2241412c2c low_ax=1 count=1 f0=41412c2c
+CSV_QDOMAIN case=5:218 input=2c41412c2c low_ax=1 count=3 f0= f1=4141 f2=
+CSV_QDOMAIN case=5:219 input=4122412c2c low_ax=1 count=2 f0=412241 f1=
+CSV_QDOMAIN case=5:220 input=2222412c2c low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:221 input=2c22412c2c low_ax=1 count=2 f0= f1=412c2c
+CSV_QDOMAIN case=5:222 input=412c412c2c low_ax=1 count=3 f0=41 f1=41 f2=
+CSV_QDOMAIN case=5:223 input=222c412c2c low_ax=1 count=1 f0=2c412c2c
+CSV_QDOMAIN case=5:224 input=2c2c412c2c low_ax=1 count=4 f0= f1= f2=41 f3=
+CSV_QDOMAIN case=5:225 input=4141222c2c low_ax=1 count=2 f0=414122 f1=
+CSV_QDOMAIN case=5:226 input=2241222c2c low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=5:227 input=2c41222c2c low_ax=1 count=3 f0= f1=4122 f2=
+CSV_QDOMAIN case=5:228 input=4122222c2c low_ax=1 count=2 f0=412222 f1=
+CSV_QDOMAIN case=5:229 input=2222222c2c low_ax=1 count=1 f0=222c2c
+CSV_QDOMAIN case=5:230 input=2c22222c2c low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:231 input=412c222c2c low_ax=1 count=2 f0=41 f1=2c2c
+CSV_QDOMAIN case=5:232 input=222c222c2c low_ax=1 count=2 f0=2c f1=
+CSV_QDOMAIN case=5:233 input=2c2c222c2c low_ax=1 count=3 f0= f1= f2=2c2c
+CSV_QDOMAIN case=5:234 input=41412c2c2c low_ax=1 count=3 f0=4141 f1= f2=
+CSV_QDOMAIN case=5:235 input=22412c2c2c low_ax=1 count=1 f0=412c2c2c
+CSV_QDOMAIN case=5:236 input=2c412c2c2c low_ax=1 count=4 f0= f1=41 f2= f3=
+CSV_QDOMAIN case=5:237 input=41222c2c2c low_ax=1 count=3 f0=4122 f1= f2=
+CSV_QDOMAIN case=5:238 input=22222c2c2c low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=5:239 input=2c222c2c2c low_ax=1 count=2 f0= f1=2c2c2c
+CSV_QDOMAIN case=5:240 input=412c2c2c2c low_ax=1 count=4 f0=41 f1= f2= f3=
+CSV_QDOMAIN case=5:241 input=222c2c2c2c low_ax=1 count=1 f0=2c2c2c2c
+CSV_QDOMAIN case=5:242 input=2c2c2c2c2c low_ax=1 count=5 f0= f1= f2= f3= f4=
+CSV_QDOMAIN case=6:0 input=414141414141 low_ax=1 count=1 f0=414141414141
+CSV_QDOMAIN case=6:1 input=224141414141 low_ax=1 count=1 f0=4141414141
+CSV_QDOMAIN case=6:2 input=2c4141414141 low_ax=1 count=2 f0= f1=4141414141
+CSV_QDOMAIN case=6:3 input=412241414141 low_ax=1 count=1 f0=412241414141
+CSV_QDOMAIN case=6:4 input=222241414141 low_ax=1 count=2 f0= f1=414141
+CSV_QDOMAIN case=6:5 input=2c2241414141 low_ax=1 count=2 f0= f1=41414141
+CSV_QDOMAIN case=6:6 input=412c41414141 low_ax=1 count=2 f0=41 f1=41414141
+CSV_QDOMAIN case=6:7 input=222c41414141 low_ax=1 count=1 f0=2c41414141
+CSV_QDOMAIN case=6:8 input=2c2c41414141 low_ax=1 count=3 f0= f1= f2=41414141
+CSV_QDOMAIN case=6:9 input=414122414141 low_ax=1 count=1 f0=414122414141
+CSV_QDOMAIN case=6:10 input=224122414141 low_ax=1 count=2 f0=41 f1=4141
+CSV_QDOMAIN case=6:11 input=2c4122414141 low_ax=1 count=2 f0= f1=4122414141
+CSV_QDOMAIN case=6:12 input=412222414141 low_ax=1 count=1 f0=412222414141
+CSV_QDOMAIN case=6:13 input=222222414141 low_ax=1 count=1 f0=22414141
+CSV_QDOMAIN case=6:14 input=2c2222414141 low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=6:15 input=412c22414141 low_ax=1 count=2 f0=41 f1=414141
+CSV_QDOMAIN case=6:16 input=222c22414141 low_ax=1 count=2 f0=2c f1=4141
+CSV_QDOMAIN case=6:17 input=2c2c22414141 low_ax=1 count=3 f0= f1= f2=414141
+CSV_QDOMAIN case=6:18 input=41412c414141 low_ax=1 count=2 f0=4141 f1=414141
+CSV_QDOMAIN case=6:19 input=22412c414141 low_ax=1 count=1 f0=412c414141
+CSV_QDOMAIN case=6:20 input=2c412c414141 low_ax=1 count=3 f0= f1=41 f2=414141
+CSV_QDOMAIN case=6:21 input=41222c414141 low_ax=1 count=2 f0=4122 f1=414141
+CSV_QDOMAIN case=6:22 input=22222c414141 low_ax=1 count=2 f0= f1=414141
+CSV_QDOMAIN case=6:23 input=2c222c414141 low_ax=1 count=2 f0= f1=2c414141
+CSV_QDOMAIN case=6:24 input=412c2c414141 low_ax=1 count=3 f0=41 f1= f2=414141
+CSV_QDOMAIN case=6:25 input=222c2c414141 low_ax=1 count=1 f0=2c2c414141
+CSV_QDOMAIN case=6:26 input=2c2c2c414141 low_ax=1 count=4 f0= f1= f2= f3=414141
+CSV_QDOMAIN case=6:27 input=414141224141 low_ax=1 count=1 f0=414141224141
+CSV_QDOMAIN case=6:28 input=224141224141 low_ax=1 count=2 f0=4141 f1=41
+CSV_QDOMAIN case=6:29 input=2c4141224141 low_ax=1 count=2 f0= f1=4141224141
+CSV_QDOMAIN case=6:30 input=412241224141 low_ax=1 count=1 f0=412241224141
+CSV_QDOMAIN case=6:31 input=222241224141 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=6:32 input=2c2241224141 low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=6:33 input=412c41224141 low_ax=1 count=2 f0=41 f1=41224141
+CSV_QDOMAIN case=6:34 input=222c41224141 low_ax=1 count=2 f0=2c41 f1=41
+CSV_QDOMAIN case=6:35 input=2c2c41224141 low_ax=1 count=3 f0= f1= f2=41224141
+CSV_QDOMAIN case=6:36 input=414122224141 low_ax=1 count=1 f0=414122224141
+CSV_QDOMAIN case=6:37 input=224122224141 low_ax=1 count=1 f0=41224141
+CSV_QDOMAIN case=6:38 input=2c4122224141 low_ax=1 count=2 f0= f1=4122224141
+CSV_QDOMAIN case=6:39 input=412222224141 low_ax=1 count=1 f0=412222224141
+CSV_QDOMAIN case=6:40 input=222222224141 low_ax=1 count=2 f0=22 f1=41
+CSV_QDOMAIN case=6:41 input=2c2222224141 low_ax=1 count=2 f0= f1=224141
+CSV_QDOMAIN case=6:42 input=412c22224141 low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=6:43 input=222c22224141 low_ax=1 count=1 f0=2c224141
+CSV_QDOMAIN case=6:44 input=2c2c22224141 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=6:45 input=41412c224141 low_ax=1 count=2 f0=4141 f1=4141
+CSV_QDOMAIN case=6:46 input=22412c224141 low_ax=1 count=2 f0=412c f1=41
+CSV_QDOMAIN case=6:47 input=2c412c224141 low_ax=1 count=3 f0= f1=41 f2=4141
+CSV_QDOMAIN case=6:48 input=41222c224141 low_ax=1 count=2 f0=4122 f1=4141
+CSV_QDOMAIN case=6:49 input=22222c224141 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=6:50 input=2c222c224141 low_ax=1 count=3 f0= f1=2c f2=41
+CSV_QDOMAIN case=6:51 input=412c2c224141 low_ax=1 count=3 f0=41 f1= f2=4141
+CSV_QDOMAIN case=6:52 input=222c2c224141 low_ax=1 count=2 f0=2c2c f1=41
+CSV_QDOMAIN case=6:53 input=2c2c2c224141 low_ax=1 count=4 f0= f1= f2= f3=4141
+CSV_QDOMAIN case=6:54 input=4141412c4141 low_ax=1 count=2 f0=414141 f1=4141
+CSV_QDOMAIN case=6:55 input=2241412c4141 low_ax=1 count=1 f0=41412c4141
+CSV_QDOMAIN case=6:56 input=2c41412c4141 low_ax=1 count=3 f0= f1=4141 f2=4141
+CSV_QDOMAIN case=6:57 input=4122412c4141 low_ax=1 count=2 f0=412241 f1=4141
+CSV_QDOMAIN case=6:58 input=2222412c4141 low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=6:59 input=2c22412c4141 low_ax=1 count=2 f0= f1=412c4141
+CSV_QDOMAIN case=6:60 input=412c412c4141 low_ax=1 count=3 f0=41 f1=41 f2=4141
+CSV_QDOMAIN case=6:61 input=222c412c4141 low_ax=1 count=1 f0=2c412c4141
+CSV_QDOMAIN case=6:62 input=2c2c412c4141 low_ax=1 count=4 f0= f1= f2=41 f3=4141
+CSV_QDOMAIN case=6:63 input=4141222c4141 low_ax=1 count=2 f0=414122 f1=4141
+CSV_QDOMAIN case=6:64 input=2241222c4141 low_ax=1 count=2 f0=41 f1=4141
+CSV_QDOMAIN case=6:65 input=2c41222c4141 low_ax=1 count=3 f0= f1=4122 f2=4141
+CSV_QDOMAIN case=6:66 input=4122222c4141 low_ax=1 count=2 f0=412222 f1=4141
+CSV_QDOMAIN case=6:67 input=2222222c4141 low_ax=1 count=1 f0=222c4141
+CSV_QDOMAIN case=6:68 input=2c22222c4141 low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=6:69 input=412c222c4141 low_ax=1 count=2 f0=41 f1=2c4141
+CSV_QDOMAIN case=6:70 input=222c222c4141 low_ax=1 count=2 f0=2c f1=4141
+CSV_QDOMAIN case=6:71 input=2c2c222c4141 low_ax=1 count=3 f0= f1= f2=2c4141
+CSV_QDOMAIN case=6:72 input=41412c2c4141 low_ax=1 count=3 f0=4141 f1= f2=4141
+CSV_QDOMAIN case=6:73 input=22412c2c4141 low_ax=1 count=1 f0=412c2c4141
+CSV_QDOMAIN case=6:74 input=2c412c2c4141 low_ax=1 count=4 f0= f1=41 f2= f3=4141
+CSV_QDOMAIN case=6:75 input=41222c2c4141 low_ax=1 count=3 f0=4122 f1= f2=4141
+CSV_QDOMAIN case=6:76 input=22222c2c4141 low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=6:77 input=2c222c2c4141 low_ax=1 count=2 f0= f1=2c2c4141
+CSV_QDOMAIN case=6:78 input=412c2c2c4141 low_ax=1 count=4 f0=41 f1= f2= f3=4141
+CSV_QDOMAIN case=6:79 input=222c2c2c4141 low_ax=1 count=1 f0=2c2c2c4141
+CSV_QDOMAIN case=6:80 input=2c2c2c2c4141 low_ax=1 count=5 f0= f1= f2= f3= f4=41
+41
+CSV_QDOMAIN case=6:81 input=414141412241 low_ax=1 count=1 f0=414141412241
+CSV_QDOMAIN case=6:82 input=224141412241 low_ax=1 count=1 f0=414141
+CSV_QDOMAIN case=6:83 input=2c4141412241 low_ax=1 count=2 f0= f1=4141412241
+CSV_QDOMAIN case=6:84 input=412241412241 low_ax=1 count=1 f0=412241412241
+CSV_QDOMAIN case=6:85 input=222241412241 low_ax=1 count=2 f0= f1=412241
+CSV_QDOMAIN case=6:86 input=2c2241412241 low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=6:87 input=412c41412241 low_ax=1 count=2 f0=41 f1=41412241
+CSV_QDOMAIN case=6:88 input=222c41412241 low_ax=1 count=1 f0=2c4141
+CSV_QDOMAIN case=6:89 input=2c2c41412241 low_ax=1 count=3 f0= f1= f2=41412241
+CSV_QDOMAIN case=6:90 input=414122412241 low_ax=1 count=1 f0=414122412241
+CSV_QDOMAIN case=6:91 input=224122412241 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=6:92 input=2c4122412241 low_ax=1 count=2 f0= f1=4122412241
+CSV_QDOMAIN case=6:93 input=412222412241 low_ax=1 count=1 f0=412222412241
+CSV_QDOMAIN case=6:94 input=222222412241 low_ax=1 count=1 f0=2241
+CSV_QDOMAIN case=6:95 input=2c2222412241 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:96 input=412c22412241 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=6:97 input=222c22412241 low_ax=1 count=2 f0=2c f1=41
+CSV_QDOMAIN case=6:98 input=2c2c22412241 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:99 input=41412c412241 low_ax=1 count=2 f0=4141 f1=412241
+CSV_QDOMAIN case=6:100 input=22412c412241 low_ax=1 count=1 f0=412c41
+CSV_QDOMAIN case=6:101 input=2c412c412241 low_ax=1 count=3 f0= f1=41 f2=412241
+CSV_QDOMAIN case=6:102 input=41222c412241 low_ax=1 count=2 f0=4122 f1=412241
+CSV_QDOMAIN case=6:103 input=22222c412241 low_ax=1 count=2 f0= f1=412241
+CSV_QDOMAIN case=6:104 input=2c222c412241 low_ax=1 count=2 f0= f1=2c41
+CSV_QDOMAIN case=6:105 input=412c2c412241 low_ax=1 count=3 f0=41 f1= f2=412241
+CSV_QDOMAIN case=6:106 input=222c2c412241 low_ax=1 count=1 f0=2c2c41
+CSV_QDOMAIN case=6:107 input=2c2c2c412241 low_ax=1 count=4 f0= f1= f2= f3=4122
+41
+CSV_QDOMAIN case=6:108 input=414141222241 low_ax=1 count=1 f0=414141222241
+CSV_QDOMAIN case=6:109 input=224141222241 low_ax=1 count=1 f0=41412241
+CSV_QDOMAIN case=6:110 input=2c4141222241 low_ax=1 count=2 f0= f1=4141222241
+CSV_QDOMAIN case=6:111 input=412241222241 low_ax=1 count=1 f0=412241222241
+CSV_QDOMAIN case=6:112 input=222241222241 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=6:113 input=2c2241222241 low_ax=1 count=2 f0= f1=412241
+CSV_QDOMAIN case=6:114 input=412c41222241 low_ax=1 count=2 f0=41 f1=41222241
+CSV_QDOMAIN case=6:115 input=222c41222241 low_ax=1 count=1 f0=2c412241
+CSV_QDOMAIN case=6:116 input=2c2c41222241 low_ax=1 count=3 f0= f1= f2=41222241
+CSV_QDOMAIN case=6:117 input=414122222241 low_ax=1 count=1 f0=414122222241
+CSV_QDOMAIN case=6:118 input=224122222241 low_ax=1 count=1 f0=4122
+CSV_QDOMAIN case=6:119 input=2c4122222241 low_ax=1 count=2 f0= f1=4122222241
+CSV_QDOMAIN case=6:120 input=412222222241 low_ax=1 count=1 f0=412222222241
+CSV_QDOMAIN case=6:121 input=222222222241 low_ax=1 count=1 f0=222241
+CSV_QDOMAIN case=6:122 input=2c2222222241 low_ax=1 count=2 f0= f1=22
+CSV_QDOMAIN case=6:123 input=412c22222241 low_ax=1 count=2 f0=41 f1=2241
+CSV_QDOMAIN case=6:124 input=222c22222241 low_ax=1 count=1 f0=2c22
+CSV_QDOMAIN case=6:125 input=2c2c22222241 low_ax=1 count=3 f0= f1= f2=2241
+CSV_QDOMAIN case=6:126 input=41412c222241 low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=6:127 input=22412c222241 low_ax=1 count=1 f0=412c2241
+CSV_QDOMAIN case=6:128 input=2c412c222241 low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:129 input=41222c222241 low_ax=1 count=2 f0=4122 f1=
+CSV_QDOMAIN case=6:130 input=22222c222241 low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=6:131 input=2c222c222241 low_ax=1 count=2 f0= f1=2c2241
+CSV_QDOMAIN case=6:132 input=412c2c222241 low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:133 input=222c2c222241 low_ax=1 count=1 f0=2c2c2241
+CSV_QDOMAIN case=6:134 input=2c2c2c222241 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:135 input=4141412c2241 low_ax=1 count=2 f0=414141 f1=41
+CSV_QDOMAIN case=6:136 input=2241412c2241 low_ax=1 count=1 f0=41412c
+CSV_QDOMAIN case=6:137 input=2c41412c2241 low_ax=1 count=3 f0= f1=4141 f2=41
+CSV_QDOMAIN case=6:138 input=4122412c2241 low_ax=1 count=2 f0=412241 f1=41
+CSV_QDOMAIN case=6:139 input=2222412c2241 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:140 input=2c22412c2241 low_ax=1 count=2 f0= f1=412c
+CSV_QDOMAIN case=6:141 input=412c412c2241 low_ax=1 count=3 f0=41 f1=41 f2=41
+CSV_QDOMAIN case=6:142 input=222c412c2241 low_ax=1 count=1 f0=2c412c
+CSV_QDOMAIN case=6:143 input=2c2c412c2241 low_ax=1 count=4 f0= f1= f2=41 f3=41
+CSV_QDOMAIN case=6:144 input=4141222c2241 low_ax=1 count=2 f0=414122 f1=41
+CSV_QDOMAIN case=6:145 input=2241222c2241 low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=6:146 input=2c41222c2241 low_ax=1 count=3 f0= f1=4122 f2=41
+CSV_QDOMAIN case=6:147 input=4122222c2241 low_ax=1 count=2 f0=412222 f1=41
+CSV_QDOMAIN case=6:148 input=2222222c2241 low_ax=1 count=1 f0=222c
+CSV_QDOMAIN case=6:149 input=2c22222c2241 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:150 input=412c222c2241 low_ax=1 count=2 f0=41 f1=2c
+CSV_QDOMAIN case=6:151 input=222c222c2241 low_ax=1 count=2 f0=2c f1=41
+CSV_QDOMAIN case=6:152 input=2c2c222c2241 low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=6:153 input=41412c2c2241 low_ax=1 count=3 f0=4141 f1= f2=41
+CSV_QDOMAIN case=6:154 input=22412c2c2241 low_ax=1 count=1 f0=412c2c
+CSV_QDOMAIN case=6:155 input=2c412c2c2241 low_ax=1 count=4 f0= f1=41 f2= f3=41
+CSV_QDOMAIN case=6:156 input=41222c2c2241 low_ax=1 count=3 f0=4122 f1= f2=41
+CSV_QDOMAIN case=6:157 input=22222c2c2241 low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:158 input=2c222c2c2241 low_ax=1 count=2 f0= f1=2c2c
+CSV_QDOMAIN case=6:159 input=412c2c2c2241 low_ax=1 count=4 f0=41 f1= f2= f3=41
+CSV_QDOMAIN case=6:160 input=222c2c2c2241 low_ax=1 count=1 f0=2c2c2c
+CSV_QDOMAIN case=6:161 input=2c2c2c2c2241 low_ax=1 count=5 f0= f1= f2= f3= f4=
+41
+CSV_QDOMAIN case=6:162 input=414141412c41 low_ax=1 count=2 f0=41414141 f1=41
+CSV_QDOMAIN case=6:163 input=224141412c41 low_ax=1 count=1 f0=4141412c41
+CSV_QDOMAIN case=6:164 input=2c4141412c41 low_ax=1 count=3 f0= f1=414141 f2=41
+CSV_QDOMAIN case=6:165 input=412241412c41 low_ax=1 count=2 f0=41224141 f1=41
+CSV_QDOMAIN case=6:166 input=222241412c41 low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=6:167 input=2c2241412c41 low_ax=1 count=2 f0= f1=41412c41
+CSV_QDOMAIN case=6:168 input=412c41412c41 low_ax=1 count=3 f0=41 f1=4141 f2=41
+CSV_QDOMAIN case=6:169 input=222c41412c41 low_ax=1 count=1 f0=2c41412c41
+CSV_QDOMAIN case=6:170 input=2c2c41412c41 low_ax=1 count=4 f0= f1= f2=4141 f3=
+41
+CSV_QDOMAIN case=6:171 input=414122412c41 low_ax=1 count=2 f0=41412241 f1=41
+CSV_QDOMAIN case=6:172 input=224122412c41 low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=6:173 input=2c4122412c41 low_ax=1 count=3 f0= f1=412241 f2=41
+CSV_QDOMAIN case=6:174 input=412222412c41 low_ax=1 count=2 f0=41222241 f1=41
+CSV_QDOMAIN case=6:175 input=222222412c41 low_ax=1 count=1 f0=22412c41
+CSV_QDOMAIN case=6:176 input=2c2222412c41 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=6:177 input=412c22412c41 low_ax=1 count=2 f0=41 f1=412c41
+CSV_QDOMAIN case=6:178 input=222c22412c41 low_ax=1 count=3 f0=2c f1= f2=41
+CSV_QDOMAIN case=6:179 input=2c2c22412c41 low_ax=1 count=3 f0= f1= f2=412c41
+CSV_QDOMAIN case=6:180 input=41412c412c41 low_ax=1 count=3 f0=4141 f1=41 f2=41
+CSV_QDOMAIN case=6:181 input=22412c412c41 low_ax=1 count=1 f0=412c412c41
+CSV_QDOMAIN case=6:182 input=2c412c412c41 low_ax=1 count=4 f0= f1=41 f2=41 f3=
+41
+CSV_QDOMAIN case=6:183 input=41222c412c41 low_ax=1 count=3 f0=4122 f1=41 f2=41
+CSV_QDOMAIN case=6:184 input=22222c412c41 low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=6:185 input=2c222c412c41 low_ax=1 count=2 f0= f1=2c412c41
+CSV_QDOMAIN case=6:186 input=412c2c412c41 low_ax=1 count=4 f0=41 f1= f2=41 f3=
+41
+CSV_QDOMAIN case=6:187 input=222c2c412c41 low_ax=1 count=1 f0=2c2c412c41
+CSV_QDOMAIN case=6:188 input=2c2c2c412c41 low_ax=1 count=5 f0= f1= f2= f3=41
+ f4=41
+CSV_QDOMAIN case=6:189 input=414141222c41 low_ax=1 count=2 f0=41414122 f1=41
+CSV_QDOMAIN case=6:190 input=224141222c41 low_ax=1 count=2 f0=4141 f1=41
+CSV_QDOMAIN case=6:191 input=2c4141222c41 low_ax=1 count=3 f0= f1=414122 f2=41
+CSV_QDOMAIN case=6:192 input=412241222c41 low_ax=1 count=2 f0=41224122 f1=41
+CSV_QDOMAIN case=6:193 input=222241222c41 low_ax=1 count=2 f0= f1=2c41
+CSV_QDOMAIN case=6:194 input=2c2241222c41 low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=6:195 input=412c41222c41 low_ax=1 count=3 f0=41 f1=4122 f2=41
+CSV_QDOMAIN case=6:196 input=222c41222c41 low_ax=1 count=2 f0=2c41 f1=41
+CSV_QDOMAIN case=6:197 input=2c2c41222c41 low_ax=1 count=4 f0= f1= f2=4122 f3=
+41
+CSV_QDOMAIN case=6:198 input=414122222c41 low_ax=1 count=2 f0=41412222 f1=41
+CSV_QDOMAIN case=6:199 input=224122222c41 low_ax=1 count=1 f0=41222c41
+CSV_QDOMAIN case=6:200 input=2c4122222c41 low_ax=1 count=3 f0= f1=412222 f2=41
+CSV_QDOMAIN case=6:201 input=412222222c41 low_ax=1 count=2 f0=41222222 f1=41
+CSV_QDOMAIN case=6:202 input=222222222c41 low_ax=1 count=2 f0=22 f1=41
+CSV_QDOMAIN case=6:203 input=2c2222222c41 low_ax=1 count=2 f0= f1=222c41
+CSV_QDOMAIN case=6:204 input=412c22222c41 low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=6:205 input=222c22222c41 low_ax=1 count=1 f0=2c222c41
+CSV_QDOMAIN case=6:206 input=2c2c22222c41 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=6:207 input=41412c222c41 low_ax=1 count=2 f0=4141 f1=2c41
+CSV_QDOMAIN case=6:208 input=22412c222c41 low_ax=1 count=2 f0=412c f1=41
+CSV_QDOMAIN case=6:209 input=2c412c222c41 low_ax=1 count=3 f0= f1=41 f2=2c41
+CSV_QDOMAIN case=6:210 input=41222c222c41 low_ax=1 count=2 f0=4122 f1=2c41
+CSV_QDOMAIN case=6:211 input=22222c222c41 low_ax=1 count=2 f0= f1=2c41
+CSV_QDOMAIN case=6:212 input=2c222c222c41 low_ax=1 count=3 f0= f1=2c f2=41
+CSV_QDOMAIN case=6:213 input=412c2c222c41 low_ax=1 count=3 f0=41 f1= f2=2c41
+CSV_QDOMAIN case=6:214 input=222c2c222c41 low_ax=1 count=2 f0=2c2c f1=41
+CSV_QDOMAIN case=6:215 input=2c2c2c222c41 low_ax=1 count=4 f0= f1= f2= f3=2c41
+CSV_QDOMAIN case=6:216 input=4141412c2c41 low_ax=1 count=3 f0=414141 f1= f2=41
+CSV_QDOMAIN case=6:217 input=2241412c2c41 low_ax=1 count=1 f0=41412c2c41
+CSV_QDOMAIN case=6:218 input=2c41412c2c41 low_ax=1 count=4 f0= f1=4141 f2= f3=
+41
+CSV_QDOMAIN case=6:219 input=4122412c2c41 low_ax=1 count=3 f0=412241 f1= f2=41
+CSV_QDOMAIN case=6:220 input=2222412c2c41 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=6:221 input=2c22412c2c41 low_ax=1 count=2 f0= f1=412c2c41
+CSV_QDOMAIN case=6:222 input=412c412c2c41 low_ax=1 count=4 f0=41 f1=41 f2= f3=
+41
+CSV_QDOMAIN case=6:223 input=222c412c2c41 low_ax=1 count=1 f0=2c412c2c41
+CSV_QDOMAIN case=6:224 input=2c2c412c2c41 low_ax=1 count=5 f0= f1= f2=41 f3=
+ f4=41
+CSV_QDOMAIN case=6:225 input=4141222c2c41 low_ax=1 count=3 f0=414122 f1= f2=41
+CSV_QDOMAIN case=6:226 input=2241222c2c41 low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=6:227 input=2c41222c2c41 low_ax=1 count=4 f0= f1=4122 f2= f3=
+41
+CSV_QDOMAIN case=6:228 input=4122222c2c41 low_ax=1 count=3 f0=412222 f1= f2=41
+CSV_QDOMAIN case=6:229 input=2222222c2c41 low_ax=1 count=1 f0=222c2c41
+CSV_QDOMAIN case=6:230 input=2c22222c2c41 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=6:231 input=412c222c2c41 low_ax=1 count=2 f0=41 f1=2c2c41
+CSV_QDOMAIN case=6:232 input=222c222c2c41 low_ax=1 count=3 f0=2c f1= f2=41
+CSV_QDOMAIN case=6:233 input=2c2c222c2c41 low_ax=1 count=3 f0= f1= f2=2c2c41
+CSV_QDOMAIN case=6:234 input=41412c2c2c41 low_ax=1 count=4 f0=4141 f1= f2= f3=
+41
+CSV_QDOMAIN case=6:235 input=22412c2c2c41 low_ax=1 count=1 f0=412c2c2c41
+CSV_QDOMAIN case=6:236 input=2c412c2c2c41 low_ax=1 count=5 f0= f1=41 f2= f3=
+ f4=41
+CSV_QDOMAIN case=6:237 input=41222c2c2c41 low_ax=1 count=4 f0=4122 f1= f2= f3=
+41
+CSV_QDOMAIN case=6:238 input=22222c2c2c41 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=6:239 input=2c222c2c2c41 low_ax=1 count=2 f0= f1=2c2c2c41
+CSV_QDOMAIN case=6:240 input=412c2c2c2c41 low_ax=1 count=5 f0=41 f1= f2= f3=
+ f4=41
+CSV_QDOMAIN case=6:241 input=222c2c2c2c41 low_ax=1 count=1 f0=2c2c2c2c41
+CSV_QDOMAIN case=6:242 input=2c2c2c2c2c41 low_ax=1 count=6 f0= f1= f2= f3= f4=
+ f5=41
+CSV_QDOMAIN case=6:243 input=414141414122 low_ax=1 count=1 f0=414141414122
+CSV_QDOMAIN case=6:244 input=224141414122 low_ax=1 count=1 f0=41414141
+CSV_QDOMAIN case=6:245 input=2c4141414122 low_ax=1 count=2 f0= f1=4141414122
+CSV_QDOMAIN case=6:246 input=412241414122 low_ax=1 count=1 f0=412241414122
+CSV_QDOMAIN case=6:247 input=222241414122 low_ax=1 count=2 f0= f1=414122
+CSV_QDOMAIN case=6:248 input=2c2241414122 low_ax=1 count=2 f0= f1=414141
+CSV_QDOMAIN case=6:249 input=412c41414122 low_ax=1 count=2 f0=41 f1=41414122
+CSV_QDOMAIN case=6:250 input=222c41414122 low_ax=1 count=1 f0=2c414141
+CSV_QDOMAIN case=6:251 input=2c2c41414122 low_ax=1 count=3 f0= f1= f2=41414122
+CSV_QDOMAIN case=6:252 input=414122414122 low_ax=1 count=1 f0=414122414122
+CSV_QDOMAIN case=6:253 input=224122414122 low_ax=1 count=2 f0=41 f1=4122
+CSV_QDOMAIN case=6:254 input=2c4122414122 low_ax=1 count=2 f0= f1=4122414122
+CSV_QDOMAIN case=6:255 input=412222414122 low_ax=1 count=1 f0=412222414122
+CSV_QDOMAIN case=6:256 input=222222414122 low_ax=1 count=1 f0=224141
+CSV_QDOMAIN case=6:257 input=2c2222414122 low_ax=1 count=3 f0= f1= f2=4122
+CSV_QDOMAIN case=6:258 input=412c22414122 low_ax=1 count=2 f0=41 f1=4141
+CSV_QDOMAIN case=6:259 input=222c22414122 low_ax=1 count=2 f0=2c f1=4122
+CSV_QDOMAIN case=6:260 input=2c2c22414122 low_ax=1 count=3 f0= f1= f2=4141
+CSV_QDOMAIN case=6:261 input=41412c414122 low_ax=1 count=2 f0=4141 f1=414122
+CSV_QDOMAIN case=6:262 input=22412c414122 low_ax=1 count=1 f0=412c4141
+CSV_QDOMAIN case=6:263 input=2c412c414122 low_ax=1 count=3 f0= f1=41 f2=414122
+CSV_QDOMAIN case=6:264 input=41222c414122 low_ax=1 count=2 f0=4122 f1=414122
+CSV_QDOMAIN case=6:265 input=22222c414122 low_ax=1 count=2 f0= f1=414122
+CSV_QDOMAIN case=6:266 input=2c222c414122 low_ax=1 count=2 f0= f1=2c4141
+CSV_QDOMAIN case=6:267 input=412c2c414122 low_ax=1 count=3 f0=41 f1= f2=414122
+CSV_QDOMAIN case=6:268 input=222c2c414122 low_ax=1 count=1 f0=2c2c4141
+CSV_QDOMAIN case=6:269 input=2c2c2c414122 low_ax=1 count=4 f0= f1= f2= f3=4141
+22
+CSV_QDOMAIN case=6:270 input=414141224122 low_ax=1 count=1 f0=414141224122
+CSV_QDOMAIN case=6:271 input=224141224122 low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=6:272 input=2c4141224122 low_ax=1 count=2 f0= f1=4141224122
+CSV_QDOMAIN case=6:273 input=412241224122 low_ax=1 count=1 f0=412241224122
+CSV_QDOMAIN case=6:274 input=222241224122 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=6:275 input=2c2241224122 low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:276 input=412c41224122 low_ax=1 count=2 f0=41 f1=41224122
+CSV_QDOMAIN case=6:277 input=222c41224122 low_ax=1 count=2 f0=2c41 f1=
+CSV_QDOMAIN case=6:278 input=2c2c41224122 low_ax=1 count=3 f0= f1= f2=41224122
+CSV_QDOMAIN case=6:279 input=414122224122 low_ax=1 count=1 f0=414122224122
+CSV_QDOMAIN case=6:280 input=224122224122 low_ax=1 count=1 f0=412241
+CSV_QDOMAIN case=6:281 input=2c4122224122 low_ax=1 count=2 f0= f1=4122224122
+CSV_QDOMAIN case=6:282 input=412222224122 low_ax=1 count=1 f0=412222224122
+CSV_QDOMAIN case=6:283 input=222222224122 low_ax=1 count=2 f0=22 f1=
+CSV_QDOMAIN case=6:284 input=2c2222224122 low_ax=1 count=2 f0= f1=2241
+CSV_QDOMAIN case=6:285 input=412c22224122 low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:286 input=222c22224122 low_ax=1 count=1 f0=2c2241
+CSV_QDOMAIN case=6:287 input=2c2c22224122 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:288 input=41412c224122 low_ax=1 count=2 f0=4141 f1=41
+CSV_QDOMAIN case=6:289 input=22412c224122 low_ax=1 count=2 f0=412c f1=
+CSV_QDOMAIN case=6:290 input=2c412c224122 low_ax=1 count=3 f0= f1=41 f2=41
+CSV_QDOMAIN case=6:291 input=41222c224122 low_ax=1 count=2 f0=4122 f1=41
+CSV_QDOMAIN case=6:292 input=22222c224122 low_ax=1 count=2 f0= f1=41
+CSV_QDOMAIN case=6:293 input=2c222c224122 low_ax=1 count=3 f0= f1=2c f2=
+CSV_QDOMAIN case=6:294 input=412c2c224122 low_ax=1 count=3 f0=41 f1= f2=41
+CSV_QDOMAIN case=6:295 input=222c2c224122 low_ax=1 count=2 f0=2c2c f1=
+CSV_QDOMAIN case=6:296 input=2c2c2c224122 low_ax=1 count=4 f0= f1= f2= f3=41
+CSV_QDOMAIN case=6:297 input=4141412c4122 low_ax=1 count=2 f0=414141 f1=4122
+CSV_QDOMAIN case=6:298 input=2241412c4122 low_ax=1 count=1 f0=41412c41
+CSV_QDOMAIN case=6:299 input=2c41412c4122 low_ax=1 count=3 f0= f1=4141 f2=4122
+CSV_QDOMAIN case=6:300 input=4122412c4122 low_ax=1 count=2 f0=412241 f1=4122
+CSV_QDOMAIN case=6:301 input=2222412c4122 low_ax=1 count=3 f0= f1= f2=4122
+CSV_QDOMAIN case=6:302 input=2c22412c4122 low_ax=1 count=2 f0= f1=412c41
+CSV_QDOMAIN case=6:303 input=412c412c4122 low_ax=1 count=3 f0=41 f1=41 f2=4122
+CSV_QDOMAIN case=6:304 input=222c412c4122 low_ax=1 count=1 f0=2c412c41
+CSV_QDOMAIN case=6:305 input=2c2c412c4122 low_ax=1 count=4 f0= f1= f2=41 f3=41
+22
+CSV_QDOMAIN case=6:306 input=4141222c4122 low_ax=1 count=2 f0=414122 f1=4122
+CSV_QDOMAIN case=6:307 input=2241222c4122 low_ax=1 count=2 f0=41 f1=4122
+CSV_QDOMAIN case=6:308 input=2c41222c4122 low_ax=1 count=3 f0= f1=4122 f2=4122
+CSV_QDOMAIN case=6:309 input=4122222c4122 low_ax=1 count=2 f0=412222 f1=4122
+CSV_QDOMAIN case=6:310 input=2222222c4122 low_ax=1 count=1 f0=222c41
+CSV_QDOMAIN case=6:311 input=2c22222c4122 low_ax=1 count=3 f0= f1= f2=4122
+CSV_QDOMAIN case=6:312 input=412c222c4122 low_ax=1 count=2 f0=41 f1=2c41
+CSV_QDOMAIN case=6:313 input=222c222c4122 low_ax=1 count=2 f0=2c f1=4122
+CSV_QDOMAIN case=6:314 input=2c2c222c4122 low_ax=1 count=3 f0= f1= f2=2c41
+CSV_QDOMAIN case=6:315 input=41412c2c4122 low_ax=1 count=3 f0=4141 f1= f2=4122
+CSV_QDOMAIN case=6:316 input=22412c2c4122 low_ax=1 count=1 f0=412c2c41
+CSV_QDOMAIN case=6:317 input=2c412c2c4122 low_ax=1 count=4 f0= f1=41 f2= f3=41
+22
+CSV_QDOMAIN case=6:318 input=41222c2c4122 low_ax=1 count=3 f0=4122 f1= f2=4122
+CSV_QDOMAIN case=6:319 input=22222c2c4122 low_ax=1 count=3 f0= f1= f2=4122
+CSV_QDOMAIN case=6:320 input=2c222c2c4122 low_ax=1 count=2 f0= f1=2c2c41
+CSV_QDOMAIN case=6:321 input=412c2c2c4122 low_ax=1 count=4 f0=41 f1= f2= f3=41
+22
+CSV_QDOMAIN case=6:322 input=222c2c2c4122 low_ax=1 count=1 f0=2c2c2c41
+CSV_QDOMAIN case=6:323 input=2c2c2c2c4122 low_ax=1 count=5 f0= f1= f2= f3= f4=
+4122
+CSV_QDOMAIN case=6:324 input=414141412222 low_ax=1 count=1 f0=414141412222
+CSV_QDOMAIN case=6:325 input=224141412222 low_ax=1 count=1 f0=41414122
+CSV_QDOMAIN case=6:326 input=2c4141412222 low_ax=1 count=2 f0= f1=4141412222
+CSV_QDOMAIN case=6:327 input=412241412222 low_ax=1 count=1 f0=412241412222
+CSV_QDOMAIN case=6:328 input=222241412222 low_ax=1 count=2 f0= f1=412222
+CSV_QDOMAIN case=6:329 input=2c2241412222 low_ax=1 count=2 f0= f1=414122
+CSV_QDOMAIN case=6:330 input=412c41412222 low_ax=1 count=2 f0=41 f1=41412222
+CSV_QDOMAIN case=6:331 input=222c41412222 low_ax=1 count=1 f0=2c414122
+CSV_QDOMAIN case=6:332 input=2c2c41412222 low_ax=1 count=3 f0= f1= f2=41412222
+CSV_QDOMAIN case=6:333 input=414122412222 low_ax=1 count=1 f0=414122412222
+CSV_QDOMAIN case=6:334 input=224122412222 low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=6:335 input=2c4122412222 low_ax=1 count=2 f0= f1=4122412222
+CSV_QDOMAIN case=6:336 input=412222412222 low_ax=1 count=1 f0=412222412222
+CSV_QDOMAIN case=6:337 input=222222412222 low_ax=1 count=1 f0=224122
+CSV_QDOMAIN case=6:338 input=2c2222412222 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=6:339 input=412c22412222 low_ax=1 count=2 f0=41 f1=4122
+CSV_QDOMAIN case=6:340 input=222c22412222 low_ax=1 count=2 f0=2c f1=
+CSV_QDOMAIN case=6:341 input=2c2c22412222 low_ax=1 count=3 f0= f1= f2=4122
+CSV_QDOMAIN case=6:342 input=41412c412222 low_ax=1 count=2 f0=4141 f1=412222
+CSV_QDOMAIN case=6:343 input=22412c412222 low_ax=1 count=1 f0=412c4122
+CSV_QDOMAIN case=6:344 input=2c412c412222 low_ax=1 count=3 f0= f1=41 f2=412222
+CSV_QDOMAIN case=6:345 input=41222c412222 low_ax=1 count=2 f0=4122 f1=412222
+CSV_QDOMAIN case=6:346 input=22222c412222 low_ax=1 count=2 f0= f1=412222
+CSV_QDOMAIN case=6:347 input=2c222c412222 low_ax=1 count=2 f0= f1=2c4122
+CSV_QDOMAIN case=6:348 input=412c2c412222 low_ax=1 count=3 f0=41 f1= f2=412222
+CSV_QDOMAIN case=6:349 input=222c2c412222 low_ax=1 count=1 f0=2c2c4122
+CSV_QDOMAIN case=6:350 input=2c2c2c412222 low_ax=1 count=4 f0= f1= f2= f3=4122
+22
+CSV_QDOMAIN case=6:351 input=414141222222 low_ax=1 count=1 f0=414141222222
+CSV_QDOMAIN case=6:352 input=224141222222 low_ax=1 count=1 f0=414122
+CSV_QDOMAIN case=6:353 input=2c4141222222 low_ax=1 count=2 f0= f1=4141222222
+CSV_QDOMAIN case=6:354 input=412241222222 low_ax=1 count=1 f0=412241222222
+CSV_QDOMAIN case=6:355 input=222241222222 low_ax=1 count=2 f0= f1=22
+CSV_QDOMAIN case=6:356 input=2c2241222222 low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=6:357 input=412c41222222 low_ax=1 count=2 f0=41 f1=41222222
+CSV_QDOMAIN case=6:358 input=222c41222222 low_ax=1 count=1 f0=2c4122
+CSV_QDOMAIN case=6:359 input=2c2c41222222 low_ax=1 count=3 f0= f1= f2=41222222
+CSV_QDOMAIN case=6:360 input=414122222222 low_ax=1 count=1 f0=414122222222
+CSV_QDOMAIN case=6:361 input=224122222222 low_ax=1 count=1 f0=412222
+CSV_QDOMAIN case=6:362 input=2c4122222222 low_ax=1 count=2 f0= f1=4122222222
+CSV_QDOMAIN case=6:363 input=412222222222 low_ax=1 count=1 f0=412222222222
+CSV_QDOMAIN case=6:364 input=222222222222 low_ax=1 count=1 f0=2222
+CSV_QDOMAIN case=6:365 input=2c2222222222 low_ax=1 count=2 f0= f1=2222
+CSV_QDOMAIN case=6:366 input=412c22222222 low_ax=1 count=2 f0=41 f1=22
+CSV_QDOMAIN case=6:367 input=222c22222222 low_ax=1 count=1 f0=2c2222
+CSV_QDOMAIN case=6:368 input=2c2c22222222 low_ax=1 count=3 f0= f1= f2=22
+CSV_QDOMAIN case=6:369 input=41412c222222 low_ax=1 count=2 f0=4141 f1=22
+CSV_QDOMAIN case=6:370 input=22412c222222 low_ax=1 count=1 f0=412c22
+CSV_QDOMAIN case=6:371 input=2c412c222222 low_ax=1 count=3 f0= f1=41 f2=22
+CSV_QDOMAIN case=6:372 input=41222c222222 low_ax=1 count=2 f0=4122 f1=22
+CSV_QDOMAIN case=6:373 input=22222c222222 low_ax=1 count=2 f0= f1=22
+CSV_QDOMAIN case=6:374 input=2c222c222222 low_ax=1 count=2 f0= f1=2c22
+CSV_QDOMAIN case=6:375 input=412c2c222222 low_ax=1 count=3 f0=41 f1= f2=22
+CSV_QDOMAIN case=6:376 input=222c2c222222 low_ax=1 count=1 f0=2c2c22
+CSV_QDOMAIN case=6:377 input=2c2c2c222222 low_ax=1 count=4 f0= f1= f2= f3=22
+CSV_QDOMAIN case=6:378 input=4141412c2222 low_ax=1 count=2 f0=414141 f1=
+CSV_QDOMAIN case=6:379 input=2241412c2222 low_ax=1 count=1 f0=41412c22
+CSV_QDOMAIN case=6:380 input=2c41412c2222 low_ax=1 count=3 f0= f1=4141 f2=
+CSV_QDOMAIN case=6:381 input=4122412c2222 low_ax=1 count=2 f0=412241 f1=
+CSV_QDOMAIN case=6:382 input=2222412c2222 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=6:383 input=2c22412c2222 low_ax=1 count=2 f0= f1=412c22
+CSV_QDOMAIN case=6:384 input=412c412c2222 low_ax=1 count=3 f0=41 f1=41 f2=
+CSV_QDOMAIN case=6:385 input=222c412c2222 low_ax=1 count=1 f0=2c412c22
+CSV_QDOMAIN case=6:386 input=2c2c412c2222 low_ax=1 count=4 f0= f1= f2=41 f3=
+CSV_QDOMAIN case=6:387 input=4141222c2222 low_ax=1 count=2 f0=414122 f1=
+CSV_QDOMAIN case=6:388 input=2241222c2222 low_ax=1 count=2 f0=41 f1=
+CSV_QDOMAIN case=6:389 input=2c41222c2222 low_ax=1 count=3 f0= f1=4122 f2=
+CSV_QDOMAIN case=6:390 input=4122222c2222 low_ax=1 count=2 f0=412222 f1=
+CSV_QDOMAIN case=6:391 input=2222222c2222 low_ax=1 count=1 f0=222c22
+CSV_QDOMAIN case=6:392 input=2c22222c2222 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=6:393 input=412c222c2222 low_ax=1 count=2 f0=41 f1=2c22
+CSV_QDOMAIN case=6:394 input=222c222c2222 low_ax=1 count=2 f0=2c f1=
+CSV_QDOMAIN case=6:395 input=2c2c222c2222 low_ax=1 count=3 f0= f1= f2=2c22
+CSV_QDOMAIN case=6:396 input=41412c2c2222 low_ax=1 count=3 f0=4141 f1= f2=
+CSV_QDOMAIN case=6:397 input=22412c2c2222 low_ax=1 count=1 f0=412c2c22
+CSV_QDOMAIN case=6:398 input=2c412c2c2222 low_ax=1 count=4 f0= f1=41 f2= f3=
+CSV_QDOMAIN case=6:399 input=41222c2c2222 low_ax=1 count=3 f0=4122 f1= f2=
+CSV_QDOMAIN case=6:400 input=22222c2c2222 low_ax=1 count=3 f0= f1= f2=
+CSV_QDOMAIN case=6:401 input=2c222c2c2222 low_ax=1 count=2 f0= f1=2c2c22
+CSV_QDOMAIN case=6:402 input=412c2c2c2222 low_ax=1 count=4 f0=41 f1= f2= f3=
+CSV_QDOMAIN case=6:403 input=222c2c2c2222 low_ax=1 count=1 f0=2c2c2c22
+CSV_QDOMAIN case=6:404 input=2c2c2c2c2222 low_ax=1 count=5 f0= f1= f2= f3= f4=
+CSV_QDOMAIN case=6:405 input=414141412c22 low_ax=1 count=2 f0=41414141 f1=
+CSV_QDOMAIN case=6:406 input=224141412c22 low_ax=1 count=1 f0=4141412c
+CSV_QDOMAIN case=6:407 input=2c4141412c22 low_ax=1 count=3 f0= f1=414141 f2=
+CSV_QDOMAIN case=6:408 input=412241412c22 low_ax=1 count=2 f0=41224141 f1=
+CSV_QDOMAIN case=6:409 input=222241412c22 low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:410 input=2c2241412c22 low_ax=1 count=2 f0= f1=41412c
+CSV_QDOMAIN case=6:411 input=412c41412c22 low_ax=1 count=3 f0=41 f1=4141 f2=
+CSV_QDOMAIN case=6:412 input=222c41412c22 low_ax=1 count=1 f0=2c41412c
+CSV_QDOMAIN case=6:413 input=2c2c41412c22 low_ax=1 count=4 f0= f1= f2=4141 f3=
+CSV_QDOMAIN case=6:414 input=414122412c22 low_ax=1 count=2 f0=41412241 f1=
+CSV_QDOMAIN case=6:415 input=224122412c22 low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:416 input=2c4122412c22 low_ax=1 count=3 f0= f1=412241 f2=
+CSV_QDOMAIN case=6:417 input=412222412c22 low_ax=1 count=2 f0=41222241 f1=
+CSV_QDOMAIN case=6:418 input=222222412c22 low_ax=1 count=1 f0=22412c
+CSV_QDOMAIN case=6:419 input=2c2222412c22 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:420 input=412c22412c22 low_ax=1 count=2 f0=41 f1=412c
+CSV_QDOMAIN case=6:421 input=222c22412c22 low_ax=1 count=3 f0=2c f1= f2=
+CSV_QDOMAIN case=6:422 input=2c2c22412c22 low_ax=1 count=3 f0= f1= f2=412c
+CSV_QDOMAIN case=6:423 input=41412c412c22 low_ax=1 count=3 f0=4141 f1=41 f2=
+CSV_QDOMAIN case=6:424 input=22412c412c22 low_ax=1 count=1 f0=412c412c
+CSV_QDOMAIN case=6:425 input=2c412c412c22 low_ax=1 count=4 f0= f1=41 f2=41 f3=
+CSV_QDOMAIN case=6:426 input=41222c412c22 low_ax=1 count=3 f0=4122 f1=41 f2=
+CSV_QDOMAIN case=6:427 input=22222c412c22 low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:428 input=2c222c412c22 low_ax=1 count=2 f0= f1=2c412c
+CSV_QDOMAIN case=6:429 input=412c2c412c22 low_ax=1 count=4 f0=41 f1= f2=41 f3=
+CSV_QDOMAIN case=6:430 input=222c2c412c22 low_ax=1 count=1 f0=2c2c412c
+CSV_QDOMAIN case=6:431 input=2c2c2c412c22 low_ax=1 count=5 f0= f1= f2= f3=41
+ f4=
+CSV_QDOMAIN case=6:432 input=414141222c22 low_ax=1 count=2 f0=41414122 f1=
+CSV_QDOMAIN case=6:433 input=224141222c22 low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=6:434 input=2c4141222c22 low_ax=1 count=3 f0= f1=414122 f2=
+CSV_QDOMAIN case=6:435 input=412241222c22 low_ax=1 count=2 f0=41224122 f1=
+CSV_QDOMAIN case=6:436 input=222241222c22 low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=6:437 input=2c2241222c22 low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:438 input=412c41222c22 low_ax=1 count=3 f0=41 f1=4122 f2=
+CSV_QDOMAIN case=6:439 input=222c41222c22 low_ax=1 count=2 f0=2c41 f1=
+CSV_QDOMAIN case=6:440 input=2c2c41222c22 low_ax=1 count=4 f0= f1= f2=4122 f3=
+CSV_QDOMAIN case=6:441 input=414122222c22 low_ax=1 count=2 f0=41412222 f1=
+CSV_QDOMAIN case=6:442 input=224122222c22 low_ax=1 count=1 f0=41222c
+CSV_QDOMAIN case=6:443 input=2c4122222c22 low_ax=1 count=3 f0= f1=412222 f2=
+CSV_QDOMAIN case=6:444 input=412222222c22 low_ax=1 count=2 f0=41222222 f1=
+CSV_QDOMAIN case=6:445 input=222222222c22 low_ax=1 count=2 f0=22 f1=
+CSV_QDOMAIN case=6:446 input=2c2222222c22 low_ax=1 count=2 f0= f1=222c
+CSV_QDOMAIN case=6:447 input=412c22222c22 low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:448 input=222c22222c22 low_ax=1 count=1 f0=2c222c
+CSV_QDOMAIN case=6:449 input=2c2c22222c22 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:450 input=41412c222c22 low_ax=1 count=2 f0=4141 f1=2c
+CSV_QDOMAIN case=6:451 input=22412c222c22 low_ax=1 count=2 f0=412c f1=
+CSV_QDOMAIN case=6:452 input=2c412c222c22 low_ax=1 count=3 f0= f1=41 f2=2c
+CSV_QDOMAIN case=6:453 input=41222c222c22 low_ax=1 count=2 f0=4122 f1=2c
+CSV_QDOMAIN case=6:454 input=22222c222c22 low_ax=1 count=2 f0= f1=2c
+CSV_QDOMAIN case=6:455 input=2c222c222c22 low_ax=1 count=3 f0= f1=2c f2=
+CSV_QDOMAIN case=6:456 input=412c2c222c22 low_ax=1 count=3 f0=41 f1= f2=2c
+CSV_QDOMAIN case=6:457 input=222c2c222c22 low_ax=1 count=2 f0=2c2c f1=
+CSV_QDOMAIN case=6:458 input=2c2c2c222c22 low_ax=1 count=4 f0= f1= f2= f3=2c
+CSV_QDOMAIN case=6:459 input=4141412c2c22 low_ax=1 count=3 f0=414141 f1= f2=
+CSV_QDOMAIN case=6:460 input=2241412c2c22 low_ax=1 count=1 f0=41412c2c
+CSV_QDOMAIN case=6:461 input=2c41412c2c22 low_ax=1 count=4 f0= f1=4141 f2= f3=
+CSV_QDOMAIN case=6:462 input=4122412c2c22 low_ax=1 count=3 f0=412241 f1= f2=
+CSV_QDOMAIN case=6:463 input=2222412c2c22 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:464 input=2c22412c2c22 low_ax=1 count=2 f0= f1=412c2c
+CSV_QDOMAIN case=6:465 input=412c412c2c22 low_ax=1 count=4 f0=41 f1=41 f2= f3=
+CSV_QDOMAIN case=6:466 input=222c412c2c22 low_ax=1 count=1 f0=2c412c2c
+CSV_QDOMAIN case=6:467 input=2c2c412c2c22 low_ax=1 count=5 f0= f1= f2=41 f3=
+ f4=
+CSV_QDOMAIN case=6:468 input=4141222c2c22 low_ax=1 count=3 f0=414122 f1= f2=
+CSV_QDOMAIN case=6:469 input=2241222c2c22 low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:470 input=2c41222c2c22 low_ax=1 count=4 f0= f1=4122 f2= f3=
+CSV_QDOMAIN case=6:471 input=4122222c2c22 low_ax=1 count=3 f0=412222 f1= f2=
+CSV_QDOMAIN case=6:472 input=2222222c2c22 low_ax=1 count=1 f0=222c2c
+CSV_QDOMAIN case=6:473 input=2c22222c2c22 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:474 input=412c222c2c22 low_ax=1 count=2 f0=41 f1=2c2c
+CSV_QDOMAIN case=6:475 input=222c222c2c22 low_ax=1 count=3 f0=2c f1= f2=
+CSV_QDOMAIN case=6:476 input=2c2c222c2c22 low_ax=1 count=3 f0= f1= f2=2c2c
+CSV_QDOMAIN case=6:477 input=41412c2c2c22 low_ax=1 count=4 f0=4141 f1= f2= f3=
+CSV_QDOMAIN case=6:478 input=22412c2c2c22 low_ax=1 count=1 f0=412c2c2c
+CSV_QDOMAIN case=6:479 input=2c412c2c2c22 low_ax=1 count=5 f0= f1=41 f2= f3=
+ f4=
+CSV_QDOMAIN case=6:480 input=41222c2c2c22 low_ax=1 count=4 f0=4122 f1= f2= f3=
+CSV_QDOMAIN case=6:481 input=22222c2c2c22 low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:482 input=2c222c2c2c22 low_ax=1 count=2 f0= f1=2c2c2c
+CSV_QDOMAIN case=6:483 input=412c2c2c2c22 low_ax=1 count=5 f0=41 f1= f2= f3=
+ f4=
+CSV_QDOMAIN case=6:484 input=222c2c2c2c22 low_ax=1 count=1 f0=2c2c2c2c
+CSV_QDOMAIN case=6:485 input=2c2c2c2c2c22 low_ax=1 count=6 f0= f1= f2= f3= f4=
+ f5=
+CSV_QDOMAIN case=6:486 input=41414141412c low_ax=1 count=1 f0=4141414141
+CSV_QDOMAIN case=6:487 input=22414141412c low_ax=1 count=1 f0=414141412c
+CSV_QDOMAIN case=6:488 input=2c414141412c low_ax=1 count=2 f0= f1=41414141
+CSV_QDOMAIN case=6:489 input=41224141412c low_ax=1 count=1 f0=4122414141
+CSV_QDOMAIN case=6:490 input=22224141412c low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=6:491 input=2c224141412c low_ax=1 count=2 f0= f1=4141412c
+CSV_QDOMAIN case=6:492 input=412c4141412c low_ax=1 count=2 f0=41 f1=414141
+CSV_QDOMAIN case=6:493 input=222c4141412c low_ax=1 count=1 f0=2c4141412c
+CSV_QDOMAIN case=6:494 input=2c2c4141412c low_ax=1 count=3 f0= f1= f2=414141
+CSV_QDOMAIN case=6:495 input=41412241412c low_ax=1 count=1 f0=4141224141
+CSV_QDOMAIN case=6:496 input=22412241412c low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=6:497 input=2c412241412c low_ax=1 count=2 f0= f1=41224141
+CSV_QDOMAIN case=6:498 input=41222241412c low_ax=1 count=1 f0=4122224141
+CSV_QDOMAIN case=6:499 input=22222241412c low_ax=1 count=1 f0=2241412c
+CSV_QDOMAIN case=6:500 input=2c222241412c low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:501 input=412c2241412c low_ax=1 count=2 f0=41 f1=41412c
+CSV_QDOMAIN case=6:502 input=222c2241412c low_ax=1 count=2 f0=2c f1=41
+CSV_QDOMAIN case=6:503 input=2c2c2241412c low_ax=1 count=3 f0= f1= f2=41412c
+CSV_QDOMAIN case=6:504 input=41412c41412c low_ax=1 count=2 f0=4141 f1=4141
+CSV_QDOMAIN case=6:505 input=22412c41412c low_ax=1 count=1 f0=412c41412c
+CSV_QDOMAIN case=6:506 input=2c412c41412c low_ax=1 count=3 f0= f1=41 f2=4141
+CSV_QDOMAIN case=6:507 input=41222c41412c low_ax=1 count=2 f0=4122 f1=4141
+CSV_QDOMAIN case=6:508 input=22222c41412c low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=6:509 input=2c222c41412c low_ax=1 count=2 f0= f1=2c41412c
+CSV_QDOMAIN case=6:510 input=412c2c41412c low_ax=1 count=3 f0=41 f1= f2=4141
+CSV_QDOMAIN case=6:511 input=222c2c41412c low_ax=1 count=1 f0=2c2c41412c
+CSV_QDOMAIN case=6:512 input=2c2c2c41412c low_ax=1 count=4 f0= f1= f2= f3=4141
+CSV_QDOMAIN case=6:513 input=41414122412c low_ax=1 count=1 f0=4141412241
+CSV_QDOMAIN case=6:514 input=22414122412c low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=6:515 input=2c414122412c low_ax=1 count=2 f0= f1=41412241
+CSV_QDOMAIN case=6:516 input=41224122412c low_ax=1 count=1 f0=4122412241
+CSV_QDOMAIN case=6:517 input=22224122412c low_ax=1 count=2 f0= f1=412c
+CSV_QDOMAIN case=6:518 input=2c224122412c low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:519 input=412c4122412c low_ax=1 count=2 f0=41 f1=412241
+CSV_QDOMAIN case=6:520 input=222c4122412c low_ax=1 count=2 f0=2c41 f1=
+CSV_QDOMAIN case=6:521 input=2c2c4122412c low_ax=1 count=3 f0= f1= f2=412241
+CSV_QDOMAIN case=6:522 input=41412222412c low_ax=1 count=1 f0=4141222241
+CSV_QDOMAIN case=6:523 input=22412222412c low_ax=1 count=1 f0=4122412c
+CSV_QDOMAIN case=6:524 input=2c412222412c low_ax=1 count=2 f0= f1=41222241
+CSV_QDOMAIN case=6:525 input=41222222412c low_ax=1 count=1 f0=4122222241
+CSV_QDOMAIN case=6:526 input=22222222412c low_ax=1 count=2 f0=22 f1=
+CSV_QDOMAIN case=6:527 input=2c222222412c low_ax=1 count=2 f0= f1=22412c
+CSV_QDOMAIN case=6:528 input=412c2222412c low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:529 input=222c2222412c low_ax=1 count=1 f0=2c22412c
+CSV_QDOMAIN case=6:530 input=2c2c2222412c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:531 input=41412c22412c low_ax=1 count=2 f0=4141 f1=412c
+CSV_QDOMAIN case=6:532 input=22412c22412c low_ax=1 count=2 f0=412c f1=
+CSV_QDOMAIN case=6:533 input=2c412c22412c low_ax=1 count=3 f0= f1=41 f2=412c
+CSV_QDOMAIN case=6:534 input=41222c22412c low_ax=1 count=2 f0=4122 f1=412c
+CSV_QDOMAIN case=6:535 input=22222c22412c low_ax=1 count=2 f0= f1=412c
+CSV_QDOMAIN case=6:536 input=2c222c22412c low_ax=1 count=3 f0= f1=2c f2=
+CSV_QDOMAIN case=6:537 input=412c2c22412c low_ax=1 count=3 f0=41 f1= f2=412c
+CSV_QDOMAIN case=6:538 input=222c2c22412c low_ax=1 count=2 f0=2c2c f1=
+CSV_QDOMAIN case=6:539 input=2c2c2c22412c low_ax=1 count=4 f0= f1= f2= f3=412c
+CSV_QDOMAIN case=6:540 input=4141412c412c low_ax=1 count=2 f0=414141 f1=41
+CSV_QDOMAIN case=6:541 input=2241412c412c low_ax=1 count=1 f0=41412c412c
+CSV_QDOMAIN case=6:542 input=2c41412c412c low_ax=1 count=3 f0= f1=4141 f2=41
+CSV_QDOMAIN case=6:543 input=4122412c412c low_ax=1 count=2 f0=412241 f1=41
+CSV_QDOMAIN case=6:544 input=2222412c412c low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:545 input=2c22412c412c low_ax=1 count=2 f0= f1=412c412c
+CSV_QDOMAIN case=6:546 input=412c412c412c low_ax=1 count=3 f0=41 f1=41 f2=41
+CSV_QDOMAIN case=6:547 input=222c412c412c low_ax=1 count=1 f0=2c412c412c
+CSV_QDOMAIN case=6:548 input=2c2c412c412c low_ax=1 count=4 f0= f1= f2=41 f3=41
+CSV_QDOMAIN case=6:549 input=4141222c412c low_ax=1 count=2 f0=414122 f1=41
+CSV_QDOMAIN case=6:550 input=2241222c412c low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=6:551 input=2c41222c412c low_ax=1 count=3 f0= f1=4122 f2=41
+CSV_QDOMAIN case=6:552 input=4122222c412c low_ax=1 count=2 f0=412222 f1=41
+CSV_QDOMAIN case=6:553 input=2222222c412c low_ax=1 count=1 f0=222c412c
+CSV_QDOMAIN case=6:554 input=2c22222c412c low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:555 input=412c222c412c low_ax=1 count=2 f0=41 f1=2c412c
+CSV_QDOMAIN case=6:556 input=222c222c412c low_ax=1 count=2 f0=2c f1=41
+CSV_QDOMAIN case=6:557 input=2c2c222c412c low_ax=1 count=3 f0= f1= f2=2c412c
+CSV_QDOMAIN case=6:558 input=41412c2c412c low_ax=1 count=3 f0=4141 f1= f2=41
+CSV_QDOMAIN case=6:559 input=22412c2c412c low_ax=1 count=1 f0=412c2c412c
+CSV_QDOMAIN case=6:560 input=2c412c2c412c low_ax=1 count=4 f0= f1=41 f2= f3=41
+CSV_QDOMAIN case=6:561 input=41222c2c412c low_ax=1 count=3 f0=4122 f1= f2=41
+CSV_QDOMAIN case=6:562 input=22222c2c412c low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:563 input=2c222c2c412c low_ax=1 count=2 f0= f1=2c2c412c
+CSV_QDOMAIN case=6:564 input=412c2c2c412c low_ax=1 count=4 f0=41 f1= f2= f3=41
+CSV_QDOMAIN case=6:565 input=222c2c2c412c low_ax=1 count=1 f0=2c2c2c412c
+CSV_QDOMAIN case=6:566 input=2c2c2c2c412c low_ax=1 count=5 f0= f1= f2= f3= f4=
+41
+CSV_QDOMAIN case=6:567 input=41414141222c low_ax=1 count=1 f0=4141414122
+CSV_QDOMAIN case=6:568 input=22414141222c low_ax=1 count=1 f0=414141
+CSV_QDOMAIN case=6:569 input=2c414141222c low_ax=1 count=2 f0= f1=41414122
+CSV_QDOMAIN case=6:570 input=41224141222c low_ax=1 count=1 f0=4122414122
+CSV_QDOMAIN case=6:571 input=22224141222c low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=6:572 input=2c224141222c low_ax=1 count=2 f0= f1=4141
+CSV_QDOMAIN case=6:573 input=412c4141222c low_ax=1 count=2 f0=41 f1=414122
+CSV_QDOMAIN case=6:574 input=222c4141222c low_ax=1 count=1 f0=2c4141
+CSV_QDOMAIN case=6:575 input=2c2c4141222c low_ax=1 count=3 f0= f1= f2=414122
+CSV_QDOMAIN case=6:576 input=41412241222c low_ax=1 count=1 f0=4141224122
+CSV_QDOMAIN case=6:577 input=22412241222c low_ax=1 count=2 f0=41 f1=2c
+CSV_QDOMAIN case=6:578 input=2c412241222c low_ax=1 count=2 f0= f1=41224122
+CSV_QDOMAIN case=6:579 input=41222241222c low_ax=1 count=1 f0=4122224122
+CSV_QDOMAIN case=6:580 input=22222241222c low_ax=1 count=1 f0=2241
+CSV_QDOMAIN case=6:581 input=2c222241222c low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=6:582 input=412c2241222c low_ax=1 count=2 f0=41 f1=41
+CSV_QDOMAIN case=6:583 input=222c2241222c low_ax=1 count=2 f0=2c f1=2c
+CSV_QDOMAIN case=6:584 input=2c2c2241222c low_ax=1 count=3 f0= f1= f2=41
+CSV_QDOMAIN case=6:585 input=41412c41222c low_ax=1 count=2 f0=4141 f1=4122
+CSV_QDOMAIN case=6:586 input=22412c41222c low_ax=1 count=1 f0=412c41
+CSV_QDOMAIN case=6:587 input=2c412c41222c low_ax=1 count=3 f0= f1=41 f2=4122
+CSV_QDOMAIN case=6:588 input=41222c41222c low_ax=1 count=2 f0=4122 f1=4122
+CSV_QDOMAIN case=6:589 input=22222c41222c low_ax=1 count=2 f0= f1=4122
+CSV_QDOMAIN case=6:590 input=2c222c41222c low_ax=1 count=2 f0= f1=2c41
+CSV_QDOMAIN case=6:591 input=412c2c41222c low_ax=1 count=3 f0=41 f1= f2=4122
+CSV_QDOMAIN case=6:592 input=222c2c41222c low_ax=1 count=1 f0=2c2c41
+CSV_QDOMAIN case=6:593 input=2c2c2c41222c low_ax=1 count=4 f0= f1= f2= f3=4122
+CSV_QDOMAIN case=6:594 input=41414122222c low_ax=1 count=1 f0=4141412222
+CSV_QDOMAIN case=6:595 input=22414122222c low_ax=1 count=1 f0=4141222c
+CSV_QDOMAIN case=6:596 input=2c414122222c low_ax=1 count=2 f0= f1=41412222
+CSV_QDOMAIN case=6:597 input=41224122222c low_ax=1 count=1 f0=4122412222
+CSV_QDOMAIN case=6:598 input=22224122222c low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=6:599 input=2c224122222c low_ax=1 count=2 f0= f1=41222c
+CSV_QDOMAIN case=6:600 input=412c4122222c low_ax=1 count=2 f0=41 f1=412222
+CSV_QDOMAIN case=6:601 input=222c4122222c low_ax=1 count=1 f0=2c41222c
+CSV_QDOMAIN case=6:602 input=2c2c4122222c low_ax=1 count=3 f0= f1= f2=412222
+CSV_QDOMAIN case=6:603 input=41412222222c low_ax=1 count=1 f0=4141222222
+CSV_QDOMAIN case=6:604 input=22412222222c low_ax=1 count=1 f0=4122
+CSV_QDOMAIN case=6:605 input=2c412222222c low_ax=1 count=2 f0= f1=41222222
+CSV_QDOMAIN case=6:606 input=41222222222c low_ax=1 count=1 f0=4122222222
+CSV_QDOMAIN case=6:607 input=22222222222c low_ax=1 count=1 f0=22222c
+CSV_QDOMAIN case=6:608 input=2c222222222c low_ax=1 count=2 f0= f1=22
+CSV_QDOMAIN case=6:609 input=412c2222222c low_ax=1 count=2 f0=41 f1=222c
+CSV_QDOMAIN case=6:610 input=222c2222222c low_ax=1 count=1 f0=2c22
+CSV_QDOMAIN case=6:611 input=2c2c2222222c low_ax=1 count=3 f0= f1= f2=222c
+CSV_QDOMAIN case=6:612 input=41412c22222c low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=6:613 input=22412c22222c low_ax=1 count=1 f0=412c222c
+CSV_QDOMAIN case=6:614 input=2c412c22222c low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:615 input=41222c22222c low_ax=1 count=2 f0=4122 f1=
+CSV_QDOMAIN case=6:616 input=22222c22222c low_ax=1 count=2 f0= f1=
+CSV_QDOMAIN case=6:617 input=2c222c22222c low_ax=1 count=2 f0= f1=2c222c
+CSV_QDOMAIN case=6:618 input=412c2c22222c low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:619 input=222c2c22222c low_ax=1 count=1 f0=2c2c222c
+CSV_QDOMAIN case=6:620 input=2c2c2c22222c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:621 input=4141412c222c low_ax=1 count=2 f0=414141 f1=2c
+CSV_QDOMAIN case=6:622 input=2241412c222c low_ax=1 count=1 f0=41412c
+CSV_QDOMAIN case=6:623 input=2c41412c222c low_ax=1 count=3 f0= f1=4141 f2=2c
+CSV_QDOMAIN case=6:624 input=4122412c222c low_ax=1 count=2 f0=412241 f1=2c
+CSV_QDOMAIN case=6:625 input=2222412c222c low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=6:626 input=2c22412c222c low_ax=1 count=2 f0= f1=412c
+CSV_QDOMAIN case=6:627 input=412c412c222c low_ax=1 count=3 f0=41 f1=41 f2=2c
+CSV_QDOMAIN case=6:628 input=222c412c222c low_ax=1 count=1 f0=2c412c
+CSV_QDOMAIN case=6:629 input=2c2c412c222c low_ax=1 count=4 f0= f1= f2=41 f3=2c
+CSV_QDOMAIN case=6:630 input=4141222c222c low_ax=1 count=2 f0=414122 f1=2c
+CSV_QDOMAIN case=6:631 input=2241222c222c low_ax=1 count=2 f0=41 f1=2c
+CSV_QDOMAIN case=6:632 input=2c41222c222c low_ax=1 count=3 f0= f1=4122 f2=2c
+CSV_QDOMAIN case=6:633 input=4122222c222c low_ax=1 count=2 f0=412222 f1=2c
+CSV_QDOMAIN case=6:634 input=2222222c222c low_ax=1 count=1 f0=222c
+CSV_QDOMAIN case=6:635 input=2c22222c222c low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=6:636 input=412c222c222c low_ax=1 count=2 f0=41 f1=2c
+CSV_QDOMAIN case=6:637 input=222c222c222c low_ax=1 count=2 f0=2c f1=2c
+CSV_QDOMAIN case=6:638 input=2c2c222c222c low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=6:639 input=41412c2c222c low_ax=1 count=3 f0=4141 f1= f2=2c
+CSV_QDOMAIN case=6:640 input=22412c2c222c low_ax=1 count=1 f0=412c2c
+CSV_QDOMAIN case=6:641 input=2c412c2c222c low_ax=1 count=4 f0= f1=41 f2= f3=2c
+CSV_QDOMAIN case=6:642 input=41222c2c222c low_ax=1 count=3 f0=4122 f1= f2=2c
+CSV_QDOMAIN case=6:643 input=22222c2c222c low_ax=1 count=3 f0= f1= f2=2c
+CSV_QDOMAIN case=6:644 input=2c222c2c222c low_ax=1 count=2 f0= f1=2c2c
+CSV_QDOMAIN case=6:645 input=412c2c2c222c low_ax=1 count=4 f0=41 f1= f2= f3=2c
+CSV_QDOMAIN case=6:646 input=222c2c2c222c low_ax=1 count=1 f0=2c2c2c
+CSV_QDOMAIN case=6:647 input=2c2c2c2c222c low_ax=1 count=5 f0= f1= f2= f3= f4=
+2c
+CSV_QDOMAIN case=6:648 input=414141412c2c low_ax=1 count=2 f0=41414141 f1=
+CSV_QDOMAIN case=6:649 input=224141412c2c low_ax=1 count=1 f0=4141412c2c
+CSV_QDOMAIN case=6:650 input=2c4141412c2c low_ax=1 count=3 f0= f1=414141 f2=
+CSV_QDOMAIN case=6:651 input=412241412c2c low_ax=1 count=2 f0=41224141 f1=
+CSV_QDOMAIN case=6:652 input=222241412c2c low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:653 input=2c2241412c2c low_ax=1 count=2 f0= f1=41412c2c
+CSV_QDOMAIN case=6:654 input=412c41412c2c low_ax=1 count=3 f0=41 f1=4141 f2=
+CSV_QDOMAIN case=6:655 input=222c41412c2c low_ax=1 count=1 f0=2c41412c2c
+CSV_QDOMAIN case=6:656 input=2c2c41412c2c low_ax=1 count=4 f0= f1= f2=4141 f3=
+CSV_QDOMAIN case=6:657 input=414122412c2c low_ax=1 count=2 f0=41412241 f1=
+CSV_QDOMAIN case=6:658 input=224122412c2c low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:659 input=2c4122412c2c low_ax=1 count=3 f0= f1=412241 f2=
+CSV_QDOMAIN case=6:660 input=412222412c2c low_ax=1 count=2 f0=41222241 f1=
+CSV_QDOMAIN case=6:661 input=222222412c2c low_ax=1 count=1 f0=22412c2c
+CSV_QDOMAIN case=6:662 input=2c2222412c2c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:663 input=412c22412c2c low_ax=1 count=2 f0=41 f1=412c2c
+CSV_QDOMAIN case=6:664 input=222c22412c2c low_ax=1 count=3 f0=2c f1= f2=
+CSV_QDOMAIN case=6:665 input=2c2c22412c2c low_ax=1 count=3 f0= f1= f2=412c2c
+CSV_QDOMAIN case=6:666 input=41412c412c2c low_ax=1 count=3 f0=4141 f1=41 f2=
+CSV_QDOMAIN case=6:667 input=22412c412c2c low_ax=1 count=1 f0=412c412c2c
+CSV_QDOMAIN case=6:668 input=2c412c412c2c low_ax=1 count=4 f0= f1=41 f2=41 f3=
+CSV_QDOMAIN case=6:669 input=41222c412c2c low_ax=1 count=3 f0=4122 f1=41 f2=
+CSV_QDOMAIN case=6:670 input=22222c412c2c low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:671 input=2c222c412c2c low_ax=1 count=2 f0= f1=2c412c2c
+CSV_QDOMAIN case=6:672 input=412c2c412c2c low_ax=1 count=4 f0=41 f1= f2=41 f3=
+CSV_QDOMAIN case=6:673 input=222c2c412c2c low_ax=1 count=1 f0=2c2c412c2c
+CSV_QDOMAIN case=6:674 input=2c2c2c412c2c low_ax=1 count=5 f0= f1= f2= f3=41
+ f4=
+CSV_QDOMAIN case=6:675 input=414141222c2c low_ax=1 count=2 f0=41414122 f1=
+CSV_QDOMAIN case=6:676 input=224141222c2c low_ax=1 count=2 f0=4141 f1=
+CSV_QDOMAIN case=6:677 input=2c4141222c2c low_ax=1 count=3 f0= f1=414122 f2=
+CSV_QDOMAIN case=6:678 input=412241222c2c low_ax=1 count=2 f0=41224122 f1=
+CSV_QDOMAIN case=6:679 input=222241222c2c low_ax=1 count=2 f0= f1=2c2c
+CSV_QDOMAIN case=6:680 input=2c2241222c2c low_ax=1 count=3 f0= f1=41 f2=
+CSV_QDOMAIN case=6:681 input=412c41222c2c low_ax=1 count=3 f0=41 f1=4122 f2=
+CSV_QDOMAIN case=6:682 input=222c41222c2c low_ax=1 count=2 f0=2c41 f1=
+CSV_QDOMAIN case=6:683 input=2c2c41222c2c low_ax=1 count=4 f0= f1= f2=4122 f3=
+CSV_QDOMAIN case=6:684 input=414122222c2c low_ax=1 count=2 f0=41412222 f1=
+CSV_QDOMAIN case=6:685 input=224122222c2c low_ax=1 count=1 f0=41222c2c
+CSV_QDOMAIN case=6:686 input=2c4122222c2c low_ax=1 count=3 f0= f1=412222 f2=
+CSV_QDOMAIN case=6:687 input=412222222c2c low_ax=1 count=2 f0=41222222 f1=
+CSV_QDOMAIN case=6:688 input=222222222c2c low_ax=1 count=2 f0=22 f1=
+CSV_QDOMAIN case=6:689 input=2c2222222c2c low_ax=1 count=2 f0= f1=222c2c
+CSV_QDOMAIN case=6:690 input=412c22222c2c low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:691 input=222c22222c2c low_ax=1 count=1 f0=2c222c2c
+CSV_QDOMAIN case=6:692 input=2c2c22222c2c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:693 input=41412c222c2c low_ax=1 count=2 f0=4141 f1=2c2c
+CSV_QDOMAIN case=6:694 input=22412c222c2c low_ax=1 count=2 f0=412c f1=
+CSV_QDOMAIN case=6:695 input=2c412c222c2c low_ax=1 count=3 f0= f1=41 f2=2c2c
+CSV_QDOMAIN case=6:696 input=41222c222c2c low_ax=1 count=2 f0=4122 f1=2c2c
+CSV_QDOMAIN case=6:697 input=22222c222c2c low_ax=1 count=2 f0= f1=2c2c
+CSV_QDOMAIN case=6:698 input=2c222c222c2c low_ax=1 count=3 f0= f1=2c f2=
+CSV_QDOMAIN case=6:699 input=412c2c222c2c low_ax=1 count=3 f0=41 f1= f2=2c2c
+CSV_QDOMAIN case=6:700 input=222c2c222c2c low_ax=1 count=2 f0=2c2c f1=
+CSV_QDOMAIN case=6:701 input=2c2c2c222c2c low_ax=1 count=4 f0= f1= f2= f3=2c2c
+CSV_QDOMAIN case=6:702 input=4141412c2c2c low_ax=1 count=3 f0=414141 f1= f2=
+CSV_QDOMAIN case=6:703 input=2241412c2c2c low_ax=1 count=1 f0=41412c2c2c
+CSV_QDOMAIN case=6:704 input=2c41412c2c2c low_ax=1 count=4 f0= f1=4141 f2= f3=
+CSV_QDOMAIN case=6:705 input=4122412c2c2c low_ax=1 count=3 f0=412241 f1= f2=
+CSV_QDOMAIN case=6:706 input=2222412c2c2c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:707 input=2c22412c2c2c low_ax=1 count=2 f0= f1=412c2c2c
+CSV_QDOMAIN case=6:708 input=412c412c2c2c low_ax=1 count=4 f0=41 f1=41 f2= f3=
+CSV_QDOMAIN case=6:709 input=222c412c2c2c low_ax=1 count=1 f0=2c412c2c2c
+CSV_QDOMAIN case=6:710 input=2c2c412c2c2c low_ax=1 count=5 f0= f1= f2=41 f3=
+ f4=
+CSV_QDOMAIN case=6:711 input=4141222c2c2c low_ax=1 count=3 f0=414122 f1= f2=
+CSV_QDOMAIN case=6:712 input=2241222c2c2c low_ax=1 count=3 f0=41 f1= f2=
+CSV_QDOMAIN case=6:713 input=2c41222c2c2c low_ax=1 count=4 f0= f1=4122 f2= f3=
+CSV_QDOMAIN case=6:714 input=4122222c2c2c low_ax=1 count=3 f0=412222 f1= f2=
+CSV_QDOMAIN case=6:715 input=2222222c2c2c low_ax=1 count=1 f0=222c2c2c
+CSV_QDOMAIN case=6:716 input=2c22222c2c2c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:717 input=412c222c2c2c low_ax=1 count=2 f0=41 f1=2c2c2c
+CSV_QDOMAIN case=6:718 input=222c222c2c2c low_ax=1 count=3 f0=2c f1= f2=
+CSV_QDOMAIN case=6:719 input=2c2c222c2c2c low_ax=1 count=3 f0= f1= f2=2c2c2c
+CSV_QDOMAIN case=6:720 input=41412c2c2c2c low_ax=1 count=4 f0=4141 f1= f2= f3=
+CSV_QDOMAIN case=6:721 input=22412c2c2c2c low_ax=1 count=1 f0=412c2c2c2c
+CSV_QDOMAIN case=6:722 input=2c412c2c2c2c low_ax=1 count=5 f0= f1=41 f2= f3=
+ f4=
+CSV_QDOMAIN case=6:723 input=41222c2c2c2c low_ax=1 count=4 f0=4122 f1= f2= f3=
+CSV_QDOMAIN case=6:724 input=22222c2c2c2c low_ax=1 count=4 f0= f1= f2= f3=
+CSV_QDOMAIN case=6:725 input=2c222c2c2c2c low_ax=1 count=2 f0= f1=2c2c2c2c
+CSV_QDOMAIN case=6:726 input=412c2c2c2c2c low_ax=1 count=5 f0=41 f1= f2= f3=
+ f4=
+CSV_QDOMAIN case=6:727 input=222c2c2c2c2c low_ax=1 count=1 f0=2c2c2c2c2c
+CSV_QDOMAIN case=6:728 input=2c2c2c2c2c2c low_ax=1 count=6 f0= f1= f2= f3= f4=
+ f5=
+CSV_QUOTE_DOMAIN cases=1093 low_ax_failures=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 011c:0120: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+011c:0120: create thread I @004014C0
+011c:0120: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+011c:0120: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+011c:0120: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+011c:0120: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+011c:0120: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+011c:0120: loads DLL C:\windows\system32\WINMM.dll @78A80000 (1474560<4890>)
+011c:0120: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+011c:0120: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+011c:0120: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+011c:0120: loads DLL C:\windows\system32\msacm32.dll @78A00000 (413696<1982>)
+011c:0120: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+011c:0120: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+011c:0120: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+011c:0120: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+011c:0120: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+011c:0120: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+011c:0120: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+011c:0120: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+011c:0120: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+011c:0120: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+011c:0120: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+011c:0120: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+011c:0120: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+0000011c:00000120: unload DLL @009C0000
+011c:0120: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+0000011c:00000120: unload DLL @009C0000
+011c:0120: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+011c:0120: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+011c:0120: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+0000011c:00000120: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

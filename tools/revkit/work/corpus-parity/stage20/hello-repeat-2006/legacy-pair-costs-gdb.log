@@ -1,0 +1,14 @@
+Wine-gdb> Already logging to /probe/stage20/hello-repeat-2006/legacy-pair-costs-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ec07
+Wine-gdb> >>>>> > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_PAIR_COST_TRACE_READY
+LEGACY_PAIR_COST position=1 current=272823 previous=273369 transition=30.8357 previous_path=3.70872e-40 local=1.27656 total=32.1324 penalty=0
+LEGACY_PAIR_COST position=1 current=272823 previous=272822 transition=0 previous_path=3.70872e-40 local=1.27656 total=1.27899 penalty=0
+LEGACY_PAIR_COST position=1 current=272823 previous=273369 transition=30.8357 previous_path=3.70872e-40 local=1.27656 total=32.1324 penalty=0
+LEGACY_PAIR_COST position=1 current=272823 previous=272822 transition=0 previous_path=3.70872e-40 local=1.27656 total=1.27899 penalty=0
+LEGACY_PAIR_COST position=1 current=272823 previous=273369 transition=30.8357 previous_path=3.70872e-40 local=1.27656 total=32.1324 penalty=0
+LEGACY_PAIR_COST position=1 current=272823 previous=272822 transition=0 previous_path=3.70872e-40 local=1.27656 total=1.27899 penalty=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,7 @@
+READING_RULE_MATRIX_COMPARE case=baseline modes=0,1 identical=1
+READING_RULE_MATRIX_COMPARE case=heteronyms modes=0,1 identical=1
+READING_RULE_MATRIX_COMPARE case=lead modes=0,1 identical=1
+READING_RULE_MATRIX_COMPARE case=dates modes=0,1 identical=1
+READING_RULE_MATRIX_COMPARE case=abbreviations modes=0,1 identical=1
+READING_RULE_MATRIX_COMPARE case=acronyms modes=0,1 identical=1
+READING_RULE_MATRIX_COMPARE case=dates modes=0,2147483647 identical=1

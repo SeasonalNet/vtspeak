@@ -1,0 +1,9 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10027fe0
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1002c8b0
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Continuing.
+HI_VOLUME100_SETTER original=200
+HI_VOLUME100_ROW call=1 samples=1420 scale=100
+HI_VOLUME100_ROW call=2 samples=1514 scale=100
+HI_VOLUME100_ROW call=3 samples=4470 scale=100
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

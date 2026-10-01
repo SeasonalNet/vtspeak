@@ -1,0 +1,24 @@
+VoiceText Paul 2013 bounded “ness” suffix handler
+=================================================
+
+Evidence boundary
+-----------------
+
+FUN_1000a140 at VA 0x1000a140 contains an ordered branch for short inputs. In
+the branch where the C-string length is 7 or 8, it first checks the final
+four bytes against DAT_10077828 (`ance`). If that comparison misses, it checks
+DAT_10077800 (`ness`). The strings are present at those addresses in the
+checked-in `binary/vt_pau.dll` .data section. The corresponding control flow is
+in `stage6-deep-text-functions.txt` under FUN_1000a140.
+
+On a `ness` match, the decompiler copies the input into a 32-byte local,
+terminates it four bytes earlier, and calls FUN_1000cb30 with the resulting
+stem. If that call writes a nonempty string, FUN_1000a140 appends these bytes
+in order: `0x2c`, `0x07`, `0x2d`, `0x39`, then NUL. The common return path ORs
+`0x08` into the caller's row flag and reports success.
+
+The Go helper implements only this directly compared 7- and 8-byte branch,
+using the existing FUN_1000cb30 wrapper and loaded embedded dictionary. It
+does not implement the adjacent `ance` branch, other lengths, or the rest of
+FUN_1000a140. The suffix name and output bytes are observations; no linguistic
+interpretation is assigned. Runtime row-for-row parity has not been captured.

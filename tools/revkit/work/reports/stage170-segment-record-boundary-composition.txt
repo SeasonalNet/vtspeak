@@ -1,0 +1,31 @@
+Stage 170: segment driver to phone records and native boundaries
+
+Evidence and implementation
+
+- Existing native caller evidence (vt_pau-synthesis-pseudocode.c,
+  stage24-marker-pipeline-caller.c and stage23-state-array-writers.c) orders
+  FUN_10022dc0 segment/state/mapping before FUN_10016c90 phone/control writes
+  and FUN_100130e0 boundary processing. See Stages 155-169 for field evidence.
+- Paul2013PositionSegmentDriverResult.PopulateModelStateRecords uses the
+  actual driver slot-7 results, retained parser state and mapped record arena.
+  It validates counted-success prerequisites and pointer/address ownership
+  remains explicit. It does not synthesize a parser-finalizer result.
+- RunPaul2013PositionSegmentBoundaryDriver composes these writes with loaded
+  engbi grouping/tree/transition/dispatch/descriptors. It derives nonfinal
+  outputs at parser +0x20 + index*0x94 and shifted values/states from workspace
+  +0x121a64/+0x121d80, then writes final arrays to a copied workspace.
+- Null-source and zero-byte completion return without requiring tree or
+  pointer dependencies. The duration engine supplies its loaded catalog.
+
+Validation and limits
+
+- Integration tests project two parser phone strings, mapped intervals,
+  native pointers and produced slot-7 state through final mode, boundary
+  tree, parser -2 output, value 100 and workspace/descriptor writeback.
+  Truncated/mismatched parser rows and completion projection are rejected.
+  Completion bypass and nil/unloaded engine cases are covered.
+- Changed Go files were formatted. From engine/, GOCACHE=/tmp/vtspeak-go-cache
+  go test ./..., go build ./..., go vet ./... passed; git diff --check passed.
+- Static caller evidence and synthetic tests do not establish original-engine
+  whole-arena or end-to-end synthesis parity. The source parser callback,
+  native table producers, and pointer ownership remain unresolved inputs.

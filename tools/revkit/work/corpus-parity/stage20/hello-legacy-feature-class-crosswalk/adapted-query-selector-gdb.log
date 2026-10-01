@@ -1,0 +1,60 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-legacy-feature-class-crosswalk/adapted-query-selector-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023dc0
+Wine-gdb> >>>>>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024060
+Wine-gdb> >>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100242a0
+Wine-gdb> >>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 6 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 7 at 0x100249bb
+CROSSWALK_SPLIT_ENTER call=1 slot=0
+Temporary breakpoint 8 at 0x10024808
+Temporary breakpoint 9 at 0x1001896a
+CROSSWALK_QUERY call=1 key=5a,22,17,a0,00 count=1
+Temporary breakpoint 10 at 0x10018a45
+CROSSWALK_QUERY call=2 key=5a,22,17,98,00 count=0
+CROSSWALK_SPLIT_RETURN call=1 slot=0 accepted=1
+CROSSWALK_SPLIT_ENTER call=2 slot=1
+Temporary breakpoint 11 at 0x10024808
+Temporary breakpoint 12 at 0x1001896a
+CROSSWALK_QUERY call=3 key=22,17,2b,20,00 count=1
+Temporary breakpoint 13 at 0x10018a45
+CROSSWALK_QUERY call=4 key=22,17,2b,18,00 count=0
+Temporary breakpoint 14 at 0x10018a45
+CROSSWALK_QUERY call=5 key=22,17,2b,10,00 count=0
+Temporary breakpoint 15 at 0x10018a45
+CROSSWALK_QUERY call=6 key=22,17,2b,08,00 count=0
+CROSSWALK_SPLIT_RETURN call=2 slot=1 accepted=0
+CROSSWALK_FALLBACK_ENTER call=1 slot=1
+Temporary breakpoint 16 at 0x1002481e
+CROSSWALK_FALLBACK_RETURN call=1 slot=1 positions=2
+CROSSWALK_SPLIT_ENTER call=3 slot=3
+Temporary breakpoint 17 at 0x10024808
+Temporary breakpoint 18 at 0x1001896a
+CROSSWALK_QUERY call=7 key=17,2b,2f,00,00 count=1
+Temporary breakpoint 19 at 0x10018a45
+CROSSWALK_QUERY call=8 key=17,2b,2f,08,00 count=0
+CROSSWALK_SPLIT_RETURN call=3 slot=3 accepted=0
+CROSSWALK_FALLBACK_ENTER call=2 slot=3
+Temporary breakpoint 20 at 0x1002481e
+CROSSWALK_FALLBACK_RETURN call=2 slot=3 positions=2
+CROSSWALK_SPLIT_ENTER call=4 slot=5
+Temporary breakpoint 21 at 0x10024808
+Temporary breakpoint 22 at 0x1001896a
+CROSSWALK_QUERY call=9 key=2b,30,5a,45,00 count=1
+Temporary breakpoint 23 at 0x10018a45
+CROSSWALK_QUERY call=10 key=2b,30,5a,4d,00 count=0
+CROSSWALK_SPLIT_RETURN call=4 slot=5 accepted=0
+CROSSWALK_FALLBACK_ENTER call=3 slot=5
+Temporary breakpoint 24 at 0x1002481e
+CROSSWALK_FALLBACK_RETURN call=3 slot=5 positions=2
+CROSSWALK_POSITION_BUILDER_RETURN positions=7
+CROSSWALK_SELECTED_UNIT n=1 id=52542
+CROSSWALK_SELECTED_UNIT n=2 id=264072
+CROSSWALK_SELECTED_UNIT n=3 id=264072
+CROSSWALK_SELECTED_UNIT n=4 id=264073
+CROSSWALK_SELECTED_UNIT n=5 id=264073
+CROSSWALK_SELECTED_UNIT n=6 id=264074
+CROSSWALK_SELECTED_UNIT n=7 id=264074
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

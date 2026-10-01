@@ -1,0 +1,42 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-plain-crosswalk-feature-field-1/adapted-feature-swap-gdb.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > >  >  >  >  >   >   >   >   >   >   >  > > > > > > > > >  >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x10024808
+Temporary breakpoint 7 at 0x10024271
+Temporary breakpoint 8 at 0x10024808
+Temporary breakpoint 9 at 0x10024271
+FEATURE_FIELD_1_SWAP_CUTOFF_OVERRIDE slot=1 sum=9
+Temporary breakpoint 10 at 0x10024808
+Temporary breakpoint 11 at 0x10024271
+FEATURE_FIELD_1_SWAP_CUTOFF_OVERRIDE slot=2 sum=5
+Temporary breakpoint 12 at 0x10024808
+Temporary breakpoint 13 at 0x10024271
+FEATURE_FIELD_1_SWAP_CUTOFF_OVERRIDE slot=3 sum=6
+FEATURE_FIELD_1_SWAP_ENTRY unit=272823 pair=272823,273370
+Temporary breakpoint 14 at 0x1002389a
+FEATURE_FIELD_1_SWAP_RETURN unit=272823 pair=272823,273370 score=26.5764
+FEATURE_FIELD_1_SWAP_ENTRY unit=273370 pair=272823,273370
+Temporary breakpoint 15 at 0x1002389a
+FEATURE_FIELD_1_SWAP_RETURN unit=273370 pair=272823,273370 score=24.9582
+FEATURE_FIELD_1_SWAP_ENTRY unit=272824 pair=272824,273371
+Temporary breakpoint 16 at 0x1002389a
+FEATURE_FIELD_1_SWAP_RETURN unit=272824 pair=272824,273371 score=173.792
+FEATURE_FIELD_1_SWAP_ENTRY unit=273371 pair=272824,273371
+Temporary breakpoint 17 at 0x1002389a
+FEATURE_FIELD_1_SWAP_RETURN unit=273371 pair=272824,273371 score=136.48
+FEATURE_FIELD_1_SWAP_ENTRY unit=255282 pair=272825,255282
+Temporary breakpoint 18 at 0x1002389a
+FEATURE_FIELD_1_SWAP_RETURN unit=255282 pair=272825,255282 score=74
+FEATURE_FIELD_1_SWAP_ENTRY unit=272825 pair=272825,255282
+Temporary breakpoint 19 at 0x1002389a
+FEATURE_FIELD_1_SWAP_RETURN unit=272825 pair=272825,255282 score=71.25
+FEATURE_FIELD_1_SWAP_SELECTED n=1 id=52542
+FEATURE_FIELD_1_SWAP_SELECTED n=2 id=273370
+FEATURE_FIELD_1_SWAP_SELECTED n=3 id=273371
+FEATURE_FIELD_1_SWAP_SELECTED n=4 id=255282
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

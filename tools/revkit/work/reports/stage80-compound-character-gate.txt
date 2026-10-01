@@ -1,0 +1,23 @@
+VoiceText Paul 2013 compound character gate
+===========================================
+
+Evidence
+--------
+
+`FUN_1000ffd0` at VA `0x1000ffd0` is the second component gate in
+`FUN_10009dc0`. The captured disassembly in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`, lines 21196-21209,
+shows a null/empty rejection followed by the 256-byte attribute lookup at
+`0x1007e188`. For each signed input byte, it tests mask `0xc0`; if that is
+nonzero, it then tests `0x40` and returns zero when the bit is set. It returns
+one after reaching the terminating NUL without that rejection.
+
+Implementation
+--------------
+
+`duration.Paul2013CompoundCharacterGate` ports that predicate for the current
+ASCII input contract and rejects high-bit bytes explicitly because the
+native signed index is not provisioned by this helper. The compound scanner
+computes both this gate and `FUN_10003b10`'s dictionary gate and passes the
+observed results to its component callback. No linguistic meaning is assigned
+to the attribute bits.

@@ -1,0 +1,118 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/kate-key5-score-path-hello/signature5-swap-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/kate-key5-score-path-hello/signature5-swap-gdb.log.
+Wine-gdb> Already logging to /work/corpus-parity/stage20/kate-key5-score-path-hello/signature5-swap-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > >  >  >  >  >  >  > > >  >  >  >  >   >   >   >   >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10018c80
+Wine-gdb> >>>>>>> > > > > > >  >  >  >  >  >  >  > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=280485
+Temporary breakpoint 5 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=280485 score=34.8
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=21433
+Temporary breakpoint 6 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=21433 score=39.8
+Temporary breakpoint 7 at 0x100248d6
+KATE_KEY5_SIGNATURE5_PATH context=1 candidates=30 previous=30 {279484 cost=574.98 pred=280485} {1200 cost=567.478 pred=280485} {2525 cost=604.762 pred=280485} {20499 cost=573.277 pred=280485} {22451 cost=589.997 pred=280485} {28430 cost=562.631 pred=280485} {31347 cost=595.185 pred=280485} {31795 cost=580.268 pred=280485} {51310 cost=611.121 pred=280485} {92183 cost=612.294 pred=280485} {116320 cost=587.945 pred=280485} {129641 cost=569.99 pred=280485} {165351 cost=596.979 pred=280485} {178453 cost=588.932 pred=280485} {179388 cost=562.598 pred=280485} {182880 cost=555.133 pred=280485} {279479 cost=592.421 pred=280485} {273369 cost=306.327 pred=280485} {272822 cost=318.8 pred=280485} {262454 cost=557.699 pred=280485} {245736 cost=567.628 pred=280485} {214148 cost=562.08 pred=280485} {206118 cost=556.24 pred=280485} {204612 cost=561.724 pred=280485} {200614 cost=586.554 pred=280485} {200525 cost=587.641 pred=280485} {195687 cost=580.57 pred=280485} {189906 cost=548.504 pred=280485} {21433 cost=151.131 pred=280485} {264071 cost=268.503 pred=280485}
+KATE_KEY5_SIGNATURE5_SWAP_ENTRY unit=264072 legacy=30 current=0
+Temporary breakpoint 8 at 0x1002389a
+KATE_KEY5_SIGNATURE5_SWAP_RETURN unit=264072 score=1003.58
+KATE_KEY5_SIGNATURE5_SWAP_ENTRY unit=272823 legacy=30 current=0
+Temporary breakpoint 9 at 0x1002389a
+KATE_KEY5_SIGNATURE5_SWAP_RETURN unit=272823 score=23.5481
+Temporary breakpoint 10 at 0x100248d6
+KATE_KEY5_SIGNATURE5_PATH context=2 candidates=10 previous=30 {13942 cost=193.182 pred=21433} {36540 cost=179.767 pred=21433} {264072 cost=672.491 pred=21433} {272152 cost=182.371 pred=21433} {53487 cost=663.779 pred=21433} {96599 cost=681.687 pred=21433} {268760 cost=660.57 pred=21433} {272823 cost=167.225 pred=21433} {273370 cost=668.269 pred=21433} {145101 cost=173.663 pred=21433}
+KATE_KEY5_SIGNATURE5_SWAP_ENTRY unit=264072 legacy=30 current=0
+Temporary breakpoint 11 at 0x1002389a
+KATE_KEY5_SIGNATURE5_SWAP_RETURN unit=264072 score=1003.54
+Temporary breakpoint 12 at 0x100248d6
+KATE_KEY5_SIGNATURE5_PATH context=3 candidates=13 previous=10 {13942 cost=198.42 pred=36540} {36540 cost=190.971 pred=36540} {264072 cost=693.012 pred=145101} {272152 cost=193.558 pred=272152} {93736 cost=200.348 pred=145101} {77285 cost=200.283 pred=145101} {45237 cost=196.037 pred=272823} {128526 cost=208.823 pred=272823} {235111 cost=198.328 pred=272823} {63692 cost=195.805 pred=272823} {72577 cost=199.352 pred=145101} {4105 cost=198.269 pred=145101} {115179 cost=197.74 pred=145101}
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=264073
+Temporary breakpoint 13 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=264073 score=71.5588
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=272824
+Temporary breakpoint 14 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=272824 score=79.3595
+Temporary breakpoint 15 at 0x100248d6
+KATE_KEY5_SIGNATURE5_PATH context=4 candidates=11 previous=12 {2529 cost=355.326 pred=272152} {4632 cost=348.207 pred=272152} {28296 cost=356.507 pred=272152} {105185 cost=356.624 pred=45237} {146098 cost=355.269 pred=63692} {153132 cost=332.269 pred=63692} {252236 cost=357.042 pred=45237} {264073 cost=250.344 pred=272152} {265815 cost=356.945 pred=45237} {272153 cost=231.681 pred=272152} {272824 cost=257.216 pred=45237}
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=264074
+Temporary breakpoint 16 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=264074 score=32.5632
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=272825
+Temporary breakpoint 17 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=272825 score=34.0766
+Temporary breakpoint 18 at 0x100248d6
+KATE_KEY5_SIGNATURE5_PATH context=5 candidates=16 previous=4 {268761 cost=280.145 pred=272153} {5170 cost=260.746 pred=272153} {246677 cost=254.648 pred=272153} {264074 cost=256.63 pred=272153} {272825 cost=276.254 pred=272824} {282675 cost=285.013 pred=272153} {282713 cost=302.174 pred=272824} {281488 cost=272.974 pred=272153} {195440 cost=263.481 pred=272153} {243651 cost=381.327 pred=272824} {82950 cost=781.728 pred=272153} {180021 cost=808.663 pred=272824} {105444 cost=312.79 pred=272153} {136589 cost=315.772 pred=272153} {137059 cost=310.057 pred=272153} {59471 cost=351.002 pred=272153}
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=264074
+Temporary breakpoint 19 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=264074 score=32.2771
+KATE_KEY5_SIGNATURE5_CONTROL_ENTRY unit=272825
+Temporary breakpoint 20 at 0x1002389a
+KATE_KEY5_SIGNATURE5_CONTROL_RETURN unit=272825 score=32.3766
+Temporary breakpoint 21 at 0x100248d6
+KATE_KEY5_SIGNATURE5_PATH context=6 candidates=26 previous=14 {282713 cost=367.043 pred=282713} {268761 cost=355.052 pred=264074} {5170 cost=276.893 pred=5170} {246677 cost=270.716 pred=246677} {264074 cost=272.769 pred=264074} {272825 cost=289.443 pred=264074} {282675 cost=339.964 pred=264074} {269609 cost=390.834 pred=136589} {200069 cost=326.999 pred=264074} {136758 cost=331.83 pred=264074} {74841 cost=330.12 pred=264074} {33797 cost=327.343 pred=264074} {266501 cost=285.233 pred=264074} {187123 cost=286.448 pred=264074} {184698 cost=290.564 pred=264074} {137959 cost=292.824 pred=246677} {73448 cost=285.449 pred=264074} {42894 cost=292.542 pred=264074} {34085 cost=286.455 pred=5170} {27246 cost=328.97 pred=246677} {66928 cost=362.013 pred=5170} {282647 cost=380.447 pred=282713} {282009 cost=347.474 pred=195440} {105189 cost=336.537 pred=264074} {94772 cost=361.035 pred=246677} {28799 cost=328.923 pred=264074}
+KATE_KEY5_SIGNATURE5_SELECTED id=280485
+KATE_KEY5_SIGNATURE5_SELECTED id=21433
+KATE_KEY5_SIGNATURE5_SELECTED id=272152
+KATE_KEY5_SIGNATURE5_SELECTED id=272152
+KATE_KEY5_SIGNATURE5_SELECTED id=272153
+KATE_KEY5_SIGNATURE5_SELECTED id=246677
+KATE_KEY5_SIGNATURE5_SELECTED id=246677
+KATE_KEY5_SIGNATURE5_SELECTED id=21433
+KATE_KEY5_SIGNATURE5_SELECTED id=280485
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

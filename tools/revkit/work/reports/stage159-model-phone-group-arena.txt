@@ -1,0 +1,45 @@
+Stage 159: model phone-group arena writes and pre-tree handoff
+
+Evidence
+
+- stage22-context-marker-producers.c FUN_10012c70 at 0x10012c70 resets
+  arena +4, assigns each record +8 to arena +0x17d4c + count*0x1e, resets
+  record +0x94, subdivides using record +0x329, and accumulates the returned
+  group counts. Per-phone labels are written at record +0x36a.
+- FUN_10013c00 at 0x10013c00 writes only group-row fields +0, +1, +2,
+  +0x1c, +0x1d. No-vowel input writes a fallback row and labels of 1 but
+  returns count zero. A subsequent record begins at the same tail position.
+- Native group fields +3..+0x1b remain untouched by these functions.
+  Ghidra reports are pseudocode, with imperfect local-variable names/types.
+
+Implementation
+
+- PopulatePaul2013ModelPhoneGroupArena composes the existing supported
+  symbol decoder and per-record grouping helper with these arena writes.
+  It copies caller memory and preserves native-unwritten bytes, validates
+  row bounds and 32-bit pointer addition, and retains decoded groups for
+  duration/pitch adapters. Empty records reset group count without rows.
+- PreparePaul2013TokenBoundaryArena composes grouping, initial markers,
+  and pre-tree descriptors in FUN_100130e0 order. The subsequent tree stage
+  remains explicitly supplied before FinishPaul2013TokenBoundaryArena.
+
+Validation
+
+- Tests cover counted vowel groups, consonant-only fallback, fallback
+  overwrite by the next record, empty records, pointer/count/label writes,
+  preservation of unwritten row fields and caller arena, pointer overflow,
+  pre-tree descriptor spans, and the post-tree boundary handoff.
+- Supported fixture symbols are B (0x13) and AA0 (0x01), using the runtime-
+  grounded codebook. The fixture supplies an explicitly unchanged tree result.
+- Focused text tests passed. From engine/, with
+  GOCACHE=/tmp/vtspeak-go-cache, go test ./..., go build ./..., and
+  go vet ./... passed. gofmt applied; git diff --check passed.
+
+Limits
+
+- Group decoding uses the established 0x01..0x45 codebook. It rejects M and
+  other structural symbols; their direct DAT_1007b6c0/DAT_1007baa8 mappings
+  are not recovered by this adapter. This is a supported-input arena port,
+  not whole-arena native runtime parity or complete synthesis parity.
+- Native group descriptor pointer writes and full marker-tree arena iteration
+  remain separate work. Returned descriptors are existing Go value views.

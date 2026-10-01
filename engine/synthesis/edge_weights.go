@@ -2,6 +2,7 @@ package synthesis
 
 import (
 	"errors"
+	"fmt"
 )
 
 // UPMEdgeWeights contains the integer edge ramps built by FUN_1002d230.
@@ -12,6 +13,15 @@ type UPMEdgeWeights struct {
 	Left          []int32
 	Current       []int32
 	Right         []int32
+}
+
+// Paul2013ContextEdgePlan joins context-side eligibility, capped neighbor
+// counts, and the integer UPM edge ramps used by the timeline mixer.
+type Paul2013ContextEdgePlan struct {
+	Multipliers       ContextMultipliers
+	LeftContextCount  int
+	RightContextCount int
+	Weights           UPMEdgeWeights
 }
 
 // LimitPaul2013ContextCount applies the observed period-count and five-entry
@@ -89,4 +99,45 @@ func BuildPaul2013UPMEdgeWeights(
 		weights.Current[index] = normalization - weights.Left[index] - weights.Right[index]
 	}
 	return weights, nil
+}
+
+// BuildPaul2013ContextEdgePlan composes FUN_1002d230's side gate with its
+// period-count/five-entry caps and edge-weight construction. Row selection,
+// neighbor counts, and the gate's mode/index state remain explicit inputs.
+func BuildPaul2013ContextEdgePlan(
+	gate ContextGateInput,
+	periodCount, requestedLeftCount, requestedRightCount int,
+) (Paul2013ContextEdgePlan, error) {
+	leftCount, err := LimitPaul2013ContextCount(requestedLeftCount, periodCount)
+	if err != nil {
+		return Paul2013ContextEdgePlan{}, fmt.Errorf("limit left context count: %w", err)
+	}
+	rightCount, err := LimitPaul2013ContextCount(requestedRightCount, periodCount)
+	if err != nil {
+		return Paul2013ContextEdgePlan{}, fmt.Errorf("limit right context count: %w", err)
+	}
+	multipliers, err := Paul2013ContextMultipliers(gate)
+	if err != nil {
+		return Paul2013ContextEdgePlan{}, fmt.Errorf("evaluate context-side gate: %w", err)
+	}
+	if multipliers.Left == 0 {
+		leftCount = 0
+	} else if leftCount == 0 {
+		multipliers.Left = 0
+	}
+	if multipliers.Right == 0 {
+		rightCount = 0
+	} else if rightCount == 0 {
+		multipliers.Right = 0
+	}
+	weights, err := BuildPaul2013UPMEdgeWeights(
+		periodCount, leftCount, int(multipliers.Left), rightCount, int(multipliers.Right),
+	)
+	if err != nil {
+		return Paul2013ContextEdgePlan{}, fmt.Errorf("build UPM context edge weights: %w", err)
+	}
+	return Paul2013ContextEdgePlan{
+		Multipliers: multipliers, LeftContextCount: leftCount,
+		RightContextCount: rightCount, Weights: weights,
+	}, nil
 }

@@ -1,0 +1,35 @@
+Stage 175: complete six-record terminal context classifier
+
+Evidence
+
+- Original vt_pau x86 FUN_10052000 (0x10052000-0x10052518) reads six
+  0x44-byte scanner records. The punctuation is record 3, previous record 2,
+  and following records 4/5. Raw fields +0, +0x10 and +0x1c retain their
+  native comparisons. The ordered returns are short N/P/A, without assigned
+  linguistic semantics; A enters the later model fallback.
+- FUN_1000ffa0 and FUN_10061940 require a nonempty C string with all bytes
+  matching attribute mask C0 or 10. Signed byte indexing of DAT_1007e188
+  reaches a zero 128-byte prefix at 0x1007e108 for high input bytes. This was
+  checked read-only in binary/vt_pau.dll and agrees with the existing effective
+  exception attribute table. Masks 80/40/10 mark uppercase/lowercase/digits.
+- Read-only PE-mapped literal bytes: 0x100813c8 = ?!;, 0x100813c4 = the
+  backtick/single-quote/double-quote sequence, 0x10077400 = and,
+  0x10079024 = neither, 0x10079020 = nor, 0x10078ec8 = so,
+  0x1007786c = do, 0x10079134 = am, 0x100776e8 = I. The and comparison
+  is byte-exact; the final phrase uses FUN_1001c2c0's mapped comparison.
+
+Implementation and validation
+
+- ClassifyPaul2013TerminalContext preserves ordered spacing/status gates,
+  letter-case adjacency, letter/digit adjacency, single-letter and and paths,
+  preceding-record/quoted-following paths and the mapped final phrase.
+- Tests cover each effective branch, status-8 precedence, case-sensitive and,
+  mapped phrase alternatives, NUL truncation and signed high-byte attributes.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Full classifier port from static x86 evidence; unit fixtures are not original
+  engine differential captures. A is not guessed into a terminal decision.
+  Model fallback binding and whole-text/synthesis parity remain open.

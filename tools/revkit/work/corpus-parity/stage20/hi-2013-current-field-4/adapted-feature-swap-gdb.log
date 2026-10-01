@@ -1,0 +1,22 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hi-2013-current-field-4/adapted-feature-swap-gdb.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100182e0
+Wine-gdb> >>> > > > > > > > > > >  >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x10024808
+Temporary breakpoint 7 at 0x10024271
+Temporary breakpoint 8 at 0x10024808
+Temporary breakpoint 9 at 0x10024271
+HI_CURRENT_FIELD_4_CUTOFF_OVERRIDE slot=1 sum=9
+HI_CURRENT_FIELD_4_SWAP_ENTRY unit=272821 pair=272821,280449 values=75,86
+Temporary breakpoint 10 at 0x1002389a
+HI_CURRENT_FIELD_4_SWAP_RETURN unit=272821 score=57.118
+HI_CURRENT_FIELD_4_SWAP_ENTRY unit=280449 pair=272821,280449 values=75,86
+Temporary breakpoint 11 at 0x1002389a
+HI_CURRENT_FIELD_4_SWAP_RETURN unit=280449 score=66.5484
+HI_CURRENT_FIELD_4_SELECTED n=1 id=272820
+HI_CURRENT_FIELD_4_SELECTED n=2 id=272821
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

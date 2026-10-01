@@ -3,7 +3,6 @@ package selection
 import (
 	"errors"
 	"fmt"
-	"sort"
 
 	"vtspeak/engine/text"
 	"vtspeak/engine/voice"
@@ -25,6 +24,8 @@ type RankOptions struct {
 	MaxUnits   uint64
 	ViewMode   byte
 }
+
+const paul2013MaxScoredClassCandidates = 10_000
 
 // ClassMismatchDistance computes the weighted key mismatch used by the
 // recovered class-ranking routine. A nonzero view mode adds the matching
@@ -66,8 +67,12 @@ func ClassMismatchDistance(input, candidate [5]byte, viewMode byte) (int64, erro
 }
 
 // RankClasses preserves source order when both observed candidate limits fit.
-// Otherwise it stable-sorts by weighted mismatch and emits complete classes
-// until either limit is reached; the final class may cross the unit budget.
+// Otherwise it scores and sorts candidates by weighted mismatch, then
+// emits complete classes until either limit is reached; the final class may
+// cross the unit budget. Feature-view pools above 10,000 rank only their first
+// 10,000 entries. Larger key-only pools are rejected because the native path
+// sorts an uncharacterized scratch tail. Scored entries use the recovered
+// FUN_1001b5f0 ordering algorithm.
 func RankClasses(contextKey [5]byte, candidates []ClassCandidate, options RankOptions) ([]ClassCandidate, error) {
 	if options.MaxClasses <= 0 || options.MaxUnits == 0 {
 		return nil, errors.New("class ranking limits must be positive")
@@ -86,21 +91,31 @@ func RankClasses(contextKey [5]byte, candidates []ClassCandidate, options RankOp
 		return append([]ClassCandidate(nil), candidates...), nil
 	}
 
+	// Both native scoring loops fill at most 10,000 scratch entries. The
+	// feature-view path sorts only that copied prefix. The key-only path passes
+	// the original count to its sort helper, so its unscored scratch tail is not
+	// characterized well enough to reproduce for larger pools.
+	scoreCount := len(candidates)
+	if scoreCount > paul2013MaxScoredClassCandidates {
+		if options.ViewMode == 0 {
+			return nil, fmt.Errorf("class candidate pool has %d entries; native score buffer supports at most %d", len(candidates), paul2013MaxScoredClassCandidates)
+		}
+		scoreCount = paul2013MaxScoredClassCandidates
+	}
 	type scoredClass struct {
 		candidate ClassCandidate
 		score     int64
 	}
-	scored := make([]scoredClass, len(candidates))
-	for position, candidate := range candidates {
+	scored := make([]scoredClass, scoreCount)
+	for position, candidate := range candidates[:scoreCount] {
 		score, err := ClassMismatchDistance(contextKey, candidate.Key, options.ViewMode)
 		if err != nil {
 			return nil, fmt.Errorf("score class %d: %w", candidate.ID, err)
 		}
 		scored[position] = scoredClass{candidate: candidate, score: score}
 	}
-	sort.SliceStable(scored, func(i, j int) bool {
-		return scored[i].score < scored[j].score
-	})
+	less := func(left, right scoredClass) bool { return left.score < right.score }
+	sortPaul2013Native(scored, less)
 
 	limit := options.MaxClasses
 	if limit > len(scored) {

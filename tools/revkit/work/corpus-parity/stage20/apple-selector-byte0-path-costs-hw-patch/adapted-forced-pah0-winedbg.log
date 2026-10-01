@@ -1,0 +1,184 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10018c80
+Wine-gdb> >>>>>>>>>> > > > >  >  >  >  >  >  >   >   >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10024900
+Wine-gdb> >>>>>>>>> > > >  >  >  >  >  >  >   >   >   >   >  >  >  > > >>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_TRANSITION_ENTRY n=1 context=1 current_count=30 previous_count=30
+Hardware assisted breakpoint 3 at 0x100248d6
+APPLE_TRANSITION_CANDIDATE context=1 index=0 unit=64727 cumulative_cost=31.6374 predecessor_index=5 predecessor_unit=36668
+APPLE_TRANSITION_CANDIDATE context=1 index=1 unit=64718 cumulative_cost=36.1831 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=2 unit=188825 cumulative_cost=33.6335 predecessor_index=7 predecessor_unit=254282
+APPLE_TRANSITION_CANDIDATE context=1 index=3 unit=177774 cumulative_cost=8.07833 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=4 unit=227604 cumulative_cost=35.3033 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=5 unit=40502 cumulative_cost=273.564 predecessor_index=5 predecessor_unit=36668
+APPLE_TRANSITION_CANDIDATE context=1 index=6 unit=261978 cumulative_cost=20.4905 predecessor_index=23 predecessor_unit=254363
+APPLE_TRANSITION_CANDIDATE context=1 index=7 unit=225631 cumulative_cost=23.4582 predecessor_index=16 predecessor_unit=35103
+APPLE_TRANSITION_CANDIDATE context=1 index=8 unit=212593 cumulative_cost=26.3862 predecessor_index=27 predecessor_unit=200178
+APPLE_TRANSITION_CANDIDATE context=1 index=9 unit=106017 cumulative_cost=21.3163 predecessor_index=18 predecessor_unit=277024
+APPLE_TRANSITION_CANDIDATE context=1 index=10 unit=52644 cumulative_cost=23.1229 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=11 unit=179969 cumulative_cost=27.9833 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=12 unit=255878 cumulative_cost=48.7131 predecessor_index=23 predecessor_unit=254363
+APPLE_TRANSITION_CANDIDATE context=1 index=13 unit=219637 cumulative_cost=44.7146 predecessor_index=9 predecessor_unit=254839
+APPLE_TRANSITION_CANDIDATE context=1 index=14 unit=181638 cumulative_cost=49.191 predecessor_index=27 predecessor_unit=200178
+APPLE_TRANSITION_CANDIDATE context=1 index=15 unit=187543 cumulative_cost=53.075 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=16 unit=113307 cumulative_cost=49.1521 predecessor_index=14 predecessor_unit=51262
+APPLE_TRANSITION_CANDIDATE context=1 index=17 unit=224971 cumulative_cost=55.2312 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=18 unit=195352 cumulative_cost=46.978 predecessor_index=18 predecessor_unit=277024
+APPLE_TRANSITION_CANDIDATE context=1 index=19 unit=263415 cumulative_cost=46.5405 predecessor_index=27 predecessor_unit=200178
+APPLE_TRANSITION_CANDIDATE context=1 index=20 unit=95538 cumulative_cost=51.2262 predecessor_index=18 predecessor_unit=277024
+APPLE_TRANSITION_CANDIDATE context=1 index=21 unit=33522 cumulative_cost=53.8504 predecessor_index=23 predecessor_unit=254363
+APPLE_TRANSITION_CANDIDATE context=1 index=22 unit=207854 cumulative_cost=48.7233 predecessor_index=14 predecessor_unit=51262
+APPLE_TRANSITION_CANDIDATE context=1 index=23 unit=178783 cumulative_cost=52.7483 predecessor_index=23 predecessor_unit=254363
+APPLE_TRANSITION_CANDIDATE context=1 index=24 unit=272238 cumulative_cost=55.6956 predecessor_index=18 predecessor_unit=277024
+APPLE_TRANSITION_CANDIDATE context=1 index=25 unit=48612 cumulative_cost=52.4677 predecessor_index=15 predecessor_unit=241852
+APPLE_TRANSITION_CANDIDATE context=1 index=26 unit=257776 cumulative_cost=52.5267 predecessor_index=5 predecessor_unit=36668
+APPLE_TRANSITION_CANDIDATE context=1 index=27 unit=84280 cumulative_cost=56.1487 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=28 unit=189545 cumulative_cost=55.2203 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=1 index=29 unit=213333 cumulative_cost=55.862 predecessor_index=0 predecessor_unit=177774
+APPLE_TRANSITION_ENTRY n=2 context=2 current_count=30 previous_count=30
+Hardware assisted breakpoint 4 at 0x100248d6
+APPLE_TRANSITION_CANDIDATE context=2 index=0 unit=40503 cumulative_cost=30.39 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=1 unit=227605 cumulative_cost=23.3556 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=2 unit=64719 cumulative_cost=18.8205 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=3 unit=64728 cumulative_cost=35.0695 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=4 unit=188826 cumulative_cost=19.8819 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=5 unit=2645 cumulative_cost=29.5645 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=6 unit=32957 cumulative_cost=40.8683 predecessor_index=7 predecessor_unit=225631
+APPLE_TRANSITION_CANDIDATE context=2 index=7 unit=38294 cumulative_cost=30.4722 predecessor_index=7 predecessor_unit=225631
+APPLE_TRANSITION_CANDIDATE context=2 index=8 unit=40810 cumulative_cost=29.2744 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=9 unit=41008 cumulative_cost=27.8199 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=10 unit=45509 cumulative_cost=21.0013 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=11 unit=55213 cumulative_cost=36.7017 predecessor_index=7 predecessor_unit=225631
+APPLE_TRANSITION_CANDIDATE context=2 index=12 unit=56167 cumulative_cost=27.5899 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=13 unit=61725 cumulative_cost=22.881 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=14 unit=78432 cumulative_cost=37.1882 predecessor_index=7 predecessor_unit=225631
+APPLE_TRANSITION_CANDIDATE context=2 index=15 unit=82377 cumulative_cost=39.9801 predecessor_index=7 predecessor_unit=225631
+APPLE_TRANSITION_CANDIDATE context=2 index=16 unit=82557 cumulative_cost=34.3834 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=17 unit=82709 cumulative_cost=25.4822 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=18 unit=83349 cumulative_cost=22.1981 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=19 unit=86012 cumulative_cost=19.4535 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=20 unit=96145 cumulative_cost=34.8521 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=21 unit=97601 cumulative_cost=20.5861 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=22 unit=100180 cumulative_cost=20.4021 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=23 unit=108878 cumulative_cost=29.9736 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=24 unit=111020 cumulative_cost=19.8295 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=25 unit=118661 cumulative_cost=21.0891 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=26 unit=272427 cumulative_cost=28.4192 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=27 unit=128863 cumulative_cost=15.6867 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_CANDIDATE context=2 index=28 unit=137215 cumulative_cost=35.0027 predecessor_index=7 predecessor_unit=225631
+APPLE_TRANSITION_CANDIDATE context=2 index=29 unit=138741 cumulative_cost=35.7818 predecessor_index=3 predecessor_unit=177774
+APPLE_TRANSITION_ENTRY n=3 context=3 current_count=20 previous_count=21
+Hardware assisted breakpoint 5 at 0x100248d6
+APPLE_TRANSITION_CANDIDATE context=3 index=0 unit=2554 cumulative_cost=31.0598 predecessor_index=2 predecessor_unit=64719
+APPLE_TRANSITION_CANDIDATE context=3 index=1 unit=256581 cumulative_cost=101.998 predecessor_index=4 predecessor_unit=2645
+APPLE_TRANSITION_CANDIDATE context=3 index=2 unit=232462 cumulative_cost=63.0754 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=3 unit=218670 cumulative_cost=36.2155 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=4 unit=158830 cumulative_cost=33.381 predecessor_index=2 predecessor_unit=64719
+APPLE_TRANSITION_CANDIDATE context=3 index=5 unit=131118 cumulative_cost=39.181 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=6 unit=129559 cumulative_cost=33.3255 predecessor_index=3 predecessor_unit=188826
+APPLE_TRANSITION_CANDIDATE context=3 index=7 unit=103238 cumulative_cost=36.2386 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=8 unit=97884 cumulative_cost=68.0197 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=9 unit=86327 cumulative_cost=32.7434 predecessor_index=2 predecessor_unit=64719
+APPLE_TRANSITION_CANDIDATE context=3 index=10 unit=82036 cumulative_cost=32.1952 predecessor_index=2 predecessor_unit=64719
+APPLE_TRANSITION_CANDIDATE context=3 index=11 unit=59558 cumulative_cost=34.0749 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=12 unit=41057 cumulative_cost=37.5632 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=13 unit=40214 cumulative_cost=41.243 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=14 unit=28631 cumulative_cost=35.2737 predecessor_index=2 predecessor_unit=64719
+APPLE_TRANSITION_CANDIDATE context=3 index=15 unit=27966 cumulative_cost=52.7216 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=16 unit=27794 cumulative_cost=38.8681 predecessor_index=2 predecessor_unit=64719
+APPLE_TRANSITION_CANDIDATE context=3 index=17 unit=27440 cumulative_cost=33.3871 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=18 unit=11135 cumulative_cost=38.2158 predecessor_index=15 predecessor_unit=100180
+APPLE_TRANSITION_CANDIDATE context=3 index=19 unit=258822 cumulative_cost=38.7217 predecessor_index=3 predecessor_unit=188826
+APPLE_TRANSITION_ENTRY n=4 context=4 current_count=30 previous_count=20
+Hardware assisted breakpoint 6 at 0x100248d6
+APPLE_TRANSITION_CANDIDATE context=4 index=0 unit=82037 cumulative_cost=37.2188 predecessor_index=10 predecessor_unit=82036
+APPLE_TRANSITION_CANDIDATE context=4 index=1 unit=232463 cumulative_cost=51.3261 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=2 unit=86328 cumulative_cost=37.829 predecessor_index=9 predecessor_unit=86327
+APPLE_TRANSITION_CANDIDATE context=4 index=3 unit=97885 cumulative_cost=73.1307 predecessor_index=9 predecessor_unit=86327
+APPLE_TRANSITION_CANDIDATE context=4 index=4 unit=103239 cumulative_cost=41.3128 predecessor_index=7 predecessor_unit=103238
+APPLE_TRANSITION_CANDIDATE context=4 index=5 unit=59559 cumulative_cost=39.1103 predecessor_index=11 predecessor_unit=59558
+APPLE_TRANSITION_CANDIDATE context=4 index=6 unit=218671 cumulative_cost=41.3261 predecessor_index=3 predecessor_unit=218670
+APPLE_TRANSITION_CANDIDATE context=4 index=7 unit=256582 cumulative_cost=51.9449 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=8 unit=129560 cumulative_cost=38.3491 predecessor_index=6 predecessor_unit=129559
+APPLE_TRANSITION_CANDIDATE context=4 index=9 unit=131119 cumulative_cost=44.2228 predecessor_index=5 predecessor_unit=131118
+APPLE_TRANSITION_CANDIDATE context=4 index=10 unit=41058 cumulative_cost=42.5716 predecessor_index=12 predecessor_unit=41057
+APPLE_TRANSITION_CANDIDATE context=4 index=11 unit=40215 cumulative_cost=46.2741 predecessor_index=13 predecessor_unit=40214
+APPLE_TRANSITION_CANDIDATE context=4 index=12 unit=258823 cumulative_cost=43.7231 predecessor_index=19 predecessor_unit=258822
+APPLE_TRANSITION_CANDIDATE context=4 index=13 unit=28632 cumulative_cost=40.3826 predecessor_index=14 predecessor_unit=28631
+APPLE_TRANSITION_CANDIDATE context=4 index=14 unit=27967 cumulative_cost=51.1566 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=15 unit=27795 cumulative_cost=43.8779 predecessor_index=16 predecessor_unit=27794
+APPLE_TRANSITION_CANDIDATE context=4 index=16 unit=2555 cumulative_cost=36.0851 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=17 unit=27441 cumulative_cost=38.4067 predecessor_index=17 predecessor_unit=27440
+APPLE_TRANSITION_CANDIDATE context=4 index=18 unit=158831 cumulative_cost=38.4419 predecessor_index=4 predecessor_unit=158830
+APPLE_TRANSITION_CANDIDATE context=4 index=19 unit=11136 cumulative_cost=43.2337 predecessor_index=18 predecessor_unit=11135
+APPLE_TRANSITION_CANDIDATE context=4 index=20 unit=190635 cumulative_cost=60.6736 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=21 unit=189212 cumulative_cost=60.0584 predecessor_index=17 predecessor_unit=27440
+APPLE_TRANSITION_CANDIDATE context=4 index=22 unit=253801 cumulative_cost=60.3459 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=23 unit=194124 cumulative_cost=55.4724 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=24 unit=72668 cumulative_cost=54.9357 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=25 unit=44034 cumulative_cost=54.4589 predecessor_index=11 predecessor_unit=59558
+APPLE_TRANSITION_CANDIDATE context=4 index=26 unit=32548 cumulative_cost=57.9609 predecessor_index=12 predecessor_unit=41057
+APPLE_TRANSITION_CANDIDATE context=4 index=27 unit=211856 cumulative_cost=55.5257 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=28 unit=278423 cumulative_cost=49.9465 predecessor_index=0 predecessor_unit=2554
+APPLE_TRANSITION_CANDIDATE context=4 index=29 unit=78934 cumulative_cost=61.485 predecessor_index=0 predecessor_unit=2554
+APPLE_BACKTRACK_ENTRY n=1 first=0 last=4
+Hardware assisted breakpoint 7 at 0x10024a30
+APPLE_BACKTRACK_RESULT context=0 index=0 count=30 unit=177774 cumulative_cost=4.34046
+APPLE_BACKTRACK_RESULT context=1 index=3 count=30 unit=177774 cumulative_cost=8.07833
+APPLE_BACKTRACK_RESULT context=2 index=2 count=21 unit=64719 cumulative_cost=18.8205
+APPLE_BACKTRACK_RESULT context=3 index=0 count=20 unit=2554 cumulative_cost=31.0598
+APPLE_BACKTRACK_RESULT context=4 index=14 count=19 unit=2555 cumulative_cost=36.0851
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0118:011c: create thread I @004014C0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

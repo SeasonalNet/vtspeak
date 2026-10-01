@@ -1,0 +1,43 @@
+Stage 182: mode-0x17 ASCII scanner and apostrophe suffixes
+
+Evidence
+
+- FUN_100621f0 (0x100621f0-0x1006232d) requires an apostrophe and nonzero
+  preceding byte. A mapped preceding s followed by apostrophe and whitespace
+  returns just the apostrophe. Mapped preceding n plus apostrophe-t followed
+  by a nonletter returns apostrophe-t. It also returns apostrophe followed
+  by s/d/m/ve/em/re/ll when the next byte is not attribute-C0. Returned suffix
+  letters retain their original input bytes and case. A trailing plural-s
+  apostrophe at NUL is not accepted by the whitespace-only first branch.
+- FUN_1005a350's mode-0x17 block, recorded in Stage 135 and checked against
+  original x86, joins hyphens only before letters and continues the letter
+  loop. A single recognized apostrophe suffix is appended then the token
+  ends. A dot followed by such a suffix is appended with the dot retained.
+  Unlike other mode branches, mode 0x17 does not join an ordinary dot/word.
+- Cost and length overflow in the letter loop backtracks to a dot/hyphen
+  already present in the token. Consumption ends before that delimiter.
+  Native formatting literals are %s at 0x1007bf98 and %c%s at 0x1009c420,
+  confirmed with read-only PE mapping of the local DLL.
+
+Implementation and validation
+
+- ScanPaul2013ScannerApostropheSuffix ports the suffix recognizer.
+  ScanPaul2013ModelScannerASCII now handles mode-0x17 standalone words,
+  hyphenated letter words, recognized apostrophe and dot-apostrophe suffixes,
+  and its existing punctuation paths. The native 32-byte local output buffer
+  is enforced for joined forms, with an error on an otherwise unsafe overrun.
+- Tests cover all suffix families, original case, whitespace-only plural-s,
+  preceding-n requirements, nonletter boundaries, ordinary dot separation,
+  unrecognized suffixes, hyphen-after-suffix separation and cost backtracking.
+- The post-token index integration and lookup-boundary tests now run the
+  recovered mode-0x17 scanner without a fixture scanner. Dot/apostrophe/hyphen
+  overshoot outcomes are checked against the recovered boundary arithmetic.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Numeric, multibyte/non-ASCII, and structural marker paths remain delegated.
+  Native index construction remains unported. These are static-evidence
+  scanner branches and composition tests; no new original-engine differential
+  capture or whole-text/synthesis parity is claimed.

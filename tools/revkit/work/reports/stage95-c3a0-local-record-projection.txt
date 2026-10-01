@@ -1,0 +1,45 @@
+VoiceText Paul 2013 C3A0 local dictionary-record projection
+=========================================================
+
+Static evidence
+---------------
+
+`FUN_1000c3a0` calls `FUN_10003a70` for each scanned component, then passes
+the result to `FUN_10003c50(local_25c, local_328)` before calling
+`FUN_100086c0(..., local_25c, 1)`. Ghidra pseudocode for both callees is in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt` at the
+`0x10003c50` and `0x1000c3a0` entries. The decompiler stack layout places
+`local_254` at `local_25c+8`, `local_250` at `local_25c+0x0c`, and
+`local_24c` at `local_25c+0x10`.
+
+`FUN_10003c50` clears result and metadata fields, maps payload bits 2 and 3
+to result bytes `E` and `A` (bit 3 wins), maps bits 6, 4, 5, and 7 to four
+little-endian `u16` fields at offsets `+2`, `+4`, `+6`, and `+8`, and writes
+the pronunciation count at `+0x0c`. It expands compact phone IDs into
+NUL-terminated 65-byte slots starting at `+0x10`. Direct-ID form writes one
+alternative and an `0xff` path sentinel at `+0x155`. Alternative form writes
+each path row at `+0x155 + 20*n`, subtracting one from its source bytes and
+terminating it with `0xff`; corresponding phone strings use 65-byte strides.
+`ParsePhonePayload` already stores path bytes after this subtraction and
+`ResolvePaul2013Surface` already expands the phone IDs through the observed
+five-byte codebook.
+
+Implementation
+--------------
+
+`PhonePayload.BuildPaul2013ParsedDictionaryRecord` now emits those recovered
+fields and bounds the five alternatives, 64-byte phone strings, and 19-byte
+path rows. `Engine.BuildPaul2013C3A0AlternateRecord` connects exact embedded
+lookup and expansion to that projection; a missing dictionary key produces
+the zero record written for a null/empty payload. The
+`NormalizePaul2013C3A0ComponentSequenceWithEmbeddedFUN100086C0` entry point
+uses this producer directly, preserving the caller-provided model arena and
+context-row index.
+
+Evidence boundary
+----------------
+
+This is a static pseudocode port. No row-for-row runtime comparison of the
+serialized local record has been made. The surrounding exception/TPP producer
+chain, model-row selection, non-ASCII behavior, and complete A140 dispatch
+remain separate boundaries.

@@ -1,0 +1,42 @@
+VoiceText Paul 2013 `FUN_100035d0` sorted string-table search
+===========================================================
+
+Evidence
+--------
+
+`FUN_100035d0` at VA `0x100035d0` is decompiled in
+`tools/revkit/work/reports/stage6-abbreviation-classifier-expanded.txt`.
+It checks a non-null table pointer and positive row count, then binary-searches
+the pointer array at table `+0x0c`. The mode byte at `+0x04` selects
+`FUN_1001c2c0` when it is `I`; other values use `strcmp`. A matching row
+returns its zero-based index, and a miss or absent/empty table returns `-1`.
+The midpoint and low/high updates form an inclusive binary search.
+
+In `FUN_10034180`, the two context table results are considered a double miss
+when both unsigned results exceed `0x7fffffff`. This is equivalent to both
+searches returning `-1`; a found nonnegative index clears the high bit.
+
+Port
+----
+
+`text.Paul2013NativeStringSearchTable` stores an owned snapshot of sorted
+C-string rows and preserves the `I` versus `strcmp` comparison choice.
+`Lookup` ports the inclusive midpoint search. Construction validates ordering
+under the chosen comparator and rejects embedded NULs while retaining empty
+rows, which the native helper does not prohibit. The mapped comparator uses
+caller-supplied 256-entry character weights; the local weights used by
+`FUN_1001c2c0` are exposed by `Paul2013ContextCharacterWeights`.
+
+The TPP context-gate wrappers can now derive the two lookup outcomes from
+caller-supplied table snapshots and scanner output before evaluating the
+branch tree. They also derive the one-component `FUN_10041df0` and
+`FUN_10010120` predicates from scanner output; their bounded cases are
+recorded in Stages 138 and 139.
+
+Evidence boundary
+-----------------
+
+This ports the search over a supplied snapshot. It does not recover or load
+the two runtime pointer tables at `DAT_100a7a40` and `DAT_100a7a44`, and it
+does not produce the scanner output. No runtime table-membership or whole
+scanner parity is claimed.

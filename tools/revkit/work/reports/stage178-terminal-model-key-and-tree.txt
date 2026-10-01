@@ -1,0 +1,58 @@
+Stage 178: terminal model following-word classifier, complete key and tree
+
+Evidence
+
+- Original vt_pau x86 FUN_100528b0 (0x100528b0-0x10052c86) first searches
+  global 0x100a7a4c (sbdw_sort.txt2) in mapped mode. FUN_10064645 wraps
+  FUN_100645ba's atoi-like parser; the numeric value indexes signed shorts at
+  0x10081358. The 48-short span ends immediately before literal .?!; at
+  0x100813bc. Every recovered short is checked against the local read-only DLL.
+  Local resource class indexes range over a subset of 8-46.
+- A dictionary miss with any attribute-10 digit returns 9. FUN_10063020
+  counts attribute-80 uppercase bytes; at least two returns 3. First-byte
+  groups .?!; / comma / single quote-backtick-double quote / colon-hyphen /
+  ([{< / )]}> return 17/11/15/12/13/14 respectively, in that order.
+- All-letter C strings use mapped suffix comparisons with strict length >
+  suffix length. liness, ance, tion, ness, ment, sion, ship, dity and ist
+  return 1. less, ing, ful and ly return 5. Otherwise return 0.
+- Nonletter strings use first apostrophe. Exact mapped trailing n't recurses
+  on the prefix before n; trailing s/d/m/em/ve/re/ll recurses on the prefix
+  before the apostrophe. Empty/unrecognized prefixes return 0. The native
+  local prefix buffer is 32 bytes. Without apostrophe, an attribute-C0 initial
+  byte returns 0, otherwise 16 (including the empty string).
+- FUN_10052520 (0x10052520-0x100526ae) initializes 32 key bytes to FF.
+  Previous/following tokens each supply seven shorts: length, case/status,
+  abbrh membership, abbrt membership, any abbreviation membership, internal
+  dot, punctuation. A zero-length token writes zero length only; the other
+  six remain -1. Final two shorts are following-word class (or -1 when no
+  following token) and current-token punctuation class.
+- FUN_10001670 selects a leaf via FUN_100015f0 and reads one scalar short.
+  The existing tree3 reader/evaluator loads local data-common/dict-eng/sbd.tree3
+  as 120 nodes, 121 leaves, output width 1. The caller tests the low byte.
+
+Implementation and validation
+
+- NewPaul2013TerminalWordClassifier copies and compiles the sbdw table.
+  Paul2013TerminalModel.BuildKey joins all recovered features; Lookup joins
+  the key with the existing scalar evaluator. LoadPaul2013TerminalModel reads
+  only the four required TXT2 resources and sbd.tree3. Its Lookup satisfies
+  Paul2013TerminalModelLookup, closing that dependency for the recognizer.
+- Tests cover every effective following-word branch, all suffix families,
+  recursive contraction alternatives, full and empty key vectors, cancellation,
+  invalid translation indexes and the native contraction-buffer bound.
+- Every local sbdw row is classified in stored/upper/lower form. All 48 DLL
+  translation shorts are checked at their mapped PE virtual address. The
+  local tree is loaded and evaluated for several complete keys. A labeled
+  synthetic tree/scanner integration exercises both P/N recognizer results.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- This completes static-evidence implementation of the punctuation model
+  fallback and its classifier. Ordinary scanner paths remain explicit.
+  The integer parser is instantiated with ASCII C-locale attributes, adequate
+  for these ASCII resource values; runtime alternate locales are not claimed.
+- Invalid class indexes and contraction-buffer overruns return errors rather
+  than reproducing native invalid memory access. No new original-engine
+  differential capture or whole-text/synthesis parity claim is established.

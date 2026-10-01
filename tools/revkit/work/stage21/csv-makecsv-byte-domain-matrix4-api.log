@@ -1,0 +1,316 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x1001da50
+Wine-gdb> >>>>>>>>>>> > > > > > > >  >   >   >  >  >   >    >    >   >   >    >    >   >  > >  >  >  >  >  > > > >>>>Wine-gdb> Wine-gdb> Continuing.
+CSV_MAKE_BYTE value=00 ret=-1 output=22313131313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=01 ret=1 output=22012200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=02 ret=1 output=22022200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=03 ret=1 output=22032200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=04 ret=1 output=22042200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=05 ret=1 output=22052200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=06 ret=1 output=22062200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=07 ret=1 output=22072200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=08 ret=1 output=22082200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=09 ret=1 output=22092200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=0a ret=1 output=220a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=0b ret=1 output=220b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=0c ret=1 output=220c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=0d ret=1 output=220d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=0e ret=1 output=220e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=0f ret=1 output=220f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=10 ret=1 output=22102200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=11 ret=1 output=22112200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=12 ret=1 output=22122200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=13 ret=1 output=22132200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=14 ret=1 output=22142200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=15 ret=1 output=22152200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=16 ret=1 output=22162200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=17 ret=1 output=22172200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=18 ret=1 output=22182200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=19 ret=1 output=22192200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=1a ret=1 output=221a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=1b ret=1 output=221b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=1c ret=1 output=221c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=1d ret=1 output=221d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=1e ret=1 output=221e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=1f ret=1 output=221f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=20 ret=1 output=22202200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=21 ret=1 output=22212200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=22 ret=1 output=22222222003131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=23 ret=1 output=22232200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=24 ret=1 output=22242200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=25 ret=1 output=22252200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=26 ret=1 output=22262200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=27 ret=1 output=22272200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=28 ret=1 output=22282200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=29 ret=1 output=22292200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=2a ret=1 output=222a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=2b ret=1 output=222b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=2c ret=1 output=222c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=2d ret=1 output=222d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=2e ret=1 output=222e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=2f ret=1 output=222f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=30 ret=1 output=22302200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=31 ret=1 output=22312200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=32 ret=1 output=22322200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=33 ret=1 output=22332200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=34 ret=1 output=22342200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=35 ret=1 output=22352200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=36 ret=1 output=22362200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=37 ret=1 output=22372200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=38 ret=1 output=22382200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=39 ret=1 output=22392200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=3a ret=1 output=223a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=3b ret=1 output=223b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=3c ret=1 output=223c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=3d ret=1 output=223d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=3e ret=1 output=223e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=3f ret=1 output=223f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=40 ret=1 output=22402200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=41 ret=1 output=22412200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=42 ret=1 output=22422200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=43 ret=1 output=22432200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=44 ret=1 output=22442200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=45 ret=1 output=22452200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=46 ret=1 output=22462200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=47 ret=1 output=22472200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=48 ret=1 output=22482200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=49 ret=1 output=22492200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=4a ret=1 output=224a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=4b ret=1 output=224b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=4c ret=1 output=224c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=4d ret=1 output=224d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=4e ret=1 output=224e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=4f ret=1 output=224f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=50 ret=1 output=22502200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=51 ret=1 output=22512200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=52 ret=1 output=22522200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=53 ret=1 output=22532200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=54 ret=1 output=22542200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=55 ret=1 output=22552200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=56 ret=1 output=22562200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=57 ret=1 output=22572200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=58 ret=1 output=22582200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=59 ret=1 output=22592200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=5a ret=1 output=225a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=5b ret=1 output=225b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=5c ret=1 output=225c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=5d ret=1 output=225d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=5e ret=1 output=225e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=5f ret=1 output=225f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=60 ret=1 output=22602200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=61 ret=1 output=22612200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=62 ret=1 output=22622200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=63 ret=1 output=22632200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=64 ret=1 output=22642200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=65 ret=1 output=22652200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=66 ret=1 output=22662200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=67 ret=1 output=22672200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=68 ret=1 output=22682200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=69 ret=1 output=22692200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=6a ret=1 output=226a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=6b ret=1 output=226b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=6c ret=1 output=226c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=6d ret=1 output=226d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=6e ret=1 output=226e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=6f ret=1 output=226f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=70 ret=1 output=22702200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=71 ret=1 output=22712200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=72 ret=1 output=22722200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=73 ret=1 output=22732200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=74 ret=1 output=22742200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=75 ret=1 output=22752200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=76 ret=1 output=22762200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=77 ret=1 output=22772200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=78 ret=1 output=22782200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=79 ret=1 output=22792200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=7a ret=1 output=227a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=7b ret=1 output=227b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=7c ret=1 output=227c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=7d ret=1 output=227d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=7e ret=1 output=227e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=7f ret=1 output=227f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=80 ret=1 output=22802200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=81 ret=1 output=22812200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=82 ret=1 output=22822200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=83 ret=1 output=22832200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=84 ret=1 output=22842200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=85 ret=1 output=22852200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=86 ret=1 output=22862200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=87 ret=1 output=22872200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=88 ret=1 output=22882200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=89 ret=1 output=22892200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=8a ret=1 output=228a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=8b ret=1 output=228b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=8c ret=1 output=228c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=8d ret=1 output=228d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=8e ret=1 output=228e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=8f ret=1 output=228f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=90 ret=1 output=22902200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=91 ret=1 output=22912200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=92 ret=1 output=22922200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=93 ret=1 output=22932200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=94 ret=1 output=22942200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=95 ret=1 output=22952200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=96 ret=1 output=22962200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=97 ret=1 output=22972200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=98 ret=1 output=22982200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=99 ret=1 output=22992200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=9a ret=1 output=229a2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=9b ret=1 output=229b2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=9c ret=1 output=229c2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=9d ret=1 output=229d2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=9e ret=1 output=229e2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=9f ret=1 output=229f2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a0 ret=1 output=22a02200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a1 ret=1 output=22a12200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a2 ret=1 output=22a22200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a3 ret=1 output=22a32200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a4 ret=1 output=22a42200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a5 ret=1 output=22a52200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a6 ret=1 output=22a62200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a7 ret=1 output=22a72200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a8 ret=1 output=22a82200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=a9 ret=1 output=22a92200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=aa ret=1 output=22aa2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ab ret=1 output=22ab2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ac ret=1 output=22ac2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ad ret=1 output=22ad2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ae ret=1 output=22ae2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=af ret=1 output=22af2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b0 ret=1 output=22b02200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b1 ret=1 output=22b12200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b2 ret=1 output=22b22200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b3 ret=1 output=22b32200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b4 ret=1 output=22b42200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b5 ret=1 output=22b52200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b6 ret=1 output=22b62200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b7 ret=1 output=22b72200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b8 ret=1 output=22b82200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=b9 ret=1 output=22b92200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ba ret=1 output=22ba2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=bb ret=1 output=22bb2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=bc ret=1 output=22bc2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=bd ret=1 output=22bd2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=be ret=1 output=22be2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=bf ret=1 output=22bf2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c0 ret=1 output=22c02200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c1 ret=1 output=22c12200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c2 ret=1 output=22c22200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c3 ret=1 output=22c32200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c4 ret=1 output=22c42200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c5 ret=1 output=22c52200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c6 ret=1 output=22c62200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c7 ret=1 output=22c72200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c8 ret=1 output=22c82200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=c9 ret=1 output=22c92200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ca ret=1 output=22ca2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=cb ret=1 output=22cb2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=cc ret=1 output=22cc2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=cd ret=1 output=22cd2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ce ret=1 output=22ce2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=cf ret=1 output=22cf2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d0 ret=1 output=22d02200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d1 ret=1 output=22d12200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d2 ret=1 output=22d22200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d3 ret=1 output=22d32200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d4 ret=1 output=22d42200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d5 ret=1 output=22d52200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d6 ret=1 output=22d62200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d7 ret=1 output=22d72200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d8 ret=1 output=22d82200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=d9 ret=1 output=22d92200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=da ret=1 output=22da2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=db ret=1 output=22db2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=dc ret=1 output=22dc2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=dd ret=1 output=22dd2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=de ret=1 output=22de2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=df ret=1 output=22df2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e0 ret=1 output=22e02200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e1 ret=1 output=22e12200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e2 ret=1 output=22e22200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e3 ret=1 output=22e32200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e4 ret=1 output=22e42200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e5 ret=1 output=22e52200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e6 ret=1 output=22e62200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e7 ret=1 output=22e72200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e8 ret=1 output=22e82200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=e9 ret=1 output=22e92200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ea ret=1 output=22ea2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=eb ret=1 output=22eb2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ec ret=1 output=22ec2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ed ret=1 output=22ed2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ee ret=1 output=22ee2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ef ret=1 output=22ef2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f0 ret=1 output=22f02200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f1 ret=1 output=22f12200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f2 ret=1 output=22f22200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f3 ret=1 output=22f32200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f4 ret=1 output=22f42200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f5 ret=1 output=22f52200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f6 ret=1 output=22f62200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f7 ret=1 output=22f72200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f8 ret=1 output=22f82200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=f9 ret=1 output=22f92200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=fa ret=1 output=22fa2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=fb ret=1 output=22fb2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=fc ret=1 output=22fc2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=fd ret=1 output=22fd2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=fe ret=1 output=22fe2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE value=ff ret=1 output=22ff2200313131 final=00 prefix=5a post=a5
+CSV_MAKE_BYTE_DOMAIN passed=256 failed=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).

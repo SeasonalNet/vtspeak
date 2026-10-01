@@ -1,0 +1,52 @@
+Stage 171: alternate model parser row loop
+
+Evidence
+
+- Original x86 in vt_pau-objdump-disassembly.txt at 0x1003e070-0x1003e209
+  defines this branch; FUN_1003d350 selects it when parser +0x39e8 is nonzero
+  and the pointed-to +8 word is zero. Other cases use FUN_1003d3d0.
+- The loop skips ASCII space/tab/LF/CR, then calls FUN_1005a350 with current
+  source pointer, absolute byte offset, mode 0 and parser +0x39e8 pointer.
+  Its 0x44-byte local result supplies raw uint32 coordinates +8/+0xc,
+  signed int32 text length +0x10, signed int32 status +0x1c and text +0x20.
+  The scanner return advances the source pointer and absolute offset.
+- Scanner return zero or text length zero returns low-short 1 when the signed
+  parser row count is positive, otherwise -1 (0x1003e1f6-0x1003e205).
+- Status 1 calls FUN_10044fd0 with type 'A', class 'D', flag 0x15.
+  Status 3 recognizes single-byte '<' or '['; other tokens return -1.
+  Angle contents append type 'A', class 'S', flag 0x15 until a single-byte
+  '>'; bracket contents are skipped until single-byte ']'. Closing tests
+  use text byte/length, without an extra status gate.
+- A failed/full append returns low-short 0; invalid branches return -1.
+  The high return bits on those paths are not characterized by this port.
+
+Implementation and validation
+
+- RunPaul2013AlternateModelParser ports the complete recovered row loop,
+  preserving input state, passing native scanner parameters and using the
+  existing row writer. The scanner remains an explicit callback.
+- DispatchPaul2013ModelParserWithAlternateScanner supplies this implementation
+  when Alternate is nil; explicit overrides remain authoritative. Primary
+  parsing and finalization keep their existing contracts. Alternate parser
+  returns are sign-extended from their characterized low short.
+- Tests cover whitespace, ordinary words, multiple angle rows, skipped bracket
+  groups, coordinates, A/D versus A/S bytes, 0x15 flags, untouched row types,
+  terminal row-count gates, full rows, invalid status/openings, cancellation,
+  unterminated input/groups and dispatcher/finalizer composition including the
+  native finalizer -1 to BOOL-true distinction.
+- Scanner fixtures explicitly test caller control flow and are not represented
+  as native scanner implementation or original-engine runtime captures.
+- Malformed scanner advances outside source storage or nonprogressing group
+  continuations return errors instead of reproducing unsafe pointer access or
+  an infinite native loop. No ordinary-input branch is silently skipped.
+
+Validation
+
+- Changed Go files formatted with gofmt. From engine/, GOCACHE=/tmp/vtspeak-go-cache
+  go test ./..., go build ./..., go vet ./... passed; git diff --check passed.
+
+Limits
+
+- General FUN_1005a350 scanning, the primary inner parser, finalizer/context
+  production and original-engine row parity are still incomplete. Static
+  x86 evidence and fixture composition are not whole-engine parity.

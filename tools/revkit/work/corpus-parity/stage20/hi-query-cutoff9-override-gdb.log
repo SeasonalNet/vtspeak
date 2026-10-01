@@ -1,0 +1,29 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hi-query-cutoff9-override-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024060
+Wine-gdb> >>>>>>>> > > >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x100242a0
+Wine-gdb> >>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x100235f6
+Wine-gdb> >>>> > > > >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 6 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 7 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 8 at 0x100249bb
+HI9_SPLIT_ENTER call=1 slot=0
+Temporary breakpoint 9 at 0x10024808
+HI9_METRIC_INPUT count=1 id_weight=32924:67 
+Temporary breakpoint 10 at 0x10024271
+HI9_METRIC_SUM value=67
+HI9_SPLIT_RETURN slot=0 metric=67 accepted=1
+HI9_SPLIT_ENTER call=2 slot=1
+Temporary breakpoint 11 at 0x10024808
+HI9_METRIC_INPUT count=2 id_weight=13468:4 13467:5 
+Temporary breakpoint 12 at 0x10024271
+HI9_METRIC_SUM value=9
+HI9_CUTOFF_OVERRIDE slot=1 metric=9 native=0 forced=1
+HI9_POSITION_BUILDER_RETURN positions=2
+HI9_FINAL_CANDIDATES position=0 count=67 ids=6383 229517 233162 235930 249911 252074 252321 255985 258691 259622 261254 262832 264327 264440 266424 266510 267511 268243 268259 269106 271307 271762 272305 272353 272820 273094 273182 273203 273271 275865 275869 277079 277527 225192 223670 8528 22336 23272 23555 27111 41104 53134 65331 75811 87152 93904 122874 126198 131518 135441 161158 164116 178825 179010 179137 179422 196165 197242 198590 204920 205125 208796 216572 217770 219724 221876 279467 
+HI9_FINAL_CANDIDATES position=1 count=9 ids=272821 279498 279499 280449 4087 4102 84094 177718 243540 
+HI9_SELECTED n=1 id=272820
+HI9_SELECTED n=2 id=272821
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

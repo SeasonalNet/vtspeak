@@ -1,0 +1,49 @@
+Stage 179: standalone ASCII scanner paths
+
+Evidence
+
+- FUN_1005a350 original x86 and stage135-fun1005a350-pseudo.txt establish
+  mode-0/1 ASCII letter runs, raw prefix/coordinate/length/advance fields and
+  status 1 at LAB_1005bc15. FUN_10062f50 reads a signed-short cost from
+  0x10077e58 + ASCII-letter-index*10, after folding upper/lower index.
+  Each letter adds 1+cost. Cumulative cost > 64 or existing length > 28
+  stops before copying the next letter. Recovered 26 cost values are checked
+  read-only against the DLL at their PE virtual addresses.
+- Structural punctuation literal at 0x1009c3c0 is
+  ~`@#$%&^_|,: '+-*/={}[]()<>\ and double quote. Repeated equal bytes copy
+  at most 29 bytes and return status 3. Backslash is handled separately and
+  copies exactly one byte, even when another backslash follows.
+- Terminal .?!; literal at 0x100813bc returns status 7 for one byte.
+  Repeated dots return 3; other repeated terminal bytes return 8. Mode 0x12
+  overrides single terminal punctuation to status 3. Leading dot before a
+  digit enters a separate numeric path in modes 0/1 and remains delegated.
+- Unknown ASCII bytes are skipped while incrementing result +0 and consumed
+  bytes; whitespace encountered while skipping uses the native LF total gate.
+  Coordinates +8/+0xc are sourceOffset+prefix/sourceOffset+consumed.
+- At 0x1005c415, nonzero mode pointer calls FUN_1005e010, then FUN_1005e1a0
+  only on a negative first return. A nonnegative return writes short 1 to
+  +0x1a. Early whitespace/end paths return before this lookup.
+
+Implementation and validation
+
+- ScanPaul2013ModelScannerASCII supplies these standalone paths;
+  NewPaul2013ModelScannerWithASCII composes the existing terminal prefixes,
+  explicit post-token lookup and original-argument fallback. The scanner
+  result now includes raw dword Field18 for the +0x1a short.
+- Tests check full result structs, LF markers, skipped controls, mixed-token
+  delegation, all effective punctuation run types, backslash, mode 0x12,
+  29-byte/cost-limited runs, post-lookup order and flag, missing dependencies,
+  fallback arguments and cancellation. All 26 costs match the local DLL.
+- An integration test uses the recovered scanner with the actual local
+  sbd.tree3 model and terminal handler on hello. next word. It checks the
+  scalar model decision drives the native row-type/advance path. This is
+  fixture-free scanner composition, not original-engine differential parity.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- This ports complete standalone branches, not the entire scanner state
+  machine. Numeric, joined apostrophe/dot/hyphen words, non-ASCII expansion,
+  structural multibyte markers and other modes remain explicit fallback work.
+  Post-token lookup bodies remain callbacks. No whole-text/synthesis parity.

@@ -1,0 +1,68 @@
+Wine-gdb> Already logging to /probe/stage20/apple-continuity-bit7/old/apple-old-unit-scores-hardware-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001c860
+Wine-gdb> >>> > > > > > > > > > > > > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_OLD_SCORE_TRACE_READY
+APPLE_OLD_SCORE_INPUT unit=177774 target_row=0 target_context=0x27a9a04 target_features=0x63fa94 signature:0x2549046:	91	5	71	30	30
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a04:	0	0	0	0	1	0
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	56	85	81	2	0	0	0	0
+Hardware assisted breakpoint 3 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=177774 target_row=0 score=4.19138
+APPLE_OLD_SCORE_INPUT unit=177774 target_row=1 target_context=0x27a9a0a target_features=0x63fa94 signature:0x2549046:	91	5	71	30	30
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a0a:	0	0	0	1	2	0
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	56	84	97	2	0	0	0	0
+Hardware assisted breakpoint 4 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=177774 target_row=1 score=4.29283
+APPLE_OLD_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a10:	0	1	1	2	0	1
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	25	100	100	2	1	0	0	0
+Hardware assisted breakpoint 5 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_SCORE_INPUT unit=128863 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x250d4fb:	5	71	7	0	0
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a10:	0	1	1	2	0	1
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	25	100	100	2	5	0	0	0
+Hardware assisted breakpoint 6 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=128863 target_row=2 score=0.118519
+APPLE_OLD_SCORE_INPUT unit=177774 target_row=0 target_context=0x27a9a04 target_features=0x63fa94 signature:0x2549046:	91	5	71	30	30
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a04:	0	0	0	0	1	0
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	56	85	81	2	0	0	0	0
+Hardware assisted breakpoint 7 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=177774 target_row=0 score=4.19138
+APPLE_OLD_SCORE_INPUT unit=177774 target_row=1 target_context=0x27a9a0a target_features=0x63fa94 signature:0x2549046:	91	5	71	30	30
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a0a:	0	0	0	1	2	0
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	56	84	97	2	0	0	0	0
+Hardware assisted breakpoint 8 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=177774 target_row=1 score=4.29283
+APPLE_OLD_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a10:	0	1	1	2	0	1
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	25	100	100	2	1	0	0	0
+Hardware assisted breakpoint 9 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_SCORE_INPUT unit=128863 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x250d4fb:	5	71	7	0	0
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a10:	0	1	1	2	0	1
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	25	100	100	2	5	0	0	0
+Hardware assisted breakpoint 10 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=128863 target_row=2 score=0.118519
+APPLE_OLD_SCORE_INPUT unit=177774 target_row=0 target_context=0x27a9a04 target_features=0x63fa94 signature:0x2549046:	91	5	71	30	30
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a04:	0	0	0	0	1	0
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	56	85	81	2	0	0	0	0
+Hardware assisted breakpoint 11 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=177774 target_row=0 score=4.19138
+APPLE_OLD_SCORE_INPUT unit=177774 target_row=1 target_context=0x27a9a0a target_features=0x63fa94 signature:0x2549046:	91	5	71	30	30
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a0a:	0	0	0	1	2	0
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	56	84	97	2	0	0	0	0
+Hardware assisted breakpoint 12 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=177774 target_row=1 score=4.29283
+APPLE_OLD_SCORE_INPUT unit=100180 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x24ea4c4:	5	71	7	0	0
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a10:	0	1	1	2	0	1
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	25	100	100	2	1	0	0	0
+Hardware assisted breakpoint 13 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=100180 target_row=2 score=0
+APPLE_OLD_SCORE_INPUT unit=128863 target_row=2 target_context=0x27a9a10 target_features=0x63fa94 signature:0x250d4fb:	5	71	7	0	0
+APPLE_OLD_SCORE_TARGET_CONTEXT:0x27a9a10:	0	1	1	2	0	1
+APPLE_OLD_SCORE_TARGET_FEATURES:0x63fa94:	25	100	100	2	5	0	0	0
+Hardware assisted breakpoint 14 at 0x1001d3f4
+APPLE_OLD_SCORE_RETURN unit=128863 target_row=2 score=0.118519
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

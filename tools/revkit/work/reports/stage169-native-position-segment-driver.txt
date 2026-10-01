@@ -1,0 +1,43 @@
+Stage 169: native position segment driver
+
+Evidence
+
+- FUN_10022dc0 in stage23-state-array-writers.c is decompiler pseudocode.
+  Original x86 in vt_pau-objdump-disassembly.txt at 0x10022dc0-0x10022fcd
+  establishes the branch order and fields used here.
+- Workspace +8 is a little-endian uint32 source pointer: zero returns zero
+  at 0x10022ddd-0x10022de7 without preparing defaults or setting completion.
+  FUN_10022850 prepares before each parser call. FUN_1003d350 receives
+  sourcePointer + workspace position (+4), with native 32-bit wrapping.
+- Parser state signed int16 count +0 is copied into model arena +2.
+  Signed int32 offsets at parser +0x14/+0x18, stride 0x94, become inclusive
+  absolute record intervals at model +0x64c/+0x650, stride 0x3c0. An empty
+  or reversed interval becomes a point. x86 arithmetic wraps.
+- Six native state arrays are initialized before checking consumed bytes at
+  parser +4. Zero bytes set workspace uint32 +0x44 to 1 and return current
+  position. Nonzero bytes with count <=0 advance position and retry.
+  Positive counts run FUN_10022970 and mapping, advance position and return.
+- These position operations precede FUN_10016c90's phone/control projection;
+  validating control field +0x3ac here was an unintended ordering dependency.
+
+Implementation and validation
+
+- RunPaul2013PositionSegmentDriver implements the recovered driver with
+  an explicit parser callback and native int32 pointer resolver. Parser-side
+  workspace writes are retained when supplied; callback storage is copied.
+  Cancellation is checked before retries, without inventing a native cap.
+- Position/model and mapping readers now require count and record storage,
+  independent of later phone/control data. Boundary readers retain their
+  existing control validation at the proper stage.
+- Tests cover negative-count retries, repeated preparation and overrides,
+  parser workspace writes, source addresses, mapped intervals, stale invalid
+  control fields, zero-byte completion with counts -1/0/2, initialization
+  before completion, null source, cancellation, missing/failing parsers,
+  changed workspace extent, row/header truncation and oversized row counts.
+  Caller workspaces/model arenas and retained parser output remain independent.
+
+Limits
+
+- FUN_1003d350 remains an explicit parser boundary; callback tests do not
+  establish its implementation or original-engine arena parity. Native pointer
+  ownership and descriptor/index-table production remain explicit.

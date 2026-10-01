@@ -1,0 +1,18 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-promoted-shortlist-sort-boundary/adapted-promoted-shortlist-sort-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023331
+Wine-gdb> >>>> > > >  >  >   >   >  >   >   >   >   >   >    >    >    >    >    >     >     >     >     >    >    >    >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002389a
+Wine-gdb> >>> > > >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023948
+Wine-gdb> >>> > > > > > > > >  >  >  >   >   >  >  > > >  >  >  >  >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+ORDER_OVERRIDE position=6 unit=264071 previous_key=-1 forced_key=-2 pre_sort_index=76
+Temporary breakpoint 5 at 0x10023336
+INITIAL_SORTED_POSITION6 count=79 [0]=264071(key=-2) [1]=4515(key=-1) [2]=208815(key=-1) [3]=200323(key=-1) [4]=199420(key=-1) [5]=193044(key=-1) [6]=192035(key=-1) [7]=190749(key=-1) [8]=185954(key=-1) [9]=185328(key=-1) [10]=179927(key=-1) [11]=177867(key=-1) [12]=175880(key=-1) [13]=175733(key=-1) [14]=175474(key=-1) [15]=172912(key=-1) [16]=166896(key=-1) [17]=166213(key=-1) [18]=160974(key=-1) [19]=160374(key=-1) [20]=209777(key=-1) [21]=212241(key=-1) [22]=264213(key=-1) [23]=260513(key=-1) [24]=243207(key=-1) [25]=242549(key=-1) [26]=236620(key=-1) [27]=231058(key=-1) [28]=229382(key=-1) [29]=226908(key=-1)
+SHORTLIST_UNIT_SCORE position=6 unit=264071 score=59.8 pre_sort_key=-2 span=1 weighted=0
+SHORTLIST_UNIT_SCORE position=6 unit=49874 score=59.8 pre_sort_key=-1 span=1 weighted=0
+SHORTLIST_SORT_INPUT position=6 total=79 presorted_prefix=1 suffix_count=78 suffix_ptr=0x25277d0
+SHORTLIST_SORT_TARGET position=6 index=0 unit=264071 score=59.8 key=-2 span=1 weighted=0 flags=0
+SHORTLIST_SORT_TARGET position=6 index=45 unit=49874 score=59.8 key=59.8 span=1 weighted=0 flags=0
+Temporary breakpoint 6 at 0x1002394d
+SHORTLIST_SORTED_TOP30 position=6 [0]=264071(score=59.8,key=-2,span=1,weighted=0,flags=0) [1]=177867(score=49.8,key=49.8,span=1,weighted=0,flags=0) [2]=166213(score=54.8,key=54.8,span=1,weighted=0,flags=0) [3]=114916(score=54.8,key=54.8,span=1,weighted=0,flags=0) [4]=5030(score=59.8,key=59.8,span=1,weighted=0,flags=0) [5]=6694(score=59.8,key=59.8,span=1,weighted=0,flags=0) [6]=8054(score=59.8,key=59.8,span=1,weighted=0,flags=0) [7]=9887(score=59.8,key=59.8,span=1,weighted=0,flags=0) [8]=11362(score=59.8,key=59.8,span=1,weighted=0,flags=0) [9]=13941(score=59.8,key=59.8,span=1,weighted=0,flags=0) [10]=14659(score=59.8,key=59.8,span=1,weighted=0,flags=0) [11]=15884(score=59.8,key=59.8,span=1,weighted=0,flags=0) [12]=4515(score=59.8,key=59.8,span=1,weighted=0,flags=0) [13]=19726(score=59.8,key=59.8,span=1,weighted=0,flags=0) [14]=21433(score=59.8,key=59.8,span=1,weighted=0,flags=0) [15]=27063(score=59.8,key=59.8,span=1,weighted=0,flags=0) [16]=32482(score=59.8,key=59.8,span=1,weighted=0,flags=0) [17]=46001(score=59.8,key=59.8,span=1,weighted=0,flags=0) [18]=49874(score=59.8,key=59.8,span=1,weighted=0,flags=0) [19]=56107(score=59.8,key=59.8,span=1,weighted=0,flags=0) [20]=59821(score=59.8,key=59.8,span=1,weighted=0,flags=0) [21]=62239(score=59.8,key=59.8,span=1,weighted=0,flags=0) [22]=69479(score=59.8,key=59.8,span=1,weighted=0,flags=0) [23]=71823(score=59.8,key=59.8,span=1,weighted=0,flags=0) [24]=86057(score=59.8,key=59.8,span=1,weighted=0,flags=0) [25]=93490(score=59.8,key=59.8,span=1,weighted=0,flags=0) [26]=97409(score=59.8,key=59.8,span=1,weighted=0,flags=0) [27]=97795(score=59.8,key=59.8,span=1,weighted=0,flags=0) [28]=104395(score=59.8,key=59.8,span=1,weighted=0,flags=0) [29]=105256(score=59.8,key=59.8,span=1,weighted=0,flags=0)
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,28 @@
+VoiceText Paul 2013 `use` post-handler row mutation
+==================================================
+
+Evidence
+--------
+
+The condition and writes are in the Ghidra pseudocode for `FUN_10007520` at
+VA `0x10007520` in `stage6-phone-record-consumers.txt`, immediately after
+label `LAB_10007ae1`. The function calls `FUN_10008580` at `0x10008580`, whose
+Ghidra pseudocode is attached in `stage112-fun10008550-08580-pseudo.c`.
+Treat the decompiler output as pseudocode.
+
+Recovered rule
+--------------
+
+For each counted row, compare its surface at `model + 0x429ad + row*0x70`
+against the mapped string `use` at DLL VA `0x10077424`. If it matches, and
+phone-code byte `model + 0x429cd + row*0x70` is ASCII `7`, call
+`FUN_10008580(model + 0x429a2, row)`. A nonzero low-short result changes that
+phone-code byte to ASCII `D` and ORs bit 3 into the row state byte at
+`model + 0x429a6 + row*0x70`.
+
+`duration.ApplyPaul2013FUN10007520UseMarker` ports these predicates and writes
+against a copied model arena. The known counted-row pass applies it after each
+supported per-row handler result, while matched exception rows remain skipped
+according to the caller's native row advance. Other `FUN_10007520` post-handler
+rules still run at this position in the native source and are not all ported,
+so their interaction and row-for-row runtime parity remain unverified.

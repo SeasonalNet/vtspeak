@@ -1,0 +1,12 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x1002389a
+Wine-gdb> >>>>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_2013_LOCAL_SCORE position=0 unit=272820 key=-2 span=2 weighted=0 score=506.6
+HI_2013_LOCAL_SCORE position=0 unit=65331 key=-2 span=2 weighted=0 score=506.6
+HI_2013_SELECTED_UNIT n=1 id=65331
+HI_2013_SELECTED_UNIT n=2 id=65331
+HI_2013_SELECTED_UNIT n=3 id=281932
+HI_2013_SELECTED_UNIT n=4 id=281932
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,32 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-bit7-next-row-edge/adapted-next-row-edge-gdb.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023331
+Wine-gdb> >>>> > > >  >  >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+BIT7_NEXT_EDGE context=7 current=264072 previous=264071 feature=0 divisor=1 penalty=0 previous_path=116.271 local=11.5375 total=127.809
+BIT7_NEXT_EDGE context=7 current=264072 previous=177867 feature=23.1281 divisor=1 penalty=0 previous_path=110.139 local=11.5375 total=144.805
+BIT7_NEXT_EDGE context=7 current=264072 previous=166213 feature=35.7985 divisor=1 penalty=0 previous_path=114.041 local=11.5375 total=161.377
+BIT7_NEXT_EDGE context=7 current=264072 previous=114916 feature=10.3779 divisor=1 penalty=0 previous_path=123.09 local=11.5375 total=145.006
+BIT7_NEXT_EDGE context=7 current=264072 previous=5030 feature=37.2219 divisor=1 penalty=0 previous_path=123.377 local=11.5375 total=172.137
+BIT7_NEXT_EDGE context=7 current=264072 previous=6694 feature=32.562 divisor=1 penalty=0 previous_path=117.773 local=11.5375 total=161.873
+BIT7_NEXT_EDGE context=7 current=264072 previous=8054 feature=21.7021 divisor=1 penalty=0 previous_path=117.074 local=11.5375 total=150.314
+BIT7_NEXT_EDGE context=7 current=264072 previous=14659 feature=29.8881 divisor=1 penalty=0 previous_path=123.416 local=11.5375 total=164.842
+BIT7_NEXT_EDGE context=7 current=264072 previous=15884 feature=6.40796 divisor=1 penalty=0 previous_path=117.031 local=11.5375 total=134.976
+BIT7_NEXT_EDGE context=7 current=264072 previous=19726 feature=30.4053 divisor=1 penalty=0 previous_path=118.473 local=11.5375 total=160.416
+BIT7_NEXT_EDGE context=7 current=264072 previous=21433 feature=19.5719 divisor=1 penalty=0 previous_path=116.466 local=11.5375 total=147.576
+BIT7_NEXT_EDGE context=7 current=264072 previous=27063 feature=21.9383 divisor=1 penalty=0 previous_path=116.104 local=11.5375 total=149.58
+BIT7_NEXT_EDGE context=7 current=264072 previous=32482 feature=35.6944 divisor=1 penalty=0 previous_path=118.789 local=11.5375 total=166.021
+BIT7_NEXT_EDGE context=7 current=264072 previous=46001 feature=12.8239 divisor=1 penalty=0 previous_path=125.284 local=11.5375 total=149.645
+BIT7_NEXT_EDGE context=7 current=264072 previous=49874 feature=10.4675 divisor=1 penalty=0 previous_path=112.217 local=11.5375 total=134.222
+BIT7_NEXT_EDGE context=7 current=264072 previous=59821 feature=14.2802 divisor=1 penalty=0 previous_path=122.383 local=11.5375 total=148.201
+BIT7_NEXT_EDGE context=7 current=264072 previous=62239 feature=11.2411 divisor=1 penalty=0 previous_path=120.065 local=11.5375 total=142.844
+BIT7_NEXT_EDGE context=7 current=264072 previous=69479 feature=17.4097 divisor=1 penalty=0 previous_path=122.119 local=11.5375 total=151.066
+BIT7_NEXT_EDGE context=7 current=264072 previous=71823 feature=18.9425 divisor=1 penalty=0 previous_path=121.029 local=11.5375 total=151.51
+BIT7_NEXT_EDGE context=7 current=264072 previous=86057 feature=16.1645 divisor=1 penalty=0 previous_path=118.292 local=11.5375 total=145.994
+BIT7_NEXT_EDGE context=7 current=264072 previous=93490 feature=24.1756 divisor=1 penalty=0 previous_path=122.4 local=11.5375 total=158.113
+BIT7_NEXT_EDGE context=7 current=264072 previous=97409 feature=24.6097 divisor=1 penalty=0 previous_path=115.826 local=11.5375 total=151.973
+BIT7_NEXT_EDGE context=7 current=264072 previous=97795 feature=23.218 divisor=1 penalty=0 previous_path=117.679 local=11.5375 total=152.434
+BIT7_NEXT_EDGE context=7 current=264072 previous=104395 feature=28.41 divisor=1 penalty=0 previous_path=116.814 local=11.5375 total=156.762
+BIT7_NEXT_EDGE context=7 current=264072 previous=105256 feature=18.966 divisor=1 penalty=0 previous_path=121.901 local=11.5375 total=152.405
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

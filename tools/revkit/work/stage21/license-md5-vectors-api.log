@@ -1,0 +1,11 @@
+MD5_VECTOR name=empty length=0 matches_reference=1
+MD5_VECTOR name=a length=1 matches_reference=1
+MD5_VECTOR name=abc length=3 matches_reference=1
+MD5_VECTOR name=a55 length=55 matches_reference=1
+MD5_VECTOR name=a56 length=56 matches_reference=1
+MD5_VECTOR name=a63 length=63 matches_reference=1
+MD5_VECTOR name=a64 length=64 matches_reference=1
+MD5_VECTOR name=a65 length=65 matches_reference=1
+MD5_VECTOR name=a127 length=127 matches_reference=1
+MD5_VECTOR name=a128 length=128 matches_reference=1
+MD5_VECTOR_SUMMARY cases=10 failures=0

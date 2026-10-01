@@ -1,0 +1,303 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-bit7-disk-attrb40-duplicate/adapted-completed-path-rows-gdb.log.
+Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023331
+Wine-gdb> >>>> > > >  >  >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10018c80
+Wine-gdb> >>>>> > > > >  >  >  >  >  >  >   >   >   >   >    >    >    >    >    >   >   >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 5 at 0x100248d6
+COMPLETED_PATH_ROW context=1 candidates=10 predecessors=30
+COMPLETED_PATH context=1 unit=264072 cumulative=16.2728 predecessor_index=24 predecessor=252497
+COMPLETED_PATH context=1 unit=13942 cumulative=21.9142 predecessor_index=14 predecessor=271878
+COMPLETED_PATH context=1 unit=36540 cumulative=17.0367 predecessor_index=4 predecessor=270371
+COMPLETED_PATH context=1 unit=53487 cumulative=12.528 predecessor_index=0 predecessor=273369
+COMPLETED_PATH context=1 unit=96599 cumulative=21.6267 predecessor_index=0 predecessor=273369
+COMPLETED_PATH context=1 unit=268760 cumulative=13.2937 predecessor_index=29 predecessor=222240
+COMPLETED_PATH context=1 unit=272152 cumulative=16.3384 predecessor_index=0 predecessor=273369
+COMPLETED_PATH context=1 unit=272823 cumulative=8.77829 predecessor_index=6 predecessor=272822
+COMPLETED_PATH context=1 unit=273370 cumulative=14.5854 predecessor_index=0 predecessor=273369
+COMPLETED_PATH context=1 unit=145101 cumulative=17.8299 predecessor_index=29 predecessor=222240
+Temporary breakpoint 6 at 0x100248d6
+COMPLETED_PATH_ROW context=2 candidates=23 predecessors=10
+COMPLETED_PATH context=2 unit=264072 cumulative=23.918 predecessor_index=0 predecessor=264072
+COMPLETED_PATH context=2 unit=36540 cumulative=23.1583 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=2 unit=273370 cumulative=27.3107 predecessor_index=8 predecessor=273370
+COMPLETED_PATH context=2 unit=272823 cumulative=15.7068 predecessor_index=7 predecessor=272823
+COMPLETED_PATH context=2 unit=272152 cumulative=21.9414 predecessor_index=6 predecessor=272152
+COMPLETED_PATH context=2 unit=268760 cumulative=19.2037 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=2 unit=96599 cumulative=30.5914 predecessor_index=4 predecessor=96599
+COMPLETED_PATH context=2 unit=13942 cumulative=30.1239 predecessor_index=1 predecessor=13942
+COMPLETED_PATH context=2 unit=53487 cumulative=18.5429 predecessor_index=3 predecessor=53487
+COMPLETED_PATH context=2 unit=4105 cumulative=45.8498 predecessor_index=8 predecessor=273370
+COMPLETED_PATH context=2 unit=72577 cumulative=32.3578 predecessor_index=3 predecessor=53487
+COMPLETED_PATH context=2 unit=63692 cumulative=45.0743 predecessor_index=7 predecessor=272823
+COMPLETED_PATH context=2 unit=93736 cumulative=35.5417 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=2 unit=235111 cumulative=43.9811 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=2 unit=57821 cumulative=98.8499 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=2 unit=128526 cumulative=47.7984 predecessor_index=7 predecessor=272823
+COMPLETED_PATH context=2 unit=2244 cumulative=101.16 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=2 unit=64011 cumulative=86.7901 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=2 unit=48369 cumulative=59.4819 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=2 unit=45237 cumulative=45.9951 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=2 unit=77285 cumulative=39.1328 predecessor_index=3 predecessor=53487
+COMPLETED_PATH context=2 unit=281786 cumulative=43.1098 predecessor_index=3 predecessor=53487
+COMPLETED_PATH context=2 unit=115179 cumulative=46.8547 predecessor_index=8 predecessor=273370
+Temporary breakpoint 7 at 0x100248d6
+COMPLETED_PATH_ROW context=3 candidates=25 predecessors=19
+COMPLETED_PATH context=3 unit=264073 cumulative=25.7293 predecessor_index=0 predecessor=264072
+COMPLETED_PATH context=3 unit=2529 cumulative=142.585 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=272824 cumulative=21.5635 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=272153 cumulative=24.5342 predecessor_index=4 predecessor=272152
+COMPLETED_PATH context=3 unit=265815 cumulative=144.592 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=252236 cumulative=145.808 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=238356 cumulative=149.177 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=233274 cumulative=141.56 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=206047 cumulative=142.902 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=173825 cumulative=142.148 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=160529 cumulative=147.297 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=153132 cumulative=122.057 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=146098 cumulative=146.347 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=105185 cumulative=143.52 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=87003 cumulative=146.424 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=83568 cumulative=145.536 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=75575 cumulative=146.537 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=49761 cumulative=147.649 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=31841 cumulative=147.86 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=29459 cumulative=150.586 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=28296 cumulative=147.175 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=3 unit=13943 cumulative=32.6495 predecessor_index=7 predecessor=13942
+COMPLETED_PATH context=3 unit=6519 cumulative=143.535 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=3 unit=4632 cumulative=141.245 predecessor_index=4 predecessor=272152
+COMPLETED_PATH context=3 unit=273371 cumulative=29.7486 predecessor_index=2 predecessor=273370
+Temporary breakpoint 8 at 0x100248d6
+COMPLETED_PATH_ROW context=4 candidates=30 predecessors=15
+COMPLETED_PATH context=4 unit=264074 cumulative=277.478 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=185764 cumulative=58.0513 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=184279 cumulative=50.1416 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=53333 cumulative=34.6244 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=208339 cumulative=36.5281 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=247104 cumulative=35.3495 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=220464 cumulative=40.3928 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=266905 cumulative=44.4044 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=232750 cumulative=34.5105 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=87447 cumulative=35.8844 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=171885 cumulative=53.686 predecessor_index=14 predecessor=273371
+COMPLETED_PATH context=4 unit=232670 cumulative=37.6517 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=224354 cumulative=36.6374 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=239975 cumulative=35.1246 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=269907 cumulative=39.5251 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=179667 cumulative=39.7375 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=241241 cumulative=47.5286 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=241411 cumulative=54.7055 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=232604 cumulative=43.434 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=112651 cumulative=48.1248 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=197581 cumulative=43.4936 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=205629 cumulative=38.3348 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=118195 cumulative=46.2893 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=145606 cumulative=44.4064 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=177994 cumulative=44.5172 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=4 unit=233412 cumulative=45.0423 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=58869 cumulative=46.6509 predecessor_index=3 predecessor=272153
+COMPLETED_PATH context=4 unit=33050 cumulative=48.419 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=51110 cumulative=59.8837 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=4 unit=129043 cumulative=44.9865 predecessor_index=0 predecessor=264073
+Temporary breakpoint 9 at 0x100248d6
+COMPLETED_PATH_ROW context=5 candidates=28 predecessors=28
+COMPLETED_PATH context=5 unit=184279 cumulative=61.7427 predecessor_index=3 predecessor=208339
+COMPLETED_PATH context=5 unit=185764 cumulative=68.3833 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=183342 cumulative=50.6013 predecessor_index=8 predecessor=87447
+COMPLETED_PATH context=5 unit=179911 cumulative=54.6221 predecessor_index=3 predecessor=208339
+COMPLETED_PATH context=5 unit=244251 cumulative=66.1373 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=134140 cumulative=62.6821 predecessor_index=8 predecessor=87447
+COMPLETED_PATH context=5 unit=265139 cumulative=50.3426 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=216044 cumulative=48.973 predecessor_index=2 predecessor=53333
+COMPLETED_PATH context=5 unit=213995 cumulative=52.4556 predecessor_index=3 predecessor=208339
+COMPLETED_PATH context=5 unit=212344 cumulative=54.9379 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=139207 cumulative=55.116 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=129448 cumulative=52.3899 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=82668 cumulative=53.7087 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=73098 cumulative=62.8628 predecessor_index=4 predecessor=247104
+COMPLETED_PATH context=5 unit=68970 cumulative=54.9239 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=60891 cumulative=51.7068 predecessor_index=8 predecessor=87447
+COMPLETED_PATH context=5 unit=39483 cumulative=52.1411 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=34312 cumulative=53.1429 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=32698 cumulative=55.6192 predecessor_index=8 predecessor=87447
+COMPLETED_PATH context=5 unit=31689 cumulative=57.2411 predecessor_index=12 predecessor=239975
+COMPLETED_PATH context=5 unit=30843 cumulative=55.4669 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=24082 cumulative=55.5102 predecessor_index=12 predecessor=239975
+COMPLETED_PATH context=5 unit=12561 cumulative=52.9944 predecessor_index=3 predecessor=208339
+COMPLETED_PATH context=5 unit=113145 cumulative=65.3428 predecessor_index=14 predecessor=179667
+COMPLETED_PATH context=5 unit=128048 cumulative=66.4956 predecessor_index=7 predecessor=232750
+COMPLETED_PATH context=5 unit=96680 cumulative=51.9769 predecessor_index=3 predecessor=208339
+COMPLETED_PATH context=5 unit=266023 cumulative=49.6319 predecessor_index=2 predecessor=53333
+COMPLETED_PATH context=5 unit=44091 cumulative=315.552 predecessor_index=12 predecessor=239975
+Temporary breakpoint 10 at 0x100248d6
+COMPLETED_PATH_ROW context=6 candidates=30 predecessors=27
+COMPLETED_PATH context=6 unit=264071 cumulative=85.2498 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=177867 cumulative=76.7594 predecessor_index=8 predecessor=213995
+COMPLETED_PATH context=6 unit=114916 cumulative=86.3786 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=166213 cumulative=80.6515 predecessor_index=17 predecessor=34312
+COMPLETED_PATH context=6 unit=56107 cumulative=88.8382 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=13941 cumulative=153.444 predecessor_index=13 predecessor=73098
+COMPLETED_PATH context=6 unit=11362 cumulative=94.7976 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=46001 cumulative=88.6337 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=223362 cumulative=86.6259 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=21433 cumulative=80.1234 predecessor_index=2 predecessor=183342
+COMPLETED_PATH context=6 unit=260513 cumulative=85.7616 predecessor_index=7 predecessor=216044
+COMPLETED_PATH context=6 unit=19726 cumulative=82.2183 predecessor_index=2 predecessor=183342
+COMPLETED_PATH context=6 unit=4515 cumulative=96.1964 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=160974 cumulative=83.6839 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=6694 cumulative=81.709 predecessor_index=2 predecessor=183342
+COMPLETED_PATH context=6 unit=14659 cumulative=88.9059 predecessor_index=16 predecessor=39483
+COMPLETED_PATH context=6 unit=199420 cumulative=84.1217 predecessor_index=2 predecessor=183342
+COMPLETED_PATH context=6 unit=200323 cumulative=79.498 predecessor_index=7 predecessor=216044
+COMPLETED_PATH context=6 unit=15884 cumulative=81.0468 predecessor_index=2 predecessor=183342
+COMPLETED_PATH context=6 unit=8054 cumulative=83.4781 predecessor_index=26 predecessor=266023
+COMPLETED_PATH context=6 unit=125747 cumulative=82.6026 predecessor_index=7 predecessor=216044
+COMPLETED_PATH context=6 unit=243207 cumulative=83.2277 predecessor_index=8 predecessor=213995
+COMPLETED_PATH context=6 unit=49874 cumulative=79.4846 predecessor_index=17 predecessor=34312
+COMPLETED_PATH context=6 unit=216303 cumulative=84.2456 predecessor_index=2 predecessor=183342
+COMPLETED_PATH context=6 unit=104395 cumulative=82.9337 predecessor_index=16 predecessor=39483
+COMPLETED_PATH context=6 unit=105256 cumulative=87.9052 predecessor_index=15 predecessor=60891
+COMPLETED_PATH context=6 unit=32482 cumulative=84.7928 predecessor_index=15 predecessor=60891
+COMPLETED_PATH context=6 unit=175733 cumulative=82.3556 predecessor_index=7 predecessor=216044
+COMPLETED_PATH context=6 unit=86057 cumulative=83.0008 predecessor_index=2 predecessor=183342
+COMPLETED_PATH context=6 unit=139859 cumulative=85.4697 predecessor_index=15 predecessor=60891
+Temporary breakpoint 11 at 0x100248d6
+COMPLETED_PATH_ROW context=7 candidates=10 predecessors=27
+COMPLETED_PATH context=7 unit=264072 cumulative=96.6026 predecessor_index=0 predecessor=264071
+COMPLETED_PATH context=7 unit=13942 cumulative=108.09 predecessor_index=15 predecessor=15884
+COMPLETED_PATH context=7 unit=36540 cumulative=101.615 predecessor_index=19 predecessor=49874
+COMPLETED_PATH context=7 unit=53487 cumulative=97.1886 predecessor_index=14 predecessor=200323
+COMPLETED_PATH context=7 unit=96599 cumulative=107.386 predecessor_index=15 predecessor=15884
+COMPLETED_PATH context=7 unit=268760 cumulative=94.9437 predecessor_index=1 predecessor=177867
+COMPLETED_PATH context=7 unit=272152 cumulative=100.488 predecessor_index=15 predecessor=15884
+COMPLETED_PATH context=7 unit=272823 cumulative=96.2173 predecessor_index=7 predecessor=21433
+COMPLETED_PATH context=7 unit=273370 cumulative=104.164 predecessor_index=14 predecessor=200323
+COMPLETED_PATH context=7 unit=145101 cumulative=104.652 predecessor_index=2 predecessor=114916
+Temporary breakpoint 12 at 0x100248d6
+COMPLETED_PATH_ROW context=8 candidates=23 predecessors=10
+COMPLETED_PATH context=8 unit=264072 cumulative=107.936 predecessor_index=0 predecessor=264072
+COMPLETED_PATH context=8 unit=36540 cumulative=112.419 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=8 unit=273370 cumulative=121.705 predecessor_index=8 predecessor=273370
+COMPLETED_PATH context=8 unit=272823 cumulative=108.863 predecessor_index=7 predecessor=272823
+COMPLETED_PATH context=8 unit=272152 cumulative=111.275 predecessor_index=6 predecessor=272152
+COMPLETED_PATH context=8 unit=268760 cumulative=106.325 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=8 unit=96599 cumulative=121.258 predecessor_index=4 predecessor=96599
+COMPLETED_PATH context=8 unit=13942 cumulative=120.938 predecessor_index=1 predecessor=13942
+COMPLETED_PATH context=8 unit=53487 cumulative=108.294 predecessor_index=3 predecessor=53487
+COMPLETED_PATH context=8 unit=4105 cumulative=135.673 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=8 unit=72577 cumulative=121.97 predecessor_index=3 predecessor=53487
+COMPLETED_PATH context=8 unit=63692 cumulative=135.862 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=8 unit=93736 cumulative=122.614 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=8 unit=235111 cumulative=131.2 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=8 unit=57821 cumulative=187.05 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=8 unit=128526 cumulative=141.361 predecessor_index=7 predecessor=272823
+COMPLETED_PATH context=8 unit=2244 cumulative=189.512 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=8 unit=64011 cumulative=175.418 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=8 unit=48369 cumulative=148.612 predecessor_index=2 predecessor=36540
+COMPLETED_PATH context=8 unit=45237 cumulative=133.263 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=8 unit=77285 cumulative=127.733 predecessor_index=0 predecessor=264072
+COMPLETED_PATH context=8 unit=281786 cumulative=133.241 predecessor_index=3 predecessor=53487
+COMPLETED_PATH context=8 unit=115179 cumulative=137.087 predecessor_index=3 predecessor=53487
+Temporary breakpoint 13 at 0x100248d6
+COMPLETED_PATH_ROW context=9 candidates=25 predecessors=18
+COMPLETED_PATH context=9 unit=264073 cumulative=108.792 predecessor_index=0 predecessor=264072
+COMPLETED_PATH context=9 unit=2529 cumulative=234.841 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=9 unit=272824 cumulative=118.507 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=9 unit=272153 cumulative=114.96 predecessor_index=4 predecessor=272152
+COMPLETED_PATH context=9 unit=265815 cumulative=240.568 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=9 unit=252236 cumulative=237.992 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=9 unit=238356 cumulative=236.426 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=9 unit=233274 cumulative=237.065 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=9 unit=206047 cumulative=231.927 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=9 unit=173825 cumulative=234.561 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=9 unit=160529 cumulative=244.913 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=9 unit=153132 cumulative=213.76 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=9 unit=146098 cumulative=239.648 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=9 unit=105185 cumulative=238.891 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=9 unit=87003 cumulative=234.154 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=9 unit=83568 cumulative=239.992 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=9 unit=75575 cumulative=244.707 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=9 unit=49761 cumulative=233.107 predecessor_index=0 predecessor=264072
+COMPLETED_PATH context=9 unit=31841 cumulative=237.059 predecessor_index=8 predecessor=53487
+COMPLETED_PATH context=9 unit=29459 cumulative=240.639 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=9 unit=28296 cumulative=239.197 predecessor_index=5 predecessor=268760
+COMPLETED_PATH context=9 unit=13943 cumulative=123.629 predecessor_index=7 predecessor=13942
+COMPLETED_PATH context=9 unit=6519 cumulative=240.065 predecessor_index=3 predecessor=272823
+COMPLETED_PATH context=9 unit=4632 cumulative=231.167 predecessor_index=4 predecessor=272152
+COMPLETED_PATH context=9 unit=273371 cumulative=124.235 predecessor_index=2 predecessor=273370
+Temporary breakpoint 14 at 0x100248d6
+COMPLETED_PATH_ROW context=10 candidates=25 predecessors=16
+COMPLETED_PATH context=10 unit=264074 cumulative=108.979 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=282713 cumulative=158.256 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=10 unit=282675 cumulative=145.336 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=282025 cumulative=126.639 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=272825 cumulative=123.477 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=10 unit=255282 cumulative=119.161 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=246677 cumulative=121.166 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=5170 cumulative=119.566 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=1869 cumulative=132.672 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=273372 cumulative=144.051 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=268761 cumulative=157.613 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=65726 cumulative=157.836 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=13944 cumulative=142.731 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=255006 cumulative=177.438 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=232750 cumulative=180.136 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=10 unit=241241 cumulative=186.143 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=208339 cumulative=168.087 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=243651 cumulative=199.307 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=10 unit=211910 cumulative=193.727 predecessor_index=2 predecessor=272824
+COMPLETED_PATH context=10 unit=149397 cumulative=185.707 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=132211 cumulative=172.062 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=171885 cumulative=182.733 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=224354 cumulative=169.486 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=168174 cumulative=172.432 predecessor_index=0 predecessor=264073
+COMPLETED_PATH context=10 unit=33050 cumulative=174.83 predecessor_index=0 predecessor=264073
+Temporary breakpoint 15 at 0x100248d6
+COMPLETED_PATH_ROW context=11 candidates=28 predecessors=14
+COMPLETED_PATH context=11 unit=264074 cumulative=109.142 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=1869 cumulative=126.725 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=282713 cumulative=217.915 predecessor_index=1 predecessor=282713
+COMPLETED_PATH context=11 unit=282675 cumulative=187.911 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=282025 cumulative=182.397 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=272825 cumulative=125.596 predecessor_index=4 predecessor=272825
+COMPLETED_PATH context=11 unit=255282 cumulative=121.783 predecessor_index=5 predecessor=255282
+COMPLETED_PATH context=11 unit=246677 cumulative=123.029 predecessor_index=6 predecessor=246677
+COMPLETED_PATH context=11 unit=5170 cumulative=121.443 predecessor_index=7 predecessor=5170
+COMPLETED_PATH context=11 unit=282035 cumulative=207.665 predecessor_index=5 predecessor=255282
+COMPLETED_PATH context=11 unit=200069 cumulative=174.946 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=136758 cumulative=179.234 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=74841 cumulative=177.31 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=33797 cumulative=175.355 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=280962 cumulative=217.635 predecessor_index=9 predecessor=273372
+COMPLETED_PATH context=11 unit=66928 cumulative=209.435 predecessor_index=5 predecessor=255282
+COMPLETED_PATH context=11 unit=281739 cumulative=186.973 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=282031 cumulative=191.089 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=200145 cumulative=228.485 predecessor_index=9 predecessor=273372
+COMPLETED_PATH context=11 unit=282647 cumulative=231.042 predecessor_index=1 predecessor=282713
+COMPLETED_PATH context=11 unit=282009 cumulative=206.09 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=281857 cumulative=188.986 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=281980 cumulative=200.141 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=105189 cumulative=183.941 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=94772 cumulative=217.976 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=27246 cumulative=178.561 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=23010 cumulative=190.41 predecessor_index=0 predecessor=264074
+COMPLETED_PATH context=11 unit=28799 cumulative=176.559 predecessor_index=0 predecessor=264074
+COMPLETED_PATH_SELECTED context=0 unit=252497
+COMPLETED_PATH_SELECTED context=1 unit=264072
+COMPLETED_PATH_SELECTED context=2 unit=264072
+COMPLETED_PATH_SELECTED context=3 unit=264073
+COMPLETED_PATH_SELECTED context=4 unit=53333
+COMPLETED_PATH_SELECTED context=5 unit=266023
+COMPLETED_PATH_SELECTED context=6 unit=264071
+COMPLETED_PATH_SELECTED context=7 unit=264072
+COMPLETED_PATH_SELECTED context=8 unit=264072
+COMPLETED_PATH_SELECTED context=9 unit=264073
+COMPLETED_PATH_SELECTED context=10 unit=264074
+COMPLETED_PATH_SELECTED context=11 unit=264074
+COMPLETED_PATH_SELECTED context=12 unit=264071
+COMPLETED_PATH_SELECTED context=13 unit=264074
+COMPLETED_PATH_SELECTED context=14 unit=266023
+COMPLETED_PATH_SELECTED context=15 unit=53333
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

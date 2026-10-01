@@ -1,0 +1,8 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000-v4/adapted-score-precision-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x1002389a
+Wine-gdb> Wine-gdb> >>>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+SLOT0_ALIAS_SCORE id=273369 local=9.60000038147 node_key=-1 node_score=0 span=1 weighted=0
+SLOT0_ALIAS_SCORE id=149799 local=9.60000038147 node_key=-1 node_score=0 span=1 weighted=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

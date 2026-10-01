@@ -1,0 +1,39 @@
+VoiceText Paul 2013 compound context scanner and output assembly
+===============================================================
+
+Evidence
+--------
+
+`FUN_10009dc0` at VA `0x10009dc0` scans a nonempty source containing an
+interior hyphen or period into components. Its Ghidra pseudocode is recorded
+at the beginning of `tools/revkit/work/reports/stage6-deep-text-functions.txt`
+(lines 1-220). The routine only enters the component loop when the first
+separator is not at the first byte and has a following byte. It accumulates
+each component into a 32-byte local buffer, supplies the component index and
+outer/separator context to the normalization chain, and appends nonempty
+results in source order.
+
+One-byte components bypass the dictionary gates and go directly to the
+context encoder, except for the observed conditional `a` marker. The routine
+emits byte `d` before each nonempty result after the first,
+checks `componentOutputLength + 1 + accumulatedLength` against 63 before
+copying, writes NUL at the current output pointer on overflow (preserving
+already accumulated bytes), and ORs `0x08` into the row flags when the
+accumulated length is positive. The one-byte `a` component
+path emits byte `0x07` when the first component has nonzero outer mode and a
+following hyphen, or when a later component is between two hyphens. Multi-byte
+components follow dictionary, suffix, and special-handler calls before the
+direct context encoder.
+
+Implementation boundary
+-----------------------
+
+`engine/duration/compound_context.go` ports the scanner, component metadata,
+the visible `a` case, output assembly and bounds, and final flag update. It
+also computes the direct dictionary and character gates documented in Stages
+79 and 80, then passes them to the component-normalizer callback. The callback
+represents the remaining dictionary lookup, suffix, and special-handler
+chain. It must explicitly request the context-encoder fallback; no absent
+handler is silently treated as implemented. The full
+`FUN_1000c040`/`FUN_1000c3a0` handlers and row-for-row runtime parity remain
+unported or unverified.

@@ -1,0 +1,54 @@
+Stage 186: remaining special ASCII word branches
+
+Evidence
+
+- FUN_1005a350 original x86 at 1005b406-1005b453 consumes a dot after
+  mapped-equal A.M or P.M in mode 0xf. It finishes the word; if the dot has
+  a following letter, the earlier common dot join takes precedence instead.
+- At 1005b453-1005b4df, mode 5 accepts mapped pa before apostrophe and four
+  mapped bytes anga, with no suffix-ending condition. It consumes only the
+  apostrophe before resuming the ordinary letter loop. Longer anga-prefixed
+  words retain their complete ASCII components within the common limits.
+- At 1005b4df-1005b503, mode 0x1d appends a digit after a letter run and
+  resumes the scanner with its continuation flag set. The numeric entry at
+  1005b50b sees that flag and finishes an existing token; consecutive digits
+  therefore stop after the first appended digit instead of joining a run.
+- Mode 0x1b at 1005b1d7-1005b406 includes:
+  * A slash ending only for words shorter than three bytes and a following
+    NUL, ASCII whitespace, .?!; or ,:{}[]()<>".
+  * A trailing dot for exact Mrs, S.&P, Sec or ca before NUL, digit,
+    whitespace, .?!; or ,:{}[]()<>";/. FUN_1001c1f0 at 1001c1f0 compares
+    unsigned source bytes directly; these matches are case-sensitive.
+  * Exact OK plus exclamation, which finishes after that exclamation.
+  * One uppercase initial plus .& and an uppercase following letter; one
+    uppercase initial plus & and an uppercase following letter; or one
+    initial letter plus slash and another letter. Those branches resume the
+    letter loop, retaining original separator spelling.
+- The dispatch at 1005ac34 excludes only modes 8/9/0xc/0x12/0x18/0x1a/
+  0x1c/0x1d from the common dot/int branch. Other signed mode values use
+  that default path. No pre-letter mode predicate changes ASCII letter entry.
+- Read-only local PE tests verify all native strings used here:
+  10081090=A.M, 10081080=P.M, 1009bdfc=pa, 1008000c=Mrs,
+  1009c3fc=S.&P, 1009c3f8=Sec, 10077764=ca, 1009c3e4=OK,
+  100813bc=.?!;, 1009c404=,:{}[]()<>", 1009c3e8=,:{}[]()<>";/.
+
+Implementation and validation
+
+- Join and finishing helpers share the existing cost-limited word loop and
+  result writer. Finishing punctuation never resumes joins; join separators
+  add no letter cost. A continuation with no new letter stops, reproducing
+  the native consecutive-digit gate. The default mode dispatch is preserved.
+- Tests cover all special branches, case distinctions, exact/mapped matches,
+  short-prefix and suffix exclusions, delimiters, precedence of common dots,
+  repeated digits, raw result fields, cost/length bounds, post-token flags
+  and the native default behavior across positive/negative mode values.
+- Changed Go files formatted. From engine/ with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- This completes the statically recovered ASCII-letter mode dispatch,
+  not the complete general scanner. Additional numeric/punctuation starts,
+  non-ASCII expansion, structural markers and native index builders remain.
+  Original-engine differential scanner captures and whole-synthesis parity
+  remain unestablished. Proprietary inputs were read only.

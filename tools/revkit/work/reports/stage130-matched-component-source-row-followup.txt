@@ -1,0 +1,39 @@
+VoiceText Paul 2013 FUN_10034110 matched-component source-row follow-up
+=======================================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_10034110` in
+`lead3-ax-surrounding-static-2026-09-25.txt` reads the component-arena pointer
+from context offset `+0x39e4`, checks its signed count, then starts rows at
+component-arena offset `+0x0c` with a `0x140` stride. For each row it calls
+`FUN_100451e0` with the text at component-row `+0x3a` (arena `+0x46`), the
+dwords at component-row `+0` and `+4`, and literal arguments `0x41`, `0x44`,
+and `0x12`.
+
+After each successful split/append it writes byte `0x1f` at
+`param_1[count * 0x4a - 0x31]`. Since `param_1` is a short pointer, this is
+byte offset `count * 0x94 - 0x62`. Source rows begin at arena offset `+0x14`,
+so the address resolves to the most recently appended `0x94` source row at
+`+0x1e` when the count is nonzero. This field is kept as an opaque byte.
+
+Port
+----
+
+`text.AppendPaul2013MatchedComponentSourceRows` reads the counted component
+arena and composes each row with `AppendPaul2013ModelSourceRowsSplit`. It
+preserves the three literal row arguments, bounds component reads by the
+supplied arena, requires a NUL-terminated surface, and applies the `+0x1e`
+follow-up byte to the last source row after each successful call.
+
+The input projection for the preceding `FUN_10034180` lookup is recorded in
+Stage 131.
+
+Evidence boundary
+----------------
+
+This helper begins after `FUN_10034180` has accepted a candidate. It does not
+produce candidate rows, determine the caller's candidate loop, or establish
+runtime row parity. A zero source-row count at the native follow-up write is
+rejected rather than reproducing an out-of-arena write.

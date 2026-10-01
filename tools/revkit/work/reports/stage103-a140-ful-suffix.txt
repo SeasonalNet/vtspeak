@@ -1,0 +1,29 @@
+VoiceText Paul 2013 FUN_1000a140 mapped `ful` suffix
+===================================================
+
+Evidence
+--------
+
+The DLL disassembly at `0x1000af87` compares the mapped final three bytes
+against `DAT_100777b0`, whose bytes at file offset `0x777b0` are `ful\0`.
+On a match, the code copies the input, terminates it three bytes before the
+end, and calls `FUN_1000cb30`. A nonempty result receives a space, `0x07`,
+and `+`, then returns through the common success path that sets row-flag bit
+3. The control flow checks `ist` immediately before `ful`, and enters the
+separate `ly` branch only when `ful` does not match. The disassembly is in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`, around lines
+14503-14542.
+
+Implementation
+--------------
+
+`NormalizePaul2013FulSuffixContext` ports the 5- to 31-byte mapped suffix
+check, direct stem lookup, marker tail, and flag update. The supported suffix
+cascade calls it after `ist` and before `ly` for short and long inputs.
+
+Evidence boundary
+-----------------
+
+This is a static disassembly port without original-runtime row comparison.
+Other A140 cases, exception resource/state production, and full C3A0 runtime
+parity remain open.

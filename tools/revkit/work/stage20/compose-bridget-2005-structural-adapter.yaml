@@ -1,0 +1,8 @@
+services:
+  runtime:
+    volumes:
+      - ../../../../data-bridget:/work/data-kate:ro
+      - ../stage20/bridget-2005-structural-adapter/M16/mc_idx_tbl:/work/data-kate/M16/mc_idx_tbl:ro
+      - ../../../../binary/vt_kat.dll:/samples/vt_kat.dll:ro
+      - ../stage19/data-common/dict-eng:/work/data-common/dict-eng:ro
+      - ../stage20:/probe

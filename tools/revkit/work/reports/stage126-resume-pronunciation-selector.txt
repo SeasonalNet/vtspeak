@@ -1,0 +1,31 @@
+VoiceText Paul 2013 `resume`/`resumes` pronunciation selector
+============================================================
+
+Evidence
+--------
+
+In `FUN_100049b0` at `0x100049b0`, the `resume` and `resumes` branches first
+require at least two preceding rows and one following row. The next surface
+must be one of `.`, `,`, `!`, or `?` (DLL VAs `0x10077700`, `0x100776fc`,
+`0x100776f8`, and `0x100776f4`). The previous surface must not match the
+ten-entry class-3 table at `PTR_DAT_10078010`; the surface two rows back must
+match the eighteen-entry class-11 table at `PTR_DAT_1007871c`. After those
+gates, the native C-string length check selects `%` for `resumes` and `*` for
+`resume`. The pseudocode and table references are in
+`tools/revkit/work/reports/stage6-text-table-consumers.txt` around lines
+2915-2939; class table values are recorded in
+`engine/text/pronunciation_context.go`.
+
+Recovered implementation
+------------------------
+
+`text.SelectPaul2013ModelNameContextPronunciation` now applies the punctuation,
+class-3 exclusion, and class-11 predecessor gates before choosing the
+singular/plural selector code. Failed gates use the shared fallback path.
+
+Evidence boundary
+-----------------
+
+This is a static port from Ghidra pseudocode and already-recovered sorted
+class tables. No direct runtime pronunciation-choice comparison has been made
+for `resume` or `resumes`.

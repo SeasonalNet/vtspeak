@@ -1,0 +1,58 @@
+VoiceText Paul 2013 FUN_1000a140 terminal-s suffix
+==================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_1000a140` handles five- to 31-byte C strings at
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, around
+lines 1447-1610. It first checks the mapped final byte for `s`. The branch
+uses `FUN_1001c320`, whose pseudocode at
+`tools/revkit/work/reports/stage6-char-and-table-functions.txt` compares a
+bounded number of character-map values. The two-byte literals at DLL VAs
+`0x100778d8`, `0x100778dc`, and `0x100778e0` are `ie`, `sh`, and `ch`; the
+NUL-terminated `szx` bytes begin at `0x100778e4`. The short-table values used
+by this branch are the `a`-to-`z` entries at `DAT_10077d5e`, cataloged in
+Stage 75. `od` inspection of `binary/vt_pau.dll` confirms the literal order in
+the `.data` region.
+
+Recovered branch order
+----------------------
+
+1. When the byte before final `s` maps to `e` and the preceding mapped bytes
+   meet the `szx`, `ch`, `sh`, or table-gated `o` condition, normalize the
+   source without final `s`; on a miss, retry without `es`.
+2. Otherwise, when the short-table value at source offset `length-4` is zero
+   and the mapped two-byte sequence at `length-3` is `ie`, replace that `i`
+   with `y` and normalize the resulting stem.
+3. Otherwise, inspect the mapped pair ending immediately before final `s`
+   and the short-table value at `length-3`. The ordinary reduction removes
+   `s`, retrying without `es` when the preceding byte maps to `e`. The other
+   reductions remove `es`; the native protected-output branch rejects empty
+   output and results ending in `0x14`, `)`, `7`, `8`, `D`, or `E`.
+4. On success, append `7` after outputs ending in space, `*`, `5`, `9`, or `:`;
+   append `#D` after outputs ending in `0x14`, `)`, `7`, `8`, `D`, or `E`;
+   otherwise append `D`. The common tail sets row-flag bit 3.
+
+Implementation
+--------------
+
+`NormalizePaul2013SSuffixContext` ports these ordered branches and uses
+the generic `FUN_1000cb30` adapter for stem lookup. Its fixed-width comparisons
+map exactly two bytes, matching `FUN_1001c320`. Stage 106 later captures the
+full signed-index short-table window; the compatibility
+`TableClassUnsupported` field is no longer set for these reads. The handler runs after the
+short `ers`, `est`, `ing`, `ist`, `ful`, and `ly` cases and the long `liness`,
+`ing`, `ist`, `ful`, and `ly` cases. For long inputs, it leaves the separate
+`liness` branch to its earlier handler. The old terminal-`s` gate no longer
+rejects these inputs before the port runs.
+
+Evidence boundary
+-----------------
+
+This is a static pseudocode port. No original-runtime row-for-row comparison
+has been made. The table window and adjacent `.data` values are statically
+recovered; exception-resource/state production, other A140 branches, and
+full C3A0 runtime parity remain open. The historical Stage 91 gate is retained
+as a record of the earlier fail-closed boundary; its current status is noted
+there.

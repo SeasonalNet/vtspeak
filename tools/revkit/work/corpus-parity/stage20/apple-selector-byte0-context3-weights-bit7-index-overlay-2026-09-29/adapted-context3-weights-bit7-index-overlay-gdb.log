@@ -1,0 +1,7 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10018ed3
+Wine-gdb> >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10018ed9
+Wine-gdb> >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x100191bc
+Wine-gdb> >>> > > > > > > > > >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >> > >>>Wine-gdb> Wine-gdb> Continuing.
+[Inferior 1 (Remote target) exited with code 01]
+Wine-gdb> 

@@ -1,0 +1,83 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000-v2/adapted-candidate-scores-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x100235f6
+Wine-gdb> Wine-gdb> >>>>>> > > > >>>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x1002389a
+Wine-gdb> Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+SLOT0_ALIAS_PRE_SCORE count=75 [0]=63(rank=-1,span=1,weighted=0) [1]=233533(rank=-1,span=1,weighted=0) [2]=222240(rank=-1,span=1,weighted=0) [3]=220903(rank=-1,span=1,weighted=0) [4]=214148(rank=-1,span=1,weighted=0) [5]=211497(rank=-1,span=1,weighted=0) [6]=208625(rank=-1,span=1,weighted=0) [7]=208165(rank=-1,span=1,weighted=0) [8]=207948(rank=-1,span=1,weighted=0) [9]=206118(rank=-1,span=1,weighted=0) [10]=205939(rank=-1,span=1,weighted=0) [11]=204612(rank=-1,span=1,weighted=0) [12]=200614(rank=-1,span=1,weighted=0) [13]=200525(rank=-1,span=1,weighted=0) [14]=198921(rank=-1,span=1,weighted=0) [15]=197867(rank=-1,span=1,weighted=0) [16]=195687(rank=-1,span=1,weighted=0) [17]=189906(rank=-1,span=1,weighted=0) [18]=233824(rank=-1,span=1,weighted=0) [19]=233955(rank=-1,span=1,weighted=0) [20]=279479(rank=-1,span=1,weighted=0) [21]=273369(rank=-1,span=1,weighted=0) [22]=272822(rank=-1,span=1,weighted=0) [23]=271915(rank=-1,span=1,weighted=0) [24]=271878(rank=-1,span=1,weighted=0) [25]=270371(rank=-1,span=1,weighted=0) [26]=268190(rank=-1,span=1,weighted=0) [27]=267478(rank=-1,span=1,weighted=0) [28]=264663(rank=-1,span=1,weighted=0) [29]=264405(rank=-1,span=1,weighted=0) [30]=262454(rank=-1,span=1,weighted=0) [31]=258594(rank=-1,span=1,weighted=0) [32]=255501(rank=-1,span=1,weighted=0) [33]=252497(rank=-1,span=1,weighted=0) [34]=248753(rank=-1,span=1,weighted=0) [35]=245736(rank=-1,span=1,weighted=0) [36]=234795(rank=-1,span=1,weighted=0) [37]=182880(rank=-1,span=1,weighted=0) [38]=179388(rank=-1,span=1,weighted=0) [39]=51310(rank=-1,span=1,weighted=0) [40]=50118(rank=-1,span=1,weighted=0) [41]=32995(rank=-1,span=1,weighted=0) [42]=31795(rank=-1,span=1,weighted=0) [43]=31347(rank=-1,span=1,weighted=0) [44]=28430(rank=-1,span=1,weighted=0) [45]=25895(rank=-1,span=1,weighted=0) [46]=22451(rank=-1,span=1,weighted=0) [47]=20499(rank=-1,span=1,weighted=0) [48]=19888(rank=-1,span=1,weighted=0) [49]=18378(rank=-1,span=1,weighted=0) [50]=13531(rank=-1,span=1,weighted=0) [51]=6208(rank=-1,span=1,weighted=0) [52]=5218(rank=-1,span=1,weighted=0) [53]=3756(rank=-1,span=1,weighted=0) [54]=2525(rank=-1,span=1,weighted=0) [55]=1200(rank=-1,span=1,weighted=0) [56]=52542(rank=-1,span=1,weighted=0) [57]=88195(rank=-1,span=1,weighted=0) [58]=178453(rank=-1,span=1,weighted=0) [59]=169343(rank=-1,span=1,weighted=0) [60]=167546(rank=-1,span=1,weighted=0) [61]=165351(rank=-1,span=1,weighted=0) [62]=158787(rank=-1,span=1,weighted=0) [63]=149799(rank=-1,span=1,weighted=0) [64]=146049(rank=-1,span=1,weighted=0) [65]=129641(rank=-1,span=1,weighted=0) [66]=116320(rank=-1,span=1,weighted=0) [67]=113167(rank=-1,span=1,weighted=0) [68]=111587(rank=-1,span=1,weighted=0) [69]=100640(rank=-1,span=1,weighted=0) [70]=100016(rank=-1,span=1,weighted=0) [71]=99833(rank=-1,span=1,weighted=0) [72]=97386(rank=-1,span=1,weighted=0) [73]=92183(rank=-1,span=1,weighted=0) [74]=279484(rank=-1,span=1,weighted=0)
+SLOT0_ALIAS_LOCAL id=63 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=233533 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=222240 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=220903 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=214148 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=211497 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=208625 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=208165 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=207948 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=206118 rank=-1 span=1 weighted=0 cost=29.6
+SLOT0_ALIAS_LOCAL id=205939 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=204612 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=200614 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=200525 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=198921 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=197867 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=195687 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=189906 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=233824 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=233955 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=279479 rank=-1 span=1 weighted=0 cost=39.6
+SLOT0_ALIAS_LOCAL id=273369 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=272822 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=271915 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=271878 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=270371 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=268190 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=267478 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=264663 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=264405 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=262454 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=258594 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=255501 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=252497 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=248753 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=245736 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=234795 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=182880 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=179388 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=51310 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=50118 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=32995 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=31795 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=31347 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=28430 rank=-1 span=1 weighted=0 cost=29.6
+SLOT0_ALIAS_LOCAL id=25895 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=22451 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=20499 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=19888 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=18378 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=13531 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=6208 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=5218 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=3756 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=2525 rank=-1 span=1 weighted=0 cost=29.6
+SLOT0_ALIAS_LOCAL id=1200 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=52542 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=88195 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=178453 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=169343 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=167546 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=165351 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=158787 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=149799 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=146049 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=129641 rank=-1 span=1 weighted=0 cost=25.6
+SLOT0_ALIAS_LOCAL id=116320 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=113167 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=111587 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=100640 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=100016 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=99833 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=97386 rank=-1 span=1 weighted=0 cost=9.6
+SLOT0_ALIAS_LOCAL id=92183 rank=-1 span=1 weighted=0 cost=24.6
+SLOT0_ALIAS_LOCAL id=279484 rank=-1 span=1 weighted=0 cost=34.6
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

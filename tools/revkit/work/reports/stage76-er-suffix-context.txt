@@ -1,0 +1,29 @@
+VoiceText Paul 2013 bounded long-input “er” suffix handler
+=========================================================
+
+Evidence boundary
+-----------------
+
+FUN_1000a140 at VA 0x1000a140 compares the final two bytes plus NUL against
+DAT_100778f0 in its long-input path. The checked-in DLL data spells `er`.
+The relevant pseudocode is in
+`tools/revkit/work/reports/stage6-deep-text-functions.txt`, lines 1442-1548.
+The Go helper bounds the C-string to 9-31 bytes so its source copy plus NUL
+fits the native 32-byte local buffer.
+
+When the mapped byte immediately before `er` is not `e`, the handler first
+tries the source with only the final `r` removed, then with `er` removed. A
+nonempty `FUN_1000cb30` result receives byte `0x1a`. If neither lookup yields
+text, or the preceding mapped byte is `e`, the handler uses the same observed
+short-table predicates and possible `i`-to-`y` edit as the `ed` long-input
+path. Its table fallback also calls `FUN_1000cb30` and appends `0x1a` on a
+nonempty result. A successful result ORs `0x08` into the row flags.
+
+The short table is addressed as `DAT_10077d5e + mappedByte*2`; only mapped
+ASCII `a`-through-`z` values are provisioned. The retained 0/1 values are
+observations, not linguistic labels. Other mapped-byte indexes return an
+explicit unsupported-table result. Original-runtime row-for-row parity and
+integration into the caller's full ordered suffix cascade remain open.
+
+The implementation is in `engine/duration/er_suffix.go` and shares the
+inspected short-table stem predicate with `engine/duration/ed_suffix.go`.

@@ -1,0 +1,61 @@
+Stage 162: native phone table correction and model aliases
+
+Direct observations
+
+- Local binary/vt_pau.dll SHA256:
+  200945bbb2853cc56b3eaa03770eedf26066b20bfc471ef5b0213387035b37ce
+- PE section mapping puts VA 0x1007b6c0 at file offset 0x7b6c0,
+  VA 0x1007b9e0 at 0x7b9e0, and VA 0x1007baa8 at 0x7baa8 in this file.
+  FUN_10012c70 x86 0x10012cdf sign-extends the symbol byte; 0x10012ce2
+  reads identity from B6C0 and 0x10012cef reads stress from BAA8.
+- Symbol 0x01 maps to identity 1, B9E0 byte 1, BAA8 byte 0; 0x02 maps
+  to identity 1, B9E0 byte 1, BAA8 byte 1; 0x03 maps to identity 1,
+  B9E0 byte 1, BAA8 byte 2. B9E0 is the vowel/category window, while
+  BAA8 is the stress window for these established phone codes.
+- Structural symbol M (0x4d) maps to identity 31 and stress 0. The
+  established identity codebook maps 31 to T. M remains the original
+  model byte and its dedicated flag remains distinct from this identity.
+- The previous Go B9E0/BAA8 array contents were swapped. Full 256-byte
+  windows are now compared to their exact VAs through PE section mapping.
+  BB70 also passes its 256-byte comparison; B6C0's low signed-index window
+  passes all 128 bytes. All vendor inputs were read only.
+- Reproducible extraction uses parse_pe/va_bytes from the existing
+  tools/revkit/scripts/extract_paul2013_context_classifier_tables.py.
+  Native consumers are recorded in stage22-context-marker-producers.c
+  and vt_pau-objdump-disassembly.txt. Decompiled output is pseudocode.
+
+Implementation
+
+- Corrected both shared B9E0 and BAA8 arrays, affecting their established
+  marker and unit-scoring consumers. Added the B6C0 low signed-index window.
+- DecodePaul2013ModelPhoneSymbols derives supported identity, stress, and
+  vowel features directly from native tables. It retains strict rejection
+  of unsupported identities and negative signed-char indexes. Canonical
+  DecodeCMUPhones remains the pronunciation-label decoder.
+- Group, duration-input, and pitch-input record adapters now use native model
+  decoding. M is supported without changing its original symbol/flag bytes
+  or substituting a different pronunciation encoding in the arena.
+
+Validation
+
+- NativePhoneTable tests compare all four named table windows against the
+  local read-only DLL. The comparison skips only if vendor inputs are absent;
+  it ran and passed in this checkout.
+- All 69 canonical symbols match the existing runtime-backed CMU decoder.
+  Tests compare M's grouping/duration/pitch inputs against the table-equivalent
+  canonical T and exercise finalized parser to boundary pipeline with M.
+- Regression cases cover stress 0/1/2 marker categories and unit cross-byte
+  scoring gates that distinguish the two formerly swapped windows.
+- From engine/, with GOCACHE=/tmp/vtspeak-go-cache, go test ./...,
+  go build ./..., and go vet ./... passed. gofmt applied to changed Go
+  files; git diff --check passed. The vendor DLL SHA256 was unchanged
+  after extraction and validation.
+
+Limits
+
+- Table equality and static consumer recovery do not prove full native arena
+  or end-to-end synthesis parity. M's alias path has local composition tests,
+  not a newly captured original-engine runtime comparison.
+- Negative signed-char indexes and table entries outside supported phone
+  identities remain explicit errors. Native scalar resource selection and
+  workspace state initialization remain separate work.

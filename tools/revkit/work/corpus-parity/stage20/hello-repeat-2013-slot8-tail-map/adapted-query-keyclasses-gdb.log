@@ -1,0 +1,54 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-slot8-tail-map/adapted-query-keyclasses-gdb.log.
+Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023dc0
+Wine-gdb> >>>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 3 at 0x1001896a
+REPEAT_SLOT8_QUERY n=1 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00 count=0
+Temporary breakpoint 4 at 0x10018a45
+REPEAT_SLOT8_QUERY n=2 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00 count=0
+Temporary breakpoint 5 at 0x1001896a
+REPEAT_SLOT8_QUERY n=3 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00 count=0
+Temporary breakpoint 6 at 0x10018a45
+REPEAT_SLOT8_QUERY n=4 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00 count=0
+Temporary breakpoint 7 at 0x10018a45
+REPEAT_SLOT8_QUERY n=5 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00 count=0
+Temporary breakpoint 8 at 0x10018a45
+REPEAT_SLOT8_QUERY n=6 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00 count=0
+Temporary breakpoint 9 at 0x1001896a
+REPEAT_SLOT8_QUERY n=7 signature=22,17,2b,30,22,00,00 key=17,2b,2f,00,00 count=1
+Temporary breakpoint 10 at 0x10018a45
+REPEAT_SLOT8_QUERY n=8 signature=22,17,2b,30,22,08,00 key=17,2b,2f,08,00 count=0
+Temporary breakpoint 11 at 0x1001896a
+REPEAT_SLOT8_QUERY n=9 signature=17,2b,30,22,17,41,00 key=2b,30,22,41,00 count=0
+Temporary breakpoint 12 at 0x10018a45
+REPEAT_SLOT8_QUERY n=10 signature=17,2b,30,22,17,00,00 key=2b,30,22,00,00 count=1
+Temporary breakpoint 13 at 0x10018a45
+REPEAT_SLOT8_QUERY n=11 signature=17,2b,30,22,17,42,00 key=2b,30,22,42,00 count=0
+Temporary breakpoint 14 at 0x10018a45
+REPEAT_SLOT8_QUERY n=12 signature=17,2b,30,22,17,49,00 key=2b,30,22,49,00 count=0
+Temporary breakpoint 15 at 0x10018a45
+REPEAT_SLOT8_QUERY n=13 signature=17,2b,30,22,17,08,00 key=2b,30,22,08,00 count=0
+Temporary breakpoint 16 at 0x10018a45
+REPEAT_SLOT8_QUERY n=14 signature=17,2b,30,22,17,4a,00 key=2b,30,22,4a,00 count=0
+Temporary breakpoint 17 at 0x1001896a
+REPEAT_SLOT8_QUERY n=15 signature=2b,30,22,17,2b,88,00 key=0d,22,17,88,00 count=0
+Temporary breakpoint 18 at 0x10018a45
+REPEAT_SLOT8_QUERY n=16 signature=2b,30,22,17,2b,00,00 key=0d,22,17,00,00 count=1
+Temporary breakpoint 19 at 0x10018a45
+REPEAT_SLOT8_QUERY n=17 signature=2b,30,22,17,2b,90,00 key=0d,22,17,90,00 count=0
+Temporary breakpoint 20 at 0x1001896a
+REPEAT_SLOT8_QUERY n=18 signature=30,22,17,2b,30,08,00 key=22,17,2b,08,00 count=0
+Temporary breakpoint 21 at 0x10018a45
+REPEAT_SLOT8_QUERY n=19 signature=30,22,17,2b,30,00,00 key=22,17,2b,00,00 count=1
+Temporary breakpoint 22 at 0x10018a45
+REPEAT_SLOT8_QUERY n=20 signature=30,22,17,2b,30,10,00 key=22,17,2b,10,00 count=0
+Temporary breakpoint 23 at 0x1001896a
+REPEAT_SLOT8_QUERY n=21 signature=22,17,2b,30,5a,00,00 key=17,2b,2f,00,00 count=1
+Temporary breakpoint 24 at 0x10018a45
+REPEAT_SLOT8_QUERY n=22 signature=22,17,2b,30,5a,08,00 key=17,2b,2f,08,00 count=0
+Temporary breakpoint 25 at 0x1001896a
+REPEAT_SLOT8_QUERY n=23 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00 count=0
+Temporary breakpoint 26 at 0x10018a45
+REPEAT_SLOT8_QUERY n=24 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00 count=0
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

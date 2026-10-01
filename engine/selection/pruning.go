@@ -6,8 +6,11 @@ import (
 	"math"
 )
 
-// ScoredUnit carries the cumulative path cost and the observed 16-bit node
-// flag consumed by the legacy candidate-pruning step.
+// ScoredUnit carries a unit's stage-specific score and the observed 16-bit
+// node flag consumed by legacy pruning. PruneCandidates interprets Cost as a
+// cumulative score; InitializePathLayer interprets it as a local score already
+// normalized for path accumulation. SelectPaul2013ModelMinimumCostPath accepts
+// raw local scores and applies the native divisor before path initialization.
 type ScoredUnit struct {
 	Unit     UnitRef
 	Cost     float32

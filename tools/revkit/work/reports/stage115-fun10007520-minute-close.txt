@@ -1,0 +1,28 @@
+VoiceText Paul 2013 `minute` and `close` post-handler mutations
+===============================================================
+
+Evidence
+--------
+
+Both branches are in the Ghidra pseudocode for `FUN_10007520` at VA
+`0x10007520` in `stage6-phone-record-consumers.txt`. The current row strings
+are compared with the mapped-string helper; treat the decompiler output as
+pseudocode. `minute` is the literal at DLL VA `0x100774e8`, and `close` is at
+`0x100776ec`. The minute predicate calls the recovered `FUN_10008550` number
+word lookup, and the close predicate calls `FUN_10008580`.
+
+Recovered rules
+---------------
+
+For a noninitial counted row whose surface is `minute`, a previous-row number
+word causes the six-byte write `2c 24 2d 23 39 00` at row offsets `+0x29`
+through `+0x2e`, then sets row-state bit 3 at `+4`. For a `close` row whose
+byte at `+0x2c` is ASCII `7`, a true `FUN_10008580` result changes that byte
+to `D` and sets the same state bit.
+
+`duration.ApplyPaul2013FUN10007520Minute` and
+`duration.ApplyPaul2013FUN10007520CloseMarker` port these predicates and
+writes. The known counted-row pass invokes them for supported per-row results,
+alongside the previously recovered `use` and `UP` cases. This does not port
+the other literal/table-backed post-handler branches, establish complete
+caller ordering for all branches, or demonstrate runtime parity.

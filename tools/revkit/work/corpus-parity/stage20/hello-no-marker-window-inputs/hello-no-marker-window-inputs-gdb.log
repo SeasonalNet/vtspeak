@@ -1,0 +1,20 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10027fe0
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1002aac0
+Wine-gdb> >>>>>>>>>> >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HELLO_NO_MARKER_VOLUME old=200 new=100
+HELLO_NO_MARKER_SELECTED n=1 id=273369
+HELLO_NO_MARKER_SELECTED n=2 id=273370
+HELLO_NO_MARKER_SELECTED n=3 id=273370
+HELLO_NO_MARKER_SELECTED n=4 id=273371
+HELLO_NO_MARKER_SELECTED n=5 id=264074
+HELLO_NO_MARKER_SELECTED n=6 id=264074
+HELLO_NO_MARKER_JOIN call=1 slot=0 count=1416 leading=78 trailing=84 source=0x25eef14
+HELLO_NO_MARKER_JOIN call=2 slot=1 count=648 leading=84 trailing=84 source=0x25eef14
+HELLO_NO_MARKER_JOIN call=3 slot=2 count=520 leading=84 trailing=90 source=0x25eef14
+HELLO_NO_MARKER_JOIN call=4 slot=3 count=1724 leading=90 trailing=86 source=0x25eef14
+HELLO_NO_MARKER_JOIN call=5 slot=4 count=1576 leading=86 trailing=106 source=0x25eef14
+HELLO_NO_MARKER_JOIN call=6 slot=5 count=2482 leading=106 trailing=118 source=0x25eef14
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

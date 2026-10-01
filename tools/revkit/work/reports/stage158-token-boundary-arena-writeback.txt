@@ -1,0 +1,62 @@
+Stage 158: native token-boundary arena writeback
+
+Observed evidence
+
+- FUN_100130e0 in vt_pau-synthesis-pseudocode.c initializes record +0x3bd
+  through the 13-entry table, then overrides the last marker with '^' for
+  arena +0x4770a == 6 and 'Z' otherwise. FUN_10012df0 and FUN_10012f00 run
+  before +0x3bc flags are reset and adjacent-record transitions are applied.
+- Per-token parser outputs are read from parser-state +0x20 at 0x94 strides.
+  Nonfinal -2 writes 100; other nonnegative values are copied; other negative
+  values preserve the initial workspace entry at +0x121a64.
+- Original x86 0x10013248 initializes the state pointer to workspace
+  +0x121d80. At 0x1001324e it reads pointer minus 0x31c; this is value[1],
+  not value[0]. At 0x10013258 it writes state[0] = 2 if that value is
+  nonnegative. The loop advances both pointers by four. Thus value[i]
+  updates state[i-1] for i = 1..count-1. The earlier Go same-index update
+  was incorrect. Evidence: vt_pau-objdump-disassembly.txt lines 26267-26279.
+- State 0/1 dispatch writes flag 1; state 2/3 changes only the marker and
+  preserves flags from transitions. Final state 0..2 writes '['.
+- The cumulative +0x95 byte sum is doubled. A total above 1000 backs up one
+  record, writes '[', resets the span, and rescans the overflowing record.
+  Count capacity is 100 records, distinct from 65 phones within one token.
+- Decompiled output is pseudocode; function addresses and original x86
+  support these static claims. No new runtime arena capture was made.
+
+Implementation
+
+- InitializePaul2013TokenBoundaryArena and FinishPaul2013TokenBoundaryArena
+  expose the arena writes before and after the explicit marker-tree stage.
+  Input arenas are copied. Finish returns arrays, arena bytes, and rebuilt
+  FUN_10012df0 descriptors.
+- Corrected BuildPaul2013TokenBoundaryStateResult's preceding-state update.
+  Finish retains transition flags through dispatch and resets native stale
+  flags even when neither transition nor dispatch replaces them.
+- The arena duration-limit adapter now accepts the native 100-record
+  capacity and implements backtrack/rescan, rather than invoking a helper
+  limited to a single token's 65 phones.
+- Paul2013FinalizedModelState.FinishTokenBoundaries reads nonfinal outputs
+  directly from retained finalized parser rows and validates group count
+  and parser arena bounds.
+
+Validation
+
+- Focused text and selection tests passed.
+- Tests exercise preceding-state propagation, transition flags surviving
+  state-2 dispatch, final mode/state combinations, stale-flag reset, 100-row
+  capacity, strict overflow and repeated rescanning, rebuilt descriptors,
+  input preservation, invalid counts/bounds, and missing outputs.
+- The finalized two-group fixture continues through parser-output extraction
+  and boundary arena writeback. Its marker-tree result is explicitly supplied
+  unchanged; it does not claim production tree evaluation.
+- From engine/, with GOCACHE=/tmp/vtspeak-go-cache: go test ./..., go build
+  ./..., and go vet ./... passed. gofmt applied to changed Go files.
+
+Limits
+
+- Stage 159 subsequently adds supported FUN_10012c70 phone-group arena
+  writes and the pre-tree handoff. FUN_10012f00 full arena iteration still
+  requires integration. The new API requires its prepared output explicitly;
+  it never treats an unavailable tree stage as an implicit no-op.
+- Workspace value/state initializers remain caller inputs. Position remapping,
+  native whole-arena parity, and end-to-end speech parity are not established.

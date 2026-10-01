@@ -75,9 +75,9 @@ func Paul2013FeatureViewForKey(key [5]byte, mode byte) ([10]byte, error) {
 	var view [10]byte
 	switch mode {
 	case 1:
-		view = [10]byte{0, key[4], key[1], paul2013ClassMap[key[0]], boolByte(upperBoundary), paul2013PrimaryCategoryMap[key[0]], ((flags>>3)&7)*10 + boolByte(lowerBoundary), key[0], (flags >> 3) & 7, paul2013ClassMap[key[2]]}
+		view = [10]byte{0, key[4], key[1], paul2013ClassMap[key[0]], boolByte(upperBoundary), paul2013PrimaryCategoryMap[key[0]], ((flags>>3)&7)*10 + boolByte(lowerBoundary), key[0], flags & 7, paul2013ClassMap[key[2]]}
 	case 2:
-		view = [10]byte{1, key[4], key[1], paul2013ClassMap[key[2]], boolByte(lowerBoundary), paul2013SecondaryCategoryMap[key[2]], (flags&7)*10 + boolByte(upperBoundary), key[2], flags & 7, paul2013ClassMap[key[0]]}
+		view = [10]byte{1, key[4], key[1], paul2013ClassMap[key[2]], boolByte(lowerBoundary), paul2013SecondaryCategoryMap[key[2]], (flags&7)*10 + boolByte(upperBoundary), key[2], (flags >> 3) & 7, paul2013ClassMap[key[0]]}
 	default:
 		return [10]byte{}, fmt.Errorf("unsupported Paul 2013 feature view mode %d", mode)
 	}

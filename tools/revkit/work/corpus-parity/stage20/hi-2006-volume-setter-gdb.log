@@ -1,0 +1,7 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x100219a0
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_HI_VOLUME_SETTER_TRACE_READY
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

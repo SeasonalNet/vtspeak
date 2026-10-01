@@ -1,0 +1,27 @@
+VoiceText Paul 2013 `FUN_1000cc60` counted-context phrase-window lookup
+=====================================================================
+
+Evidence
+--------
+
+The Ghidra pseudocode for `FUN_1000cc60` is in
+`stage6-deep-text-functions.txt` at VA `0x1000cc60`. Its direct callers in
+`FUN_10007520` pass `L`, `R`, or `B`, a bounded row count, a sorted table
+pointer array, its count, and comparison mode `0x49`. Treat decompiler output
+as pseudocode; runtime table contents are inputs to the portable helper.
+
+Recovered behavior
+------------------
+
+The helper caps the requested window at 20 rows. `B` rounds an odd limit up
+and divides it between the rows preceding and following the current row; `L`
+and `R` select only their corresponding side. It visits the selected
+neighbor surfaces in order, binary-searches the supplied sorted table using
+the caller's comparator, and accepts either a single-row key or a phrase
+whose space-separated components match following selected rows.
+
+`duration.FindPaul2013ContextPhraseWindow` ports that window construction,
+search, and phrase continuation over an explicit table snapshot and native
+comparator. No proprietary voice or model data was copied into Go. The bow,
+lead, mouth, and read temporal-phrase call sites are connected in Stages 117
+through 119. Runtime parity remains open.

@@ -1,0 +1,47 @@
+Stage 183: common numeric scanner loop
+
+Evidence
+
+- FUN_1005a350 original x86 and Stage 135 pseudocode record a common digit
+  loop, with local buffer length gate >28 before copying another digit.
+  Modes 0/1/0x17 share the decimal/comma loop at LAB_1005b5ee. A decimal
+  requires no prior dot and a following digit. A comma requires no prior dot,
+  first byte not zero, exactly three following digits, and a nondigit or NUL
+  after those three. Separators consume one source byte before the next digit
+  loop. A length-limited result can therefore stop immediately after a separator.
+- LAB_1005bcff uses mapped two-byte ordinal comparisons and nonletter suffix
+  boundary checks. Final digits 1/2/3 select st/nd/rd except preceding 1 uses
+  th. Other final digits use th. The rd condition explicitly excludes exact
+  Rd using FUN_1001c280, while RD and rd remain accepted. Decimal tokens do
+  not accept ordinal suffixes. Up to 29 base bytes plus two suffix bytes fit
+  the native 32-byte local buffer.
+- Mode 0 also matches exact numeric base 401 and K/k before a nonletter,
+  or parenthesized K/k. These forms enter status-1 word output rather than
+  the normal status-2 numeric output. Mode 1 does not consume K in this branch.
+- Leading dot before digits in modes 0/1 requires source coordinate zero
+  or a nonletter preceding source byte. A remaining-source slice with nonzero
+  coordinate and no local preceding byte cannot establish that predicate.
+- Read-only PE literals: 0x1009c3e0=401, 0x1007ffd4=st,
+  0x1009c3bc=nd, 0x1009c3b8=rd, 0x1009c3b4=Rd, 0x10080b84=th.
+
+Implementation and validation
+
+- The numeric scanner composes with the recovered ASCII result writer and
+  post-token lookup. Unknown leading-decimal predecessor state delegates;
+  leading coordinate zero or skipped local nonletter bytes supplies it.
+- Tests check whole result text, status, advances and coordinates for digit
+  runs, grouped/decimal numbers, invalid grouping, repeated decimal points,
+  ordinal case variants and teens, suffix boundary rejection, 401 word forms,
+  29-byte truncation and 31-byte suffixed outputs. Existing fallback tests
+  now target still-unported modes and preserve their original-argument checks.
+- Numeric prefix/boundary integration runs the recovered mode-0x17 scanner
+  without fixtures and checks ordinal/decimal overshoot and exact boundaries.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Other numeric modes have additional joins and remain separate work.
+  Mixed letter joins, non-ASCII, structural markers and native index builders
+  remain unported. Tests validate static-evidence mechanics; no original-engine
+  differential capture or whole-text/synthesis parity is established.

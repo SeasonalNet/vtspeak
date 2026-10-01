@@ -1,0 +1,35 @@
+VoiceText Paul 2013 `read` post-handler pronunciation marker
+===========================================================
+
+Evidence
+--------
+
+The branch is in Ghidra pseudocode for `FUN_10007520` at VA `0x10007520` in
+`stage6-phone-record-consumers.txt`. It gates on current surface `read`
+(DLL VA `0x10077860`) and apostrophe at phone-code byte `+0x2a`. It consults
+the class-3 table at `PTR_10078010`, the ten-entry table at `PTR_100783a4`,
+the class-8 and class-11 tables at `PTR_1007868c` and `PTR_1007871c`, and a
+mode-B, 20-row `FUN_1000cc60` lookup over the nine-entry table at
+`PTR_1007837c`. The decompiler report is pseudocode; these string tables and
+the row offsets were checked against `vt_pau.dll`.
+
+Recovered behavior
+------------------
+
+The branch writes `0x18` at row offset `+0x2a` and sets row-state bit 3 when
+any of these conditions holds:
+
+- The previous row is in the class-3 table, the ten-entry special table, or
+  is `he` or `she`.
+- The row before the previous one is in either of the first two tables and
+  the previous row is `not`.
+- The previous row is `i` or in class 8 and a temporal phrase matches the
+  bounded bidirectional context window.
+- The previous row is in class 11.
+- The two preceding rows match the recovered `get`, `got`, or `gets` set and
+  the previous row is not `to`.
+
+`duration.ApplyPaul2013FUN10007520ReadMarker` ports those direct predicates,
+table memberships, phrase-window lookup, and output writes. The counted-row
+pass connects it after supported handlers. Exact native runtime row parity
+and any behavior hidden by decompiler inaccuracies remain unverified.

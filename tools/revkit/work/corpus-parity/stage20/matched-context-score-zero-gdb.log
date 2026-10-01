@@ -9,187 +9,259 @@ Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 8 at 0x1001b200
 Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Breakpoint 9 at 0x408187
 Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 10 at 0x10018c80
 Wine-gdb> >>>>>>>> > > > > >  >  >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 11 at 0x100191bc
-Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Continuing.
-Temporary breakpoint 12 at 0x100249bb
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 12 at 0x10018736
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Breakpoint 13 at 0x1001864a
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 14 at 0x100249bb
 OLD_CUTOFF_SPLIT_ENTER slot=0
-Temporary breakpoint 13 at 0x10024808
+Temporary breakpoint 15 at 0x10024808
 KEY_RANK_ENTRY call=1 limit=30 budget=10000 count=1 signature=0x24e0752:	0x5a	0x5a	0x22	0x17	0x2b	0xa0	0x00
 KEY_CANDIDATE call=1 index=0 class_id=32928 duration=30 key=0x204de60:	0x5a	0x22	0x17	0xa0	0x00
-Temporary breakpoint 14 at 0x10024164
+Temporary breakpoint 16 at 0x10024164
 KEY_RANK_RETURN call=1 selected=1 class_ids=32928 
 OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 32928:30
-Temporary breakpoint 15 at 0x10024271
+Temporary breakpoint 17 at 0x10024271
 OLD_CUTOFF_METRIC_RETURN sum=30
 OLD_CUTOFF_SPLIT_RETURN slot=0 sum=30 accepted=1
 OLD_CUTOFF_SPLIT_ENTER slot=1
-Temporary breakpoint 16 at 0x10024808
+Temporary breakpoint 18 at 0x10024808
 KEY_RANK_ENTRY call=2 limit=30 budget=10000 count=1 signature=0x24e0759:	0x5a	0x22	0x17	0x2b	0x30	0x20	0x00
 KEY_CANDIDATE call=2 index=0 class_id=13478 duration=9 key=0x203627e:	0x22	0x17	0x2b	0x20	0x00
-Temporary breakpoint 17 at 0x10024164
+Temporary breakpoint 19 at 0x10024164
 KEY_RANK_RETURN call=2 selected=1 class_ids=13478 
 OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 13478:9
-Temporary breakpoint 18 at 0x10024271
+Temporary breakpoint 20 at 0x10024271
 OLD_CUTOFF_METRIC_RETURN sum=9
 OLD_CUTOFF_OVERRIDE slot=1 sum=9 native=0 overridden=1
 OLD_CUTOFF_SPLIT_ENTER slot=2
-Temporary breakpoint 19 at 0x10024808
+Temporary breakpoint 21 at 0x10024808
 KEY_RANK_ENTRY call=3 limit=30 budget=10000 count=1 signature=0x24e0760:	0x22	0x17	0x2b	0x30	0x5a	0x00	0x00
 KEY_CANDIDATE call=3 index=0 class_id=9147 duration=25 key=0x2030de7:	0x17	0x2b	0x2f	0x00	0x00
-Temporary breakpoint 20 at 0x10024164
+Temporary breakpoint 22 at 0x10024164
 KEY_RANK_RETURN call=3 selected=1 class_ids=9147 
 OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 9147:25
-Temporary breakpoint 21 at 0x10024271
+Temporary breakpoint 23 at 0x10024271
 OLD_CUTOFF_METRIC_RETURN sum=25
 OLD_CUTOFF_SPLIT_RETURN slot=2 sum=25 accepted=1
 OLD_CUTOFF_SPLIT_ENTER slot=3
-Temporary breakpoint 22 at 0x10024808
+Temporary breakpoint 24 at 0x10024808
 OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 18857:6
-Temporary breakpoint 23 at 0x10024271
+Temporary breakpoint 25 at 0x10024271
 OLD_CUTOFF_METRIC_RETURN sum=6
 OLD_CUTOFF_OVERRIDE slot=3 sum=6 native=0 overridden=1
 OLD_CUTOFF_POSITION_BUILDER_RETURN positions=4
 FINAL_RANK_ENTRY call=1 context=0 input_count=1 input_ids=32928 
-Temporary breakpoint 24 at 0x100249d5
+Temporary breakpoint 26 at 0x100249d5
 CEP_PROSODY_ENTRY call=1 unit=1200 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 25 at 0x1002389a
-CEP_PROSODY_RETURN call=1 cost=25.6
+Temporary breakpoint 27 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=1 cost=16
 CEP_PROSODY_ENTRY call=2 unit=279479 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 26 at 0x1002389a
-CEP_PROSODY_RETURN call=2 cost=39.6
+Temporary breakpoint 28 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=2 cost=30
 CEP_PROSODY_ENTRY call=3 unit=273369 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 27 at 0x1002389a
-CEP_PROSODY_RETURN call=3 cost=9.6
+Temporary breakpoint 29 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=3 cost=0
 CEP_PROSODY_ENTRY call=4 unit=272822 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 28 at 0x1002389a
-CEP_PROSODY_RETURN call=4 cost=9.6
+Temporary breakpoint 30 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=4 cost=0
 CEP_PROSODY_ENTRY call=5 unit=262454 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 29 at 0x1002389a
-CEP_PROSODY_RETURN call=5 cost=24.6
+Temporary breakpoint 31 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=5 cost=15
 CEP_PROSODY_ENTRY call=6 unit=245736 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 30 at 0x1002389a
-CEP_PROSODY_RETURN call=6 cost=25.6
+Temporary breakpoint 32 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=6 cost=16
 CEP_PROSODY_ENTRY call=7 unit=233533 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 31 at 0x1002389a
-CEP_PROSODY_RETURN call=7 cost=25.6
+Temporary breakpoint 33 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=7 cost=16
 CEP_PROSODY_ENTRY call=8 unit=214148 scale=1 target=0x25cc648:	0x00	0x00	0x00	0x00	0x00	0x01	0x00
 CEP_PROSODY_FEATURE_VIEW=0x6676cc:	0x18	0x55	0x55	0x00	0xf4	0x76	0x66	0x00
 0x6676d4:	0xd5	0x49
-Temporary breakpoint 32 at 0x1002389a
-CEP_PROSODY_RETURN call=8 cost=24.6
+Temporary breakpoint 34 at 0x1002389a
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+CEP_PROSODY_RETURN call=8 cost=15
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
+ATTRB_NEUTRALIZED branch=flagged-path contribution=48
 FINAL_RANK_RETURN call=1 selected=30 unit_ids=1200 279479 273369 272822 262454 245736 233533 214148 206118 204612 
 FINAL_RANK_COSTS call=1
-FINAL_COST position=0 unit=1200 score=25.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=1 unit=279479 score=39.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=2 unit=273369 score=9.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=3 unit=272822 score=9.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=4 unit=262454 score=24.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=5 unit=245736 score=25.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=6 unit=233533 score=25.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=7 unit=214148 score=24.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=8 unit=206118 score=29.6 duration_penalty=1 context_penalty=0
-FINAL_COST position=9 unit=204612 score=24.6 duration_penalty=1 context_penalty=0
+FINAL_COST position=0 unit=1200 score=16 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=279479 score=30 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=273369 score=0 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=272822 score=0 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=262454 score=15 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=245736 score=16 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=233533 score=16 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=214148 score=15 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=206118 score=20 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=204612 score=15 duration_penalty=1 context_penalty=0
 FINAL_RANK_ENTRY call=2 context=1 input_count=1 input_ids=13478 
-Temporary breakpoint 33 at 0x100248ce
+Temporary breakpoint 35 at 0x100248ce
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
+ATTRB_NEUTRALIZED branch=signature-path contribution=2.75
 FINAL_RANK_RETURN call=2 selected=9 unit_ids=13942 36540 53487 96599 264072 268760 272152 272823 273370 
 FINAL_RANK_COSTS call=2
-FINAL_COST position=0 unit=13942 score=3.00238 duration_penalty=1 context_penalty=0
-FINAL_COST position=1 unit=36540 score=2.8133 duration_penalty=1 context_penalty=0
-FINAL_COST position=2 unit=53487 score=2.80114 duration_penalty=1 context_penalty=0
-FINAL_COST position=3 unit=96599 score=2.89444 duration_penalty=1 context_penalty=0
-FINAL_COST position=4 unit=264072 score=2.85452 duration_penalty=1 context_penalty=0
-FINAL_COST position=5 unit=268760 score=3.07955 duration_penalty=1 context_penalty=0
-FINAL_COST position=6 unit=272152 score=2.86494 duration_penalty=1 context_penalty=0
-FINAL_COST position=7 unit=272823 score=3.45993 duration_penalty=1 context_penalty=0
-FINAL_COST position=8 unit=273370 score=2.75581 duration_penalty=1 context_penalty=0
+FINAL_COST position=0 unit=13942 score=0.25238 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=36540 score=0.0632985 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=53487 score=0.0511364 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=96599 score=0.144444 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=264072 score=0.10452 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=268760 score=0.329545 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=272152 score=0.114943 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=272823 score=0.709931 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=273370 score=0.00581395 duration_penalty=1 context_penalty=0
 TRANSITION_ENTER context=1 current_count=9 previous_count=30
-Temporary breakpoint 34 at 0x100248d6
-TRANSITION_COMPONENTS context=1 current=272823 previous=273369 feature=21.9468 divisor=1 categorical=0 previous_cost=4.8 local_cost=1.72997 sum=28.4768
-TRANSITION_COMPONENTS context=1 current=272823 previous=272822 feature=2 divisor=1 categorical=0 previous_cost=4.8 local_cost=1.72997 sum=8.52997
-TRANSITION_COMPONENTS context=1 current=273370 previous=273369 feature=2 divisor=1 categorical=0 previous_cost=4.8 local_cost=1.37791 sum=8.17791
-TRANSITION_COMPONENTS context=1 current=273370 previous=272822 feature=21.9468 divisor=1 categorical=0 previous_cost=4.8 local_cost=1.37791 sum=28.1247
+Temporary breakpoint 36 at 0x100248d6
+TRANSITION_COMPONENTS context=1 current=272823 previous=273369 feature=21.9468 divisor=1 categorical=0 previous_cost=0 local_cost=0.354965 sum=22.3018
+TRANSITION_COMPONENTS context=1 current=272823 previous=272822 feature=2 divisor=1 categorical=0 previous_cost=0 local_cost=0.354965 sum=2.35497
+TRANSITION_COMPONENTS context=1 current=273370 previous=273369 feature=2 divisor=1 categorical=0 previous_cost=0 local_cost=0.00290698 sum=2.00291
+TRANSITION_COMPONENTS context=1 current=273370 previous=272822 feature=21.9468 divisor=1 categorical=0 previous_cost=0 local_cost=0.00290698 sum=21.9497
 TRANSITION_RETURN context=1 candidates=9 cumulative_costs_and_predecessors:
-TRANSITION_CANDIDATE context=1 unit=13942 cost=22.4187 predecessor=273369 predecessor_index=2
-TRANSITION_CANDIDATE context=1 unit=36540 cost=19.3268 predecessor=273369 predecessor_index=2
-TRANSITION_CANDIDATE context=1 unit=53487 cost=12.6933 predecessor=273369 predecessor_index=2
-TRANSITION_CANDIDATE context=1 unit=96599 cost=18.692 predecessor=273369 predecessor_index=2
-TRANSITION_CANDIDATE context=1 unit=264072 cost=14.8441 predecessor=273369 predecessor_index=2
-TRANSITION_CANDIDATE context=1 unit=268760 cost=15.363 predecessor=272822 predecessor_index=3
-TRANSITION_CANDIDATE context=1 unit=272152 cost=16.8779 predecessor=273369 predecessor_index=2
-TRANSITION_CANDIDATE context=1 unit=272823 cost=8.52997 predecessor=272822 predecessor_index=3
-TRANSITION_CANDIDATE context=1 unit=273370 cost=8.17791 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=13942 cost=16.2437 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=36540 cost=13.1518 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=53487 cost=6.51826 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=96599 cost=12.517 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=264072 cost=8.66907 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=268760 cost=9.18799 predecessor=272822 predecessor_index=3
+TRANSITION_CANDIDATE context=1 unit=272152 cost=10.7029 predecessor=273369 predecessor_index=2
+TRANSITION_CANDIDATE context=1 unit=272823 cost=2.35497 predecessor=272822 predecessor_index=3
+TRANSITION_CANDIDATE context=1 unit=273370 cost=2.00291 predecessor=273369 predecessor_index=2
 FINAL_RANK_ENTRY call=3 context=2 input_count=1 input_ids=9147 
-Temporary breakpoint 35 at 0x100248ce
+Temporary breakpoint 37 at 0x100248ce
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
+ATTRB_NEUTRALIZED branch=signature-path contribution=70
 FINAL_RANK_RETURN call=3 selected=25 unit_ids=2529 272824 272153 265815 264073 252236 238356 233274 206047 173825 
 FINAL_RANK_COSTS call=3
-FINAL_COST position=0 unit=2529 score=285.545 duration_penalty=1 context_penalty=0
-FINAL_COST position=1 unit=272824 score=79.3595 duration_penalty=1 context_penalty=0
-FINAL_COST position=2 unit=272153 score=72.2458 duration_penalty=1 context_penalty=0
-FINAL_COST position=3 unit=265815 score=286.447 duration_penalty=1 context_penalty=0
-FINAL_COST position=4 unit=264073 score=71.5588 duration_penalty=1 context_penalty=0
-FINAL_COST position=5 unit=252236 score=287.526 duration_penalty=1 context_penalty=0
-FINAL_COST position=6 unit=238356 score=281.105 duration_penalty=1 context_penalty=0
-FINAL_COST position=7 unit=233274 score=285.352 duration_penalty=1 context_penalty=0
-FINAL_COST position=8 unit=206047 score=280.567 duration_penalty=1 context_penalty=0
-FINAL_COST position=9 unit=173825 score=286.379 duration_penalty=1 context_penalty=0
+FINAL_COST position=0 unit=2529 score=215.545 duration_penalty=1 context_penalty=0
+FINAL_COST position=1 unit=272824 score=9.35945 duration_penalty=1 context_penalty=0
+FINAL_COST position=2 unit=272153 score=2.24578 duration_penalty=1 context_penalty=0
+FINAL_COST position=3 unit=265815 score=216.447 duration_penalty=1 context_penalty=0
+FINAL_COST position=4 unit=264073 score=1.55876 duration_penalty=1 context_penalty=0
+FINAL_COST position=5 unit=252236 score=217.526 duration_penalty=1 context_penalty=0
+FINAL_COST position=6 unit=238356 score=211.105 duration_penalty=1 context_penalty=0
+FINAL_COST position=7 unit=233274 score=215.352 duration_penalty=1 context_penalty=0
+FINAL_COST position=8 unit=206047 score=210.567 duration_penalty=1 context_penalty=0
+FINAL_COST position=9 unit=173825 score=216.379 duration_penalty=1 context_penalty=0
 TRANSITION_ENTER context=2 current_count=25 previous_count=9
-Temporary breakpoint 36 at 0x100248d6
-TRANSITION_COMPONENTS context=2 current=272824 previous=272823 feature=2 divisor=1 categorical=0 previous_cost=8.52997 local_cost=39.6797 sum=50.2097
-TRANSITION_COMPONENTS context=2 current=272824 previous=273370 feature=56.9509 divisor=1 categorical=10 previous_cost=8.17791 local_cost=39.6797 sum=114.808
-TRANSITION_COMPONENTS context=2 current=273371 previous=272823 feature=56.9509 divisor=1 categorical=10 previous_cost=8.52997 local_cost=35.4714 sum=110.952
-TRANSITION_COMPONENTS context=2 current=273371 previous=273370 feature=2 divisor=1 categorical=0 previous_cost=8.17791 local_cost=35.4714 sum=45.6493
+Temporary breakpoint 38 at 0x100248d6
+TRANSITION_COMPONENTS context=2 current=272824 previous=272823 feature=2 divisor=1 categorical=0 previous_cost=2.35497 local_cost=4.67972 sum=9.03469
+TRANSITION_COMPONENTS context=2 current=272824 previous=273370 feature=56.9509 divisor=1 categorical=10 previous_cost=2.00291 local_cost=4.67972 sum=73.6335
+TRANSITION_COMPONENTS context=2 current=273371 previous=272823 feature=56.9509 divisor=1 categorical=10 previous_cost=2.35497 local_cost=0.471414 sum=69.7772
+TRANSITION_COMPONENTS context=2 current=273371 previous=273370 feature=2 divisor=1 categorical=0 previous_cost=2.00291 local_cost=0.471414 sum=4.47432
 TRANSITION_RETURN context=2 candidates=25 cumulative_costs_and_predecessors:
-TRANSITION_CANDIDATE context=2 unit=2529 cost=173.678 predecessor=53487 predecessor_index=2
-TRANSITION_CANDIDATE context=2 unit=272824 cost=50.2097 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=272153 cost=55.0008 predecessor=272152 predecessor_index=6
-TRANSITION_CANDIDATE context=2 unit=265815 cost=174.672 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=264073 cost=52.6235 predecessor=264072 predecessor_index=4
-TRANSITION_CANDIDATE context=2 unit=252236 cost=176.495 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=238356 cost=165.771 predecessor=273370 predecessor_index=8
-TRANSITION_CANDIDATE context=2 unit=233274 cost=171.597 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=206047 cost=170.096 predecessor=273370 predecessor_index=8
-TRANSITION_CANDIDATE context=2 unit=173825 cost=170.376 predecessor=273370 predecessor_index=8
-TRANSITION_CANDIDATE context=2 unit=160529 cost=179.58 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=153132 cost=149.969 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=146098 cost=175.679 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=105185 cost=174.353 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=87003 cost=165.941 predecessor=273370 predecessor_index=8
-TRANSITION_CANDIDATE context=2 unit=83568 cost=174.72 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=75575 cost=179.36 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=49761 cost=168.864 predecessor=273370 predecessor_index=8
-TRANSITION_CANDIDATE context=2 unit=31841 cost=174.007 predecessor=273370 predecessor_index=8
-TRANSITION_CANDIDATE context=2 unit=29459 cost=181.256 predecessor=53487 predecessor_index=2
-TRANSITION_CANDIDATE context=2 unit=28296 cost=175.369 predecessor=53487 predecessor_index=2
-TRANSITION_CANDIDATE context=2 unit=13943 cost=60.1095 predecessor=13942 predecessor_index=0
-TRANSITION_CANDIDATE context=2 unit=6519 cost=174.598 predecessor=272823 predecessor_index=7
-TRANSITION_CANDIDATE context=2 unit=4632 cost=169.584 predecessor=273370 predecessor_index=8
-TRANSITION_CANDIDATE context=2 unit=273371 cost=45.6493 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=2529 cost=132.503 predecessor=53487 predecessor_index=2
+TRANSITION_CANDIDATE context=2 unit=272824 cost=9.03469 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=272153 cost=13.8258 predecessor=272152 predecessor_index=6
+TRANSITION_CANDIDATE context=2 unit=265815 cost=133.497 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=264073 cost=11.4485 predecessor=264072 predecessor_index=4
+TRANSITION_CANDIDATE context=2 unit=252236 cost=135.32 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=238356 cost=124.596 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=233274 cost=130.422 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=206047 cost=128.921 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=173825 cost=129.201 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=160529 cost=138.405 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=153132 cost=108.794 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=146098 cost=134.504 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=105185 cost=133.178 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=87003 cost=124.766 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=83568 cost=133.545 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=75575 cost=138.185 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=49761 cost=127.689 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=31841 cost=132.832 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=29459 cost=140.081 predecessor=53487 predecessor_index=2
+TRANSITION_CANDIDATE context=2 unit=28296 cost=134.194 predecessor=53487 predecessor_index=2
+TRANSITION_CANDIDATE context=2 unit=13943 cost=18.9345 predecessor=13942 predecessor_index=0
+TRANSITION_CANDIDATE context=2 unit=6519 cost=133.423 predecessor=272823 predecessor_index=7
+TRANSITION_CANDIDATE context=2 unit=4632 cost=128.409 predecessor=273370 predecessor_index=8
+TRANSITION_CANDIDATE context=2 unit=273371 cost=4.47432 predecessor=273370 predecessor_index=8
+ATTRB_NEUTRALIZED branch=signature-path contribution=24.25
+ATTRB_NEUTRALIZED branch=signature-path contribution=24.25
+ATTRB_NEUTRALIZED branch=signature-path contribution=24.25
+ATTRB_NEUTRALIZED branch=signature-path contribution=24.25
+ATTRB_NEUTRALIZED branch=signature-path contribution=24.25
+ATTRB_NEUTRALIZED branch=signature-path contribution=24.25
 TRANSITION_ENTER context=3 current_count=6 previous_count=15
-Temporary breakpoint 37 at 0x100248d6
-TRANSITION_COMPONENTS context=3 current=255282 previous=272824 feature=70.7129 divisor=1 categorical=0 previous_cost=50.2097 local_cost=12.2603 sum=133.183
-TRANSITION_COMPONENTS context=3 current=255282 previous=273371 feature=6.39509 divisor=1 categorical=0 previous_cost=45.6493 local_cost=12.2603 sum=64.3047
-TRANSITION_COMPONENTS context=3 current=272825 previous=272824 feature=2 divisor=1 categorical=0 previous_cost=50.2097 local_cost=13.0931 sum=65.3028
-TRANSITION_COMPONENTS context=3 current=272825 previous=273371 feature=59.1905 divisor=1 categorical=0 previous_cost=45.6493 local_cost=13.0931 sum=117.933
+Temporary breakpoint 39 at 0x100248d6
+TRANSITION_COMPONENTS context=3 current=255282 previous=272824 feature=70.7129 divisor=1 categorical=0 previous_cost=9.03469 local_cost=0.135298 sum=79.8829
+TRANSITION_COMPONENTS context=3 current=255282 previous=273371 feature=6.39509 divisor=1 categorical=0 previous_cost=4.47432 local_cost=0.135298 sum=11.0047
+TRANSITION_COMPONENTS context=3 current=272825 previous=272824 feature=2 divisor=1 categorical=0 previous_cost=9.03469 local_cost=0.968148 sum=12.0028
+TRANSITION_COMPONENTS context=3 current=272825 previous=273371 feature=59.1905 divisor=1 categorical=0 previous_cost=4.47432 local_cost=0.968148 sum=64.633
 TRANSITION_RETURN context=3 candidates=6 cumulative_costs_and_predecessors:
-TRANSITION_CANDIDATE context=3 unit=1869 cost=77.1137 predecessor=273371 predecessor_index=14
-TRANSITION_CANDIDATE context=3 unit=5170 cost=64.8094 predecessor=273371 predecessor_index=14
-TRANSITION_CANDIDATE context=3 unit=246677 cost=69.9046 predecessor=273371 predecessor_index=14
-TRANSITION_CANDIDATE context=3 unit=255282 cost=64.3047 predecessor=273371 predecessor_index=14
-TRANSITION_CANDIDATE context=3 unit=264074 cost=65.18 predecessor=273371 predecessor_index=14
-TRANSITION_CANDIDATE context=3 unit=272825 cost=65.3028 predecessor=272824 predecessor_index=1
+TRANSITION_CANDIDATE context=3 unit=1869 cost=23.8137 predecessor=273371 predecessor_index=14
+TRANSITION_CANDIDATE context=3 unit=5170 cost=11.5094 predecessor=273371 predecessor_index=14
+TRANSITION_CANDIDATE context=3 unit=246677 cost=16.6046 predecessor=273371 predecessor_index=14
+TRANSITION_CANDIDATE context=3 unit=255282 cost=11.0047 predecessor=273371 predecessor_index=14
+TRANSITION_CANDIDATE context=3 unit=264074 cost=11.88 predecessor=273371 predecessor_index=14
+TRANSITION_CANDIDATE context=3 unit=272825 cost=12.0028 predecessor=272824 predecessor_index=1
 OLD_CUTOFF_SELECTED_UNIT n=1 id=273369
 OLD_CUTOFF_SELECTED_UNIT n=2 id=273370
 OLD_CUTOFF_SELECTED_UNIT n=3 id=273371

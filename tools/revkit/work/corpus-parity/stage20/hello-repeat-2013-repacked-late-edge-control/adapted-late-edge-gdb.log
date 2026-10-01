@@ -1,0 +1,8 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-repacked-late-edge-control/adapted-late-edge-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x100191bc
+Wine-gdb> >>>> > > >  >  >  >  >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LATE_EDGE_CONTROL context=9 current=273370 previous=181914 category=1 feature=9.98055 divisor=1 penalty=0 previous_path=818.697 local=59.4545 total=888.132
+LATE_EDGE_CONTROL context=9 current=273370 previous=76688 category=1 feature=11.4169 divisor=1 penalty=0 previous_path=817.297 local=59.4545 total=888.168
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

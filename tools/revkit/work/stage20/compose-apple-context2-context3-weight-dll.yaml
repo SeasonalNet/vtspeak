@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - ../stage20/vt_kat-context2-aweight1-context3-bweight10.dll:/samples/vt_kat.dll:ro

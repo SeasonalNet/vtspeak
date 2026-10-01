@@ -1,0 +1,27 @@
+VoiceText Paul 2013 `UP` adjacent-row post-handler mutation
+==========================================================
+
+Evidence
+--------
+
+The branch is in the Ghidra pseudocode for `FUN_10007520` at VA `0x10007520`
+in `stage6-phone-record-consumers.txt`, after its `use` rule. The row and
+neighbor strings are compared through `FUN_1001c2c0`; the corresponding
+instructions are in `vt_pau-objdump-disassembly.txt`. Treat decompiler output
+as pseudocode.
+
+Recovered rule
+--------------
+
+When a next counted row exists, the current surface is compared bytewise with
+`UP` (DLL VA `0x10077868`). The next counted row's surface at
+`model + 0x42a1d + row*0x70` is compared with `a` (DLL VA `0x10077718`) and
+`the` (DLL VA `0x1007736c`) using the DLL's mapped string comparator. If either
+matches, it writes `08 35 00` at
+`model + 0x429cb + row*0x70` and ORs bit 3 into the row-state byte at
+`model + 0x429a6 + row*0x70`.
+
+`duration.ApplyPaul2013FUN10007520UpMarker` ports the bounded row checks and
+writes. The known counted-row pass runs it after the `use` rule for rows that
+reach the supported per-row result branches. Other `FUN_10007520` post-handler
+rules and runtime row parity remain open.

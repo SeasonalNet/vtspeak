@@ -1,0 +1,40 @@
+Stage 166: native position-state descriptors and clamp limits
+
+Evidence
+
+- FUN_10022970 in stage23-state-array-writers.c reads six selector
+  descriptors at workspace +0x1223c0 + selector*0x10. Fields are signed
+  int32 count, signed int32 event cursor, uint32 boundary pointer and uint32
+  value pointer, in little-endian x86 memory. Selectors 5 and 6 are unvisited.
+- Range selectors 0/1/2/7 require both pointers nonzero and only process
+  positive counts. Their values are indexed boundaryIndex-1, so only count-1
+  values are consumed. Event selectors 3/4 require a nonzero boundary pointer
+  and positive count, and consume count values. A null active event value
+  pointer would be dereferenced natively; Go returns an explicit error.
+- Range limits are read from VA 0x1007d66c (maximum) and 0x1007d690
+  (minimum), signed little-endian int32. Selector 3 reads entries at
+  0x1007d678/0x1007d69c. Local binary/vt_pau.dll, SHA256
+  200945bbb2853cc56b3eaa03770eedf26066b20bfc471ef5b0213387035b37ce,
+  contains max [200,400,500,65535,3,0,9,9] and min [50,50,0,0,0,0,0,0].
+  PE section mapping establishes their file offsets; the test does not assume
+  RVA/file-offset equality. Selector 4 does not apply its table limits.
+
+Implementation and validation
+
+- ReadPaul2013PositionStateDescriptorProgram reads those descriptors, copies
+  resolver-owned cells, applies native gates and limits, and preserves cursors.
+- RunPositionDescriptorBoundaries and duration engine's loaded counterpart
+  compose descriptor reading, model gaps, terminal processing, state writes,
+  record flags/mode and the existing boundary-tree pipeline.
+- Tests cover all six selectors, native upper clamps, a resumed selector-3
+  cursor followed by terminal accumulation, selector-4 unclamped assignments,
+  inactive/null/negative counts, omitted selectors, singleton range reads,
+  truncated descriptors, short/error/null resolvers and 32-bit pointer wrap.
+- Local read-only DLL tests compare every entry in both clamp tables.
+  Caller workspace and resolver buffers remain unchanged.
+
+Limits
+
+- This ports descriptor consumption. The scanner/matcher producers and
+  native pointer ownership remain explicit. It does not establish whole
+  native workspace or end-to-end synthesis parity. See Stage 167 for mapping.

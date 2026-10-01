@@ -1,0 +1,25 @@
+VoiceText Paul 2013 C3A0 supported FUN_1000a140 suffix adapter
+==============================================================
+
+Evidence
+--------
+
+The direct C3A0 call order is `FUN_100086c0` followed by `FUN_1000a140` when
+the earlier exception branch misses. The currently recovered bounded A140
+branches are the 7- and 8-byte `ance`, `ness`, `ment`, `ship`, and `less`
+cases, the 9- through 31-byte `liness` gate, and the long `ed` and `er` cases.
+Stage 90 adds the long `ly` branch. Their source conditions, stem lookups,
+markers, and flag writes are recorded in Stage 70 through Stage 76 and Stage
+89/90. The combined suffix order is recorded in Stage 77.
+
+Implementation boundary
+-----------------------
+
+`NormalizePaul2013SupportedA140Suffixes` exposes only those supported A140
+cases, including the Stage 89 `liness` gate and Stage 90 `ly` branch, and
+omits the later `FUN_1000b4d0` mapped-spelling rewrites.
+`NormalizePaul2013C3A0SupportedA140Component` adapts a successful result to
+the C3A0 component contract. Call it from the earlier-handler callback after
+the caller's exception lookup misses. Unmatched and unported A140 cases remain
+unhandled for a later caller-supplied handler. This does not resolve the
+exception row/resource inputs or establish native runtime row parity.

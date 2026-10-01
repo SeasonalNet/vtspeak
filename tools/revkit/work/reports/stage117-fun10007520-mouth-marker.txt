@@ -1,0 +1,25 @@
+VoiceText Paul 2013 `mouth` post-handler marker
+==============================================
+
+Evidence
+--------
+
+The rule is in the Ghidra pseudocode for `FUN_10007520` at VA `0x10007520`
+inside `stage6-phone-record-consumers.txt`. It compares the current surface
+with the DLL literal at VA `0x100774d8`, checks the byte at row offset `+0x2b`
+for `0x16`, and calls `FUN_1000cc60` in mode `R` with a two-row window and
+`PTR_10078480` / `DAT_100784c4`. That pointer table is already recovered as
+the 17-entry class-12 word table in `engine/text/pronunciation_context.go`.
+
+Recovered rule
+--------------
+
+For row indexes greater than one, `mouth` with byte `0x16` is rewritten to
+`0x3a` when either of the next two counted surfaces is present in that sorted
+class-12 table. The row-state byte at `+4` receives bit 3.
+
+`duration.ApplyPaul2013FUN10007520MouthMarker` ports the bounded adjacent-row
+check and write; `text.Paul2013TripletClass12Contains` exposes the existing
+recovered table membership. The counted-row pass applies this after supported
+per-row handlers. The other phrase-table branches and full runtime parity
+remain open.

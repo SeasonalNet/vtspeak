@@ -1,0 +1,4 @@
+services:
+  runtime:
+    volumes:
+      - /tmp/vtspeak-apple-row64728-clear-bit7:/work/data-kate/M16/mc_idx_tbl:ro

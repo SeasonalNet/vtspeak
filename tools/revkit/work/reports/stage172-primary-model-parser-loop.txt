@@ -1,0 +1,54 @@
+Stage 172: primary model parser caller control flow
+
+Evidence
+
+- FUN_1003d3d0 pseudocode is in stage6-tpp-callers.txt, lines 394 onward.
+  Original x86 at 0x1003d3d0-0x1003e06f in
+  vt_pau-objdump-disassembly.txt establishes the caller order and rollback.
+- Each iteration snapshots signed int16 row count and sets parser +4 to the
+  current source offset. A nonzero parser word +0xc first calls 0x1005dd20.
+  A miss restores count, last row end (or current cursor at count zero),
+  zeroes the candidate 0x94-byte slot and restores its +0xc sentinel to -1.
+- The scanner receives mode zero, source cursor, absolute offset and parser
+  +0x39e8 mode pointer. Result +4 equal to 1 changes a prior zero row +0x2c
+  to 1. Status +0x1c in 1/2/3 enables handler 0x1005deb0.
+- Following handlers are 0x10051a00, 0x1004d990, then the ordered cascade:
+  0x1003d290, 0x1005c890, 0x100344e0, 0x10036940, 0x10058490,
+  0x100570c0, 0x10052e80, 0x10053440, 0x1003e4a0, 0x10033760,
+  0x1003c1a0, 0x1003aad0, 0x100420f0, 0x10031d40, 0x10040ef0,
+  0x100544f0, 0x10063780, 0x1003a880. Misses roll back before fallbacks.
+- 0x10051a00 has distinct positive/negative/zero handling and reads raw
+  scanner +0x14. Its first positive match saves the current signed row count
+  as the marked boundary; later matches may stop at that boundary.
+- Generic positive matches advance unless new rows exceed the marked count.
+  The latter case reads the next marked-row start before rollback and stops
+  at current offset + max(0, start-current offset), using native int32 math.
+- 0x10033760 may instead merge: marked last-row dword +0x28 is 0x12,
+  its +0x2c equals 2, current last-row +0x28 is 0x12, and the two +0x1e
+  shorts are not both 0x1f. Merge clears marked row +0x2c and the saved count.
+- Mode-path acceptance and 0x1005c890's mode branch preserve their distinct
+  marked-count/stop behavior. Ordinary exits return 1 iff signed rows >0,
+  otherwise -1. Native return values are not semantic parse-validity proofs.
+
+Implementation and validation
+
+- RunPaul2013PrimaryModelParser ports this caller around explicit scanner
+  and address-keyed handler dependencies, using existing rollback semantics.
+  Reached missing handlers return errors instead of being treated as misses.
+  Handler mutations are retained except where native rollback writes fields.
+- DispatchPaul2013ModelParserWithHandlers supplies both recovered inner
+  loops while respecting explicit overrides and the existing finalizer API.
+- Tests visit every fallback in native order, mutate rejected candidates,
+  check rollback/count/cursor/sentinel and input preservation, accept multiple
+  rows, exercise scanner-prefix writes, marked stop and special merge,
+  mode-path and 0x1005c890 mode transitions, negative terminal advances,
+  missing dependencies, cancellation and real dispatcher composition.
+- Changed Go files were formatted. From engine/, GOCACHE=/tmp/vtspeak-go-cache
+  go test ./..., go build ./..., go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Native handler bodies and general scanning remain explicit. Fixture handlers
+  test caller control flow; they are not substitutes for recovered linguistic
+  behavior. Static evidence and unit tests do not prove original-engine row
+  parity or end-to-end speech. Malformed storage/advances return errors.

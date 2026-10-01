@@ -1,0 +1,31 @@
+VoiceText Paul 2013 FUN_1000a140 short `ist` suffix
+==================================================
+
+Evidence
+--------
+
+The DLL disassembly at `0x1000af08` compares the mapped final three bytes
+against `DAT_10077780` (`ist`). A match enters the direct branch at
+`0x1000af1e`, copies the source, terminates it three bytes before the end,
+and calls `FUN_1000cb30`. A nonempty result receives `#79`; an empty result
+returns through the common miss path. The disassembly is recorded in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`, around lines
+14457-14502. The shared A140 suffix path has a five-byte lower-bound check
+before the short cases; this branch itself has no additional length-indexed
+table reads.
+
+Implementation
+--------------
+
+`NormalizePaul2013IstSuffixContext` applies the suffix comparison and stem
+lookup for 5- to 31-byte inputs. `NormalizePaul2013LongIstSuffixContext`
+remains as a compatibility entry point. The supported cascade tries `ist`
+after `ing` and before `ful`, both in short and long input ranges, matching the
+disassembled branch order.
+
+Evidence boundary
+-----------------
+
+This is a static disassembly/pseudocode port without original-runtime row
+comparison. Other A140 cases, exception resource/state production, and full
+C3A0 runtime parity remain open.

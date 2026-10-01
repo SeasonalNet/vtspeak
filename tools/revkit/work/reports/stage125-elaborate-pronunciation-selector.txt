@@ -1,0 +1,26 @@
+VoiceText Paul 2013 `elaborate` direct pronunciation branch
+==========================================================
+
+Evidence
+--------
+
+`FUN_100049b0` at `0x100049b0` compares the current surface with `elaborate`
+at DLL VA `0x100775dc`. When another token row exists and its surface equals
+`into` at `0x100775e8`, the branch selects path code `&` and copies the
+corresponding phone alternative. Otherwise it reaches the generic
+`FUN_10004300` fallback. The Ghidra pseudocode is in
+`tools/revkit/work/reports/stage6-text-table-consumers.txt`, immediately after
+the `dove` branch.
+
+Recovered implementation
+------------------------
+
+`text.SelectPaul2013ModelNameContextPronunciation` ports `elaborate into`
+alongside the adjacent `dove into` rule. A missing or non-`into` next row
+continues through the shared fallback path.
+
+Evidence boundary
+-----------------
+
+This is a static port from pseudocode and DLL literals. No direct runtime
+pronunciation-choice comparison has been made for `elaborate`.

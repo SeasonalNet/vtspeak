@@ -1,0 +1,31 @@
+VoiceText Paul 2013 `separate`/`separates` pronunciation selector
+=================================================================
+
+Evidence
+--------
+
+`FUN_100049b0` handles `separate` at DLL VA `0x1007745c` and `separates` at
+`0x10077450`. The previous row selects 0x0e when it equals `be` at
+`0x10077704` or when `FUN_10006ce0` returns class 3 for that surface. If
+neither gate matches, the branch checks the next surface against `from`,
+`into`, `out`, and `up` (VAs `0x10077620`, `0x100775e8`, `0x10077508`,
+`0x1007767c`). If none match, it checks the surface two rows later against
+`from`, `into`, and `and` (`0x10077620`, `0x100775e8`, `0x10077400`). A
+forward-context match selects `*` for `separate` and `%` for `separates`.
+Otherwise the branch reaches `FUN_10004300`. The pseudocode is in
+`tools/revkit/work/reports/stage6-text-table-consumers.txt` around lines
+2941-2972.
+
+Recovered implementation
+------------------------
+
+`text.SelectPaul2013ModelNameContextPronunciation` now ports the previous-row
+`be`/class-3 gates, both forward windows, and singular/plural selector choice.
+The class-3 predicate uses the established `FUN_10006ce0` triplet feature
+implementation.
+
+Evidence boundary
+-----------------
+
+This is a static port from Ghidra pseudocode and DLL literals. No direct
+runtime pronunciation-choice comparison has been made for these branches.

@@ -1,0 +1,20 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024900
+Wine-gdb> >>>>>>>> > > > >  >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 3 at 0x10024a30
+SLOT0_ALIAS_BACKTRACK call=1 first=0 last=12
+SLOT0_ALIAS_ROW context=0 count=30 selected_index=6 selected_unit=149799
+SLOT0_ALIAS_ROW context=1 count=10 selected_index=8 selected_unit=273370
+SLOT0_ALIAS_ROW context=2 count=18 selected_index=1 selected_unit=273370
+SLOT0_ALIAS_ROW context=3 count=14 selected_index=13 selected_unit=273371
+SLOT0_ALIAS_ROW context=4 count=19 selected_index=4 selected_unit=232670
+SLOT0_ALIAS_ROW context=5 count=21 selected_index=20 selected_unit=266023
+SLOT0_ALIAS_ROW context=6 count=25 selected_index=4 selected_unit=184280
+SLOT0_ALIAS_ROW context=7 count=19 selected_index=9 selected_unit=255501
+SLOT0_ALIAS_ROW context=8 count=10 selected_index=8 selected_unit=273370
+SLOT0_ALIAS_ROW context=9 count=18 selected_index=1 selected_unit=273370
+SLOT0_ALIAS_ROW context=10 count=15 selected_index=14 selected_unit=273371
+SLOT0_ALIAS_ROW context=11 count=16 selected_index=2 selected_unit=282025
+SLOT0_ALIAS_ROW context=12 count=15 selected_index=0 selected_unit=282025
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

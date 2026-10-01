@@ -1,0 +1,9 @@
+LICENSE_FIELD baseline=0 bytes=468
+LICENSE_FIELD case=baseline_repeat result=0
+LICENSE_FIELD case=expiry_position_only result=-2
+LICENSE_FIELD case=expdate_attribute_only result=-2
+LICENSE_FIELD case=expiry_position_and_expdate result=-2
+LICENSE_FIELD case=vw_vtapi_token result=-2
+LICENSE_FIELD case=channel_position_only result=-2
+LICENSE_FIELD case=channel_attribute_only result=-2
+LICENSE_FIELD case=channel_position_and_attribute result=-2

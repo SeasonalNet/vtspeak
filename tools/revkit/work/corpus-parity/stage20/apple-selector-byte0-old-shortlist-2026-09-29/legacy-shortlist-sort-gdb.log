@@ -1,0 +1,39 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001cff0
+Wine-gdb> >>>> > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001d3f4
+Wine-gdb> >> > > >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001d48e
+Wine-gdb> >> > > > > > > >  >  >  >   >   >  >  > > >  >  >  >  >   >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_OLD_POSITION4_SORT_TRACE_READY
+APPLE_OLD_SHORTLIST_ENTRY position=4 candidate_count=0
+APPLE_OLD_POSITION4_SCORE unit=59559 score=0.307186 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SCORE unit=82037 score=0.247923 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SCORE unit=2555 score=0.377395 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SORT_INPUT total=157 presorted_prefix=20 suffix_count=137
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=5 unit=59559 score=0.307186 key=-4 span=2 flags=0
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=16 unit=82037 score=0.247923 key=-4 span=2 flags=0
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=19 unit=2555 score=0.377395 key=-4 span=2 flags=0
+Temporary breakpoint 5 at 0x1001d493
+APPLE_OLD_POSITION4_SORTED_TOP30 [0]=158831(score=0.485026,key=-4,span=2) [1]=232463(score=0.274869,key=-4,span=2) [2]=86328(score=0.647595,key=-4,span=2) [3]=97885(score=2.17933,key=-4,span=2) [4]=103239(score=0.464545,key=-4,span=2) [5]=59559(score=0.307186,key=-4,span=2) [6]=218671(score=1.67941,key=-4,span=2) [7]=256582(score=0.693647,key=-4,span=2) [8]=129560(score=0.522934,key=-4,span=2) [9]=41058(score=0.341546,key=-4,span=2) [10]=40215(score=0.252175,key=-4,span=2) [11]=131119(score=0.423175,key=-4,span=2) [12]=258823(score=1.15598,key=-4,span=2) [13]=28632(score=1.20654,key=-4,span=2) [14]=27967(score=0.371031,key=-4,span=2) [15]=27795(score=0.798215,key=-4,span=2) [16]=82037(score=0.247923,key=-4,span=2) [17]=27441(score=0.126714,key=-4,span=2) [18]=11136(score=1.04603,key=-4,span=2) [19]=2555(score=0.377395,key=-4,span=2) [20]=261692(score=0.179692,key=0.179692,span=1) [21]=258101(score=0.193296,key=0.193296,span=1) [22]=250167(score=0.216086,key=0.216086,span=1) [23]=9835(score=0.31014,key=0.31014,span=1) [24]=11069(score=0.312336,key=0.312336,span=1) [25]=238346(score=0.400159,key=0.400159,span=1) [26]=160420(score=0.420601,key=0.420601,span=1) [27]=249481(score=0.441653,key=0.441653,span=1) [28]=162687(score=0.455843,key=0.455843,span=1) [29]=102356(score=0.465417,key=0.465417,span=1)
+APPLE_OLD_SHORTLIST_ENTRY position=4 candidate_count=0
+APPLE_OLD_POSITION4_SCORE unit=59559 score=0.307186 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SCORE unit=82037 score=0.247923 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SCORE unit=2555 score=0.377395 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SORT_INPUT total=157 presorted_prefix=20 suffix_count=137
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=5 unit=59559 score=0.307186 key=-4 span=2 flags=0
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=16 unit=82037 score=0.247923 key=-4 span=2 flags=0
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=19 unit=2555 score=0.377395 key=-4 span=2 flags=0
+Temporary breakpoint 6 at 0x1001d493
+APPLE_OLD_POSITION4_SORTED_TOP30 [0]=158831(score=0.485026,key=-4,span=2) [1]=232463(score=0.274869,key=-4,span=2) [2]=86328(score=0.647595,key=-4,span=2) [3]=97885(score=2.17933,key=-4,span=2) [4]=103239(score=0.464545,key=-4,span=2) [5]=59559(score=0.307186,key=-4,span=2) [6]=218671(score=1.67941,key=-4,span=2) [7]=256582(score=0.693647,key=-4,span=2) [8]=129560(score=0.522934,key=-4,span=2) [9]=41058(score=0.341546,key=-4,span=2) [10]=40215(score=0.252175,key=-4,span=2) [11]=131119(score=0.423175,key=-4,span=2) [12]=258823(score=1.15598,key=-4,span=2) [13]=28632(score=1.20654,key=-4,span=2) [14]=27967(score=0.371031,key=-4,span=2) [15]=27795(score=0.798215,key=-4,span=2) [16]=82037(score=0.247923,key=-4,span=2) [17]=27441(score=0.126714,key=-4,span=2) [18]=11136(score=1.04603,key=-4,span=2) [19]=2555(score=0.377395,key=-4,span=2) [20]=261692(score=0.179692,key=0.179692,span=1) [21]=258101(score=0.193296,key=0.193296,span=1) [22]=250167(score=0.216086,key=0.216086,span=1) [23]=9835(score=0.31014,key=0.31014,span=1) [24]=11069(score=0.312336,key=0.312336,span=1) [25]=238346(score=0.400159,key=0.400159,span=1) [26]=160420(score=0.420601,key=0.420601,span=1) [27]=249481(score=0.441653,key=0.441653,span=1) [28]=162687(score=0.455843,key=0.455843,span=1) [29]=102356(score=0.465417,key=0.465417,span=1)
+APPLE_OLD_SHORTLIST_ENTRY position=4 candidate_count=0
+APPLE_OLD_POSITION4_SCORE unit=59559 score=0.307186 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SCORE unit=82037 score=0.247923 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SCORE unit=2555 score=0.377395 rank_key=-4 span_left=1 span_right=0 span=2
+APPLE_OLD_POSITION4_SORT_INPUT total=157 presorted_prefix=20 suffix_count=137
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=5 unit=59559 score=0.307186 key=-4 span=2 flags=0
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=16 unit=82037 score=0.247923 key=-4 span=2 flags=0
+APPLE_OLD_POSITION4_SORT_TARGET_BEFORE index=19 unit=2555 score=0.377395 key=-4 span=2 flags=0
+Temporary breakpoint 7 at 0x1001d493
+APPLE_OLD_POSITION4_SORTED_TOP30 [0]=158831(score=0.485026,key=-4,span=2) [1]=232463(score=0.274869,key=-4,span=2) [2]=86328(score=0.647595,key=-4,span=2) [3]=97885(score=2.17933,key=-4,span=2) [4]=103239(score=0.464545,key=-4,span=2) [5]=59559(score=0.307186,key=-4,span=2) [6]=218671(score=1.67941,key=-4,span=2) [7]=256582(score=0.693647,key=-4,span=2) [8]=129560(score=0.522934,key=-4,span=2) [9]=41058(score=0.341546,key=-4,span=2) [10]=40215(score=0.252175,key=-4,span=2) [11]=131119(score=0.423175,key=-4,span=2) [12]=258823(score=1.15598,key=-4,span=2) [13]=28632(score=1.20654,key=-4,span=2) [14]=27967(score=0.371031,key=-4,span=2) [15]=27795(score=0.798215,key=-4,span=2) [16]=82037(score=0.247923,key=-4,span=2) [17]=27441(score=0.126714,key=-4,span=2) [18]=11136(score=1.04603,key=-4,span=2) [19]=2555(score=0.377395,key=-4,span=2) [20]=261692(score=0.179692,key=0.179692,span=1) [21]=258101(score=0.193296,key=0.193296,span=1) [22]=250167(score=0.216086,key=0.216086,span=1) [23]=9835(score=0.31014,key=0.31014,span=1) [24]=11069(score=0.312336,key=0.312336,span=1) [25]=238346(score=0.400159,key=0.400159,span=1) [26]=160420(score=0.420601,key=0.420601,span=1) [27]=249481(score=0.441653,key=0.441653,span=1) [28]=162687(score=0.455843,key=0.455843,span=1) [29]=102356(score=0.465417,key=0.465417,span=1)
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

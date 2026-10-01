@@ -1,0 +1,34 @@
+VoiceText Paul 2013 FUN_10008cc0 source gate
+===========================================
+
+Evidence
+--------
+
+The disassembly at VA `0x10008cc0` is in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`, lines around
+`0x10008cc0` through `0x10008dbf`. It first compares the source prefix with
+`Mac` for three bytes and `Mc` for two bytes using `FUN_1001c320`; either
+equal prefix returns zero. `FUN_1001c320` compares bytes through the 16-bit
+map at `0x1007e388`, which folds ASCII uppercase letters to their lowercase
+values. The compared literals are at `0x10077884` and `0x10077880`.
+
+For a remaining nonempty source, the gate walks bytes through
+`DAT_1007e188` at `0x1007e188`. Bit `0x80` sets the state to 1 unless the
+previous state was -1; bit `0x40` sets it to -1 unless the previous state was
+1. Either transition enters a second scan. That scan skips bytes with either
+bit set. Every other byte must be an apostrophe satisfying one of the two
+observed conditions: it is followed by literal `s` and a bit-`0x80` byte, or
+the byte before it is `s` and the byte after it has bit `0x80` set. An
+unclassified non-apostrophe byte or an apostrophe failing both conditions
+rejects the gate.
+
+Implementation boundary
+-----------------------
+
+`engine/text/c3a0_gate.go` ports the mapped-prefix checks and both byte scans
+for byte input. Stage 105 records the verified signed-index prefix: any
+high-bit byte produces the native ineligible result. The downstream C3A0
+scanner and component handlers keep separate input boundaries.
+`duration.NormalizePaul2013C3A0ComponentSequenceFromSource` connects this gate
+to the repeated scanner and output shell from Stage 84. No runtime row
+comparison is claimed.

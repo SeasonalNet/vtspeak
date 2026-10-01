@@ -1,0 +1,36 @@
+UNIT_HISTORY_PATTERN_COMPARE text=hello pattern=a-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=a-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=a-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=a-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=hello pattern=b-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=b-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=b-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=b-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=hello pattern=both-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=both-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=both-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=hello pattern=both-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=pangram pattern=a-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=a-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=a-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=a-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=pangram pattern=b-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=b-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=b-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=b-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=pangram pattern=both-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=both-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=both-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=pangram pattern=both-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=numbers pattern=a-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=a-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=a-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=a-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=numbers pattern=b-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=b-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=b-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=b-alternating repeat=3 identical=1
+UNIT_HISTORY_PATTERN_COMPARE text=numbers pattern=both-alternating identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=both-alternating repeat=1 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=both-alternating repeat=2 identical=1
+UNIT_HISTORY_PATTERN_REPEAT_COMPARE text=numbers pattern=both-alternating repeat=3 identical=1

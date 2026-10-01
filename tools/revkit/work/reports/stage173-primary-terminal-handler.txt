@@ -1,0 +1,42 @@
+Stage 173: primary parser terminal handler
+
+Evidence
+
+- Original x86 FUN_10051a00 at 0x10051a00-0x10051cbb in
+  vt_pau-objdump-disassembly.txt rescans into the caller's shared scanner
+  result using mode 1 and parser +0x39e8. It ignores the scanner return and
+  returns scanner signed dword +0x14 (or its x86 negation) on terminal paths.
+- Prior row fields are +4 end, +8 length, +0x28 flag, +0x2c row type and
+  +0x34 text, within the 0x94-byte rows at parser +0x14. The existing
+  FUN_10062f10 predicate checks prior text[length-1] in .?!; when nonempty.
+- Status 8 writes zero row types to 3 ('?'), 4 ('!') or 2 (other) when prior
+  predicate returns zero. With no rows it returns negative +0x14; with rows
+  it returns positive +0x14 even when the predicate/type blocks the write.
+- Single .?!; or exact "..." enters FUN_10051cc0; low-short result 0x50
+  permits type writes without the prior predicate and returns +0x14 with
+  rows, negative +0x14 without rows. Other recognition results use the prior
+  end == sourceOffset + scanner[0] / prior flag gate, then the short-dot gate,
+  to choose a negative advance; otherwise return zero.
+- Status 9 returns +0x14 if nonzero, otherwise 1. Status 3, length 2,
+  bytes A2 FD returns +0x14. Their conditional zero-to-zero type stores do
+  not change the row. Other scanner results return zero.
+- Read-only PE-mapped binary/vt_pau.dll extraction confirms VA 0x100813bc
+  C string .?!; and VA 0x100813b8 C string ... . No input was modified.
+
+Implementation and validation
+
+- NewPaul2013TerminalParserHandler supplies the full recovered terminal body
+  around explicit scanner and punctuation-recognizer dependencies.
+  BindPaul2013TerminalParserHandler provisions it in a copied handler map
+  without overriding a supplied body. Missing reached recognition errors.
+- Tests cover mode/pointer/source rescan parameters, shared result replacement,
+  scanner-return versus +0x14 distinction, all three row types, stale types,
+  prior terminal punctuation, no-row negative returns, low-short recognition,
+  prior-end/flag and short-dot fallback gates, status 9, A2 FD versus A2 FE,
+  ordinary misses, errors and composition through the primary parser loop.
+
+Limits
+
+- FUN_10051cc0's deeper context recognizer and general token scanner remain
+  explicit. Unit scanner/recognizer fixtures test caller behavior and do not
+  establish original-engine row or whole-synthesis parity.

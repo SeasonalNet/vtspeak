@@ -1,0 +1,25 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10023350
+Wine-gdb> >>> > > > >  >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024060
+Wine-gdb> >>>>>> > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 6 at 0x10024808
+Temporary breakpoint 7 at 0x10024808
+Temporary breakpoint 8 at 0x10024808
+Temporary breakpoint 9 at 0x10024271
+Temporary breakpoint 10 at 0x10024808
+KATE_CONTINUITY_RESTORE unit=272822 before=0x17 after=0x97
+KATE_CONTINUITY_RESTORE unit=272823 before=0xa after=0x8a
+KATE_CONTINUITY_RESTORE unit=272824 before=0x16 after=0x96
+KATE_SELECTED_UNIT n=1 id=280485
+KATE_SELECTED_UNIT n=2 id=21433
+KATE_SELECTED_UNIT n=3 id=264072
+KATE_SELECTED_UNIT n=4 id=264072
+KATE_SELECTED_UNIT n=5 id=264073
+KATE_SELECTED_UNIT n=6 id=264074
+KATE_SELECTED_UNIT n=7 id=264074
+KATE_SELECTED_UNIT n=8 id=21433
+KATE_SELECTED_UNIT n=9 id=280485
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

@@ -1,0 +1,66 @@
+Stage 164: shared event cursors and native model gap inputs
+
+Observed evidence
+
+- FUN_10022970's selector loop computes workspace base +mode*0x10.
+  Original x86 at 0x10022c77 (upper clamp) and 0x10022c94 (ordinary match)
+  both write +0x1223c4 relative to that base. Selector 3's persistent
+  cursor is +0x1223f4; selector 4's is +0x122404. There is no separate
+  upper-clamp cursor. The terminal pass reads +0x1223f4 at 0x10022cf1 and
+  writes the same field at 0x10022d68.
+- The prior Go helper did not advance NextBoundary on an upper clamp,
+  permitting replay in overlapping rows. Its terminal composition started
+  from the last upper-clamp diagnostic rather than the consumed cursor.
+- FUN_10022970 selector 3 uses range [0, first start] for the first record
+  and [previous end, current start] thereafter. The +0x290 access relative
+  to the enclosing arena/record stride reaches preceding record +4.
+- Selector 4 uses [current end, next start], with final maximum equal to
+  current workspace source position + parser-state consumed-byte count.
+  The terminal pass uses [last record end, segment end] only when segment
+  end equals workspace source length. These are inter-record ranges rather
+  than the within-record spans used by the earlier convenience adapter.
+- Both inclusive comparisons must hold. Reversed gaps from overlapping
+  source records therefore match no event and preserve value/cursor.
+- At 0x10022cc9 the terminal scalar +0x122440 is reset to -1 before its
+  end-of-source gate. A provided active selector-3 pass now performs that
+  workspace reset even when no terminal accumulation is requested.
+- Sources: stage23-state-array-writers.c and vt_pau-objdump-disassembly.txt.
+  Ghidra output remains pseudocode; x86 supports the cursor identity claim.
+
+Implementation
+
+- ApplyPaul2013PositionEventValues now advances the native NextBoundary
+  after every matching event. OverflowBoundary remains a compatibility
+  diagnostic for the last upper clamp, not a native addressable cursor.
+- ApplyPaul2013PositionStateProgram retains event results and supplies the
+  consumed cursor to terminal processing.
+- ApplyPaul2013PositionStateProgramToWorkspace reads active event cursors
+  from native fields, writes them back, resets the terminal scalar, and
+  writes the final terminal cursor. It copies the event map and workspace;
+  no caller inputs are mutated.
+- ApplyPaul2013PositionStateProgramFromModelArena derives row count, range
+  row keys, selector-specific gaps, terminal interval, and terminal gate from
+  model records/workspace/segment byte count before optional index mapping.
+  Reversed ranges are now valid empty native scans rather than parser errors.
+- Existing parser/ordinary-source interval convenience adapters retain their
+  public behavior and are distinct from the native gap-producing adapter.
+
+Validation
+
+- Tests cover upper-clamp replay prevention on overlapping ranges, ordinary
+  matches after a clamp followed by terminal continuation, captured starting
+  cursors, workspace cursor and terminal-sentinel writes, negative cursor
+  rejection, native gap selection, final/nonfinal segment gates, overlapping
+  model records, caller-input preservation, and empty reversed intervals.
+- The former reversed-range rejection assertion was replaced by a native
+  empty-scan test that verifies both value and cursor preservation. No quality
+  tool or lint rule was suppressed.
+- From engine/, with GOCACHE=/tmp/vtspeak-go-cache, go test ./...,
+  go build ./..., and go vet ./... passed. Changed Go files were formatted
+  with gofmt; git diff --check passed from the repository root.
+
+Limits
+
+- Event values, boundary tables, clamps, optional index mappings, and source
+  producers remain inputs. These changes do not establish full workspace or
+  end-to-end speech parity with original-engine runtime output.

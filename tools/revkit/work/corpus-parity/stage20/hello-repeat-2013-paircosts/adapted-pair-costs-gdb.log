@@ -1,0 +1,8 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-paircosts/adapted-pair-costs-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x100191bc
+Wine-gdb> >>>>>> > > > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+NEW_PAIR_COST context=1 current=272823 previous=272822 feature=0 divisor=1 penalty=0 previous_path=0.000945626 local=3.29502 total=3.29596
+NEW_PAIR_COST context=1 current=272823 previous=273369 feature=21.9468 divisor=1 penalty=0 previous_path=0.00882353 local=3.29502 total=25.2507
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

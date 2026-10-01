@@ -1,0 +1,26 @@
+VoiceText Paul 2013 bounded “ance” suffix handler
+=================================================
+
+Evidence boundary
+-----------------
+
+FUN_1000a140 at VA 0x1000a140 enters this case only inside its short-input
+branch and after the preceding `liness` condition. The 7- and 8-byte source
+path compares the final four bytes against DAT_10077828. The checked-in
+`binary/vt_pau.dll` `.data` section contains the NUL-terminated string `ance`
+at 0x10077828. The comparison and following control flow are preserved in
+`stage6-deep-text-functions.txt` under FUN_1000a140.
+
+On a match, the function copies the source to its local buffer, terminates it
+four bytes before the end, and calls FUN_1000cb30. An empty result returns no
+match. A nonempty result receives bytes `0x07 0x2d 0x23 0x37` followed by NUL;
+the shared success path ORs `0x08` into the caller's row flag. The output bytes
+are recorded without assigning them a linguistic or phonetic meaning.
+
+`duration.Engine.NormalizePaul2013AnceSuffixContext` ports that bounded
+branch through the loaded embedded dictionary wrapper. It does not implement
+the other table-driven cases or source lengths of FUN_1000a140. It has not
+been compared row-for-row against the original runtime.
+
+Static pointers: `stage6-deep-text-functions.txt`, lines 258-514. Direct
+string bytes: `objdump -s -j .data binary/vt_pau.dll`, row 0x10077820.

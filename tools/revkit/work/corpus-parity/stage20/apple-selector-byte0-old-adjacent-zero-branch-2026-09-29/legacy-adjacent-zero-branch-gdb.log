@@ -1,0 +1,17 @@
+Wine-gdb> Already logging to /probe/stage20/apple-selector-byte0-old-adjacent-zero-branch-2026-09-29/legacy-adjacent-zero-branch-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001e952
+Wine-gdb> >>>>>>>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2006_ADJACENT_ZERO_BRANCH_TRACE_READY
+APPLE_2006_ZERO_BRANCH current=59559 previous=59558 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=82037 previous=82036 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=2555 previous=2554 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=59559 previous=59558 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=82037 previous=82036 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=2555 previous=2554 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=59559 previous=59558 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=82037 previous=82036 selector_byte=0 previous_continuation=1
+APPLE_2006_ZERO_BRANCH current=2555 previous=2554 selector_byte=0 previous_continuation=1
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

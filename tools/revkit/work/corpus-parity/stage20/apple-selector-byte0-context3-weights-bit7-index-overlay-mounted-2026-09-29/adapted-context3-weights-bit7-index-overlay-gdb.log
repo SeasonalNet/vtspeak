@@ -1,0 +1,25 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10018ed3
+Wine-gdb> >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10018ed9
+Wine-gdb> >> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x100191bc
+Wine-gdb> >>> > > > > > > > > >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1001b200
+Wine-gdb> >>> > >> > >>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_CONTEXT3_OLD_SCHEDULE current=2554 previous=64719 subtotal=14.2417
+APPLE_2013_CONTEXT3_OLD_SCHEDULE current=82036 previous=64719 subtotal=16.3335
+APPLE_2013_CONTEXT3_OLD_SCHEDULE current=59558 previous=100180 subtotal=11.9439
+APPLE_2013_INDEX_MARKER current=82037 previous=82036 previous_signature_byte6=128
+APPLE_2013_INDEX_CONTINUITY_BRANCH_TAKEN current=82037 previous=82036
+APPLE_2013_INDEX_MARKER current=59559 previous=59558 previous_signature_byte6=128
+APPLE_2013_INDEX_CONTINUITY_BRANCH_TAKEN current=59559 previous=59558
+APPLE_2013_INDEX_MARKER current=2555 previous=2554 previous_signature_byte6=128
+APPLE_2013_INDEX_CONTINUITY_BRANCH_TAKEN current=2555 previous=2554
+APPLE_2013_INDEX_OVERLAY_CONTEXT3_EDGE_CALLS=420
+APPLE_2013_INDEX_OVERLAY_SELECTED n=1 id=177774
+APPLE_2013_INDEX_OVERLAY_SELECTED n=2 id=177774
+APPLE_2013_INDEX_OVERLAY_SELECTED n=3 id=188826
+APPLE_2013_INDEX_OVERLAY_SELECTED n=4 id=129559
+APPLE_2013_INDEX_OVERLAY_SELECTED n=5 id=129560
+APPLE_2013_INDEX_OVERLAY_SELECTED n=6 id=188825
+APPLE_2013_INDEX_OVERLAY_SELECTED n=7 id=129558
+APPLE_2013_INDEX_OVERLAY_SELECTED n=8 id=188827
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

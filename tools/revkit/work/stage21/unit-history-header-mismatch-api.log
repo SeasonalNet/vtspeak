@@ -1,0 +1,725 @@
+0134:trace:seh:EnumProcessModulesEx (0000003C, 00249418, 1024, 008AF0C0, 0)
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00000000 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067fc28 esp=0067fb2c eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=002419b0 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f7c8 esp=0067f6cc eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00000000 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f920 esp=0067f824 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00000000 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f920 esp=0067f824 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242330 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f4c0 esp=0067f3c4 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=002424d8 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f060 esp=0067ef64 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242740 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067ec00 esp=0067eb04 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242908 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067e7a0 esp=0067e6a4 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=002424d8 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f060 esp=0067ef64 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242740 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067ec00 esp=0067eb04 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242d40 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067e7a0 esp=0067e6a4 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242d40 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067e7a0 esp=0067e6a4 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00243058 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067e340 esp=0067e244 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=002424d8 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f060 esp=0067ef64 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242d40 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067ec00 esp=0067eb04 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00244030 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067e7a0 esp=0067e6a4 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242d40 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067ec00 esp=0067eb04 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00242330 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f4c0 esp=0067f3c4 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00243f88 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f060 esp=0067ef64 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00243f88 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f060 esp=0067ef64 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00243f88 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f060 esp=0067ef64 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=0067f394 ecx=00000000 edx=00000000 esi=00000000 edi=01000002
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f388 esp=0067f344 eip=7bd63a7c cs=0023 ss=002b flags=00000203
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=000000dd ebx=009c0000 ecx=00000000 edx=00000000 esi=0000002e edi=002424d0
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f648 esp=0067f608 eip=7bd642ac cs=0023 ss=002b flags=00000206
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=0067f394 ecx=00000000 edx=00000000 esi=00000000 edi=01000002
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f388 esp=0067f344 eip=7bd63a7c cs=0023 ss=002b flags=00000203
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=000000dd ebx=009c0000 ecx=00000000 edx=00000000 esi=0000002e edi=002424d0
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f648 esp=0067f608 eip=7bd642ac cs=0023 ss=002b flags=00000206
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=00000000 esi=00000000 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=0067f950 esp=0067f854 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=0067fbdc ebx=00241608 ecx=0067fbec edx=ffffffff esi=002462b8 edi=0067fd24
+0134:trace:seh:NtGetContextThread 0x40: ebp=0067fc34 esp=0067fbc0 eip=7bd64525 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=0000003a ebx=00000002 ecx=00000000 edx=00000000 esi=00c15b38 edi=00000058
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af6e0 esp=008af680 eip=7bd6387c cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_paul.exe...
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Catchpoint 1 (signal SIGSEGV)
+Wine-gdb> >> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10027af0
+Wine-gdb> >>>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x1001b240
+Wine-gdb> >>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x1001b25c
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x1001b28b
+Wine-gdb> >>>>>>>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x1001b343
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 7 at 0x1001264f
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 8 at 0x10012659
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Breakpoint 9 at 0x1001da50
+Wine-gdb> >>>>> > > > >>>Wine-gdb> Wine-gdb> Continuing.
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=0067fbdc ebx=00241608 ecx=0067fbec edx=ffffffff esi=002462b8 edi=0067fd24
+0134:trace:seh:NtGetContextThread 0x40: ebp=0067fc34 esp=0067fbc0 eip=7bd64525 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a4 eip=10027af1 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a4 eip=10027af1 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+UNIT_HISTORY_PRESENT_DBROOT arg=0
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a4 eip=10027af0 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=0066777c eip=10027af0 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066777c esp=0066777c eip=10027af0 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=0000003a ebx=00000002 ecx=00000000 edx=00000000 esi=00c15b38 edi=00000058
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af6e0 esp=008af680 eip=7bd6387c cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066777c esp=0066777c eip=100283f0 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000001 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066777c esp=00667780 eip=006677a0 cs=0023 ss=002b flags=00000206
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000001 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066777c esp=00667780 eip=006677a0 cs=0023 ss=002b flags=00000206
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000001 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066777c esp=00667780 eip=0066779f cs=0023 ss=002b flags=00000206
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066777c esp=00667780 eip=0066779f cs=0023 ss=002b flags=00000206
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066777c esp=006677a4 eip=0066779f cs=0023 ss=002b flags=00000206
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a4 eip=0066779f cs=0023 ss=002b flags=00000206
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a4 eip=10027af0 cs=0023 ss=002b flags=00000206
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+UNIT_HISTORY_PRESENT_MODE value=1
+Temporary breakpoint 10 at 0x10027e90
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a4 eip=10027af0 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=00000000 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a0 eip=10027af1 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=003e163c ecx=00000000 edx=ffffffff esi=0000001c edi=0024a2c4
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677c8 esp=006677a0 eip=10027af1 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=0021dd78 esi=00000000 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=00666f68 esp=00666e6c eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=0000005a ebx=00000000 ecx=00000000 edx=0021dd78 esi=00000000 edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=00666f68 esp=00666e6c eip=7bd63a7c cs=0023 ss=002b flags=00000217
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=0000005a ebx=00000000 ecx=00000000 edx=0021dd78 esi=00000000 edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=00666f68 esp=00666e6c eip=7bd63a7c cs=0023 ss=002b flags=00000217
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000005a ebx=00000000 ecx=00000000 edx=7ffa8e24 esi=00000000 edi=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=00666f70 esp=00666e74 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:fixme:dbghelp:elf_search_auxv can't find symbol in module
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=0000005a ebx=00000000 ecx=00000000 edx=7ffa8e24 esi=00000000 edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=00666f70 esp=00666e74 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=0000003a ebx=00000002 ecx=00000000 edx=00000000 esi=00c15b38 edi=00000058
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af6e0 esp=008af680 eip=7bd6387c cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=0000005a ebx=00000000 ecx=00000000 edx=7ffa8e24 esi=00000000 edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=00666f70 esp=00666e74 eip=7bd63a7c cs=0023 ss=002b flags=00000217
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000028 ebx=00000000 ecx=0066732c edx=014db708 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667304 eip=1001b241 cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000028 ebx=00000000 ecx=0066732c edx=014db708 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667304 eip=1001b241 cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+UNIT_HISTORY_PRESENT_ENTRY count=440124 path=../data-paul/M16/mc_idx_tbl/unit-gen.his
+Temporary breakpoint 11 at 0x10012621
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000028 ebx=00000000 ecx=0066732c edx=014db708 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667304 eip=1001b240 cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000028 ebx=00000000 ecx=0066732c edx=014db708 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667300 eip=1001b241 cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000028 ebx=00000000 ecx=0066732c edx=014db708 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667300 eip=1001b241 cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=014df2d0 ebx=00000000 ecx=0183684f edx=00000018 esi=014bf198 edi=014df2d0
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b25d cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=014df2d0 ebx=00000000 ecx=0183684f edx=00000018 esi=014bf198 edi=014df2d0
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b25d cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+UNIT_HISTORY_PRESENT_OPEN source=0x14df2d0
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=014df2d0 ebx=00000000 ecx=0183684f edx=00000018 esi=014bf198 edi=014df2d0
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b25c cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=014df2d0 ebx=00000000 ecx=0183684f edx=00000018 esi=014bf198 edi=014df2d0
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b25e cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=014df2d0 ebx=00000000 ecx=0183684f edx=00000018 esi=014bf198 edi=014df2d0
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b25e cs=0023 ss=002b flags=00000202
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=014db708 ecx=00000008 edx=00000000 esi=00000004 edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b344 cs=0023 ss=002b flags=00000297
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=014db708 ecx=00000008 edx=00000000 esi=00000004 edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b344 cs=0023 ss=002b flags=00000297
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+UNIT_HISTORY_PRESENT_PARSE_FAILURE
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=014db708 ecx=00000008 edx=00000000 esi=00000004 edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672ec eip=1001b343 cs=0023 ss=002b flags=00000297
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=014db708 ecx=00000008 edx=00000000 esi=00000004 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672f0 eip=1001b344 cs=0023 ss=002b flags=00000297
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=014db708 ecx=00000008 edx=00000000 esi=00000004 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667300 esp=006672f0 eip=1001b344 cs=0023 ss=002b flags=00000297
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667308 eip=10012622 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667308 eip=10012622 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+UNIT_HISTORY_PRESENT_RETURN ax=0
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667308 eip=10012621 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667320 eip=10012650 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667320 eip=10012650 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+UNIT_HISTORY_PRESENT_BANK_LOOP_FAILURE result_ax=0
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=014c002e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667320 eip=1001264f cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=0066779e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667324 eip=10012650 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000000 ecx=00000008 edx=00000000 esi=014bf198 edi=0066779e
+0134:trace:seh:NtGetContextThread 0x40: ebp=00667530 esp=00667324 eip=10012650 cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=0000ffff ebx=014bf198 ecx=00000008 edx=00000000 esi=00000000 edi=0066779e
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066754c esp=00667534 eip=1001265a cs=0023 ss=002b flags=00000286
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=0000ffff ebx=014bf198 ecx=00000008 edx=00000000 esi=00000000 edi=0066779e
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066754c esp=00667534 eip=1001265a cs=0023 ss=002b flags=00000286
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+UNIT_HISTORY_PRESENT_BANK_LOOP_RETURN ax=-1
+0134:trace:seh:NtGetContextThread 0xfffffffe: eax=000000e2 ebx=00000001 ecx=00000000 edx=00000000 esi=00000001 edi=008af548
+0134:trace:seh:NtGetContextThread 0xfffffffe: ebp=008af658 esp=008af518 eip=7bd642fc cs=0023 ss=002b flags=00000246
+0134:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: eax=0000ffff ebx=014bf198 ecx=00000008 edx=00000000 esi=00000000 edi=0066779e
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066754c esp=00667534 eip=10012659 cs=0023 ss=002b flags=00000286
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=0000ffff ebx=014bf198 ecx=00000008 edx=00000000 esi=00000000 edi=0066779e
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066754c esp=00667538 eip=10012b6d cs=0023 ss=002b flags=00000286
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=0000ffff ebx=014bf198 ecx=00000008 edx=00000000 esi=00000000 edi=0066779e
+0134:trace:seh:NtGetContextThread 0x40: ebp=0066754c esp=00667538 eip=10012b6d cs=0023 ss=002b flags=00000286
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000001 ecx=00000000 edx=01470020 esi=ffffffff edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677a0 esp=00667590 eip=10027d9c cs=0023 ss=002b flags=00010246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000001 ecx=00000000 edx=01470020 esi=ffffffff edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677a0 esp=00667590 eip=10027d9c cs=0023 ss=002b flags=00010246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+013c:trace:seh:dispatch_exception code=c0000005 flags=0 addr=10027D9C ip=10027d9c
+013c:trace:seh:dispatch_exception  info[0]=00000001
+013c:trace:seh:dispatch_exception  info[1]=00004d08
+013c:warn:seh:dispatch_exception EXCEPTION_ACCESS_VIOLATION exception (code=c0000005) raised
+013c:trace:seh:dispatch_exception  eax=00000000 ebx=00000001 ecx=00000000 edx=01470020 esi=ffffffff edi=00000000
+013c:trace:seh:dispatch_exception  ebp=006677a0 esp=00667590 cs=0023 ss=002b ds=002b es=002b fs=006b gs=0063 flags=00010246
+013c:trace:seh:call_stack_handlers calling handler at 7BD79370 code=c0000005 flags=0
+013c:trace:seh:call_stack_handlers handler at 7BD79370 returned 1
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000001 ecx=00000000 edx=01470020 esi=ffffffff edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677a0 esp=00667590 eip=10027d9c cs=0023 ss=002b flags=00010246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+0134:trace:seh:NtGetContextThread 0x40: eax=00000000 ebx=00000001 ecx=00000000 edx=01470020 esi=ffffffff edi=00000000
+0134:trace:seh:NtGetContextThread 0x40: ebp=006677a0 esp=00667590 eip=10027d9c cs=0023 ss=002b flags=00010246
+0134:trace:seh:NtGetContextThread 0x40: ds=002b es=002b fs=006b gs=0063
+0134:trace:seh:NtGetContextThread 0x40: dr0=00000000 dr1=00000000 dr2=00000000 dr3=00000000 dr6=ffff4ff0 dr7=00000000
+013c:trace:seh:NtGetContextThread 0xfffffffe: eax=0000009d ebx=006670d8 ecx=00000000 edx=00000000 esi=ffffffff edi=00667128
+013c:trace:seh:NtGetContextThread 0xfffffffe: ebp=006670c0 esp=0066706c eip=7bd63eac cs=0023 ss=002b flags=00000246
+013c:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=006b gs=0063
+013c:err:seh:NtRaiseException Unhandled exception code c0000005 flags 0 addr 0x10027d9c
+[Inferior 1 (Remote target) exited with code 030000000005]
+Wine-gdb> 0138:013c: create process 'Z:\samples\voicetext_paul.exe'/00000000 @004014C0 (450560<1847>)
+0138:013c: create thread I @004014C0
+0138:013c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0138:013c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0138:013c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0138:013c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0138:013c: loads DLL Z:\samples\vt_pau.dll @10000000 (0<0>)
+0138:013c: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0138:013c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0138:013c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0138:013c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0138:013c: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0138:013c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0138:013c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0138:013c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0138:013c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0138:013c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0138:013c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0138:013c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0138:013c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0138:013c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0138:013c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0138:013c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0138:013c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000138:0000013c: unload DLL @009C0000
+0138:013c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0138:013c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0138:013c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000138:0000013c: exit process (3221225477)

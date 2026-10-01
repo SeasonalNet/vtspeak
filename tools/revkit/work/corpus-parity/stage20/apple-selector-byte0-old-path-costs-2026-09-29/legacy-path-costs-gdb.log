@@ -1,0 +1,151 @@
+Wine-gdb> Already logging to /probe/stage20/apple-selector-byte0-old-path-costs-2026-09-29/legacy-path-costs-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ec07
+Wine-gdb> >>>>> > >>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001ec44
+Wine-gdb> >>>> > > > > > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1001ed7f
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_OLD_PATH_TRACE_READY
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=177774 transition=6.84252 previous_path=8.48421 local=0 total=15.3267 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=261978 transition=7.88606 previous_path=36.6463 local=0 total=44.5324 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=52644 transition=107.301 previous_path=35.0302 local=0 total=142.331 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=106017 transition=114.873 previous_path=40.4766 local=0 total=155.349 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=212593 transition=107.769 previous_path=50.9321 local=0 total=158.701 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=225631 transition=38.3057 previous_path=41.2644 local=0 total=79.5701 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=179969 transition=132.48 previous_path=37.1493 local=0 total=169.629 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=279649 transition=111.115 previous_path=44.0931 local=0 total=155.208 penalty=100
+APPLE_OLD_PATH_BACKPOINTER position=2 candidate=100180 predecessor_index=0 predecessor=177774
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=177774 transition=5.73442 previous_path=8.48421 local=0.0765957 total=14.2952 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=261978 transition=9.34015 previous_path=36.6463 local=0.0765957 total=46.0631 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=52644 transition=109.429 previous_path=35.0302 local=0.0765957 total=144.536 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=106017 transition=120.295 previous_path=40.4766 local=0.0765957 total=160.848 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=212593 transition=110.421 previous_path=50.9321 local=0.0765957 total=161.429 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=225631 transition=31.9659 previous_path=41.2644 local=0.0765957 total=73.307 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=179969 transition=131.597 previous_path=37.1493 local=0.0765957 total=168.823 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=279649 transition=112.036 previous_path=44.0931 local=0.0765957 total=156.206 penalty=100
+APPLE_OLD_PATH_BACKPOINTER position=2 candidate=64719 predecessor_index=0 predecessor=177774
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=189455 transition=63.7079 previous_path=19.3989 local=1.3899 total=84.4967 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=100180 transition=40.6668 previous_path=15.3267 local=1.3899 total=57.3834 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=64719 transition=14.2417 previous_path=14.2952 local=1.3899 total=29.9268 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=2554 predecessor_index=16 predecessor=64719
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=189455 transition=79.5648 previous_path=19.3989 local=1.06144 total=100.025 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=100180 transition=46.6575 previous_path=15.3267 local=1.06144 total=63.0456 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=64719 transition=16.3335 previous_path=14.2952 local=1.06144 total=31.6901 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=82036 predecessor_index=16 predecessor=64719
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=189455 transition=140.665 previous_path=19.3989 local=0.323902 total=160.387 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=100180 transition=11.9439 previous_path=15.3267 local=0.323902 total=27.5946 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=64719 transition=77.9548 previous_path=14.2952 local=0.323902 total=92.5739 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=59558 predecessor_index=1 predecessor=100180
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=2554 transition=17.9694 previous_path=29.9268 local=0.307186 total=48.2034 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=82036 transition=16.8546 previous_path=31.6901 local=0.307186 total=48.8519 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=59558 transition=0 previous_path=27.5946 local=0.307186 total=27.9018 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=59559 predecessor_index=11 predecessor=59558
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=2554 transition=18.5763 previous_path=29.9268 local=0.247923 total=48.751 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=82036 transition=0 previous_path=31.6901 local=0.247923 total=31.9381 penalty=0
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=59558 transition=16.8546 previous_path=27.5946 local=0.247923 total=44.6971 penalty=10
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=82037 predecessor_index=10 predecessor=82036
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=2554 transition=0 previous_path=29.9268 local=0.377395 total=30.3042 penalty=0
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=82036 transition=18.5763 previous_path=31.6901 local=0.377395 total=50.6438 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=59558 transition=17.9694 previous_path=27.5946 local=0.377395 total=45.9414 penalty=10
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=2555 predecessor_index=0 predecessor=2554
+APPLE_OLD_FINAL_CHAIN selected_index=0 unit_id=177774
+APPLE_OLD_FINAL_CHAIN selected_index=0 unit_id=177774
+APPLE_OLD_FINAL_CHAIN selected_index=1 unit_id=100180
+APPLE_OLD_FINAL_CHAIN selected_index=11 unit_id=59558
+APPLE_OLD_FINAL_CHAIN selected_index=3 unit_id=59559
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=177774 transition=6.84252 previous_path=8.48421 local=0 total=15.3267 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=261978 transition=7.88606 previous_path=36.6463 local=0 total=44.5324 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=52644 transition=107.301 previous_path=35.0302 local=0 total=142.331 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=106017 transition=114.873 previous_path=40.4766 local=0 total=155.349 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=212593 transition=107.769 previous_path=50.9321 local=0 total=158.701 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=225631 transition=38.3057 previous_path=41.2644 local=0 total=79.5701 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=179969 transition=132.48 previous_path=37.1493 local=0 total=169.629 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=279649 transition=111.115 previous_path=44.0931 local=0 total=155.208 penalty=100
+APPLE_OLD_PATH_BACKPOINTER position=2 candidate=100180 predecessor_index=0 predecessor=177774
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=177774 transition=5.73442 previous_path=8.48421 local=0.0765957 total=14.2952 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=261978 transition=9.34015 previous_path=36.6463 local=0.0765957 total=46.0631 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=52644 transition=109.429 previous_path=35.0302 local=0.0765957 total=144.536 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=106017 transition=120.295 previous_path=40.4766 local=0.0765957 total=160.848 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=212593 transition=110.421 previous_path=50.9321 local=0.0765957 total=161.429 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=225631 transition=31.9659 previous_path=41.2644 local=0.0765957 total=73.307 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=179969 transition=131.597 previous_path=37.1493 local=0.0765957 total=168.823 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=279649 transition=112.036 previous_path=44.0931 local=0.0765957 total=156.206 penalty=100
+APPLE_OLD_PATH_BACKPOINTER position=2 candidate=64719 predecessor_index=0 predecessor=177774
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=189455 transition=63.7079 previous_path=19.3989 local=1.3899 total=84.4967 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=100180 transition=40.6668 previous_path=15.3267 local=1.3899 total=57.3834 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=64719 transition=14.2417 previous_path=14.2952 local=1.3899 total=29.9268 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=2554 predecessor_index=16 predecessor=64719
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=189455 transition=79.5648 previous_path=19.3989 local=1.06144 total=100.025 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=100180 transition=46.6575 previous_path=15.3267 local=1.06144 total=63.0456 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=64719 transition=16.3335 previous_path=14.2952 local=1.06144 total=31.6901 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=82036 predecessor_index=16 predecessor=64719
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=189455 transition=140.665 previous_path=19.3989 local=0.323902 total=160.387 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=100180 transition=11.9439 previous_path=15.3267 local=0.323902 total=27.5946 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=64719 transition=77.9548 previous_path=14.2952 local=0.323902 total=92.5739 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=59558 predecessor_index=1 predecessor=100180
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=2554 transition=17.9694 previous_path=29.9268 local=0.307186 total=48.2034 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=82036 transition=16.8546 previous_path=31.6901 local=0.307186 total=48.8519 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=59558 transition=0 previous_path=27.5946 local=0.307186 total=27.9018 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=59559 predecessor_index=11 predecessor=59558
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=2554 transition=18.5763 previous_path=29.9268 local=0.247923 total=48.751 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=82036 transition=0 previous_path=31.6901 local=0.247923 total=31.9381 penalty=0
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=59558 transition=16.8546 previous_path=27.5946 local=0.247923 total=44.6971 penalty=10
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=82037 predecessor_index=10 predecessor=82036
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=2554 transition=0 previous_path=29.9268 local=0.377395 total=30.3042 penalty=0
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=82036 transition=18.5763 previous_path=31.6901 local=0.377395 total=50.6438 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=59558 transition=17.9694 previous_path=27.5946 local=0.377395 total=45.9414 penalty=10
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=2555 predecessor_index=0 predecessor=2554
+APPLE_OLD_FINAL_CHAIN selected_index=0 unit_id=177774
+APPLE_OLD_FINAL_CHAIN selected_index=0 unit_id=177774
+APPLE_OLD_FINAL_CHAIN selected_index=1 unit_id=100180
+APPLE_OLD_FINAL_CHAIN selected_index=11 unit_id=59558
+APPLE_OLD_FINAL_CHAIN selected_index=3 unit_id=59559
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=177774 transition=6.84252 previous_path=8.48421 local=0 total=15.3267 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=261978 transition=7.88606 previous_path=36.6463 local=0 total=44.5324 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=52644 transition=107.301 previous_path=35.0302 local=0 total=142.331 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=106017 transition=114.873 previous_path=40.4766 local=0 total=155.349 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=212593 transition=107.769 previous_path=50.9321 local=0 total=158.701 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=225631 transition=38.3057 previous_path=41.2644 local=0 total=79.5701 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=179969 transition=132.48 previous_path=37.1493 local=0 total=169.629 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=100180 previous=279649 transition=111.115 previous_path=44.0931 local=0 total=155.208 penalty=100
+APPLE_OLD_PATH_BACKPOINTER position=2 candidate=100180 predecessor_index=0 predecessor=177774
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=177774 transition=5.73442 previous_path=8.48421 local=0.0765957 total=14.2952 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=261978 transition=9.34015 previous_path=36.6463 local=0.0765957 total=46.0631 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=52644 transition=109.429 previous_path=35.0302 local=0.0765957 total=144.536 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=106017 transition=120.295 previous_path=40.4766 local=0.0765957 total=160.848 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=212593 transition=110.421 previous_path=50.9321 local=0.0765957 total=161.429 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=225631 transition=31.9659 previous_path=41.2644 local=0.0765957 total=73.307 penalty=0
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=179969 transition=131.597 previous_path=37.1493 local=0.0765957 total=168.823 penalty=100
+APPLE_OLD_PATH_EDGE context=2 current=64719 previous=279649 transition=112.036 previous_path=44.0931 local=0.0765957 total=156.206 penalty=100
+APPLE_OLD_PATH_BACKPOINTER position=2 candidate=64719 predecessor_index=0 predecessor=177774
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=189455 transition=63.7079 previous_path=19.3989 local=1.3899 total=84.4967 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=100180 transition=40.6668 previous_path=15.3267 local=1.3899 total=57.3834 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=2554 previous=64719 transition=14.2417 previous_path=14.2952 local=1.3899 total=29.9268 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=2554 predecessor_index=16 predecessor=64719
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=189455 transition=79.5648 previous_path=19.3989 local=1.06144 total=100.025 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=100180 transition=46.6575 previous_path=15.3267 local=1.06144 total=63.0456 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=82036 previous=64719 transition=16.3335 previous_path=14.2952 local=1.06144 total=31.6901 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=82036 predecessor_index=16 predecessor=64719
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=189455 transition=140.665 previous_path=19.3989 local=0.323902 total=160.387 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=100180 transition=11.9439 previous_path=15.3267 local=0.323902 total=27.5946 penalty=0
+APPLE_OLD_PATH_EDGE context=3 current=59558 previous=64719 transition=77.9548 previous_path=14.2952 local=0.323902 total=92.5739 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=3 candidate=59558 predecessor_index=1 predecessor=100180
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=2554 transition=17.9694 previous_path=29.9268 local=0.307186 total=48.2034 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=82036 transition=16.8546 previous_path=31.6901 local=0.307186 total=48.8519 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=59559 previous=59558 transition=0 previous_path=27.5946 local=0.307186 total=27.9018 penalty=0
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=59559 predecessor_index=11 predecessor=59558
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=2554 transition=18.5763 previous_path=29.9268 local=0.247923 total=48.751 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=82036 transition=0 previous_path=31.6901 local=0.247923 total=31.9381 penalty=0
+APPLE_OLD_PATH_EDGE context=4 current=82037 previous=59558 transition=16.8546 previous_path=27.5946 local=0.247923 total=44.6971 penalty=10
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=82037 predecessor_index=10 predecessor=82036
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=2554 transition=0 previous_path=29.9268 local=0.377395 total=30.3042 penalty=0
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=82036 transition=18.5763 previous_path=31.6901 local=0.377395 total=50.6438 penalty=10
+APPLE_OLD_PATH_EDGE context=4 current=2555 previous=59558 transition=17.9694 previous_path=27.5946 local=0.377395 total=45.9414 penalty=10
+APPLE_OLD_PATH_BACKPOINTER position=4 candidate=2555 predecessor_index=0 predecessor=2554
+APPLE_OLD_FINAL_CHAIN selected_index=0 unit_id=177774
+APPLE_OLD_FINAL_CHAIN selected_index=0 unit_id=177774
+APPLE_OLD_FINAL_CHAIN selected_index=1 unit_id=100180
+APPLE_OLD_FINAL_CHAIN selected_index=11 unit_id=59558
+APPLE_OLD_FINAL_CHAIN selected_index=3 unit_id=59559
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

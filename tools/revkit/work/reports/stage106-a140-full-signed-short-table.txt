@@ -1,0 +1,37 @@
+VoiceText Paul 2013 FUN_1000a140 complete signed short-table window
+===================================================================
+
+Evidence
+--------
+
+The A140 table predicates read 16-bit values at
+`DAT_10077d5e + mappedIndex*2` and compare each value only with zero. The
+mapped index comes from the 16-bit character map at `DAT_1007e388`, with the
+source `char` sign-extended. The DLL disassembly shows this pattern in the
+suffix branches; the address range is bounded by signed-byte indexes
+`-128..127`.
+
+The `.data` section is based at VA `0x10077000` and file offset `0x77000`.
+The complete 512-byte short-table read window is VA/file offset
+`0x10077c5e`/`0x77c5e` through `0x10077e5d`/`0x77e5d`. Each little-endian
+word's zero/nonzero result is captured in `engine/duration/short_table.go`.
+The 256-entry u16 character-map prefix for source bytes `0x80..0xff` is
+`0xff80..0xffff`, sign-extending to the same `-128..-1` range.
+
+Implementation
+--------------
+
+`paul2013TailClassForSourceByte` composes the signed character-map index with
+the captured 256-entry zero/nonzero window. All A140 short-table predicates
+now cover the complete native signed-byte index range, including indexes
+outside the lowercase-letter slice. The compatibility result field
+`TableClassUnsupported` is retained, but the recovered index range no longer
+sets it. The `ing` helper also accepts high-bit bytes; its suffix and table
+conditions use the same observed signed mappings.
+
+Evidence boundary
+-----------------
+
+This is a static DLL-byte/disassembly port. It preserves the observed memory
+reads, including indexes into adjacent `.data` values, without claiming
+original-runtime row parity or end-to-end non-ASCII text support.

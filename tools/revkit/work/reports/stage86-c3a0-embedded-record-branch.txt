@@ -1,0 +1,36 @@
+VoiceText Paul 2013 FUN_1000c3a0 direct embedded-record branch
+=============================================================
+
+Evidence
+--------
+
+For each component, `FUN_1000c3a0` calls `FUN_10003a70` in mode 0 and parses
+its record with `FUN_10003c50`. The direct branch is selected when the
+component length is at least two bytes and the parsed pronunciation count is
+positive. It copies the first expanded string from the parser record to the
+component output, marks local handled-state, and ORs bit 0 into the row flags.
+The condition and copy path are in the Ghidra pseudocode at
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt`, function
+`FUN_1000c3a0`; the length comparison is confirmed by instructions at
+`0x1000c449` through `0x1000c4ab` in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`.
+
+When the direct length/count condition fails, payload bit 7 gates a generic
+`FUN_10002f10` precheck before exception and `FUN_1000a140` handling. The
+precheck's nonzero return bypasses those earlier handlers; it does not select
+or copy the parsed internal-symbol string. The suffix and final generic/context
+branches follow afterward. Stage 87 records the ordered composition and the
+precheck behavior.
+
+`duration.Engine.LookupPaul2013EmbeddedContextToken` already joins the
+`FUN_10003a70` key transform, exact embedded-record lookup, `FUN_10003c50`
+payload parse, expanded pronunciation count, and first internal-symbol string.
+
+Implementation boundary
+-----------------------
+
+`engine/duration/c3a0_embedded.go` ports the direct parsed-string branch.
+`NormalizePaul2013C3A0ComponentSequenceWithSupportedHandlers` ports the
+bit-7-gated precheck and its control-flow effect. Exception and
+`FUN_1000a140` work still require the earlier-handler callback. No native
+runtime row comparison is claimed.

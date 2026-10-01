@@ -1,0 +1,33 @@
+VoiceText Paul 2013 FUN_1000c3a0 apostrophe-s suffix
+====================================================
+
+Evidence
+--------
+
+After earlier component handlers miss, `FUN_1000c3a0` compares the final two
+source bytes with the case-sensitive literal `\'s` at DLL VA `0x100773a0`.
+The bytes were inspected in the PE `.data` section. It removes those two
+bytes, passes the stem through `FUN_1000cb30`, and applies a direct tail when
+that call returns one. Ghidra pseudocode is in
+`tools/revkit/work/reports/stage6-dictionary-record-functions.txt` at the
+`FUN_1000c3a0` entry. The corresponding instructions at
+`0x1000c53f` through `0x1000c61b` are in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`.
+
+The final byte of the nonempty stem output selects the tail:
+
+- space, `*`, `5`, `9`, or `:` appends byte `0x37` (`7`);
+- `0x14`, `)`, `7`, `8`, `D`, or `E` appends bytes `0x23 0x44` (`#D`);
+- every other byte appends byte `0x44` (`D`).
+
+Implementation boundary
+-----------------------
+
+`engine/duration/apostrophe_s_suffix.go` ports exact suffix recognition,
+stem extraction, the three tail cases, and a wrapper around the existing
+embedded-dictionary `FUN_1000cb30` implementation. Callers must invoke it only
+after the preceding `FUN_1000c3a0` handlers miss. The implementation requires
+a nonempty matched stem output before applying the tail; empty-output behavior
+at this point is not established. This does not implement the rest of
+`FUN_1000c3a0`'s eligibility, exception, TPP, and fallback decisions, and no
+native runtime row comparison is claimed.

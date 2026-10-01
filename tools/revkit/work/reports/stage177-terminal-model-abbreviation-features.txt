@@ -1,0 +1,48 @@
+Stage 177: terminal-model abbreviation and static scanner features
+
+Evidence
+
+- Original vt_pau x86 FUN_10052d00 (0x10052d00-0x10052e7c) performs
+  FUN_100035d0 mapped binary search. Column 2 first byte '2' accepts mapped
+  equality; '1' requires exact strcmp equality. A rejected initial match scans
+  preceding mapped-equal rows, then following mapped-equal rows. Acceptance
+  returns the initial search index, not the qualifying variant index. Other
+  flag bytes do not qualify. Initialization evidence for mode I and the three
+  abbrh/abbrt/abbrc resources is recorded in Stage 176.
+- FUN_100526b0 (0x100526b0-0x10052709) independently tests those three
+  lookup results > -1, setting bits 1, 2 and 4 respectively.
+- FUN_10052710 (0x10052710-0x100527bb) reads count +0x10 and status +0x1c.
+  Zero count returns -1, status 2 returns 4, other non-1 status returns 5.
+  Counted status-1 bytes use attributes 80/40: uppercase-only -> 1,
+  lowercase-only -> 2, mixed with first byte uppercase -> 3, otherwise -> 5.
+  Nonletters do not count as lower/uppercase. Window text storage is 36 bytes.
+- FUN_100527c0 (0x100527c0-0x10052849) requires count 1 and membership
+  in literal .!?;,:"`- at VA 0x100813cc. Read-only PE extraction of the
+  jump addresses at 0x1005284c and indexes at 0x1005286c confirms:
+  dot 1, question 2, exclamation 3, semicolon 4, comma/colon 5,
+  double quote/backtick 6, hyphen 7. Single quote's jump-table entry exists
+  but is unreachable through the earlier literal gate. A miss returns -1.
+- FUN_10052c90 (0x10052c90-0x10052cc6) uses the first strchr dot only.
+  It returns 1 when that dot has nonzero bytes both before and immediately
+  after it. A leading dot prevents acceptance even if a later dot is internal.
+
+Implementation and validation
+
+- terminal_model_features.go supplies copied abbreviation snapshots, variant
+  lookup, three-table masks and the three static scanner/text predicates.
+- Tests cover both neighbor directions, original-index returns, flag modes,
+  miss/invalid tables, snapshot ownership, every punctuation value, counted
+  case/status outputs, high-byte attributes and first-dot behavior.
+- Every row of all three local proprietary abbreviation tables is exercised
+  in its stored/upper/lower form, against an independent linear acceptance
+  oracle. This validates the resource reader and recovered lookup contract;
+  it is not an original engine runtime differential comparison.
+- Changed Go files formatted. From engine/, with GOCACHE=/tmp/vtspeak-go-cache,
+  go test ./..., go build ./... and go vet ./... passed; git diff --check passed.
+
+Limits
+
+- Full FUN_10052520 key production, FUN_100528b0 following-word classifier
+  and sbd.tree3 evaluation adapter remain work. Scanner spans beyond the
+  native 36-byte text storage are rejected rather than overread. No general
+  scanner or whole-text/synthesis parity claim is added.

@@ -1,0 +1,7 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023350
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10023814
+Wine-gdb> >> > > > >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_CONTEXT2_ALL_CANDIDATES count=50 ids: 40503 227605 64719 64728 188826 2645 128863 137215 138741 145945 150075 151210 157135 158593 175727 188302 189455 199880 208106 213256 223157 231014 244717 258032 265201 271727 127405 118661 32957 38294 40810 41008 42412 45509 55213 56167 61725 78432 82377 82557 82709 83349 86012 92769 96145 97601 100180 108878 111020 272427
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

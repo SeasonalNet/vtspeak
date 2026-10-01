@@ -1,0 +1,27 @@
+VoiceText Paul 2013 bounded “ship” and “less” suffix handlers
+=============================================================
+
+Evidence boundary
+-----------------
+
+In `FUN_1000a140` at VA 0x1000a140, the short-input path checks the final four
+bytes against DAT_100777e0 (`ship`) and DAT_100774d0 (`less`). The checked-in
+`binary/vt_pau.dll` `.data` bytes show the NUL-terminated strings at those
+addresses. The compared branch and its order relative to the neighboring
+`ance`, `ness`, and `ment` cases are in `stage6-deep-text-functions.txt`.
+
+For a 7- or 8-byte `ship` source, the function removes the four-byte suffix,
+calls FUN_1000cb30 on the stem, and, if the result is nonempty, appends
+`0x07 0x2d 0x37` followed by NUL. The `less` branch uses the same stem lookup
+and success rule, then appends `0x38 0x25 0x35` followed by NUL. The common
+success path ORs `0x08` into the caller's row flag. No linguistic or phonetic
+meaning is assigned to these marker bytes.
+
+`duration.Engine.NormalizePaul2013ShipSuffixContext` and
+`NormalizePaul2013LessSuffixContext` port those direct cases through the
+loaded embedded dictionary wrapper. Other lengths, surrounding table-driven
+cases, and runtime row-for-row parity remain open.
+
+Static pointers: `stage6-deep-text-functions.txt`, lines 258-474. Direct
+string bytes: `objdump -s -j .data binary/vt_pau.dll`, rows 0x100774d0 and
+0x100777e0.

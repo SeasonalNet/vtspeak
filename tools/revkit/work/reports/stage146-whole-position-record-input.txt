@@ -1,0 +1,32 @@
+Stage 146: FUN_10024060 record-backed query input
+
+Direct evidence
+
+- `tools/revkit/work/reports/stage25-feature-scope-query.c`,
+  `FUN_10024060` at `0x10024060`, reads the existing six-byte workspace row
+  from `param2 + (position*3 + 0x76314)*2`.
+- The row's byte `+0` selects a record block at a `3 * 0x3c0` byte stride.
+  Within that block, the function reads the query row-class byte at `+0x6de`,
+  the seven-byte target signature at `+0x6e2 + row[2]*7`, and the model-class
+  byte at `+0x92b`. It writes the row class to workspace byte `+3` and clears
+  byte `+4` before calling the whole-position query.
+
+Ported behavior
+
+- `selection.BuildPaul2013WholePositionRecordInput` performs those bounded
+  reads from a supplied contiguous record arena and six-byte workspace row.
+  It preserves row bytes `+0..+2` and `+5`, writes row class to `+3`, clears
+  `+4`, and returns the selected seven-byte signature and model class.
+- `selection.QueryPaul2013WholePositionFromRecordState` passes the projection
+  to the existing whole-position query and class catalog.
+- Unit tests cover signature selection by phone index, the three-record block
+  stride, row-byte writes, and truncated arena failures.
+
+Limits
+
+- This port starts after production of the six-byte workspace row. Its byte
+  `+0` block selector, byte `+2` phone index, prior metric, and context gate
+  remain caller inputs. The conditional two-row fallback and source-text
+  production remain separate stages.
+- The translation is pseudocode-backed only; no original-DLL differential
+  was captured for this Go projection.

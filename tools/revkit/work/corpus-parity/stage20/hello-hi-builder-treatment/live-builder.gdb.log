@@ -1,0 +1,18 @@
+Wine-gdb> Breakpoint 1 at 0x10023350
+Breakpoint 2 at 0x100230a0
+Breakpoint 3 at 0x100235f6
+Hardware assisted breakpoint 4 at 0x408187
+HELLO_BUILDER_ENTRY context=0 count=0
+HELLO_COVERAGE_ENTRY context=0 count=408 [0]=22336 [1]=65331 [2]=75811 [3]=135441 [4]=164116 [5]=205125 [6]=219724 [7]=255985 [8]=272820 [9]=277527 [10]=63 [11]=3756
+Temporary breakpoint 5 at 0x100235f6
+HELLO_PRE_SCORE context=0 count=408 [0]=272822(span=6,weighted=3) [1]=273369(span=6,weighted=3) [2]=182880(span=2,weighted=0) [3]=214148(span=2,weighted=0) [4]=206118(span=2,weighted=0) [5]=204612(span=2,weighted=0) [6]=200614(span=2,weighted=0) [7]=200525(span=2,weighted=0) [8]=195687(span=2,weighted=0) [9]=189906(span=2,weighted=0) [10]=2525(span=2,weighted=0) [11]=179388(span=2,weighted=0)
+HELLO_BUILDER_ENTRY context=1 count=0
+HELLO_COVERAGE_ENTRY context=1 count=117 [0]=8766 [1]=12790 [2]=32803 [3]=82909 [4]=84961 [5]=87351 [6]=90590 [7]=108998 [8]=114948 [9]=135330 [10]=167628 [11]=187571
+Temporary breakpoint 6 at 0x100235f6
+HELLO_PRE_SCORE context=1 count=117 [0]=273369(span=6,weighted=2) [1]=272822(span=6,weighted=2) [2]=279484(span=2,weighted=0) [3]=1200(span=2,weighted=0) [4]=2525(span=2,weighted=0) [5]=20499(span=2,weighted=0) [6]=22451(span=2,weighted=0) [7]=28430(span=2,weighted=0) [8]=31347(span=2,weighted=0) [9]=31795(span=2,weighted=0) [10]=51310(span=2,weighted=0) [11]=52542(span=2,weighted=0)
+HELLO_BUILDER_ENTRY context=6 count=0
+HELLO_COVERAGE_ENTRY context=6 count=19 [0]=280962 [1]=281739 [2]=66928 [3]=282025 [4]=282675 [5]=282713 [6]=33797 [7]=74841 [8]=136758 [9]=200069 [10]=282035 [11]=282043
+Temporary breakpoint 7 at 0x100235f6
+HELLO_PRE_SCORE context=6 count=19 [0]=282025(span=2,weighted=0) [1]=282675(span=2,weighted=0) [2]=282713(span=2,weighted=0) [3]=280962(span=1,weighted=0) [4]=282007(span=1,weighted=0) [5]=28799(span=1,weighted=0) [6]=282011(span=1,weighted=0) [7]=281727(span=1,weighted=0) [8]=281136(span=1,weighted=0) [9]=269609(span=1,weighted=0) [10]=282043(span=1,weighted=0) [11]=282035(span=1,weighted=0)
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

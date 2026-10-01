@@ -1,0 +1,339 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Breakpoint 1 at 0x100235f6
+Wine-gdb> >>>>>>> > > > >>>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10018c80
+Wine-gdb> >>>>>>> > > > > >  >  >  > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+BASELINE_2013_CANDIDATE_LIST position=0 count=11
+ [0]=274190(span=2,weighted=0,key=-2) [1]=159313(span=1,weighted=0,key=-1)
+ [2]=172790(span=1,weighted=0,key=-1) [3]=157716(span=1,weighted=0,key=-1)
+ [4]=283592(span=1,weighted=0,key=-1) [5]=279671(span=1,weighted=0,key=-1)
+ [6]=279931(span=1,weighted=0,key=-1) [7]=283559(span=1,weighted=0,key=-1)
+ [8]=280411(span=1,weighted=0,key=-1) [9]=279826(span=1,weighted=0,key=-1)
+ [10]=164355(span=1,weighted=0,key=-1)
+BASELINE_2013_CANDIDATE_LIST position=1 count=19
+ [0]=274190(span=2,weighted=0,key=-2) [1]=280494(span=1,weighted=0,key=-1)
+ [2]=162247(span=1,weighted=0,key=-1) [3]=179092(span=1,weighted=0,key=-1)
+ [4]=173106(span=1,weighted=0,key=-1) [5]=266326(span=1,weighted=0,key=-1)
+ [6]=167768(span=1,weighted=0,key=-1) [7]=276732(span=1,weighted=0,key=-1)
+ [8]=268779(span=1,weighted=0,key=-1) [9]=171602(span=1,weighted=0,key=-1)
+ [10]=276698(span=1,weighted=0,key=-1) [11]=157928(span=1,weighted=0,key=-1)
+ [12]=163577(span=1,weighted=0,key=-1) [13]=157858(span=1,weighted=0,key=-1)
+ [14]=174592(span=1,weighted=0,key=-1) [15]=267747(span=1,weighted=0,key=-1)
+ [16]=276348(span=1,weighted=0,key=-1) [17]=172786(span=1,weighted=0,key=-1)
+ [18]=267775(span=1,weighted=0,key=-1)
+Temporary breakpoint 4 at 0x100248d6
+BASELINE_2013_TRANSITION context=1 current_count=19 current_units: 274190
+ 280494 162247 179092 173106 266326 167768 276732 268779 171602 276698 157928
+ 163577 157858 174592 267747 276348 172786 267775
+BASELINE_2013_CANDIDATE_LIST position=2 count=21
+ [0]=35672(span=2,weighted=0,key=-2) [1]=168830(span=1,weighted=0,key=-1)
+ [2]=173569(span=1,weighted=0,key=-1) [3]=168598(span=1,weighted=0,key=-1)
+ [4]=163180(span=1,weighted=0,key=-1) [5]=179163(span=1,weighted=0,key=-1)
+ [6]=264212(span=1,weighted=0,key=-1) [7]=178081(span=1,weighted=0,key=-1)
+ [8]=269315(span=1,weighted=0,key=-1) [9]=174208(span=1,weighted=0,key=-1)
+ [10]=275816(span=1,weighted=0,key=-1) [11]=129357(span=1,weighted=0,key=-1)
+ [12]=265071(span=1,weighted=0,key=-1) [13]=272075(span=1,weighted=0,key=-1)
+ [14]=266475(span=1,weighted=0,key=-1) [15]=265302(span=1,weighted=0,key=-1)
+ [16]=156809(span=1,weighted=0,key=-1) [17]=260319(span=1,weighted=0,key=-1)
+ [18]=156981(span=1,weighted=0,key=-1) [19]=270092(span=1,weighted=0,key=-1)
+ [20]=274303(span=1,weighted=0,key=-1)
+Temporary breakpoint 5 at 0x100248d6
+BASELINE_2013_TRANSITION context=2 current_count=21 current_units: 35672 168830
+ 173569 168598 163180 179163 264212 178081 269315 174208 275816 129357 265071
+ 272075 266475 265302 156809 260319 156981 270092 274303
+BASELINE_2013_CANDIDATE_LIST position=3 count=16
+ [0]=35672(span=2,weighted=0,key=-2) [1]=233383(span=1,weighted=0,key=-1)
+ [2]=167772(span=1,weighted=0,key=-1) [3]=80917(span=1,weighted=0,key=-1)
+ [4]=120502(span=1,weighted=0,key=-1) [5]=158938(span=1,weighted=0,key=-1)
+ [6]=163278(span=1,weighted=0,key=-1) [7]=264596(span=1,weighted=0,key=-1)
+ [8]=179247(span=1,weighted=0,key=-1) [9]=274488(span=1,weighted=0,key=-1)
+ [10]=157910(span=1,weighted=0,key=-1) [11]=170441(span=1,weighted=0,key=-1)
+ [12]=278054(span=1,weighted=0,key=-1) [13]=158377(span=1,weighted=0,key=-1)
+ [14]=90002(span=1,weighted=0,key=-1) [15]=204071(span=1,weighted=0,key=-1)
+Temporary breakpoint 6 at 0x100248d6
+BASELINE_2013_TRANSITION context=3 current_count=16 current_units: 35672 233383
+ 167772 80917 120502 158938 163278 264596 179247 274488 157910 170441 278054
+ 158377 90002 204071
+BASELINE_2013_CANDIDATE_LIST position=4 count=37
+ [0]=282192(span=2,weighted=0,key=-2) [1]=282172(span=2,weighted=0,key=-2)
+ [2]=281072(span=2,weighted=0,key=-2) [3]=64354(span=2,weighted=0,key=-2)
+ [4]=250473(span=2,weighted=0,key=-2) [5]=214291(span=1,weighted=0,key=-1)
+ [6]=88702(span=1,weighted=0,key=-1) [7]=222641(span=1,weighted=0,key=-1)
+ [8]=228961(span=1,weighted=0,key=-1) [9]=248386(span=1,weighted=0,key=-1)
+ [10]=281550(span=1,weighted=0,key=-1) [11]=120494(span=1,weighted=0,key=-1)
+ [12]=282716(span=1,weighted=0,key=-1) [13]=246944(span=1,weighted=0,key=-1)
+ [14]=162764(span=1,weighted=0,key=-1) [15]=157981(span=1,weighted=0,key=-1)
+ [16]=170057(span=1,weighted=0,key=-1) [17]=265133(span=1,weighted=0,key=-1)
+ [18]=157445(span=1,weighted=0,key=-1) [19]=280972(span=1,weighted=0,key=-1)
+ [20]=224948(span=1,weighted=0,key=-1) [21]=216808(span=1,weighted=0,key=-1)
+ [22]=281127(span=1,weighted=0,key=-1) [23]=281097(span=1,weighted=0,key=-1)
+ [24]=71004(span=1,weighted=0,key=-1) [25]=281562(span=1,weighted=0,key=-1)
+ [26]=281502(span=1,weighted=0,key=-1) [27]=281022(span=1,weighted=0,key=-1)
+ [28]=281497(span=1,weighted=0,key=-1) [29]=281857(span=1,weighted=0,key=-1)
+ [30]=281842(span=1,weighted=0,key=-1) [31]=281617(span=1,weighted=0,key=-1)
+ [32]=281357(span=1,weighted=0,key=-1) [33]=281152(span=1,weighted=0,key=-1)
+ [34]=281062(span=1,weighted=0,key=-1) [35]=263578(span=1,weighted=0,key=-1)
+ [36]=176983(span=1,weighted=0,key=-1)
+Temporary breakpoint 7 at 0x100248d6
+BASELINE_2013_TRANSITION context=4 current_count=30 current_units: 282192
+ 282172 281072 64354 250473 216808 224948 71004 263578 214291 246944 162764
+ 120494 248386 88702 222641 228961 176983 265133 157981 157445 282716 170057
+ 281857 281502 281842 281357 280972 281562 281062
+BASELINE_2013_CANDIDATE_LIST position=5 count=35
+ [0]=250473(span=2,weighted=0,key=-2) [1]=64354(span=2,weighted=0,key=-2)
+ [2]=281072(span=2,weighted=0,key=-2) [3]=282172(span=2,weighted=0,key=-2)
+ [4]=282192(span=2,weighted=0,key=-2) [5]=216943(span=1,weighted=0,key=-1)
+ [6]=217403(span=1,weighted=0,key=-1) [7]=231628(span=1,weighted=0,key=-1)
+ [8]=234998(span=1,weighted=0,key=-1) [9]=45134(span=1,weighted=0,key=-1)
+ [10]=60374(span=1,weighted=0,key=-1) [11]=82219(span=1,weighted=0,key=-1)
+ [12]=122244(span=1,weighted=0,key=-1) [13]=149154(span=1,weighted=0,key=-1)
+ [14]=48349(span=1,weighted=0,key=-1) [15]=202813(span=1,weighted=0,key=-1)
+ [16]=227083(span=1,weighted=0,key=-1) [17]=235113(span=1,weighted=0,key=-1)
+ [18]=251868(span=1,weighted=0,key=-1) [19]=213073(span=1,weighted=0,key=-1)
+ [20]=212623(span=1,weighted=0,key=-1) [21]=210163(span=1,weighted=0,key=-1)
+ [22]=148149(span=1,weighted=0,key=-1) [23]=146679(span=1,weighted=0,key=-1)
+ [24]=133209(span=1,weighted=0,key=-1) [25]=127204(span=1,weighted=0,key=-1)
+ [26]=118259(span=1,weighted=0,key=-1) [27]=113334(span=1,weighted=0,key=-1)
+ [28]=41844(span=1,weighted=0,key=-1) [29]=40384(span=1,weighted=0,key=-1)
+ [30]=263403(span=1,weighted=0,key=-1) [31]=223778(span=1,weighted=0,key=-1)
+ [32]=76344(span=1,weighted=0,key=-1) [33]=91964(span=1,weighted=0,key=-1)
+ [34]=279977(span=1,weighted=0,key=-1)
+Temporary breakpoint 8 at 0x100248d6
+BASELINE_2013_TRANSITION context=5 current_count=30 current_units: 250473 64354
+ 281072 282172 282192 149154 60374 122244 235113 113334 227083 146679 217403
+ 216943 202813 41844 118259 212623 213073 251868 148149 40384 45134 82219
+ 127204 133209 210163 234998 231628 91964
+BASELINE_2013_CANDIDATE_LIST position=6 count=24
+ [0]=84762(span=2,weighted=0,key=-2) [1]=254831(span=2,weighted=0,key=-2)
+ [2]=156052(span=1,weighted=0,key=-1) [3]=172755(span=1,weighted=0,key=-1)
+ [4]=175862(span=1,weighted=0,key=-1) [5]=137450(span=1,weighted=0,key=-1)
+ [6]=249391(span=1,weighted=0,key=-1) [7]=56352(span=1,weighted=0,key=-1)
+ [8]=177036(span=1,weighted=0,key=-1) [9]=165939(span=1,weighted=0,key=-1)
+ [10]=172401(span=1,weighted=0,key=-1) [11]=164475(span=1,weighted=0,key=-1)
+ [12]=220921(span=1,weighted=0,key=-1) [13]=155114(span=1,weighted=0,key=-1)
+ [14]=155330(span=1,weighted=0,key=-1) [15]=45047(span=1,weighted=0,key=-1)
+ [16]=210046(span=1,weighted=0,key=-1) [17]=53672(span=1,weighted=0,key=-1)
+ [18]=273193(span=1,weighted=0,key=-1) [19]=140190(span=1,weighted=0,key=-1)
+ [20]=245584(span=1,weighted=0,key=-1) [21]=169018(span=1,weighted=0,key=-1)
+ [22]=86200(span=1,weighted=0,key=-1) [23]=275242(span=1,weighted=0,key=-1)
+Temporary breakpoint 9 at 0x100248d6
+BASELINE_2013_TRANSITION context=6 current_count=24 current_units: 84762 254831
+ 156052 172755 175862 137450 249391 56352 177036 165939 172401 164475 220921
+ 155114 155330 45047 210046 53672 273193 140190 245584 169018 86200 275242
+BASELINE_2013_CANDIDATE_LIST position=7 count=14
+ [0]=84762(span=2,weighted=0,key=-2) [1]=254831(span=2,weighted=0,key=-2)
+ [2]=217973(span=1,weighted=0,key=-1) [3]=241228(span=1,weighted=0,key=-1)
+ [4]=255463(span=1,weighted=0,key=-1) [5]=258328(span=1,weighted=0,key=-1)
+ [6]=120624(span=1,weighted=0,key=-1) [7]=275182(span=1,weighted=0,key=-1)
+ [8]=162171(span=1,weighted=0,key=-1) [9]=57207(span=1,weighted=0,key=-1)
+ [10]=272426(span=1,weighted=0,key=-1) [11]=156184(span=1,weighted=0,key=-1)
+ [12]=271510(span=1,weighted=0,key=-1) [13]=239911(span=1,weighted=0,key=-1)
+Temporary breakpoint 10 at 0x100248d6
+BASELINE_2013_TRANSITION context=7 current_count=14 current_units: 84762 254831
+ 217973 241228 255463 258328 120624 275182 162171 57207 272426 156184 271510
+ 239911
+BASELINE_2013_CANDIDATE_LIST position=8 count=21
+ [0]=176579(span=2,weighted=0,key=-2) [1]=276669(span=2,weighted=0,key=-2)
+ [2]=178560(span=2,weighted=0,key=-2) [3]=267687(span=2,weighted=0,key=-2)
+ [4]=171421(span=1,weighted=0,key=-1) [5]=276348(span=1,weighted=0,key=-1)
+ [6]=276732(span=1,weighted=0,key=-1) [7]=159313(span=1,weighted=0,key=-1)
+ [8]=268952(span=1,weighted=0,key=-1) [9]=81375(span=1,weighted=0,key=-1)
+ [10]=274617(span=1,weighted=0,key=-1) [11]=157373(span=1,weighted=0,key=-1)
+ [12]=177494(span=1,weighted=0,key=-1) [13]=162287(span=1,weighted=0,key=-1)
+ [14]=272161(span=1,weighted=0,key=-1) [15]=266139(span=1,weighted=0,key=-1)
+ [16]=167186(span=1,weighted=0,key=-1) [17]=265629(span=1,weighted=0,key=-1)
+ [18]=274324(span=1,weighted=0,key=-1) [19]=269747(span=1,weighted=0,key=-1)
+ [20]=276805(span=1,weighted=0,key=-1)
+Temporary breakpoint 11 at 0x100248d6
+BASELINE_2013_TRANSITION context=8 current_count=21 current_units: 176579
+ 276669 178560 267687 171421 276348 276732 159313 268952 81375 274617 157373
+ 177494 162287 272161 266139 167186 265629 274324 269747 276805
+BASELINE_2013_CANDIDATE_LIST position=9 count=57
+ [0]=267687(span=2,weighted=0,key=-2) [1]=176579(span=2,weighted=0,key=-2)
+ [2]=276669(span=2,weighted=0,key=-2) [3]=178560(span=2,weighted=0,key=-2)
+ [4]=28939(span=1,weighted=0,key=-1) [5]=218663(span=1,weighted=0,key=-1)
+ [6]=225113(span=1,weighted=0,key=-1) [7]=227598(span=1,weighted=0,key=-1)
+ [8]=231873(span=1,weighted=0,key=-1) [9]=239263(span=1,weighted=0,key=-1)
+ [10]=242933(span=1,weighted=0,key=-1) [11]=248753(span=1,weighted=0,key=-1)
+ [12]=252333(span=1,weighted=0,key=-1) [13]=258863(span=1,weighted=0,key=-1)
+ [14]=259408(span=1,weighted=0,key=-1) [15]=260353(span=1,weighted=0,key=-1)
+ [16]=260488(span=1,weighted=0,key=-1) [17]=260578(span=1,weighted=0,key=-1)
+ [18]=175967(span=1,weighted=0,key=-1) [19]=276616(span=1,weighted=0,key=-1)
+ [20]=163504(span=1,weighted=0,key=-1) [21]=274190(span=1,weighted=0,key=-1)
+ [22]=266963(span=1,weighted=0,key=-1) [23]=268779(span=1,weighted=0,key=-1)
+ [24]=269427(span=1,weighted=0,key=-1) [25]=155867(span=1,weighted=0,key=-1)
+ [26]=158775(span=1,weighted=0,key=-1) [27]=159335(span=1,weighted=0,key=-1)
+ [28]=110102(span=1,weighted=0,key=-1) [29]=215163(span=1,weighted=0,key=-1)
+ [30]=210948(span=1,weighted=0,key=-1) [31]=226178(span=1,weighted=0,key=-1)
+ [32]=236303(span=1,weighted=0,key=-1) [33]=236368(span=1,weighted=0,key=-1)
+ [34]=54724(span=1,weighted=0,key=-1) [35]=114519(span=1,weighted=0,key=-1)
+ [36]=62364(span=1,weighted=0,key=-1) [37]=63244(span=1,weighted=0,key=-1)
+ [38]=91559(span=1,weighted=0,key=-1) [39]=205223(span=1,weighted=0,key=-1)
+ [40]=211598(span=1,weighted=0,key=-1) [41]=33634(span=1,weighted=0,key=-1)
+ [42]=46739(span=1,weighted=0,key=-1) [43]=52254(span=1,weighted=0,key=-1)
+ [44]=74074(span=1,weighted=0,key=-1) [45]=81174(span=1,weighted=0,key=-1)
+ [46]=86359(span=1,weighted=0,key=-1) [47]=89014(span=1,weighted=0,key=-1)
+ [48]=91049(span=1,weighted=0,key=-1) [49]=91184(span=1,weighted=0,key=-1)
+ [50]=98759(span=1,weighted=0,key=-1) [51]=111419(span=1,weighted=0,key=-1)
+ [52]=122859(span=1,weighted=0,key=-1) [53]=129224(span=1,weighted=0,key=-1)
+ [54]=202528(span=1,weighted=0,key=-1) [55]=206578(span=1,weighted=0,key=-1)
+ [56]=157392(span=1,weighted=0,key=-1)
+Temporary breakpoint 12 at 0x100248d6
+BASELINE_2013_TRANSITION context=9 current_count=30 current_units: 267687
+ 176579 276669 178560 175967 266963 276616 163504 236303 155867 91049 215163
+ 89014 226178 236368 54724 114519 62364 63244 91559 205223 211598 33634 46739
+ 52254 74074 81174 91184 98759 218663
+BASELINE_2013_CANDIDATE_LIST position=10 count=21
+ [0]=35672(span=2,weighted=0,key=-2) [1]=168830(span=1,weighted=0,key=-1)
+ [2]=272075(span=1,weighted=0,key=-1) [3]=266475(span=1,weighted=0,key=-1)
+ [4]=173569(span=1,weighted=0,key=-1) [5]=156809(span=1,weighted=0,key=-1)
+ [6]=260319(span=1,weighted=0,key=-1) [7]=156981(span=1,weighted=0,key=-1)
+ [8]=163180(span=1,weighted=0,key=-1) [9]=264212(span=1,weighted=0,key=-1)
+ [10]=178081(span=1,weighted=0,key=-1) [11]=269315(span=1,weighted=0,key=-1)
+ [12]=129357(span=1,weighted=0,key=-1) [13]=265071(span=1,weighted=0,key=-1)
+ [14]=168598(span=1,weighted=0,key=-1) [15]=265302(span=1,weighted=0,key=-1)
+ [16]=179163(span=1,weighted=0,key=-1) [17]=174208(span=1,weighted=0,key=-1)
+ [18]=275816(span=1,weighted=0,key=-1) [19]=270092(span=1,weighted=0,key=-1)
+ [20]=274303(span=1,weighted=0,key=-1)
+Temporary breakpoint 13 at 0x100248d6
+BASELINE_2013_TRANSITION context=10 current_count=21 current_units: 35672
+ 168830 272075 266475 173569 156809 260319 156981 163180 264212 178081 269315
+ 129357 265071 168598 265302 179163 174208 275816 270092 274303
+BASELINE_2013_CANDIDATE_LIST position=11 count=14
+ [0]=35672(span=2,weighted=0,key=-2) [1]=157910(span=1,weighted=0,key=-1)
+ [2]=233383(span=1,weighted=0,key=-1) [3]=167772(span=1,weighted=0,key=-1)
+ [4]=80917(span=1,weighted=0,key=-1) [5]=120502(span=1,weighted=0,key=-1)
+ [6]=158938(span=1,weighted=0,key=-1) [7]=163278(span=1,weighted=0,key=-1)
+ [8]=274488(span=1,weighted=0,key=-1) [9]=90002(span=1,weighted=0,key=-1)
+ [10]=204071(span=1,weighted=0,key=-1) [11]=158377(span=1,weighted=0,key=-1)
+ [12]=45202(span=1,weighted=0,key=-1) [13]=87277(span=1,weighted=0,key=-1)
+Temporary breakpoint 14 at 0x100248d6
+BASELINE_2013_TRANSITION context=11 current_count=14 current_units: 35672
+ 157910 233383 167772 80917 120502 158938 163278 274488 90002 204071 158377
+ 45202 87277
+BASELINE_2013_CANDIDATE_LIST position=12 count=37
+ [0]=282192(span=2,weighted=0,key=-2) [1]=282172(span=2,weighted=0,key=-2)
+ [2]=281072(span=2,weighted=0,key=-2) [3]=64354(span=2,weighted=0,key=-2)
+ [4]=250473(span=2,weighted=0,key=-2) [5]=214291(span=1,weighted=0,key=-1)
+ [6]=88702(span=1,weighted=0,key=-1) [7]=222641(span=1,weighted=0,key=-1)
+ [8]=228961(span=1,weighted=0,key=-1) [9]=248386(span=1,weighted=0,key=-1)
+ [10]=281550(span=1,weighted=0,key=-1) [11]=120494(span=1,weighted=0,key=-1)
+ [12]=282716(span=1,weighted=0,key=-1) [13]=246944(span=1,weighted=0,key=-1)
+ [14]=162764(span=1,weighted=0,key=-1) [15]=157981(span=1,weighted=0,key=-1)
+ [16]=170057(span=1,weighted=0,key=-1) [17]=265133(span=1,weighted=0,key=-1)
+ [18]=157445(span=1,weighted=0,key=-1) [19]=280972(span=1,weighted=0,key=-1)
+ [20]=224948(span=1,weighted=0,key=-1) [21]=216808(span=1,weighted=0,key=-1)
+ [22]=281127(span=1,weighted=0,key=-1) [23]=281097(span=1,weighted=0,key=-1)
+ [24]=71004(span=1,weighted=0,key=-1) [25]=281562(span=1,weighted=0,key=-1)
+ [26]=281502(span=1,weighted=0,key=-1) [27]=281022(span=1,weighted=0,key=-1)
+ [28]=281497(span=1,weighted=0,key=-1) [29]=281857(span=1,weighted=0,key=-1)
+ [30]=281842(span=1,weighted=0,key=-1) [31]=281617(span=1,weighted=0,key=-1)
+ [32]=281357(span=1,weighted=0,key=-1) [33]=281152(span=1,weighted=0,key=-1)
+ [34]=281062(span=1,weighted=0,key=-1) [35]=263578(span=1,weighted=0,key=-1)
+ [36]=176983(span=1,weighted=0,key=-1)
+Temporary breakpoint 15 at 0x100248d6
+BASELINE_2013_TRANSITION context=12 current_count=30 current_units: 282192
+ 282172 281072 64354 250473 216808 224948 71004 263578 214291 246944 162764
+ 120494 248386 222641 88702 228961 176983 157445 265133 157981 170057 281857
+ 282716 281502 281842 281357 281062 280972 281562
+BASELINE_2013_CANDIDATE_LIST position=13 count=35
+ [0]=250473(span=2,weighted=0,key=-2) [1]=64354(span=2,weighted=0,key=-2)
+ [2]=281072(span=2,weighted=0,key=-2) [3]=282172(span=2,weighted=0,key=-2)
+ [4]=282192(span=2,weighted=0,key=-2) [5]=216943(span=1,weighted=0,key=-1)
+ [6]=217403(span=1,weighted=0,key=-1) [7]=231628(span=1,weighted=0,key=-1)
+ [8]=234998(span=1,weighted=0,key=-1) [9]=45134(span=1,weighted=0,key=-1)
+ [10]=60374(span=1,weighted=0,key=-1) [11]=82219(span=1,weighted=0,key=-1)
+ [12]=122244(span=1,weighted=0,key=-1) [13]=149154(span=1,weighted=0,key=-1)
+ [14]=48349(span=1,weighted=0,key=-1) [15]=202813(span=1,weighted=0,key=-1)
+ [16]=227083(span=1,weighted=0,key=-1) [17]=235113(span=1,weighted=0,key=-1)
+ [18]=251868(span=1,weighted=0,key=-1) [19]=213073(span=1,weighted=0,key=-1)
+ [20]=212623(span=1,weighted=0,key=-1) [21]=210163(span=1,weighted=0,key=-1)
+ [22]=148149(span=1,weighted=0,key=-1) [23]=146679(span=1,weighted=0,key=-1)
+ [24]=133209(span=1,weighted=0,key=-1) [25]=127204(span=1,weighted=0,key=-1)
+ [26]=118259(span=1,weighted=0,key=-1) [27]=113334(span=1,weighted=0,key=-1)
+ [28]=41844(span=1,weighted=0,key=-1) [29]=40384(span=1,weighted=0,key=-1)
+ [30]=263403(span=1,weighted=0,key=-1) [31]=223778(span=1,weighted=0,key=-1)
+ [32]=76344(span=1,weighted=0,key=-1) [33]=91964(span=1,weighted=0,key=-1)
+ [34]=279977(span=1,weighted=0,key=-1)
+Temporary breakpoint 16 at 0x100248d6
+BASELINE_2013_TRANSITION context=13 current_count=30 current_units: 250473
+ 64354 281072 282172 282192 231628 210163 234998 133209 148149 40384 127204
+ 213073 45134 60374 118259 202813 149154 216943 235113 82219 122244 227083
+ 113334 41844 217403 146679 212623 91964 251868
+BASELINE_2013_CANDIDATE_LIST position=14 count=11
+ [0]=40472(span=2,weighted=0,key=-2) [1]=56352(span=2,weighted=0,key=-2)
+ [2]=249391(span=2,weighted=0,key=-2) [3]=86200(span=1,weighted=0,key=-1)
+ [4]=169018(span=1,weighted=0,key=-1) [5]=245584(span=1,weighted=0,key=-1)
+ [6]=140190(span=1,weighted=0,key=-1) [7]=155114(span=1,weighted=0,key=-1)
+ [8]=179344(span=1,weighted=0,key=-1) [9]=275242(span=1,weighted=0,key=-1)
+ [10]=97962(span=1,weighted=0,key=-1)
+Temporary breakpoint 17 at 0x100248d6
+BASELINE_2013_TRANSITION context=14 current_count=11 current_units: 40472 56352
+ 249391 86200 169018 245584 140190 155114 179344 275242 97962
+BASELINE_2013_CANDIDATE_LIST position=15 count=12
+ [0]=40472(span=2,weighted=0,key=-2) [1]=56352(span=2,weighted=0,key=-2)
+ [2]=249391(span=2,weighted=0,key=-2) [3]=68867(span=1,weighted=0,key=-1)
+ [4]=250566(span=1,weighted=0,key=-1) [5]=250706(span=1,weighted=0,key=-1)
+ [6]=281600(span=1,weighted=0,key=-1) [7]=50132(span=1,weighted=0,key=-1)
+ [8]=34462(span=1,weighted=0,key=-1) [9]=28547(span=1,weighted=0,key=-1)
+ [10]=47742(span=1,weighted=0,key=-1) [11]=244756(span=1,weighted=0,key=-1)
+Temporary breakpoint 18 at 0x100248d6
+BASELINE_2013_TRANSITION context=15 current_count=12 current_units: 40472 56352
+ 249391 68867 250566 250706 281600 50132 34462 28547 47742 244756
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

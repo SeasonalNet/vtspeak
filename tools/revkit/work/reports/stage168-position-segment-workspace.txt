@@ -1,0 +1,45 @@
+Stage 168: position segment defaults and successful cursor advancement
+
+Evidence
+
+- FUN_10022850 in stage24-marker-pipeline-caller.c is decompiler pseudocode.
+  It runs before the segment parser in FUN_10022dc0. Flags at workspace
+  +0x1210d7/+0x1210d8/+0x1210d9 select overrides at +0x1210dc/+0x1210e0/
+  +0x1210e4 only when equal to byte 1; otherwise context +0x4cf4/+0x4cf0/
+  +0x4cf8 supplies the three scalars. Scalars are signed little-endian int32.
+- The scalars clamp to 50..200, 50..400 and 0..500, write active fields
+  +0x1210e8/+0x1210ec/+0x1210f0, then default fields +0x1210fc/+0x1210f4/
+  +0x1210f8. Workspace +0x1312c4 resets to signed -1.
+- Original x86 FUN_10022dc0 at 0x10022fbc-0x10022fc5 adds consumed parser
+  bytes to workspace +4 after mapping. Native 32-bit addition wraps.
+
+Implementation and validation
+
+- PreparePaul2013PositionSegmentWorkspace copies workspace, selects/clamps
+  scalars and performs precisely those seven native writes. It bounds-checks
+  both supplied arenas without changing the context or source workspace.
+- RunPreparedNativePositionWorkspaceBoundaries composes preparation with
+  native descriptor/mapping/state/boundary processing. The duration engine
+  exposes the loaded counterpart.
+- Successful RunNativePositionWorkspaceBoundaries advances +4 in both
+  retained position and final boundary workspace snapshots. The model gap
+  pass still consumes the prior segment position before that advancement.
+- Tests exercise flag bytes 0/1/2/255, signed underflow/ordinary/overflow
+  scalar values, exact memory-write preservation, truncated arenas, default
+  propagation through all three arrays, successful cursor advancement from
+  0/100/0xfffffff8 and the x86 wrapping case, parser header bounds and explicit
+  zero-byte completion rejection. Nil/unloaded duration wrappers are covered.
+
+Limits
+
+- The already-finalized parser/model records are explicit inputs. Native
+  zero-byte end-of-source state, empty-record retries and the source-parser
+  segment driver still need separate ports; unsupported zero-byte calls
+  return an error instead of fabricating a successful nonempty segment.
+- No original-engine runtime capture or whole-synthesis parity is claimed.
+
+Stages 166-168 validation
+
+- From engine/: GOCACHE=/tmp/vtspeak-go-cache go test ./..., go build ./...
+  and go vet ./...; changed Go files formatted with gofmt. Repository
+  git diff --check passed. Vendor inputs were only read.

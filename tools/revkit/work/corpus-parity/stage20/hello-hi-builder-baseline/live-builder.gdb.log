@@ -1,0 +1,18 @@
+Wine-gdb> Breakpoint 1 at 0x10023350
+Breakpoint 2 at 0x100230a0
+Breakpoint 3 at 0x100235f6
+Hardware assisted breakpoint 4 at 0x408187
+HELLO_BUILDER_ENTRY context=0 count=0
+HELLO_COVERAGE_ENTRY context=0 count=465 [0]=6383 [1]=8528 [2]=22336 [3]=23272 [4]=23555 [5]=27111 [6]=41104 [7]=53134 [8]=65331 [9]=75811 [10]=87152 [11]=93904
+Temporary breakpoint 5 at 0x100235f6
+HELLO_PRE_SCORE context=0 count=465 [0]=273369(span=6,weighted=3) [1]=272822(span=6,weighted=3) [2]=200614(span=2,weighted=0) [3]=116320(span=2,weighted=0) [4]=129641(span=2,weighted=0) [5]=165351(span=2,weighted=0) [6]=178453(span=2,weighted=0) [7]=179388(span=2,weighted=0) [8]=182880(span=2,weighted=0) [9]=189906(span=2,weighted=0) [10]=195687(span=2,weighted=0) [11]=200525(span=2,weighted=0)
+HELLO_BUILDER_ENTRY context=1 count=0
+HELLO_COVERAGE_ENTRY context=1 count=111 [0]=8766 [1]=12790 [2]=32803 [3]=82909 [4]=84961 [5]=87351 [6]=90590 [7]=108998 [8]=114948 [9]=135330 [10]=167628 [11]=187571
+Temporary breakpoint 6 at 0x100235f6
+HELLO_PRE_SCORE context=1 count=111 [0]=273369(span=6,weighted=2) [1]=272822(span=6,weighted=2) [2]=279484(span=2,weighted=0) [3]=1200(span=2,weighted=0) [4]=2525(span=2,weighted=0) [5]=20499(span=2,weighted=0) [6]=22451(span=2,weighted=0) [7]=28430(span=2,weighted=0) [8]=31347(span=2,weighted=0) [9]=31795(span=2,weighted=0) [10]=51310(span=2,weighted=0) [11]=52542(span=2,weighted=0)
+HELLO_BUILDER_ENTRY context=6 count=0
+HELLO_COVERAGE_ENTRY context=6 count=23 [0]=280962 [1]=23010 [2]=27246 [3]=94772 [4]=105189 [5]=281980 [6]=281739 [7]=66928 [8]=282025 [9]=282675 [10]=282713 [11]=33797
+Temporary breakpoint 7 at 0x100235f6
+HELLO_PRE_SCORE context=6 count=23 [0]=282025(span=2,weighted=0) [1]=282675(span=2,weighted=0) [2]=282713(span=2,weighted=0) [3]=280962(span=1,weighted=0) [4]=282007(span=1,weighted=0) [5]=282011(span=1,weighted=0) [6]=281727(span=1,weighted=0) [7]=281136(span=1,weighted=0) [8]=269609(span=1,weighted=0) [9]=282043(span=1,weighted=0) [10]=282035(span=1,weighted=0) [11]=200069(span=1,weighted=0)
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

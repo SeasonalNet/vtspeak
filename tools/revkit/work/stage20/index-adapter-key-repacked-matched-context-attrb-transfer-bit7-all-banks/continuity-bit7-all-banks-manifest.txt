@@ -1,0 +1,11 @@
+variant=matched-context attr_40 transfer plus legacy attr_48 mapped to row-major signature byte 6 bit 7
+base=tools/revkit/work/stage20/index-adapter-key-repacked-matched-context-attrb-transfer
+legacy_source=tools/revkit/work/stage19/data-kate-copy/M16/mc_idx_tbl
+mapping=signature[row*7+6] |= 0x80 when legacy attr_48[row] is nonzero
+bank=unit-alp units=905 marked=698 base_sha256=872e7935b72da192a71bebb900b15bc218ef49d3cec3e7fe4eea159074d0b942 overlay_sha256=c540cf6dbe6109cd60733fc6b55cdf4a6ce2711158ca7d03ac11d5ea4a6c300d
+bank=unit-etc units=3666 marked=672 base_sha256=3897821542fe324ec8f4a56ee2c3670e1117314f26a0f55425a4a24877ea20b6 overlay_sha256=8cfd8605cad374fd6d24c26f82274e7a0b205f25bf4ed9af3216d0f9986a8e44
+bank=unit-gen units=179995 marked=153991 base_sha256=9665803f66754df64f6287c78b88d7c04eeb7c927254134259e7d3c875d607f1 overlay_sha256=e37e76ccb99ad5f0a71dcf57e7accee5b9b63c69eb7a821983aca5ece4d2ca76
+bank=unit-gen2 units=98133 marked=84286 base_sha256=17fed97418fd6eef6d3f3aa9a3cb41110051a45bb9a511ff8fc150f4a24a7b7b overlay_sha256=df8e859a5864cf8bd185cfc568d368b433ff58a770efe6628900214bb6e97e4a
+bank=unit-num units=997 marked=770 base_sha256=9d75f9dd3f86533724099850d095f50739ee6352e123b3b1cda186d91423e64f overlay_sha256=efc032d4b872f75aeb392e66aa7e243ac33f1116f23a88bbf6a38426785d3af4
+total_units=283696
+total_marked=240417

@@ -1,0 +1,38 @@
+Stage 149: whole-position query runtime state reads
+
+Direct pseudocode evidence
+
+- `FUN_10018770` reads a byte at `statePointer + recordOrdinal*0x3c0 +
+  phoneIndex + 0x8a9`, divides it into quotient/remainder by ten, and uses
+  those values to gate left/right rule lists. It reads the live context gate
+  at the same record/phone offsets plus `0x8ea` after primary lookups.
+- The record ordinal and phone index are read from bytes `+0` and `+2` of the
+  same six-byte workspace row written by `FUN_10024680`. The state pointer is
+  loaded from caller state offset `+0x4c` in `FUN_10018770`.
+- The pseudocode is in `tools/revkit/work/reports/vt_pau-synthesis-pseudocode.c`
+  under `FUN_10018770` at `0x10018770`.
+
+Ported behavior
+
+- `selection.ReadPaul2013QueryRuntimeState` reads and bounds-checks the
+  per-position prior-metric and context-gate bytes from the pointer target
+  supplied as a slice.
+- `selection.QueryPaul2013PositionFromStateArenas` connects that runtime
+  state reader to the record-backed whole-position query and conditional
+  fallback, including the fallback row-class delta already derived from
+  record byte `+0x6de`.
+- Unit tests cover selector-based addressing, truncation rejection, and the
+  record/state-arena query path through fallback.
+- The fallback query adapter rereads the prior metric before each native
+  fallback tree-target invocation. For whole-position lookup, the metric is
+  passed as a value at query entry.
+
+Limits
+
+- Pseudocode supports the offsets and byte widths; no new original-DLL
+  differential was captured for this Go path.
+- The owner and producer of the memory pointed to by state `+0x4c`, the
+  descriptor/eligibility writer, and source-text selection inputs remain
+  unresolved. Query lookups may mutate other state; the context-gate callback
+  rereads its byte, while the whole-position metric is a value captured at
+  query entry.

@@ -1,0 +1,5 @@
+Wine-gdb> Breakpoint 1 at 0x10023d43
+Hardware assisted breakpoint 2 at 0x408187
+HELLO_SORTED_SCOPE query=2b305a4500 count=66 nodes=025277cc model=014bf310 {15230 key=23305a0d00 score=1150025728 members=1} {18858 key=2b305e0500 score=1150271488 members=3} {21801 key=2d305e0500 score=1150599168 members=5} {13733 key=22305e0500 score=1150599168 members=1} {5504 key=10305e0500 score=1150763008 members=1} {23389 key=35305e0500 score=1150763008 members=1} {24741 key=37305e0500 score=1150763008 members=3} {25527 key=38305e0500 score=1150763008 members=1} {31904 key=4c305e0500 score=1150763008 members=2} {29099 key=41305e0500 score=1150763008 members=1} {8904 key=16305e0500 score=1150763008 members=5} {13040 key=21305e0500 score=1150763008 members=2}
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

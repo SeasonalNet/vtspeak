@@ -1,0 +1,114 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/hello-hi-query-membership-baseline-v2/live-query-membership.gdb.log.
+Copying debug output to /work/corpus-parity/stage20/hello-hi-query-membership-baseline-v2/live-query-membership.gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10023f90
+Breakpoint 2 at 0x10023fca
+Breakpoint 3 at 0x10024006
+Hardware assisted breakpoint 4 at 0x408187
+HELLO_QUERY_MEMBERSHIP_ENTRY call=1 context=0 start=0 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=1 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=2 context=0 start=0 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=2 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=3 context=0 start=0 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=3 count=10 classes: 32928 32927 32925 32924 32926 32934 32929 32932 32933 32936
+HELLO_QUERY_MEMBERSHIP_ENTRY call=4 context=0 start=10 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=4 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=5 context=1 start=0 signature=5a,5a,22,17,2b,a0,00 key=5a,22,17,a0,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=5 count=10 classes: 32928 16234 30155 28859 6394 12873 8029 18450 19982 21359
+HELLO_QUERY_MEMBERSHIP_ENTRY call=6 context=1 start=10 signature=61,61,22,17,2b,98,00 key=5a,22,17,98,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=6 count=10 classes: 32928 16234 30155 28859 6394 12873 8029 18450 19982 21359
+HELLO_QUERY_MEMBERSHIP_ENTRY call=7 context=2 start=0 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=7 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=8 context=2 start=0 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=8 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=9 context=2 start=0 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=9 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=10 context=2 start=0 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=10 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=11 context=2 start=0 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=11 count=2 classes: 13478 13479
+HELLO_QUERY_MEMBERSHIP_ENTRY call=12 context=2 start=2 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=12 count=2 classes: 13478 13479
+HELLO_QUERY_MEMBERSHIP_ENTRY call=13 context=2 start=4 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=13 count=2 classes: 13478 13479
+HELLO_QUERY_MEMBERSHIP_ENTRY call=14 context=2 start=6 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=14 count=2 classes: 13478 13479
+HELLO_QUERY_MEMBERSHIP_ENTRY call=15 context=3 start=0 signature=5a,22,17,2b,30,20,00 key=22,17,2b,20,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=15 count=9 classes: 3454 13478 28626 12760 31393 7748 30797 6972 12048
+HELLO_QUERY_MEMBERSHIP_ENTRY call=16 context=3 start=9 signature=5a,22,17,2b,30,18,00 key=22,17,2b,18,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=16 count=9 classes: 3454 13478 28626 12760 31393 7748 30797 6972 12048
+HELLO_QUERY_MEMBERSHIP_ENTRY call=17 context=3 start=18 signature=5a,22,17,2b,30,10,00 key=22,17,2b,10,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=17 count=9 classes: 3454 13478 28626 12760 31393 7748 30797 6972 12048
+HELLO_QUERY_MEMBERSHIP_ENTRY call=18 context=3 start=27 signature=5a,22,17,2b,30,08,00 key=22,17,2b,08,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=18 count=9 classes: 3454 13478 28626 12760 31393 7748 30797 6972 12048
+HELLO_QUERY_MEMBERSHIP_ENTRY call=19 context=4 start=0 signature=22,17,2b,30,5a,00,00 key=17,2b,2f,00,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=19 count=1 classes: 9147
+HELLO_QUERY_MEMBERSHIP_ENTRY call=20 context=4 start=1 signature=22,17,2b,30,5a,08,00 key=17,2b,2f,08,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=20 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=21 context=5 start=0 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=21 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=22 context=5 start=0 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00
+HELLO_QUERY_MEMBERSHIP_RETURN call=22 count=0 classes:
+HELLO_QUERY_MEMBERSHIP_ENTRY call=23 context=5 start=0 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=23 count=10 classes: 18858 18856 18854 18823 18813 18843 18836 18816 18840 18832
+HELLO_QUERY_MEMBERSHIP_ENTRY call=24 context=5 start=10 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=24 count=10 classes: 18858 18856 18854 18823 18813 18843 18836 18816 18840 18832
+HELLO_QUERY_MEMBERSHIP_ENTRY call=25 context=6 start=0 signature=17,2b,30,5a,5a,45,00 key=2b,30,5a,45,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=25 count=10 classes: 15230 18858 21801 13733 5504 23389 24741 25527 31904 8904
+HELLO_QUERY_MEMBERSHIP_ENTRY call=26 context=6 start=10 signature=17,2b,30,5a,5a,4d,00 key=2b,30,5a,4d,00
+HELLO_QUERY_MEMBERSHIP_RELAXED_RETURN call=26 count=0 classes:
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78C50000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78BD0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

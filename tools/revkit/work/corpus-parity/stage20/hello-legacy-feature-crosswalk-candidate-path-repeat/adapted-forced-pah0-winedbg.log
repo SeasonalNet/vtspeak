@@ -1,0 +1,131 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Copying output to /work/corpus-parity/stage20/hello-legacy-feature-crosswalk-candidate-path/adapted-query-selector-gdb.log.
+Copying debug output to /work/corpus-parity/stage20/hello-legacy-feature-crosswalk-candidate-path/adapted-query-selector-gdb.log.
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-legacy-feature-crosswalk-candidate-path/adapted-query-selector-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023dc0
+Wine-gdb> >>>>>>>>>>> > > > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10024060
+Wine-gdb> >>>>>>>> > > >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 3 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > > >  >  >  >  >  > >>>Wine-gdb> Wine-gdb> Breakpoint 4 at 0x100242a0
+Wine-gdb> >>>>>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 5 at 0x10024680
+Wine-gdb> >>>> > > > >>>Wine-gdb> Wine-gdb> Breakpoint 6 at 0x1001b200
+Wine-gdb> >>> > >>>Wine-gdb> Wine-gdb> Breakpoint 7 at 0x100235f6
+Wine-gdb> >>>> > > > >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 8 at 0x1002389a
+Wine-gdb> >>>>> > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 9 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 10 at 0x100249bb
+CROSSWALK_OLD_CUTOFF_SPLIT_ENTER call=1 slot=0
+Temporary breakpoint 11 at 0x10024808
+Temporary breakpoint 12 at 0x1001896a
+CROSSWALK_OLD_CUTOFF_QUERY call=1 key=5a,22,17,a0,00 classes=1
+Temporary breakpoint 13 at 0x10018a45
+CROSSWALK_OLD_CUTOFF_QUERY call=2 key=5a,22,17,98,00 classes=0
+CROSSWALK_OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 32928:75
+Temporary breakpoint 14 at 0x10024271
+CROSSWALK_OLD_CUTOFF_METRIC_RETURN sum=75
+CROSSWALK_OLD_CUTOFF_SPLIT_RETURN slot=0 sum=75 accepted=1
+CROSSWALK_OLD_CUTOFF_SPLIT_ENTER call=2 slot=1
+Temporary breakpoint 15 at 0x10024808
+Temporary breakpoint 16 at 0x1001896a
+CROSSWALK_OLD_CUTOFF_QUERY call=3 key=22,17,2b,20,00 classes=1
+Temporary breakpoint 17 at 0x10018a45
+CROSSWALK_OLD_CUTOFF_QUERY call=4 key=22,17,2b,18,00 classes=0
+Temporary breakpoint 18 at 0x10018a45
+CROSSWALK_OLD_CUTOFF_QUERY call=5 key=22,17,2b,10,00 classes=0
+Temporary breakpoint 19 at 0x10018a45
+CROSSWALK_OLD_CUTOFF_QUERY call=6 key=22,17,2b,08,00 classes=0
+CROSSWALK_OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 13479:9
+Temporary breakpoint 20 at 0x10024271
+CROSSWALK_OLD_CUTOFF_METRIC_RETURN sum=9
+CROSSWALK_OLD_CUTOFF_OVERRIDE slot=1 sum=9 native=0 overridden=1
+CROSSWALK_OLD_CUTOFF_SPLIT_ENTER call=3 slot=2
+Temporary breakpoint 21 at 0x10024808
+Temporary breakpoint 22 at 0x1001896a
+CROSSWALK_OLD_CUTOFF_QUERY call=7 key=17,2b,2f,00,00 classes=1
+Temporary breakpoint 23 at 0x10018a45
+CROSSWALK_OLD_CUTOFF_QUERY call=8 key=17,2b,2f,08,00 classes=0
+CROSSWALK_OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 9147:5
+Temporary breakpoint 24 at 0x10024271
+CROSSWALK_OLD_CUTOFF_METRIC_RETURN sum=5
+CROSSWALK_OLD_CUTOFF_OVERRIDE slot=2 sum=5 native=0 overridden=1
+CROSSWALK_OLD_CUTOFF_SPLIT_ENTER call=4 slot=3
+Temporary breakpoint 25 at 0x10024808
+Temporary breakpoint 26 at 0x1001896a
+CROSSWALK_OLD_CUTOFF_QUERY call=9 key=2b,30,5a,45,00 classes=1
+Temporary breakpoint 27 at 0x10018a45
+CROSSWALK_OLD_CUTOFF_QUERY call=10 key=2b,30,5a,4d,00 classes=0
+CROSSWALK_OLD_CUTOFF_METRIC_ENTRY count=1 ids_weights: 18858:6
+Temporary breakpoint 28 at 0x10024271
+CROSSWALK_OLD_CUTOFF_METRIC_RETURN sum=6
+CROSSWALK_OLD_CUTOFF_OVERRIDE slot=3 sum=6 native=0 overridden=1
+CROSSWALK_OLD_CUTOFF_POSITION_BUILDER_RETURN positions=4
+CROSSWALK_FINAL_CANDIDATES position=0 count=75 63 233533 222240 220903 214148 211497 208625 208165 207948 206118 205939 204612 200614 200525 198921 197867 195687 189906 233824 233955 279479 273369 272822 271915 271878 270371 268190 267478 264663 264405 262454 258594 255501 252497 248753 245736 234795 182880 179388 51310 50118 32995 31795 31347 28430 25895 22451 20499 19888 18378 13531 6208 5218 3756 2525 1200 52542 88195 178453 169343 167546 165351 158787 149799 146049 129641 116320 113167 111587 100640 100016 99833 97386 92183 279484
+CROSSWALK_LOCAL_SCORE position=0 unit=272822 base=-1 span=1 weighted=0 local=9.6
+CROSSWALK_LOCAL_SCORE position=0 unit=52542 base=-1 span=1 weighted=0 local=9.6
+CROSSWALK_FINAL_CANDIDATES position=1 count=9 13942 36540 53487 96599 264072 268760 272152 272823 273370
+CROSSWALK_LOCAL_SCORE position=1 unit=264072 base=-1 span=1 weighted=0 local=27.1761
+CROSSWALK_LOCAL_SCORE position=1 unit=272823 base=-1 span=1 weighted=0 local=26.5764
+CROSSWALK_FINAL_CANDIDATES position=2 count=5 13943 264073 272153 272824 273371
+CROSSWALK_LOCAL_SCORE position=2 unit=264073 base=-1 span=1 weighted=0 local=142.332
+CROSSWALK_LOCAL_SCORE position=2 unit=272824 base=-1 span=1 weighted=0 local=173.792
+CROSSWALK_FINAL_CANDIDATES position=3 count=6 1869 5170 246677 255282 264074 272825
+CROSSWALK_LOCAL_SCORE position=3 unit=264074 base=-1 span=1 weighted=0 local=75.25
+CROSSWALK_LOCAL_SCORE position=3 unit=272825 base=-1 span=1 weighted=0 local=71.25
+CROSSWALK_OLD_CUTOFF_SELECTED_UNIT n=1 id=52542
+CROSSWALK_OLD_CUTOFF_SELECTED_UNIT n=2 id=273370
+CROSSWALK_OLD_CUTOFF_SELECTED_UNIT n=3 id=273371
+CROSSWALK_OLD_CUTOFF_SELECTED_UNIT n=4 id=255282
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0114:0118: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0114:0118: create thread I @004014C0
+0114:0118: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0114:0118: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0114:0118: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0114:0118: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0114:0118: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0114:0118: loads DLL C:\windows\system32\WINMM.dll @78D30000 (1474560<4890>)
+0114:0118: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0114:0118: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0114:0118: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0114:0118: loads DLL C:\windows\system32\msacm32.dll @78CB0000 (413696<1982>)
+0114:0118: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0114:0118: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0114:0118: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0114:0118: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0114:0118: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0114:0118: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0114:0118: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0114:0118: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0114:0118: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0114:0118: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0114:0118: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0114:0118: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000114:00000118: unload DLL @009C0000
+0114:0118: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0114:0118: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0114:0118: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000114:00000118: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

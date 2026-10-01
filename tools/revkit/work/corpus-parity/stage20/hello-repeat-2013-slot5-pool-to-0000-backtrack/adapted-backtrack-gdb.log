@@ -1,0 +1,20 @@
+Wine-gdb> Already logging to /work/corpus-parity/stage20/hello-repeat-2013-slot5-pool-to-0000-backtrack/adapted-backtrack-gdb.log.
+Wine-gdb> Breakpoint 1 at 0x10024900
+Wine-gdb> >>>>>>> > > >  >  >  >  >  >  >  > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+Temporary breakpoint 3 at 0x10024a30
+SLOT5_ALIAS_ROW context=0 count=30 selected_index=17 selected_unit=273369
+SLOT5_ALIAS_ROW context=1 count=30 selected_index=18 selected_unit=273369
+SLOT5_ALIAS_ROW context=2 count=10 selected_index=8 selected_unit=273370
+SLOT5_ALIAS_ROW context=3 count=18 selected_index=1 selected_unit=273370
+SLOT5_ALIAS_ROW context=4 count=17 selected_index=16 selected_unit=273371
+SLOT5_ALIAS_ROW context=5 count=19 selected_index=5 selected_unit=208339
+SLOT5_ALIAS_ROW context=6 count=21 selected_index=13 selected_unit=34312
+SLOT5_ALIAS_ROW context=7 count=26 selected_index=12 selected_unit=49874
+SLOT5_ALIAS_ROW context=8 count=10 selected_index=8 selected_unit=273370
+SLOT5_ALIAS_ROW context=9 count=18 selected_index=1 selected_unit=273370
+SLOT5_ALIAS_ROW context=10 count=15 selected_index=14 selected_unit=273371
+SLOT5_ALIAS_ROW context=11 count=16 selected_index=2 selected_unit=282025
+SLOT5_ALIAS_ROW context=12 count=15 selected_index=0 selected_unit=282025
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

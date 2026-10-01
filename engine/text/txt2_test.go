@@ -25,6 +25,118 @@ func TestParseTXT2AndExactLookup(t *testing.T) {
 	}
 }
 
+func TestLookupPaul2013WABClassUsesMappedSortedSearch(t *testing.T) {
+	table := &Table{
+		Name: "wab.txt2",
+		Mode: OneColumn,
+		Rows: []Row{{Key: "APPLE"}, {Key: "BANANA"}, {Key: "PEAR"}},
+	}
+	characterMap := Paul2013EmbeddedKeyTables().CharacterMap
+	for _, surface := range []string{"apple", "APPLE", "Apple"} {
+		index, found, err := table.LookupPaul2013WABClass([]byte(surface), characterMap)
+		if err != nil || !found || index != 0 {
+			t.Fatalf("WAB lookup %q = (%d, %t, %v), want (0, true, nil)", surface, index, found, err)
+		}
+	}
+	if _, found, err := table.LookupPaul2013WABClass([]byte("APRICOT"), characterMap); err != nil || found {
+		t.Fatalf("missing WAB lookup = found %t, err %v; want false, nil", found, err)
+	}
+
+	table.Rows[1], table.Rows[2] = table.Rows[2], table.Rows[1]
+	if _, _, err := table.LookupPaul2013WABClass([]byte("APPLE"), characterMap); err == nil {
+		t.Fatal("unsorted WAB table was accepted")
+	}
+}
+
+func TestLookupPaul2013CHCFlagsUsesNativeBitOrderAndExactKeys(t *testing.T) {
+	table := &Table{
+		Name: "chc_sort.txt2",
+		Mode: TwoColumns,
+		Rows: []Row{{Key: "alpha", Value: "1001"}, {Key: "bravo", Value: "0110"}, {Key: "charlie", Value: "0001"}},
+	}
+	for _, test := range []struct {
+		key      string
+		mask     uint16
+		wantRow  int
+		wantOkay bool
+	}{
+		{key: "alpha", mask: 8, wantRow: 0, wantOkay: true},
+		{key: "alpha", mask: 1, wantRow: 0, wantOkay: true},
+		{key: "alpha", mask: 4, wantRow: 0, wantOkay: false},
+		{key: "bravo", mask: 6, wantRow: 1, wantOkay: true},
+		{key: "BRAVO", mask: 2, wantRow: 0, wantOkay: false},
+	} {
+		row, found, err := table.LookupPaul2013CHCFlags([]byte(test.key), test.mask)
+		if err != nil {
+			t.Fatalf("CHC lookup %q/%d: %v", test.key, test.mask, err)
+		}
+		if found != test.wantOkay || (found && row != test.wantRow) {
+			t.Errorf("CHC lookup %q/%d = (%d, %t), want (%d, %t)", test.key, test.mask, row, found, test.wantRow, test.wantOkay)
+		}
+	}
+	if row, found, err := table.LookupPaul2013CHCFlags([]byte("charlie\x00ignored"), 1); err != nil || !found || row != 2 {
+		t.Fatalf("NUL-terminated CHC lookup = (%d, %t, %v), want (2, true, nil)", row, found, err)
+	}
+}
+
+func TestLookupPaul2013CHCFlagsRejectsMalformedTable(t *testing.T) {
+	for _, test := range []struct {
+		name  string
+		table *Table
+	}{
+		{name: "wrong table", table: &Table{Name: "wab.txt2", Mode: OneColumn}},
+		{name: "unsorted", table: &Table{Name: "chc_sort.txt2", Mode: TwoColumns, Rows: []Row{{Key: "b", Value: "1000"}, {Key: "a", Value: "1000"}}}},
+		{name: "duplicate", table: &Table{Name: "chc_sort.txt2", Mode: TwoColumns, Rows: []Row{{Key: "a", Value: "1000"}, {Key: "a", Value: "0100"}}}},
+		{name: "short mask", table: &Table{Name: "chc_sort.txt2", Mode: TwoColumns, Rows: []Row{{Key: "a", Value: "1"}}}},
+		{name: "invalid mask", table: &Table{Name: "chc_sort.txt2", Mode: TwoColumns, Rows: []Row{{Key: "a", Value: "10x0"}}}},
+	} {
+		t.Run(test.name, func(t *testing.T) {
+			if _, _, err := test.table.LookupPaul2013CHCFlags([]byte("a"), 1); err == nil {
+				t.Fatal("malformed CHC table accepted")
+			}
+		})
+	}
+}
+
+func TestMatchPaul2013CHCSubstringPortsCompositeAndFallbackBranches(t *testing.T) {
+	table := &Table{
+		Name: "chc_sort.txt2",
+		Mode: TwoColumns,
+		Rows: []Row{
+			{Key: "AB", Value: "0001"},
+			{Key: "CD", Value: "0100"},
+			{Key: "DOG", Value: "0001"},
+			{Key: "EXACT", Value: "0010"},
+		},
+	}
+	characterMap := Paul2013EmbeddedKeyTables().CharacterMap
+	tests := []struct {
+		name        string
+		word        string
+		tokenLength int
+		mask        uint16
+		want        bool
+	}{
+		{name: "two-part compound", word: "ABCD", tokenLength: 4, mask: 2, want: true},
+		{name: "exact mask", word: "EXACT", tokenLength: 5, mask: 2, want: true},
+		{name: "mapped trailing S", word: "DOGS", tokenLength: 4, mask: 1, want: true},
+		{name: "long-token short-substring fallback", word: "xyz", tokenLength: 7, mask: 1, want: true},
+		{name: "mask-eight fallback excluded", word: "xyz", tokenLength: 7, mask: 8, want: false},
+		{name: "candidate longer than token", word: "ABCD", tokenLength: 3, mask: 2, want: false},
+	}
+	for _, test := range tests {
+		t.Run(test.name, func(t *testing.T) {
+			got, err := table.MatchPaul2013CHCSubstring([]byte(test.word), test.tokenLength, test.mask, characterMap)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if got != test.want {
+				t.Fatalf("CHC substring match = %t, want %t", got, test.want)
+			}
+		})
+	}
+}
+
 func TestParseTXT2RejectsInvalidResources(t *testing.T) {
 	valid := makeTXT2("L01", 10, "hello")
 	markerMismatch := append([]byte(nil), valid...)
@@ -72,6 +184,19 @@ func TestLoadSharedPaulTXT2TablesWhenAssetsArePresent(t *testing.T) {
 				got = len(table.Rows)
 			}
 			t.Errorf("%s row count = %d, expected %d", name, got, want)
+		}
+	}
+	chc := tables["chc_sort.txt2"]
+	if len(chc.Rows) != 0 && len(chc.Rows[0].Value) >= 4 {
+		mask := uint16(0)
+		for index, value := range []byte(chc.Rows[0].Value[:4]) {
+			if value == '1' {
+				mask |= 1 << (3 - index)
+			}
+		}
+		index, found, err := chc.LookupPaul2013CHCFlags([]byte(chc.Rows[0].Key), mask)
+		if err != nil || !found || index != 0 {
+			t.Fatalf("loaded CHC table first-row lookup = (%d, %t, %v), want (0, true, nil)", index, found, err)
 		}
 	}
 }

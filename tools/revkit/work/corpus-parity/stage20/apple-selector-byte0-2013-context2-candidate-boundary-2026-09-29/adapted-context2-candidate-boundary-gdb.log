@@ -1,0 +1,25 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x10023350
+Wine-gdb> >>>>>>Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x10023814
+Wine-gdb> >> > > > > >  >  >   >   >  >  > > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x1002389a
+Wine-gdb> >> > > >  >  > >>>Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x10023948
+Wine-gdb> >> > > > > > > >  >  >   >   >  >  > > >  >  >  >  >  >   >   >   >    >    >   >   >   >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2013_CONTEXT2_AFTER_COVERAGE count=50 target188826_index=4
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=0 unit=40503 span=2 weighted=0 right_matches=0 pre_score_key=-2
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=1 unit=227605 span=2 weighted=0 right_matches=0 pre_score_key=-2
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=2 unit=64719 span=2 weighted=0 right_matches=0 pre_score_key=-2
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=3 unit=64728 span=2 weighted=0 right_matches=0 pre_score_key=-2
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=4 unit=188826 span=2 weighted=0 right_matches=0 pre_score_key=-2
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=5 unit=2645 span=1 weighted=0 right_matches=0 pre_score_key=-1
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=6 unit=128863 span=1 weighted=0 right_matches=0 pre_score_key=-1
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=7 unit=137215 span=1 weighted=0 right_matches=0 pre_score_key=-1
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=8 unit=138741 span=1 weighted=0 right_matches=0 pre_score_key=-1
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=9 unit=145945 span=1 weighted=0 right_matches=0 pre_score_key=-1
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=10 unit=150075 span=1 weighted=0 right_matches=0 pre_score_key=-1
+APPLE_2013_CONTEXT2_COVERAGE_ROW rank=11 unit=151210 span=1 weighted=0 right_matches=0 pre_score_key=-1
+APPLE_2013_CONTEXT2_SORT_INPUT total=50 prefix=5 suffix=45
+APPLE_2013_CONTEXT2_SORT_TARGET index=4 score=10 coverage_key=-2
+Temporary breakpoint 6 at 0x1002394d
+APPLE_2013_CONTEXT2_SORTED_TOP30 [0]=40503(score=10,key=-2,span=2,weighted=0) [1]=227605(score=10,key=-2,span=2,weighted=0) [2]=64719(score=10,key=-2,span=2,weighted=0) [3]=64728(score=10,key=-2,span=2,weighted=0) [4]=188826(score=10,key=-2,span=2,weighted=0) [5]=2645(score=10,key=10,span=1,weighted=0) [6]=32957(score=10,key=10,span=1,weighted=0) [7]=38294(score=10,key=10,span=1,weighted=0) [8]=40810(score=10,key=10,span=1,weighted=0) [9]=41008(score=10,key=10,span=1,weighted=0) [10]=45509(score=10,key=10,span=1,weighted=0) [11]=55213(score=10,key=10,span=1,weighted=0) [12]=56167(score=10,key=10,span=1,weighted=0) [13]=61725(score=10,key=10,span=1,weighted=0) [14]=78432(score=10,key=10,span=1,weighted=0) [15]=82377(score=10,key=10,span=1,weighted=0) [16]=82557(score=10,key=10,span=1,weighted=0) [17]=82709(score=10,key=10,span=1,weighted=0) [18]=83349(score=10,key=10,span=1,weighted=0) [19]=86012(score=10,key=10,span=1,weighted=0) [20]=96145(score=10,key=10,span=1,weighted=0) [21]=97601(score=10,key=10,span=1,weighted=0) [22]=100180(score=10,key=10,span=1,weighted=0) [23]=108878(score=10,key=10,span=1,weighted=0) [24]=111020(score=10,key=10,span=1,weighted=0) [25]=118661(score=10,key=10,span=1,weighted=0) [26]=272427(score=10,key=10,span=1,weighted=0) [27]=128863(score=10,key=10,span=1,weighted=0) [28]=137215(score=10,key=10,span=1,weighted=0) [29]=138741(score=10,key=10,span=1,weighted=0) target188826_rank=4
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

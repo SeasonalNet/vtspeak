@@ -1,0 +1,181 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+warning: remote target does not support file transfer, attempting to access files from local filesystem.
+Reading symbols from /samples/voicetext_kate.exe...
+0x7bd64525 in DbgBreakPoint@0 ()
+   from /usr/lib/i386-linux-gnu/wine/i386-windows/ntdll.dll
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Signal        Stop	Print	Pass to program	Description
+SIGSEGV       No	No	Yes		Segmentation fault
+Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x100235f6
+Wine-gdb> >>>>>>> > > > >>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HI_2013_CANDIDATE_LIST position=0 count=10 [0]=22336(span=1,weighted=0)
+ [1]=65331(span=1,weighted=0) [2]=75811(span=1,weighted=0)
+ [3]=135441(span=1,weighted=0) [4]=164116(span=1,weighted=0)
+ [5]=205125(span=1,weighted=0) [6]=219724(span=1,weighted=0)
+ [7]=255985(span=1,weighted=0) [8]=272820(span=1,weighted=0)
+ [9]=277527(span=1,weighted=0)
+HI_2013_CANDIDATE_LIST position=1 count=99 [0]=273369(span=5,weighted=0)
+ [1]=272822(span=5,weighted=0) [2]=8766(span=1,weighted=0)
+ [3]=20499(span=1,weighted=0) [4]=2525(span=1,weighted=0)
+ [5]=1200(span=1,weighted=0) [6]=236982(span=1,weighted=0)
+ [7]=230117(span=1,weighted=0) [8]=228518(span=1,weighted=0)
+ [9]=216749(span=1,weighted=0) [10]=216461(span=1,weighted=0)
+ [11]=200611(span=1,weighted=0) [12]=191439(span=1,weighted=0)
+ [13]=168964(span=1,weighted=0) [14]=153078(span=1,weighted=0)
+ [15]=142692(span=1,weighted=0) [16]=136003(span=1,weighted=0)
+ [17]=121962(span=1,weighted=0) [18]=100648(span=1,weighted=0)
+ [19]=80588(span=1,weighted=0) [20]=54576(span=1,weighted=0)
+ [21]=44449(span=1,weighted=0) [22]=19429(span=1,weighted=0)
+ [23]=16116(span=1,weighted=0) [24]=235907(span=1,weighted=0)
+ [25]=22451(span=1,weighted=0) [26]=28430(span=1,weighted=0)
+ [27]=279479(span=1,weighted=0) [28]=262454(span=1,weighted=0)
+ [29]=245736(span=1,weighted=0) [30]=233533(span=1,weighted=0)
+ [31]=214148(span=1,weighted=0) [32]=206118(span=1,weighted=0)
+ [33]=204612(span=1,weighted=0) [34]=200614(span=1,weighted=0)
+ [35]=200525(span=1,weighted=0) [36]=195687(span=1,weighted=0)
+ [37]=189906(span=1,weighted=0) [38]=182880(span=1,weighted=0)
+ [39]=179388(span=1,weighted=0) [40]=178453(span=1,weighted=0)
+ [41]=165351(span=1,weighted=0) [42]=129641(span=1,weighted=0)
+ [43]=116320(span=1,weighted=0) [44]=92183(span=1,weighted=0)
+ [45]=52542(span=1,weighted=0) [46]=51310(span=1,weighted=0)
+ [47]=31795(span=1,weighted=0) [48]=31347(span=1,weighted=0)
+ [49]=232997(span=1,weighted=0) [50]=224844(span=1,weighted=0)
+ [51]=98731(span=1,weighted=0) [52]=270783(span=1,weighted=0)
+ [53]=248481(span=1,weighted=0) [54]=244521(span=1,weighted=0)
+ [55]=236332(span=1,weighted=0) [56]=231344(span=1,weighted=0)
+ [57]=227012(span=1,weighted=0) [58]=220147(span=1,weighted=0)
+ [59]=213392(span=1,weighted=0) [60]=213094(span=1,weighted=0)
+ [61]=197727(span=1,weighted=0) [62]=197584(span=1,weighted=0)
+ [63]=187571(span=1,weighted=0) [64]=167628(span=1,weighted=0)
+ [65]=135330(span=1,weighted=0) [66]=114948(span=1,weighted=0)
+ [67]=108998(span=1,weighted=0) [68]=90590(span=1,weighted=0)
+ [69]=87351(span=1,weighted=0) [70]=84961(span=1,weighted=0)
+ [71]=82909(span=1,weighted=0) [72]=32803(span=1,weighted=0)
+ [73]=12790(span=1,weighted=0) [74]=243343(span=1,weighted=0)
+ [75]=23683(span=1,weighted=0) [76]=148718(span=1,weighted=0)
+ [77]=146249(span=1,weighted=0) [78]=95985(span=1,weighted=0)
+ [79]=64374(span=1,weighted=0) [80]=22249(span=1,weighted=0)
+ [81]=9712(span=1,weighted=0) [82]=5989(span=1,weighted=0)
+ [83]=87967(span=1,weighted=0) [84]=67534(span=1,weighted=0)
+ [85]=33969(span=1,weighted=0) [86]=26269(span=1,weighted=0)
+ [87]=237399(span=1,weighted=0) [88]=223533(span=1,weighted=0)
+ [89]=189843(span=1,weighted=0) [90]=131728(span=1,weighted=0)
+ [91]=82881(span=1,weighted=0) [92]=52504(span=1,weighted=0)
+ [93]=178139(span=1,weighted=0) [94]=137008(span=1,weighted=0)
+ [95]=132809(span=1,weighted=0) [96]=47071(span=1,weighted=0)
+ [97]=38181(span=1,weighted=0) [98]=279484(span=1,weighted=0)
+HI_2013_CANDIDATE_LIST position=2 count=10 [0]=272823(span=5,weighted=0)
+ [1]=273370(span=5,weighted=0) [2]=13942(span=4,weighted=0)
+ [3]=264072(span=4,weighted=0) [4]=272152(span=3,weighted=0)
+ [5]=36540(span=2,weighted=0) [6]=53487(span=2,weighted=0)
+ [7]=96599(span=2,weighted=0) [8]=268760(span=2,weighted=0)
+ [9]=145101(span=1,weighted=0)
+HI_2013_CANDIDATE_LIST position=3 count=23 [0]=273370(span=5,weighted=1)
+ [1]=272823(span=5,weighted=1) [2]=264072(span=4,weighted=0)
+ [3]=13942(span=4,weighted=0) [4]=272152(span=3,weighted=0)
+ [5]=36540(span=2,weighted=0) [6]=268760(span=2,weighted=0)
+ [7]=96599(span=2,weighted=0) [8]=53487(span=2,weighted=0)
+ [9]=4105(span=1,weighted=0) [10]=72577(span=1,weighted=0)
+ [11]=63692(span=1,weighted=0) [12]=93736(span=1,weighted=0)
+ [13]=235111(span=1,weighted=0) [14]=57821(span=1,weighted=0)
+ [15]=128526(span=1,weighted=0) [16]=2244(span=1,weighted=0)
+ [17]=64011(span=1,weighted=0) [18]=48369(span=1,weighted=0)
+ [19]=45237(span=1,weighted=0) [20]=77285(span=1,weighted=0)
+ [21]=281786(span=1,weighted=0) [22]=115179(span=1,weighted=0)
+HI_2013_CANDIDATE_LIST position=4 count=25 [0]=273371(span=5,weighted=0)
+ [1]=272824(span=5,weighted=0) [2]=13943(span=4,weighted=0)
+ [3]=264073(span=4,weighted=0) [4]=272153(span=3,weighted=0)
+ [5]=265815(span=1,weighted=0) [6]=252236(span=1,weighted=0)
+ [7]=238356(span=1,weighted=0) [8]=233274(span=1,weighted=0)
+ [9]=206047(span=1,weighted=0) [10]=173825(span=1,weighted=0)
+ [11]=160529(span=1,weighted=0) [12]=153132(span=1,weighted=0)
+ [13]=146098(span=1,weighted=0) [14]=105185(span=1,weighted=0)
+ [15]=87003(span=1,weighted=0) [16]=83568(span=1,weighted=0)
+ [17]=75575(span=1,weighted=0) [18]=49761(span=1,weighted=0)
+ [19]=31841(span=1,weighted=0) [20]=29459(span=1,weighted=0)
+ [21]=28296(span=1,weighted=0) [22]=6519(span=1,weighted=0)
+ [23]=4632(span=1,weighted=0) [24]=2529(span=1,weighted=0)
+HI_2013_CANDIDATE_LIST position=5 count=25 [0]=272825(span=5,weighted=0)
+ [1]=273372(span=5,weighted=0) [2]=13944(span=4,weighted=0)
+ [3]=264074(span=4,weighted=0) [4]=282675(span=2,weighted=0)
+ [5]=282025(span=2,weighted=0) [6]=282713(span=2,weighted=0)
+ [7]=243651(span=1,weighted=0) [8]=168174(span=1,weighted=0)
+ [9]=224354(span=1,weighted=0) [10]=171885(span=1,weighted=0)
+ [11]=132211(span=1,weighted=0) [12]=255282(span=1,weighted=0)
+ [13]=246677(span=1,weighted=0) [14]=5170(span=1,weighted=0)
+ [15]=1869(span=1,weighted=0) [16]=149397(span=1,weighted=0)
+ [17]=268761(span=1,weighted=0) [18]=65726(span=1,weighted=0)
+ [19]=211910(span=1,weighted=0) [20]=255006(span=1,weighted=0)
+ [21]=232750(span=1,weighted=0) [22]=241241(span=1,weighted=0)
+ [23]=208339(span=1,weighted=0) [24]=33050(span=1,weighted=0)
+HI_2013_CANDIDATE_LIST position=6 count=23 [0]=282025(span=2,weighted=0)
+ [1]=282675(span=2,weighted=0) [2]=282713(span=2,weighted=0)
+ [3]=280962(span=1,weighted=0) [4]=282007(span=1,weighted=0)
+ [5]=282011(span=1,weighted=0) [6]=281727(span=1,weighted=0)
+ [7]=281136(span=1,weighted=0) [8]=269609(span=1,weighted=0)
+ [9]=282043(span=1,weighted=0) [10]=282035(span=1,weighted=0)
+ [11]=200069(span=1,weighted=0) [12]=136758(span=1,weighted=0)
+ [13]=74841(span=1,weighted=0) [14]=33797(span=1,weighted=0)
+ [15]=66928(span=1,weighted=0) [16]=281739(span=1,weighted=0)
+ [17]=281980(span=1,weighted=0) [18]=105189(span=1,weighted=0)
+ [19]=94772(span=1,weighted=0) [20]=27246(span=1,weighted=0)
+ [21]=23010(span=1,weighted=0) [22]=282628(span=1,weighted=0)
+HI_2013_SELECTED_UNIT n=1 id=135441
+HI_2013_SELECTED_UNIT n=2 id=273369
+HI_2013_SELECTED_UNIT n=3 id=273370
+HI_2013_SELECTED_UNIT n=4 id=273370
+HI_2013_SELECTED_UNIT n=5 id=273371
+HI_2013_SELECTED_UNIT n=6 id=282025
+HI_2013_SELECTED_UNIT n=7 id=282025
+HI_2013_SELECTED_UNIT n=8 id=273369
+HI_2013_SELECTED_UNIT n=9 id=135441
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 0118:011c: create process 'Z:\samples\voicetext_kate.exe'/00000000 @004014C0 (450560<1847>)
+0118:011c: create thread I @004014C0
+0118:011c: loads DLL C:\windows\system32\ntdll.dll @7BD10000 (2994176<5095>)
+0118:011c: loads DLL C:\windows\system32\kernel32.dll @7BB90000 (1466368<19395>)
+0118:011c: loads DLL C:\windows\system32\kernelbase.dll @7B650000 (5410816<14148>)
+0118:011c: loads DLL C:\windows\system32\msvcrt.dll @7B2A0000 (2715648<8214>)
+0118:011c: loads DLL Z:\samples\vt_kat.dll @10000000 (0<0>)
+0118:011c: loads DLL C:\windows\system32\WINMM.dll @78EC0000 (1474560<4890>)
+0118:011c: loads DLL C:\windows\system32\advapi32.dll @7B550000 (958464<7400>)
+0118:011c: loads DLL C:\windows\system32\sechost.dll @7B200000 (565248<3163>)
+0118:011c: loads DLL C:\windows\system32\ucrtbase.dll @7AEE0000 (3198976<11541>)
+0118:011c: loads DLL C:\windows\system32\msacm32.dll @78E40000 (413696<1982>)
+0118:011c: loads DLL C:\windows\system32\user32.dll @7A160000 (5005312<14159>)
+0118:011c: loads DLL Z:\samples\zlib1.dll @7A120000 (135680<0>)
+0118:011c: loads DLL C:\windows\system32\gdi32.dll @7A640000 (2355200<7390>)
+0118:011c: loads DLL C:\windows\system32\win32u.dll @7A0D0000 (221184<1966>)
+0118:011c: loads DLL C:\windows\system32\ole32.dll @7A9F0000 (4440064<14323>)
+0118:011c: loads DLL C:\windows\system32\combase.dll @7A890000 (1314816<7562>)
+0118:011c: loads DLL C:\windows\system32\rpcrt4.dll @79EA0000 (2162688<9274>)
+0118:011c: loads DLL C:\windows\system32\coml2.dll @79E40000 (262144<3883>)
+0118:011c: loads DLL C:\windows\system32\iphlpapi.dll @779C0000 (487424<4777>)
+0118:011c: loads DLL C:\windows\system32\dnsapi.dll @77970000 (258048<1399>)
+0118:011c: loads DLL C:\windows\system32\nsi.dll @77940000 (118784<823>)
+0118:011c: loads DLL C:\windows\system32\ws2_32.dll @7AE40000 (565248<2279>)
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\tzres.dll @009C0000 (0<0>)
+00000118:0000011c: unload DLL @009C0000
+0118:011c: loads DLL C:\windows\system32\imm32.dll @782F0000 (401408<2996>)
+0118:011c: loads DLL C:\windows\system32\winex11.drv @780F0000 (307200<4314>)
+0118:011c: loads DLL C:\windows\system32\uxtheme.dll @78030000 (671744<3646>)
+00000118:0000011c: exit process (0)
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

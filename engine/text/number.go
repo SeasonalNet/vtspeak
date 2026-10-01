@@ -217,6 +217,34 @@ func ExpandPaul2013Percentage(value string) ([]string, error) {
 	return append(words, "percent"), nil
 }
 
+// ExpandPaul2013Telephone spells the captured NNN-NNNN surface as cardinal
+// groups separated by "to". The Stage 20 parser-row trace for `555-1234`
+// directly shows "five hundred fifty five to twelve thirty four". Other
+// digit values within this layout use the existing cardinal expander as an
+// implementation inference; other telephone layouts are unsupported.
+func ExpandPaul2013Telephone(value string) ([]string, error) {
+	parts := strings.Split(value, "-")
+	if len(parts) != 2 || len(parts[0]) != 3 || len(parts[1]) != 4 {
+		return nil, errors.New("telephone surface must use the captured NNN-NNNN form")
+	}
+	for index, part := range parts {
+		if err := validateDigits(part, fmt.Sprintf("telephone group %d", index+1)); err != nil {
+			return nil, err
+		}
+	}
+	left, err := ExpandPaul2013UnsignedInteger(parts[0])
+	if err != nil {
+		return nil, fmt.Errorf("telephone first group: %w", err)
+	}
+	right, err := ExpandPaul2013UnsignedInteger(parts[1])
+	if err != nil {
+		return nil, fmt.Errorf("telephone second group: %w", err)
+	}
+	words := append([]string(nil), left...)
+	words = append(words, "to")
+	return append(words, right...), nil
+}
+
 // ExpandPaul2013Ordinal expands ordinal digit surfaces through thirty-first.
 // The observed normalizer uses a dedicated suffix-sensitive lookup path and
 // has a special zero entry. The 1–31 spellings here follow English ordinal
@@ -402,15 +430,18 @@ func expandFourDigitYear(value string) []string {
 	firstTwo := int(value[0]-'0')*10 + int(value[1]-'0')
 	hundredsDigit := value[2] - '0'
 	lastTwo := int(value[2]-'0')*10 + int(value[3]-'0')
-	if hundredsDigit == 0 && lastTwo < 10 {
+	if (firstTwo == 10 || firstTwo == 20) && lastTwo < 10 {
 		return expandCardinalGroups(value)
 	}
 	words := cardinalBelowThousand(firstTwo)
-	if lastTwo == 0 && hundredsDigit != 0 {
+	if lastTwo == 0 && value[1] != '0' {
 		return append(words, "hundred")
 	}
-	if lastTwo < 10 {
+	if hundredsDigit == 0 && lastTwo > 0 && lastTwo < 10 {
 		return append(words, "oh", cardinalOnes[lastTwo])
+	}
+	if lastTwo < 10 {
+		return expandCardinalGroups(value)
 	}
 	return append(words, cardinalBelowThousand(lastTwo)...)
 }

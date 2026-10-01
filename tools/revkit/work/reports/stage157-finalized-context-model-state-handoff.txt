@@ -1,0 +1,59 @@
+Stage 157: finalized context table to model-state records
+
+Observed evidence
+
+- FUN_1003e240 initializes its group destination at parser state minus 0x4c,
+  copies the context row's phone string from +0x1e to destination +0xb2, and
+  advances that destination by 0x94 for each new group. Therefore the strings
+  consumed by FUN_10016c90 are at parser-state base +0x66 + group*0x94.
+  This is a different view from the earlier source-row slice after the header.
+- The surface-copy gate is mode == 'U' OR class != 'Y'. Original x86 at
+  0x1003e3a8 compares mode with 0x55; its equal branch at 0x1003e3aa enters
+  the copy block at 0x1003e3b5. The following class comparison with 0x59 skips
+  the copy only when mode differs from U and class equals Y.
+- FUN_10022dc0 copies the parser's leading signed count into model-state +2
+  and reads source offsets at parser-state +0x14/+0x18 with stride 0x94,
+  converting them to inclusive absolute intervals in record +0/+4.
+- Sources: stage25-parser-finalizer.c, stage23-state-array-writers.c,
+  vt_pau-synthesis-pseudocode.c, and vt_pau-objdump-disassembly.txt in this
+  reports directory. Ghidra output remains pseudocode.
+
+Implementation
+
+- Corrected FinalizePaul2013ModelParserRows's surface-copy predicate. Its
+  previous mode != U AND class != Y predicate incorrectly skipped both U
+  cases.
+- Added FinalizePaul2013ModelParserRowsAndBuildModelStateRecords. It performs
+  the finalizer pass, requires its successful group-count result, derives the
+  record-source view from the complete surrounding state arena, transfers
+  count and inclusive intervals, and composes FUN_10016c90's recovered writes.
+- It derives the terminal pitch-value count from finalized parser-state +2.
+  Returned finalized state retains the bytes needed to resolve record pointers.
+  Input arenas remain unchanged; per-token state values, base position, and
+  the native address mapping are explicit inputs.
+
+Validation
+
+- Focused text/selection tests passed. Tests cover all four mode/class gate
+  combinations, context-table to record phone bytes and overlapping markers,
+  inclusive intervals, count transfer, final mode, preserved input arenas,
+  and rejection of the native group-count mismatch. A three-context-row
+  fixture verifies two output groups, same-group string append, 0x94 row
+  advancement, a point interval, and the M flag in the second model record.
+- The selection integration test now starts with a context table and follows
+  finalizer, record writes, counted-arena extraction, packed contexts, and
+  exact catalog lookup. Its empty catalog checks context/pool alignment and
+  preserves misses; it does not prove native candidate membership.
+- `GOCACHE=/tmp/vtspeak-go-cache go test ./...` passed from engine/.
+- `GOCACHE=/tmp/vtspeak-go-cache go build ./...` passed from engine/.
+- `GOCACHE=/tmp/vtspeak-go-cache go vet ./...` passed from engine/.
+- `git diff --check` passed from the repository root.
+
+Limits
+
+- Source parser dispatch and unresolved normalization/TPP branches still need
+  their producers. This composition starts from produced context-table bytes
+  and the surrounding parser arena.
+- Position-state range programs, optional interval-index remapping, and the
+  state arrays read by selection remain outside this handoff. No native full-
+  arena runtime parity or whole-synthesis parity is claimed.

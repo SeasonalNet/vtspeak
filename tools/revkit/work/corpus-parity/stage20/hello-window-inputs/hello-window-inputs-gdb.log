@@ -1,0 +1,28 @@
+Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Wine-gdb> Breakpoint 1 at 0x10024060
+Wine-gdb> >>>>>> > > >  >  >  > > >>>Wine-gdb> Wine-gdb> Breakpoint 2 at 0x10023060
+Wine-gdb> >>> > > > > > > > >  >  >  >  > > >  >  >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 3 at 0x10027fe0
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 4 at 0x1002aac0
+Wine-gdb> >>>>>>>>>> >  >  > >  >  > >  >  > >  >  > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 5 at 0x1001b200
+Wine-gdb> >>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 6 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+HELLO_WINDOW_VOLUME old=200 new=100
+Temporary breakpoint 7 at 0x10024808
+Temporary breakpoint 8 at 0x10024271
+Temporary breakpoint 9 at 0x10024808
+Temporary breakpoint 10 at 0x10024271
+HELLO_WINDOW_CUTOFF_OVERRIDE slot=1 metric_sum=9
+Temporary breakpoint 11 at 0x10024808
+Temporary breakpoint 12 at 0x10024271
+Temporary breakpoint 13 at 0x10024808
+Temporary breakpoint 14 at 0x10024271
+HELLO_WINDOW_CUTOFF_OVERRIDE slot=3 metric_sum=6
+HELLO_WINDOW_SELECTED n=1 id=272822
+HELLO_WINDOW_SELECTED n=2 id=272823
+HELLO_WINDOW_SELECTED n=3 id=272824
+HELLO_WINDOW_SELECTED n=4 id=272825
+HELLO_WINDOW_JOIN call=1 slot=0 count=1210 leading=78 trailing=72 source=0x25eef14
+HELLO_WINDOW_JOIN call=2 slot=1 count=578 leading=72 trailing=72 source=0x25eef14
+HELLO_WINDOW_JOIN call=3 slot=2 count=1180 leading=72 trailing=68 source=0x25eef14
+HELLO_WINDOW_JOIN call=4 slot=3 count=4854 leading=68 trailing=126 source=0x25eef14
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

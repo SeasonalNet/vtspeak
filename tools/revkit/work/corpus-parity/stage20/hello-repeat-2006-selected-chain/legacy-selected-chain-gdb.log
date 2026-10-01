@@ -1,0 +1,35 @@
+Wine-gdb> Already logging to /probe/stage20/hello-repeat-2006-selected-chain/legacy-selected-chain-gdb.log.
+Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ed7f
+Wine-gdb> >>>>>>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+LEGACY_FINAL_CHAIN_TRACE_READY
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x42bd9 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=1 node=0x42bda id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=2 node=0x42bdb id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=10 node=0x38cde id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=17 node=0x40f27 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40787 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40788 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40789 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x4078a id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x42bd9 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=1 node=0x42bda id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=2 node=0x42bdb id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=10 node=0x38cde id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=17 node=0x40f27 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40787 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40788 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40789 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x4078a id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x42bd9 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=1 node=0x42bda id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=2 node=0x42bdb id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=10 node=0x38cde id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=17 node=0x40f27 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40787 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40788 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x40789 id_at_plus8=0 id_at_zero=0
+LEGACY_FINAL_CHAIN position=660273 selected_index=0 node=0x4078a id_at_plus8=0 id_at_zero=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 

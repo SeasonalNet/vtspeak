@@ -1,0 +1,35 @@
+Stage 148: record-backed position query through conditional fallback
+
+Evidence
+
+- `FUN_10024680` calls `FUN_10024060` for each eligible compact state row and
+  calls `FUN_100242a0` when the whole-position result is not accepted. The
+  evidence is preserved in `stage7-backtrack.txt`.
+- `FUN_10024060` and `FUN_100242a0` both select their six-byte row from
+  `param2 + position*6 + 0xec628`; `FUN_100242a0` reads the record model class
+  at `+0x92b` and target signature selected by row byte `+2`. Its fallback
+  row copies the current state and writes the two fallback row values.
+  Pseudocode is preserved in `stage25-feature-scope-query.c` and
+  `vt_pau-synthesis-pseudocode.c`.
+
+Ported behavior
+
+- `selection.QueryPaul2013PositionFromTransitionState` projects the target
+  signature, row class, and model class from the record arena, runs the
+  whole-position query, and invokes the existing two-row fallback only when
+  the whole-position acceptance check fails.
+- It seeds fallback rows from the projected six-byte state, preserving bytes
+  `+0..+2` and `+5`. It also derives the signed fallback row-class delta from
+  record byte `+0x6de`, which `FUN_100242a0` adds to the fallback row ordinal.
+  Row-specific metrics, feature scopes, and context gates remain explicit.
+- A synthetic catalog test verifies the rejected whole-position path, the
+  two-row advance, the preserved selectors, and fallback row values.
+
+Limits
+
+- This composition is supported by decompiler pseudocode and existing
+  component tests; no new original-DLL differential was captured.
+- The producer of eligibility shorts and descriptor-to-record groups,
+  the state arena supplying live gates/metrics, per-phone scoring state, and
+  text-derived model rows remain unresolved. Stage 149 ports reads from the
+  supplied arena but does not recover its producer.

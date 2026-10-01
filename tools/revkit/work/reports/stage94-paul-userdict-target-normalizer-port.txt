@@ -1,0 +1,37 @@
+VoiceText Paul 2013 user-dictionary target normalizer
+====================================================
+
+Evidence
+--------
+
+`VT_CheckUserDict_TargetNorm_ENG` returns the signed short from
+`FUN_1005f3b0` at DLL VA `0x1005f3b0`. The direct disassembly is preserved in
+`tools/revkit/work/reports/vt_pau-objdump-disassembly.txt`. It calls
+`FUN_10063230` to trim the writable input, special-cases a leading `[SKIP]`,
+scans bytes through the signed character-attribute table at `0x1007e188`, and
+uses counters/state for separators and angle brackets. A terminal `[CI]`
+comparison writes NUL over its opening bracket and changes the eventual
+success result.
+
+Stage 21 provides runtime evidence for the complete one-byte domain, the
+ordinary-space token and segment boundaries, selected angle-bracket forms,
+the source byte-pair rejects, and the tested `[SKIP]`/`[CI]` case masks and
+placements. The exact observed statuses include `-1`, `-2`, `-3`, `-4`, `-5`,
+`-6`, `-7`, `-8`, `-11`, `-12`, `1`, and `2`; the numeric codes are retained.
+
+Implementation
+--------------
+
+`text.NormalizePaul2013UserDictionaryTarget` ports the disassembled scan and
+mutates a writable NUL-terminated buffer in place. It preserves leading and
+trailing trim, the case-mapped `[SKIP]` comparison, byte-pair rejection,
+letter-class scan, internal-hyphen predicate, angle-bracket state, separator
+and total-length limits, and `[CI]` truncation. It returns an error only when
+the Go caller violates the native C-string buffer precondition by omitting a
+NUL terminator.
+
+Static control flow covers the full scanner path, but runtime parity has not
+been compared for all sequences. The exhaustive one-byte matrix and the
+listed sequence captures do not cover every multibyte string, tag placement,
+or interaction of limits. Return-code meanings beyond the direct control
+branches remain unnamed.

@@ -1,0 +1,8 @@
+mapping=legacy attr_48[row] != 0 => versioned signature[row*7+6] |= 0x80
+base=tools/revkit/work/stage20/index-adapter-key-repacked-attr48-key3-attr40-key2-repeat-hello-slots0-3-5-8-pools
+legacy_source=tools/revkit/work/stage19/data-kate-copy/M16/mc_idx_tbl/unit-gen2.idx
+base_sha256=614552168e119e612bbe1fb03297c78a6044b0bd969762419b45e37e14ea10d0
+unit_id=264071 local_row=84076 legacy_attr_48=1 signature_byte6_before=0x00 after=0x80
+unit_id=264072 local_row=84077 legacy_attr_48=1 signature_byte6_before=0x00 after=0x80
+unit_id=264073 local_row=84078 legacy_attr_48=1 signature_byte6_before=0x00 after=0x80
+overlay_sha256=a8a0a769d98ac1f5a8c078a64cf23fa4fcd84431724da1790b5548a29243daf2

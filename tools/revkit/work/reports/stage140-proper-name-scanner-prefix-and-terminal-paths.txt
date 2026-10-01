@@ -1,0 +1,31 @@
+VoiceText Paul 2013 proper-name scanner prefix and terminal paths
+=================================================================
+
+Evidence
+--------
+
+The complete Ghidra pseudocode for `FUN_1005a350` is preserved in
+`tools/revkit/work/reports/stage135-fun1005a350-pseudo.txt`. At entry, the
+scanner consumes leading space, tab, CR, and LF bytes, incrementing output
+field `param_1[0]` for each byte and counting LF separately. One LF sets
+`param_1[1]` to one. More than one LF returns with status 8 and an empty
+scanner string. If the first non-whitespace byte is NUL, the scanner returns
+status 9 with an empty scanner string. Both early returns set the scanner
+string from `DAT_1009f948`, whose byte is zero in the read-only DLL.
+
+Port
+----
+
+`text.ObservePaul2013ProperNameScannerInput` derives the leading-prefix
+count, single-LF marker, and terminal status 8/9 result from a NUL-terminated
+input. The duration-engine `WithScannerInputAndContextTables` methods combine
+that observation with a caller-supplied ordinary scanner output/status,
+context-table snapshots, and the already-ported post-scanner gate.
+
+Evidence boundary
+-----------------
+
+This ports only the scanner prelude and its multiline/empty early returns.
+The input-to-token transformation for ordinary nonempty text remains
+unimplemented. The ordinary output and status are explicit inputs, and no
+whole-scanner parity is claimed.

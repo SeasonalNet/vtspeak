@@ -1,0 +1,29 @@
+VoiceText Paul 2013 embedded context path lookup wrapper
+========================================================
+
+Evidence boundary
+-----------------
+
+FUN_1000cbe0 at VA 0x1000cbe0 calls FUN_10003a70 to resolve the supplied
+surface, checks the returned record-present byte, parses the payload with
+FUN_10003c50, and passes the parsed alternatives plus a caller-supplied marker
+to FUN_10003f10. If lookup fails it writes an empty C string and returns -1.
+After selection, it returns 1 when the output C string is nonempty and -1
+when it is empty. These are decompiler observations from
+`stage6-tpp-consumers-expanded.txt` lines 725-742; stack-check pseudocode is
+not modeled.
+
+FUN_10003f10 initializes an empty output, scans each path row for the requested
+marker (including its observed `)` matching `%` case), remembers the first
+row containing `0x17`, and falls back to that row or row zero. It copies the
+phone string aligned with the selected path. The checked-in Go
+`text.SelectPaul2013PronunciationByPathMarker` implements that selector.
+Its static decompilation is in `stage6-rules-and-tables-expanded.txt` lines
+2929-3020.
+
+`duration.Engine.SelectPaul2013ContextPronunciationFromEmbeddedDictionary`
+connects the loaded embedded dictionary and parsed/expanded alternatives to
+that selector. Its output includes the C-string NUL and its return code
+distinguishes nonempty output (`1`) from empty output (`-1`). This does not
+port the surrounding model-context row mutations or establish row-for-row
+runtime parity.

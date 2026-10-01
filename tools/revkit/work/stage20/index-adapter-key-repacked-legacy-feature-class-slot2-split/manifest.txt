@@ -1,0 +1,11 @@
+source=Kate ver.2005 unit indexes
+method=measured 2006 seven-byte feature to diagnostic 2013 class keys
+slot2_split=weight-5 feature -> 22172b2000; weight-4 feature -> 22172b1800
+warning=weight-4 suffix assignment is experimental, not a semantic mapping
+target_keys=slot0:5a2217a000,slot2:22172b2000,slot2_weight4:22172b1800,slot4:172b2f0000,slot5:2b305a4500
+collision_sentinel_tail=ff20
+unit-alp.idx: units=905 bytes=36245
+unit-etc.idx: units=3666 bytes=146685
+unit-gen.idx: units=179995 bytes=7199845
+unit-gen2.idx: units=98133 bytes=3925366
+unit-num.idx: units=997 bytes=39925

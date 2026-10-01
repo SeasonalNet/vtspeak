@@ -70,6 +70,81 @@ def main() -> None:
             None,
             False,
         ),
+        "attr48-key3-attr40-key2-hi-tail-map": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-hi-0404-to-5d00": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-hi-0404-to-5500": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-hi-0404-to-4d00": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-hi-0404-to-6500": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-hi-exact-first-pool-filter": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-hi-first-candidate-prefix-filter": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-attrb40-hi-exact-first-pool-filter": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            "attr40",
+            True,
+        ),
+        "attr48-key3-attr40-key2-repeat-hello-slot8-tail-map": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-repeat-hello-slot8-0404-to-4500": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-repeat-hello-slot0-pool-to-a000": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-repeat-hello-slot0-pool-to-a000-v2": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-repeat-hello-slot5-pool-to-0000": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-repeat-hello-slots0-5-8-pools": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
+        "attr48-key3-attr40-key2-repeat-hello-slots0-3-5-8-pools": (
+            ("attr48", "key5[:3]", "attr40", "key5[3:]"),
+            None,
+            False,
+        ),
         "attr48-key3-attr40-key2-attrb40-transfer": (
             ("attr48", "key5[:3]", "attr40", "key5[3:]"),
             "attr40",
@@ -89,7 +164,7 @@ def main() -> None:
                 bytes((0x04, 0x04)): bytes((0x45, 0x00)),
             }
             if name.endswith(("context-tail-map", "context-prefix-tail-map"))
-            and not name.endswith("matched-context-tail-map")
+            and not name.endswith(("matched-context-tail-map", "hi-tail-map"))
             else {}
         )
         context_prefix_tail_map = (
@@ -119,9 +194,175 @@ def main() -> None:
                     bytes((0x04, 0x04)): bytes((0x45, 0x00)),
                 },
             }
-            if name.endswith("matched-context-tail-map")
+            if name.endswith(("matched-context-tail-map", "hi-tail-map"))
             else {}
         )
+        if name.endswith("repeat-hello-slot8-tail-map"):
+            matched_context_tail_map = {
+                bytes((0x2B, 0x30, 0x5A)): {
+                    bytes((0x04, 0x00)): bytes((0x45, 0x00)),
+                }
+            }
+        if name.endswith("repeat-hello-slot8-0404-to-4500"):
+            matched_context_tail_map = {
+                bytes((0x2B, 0x30, 0x5A)): {
+                    bytes((0x04, 0x04)): bytes((0x45, 0x00)),
+                }
+            }
+        candidate_prefix_tail_map = {}
+        if name.endswith("repeat-hello-slot0-pool-to-a000"):
+            candidate_prefix_tail_map = {
+                (bytes((0x5A, 0x22, 0x04)), bytes((0x1E, 0x1E))): bytes(
+                    (0x5A, 0x22, 0x17)
+                )
+            }
+        if name.endswith("repeat-hello-slot0-pool-to-a000-v2"):
+            candidate_prefix_tail_map = {
+                (bytes((0x5A, 0x22, 0x05)), bytes((0x1E, 0x1E))): bytes(
+                    (0x5A, 0x22, 0x17)
+                ),
+                (bytes((0x5B, 0x22, 0x05)), bytes((0x1E, 0x1E))): bytes(
+                    (0x5A, 0x22, 0x17)
+                ),
+            }
+        if name.endswith("repeat-hello-slot5-pool-to-0000"):
+            target_prefix = bytes((0x2F, 0x22, 0x1E))
+            candidate_prefix_tail_map = {
+                (bytes.fromhex(prefix), bytes.fromhex(tail)): target_prefix
+                for prefix, tail in (
+                    ("112205", "0a0a"),
+                    ("1a2217", "1414"),
+                    ("1e2205", "0a0a"),
+                    ("1e2217", "1414"),
+                    ("272205", "0a0a"),
+                    ("2f2205", "0a0a"),
+                    ("362205", "0a0a"),
+                    ("3e2205", "0a0a"),
+                    ("3e2218", "0a0a"),
+                    ("3f2205", "0a0a"),
+                )
+            }
+        if name.endswith(
+            ("repeat-hello-slots0-5-8-pools", "repeat-hello-slots0-3-5-8-pools")
+        ):
+            candidate_prefix_tail_map = {
+                (bytes((0x5A, 0x22, 0x05)), bytes((0x1E, 0x1E))): bytes(
+                    (0x5A, 0x22, 0x17)
+                ),
+                (bytes((0x5B, 0x22, 0x05)), bytes((0x1E, 0x1E))): bytes(
+                    (0x5A, 0x22, 0x17)
+                ),
+                **{
+                    (bytes.fromhex(prefix), bytes.fromhex(tail)): bytes(
+                        (0x2F, 0x22, 0x1E)
+                    )
+                    for prefix, tail in (
+                        ("112205", "0a0a"),
+                        ("1a2217", "1414"),
+                        ("1e2205", "0a0a"),
+                        ("1e2217", "1414"),
+                        ("272205", "0a0a"),
+                        ("2f2205", "0a0a"),
+                        ("362205", "0a0a"),
+                        ("3e2205", "0a0a"),
+                        ("3e2218", "0a0a"),
+                        ("3f2205", "0a0a"),
+                    )
+                },
+            }
+        if candidate_prefix_tail_map:
+            matched_context_tail_map = {
+                bytes((0x5A, 0x22, 0x17)): {
+                    bytes((0x1E, 0x1E)): bytes((0xA0, 0x00)),
+                }
+            }
+        if name.endswith("repeat-hello-slot5-pool-to-0000"):
+            matched_context_tail_map = {
+                bytes((0x0D, 0x22, 0x17)): {
+                    bytes((0x0A, 0x0A)): bytes((0x00, 0x00)),
+                    bytes((0x14, 0x14)): bytes((0x00, 0x00)),
+                }
+            }
+        if name.endswith(
+            ("repeat-hello-slots0-5-8-pools", "repeat-hello-slots0-3-5-8-pools")
+        ):
+            matched_context_tail_map = {
+                bytes((0x5A, 0x22, 0x17)): {
+                    bytes((0x1E, 0x1E)): bytes((0xA0, 0x00)),
+                },
+                bytes((0x0D, 0x22, 0x17)): {
+                    bytes((0x0A, 0x0A)): bytes((0x00, 0x00)),
+                    bytes((0x14, 0x14)): bytes((0x00, 0x00)),
+                },
+                bytes((0x2B, 0x30, 0x5A)): {
+                    bytes((0x04, 0x04)): bytes((0x45, 0x00)),
+                },
+            }
+            if name.endswith("repeat-hello-slots0-3-5-8-pools"):
+                matched_context_tail_map[bytes((0x2B, 0x30, 0x22))] = {
+                    bytes((0x02, 0x02)): bytes((0x00, 0x00)),
+                }
+        if name.endswith("hi-tail-map"):
+            matched_context_tail_map = {
+                bytes((0x5A, 0x22, 0x01)): {
+                    bytes((0x1E, 0x1E)): bytes((0xA0, 0x00)),
+                },
+                bytes((0x22, 0x11, 0x5A)): {
+                    bytes((0x04, 0x22)): bytes((0x65, 0x00)),
+                },
+            }
+        if name.endswith("hi-exact-first-pool-filter"):
+            matched_context_tail_map = {
+                bytes((0x5A, 0x22, 0x01)): {
+                    bytes((0x1E, 0x1E)): bytes((0xA0, 0x00)),
+                },
+                bytes((0x22, 0x11, 0x5A)): {
+                    bytes((0x04, 0x22)): bytes((0x65, 0x00)),
+                    bytes((0x04, 0x04)): bytes((0x65, 0x00)),
+                },
+            }
+            candidate_prefix_tail_map = {
+                (bytes.fromhex(prefix), bytes((0x1E, 0x1E))): bytes.fromhex("5a2213")
+                for prefix in (
+                    "5a2202",
+                    "5a2203",
+                    "5a220e",
+                    "5a220f",
+                    "5b2202",
+                    "5b220e",
+                    "5b2212",
+                )
+            }
+        if name.endswith("hi-first-candidate-prefix-filter"):
+            candidate_prefix_tail_map = {
+                (bytes.fromhex(prefix), bytes((0x1E, 0x1E))): bytes.fromhex("5a2213")
+                for prefix in (
+                    "5a2202",
+                    "5a2203",
+                    "5a220e",
+                    "5a220f",
+                    "5b2202",
+                    "5b220e",
+                    "5b2212",
+                )
+            }
+        relaxation_targets = {
+            "hi-0404-to-5d00": bytes((0x5D, 0x00)),
+            "hi-0404-to-5500": bytes((0x55, 0x00)),
+            "hi-0404-to-4d00": bytes((0x4D, 0x00)),
+            "hi-0404-to-6500": bytes((0x65, 0x00)),
+        }
+        for suffix, target in relaxation_targets.items():
+            if name.endswith(suffix):
+                matched_context_tail_map = {
+                    bytes((0x5A, 0x22, 0x01)): {
+                        bytes((0x1E, 0x1E)): bytes((0xA0, 0x00)),
+                    },
+                    bytes((0x22, 0x11, 0x5A)): {
+                        bytes((0x04, 0x22)): bytes((0x65, 0x00)),
+                        bytes((0x04, 0x04)): target,
+                    },
+                }
         destination = OUTPUT / f"index-adapter-key-repacked-{name}"
         destination.mkdir(parents=True, exist_ok=True)
         manifest = [
@@ -141,8 +382,20 @@ def main() -> None:
             manifest.append("apple_prefix_tail_map=47072b:0004:0500")
         if matched_context_tail_map:
             manifest.append(
-                "matched_context_tail_map=5a2217:1e1e:a000,"
-                "22172b:001e:2000,22172b:0000:2000,2b305a:0404:4500"
+                "matched_context_tail_map="
+                + ",".join(
+                    f"{prefix.hex()}:{source.hex()}:{target.hex()}"
+                    for prefix, mappings_for_prefix in matched_context_tail_map.items()
+                    for source, target in mappings_for_prefix.items()
+                )
+            )
+        if candidate_prefix_tail_map:
+            manifest.append(
+                "candidate_prefix_tail_map="
+                + ",".join(
+                    f"{prefix.hex()}:{tail.hex()}:{target.hex()}"
+                    for (prefix, tail), target in candidate_prefix_tail_map.items()
+                )
             )
         for source in sorted(SOURCE.glob("unit-*.idx")):
             raw = source.read_bytes()
@@ -160,19 +413,23 @@ def main() -> None:
             signature = bytearray()
             for unit in range(units):
                 key = key5[unit * 5 : (unit + 1) * 5]
+                mapped_prefix = candidate_prefix_tail_map.get(
+                    (key[:3], key[3:5]), key[:3]
+                )
+                mapped_key = mapped_prefix + key[3:]
                 fields = {
-                    "key5": key,
-                    "key5[:3]": key[:3],
-                    "key5[3:]": context_prefix_tail_map.get(key[:3], {}).get(
-                        key[3:5],
+                    "key5": mapped_key,
+                    "key5[:3]": mapped_prefix,
+                    "key5[3:]": context_prefix_tail_map.get(mapped_prefix, {}).get(
+                        mapped_key[3:5],
                         matched_context_tail_map.get(
                             bytes((
-                                class_tables[0][key[0]],
-                                class_tables[1][key[1]],
-                                class_tables[2][key[2]],
+                                class_tables[0][mapped_prefix[0]],
+                                class_tables[1][mapped_prefix[1]],
+                                class_tables[2][mapped_prefix[2]],
                             )), {}
                         ).get(
-                            key[3:5], context_tail_map.get(key[3:5], key[3:])
+                            mapped_key[3:5], context_tail_map.get(mapped_key[3:5], mapped_key[3:])
                         ),
                     ),
                     "attr48": bytes((attr_48[unit],)),

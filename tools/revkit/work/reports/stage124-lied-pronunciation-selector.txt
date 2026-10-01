@@ -1,0 +1,55 @@
+VoiceText Paul 2013 `lied` direct pronunciation branch
+======================================================
+
+Evidence
+--------
+
+The branch is in `FUN_100049b0` at `0x100049b0`, in
+`tools/revkit/work/reports/stage6-text-table-consumers.txt` immediately after
+the `learned` branch. It compares the current surface with `lied` at DLL VA
+`0x10077540`. The gates inspect the preceding surface's bit-7 character
+attribute, a fixed set of following literals, `FUN_10010730` on the previous
+surface, and three preceding literals. Their addresses and values in the
+read-only `binary/vt_pau.dll` are:
+
+| DLL address | Value |
+| --- | --- |
+| `0x10077538` | `about` |
+| `0x10077530` | `along` |
+| `0x10077528` | `around` |
+| `0x10077694` | `at` |
+| `0x10077520` | `back` |
+| `0x10077518` | `before` |
+| `0x10077510` | `behind` |
+| `0x100776b4` | `by` |
+| `0x100776ec` | `close` |
+| `0x10077674` | `down` |
+| `0x10077688` | `in` |
+| `0x100775e8` | `into` |
+| `0x1007750c` | `off` |
+| `0x100776b0` | `on` |
+| `0x10077508` | `out` |
+| `0x10077500` | `over` |
+| `0x10077380` | `to` |
+| `0x1007767c` | `up` |
+| `0x10077680` | `with` |
+
+The remaining predecessor literals are `have`, `had`, and `been` at
+`0x10077394`, `0x1007738c`, and `0x10077384`. The static `FUN_10010730`
+word set is already represented by `paul2013NameContextIsFUN10010730Word`.
+
+Recovered implementation
+------------------------
+
+`text.SelectPaul2013ModelNameContextPronunciation` selects `&` directly when
+the current row's first byte is lowercase `l` and the previous surface begins
+uppercase. In the remaining branch, it selects `&` when the next surface is
+in the listed set or the previous surface is in the `FUN_10010730` set. At
+that branch's final gate, `have`, `had`, or `been` selects `(`. Other contexts
+use the generic fallback.
+
+Evidence boundary
+-----------------
+
+This is a static port from DLL pseudocode and literal data. No direct
+original-runtime pronunciation-choice comparison has been made for `lied`.

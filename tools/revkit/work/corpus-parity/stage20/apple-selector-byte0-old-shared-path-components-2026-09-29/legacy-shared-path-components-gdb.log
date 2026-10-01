@@ -1,0 +1,32 @@
+Wine-gdb> Already logging to /probe/stage20/apple-selector-byte0-old-shared-path-components-2026-09-29/legacy-shared-path-components-gdb.log.
+Wine-gdb> Wine-gdb> Wine-gdb> Hardware assisted breakpoint 1 at 0x1001ea73
+Wine-gdb> >>>>> > > > > > >>>Wine-gdb> Wine-gdb> Hardware assisted breakpoint 2 at 0x408187
+Wine-gdb> >>>>Wine-gdb> Wine-gdb> Continuing.
+APPLE_2006_SHARED_PATH_COMPONENT_TRACE_READY
+APPLE_2006_SHARED_EDGE context=2 current=100180 previous=177774 category=2 metrics=0.429843,0.0125786,0.481203 weights=10,5,1 bias=2 weighted_sum=6.84252
+APPLE_2006_SHARED_EDGE context=2 current=64719 previous=177774 category=2 metrics=0.372669,0,0.00772201 weights=10,5,1 bias=2 weighted_sum=5.73442
+APPLE_2006_SHARED_EDGE context=3 current=2554 previous=64719 category=1 metrics=0.370441,0.752941,0.503937 weights=10,10,2 bias=2 weighted_sum=14.2417
+APPLE_2006_SHARED_EDGE context=3 current=82036 previous=64719 category=1 metrics=0.479421,0.947368,0.0327869 weights=10,10,2 bias=2 weighted_sum=16.3335
+APPLE_2006_SHARED_EDGE context=3 current=59558 previous=100180 category=1 metrics=0.849702,0.0384615,0.531148 weights=10,10,2 bias=2 weighted_sum=11.9439
+APPLE_2006_SHARED_EDGE context=4 current=59559 previous=59558 category=0 metrics=0.455222,0.00881057,0.00630915 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=4 current=82037 previous=82036 category=0 metrics=0,0.13913,0.0254777 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=4 current=2555 previous=2554 category=0 metrics=0.823525,0.236967,0.220859 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=2 current=100180 previous=177774 category=2 metrics=0.429843,0.0125786,0.481203 weights=10,5,1 bias=2 weighted_sum=6.84252
+APPLE_2006_SHARED_EDGE context=2 current=64719 previous=177774 category=2 metrics=0.372669,0,0.00772201 weights=10,5,1 bias=2 weighted_sum=5.73442
+APPLE_2006_SHARED_EDGE context=3 current=2554 previous=64719 category=1 metrics=0.370441,0.752941,0.503937 weights=10,10,2 bias=2 weighted_sum=14.2417
+APPLE_2006_SHARED_EDGE context=3 current=82036 previous=64719 category=1 metrics=0.479421,0.947368,0.0327869 weights=10,10,2 bias=2 weighted_sum=16.3335
+APPLE_2006_SHARED_EDGE context=3 current=59558 previous=100180 category=1 metrics=0.849702,0.0384615,0.531148 weights=10,10,2 bias=2 weighted_sum=11.9439
+APPLE_2006_SHARED_EDGE context=4 current=59559 previous=59558 category=0 metrics=0.455222,0.00881057,0.00630915 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=4 current=82037 previous=82036 category=0 metrics=0,0.13913,0.0254777 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=4 current=2555 previous=2554 category=0 metrics=0.823525,0.236967,0.220859 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=2 current=100180 previous=177774 category=2 metrics=0.429843,0.0125786,0.481203 weights=10,5,1 bias=2 weighted_sum=6.84252
+APPLE_2006_SHARED_EDGE context=2 current=64719 previous=177774 category=2 metrics=0.372669,0,0.00772201 weights=10,5,1 bias=2 weighted_sum=5.73442
+APPLE_2006_SHARED_EDGE context=3 current=2554 previous=64719 category=1 metrics=0.370441,0.752941,0.503937 weights=10,10,2 bias=2 weighted_sum=14.2417
+APPLE_2006_SHARED_EDGE context=3 current=82036 previous=64719 category=1 metrics=0.479421,0.947368,0.0327869 weights=10,10,2 bias=2 weighted_sum=16.3335
+APPLE_2006_SHARED_EDGE context=3 current=59558 previous=100180 category=1 metrics=0.849702,0.0384615,0.531148 weights=10,10,2 bias=2 weighted_sum=11.9439
+APPLE_2006_SHARED_EDGE context=4 current=59559 previous=59558 category=0 metrics=0.455222,0.00881057,0.00630915 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=4 current=82037 previous=82036 category=0 metrics=0,0.13913,0.0254777 weights=10,20,20 bias=2 weighted_sum=0
+APPLE_2006_SHARED_EDGE context=4 current=2555 previous=2554 category=0 metrics=0.823525,0.236967,0.220859 weights=10,20,20 bias=2 weighted_sum=0
+warning: Temporarily disabling breakpoints for unloaded shared library "/samples/vt_kat.dll"
+[Inferior 1 (Remote target) exited normally]
+Wine-gdb> 
