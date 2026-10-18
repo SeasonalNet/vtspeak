@@ -12,6 +12,16 @@ paths = [
 targetRules = ["generic-api-key"]
 
 [[allowlists]]
+description = "Reproduction inventories map file paths to SHA-256 checksums."
+condition = "AND"
+paths = [
+  '''(?:^|/)tools/revkit/work/trace-reproduction/(?:kate-installer-files|wav-runtime-inputs)\.json$''',
+]
+targetRules = ["generic-api-key"]
+regexTarget = "line"
+regexes = ['''^\s*"[^"\r\n]+": "[0-9a-f]{64}",?\s*$''']
+
+[[allowlists]]
 description = "Reimplementation engine false positives"
 condition = "AND"
 paths = [
