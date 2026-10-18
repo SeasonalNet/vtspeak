@@ -1,0 +1,422 @@
+{
+  "recovered-bridget-hello-structural-classids": {
+    "kate_adapter": true,
+    "sources": [
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/input-hello-world.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/input.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/run-context-probe.sh",
+      "tools/revkit/work/stage17/address.txt",
+      "tools/revkit/work/stage17/input.txt",
+      "tools/revkit/work/stage17/james-package-wav-sha256.txt",
+      "tools/revkit/work/stage17/numbers.txt",
+      "tools/revkit/work/stage17/wav-sha256.txt",
+      "tools/revkit/work/stage19/input.txt",
+      "tools/revkit/work/stage19/license-control/run-api.sh",
+      "tools/revkit/work/stage19/license-control/run-control-api.sh",
+      "tools/revkit/work/stage19/license-control/run-control-parser-trace.sh",
+      "tools/revkit/work/stage19/license-control/run-parser-trace.sh",
+      "tools/revkit/work/stage19/run-index-progress.sh",
+      "tools/revkit/work/stage19/run-index-smoke.sh",
+      "tools/revkit/work/stage19/run-legacy-index-first-unit.sh",
+      "tools/revkit/work/stage19/run-probe.sh",
+      "tools/revkit/work/stage19/run-score-fault.sh",
+      "tools/revkit/work/stage19/run-versioned-adapter.sh",
+      "tools/revkit/work/stage19/run-versioned-fixture-trace.sh",
+      "tools/revkit/work/stage19/run-versioned-fixture.sh",
+      "tools/revkit/work/stage19/run-versioned-matrix.sh",
+      "tools/revkit/work/stage19/run-versioned-selection-trace.sh",
+      "tools/revkit/work/stage20/apple-plain.txt",
+      "tools/revkit/work/stage20/bridget-hello-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-selector-key4-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-selector-key4-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classids-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classinput-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classinput-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classinput-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-contextclasses-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-deeptrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-v4-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-queryclasses-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-querytrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-span-producer-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-span-producer-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-span-producer-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-trace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classids-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classinput-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classinput-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classinput-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-contextclasses-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-deeptrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-v4-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-querytrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-span-producer-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-span-producer-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-span-producer-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-trace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-position5-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello.txt",
+      "tools/revkit/work/stage20/hello-plain.txt",
+      "tools/revkit/work/stage20/hello-repeat-plain.txt",
+      "tools/revkit/work/stage20/hi-plain.txt",
+      "tools/revkit/work/stage20/pah0-ssml-input.txt",
+      "tools/revkit/work/stage20/parser-offsets-boundaries.txt",
+      "tools/revkit/work/stage20/parser-offsets-number-widths.txt",
+      "tools/revkit/work/stage20/parser-offsets-number.txt",
+      "tools/revkit/work/stage20/parser-offsets-numeric-isolated.txt",
+      "tools/revkit/work/stage20/parser-offsets-punctuation.txt",
+      "tools/revkit/work/stage20/parser-row-type-acronym.txt",
+      "tools/revkit/work/stage20/parser-row-type-comma-terms.txt",
+      "tools/revkit/work/stage20/parser-row-type-decimal.txt",
+      "tools/revkit/work/stage20/run-adapted-forced-pah0.sh",
+      "tools/revkit/work/stage20/run-bridget-2005-adapter.sh",
+      "tools/revkit/work/stage20/run-continuity-bit7-unit-major.sh",
+      "tools/revkit/work/stage20/run-hello-index-field-origin.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank-transfer.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank-zero.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank.sh",
+      "tools/revkit/work/stage20/run-hello-legacy-records.sh",
+      "tools/revkit/work/stage20/run-hello-vector-constant-8.sh",
+      "tools/revkit/work/stage20/run-hello-vector-copy-score.sh",
+      "tools/revkit/work/stage20/run-hello-vector-signature-transfer.sh",
+      "tools/revkit/work/stage20/run-hello-vector-zero-score.sh",
+      "tools/revkit/work/stage20/run-natural-row-isolation.sh",
+      "tools/revkit/work/stage20/run-natural-tail-isolation.sh",
+      "tools/revkit/work/stage20/run-natural-tail-row-sweep.sh",
+      "tools/revkit/work/stage20/run-original-forced-pah0.sh",
+      "tools/revkit/work/stage20/vt_kat-context2-aweight1-context3-bweight10.manifest.txt",
+      "tools/revkit/work/stage20/vt_kat-context3-bweight10.manifest.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/pah0-input.txt"
+    ],
+    "traces": [
+      "tools/revkit/work/stage20/trace-bridget-selected-units.gdb"
+    ],
+    "cwd": "stage5",
+    "mounts": [
+      {
+        "target": "/work/data-kate",
+        "generated": "kate-package"
+      },
+      {
+        "source": "tools/revkit/work/stage20/bridget-2005-structural-adapter/M16/mc_idx_tbl",
+        "target": "/work/data-kate/M16/mc_idx_tbl"
+      },
+      {
+        "source": "binary/vt_kat.dll",
+        "target": "/samples/vt_kat.dll"
+      },
+      {
+        "work": "stage20",
+        "target": "/probe"
+      },
+      {
+        "generated": "kate-trees",
+        "target": "/work/data-kate/M16/ttsdata/tree2"
+      },
+      {
+        "generated": "common-dict",
+        "target": "/work/data-common/dict-eng"
+      },
+      {
+        "source": "tools/revkit/work/trace-reproduction/investigation-interventions/hello-world.txt",
+        "target": "/probe/bridget-hello.txt"
+      }
+    ],
+    "commands": [
+      {
+        "env": {
+          "EVIDENCE_PREFIX": "bridget-hello-structural-classids",
+          "TRACE_SELECTED": "1",
+          "GDB_SCRIPT": "/probe/trace-bridget-selected-units.gdb"
+        },
+        "argv": [
+          "/bin/bash",
+          "/probe/run-bridget-2005-adapter.sh"
+        ]
+      }
+    ],
+    "outputs": {
+      "tools/revkit/work/stage20/bridget-hello-structural-classids.wav": {
+        "bytes": 28820,
+        "sha256": "db849c1ef7cf9dc0af65052cb6afd01e60c20260db99c5cc27070704efb9942c"
+      }
+    },
+    "provenance": {
+      "session": "earlier-voice-experiments",
+      "line": 56972
+    },
+    "model_source": "data-bridget"
+  },
+  "recovered-bridget-hello-terminal-marker-duplicate-contextkeys-v2": {
+    "kate_adapter": true,
+    "sources": [
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/input-hello-world.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/input.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/run-context-probe.sh",
+      "tools/revkit/work/stage17/address.txt",
+      "tools/revkit/work/stage17/input.txt",
+      "tools/revkit/work/stage17/james-package-wav-sha256.txt",
+      "tools/revkit/work/stage17/numbers.txt",
+      "tools/revkit/work/stage17/wav-sha256.txt",
+      "tools/revkit/work/stage19/input.txt",
+      "tools/revkit/work/stage19/license-control/run-api.sh",
+      "tools/revkit/work/stage19/license-control/run-control-api.sh",
+      "tools/revkit/work/stage19/license-control/run-control-parser-trace.sh",
+      "tools/revkit/work/stage19/license-control/run-parser-trace.sh",
+      "tools/revkit/work/stage19/run-index-progress.sh",
+      "tools/revkit/work/stage19/run-index-smoke.sh",
+      "tools/revkit/work/stage19/run-legacy-index-first-unit.sh",
+      "tools/revkit/work/stage19/run-probe.sh",
+      "tools/revkit/work/stage19/run-score-fault.sh",
+      "tools/revkit/work/stage19/run-versioned-adapter.sh",
+      "tools/revkit/work/stage19/run-versioned-fixture-trace.sh",
+      "tools/revkit/work/stage19/run-versioned-fixture.sh",
+      "tools/revkit/work/stage19/run-versioned-matrix.sh",
+      "tools/revkit/work/stage19/run-versioned-selection-trace.sh",
+      "tools/revkit/work/stage20/apple-plain.txt",
+      "tools/revkit/work/stage20/bridget-hello-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-selector-key4-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-selector-key4-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classids-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classinput-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classinput-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-classinput-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-contextclasses-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-deeptrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-position5-span-v4-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-queryclasses-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-querytrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-span-producer-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-span-producer-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-span-producer-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-signature-trace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classids-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classinput-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classinput-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-classinput-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-contextclasses-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-deeptrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-position5-span-v4-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-querytrace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-span-producer-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-span-producer-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-span-producer-v3-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-structural-trace-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-position5-result.txt",
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-rank150652-result.txt",
+      "tools/revkit/work/stage20/bridget-hello.txt",
+      "tools/revkit/work/stage20/hello-plain.txt",
+      "tools/revkit/work/stage20/hello-repeat-plain.txt",
+      "tools/revkit/work/stage20/hi-plain.txt",
+      "tools/revkit/work/stage20/pah0-ssml-input.txt",
+      "tools/revkit/work/stage20/parser-offsets-boundaries.txt",
+      "tools/revkit/work/stage20/parser-offsets-number-widths.txt",
+      "tools/revkit/work/stage20/parser-offsets-number.txt",
+      "tools/revkit/work/stage20/parser-offsets-numeric-isolated.txt",
+      "tools/revkit/work/stage20/parser-offsets-punctuation.txt",
+      "tools/revkit/work/stage20/parser-row-type-acronym.txt",
+      "tools/revkit/work/stage20/parser-row-type-comma-terms.txt",
+      "tools/revkit/work/stage20/parser-row-type-decimal.txt",
+      "tools/revkit/work/stage20/run-adapted-forced-pah0.sh",
+      "tools/revkit/work/stage20/run-bridget-2005-adapter.sh",
+      "tools/revkit/work/stage20/run-continuity-bit7-unit-major.sh",
+      "tools/revkit/work/stage20/run-hello-index-field-origin.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank-transfer.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank-zero.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank.sh",
+      "tools/revkit/work/stage20/run-hello-legacy-records.sh",
+      "tools/revkit/work/stage20/run-hello-vector-constant-8.sh",
+      "tools/revkit/work/stage20/run-hello-vector-copy-score.sh",
+      "tools/revkit/work/stage20/run-hello-vector-signature-transfer.sh",
+      "tools/revkit/work/stage20/run-hello-vector-zero-score.sh",
+      "tools/revkit/work/stage20/run-natural-row-isolation.sh",
+      "tools/revkit/work/stage20/run-natural-tail-isolation.sh",
+      "tools/revkit/work/stage20/run-natural-tail-row-sweep.sh",
+      "tools/revkit/work/stage20/run-original-forced-pah0.sh",
+      "tools/revkit/work/stage20/vt_kat-context2-aweight1-context3-bweight10.manifest.txt",
+      "tools/revkit/work/stage20/vt_kat-context3-bweight10.manifest.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/pah0-input.txt"
+    ],
+    "traces": [
+      "tools/revkit/work/stage20/trace-bridget-context-classes.gdb"
+    ],
+    "cwd": "stage5",
+    "mounts": [
+      {
+        "target": "/work/data-kate",
+        "generated": "kate-package"
+      },
+      {
+        "source": "tools/revkit/work/stage20/bridget-2005-selector-key3-attr40-adapter/M16/mc_idx_tbl",
+        "target": "/work/data-kate/M16/mc_idx_tbl"
+      },
+      {
+        "source": "binary/vt_kat.dll",
+        "target": "/samples/vt_kat.dll"
+      },
+      {
+        "work": "stage20",
+        "target": "/probe"
+      },
+      {
+        "generated": "kate-trees",
+        "target": "/work/data-kate/M16/ttsdata/tree2"
+      },
+      {
+        "generated": "common-dict",
+        "target": "/work/data-common/dict-eng"
+      },
+      {
+        "source": "tools/revkit/work/trace-reproduction/investigation-interventions/hello-world.txt",
+        "target": "/probe/bridget-hello.txt"
+      }
+    ],
+    "commands": [
+      {
+        "env": {
+          "EVIDENCE_PREFIX": "bridget-hello-terminal-marker-duplicate-contextkeys-v2",
+          "TRACE_SELECTED": "1",
+          "GDB_SCRIPT": "/probe/trace-bridget-context-classes.gdb"
+        },
+        "argv": [
+          "/bin/bash",
+          "/probe/run-bridget-2005-adapter.sh"
+        ]
+      }
+    ],
+    "outputs": {
+      "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2.wav": {
+        "bytes": 27888,
+        "sha256": "c6bccacc755dab6c429578e6a8002566df06b30d9ff6aebfcaaf75c5f07ae33c"
+      }
+    },
+    "provenance": {
+      "session": "earlier-voice-experiments",
+      "line": 59118
+    },
+    "model_source": "data-bridget"
+  },
+  "recovered-key-repack-key5-b-c-copy-attr40": {
+    "kate_adapter": true,
+    "cwd": "stage5",
+    "sources": [
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/input-hello-world.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/input.txt",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/run-context-probe.sh",
+      "tools/revkit/work/stage19/input.txt",
+      "tools/revkit/work/stage19/license-control/run-api.sh",
+      "tools/revkit/work/stage19/license-control/run-control-api.sh",
+      "tools/revkit/work/stage19/license-control/run-control-parser-trace.sh",
+      "tools/revkit/work/stage19/license-control/run-parser-trace.sh",
+      "tools/revkit/work/stage19/run-index-progress.sh",
+      "tools/revkit/work/stage19/run-index-smoke.sh",
+      "tools/revkit/work/stage19/run-legacy-index-first-unit.sh",
+      "tools/revkit/work/stage19/run-probe.sh",
+      "tools/revkit/work/stage19/run-score-fault.sh",
+      "tools/revkit/work/stage19/run-versioned-adapter.sh",
+      "tools/revkit/work/stage19/run-versioned-fixture-trace.sh",
+      "tools/revkit/work/stage19/run-versioned-fixture.sh",
+      "tools/revkit/work/stage19/run-versioned-matrix.sh",
+      "tools/revkit/work/stage19/run-versioned-selection-trace.sh",
+      "tools/revkit/work/stage20/apple-plain.txt",
+      "tools/revkit/work/stage20/hello-plain.txt",
+      "tools/revkit/work/stage20/hello-repeat-plain.txt",
+      "tools/revkit/work/stage20/hi-plain.txt",
+      "tools/revkit/work/stage20/run-adapted-forced-pah0.sh",
+      "tools/revkit/work/stage20/run-bridget-2005-adapter.sh",
+      "tools/revkit/work/stage20/run-continuity-bit7-unit-major.sh",
+      "tools/revkit/work/stage20/run-hello-index-field-origin.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank-transfer.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank-zero.sh",
+      "tools/revkit/work/stage20/run-hello-keyrank.sh",
+      "tools/revkit/work/stage20/run-hello-legacy-records.sh",
+      "tools/revkit/work/stage20/run-hello-vector-constant-8.sh",
+      "tools/revkit/work/stage20/run-hello-vector-copy-score.sh",
+      "tools/revkit/work/stage20/run-hello-vector-signature-transfer.sh",
+      "tools/revkit/work/stage20/run-hello-vector-zero-score.sh",
+      "tools/revkit/work/stage20/run-natural-row-isolation.sh",
+      "tools/revkit/work/stage20/run-natural-tail-isolation.sh",
+      "tools/revkit/work/stage20/run-natural-tail-row-sweep.sh",
+      "tools/revkit/work/stage20/run-original-forced-pah0.sh",
+      "tools/revkit/work/corpus-parity/phone-boundary-probe/pah0-input.txt",
+      "tools/revkit/work/trace-reproduction/investigation-interventions/key-mark-position-2.txt"
+    ],
+    "traces": [
+      "tools/revkit/work/stage20/trace-adapted-forced-pah0.gdb"
+    ],
+    "mounts": [
+      {
+        "generated": "kate-trees",
+        "target": "/work/data-kate/M16/ttsdata/tree2"
+      },
+      {
+        "generated": "common-dict",
+        "target": "/work/data-common/dict-eng"
+      },
+      {
+        "source": "tools/revkit/work/stage19/vt_kat-tree2-versioned.dll",
+        "target": "/samples/vt_kat.dll"
+      },
+      {
+        "work": "stage19",
+        "target": "/probe"
+      },
+      {
+        "source": "tools/revkit/work/stage20/index-adapter-key-repacked-key5-b-c-copy-attr40",
+        "target": "/work/data-kate/M16/mc_idx_tbl"
+      },
+      {
+        "source": "tools/revkit/work/stage20/vector-pitch-overlay/pitch",
+        "target": "/work/data-kate/M16/ttsdata/tree2/pitch"
+      }
+    ],
+    "commands": [
+      {
+        "env": {
+          "INPUT_FIXTURE": "/work/trace-reproduction/investigation-interventions/key-mark-position-2.txt",
+          "GDB_SCRIPT": "/work/stage20/trace-adapted-forced-pah0.gdb",
+          "EVIDENCE_DIR": "/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40"
+        },
+        "argv": [
+          "/bin/bash",
+          "/work/stage20/run-adapted-forced-pah0.sh"
+        ]
+      }
+    ],
+    "outputs": {
+      "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40/adapted-pah0.wav": {
+        "bytes": 19120,
+        "sha256": "b117aefbeb1f65b4d83ca190bc17a797c7bf0af87f4ed31db96f263139ed0696"
+      }
+    }
+  }
+}

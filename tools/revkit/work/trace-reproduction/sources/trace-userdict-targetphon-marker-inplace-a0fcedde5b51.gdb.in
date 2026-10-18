@@ -1,0 +1,36 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $padded = ((char *(*)(unsigned int))0x1001d9c0)(7)
+#@bytes ["  set {char}($padded + ",0,") = ","09204848200d00"]
+  set $marker_space = ((char *(*)(unsigned int))0x1001d9c0)(9)
+#@bytes ["  set {char}($marker_space + ",0,") = ","4848205b43495d2000"]
+  set $marker_adjacent = ((char *(*)(unsigned int))0x1001d9c0)(7)
+#@bytes ["  set {char}($marker_adjacent + ",0,") = ","48485b43495d00"]
+  set $marker_extra = ((char *(*)(unsigned int))0x1001d9c0)(11)
+#@bytes ["  set {char}($marker_extra + ",0,") = ","4848205b43495d20484800"]
+  set $invalid_marker = ((char *(*)(unsigned int))0x1001d9c0)(10)
+#@bytes ["  set {char}($invalid_marker + ",0,") = ","4848205b534b49505d00"]
+  set $r = ((short (*)(char *))0x1002a590)($padded)
+  printf "TARGETPHON inplace=padded result=%d text=<%s>\n", $r, $padded
+  set $r = ((short (*)(char *))0x1002a590)($marker_space)
+  printf "TARGETPHON inplace=marker-space result=%d text=<%s>\n", $r, $marker_space
+  set $r = ((short (*)(char *))0x1002a590)($marker_adjacent)
+  printf "TARGETPHON inplace=marker-adjacent result=%d text=<%s>\n", $r, $marker_adjacent
+  set $r = ((short (*)(char *))0x1002a590)($marker_extra)
+  printf "TARGETPHON inplace=marker-extra result=%d text=<%s>\n", $r, $marker_extra
+  set $r = ((short (*)(char *))0x1002a590)($invalid_marker)
+  printf "TARGETPHON inplace=invalid-marker result=%d text=<%s>\n", $r, $invalid_marker
+  call ((void (*)(void *))0x1001da30)($padded)
+  call ((void (*)(void *))0x1001da30)($marker_space)
+  call ((void (*)(void *))0x1001da30)($marker_adjacent)
+  call ((void (*)(void *))0x1001da30)($marker_extra)
+  call ((void (*)(void *))0x1001da30)($invalid_marker)
+  continue
+end
+continue

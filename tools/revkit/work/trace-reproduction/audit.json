@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-12",
+  "previous_head": "f3998904214ef09a9c7221c709b8f6714247102b",
+  "rewritten_head": "1a4d84d7358ee7abea3fb96e01a5ed9b50b63c27",
+  "manifest_sha256": "4b69356e01bcec086408977cb11ae59e743bc2d845878fb475c0581c70cc3946",
+  "gdb": {
+    "files_verified_and_pruned": 916,
+    "original_bytes": 557685227,
+    "bash_generated_paths": 70,
+    "python_generated_paths": 2,
+    "template_paths": 844,
+    "distinct_templates": 793
+  },
+  "wav": {
+    "files_verified_and_pruned": 1187,
+    "original_bytes": 74408284,
+    "duplicate_copies": 1181,
+    "pcm_rebuilt_paths": 6,
+    "retained_paths": 406
+  },
+  "validation": {
+    "original_artifacts": "All manifest entries reconstructed and compared byte for byte before removal.",
+    "tracked_source_export": "All manifest entries reconstructed from an export of 1019 dependency files read exclusively from the staged Git index; original sizes and SHA-256 hashes matched.",
+    "pruned_paths": "Absent from the Git index, worktree and all reachable local history.",
+    "other_tracked_files": "Rewritten tip tree matched the original tip for every path outside the prune set.",
+    "python_unit_tests": "13 passed",
+    "go_test_all_packages": "passed",
+    "offline_audio_verifiers": "Stages 8, 9 and 11 passed local PCM/fixture checks; peer parity was not asserted.",
+    "gitleaks": "Reconstruction dependency export and toolkit scripts passed with unchanged configuration.",
+    "diff_check": "passed",
+    "git_fsck": "passed",
+    "proprietary_runtime_rerun": false
+  },
+  "publication": "Local history rewrite only; new reconstruction sources and documentation are staged, with no new ordinary commit or push."
+}

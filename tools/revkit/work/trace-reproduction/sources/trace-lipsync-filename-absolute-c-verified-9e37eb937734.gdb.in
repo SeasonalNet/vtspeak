@@ -1,0 +1,20 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $name = (char *)malloc(128)
+#@bytes ["  set {char}($name + ",0,") = ","433a5c77696e646f77735c74656d705c7674737065616b2d6c697073796e632d632d64726976652d6f75747075742d76657269666965642e74787400"]
+  x/s $name
+  printf "LIPSYNC_FILENAME_CALL case=absolute-c-verified\n"
+  set $result = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de50)((char *)$text, $name, 1, -1, -1, -1, -1, -1, -1)
+  printf "LIPSYNC_FILENAME case=absolute-c-verified raw_eax=%#x signed=%d\n", $result, $result
+  continue
+end
+
+continue

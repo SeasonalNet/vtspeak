@@ -1,0 +1,21 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $path = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path + ",0,") = ","5a3a2f776f726b2f737461676531362f70726570726f636573732d686561702d62797465732d706174682d323032363039323600"]
+  printf "PREPROCESS_HEAP_PATH_BEFORE ptr=%#x value=", $path
+  x/s $path
+  set $raw = ((unsigned int (*)(char *, char *, unsigned char, int, int, int, int, int, int, int))0x1001dd60)((char *)$text, $path, 5, 1, -1, -1, -1, -1, 0, 0)
+  printf "PREPROCESS_HEAP_PATH_AFTER raw_eax=%#x low_ax=%d value=", $raw, ((short)$raw)
+  x/s $path
+  continue
+end
+
+continue

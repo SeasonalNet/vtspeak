@@ -1,0 +1,66 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $text_hello = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text_hello + ",0,") = ","68656c6c6f00"]
+  set $text_world = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text_world + ",0,") = ","776f726c6400"]
+  set $out_hello_control = ((char *(*)(unsigned int))0x1001d9c0)(63)
+#@bytes ["  set {char}($out_hello_control + ",0,") = ","5a3a2f776f726b2f737461676532312f75736572646963742d6d656d6f72792d6d756c74696c696e652d68656c6c6f2d636f6e74726f6c2d76322e77617600"]
+  set $out_world_control = ((char *(*)(unsigned int))0x1001d9c0)(63)
+#@bytes ["  set {char}($out_world_control + ",0,") = ","5a3a2f776f726b2f737461676532312f75736572646963742d6d656d6f72792d6d756c74696c696e652d776f726c642d636f6e74726f6c2d76322e77617600"]
+  set $out_hello_loaded = ((char *(*)(unsigned int))0x1001d9c0)(62)
+#@bytes ["  set {char}($out_hello_loaded + ",0,") = ","5a3a2f776f726b2f737461676532312f75736572646963742d6d656d6f72792d6d756c74696c696e652d68656c6c6f2d6c6f616465642d76322e77617600"]
+  set $out_world_loaded = ((char *(*)(unsigned int))0x1001d9c0)(62)
+#@bytes ["  set {char}($out_world_loaded + ",0,") = ","5a3a2f776f726b2f737461676532312f75736572646963742d6d656d6f72792d6d756c74696c696e652d776f726c642d6c6f616465642d76322e77617600"]
+  set $hello_control = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_hello_control, 1, -1, -1, -1, -1, 200, 0)
+  printf "USERDICT_MULTILINE case=hello_control synth_ax=%d\n", $hello_control
+  set $world_control = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_world, $out_world_control, 1, -1, -1, -1, -1, 200, 0)
+  printf "USERDICT_MULTILINE case=world_control synth_ax=%d\n", $world_control
+  set $gate_before = *(unsigned char *)0x100a7489
+  set {unsigned char}0x100a7489 = 1
+  set $rows = ((char *(*)(unsigned int))0x1001d9c0)(22)
+  set {unsigned char}($rows + 0) = 104
+  set {unsigned char}($rows + 1) = 101
+  set {unsigned char}($rows + 2) = 108
+  set {unsigned char}($rows + 3) = 108
+  set {unsigned char}($rows + 4) = 111
+  set {unsigned char}($rows + 5) = 44
+  set {unsigned char}($rows + 6) = 72
+  set {unsigned char}($rows + 7) = 72
+  set {unsigned char}($rows + 8) = 44
+  set {unsigned char}($rows + 9) = 80
+  set {unsigned char}($rows + 10) = 10
+  set {unsigned char}($rows + 11) = 119
+  set {unsigned char}($rows + 12) = 111
+  set {unsigned char}($rows + 13) = 114
+  set {unsigned char}($rows + 14) = 108
+  set {unsigned char}($rows + 15) = 100
+  set {unsigned char}($rows + 16) = 44
+  set {unsigned char}($rows + 17) = 72
+  set {unsigned char}($rows + 18) = 72
+  set {unsigned char}($rows + 19) = 44
+  set {unsigned char}($rows + 20) = 80
+  set {unsigned char}($rows + 21) = 0
+  set $load = ((short (*)(int, char *, char *, int))0x10027880)(200, 0, $rows, 21)
+  printf "USERDICT_MULTILINE load_ax=%d gate_before=%u gate_forced=%u span=21\n", $load, $gate_before, *(unsigned char *)0x100a7489
+  if $load == 1
+    set $hello_loaded = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_hello_loaded, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_MULTILINE case=hello_loaded synth_ax=%d\n", $hello_loaded
+    set $world_loaded = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_world, $out_world_loaded, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_MULTILINE case=world_loaded synth_ax=%d\n", $world_loaded
+    set $unload = ((short (*)(int))0x10027a80)(200)
+    printf "USERDICT_MULTILINE unload_ax=%d\n", $unload
+  end
+  set {unsigned char}0x100a7489 = $gate_before
+  printf "USERDICT_MULTILINE gate_restored=%u\n", *(unsigned char *)0x100a7489
+  continue
+end
+
+continue

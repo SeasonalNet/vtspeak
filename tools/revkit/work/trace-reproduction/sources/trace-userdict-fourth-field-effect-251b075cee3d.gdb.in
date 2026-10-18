@@ -1,0 +1,56 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $path_plain = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($path_plain + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d706c61696e2d702e63737600"]
+  set $path_extra = ((char *(*)(unsigned int))0x1001d9c0)(47)
+#@bytes ["  set {char}($path_extra + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d666f75722d702e63737600"]
+  set $path_empty = ((char *(*)(unsigned int))0x1001d9c0)(55)
+#@bytes ["  set {char}($path_empty + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d747261696c696e672d656d7074792e63737600"]
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $out_plain = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($out_plain + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d666f757274682d6669656c642d706c61696e2e77617600"]
+  set $out_extra = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($out_extra + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d666f757274682d6669656c642d65787472612e77617600"]
+  set $out_empty = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($out_empty + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d666f757274682d6669656c642d656d7074792e77617600"]
+  set $gate_before = *(unsigned char *)0x100a7489
+  set {unsigned char}0x100a7489 = 1
+  printf "USERDICT_FOURTH gate_before=%u gate_forced=%u\n", $gate_before, *(unsigned char *)0x100a7489
+  set $load_plain = ((short (*)(int, char *))0x10027960)(200, $path_plain)
+  printf "USERDICT_FOURTH case=plain load_ax=%d\n", $load_plain
+  if $load_plain == 1
+    set $synth_plain = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $out_plain, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_FOURTH case=plain synth_ax=%d\n", $synth_plain
+    set $unload_plain = ((short (*)(int))0x10027a80)(200)
+    printf "USERDICT_FOURTH case=plain unload_ax=%d\n", $unload_plain
+  end
+  set $load_extra = ((short (*)(int, char *))0x10027960)(200, $path_extra)
+  printf "USERDICT_FOURTH case=extra load_ax=%d\n", $load_extra
+  if $load_extra == 1
+    set $synth_extra = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $out_extra, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_FOURTH case=extra synth_ax=%d\n", $synth_extra
+    set $unload_extra = ((short (*)(int))0x10027a80)(200)
+    printf "USERDICT_FOURTH case=extra unload_ax=%d\n", $unload_extra
+  end
+  set $load_empty = ((short (*)(int, char *))0x10027960)(200, $path_empty)
+  printf "USERDICT_FOURTH case=empty load_ax=%d\n", $load_empty
+  if $load_empty == 1
+    set $synth_empty = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $out_empty, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_FOURTH case=empty synth_ax=%d\n", $synth_empty
+    set $unload_empty = ((short (*)(int))0x10027a80)(200)
+    printf "USERDICT_FOURTH case=empty unload_ax=%d\n", $unload_empty
+  end
+  set {unsigned char}0x100a7489 = $gate_before
+  printf "USERDICT_FOURTH gate_restored=%u\n", *(unsigned char *)0x100a7489
+  continue
+end
+
+continue

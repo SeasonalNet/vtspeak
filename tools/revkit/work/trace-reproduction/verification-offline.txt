@@ -1,0 +1,17 @@
+matched default PCM blocks == default.wav data chunk (89434 bytes)
+default.wav: 44717 frames
+matched pitch120 PCM blocks == pitch120.wav data chunk (94312 bytes)
+pitch120.wav: 47156 frames
+matched Hi PCM blocks == map-short.wav data chunk (12776 bytes)
+map-short.wav: 6388 frames
+matched default.wav == Stage 3 reference.wav (89434 bytes)
+default SHA-256: 3bd8bbfde92f1d645715de40a03a6a68e3acedf0a3361158b869b8a07d803187
+matched pitch120.wav == Stage 4 reference.wav (94312 bytes)
+pitch120 SHA-256: 3e7dec025338b047b957c6466fba07d42b83ff734a7b1a67b0cead40962e2079
+map.wav: 44717 frames
+map-pitch120.wav: 47156 frames
+map-speed120.wav: 38326 frames
+map-volume120.wav: 44717 frames
+numbers: 108601 frames, 217202 matching PCM bytes, SHA-256=725dea40685392b5c239f849a56038e21620ae9102ebcd45b125a75e4285577d
+abbreviations: 116689 frames, 233378 matching PCM bytes, SHA-256=b391ac1449525ed89ac3c64f88c196191372774513b9655db4e11c49c2d92b02
+Restored and cleaned 16 temporary WAVs; both offline verifiers passed

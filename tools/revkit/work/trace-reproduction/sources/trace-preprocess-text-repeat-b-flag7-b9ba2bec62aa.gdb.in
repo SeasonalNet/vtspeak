@@ -1,0 +1,20 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $path = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path + ",0,") = ","5a3a2f776f726b2f737461676531362f686561702d666c6167372d636173652d7265706561742d622d323032363039323600"]
+  printf "PREPROCESS_CASE_BEFORE case=repeat-b flag=7 path="
+  x/s $path
+  set $raw = ((unsigned int (*)(char *, char *, unsigned char, int, int, int, int, int, int, int))0x1001dd60)((char *)$text, $path, 7, 1, -1, -1, -1, -1, 0, 0)
+  printf "PREPROCESS_CASE_RESULT case=repeat-b flag=7 raw_eax=%#x low_ax=%d path=%s\n", $raw, ((short)$raw), $path
+  continue
+end
+
+continue

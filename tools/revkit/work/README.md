@@ -3,7 +3,8 @@
 This directory holds generated analysis evidence that the research documents
 cite. Portable traces, small captured fixtures, reference outputs, scripts, and
 Ghidra text exports are tracked so a checkout can inspect and recheck the
-documented results.
+documented results. Generated GDB command files and verified reproducible WAVE outputs are
+reconstructed from the tracked [artifact sources](trace-reproduction/README.md).
 
 ## Tracked material
 
@@ -14,10 +15,12 @@ documented results.
 - `stage2-copy/` contains small DAT payload excerpts, their captured PCM
   outputs, and the GDB capture scripts/logs used for decoder comparisons.
 - `stage3/` through `stage19/` contain the controlled text inputs, trace
-  scripts/logs, PCM buffers, WAVE outputs, and comparison evidence cited in the
+  scripts/logs, PCM buffers, WAVE reproduction recipes, and comparison evidence cited in the
   stage findings. `stage5/probes/stage6/` holds the captured tree lookups used
   by the checked-in comparison helper.
 - `stage6-resource-report.json` records the checked-in TPP inventory result.
+- `trace-reproduction/` preserves the generators, source instructions, and
+  checked hashes used to reconstruct pruned command files and WAVE copies.
 
 The outputs in this directory are evidence from the proprietary VoiceText
 engine and voice package. Their inclusion makes these small research fixtures
@@ -37,12 +40,23 @@ state, or complete local copies of proprietary inputs:
 - `data-common` and `data-paul`: container bind-mount links.
 - `stage1-copy/` and `stage1-run/`: bulk runtime copies and very large raw
   syscall traces.
+- The generated Stage 21 GDB command files for the word-spacing and ASCII
+  whitespace-class matrices are omitted; their tracked runners recreate them.
+  The oversized fullmask trace stopped early and was excluded from the
+  validated matrix. API logs, DTT outputs, runners, and analyzers remain the
+  retained evidence.
+- Materialized `.gdb` files and regenerated WAVE outputs stay ignored. Restore
+  a cited file using the artifact tool before inspecting its commands or using
+  a runner that reads an existing GDB input.
 - `stage2-copy/wineprefix/` and its cache/config directories: Wine runtime
   state.
 - The repository's `binary/`, `data-common/`, and per-voice `data-*` source
   inputs remain outside Git as before.
 
 ## Offline checks
+
+Restore a verifier's WAV inputs with the linked artifact tool before running
+it; regenerated WAVs remain ignored and can be cleaned afterward.
 
 Decode each captured Stage 2 payload and compare its PCM bytes with the
 original-engine capture:

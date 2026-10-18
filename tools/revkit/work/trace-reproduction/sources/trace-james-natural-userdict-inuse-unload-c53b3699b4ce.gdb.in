@@ -1,0 +1,56 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands 1
+  silent
+  disable 1
+  set $dbroot = ((char *(*)(unsigned int))0x1001d9c0)(9)
+#@bytes ["  set {char}($dbroot + ",0,") = ","5a3a2f776f726b2f00"]
+  set $license = ((char *(*)(unsigned int))0x1001d9c0)(44)
+#@bytes ["  set {char}($license + ",0,") = ","5a3a2f776f726b2f646174612d636f6d6d6f6e2f7665726966792f766572696669636174696f6e2e74787400"]
+  set $dict_csv = ((char *(*)(unsigned int))0x1001d9c0)(37)
+#@bytes ["  set {char}($dict_csv + ",0,") = ","5a3a2f776f726b2f737461676532312f6a616d65732d75736572646963742d702e63737600"]
+  set $control = ((char *(*)(unsigned int))0x1001d9c0)(49)
+#@bytes ["  set {char}($control + ",0,") = ","5a3a2f776f726b2f737461676532312f6a616d65732d75736572646963742d696e7573652d636f6e74726f6c2e77617600"]
+  set $active = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($active + ",0,") = ","5a3a2f776f726b2f737461676532312f6a616d65732d75736572646963742d696e7573652d6163746976652e77617600"]
+  set $restored = ((char *(*)(unsigned int))0x1001d9c0)(50)
+#@bytes ["  set {char}($restored + ",0,") = ","5a3a2f776f726b2f737461676532312f6a616d65732d75736572646963742d696e7573652d726573746f7265642e77617600"]
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $load_james = ((short (*)(void *, int, char *, unsigned int, unsigned int, char *, char *, unsigned int))0x10027af0)(0, 4, $dbroot, 0, 0xffffffff, $license, 0, 0xffffffff)
+  set $slot_state = *(unsigned int *)(0x100a0464 + 16)
+  set $gate = *(unsigned char *)(0x100a7488 + 4)
+  set $capacity = *(int *)($slot_state + 0x4d14)
+  set $dict_pointer = *(unsigned int *)0x100a647c
+  printf "NATURAL_INUSE load_james_ax=%d gate=%d capacity=%d dictionary=%p\n", $load_james, $gate, $capacity, $dict_pointer
+  set $control_result = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $control, 4, -1, -1, -1, -1, -1, 0)
+  printf "NATURAL_INUSE case=control synth=%d\n", $control_result
+  set $load_dict = ((short (*)(int, char *))0x10027960)(0, $dict_csv)
+  printf "NATURAL_INUSE dictionary_load=%d ptr=%p\n", $load_dict, $dict_pointer
+  watch *(unsigned int *)0x100e047c
+  commands 2
+    silent
+    set $active_context = *(unsigned int *)0x100e047c
+    set $context_dict = *(unsigned int *)($active_context + 0x1312c0)
+    printf "NATURAL_INUSE watch context=%p context_dictionary=%p dictionary=%p\n", $active_context, $context_dict, $dict_pointer
+    set $active_unload = ((short (*)(int))0x10027a80)(0)
+    printf "NATURAL_INUSE active_unload=%d\n", $active_unload
+    disable 2
+    continue
+  end
+  set $active_result = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $active, 4, -1, -1, -1, -1, 0, 0)
+  printf "NATURAL_INUSE case=active synth=%d\n", $active_result
+  set $idle_unload = ((short (*)(int))0x10027a80)(0)
+  printf "NATURAL_INUSE idle_unload=%d\n", $idle_unload
+  set $restored_result = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $restored, 4, -1, -1, -1, -1, -1, 0)
+  printf "NATURAL_INUSE case=restored synth=%d\n", $restored_result
+  call ((void (*)(int))0x10027ea0)(4)
+  kill
+  quit
+end
+
+continue

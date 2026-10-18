@@ -1,0 +1,39 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands 1
+  silent
+  disable 1
+  set $path = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($path + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d706c61696e2d702e63737600"]
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $out = ((char *(*)(unsigned int))0x1001d9c0)(42)
+#@bytes ["  set {char}($out + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d696e7573652d756e6c6f61642e77617600"]
+  set $load = ((short (*)(int, char *))0x10027960)(200, $path)
+  printf "USERDICT_INUSE load index=200 ax=%d\n", $load
+  set $gate_before = *(unsigned char *)0x100a7489
+  set {unsigned char}0x100a7489 = 1
+  printf "USERDICT_INUSE gate_before=%u gate_forced=1\n", $gate_before
+  break *0x100260ec
+  commands 2
+    silent
+    disable 2
+    printf "USERDICT_INUSE active_state=%#x selected_dict_ptr=%#x slot200_ptr=%#x\n", $esi, *(unsigned int *)($esi + 0x1312c0), *(unsigned int *)(0x100a647c + 200 * 4)
+    set $during = ((short (*)(int))0x10027980)(200)
+    printf "USERDICT_INUSE unload_during_selection index=200 ax=%d\n", $during
+    continue
+  end
+  set $synth = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $out, 1, -1, -1, -1, -1, 200, 0)
+  printf "USERDICT_INUSE synth index=200 ax=%d\n", $synth
+  set $after = ((short (*)(int))0x10027980)(200)
+  printf "USERDICT_INUSE unload_after_synthesis index=200 ax=%d\n", $after
+  set {unsigned char}0x100a7489 = $gate_before
+  printf "USERDICT_INUSE gate_restored=%u\n", *(unsigned char *)0x100a7489
+  continue
+end
+
+continue

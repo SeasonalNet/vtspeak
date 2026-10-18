@@ -1,0 +1,42 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $buffer = (char *)malloc(60000)
+  set $length = (int *)malloc(4)
+  set *$length = 60000
+  set $branch = (unsigned char *)0x10021f1a
+  set $old0 = $branch[0]
+  set $old1 = $branch[1]
+  set $old2 = $branch[2]
+  set $old3 = $branch[3]
+  set $old4 = $branch[4]
+  set $old5 = $branch[5]
+  set $branch[0] = 0xe9
+  set *(int *)($branch + 1) = 0x126
+  set $branch[5] = 0x90
+  printf "FORCED_MINUS8_PATCH selector=1 branch=%p saved=%02x%02x%02x%02x%02x%02x\n", $branch, $old0, $old1, $old2, $old3, $old4, $old5
+  set $result = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(1, (char *)$text, $buffer, $length, 0, 0, 1, 0, 0, -1, -1, -1, -1, 0, 0)
+  set $branch[0] = $old0
+  set $branch[1] = $old1
+  set $branch[2] = $old2
+  set $branch[3] = $old3
+  set $branch[4] = $old4
+  set $branch[5] = $old5
+  printf "FORCED_MINUS8_RETURN selector=1 result=%d length=%d restored_branch=%02x%02x%02x%02x%02x%02x\n", $result, *$length, $branch[0], $branch[1], $branch[2], $branch[3], $branch[4], $branch[5]
+  set *$length = 60000
+  set $cancel = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(1, $text, $buffer, $length, 2, 0, 1, 0, 0, -1, -1, -1, -1, 0, -1)
+  printf "FORCED_MINUS8_CANCEL selector=1 result=%d length=%d\n", $cancel, *$length
+  set *$length = 60000
+  set $after = ((int (*)(int, char *, char *, int *, int, int, unsigned int, unsigned int *, unsigned int *, int, int, int, int, int, int))0x1001ddf0)(1, $text, $buffer, $length, 1, 0, 1, 0, 0, -1, -1, -1, -1, 0, 0)
+  printf "FORCED_MINUS8_AFTER_CANCEL selector=1 result=%d length=%d\n", $after, *$length
+  continue
+end
+
+continue

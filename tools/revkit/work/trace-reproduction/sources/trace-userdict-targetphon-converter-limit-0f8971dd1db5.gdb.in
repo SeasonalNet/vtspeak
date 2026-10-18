@@ -1,0 +1,33 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $input64 = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($input64 + ",0,") = ","4220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204200"]
+  set $input65 = ((char *(*)(unsigned int))0x1001d9c0)(130)
+#@bytes ["  set {char}($input65 + ",0,") = ","42204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204200"]
+  set $input66 = ((char *(*)(unsigned int))0x1001d9c0)(132)
+#@bytes ["  set {char}($input66 + ",0,") = ","422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204220422042204200"]
+  set $output = ((char *(*)(unsigned int))0x1001d9c0)(66)
+  set $i = 0
+  while $i < 66
+    set {char}($output + $i) = 0
+    set $i = $i + 1
+  end
+  set $result = ((short (*)(char *, char *))0x1005f710)($output, $input64)
+  printf "TARGETPHON converter-limit tokens=64 result=%d code0=%02x code64=%02x term65=%02x\n", $result, *(unsigned char *)$output, *((unsigned char *)$output + 64), *((unsigned char *)$output + 65)
+  set $result = ((short (*)(char *, char *))0x1005f710)($output, $input65)
+  printf "TARGETPHON converter-limit tokens=65 result=%d code0=%02x code64=%02x term65=%02x\n", $result, *(unsigned char *)$output, *((unsigned char *)$output + 64), *((unsigned char *)$output + 65)
+  set $result = ((short (*)(char *, char *))0x1005f710)($output, $input66)
+  printf "TARGETPHON converter-limit tokens=66 result=%d code0=%02x code64=%02x term65=%02x\n", $result, *(unsigned char *)$output, *((unsigned char *)$output + 64), *((unsigned char *)$output + 65)
+  call ((void (*)(void *))0x1001da30)($input64)
+  call ((void (*)(void *))0x1001da30)($input65)
+  call ((void (*)(void *))0x1001da30)($input66)
+  call ((void (*)(void *))0x1001da30)($output)
+  continue
+end
+continue

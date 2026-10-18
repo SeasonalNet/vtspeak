@@ -1,0 +1,225 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $valid_path = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($valid_path + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d706c61696e2d702e63737600"]
+  set $path_plain_p = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($path_plain_p + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d706c61696e2d702e63737600"]
+  set $load_plain_p = ((short (*)(int, char *))0x10027960)(100, $path_plain_p)
+  printf "USERDICT_MATRIX case=plain-p index=100 load_ax=%d\n", $load_plain_p
+  set $unload_plain_p = ((short (*)(int))0x10027a80)(100)
+  printf "USERDICT_MATRIX case=plain-p index=100 unload_ax=%d\n", $unload_plain_p
+  if $load_plain_p != 1
+    set $recover_plain_p = ((short (*)(int, char *))0x10027960)(100, $valid_path)
+    printf "USERDICT_MATRIX case=plain-p index=100 valid_recovery_ax=%d\n", $recover_plain_p
+    if $recover_plain_p == 1
+      set $recover_unload_plain_p = ((short (*)(int))0x10027a80)(100)
+      printf "USERDICT_MATRIX case=plain-p index=100 recovery_unload_ax=%d\n", $recover_unload_plain_p
+    end
+  end
+  set $path_four_p = ((char *(*)(unsigned int))0x1001d9c0)(47)
+#@bytes ["  set {char}($path_four_p + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d666f75722d702e63737600"]
+  set $load_four_p = ((short (*)(int, char *))0x10027960)(101, $path_four_p)
+  printf "USERDICT_MATRIX case=four-p index=101 load_ax=%d\n", $load_four_p
+  set $unload_four_p = ((short (*)(int))0x10027a80)(101)
+  printf "USERDICT_MATRIX case=four-p index=101 unload_ax=%d\n", $unload_four_p
+  if $load_four_p != 1
+    set $recover_four_p = ((short (*)(int, char *))0x10027960)(101, $valid_path)
+    printf "USERDICT_MATRIX case=four-p index=101 valid_recovery_ax=%d\n", $recover_four_p
+    if $recover_four_p == 1
+      set $recover_unload_four_p = ((short (*)(int))0x10027a80)(101)
+      printf "USERDICT_MATRIX case=four-p index=101 recovery_unload_ax=%d\n", $recover_unload_four_p
+    end
+  end
+  set $path_four_a = ((char *(*)(unsigned int))0x1001d9c0)(47)
+#@bytes ["  set {char}($path_four_a + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d666f75722d612e63737600"]
+  set $load_four_a = ((short (*)(int, char *))0x10027960)(102, $path_four_a)
+  printf "USERDICT_MATRIX case=four-a index=102 load_ax=%d\n", $load_four_a
+  set $unload_four_a = ((short (*)(int))0x10027a80)(102)
+  printf "USERDICT_MATRIX case=four-a index=102 unload_ax=%d\n", $unload_four_a
+  if $load_four_a != 1
+    set $recover_four_a = ((short (*)(int, char *))0x10027960)(102, $valid_path)
+    printf "USERDICT_MATRIX case=four-a index=102 valid_recovery_ax=%d\n", $recover_four_a
+    if $recover_four_a == 1
+      set $recover_unload_four_a = ((short (*)(int))0x10027a80)(102)
+      printf "USERDICT_MATRIX case=four-a index=102 recovery_unload_ax=%d\n", $recover_unload_four_a
+    end
+  end
+  set $path_quoted_p = ((char *(*)(unsigned int))0x1001d9c0)(49)
+#@bytes ["  set {char}($path_quoted_p + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d71756f7465642d702e63737600"]
+  set $load_quoted_p = ((short (*)(int, char *))0x10027960)(103, $path_quoted_p)
+  printf "USERDICT_MATRIX case=quoted-p index=103 load_ax=%d\n", $load_quoted_p
+  set $unload_quoted_p = ((short (*)(int))0x10027a80)(103)
+  printf "USERDICT_MATRIX case=quoted-p index=103 unload_ax=%d\n", $unload_quoted_p
+  if $load_quoted_p != 1
+    set $recover_quoted_p = ((short (*)(int, char *))0x10027960)(103, $valid_path)
+    printf "USERDICT_MATRIX case=quoted-p index=103 valid_recovery_ax=%d\n", $recover_quoted_p
+    if $recover_quoted_p == 1
+      set $recover_unload_quoted_p = ((short (*)(int))0x10027a80)(103)
+      printf "USERDICT_MATRIX case=quoted-p index=103 recovery_unload_ax=%d\n", $recover_unload_quoted_p
+    end
+  end
+  set $path_two_fields = ((char *(*)(unsigned int))0x1001d9c0)(51)
+#@bytes ["  set {char}($path_two_fields + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d74776f2d6669656c64732e63737600"]
+  set $load_two_fields = ((short (*)(int, char *))0x10027960)(104, $path_two_fields)
+  printf "USERDICT_MATRIX case=two-fields index=104 load_ax=%d\n", $load_two_fields
+  set $unload_two_fields = ((short (*)(int))0x10027a80)(104)
+  printf "USERDICT_MATRIX case=two-fields index=104 unload_ax=%d\n", $unload_two_fields
+  if $load_two_fields != 1
+    set $recover_two_fields = ((short (*)(int, char *))0x10027960)(104, $valid_path)
+    printf "USERDICT_MATRIX case=two-fields index=104 valid_recovery_ax=%d\n", $recover_two_fields
+    if $recover_two_fields == 1
+      set $recover_unload_two_fields = ((short (*)(int))0x10027a80)(104)
+      printf "USERDICT_MATRIX case=two-fields index=104 recovery_unload_ax=%d\n", $recover_unload_two_fields
+    end
+  end
+  set $path_five_fields = ((char *(*)(unsigned int))0x1001d9c0)(52)
+#@bytes ["  set {char}($path_five_fields + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d666976652d6669656c64732e63737600"]
+  set $load_five_fields = ((short (*)(int, char *))0x10027960)(105, $path_five_fields)
+  printf "USERDICT_MATRIX case=five-fields index=105 load_ax=%d\n", $load_five_fields
+  set $unload_five_fields = ((short (*)(int))0x10027a80)(105)
+  printf "USERDICT_MATRIX case=five-fields index=105 unload_ax=%d\n", $unload_five_fields
+  if $load_five_fields != 1
+    set $recover_five_fields = ((short (*)(int, char *))0x10027960)(105, $valid_path)
+    printf "USERDICT_MATRIX case=five-fields index=105 valid_recovery_ax=%d\n", $recover_five_fields
+    if $recover_five_fields == 1
+      set $recover_unload_five_fields = ((short (*)(int))0x10027a80)(105)
+      printf "USERDICT_MATRIX case=five-fields index=105 recovery_unload_ax=%d\n", $recover_unload_five_fields
+    end
+  end
+  set $path_empty_file = ((char *(*)(unsigned int))0x1001d9c0)(51)
+#@bytes ["  set {char}($path_empty_file + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d656d7074792d66696c652e63737600"]
+  set $load_empty_file = ((short (*)(int, char *))0x10027960)(106, $path_empty_file)
+  printf "USERDICT_MATRIX case=empty-file index=106 load_ax=%d\n", $load_empty_file
+  set $unload_empty_file = ((short (*)(int))0x10027a80)(106)
+  printf "USERDICT_MATRIX case=empty-file index=106 unload_ax=%d\n", $unload_empty_file
+  if $load_empty_file != 1
+    set $recover_empty_file = ((short (*)(int, char *))0x10027960)(106, $valid_path)
+    printf "USERDICT_MATRIX case=empty-file index=106 valid_recovery_ax=%d\n", $recover_empty_file
+    if $recover_empty_file == 1
+      set $recover_unload_empty_file = ((short (*)(int))0x10027a80)(106)
+      printf "USERDICT_MATRIX case=empty-file index=106 recovery_unload_ax=%d\n", $recover_unload_empty_file
+    end
+  end
+  set $path_empty_source = ((char *(*)(unsigned int))0x1001d9c0)(53)
+#@bytes ["  set {char}($path_empty_source + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d656d7074792d736f757263652e63737600"]
+  set $load_empty_source = ((short (*)(int, char *))0x10027960)(107, $path_empty_source)
+  printf "USERDICT_MATRIX case=empty-source index=107 load_ax=%d\n", $load_empty_source
+  set $unload_empty_source = ((short (*)(int))0x10027a80)(107)
+  printf "USERDICT_MATRIX case=empty-source index=107 unload_ax=%d\n", $unload_empty_source
+  if $load_empty_source != 1
+    set $recover_empty_source = ((short (*)(int, char *))0x10027960)(107, $valid_path)
+    printf "USERDICT_MATRIX case=empty-source index=107 valid_recovery_ax=%d\n", $recover_empty_source
+    if $recover_empty_source == 1
+      set $recover_unload_empty_source = ((short (*)(int))0x10027a80)(107)
+      printf "USERDICT_MATRIX case=empty-source index=107 recovery_unload_ax=%d\n", $recover_unload_empty_source
+    end
+  end
+  set $path_empty_target_p = ((char *(*)(unsigned int))0x1001d9c0)(55)
+#@bytes ["  set {char}($path_empty_target_p + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d656d7074792d7461726765742d702e63737600"]
+  set $load_empty_target_p = ((short (*)(int, char *))0x10027960)(108, $path_empty_target_p)
+  printf "USERDICT_MATRIX case=empty-target-p index=108 load_ax=%d\n", $load_empty_target_p
+  set $unload_empty_target_p = ((short (*)(int))0x10027a80)(108)
+  printf "USERDICT_MATRIX case=empty-target-p index=108 unload_ax=%d\n", $unload_empty_target_p
+  if $load_empty_target_p != 1
+    set $recover_empty_target_p = ((short (*)(int, char *))0x10027960)(108, $valid_path)
+    printf "USERDICT_MATRIX case=empty-target-p index=108 valid_recovery_ax=%d\n", $recover_empty_target_p
+    if $recover_empty_target_p == 1
+      set $recover_unload_empty_target_p = ((short (*)(int))0x10027a80)(108)
+      printf "USERDICT_MATRIX case=empty-target-p index=108 recovery_unload_ax=%d\n", $recover_unload_empty_target_p
+    end
+  end
+  set $path_empty_target_a = ((char *(*)(unsigned int))0x1001d9c0)(55)
+#@bytes ["  set {char}($path_empty_target_a + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d656d7074792d7461726765742d612e63737600"]
+  set $load_empty_target_a = ((short (*)(int, char *))0x10027960)(109, $path_empty_target_a)
+  printf "USERDICT_MATRIX case=empty-target-a index=109 load_ax=%d\n", $load_empty_target_a
+  set $unload_empty_target_a = ((short (*)(int))0x10027a80)(109)
+  printf "USERDICT_MATRIX case=empty-target-a index=109 unload_ax=%d\n", $unload_empty_target_a
+  if $load_empty_target_a != 1
+    set $recover_empty_target_a = ((short (*)(int, char *))0x10027960)(109, $valid_path)
+    printf "USERDICT_MATRIX case=empty-target-a index=109 valid_recovery_ax=%d\n", $recover_empty_target_a
+    if $recover_empty_target_a == 1
+      set $recover_unload_empty_target_a = ((short (*)(int))0x10027a80)(109)
+      printf "USERDICT_MATRIX case=empty-target-a index=109 recovery_unload_ax=%d\n", $recover_unload_empty_target_a
+    end
+  end
+  set $path_invalid_type = ((char *(*)(unsigned int))0x1001d9c0)(53)
+#@bytes ["  set {char}($path_invalid_type + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d696e76616c69642d747970652e63737600"]
+  set $load_invalid_type = ((short (*)(int, char *))0x10027960)(110, $path_invalid_type)
+  printf "USERDICT_MATRIX case=invalid-type index=110 load_ax=%d\n", $load_invalid_type
+  set $unload_invalid_type = ((short (*)(int))0x10027a80)(110)
+  printf "USERDICT_MATRIX case=invalid-type index=110 unload_ax=%d\n", $unload_invalid_type
+  if $load_invalid_type != 1
+    set $recover_invalid_type = ((short (*)(int, char *))0x10027960)(110, $valid_path)
+    printf "USERDICT_MATRIX case=invalid-type index=110 valid_recovery_ax=%d\n", $recover_invalid_type
+    if $recover_invalid_type == 1
+      set $recover_unload_invalid_type = ((short (*)(int))0x10027a80)(110)
+      printf "USERDICT_MATRIX case=invalid-type index=110 recovery_unload_ax=%d\n", $recover_unload_invalid_type
+    end
+  end
+  set $path_long_type = ((char *(*)(unsigned int))0x1001d9c0)(50)
+#@bytes ["  set {char}($path_long_type + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d6c6f6e672d747970652e63737600"]
+  set $load_long_type = ((short (*)(int, char *))0x10027960)(111, $path_long_type)
+  printf "USERDICT_MATRIX case=long-type index=111 load_ax=%d\n", $load_long_type
+  set $unload_long_type = ((short (*)(int))0x10027a80)(111)
+  printf "USERDICT_MATRIX case=long-type index=111 unload_ax=%d\n", $unload_long_type
+  if $load_long_type != 1
+    set $recover_long_type = ((short (*)(int, char *))0x10027960)(111, $valid_path)
+    printf "USERDICT_MATRIX case=long-type index=111 valid_recovery_ax=%d\n", $recover_long_type
+    if $recover_long_type == 1
+      set $recover_unload_long_type = ((short (*)(int))0x10027a80)(111)
+      printf "USERDICT_MATRIX case=long-type index=111 recovery_unload_ax=%d\n", $recover_unload_long_type
+    end
+  end
+  set $path_trailing_empty = ((char *(*)(unsigned int))0x1001d9c0)(55)
+#@bytes ["  set {char}($path_trailing_empty + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d747261696c696e672d656d7074792e63737600"]
+  set $load_trailing_empty = ((short (*)(int, char *))0x10027960)(112, $path_trailing_empty)
+  printf "USERDICT_MATRIX case=trailing-empty index=112 load_ax=%d\n", $load_trailing_empty
+  set $unload_trailing_empty = ((short (*)(int))0x10027a80)(112)
+  printf "USERDICT_MATRIX case=trailing-empty index=112 unload_ax=%d\n", $unload_trailing_empty
+  if $load_trailing_empty != 1
+    set $recover_trailing_empty = ((short (*)(int, char *))0x10027960)(112, $valid_path)
+    printf "USERDICT_MATRIX case=trailing-empty index=112 valid_recovery_ax=%d\n", $recover_trailing_empty
+    if $recover_trailing_empty == 1
+      set $recover_unload_trailing_empty = ((short (*)(int))0x10027a80)(112)
+      printf "USERDICT_MATRIX case=trailing-empty index=112 recovery_unload_ax=%d\n", $recover_unload_trailing_empty
+    end
+  end
+  set $path_crlf_p = ((char *(*)(unsigned int))0x1001d9c0)(47)
+#@bytes ["  set {char}($path_crlf_p + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d63726c662d702e63737600"]
+  set $load_crlf_p = ((short (*)(int, char *))0x10027960)(113, $path_crlf_p)
+  printf "USERDICT_MATRIX case=crlf-p index=113 load_ax=%d\n", $load_crlf_p
+  set $unload_crlf_p = ((short (*)(int))0x10027a80)(113)
+  printf "USERDICT_MATRIX case=crlf-p index=113 unload_ax=%d\n", $unload_crlf_p
+  if $load_crlf_p != 1
+    set $recover_crlf_p = ((short (*)(int, char *))0x10027960)(113, $valid_path)
+    printf "USERDICT_MATRIX case=crlf-p index=113 valid_recovery_ax=%d\n", $recover_crlf_p
+    if $recover_crlf_p == 1
+      set $recover_unload_crlf_p = ((short (*)(int))0x10027a80)(113)
+      printf "USERDICT_MATRIX case=crlf-p index=113 recovery_unload_ax=%d\n", $recover_unload_crlf_p
+    end
+  end
+  set $path_invalid_target_p = ((char *(*)(unsigned int))0x1001d9c0)(57)
+#@bytes ["  set {char}($path_invalid_target_p + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d696e76616c69642d7461726765742d702e63737600"]
+  set $load_invalid_target_p = ((short (*)(int, char *))0x10027960)(114, $path_invalid_target_p)
+  printf "USERDICT_MATRIX case=invalid-target-p index=114 load_ax=%d\n", $load_invalid_target_p
+  set $unload_invalid_target_p = ((short (*)(int))0x10027a80)(114)
+  printf "USERDICT_MATRIX case=invalid-target-p index=114 unload_ax=%d\n", $unload_invalid_target_p
+  if $load_invalid_target_p != 1
+    set $recover_invalid_target_p = ((short (*)(int, char *))0x10027960)(114, $valid_path)
+    printf "USERDICT_MATRIX case=invalid-target-p index=114 valid_recovery_ax=%d\n", $recover_invalid_target_p
+    if $recover_invalid_target_p == 1
+      set $recover_unload_invalid_target_p = ((short (*)(int))0x10027a80)(114)
+      printf "USERDICT_MATRIX case=invalid-target-p index=114 recovery_unload_ax=%d\n", $recover_unload_invalid_target_p
+    end
+  end
+  continue
+end
+
+continue

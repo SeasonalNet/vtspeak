@@ -1,0 +1,44 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $text_plain = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_plain + ",0,") = ","48656c6c6f20776f726c642e00"]
+  set $path_plain = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_plain + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d73696c656e63652d706c61696e2d323032363039323600"]
+  set $raw_plain = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_plain, $path_plain, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_SILENCE case=plain raw_eax=%#x text=%s path=%s\n", $raw_plain, $text_plain, $path_plain
+  set $text_comma = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_comma + ",0,") = ","48656c6c6f2c20776f726c642e00"]
+  set $path_comma = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_comma + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d73696c656e63652d636f6d6d612d323032363039323600"]
+  set $raw_comma = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_comma, $path_comma, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_SILENCE case=comma raw_eax=%#x text=%s path=%s\n", $raw_comma, $text_comma, $path_comma
+  set $text_sentence = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_sentence + ",0,") = ","48656c6c6f2e20576f726c642e00"]
+  set $path_sentence = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_sentence + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d73696c656e63652d73656e74656e63652d323032363039323600"]
+  set $raw_sentence = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_sentence, $path_sentence, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_SILENCE case=sentence raw_eax=%#x text=%s path=%s\n", $raw_sentence, $text_sentence, $path_sentence
+  set $text_ellipsis = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_ellipsis + ",0,") = ","48656c6c6f2e2e2e20576f726c642e00"]
+  set $path_ellipsis = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_ellipsis + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d73696c656e63652d656c6c69707369732d323032363039323600"]
+  set $raw_ellipsis = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_ellipsis, $path_ellipsis, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_SILENCE case=ellipsis raw_eax=%#x text=%s path=%s\n", $raw_ellipsis, $text_ellipsis, $path_ellipsis
+  set $text_pause120 = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_pause120 + ",0,") = ","48656c6c6f2c20776f726c642e00"]
+  set $path_pause120 = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_pause120 + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d73696c656e63652d70617573653132302d323032363039323600"]
+  set $raw_pause120 = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_pause120, $path_pause120, 1, -1, -1, -1, 120, -1, -1)
+  printf "MAKEINFO_SILENCE case=pause120 raw_eax=%#x text=%s path=%s\n", $raw_pause120, $text_pause120, $path_pause120
+  continue
+end
+
+continue

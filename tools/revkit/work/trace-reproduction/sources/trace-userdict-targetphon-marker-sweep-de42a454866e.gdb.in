@@ -1,0 +1,52 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $ci = ((char *(*)(unsigned int))0x1001d9c0)(5)
+#@bytes ["  set {char}($ci + ",0,") = ","5b43495d00"]
+  set $ci_after = ((char *(*)(unsigned int))0x1001d9c0)(8)
+#@bytes ["  set {char}($ci_after + ",0,") = ","4848205b43495d00"]
+  set $ci_embedded = ((char *(*)(unsigned int))0x1001d9c0)(8)
+#@bytes ["  set {char}($ci_embedded + ",0,") = ","48485b43495d4200"]
+  set $skip = ((char *(*)(unsigned int))0x1001d9c0)(7)
+#@bytes ["  set {char}($skip + ",0,") = ","5b534b49505d00"]
+  set $skip_after = ((char *(*)(unsigned int))0x1001d9c0)(10)
+#@bytes ["  set {char}($skip_after + ",0,") = ","4848205b534b49505d00"]
+  set $bracket = ((char *(*)(unsigned int))0x1001d9c0)(2)
+  set {char}($bracket + 0) = 91
+  set {char}($bracket + 1) = 0
+  set $bracket_word = ((char *(*)(unsigned int))0x1001d9c0)(8)
+#@bytes ["  set {char}($bracket_word + ",0,") = ","5b4f544845525d00"]
+  set $hash_sequence = ((char *(*)(unsigned int))0x1001d9c0)(5)
+#@bytes ["  set {char}($hash_sequence + ",0,") = ","2320484800"]
+  set $result_ci = ((short (*)(char *))0x1002a590)($ci)
+  printf "TARGETPHON marker=ci-only result=%d\n", $result_ci
+  set $result_ci_after = ((short (*)(char *))0x1002a590)($ci_after)
+  printf "TARGETPHON marker=ci-after-phone result=%d\n", $result_ci_after
+  set $result_ci_embedded = ((short (*)(char *))0x1002a590)($ci_embedded)
+  printf "TARGETPHON marker=ci-embedded result=%d\n", $result_ci_embedded
+  set $result_skip = ((short (*)(char *))0x1002a590)($skip)
+  printf "TARGETPHON marker=skip-only result=%d\n", $result_skip
+  set $result_skip_after = ((short (*)(char *))0x1002a590)($skip_after)
+  printf "TARGETPHON marker=skip-after-phone result=%d\n", $result_skip_after
+  set $result_bracket = ((short (*)(char *))0x1002a590)($bracket)
+  printf "TARGETPHON marker=open-bracket result=%d\n", $result_bracket
+  set $result_other = ((short (*)(char *))0x1002a590)($bracket_word)
+  printf "TARGETPHON marker=other-bracket result=%d\n", $result_other
+  set $result_hash = ((short (*)(char *))0x1002a590)($hash_sequence)
+  printf "TARGETPHON marker=hash-sequence result=%d\n", $result_hash
+  call ((void (*)(void *))0x1001da30)($ci)
+  call ((void (*)(void *))0x1001da30)($ci_after)
+  call ((void (*)(void *))0x1001da30)($ci_embedded)
+  call ((void (*)(void *))0x1001da30)($skip)
+  call ((void (*)(void *))0x1001da30)($skip_after)
+  call ((void (*)(void *))0x1001da30)($bracket)
+  call ((void (*)(void *))0x1001da30)($bracket_word)
+  call ((void (*)(void *))0x1001da30)($hash_sequence)
+  continue
+end
+continue

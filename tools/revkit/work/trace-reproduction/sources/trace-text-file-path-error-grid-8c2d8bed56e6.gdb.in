@@ -1,0 +1,29 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(char **)($esp + 8)
+  set $speaker = *(int *)($esp + 16)
+  disable 1
+  set $probe_path = (char *)malloc(512)
+  set $probe_path = (char *)malloc(47)
+#@bytes ["  set {char}($probe_path + ",0,") = ","5a3a2f776f726b2f737461676532312f746578742d66696c652d706174682d70726f62652d76616c69642e77617600"]
+  set $result = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $probe_path, $speaker, -1, -1, -1, -1, -1, -1)
+  printf "TEXT_FILE_PATH name=valid result=%d\n", $result
+  set $probe_path = (char *)malloc(31)
+#@bytes ["  set {char}($probe_path + ",0,") = ","5a3a2f776f726b2f737461676532312f73616e64626f782f73746167653500"]
+  set $result = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $probe_path, $speaker, -1, -1, -1, -1, -1, -1)
+  printf "TEXT_FILE_PATH name=directory result=%d\n", $result
+  set $probe_path = (char *)malloc(60)
+#@bytes ["  set {char}($probe_path + ",0,") = ","5a3a2f776f726b2f737461676532312f746578742d66696c652d706174682d6d697373696e672d706172656e742d76312f6f75747075742e77617600"]
+  set $result = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $probe_path, $speaker, -1, -1, -1, -1, -1, -1)
+  printf "TEXT_FILE_PATH name=missing_parent result=%d\n", $result
+  kill
+  quit
+end
+
+continue

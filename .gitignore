@@ -7,9 +7,17 @@
 /data-julie/
 /data-paul/
 
+# Reproducible runtime command inputs and generated audio outputs.
+/tools/revkit/work/**/*.gdb
+/tools/revkit/work/**/*.wav
+
 # Editor and operating-system noise.
 .DS_Store
 Thumbs.db
 *.swp
 *.swo
 **/.ipynb_checkpoints/
+
+# Local copied vendor prerequisites and Python bytecode.
+/tools/revkit/work/wav-prerequisites/
+/tools/revkit/**/__pycache__/

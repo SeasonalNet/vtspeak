@@ -1,0 +1,47 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+set logging file /work/corpus-parity/stage20/hi-plain-2013-tailmap-keyclass-lookup-v2.log
+set logging overwrite on
+set logging enabled on
+set $lookup_calls = 0
+
+break *0x10023dc0
+commands
+  silent
+  set $lookup_calls = $lookup_calls + 1
+  set $signature = *(unsigned int *)($ebp + 8)
+  set $engine_state = *(unsigned int *)($ebp + 16)
+  set $model = *(unsigned int *)($ebp + 20)
+  set $return = *(unsigned int *)($ebp + 4)
+  set $key0 = *(unsigned char *)(0x1007b7ec + *(unsigned char *)($signature + 1))
+  set $key1 = *(unsigned char *)(0x1007b788 + *(unsigned char *)($signature + 2))
+  set $key2 = *(unsigned char *)(0x1007b850 + *(unsigned char *)($signature + 3))
+  set $key3 = *(unsigned char *)($signature + 5)
+  set $key4 = *(unsigned char *)($signature + 6) & 0x20
+  tbreak *$return
+  commands
+    silent
+    set $count = $eax & 0xffff
+    printf "HI_PLAIN_2013_KEYCLASS_LOOKUP call=%u signature=%02x,%02x,%02x,%02x,%02x,%02x,%02x key=%02x,%02x,%02x,%02x,%02x count=%u\n", $lookup_calls, *(unsigned char *)$signature, *(unsigned char *)($signature + 1), *(unsigned char *)($signature + 2), *(unsigned char *)($signature + 3), *(unsigned char *)($signature + 4), *(unsigned char *)($signature + 5), *(unsigned char *)($signature + 6), $key0, $key1, $key2, $key3, $key4, $count
+    continue
+  end
+  continue
+end
+
+hbreak *0x1001b200
+commands
+  silent
+  printf "HI_PLAIN_2013_SELECTED_UNIT id=%u\n", *(unsigned int *)($esp + 8)
+  continue
+end
+
+hbreak *0x408187
+commands
+  silent
+  printf "HI_PLAIN_2013_KEYCLASS_TRACE_READY\n"
+  continue
+end
+
+continue

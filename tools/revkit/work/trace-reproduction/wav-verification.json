@@ -1,0 +1,1803 @@
+{
+  "version": 1,
+  "scope": "Research WAVs under tools/revkit/work; vendor inputs untouched.",
+  "runtime_image": "sha256:4bf8cf26e5a9446c6f1eb437df01b77f76aa8cd83098111bbb2c9c9206328b66",
+  "verified_runtime_outputs": {
+    "tools/revkit/work/stage21/comma-pause-0-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-0-tab.wav",
+      "sha256": "fa6bdfb3cbba3ac756d7456601ba20c001be48b0196b3c0f6c9cf0252b1305d4",
+      "bytes": 35568
+    },
+    "tools/revkit/work/stage21/comma-pause-1-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-1-tab.wav",
+      "sha256": "4a4aef3119fc25b0a96ed59560712ec40a212d71f37aa0ae0646ff2023adea08",
+      "bytes": 35600
+    },
+    "tools/revkit/work/stage21/comma-pause-199-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-199-tab.wav",
+      "sha256": "ab57c9e493b6e180adbf0ccf9d8679d904a50fab4eeff215879464e387bfc2e6",
+      "bytes": 41936
+    },
+    "tools/revkit/work/stage21/comma-pause-200-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-200-tab.wav",
+      "sha256": "ac48a0bad7f67a1df826ad34b56d7403f81eb69bba73bd58ae22f594ed9aa455",
+      "bytes": 41968
+    },
+    "tools/revkit/work/stage21/comma-pause-201-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-201-tab.wav",
+      "sha256": "e082d00c9ed35c73176b7e30c18dab808785a2e4a359d272bee095dcf1617d0f",
+      "bytes": 42000
+    },
+    "tools/revkit/work/stage21/comma-pause-249-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-249-tab.wav",
+      "sha256": "148be87f6581e16929d86bf69a196c91caa48fff9832041baf56430dd3cb0a23",
+      "bytes": 43536
+    },
+    "tools/revkit/work/stage21/comma-pause-250-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-250-tab.wav",
+      "sha256": "14cbdacdc1ca2ef78e755346e649ad48f1998785bd4c773e8c39fef2ed75d335",
+      "bytes": 43568
+    },
+    "tools/revkit/work/stage21/comma-pause-251-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-251-tab.wav",
+      "sha256": "32d26a48b6dba662c1867269d8c51abf73cb203c8b327220d3554eeb6c5d1181",
+      "bytes": 43600
+    },
+    "tools/revkit/work/stage21/comma-pause-499-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-499-tab.wav",
+      "sha256": "2bc4335cd74bd451b1dc587c85447074e2fa22ad446a33b4335f7cc3678a3a30",
+      "bytes": 51536
+    },
+    "tools/revkit/work/stage21/comma-pause-500-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-500-tab.wav",
+      "sha256": "1f4b7e7be69247fe239c5a0363edb6d4f7f179a5c56c5802ff0fa9e5cf172bcc",
+      "bytes": 51568
+    },
+    "tools/revkit/work/stage21/comma-pause-501-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-501-tab.wav",
+      "sha256": "5abe046e43dc8e82501614dc1b31d4665fbfa4e35be04e016784bb822d1b6ac6",
+      "bytes": 51600
+    },
+    "tools/revkit/work/stage21/comma-pause-65534-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-65534-tab.wav",
+      "sha256": "7b6264ff41b06972b863c367f8fc8bfc43cc882836c6a39b21e61acc859b7f82",
+      "bytes": 2132656
+    },
+    "tools/revkit/work/stage21/comma-pause-65535-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-65535-tab.wav",
+      "sha256": "323ee4ba81fef120b8f3448a14c39ea78957945278c2724dbd805f2969e0e227",
+      "bytes": 2132688
+    },
+    "tools/revkit/work/stage21/comma-pause-924-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-924-tab.wav",
+      "sha256": "1104c676412db350d951e7860c70563a74e4ceb70729cbf3bb7483d6d687c5fd",
+      "bytes": 65136
+    },
+    "tools/revkit/work/stage21/comma-pause-925-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-925-tab.wav",
+      "sha256": "df0e44074a3557273a402485f637a4b8319f50242b10b08578a3ba3b96430c7a",
+      "bytes": 65168
+    },
+    "tools/revkit/work/stage21/comma-pause-926-tab.wav": {
+      "batch": "comma-pause",
+      "source": "tools/revkit/work/stage21/comma-pause-926-tab.wav",
+      "sha256": "e4300cb793fe3f899b21ac6853eb4f6aa99a51031144f83c74ecdca0bde619d5",
+      "bytes": 65200
+    },
+    "tools/revkit/work/stage21/sentence-pause-0-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-0-lower.wav",
+      "sha256": "1ae098dbee179d77f973aa7a98b33f9005d0b1dc09e54cae82523b184dd783f7",
+      "bytes": 35568
+    },
+    "tools/revkit/work/stage21/sentence-pause-1-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-1-lower.wav",
+      "sha256": "bb03f7427fe33aab207c810a39a340f96b6c2c46013410369d7f4a9432500c01",
+      "bytes": 35600
+    },
+    "tools/revkit/work/stage21/sentence-pause-199-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-199-lower.wav",
+      "sha256": "dbef3d6870ac1d314f3bbce9f77487ebe89702915f8513a31552b6a580b365ad",
+      "bytes": 41936
+    },
+    "tools/revkit/work/stage21/sentence-pause-200-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-200-lower.wav",
+      "sha256": "74f0dbf1755037745062e9e5a17709017ca2fa743ddd54386fd5ed0712079e07",
+      "bytes": 41968
+    },
+    "tools/revkit/work/stage21/sentence-pause-201-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-201-lower.wav",
+      "sha256": "c719b6daeb959b6ecc671f358ed47d0c91a42d3e5a43f236574833da6cc1b331",
+      "bytes": 42000
+    },
+    "tools/revkit/work/stage21/sentence-pause-250-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-250-lower.wav",
+      "sha256": "50247c60ef906a2c87115eae0f630e2c1ece215c181d9a3f99e12daeafc68e40",
+      "bytes": 43568
+    },
+    "tools/revkit/work/stage21/sentence-pause-500-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-500-lower.wav",
+      "sha256": "30b184a65e5c678d35f0f6699c58e1accd2ccfd385a3b8dc67a3efe2c7ea046e",
+      "bytes": 51568
+    },
+    "tools/revkit/work/stage21/sentence-pause-65534-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-65534-lower.wav",
+      "sha256": "91b4c979efb6571bbdea8b8f276334d2cd7424dc1648adb3b777589a28942902",
+      "bytes": 2132656
+    },
+    "tools/revkit/work/stage21/sentence-pause-65535-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-65535-lower.wav",
+      "sha256": "da409d4c98cfd120a3d5d8dc177dbe478231d8ebda3ce4597f1798ace9e965e3",
+      "bytes": 2132688
+    },
+    "tools/revkit/work/stage21/sentence-pause-924-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-924-lower.wav",
+      "sha256": "acb40d79a28f1cefb8bad887304cf3ae7ec16030b3b52cd5d8821b01dd4d00ec",
+      "bytes": 65136
+    },
+    "tools/revkit/work/stage21/sentence-pause-925-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-925-lower.wav",
+      "sha256": "5603bdb637c512c028ab542b031b216463fdc0d350701519fdc5d91cf60e5dc7",
+      "bytes": 65168
+    },
+    "tools/revkit/work/stage21/sentence-pause-926-lower.wav": {
+      "batch": "sentence-pause",
+      "source": "tools/revkit/work/stage21/sentence-pause-926-lower.wav",
+      "sha256": "1ce15fd7ccaa67442408372aa3aaa180d8e8c9301e40506404c954a959da1010",
+      "bytes": 65200
+    },
+    "tools/revkit/work/stage12/ax-all-effect-ax-all-one.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/ax-all-effect-ax-all-one.wav",
+      "sha256": "2f2eee950588051b9246e792995f38f3cd1b4f7514eb7a309a81921d64ca90e1",
+      "bytes": 1208636
+    },
+    "tools/revkit/work/stage12/ax-special.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/ax-special.wav",
+      "sha256": "31e4ce10a23c9bbb71d0b0721f4ebf94b86600e6c075519bbec6081969e5ed83",
+      "bytes": 73626
+    },
+    "tools/revkit/work/stage12/e-casa-hyphens.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/e-casa-hyphens.wav",
+      "sha256": "2d471e5aa048ccd324610d9b71773d028be5823425fabbd8c700bb7645bb4600",
+      "bytes": 56528
+    },
+    "tools/revkit/work/stage12/e-saint-hyphens.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/e-saint-hyphens.wav",
+      "sha256": "3cb74703bf1920aa37581019ffb4aa9348c8f1be0e6f5356e7e3bcaec1becd25",
+      "bytes": 45126
+    },
+    "tools/revkit/work/stage12/e-saint-words.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/e-saint-words.wav",
+      "sha256": "642b69156131745b985936da2aef4309fa30ac508d2654da96c44eb4b9b289f0",
+      "bytes": 42068
+    },
+    "tools/revkit/work/stage12/f-suffix.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/f-suffix.wav",
+      "sha256": "89192c6bc5d8ef52fa6370ff8dc85be67ddea4cd8b59f34b436e3f722d570767",
+      "bytes": 26678
+    },
+    "tools/revkit/work/stage12/g-suffix.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/g-suffix.wav",
+      "sha256": "2e90d1d4d4d562c8f275725384d219a01fbd956dfb612d51d20719f044093b61",
+      "bytes": 65194
+    },
+    "tools/revkit/work/stage12/marker-apartment-address-effect-marker-producer.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/marker-apartment-address-effect-marker-producer.wav",
+      "sha256": "eb3447eb326e5acab82b202f989633553703bc1f1b8373c9fac08d0bf54bc39d",
+      "bytes": 27564
+    },
+    "tools/revkit/work/stage12/marker-apartment-address-span-effect-marker-producer.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/marker-apartment-address-span-effect-marker-producer.wav",
+      "sha256": "69990f2566cadc506a583aed3dc296fa562bf3006c7b58d247ffc9ec1eaff5cb",
+      "bytes": 56082
+    },
+    "tools/revkit/work/stage12/marker-apartment-neutral-effect-marker-producer.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/marker-apartment-neutral-effect-marker-producer.wav",
+      "sha256": "8857d7863e5285e02165b4fec46277f7c5ddcafee3100b52dadebe2ac7e66e04",
+      "bytes": 33236
+    },
+    "tools/revkit/work/stage12/marker-direction-address-effect-marker-producer.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/marker-direction-address-effect-marker-producer.wav",
+      "sha256": "ad0dfa065ddfce1bef094cb1011aaa6a7df91b77285f7304e7f44c82691626c2",
+      "bytes": 42432
+    },
+    "tools/revkit/work/stage12/marker-replacement-hit-effect-place-calls.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/marker-replacement-hit-effect-place-calls.wav",
+      "sha256": "4d00a42a68ab9cf7213f46252c5fee369c72cc997ca125ea768890ae209803c2",
+      "bytes": 290252
+    },
+    "tools/revkit/work/stage12/marker-street-address-control-effect-marker-producer.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/marker-street-address-control-effect-marker-producer.wav",
+      "sha256": "e6097ca8a319c0bdf241c878bcc3d42dea6fad691f21ad667eb3c510833d42f1",
+      "bytes": 39876
+    },
+    "tools/revkit/work/stage12/numeric-context-f95-absent-mindedly-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-f95-absent-mindedly-effect-numeric-zero.wav",
+      "sha256": "b37fe86ff67590d5b3807b7e335126e0481ccc3cd36fd7216bae59e7086df0d0",
+      "bytes": 50674
+    },
+    "tools/revkit/work/stage12/numeric-context-g112-bigger-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g112-bigger-effect-numeric-zero.wav",
+      "sha256": "c08c0f328d59c28fe3131b1a63bb5354a353d7022bd4ca8d71cfd925f059c30b",
+      "bytes": 47318
+    },
+    "tools/revkit/work/stage12/numeric-context-g120-abandoning-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g120-abandoning-effect-numeric-zero.wav",
+      "sha256": "89a7d8fdc68b7e5388790542b4fe8de8d38a85188980f66c716e98792690787d",
+      "bytes": 51280
+    },
+    "tools/revkit/work/stage12/numeric-context-g20-five-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g20-five-effect-numeric-zero.wav",
+      "sha256": "a0943605e96bfb438a9d2adfd9fc65db31b8772ecfa15d0a572fbf2412e33528",
+      "bytes": 39944
+    },
+    "tools/revkit/work/stage12/numeric-context-g55-against-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g55-against-effect-numeric-zero.wav",
+      "sha256": "bc8c79a3fcda2c700e499bca6af2a06c171e113c559a59c90966823941aca413",
+      "bytes": 43098
+    },
+    "tools/revkit/work/stage12/numeric-context-g58-because-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g58-because-effect-numeric-zero.wav",
+      "sha256": "2e2e1325737d1f711a7bfcc8b823a4b93325d2bfe947f29ed2e1188bef915bc8",
+      "bytes": 32382
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-anybody-declarative-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-anybody-declarative-effect-numeric-zero.wav",
+      "sha256": "6d73baf0da20efdd6db0d37ea45b56ff45f8bd0f8ae544f2106575e069d90104",
+      "bytes": 32218
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-anybody-effect-effects-control.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-anybody-effect-effects-control.wav",
+      "sha256": "3fc2813be3c0dadbfe9b27ce454dc7d9b2b7ba45d33f05c2ae9f742c770877cc",
+      "bytes": 30164
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-anybody-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-anybody-effect-numeric-zero.wav",
+      "sha256": "3906daf329c334001859ae74aaccfa5150b3055a0cb7f8f373c07be3172fd775",
+      "bytes": 30244
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-anyone-know-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-anyone-know-effect-numeric-zero.wav",
+      "sha256": "5f7d5b4f3ba7fbd86f8c6c569be6022909a94f7482447d1316329d776970be68",
+      "bytes": 27300
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-can-anybody-help-effect-numeric-74-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-can-anybody-help-effect-numeric-74-zero.wav",
+      "sha256": "f8aa3133ef5701e78f46db0bd55cdcf3674430c988d7b6f5834bd804a0683305",
+      "bytes": 33796
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-can-anybody-help-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-can-anybody-help-effect-numeric-zero.wav",
+      "sha256": "29052da3a11213f4616c30b2da31ccd9c4400d657afa1c163a51135653ddad09",
+      "bytes": 32534
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-do-they-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-do-they-effect-numeric-zero.wav",
+      "sha256": "f0ad592f3bb7144e8424f3fa21448998358b02ca477433dce413dec8162e147a",
+      "bytes": 20900
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-does-anybody-see-effect-effects-control.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-does-anybody-see-effect-effects-control.wav",
+      "sha256": "ea8c5a1a4255a776d10b64f428426400dafcbc126696b21727e62a3497dfb9fd",
+      "bytes": 33494
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-does-anybody-see-effect-numeric-83-to95.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-does-anybody-see-effect-numeric-83-to95.wav",
+      "sha256": "d6094e3b39fdc744e69ea8dafe0c3650daf04c99652e13cbbc66ebf20b64a59c",
+      "bytes": 32088
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-does-she-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-does-she-effect-numeric-zero.wav",
+      "sha256": "5de2c8b7b7d6fa2e3476b019f20739f3105abf6a4bbfdd581278368e46a3e24e",
+      "bytes": 21206
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-everybody-know-effect-effects-control.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-everybody-know-effect-effects-control.wav",
+      "sha256": "67bb6fe94da1f09874e387201f2f963944e079e07267f4b3213452ce4bc06ad0",
+      "bytes": 34444
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-everybody-know-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-everybody-know-effect-numeric-zero.wav",
+      "sha256": "0650b8f362226dc2925b87e10894b79d027ba13ff4b293cb2703ec596c418808",
+      "bytes": 33908
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-nobody-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-nobody-effect-numeric-zero.wav",
+      "sha256": "cfae223c670b34279b2399248fe8b42dd20f9d08c67510bbc513d4fb78b2d6d8",
+      "bytes": 28852
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-somebody-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-somebody-effect-numeric-zero.wav",
+      "sha256": "08a109f6da83daba088f4131e752723bab0618c62ac5b06feb1bc3e2e858b585",
+      "bytes": 26642
+    },
+    "tools/revkit/work/stage12/numeric-context-g83-somebody-know-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g83-somebody-know-effect-numeric-zero.wav",
+      "sha256": "b8ee387f10a04235602f02d352e159deb5ad4e82bc4391156495d2bcce54efac",
+      "bytes": 28758
+    },
+    "tools/revkit/work/stage12/numeric-context-g95-quickly-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-context-g95-quickly-effect-numeric-zero.wav",
+      "sha256": "226854fcd98de8ac9be9fe1b5a579c1da3dbec33fac04d7d5e8aa0f4e6ed692f",
+      "bytes": 31814
+    },
+    "tools/revkit/work/stage12/numeric-f95-absent-mindedly-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-f95-absent-mindedly-effect-numeric-zero.wav",
+      "sha256": "177ba50a04c38ce8d3b6565e427010c8982f0f60c0c062cef05b4ff855a7d273",
+      "bytes": 34308
+    },
+    "tools/revkit/work/stage12/numeric-g112-bigger-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-g112-bigger-effect-numeric-zero.wav",
+      "sha256": "e60c42677eb3af0059ebcbb41a66b639b5573b3c96bd50765a1b0e0c2b511090",
+      "bytes": 19248
+    },
+    "tools/revkit/work/stage12/numeric-g118-atishoo-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-g118-atishoo-effect-numeric-zero.wav",
+      "sha256": "7dbc83526785bce2dedae60085185c1046601418403058352554ac37bfa44e46",
+      "bytes": 19148
+    },
+    "tools/revkit/work/stage12/numeric-g20-five-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-g20-five-effect-numeric-zero.wav",
+      "sha256": "101633d3a35c3397b61595a66c18cfed80ce084ac62046db07bbbeafc05e8371",
+      "bytes": 17344
+    },
+    "tools/revkit/work/stage12/numeric-g39-adieu-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-g39-adieu-effect-numeric-zero.wav",
+      "sha256": "037531fcec24090f305be6e4ea951713c6193cb02b5f88b69c8cd8776578e38d",
+      "bytes": 15364
+    },
+    "tools/revkit/work/stage12/numeric-g55-against-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-g55-against-effect-numeric-zero.wav",
+      "sha256": "ad66b783c827412d5122bd564af9391be4cba462f87b70f2d4d380a26bfa7dac",
+      "bytes": 19688
+    },
+    "tools/revkit/work/stage12/numeric-g58-because-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-g58-because-effect-numeric-zero.wav",
+      "sha256": "acf70609028fb6b4f96a8001bc38b73f2d63f0807c025faf606cfa817213ac32",
+      "bytes": 24472
+    },
+    "tools/revkit/work/stage12/numeric-g83-anybody-effect-numeric-zero.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/numeric-g83-anybody-effect-numeric-zero.wav",
+      "sha256": "fecaf6850709e7f3eef05c1546b0f26a61dbe247562d031173648eba69799cfe",
+      "bytes": 20280
+    },
+    "tools/revkit/work/stage12/place-bit-gate-ab-village-effect-marker-producer.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/place-bit-gate-ab-village-effect-marker-producer.wav",
+      "sha256": "793ad5a880187325b0ad7f3b9fa91a2fdcb7fbbd8de90100d6de3eed30fd3bf9",
+      "bytes": 27302
+    },
+    "tools/revkit/work/stage12/place-components.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/place-components.wav",
+      "sha256": "9f1923973b143cba5ab37c94669d6615c7040299eb7decdc51b1cd11c351a756",
+      "bytes": 311530
+    },
+    "tools/revkit/work/stage12/place-flags.wav": {
+      "batch": "stage12",
+      "source": "tools/revkit/work/stage12/place-flags.wav",
+      "sha256": "fcc647d37b59bb49aa8e4071f96781261b106dc4b2d662024c178addeda7409b",
+      "bytes": 66296
+    },
+    "tools/revkit/work/stage16/config-output.wav": {
+      "batch": "stage16",
+      "source": "tools/revkit/work/stage16/config-output.wav",
+      "sha256": "9544ee267ff6ccf81120535ec446095e1d747ed7400620bce2ef78b17c7e1463",
+      "bytes": 4104
+    },
+    "tools/revkit/work/stage16/markup-child-only.wav": {
+      "batch": "stage16",
+      "source": "tools/revkit/work/stage16/markup-child-only.wav",
+      "sha256": "157b705d9bf51bda7a7027849613992a20978b84b0195ce0bbc6e7afb71360a8",
+      "bytes": 14580
+    },
+    "tools/revkit/work/stage16/userdict-hello-state-a.wav": {
+      "batch": "stage16",
+      "source": "tools/revkit/work/stage16/userdict-hello-state-a.wav",
+      "sha256": "613ff17ff3d7b8c9a411ef771ea1d02a051f38fcb918874e95dde30db39c0f36",
+      "bytes": 18012
+    },
+    "tools/revkit/work/stage16/userdict-hello-world-a.wav": {
+      "batch": "stage16",
+      "source": "tools/revkit/work/stage16/userdict-hello-world-a.wav",
+      "sha256": "2a105ccfa7df1a31aa335ff9b3bc9e62065c517487747eeb0b78bb80528857bb",
+      "bytes": 17600
+    },
+    "tools/revkit/work/stage16/userdict-inuse-unload.wav": {
+      "batch": "stage16",
+      "source": "tools/revkit/work/stage16/userdict-inuse-unload.wav",
+      "sha256": "491b29d0c3deb1d95770f8bdfe6fbcdfce5ace03f8c15dbfb9c57cf95b601cf1",
+      "bytes": 2940
+    },
+    "tools/revkit/work/stage16/userdict-lifecycle-a.wav": {
+      "batch": "stage16",
+      "source": "tools/revkit/work/stage16/userdict-lifecycle-a.wav",
+      "sha256": "c748068e46c635381303fa4beccbc76661e17adb7b97c928f75024550f94588f",
+      "bytes": 27890
+    },
+    "tools/revkit/work/stage16/userdict-malformed-quote-control-quoted-text.wav": {
+      "batch": "stage16",
+      "source": "tools/revkit/work/stage16/userdict-malformed-quote-control-quoted-text.wav",
+      "sha256": "902d035a6ac0e673158323da981cb4160243431c43622ebacbaee1ff6aa2b9a3",
+      "bytes": 17772
+    },
+    "tools/revkit/work/stage21/english-reading-rule-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/english-reading-rule-0.wav",
+      "sha256": "a54bcb6ea61bbb268dea4404a62bc6b388be82836c057d47a305e2fdabc89739",
+      "bytes": 214106
+    },
+    "tools/revkit/work/stage21/english-reading-rule-matrix-abbreviations-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/english-reading-rule-matrix-abbreviations-0.wav",
+      "sha256": "0a0a61da849340d559673dbf1309a7b0d49c0248bc9998abb74fba506582d302",
+      "bytes": 132692
+    },
+    "tools/revkit/work/stage21/english-reading-rule-matrix-acronyms-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/english-reading-rule-matrix-acronyms-0.wav",
+      "sha256": "42d3c0c49815cf3ca601c2f41cddf430e4c618c8de3322146825b0d03f9e0c78",
+      "bytes": 115388
+    },
+    "tools/revkit/work/stage21/english-reading-rule-matrix-dates-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/english-reading-rule-matrix-dates-0.wav",
+      "sha256": "437c0f91cf3b21d738d3aab46b9ba6a4ae9c1392d34916404eda5100b596b417",
+      "bytes": 230636
+    },
+    "tools/revkit/work/stage21/english-reading-rule-matrix-heteronyms-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/english-reading-rule-matrix-heteronyms-0.wav",
+      "sha256": "dd95ff533a69d48fef8e10deeb26653eecb019a6864bb52b00cc481c9e339034",
+      "bytes": 116540
+    },
+    "tools/revkit/work/stage21/english-reading-rule-matrix-lead-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/english-reading-rule-matrix-lead-0.wav",
+      "sha256": "1891b8a76b482269e98a3db83942667287073df294533674a23989726d38fc5b",
+      "bytes": 71780
+    },
+    "tools/revkit/work/stage21/parenthesis-length1-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-length1-0.wav",
+      "sha256": "1cf2cfb445ba242c90df3f98365efa779db938c10ccfc53a2e38abc3cbe9b901",
+      "bytes": 46488
+    },
+    "tools/revkit/work/stage21/parenthesis-length1-1.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-length1-1.wav",
+      "sha256": "bbba284e7f0c7cbe1c801cde2fb813b2e816402d13a954ef5d88f84d612a1b30",
+      "bytes": 66256
+    },
+    "tools/revkit/work/stage21/parenthesis-length4-1.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-length4-1.wav",
+      "sha256": "f64cc226c8e1d7d52e469fcf454d24e0a500d95cb48959e57cc3e728e53b2d30",
+      "bytes": 68300
+    },
+    "tools/revkit/work/stage21/parenthesis-length9-1.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-length9-1.wav",
+      "sha256": "f682c9fd943d25208a9dcfe44e903db6355fe920665802bfedb8e5aa8c517504",
+      "bytes": 79224
+    },
+    "tools/revkit/work/stage21/parenthesis-number-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-number-0.wav",
+      "sha256": "cf06efcd60f0be4baeb39a5d1e7c7b00b88a0321c0129c33698efeb6a4fd1039",
+      "bytes": 190660
+    },
+    "tools/revkit/work/stage21/parenthesis-number-1.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-number-1.wav",
+      "sha256": "a9c8fde88c80fe948e987986fc8e291207380e8a66ac5a2f479c1c535c0706f8",
+      "bytes": 330500
+    },
+    "tools/revkit/work/stage21/parenthesis-number-4.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-number-4.wav",
+      "sha256": "cb06f02488d11c92ab21711703af75c767d567142b354be96ed9b45f19014b93",
+      "bytes": 309780
+    },
+    "tools/revkit/work/stage21/parenthesis-record-consumer.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-record-consumer.wav",
+      "sha256": "eb65fe24cf117282a6873b86fc594bd2d513576f6ffeee7ab8b71919cccde3d7",
+      "bytes": 66836
+    },
+    "tools/revkit/work/stage21/parenthesis-single-length3-0.wav": {
+      "batch": "stage21-settings",
+      "source": "tools/revkit/work/stage21/parenthesis-single-length3-0.wav",
+      "sha256": "93abd0d941e4eba7b0b262cb815b75af3374073e15aab4b293839cd4fa6dd4f1",
+      "bytes": 46116
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot0-old-winner-order-override/adapted-pah0.wav": {
+      "batch": "documented-hello-repeat-2013-slot0-old-winner-order-override",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot0-old-winner-order-override/adapted-pah0.wav",
+      "sha256": "b572e5a7d45a9a245f0a76f116c9a980ff4638bfe5477f5eab26c431cfb207a7",
+      "bytes": 30800
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot5-pool-to-0000/adapted-pah0.wav": {
+      "batch": "documented-hello-repeat-2013-slot5-pool-to-0000",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot5-pool-to-0000/adapted-pah0.wav",
+      "sha256": "a3078cb23fcd7392dfa599e19fd0031bd67b84e312d365ff48977ea8968d3fe8",
+      "bytes": 30872
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-bit7-disk-overlay/adapted-pah0.wav": {
+      "batch": "documented-hello-repeat-2013-bit7-disk-overlay",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-bit7-disk-overlay/adapted-pah0.wav",
+      "sha256": "7c5137c896e850f067d2f9686ef496b2a7ecf2bfd1406c6ee4cb3040e44d6b35",
+      "bytes": 25096
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-boundaries/adapted-pah0.wav": {
+      "batch": "documented-model-parser-boundaries",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-boundaries/adapted-pah0.wav",
+      "sha256": "fd250c37148e048918d42d3bdb403b15d4e052d4d05ac07d908c8c0963ded1d5",
+      "bytes": 105336
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-number-widths/adapted-pah0.wav": {
+      "batch": "documented-model-parser-number-widths",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-number-widths/adapted-pah0.wav",
+      "sha256": "e460693fe1c4ae74dd4bcd91e61a3745f3eb2079c15ac79f5ebacb73e6db79ec",
+      "bytes": 195782
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-numeric-isolated/adapted-pah0.wav": {
+      "batch": "documented-model-parser-numeric-isolated",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-numeric-isolated/adapted-pah0.wav",
+      "sha256": "768c452a5279ce64cebda1869dcda704c44ff7de5688f37c765d666a4c5e6961",
+      "bytes": 586082
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-bit7-disk-overlay-attrb-neutralized/adapted-pah0.wav": {
+      "batch": "documented-hello-repeat-2013-bit7-disk-overlay-attrb-neutralized",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-bit7-disk-overlay-attrb-neutralized/adapted-pah0.wav",
+      "sha256": "31d866f64d7fdac99252c34ae38dea0dac33b9761fe4199e3fd778d23770b749",
+      "bytes": 24470
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-bit7-disk-attrb40-duplicate/adapted-pah0.wav": {
+      "batch": "documented-hello-repeat-2013-bit7-disk-attrb40-duplicate",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-bit7-disk-attrb40-duplicate/adapted-pah0.wav",
+      "sha256": "b501f256fdad3be777011356a503e3bfb917913c4d55c0f2cd6065e47a16dd1f",
+      "bytes": 24154
+    },
+    "tools/revkit/work/corpus-parity/stage20/kate-key5-score-path-hello/adapted-pah0.wav": {
+      "batch": "documented-kate-key5-score-path-hello",
+      "source": "tools/revkit/work/corpus-parity/stage20/kate-key5-score-path-hello/adapted-pah0.wav",
+      "sha256": "c3946893f170ebdbcb2f5e6f18713b3be479ba2d3f3808fef5b8254a79766741",
+      "bytes": 15686
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-last-row-only/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-last-row-only/adapted-pah0.wav",
+      "sha256": "2bb2ccb90afa877619b70901aefb3480df0a6fa6d15468c27ac98608f86a4486",
+      "bytes": 6340
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-row5-only/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-row5-only/adapted-pah0.wav",
+      "sha256": "d77ae6062cd8c23fbdce375923a534a2ade74f5c1b92c210dec54b018fbf02a6",
+      "bytes": 3492
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-row6-only-corrected/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-row6-only-corrected/adapted-pah0.wav",
+      "sha256": "f63dac8ff4571285bcf9766a305ef7c3824f609d56c9d3cfb21a97e50bc55b52",
+      "bytes": 3816
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-only/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-only/adapted-pah0.wav",
+      "sha256": "5b04f9f32d6bc1ac3bcb82b412a8018e04ab14c14cbdb2f10dfb1a4e63d16150",
+      "bytes": 7092
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-tail-cut5/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-tail-cut5/adapted-pah0.wav",
+      "sha256": "5f85dd17309309390305d83e64647f4114af55eb62fef5f65b10f89053946131",
+      "bytes": 11560
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-tail-cut6/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-tail-cut6/adapted-pah0.wav",
+      "sha256": "737b9c235714cc07ba4f2e5b030bf2d0257952e1c36f5b1be3898087dd110b4a",
+      "bytes": 15160
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-tail-full7/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-tail-full7/adapted-pah0.wav",
+      "sha256": "6099c0d9d5e6891ac27b1b1a50c15a62348b388b5cc59ca25e2e5af02be529f5",
+      "bytes": 21252
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-tail-only/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-tail-only/adapted-pah0.wav",
+      "sha256": "c59dae1d95452959c524f77efb46fac244d4578000702f6b6b5482692b871360",
+      "bytes": 13184
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-50ms-gap/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-50ms-gap/adapted-pah0.wav",
+      "sha256": "ed51cadb9bf7de004c0d6c20dbffa8bc163ab025ceeeb0c0d36d6879d675337c",
+      "bytes": 8692
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-15ms-gap/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-15ms-gap/adapted-pah0.wav",
+      "sha256": "7d70a3007efa393bd443a303ee174c698d1c60eb8e071547b4cb502ac2be36d4",
+      "bytes": 7572
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows6-5-reversed-no-crossfade/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows6-5-reversed-no-crossfade/adapted-pah0.wav",
+      "sha256": "a0fef9784064e899e1db4fab0b506ae130a914f3d04db81256dbfcec4e41ad34",
+      "bytes": 7092
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-100ms-gap/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-100ms-gap/adapted-pah0.wav",
+      "sha256": "e4bd5c71234173e65bd8c6348f55d4a7477385457a871ec3f3258976c0cf9f56",
+      "bytes": 10292
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-20ms-gap/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-20ms-gap/adapted-pah0.wav",
+      "sha256": "a14d307c2099e7ccfbee229b67af67f1c450d45c858fcd83395a8c40a60a9f95",
+      "bytes": 7732
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-no-crossfade/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-no-crossfade/adapted-pah0.wav",
+      "sha256": "864e2ad6f2832e885cc0e4ace7d39fb668336f2f8f6abe5893f2a84db85d39ed",
+      "bytes": 7092
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-10ms-gap/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-10ms-gap/adapted-pah0.wav",
+      "sha256": "f6e19470c9eadba22328d22865cda5b1641e5a11ff98f03d2acca97a85a57172",
+      "bytes": 7412
+    },
+    "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-5ms-gap/adapted-pah0.wav": {
+      "batch": "natural-tail",
+      "source": "tools/revkit/work/corpus-parity/stage20/natural-rows5-6-5ms-gap/adapted-pah0.wav",
+      "sha256": "1a669d5d28daa2ef8fa6f07fae7c1f24b17ce1c60cd07f4bbd8b5dc1ecb5764f",
+      "bytes": 7252
+    },
+    "tools/revkit/work/stage17/paul-numbers.wav": {
+      "batch": "stage17-native",
+      "source": "tools/revkit/work/stage17/paul-numbers.wav",
+      "sha256": "f7c8f7a3a12d6efbd34464aac3d2752a9326dd577ba25c2d91369b01b74bc962",
+      "bytes": 89716
+    },
+    "tools/revkit/work/stage17/paul-address.wav": {
+      "batch": "stage17-native",
+      "source": "tools/revkit/work/stage17/paul-address.wav",
+      "sha256": "35e67130a7871d741074694f88f37b4d6ef53cd8c6eba2ee4c60facdc7d30e8f",
+      "bytes": 108358
+    },
+    "tools/revkit/work/stage17/james.wav": {
+      "batch": "stage17-native",
+      "source": "tools/revkit/work/stage17/james.wav",
+      "sha256": "a97e7bf33b82a398d061834efbd3909b475e711edb598762fd2157a68b9bf796",
+      "bytes": 97196
+    },
+    "tools/revkit/work/stage17/james-numbers.wav": {
+      "batch": "stage17-native",
+      "source": "tools/revkit/work/stage17/james-numbers.wav",
+      "sha256": "9cd00af67a83c9cd72521ef484a5ac6f61fdc436b7f913cddf4081ba5eab7102",
+      "bytes": 110548
+    },
+    "tools/revkit/work/stage17/james-address.wav": {
+      "batch": "stage17-native",
+      "source": "tools/revkit/work/stage17/james-address.wav",
+      "sha256": "daab4e79a4e7fb86134b79c4b27c5a40db9189ba9103e3d100de10aa5b7a365a",
+      "bytes": 107638
+    },
+    "tools/revkit/work/stage5/probes/combo/output.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage5/probes/combo/output.wav",
+      "sha256": "8354dc1258e0fe1152f5b3947da9fcb09d20fd440f53428e45eaa4e550e38d25",
+      "bytes": 294138
+    },
+    "tools/revkit/work/stage5/probes/mixed/output.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage5/probes/mixed/output.wav",
+      "sha256": "58c3e488842b0022801a4f6cfb03a29b2f7393d44ac3f4307c7d6b6b5e9ca821",
+      "bytes": 304480
+    },
+    "tools/revkit/work/stage5/probes/stage6/records/numeric-edge-output.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage5/probes/stage6/records/numeric-edge-output.wav",
+      "sha256": "54279d95c2dc2abc62b684e43419f17c6c3afdafbd18305a1adae7603407fd9a",
+      "bytes": 914392
+    },
+    "tools/revkit/work/stage7/output.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage7/output.wav",
+      "sha256": "fddec66d93352257e5a30679e11e41a6e4b804c873fdf9566bf04e68af82f917",
+      "bytes": 86158
+    },
+    "tools/revkit/work/stage7-complete/output.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage7-complete/output.wav",
+      "sha256": "856d5e9be6498233aff68b235b5a7fa0694f12e17487dbed579348e00a34a136",
+      "bytes": 160182
+    },
+    "tools/revkit/work/stage7-complete/output-number.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage7-complete/output-number.wav",
+      "sha256": "1dc593f20b2516be307a6e5a6186fcde57d9f58e9b544e13396b41ab35de5a05",
+      "bytes": 166310
+    },
+    "tools/revkit/work/stage8/map-speed120.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage8/map-speed120.wav",
+      "sha256": "cf3af2a088bdb8e6a80e5faf574bd25304e416d6cfdc3d74a0026cb503c46379",
+      "bytes": 76696
+    },
+    "tools/revkit/work/stage8/map-volume120.wav": {
+      "batch": "paul-fixtures",
+      "source": "tools/revkit/work/stage8/map-volume120.wav",
+      "sha256": "1a4e192094b725de996e7208bb1e6d3af8246e33adeeb3b8a240fd874f6a7c99",
+      "bytes": 89478
+    },
+    "tools/revkit/work/corpus-parity/stage20/forced-legacy-first-row-1138/adapted-pah0.wav": {
+      "batch": "replay-forced-legacy-first-row-1138",
+      "source": "tools/revkit/work/corpus-parity/stage20/forced-legacy-first-row-1138/adapted-pah0.wav",
+      "sha256": "ad4f324b4fdafeb0de6f59d9f430e1059be6730930d29edba4f1092d999c530a",
+      "bytes": 27446
+    },
+    "tools/revkit/work/corpus-parity/stage20/forced-legacy-first-row-1138-repacked/adapted-pah0.wav": {
+      "batch": "replay-forced-legacy-first-row-1138-repacked",
+      "source": "tools/revkit/work/corpus-parity/stage20/forced-legacy-first-row-1138-repacked/adapted-pah0.wav",
+      "sha256": "153fc0465f8916f76226e840c4cf9dae482f96b09488ead6f22ffb6e59ea42a8",
+      "bytes": 9312
+    },
+    "tools/revkit/work/corpus-parity/stage20/forced-legacy-first-row-1210-repacked/adapted-pah0.wav": {
+      "batch": "replay-forced-legacy-first-row-1210-repacked",
+      "source": "tools/revkit/work/corpus-parity/stage20/forced-legacy-first-row-1210-repacked/adapted-pah0.wav",
+      "sha256": "109ea72ad38bf0eaba4e5642fc054b43304c87c1309bf6b07f80a35baf594e56",
+      "bytes": 9456
+    },
+    "tools/revkit/work/corpus-parity/stage20/forced-legacy-units-no-trim/adapted-pah0.wav": {
+      "batch": "replay-forced-legacy-units-no-trim",
+      "source": "tools/revkit/work/corpus-parity/stage20/forced-legacy-units-no-trim/adapted-pah0.wav",
+      "sha256": "6dbe7b3d858e6263d2dc073c43880edaacfcd876f903a32299886866a0f19349",
+      "bytes": 27276
+    },
+    "tools/revkit/work/corpus-parity/stage20/split-threshold-slot0-suffix/adapted-pah0.wav": {
+      "batch": "replay-split-threshold-slot0-suffix",
+      "source": "tools/revkit/work/corpus-parity/stage20/split-threshold-slot0-suffix/adapted-pah0.wav",
+      "sha256": "8dc766a3bf075871c16f458d11b611dbbf98f5948674d17820623461d18616f9",
+      "bytes": 17836
+    },
+    "tools/revkit/work/corpus-parity/stage20/split-threshold-slot5-suffix/adapted-pah0.wav": {
+      "batch": "replay-split-threshold-slot5-suffix",
+      "source": "tools/revkit/work/corpus-parity/stage20/split-threshold-slot5-suffix/adapted-pah0.wav",
+      "sha256": "398ba9c7054519514d34e752c1ef38e3929a7ac54a11aee0f22448b9036d29b0",
+      "bytes": 18364
+    },
+    "tools/revkit/work/corpus-parity/stage20/old-cutoff-experiment/adapted-pah0.wav": {
+      "batch": "replay-old-cutoff-experiment",
+      "source": "tools/revkit/work/corpus-parity/stage20/old-cutoff-experiment/adapted-pah0.wav",
+      "sha256": "f438243151b5657a37c4996ce242960ab3d0bde59e4ecb93491a8e2e2a9ede1e",
+      "bytes": 18364
+    },
+    "tools/revkit/work/corpus-parity/stage20/old-cutoff-experiment-v2/adapted-pah0.wav": {
+      "batch": "replay-old-cutoff-experiment-v2",
+      "source": "tools/revkit/work/corpus-parity/stage20/old-cutoff-experiment-v2/adapted-pah0.wav",
+      "sha256": "9b66e62e71fc78e14680fccdc9da76db86da9e98f5d71309f11c75b2d630eea1",
+      "bytes": 18364
+    },
+    "tools/revkit/work/corpus-parity/stage20/matched-context-metric-swap/adapted-pah0.wav": {
+      "batch": "replay-matched-context-metric-swap",
+      "source": "tools/revkit/work/corpus-parity/stage20/matched-context-metric-swap/adapted-pah0.wav",
+      "sha256": "b9cadb21e5d5c6e70ea28bc4fee0535dc53f4083ad80517eb25d49ea52a99889",
+      "bytes": 14412
+    },
+    "tools/revkit/work/corpus-parity/stage20/matched-context-unit-cost-features-swap/adapted-pah0.wav": {
+      "batch": "replay-matched-context-unit-cost-features-swap",
+      "source": "tools/revkit/work/corpus-parity/stage20/matched-context-unit-cost-features-swap/adapted-pah0.wav",
+      "sha256": "df28259098a21a85701f2cf20084985c1a88dcfd36278db8757f95ddddb66457",
+      "bytes": 14412
+    },
+    "tools/revkit/work/corpus-parity/stage20/continuity-gate/adapted-pah0.wav": {
+      "batch": "replay-continuity-gate",
+      "source": "tools/revkit/work/corpus-parity/stage20/continuity-gate/adapted-pah0.wav",
+      "sha256": "8d6b4f63906ad339f5b9b4dde977a495d2c7dfc7a7c9a0818e2a6237d81b3dfb",
+      "bytes": 15876
+    },
+    "tools/revkit/work/corpus-parity/stage20/continuity-gate-four/adapted-pah0.wav": {
+      "batch": "replay-continuity-gate-four",
+      "source": "tools/revkit/work/corpus-parity/stage20/continuity-gate-four/adapted-pah0.wav",
+      "sha256": "dbb567894041a543b42593b838f36ea8db060c786a6e806ecbbb87ea02918318",
+      "bytes": 18364
+    },
+    "tools/revkit/work/corpus-parity/stage20/continuity-gate-flags/adapted-pah0.wav": {
+      "batch": "replay-continuity-gate-flags",
+      "source": "tools/revkit/work/corpus-parity/stage20/continuity-gate-flags/adapted-pah0.wav",
+      "sha256": "215ff65cf15e37f4dcce58527511aa31f143b58a1dca865ef082252a3a83e5f3",
+      "bytes": 15264
+    },
+    "tools/revkit/work/corpus-parity/stage20/pah0-target-signatures/output.wav": {
+      "batch": "replay-pah0-target-signatures",
+      "source": "tools/revkit/work/corpus-parity/stage20/pah0-target-signatures/output.wav",
+      "sha256": "89c9c78a1326e4b7f4a5dd93f5c2fbf64795d01e89117bd4351e32d53ae47ff0",
+      "bytes": 7704
+    },
+    "tools/revkit/work/corpus-parity/stage20/pah0-legacy-key-substitution/adapted-pah0.wav": {
+      "batch": "replay-pah0-legacy-key-substitution",
+      "source": "tools/revkit/work/corpus-parity/stage20/pah0-legacy-key-substitution/adapted-pah0.wav",
+      "sha256": "61671203adaaa5d44667d751354467a1bf2afde16918c30d55d0e2afef029d7e",
+      "bytes": 7888
+    },
+    "tools/revkit/work/corpus-parity/stage20/pah0-key-and-threshold-boundary/adapted-pah0.wav": {
+      "batch": "replay-pah0-key-and-threshold-boundary",
+      "source": "tools/revkit/work/corpus-parity/stage20/pah0-key-and-threshold-boundary/adapted-pah0.wav",
+      "sha256": "3d85d8842976c02644861cd5e9b19bb919307bd4388585eb942906eb36090df9",
+      "bytes": 3476
+    },
+    "tools/revkit/work/corpus-parity/stage20/pah0-old-query-classes/old-pah0-prose.wav": {
+      "batch": "replay-pah0-old-query-classes",
+      "source": "tools/revkit/work/corpus-parity/stage20/pah0-old-query-classes/old-pah0-prose.wav",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tools/revkit/work/corpus-parity/stage20/pah0-old-query-classes-v2/old-pah0-prose.wav": {
+      "batch": "replay-pah0-old-query-classes-v2",
+      "source": "tools/revkit/work/corpus-parity/stage20/pah0-old-query-classes-v2/old-pah0-prose.wav",
+      "sha256": "5fdf1e4ba7e701374c97226cf16561bc135dd5e55c375ee872afe6e1f41b05cb",
+      "bytes": 282020
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-alt-column-order/adapted-pah0.wav": {
+      "batch": "replay-apple-alt-column-order",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-alt-column-order/adapted-pah0.wav",
+      "sha256": "91122aacbd6837b967d7ba8814ec35cf18b0f2f7f2acdd7599605dbb65e78ba2",
+      "bytes": 14970
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-plain-features-v2/old-pah0-prose.wav": {
+      "batch": "replay-apple-plain-features-v2",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-plain-features-v2/old-pah0-prose.wav",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-generic-tail-map-selector-verified/adapted-pah0.wav": {
+      "batch": "replay-apple-generic-tail-map-selector-verified",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-generic-tail-map-selector-verified/adapted-pah0.wav",
+      "sha256": "93277768b4cd0b44d8c73acc6812e806c1eeec0a176a1d49f08f207593b2ecea",
+      "bytes": 15840
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-generic-tail-map-selector-no-vector/adapted-pah0.wav": {
+      "batch": "replay-apple-generic-tail-map-selector-no-vector",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-generic-tail-map-selector-no-vector/adapted-pah0.wav",
+      "sha256": "a242ff700b17a4f2511786cee2a5bbd439b4dd2f744ca5988ee769c44b0178a7",
+      "bytes": 16216
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker/adapted-pah0.wav": {
+      "batch": "replay-apple-continuity-bit7--new-full-marker",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker/adapted-pah0.wav",
+      "sha256": "4faabfd82aa36ca97bfdc4454c185dd3cadd29d41997c814f4a66c1b4a1dcd37",
+      "bytes": 13178
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker-path-distances/adapted-pah0.wav": {
+      "batch": "replay-apple-continuity-bit7--new-full-marker-path-distances",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker-path-distances/adapted-pah0.wav",
+      "sha256": "417f9e45e475b8a7299a374a935700457e847353f7735c03957fe51f42ae3e7a",
+      "bytes": 7588
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-transition-table-zero/adapted-pah0.wav": {
+      "batch": "replay-apple-continuity-bit7--new-transition-table-zero",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-transition-table-zero/adapted-pah0.wav",
+      "sha256": "159cf7612470a23845b96986e43c48b463af83f36a8a6cf7ec3b0a7f15ba7673",
+      "bytes": 15416
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-transition-a-b-zero/adapted-pah0.wav": {
+      "batch": "replay-apple-continuity-bit7--new-transition-a-b-zero",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-transition-a-b-zero/adapted-pah0.wav",
+      "sha256": "75da51d1f964aa02bfc05bfb57a4775e3c091f02b452c5de6ab436d16e7223f3",
+      "bytes": 14766
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2006/old-pah0-prose.wav": {
+      "batch": "replay-hello-repeat-2006",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2006/old-pah0-prose.wav",
+      "sha256": "dfe7fc99657c8216a5e72451e6cd1e27b865bf1d6886f7d9f057dc79dd2a0e2f",
+      "bytes": 26372
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-paircosts/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-paircosts",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-paircosts/adapted-pah0.wav",
+      "sha256": "33d95743268a768b5a817405d12ac01955a277aca8a644973007788ea1d8297d",
+      "bytes": 26660
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-baseline/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-baseline",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-baseline/adapted-pah0.wav",
+      "sha256": "32c980b02911da5faf06ae85f3861050fa1b12537670aac353ebcc3abc7db37a",
+      "bytes": 17334
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-repacked-legacy-weights/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-repacked-legacy-weights",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-repacked-legacy-weights/adapted-pah0.wav",
+      "sha256": "2d08eed7db489184d882a92f6e2134e9dfed08855200b2f87b53565f377f525a",
+      "bytes": 28822
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-repacked-backtrack-full-legacy-map/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-repacked-backtrack-full-legacy-map",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-repacked-backtrack-full-legacy-map/adapted-pah0.wav",
+      "sha256": "480a4c460d17228c805e26513acac828c4d344c017be8c73d8349c4e33daed4b",
+      "bytes": 28684
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-2013-suffix-map/adapted-pah0.wav": {
+      "batch": "replay-hi-2013-suffix-map",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-2013-suffix-map/adapted-pah0.wav",
+      "sha256": "3deb8c81f2151c7fc9bdf605965aaf9d03df1782eb6d0fe2e08af9d34dd60547",
+      "bytes": 14560
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-2013-producer/adapted-pah0.wav": {
+      "batch": "replay-hi-2013-producer",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-2013-producer/adapted-pah0.wav",
+      "sha256": "ce02f8aff29c6a98d4bb068ed545194c696e945e64d157fc7b660fab7696706f",
+      "bytes": 13908
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-producer/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-producer",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-producer/adapted-pah0.wav",
+      "sha256": "071f58c04888bfb8368875a56e7547d89660eae004cd014400c2a1a530d0d190",
+      "bytes": 29054
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-legacy-feature-class-crosswalk/adapted-pah0.wav": {
+      "batch": "replay-hello-legacy-feature-class-crosswalk",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-legacy-feature-class-crosswalk/adapted-pah0.wav",
+      "sha256": "d4878c9814ef2b9fe9186a2c1c6f1e7128519ed0f222bd5c3ef6ddeaa791fab0",
+      "bytes": 15004
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-plain-crosswalk-feature-swap/adapted-pah0.wav": {
+      "batch": "replay-hello-plain-crosswalk-feature-swap",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-plain-crosswalk-feature-swap/adapted-pah0.wav",
+      "sha256": "abb49098891b965f6974388485432e3488c92c5f8f1365a1af44447b75ddde3b",
+      "bytes": 15956
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-slot2-split-native/adapted-pah0.wav": {
+      "batch": "replay-hello-slot2-split-native",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-slot2-split-native/adapted-pah0.wav",
+      "sha256": "66d692e95be283065147bf578fb089a48db55e667bca141a3d9e840bb3c109b7",
+      "bytes": 18956
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-slot2-split-override/adapted-pah0.wav": {
+      "batch": "replay-hello-slot2-split-override",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-slot2-split-override/adapted-pah0.wav",
+      "sha256": "31c1c43d8aea7500f41f9e3e8578651a1d523adbc9d7567221ca003949f38d78",
+      "bytes": 18956
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-2006-row-gain/old-pah0-prose.wav": {
+      "batch": "replay-hi-2006-row-gain",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-2006-row-gain/old-pah0-prose.wav",
+      "sha256": "331fe0de611f49ded95845376adf93c308d15ad3e98abce6968f1d2d2cbb9c2b",
+      "bytes": 14560
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-volume100-rows/adapted-pah0.wav": {
+      "batch": "replay-hi-volume100-rows",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-volume100-rows/adapted-pah0.wav",
+      "sha256": "f904e6c2718fc1be99c5a1b7ca5b2eace4df3223dab4800cae2791bb466693ef",
+      "bytes": 14560
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-window-inputs/adapted-pah0.wav": {
+      "batch": "replay-hi-window-inputs",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-window-inputs/adapted-pah0.wav",
+      "sha256": "87310485389615cdfae8f8779372d9125eb3543d809551cc3b292542433bce53",
+      "bytes": 14560
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-window-inputs/adapted-pah0.wav": {
+      "batch": "replay-hello-window-inputs",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-window-inputs/adapted-pah0.wav",
+      "sha256": "a8ec8d359acf9a2475c3698bc6b5e7ae4d6b41397cd22e842f9d2300c7564fba",
+      "bytes": 15264
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-native-window-inputs/adapted-pah0.wav": {
+      "batch": "replay-hello-native-window-inputs",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-native-window-inputs/adapted-pah0.wav",
+      "sha256": "21f8c6629bd7e42c7a86033ffe0d36d7f273f0f6d2a92afb42bb7e15b0e14ecf",
+      "bytes": 15264
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-no-marker-window-inputs/adapted-pah0.wav": {
+      "batch": "replay-hello-no-marker-window-inputs",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-no-marker-window-inputs/adapted-pah0.wav",
+      "sha256": "09d5463315c63e51acb2b7722b583921c5412c01b6522587ac89890223b54697",
+      "bytes": 15876
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-2013-score-contexts/adapted-pah0.wav": {
+      "batch": "replay-hi-2013-score-contexts",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-2013-score-contexts/adapted-pah0.wav",
+      "sha256": "c902797173c44a136c352b099b6c8eeac59a5ff7b09da3caa73b8a9457c64c4f",
+      "bytes": 14560
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-2006-scalar-array-state/old-pah0-prose.wav": {
+      "batch": "replay-hi-2006-scalar-array-state",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-2006-scalar-array-state/old-pah0-prose.wav",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot8-tail-map/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-slot8-tail-map",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot8-tail-map/adapted-pah0.wav",
+      "sha256": "e2c0833470158fff80f6cc362b3bab575ecb1b054a85b5616ef75720038e0b09",
+      "bytes": 28894
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot8-0404-to-4500/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-slot8-0404-to-4500",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot8-0404-to-4500/adapted-pah0.wav",
+      "sha256": "0fb31af15e51e54fdc3040840d43acd1d46d1a971aa973211d0f0792efaa01fb",
+      "bytes": 26934
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-slot0-pool-to-a000",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000/adapted-pah0.wav",
+      "sha256": "92614f5baf64716a198a35751e5e367825b9a1ce4cb2ee823f3672baaf696835",
+      "bytes": 28894
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000-v2/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-slot0-pool-to-a000-v2",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-slot0-pool-to-a000-v2/adapted-pah0.wav",
+      "sha256": "0d3a956bb565bd69ae1af49c0118f751cf6edd436b3f826b20b9e6f8af943889",
+      "bytes": 29752
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-completed-path-rows/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-completed-path-rows",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-completed-path-rows/adapted-pah0.wav",
+      "sha256": "184a7d1df5aa92b7822479b7a23612e633f382abf1e02a6e76902c2d14d19b7b",
+      "bytes": 27448
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-promote-264071/adapted-pah0.wav": {
+      "batch": "replay-hello-repeat-2013-promote-264071",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-repeat-2013-promote-264071/adapted-pah0.wav",
+      "sha256": "41d793131f8e57596ad123718bcd17249a781c6e955b0ffce37c46f206a58b8f",
+      "bytes": 26374
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-plain-2013-query-evidence/adapted-pah0.wav": {
+      "batch": "replay-hi-plain-2013-query-evidence",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-plain-2013-query-evidence/adapted-pah0.wav",
+      "sha256": "8cedb6fcdf0e5948c6cca81e785e3a6592a4346671217bac3d399e27d4c3b685",
+      "bytes": 13640
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-control/adapted-pah0.wav": {
+      "batch": "replay-apple-selector-byte0-control",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-control/adapted-pah0.wav",
+      "sha256": "167a388e30f74e83e6d955b39208fb9d62acd6063a3d833c12e0e12c6fef1e23",
+      "bytes": 13212
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-context3-pool-bit7-weights-2026-09-29/adapted-pah0.wav": {
+      "batch": "replay-apple-selector-byte0-context3-pool-bit7-weights-2026-09-29",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-context3-pool-bit7-weights-2026-09-29/adapted-pah0.wav",
+      "sha256": "4d03392e63af2949f31a2d26fe2af6f59759fc54bf8d7870a06194c1a7940bc8",
+      "bytes": 14340
+    },
+    "tools/revkit/work/corpus-parity/stage20/kate-key5-class-pools-hello/adapted-pah0.wav": {
+      "batch": "replay-kate-key5-class-pools-hello",
+      "source": "tools/revkit/work/corpus-parity/stage20/kate-key5-class-pools-hello/adapted-pah0.wav",
+      "sha256": "478c155126f39e07f013cd5202a41275ad77035a7adee0d7f8d1265fb752b317",
+      "bytes": 14142
+    },
+    "tools/revkit/work/stage19/runtime-reordered-address.wav": {
+      "batch": "earlier-stage19-runtime-reordered",
+      "source": "tools/revkit/work/stage19/runtime-reordered-address.wav",
+      "sha256": "01e6f81bd952171330141c227be3cac1ab43ef9d60ac041a53206dc7fe424129",
+      "bytes": 87746
+    },
+    "tools/revkit/work/stage19/runtime-reordered-numbers.wav": {
+      "batch": "earlier-stage19-runtime-reordered",
+      "source": "tools/revkit/work/stage19/runtime-reordered-numbers.wav",
+      "sha256": "3a8ae67b1d26c97cbaceefee94749a1e20569b40358df9a6fd54920cfad5c676",
+      "bytes": 75336
+    },
+    "tools/revkit/work/stage19/runtime-reordered-prose.wav": {
+      "batch": "earlier-stage19-runtime-reordered",
+      "source": "tools/revkit/work/stage19/runtime-reordered-prose.wav",
+      "sha256": "be9b43423d56e87030cc973090769b5fbd720e145a25e7ad9f0308237a7e8b6a",
+      "bytes": 68340
+    },
+    "tools/revkit/work/stage19/selection-reordered.wav": {
+      "batch": "earlier-stage19-reordered",
+      "source": "tools/revkit/work/stage19/selection-reordered.wav",
+      "sha256": "710ffb4c4339b4f25a726af76d0ff768676bdf8df873c91589faf486a7d7fe64",
+      "bytes": 64440
+    },
+    "tools/revkit/work/stage19/selection-attributes.wav": {
+      "batch": "earlier-stage19-attributes",
+      "source": "tools/revkit/work/stage19/selection-attributes.wav",
+      "sha256": "b82b97019cd422c37e2568a3947c028f3078d7d33bda35f40ae92a6fd2930d68",
+      "bytes": 88956
+    },
+    "tools/revkit/work/stage19/cnas-baseline.wav": {
+      "batch": "earlier-stage19-cnas-baseline",
+      "source": "tools/revkit/work/stage19/cnas-baseline.wav",
+      "sha256": "a6114ff8c22965241d77845d7ba98e9e9d859d43694124d84a4dd07bf67163c8",
+      "bytes": 104326
+    },
+    "tools/revkit/work/stage19/cnas-invert-cnas.wav": {
+      "batch": "earlier-stage19-cnas-invert-cnas",
+      "source": "tools/revkit/work/stage19/cnas-invert-cnas.wav",
+      "sha256": "5f0caa43e601cc2fc3680055a314525404b785917cf55121091a42509e56bf25",
+      "bytes": 103840
+    },
+    "tools/revkit/work/stage19/runtime-index-signature-last-copy-address.wav": {
+      "batch": "earlier-stage19-runtime-index-signature-last-copy",
+      "source": "tools/revkit/work/stage19/runtime-index-signature-last-copy-address.wav",
+      "sha256": "1a638f315b83ffda9827b78a1feb783d1915ad8cd2b6d0f4b444be987de25f2e",
+      "bytes": 88774
+    },
+    "tools/revkit/work/stage19/runtime-index-signature-last-copy-numbers.wav": {
+      "batch": "earlier-stage19-runtime-index-signature-last-copy",
+      "source": "tools/revkit/work/stage19/runtime-index-signature-last-copy-numbers.wav",
+      "sha256": "7ecbcc62d39b36c781bb9146fbf8c467f623ea6908cba6911b78cba937f06222",
+      "bytes": 72584
+    },
+    "tools/revkit/work/stage19/runtime-index-signature-last-copy-prose.wav": {
+      "batch": "earlier-stage19-runtime-index-signature-last-copy",
+      "source": "tools/revkit/work/stage19/runtime-index-signature-last-copy-prose.wav",
+      "sha256": "f74b95f834cc23f2fb390fd6e4b882386d6db60ecff87d35841e463705f3f69a",
+      "bytes": 75882
+    },
+    "tools/revkit/work/stage19/runtime-index-constant-8-address.wav": {
+      "batch": "earlier-stage19-runtime-index-constant-8",
+      "source": "tools/revkit/work/stage19/runtime-index-constant-8-address.wav",
+      "sha256": "11078d7d5b0e00aaff3653e52740bb671bcbeba4c387cf762661a33e196852af",
+      "bytes": 109082
+    },
+    "tools/revkit/work/stage19/runtime-index-constant-8-prose.wav": {
+      "batch": "earlier-stage19-runtime-index-constant-8",
+      "source": "tools/revkit/work/stage19/runtime-index-constant-8-prose.wav",
+      "sha256": "6d262a3431e875b2c8f1740b7348100cfe2e6611c1cbd9a03b6ceec86d055c10",
+      "bytes": 101220
+    },
+    "tools/revkit/work/stage19/selection-attributes-signature-last.wav": {
+      "batch": "earlier-stage19-attributes-signature-last",
+      "source": "tools/revkit/work/stage19/selection-attributes-signature-last.wav",
+      "sha256": "49d8dc1bd89e6ce5a86b86397d4cbd2a4c30ac171b06823144c93db27a038657",
+      "bytes": 74284
+    },
+    "tools/revkit/work/stage19/runtime-index-signature-last-transfer-address.wav": {
+      "batch": "earlier-stage19-runtime-index-signature-last-transfer",
+      "source": "tools/revkit/work/stage19/runtime-index-signature-last-transfer-address.wav",
+      "sha256": "beb8601a56803fe2733b03318e8fdcc6461a857324072ca1f6425c32e243afa5",
+      "bytes": 79314
+    },
+    "tools/revkit/work/stage19/runtime-index-signature-last-transfer-numbers.wav": {
+      "batch": "earlier-stage19-runtime-index-signature-last-transfer",
+      "source": "tools/revkit/work/stage19/runtime-index-signature-last-transfer-numbers.wav",
+      "sha256": "27947c0263ccc718c81448f639f730f1a391d63d3277630e93465d4e079b16d4",
+      "bytes": 77602
+    },
+    "tools/revkit/work/stage19/runtime-index-signature-last-transfer-prose.wav": {
+      "batch": "earlier-stage19-runtime-index-signature-last-transfer",
+      "source": "tools/revkit/work/stage19/runtime-index-signature-last-transfer-prose.wav",
+      "sha256": "c4daeac316906032a4e92c6a082f7a571ad8b1069538b50a3cfc65b477250adb",
+      "bytes": 73108
+    },
+    "tools/revkit/work/stage19/selection-selection-signature-last-transfer.wav": {
+      "batch": "earlier-stage19-selection-signature-last-transfer",
+      "source": "tools/revkit/work/stage19/selection-selection-signature-last-transfer.wav",
+      "sha256": "a87beac35f344e1b1a4bf92f26778ac849f329d29759fca8699e46771e788724",
+      "bytes": 70524
+    },
+    "tools/revkit/work/corpus-parity/runtime-old-embedded-address.wav": {
+      "batch": "earlier-corpus-parity-runtime-old-embedded",
+      "source": "tools/revkit/work/corpus-parity/runtime-old-embedded-address.wav",
+      "sha256": "949695c331193e07fad718980d7647bdadf8925eda9372744bc1581dfe5cd72c",
+      "bytes": 99476
+    },
+    "tools/revkit/work/corpus-parity/runtime-old-embedded-numbers.wav": {
+      "batch": "earlier-corpus-parity-runtime-old-embedded",
+      "source": "tools/revkit/work/corpus-parity/runtime-old-embedded-numbers.wav",
+      "sha256": "0fa838c11b400112af9579f8204736c24592eafb8cacbb50ccc66c81b590140d",
+      "bytes": 89148
+    },
+    "tools/revkit/work/corpus-parity/old-embedded-prose-dict.wav": {
+      "batch": "earlier-corpus-parity-old-embedded-prose-dict",
+      "source": "tools/revkit/work/corpus-parity/old-embedded-prose-dict.wav",
+      "sha256": "ac35dfe3470afdc48b34d9f75d522f6d144cc39b0b812cae3c45925ae99f001f",
+      "bytes": 83422
+    },
+    "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-b-ah0.wav": {
+      "batch": "earlier-corpus-parity--phone-boundary-probe-b-ah0",
+      "source": "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-b-ah0.wav",
+      "sha256": "61762aaf050695eef8779ac5f24ba0b4c88bb597162d07fb70e3b1221b417fed",
+      "bytes": 6262
+    },
+    "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-f-ah0.wav": {
+      "batch": "earlier-corpus-parity--phone-boundary-probe-f-ah0",
+      "source": "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-f-ah0.wav",
+      "sha256": "6f411ddb62590b4f7d2ab9bc73c75d6b73b61bd3d7bfcb5afcf04e0d629df6ae",
+      "bytes": 5348
+    },
+    "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-final-pih0.wav": {
+      "batch": "earlier-corpus-parity--phone-boundary-probe-final-pih0",
+      "source": "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-final-pih0.wav",
+      "sha256": "cd4bb3317d5e9a6c94fe9d1059f5c8868882461e8068b16a1b3894ab8f191820",
+      "bytes": 6366
+    },
+    "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-audit-tih0.wav": {
+      "batch": "earlier-corpus-parity--phone-boundary-probe-audit-tih0",
+      "source": "tools/revkit/work/corpus-parity/phone-boundary-probe/selection-audit-tih0.wav",
+      "sha256": "227e5cea3d93f90f052374e858325fdee23dc92bef08b834ed3d6570829e5015",
+      "bytes": 7690
+    },
+    "tools/revkit/work/stage19/phone-boundary-context.wav": {
+      "batch": "earlier-stage19-phone-boundary-context",
+      "source": "tools/revkit/work/stage19/phone-boundary-context.wav",
+      "sha256": "e4bf1518d3c3d21420875a6a0c067b094834b161fc46511935708475d2d4a445",
+      "bytes": 3330
+    },
+    "tools/revkit/work/stage19/pah0-context.wav": {
+      "batch": "earlier-stage19-pah0-context",
+      "source": "tools/revkit/work/stage19/pah0-context.wav",
+      "sha256": "01f4bdcaf34542e6a27fd65c352e3eaecf88085696268c5c0ba0e2216afa6fdd",
+      "bytes": 4812
+    },
+    "tools/revkit/work/stage19/runtime-invert-d-address.wav": {
+      "batch": "earlier-stage19-runtime-invert-d",
+      "source": "tools/revkit/work/stage19/runtime-invert-d-address.wav",
+      "sha256": "372f12c766d17cd41079ab371fbec7901134b7fcc5c60badeea8898e650188f3",
+      "bytes": 103050
+    },
+    "tools/revkit/work/stage19/runtime-invert-d-numbers.wav": {
+      "batch": "earlier-stage19-runtime-invert-d",
+      "source": "tools/revkit/work/stage19/runtime-invert-d-numbers.wav",
+      "sha256": "1e72eff14d5dc3d6b24879daf6b2db6c609e28222ace20bd5d7bd658364b8682",
+      "bytes": 86216
+    },
+    "tools/revkit/work/stage19/runtime-invert-d-prose.wav": {
+      "batch": "earlier-stage19-runtime-invert-d",
+      "source": "tools/revkit/work/stage19/runtime-invert-d-prose.wav",
+      "sha256": "52e2ed9861c6b9dacf9352a956a86fbdabd4d0e72480e30ec219bf95d7c9ecb0",
+      "bytes": 98042
+    },
+    "tools/revkit/work/stage19/runtime-invert-all-numbers.wav": {
+      "batch": "earlier-stage19-runtime-invert-all",
+      "source": "tools/revkit/work/stage19/runtime-invert-all-numbers.wav",
+      "sha256": "49dd080e79a66c12e1c27e942ac4dbb81ecece070700e756e81b2551228a02db",
+      "bytes": 87782
+    },
+    "tools/revkit/work/stage19/runtime-vector-pitch-address.wav": {
+      "batch": "earlier-stage19-runtime-vector-pitch",
+      "source": "tools/revkit/work/stage19/runtime-vector-pitch-address.wav",
+      "sha256": "69a32ffd49e917870dc59d75e7b24f7d8dd851b2a047a36f13b1e97067153a9b",
+      "bytes": 97870
+    },
+    "tools/revkit/work/stage19/runtime-vector-pitch-numbers.wav": {
+      "batch": "earlier-stage19-runtime-vector-pitch",
+      "source": "tools/revkit/work/stage19/runtime-vector-pitch-numbers.wav",
+      "sha256": "7ab68e0650574b2d23159712a9c67bc087c929a41ea5dc70b8e6dcd2e59f1a1c",
+      "bytes": 85632
+    },
+    "tools/revkit/work/stage19/runtime-vector-pitch-prose.wav": {
+      "batch": "earlier-stage19-runtime-vector-pitch",
+      "source": "tools/revkit/work/stage19/runtime-vector-pitch-prose.wav",
+      "sha256": "bf6438c44103ec0261bae6fc151814da9b393d8f4d7032ca0600c27fc35c5901",
+      "bytes": 87100
+    },
+    "tools/revkit/work/stage19/runtime-vector-signature-last-copy-address.wav": {
+      "batch": "earlier-stage19-runtime-vector-signature-last-copy",
+      "source": "tools/revkit/work/stage19/runtime-vector-signature-last-copy-address.wav",
+      "sha256": "bd6b6d97b50470ef17c70db1f0cd4655983ecc7fde5b1995eafe750b31714743",
+      "bytes": 83924
+    },
+    "tools/revkit/work/stage19/runtime-vector-signature-last-copy-numbers.wav": {
+      "batch": "earlier-stage19-runtime-vector-signature-last-copy",
+      "source": "tools/revkit/work/stage19/runtime-vector-signature-last-copy-numbers.wav",
+      "sha256": "818465e8ea5535326b69b990a0f67c00cfddcbb1c58ff2c37446022cc685365d",
+      "bytes": 69542
+    },
+    "tools/revkit/work/stage19/runtime-vector-signature-last-copy-prose.wav": {
+      "batch": "earlier-stage19-runtime-vector-signature-last-copy",
+      "source": "tools/revkit/work/stage19/runtime-vector-signature-last-copy-prose.wav",
+      "sha256": "303e96eb3ecb58a9cc30b79f838a6a37fd355cdcf50bd468fd9a4e16f5115dcc",
+      "bytes": 76430
+    },
+    "tools/revkit/work/stage19/selection-hello-copy-assembly-control.wav": {
+      "batch": "earlier-stage19-hello-copy-assembly-control",
+      "source": "tools/revkit/work/stage19/selection-hello-copy-assembly-control.wav",
+      "sha256": "e86d005f2be73d6c93b9018d833cf38fb8bb3619763b17e60cf01de3b3adf1c8",
+      "bytes": 10650
+    },
+    "tools/revkit/work/stage20/bridget-hello-structural.wav": {
+      "batch": "earlier-stage20-bridget-hello-structural",
+      "source": "tools/revkit/work/stage20/bridget-hello-structural.wav",
+      "sha256": "9023035e14daa515c2a35499f6e5d4d73301884bf484b5351f69cb36e441ce10",
+      "bytes": 16026
+    },
+    "tools/revkit/work/stage20/bridget-hello-terminal-marker-position5.wav": {
+      "batch": "earlier-stage20-bridget-hello-terminal-marker-position5",
+      "source": "tools/revkit/work/stage20/bridget-hello-terminal-marker-position5.wav",
+      "sha256": "61713b539280fec6fd7d60478d1c2df883545342b680e222ea182c056724a3bf",
+      "bytes": 16336
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-context3-edge-bit-clear/adapted-pah0.wav": {
+      "batch": "earlier-corpus-parity--stage20--apple-continuity-bit7--new-context3-edge-bit-clear-runtime",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-context3-edge-bit-clear/adapted-pah0.wav",
+      "sha256": "5352979756a9f9fdd0923f5517864e9f054fa4dac67537428d015428de0e7fc4",
+      "bytes": 14724
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-hi-filter-holdout/adapted-pah0.wav": {
+      "batch": "earlier-corpus-parity--stage20--hello-hi-filter-holdout-runtime",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-hi-filter-holdout/adapted-pah0.wav",
+      "sha256": "b0b00c259ff23b4a459646c9e7d9a6ae512385bb54f07ef66f9749a4b93ce996",
+      "bytes": 16886
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-patch-repeat/adapted-pah0.wav": {
+      "batch": "earlier-corpus-parity--stage20--apple-selector-byte0-patch-repeat-runtime",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-patch-repeat/adapted-pah0.wav",
+      "sha256": "520597d82a969c4d03723e884a5d517ccb5795db21781a5374702b2a6eb03865",
+      "bytes": 14248
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-context3-legacy-transition-intervention-2026-09-29/adapted-pah0.wav": {
+      "batch": "earlier-corpus-parity--stage20--apple-selector-byte0-context3-legacy-transition-intervention-2026-09-29-runtime",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-context3-legacy-transition-intervention-2026-09-29/adapted-pah0.wav",
+      "sha256": "95baf608d72b655c4f977181f26ac9a6adbd27ad5a5a2835d58baf2d7c83840d",
+      "bytes": 13412
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-legacy-context-objective-2026-09-29/adapted-pah0.wav": {
+      "batch": "earlier-corpus-parity--stage20--apple-selector-byte0-legacy-context-objective-2026-09-29-runtime",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-legacy-context-objective-2026-09-29/adapted-pah0.wav",
+      "sha256": "08561d76ee2924dba85f697075e204829ab4403e6b4a766bf36d74e96127f55f",
+      "bytes": 13040
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-context3-weights-bit7-index-overlay-mounted-2026-09-29/adapted-pah0.wav": {
+      "batch": "earlier-corpus-parity--stage20--apple-selector-byte0-context3-weights-bit7-index-overlay-mounted-2026-09-29-runtime",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-context3-weights-bit7-index-overlay-mounted-2026-09-29/adapted-pah0.wav",
+      "sha256": "0ee5981cdfc609ceb46034f73cd806ea4b0d0f6155a35589a4258fd01e40b4be",
+      "bytes": 12944
+    },
+    "tools/revkit/work/stage19/runtime-numbers.wav": {
+      "batch": "earlier-stage19-runtime-index-constant-8",
+      "source": "tools/revkit/work/stage19/runtime-index-constant-8-numbers.wav",
+      "sha256": "f27e6879bf25f5b3a02fce8e4efd981287497ffe701e07b1ddf202125414d71a",
+      "bytes": 91314
+    },
+    "tools/revkit/work/stage21/james-userdict-a.wav": {
+      "batch": "stage21-james-dictionary",
+      "source": "tools/revkit/work/stage21/james-userdict-a.wav",
+      "sha256": "e855a98a2363be1f5a4d4adc5a2a0bfe8b59ec0ba340dbf6e80e8d7241caf9b4",
+      "bytes": 19868
+    },
+    "tools/revkit/work/stage21/james-userdict-control.wav": {
+      "batch": "stage21-james-dictionary",
+      "source": "tools/revkit/work/stage21/james-userdict-control.wav",
+      "sha256": "893449610451fe79197a8895d9599c6f4e4657e6b5853db9321dcc48dcf229b1",
+      "bytes": 15640
+    },
+    "tools/revkit/work/stage21/james-userdict-p.wav": {
+      "batch": "stage21-james-dictionary",
+      "source": "tools/revkit/work/stage21/james-userdict-p.wav",
+      "sha256": "8c76761169f328e4f3fae3140c9989518b5298e08797a49e5ae515fc04164d51",
+      "bytes": 2344
+    },
+    "tools/revkit/work/stage21/unit-history-pattern-numbers-fallback-output.wav": {
+      "batch": "stage21-history-pattern",
+      "source": "tools/revkit/work/stage21/unit-history-pattern-numbers-fallback-output.wav",
+      "sha256": "fc376342a310ecd5b4facdf15c03fc949d5b6a1de60694ef20a107ddae973461",
+      "bytes": 92426
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-rows/adapted-pah0.wav": {
+      "batch": "remaining-parser-rows",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-rows/adapted-pah0.wav",
+      "sha256": "3e380639e3c966b786dc174e076f98b12ef220b9f1a99b4c5fc57251ab22d328",
+      "bytes": 29110
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-punctuation/adapted-pah0.wav": {
+      "batch": "remaining-parser-punctuation",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-punctuation/adapted-pah0.wav",
+      "sha256": "9a46acc62f7957734a39a38b95584820dd05375fdea27ad2a6a22bd2f89ecfa5",
+      "bytes": 82180
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-number/adapted-pah0.wav": {
+      "batch": "remaining-parser-number",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-number/adapted-pah0.wav",
+      "sha256": "4ede45f5bcddd8da27fe2dfd43a27276a4c0311f3da9efcc28e67e64aa602d51",
+      "bytes": 106190
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-numeric-classes/adapted-pah0.wav": {
+      "batch": "remaining-parser-numeric-classes",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-numeric-classes/adapted-pah0.wav",
+      "sha256": "96912914301173f7ab49c32bba200bd763c0f1e59c77823e04191b2649cd49f1",
+      "bytes": 561166
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-acronym/adapted-pah0.wav": {
+      "batch": "remaining-parser-row-type-acronym",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-acronym/adapted-pah0.wav",
+      "sha256": "2c6488fc171b0a2f840c08bd2a98bf744a207626b9f0c6117a128577d530ed4c",
+      "bytes": 22016
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-comma-terms/adapted-pah0.wav": {
+      "batch": "remaining-parser-row-type-decimal",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-decimal/adapted-pah0.wav",
+      "sha256": "d8d8c9c9144acbea6cfe3f0dc9b943fc18adfa64ca044dd6e768352b0bdccafe",
+      "bytes": 33048
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-dot-dr/adapted-pah0.wav": {
+      "batch": "remaining-parser-row-type-dot-dr",
+      "source": "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-dot-dr/adapted-pah0.wav",
+      "sha256": "514c8b57c87a3308c5318a543cf23ff8481bae62c786f0f2e6c074b0e3938bd3",
+      "bytes": 43896
+    },
+    "tools/revkit/work/corpus-parity/stage20/new-hello.wav": {
+      "batch": "remaining-new-hello",
+      "source": "tools/revkit/work/corpus-parity/stage20/new-hello.wav",
+      "sha256": "f0abad28d3a8b423e3d59dc03f9bfe2cca095e3ccc9f394be5cd6a8ae3a869db",
+      "bytes": 9640
+    },
+    "tools/revkit/work/corpus-parity/stage20/native-tail-sort-order/adapted-pah0.wav": {
+      "batch": "remaining-native-tail-sort-order",
+      "source": "tools/revkit/work/corpus-parity/stage20/native-tail-sort-order/adapted-pah0.wav",
+      "sha256": "602ce927b25b6e511513285148617feb76c08102fb9f7f797e1d30a90450cd07",
+      "bytes": 26400
+    },
+    "tools/revkit/work/corpus-parity/stage20/key-repack-attr40-key5-attr48/adapted-pah0.wav": {
+      "batch": "remaining-key-repack-attr40-key5-attr48",
+      "source": "tools/revkit/work/corpus-parity/stage20/key-repack-attr40-key5-attr48/adapted-pah0.wav",
+      "sha256": "853b78dad3d5a4e62436cbce13a3ad4b0b036fd9c429c23b665caa013406cee9",
+      "bytes": 16372
+    },
+    "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c/adapted-pah0.wav": {
+      "batch": "remaining-key-repack-key5-b-c",
+      "source": "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c/adapted-pah0.wav",
+      "sha256": "52c9ee91acde1356538be82e4ec19227698854a97319cb6d59d54ee206ca7512",
+      "bytes": 11176
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-plain-crosswalk-feature-field-3/adapted-pah0.wav": {
+      "batch": "remaining-hello-plain-crosswalk-feature-field-3",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-plain-crosswalk-feature-field-3/adapted-pah0.wav",
+      "sha256": "6be52f6b953a43d286ff8e23d0d707b36f60cf9e024686cf94e33f71108d4d35",
+      "bytes": 15004
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-keyrank.wav": {
+      "batch": "remaining-hello-keyrank",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-keyrank.wav",
+      "sha256": "da2b244d649242574621d7239ad3c42b283879eae6341a3ee1a5236f1d6ac13e",
+      "bytes": 17836
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-keyrank-zero.wav": {
+      "batch": "remaining-hello-keyrank-zero",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-keyrank-zero.wav",
+      "sha256": "928cd898d658f422a40e8b91fc82ebe6e373a4e239c864072c5a81b36de5db36",
+      "bytes": 10456
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-keyrank-transfer.wav": {
+      "batch": "remaining-hello-keyrank-transfer",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-keyrank-transfer.wav",
+      "sha256": "dec81198b7a9672e73ac14810c948d31bb03d1867afdc09c946c22fb60b547da",
+      "bytes": 9962
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-vector-copy-score.wav": {
+      "batch": "remaining-hello-vector-copy-score",
+      "source": "tools/revkit/work/corpus-parity/stage20/hello-vector-copy-score.wav",
+      "sha256": "6c07819596129485710b732b67b8eeb314a680eafd6849509a00c6db6b902646",
+      "bytes": 16308
+    },
+    "tools/revkit/work/corpus-parity/runtime-original-msi-2006-numbers.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-numbers.wav",
+      "bytes": 373188,
+      "sha256": "fe820fa817a53cbd1312e51b405aea64d4b42471ba774fcd62aa35c2f79f76ab"
+    },
+    "tools/revkit/work/corpus-parity/runtime-banner-free-2006-prose.wav": {
+      "batch": "remaining-banner-free-2006",
+      "source": "tools/revkit/work/corpus-parity/runtime-banner-free-2006-prose.wav",
+      "sha256": "77a4f7e8e39e12fed2723709575609d5b8dec90d27c7e1c6977368cda0a3ebff",
+      "bytes": 103068
+    },
+    "tools/revkit/work/corpus-parity/runtime-banner-free-2006-numbers.wav": {
+      "batch": "remaining-banner-free-2006",
+      "source": "tools/revkit/work/corpus-parity/runtime-banner-free-2006-numbers.wav",
+      "sha256": "5b24220b078e12b0bc018a259e7358e799a86bc260f74abbc95fb8147deccd25",
+      "bytes": 93176
+    },
+    "tools/revkit/work/corpus-parity/runtime-banner-free-2006-address.wav": {
+      "batch": "remaining-banner-free-2006",
+      "source": "tools/revkit/work/corpus-parity/runtime-banner-free-2006-address.wav",
+      "sha256": "7d1bf4f94baffb45ddbb573fc9670b6492030fb037dbc47acb0117e250893b5a",
+      "bytes": 109064
+    },
+    "tools/revkit/work/corpus-parity/stage20/old-hello.wav": {
+      "batch": "remaining-old-hello",
+      "source": "tools/revkit/work/corpus-parity/stage20/old-hello.wav",
+      "sha256": "eb5e399ff403bd86d82cf02a7adf123379b268e24a8fcb40578d763facd58233",
+      "bytes": 15264
+    },
+    "tools/revkit/work/corpus-parity/stage20/old-pah0-prose.wav": {
+      "batch": "replay-apple-plain",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-plain/old-pah0-address.wav",
+      "sha256": "1ccabfc08b9ddbdf8cda2bd2a1f5d79b716649dbffe7c857572cb903bdbaa119",
+      "bytes": 14340
+    },
+    "tools/revkit/work/corpus-parity/stage20/old-phoneme-tag.wav": {
+      "batch": "remaining-old-phoneme-tag",
+      "source": "tools/revkit/work/corpus-parity/stage20/old-phoneme-tag.wav",
+      "sha256": "082521ae3e8af5a74dfad60e5621f2cd5dd97d9dc044f6e0eac266471202ebc1",
+      "bytes": 230704
+    },
+    "tools/revkit/work/corpus-parity/runtime-old-embedded-idremap-prose.wav": {
+      "batch": "remaining-idremap",
+      "source": "tools/revkit/work/corpus-parity/runtime-old-embedded-idremap-prose.wav",
+      "sha256": "9725fbe319b20b3964a46766722b825b287227e9f05a2ab75793d58c8eb5401e",
+      "bytes": 97904
+    },
+    "tools/revkit/work/corpus-parity/runtime-old-embedded-idremap-numbers.wav": {
+      "batch": "remaining-idremap",
+      "source": "tools/revkit/work/corpus-parity/runtime-old-embedded-idremap-numbers.wav",
+      "sha256": "05586de501ddabd7da75cae3eb65d35251f515bd0b36820430b2479bcf0d782d",
+      "bytes": 87094
+    },
+    "tools/revkit/work/stage20/bridget-hello.wav": {
+      "batch": "remaining-bridget",
+      "source": "tools/revkit/work/stage20/bridget-hello.wav",
+      "sha256": "bcb536ddeeff92730603d26b2d924bdd27e605118503a71d2246e5b5cfa0092e",
+      "bytes": 15138
+    },
+    "tools/revkit/work/stage17/james-package-prose.wav": {
+      "batch": "remaining-james-package",
+      "source": "tools/revkit/work/stage17/james-package-prose.wav",
+      "sha256": "a9e295c0fe17b3f2fba9e3741d726acdbbf7d7113463cd474d0fc16329b7e58d",
+      "bytes": 97196
+    },
+    "tools/revkit/work/stage17/james-package-numbers.wav": {
+      "batch": "remaining-james-package",
+      "source": "tools/revkit/work/stage17/james-package-numbers.wav",
+      "sha256": "02f3a87222b78380a38fec9a2df7fe637ac9d62aa56169a997570e7243bba0df",
+      "bytes": 110548
+    },
+    "tools/revkit/work/stage17/james-package-address.wav": {
+      "batch": "remaining-james-package",
+      "source": "tools/revkit/work/stage17/james-package-address.wav",
+      "sha256": "5254bff1a64183cbccde32ccca8a2f6ca1bbf3dc2061083eacb1f9716a77e239",
+      "bytes": 107638
+    },
+    "tools/revkit/work/corpus-parity/canary.wav": {
+      "batch": "remaining-paul-canary",
+      "source": "tools/revkit/work/corpus-parity/canary.wav",
+      "sha256": "9e42d1f1e1efd3002885dc68ff4109e14bb11cfd14fb487d33a056d555f96eb2",
+      "bytes": 12820
+    },
+    "tools/revkit/work/corpus-parity/kate/decoder-canary.wav": {
+      "batch": "remaining-kate-canary",
+      "source": "tools/revkit/work/corpus-parity/kate/decoder-canary.wav",
+      "sha256": "e57e48e257854b060c3894be846ac4d3f61267f506e7b7b3d09c2c68887b2653",
+      "bytes": 3186
+    },
+    "tools/revkit/work/stage1-copy/output.wav": {
+      "batch": "remaining-stage1",
+      "source": "tools/revkit/work/stage1-copy/output.wav",
+      "sha256": "712d5e7f46db94158bbd0ebe2997bcd12a7a381eb7f74dbeacfa0bbce21189f4",
+      "bytes": 30002
+    },
+    "tools/revkit/work/stage19/runtime-prose.wav": {
+      "method": "verified sample splice",
+      "bytes": 100144,
+      "sha256": "c8dbaf820a15d4d2d198b574a3149306f72e1dff7669d8ab599f86d28eb06083"
+    },
+    "tools/revkit/work/corpus-parity/stage20/adapted-pah0.wav": {
+      "method": "verified sample splice",
+      "bytes": 15264,
+      "sha256": "936e0f8f3c62399858ee21777a7f6ef89fa37c98134fcc4e1263dc78f59168cc"
+    },
+    "tools/revkit/work/corpus-parity/stage20/forced-legacy-units-trim4/hello.wav": {
+      "method": "verified sample splice",
+      "bytes": 8364,
+      "sha256": "d67dfd9c840d703421b869dd0b9c55bd0809a78b568145b6222b45d71cea9eac"
+    },
+    "tools/revkit/work/corpus-parity/stage20/split-threshold-new/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-split-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/split-hello-world/adapted-pah0.wav",
+      "bytes": 26640,
+      "sha256": "f67f443094c3c5195a9156b230ddc617375d2b4d93b6a3164a75b13fb95e5030"
+    },
+    "tools/revkit/work/corpus-parity/stage20/context-tail-map/adapted-pah0.wav": {
+      "method": "exact samples from separately generated Paul baseline and Kate Hello world with repeated gaps",
+      "bytes": 516264,
+      "sha256": "148693ada20cca0b0cb0d5926eae3b511dfd778115d3d5714c11b9b9fe164a15"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-plain/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-apple-plain-correct",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-plain-correct/adapted-pah0.wav",
+      "bytes": 13648,
+      "sha256": "48f9610abc82debe3e7ce41000fc88e082ad1a2d47602438df02ce132db1c40e"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-generic-tail-map-selector/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-context-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/context-hello-world/adapted-pah0.wav",
+      "bytes": 24720,
+      "sha256": "ff36d8aa0b5487a9940f4bb422181d463c8fda0a737f88d3500d4873f6960d04"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-plain-features/old-pah0-address.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-address.wav",
+      "bytes": 320008,
+      "sha256": "0bf0f679b9bb7bfb0c210e4fad9173efcaabbfe43eb7068ca742e24bf8c67e0c"
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-continuity-bit7/marker/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-marker-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/marker-apple/adapted-pah0.wav",
+      "bytes": 12354,
+      "sha256": "d6055769ed787cfe74b68a0376b139014418dd43d2100e5b70bb072f73736d36"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker-metric-indices-apple/adapted-pah0.wav": {
+      "method": "Kate header with independently generated Paul and Kate Apple PCM",
+      "bytes": 30750,
+      "sha256": "596c800226a4f021ed1b886e106f86b169fcb001146831f5777b325c5a90711f"
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-weighted-coverage/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-hi-weighted-fixed",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-weighted-fixed/adapted-pah0.wav",
+      "bytes": 13598,
+      "sha256": "511fef226e5c7053c230871be500db9bf31dc7b69668849c2a9b5ed8ca7779ff"
+    },
+    "tools/revkit/work/stage19/pih0-context.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-pih0-context",
+      "source": "tools/revkit/work/stage19/pih0-context.wav",
+      "bytes": 22084,
+      "sha256": "016b5489fafc55ad4d2355884321eae6a81733a877e613ad2eab362e08c6a1ff"
+    },
+    "tools/revkit/work/stage19/selection-hello-copy-assembly.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-hello-copy-assembly",
+      "source": "tools/revkit/work/stage19/selection-hello-copy-assembly.wav",
+      "bytes": 16134,
+      "sha256": "b1627ad8141d22f7458c60e5b33d917e02b5e97bf1726c0ea1b76cf7b3651520"
+    },
+    "tools/revkit/work/stage19/selection-hello-assembly-entry-only.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-hello-assembly-entry-only",
+      "source": "tools/revkit/work/stage19/selection-hello-assembly-entry-only.wav",
+      "bytes": 5518,
+      "sha256": "61bdf41f283af0c9a048b6628b76ae1bc4a292000b77a03e3f83a045eec2e714"
+    },
+    "tools/revkit/work/stage20/bridget-hello-structural-classids.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-bridget-hello-structural-classids",
+      "source": "tools/revkit/work/stage20/bridget-hello-structural-classids.wav",
+      "bytes": 28820,
+      "sha256": "db849c1ef7cf9dc0af65052cb6afd01e60c20260db99c5cc27070704efb9942c"
+    },
+    "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-bridget-hello-terminal-marker-duplicate-contextkeys-v2",
+      "source": "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2.wav",
+      "bytes": 27888,
+      "sha256": "c6bccacc755dab6c429578e6a8002566df06b30d9ff6aebfcaaf75c5f07ae33c"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-patch/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-byte0-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/byte0-hello-world/adapted-pah0.wav",
+      "bytes": 25090,
+      "sha256": "3ddcc5d26f45b62e945cca8a5d10dbcfb6a7a9f1cc69a63b7bf857c63a4f1d9d"
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-decimal/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-parser-actual-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/probe/adapted-pah0.wav",
+      "bytes": 14692,
+      "sha256": "316dcc3bc335121ebf265ef760e6767dc7f96db97a86d510eefd4ac1b42bee9e"
+    },
+    "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-key-repack-key5-b-c-copy-attr40",
+      "source": "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40/adapted-pah0.wav",
+      "bytes": 19120,
+      "sha256": "b117aefbeb1f65b4d83ca190bc17a797c7bf0af87f4ed31db96f263139ed0696"
+    },
+    "tools/revkit/work/corpus-parity/runtime-original-msi-2006-prose.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-prose.wav",
+      "bytes": 372876,
+      "sha256": "03b266a9270fb206b900defd9a80c02e8ab17d9dfdf7bd85419fa5c9c9e39003"
+    },
+    "tools/revkit/work/corpus-parity/runtime-original-msi-2006-address.wav": {
+      "method": "clean header with explicit demo-address PCM followed by clean-address PCM",
+      "bytes": 429028,
+      "sha256": "e81b01d7398976d676214b4e572ec1e961e99e9bb91b2827283192efe6368db6"
+    },
+    "tools/revkit/work/trace-reproduction/generated/recovered-apple/paul.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-paul-apple",
+      "source": "tools/revkit/work/trace-reproduction/investigation-main/generated-paul-apple.wav",
+      "bytes": 16028,
+      "sha256": "c0e63abb62a5ac55f53045e80498875a104c4495808fced21c406d9376c505cb"
+    },
+    "tools/revkit/work/trace-reproduction/generated/recovered-apple/kate.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-kate-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/metric-apple-no-vector/adapted-pah0.wav",
+      "bytes": 14766,
+      "sha256": "75da51d1f964aa02bfc05bfb57a4775e3c091f02b452c5de6ab436d16e7223f3"
+    }
+  },
+  "retained_wavs": {},
+  "pruned_local_files": 407,
+  "pruned_local_bytes": 30673820,
+  "permission_blocked_local_files": [],
+  "administrator_pruned_local_files": {
+    "tools/revkit/work/stage1-copy/output.wav": {
+      "bytes": 30002,
+      "sha256": "712d5e7f46db94158bbd0ebe2997bcd12a7a381eb7f74dbeacfa0bbce21189f4"
+    }
+  },
+  "agent_pruned_local_files": 406,
+  "wav_recipes": 1600,
+  "runtime_batches": 149,
+  "remaining_research_wavs": 0
+}

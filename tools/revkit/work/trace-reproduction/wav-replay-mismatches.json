@@ -1,0 +1,492 @@
+{
+  "tools/revkit/work/corpus-parity/stage20/split-threshold-new/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 26640,
+      "sha256": "f67f443094c3c5195a9156b230ddc617375d2b4d93b6a3164a75b13fb95e5030",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "replay-split-threshold-new",
+        "bytes": 17836,
+        "sha256": "da2b244d649242574621d7239ad3c42b283879eae6341a3ee1a5236f1d6ac13e"
+      }
+    ],
+    "declared_pcm_bytes": 26596,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-split-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/split-hello-world/adapted-pah0.wav",
+      "bytes": 26640,
+      "sha256": "f67f443094c3c5195a9156b230ddc617375d2b4d93b6a3164a75b13fb95e5030"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/context-tail-map/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 516264,
+      "sha256": "148693ada20cca0b0cb0d5926eae3b511dfd778115d3d5714c11b9b9fe164a15",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "replay-context-tail-map",
+        "bytes": 18364,
+        "sha256": "f438243151b5657a37c4996ce242960ab3d0bde59e4ecb93491a8e2e2a9ede1e"
+      }
+    ],
+    "declared_pcm_bytes": 513160,
+    "bytes_after_standard_pcm_payload": 3060,
+    "status": "reproduced",
+    "resolution": {
+      "method": "exact samples from separately generated Paul baseline and Kate Hello world with repeated gaps",
+      "bytes": 516264,
+      "sha256": "148693ada20cca0b0cb0d5926eae3b511dfd778115d3d5714c11b9b9fe164a15"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/apple-plain/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 13648,
+      "sha256": "48f9610abc82debe3e7ce41000fc88e082ad1a2d47602438df02ce132db1c40e",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [],
+    "declared_pcm_bytes": 13604,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-apple-plain-correct",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-plain-correct/adapted-pah0.wav",
+      "bytes": 13648,
+      "sha256": "48f9610abc82debe3e7ce41000fc88e082ad1a2d47602438df02ce132db1c40e"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/apple-generic-tail-map-selector/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 24720,
+      "sha256": "ff36d8aa0b5487a9940f4bb422181d463c8fda0a737f88d3500d4873f6960d04",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "replay-apple-generic-tail-map-selector",
+        "bytes": 15840,
+        "sha256": "93277768b4cd0b44d8c73acc6812e806c1eeec0a176a1d49f08f207593b2ecea"
+      }
+    ],
+    "declared_pcm_bytes": 24676,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-context-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/context-hello-world/adapted-pah0.wav",
+      "bytes": 24720,
+      "sha256": "ff36d8aa0b5487a9940f4bb422181d463c8fda0a737f88d3500d4873f6960d04"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/apple-plain-features/old-pah0-address.wav": {
+    "expected": {
+      "bytes": 320008,
+      "sha256": "0bf0f679b9bb7bfb0c210e4fad9173efcaabbfe43eb7068ca742e24bf8c67e0c",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-history",
+        "batch": "replay-apple-plain-features",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "replay-apple-plain-features",
+        "bytes": 14340,
+        "sha256": "1ccabfc08b9ddbdf8cda2bd2a1f5d79b716649dbffe7c857572cb903bdbaa119"
+      }
+    ],
+    "declared_pcm_bytes": 319964,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-address.wav",
+      "bytes": 320008,
+      "sha256": "0bf0f679b9bb7bfb0c210e4fad9173efcaabbfe43eb7068ca742e24bf8c67e0c"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/hello-continuity-bit7/marker/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 12354,
+      "sha256": "d6055769ed787cfe74b68a0376b139014418dd43d2100e5b70bb072f73736d36",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-history",
+        "batch": "replay-hello-continuity-bit7--marker",
+        "bytes": 15264,
+        "sha256": "215ff65cf15e37f4dcce58527511aa31f143b58a1dca865ef082252a3a83e5f3"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "replay-hello-continuity-bit7--marker",
+        "bytes": 15264,
+        "sha256": "215ff65cf15e37f4dcce58527511aa31f143b58a1dca865ef082252a3a83e5f3"
+      }
+    ],
+    "declared_pcm_bytes": 12310,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-marker-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/marker-apple/adapted-pah0.wav",
+      "bytes": 12354,
+      "sha256": "d6055769ed787cfe74b68a0376b139014418dd43d2100e5b70bb072f73736d36"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker-metric-indices-apple/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 30750,
+      "sha256": "596c800226a4f021ed1b886e106f86b169fcb001146831f5777b325c5a90711f",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-history",
+        "batch": "replay-apple-continuity-bit7--new-full-marker-metric-indices-apple",
+        "bytes": 14766,
+        "sha256": "75da51d1f964aa02bfc05bfb57a4775e3c091f02b452c5de6ab436d16e7223f3"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "replay-apple-continuity-bit7--new-full-marker-metric-indices-apple",
+        "bytes": 14766,
+        "sha256": "75da51d1f964aa02bfc05bfb57a4775e3c091f02b452c5de6ab436d16e7223f3"
+      }
+    ],
+    "declared_pcm_bytes": 14722,
+    "bytes_after_standard_pcm_payload": 15984,
+    "status": "reproduced",
+    "resolution": {
+      "method": "Kate header with independently generated Paul and Kate Apple PCM",
+      "bytes": 30750,
+      "sha256": "596c800226a4f021ed1b886e106f86b169fcb001146831f5777b325c5a90711f"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/hi-weighted-coverage/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 13598,
+      "sha256": "511fef226e5c7053c230871be500db9bf31dc7b69668849c2a9b5ed8ca7779ff",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [],
+    "declared_pcm_bytes": 13554,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-hi-weighted-fixed",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-weighted-fixed/adapted-pah0.wav",
+      "bytes": 13598,
+      "sha256": "511fef226e5c7053c230871be500db9bf31dc7b69668849c2a9b5ed8ca7779ff"
+    }
+  },
+  "tools/revkit/work/stage19/pih0-context.wav": {
+    "expected": {
+      "bytes": 22084,
+      "sha256": "016b5489fafc55ad4d2355884321eae6a81733a877e613ad2eab362e08c6a1ff",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "earlier-stage19-pih0-context",
+        "bytes": 12498,
+        "sha256": "26e145b097a9f692f1e12e4a590106b3637866e0b6165a7f806a16ba1ec87c26"
+      }
+    ],
+    "declared_pcm_bytes": 22040,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-pih0-context",
+      "source": "tools/revkit/work/stage19/pih0-context.wav",
+      "bytes": 22084,
+      "sha256": "016b5489fafc55ad4d2355884321eae6a81733a877e613ad2eab362e08c6a1ff"
+    }
+  },
+  "tools/revkit/work/stage19/selection-hello-copy-assembly.wav": {
+    "expected": {
+      "bytes": 16134,
+      "sha256": "b1627ad8141d22f7458c60e5b33d917e02b5e97bf1726c0ea1b76cf7b3651520",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "earlier-stage19-hello-copy-assembly",
+        "bytes": 10650,
+        "sha256": "e86d005f2be73d6c93b9018d833cf38fb8bb3619763b17e60cf01de3b3adf1c8"
+      }
+    ],
+    "declared_pcm_bytes": 16090,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-hello-copy-assembly",
+      "source": "tools/revkit/work/stage19/selection-hello-copy-assembly.wav",
+      "bytes": 16134,
+      "sha256": "b1627ad8141d22f7458c60e5b33d917e02b5e97bf1726c0ea1b76cf7b3651520"
+    }
+  },
+  "tools/revkit/work/stage19/selection-hello-assembly-entry-only.wav": {
+    "expected": {
+      "bytes": 5518,
+      "sha256": "61bdf41f283af0c9a048b6628b76ae1bc4a292000b77a03e3f83a045eec2e714",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "earlier-stage19-hello-assembly-entry-only",
+        "bytes": 10650,
+        "sha256": "e86d005f2be73d6c93b9018d833cf38fb8bb3619763b17e60cf01de3b3adf1c8"
+      }
+    ],
+    "declared_pcm_bytes": 5474,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-hello-assembly-entry-only",
+      "source": "tools/revkit/work/stage19/selection-hello-assembly-entry-only.wav",
+      "bytes": 5518,
+      "sha256": "61bdf41f283af0c9a048b6628b76ae1bc4a292000b77a03e3f83a045eec2e714"
+    }
+  },
+  "tools/revkit/work/stage20/bridget-hello-structural-classids.wav": {
+    "expected": {
+      "bytes": 28820,
+      "sha256": "db849c1ef7cf9dc0af65052cb6afd01e60c20260db99c5cc27070704efb9942c",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry3",
+        "batch": "earlier-stage20-bridget-hello-structural-classids",
+        "bytes": 16026,
+        "sha256": "9023035e14daa515c2a35499f6e5d4d73301884bf484b5351f69cb36e441ce10"
+      }
+    ],
+    "declared_pcm_bytes": 28776,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-bridget-hello-structural-classids",
+      "source": "tools/revkit/work/stage20/bridget-hello-structural-classids.wav",
+      "bytes": 28820,
+      "sha256": "db849c1ef7cf9dc0af65052cb6afd01e60c20260db99c5cc27070704efb9942c"
+    }
+  },
+  "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2.wav": {
+    "expected": {
+      "bytes": 27888,
+      "sha256": "c6bccacc755dab6c429578e6a8002566df06b30d9ff6aebfcaaf75c5f07ae33c",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry3",
+        "batch": "earlier-stage20-bridget-hello-terminal-marker-duplicate-contextkeys-v2",
+        "bytes": 16336,
+        "sha256": "61713b539280fec6fd7d60478d1c2df883545342b680e222ea182c056724a3bf"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "earlier-stage20-bridget-hello-terminal-marker-duplicate-contextkeys-v2",
+        "bytes": 16336,
+        "sha256": "61713b539280fec6fd7d60478d1c2df883545342b680e222ea182c056724a3bf"
+      }
+    ],
+    "declared_pcm_bytes": 27844,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-bridget-hello-terminal-marker-duplicate-contextkeys-v2",
+      "source": "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2.wav",
+      "bytes": 27888,
+      "sha256": "c6bccacc755dab6c429578e6a8002566df06b30d9ff6aebfcaaf75c5f07ae33c"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-patch/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 25090,
+      "sha256": "3ddcc5d26f45b62e945cca8a5d10dbcfb6a7a9f1cc69a63b7bf857c63a4f1d9d",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "earlier-corpus-parity--stage20--apple-selector-byte0-patch-runtime",
+        "bytes": 14248,
+        "sha256": "520597d82a969c4d03723e884a5d517ccb5795db21781a5374702b2a6eb03865"
+      }
+    ],
+    "declared_pcm_bytes": 25046,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-byte0-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/byte0-hello-world/adapted-pah0.wav",
+      "bytes": 25090,
+      "sha256": "3ddcc5d26f45b62e945cca8a5d10dbcfb6a7a9f1cc69a63b7bf857c63a4f1d9d"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-decimal/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 14692,
+      "sha256": "316dcc3bc335121ebf265ef760e6767dc7f96db97a86d510eefd4ac1b42bee9e",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry3",
+        "batch": "remaining-parser-row-type-decimal",
+        "bytes": 33048,
+        "sha256": "d8d8c9c9144acbea6cfe3f0dc9b943fc18adfa64ca044dd6e768352b0bdccafe"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry1",
+        "batch": "remaining-parser-row-type-decimal",
+        "bytes": 33048,
+        "sha256": "d8d8c9c9144acbea6cfe3f0dc9b943fc18adfa64ca044dd6e768352b0bdccafe"
+      }
+    ],
+    "declared_pcm_bytes": 14648,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-parser-actual-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/probe/adapted-pah0.wav",
+      "bytes": 14692,
+      "sha256": "316dcc3bc335121ebf265ef760e6767dc7f96db97a86d510eefd4ac1b42bee9e"
+    }
+  },
+  "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40/adapted-pah0.wav": {
+    "expected": {
+      "bytes": 19120,
+      "sha256": "b117aefbeb1f65b4d83ca190bc17a797c7bf0af87f4ed31db96f263139ed0696",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry1",
+        "batch": "remaining-key-repack-key5-b-c-copy-attr40",
+        "bytes": 8372,
+        "sha256": "8edc158e06ce8ca9c5a1b8d30380fdcc1df779220082f50779b4a4d603403830"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "remaining-key-repack-key5-b-c-copy-attr40",
+        "bytes": 8372,
+        "sha256": "8edc158e06ce8ca9c5a1b8d30380fdcc1df779220082f50779b4a4d603403830"
+      }
+    ],
+    "declared_pcm_bytes": 19076,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-key-repack-key5-b-c-copy-attr40",
+      "source": "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40/adapted-pah0.wav",
+      "bytes": 19120,
+      "sha256": "b117aefbeb1f65b4d83ca190bc17a797c7bf0af87f4ed31db96f263139ed0696"
+    }
+  },
+  "tools/revkit/work/corpus-parity/runtime-original-msi-2006-prose.wav": {
+    "expected": {
+      "bytes": 372876,
+      "sha256": "03b266a9270fb206b900defd9a80c02e8ab17d9dfdf7bd85419fa5c9c9e39003",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry2",
+        "batch": "remaining-original-msi-2006",
+        "bytes": 311276,
+        "sha256": "edd6448567c0a7d74c027615e8684ce908277190c41722ad99b23657db8ba256"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry1",
+        "batch": "remaining-original-msi-2006",
+        "bytes": 103068,
+        "sha256": "77a4f7e8e39e12fed2723709575609d5b8dec90d27c7e1c6977368cda0a3ebff"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "remaining-original-msi-2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "declared_pcm_bytes": 372832,
+    "bytes_after_standard_pcm_payload": 0,
+    "status": "reproduced",
+    "resolution": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-prose.wav",
+      "bytes": 372876,
+      "sha256": "03b266a9270fb206b900defd9a80c02e8ab17d9dfdf7bd85419fa5c9c9e39003"
+    }
+  },
+  "tools/revkit/work/corpus-parity/runtime-original-msi-2006-address.wav": {
+    "expected": {
+      "bytes": 429028,
+      "sha256": "e81b01d7398976d676214b4e572ec1e961e99e9bb91b2827283192efe6368db6",
+      "reason": "Fresh runtime replay did not match the historical bytes."
+    },
+    "attempts": [
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry2",
+        "batch": "remaining-original-msi-2006",
+        "bytes": 323220,
+        "sha256": "fab4493edf61ea8dceb844fad18f87d42a6fb9cffa5a5617e9b2f255e7b047e6"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-retry1",
+        "batch": "remaining-original-msi-2006",
+        "bytes": 109064,
+        "sha256": "7d1bf4f94baffb45ddbb573fc9670b6492030fb037dbc47acb0117e250893b5a"
+      },
+      {
+        "scratch_run": "vtspeak-wav-reproduction-20261018",
+        "batch": "remaining-original-msi-2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "declared_pcm_bytes": 109020,
+    "bytes_after_standard_pcm_payload": 319964,
+    "status": "reproduced",
+    "resolution": {
+      "method": "clean header with explicit demo-address PCM followed by clean-address PCM",
+      "bytes": 429028,
+      "sha256": "e81b01d7398976d676214b4e572ec1e961e99e9bb91b2827283192efe6368db6"
+    }
+  }
+}

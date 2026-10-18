@@ -1,0 +1,70 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $path_plain = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($path_plain + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d706c61696e2d702e63737600"]
+  set $path_unmatched = ((char *(*)(unsigned int))0x1001d9c0)(61)
+#@bytes ["  set {char}($path_unmatched + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d756e6d6174636865642d747970652d71756f74652e63737600"]
+  set $path_embedded = ((char *(*)(unsigned int))0x1001d9c0)(62)
+#@bytes ["  set {char}($path_embedded + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d656d6265646465642d736f757263652d71756f74652e63737600"]
+  set $text_hello = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text_hello + ",0,") = ","68656c6c6f00"]
+  set $text_quoted = ((char *(*)(unsigned int))0x1001d9c0)(7)
+#@bytes ["  set {char}($text_quoted + ",0,") = ","6865226c6c6f00"]
+  set $out_control_hello = ((char *(*)(unsigned int))0x1001d9c0)(59)
+#@bytes ["  set {char}($out_control_hello + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d6d616c666f726d65642d71756f74652d636f6e74726f6c2d68656c6c6f2e77617600"]
+  set $out_control_quoted = ((char *(*)(unsigned int))0x1001d9c0)(65)
+#@bytes ["  set {char}($out_control_quoted + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d6d616c666f726d65642d71756f74652d636f6e74726f6c2d71756f7465642d746578742e77617600"]
+  set $out_plain = ((char *(*)(unsigned int))0x1001d9c0)(55)
+#@bytes ["  set {char}($out_plain + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d6d616c666f726d65642d71756f74652d706c61696e2d726f772e77617600"]
+  set $out_unmatched = ((char *(*)(unsigned int))0x1001d9c0)(60)
+#@bytes ["  set {char}($out_unmatched + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d6d616c666f726d65642d71756f74652d756e6d6174636865642d747970652e77617600"]
+  set $out_embedded_hello = ((char *(*)(unsigned int))0x1001d9c0)(60)
+#@bytes ["  set {char}($out_embedded_hello + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d6d616c666f726d65642d71756f74652d656d6265646465642d68656c6c6f2e77617600"]
+  set $out_embedded_quoted = ((char *(*)(unsigned int))0x1001d9c0)(66)
+#@bytes ["  set {char}($out_embedded_quoted + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d6d616c666f726d65642d71756f74652d656d6265646465642d71756f7465642d746578742e77617600"]
+  set $gate_before = *(unsigned char *)0x100a7489
+  set {unsigned char}0x100a7489 = 1
+  printf "USERDICT_QUOTE_EFFECT gate_before=%u gate_forced=1\n", $gate_before
+  set $control_hello = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_control_hello, 1, -1, -1, -1, -1, -1, 0)
+  printf "USERDICT_QUOTE_EFFECT case=control-hello synth_ax=%d\n", $control_hello
+  set $control_quoted = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_quoted, $out_control_quoted, 1, -1, -1, -1, -1, -1, 0)
+  printf "USERDICT_QUOTE_EFFECT case=control-quoted-text synth_ax=%d\n", $control_quoted
+  set $load_plain = ((short (*)(int, char *))0x10027960)(199, $path_plain)
+  printf "USERDICT_QUOTE_EFFECT case=plain-row load_ax=%d\n", $load_plain
+  if $load_plain == 1
+    set $synth_plain = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_plain, 1, -1, -1, -1, -1, 199, 0)
+    printf "USERDICT_QUOTE_EFFECT case=plain-row synth_ax=%d\n", $synth_plain
+    set $unload_plain = ((short (*)(int))0x10027a80)(199)
+    printf "USERDICT_QUOTE_EFFECT case=plain-row unload_ax=%d\n", $unload_plain
+  end
+  set $load_unmatched = ((short (*)(int, char *))0x10027960)(200, $path_unmatched)
+  printf "USERDICT_QUOTE_EFFECT case=unmatched-type load_ax=%d\n", $load_unmatched
+  if $load_unmatched == 1
+    set $synth_unmatched = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_unmatched, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_QUOTE_EFFECT case=unmatched-type synth_ax=%d\n", $synth_unmatched
+    set $unload_unmatched = ((short (*)(int))0x10027a80)(200)
+    printf "USERDICT_QUOTE_EFFECT case=unmatched-type unload_ax=%d\n", $unload_unmatched
+  end
+  set $load_embedded = ((short (*)(int, char *))0x10027960)(201, $path_embedded)
+  printf "USERDICT_QUOTE_EFFECT case=embedded-source load_ax=%d\n", $load_embedded
+  if $load_embedded == 1
+    set $synth_embedded_hello = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_embedded_hello, 1, -1, -1, -1, -1, 201, 0)
+    printf "USERDICT_QUOTE_EFFECT case=embedded-source-hello synth_ax=%d\n", $synth_embedded_hello
+    set $synth_embedded_quoted = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_quoted, $out_embedded_quoted, 1, -1, -1, -1, -1, 201, 0)
+    printf "USERDICT_QUOTE_EFFECT case=embedded-source-quoted-text synth_ax=%d\n", $synth_embedded_quoted
+    set $unload_embedded = ((short (*)(int))0x10027a80)(201)
+    printf "USERDICT_QUOTE_EFFECT case=embedded-source unload_ax=%d\n", $unload_embedded
+  end
+  set {unsigned char}0x100a7489 = $gate_before
+  printf "USERDICT_QUOTE_EFFECT gate_restored=%u\n", *(unsigned char *)0x100a7489
+  continue
+end
+
+continue

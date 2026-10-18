@@ -1,0 +1,51 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $first12 = ((char *(*)(unsigned int))0x1001d9c0)(24)
+#@bytes ["  set {char}($first12 + ",0,") = ","42204420462047204b204c204d204e205020522053205400"]
+  set $rest24 = ((char *(*)(unsigned int))0x1001d9c0)(80)
+#@bytes ["  set {char}($rest24 + ",0,") = ","5620572059205a204348204448204848204a48204e47205348205448205a4820414130204145302041483020414f3020415730204159302045483020455230204559302049483020495930204f573000"]
+  set $all36 = ((char *(*)(unsigned int))0x1001d9c0)(104)
+#@bytes ["  set {char}($all36 + ",0,") = ","42204420462047204b204c204d204e2050205220532054205620572059205a204348204448204848204a48204e47205348205448205a4820414130204145302041483020414f3020415730204159302045483020455230204559302049483020495930204f573000"]
+  set $output = ((char *(*)(unsigned int))0x1001d9c0)(66)
+  set $i = 0
+  while $i < 66
+    set {char}($output + $i) = 0
+    set $i = $i + 1
+  end
+  set $result = ((short (*)(char *, char *))0x1005f710)($output, $first12)
+  printf "TARGETPHON sequence=first12 result=%d bytes=", $result
+  set $i = 0
+  while $i < 12
+    printf "%02x", *(unsigned char *)($output + $i)
+    set $i = $i + 1
+  end
+  printf "\n"
+  set $result = ((short (*)(char *, char *))0x1005f710)($output, $rest24)
+  printf "TARGETPHON sequence=rest24 result=%d bytes=", $result
+  set $i = 0
+  while $i < 24
+    printf "%02x", *(unsigned char *)($output + $i)
+    set $i = $i + 1
+  end
+  printf "\n"
+  set $result = ((short (*)(char *, char *))0x1005f710)($output, $all36)
+  printf "TARGETPHON sequence=all36 result=%d bytes=", $result
+  set $i = 0
+  while $i < 36
+    printf "%02x", *(unsigned char *)($output + $i)
+    set $i = $i + 1
+  end
+  printf "\n"
+  call ((void (*)(void *))0x1001da30)($first12)
+  call ((void (*)(void *))0x1001da30)($rest24)
+  call ((void (*)(void *))0x1001da30)($all36)
+  call ((void (*)(void *))0x1001da30)($output)
+  continue
+end
+continue

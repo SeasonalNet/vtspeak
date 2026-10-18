@@ -1,0 +1,50 @@
+set pagination off
+set confirm off
+handle SIGSEGV nostop noprint pass
+set logging file /work/corpus-parity/stage20/continuity-gate/2013-continuity-gate-gdb.log
+set logging overwrite on
+set logging enabled on
+set $postselection_calls = 0
+set $current_context = 0
+set $current_state = 0
+
+# Save arguments at the function entry. The shared branch address below is
+# reached after the compiler has adjusted ESP, so it cannot read entry args.
+break *0x10023350
+commands
+  silent
+  set $current_context = *(int *)($esp + 4)
+  set $current_state = *(unsigned int *)($esp + 8)
+  continue
+end
+
+# FUN_10023350 calls FUN_100230a0 to attach left/right/total span fields.
+# This join point is after its full-span filtering branch and before local
+# scoring, so the node list records the candidates that the scorer receives.
+break *0x10023814
+commands
+  silent
+  set $postselection_calls = $postselection_calls + 1
+  set $ctx = $current_context
+  set $state = $current_state
+  set $record = $state + 0xae894 + $ctx * 0xfc
+  set $count = *(unsigned short *)($record + 0xf4)
+  set $total = *(unsigned int *)($state + 0xec624)
+  printf "POST_COVERAGE_GATE call=%u context=%u total_positions=%u candidate_count=%u input_ids=", $postselection_calls, $ctx, $total, $count
+  set $i = 0
+  set $input_count = *(unsigned short *)$record
+  while $i < $input_count && $i < 12
+    printf "%u ", *(unsigned int *)($record + 4 + $i * 4)
+    set $i = $i + 1
+  end
+  printf "\n"
+  set $i = 0
+  while $i < $count && $i < 64
+    set $node = *(unsigned int *)($state + 0x477ac + $i * 4)
+    printf "POST_COVERAGE_CANDIDATE context=%u index=%u unit=%u left=%d right=%d span=%d\n", $ctx, $i, *(unsigned int *)($node + 8), *(short *)($node + 0xc), *(short *)($node + 0x10), *(short *)($node + 0xe)
+    set $i = $i + 1
+  end
+  continue
+end
+
+continue

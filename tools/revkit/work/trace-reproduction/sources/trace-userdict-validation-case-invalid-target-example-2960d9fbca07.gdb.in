@@ -1,0 +1,29 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $valid_path = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($valid_path + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d706c61696e2d702e63737600"]
+  set $path_invalid_target_example = ((char *(*)(unsigned int))0x1001d9c0)(63)
+#@bytes ["  set {char}($path_invalid_target_example + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d696e76616c69642d7461726765742d6578616d706c652e63737600"]
+  set $load_invalid_target_example = ((short (*)(int, char *))0x10027960)(100, $path_invalid_target_example)
+  printf "USERDICT_MATRIX case=invalid-target-example index=100 load_ax=%d\n", $load_invalid_target_example
+  set $unload_invalid_target_example = ((short (*)(int))0x10027a80)(100)
+  printf "USERDICT_MATRIX case=invalid-target-example index=100 unload_ax=%d\n", $unload_invalid_target_example
+  if $load_invalid_target_example != 1
+    set $recover_invalid_target_example = ((short (*)(int, char *))0x10027960)(100, $valid_path)
+    printf "USERDICT_MATRIX case=invalid-target-example index=100 valid_recovery_ax=%d\n", $recover_invalid_target_example
+    if $recover_invalid_target_example == 1
+      set $recover_unload_invalid_target_example = ((short (*)(int))0x10027a80)(100)
+      printf "USERDICT_MATRIX case=invalid-target-example index=100 recovery_unload_ax=%d\n", $recover_unload_invalid_target_example
+    end
+  end
+  continue
+end
+
+continue

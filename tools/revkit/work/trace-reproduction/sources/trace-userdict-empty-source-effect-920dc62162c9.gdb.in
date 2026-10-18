@@ -1,0 +1,53 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $path = ((char *(*)(unsigned int))0x1001d9c0)(53)
+#@bytes ["  set {char}($path + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d656d7074792d736f757263652e63737600"]
+  set $text_hello = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text_hello + ",0,") = ","68656c6c6f00"]
+  set $text_period = ((char *(*)(unsigned int))0x1001d9c0)(2)
+  set {char}($text_period + 0) = 46
+  set {char}($text_period + 1) = 0
+  set $out_hello_control = ((char *(*)(unsigned int))0x1001d9c0)(63)
+#@bytes ["  set {char}($out_hello_control + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d656d7074792d736f757263652d6566666563742d68656c6c6f2d636f6e74726f6c2e77617600"]
+  set $out_hello_dict = ((char *(*)(unsigned int))0x1001d9c0)(60)
+#@bytes ["  set {char}($out_hello_dict + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d656d7074792d736f757263652d6566666563742d68656c6c6f2d646963742e77617600"]
+  set $out_period_control = ((char *(*)(unsigned int))0x1001d9c0)(64)
+#@bytes ["  set {char}($out_period_control + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d656d7074792d736f757263652d6566666563742d706572696f642d636f6e74726f6c2e77617600"]
+  set $out_period_dict = ((char *(*)(unsigned int))0x1001d9c0)(61)
+#@bytes ["  set {char}($out_period_dict + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d656d7074792d736f757263652d6566666563742d706572696f642d646963742e77617600"]
+  set $gate_before = *(unsigned char *)0x100a7489
+  set {unsigned char}0x100a7489 = 1
+  printf "USERDICT_EMPTY_SOURCE gate_before=%u gate_forced=%u\n", $gate_before, *(unsigned char *)0x100a7489
+  set $control_hello = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_hello_control, 1, -1, -1, -1, -1, 200, 0)
+  printf "USERDICT_EMPTY_SOURCE case=hello-control synth_ax=%d\n", $control_hello
+  set $load_hello = ((short (*)(int, char *))0x10027960)(200, $path)
+  printf "USERDICT_EMPTY_SOURCE case=hello load_ax=%d\n", $load_hello
+  if $load_hello == 1
+    set $dict_hello = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_hello, $out_hello_dict, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_EMPTY_SOURCE case=hello-dict synth_ax=%d\n", $dict_hello
+    set $unload_hello = ((short (*)(int))0x10027a80)(200)
+    printf "USERDICT_EMPTY_SOURCE case=hello unload_ax=%d\n", $unload_hello
+  end
+  set $control_period = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_period, $out_period_control, 1, -1, -1, -1, -1, 0, 0)
+  printf "USERDICT_EMPTY_SOURCE case=period-control synth_ax=%d\n", $control_period
+  set $load_period = ((short (*)(int, char *))0x10027960)(200, $path)
+  printf "USERDICT_EMPTY_SOURCE case=period load_ax=%d\n", $load_period
+  if $load_period == 1
+    set $dict_period = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text_period, $out_period_dict, 1, -1, -1, -1, -1, 200, 0)
+    printf "USERDICT_EMPTY_SOURCE case=period-dict synth_ax=%d\n", $dict_period
+    set $unload_period = ((short (*)(int))0x10027a80)(200)
+    printf "USERDICT_EMPTY_SOURCE case=period unload_ax=%d\n", $unload_period
+  end
+  set {unsigned char}0x100a7489 = $gate_before
+  printf "USERDICT_EMPTY_SOURCE gate_restored=%u\n", *(unsigned char *)0x100a7489
+  continue
+end
+
+continue

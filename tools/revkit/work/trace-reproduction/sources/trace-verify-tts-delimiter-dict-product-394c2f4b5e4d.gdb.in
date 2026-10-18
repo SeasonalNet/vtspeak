@@ -1,0 +1,68 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $path = ((char *(*)(unsigned int))0x1001d9c0)(41)
+#@bytes ["  set {char}($path + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d68656c6c6f2d706c61696e2e63737600"]
+  set $gate_original = *(unsigned char *)0x100a7489
+  set $load = ((short (*)(int, char *))0x10027960)(27, $path)
+  printf "VERIFY_TTS_DELIMITER_DICT_LOAD ax=%d ptr=%#x gate=%u\n", $load, *(unsigned int *)(0x100a647c + 27 * 4), $gate_original
+  set $p = ((char *(*)(unsigned int))0x1001d9c0)(16)
+  set $state = 0
+  while $state < 2
+    if $state == 0
+      set {unsigned char}0x100a7489 = 0
+    else
+      set {unsigned char}0x100a7489 = 1
+    end
+    set $n = 1
+    while $n <= 4
+      set $limit = 1
+      set $j = 0
+      while $j < $n
+        set $limit = $limit * 4
+        set $j = $j + 1
+      end
+      set $i = 0
+      while $i < $limit
+        set $v = $i
+        set $j = 0
+        while $j < $n
+          set $d = $v % 4
+          if $d == 0
+            set {char}($p + $j) = 60
+          else
+            if $d == 1
+              set {char}($p + $j) = 62
+            else
+              if $d == 2
+                set {char}($p + $j) = 47
+              else
+                set {char}($p + $j) = 65
+              end
+            end
+          end
+          set $v = $v / 4
+          set $j = $j + 1
+        end
+        set {char}($p + $n) = 0
+        set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($p, 1, 27, 0)
+        printf "VERIFY_TTS_DELIMITER_DICT state=%d length=%d code=%d ax=%u\n", $state, $n, $i, $r & 65535
+        set $i = $i + 1
+      end
+      set $n = $n + 1
+    end
+    set $state = $state + 1
+  end
+  set {unsigned char}0x100a7489 = $gate_original
+  set $unload = ((short (*)(int))0x10027a80)(27)
+  printf "VERIFY_TTS_DELIMITER_DICT_UNLOAD ax=%d restored_gate=%u\n", $unload, *(unsigned char *)0x100a7489
+  continue
+end
+
+continue

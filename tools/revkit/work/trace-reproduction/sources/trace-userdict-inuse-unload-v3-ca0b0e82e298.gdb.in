@@ -1,0 +1,30 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands 1
+  silent
+  disable 1
+  set $path = ((char *(*)(unsigned int))0x1001d9c0)(48)
+#@bytes ["  set {char}($path + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d76616c69646174696f6e2d706c61696e2d702e63737600"]
+  set $load = ((short (*)(int, char *))0x10027960)(200, $path)
+  printf "USERDICT_INUSE load index=200 ax=%d\n", $load
+  set $dict_pointer = *(unsigned int *)(0x100a647c + 200 * 4)
+  set $speaker_state = *(unsigned int *)0x100a0468
+  set $capacity = *(int *)($speaker_state + 0x4d14)
+  set $reference_slot = (unsigned int *)0x100a147c
+  set $reference_before = *$reference_slot
+  printf "USERDICT_INUSE state=0x%x capacity=%d dictionary=0x%x reference_slot=0x%x old_reference=0x%x\n", $speaker_state, $capacity, $dict_pointer, $reference_slot, $reference_before
+  set *$reference_slot = $dict_pointer
+  set $busy = ((short (*)(int))0x10027980)(200)
+  printf "USERDICT_INUSE forced_reference_unload index=200 ax=%d\n", $busy
+  set *$reference_slot = $reference_before
+  printf "USERDICT_INUSE reference_restored=0x%x\n", *$reference_slot
+  set $after = ((short (*)(int))0x10027980)(200)
+  printf "USERDICT_INUSE idle_unload_after_restore index=200 ax=%d\n", $after
+  continue
+end
+
+continue

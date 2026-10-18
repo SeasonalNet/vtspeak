@@ -1,8 +1,9 @@
 package synthesis
 
 import (
-	"bytes"
 	"context"
+	"crypto/sha256"
+	"fmt"
 	"os"
 	"path/filepath"
 	"testing"
@@ -55,11 +56,10 @@ func TestStage8ShortNoContextJoinMatchesRuntimeCapture(t *testing.T) {
 	if err != nil {
 		t.Fatalf("encode rendered PCM: %v", err)
 	}
-	want, err := os.ReadFile(filepath.Join("..", "..", "tools", "revkit", "work", "stage8", "map-short.wav"))
-	if err != nil {
-		t.Fatalf("read Stage 8 runtime reference: %v", err)
-	}
-	if !bytes.Equal(got, want) {
-		t.Fatalf("default no-context join differs from Stage 8 runtime WAV: got %d bytes, want %d", len(got), len(want))
+	// Pin the complete original WAV, including its header, without retaining a
+	// generated audio file. The reproduction manifest records the same digest.
+	const want = "473d40d76100c8ec48f125407b9d96d2a896b3728fc6b74aea504ea784f76360"
+	if digest := fmt.Sprintf("%x", sha256.Sum256(got)); digest != want {
+		t.Fatalf("default no-context join differs from Stage 8 runtime WAV: SHA-256 %s, want %s", digest, want)
 	}
 }

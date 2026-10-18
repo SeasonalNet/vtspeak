@@ -1,0 +1,106 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $path = ((char *(*)(unsigned int))0x1001d9c0)(41)
+#@bytes ["  set {char}($path + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d68656c6c6f2d706c61696e2e63737600"]
+  set $gate_original = *(unsigned char *)0x100a7489
+  set $load = ((short (*)(int, char *))0x10027960)(27, $path)
+  printf "VERIFY_TTS_DICT_LOAD index=27 ax=%d ptr=%#x gate=%u\n", $load, *(unsigned int *)(0x100a647c + 27 * 4), $gate_original
+  set {unsigned char}0x100a7489 = 0
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, -1, 0)
+  printf "VERIFY_TTS_DICT state=default text=match_lower dict=-1 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","776f726c6400"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, -1, 0)
+  printf "VERIFY_TTS_DICT state=default text=miss dict=-1 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","48454c4c4f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, -1, 0)
+  printf "VERIFY_TTS_DICT state=default text=case_variant dict=-1 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(12)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f2068656c6c6f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, -1, 0)
+  printf "VERIFY_TTS_DICT state=default text=repeat dict=-1 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(7)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f3c00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, -1, 0)
+  printf "VERIFY_TTS_DICT state=default text=markup_tail dict=-1 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(2)
+  set {char}($text + 0) = 60
+  set {char}($text + 1) = 0
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, -1, 0)
+  printf "VERIFY_TTS_DICT state=default text=malformed_lt dict=-1 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_off text=match_lower dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","776f726c6400"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_off text=miss dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","48454c4c4f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_off text=case_variant dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(12)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f2068656c6c6f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_off text=repeat dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(7)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f3c00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_off text=markup_tail dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(2)
+  set {char}($text + 0) = 60
+  set {char}($text + 1) = 0
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_off text=malformed_lt dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set {unsigned char}0x100a7489 = 1
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_on text=match_lower dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","776f726c6400"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_on text=miss dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","48454c4c4f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_on text=case_variant dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(12)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f2068656c6c6f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_on text=repeat dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(7)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f3c00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_on text=markup_tail dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(2)
+  set {char}($text + 0) = 60
+  set {char}($text + 1) = 0
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 27, 0)
+  printf "VERIFY_TTS_DICT state=dict_gate_on text=malformed_lt dict=27 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 28, 0)
+  printf "VERIFY_TTS_DICT state=empty_slot_gate_on text=match_lower dict=28 ax=%u eax=%d\n", $r & 65535, $r
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","776f726c6400"]
+  set $r = ((int (*)(unsigned char *, int, int, int))0x1001ded0)($text, 1, 28, 0)
+  printf "VERIFY_TTS_DICT state=empty_slot_gate_on text=miss dict=28 ax=%u eax=%d\n", $r & 65535, $r
+  set {unsigned char}0x100a7489 = $gate_original
+  set $unload = ((short (*)(int))0x10027a80)(27)
+  printf "VERIFY_TTS_DICT_UNLOAD index=27 ax=%d restored_gate=%u\n", $unload, *(unsigned char *)0x100a7489
+  continue
+end
+
+continue

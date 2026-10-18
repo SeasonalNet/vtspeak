@@ -1,0 +1,220 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $text_letter-a = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-a + 0) = 65
+  set {char}($text_letter-a + 1) = 0
+  set $path_letter-a = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-a + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6100"]
+  set $raw_letter-a = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-a, $path_letter-a, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-a raw_eax=%#x text=%s path=%s\n", $raw_letter-a, $text_letter-a, $path_letter-a
+  set $text_letter-b = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-b + 0) = 66
+  set {char}($text_letter-b + 1) = 0
+  set $path_letter-b = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-b + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6200"]
+  set $raw_letter-b = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-b, $path_letter-b, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-b raw_eax=%#x text=%s path=%s\n", $raw_letter-b, $text_letter-b, $path_letter-b
+  set $text_letter-c = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-c + 0) = 67
+  set {char}($text_letter-c + 1) = 0
+  set $path_letter-c = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-c + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6300"]
+  set $raw_letter-c = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-c, $path_letter-c, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-c raw_eax=%#x text=%s path=%s\n", $raw_letter-c, $text_letter-c, $path_letter-c
+  set $text_letter-d = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-d + 0) = 68
+  set {char}($text_letter-d + 1) = 0
+  set $path_letter-d = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-d + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6400"]
+  set $raw_letter-d = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-d, $path_letter-d, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-d raw_eax=%#x text=%s path=%s\n", $raw_letter-d, $text_letter-d, $path_letter-d
+  set $text_letter-e = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-e + 0) = 69
+  set {char}($text_letter-e + 1) = 0
+  set $path_letter-e = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-e + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6500"]
+  set $raw_letter-e = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-e, $path_letter-e, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-e raw_eax=%#x text=%s path=%s\n", $raw_letter-e, $text_letter-e, $path_letter-e
+  set $text_letter-f = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-f + 0) = 70
+  set {char}($text_letter-f + 1) = 0
+  set $path_letter-f = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-f + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6600"]
+  set $raw_letter-f = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-f, $path_letter-f, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-f raw_eax=%#x text=%s path=%s\n", $raw_letter-f, $text_letter-f, $path_letter-f
+  set $text_letter-g = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-g + 0) = 71
+  set {char}($text_letter-g + 1) = 0
+  set $path_letter-g = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-g + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6700"]
+  set $raw_letter-g = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-g, $path_letter-g, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-g raw_eax=%#x text=%s path=%s\n", $raw_letter-g, $text_letter-g, $path_letter-g
+  set $text_letter-h = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-h + 0) = 72
+  set {char}($text_letter-h + 1) = 0
+  set $path_letter-h = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-h + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6800"]
+  set $raw_letter-h = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-h, $path_letter-h, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-h raw_eax=%#x text=%s path=%s\n", $raw_letter-h, $text_letter-h, $path_letter-h
+  set $text_letter-i = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-i + 0) = 73
+  set {char}($text_letter-i + 1) = 0
+  set $path_letter-i = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-i + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6900"]
+  set $raw_letter-i = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-i, $path_letter-i, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-i raw_eax=%#x text=%s path=%s\n", $raw_letter-i, $text_letter-i, $path_letter-i
+  set $text_letter-j = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-j + 0) = 74
+  set {char}($text_letter-j + 1) = 0
+  set $path_letter-j = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-j + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6a00"]
+  set $raw_letter-j = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-j, $path_letter-j, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-j raw_eax=%#x text=%s path=%s\n", $raw_letter-j, $text_letter-j, $path_letter-j
+  set $text_letter-k = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-k + 0) = 75
+  set {char}($text_letter-k + 1) = 0
+  set $path_letter-k = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-k + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6b00"]
+  set $raw_letter-k = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-k, $path_letter-k, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-k raw_eax=%#x text=%s path=%s\n", $raw_letter-k, $text_letter-k, $path_letter-k
+  set $text_letter-l = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-l + 0) = 76
+  set {char}($text_letter-l + 1) = 0
+  set $path_letter-l = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-l + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6c00"]
+  set $raw_letter-l = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-l, $path_letter-l, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-l raw_eax=%#x text=%s path=%s\n", $raw_letter-l, $text_letter-l, $path_letter-l
+  set $text_letter-m = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-m + 0) = 77
+  set {char}($text_letter-m + 1) = 0
+  set $path_letter-m = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-m + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6d00"]
+  set $raw_letter-m = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-m, $path_letter-m, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-m raw_eax=%#x text=%s path=%s\n", $raw_letter-m, $text_letter-m, $path_letter-m
+  set $text_letter-n = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-n + 0) = 78
+  set {char}($text_letter-n + 1) = 0
+  set $path_letter-n = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-n + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6e00"]
+  set $raw_letter-n = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-n, $path_letter-n, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-n raw_eax=%#x text=%s path=%s\n", $raw_letter-n, $text_letter-n, $path_letter-n
+  set $text_letter-o = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-o + 0) = 79
+  set {char}($text_letter-o + 1) = 0
+  set $path_letter-o = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-o + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d6f00"]
+  set $raw_letter-o = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-o, $path_letter-o, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-o raw_eax=%#x text=%s path=%s\n", $raw_letter-o, $text_letter-o, $path_letter-o
+  set $text_letter-p = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-p + 0) = 80
+  set {char}($text_letter-p + 1) = 0
+  set $path_letter-p = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-p + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7000"]
+  set $raw_letter-p = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-p, $path_letter-p, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-p raw_eax=%#x text=%s path=%s\n", $raw_letter-p, $text_letter-p, $path_letter-p
+  set $text_letter-q = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-q + 0) = 81
+  set {char}($text_letter-q + 1) = 0
+  set $path_letter-q = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-q + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7100"]
+  set $raw_letter-q = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-q, $path_letter-q, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-q raw_eax=%#x text=%s path=%s\n", $raw_letter-q, $text_letter-q, $path_letter-q
+  set $text_letter-r = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-r + 0) = 82
+  set {char}($text_letter-r + 1) = 0
+  set $path_letter-r = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-r + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7200"]
+  set $raw_letter-r = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-r, $path_letter-r, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-r raw_eax=%#x text=%s path=%s\n", $raw_letter-r, $text_letter-r, $path_letter-r
+  set $text_letter-s = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-s + 0) = 83
+  set {char}($text_letter-s + 1) = 0
+  set $path_letter-s = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-s + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7300"]
+  set $raw_letter-s = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-s, $path_letter-s, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-s raw_eax=%#x text=%s path=%s\n", $raw_letter-s, $text_letter-s, $path_letter-s
+  set $text_letter-t = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-t + 0) = 84
+  set {char}($text_letter-t + 1) = 0
+  set $path_letter-t = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-t + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7400"]
+  set $raw_letter-t = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-t, $path_letter-t, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-t raw_eax=%#x text=%s path=%s\n", $raw_letter-t, $text_letter-t, $path_letter-t
+  set $text_letter-u = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-u + 0) = 85
+  set {char}($text_letter-u + 1) = 0
+  set $path_letter-u = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-u + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7500"]
+  set $raw_letter-u = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-u, $path_letter-u, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-u raw_eax=%#x text=%s path=%s\n", $raw_letter-u, $text_letter-u, $path_letter-u
+  set $text_letter-v = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-v + 0) = 86
+  set {char}($text_letter-v + 1) = 0
+  set $path_letter-v = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-v + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7600"]
+  set $raw_letter-v = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-v, $path_letter-v, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-v raw_eax=%#x text=%s path=%s\n", $raw_letter-v, $text_letter-v, $path_letter-v
+  set $text_letter-w = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-w + 0) = 87
+  set {char}($text_letter-w + 1) = 0
+  set $path_letter-w = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-w + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7700"]
+  set $raw_letter-w = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-w, $path_letter-w, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-w raw_eax=%#x text=%s path=%s\n", $raw_letter-w, $text_letter-w, $path_letter-w
+  set $text_letter-x = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-x + 0) = 88
+  set {char}($text_letter-x + 1) = 0
+  set $path_letter-x = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-x + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7800"]
+  set $raw_letter-x = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-x, $path_letter-x, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-x raw_eax=%#x text=%s path=%s\n", $raw_letter-x, $text_letter-x, $path_letter-x
+  set $text_letter-y = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-y + 0) = 89
+  set {char}($text_letter-y + 1) = 0
+  set $path_letter-y = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-y + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7900"]
+  set $raw_letter-y = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-y, $path_letter-y, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-y raw_eax=%#x text=%s path=%s\n", $raw_letter-y, $text_letter-y, $path_letter-y
+  set $text_letter-z = ((char *(*)(unsigned int))0x1001d9c0)(128)
+  set {char}($text_letter-z + 0) = 90
+  set {char}($text_letter-z + 1) = 0
+  set $path_letter-z = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_letter-z + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6c65747465722d7a00"]
+  set $raw_letter-z = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_letter-z, $path_letter-z, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=letter-z raw_eax=%#x text=%s path=%s\n", $raw_letter-z, $text_letter-z, $path_letter-z
+  set $text_upper-run = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_upper-run + ",0,") = ","41424300"]
+  set $path_upper-run = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_upper-run + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d75707065722d72756e00"]
+  set $raw_upper-run = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_upper-run, $path_upper-run, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=upper-run raw_eax=%#x text=%s path=%s\n", $raw_upper-run, $text_upper-run, $path_upper-run
+  set $text_spaced-letters = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_spaced-letters + ",0,") = ","412042204300"]
+  set $path_spaced-letters = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_spaced-letters + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d7370616365642d6c65747465727300"]
+  set $raw_spaced-letters = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_spaced-letters, $path_spaced-letters, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=spaced-letters raw_eax=%#x text=%s path=%s\n", $raw_spaced-letters, $text_spaced-letters, $path_spaced-letters
+  set $text_dotted-letters = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_dotted-letters + ",0,") = ","412e20422e20432e00"]
+  set $path_dotted-letters = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_dotted-letters + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d646f747465642d6c65747465727300"]
+  set $raw_dotted-letters = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_dotted-letters, $path_dotted-letters, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=dotted-letters raw_eax=%#x text=%s path=%s\n", $raw_dotted-letters, $text_dotted-letters, $path_dotted-letters
+  set $text_acronym = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_acronym + ",0,") = ","552e532e412e00"]
+  set $path_acronym = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_acronym + ",0,") = ","5a3a2f776f726b2f737461676532312f6d692d616c7068616265742d6163726f6e796d00"]
+  set $raw_acronym = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_acronym, $path_acronym, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_ALPHABET case=acronym raw_eax=%#x text=%s path=%s\n", $raw_acronym, $text_acronym, $path_acronym
+  kill
+  quit
+end
+
+continue

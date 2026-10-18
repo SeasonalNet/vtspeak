@@ -1,0 +1,34 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  set $text = *(unsigned int *)($esp + 8)
+  disable 1
+  set $path_default = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_default + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d726174652d64656661756c742d323032363039323600"]
+  set $raw_default = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)((char *)$text, $path_default, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_RATE case=default raw_eax=%#x path=%s\n", $raw_default, $path_default
+  set $path_pitch120 = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_pitch120 + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d726174652d70697463683132302d323032363039323600"]
+  set $raw_pitch120 = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)((char *)$text, $path_pitch120, 1, 120, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_RATE case=pitch120 raw_eax=%#x path=%s\n", $raw_pitch120, $path_pitch120
+  set $path_speed120 = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_speed120 + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d726174652d73706565643132302d323032363039323600"]
+  set $raw_speed120 = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)((char *)$text, $path_speed120, 1, -1, 120, -1, -1, -1, -1)
+  printf "MAKEINFO_RATE case=speed120 raw_eax=%#x path=%s\n", $raw_speed120, $path_speed120
+  set $path_volume120 = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_volume120 + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d726174652d766f6c756d653132302d323032363039323600"]
+  set $raw_volume120 = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)((char *)$text, $path_volume120, 1, -1, -1, 120, -1, -1, -1)
+  printf "MAKEINFO_RATE case=volume120 raw_eax=%#x path=%s\n", $raw_volume120, $path_volume120
+  set $path_pause120 = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_pause120 + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d726174652d70617573653132302d323032363039323600"]
+  set $raw_pause120 = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)((char *)$text, $path_pause120, 1, -1, -1, -1, 120, -1, -1)
+  printf "MAKEINFO_RATE case=pause120 raw_eax=%#x path=%s\n", $raw_pause120, $path_pause120
+  continue
+end
+
+continue

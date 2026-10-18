@@ -1,0 +1,30 @@
+[
+  {
+    "line": 21097,
+    "command": "/bin/bash -lc docker compose -f tools/revkit/work/stage8/compose.yaml -f tools/revkit/work/stage19/compose.yaml -f tools/revkit/work/stage19/compose-versioned.yaml -f tools/revkit/work/stage20/compose-vector-overlay.yaml -f tools/revkit/work/stage20/compose-key-repacked-attr48-key3-attr40-key2-context-tail-map.yaml run --rm -e INPUT_FIXTURE=/work/stage20/apple-plain.txt -e EVIDENCE_DIR=/work/corpus-parity/stage20/apple-generic-tail-map-selector -e GDB_SCRIPT=/work/stage20/trace-hello-target-signatures.gdb runtime /bin/bash /work/stage20/run-adapted-forced-pah0.sh"
+  },
+  {
+    "line": 21609,
+    "command": "/bin/bash -lc docker compose -f tools/revkit/work/stage8/compose.yaml -f tools/revkit/work/stage19/compose.yaml -f tools/revkit/work/stage19/compose-versioned.yaml -f tools/revkit/work/stage20/compose-vector-overlay.yaml -f tools/revkit/work/stage20/compose-key-repacked-attr48-key3-attr40-key2-context-tail-map.yaml run --rm -e INPUT_FIXTURE=/work/stage20/apple-plain.txt -e EVIDENCE_DIR=/work/corpus-parity/stage20/apple-generic-tail-map-selector-verified -e GDB_SCRIPT=/work/stage20/trace-apple-selector-decisions.gdb runtime /bin/bash /work/stage20/run-adapted-forced-pah0.sh"
+  },
+  {
+    "line": 21934,
+    "command": "/bin/bash -lc docker compose -f tools/revkit/work/stage8/compose.yaml -f tools/revkit/work/stage19/compose.yaml -f tools/revkit/work/stage19/compose-versioned.yaml -f tools/revkit/work/stage20/compose-key-repacked-attr48-key3-attr40-key2-context-tail-map.yaml run --rm -e INPUT_FIXTURE=/work/stage20/apple-plain.txt -e EVIDENCE_DIR=/work/corpus-parity/stage20/apple-generic-tail-map-selector-no-vector -e GDB_SCRIPT=/work/stage20/trace-apple-selector-decisions.gdb runtime /bin/bash /work/stage20/run-adapted-forced-pah0.sh"
+  },
+  {
+    "line": 22751,
+    "command": "/bin/bash -lc docker compose -f tools/revkit/work/stage8/compose.yaml -f tools/revkit/work/stage19/compose.yaml -f tools/revkit/work/stage19/compose-versioned.yaml -f tools/revkit/work/stage20/compose-vector-overlay.yaml -f tools/revkit/work/stage20/compose-matched-context-continuity-bit7-unit-major.yaml run --rm -e INPUT_FIXTURE=/work/stage20/hello-plain.txt -e EVIDENCE_DIR=/work/corpus-parity/stage20/hello-continuity-bit7/marker -e GDB_SCRIPT=/work/stage20/trace-hello-continuity-bit7.gdb runtime /bin/bash /work/stage20/run-adapted-forced-pah0.sh"
+  },
+  {
+    "line": 22854,
+    "command": "/bin/bash -lc docker compose -f tools/revkit/work/stage8/compose.yaml -f tools/revkit/work/stage19/compose.yaml -f tools/revkit/work/stage19/compose-versioned.yaml -f tools/revkit/work/stage20/compose-vector-overlay.yaml -f tools/revkit/work/stage20/compose-matched-context-continuity-bit7-unit-major.yaml run --rm -e INPUT_FIXTURE=/work/stage20/hello-plain.txt -e EVIDENCE_DIR=/work/corpus-parity/stage20/hello-continuity-bit7/marker-instrumented -e GDB_SCRIPT=/work/stage20/trace-hello-continuity-bit7.gdb runtime /bin/bash /work/stage20/run-adapted-forced-pah0.sh"
+  },
+  {
+    "line": 24095,
+    "command": "/bin/bash -lc docker compose -f tools/revkit/work/stage8/compose.yaml -f tools/revkit/work/stage19/compose.yaml -f tools/revkit/work/stage19/compose-versioned.yaml -f tools/revkit/work/stage20/compose-matched-context-continuity-bit7-all-banks.yaml run --rm -e INPUT_FIXTURE=/work/stage20/apple-plain.txt -e GDB_SCRIPT=/work/stage20/trace-apple-path-costs.gdb -e EVIDENCE_DIR=/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker-metric-indices-apple runtime /bin/bash /work/stage20/run-adapted-forced-pah0.sh"
+  },
+  {
+    "line": 29355,
+    "command": "/bin/bash -lc docker compose -f tools/revkit/work/stage8/compose.yaml -f tools/revkit/work/stage17/compose.yaml -f tools/revkit/work/stage19/compose.yaml -f tools/revkit/work/stage19/compose-versioned.yaml -f tools/revkit/work/stage20/compose-matched-context-continuity-bit7-all-banks.yaml run --rm -e EVIDENCE_DIR=/work/corpus-parity/stage20/hi-weighted-coverage -e INPUT_FIXTURE=/work/stage20/hi-plain.txt -e GDB_SCRIPT=/work/stage20/trace-position-weighted-coverage.gdb runtime /bin/bash /work/stage20/run-adapted-forced-pah0.sh"
+  }
+]

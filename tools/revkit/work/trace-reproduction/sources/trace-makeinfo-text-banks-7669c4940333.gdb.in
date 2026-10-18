@@ -1,0 +1,31 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $text_digits = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_digits + ",0,") = ","34322e00"]
+  set $path_digits = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_digits + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d746578742d6469676974732d323032363039323600"]
+  set $raw_digits = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_digits, $path_digits, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_TEXT case=digits raw_eax=%#x text=%s path=%s\n", $raw_digits, $text_digits, $path_digits
+  set $text_alphabet = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_alphabet + ",0,") = ","412e422e432e00"]
+  set $path_alphabet = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_alphabet + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d746578742d616c7068616265742d323032363039323600"]
+  set $raw_alphabet = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_alphabet, $path_alphabet, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_TEXT case=alphabet raw_eax=%#x text=%s path=%s\n", $raw_alphabet, $text_alphabet, $path_alphabet
+  set $text_mixed = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($text_mixed + ",0,") = ","48656c6c6f2034322e00"]
+  set $path_mixed = ((char *(*)(unsigned int))0x1001d9c0)(128)
+#@bytes ["  set {char}($path_mixed + ",0,") = ","5a3a2f776f726b2f737461676531362f6d692d746578742d6d697865642d323032363039323600"]
+  set $raw_mixed = ((unsigned int (*)(char *, char *, int, int, int, int, int, int, int))0x1001de90)($text_mixed, $path_mixed, 1, -1, -1, -1, -1, -1, -1)
+  printf "MAKEINFO_TEXT case=mixed raw_eax=%#x text=%s path=%s\n", $raw_mixed, $text_mixed, $path_mixed
+  continue
+end
+
+continue

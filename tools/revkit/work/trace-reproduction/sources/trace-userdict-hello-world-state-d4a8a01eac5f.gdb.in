@@ -1,0 +1,44 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1001da50
+commands
+  silent
+  disable 1
+  set $path_p = ((char *(*)(unsigned int))0x1001d9c0)(41)
+#@bytes ["  set {char}($path_p + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d68656c6c6f2d706c61696e2e63737600"]
+  set $path_a = ((char *(*)(unsigned int))0x1001d9c0)(41)
+#@bytes ["  set {char}($path_a + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d616c7068612d776f726c642e63737600"]
+  set $text = ((char *(*)(unsigned int))0x1001d9c0)(6)
+#@bytes ["  set {char}($text + ",0,") = ","68656c6c6f00"]
+  set $path_control = ((char *(*)(unsigned int))0x1001d9c0)(55)
+#@bytes ["  set {char}($path_control + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d68656c6c6f2d776f726c642d73746174652d636f6e74726f6c2e77617600"]
+  set $path_p_output = ((char *(*)(unsigned int))0x1001d9c0)(49)
+#@bytes ["  set {char}($path_p_output + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d68656c6c6f2d776f726c642d73746174652d702e77617600"]
+  set $path_a_output = ((char *(*)(unsigned int))0x1001d9c0)(49)
+#@bytes ["  set {char}($path_a_output + ",0,") = ","5a3a2f776f726b2f737461676531362f75736572646963742d68656c6c6f2d776f726c642d73746174652d612e77617600"]
+  set $control = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $path_control, 1, -1, -1, -1, -1, 0, 0)
+  printf "USERDICT_SYNTH control dictidx=-1 status=%d\n", $control
+  set $load_p = ((short (*)(int, char *))0x10027960)(27, $path_p)
+  printf "USERDICT_LOAD type=P index=27 status=%d path=%s\n", $load_p, $path_p
+  printf "USERDICT_STATE speaker1_gate=%u index27_pointer=%#x\n", *(unsigned char *)0x100a7489, *(unsigned int *)(0x100a647c + 27 * 4)
+  if $load_p == 1
+    set $synth_p = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $path_p_output, 1, -1, -1, -1, -1, 27, 0)
+    printf "USERDICT_SYNTH type=P index=27 status=%d\n", $synth_p
+    set $unload_p = ((short (*)(int))0x10027a80)(27)
+    printf "USERDICT_UNLOAD type=P index=27 status=%d\n", $unload_p
+  end
+  set $load_a = ((short (*)(int, char *))0x10027960)(28, $path_a)
+  printf "USERDICT_LOAD type=A index=28 status=%d path=%s\n", $load_a, $path_a
+  if $load_a == 1
+    set $synth_a = ((short (*)(int, char *, char *, int, int, int, int, int, int, int))0x1001da50)(4, $text, $path_a_output, 1, -1, -1, -1, -1, 28, 0)
+    printf "USERDICT_SYNTH type=A index=28 status=%d\n", $synth_a
+    set $unload_a = ((short (*)(int))0x10027a80)(28)
+    printf "USERDICT_UNLOAD type=A index=28 status=%d\n", $unload_a
+  end
+  continue
+end
+
+continue

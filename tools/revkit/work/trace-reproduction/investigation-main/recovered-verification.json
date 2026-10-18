@@ -1,0 +1,171 @@
+{
+  "originals": {
+    "tools/revkit/work/corpus-parity/stage20/split-threshold-new/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-split-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/split-hello-world/adapted-pah0.wav",
+      "bytes": 26640,
+      "sha256": "f67f443094c3c5195a9156b230ddc617375d2b4d93b6a3164a75b13fb95e5030"
+    },
+    "tools/revkit/work/corpus-parity/stage20/context-tail-map/adapted-pah0.wav": {
+      "method": "exact samples from separately generated Paul baseline and Kate Hello world with repeated gaps",
+      "bytes": 516264,
+      "sha256": "148693ada20cca0b0cb0d5926eae3b511dfd778115d3d5714c11b9b9fe164a15"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-plain/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-apple-plain-correct",
+      "source": "tools/revkit/work/corpus-parity/stage20/apple-plain-correct/adapted-pah0.wav",
+      "bytes": 13648,
+      "sha256": "48f9610abc82debe3e7ce41000fc88e082ad1a2d47602438df02ce132db1c40e"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-generic-tail-map-selector/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-context-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/context-hello-world/adapted-pah0.wav",
+      "bytes": 24720,
+      "sha256": "ff36d8aa0b5487a9940f4bb422181d463c8fda0a737f88d3500d4873f6960d04"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-plain-features/old-pah0-address.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-address.wav",
+      "bytes": 320008,
+      "sha256": "0bf0f679b9bb7bfb0c210e4fad9173efcaabbfe43eb7068ca742e24bf8c67e0c"
+    },
+    "tools/revkit/work/corpus-parity/stage20/hello-continuity-bit7/marker/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-marker-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/marker-apple/adapted-pah0.wav",
+      "bytes": 12354,
+      "sha256": "d6055769ed787cfe74b68a0376b139014418dd43d2100e5b70bb072f73736d36"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-continuity-bit7/new-full-marker-metric-indices-apple/adapted-pah0.wav": {
+      "method": "Kate header with independently generated Paul and Kate Apple PCM",
+      "bytes": 30750,
+      "sha256": "596c800226a4f021ed1b886e106f86b169fcb001146831f5777b325c5a90711f"
+    },
+    "tools/revkit/work/corpus-parity/stage20/hi-weighted-coverage/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-hi-weighted-fixed",
+      "source": "tools/revkit/work/corpus-parity/stage20/hi-weighted-fixed/adapted-pah0.wav",
+      "bytes": 13598,
+      "sha256": "511fef226e5c7053c230871be500db9bf31dc7b69668849c2a9b5ed8ca7779ff"
+    },
+    "tools/revkit/work/stage19/pih0-context.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-pih0-context",
+      "source": "tools/revkit/work/stage19/pih0-context.wav",
+      "bytes": 22084,
+      "sha256": "016b5489fafc55ad4d2355884321eae6a81733a877e613ad2eab362e08c6a1ff"
+    },
+    "tools/revkit/work/stage19/selection-hello-copy-assembly.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-hello-copy-assembly",
+      "source": "tools/revkit/work/stage19/selection-hello-copy-assembly.wav",
+      "bytes": 16134,
+      "sha256": "b1627ad8141d22f7458c60e5b33d917e02b5e97bf1726c0ea1b76cf7b3651520"
+    },
+    "tools/revkit/work/stage19/selection-hello-assembly-entry-only.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-hello-assembly-entry-only",
+      "source": "tools/revkit/work/stage19/selection-hello-assembly-entry-only.wav",
+      "bytes": 5518,
+      "sha256": "61bdf41f283af0c9a048b6628b76ae1bc4a292000b77a03e3f83a045eec2e714"
+    },
+    "tools/revkit/work/stage20/bridget-hello-structural-classids.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-bridget-hello-structural-classids",
+      "source": "tools/revkit/work/stage20/bridget-hello-structural-classids.wav",
+      "bytes": 28820,
+      "sha256": "db849c1ef7cf9dc0af65052cb6afd01e60c20260db99c5cc27070704efb9942c"
+    },
+    "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-bridget-hello-terminal-marker-duplicate-contextkeys-v2",
+      "source": "tools/revkit/work/stage20/bridget-hello-terminal-marker-duplicate-contextkeys-v2.wav",
+      "bytes": 27888,
+      "sha256": "c6bccacc755dab6c429578e6a8002566df06b30d9ff6aebfcaaf75c5f07ae33c"
+    },
+    "tools/revkit/work/corpus-parity/stage20/apple-selector-byte0-patch/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-byte0-hello-world",
+      "source": "tools/revkit/work/corpus-parity/stage20/byte0-hello-world/adapted-pah0.wav",
+      "bytes": 25090,
+      "sha256": "3ddcc5d26f45b62e945cca8a5d10dbcfb6a7a9f1cc69a63b7bf857c63a4f1d9d"
+    },
+    "tools/revkit/work/corpus-parity/stage20/model-parser-row-type-decimal/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-parser-actual-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/probe/adapted-pah0.wav",
+      "bytes": 14692,
+      "sha256": "316dcc3bc335121ebf265ef760e6767dc7f96db97a86d510eefd4ac1b42bee9e"
+    },
+    "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40/adapted-pah0.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-key-repack-key5-b-c-copy-attr40",
+      "source": "tools/revkit/work/corpus-parity/stage20/key-repack-key5-b-c-copy-attr40/adapted-pah0.wav",
+      "bytes": 19120,
+      "sha256": "b117aefbeb1f65b4d83ca190bc17a797c7bf0af87f4ed31db96f263139ed0696"
+    },
+    "tools/revkit/work/corpus-parity/runtime-original-msi-2006-prose.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-prose.wav",
+      "bytes": 372876,
+      "sha256": "03b266a9270fb206b900defd9a80c02e8ab17d9dfdf7bd85419fa5c9c9e39003"
+    },
+    "tools/revkit/work/corpus-parity/runtime-original-msi-2006-address.wav": {
+      "method": "clean header with explicit demo-address PCM followed by clean-address PCM",
+      "bytes": 429028,
+      "sha256": "e81b01d7398976d676214b4e572ec1e961e99e9bb91b2827283192efe6368db6"
+    }
+  },
+  "new_batches": [
+    "recovered-split-hello-world",
+    "recovered-context-hello-world",
+    "recovered-marker-apple",
+    "recovered-hi-weighted-fixed",
+    "recovered-byte0-hello-world",
+    "recovered-apple-plain-correct",
+    "recovered-bridget-hello-structural-classids",
+    "recovered-bridget-hello-terminal-marker-duplicate-contextkeys-v2",
+    "recovered-key-repack-key5-b-c-copy-attr40",
+    "recovered-parser-actual-apple",
+    "recovered-legacy-pih0-context",
+    "recovered-legacy-hello-copy-assembly",
+    "recovered-legacy-hello-assembly-entry-only",
+    "recovered-legacy-explicit-demo",
+    "recovered-paul-apple",
+    "recovered-kate-apple"
+  ],
+  "supporting_recipes": {
+    "tools/revkit/work/corpus-parity/runtime-original-msi-2006-numbers.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-legacy-explicit-demo",
+      "source": "tools/revkit/work/corpus-parity/runtime-original-msi-2006-numbers.wav",
+      "bytes": 373188,
+      "sha256": "fe820fa817a53cbd1312e51b405aea64d4b42471ba774fcd62aa35c2f79f76ab"
+    },
+    "tools/revkit/work/trace-reproduction/generated/recovered-apple/paul.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-paul-apple",
+      "source": "tools/revkit/work/trace-reproduction/investigation-main/generated-paul-apple.wav",
+      "bytes": 16028,
+      "sha256": "c0e63abb62a5ac55f53045e80498875a104c4495808fced21c406d9376c505cb"
+    },
+    "tools/revkit/work/trace-reproduction/generated/recovered-apple/kate.wav": {
+      "method": "isolated runtime with recovered actual input",
+      "batch": "recovered-kate-apple",
+      "source": "tools/revkit/work/corpus-parity/stage20/metric-apple-no-vector/adapted-pah0.wav",
+      "bytes": 14766,
+      "sha256": "75da51d1f964aa02bfc05bfb57a4775e3c091f02b452c5de6ab436d16e7223f3"
+    }
+  },
+  "validation": {
+    "fresh_runtime_batches": 16,
+    "original_files_matched_before_pruning": 18,
+    "remaining_original_files": 0,
+    "complete_wav_recipe_check": 1600
+  }
+}
