@@ -81,10 +81,20 @@ segments, and exact sample compositions. Every local original was compared
 against its reconstruction before pruning. The complete verification inventory
 is in `wav-verification.json`.
 
-All **406 tracked research WAVs** have staged Git deletions. Together with the
-one untracked runtime copy removed by the user, **407 local WAVs totaling
-30,673,820 bytes** were pruned. No research WAV files remain under
-`tools/revkit/work`; vendor input WAVs under `binary/` are unaffected.
+The initial cleanup pruned **406 tracked research WAVs** and one untracked
+runtime copy removed by the user: **407 local WAVs totaling 30,673,820 bytes**.
+Rebasing that cleanup onto the remote history subsequently restored **1,187
+WAVs and 919 GDB files totaling 802,850,305 bytes**. Those paths had already
+been absent from the local parent tree, so their deletions were not part of
+the commit replayed by rebase. The repair removes these materializations with
+ordinary Git deletions. All 1,187 returned WAVs and 916 GDB files match the
+manifest hashes; the other three GDB files are the previously omitted Stage 21
+word-spacing, whitespace-class all-pairs, and oversized fullmask traces
+documented in the [work directory retention boundary](../README.md).
+
+No research WAV or materialized GDB files remain under `tools/revkit/work`;
+vendor input WAVs under `binary/` are unaffected. This removes files from the
+current tree; published historical commits still retain their objects.
 
 The final 18 recordings required recovery of their actual inputs and complete
 file layout. Historical shared-fixture interference explains several named
