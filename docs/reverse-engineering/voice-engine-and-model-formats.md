@@ -94,8 +94,8 @@ After the nodes comes a little-endian 16-bit output table of `output_width * (no
 
 The 2006 `vt_eng.dll` extracted from Kate's MSI has a separate recursive reader:
 code at `0x100015d0` reads a node and `0x10001740` recursively loads two
-children when the second trailer byte is nonzero. The evaluator path at
-`0x100019b0` uses the feature at node offset `+0x10`, operation at `+0x11`,
+children when the second trailer byte is nonzero. The scalar evaluator at
+`0x10001570` uses the feature at node offset `+0x10`, operation at `+0x11`,
 threshold at `+0x0e`, list pointer at `+0x08`, list count at `+0x12`, and leaf
 output at `+0x0c` in its in-memory node. Compared with the serialized sample,
 this supports a variable-length record with a one-byte feature selector, one
@@ -111,9 +111,13 @@ at bytes 25–26. `tools/revkit/scripts/tree2.py` parses these recursive records
 reports any unconsumed file suffix, and optionally evaluates a supplied signed
 feature vector. The Julie and Kate checks parsed all 34 files: 26 consume the
 file exactly; the `bf`, `nbf`, `qbf`, and `sbf` pitch files in each voice have a
-9-byte parsed root leaf followed by an opaque suffix. The suffix contents and
-their role are unresolved, so these eight files are not claimed as fully
-recovered formats.
+9-byte parsed root leaf followed by an opaque suffix under that scalar parser.
+A later [REA core walk](rea-2006-concatenative-core-2026-10-19.md)
+identified a separate vector-node loader for those four pitch families and
+parsed all four original Kate MSI files to EOF with 12-value outputs. The
+scalar and vector node layouts differ; the scalar parser's suffix does not
+establish opaque trailing data in the vector format. Julie's four vector files
+were not rechecked in that continuation.
 
 ### `mc_idx_tbl/unit-*.idx`
 

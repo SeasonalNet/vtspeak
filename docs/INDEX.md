@@ -2,6 +2,11 @@
 
 - [Asset map and handling notes](assets.md)
 - [VoiceText engine and model format findings](reverse-engineering/voice-engine-and-model-formats.md)
+- [REA decompilation of the 2013 VoiceText engine (2026-10-19)](reverse-engineering/rea-2013-full-engine-decompilation-2026-10-19.md)
+- [REA follow-up extractions for the 2013 VoiceText engine (2026-10-19)](reverse-engineering/rea-2013-followup-extractions-2026-10-19.md)
+- [Runtime G83 query-signature trace (2026-10-19)](reverse-engineering/rea-runtime-g83-query-signature-2026-10-19.md)
+- [REA examination of the 2006 engine (2026-10-19)](reverse-engineering/rea-2006-engine-examination-2026-10-19.md)
+- [REA walk of the 2006 concatenative core: loading to PCM (2026-10-19)](reverse-engineering/rea-2006-concatenative-core-2026-10-19.md)
 - [Reimplementation language decision](reimplementation-language-decision.md)
 - [Native engine implementation plan](reimplementation-plan.md)
 - [Deferred follow-up: normalized voice-data export](deferred-voice-data-export.md)

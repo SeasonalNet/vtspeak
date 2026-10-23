@@ -21619,6 +21619,46 @@
         }
       },
       "image": "sha256:4bf8cf26e5a9446c6f1eb437df01b77f76aa8cd83098111bbb2c9c9206328b66"
+    },
+    "stage22": {
+      "cwd": "stage5",
+      "input_index": "tools/revkit/work/trace-reproduction/stage22-inputs.json",
+      "sources": [
+        "tools/revkit/work/stage22/run-g83-query.sh",
+        "tools/revkit/work/stage12/inputs/numeric-context-g83-can-anybody-help.txt"
+      ],
+      "traces": [
+        "tools/revkit/work/stage22/g83-query-control.gdb",
+        "tools/revkit/work/stage22/g83-query-g83-zero.gdb"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/bin/bash",
+            "/work/stage22/run-g83-query.sh",
+            "control",
+            "numeric-context-g83-can-anybody-help"
+          ]
+        },
+        {
+          "argv": [
+            "/bin/bash",
+            "/work/stage22/run-g83-query.sh",
+            "g83-zero",
+            "numeric-context-g83-can-anybody-help"
+          ]
+        }
+      ],
+      "outputs": {
+        "tools/revkit/work/stage22/numeric-context-g83-can-anybody-help-g83-query-control.wav": {
+          "sha256": "29052da3a11213f4616c30b2da31ccd9c4400d657afa1c163a51135653ddad09",
+          "bytes": 32534
+        },
+        "tools/revkit/work/stage22/numeric-context-g83-can-anybody-help-g83-query-g83-zero.wav": {
+          "sha256": "f8aa3133ef5701e78f46db0bd55cdcf3674430c988d7b6f5834bd804a0683305",
+          "bytes": 33796
+        }
+      }
     }
   },
   "retained_wavs": {},

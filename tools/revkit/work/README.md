@@ -14,7 +14,7 @@ reconstructed from the tracked [artifact sources](trace-reproduction/README.md).
 - `scripts/` contains analysis helpers used by the research workflow.
 - `stage2-copy/` contains small DAT payload excerpts, their captured PCM
   outputs, and the GDB capture scripts/logs used for decoder comparisons.
-- `stage3/` through `stage19/` contain the controlled text inputs, trace
+- `stage3/` through `stage22/` contain the controlled text inputs, trace
   scripts/logs, PCM buffers, WAVE reproduction recipes, and comparison evidence cited in the
   stage findings. `stage5/probes/stage6/` holds the captured tree lookups used
   by the checked-in comparison helper.

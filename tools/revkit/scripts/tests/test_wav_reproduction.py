@@ -57,6 +57,23 @@ class WavReproductionTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'unsafe scratch path'):
                     runtime.check_inputs({'../outside': 'unused'})
 
+    def test_batch_input_indexes_avoid_unrelated_runtime_prerequisites(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            index_path = 'tools/revkit/work/trace-reproduction/stage22-inputs.json'
+            index_file = root / index_path
+            index_file.parent.mkdir(parents=True)
+            index_file.write_text('{"binary/voice.exe":"digest"}')
+            (root / 'global-inputs.json').write_text('{"data-paul/model.dat":"legacy"}')
+            catalog = {'input_index': 'global-inputs.json', 'batches': {
+                'stage22': {'input_index': index_path},
+                'stage12': {}}}
+            with patch.object(runtime, 'ROOT', root):
+                self.assertEqual(runtime.batch_input_index(catalog, ['stage22']),
+                                 {'binary/voice.exe': 'digest'})
+                self.assertEqual(runtime.batch_input_index(catalog, ['stage12']),
+                                 {'data-paul/model.dat': 'legacy'})
+
     def test_embedded_file_decoding_handles_the_1024_byte_key_reset(self):
         name = b'example.msi'
         plain = bytes(range(256)) * 9

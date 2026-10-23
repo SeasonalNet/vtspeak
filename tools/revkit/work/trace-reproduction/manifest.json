@@ -4861,6 +4861,16 @@
       "sha256": "538be3c2e24c765b354e2173397337062aae7a8b10a0e63dc3b481427004c2f9",
       "bytes": 864,
       "source": "tools/revkit/work/trace-reproduction/sources/trace-boundary-538be3c2e24c.gdb.in"
+    },
+    "tools/revkit/work/stage22/g83-query-control.gdb": {
+      "sha256": "413e7dffd180ef12674f27aca577a4448a04741af1ff0747ff757fcbdaf423d3",
+      "bytes": 671,
+      "source": "tools/revkit/work/trace-reproduction/sources/stage22-g83-query-control.gdb.in"
+    },
+    "tools/revkit/work/stage22/g83-query-g83-zero.gdb": {
+      "sha256": "3d64fdb83b803f8cd2395d2fd76074774a42aae3ca940bb5d383ff395e49cea5",
+      "bytes": 799,
+      "source": "tools/revkit/work/trace-reproduction/sources/stage22-g83-query-g83-zero.gdb.in"
     }
   },
   "wav": {
@@ -14152,6 +14162,21 @@
           "count": 12331
         }
       ]
+    },
+    "tools/revkit/work/stage22/numeric-context-g83-can-anybody-help-g83-query-control.wav": {
+      "sha256": "29052da3a11213f4616c30b2da31ccd9c4400d657afa1c163a51135653ddad09",
+      "bytes": 32534,
+      "runtime_batch": "stage22"
+    },
+    "tools/revkit/work/stage22/numeric-context-g83-can-anybody-help-g83-query-g83-zero.wav": {
+      "sha256": "f8aa3133ef5701e78f46db0bd55cdcf3674430c988d7b6f5834bd804a0683305",
+      "bytes": 33796,
+      "runtime_batch": "stage22"
+    },
+    "tools/revkit/work/stage22/diagnostic/numeric-context-g83-can-anybody-help-effect-candidate-path-control.wav": {
+      "sha256": "29052da3a11213f4616c30b2da31ccd9c4400d657afa1c163a51135653ddad09",
+      "bytes": 32534,
+      "copy": "tools/revkit/work/stage22/numeric-context-g83-can-anybody-help-g83-query-control.wav"
     }
   }
 }

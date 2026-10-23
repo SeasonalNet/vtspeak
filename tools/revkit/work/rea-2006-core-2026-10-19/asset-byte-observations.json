@@ -1,0 +1,79 @@
+{
+  "indexes": [
+    {
+      "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/mc_idx_tbl/unit-alp.idx",
+      "sha256": "7cb6ba47177fb9ca3252a2539a27fe67c3578ce9ee5c26cfeba770860ab3bef6",
+      "bytes": 35340,
+      "N": 905,
+      "record_stride": 19,
+      "records_offset": 45,
+      "tail_offset": 17240,
+      "tail_bytes": 18100,
+      "first_tail_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "first_unit_key_offset": 19050,
+      "first_unit_key_hex": "5a 1e 11 1f 1f"
+    },
+    {
+      "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/mc_idx_tbl/unit-etc.idx",
+      "sha256": "85a8760660a2e04d9bad13bfe018641e89f43fda310919e226196ba41354f099",
+      "bytes": 143019,
+      "N": 3666,
+      "record_stride": 19,
+      "records_offset": 45,
+      "tail_offset": 69699,
+      "tail_bytes": 73320,
+      "first_tail_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "first_unit_key_offset": 77031,
+      "first_unit_key_hex": "5a 05 13 1e 1e"
+    },
+    {
+      "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/mc_idx_tbl/unit-gen.idx",
+      "sha256": "ff397c8bbbb1fcad8abad82eba62ee9568501041d15c397615692ef27e269c14",
+      "bytes": 7019850,
+      "N": 179995,
+      "record_stride": 19,
+      "records_offset": 45,
+      "tail_offset": 3419950,
+      "tail_bytes": 3599900,
+      "first_tail_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "first_unit_key_offset": 3779940,
+      "first_unit_key_hex": "5a 3a 18 1e 1e"
+    },
+    {
+      "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/mc_idx_tbl/unit-gen2.idx",
+      "sha256": "0219e5fcdf5f109ebffdd8e5c6136381c4308f2f9d15ecdf4a65a9376d0b6ff7",
+      "bytes": 3827233,
+      "N": 98133,
+      "record_stride": 19,
+      "records_offset": 46,
+      "tail_offset": 1864573,
+      "tail_bytes": 1962660,
+      "first_tail_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "first_unit_key_offset": 2060839,
+      "first_unit_key_hex": "3a 21 36 14 14"
+    },
+    {
+      "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/mc_idx_tbl/unit-num.idx",
+      "sha256": "b65ecea545ea123902897cbcc318b0f7b2aea9be040d8645c8c042ddad668e98",
+      "bytes": 38928,
+      "N": 997,
+      "record_stride": 19,
+      "records_offset": 45,
+      "tail_offset": 18988,
+      "tail_bytes": 19940,
+      "first_tail_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "first_unit_key_offset": 20982,
+      "first_unit_key_hex": "30 30 5a 18 18"
+    }
+  ],
+  "distance_table": {
+    "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/ttsdata/dist_tbl/cepdist.tbl",
+    "bytes": 2099202,
+    "sha256": "86a1d1205c6e7d02d0fe1dae928950be4a426bdc26c16c34d56e45f881ac8e9a",
+    "header_hex": "00 04",
+    "dimension": 1024,
+    "float_entries": 524800,
+    "predicted_bytes": 2099202
+  },
+  "dblist": "5\nunit-gen.idx         \tGEN\nunit-gen2.idx         \tGEN\nunit-num.idx\t\tNUM\nunit-etc.idx\t\tETC\nunit-alp.idx         \tETC\n"
+}

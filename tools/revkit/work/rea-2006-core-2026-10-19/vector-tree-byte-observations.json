@@ -1,0 +1,150 @@
+[
+  {
+    "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/ttsdata/tree/pitch/bf.tree2",
+    "sha256": "33911b70f94815e2906a3eee7af3b70f2ed97affeac7a76345d7efc8ca610294",
+    "bytes": 812,
+    "consumed": 812,
+    "nodes": 21,
+    "leaves": 11,
+    "widths": [
+      12
+    ],
+    "root": {
+      "offset": 0,
+      "feature": 11,
+      "operation": "D",
+      "threshold": 0,
+      "width": 12,
+      "output": [
+        84,
+        84,
+        85,
+        86,
+        88,
+        91,
+        95,
+        99,
+        102,
+        104,
+        101,
+        97
+      ],
+      "membership_count": 2,
+      "trailer": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/ttsdata/tree/pitch/nbf.tree2",
+    "sha256": "40197194b017f78f84a036dfdc56346e285f39763c8882e21553c322786a67aa",
+    "bytes": 19940,
+    "consumed": 19940,
+    "nodes": 561,
+    "leaves": 281,
+    "widths": [
+      12
+    ],
+    "root": {
+      "offset": 0,
+      "feature": 11,
+      "operation": "D",
+      "threshold": 0,
+      "width": 12,
+      "output": [
+        80,
+        80,
+        79,
+        79,
+        78,
+        77,
+        77,
+        77,
+        77,
+        78,
+        79,
+        79
+      ],
+      "membership_count": 4,
+      "trailer": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/ttsdata/tree/pitch/qbf.tree2",
+    "sha256": "55f2608f9355ad0fc1aed913dbb8978fba36e90c810c21eff19ee2a2330ecbea",
+    "bytes": 254,
+    "consumed": 254,
+    "nodes": 7,
+    "leaves": 4,
+    "widths": [
+      12
+    ],
+    "root": {
+      "offset": 0,
+      "feature": 11,
+      "operation": "D",
+      "threshold": 0,
+      "width": 12,
+      "output": [
+        90,
+        88,
+        85,
+        82,
+        79,
+        76,
+        72,
+        69,
+        67,
+        66,
+        67,
+        69
+      ],
+      "membership_count": 3,
+      "trailer": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "file": "tools/revkit/work/corpus-parity/kate-msi/Program Files/NeoSpeech/Kate16/data-kate/M16/ttsdata/tree/pitch/sbf.tree2",
+    "sha256": "f768b6f944e94fd250f2ca63762c8236d55d4c6c5323024839f5dd05e8233379",
+    "bytes": 3700,
+    "consumed": 3700,
+    "nodes": 99,
+    "leaves": 50,
+    "widths": [
+      12
+    ],
+    "root": {
+      "offset": 0,
+      "feature": 2,
+      "operation": "D",
+      "threshold": 0,
+      "width": 12,
+      "output": [
+        96,
+        97,
+        98,
+        100,
+        103,
+        107,
+        112,
+        116,
+        119,
+        121,
+        117,
+        111
+      ],
+      "membership_count": 2,
+      "trailer": [
+        1,
+        1
+      ]
+    }
+  }
+]

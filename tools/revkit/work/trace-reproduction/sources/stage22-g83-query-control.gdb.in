@@ -1,0 +1,31 @@
+set pagination off
+set confirm off
+set debuginfod enabled off
+handle SIGSEGV nostop noprint pass
+
+break *0x1000e0c0
+commands
+  silent
+  set $code = *(unsigned char *)($esp + 8)
+  set $token_index = *(int *)($esp + 12)
+  if $code == 83
+    printf "TPP_CODE83 index=%d code=%u\n", $token_index, $code
+  end
+  continue
+end
+
+set $signature_hits = 0
+break *0x10023dc0
+commands
+  silent
+  set $ret = *(unsigned int *)$esp
+  set $signature_hits = $signature_hits + 1
+  if $signature_hits <= 48
+    set $signature = *(unsigned int *)($esp + 4)
+    printf "CLASS_QUERY_SIGNATURE hit=%u caller=%#x bytes:", $signature_hits, $ret
+    x/7bx $signature
+  end
+  continue
+end
+
+continue

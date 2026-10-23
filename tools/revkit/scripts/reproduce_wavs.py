@@ -190,6 +190,16 @@ def verify_batch(scratch, batch):
     return len(batch['outputs'])
 
 
+def batch_input_index(catalog, names):
+    """Combine the prerequisite indexes for the selected runtime batches."""
+    index = {}
+    for name in names:
+        batch = catalog['batches'][name]
+        source = batch.get('input_index', catalog['input_index'])
+        index.update(json.loads((ROOT / relative_path(source)).read_text()))
+    return index
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=('list', 'run', 'verify', 'check-inputs'))
@@ -198,16 +208,16 @@ def main():
     parser.add_argument('--image', help='override the recorded local Wine image; output hashes must still match')
     args = parser.parse_args()
     catalog = json.loads(CATALOG.read_text())
-    if args.action in ('run', 'check-inputs'):
-        index = json.loads((ROOT / catalog['input_index']).read_text())
-        print(f'{check_inputs(index)} runtime prerequisites verified', flush=True)
-        if args.action == 'check-inputs':
-            return
-    manifest = json.loads((ROOT / artifacts.MANIFEST).read_text())
     selected = args.batch or list(catalog['batches'])
     unknown = set(selected) - catalog['batches'].keys()
     if unknown:
         raise ValueError(f'unknown batches: {sorted(unknown)}')
+    if args.action in ('run', 'check-inputs'):
+        index = batch_input_index(catalog, selected)
+        print(f'{check_inputs(index)} runtime prerequisites verified', flush=True)
+        if args.action == 'check-inputs':
+            return
+    manifest = json.loads((ROOT / artifacts.MANIFEST).read_text())
     for name in selected:
         batch = {**catalog['batches'][name], 'image': args.image or catalog['image']}
         if args.action == 'list':

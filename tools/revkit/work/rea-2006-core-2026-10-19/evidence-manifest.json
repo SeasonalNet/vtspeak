@@ -1,0 +1,48 @@
+{
+  "target_sha256": "00fc9375d08bd8cec303845c992481d79c8f616d1bfb6390a5322cd06f69273d",
+  "records_total": 129,
+  "distinct_evidence_ids": 127,
+  "distinct_function_queries": 118,
+  "exports": [
+    {
+      "file": "audio-evidence.json.gz",
+      "gzip_bytes": 412248,
+      "gzip_sha256": "78fe6fe60b89bb2072b8a867efa221cc07a120b9d7965f838f5250019eacbbb6",
+      "json_bytes": 5169409,
+      "json_sha256": "b52ec320e60a7858ccd3c7f68db144e260a643ac607884f1ef0837042d859af1",
+      "records": 26
+    },
+    {
+      "file": "descriptor-evidence.json.gz",
+      "gzip_bytes": 355531,
+      "gzip_sha256": "a82417c7f554322d6d0551ee83865b4d66fc9898e1d33f3ba92349bd8d4a7059",
+      "json_bytes": 4940665,
+      "json_sha256": "8af63b7513756e7fdafcef8619cd5fd2b6f674201ec14376d3144e61f18a6bc4",
+      "records": 16
+    },
+    {
+      "file": "loading-prosody-evidence.json.gz",
+      "gzip_bytes": 1015523,
+      "gzip_sha256": "62eeaab5c256d264b26757a353cdabe33d3b471b84b8757d75aa5e2b5efbe920",
+      "json_bytes": 13140731,
+      "json_sha256": "a64bd6d9b76cbb701754dec04d68fcc883972f58f283eb8de16511118a43110d",
+      "records": 51
+    },
+    {
+      "file": "pitch-smoothing-evidence.json.gz",
+      "gzip_bytes": 91787,
+      "gzip_sha256": "6f934b0cbbd20e5f18b9f13329e9800e078ae5911ffa48ee6c22f2b1acbe3b84",
+      "json_bytes": 1047135,
+      "json_sha256": "5c9510224a62c6877b33914bdce84d819f80bece6e592d4655aecd77dd55e8f1",
+      "records": 7
+    },
+    {
+      "file": "selection-evidence.json.gz",
+      "gzip_bytes": 676138,
+      "gzip_sha256": "407badd0d57c8e58c2af0f0fc604a349e981ef060e2e80b7510df4a4fe8302b5",
+      "json_bytes": 9390147,
+      "json_sha256": "23e9451ef9543ef1fd1e0e3c42889682ba7aa11fbd47930f8781d3995f5a764d",
+      "records": 29
+    }
+  ]
+}
