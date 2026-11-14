@@ -2,6 +2,7 @@
 
 - [Asset map and handling notes](assets.md)
 - [VoiceText engine and model format findings](reverse-engineering/voice-engine-and-model-formats.md)
+- [2013 Paul front-end research batch (2026-11-14)](reverse-engineering/2013-frontend-research-batch-2026-11-14.md)
 - [REA decompilation of the 2013 VoiceText engine (2026-10-19)](reverse-engineering/rea-2013-full-engine-decompilation-2026-10-19.md)
 - [REA follow-up extractions for the 2013 VoiceText engine (2026-10-19)](reverse-engineering/rea-2013-followup-extractions-2026-10-19.md)
 - [Runtime G83 query-signature trace (2026-10-19)](reverse-engineering/rea-runtime-g83-query-signature-2026-10-19.md)
